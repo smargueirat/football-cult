@@ -113,7 +113,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.59,
+        price: 14.87,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529067054&a=3013769&m=65912",
@@ -140,17 +140,17 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.52,
-        priceMax: 19.76,
+        price: 10.7,
+        priceMax: 20.12,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38667989777&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fa%2Fc%2Facerbis_0022908.459_0022908_459b_2.jpg&feedId=89032&k=e805574d9d11da480d68c4b8770cfc0ed3225fc9",
         sizes: ["XS", "M", "XL"],
         sizePrices: [
-          { size: "XS", price: 10.52, url: "https://www.awin1.com/pclick.php?p=38667989777&a=3013769&m=65912" },
-          { size: "M", price: 19.76, url: "https://www.awin1.com/pclick.php?p=38659705063&a=3013769&m=65912" },
-          { size: "XL", price: 19.76, url: "https://www.awin1.com/pclick.php?p=44472582371&a=3013769&m=65912" },
+          { size: "XS", price: 10.7, url: "https://www.awin1.com/pclick.php?p=38667989777&a=3013769&m=65912" },
+          { size: "M", price: 20.12, url: "https://www.awin1.com/pclick.php?p=38659705063&a=3013769&m=65912" },
+          { size: "XL", price: 20.12, url: "https://www.awin1.com/pclick.php?p=44472582371&a=3013769&m=65912" },
         ],
       },
       {
@@ -254,7 +254,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 14.0,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529469236&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529469237&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hp0733_1_apparel_photography_-_ecommerce_front_view_white.jpg&feedId=89032&k=0c41a58c5c809605dcf938cfe018d238721bc386",
         sizes: ["S", "M", "L", "XL", "2XL"],
       },
@@ -281,7 +281,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 14.0,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529680198&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529680201&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ji6405_white-black_1.jpg&feedId=89032&k=8fc13acf187d077d2b796b01ccc2cf638617701c",
         sizes: ["S", "M", "L", "2XL"],
       },
@@ -308,7 +308,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 14.0,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41855850307&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41855850303&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hp0734_1_apparel_photography_-_ecommerce_front_view_white.jpg&feedId=89032&k=09aefa95e7682f563b84d64447123d6e4ad30cfe",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
       },
@@ -335,7 +335,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 14.0,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529469242&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529469246&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hp0732_1_apparel_photography_-_ecommerce_front_view_white.jpg&feedId=89032&k=50ec3d940c56571c7030cc0e099ca2528d5e6651",
         sizes: ["S", "M", "XL", "2XL"],
       },
@@ -362,7 +362,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 14.0,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529469231&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529469232&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hp0735_1_apparel_photography_-_ecommerce_front_view_white.jpg&feedId=89032&k=9bbba470264b7dc7ea6e2c5f6e970b06607d41b3",
         sizes: ["S", "M", "L", "XL", "2XL"],
       },
@@ -494,7 +494,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.68,
+        price: 11.93,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729842&a=3013769&m=65912",
@@ -521,7 +521,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.73,
+        price: 16.03,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729843&a=3013769&m=65912",
@@ -548,7 +548,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.58,
+        price: 15.88,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729851&a=3013769&m=65912",
@@ -575,7 +575,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.47,
+        price: 13.74,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729852&a=3013769&m=65912",
@@ -602,7 +602,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.47,
+        price: 13.74,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729853&a=3013769&m=65912",
@@ -656,7 +656,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.89,
+        price: 13.15,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729855&a=3013769&m=65912",
@@ -782,7 +782,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.91,
+        price: 24.33,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729869&a=3013769&m=65912",
@@ -809,7 +809,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.69,
+        price: 22.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729870&a=3013769&m=65912",
@@ -836,7 +836,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.91,
+        price: 9.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729918&a=3013769&m=65912",
@@ -863,7 +863,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.42,
+        price: 22.82,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730128&a=3013769&m=65912",
@@ -881,7 +881,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.63,
+        price: 11.88,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730129&a=3013769&m=65912",
@@ -913,7 +913,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.11,
+        price: 25.54,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730130&a=3013769&m=65912",
@@ -940,7 +940,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.6,
+        price: 17.93,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729966&a=3013769&m=65912",
@@ -1156,7 +1156,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.79,
+        price: 29.27,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730098&a=3013769&m=65912",
@@ -1183,7 +1183,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.9,
+        price: 7.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729871&a=3013769&m=65912",
@@ -1210,7 +1210,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.9,
+        price: 7.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729875&a=3013769&m=65912",
@@ -1237,7 +1237,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.9,
+        price: 7.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729873&a=3013769&m=65912",
@@ -1264,7 +1264,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.9,
+        price: 7.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729874&a=3013769&m=65912",
@@ -1291,7 +1291,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.9,
+        price: 7.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729872&a=3013769&m=65912",
@@ -1318,7 +1318,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 62.7,
+        price: 63.65,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729877&a=3013769&m=65912",
@@ -1345,7 +1345,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 62.7,
+        price: 63.65,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729876&a=3013769&m=65912",
@@ -1372,7 +1372,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.89,
+        price: 10.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729891&a=3013769&m=65912",
@@ -1399,7 +1399,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.89,
+        price: 10.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729890&a=3013769&m=65912",
@@ -1426,7 +1426,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.71,
+        price: 3.84,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730251&a=3013769&m=65912",
@@ -1453,7 +1453,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.43,
+        price: 3.54,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730252&a=3013769&m=65912",
@@ -1615,7 +1615,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.88,
+        price: 33.42,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44972136980&a=3013769&m=65912",
@@ -1642,7 +1642,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.88,
+        price: 33.42,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44972136979&a=3013769&m=65912",
@@ -1669,7 +1669,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 91.38,
+        price: 92.73,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904249&a=3013769&m=65912",
@@ -1696,7 +1696,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 91.38,
+        price: 92.73,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904250&a=3013769&m=65912",
@@ -1714,7 +1714,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 91.38,
+        price: 92.73,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904252&a=3013769&m=65912",
@@ -1741,7 +1741,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 91.38,
+        price: 92.73,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904248&a=3013769&m=65912",
@@ -1768,7 +1768,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 91.38,
+        price: 92.73,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904251&a=3013769&m=65912",
@@ -1786,7 +1786,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.26,
+        price: 33.81,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157542&a=3013769&m=65912",
@@ -1813,7 +1813,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.26,
+        price: 33.81,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157543&a=3013769&m=65912",
@@ -1840,7 +1840,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904247&a=3013769&m=65912",
@@ -1867,7 +1867,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.26,
+        price: 33.81,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157544&a=3013769&m=65912",
@@ -1894,7 +1894,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.21,
+        price: 18.55,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157548&a=3013769&m=65912",
@@ -1921,7 +1921,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.26,
+        price: 33.81,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157545&a=3013769&m=65912",
@@ -1948,7 +1948,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.5,
+        price: 22.9,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157549&a=3013769&m=65912",
@@ -1975,7 +1975,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.26,
+        price: 33.81,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157546&a=3013769&m=65912",
@@ -2002,7 +2002,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.26,
+        price: 33.81,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157547&a=3013769&m=65912",
@@ -2020,7 +2020,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904237&a=3013769&m=65912",
@@ -2047,7 +2047,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904236&a=3013769&m=65912",
@@ -2074,7 +2074,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904238&a=3013769&m=65912",
@@ -2101,7 +2101,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904240&a=3013769&m=65912",
@@ -2119,7 +2119,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904235&a=3013769&m=65912",
@@ -2146,7 +2146,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904239&a=3013769&m=65912",
@@ -2164,7 +2164,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904242&a=3013769&m=65912",
@@ -2191,7 +2191,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904243&a=3013769&m=65912",
@@ -2218,7 +2218,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904246&a=3013769&m=65912",
@@ -2236,7 +2236,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904241&a=3013769&m=65912",
@@ -2263,7 +2263,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.1,
+        price: 32.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45047904244&a=3013769&m=65912",
@@ -2488,7 +2488,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.34,
+        price: 10.57,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894225&a=3013769&m=65912",
@@ -2515,7 +2515,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.87,
+        price: 9.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894237&a=3013769&m=65912",
@@ -2542,7 +2542,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.5,
+        price: 15.8,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45398880541&a=3013769&m=65912",
@@ -2731,7 +2731,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 157.67,
+        price: 159.94,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41877228484&a=3013769&m=65912",
@@ -2758,7 +2758,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 157.67,
+        price: 159.94,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529214817&a=3013769&m=65912",
@@ -2785,7 +2785,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 128.2,
+        price: 130.07,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38068109536&a=3013769&m=65912",
@@ -2812,7 +2812,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 128.2,
+        price: 130.07,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40329631589&a=3013769&m=65912",
@@ -2839,7 +2839,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 91.37,
+        price: 92.72,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38068109539&a=3013769&m=65912",
@@ -2866,7 +2866,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 91.37,
+        price: 92.72,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485367112&a=3013769&m=65912",
@@ -2893,7 +2893,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 69.27,
+        price: 70.32,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529519849&a=3013769&m=65912",
@@ -2920,7 +2920,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 98.74,
+        price: 100.19,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38857648643&a=3013769&m=65912",
@@ -2947,7 +2947,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 98.74,
+        price: 100.19,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529214816&a=3013769&m=65912",
@@ -2974,7 +2974,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 155.39,
+        price: 157.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38068109538&a=3013769&m=65912",
@@ -3001,7 +3001,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 58.02,
+        price: 58.91,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894349&a=3013769&m=65912",
@@ -3028,7 +3028,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 67.01,
+        price: 68.03,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44002222736&a=3013769&m=65912",
@@ -3055,7 +3055,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 54.54,
+        price: 55.38,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529690846&a=3013769&m=65912",
@@ -3082,7 +3082,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 150.3,
+        price: 152.47,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45698870425&a=3013769&m=65912",
@@ -3335,7 +3335,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 6.6,
-        priceMax: 7.15,
+        priceMax: 7.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41843973092&a=3013769&m=65912",
@@ -3387,7 +3387,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.92,
+        price: 17.24,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923942285&a=3013769&m=65912",
@@ -3453,7 +3453,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.0,
+        price: 34.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529023247&a=3013769&m=65912",
@@ -3480,7 +3480,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.38,
+        price: 18.72,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923792422&a=3013769&m=65912",
@@ -3507,7 +3507,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.6,
+        price: 10.83,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923801375&a=3013769&m=65912",
@@ -3534,10 +3534,10 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.26,
+        price: 22.65,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529143868&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529143869&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ff%2Fm%2Ffm910s00120_1.jpg&feedId=89032&k=6a9d45cefe8d14eef7005f21cdd4d2ad773c6114",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       },
@@ -3561,8 +3561,8 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.75,
-        priceMax: 10.6,
+        price: 4.83,
+        priceMax: 10.83,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40109625614&a=3013769&m=65912",
@@ -3642,7 +3642,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.0,
+        price: 34.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529023233&a=3013769&m=65912",
@@ -3669,7 +3669,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.0,
+        price: 34.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104826802&a=3013769&m=65912",
@@ -3696,10 +3696,10 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.38,
+        price: 18.72,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923792423&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923792424&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fc%2F9%2Fc990000026_2_1.jpg&feedId=89032&k=f76df3331572e9aed96ae8e56859a84d66c7759a",
         sizes: ["M", "XL"],
       },
@@ -3723,7 +3723,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.38,
+        price: 18.72,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39808404954&a=3013769&m=65912",
@@ -3750,16 +3750,16 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.64,
-        priceMax: 18.38,
+        price: 9.81,
+        priceMax: 18.72,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485365202&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fc%2F9%2Fc990000050_1_1.jpg&feedId=89032&k=67e42289b5d2be6158ac07c77fe5aab96e663c52",
         sizes: ["M", "XL"],
         sizePrices: [
-          { size: "M", price: 18.38, url: "https://www.awin1.com/pclick.php?p=36485365201&a=3013769&m=65912" },
-          { size: "XL", price: 9.64, url: "https://www.awin1.com/pclick.php?p=36485365202&a=3013769&m=65912" },
+          { size: "M", price: 18.72, url: "https://www.awin1.com/pclick.php?p=36485365201&a=3013769&m=65912" },
+          { size: "XL", price: 9.81, url: "https://www.awin1.com/pclick.php?p=36485365202&a=3013769&m=65912" },
         ],
       },
       {
@@ -3805,10 +3805,10 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.26,
+        price: 22.65,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529143862&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41810187926&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea_fm910s00070_0-nw121724.jpg&feedId=89032&k=db7e011f9a0c05310dcdcfccc756a2ea58022171",
         sizes: ["S", "M", "2XL", "3XL"],
       },
@@ -3840,10 +3840,10 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.26,
+        price: 22.65,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529143874&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529143875&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ff%2Fm%2Ffm910s00130_1.jpg&feedId=89032&k=5ee3ce8fcebb6594735605ace908b12d27cd93f1",
         sizes: ["S", "M", "L", "XL", "2XL", "4XL"],
       },
@@ -3867,10 +3867,10 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.26,
+        price: 22.65,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529143870&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42370940560&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ff%2Fm%2Ffm910s00120_1.jpg&feedId=89032&k=6a9d45cefe8d14eef7005f21cdd4d2ad773c6114",
         sizes: ["S", "M", "L", "4XL"],
       },
@@ -3894,20 +3894,20 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.08,
-        priceMax: 22.26,
+        price: 12.3,
+        priceMax: 22.65,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41810187925&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea_fm910s00020_0-nw121724.jpg&feedId=89032&k=8b851a5a703adc602d5698fa5b873b5fd79385e9",
         sizes: ["S", "M", "L", "XL", "3XL", "4XL"],
         sizePrices: [
-          { size: "S", price: 22.26, url: "https://www.awin1.com/pclick.php?p=42529143851&a=3013769&m=65912" },
-          { size: "M", price: 12.08, url: "https://www.awin1.com/pclick.php?p=41810187925&a=3013769&m=65912" },
-          { size: "L", price: 22.26, url: "https://www.awin1.com/pclick.php?p=44809652133&a=3013769&m=65912" },
-          { size: "XL", price: 22.26, url: "https://www.awin1.com/pclick.php?p=42529143852&a=3013769&m=65912" },
-          { size: "3XL", price: 22.26, url: "https://www.awin1.com/pclick.php?p=41847551993&a=3013769&m=65912" },
-          { size: "4XL", price: 22.26, url: "https://www.awin1.com/pclick.php?p=42482240154&a=3013769&m=65912" },
+          { size: "S", price: 22.65, url: "https://www.awin1.com/pclick.php?p=42529143851&a=3013769&m=65912" },
+          { size: "M", price: 12.3, url: "https://www.awin1.com/pclick.php?p=41810187925&a=3013769&m=65912" },
+          { size: "L", price: 22.65, url: "https://www.awin1.com/pclick.php?p=44809652133&a=3013769&m=65912" },
+          { size: "XL", price: 22.65, url: "https://www.awin1.com/pclick.php?p=42529143852&a=3013769&m=65912" },
+          { size: "3XL", price: 22.65, url: "https://www.awin1.com/pclick.php?p=41847551993&a=3013769&m=65912" },
+          { size: "4XL", price: 22.65, url: "https://www.awin1.com/pclick.php?p=42482240154&a=3013769&m=65912" },
         ],
       },
       {
@@ -3957,10 +3957,10 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.26,
+        price: 22.65,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45562763634&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529143860&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea_fm910s00040_0-nw121724.jpg&feedId=89032&k=8a17cbde72b60891d19a2b3706077d0eb2e3a19f",
         sizes: ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       },
@@ -4011,7 +4011,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.79,
+        price: 6.91,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41695387060&a=3013769&m=65912",
@@ -4056,7 +4056,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 56.02,
+        price: 56.88,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44852075529&a=3013769&m=65912",
@@ -4898,7 +4898,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.4,
+        price: 11.64,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507730131&a=3013769&m=65912",
@@ -4928,7 +4928,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 13.3,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923964161&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40480598356&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2FC%2FT%2FCT08-0019.jpg&feedId=89032&k=598bc8ca03bf3c6260bb76ab0b7b2f2f834e9d9c",
         sizes: ["S/M", "L/XL"],
       },
@@ -5009,7 +5009,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 13.3,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923964162&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529386159&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2FC%2FT%2FCT08-0012.jpg&feedId=89032&k=d6c8d58ec58afb91b400bd11efb1a1385e703dad",
         sizes: ["S/M", "L/XL"],
       },
@@ -5036,7 +5036,7 @@ const minedTrainingProductsChunk1: TrainingProduct[] = [
         price: 13.3,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529386157&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529386158&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2FC%2FT%2FCT08-0006.jpg&feedId=89032&k=39f0d9ee666554ae38c078b0c8eaefc1c711ab39",
         sizes: ["S/M", "L/XL"],
       },
@@ -5183,7 +5183,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 12.24,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38650241320&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44245759257&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgivova_ct02-1204.jpg&feedId=89032&k=975d5e585d1309846b0ed0bff3587ed9a1b1c774",
         sizes: ["S", "XL"],
       },
@@ -6458,7 +6458,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 50.0,
+        price: 51.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46157590052&a=3013769&m=65912",
@@ -7121,33 +7121,6 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     ],
   },
   {
-    id: "hms-mango-de-la-bomba-hms-pwl8324-negro",
-    brand: "HMS",
-    model: "Mango de la bomba HMS PWL8324 - Negro",
-    colour: "Negro",
-    type: "infladores",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 313.65,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40184133109&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fm%2Fhms_17-53-508_noir_1.jpg&feedId=89032&k=05aacde7ca00a9f661809099da1a7d3a02cc55f0",
-        sizes: ["172x95x236 cm"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 306.02,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-53-508-poignee-de-pompe-hms-pwl8324-noir-172x95x236-cm",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/m/hms_17-53-508_noir_1.webp",
-        sizes: ["172x95x236 cm"],
-      },
-    ],
-  },
-  {
     id: "hms-mango-de-la-bomba-hms-pwl8325-negro",
     brand: "HMS",
     model: "Mango de la bomba HMS PWL8325 - Negro",
@@ -7156,7 +7129,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 406.19,
+        price: 411.78,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507722788&a=3013769&m=65912",
@@ -7171,6 +7144,24 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-53-509-poignee-de-pompe-hms-pwl8325-noir-181x87x232-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/m/hms_17-53-509_noir_1.webp",
         sizes: ["181x87x232 cm"],
+      },
+    ],
+  },
+  {
+    id: "hms-mango-de-la-bomba-hms-pwl8324-negro",
+    brand: "HMS",
+    model: "Poignée de pompe HMS PWL8324 - Noir",
+    colour: "Noir",
+    type: "infladores",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 306.02,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-53-508-poignee-de-pompe-hms-pwl8324-noir-172x95x236-cm",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/m/hms_17-53-508_noir_1.webp",
+        sizes: ["172x95x236 cm"],
       },
     ],
   },
@@ -7303,10 +7294,19 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
   {
     id: "huck-cuerda-de-sujecion-para-redes-de-futbol-huck-verde",
     brand: "Huck",
-    model: "Cordon de fixation pour filets de but football Huck - Vert",
-    colour: "Vert",
+    model: "Cuerda de sujeción para redes de fútbol Huck - Verde",
+    colour: "Verde",
     type: "porterias",
     offers: [
+      {
+        store: "FootStoreES",
+        price: 16.06,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42761970715&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhuck_f1965_green_1.jpg&feedId=89032&k=73e44dc20afad722a80c4b1818945ae8c3b3084c",
+        sizes: ["39.7x11.3x6.1 cm"],
+      },
       {
         store: "FootStoreFR",
         price: 14.73,
@@ -7679,7 +7679,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 117.88,
+        price: 119.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44592082968&a=3013769&m=65912",
@@ -7706,7 +7706,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 98.07,
+        price: 99.52,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44592082967&a=3013769&m=65912",
@@ -7733,7 +7733,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 77.48,
+        price: 78.64,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44592082970&a=3013769&m=65912",
@@ -7751,7 +7751,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 64.46,
+        price: 65.43,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44592082969&a=3013769&m=65912",
@@ -7832,10 +7832,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.83,
+        price: 9.04,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43846792092&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43839281328&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_005002-5009_2-nw1226.jpg&feedId=89032&k=e841f60e7cfab0437e00fa268b4fd39a982d6f70",
         sizes: ["S", "XL"],
       },
@@ -7860,14 +7860,14 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 8.24,
-        priceMax: 8.83,
+        priceMax: 9.04,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43839281327&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_005002-7649_2-nw1226.jpg&feedId=89032&k=290c700c743924793528453ff84062be537bf73e",
         sizes: ["S", "XL"],
         sizePrices: [
-          { size: "S", price: 8.83, url: "https://www.awin1.com/pclick.php?p=43839281326&a=3013769&m=65912" },
+          { size: "S", price: 9.04, url: "https://www.awin1.com/pclick.php?p=43839281326&a=3013769&m=65912" },
           { size: "XL", price: 8.24, url: "https://www.awin1.com/pclick.php?p=43839281327&a=3013769&m=65912" },
         ],
       },
@@ -7914,10 +7914,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.83,
+        price: 9.04,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43945404054&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43839281325&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_005002-9001_2-nw1226.jpg&feedId=89032&k=8b7d0d3759c731d40aa101056d8c563f1afd9b7d",
         sizes: ["S", "XL"],
       },
@@ -7941,10 +7941,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.83,
+        price: 9.04,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43839281329&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45783092380&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_005002-5179_2-nw1226.jpg&feedId=89032&k=5f7f37c8002d5c0335875c4f7512d2d02fc035b3",
         sizes: ["S", "XL"],
       },
@@ -7968,16 +7968,16 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.93,
-        priceMax: 8.83,
+        price: 5.05,
+        priceMax: 9.04,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43839281331&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_005002-3062-nw1226.jpg&feedId=89032&k=199faa0498c0538d58251efb0dd73d781ff8a21f",
         sizes: ["S", "XL"],
         sizePrices: [
-          { size: "S", price: 8.83, url: "https://www.awin1.com/pclick.php?p=43839281330&a=3013769&m=65912" },
-          { size: "XL", price: 4.93, url: "https://www.awin1.com/pclick.php?p=43839281331&a=3013769&m=65912" },
+          { size: "S", price: 9.04, url: "https://www.awin1.com/pclick.php?p=43839281330&a=3013769&m=65912" },
+          { size: "XL", price: 5.05, url: "https://www.awin1.com/pclick.php?p=43839281331&a=3013769&m=65912" },
         ],
       },
       {
@@ -8005,10 +8005,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.83,
+        price: 9.04,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43839281333&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43839281332&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_005002-6057_2-nw1226.jpg&feedId=89032&k=9d094d321391235cc4be94f07000488e99145f87",
         sizes: ["S", "XL"],
       },
@@ -8091,7 +8091,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.0,
+        price: 34.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529796692&a=3013769&m=65912",
@@ -8118,7 +8118,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.71,
+        price: 10.94,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529796693&a=3013769&m=65912",
@@ -8148,7 +8148,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 10.27,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529091250&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923827495&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2616_03.jpg&feedId=89032&k=303a6582c948e6fdca30e4a923e9159c6ca34c68",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8175,7 +8175,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 10.27,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923827503&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923827502&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2616_45.jpg&feedId=89032&k=29edc993c25bbf6d616c770f5d3a86b02f86bd80",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8208,7 +8208,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 10.27,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529091257&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529091255&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2616_40.jpg&feedId=89032&k=92b9ff0eb91a2a9b8e0131aa80642c07af7585a3",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8235,7 +8235,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 10.27,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529091252&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529091254&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2616_19.jpg&feedId=89032&k=d7348a70d26cf0ddff1b05352a9d9c77ddac2e0d",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8268,7 +8268,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 10.27,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529091246&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529091245&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2616_01.jpg&feedId=89032&k=785a926d1acb67614b72a85808942c737b39e33a",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8328,7 +8328,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 13.64,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923827505&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923827506&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2618_03.jpg&feedId=89032&k=32e1bf37bac51b710e8e788edf1d50c04840d903",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8355,7 +8355,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 13.64,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529091258&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923827510&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2618_19.jpg&feedId=89032&k=fe86f2893ff97b0678e25ef0c2a0b96710bb503d",
         sizes: ["Adulte", "Junior", "Kid"],
       },
@@ -8409,7 +8409,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 10.27,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529091262&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529091261&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F2%2F6%2F2619_19.jpg&feedId=89032&k=0383b2e20b46c4b29f7301a8810cb4ba33ae5619",
         sizes: ["Adulte", "Junior"],
       },
@@ -8433,10 +8433,10 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.32,
+        price: 11.56,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44323044513&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44323044517&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_102699.100_noir_1.jpg&feedId=89032&k=1bd14672197dbb0b795f248ddfa0f1ada9093eaa",
         sizes: ["S", "M", "L", "XL", "2XL"],
       },
@@ -9179,10 +9179,9 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443794999&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fk%2Fu%2Fkuebler-sport_f1277_argente_1.jpg&feedId=89032&k=ab87b2511a2d5f3d91d90b854deb0e387d20eea3",
-        sizes: ["40/60 cm", "55/84 cm", "66/106 cm"],
+        sizes: ["40/60 cm", "66/106 cm"],
         sizePrices: [
           { size: "40/60 cm", price: 74.24, url: "https://www.awin1.com/pclick.php?p=45443794999&a=3013769&m=65912" },
-          { size: "55/84 cm", price: 86.94, url: "https://www.awin1.com/pclick.php?p=45443795000&a=3013769&m=65912" },
           { size: "66/106 cm", price: 94.46, url: "https://www.awin1.com/pclick.php?p=42529857879&a=3013769&m=65912" },
         ],
       },
@@ -9242,7 +9241,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 58.41,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46255303312&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46255335365&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fl%2Fe%2Flegea-x10-c1400003-2xl-white-6abf7b1b2ba90-1.jpg&feedId=89032&k=957e63f0f3027e1a3698cfa90af74fab94b2654a",
         sizes: ["S/M", "L/XL", "2XL"],
       },
@@ -9260,7 +9259,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
         price: 58.41,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46255296272&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46255328237&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fl%2Fe%2Flegea-x10-c1400001-2xl-orange-6abf7b1761735-1.jpg&feedId=89032&k=c9fb101061267ebcc6efba0121278a4b5e13a83c",
         sizes: ["S/M", "L/XL", "2XL"],
       },
@@ -9428,7 +9427,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.98,
+        price: 16.28,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45081933690&a=3013769&m=65912",
@@ -9455,7 +9454,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 406.27,
+        price: 412.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507452&a=3013769&m=65912",
@@ -9482,7 +9481,7 @@ const minedTrainingProductsChunk2: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 53.77,
+        price: 54.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529616099&a=3013769&m=65912",
@@ -10316,7 +10315,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         price: 31.87,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529471633&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529471632&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m415111_red_1.jpg&feedId=89032&k=9cb7e0db7712610d6c63136fff6ecdd280430508",
         sizes: ["S", "M"],
       },
@@ -10370,7 +10369,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         price: 32.26,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529471635&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529471636&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m415131.jpg&feedId=89032&k=88ceada78fa12dcd857ce1a06dbefdbf600b6b26",
         sizes: ["L", "XL"],
       },
@@ -10663,7 +10662,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 36.12,
-        priceMax: 37.85,
+        priceMax: 38.46,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44890834428&a=3013769&m=65912",
@@ -10822,7 +10821,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.0,
+        price: 26.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44444968416&a=3013769&m=65912",
@@ -10849,7 +10848,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.0,
+        price: 18.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43829773168&a=3013769&m=65912",
@@ -10903,7 +10902,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.81,
+        price: 30.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44038764259&a=3013769&m=65912",
@@ -10948,7 +10947,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.62,
+        price: 23.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529522465&a=3013769&m=65912",
@@ -10975,7 +10974,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.79,
+        price: 15.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529522466&a=3013769&m=65912",
@@ -11056,7 +11055,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.79,
+        price: 15.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529522469&a=3013769&m=65912",
@@ -11083,7 +11082,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.79,
+        price: 15.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529522470&a=3013769&m=65912",
@@ -11110,7 +11109,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.79,
+        price: 15.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39677187642&a=3013769&m=65912",
@@ -11137,7 +11136,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.79,
+        price: 15.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38259049676&a=3013769&m=65912",
@@ -11164,7 +11163,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.76,
+        price: 26.2,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529522472&a=3013769&m=65912",
@@ -11191,7 +11190,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 72.75,
+        price: 73.84,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529522473&a=3013769&m=65912",
@@ -11218,7 +11217,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.76,
+        price: 26.2,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529522474&a=3013769&m=65912",
@@ -11245,7 +11244,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.25,
+        price: 50.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529522471&a=3013769&m=65912",
@@ -11272,7 +11271,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.46,
+        price: 30.96,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39897579856&a=3013769&m=65912",
@@ -11317,7 +11316,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.25,
+        price: 50.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529524573&a=3013769&m=65912",
@@ -11344,7 +11343,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.42,
+        price: 42.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39563688860&a=3013769&m=65912",
@@ -11371,7 +11370,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 57.08,
+        price: 57.96,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529524558&a=3013769&m=65912",
@@ -11398,7 +11397,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.42,
+        price: 42.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529524559&a=3013769&m=65912",
@@ -11425,7 +11424,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.62,
+        price: 23.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40714955519&a=3013769&m=65912",
@@ -11452,7 +11451,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.76,
+        price: 26.2,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529524560&a=3013769&m=65912",
@@ -11479,7 +11478,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.46,
+        price: 30.96,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39096332331&a=3013769&m=65912",
@@ -11511,7 +11510,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 38.29,
+        price: 38.9,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40972212889&a=3013769&m=65912",
@@ -11529,7 +11528,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 57.08,
+        price: 57.96,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529524482&a=3013769&m=65912",
@@ -11556,7 +11555,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.59,
+        price: 34.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41177186404&a=3013769&m=65912",
@@ -11970,7 +11969,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 44.89,
+        price: 45.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41895784524&a=3013769&m=65912",
@@ -11997,7 +11996,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.48,
+        price: 34.03,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39216627541&a=3013769&m=65912",
@@ -12135,8 +12134,8 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
   {
     id: "powershot-chasuble-dentrainement-adulte-powershot-bleu",
     brand: "Powershot",
-    model: "Chaleco de entrenamiento para adultos PowerShot - Rojo",
-    colour: "Rojo",
+    model: "Chaleco de entrenamiento para adultos PowerShot - Azul",
+    colour: "Azul",
     type: "petos",
     offers: [
       {
@@ -12144,8 +12143,8 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
         price: 4.8,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923791857&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta921_chasuble-rouge-dos_1.jpg&feedId=89032&k=245c11bfaa0be3b3de23b14b552587b198a0d1f3",
+        url: "https://www.awin1.com/pclick.php?p=40109625401&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fa%2Fta092_chasuble-bleu_1.jpg&feedId=89032&k=151e81b16de152a66f4934cfdcecf22176fb3aeb",
         sizes: [],
       },
       {
@@ -12205,7 +12204,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     ],
   },
   {
-    id: "powershot-chaleco-de-entrenamiento-reversible-en-blanco-y-negro-powershot",
+    id: "powershot-chaleco-de-entrenamiento-reversible-en-blanco-y-negro-powershot-2",
     brand: "Powershot",
     model: "Chaleco de entrenamiento reversible en blanco y negro PowerShot",
     colour: "Negro",
@@ -12308,7 +12307,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.78,
+        price: 20.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530052873&a=3013769&m=65912",
@@ -12362,7 +12361,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.57,
+        price: 16.88,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485365149&a=3013769&m=65912",
@@ -12407,7 +12406,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.6,
+        price: 18.94,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923791824&a=3013769&m=65912",
@@ -12434,7 +12433,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.0,
+        price: 35.57,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45983282175&a=3013769&m=65912",
@@ -12461,7 +12460,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 37.54,
+        price: 38.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923791826&a=3013769&m=65912",
@@ -12488,7 +12487,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.1,
+        price: 30.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45577421417&a=3013769&m=65912",
@@ -12515,7 +12514,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 79.13,
+        price: 80.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923906614&a=3013769&m=65912",
@@ -12542,7 +12541,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 84.26,
+        price: 85.48,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38127514988&a=3013769&m=65912",
@@ -12569,7 +12568,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 79.13,
+        price: 80.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40012877271&a=3013769&m=65912",
@@ -12587,7 +12586,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 79.13,
+        price: 80.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40012877270&a=3013769&m=65912",
@@ -12614,7 +12613,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 79.13,
+        price: 80.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46183234513&a=3013769&m=65912",
@@ -12722,7 +12721,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.57,
+        price: 16.88,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38937591947&a=3013769&m=65912",
@@ -12749,7 +12748,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.86,
+        price: 37.45,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40249034999&a=3013769&m=65912",
@@ -12789,8 +12788,8 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 20.56,
-        priceMax: 30.03,
+        price: 20.93,
+        priceMax: 30.53,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38840207521&a=3013769&m=65912",
@@ -12826,7 +12825,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 40.65,
+        price: 41.28,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40714952446&a=3013769&m=65912",
@@ -12890,7 +12889,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 41.66,
-        priceMax: 43.62,
+        priceMax: 44.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40109625407&a=3013769&m=65912",
@@ -12942,7 +12941,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 141.0,
+        price: 143.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923802469&a=3013769&m=65912",
@@ -12969,7 +12968,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 265.1,
+        price: 268.87,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507442&a=3013769&m=65912",
@@ -12996,7 +12995,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 86.73,
+        price: 88.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923791829&a=3013769&m=65912",
@@ -13014,7 +13013,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 193.25,
+        price: 196.01,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44510939814&a=3013769&m=65912",
@@ -13041,7 +13040,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.1,
+        price: 30.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41576606069&a=3013769&m=65912",
@@ -13068,7 +13067,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.1,
+        price: 30.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42270679927&a=3013769&m=65912",
@@ -13095,7 +13094,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.1,
+        price: 30.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42270679926&a=3013769&m=65912",
@@ -13122,7 +13121,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.5,
+        price: 11.74,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923906648&a=3013769&m=65912",
@@ -13163,8 +13162,8 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 510.25,
-        priceMax: 586.33,
+        price: 517.42,
+        priceMax: 594.56,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507447&a=3013769&m=65912",
@@ -13182,7 +13181,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 231.29,
+        price: 234.58,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507446&a=3013769&m=65912",
@@ -13209,7 +13208,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 307.37,
+        price: 311.72,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507445&a=3013769&m=65912",
@@ -13236,7 +13235,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 425.72,
+        price: 431.71,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507454&a=3013769&m=65912",
@@ -13263,7 +13262,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 501.8,
+        price: 508.85,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507453&a=3013769&m=65912",
@@ -13290,7 +13289,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 269.33,
+        price: 273.15,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507451&a=3013769&m=65912",
@@ -13317,7 +13316,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 117.13,
+        price: 118.84,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507455&a=3013769&m=65912",
@@ -13371,7 +13370,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.95,
+        price: 20.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43839285516&a=3013769&m=65912",
@@ -13398,7 +13397,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.95,
+        price: 20.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45983282268&a=3013769&m=65912",
@@ -13425,7 +13424,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 124.77,
+        price: 126.59,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41065406849&a=3013769&m=65912",
@@ -13452,7 +13451,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 98.15,
+        price: 99.59,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529344332&a=3013769&m=65912",
@@ -13479,7 +13478,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 208.46,
+        price: 211.44,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41590073978&a=3013769&m=65912",
@@ -13506,7 +13505,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.53,
+        price: 26.98,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40714955658&a=3013769&m=65912",
@@ -13524,7 +13523,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.96,
+        price: 25.39,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529542481&a=3013769&m=65912",
@@ -13551,7 +13550,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.16,
+        price: 11.4,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42528984319&a=3013769&m=65912",
@@ -13725,16 +13724,16 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
   {
     id: "powershot-pintura-de-marcaje-de-campo-powershot-rojo",
     brand: "Powershot",
-    model: "Pintura de marcaje de campo PowerShot - Amarillo",
-    colour: "Amarillo",
+    model: "Pintura de marcaje de campo PowerShot - Rojo",
+    colour: "Rojo",
     type: "marcadores",
     offers: [
       {
         store: "FootStoreES",
-        price: 117.17,
+        price: 118.88,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42528984322&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42528984321&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ff%2Fa%2Ffa021_fa021_et_fa022_1.jpg&feedId=89032&k=3d7ab41e6ba39dc5d5cf5a0aea1aa192b82bc5ca",
         sizes: [],
       },
@@ -13758,7 +13757,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.09,
+        price: 41.74,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923791890&a=3013769&m=65912",
@@ -13785,7 +13784,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.5,
+        price: 53.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45081924045&a=3013769&m=65912",
@@ -13812,7 +13811,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 341.18,
+        price: 346.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507458&a=3013769&m=65912",
@@ -13839,7 +13838,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 71.52,
+        price: 72.59,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923930546&a=3013769&m=65912",
@@ -13866,7 +13865,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.09,
+        price: 41.74,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38127514987&a=3013769&m=65912",
@@ -13893,7 +13892,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 63.91,
+        price: 64.88,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923906617&a=3013769&m=65912",
@@ -13920,7 +13919,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.69,
+        price: 49.45,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38127514985&a=3013769&m=65912",
@@ -13974,7 +13973,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 79.13,
+        price: 80.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38489205465&a=3013769&m=65912",
@@ -14001,7 +14000,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 79.13,
+        price: 80.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529229042&a=3013769&m=65912",
@@ -14028,7 +14027,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 86.73,
+        price: 88.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923906618&a=3013769&m=65912",
@@ -14055,7 +14054,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 60.11,
+        price: 61.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923930552&a=3013769&m=65912",
@@ -14109,7 +14108,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.69,
+        price: 49.45,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43180597498&a=3013769&m=65912",
@@ -14127,7 +14126,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.09,
+        price: 41.74,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45983288807&a=3013769&m=65912",
@@ -14145,7 +14144,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.48,
+        price: 34.03,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37333933457&a=3013769&m=65912",
@@ -14179,7 +14178,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.48,
+        price: 34.03,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923930549&a=3013769&m=65912",
@@ -14197,7 +14196,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 75.32,
+        price: 76.45,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923930551&a=3013769&m=65912",
@@ -14215,7 +14214,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.67,
+        price: 30.17,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529294954&a=3013769&m=65912",
@@ -14247,7 +14246,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.69,
+        price: 49.45,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529616101&a=3013769&m=65912",
@@ -14265,7 +14264,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 37.28,
+        price: 37.88,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46238048169&a=3013769&m=65912",
@@ -14283,7 +14282,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.69,
+        price: 49.45,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38366650521&a=3013769&m=65912",
@@ -14337,7 +14336,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.48,
+        price: 34.03,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44536073248&a=3013769&m=65912",
@@ -14364,7 +14363,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 56.3,
+        price: 57.17,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530052875&a=3013769&m=65912",
@@ -14391,7 +14390,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 56.3,
+        price: 57.17,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45888237266&a=3013769&m=65912",
@@ -14418,7 +14417,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 60.11,
+        price: 61.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40012877269&a=3013769&m=65912",
@@ -14445,7 +14444,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 79.13,
+        price: 80.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38127514986&a=3013769&m=65912",
@@ -14472,7 +14471,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 71.52,
+        price: 72.59,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42528984320&a=3013769&m=65912",
@@ -14499,7 +14498,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.21,
+        price: 19.56,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38220365309&a=3013769&m=65912",
@@ -14526,7 +14525,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.21,
+        price: 19.56,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923802467&a=3013769&m=65912",
@@ -14697,7 +14696,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 155.21,
+        price: 157.45,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45931748380&a=3013769&m=65912",
@@ -14724,7 +14723,7 @@ const minedTrainingProductsChunk3: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.22,
+        price: 22.61,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38388344075&a=3013769&m=65912",
@@ -14754,7 +14753,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.07,
+        price: 22.46,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923791841&a=3013769&m=65912",
@@ -14862,7 +14861,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.23,
+        price: 31.75,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930523&a=3013769&m=65912",
@@ -14889,7 +14888,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.96,
+        price: 36.54,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930524&a=3013769&m=65912",
@@ -14916,7 +14915,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.39,
+        price: 53.2,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930525&a=3013769&m=65912",
@@ -14943,7 +14942,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.23,
+        price: 31.75,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930526&a=3013769&m=65912",
@@ -14970,7 +14969,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.49,
+        price: 19.85,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930527&a=3013769&m=65912",
@@ -14997,7 +14996,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.2,
+        price: 24.62,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930528&a=3013769&m=65912",
@@ -15150,7 +15149,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.27,
+        price: 25.71,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38212381171&a=3013769&m=65912",
@@ -15204,7 +15203,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.34,
+        price: 25.78,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529643503&a=3013769&m=65912",
@@ -15231,7 +15230,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 72.46,
+        price: 73.55,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985458753&a=3013769&m=65912",
@@ -15258,7 +15257,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 72.46,
+        price: 73.55,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985458754&a=3013769&m=65912",
@@ -15573,7 +15572,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.76,
+        price: 22.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41570712878&a=3013769&m=65912",
@@ -15600,7 +15599,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.76,
+        price: 22.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42209875663&a=3013769&m=65912",
@@ -15627,7 +15626,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.76,
+        price: 22.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43717953744&a=3013769&m=65912",
@@ -15693,7 +15692,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.51,
+        price: 19.87,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42209888062&a=3013769&m=65912",
@@ -15720,7 +15719,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.51,
+        price: 19.87,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42209888061&a=3013769&m=65912",
@@ -15855,7 +15854,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.8,
+        price: 33.33,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529932223&a=3013769&m=65912",
@@ -15882,7 +15881,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.3,
+        price: 15.59,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529932224&a=3013769&m=65912",
@@ -15954,7 +15953,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.34,
+        price: 15.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930769&a=3013769&m=65912",
@@ -15981,7 +15980,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.22,
+        price: 35.8,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44301916281&a=3013769&m=65912",
@@ -16009,7 +16008,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 21.0,
-        priceMax: 34.97,
+        priceMax: 35.54,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529643564&a=3013769&m=65912",
@@ -16017,7 +16016,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         sizes: ["4 m", "8 m"],
         sizePrices: [
           { size: "4 m", price: 21.0, url: "https://www.awin1.com/pclick.php?p=42529643564&a=3013769&m=65912" },
-          { size: "8 m", price: 34.97, url: "https://www.awin1.com/pclick.php?p=42529643565&a=3013769&m=65912" },
+          { size: "8 m", price: 35.54, url: "https://www.awin1.com/pclick.php?p=42529643565&a=3013769&m=65912" },
         ],
       },
       {
@@ -16045,7 +16044,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.56,
+        price: 33.09,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529645413&a=3013769&m=65912",
@@ -16063,7 +16062,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.38,
+        price: 20.74,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529645414&a=3013769&m=65912",
@@ -16203,7 +16202,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.4,
+        price: 20.76,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39669358668&a=3013769&m=65912",
@@ -16230,7 +16229,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.4,
+        price: 20.76,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43717953642&a=3013769&m=65912",
@@ -16257,7 +16256,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.4,
+        price: 20.76,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38516884902&a=3013769&m=65912",
@@ -16500,7 +16499,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.66,
+        price: 29.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43219402018&a=3013769&m=65912",
@@ -16527,7 +16526,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.2,
+        price: 18.53,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529643635&a=3013769&m=65912",
@@ -16977,7 +16976,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 87.51,
+        price: 88.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41438395597&a=3013769&m=65912",
@@ -17127,7 +17126,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.82,
+        price: 32.35,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44139346323&a=3013769&m=65912",
@@ -17191,18 +17190,18 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 126.11,
-        priceMax: 194.39,
+        price: 127.95,
+        priceMax: 197.17,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45526315609&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_trn4012_white_1.jpg&feedId=89032&k=df5ff5ec1f30ded2354116f601555ee405758c30",
         sizes: ["366x183 cm", "488x214 cm", "640x214 cm", "732x244 cm"],
         sizePrices: [
-          { size: "366x183 cm", price: 126.11, url: "https://www.awin1.com/pclick.php?p=45526315609&a=3013769&m=65912" },
-          { size: "488x214 cm", price: 139.95, url: "https://www.awin1.com/pclick.php?p=42529646152&a=3013769&m=65912" },
-          { size: "640x214 cm", price: 180.87, url: "https://www.awin1.com/pclick.php?p=42529646153&a=3013769&m=65912" },
-          { size: "732x244 cm", price: 194.39, url: "https://www.awin1.com/pclick.php?p=42529646154&a=3013769&m=65912" },
+          { size: "366x183 cm", price: 127.95, url: "https://www.awin1.com/pclick.php?p=45526315609&a=3013769&m=65912" },
+          { size: "488x214 cm", price: 141.98, url: "https://www.awin1.com/pclick.php?p=42529646152&a=3013769&m=65912" },
+          { size: "640x214 cm", price: 183.46, url: "https://www.awin1.com/pclick.php?p=42529646153&a=3013769&m=65912" },
+          { size: "732x244 cm", price: 197.17, url: "https://www.awin1.com/pclick.php?p=42529646154&a=3013769&m=65912" },
         ],
       },
       {
@@ -17232,18 +17231,18 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 176.18,
-        priceMax: 224.23,
+        price: 178.71,
+        priceMax: 227.43,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529646155&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_trn020_noir-rouge_1.jpg&feedId=89032&k=280ec53baa2343f11988edf7ca044c5d33d44574",
         sizes: ["366x183 cm", "488x214 cm", "640x244", "732x244 cm"],
         sizePrices: [
-          { size: "366x183 cm", price: 176.18, url: "https://www.awin1.com/pclick.php?p=42529646155&a=3013769&m=65912" },
-          { size: "488x214 cm", price: 193.51, url: "https://www.awin1.com/pclick.php?p=42529646156&a=3013769&m=65912" },
-          { size: "640x244", price: 196.71, url: "https://www.awin1.com/pclick.php?p=42529646158&a=3013769&m=65912" },
-          { size: "732x244 cm", price: 224.23, url: "https://www.awin1.com/pclick.php?p=42529646157&a=3013769&m=65912" },
+          { size: "366x183 cm", price: 178.71, url: "https://www.awin1.com/pclick.php?p=42529646155&a=3013769&m=65912" },
+          { size: "488x214 cm", price: 196.28, url: "https://www.awin1.com/pclick.php?p=42529646156&a=3013769&m=65912" },
+          { size: "640x244", price: 199.52, url: "https://www.awin1.com/pclick.php?p=42529646158&a=3013769&m=65912" },
+          { size: "732x244 cm", price: 227.43, url: "https://www.awin1.com/pclick.php?p=42529646157&a=3013769&m=65912" },
         ],
       },
       {
@@ -17273,18 +17272,18 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 79.77,
-        priceMax: 126.11,
+        price: 80.0,
+        priceMax: 127.95,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163917515&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_trn4112_white_1.jpg&feedId=89032&k=22411311574b3d72dd01dd78199035402d2255ef",
         sizes: ["365.76x182.88 cm", "487.68x213.36 cm", "640.08x213.36 cm", "731.52x243.84 cm"],
         sizePrices: [
-          { size: "365.76x182.88 cm", price: 79.77, url: "https://www.awin1.com/pclick.php?p=46163917515&a=3013769&m=65912" },
-          { size: "487.68x213.36 cm", price: 98.74, url: "https://www.awin1.com/pclick.php?p=42529643569&a=3013769&m=65912" },
-          { size: "640.08x213.36 cm", price: 112.59, url: "https://www.awin1.com/pclick.php?p=42529643566&a=3013769&m=65912" },
-          { size: "731.52x243.84 cm", price: 126.11, url: "https://www.awin1.com/pclick.php?p=42529643567&a=3013769&m=65912" },
+          { size: "365.76x182.88 cm", price: 80.0, url: "https://www.awin1.com/pclick.php?p=46163917515&a=3013769&m=65912" },
+          { size: "487.68x213.36 cm", price: 99.0, url: "https://www.awin1.com/pclick.php?p=42529643569&a=3013769&m=65912" },
+          { size: "640.08x213.36 cm", price: 113.0, url: "https://www.awin1.com/pclick.php?p=42529643566&a=3013769&m=65912" },
+          { size: "731.52x243.84 cm", price: 127.95, url: "https://www.awin1.com/pclick.php?p=42529643567&a=3013769&m=65912" },
         ],
       },
       {
@@ -17314,17 +17313,17 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 37.76,
-        priceMax: 55.61,
+        price: 38.0,
+        priceMax: 56.47,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44179081071&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision-trg311net-blanc-1.jpg&feedId=89032&k=be1e76624b56ad38053bbc97971628f9aae12f25",
         sizes: ["122x76 cm", "182.88x122 cm", "243.84x182.88 cm"],
         sizePrices: [
-          { size: "122x76 cm", price: 37.76, url: "https://www.awin1.com/pclick.php?p=44179081071&a=3013769&m=65912" },
-          { size: "182.88x122 cm", price: 45.69, url: "https://www.awin1.com/pclick.php?p=44179081072&a=3013769&m=65912" },
-          { size: "243.84x182.88 cm", price: 55.61, url: "https://www.awin1.com/pclick.php?p=44179081073&a=3013769&m=65912" },
+          { size: "122x76 cm", price: 38.0, url: "https://www.awin1.com/pclick.php?p=44179081071&a=3013769&m=65912" },
+          { size: "182.88x122 cm", price: 46.0, url: "https://www.awin1.com/pclick.php?p=44179081072&a=3013769&m=65912" },
+          { size: "243.84x182.88 cm", price: 56.47, url: "https://www.awin1.com/pclick.php?p=44179081073&a=3013769&m=65912" },
         ],
       },
       {
@@ -17434,7 +17433,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.8,
+        price: 26.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39717708641&a=3013769&m=65912",
@@ -17488,7 +17487,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.56,
+        price: 32.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46269562960&a=3013769&m=65912",
@@ -17506,7 +17505,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.96,
+        price: 28.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43097660029&a=3013769&m=65912",
@@ -17560,7 +17559,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 107.99,
+        price: 108.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38297833360&a=3013769&m=65912",
@@ -17578,7 +17577,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 180.61,
+        price: 183.2,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39656024481&a=3013769&m=65912",
@@ -17706,10 +17705,10 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.85,
+        price: 9.05,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44981376314&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44981376315&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F6%2F5%2F657251-45_1.jpg&feedId=89032&k=319eede3b57c85429a7b5a7f2122f1d6b618db9e",
         sizes: ["S", "XL"],
       },
@@ -17763,7 +17762,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         price: 10.0,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45795638330&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45795638329&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fu%2Fpuma-660717-30-6a8e10fd2a67d-1.jpg&feedId=89032&k=a6ad07dc029359d3eac667258b48aad2a8dd965e",
         sizes: ["S", "XL"],
       },
@@ -17790,7 +17789,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         price: 10.0,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45795638332&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45795638331&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fu%2Fpuma-660717-46-6a8e11041ecb4-1.jpg&feedId=89032&k=0658015517591e9d593349c876c25d0e53ab6533",
         sizes: ["S", "XL"],
       },
@@ -17922,7 +17921,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.53,
+        price: 24.95,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529875722&a=3013769&m=65912",
@@ -18080,7 +18079,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.58,
+        price: 32.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37465091770&a=3013769&m=65912",
@@ -18107,7 +18106,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.93,
+        price: 15.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923903665&a=3013769&m=65912",
@@ -18134,7 +18133,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 108.22,
+        price: 109.8,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529222214&a=3013769&m=65912",
@@ -18161,7 +18160,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 89.24,
+        price: 90.56,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923903649&a=3013769&m=65912",
@@ -18476,7 +18475,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.67,
+        price: 32.19,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104824348&a=3013769&m=65912",
@@ -18503,7 +18502,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.95,
+        price: 12.2,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42746524884&a=3013769&m=65912",
@@ -18530,7 +18529,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 88.92,
+        price: 90.24,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43362467416&a=3013769&m=65912",
@@ -18557,7 +18556,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.2,
+        price: 5.36,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39041451408&a=3013769&m=65912",
@@ -18611,7 +18610,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.2,
+        price: 5.36,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923867796&a=3013769&m=65912",
@@ -18656,7 +18655,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 37.54,
+        price: 38.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45819195418&a=3013769&m=65912",
@@ -18710,7 +18709,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.63,
+        price: 24.94,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44023880858&a=3013769&m=65912",
@@ -18900,8 +18899,8 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsodex-sport_s12922kl_noir_1.jpg&feedId=89032&k=16e3e8c399d4bf020e9d1a0841dc0d97a335cbbf",
         sizes: ["7.5x2.5x0.8x2.0 m", "7.5x2.5x2.0x2.0 m"],
         sizePrices: [
-          { size: "7.5x2.5x0.8x2.0 m", price: 257.22, url: "https://www.awin1.com/pclick.php?p=42529688489&a=3013769&m=65912" },
           { size: "7.5x2.5x0.8x2.0 m", price: 197.37, url: "https://www.awin1.com/pclick.php?p=42529688485&a=3013769&m=65912" },
+          { size: "7.5x2.5x0.8x2.0 m", price: 257.22, url: "https://www.awin1.com/pclick.php?p=42529688489&a=3013769&m=65912" },
           { size: "7.5x2.5x2.0x2.0 m", price: 215.06, url: "https://www.awin1.com/pclick.php?p=42529688488&a=3013769&m=65912" },
         ],
       },
@@ -19076,7 +19075,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 82.92,
+        price: 84.38,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40875401501&a=3013769&m=65912",
@@ -19229,7 +19228,7 @@ const minedTrainingProductsChunk4: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 37.17,
+        price: 37.61,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529688504&a=3013769&m=65912",
@@ -20095,7 +20094,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 45.52,
+        price: 38.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285909&a=3013769&m=65912",
@@ -20770,7 +20769,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.07,
+        price: 10.29,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921573&a=3013769&m=65912",
@@ -21337,7 +21336,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.0,
+        price: 6.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285945&a=3013769&m=65912",
@@ -21499,7 +21498,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.0,
+        price: 6.17,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39781220134&a=3013769&m=65912",
@@ -22084,7 +22083,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.0,
+        price: 6.17,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285941&a=3013769&m=65912",
@@ -22408,7 +22407,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.0,
+        price: 6.17,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285953&a=3013769&m=65912",
@@ -23214,7 +23213,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.0,
+        price: 6.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285981&a=3013769&m=65912",
@@ -23295,7 +23294,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.0,
+        price: 6.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285987&a=3013769&m=65912",
@@ -23376,7 +23375,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.0,
+        price: 6.17,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529285988&a=3013769&m=65912",
@@ -23862,7 +23861,7 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.85,
+        price: 11.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286143&a=3013769&m=65912",
@@ -24266,31 +24265,27 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
     type: "petos",
     offers: [
       {
-        store: "FootStoreES",
-        price: 15.38,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41098844424&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F7%2F9%2F79008.004.2.jpg&feedId=89032&k=d83920ccd2b78f4e92294a895d1984a5a1d97f36",
-        sizes: [],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 16.52,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43301577676&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F7%2F9%2F79008.004.2.jpg&feedId=89044&k=d83920ccd2b78f4e92294a895d1984a5a1d97f36",
-        sizes: [],
-      },
-      {
         store: "FootStoreFR",
         price: 14.75,
+        priceMax: 23.63,
         shipping: 6.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79008-004-2-lot-de-5-chasubles-numerotees-de-1-a-5-softee-verde-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/7/9/79008.004.2.webp",
         sizes: ["TU"],
+        sizePrices: [
+          { size: "TU", price: 14.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79008-004-2-lot-de-5-chasubles-numerotees-de-1-a-5-softee-verde-tu" },
+        ],
+      },
+      {
+        store: "FootStoreES",
+        price: 15.65,
+        priceMax: 26.17,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41098844424&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F7%2F9%2F79008.004.2.jpg&feedId=89032&k=d83920ccd2b78f4e92294a895d1984a5a1d97f36",
+        sizes: [],
       },
       {
         store: "SportIsGoodFR",
@@ -24301,31 +24296,13 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/7/9/79008.004.2.webp",
         sizes: ["TU"],
       },
-    ],
-  },
-  {
-    id: "softee-lote-de-5-petos-numerados-del-1-al-5-softee-verde",
-    brand: "Softee",
-    model: "Lote de 5 petos numerados del 1 al 5 Softee - Verde",
-    colour: "Verde",
-    type: "petos",
-    offers: [
       {
-        store: "FootStoreFR",
-        price: 23.63,
-        shipping: 6.99,
+        store: "SportIsGoodES",
+        price: 16.52,
+        shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F79008-004-1-lot-de-5-chasubles-numerotes-du-1-au-5-softee-vert-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_79008.003.1.webp",
-        sizes: ["TU"],
-      },
-      {
-        store: "FootStoreES",
-        price: 26.17,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529286144&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_79008.003.1.jpg&feedId=89032&k=b6cea31018f0bf93b1958ab64cf8632bb80169ea",
+        url: "https://www.awin1.com/pclick.php?p=43301577676&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F7%2F9%2F79008.004.2.jpg&feedId=89044&k=d83920ccd2b78f4e92294a895d1984a5a1d97f36",
         sizes: [],
       },
     ],
@@ -24546,9 +24523,6 @@ const minedTrainingProductsChunk5: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk6: TrainingProduct[] = [
   {
     id: "softee-lot-de-5-chasubles-numerotees-de-11-a-15-softee-vert",
     brand: "Softee",
@@ -24576,6 +24550,9 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk6: TrainingProduct[] = [
   {
     id: "softee-lot-de-5-chasubles-numerotes-du-16-a-20-softee-bleu",
     brand: "Softee",
@@ -25764,7 +25741,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 69.0,
+        price: 70.04,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286051&a=3013769&m=65912",
@@ -25791,7 +25768,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.1,
+        price: 30.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529286049&a=3013769&m=65912",
@@ -26420,7 +26397,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.78,
+        price: 14.96,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529347337&a=3013769&m=65912",
@@ -26870,7 +26847,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.31,
+        price: 39.94,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44389419173&a=3013769&m=65912",
@@ -26897,7 +26874,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.25,
+        price: 11.49,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894364&a=3013769&m=65912",
@@ -26942,7 +26919,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.6,
+        price: 24.01,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923802106&a=3013769&m=65912",
@@ -26969,7 +26946,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.39,
+        price: 35.96,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38259047141&a=3013769&m=65912",
@@ -26996,7 +26973,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.59,
+        price: 16.89,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45184712114&a=3013769&m=65912",
@@ -27023,7 +27000,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.87,
+        price: 8.9,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529229023&a=3013769&m=65912",
@@ -27050,7 +27027,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.97,
+        price: 17.29,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529229022&a=3013769&m=65912",
@@ -27077,7 +27054,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.55,
+        price: 12.81,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923906579&a=3013769&m=65912",
@@ -27104,7 +27081,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.82,
+        price: 11.9,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45698831772&a=3013769&m=65912",
@@ -27158,7 +27135,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.18,
+        price: 19.53,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529214771&a=3013769&m=65912",
@@ -27212,7 +27189,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.39,
+        price: 21.77,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894366&a=3013769&m=65912",
@@ -27293,7 +27270,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.73,
+        price: 14.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42246664033&a=3013769&m=65912",
@@ -27347,7 +27324,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.35,
+        price: 15.65,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894189&a=3013769&m=65912",
@@ -27374,7 +27351,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.94,
+        price: 50.71,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894193&a=3013769&m=65912",
@@ -27401,7 +27378,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.94,
+        price: 50.71,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894192&a=3013769&m=65912",
@@ -27428,7 +27405,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.94,
+        price: 50.71,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894191&a=3013769&m=65912",
@@ -27455,7 +27432,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.94,
+        price: 50.71,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38047249208&a=3013769&m=65912",
@@ -27482,7 +27459,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.71,
+        price: 18.04,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104832699&a=3013769&m=65912",
@@ -27500,7 +27477,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 607.5,
+        price: 616.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923789025&a=3013769&m=65912",
@@ -27557,8 +27534,8 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 5.26,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529229013&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063116-33714.jpg&feedId=89032&k=6640c0316adcfad9aba7882ef7576313f627d01c",
+        url: "https://www.awin1.com/pclick.php?p=37923894212&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fp%2Fsporti-france_063116-33716_mag2370870_1.jpg&feedId=89032&k=97e85957d54d2567c325a02314ee068761b8ba4f",
         sizes: ["XS", "S", "M", "L"],
       },
       {
@@ -27584,7 +27561,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 5.26,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923894213&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923894215&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063116-33715_1.jpg&feedId=89032&k=772cc8f9c152842d39db6f4815cef419e3251302",
         sizes: ["XS", "S", "M", "L"],
       },
@@ -27608,7 +27585,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 1.7,
+        price: 1.73,
         priceMax: 5.26,
         shipping: 8.99,
         currency: "EUR",
@@ -27617,7 +27594,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         sizes: ["XS", "S", "M", "L"],
         sizePrices: [
           { size: "XS", price: 5.26, url: "https://www.awin1.com/pclick.php?p=42529229010&a=3013769&m=65912" },
-          { size: "S", price: 1.7, url: "https://www.awin1.com/pclick.php?p=36485367107&a=3013769&m=65912" },
+          { size: "S", price: 1.73, url: "https://www.awin1.com/pclick.php?p=36485367107&a=3013769&m=65912" },
           { size: "M", price: 5.26, url: "https://www.awin1.com/pclick.php?p=37923894216&a=3013769&m=65912" },
           { size: "L", price: 5.26, url: "https://www.awin1.com/pclick.php?p=37923894217&a=3013769&m=65912" },
         ],
@@ -27697,7 +27674,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 4.46,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43810787206&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444786&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063209_4.jpg&feedId=89032&k=eb64eb7890a8eb187626d94cb29dfef5de53346e",
         sizes: ["XS", "M", "XL"],
       },
@@ -27724,8 +27701,8 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 4.46,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43810791344&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F6%2F3%2F63209_2.jpg&feedId=89032&k=32d0d43e50e44f0caf319aa13d53dece5099ac37",
+        url: "https://www.awin1.com/pclick.php?p=43810791346&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F6%2F3%2F63209_2.jpg&feedId=89032&k=b4cd1f62fdb4776f32652fb6bd45e255b753a1c2",
         sizes: ["XS", "M", "XL"],
       },
       {
@@ -27751,7 +27728,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 4.46,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985446214&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985446213&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063209_5_1.jpg&feedId=89032&k=d964891cbddbcaa073c95004bb10694cd207288c",
         sizes: ["XS", "M", "XL"],
       },
@@ -27778,7 +27755,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 4.46,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985444762&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444753&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F6%2F3%2F63209_1.jpg&feedId=89032&k=5d85b659f8d36cd839875d84337edf24e10d4056",
         sizes: ["XS", "M", "XL"],
       },
@@ -27805,7 +27782,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 4.46,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985446457&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444754&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fs%2Fps-063209-sf-noir_chasuble-sporti-ref-.jpg&feedId=89032&k=56c0e2d2825c0cb703a14714a243f26f191ea167",
         sizes: ["XS", "M", "XL"],
       },
@@ -27832,7 +27809,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 4.46,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985444751&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444752&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063209_1.jpg&feedId=89032&k=5c9d9ab22efe46ca156043ab6e572ed6817b4244",
         sizes: ["XS", "M", "XL"],
       },
@@ -27859,7 +27836,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 4.46,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985444755&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444793&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F6%2F3%2F63209_1_1.jpg&feedId=89032&k=4298b86d140a18c0900b999e6eaee1500418e76e",
         sizes: ["M", "XL"],
       },
@@ -27886,7 +27863,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
         price: 4.46,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985444761&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444758&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063209_2_1.jpg&feedId=89032&k=a1c5b24182fed8cb403178a1da36f4dd84b46dc9",
         sizes: ["XS", "M", "XL"],
       },
@@ -27910,7 +27887,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.13,
+        price: 36.71,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923785694&a=3013769&m=65912",
@@ -27937,10 +27914,10 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 57.45,
+        price: 58.34,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41442417628&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41505482939&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fp%2Fsporti_063237-noir_blanc_noir-blanc_1.jpg&feedId=89032&k=df05b41e2cc4ca9ca541b8d8a6cd2e3ea633e07c",
         sizes: ["M", "XL"],
       },
@@ -27964,7 +27941,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 57.45,
+        price: 58.34,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41695386780&a=3013769&m=65912",
@@ -27991,10 +27968,10 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.23,
+        price: 7.41,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985446152&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985444759&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063250-chasubles-rversibles-sporti-ref-_1.jpg&feedId=89032&k=37c1619f7ebdcbf7a03140dd8e2afc5d80faaf02",
         sizes: ["Adulte", "Junior", "Kid", "Mini"],
       },
@@ -28018,17 +27995,17 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.66,
-        priceMax: 7.23,
+        price: 3.75,
+        priceMax: 7.41,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985446158&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063250-chasubles-rversibles-sporti-ref-_1.jpg&feedId=89032&k=f088e0c2b22e2e9d6bfc2d1d789a16f645253aa8",
         sizes: ["Junior", "Kid", "Mini"],
         sizePrices: [
-          { size: "Junior", price: 7.23, url: "https://www.awin1.com/pclick.php?p=40985446156&a=3013769&m=65912" },
-          { size: "Kid", price: 7.23, url: "https://www.awin1.com/pclick.php?p=40985446157&a=3013769&m=65912" },
-          { size: "Mini", price: 3.66, url: "https://www.awin1.com/pclick.php?p=40985446158&a=3013769&m=65912" },
+          { size: "Junior", price: 7.41, url: "https://www.awin1.com/pclick.php?p=40985446156&a=3013769&m=65912" },
+          { size: "Kid", price: 7.41, url: "https://www.awin1.com/pclick.php?p=40985446157&a=3013769&m=65912" },
+          { size: "Mini", price: 3.75, url: "https://www.awin1.com/pclick.php?p=40985446158&a=3013769&m=65912" },
         ],
       },
       {
@@ -28075,18 +28052,18 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 3.66,
-        priceMax: 7.23,
+        price: 3.75,
+        priceMax: 7.41,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985446153&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F6%2F3%2F63250_1__4.jpg&feedId=89032&k=cb33f6bc36522929d8161f5700a7e25cb97734ac",
         sizes: ["Adulte", "Junior", "Kid", "Mini"],
         sizePrices: [
-          { size: "Adulte", price: 7.23, url: "https://www.awin1.com/pclick.php?p=40985444745&a=3013769&m=65912" },
-          { size: "Junior", price: 6.88, url: "https://www.awin1.com/pclick.php?p=40985444746&a=3013769&m=65912" },
-          { size: "Kid", price: 3.66, url: "https://www.awin1.com/pclick.php?p=40985446153&a=3013769&m=65912" },
-          { size: "Mini", price: 7.23, url: "https://www.awin1.com/pclick.php?p=40985446154&a=3013769&m=65912" },
+          { size: "Adulte", price: 7.41, url: "https://www.awin1.com/pclick.php?p=40985444745&a=3013769&m=65912" },
+          { size: "Junior", price: 7.05, url: "https://www.awin1.com/pclick.php?p=40985444746&a=3013769&m=65912" },
+          { size: "Kid", price: 3.75, url: "https://www.awin1.com/pclick.php?p=40985446153&a=3013769&m=65912" },
+          { size: "Mini", price: 7.41, url: "https://www.awin1.com/pclick.php?p=40985446154&a=3013769&m=65912" },
         ],
       },
       {
@@ -28144,11 +28121,11 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.23,
+        price: 7.41,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43810787209&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063250-chasubles-rversibles-sporti-ref-_1.jpg&feedId=89032&k=f088e0c2b22e2e9d6bfc2d1d789a16f645253aa8",
+        url: "https://www.awin1.com/pclick.php?p=42322010176&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063250-chasubles-rversibles-sporti-ref-_1.jpg&feedId=89032&k=37c1619f7ebdcbf7a03140dd8e2afc5d80faaf02",
         sizes: ["Adulte", "Kid", "Mini"],
       },
       {
@@ -28172,15 +28149,15 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 28.82,
-        priceMax: 30.25,
+        priceMax: 30.75,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894316&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063238-33746_0.jpg&feedId=89032&k=c8d4271a8a8f2630205e82bc71afc10654408c84",
         sizes: ["XS", "M", "XL"],
         sizePrices: [
-          { size: "XS", price: 30.25, url: "https://www.awin1.com/pclick.php?p=37923894315&a=3013769&m=65912" },
-          { size: "M", price: 30.25, url: "https://www.awin1.com/pclick.php?p=37923894317&a=3013769&m=65912" },
+          { size: "XS", price: 30.75, url: "https://www.awin1.com/pclick.php?p=37923894315&a=3013769&m=65912" },
+          { size: "M", price: 30.75, url: "https://www.awin1.com/pclick.php?p=37923894317&a=3013769&m=65912" },
           { size: "XL", price: 28.82, url: "https://www.awin1.com/pclick.php?p=37923894316&a=3013769&m=65912" },
         ],
       },
@@ -28222,17 +28199,17 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.4,
-        priceMax: 30.25,
+        price: 23.73,
+        priceMax: 30.75,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894320&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063238-33749_0.jpg&feedId=89032&k=f32b444302db99593e4cc7c8e983dcf5d1c10056",
         sizes: ["XS", "M", "XL"],
         sizePrices: [
-          { size: "XS", price: 30.25, url: "https://www.awin1.com/pclick.php?p=37923894319&a=3013769&m=65912" },
+          { size: "XS", price: 30.75, url: "https://www.awin1.com/pclick.php?p=37923894319&a=3013769&m=65912" },
           { size: "M", price: 28.82, url: "https://www.awin1.com/pclick.php?p=37923894318&a=3013769&m=65912" },
-          { size: "XL", price: 23.4, url: "https://www.awin1.com/pclick.php?p=37923894320&a=3013769&m=65912" },
+          { size: "XL", price: 23.73, url: "https://www.awin1.com/pclick.php?p=37923894320&a=3013769&m=65912" },
         ],
       },
       {
@@ -28289,10 +28266,10 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.25,
+        price: 30.75,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923894322&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923894321&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063236-34951_0.jpg&feedId=89032&k=94e560e7e49eb8d155cf718fec74f633c1de1ede",
         sizes: ["XS", "M", "XL"],
       },
@@ -28316,17 +28293,17 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.4,
-        priceMax: 30.25,
+        price: 23.73,
+        priceMax: 30.75,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894324&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063236-34948_0.jpg&feedId=89032&k=f3739ce21d0c2eaf76b9e08b621cc98d07eb8128",
         sizes: ["XS", "M", "XL"],
         sizePrices: [
-          { size: "XS", price: 30.25, url: "https://www.awin1.com/pclick.php?p=37923894326&a=3013769&m=65912" },
-          { size: "M", price: 30.25, url: "https://www.awin1.com/pclick.php?p=37923894325&a=3013769&m=65912" },
-          { size: "XL", price: 23.4, url: "https://www.awin1.com/pclick.php?p=37923894324&a=3013769&m=65912" },
+          { size: "XS", price: 30.75, url: "https://www.awin1.com/pclick.php?p=37923894326&a=3013769&m=65912" },
+          { size: "M", price: 30.75, url: "https://www.awin1.com/pclick.php?p=37923894325&a=3013769&m=65912" },
+          { size: "XL", price: 23.73, url: "https://www.awin1.com/pclick.php?p=37923894324&a=3013769&m=65912" },
         ],
       },
       {
@@ -28571,7 +28548,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.44,
+        price: 32.98,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923802354&a=3013769&m=65912",
@@ -28598,7 +28575,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 55.79,
+        price: 56.63,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40698126627&a=3013769&m=65912",
@@ -28625,7 +28602,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.76,
+        price: 29.24,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894242&a=3013769&m=65912",
@@ -28652,7 +28629,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 172.4,
+        price: 174.88,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894424&a=3013769&m=65912",
@@ -28679,7 +28656,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 101.16,
+        price: 102.65,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40143253038&a=3013769&m=65912",
@@ -28697,7 +28674,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.51,
+        price: 49.27,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894243&a=3013769&m=65912",
@@ -28724,7 +28701,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.46,
+        price: 22.86,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654167661&a=3013769&m=65912",
@@ -28805,7 +28782,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.52,
+        price: 15.82,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40638737077&a=3013769&m=65912",
@@ -28832,7 +28809,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.25,
+        price: 11.49,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923867725&a=3013769&m=65912",
@@ -28859,7 +28836,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.66,
+        price: 30.16,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44797431624&a=3013769&m=65912",
@@ -28958,7 +28935,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.03,
+        price: 14.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40837033368&a=3013769&m=65912",
@@ -29147,7 +29124,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.71,
+        price: 18.04,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529214789&a=3013769&m=65912",
@@ -29174,7 +29151,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.2,
+        price: 15.49,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43468478587&a=3013769&m=65912",
@@ -29228,7 +29205,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.9,
+        price: 23.3,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40985449655&a=3013769&m=65912",
@@ -29255,7 +29232,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.9,
+        price: 20.26,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894282&a=3013769&m=65912",
@@ -29282,7 +29259,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.82,
+        price: 11.9,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894293&a=3013769&m=65912",
@@ -29309,7 +29286,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.39,
+        price: 21.77,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36554208104&a=3013769&m=65912",
@@ -29336,7 +29313,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 43.49,
+        price: 44.18,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894423&a=3013769&m=65912",
@@ -29363,7 +29340,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.08,
+        price: 11.2,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44188982019&a=3013769&m=65912",
@@ -29390,7 +29367,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.11,
+        price: 18.45,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795608&a=3013769&m=65912",
@@ -29417,7 +29394,7 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.9,
+        price: 9.11,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923871552&a=3013769&m=65912",
@@ -29435,9 +29412,6 @@ const minedTrainingProductsChunk6: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk7: TrainingProduct[] = [
   {
     id: "sporti-multimarcadores-gigantes-altura-15cm-lote-de-40-multicolor",
     brand: "Sporti",
@@ -29447,7 +29421,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 72.96,
+        price: 74.05,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923787912&a=3013769&m=65912",
@@ -29465,6 +29439,9 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk7: TrainingProduct[] = [
   {
     id: "sporti-multimarcadores-gigantes-con-muescas-sporti-multicolor",
     brand: "Sporti",
@@ -29474,7 +29451,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.25,
+        price: 26.7,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894336&a=3013769&m=65912",
@@ -29501,7 +29478,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.4,
+        price: 13.66,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923783674&a=3013769&m=65912",
@@ -29546,7 +29523,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.6,
+        price: 24.01,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38259048609&a=3013769&m=65912",
@@ -29573,7 +29550,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 150.3,
+        price: 152.47,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40329631586&a=3013769&m=65912",
@@ -29600,7 +29577,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 150.3,
+        price: 152.47,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894346&a=3013769&m=65912",
@@ -29618,7 +29595,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 150.3,
+        price: 152.47,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38857648640&a=3013769&m=65912",
@@ -29645,7 +29622,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 150.3,
+        price: 152.47,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38857648641&a=3013769&m=65912",
@@ -29663,7 +29640,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 150.3,
+        price: 152.47,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40329631585&a=3013769&m=65912",
@@ -29681,7 +29658,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 150.3,
+        price: 152.47,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40329631587&a=3013769&m=65912",
@@ -29708,7 +29685,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 150.3,
+        price: 152.47,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40329631588&a=3013769&m=65912",
@@ -29735,7 +29712,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 172.4,
+        price: 174.88,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529440885&a=3013769&m=65912",
@@ -29816,7 +29793,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 81.23,
+        price: 82.44,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41446541227&a=3013769&m=65912",
@@ -29870,7 +29847,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.45,
+        price: 18.79,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894245&a=3013769&m=65912",
@@ -29897,10 +29874,10 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 172.4,
+        price: 174.88,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40329628635&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44002221217&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F065210_1.jpg&feedId=89032&k=3cd021e1c03a0387bc7d32a046920ee2b074f511",
         sizes: [],
       },
@@ -29925,7 +29902,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 129.98,
-        priceMax: 135.57,
+        priceMax: 137.53,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42528996600&a=3013769&m=65912",
@@ -29978,7 +29955,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 47.17,
+        price: 47.91,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38857648599&a=3013769&m=65912",
@@ -30005,7 +29982,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.91,
+        price: 29.4,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42536463296&a=3013769&m=65912",
@@ -30032,7 +30009,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.71,
+        price: 19.37,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42536463295&a=3013769&m=65912",
@@ -30077,7 +30054,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.05,
+        price: 23.45,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39717691757&a=3013769&m=65912",
@@ -30104,7 +30081,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.66,
+        price: 21.03,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44284187085&a=3013769&m=65912",
@@ -30131,7 +30108,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.08,
+        price: 25.51,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40965026497&a=3013769&m=65912",
@@ -30158,7 +30135,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.13,
+        price: 36.71,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654177435&a=3013769&m=65912",
@@ -30185,7 +30162,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.34,
+        price: 10.57,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39717691758&a=3013769&m=65912",
@@ -30212,7 +30189,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.82,
+        price: 11.9,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894253&a=3013769&m=65912",
@@ -30239,7 +30216,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.71,
+        price: 18.04,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894248&a=3013769&m=65912",
@@ -30266,7 +30243,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.44,
+        price: 32.98,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45184755686&a=3013769&m=65912",
@@ -30311,7 +30288,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.07,
+        price: 28.55,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529519842&a=3013769&m=65912",
@@ -30338,7 +30315,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.03,
+        price: 14.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44188986622&a=3013769&m=65912",
@@ -30365,7 +30342,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.5,
+        price: 15.8,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795549&a=3013769&m=65912",
@@ -30527,7 +30504,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.49,
+        price: 8.69,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40012877244&a=3013769&m=65912",
@@ -30554,7 +30531,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.17,
+        price: 12.42,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45184724248&a=3013769&m=65912",
@@ -30581,7 +30558,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.83,
+        price: 5.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43139497637&a=3013769&m=65912",
@@ -30608,7 +30585,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.83,
+        price: 5.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43139497636&a=3013769&m=65912",
@@ -30635,7 +30612,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.83,
+        price: 5.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45940201628&a=3013769&m=65912",
@@ -30662,7 +30639,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.83,
+        price: 5.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46089286757&a=3013769&m=65912",
@@ -30689,7 +30666,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.17,
+        price: 12.42,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45456938580&a=3013769&m=65912",
@@ -30716,7 +30693,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.17,
+        price: 12.42,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45456938579&a=3013769&m=65912",
@@ -30735,19 +30712,19 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     ],
   },
   {
-    id: "sporti-silbato-de-mano-rojo",
+    id: "sporti-silbato-de-mano-violeta",
     brand: "Sporti",
-    model: "Silbato de mano - Rojo",
-    colour: "Rojo",
+    model: "Silbato de mano - Violeta",
+    colour: "Violeta",
     type: "silbatos",
     offers: [
       {
         store: "FootStoreES",
-        price: 12.91,
+        price: 13.17,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923783660&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063153-sifflet-a-main-ref-.jpg&feedId=89032&k=656234f3e10a9c5e64e428f4a09808c18913ba08",
+        url: "https://www.awin1.com/pclick.php?p=37923878215&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fp%2Fsporti-france_063153_mag2031146_1.jpg&feedId=89032&k=1c5eb92e4193fadde833e5aac3087f2bff3cdb05",
         sizes: [],
       },
       {
@@ -30770,7 +30747,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.89,
+        price: 8.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923810601&a=3013769&m=65912",
@@ -30791,17 +30768,17 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
   {
     id: "sporti-sifflet-fox-sporti-jaune",
     brand: "Sporti",
-    model: "silbato de zorro Sporti - Verde",
-    colour: "Verde",
+    model: "silbato de zorro Sporti - Amarillo",
+    colour: "Amarillo",
     type: "silbatos",
     offers: [
       {
         store: "FootStoreES",
-        price: 6.38,
+        price: 6.55,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923811425&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F0%2F6%2F063088-sifflet-fox.jpg&feedId=89032&k=8e06f9d69fb9030e5419dff25f8de25ca0e713ab",
+        url: "https://www.awin1.com/pclick.php?p=37923811424&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F6%2F063088-sifflet-fox.jpg&feedId=89032&k=6e04dd642978077b0feaf1375270e409398d3378",
         sizes: [],
       },
       {
@@ -30824,7 +30801,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.19,
+        price: 19.54,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46004645770&a=3013769&m=65912",
@@ -30896,7 +30873,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.56,
+        price: 6.74,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923802124&a=3013769&m=65912",
@@ -30923,7 +30900,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.43,
+        price: 11.68,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40012877246&a=3013769&m=65912",
@@ -30950,7 +30927,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.5,
+        price: 29.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45184713063&a=3013769&m=65912",
@@ -30977,7 +30954,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.5,
+        price: 29.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37593662535&a=3013769&m=65912",
@@ -31004,7 +30981,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 37.6,
+        price: 38.2,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894420&a=3013769&m=65912",
@@ -31031,7 +31008,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.66,
+        price: 30.16,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45940197154&a=3013769&m=65912",
@@ -31058,7 +31035,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.66,
+        price: 30.16,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44671991536&a=3013769&m=65912",
@@ -31112,7 +31089,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 179.76,
+        price: 182.34,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45263172638&a=3013769&m=65912",
@@ -31139,7 +31116,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 109.79,
+        price: 111.39,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894425&a=3013769&m=65912",
@@ -31310,7 +31287,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 51.36,
+        price: 52.16,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923793223&a=3013769&m=65912",
@@ -31337,7 +31314,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 43.06,
+        price: 43.74,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894218&a=3013769&m=65912",
@@ -31382,7 +31359,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.48,
+        price: 15.78,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37976827844&a=3013769&m=65912",
@@ -31409,7 +31386,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.91,
+        price: 28.38,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38342567194&a=3013769&m=65912",
@@ -31436,7 +31413,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 40.34,
+        price: 40.98,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39114484108&a=3013769&m=65912",
@@ -31490,7 +31467,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.63,
+        price: 49.39,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38000754916&a=3013769&m=65912",
@@ -31520,7 +31497,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
         price: 9.99,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529503052&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529503051&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Ft%2Fstanno_419103-4004_1.jpg&feedId=89032&k=1dc0673cfedbc4e26c6ed3770bc2f769113ab7d9",
         sizes: ["Junior", "Mini"],
       },
@@ -31547,7 +31524,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
         price: 9.99,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529503046&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529503045&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fe%2Freece-australia_419103-5550_4.jpg&feedId=89032&k=0a4ed69d3718cdc4e3b663ef21f4968a91c42e3b",
         sizes: ["Junior", "Mini"],
       },
@@ -32751,7 +32728,7 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.1,
+        price: 24.51,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515602637&a=3013769&m=65912",
@@ -34309,9 +34286,6 @@ const minedTrainingProductsChunk7: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk8: TrainingProduct[] = [
   {
     id: "thera-band-banda-de-resistencia-terapeutica-thera-band-rojo",
     brand: "Thera-Band",
@@ -34339,6 +34313,9 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk8: TrainingProduct[] = [
   {
     id: "thera-band-banda-de-resistencia-terapeutica-thera-band-verde",
     brand: "Thera-Band",
@@ -34583,6 +34560,33 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     ],
   },
   {
+    id: "thera-band-bandas-elasticas-terapeuticas-sin-latex-thera-band-verde",
+    brand: "Thera-Band",
+    model: "Bandas elásticas terapéuticas sin látex Thera-Band - Verde",
+    colour: "Verde",
+    type: "elasticos",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 117.2,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46127476656&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fh%2Fthera-band_g2242_green_1.jpg&feedId=89032&k=baf61993976c59ef9cee9f505ad7c5c41e803b82",
+        sizes: ["10 cm/22.86 m"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 113.73,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2242-bandes-elastique-therapeutique-sans-latex-thera-band-green-10-cm-22-86-m",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/h/thera-band_g2242_green_1.jpg",
+        sizes: ["10 cm/22.86 m"],
+      },
+    ],
+  },
+  {
     id: "thera-band-banda-de-resistencia-terapeutica-thera-band-negro",
     brand: "Thera-Band",
     model: "Bande de résistance thérapeutique Thera-Band - Noir",
@@ -34597,24 +34601,6 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2184s-bande-de-resistance-therapeutique-thera-band-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/t/h/thera-band_g2184_black_1.webp",
         sizes: ["5.5 m"],
-      },
-    ],
-  },
-  {
-    id: "thera-band-bandas-elasticas-terapeuticas-sin-latex-thera-band-verde",
-    brand: "Thera-Band",
-    model: "Bandes élastique thérapeutique sans latex Thera-Band - Vert",
-    colour: "Vert",
-    type: "elasticos",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 113.73,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg2242-bandes-elastique-therapeutique-sans-latex-thera-band-green-10-cm-22-86-m",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/h/thera-band_g2242_green_1.jpg",
-        sizes: ["10 cm/22.86 m"],
       },
     ],
   },
@@ -34835,60 +34821,6 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     ],
   },
   {
-    id: "togu-equipo-de-entrenamiento-togu-brasil-x2-verde",
-    brand: "Togu",
-    model: "Equipo de entrenamiento TOGU Brasil (x2) - Verde",
-    colour: "Verde",
-    type: "material",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 35.79,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42746536622&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fo%2Ftogu_g4169_green_1.jpg&feedId=89032&k=bfacc1584a63500741891bebb165473d52971355",
-        sizes: ["11x4.5 cm"],
-      },
-    ],
-  },
-  {
-    id: "togu-equipo-de-entrenamiento-togu-moonhopper-negro",
-    brand: "Togu",
-    model: "Equipo de entrenamiento TOGU Moonhopper - Negro",
-    colour: "Negro",
-    type: "material",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 57.85,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45242382095&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fo%2Ftogu_g2777_black-blue_1.jpg&feedId=89032&k=6762fae69ab70505d803edc814212e7a5228eeec",
-        sizes: ["40x30 cm"],
-      },
-    ],
-  },
-  {
-    id: "togu-equipo-de-entrenamiento-togu-moonhopper-rosa",
-    brand: "Togu",
-    model: "Equipo de entrenamiento TOGU Moonhopper - Rosa",
-    colour: "Rosa",
-    type: "material",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 41.64,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43829762993&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fo%2Ftogu_g2776_pink-blue_1.jpg&feedId=89032&k=87e3b113c26921bd337ac67584962771b9a8f453",
-        sizes: ["40x30 cm"],
-      },
-    ],
-  },
-  {
     id: "togu-equipo-de-entrenamiento-togu-noppenball-amarillo",
     brand: "Togu",
     model: "Equipo de entrenamiento TOGU Noppenball - Amarillo",
@@ -34978,7 +34910,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.51,
+        price: 40.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923793226&a=3013769&m=65912",
@@ -35005,7 +34937,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.92,
+        price: 25.35,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923793225&a=3013769&m=65912",
@@ -35086,7 +35018,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.04,
+        price: 21.41,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923785673&a=3013769&m=65912",
@@ -35212,7 +35144,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.2,
+        price: 20.56,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39717688495&a=3013769&m=65912",
@@ -35239,7 +35171,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.28,
+        price: 21.66,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795293&a=3013769&m=65912",
@@ -35266,7 +35198,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.49,
+        price: 12.75,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923783562&a=3013769&m=65912",
@@ -35347,7 +35279,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.73,
+        price: 15.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795292&a=3013769&m=65912",
@@ -35401,11 +35333,11 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.62,
+        price: 28.16,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386032&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fr%2Ftremblay-ct_fi5.jpg&feedId=89032&k=143c8e87e34a51d53012aa92b5f9a9248fa3bf41",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fr%2Ftremblay-ct_fi5.jpg&feedId=89032&k=0825e3205b3368bcf9c310a6c85b90306e2223ea",
         sizes: ["20 Kg"],
       },
       {
@@ -35473,7 +35405,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.43,
+        price: 23.84,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795180&a=3013769&m=65912",
@@ -35662,7 +35594,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.63,
+        price: 17.96,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39589568041&a=3013769&m=65912",
@@ -35773,7 +35705,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 5.71,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36617199078&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=36617199079&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F5%2F1506.jpg&feedId=89032&k=9e6a91733f99ccaa5af41671d6f2b284487b21e8",
         sizes: ["S", "L"],
       },
@@ -35851,7 +35783,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386056&a=3013769&m=65912",
@@ -35878,7 +35810,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386057&a=3013769&m=65912",
@@ -35905,7 +35837,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386058&a=3013769&m=65912",
@@ -35932,7 +35864,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.41,
+        price: 43.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923871713&a=3013769&m=65912",
@@ -35959,7 +35891,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.41,
+        price: 43.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38018919028&a=3013769&m=65912",
@@ -35986,7 +35918,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.41,
+        price: 43.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38018919030&a=3013769&m=65912",
@@ -36013,7 +35945,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.41,
+        price: 43.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38018919029&a=3013769&m=65912",
@@ -36043,8 +35975,8 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 4.44,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38018918182&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_6.jpg&feedId=89032&k=02dac09a6149a8b7d24fb41bba76970c5efe9be1",
+        url: "https://www.awin1.com/pclick.php?p=38713844706&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_bleu.jpg&feedId=89032&k=df6fe9495fff0c7ed2833ce06c6a7b99e1f2fb3e",
         sizes: ["XS", "S", "L"],
       },
       {
@@ -36059,7 +35991,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     ],
   },
   {
-    id: "tremblay-ct-chasuble-ajouree-simple-blanc",
+    id: "tremblay-ct-chasuble-ajouree-simple-violet",
     brand: "Tremblay CT",
     model: "Chasuble calada simple - Blanco",
     colour: "Blanco",
@@ -36070,8 +36002,8 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 4.44,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923787291&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_blanc.jpg&feedId=89032&k=2a01c2ae71816ae59f8647cad6f93a9c9b6558e6",
+        url: "https://www.awin1.com/pclick.php?p=39125139631&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_10.jpg&feedId=89032&k=a20d0241094bfca6f14a9f2db47e0a3fbc046b82",
         sizes: ["XS", "S", "L"],
       },
       {
@@ -36151,7 +36083,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 4.44,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36924427178&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38713844681&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_rouge.jpg&feedId=89032&k=92b8781e0dd440f3cf9e16f643e3d9713808c008",
         sizes: ["XS", "S"],
       },
@@ -36205,8 +36137,8 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 4.44,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39232242658&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_vert.jpg&feedId=89032&k=598fe27801c21779a54146d1b190c82d09e7f7ad",
+        url: "https://www.awin1.com/pclick.php?p=37078614384&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_5_1.jpg&feedId=89032&k=6710938794e05e5dc07bde3c7903b67f4ef2cb94",
         sizes: ["XS", "S", "L"],
       },
       {
@@ -36221,7 +36153,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     ],
   },
   {
-    id: "tremblay-ct-chasuble-ajouree-simple-violet",
+    id: "tremblay-ct-chasuble-calada-simple-violeta",
     brand: "Tremblay CT",
     model: "Chasuble calada simple - Violeta",
     colour: "Violeta",
@@ -36232,8 +36164,8 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 4.44,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37514082800&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_3_1.jpg&feedId=89032&k=77a0d1eaa8a6d65c96b2a5ef739ec194393d5ac8",
+        url: "https://www.awin1.com/pclick.php?p=43970781848&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1503_10.jpg&feedId=89032&k=a20d0241094bfca6f14a9f2db47e0a3fbc046b82",
         sizes: ["XS", "S", "L"],
       },
       {
@@ -36364,7 +36296,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.02,
+        price: 7.2,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40109625056&a=3013769&m=65912",
@@ -36446,7 +36378,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.83,
+        price: 28.3,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386052&a=3013769&m=65912",
@@ -36689,7 +36621,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38667989455&a=3013769&m=65912",
@@ -36743,7 +36675,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.62,
+        price: 19.98,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784753&a=3013769&m=65912",
@@ -36770,7 +36702,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.76,
+        price: 42.41,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923785935&a=3013769&m=65912",
@@ -36825,7 +36757,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 15.27,
-        priceMax: 16.14,
+        priceMax: 16.45,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40109625065&a=3013769&m=65912",
@@ -36852,7 +36784,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 50.45,
+        price: 51.23,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37800095189&a=3013769&m=65912",
@@ -36879,7 +36811,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.02,
+        price: 22.41,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923964112&a=3013769&m=65912",
@@ -36906,7 +36838,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.22,
+        price: 32.75,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795184&a=3013769&m=65912",
@@ -36960,7 +36892,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.34,
+        price: 10.57,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37947859868&a=3013769&m=65912",
@@ -36987,7 +36919,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 207.25,
+        price: 210.22,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795278&a=3013769&m=65912",
@@ -37014,7 +36946,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.73,
+        price: 31.24,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923964119&a=3013769&m=65912",
@@ -37059,7 +36991,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.75,
+        price: 30.23,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39717696966&a=3013769&m=65912",
@@ -37113,7 +37045,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.48,
+        price: 15.78,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923785689&a=3013769&m=65912",
@@ -37212,7 +37144,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.32,
+        price: 29.81,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923964118&a=3013769&m=65912",
@@ -37239,7 +37171,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.92,
+        price: 25.35,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923976943&a=3013769&m=65912",
@@ -37266,7 +37198,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.92,
+        price: 25.35,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395568151&a=3013769&m=65912",
@@ -37320,7 +37252,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923976944&a=3013769&m=65912",
@@ -37347,7 +37279,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529464177&a=3013769&m=65912",
@@ -37374,7 +37306,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529464178&a=3013769&m=65912",
@@ -37401,7 +37333,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529464179&a=3013769&m=65912",
@@ -37428,7 +37360,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923976945&a=3013769&m=65912",
@@ -37455,7 +37387,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529464180&a=3013769&m=65912",
@@ -37482,7 +37414,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529464181&a=3013769&m=65912",
@@ -37509,7 +37441,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529464182&a=3013769&m=65912",
@@ -37663,10 +37595,10 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     ],
   },
   {
-    id: "tremblay-ct-marcado-temporal-de-tremblay-blanco",
+    id: "tremblay-ct-marcado-temporal-de-tremblay-amarillo",
     brand: "Tremblay CT",
-    model: "Marcado temporal de Tremblay - Blanco",
-    colour: "Blanco",
+    model: "Marcado temporal de Tremblay - Amarillo",
+    colour: "Amarillo",
     type: "marcadores",
     offers: [
       {
@@ -37674,7 +37606,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 10.73,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40109625572&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923795300&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Ft%2Fat007.jpg&feedId=89032&k=0389001f2995ce57668e3effaf06ea6d482be94a",
         sizes: [],
       },
@@ -37758,7 +37690,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.51,
+        price: 40.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386048&a=3013769&m=65912",
@@ -37785,7 +37717,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.51,
+        price: 40.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386049&a=3013769&m=65912",
@@ -37812,7 +37744,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.42,
+        price: 26.87,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386046&a=3013769&m=65912",
@@ -37839,7 +37771,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.63,
+        price: 17.96,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386047&a=3013769&m=65912",
@@ -37893,7 +37825,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.91,
+        price: 28.38,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530113154&a=3013769&m=65912",
@@ -37920,7 +37852,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.91,
+        price: 28.38,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42246665469&a=3013769&m=65912",
@@ -38010,7 +37942,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.51,
+        price: 40.14,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529386053&a=3013769&m=65912",
@@ -38037,7 +37969,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.35,
+        price: 7.54,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923796068&a=3013769&m=65912",
@@ -38064,7 +37996,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.35,
+        price: 7.54,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923783571&a=3013769&m=65912",
@@ -38091,10 +38023,10 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.35,
+        price: 7.54,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923796069&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923783573&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F1%2F5%2F1504_1.jpg&feedId=89032&k=891ca166adcbe6c0370a77499d191c3c553345d5",
         sizes: ["S", "L"],
       },
@@ -38118,7 +38050,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.41,
+        price: 43.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44444974912&a=3013769&m=65912",
@@ -38145,7 +38077,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.41,
+        price: 43.08,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529553914&a=3013769&m=65912",
@@ -38172,7 +38104,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44444974913&a=3013769&m=65912",
@@ -38199,7 +38131,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44256664887&a=3013769&m=65912",
@@ -38226,7 +38158,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44256664886&a=3013769&m=65912",
@@ -38253,7 +38185,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 24.6,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44256664888&a=3013769&m=65912",
@@ -38272,7 +38204,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     ],
   },
   {
-    id: "tremblay-ct-peto-simple-calado-amarillo",
+    id: "tremblay-ct-chasuble-ajouree-simple-blanc",
     brand: "Tremblay CT",
     model: "Peto simple calado - Amarillo",
     colour: "Amarillo",
@@ -38283,7 +38215,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 4.36,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36485364944&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=36485364943&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fe%2Fte1502_1.jpg&feedId=89032&k=0d11743fedde92dded5407012bff0f748e2b936a",
         sizes: ["XS", "S", "L"],
       },
@@ -38310,7 +38242,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 4.36,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923787906&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=36485364948&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fe%2Fte1502_1.jpg&feedId=89032&k=0d11743fedde92dded5407012bff0f748e2b936a",
         sizes: ["XS", "S", "L"],
       },
@@ -38364,7 +38296,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 4.36,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923787905&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923785666&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fe%2Fte1502_1.jpg&feedId=89032&k=0d11743fedde92dded5407012bff0f748e2b936a",
         sizes: ["XS", "S", "L"],
       },
@@ -38418,8 +38350,8 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
         price: 4.36,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923787900&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ft%2Fe%2Fte1502_1.jpg&feedId=89032&k=0d11743fedde92dded5407012bff0f748e2b936a",
+        url: "https://www.awin1.com/pclick.php?p=37923787903&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fte1502_1.jpg&feedId=89032&k=3416b24c4d49e1eb63bfc17f58d9767e34399529",
         sizes: ["XS", "S", "L"],
       },
       {
@@ -38442,7 +38374,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 47.8,
+        price: 48.55,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39717681489&a=3013769&m=65912",
@@ -38469,7 +38401,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.8,
+        price: 47.54,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36726319887&a=3013769&m=65912",
@@ -38541,7 +38473,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 309.36,
+        price: 313.74,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485364873&a=3013769&m=65912",
@@ -38586,7 +38518,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 396.88,
+        price: 402.47,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42528996573&a=3013769&m=65912",
@@ -38613,7 +38545,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.2,
+        price: 36.78,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42838012780&a=3013769&m=65912",
@@ -38640,7 +38572,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 44.48,
+        price: 45.18,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42838012781&a=3013769&m=65912",
@@ -38748,7 +38680,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.48,
+        price: 15.78,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795210&a=3013769&m=65912",
@@ -38775,7 +38707,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.58,
+        price: 21.96,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923964135&a=3013769&m=65912",
@@ -38803,7 +38735,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 6.32,
-        priceMax: 6.82,
+        priceMax: 7.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40109625578&a=3013769&m=65912",
@@ -38859,7 +38791,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.23,
+        price: 9.44,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38353550016&a=3013769&m=65912",
@@ -38886,7 +38818,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.95,
+        price: 14.23,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40109625565&a=3013769&m=65912",
@@ -38904,7 +38836,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.38,
+        price: 11.62,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795202&a=3013769&m=65912",
@@ -38923,18 +38855,18 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     ],
   },
   {
-    id: "tremblay-ct-silbato-tremblay-zorro-fuziun-cmg-negro",
+    id: "tremblay-ct-silbato-tremblay-zorro-fuziun-cmg-amarillo",
     brand: "Tremblay CT",
-    model: "Silbato Tremblay zorro fuziun cmg - Negro",
-    colour: "Negro",
+    model: "Silbato Tremblay zorro fuziun cmg - Amarillo",
+    colour: "Amarillo",
     type: "silbatos",
     offers: [
       {
         store: "FootStoreES",
-        price: 15.78,
+        price: 16.08,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923795207&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923795206&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fi%2Fsiffu.jpg&feedId=89032&k=6ef2e42a022f07684c520e64008dae3d6576e114",
         sizes: [],
       },
@@ -38949,7 +38881,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.87,
+        price: 5.02,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923802114&a=3013769&m=65912",
@@ -38976,7 +38908,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 105.15,
+        price: 106.69,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923784603&a=3013769&m=65912",
@@ -39003,7 +38935,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 185.37,
+        price: 188.03,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795188&a=3013769&m=65912",
@@ -39030,7 +38962,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 102.5,
+        price: 104.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923894131&a=3013769&m=65912",
@@ -39192,7 +39124,7 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.4,
+        price: 16.72,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44981395585&a=3013769&m=65912",
@@ -39210,9 +39142,6 @@ const minedTrainingProductsChunk8: TrainingProduct[] = [
       },
     ],
   },
-];
-
-const minedTrainingProductsChunk9: TrainingProduct[] = [
   {
     id: "ufe-banda-de-resistencia-de-tela-ufe-azul",
     brand: "UFE",
@@ -39222,7 +39151,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.25,
+        price: 5.41,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642865&a=3013769&m=65912",
@@ -39249,7 +39178,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.5,
+        price: 21.88,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642867&a=3013769&m=65912",
@@ -39321,6 +39250,9 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
       },
     ],
   },
+];
+
+const minedTrainingProductsChunk9: TrainingProduct[] = [
   {
     id: "ufe-banda-de-resistencia-ufe-azul",
     brand: "UFE",
@@ -39388,7 +39320,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fu%2Ff%2Fufe_ufa199l_multicolore_1.jpg&feedId=89032&k=b91907a75d9dfce0f2d625e4850a4d073d5a4b45",
         sizes: ["XS", "S", "M", "L"],
         sizePrices: [
-          { size: "XS", price: 18.5, url: "https://www.awin1.com/pclick.php?p=42529642875&a=3013769&m=65912" },
+          { size: "XS", price: 18.84, url: "https://www.awin1.com/pclick.php?p=42529642875&a=3013769&m=65912" },
           { size: "S", price: 25.11, url: "https://www.awin1.com/pclick.php?p=42529642874&a=3013769&m=65912" },
           { size: "M", price: 17.44, url: "https://www.awin1.com/pclick.php?p=42529642873&a=3013769&m=65912" },
           { size: "L", price: 13.43, url: "https://www.awin1.com/pclick.php?p=42529642872&a=3013769&m=65912" },
@@ -39629,7 +39561,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.36,
+        price: 12.62,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43970780228&a=3013769&m=65912",
@@ -39656,7 +39588,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.26,
+        price: 9.47,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40109625082&a=3013769&m=65912",
@@ -39683,7 +39615,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.36,
+        price: 12.62,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923793195&a=3013769&m=65912",
@@ -39737,7 +39669,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.11,
+        price: 6.23,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41013646917&a=3013769&m=65912",
@@ -39782,7 +39714,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 61.06,
+        price: 61.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923941327&a=3013769&m=65912",
@@ -39809,7 +39741,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.25,
+        price: 26.7,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923943550&a=3013769&m=65912",
@@ -39836,7 +39768,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.45,
+        price: 20.82,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44905479146&a=3013769&m=65912",
@@ -39863,7 +39795,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 61.06,
+        price: 61.99,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43362473115&a=3013769&m=65912",
@@ -39890,7 +39822,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.05,
+        price: 32.58,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38150867611&a=3013769&m=65912",
@@ -39944,10 +39876,10 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.5,
+        price: 10.73,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39783212267&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=39783212268&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F100321801_change.jpg&feedId=89032&k=07e80baf5227d23294ec3e9198f1cd5ed596c0eb",
         sizes: ["M/L", "XL/2XL", "12/14 ans"],
       },
@@ -39971,7 +39903,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.0,
+        price: 16.0,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923786394&a=3013769&m=65912",
@@ -39998,7 +39930,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 4.23,
+        price: 4.34,
         priceMax: 14.0,
         shipping: 8.99,
         currency: "EUR",
@@ -40006,7 +39938,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F100335301.jpg&feedId=89032&k=df39e5afc722cbd894e0788d0511d00b3d5b6136",
         sizes: ["M/L", "XL/2XL"],
         sizePrices: [
-          { size: "M/L", price: 4.23, url: "https://www.awin1.com/pclick.php?p=37923789112&a=3013769&m=65912" },
+          { size: "M/L", price: 4.34, url: "https://www.awin1.com/pclick.php?p=37923789112&a=3013769&m=65912" },
           { size: "XL/2XL", price: 14.0, url: "https://www.awin1.com/pclick.php?p=37923789113&a=3013769&m=65912" },
         ],
       },
@@ -40053,7 +39985,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.02,
+        price: 8.21,
         priceMax: 14.0,
         shipping: 8.99,
         currency: "EUR",
@@ -40061,7 +39993,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F100335302.jpg&feedId=89032&k=4162a2431aae1bf60337c0cf03d3f6e7a5e3aa7d",
         sizes: ["XS/S", "XL/2XL"],
         sizePrices: [
-          { size: "XS/S", price: 8.02, url: "https://www.awin1.com/pclick.php?p=37923789114&a=3013769&m=65912" },
+          { size: "XS/S", price: 8.21, url: "https://www.awin1.com/pclick.php?p=37923789114&a=3013769&m=65912" },
           { size: "XL/2XL", price: 14.0, url: "https://www.awin1.com/pclick.php?p=37923789116&a=3013769&m=65912" },
         ],
       },
@@ -40090,7 +40022,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.02,
+        price: 8.21,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923789120&a=3013769&m=65912",
@@ -40117,17 +40049,17 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 7.83,
-        priceMax: 8.02,
+        price: 8.02,
+        priceMax: 8.21,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923789118&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F100335303.jpg&feedId=89032&k=f1e218bed31099d7976a1b2c33b1ecbf318f922b",
         sizes: ["XS/S", "M/L", "XL/2XL"],
         sizePrices: [
-          { size: "XS/S", price: 8.02, url: "https://www.awin1.com/pclick.php?p=40663921805&a=3013769&m=65912" },
-          { size: "M/L", price: 7.83, url: "https://www.awin1.com/pclick.php?p=37923789118&a=3013769&m=65912" },
-          { size: "XL/2XL", price: 8.02, url: "https://www.awin1.com/pclick.php?p=37923789119&a=3013769&m=65912" },
+          { size: "XS/S", price: 8.21, url: "https://www.awin1.com/pclick.php?p=40663921805&a=3013769&m=65912" },
+          { size: "M/L", price: 8.02, url: "https://www.awin1.com/pclick.php?p=37923789118&a=3013769&m=65912" },
+          { size: "XL/2XL", price: 8.21, url: "https://www.awin1.com/pclick.php?p=37923789119&a=3013769&m=65912" },
         ],
       },
       {
@@ -40174,7 +40106,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 58.16,
+        price: 59.05,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38516884641&a=3013769&m=65912",
@@ -40192,7 +40124,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.36,
+        price: 53.17,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39887812483&a=3013769&m=65912",
@@ -40210,7 +40142,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.56,
+        price: 47.29,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40502620698&a=3013769&m=65912",
@@ -40243,7 +40175,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.85,
+        price: 27.31,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507473&a=3013769&m=65912",
@@ -40270,7 +40202,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.44,
+        price: 19.79,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45586526143&a=3013769&m=65912",
@@ -40297,7 +40229,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.08,
+        price: 21.46,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610168&a=3013769&m=65912",
@@ -40324,7 +40256,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.55,
+        price: 23.96,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610166&a=3013769&m=65912",
@@ -40406,14 +40338,14 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
       {
         store: "FootStoreES",
         price: 8.96,
-        priceMax: 19.44,
+        priceMax: 19.79,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610107&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fv%2Fi%2Fvirtufit-vf01026-light-grijs-6a22de61babf4-1.jpg&feedId=89032&k=e2ebac3f6d497a2c20f476861d3a232e9a7ee9e6",
         sizes: ["208x0.45x6.4 cm", "208x1.5x0.45 cm", "208x2.2x0.45 cm", "208x2.4x0.45 cm", "208x4.5x0.45 cm"],
         sizePrices: [
-          { size: "208x0.45x6.4 cm", price: 19.44, url: "https://www.awin1.com/pclick.php?p=44944610111&a=3013769&m=65912" },
+          { size: "208x0.45x6.4 cm", price: 19.79, url: "https://www.awin1.com/pclick.php?p=44944610111&a=3013769&m=65912" },
           { size: "208x1.5x0.45 cm", price: 8.96, url: "https://www.awin1.com/pclick.php?p=44944610107&a=3013769&m=65912" },
           { size: "208x2.2x0.45 cm", price: 9.76, url: "https://www.awin1.com/pclick.php?p=44944610108&a=3013769&m=65912" },
           { size: "208x2.4x0.45 cm", price: 12.95, url: "https://www.awin1.com/pclick.php?p=44944610109&a=3013769&m=65912" },
@@ -40448,7 +40380,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.8,
+        price: 18.13,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610185&a=3013769&m=65912",
@@ -40475,7 +40407,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.8,
+        price: 18.13,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610186&a=3013769&m=65912",
@@ -40502,7 +40434,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.8,
+        price: 18.13,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610188&a=3013769&m=65912",
@@ -40529,7 +40461,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.8,
+        price: 18.13,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610187&a=3013769&m=65912",
@@ -40583,7 +40515,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.88,
+        price: 36.46,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610322&a=3013769&m=65912",
@@ -40664,7 +40596,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 68.72,
+        price: 69.75,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610241&a=3013769&m=65912",
@@ -40718,7 +40650,7 @@ const minedTrainingProductsChunk9: TrainingProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.44,
+        price: 19.79,
         shipping: 8.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610237&a=3013769&m=65912",
