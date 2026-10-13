@@ -1306,6 +1306,27 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/196285888957",  # retro dynamokyiv|away|2013/14: long sleeve (photo); Dynamo Kiev 2013 - 2014 Away football Adidas jersey size Small
     "/itm/800761078303",  # retro lafc|home|2021/22: long sleeve; Adidas Maglia Calcio Uomo Los Angeles FC Home Manica Lunga 2021/22 Tag
     "/itm/800761078303",  # retro lafc|home|2021/22: long sleeve; Camiseta de fútbol de manga larga para hombre Adidas Los Angeles FC Ho
+    # --- Daily pass 2026-10-13, eBay retro and kids, by title/photo ---
+    "/itm/188489126108",  # retro leicester|home|2014/15: used (condition score in title); 4.5/5 Leicester City adults L 2014 home football shirt jersey trikot s
+    "/itm/157962811187",  # retro leicester|home|2018/19: player print/name; LEICESTER CITY 2018/2019 HOME FOOTBALL SHIRT ADIDAS 15 SIZE M ADULT
+    "/itm/137505219290",  # retro southampton|home|2023/24: long sleeve; Hummel 2023/24 Southampton FC Longsleeve Home Jersey, Shirt, Size Larg
+    "/itm/168587810385",  # retro norwich|home|2020: player print/name; NORWICH CITY 2020 2021 HOME FOOTBALL SHIRT 8 SIZE L ADULT MATCH WORN R
+    "/itm/166520183394",  # retro norwich|home|2021/22: kids 10Y; Norwich City Joma Soccer Jersey Home Kit 2021-22 English Premier Leagu
+    "/itm/236556371299",  # retro norwich|away|2019/20: long sleeve; 2019-20 Errea Norwich Men's Soccer Long Sleeve Away Jersey XXL 2XL Can
+    "/itm/158014334094",  # retro blackburn|away|2005: long sleeve; BLACKBURN ROVERS 2005 2006 AWAY FOOTBALL SHIRT LONSDALE LONG SIZE XXL 
+    "/itm/278321945392",  # retro millwall|third|2020: long sleeve; Millwall 2020 2021 Third Shirt Size XXL Long Sleeve BNWT Macron Soccer
+    "/itm/227313997260",  # retro reading|home|2016/17: long sleeve; NWT READING FC 2016/17 L Home Puma L/S Football Shirt Soccer Jersey Ro
+    "/itm/116889116279",  # retro swansea|away|2014: player print/name; Swansea City AFC Jersey - 2014 Away Jersey 6 Ashley Williams - Men's 3
+    "/itm/366388128760",  # retro westbrom|home|2006: long sleeve; West Brom 2006 2008 Home Shirt XL Long Sleeve Umbro T Mobile Jersey BN
+    "/itm/206211031804",  # retro huddersfield|home|2017/18: used (condition score in title); 2017/18 Huddersfield Town Puma Home Football Shirt - 7/10 - (S)
+    "/itm/158091047693",  # retro huddersfield|home|2002: long sleeve; HUDDERSFIELD TOWN 2002 2003 HOME FOOTBALL SHIRT VOI SIZE 2XL ADULT LON
+    "/itm/206211030094",  # retro huddersfield|away|2014/15: used (condition score in title); 2014/15 Huddersfield Town Puma Away Football Shirt - 7/10 - (S)
+    "/itm/236556402262",  # retro mkdons|away|2019/20: long sleeve; 2019-20 Errea MK Dons SET Men’s Away Long Sleeve Soccer Jersey Extra L
+    "/itm/168423718479",  # retro birminghamcity|home|2004: long sleeve; BIRMINGHAM CITY 2004 2005 HOME FOOTBALL SHIRT DIADORA SIZE XXL ADULT L
+    "/itm/168477328774",  # retro birminghamcity|away|2020: player print/name; BIRMINGHAM CITY 2020 2021 AWAY FOOTBALL SHIRT NIKE BAILLIE SIZE L ADUL
+    "/itm/405005282882",  # retro wrexham|home|2024/25: player print/name; Maglia calcio Home 2024 Macron Wrexham AFC Paul Mullin uomo S Ryan Rey
+    "/itm/307222061776",  # retro blackburn|home|2007/08: long sleeve; Blackburn 2007 - 2008 Official Home Long Sleeve Jersey Shirt Kit – US 
+    "/itm/376779796231",  # kids southampton|home: Under Armour = 2017-2021 shirt, kids fichas carry no season; Under Armor Southampton Home Soccer Jersey. Youth Medium
 ]
 
 
