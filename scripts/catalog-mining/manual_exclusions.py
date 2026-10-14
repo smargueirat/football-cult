@@ -1327,6 +1327,40 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/405005282882",  # retro wrexham|home|2024/25: player print/name; Maglia calcio Home 2024 Macron Wrexham AFC Paul Mullin uomo S Ryan Rey
     "/itm/307222061776",  # retro blackburn|home|2007/08: long sleeve; Blackburn 2007 - 2008 Official Home Long Sleeve Jersey Shirt Kit – US 
     "/itm/376779796231",  # kids southampton|home: Under Armour = 2017-2021 shirt, kids fichas carry no season; Under Armor Southampton Home Soccer Jersey. Youth Medium
+    # --- Daily pass 2026-10-14, ebay_gb_retro.py ---
+    "/itm/327244088964",  # acmilan-retro-1996-third: reproduction render, Official Licensed Teamwear 40 USD; AC Milan Football Shirt Third 1996 Mens Serie A Official Licensed Team
+    "/itm/267498613985",  # watford-retro-2021-home: not the yellow home shirt (cream/navy hoops); Watford Football Shirt Kelme Medium Home Kit Jersey The Hornets 2021 2
+    "/itm/286964744666",  # oaklandroots-retro-2023-away: name+number print on back; Oakland Roots SC SOCCER away shirt jersey  Meyba  2023 USL adult SIZE 
+    "/itm/236585312558",  # dinamarca-retro-201819-home: Esbjerg FB club shirt under national key; Esbjerg FB Home Football Shirt 2018-2019 (M) Jersey Nike Trikot Denmar
+    "/itm/168530105575",  # indonesia-retro-202425-home: pink shirt, home is red - ambiguous; Indonesia National Football Team 2024-25 Home Erspo Red Size 3XL socce
+    # --- Daily pass 2026-10-14, eBay current (US/GB) ---
+    "/itm/236915929028",  # anderlecht; home: 28.98 USD template seller|JERSEY R.S.C. Anderlecht HOME  26-27
+    "/itm/227066315093",  # heerenveen; home: 28.98 USD template seller|JERSEY Heerenveen Mens Home 2025-26
+    "/itm/206434444742",  # tottenham; away: outlier 152 GBP stadium replica|Nike Tottenham Hotspur 2025/26 S
+    "/itm/407270918602",  # westham; away: long sleeve|Umbro West Ham United 25/26 Long Sleeve Away Shirt L
+    "/itm/860036672516",  # westham; third: pre-order P.O|West Ham 2026/27 Third Shirt P.O (Read Descriptio
+    "/itm/860036684921",  # wrexham; home: pre-order P.O|Wrexham 2026/27 Home Shirt P.O (Read Description)
+    "/itm/198642796125",  # hannover96; home: 28.98 USD template seller|JERSEY Hannover 96 Home Mens 26-27
+    "/itm/198642796120",  # hannover96; away: 28.98 USD template seller|JERSEY Hannover 96 Away Mens 26-27
+    "/itm/800474733183",  # westham; goalkeeper: sponsorless blank, unverifiable|West Ham United 2025/26 Se
+    # --- Daily pass 2026-10-14, eBay retro (US/IT/ES) ---
+    "/itm/227531672438",  # anderlecht; home|2019/20: player name Amir Murillo|Amir Murillo Joma RSC Anderlech
+    "/itm/226163371441",  # anderlecht; away|2020/21: player name Amir Murillo|Amir Murillo Joma RSC Anderlech
+    "/itm/389001135709",  # anderlecht; home|2024: player name Chino Huerta|2024 Authentic R.S.C. Anderlecht H
+    "/itm/389001182959",  # anderlecht; away|2024: player name Chino Huerta|2024 Authentic R.S.C. Anderlecht A
+    "/itm/193937315669",  # clubbrugge; away|2003: long sleeve|Club Brugge 2003 - 2004 Away Adidas Long Sleeve
+    "/itm/177336970962",  # leicester; away|2017/18: long sleeve + VARDY|⚽Maglia manica lunga originale LEICE
+    "/itm/236022345564",  # norwich; away|2019/20: long sleeve|Maglia maglia away Norwich City 2019 2020 ma
+    "/itm/137420785555",  # southampton; home|2012/13: player name Lallana|Maglia Home Umbro 2012/13 Southampto
+    "/itm/137420785555",  # southampton; home|2012/13: player name Lallana|Camiseta Umbro 2012/13 Southampton F
+    "/itm/168529677411",  # southampton; home|2003/05: signed (firmata)|MAGLIA CALCIO HOME SAINTS FIRMATA SOUTH
+    "/itm/157963324272",  # blackburn; home|2004: signed (firmata)|MAGLIA HOME FOOTBALL BLACKBURN ROVERS 2004
+    "/itm/257777873258",  # reading; home|2016/17: player name Quinn|Quinn Reading Jersey Home Football Shi
+    "/itm/257777873258",  # reading; home|2016/17: player name Quinn|Camiseta de fútbol local Quinn Reading
+    "/itm/117373910974",  # swansea; away|2013/14: 6 Ashley Williams print|Swansea City AFC Jersey - 2014 A
+    "/itm/158107699222",  # birminghamcity; home|1971: reedicion (reissue)|CAMISETA DE FUTBOL LOCAL BIRMINGHAM CIT
+    "/itm/171843960916",  # watford; away|2011/12: L&S sleeve ambiguous|MAGLIA MAGLIA CALCIO BURRDA MANICA 
+    "/itm/171843960916",  # watford; away|2011/12: L&S sleeve ambiguous|CAMISETA DE FUTBOL WATFORD 2011/12 
 ]
 
 

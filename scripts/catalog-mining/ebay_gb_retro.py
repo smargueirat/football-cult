@@ -186,12 +186,15 @@ PRINT_STOPWORDS = {
     "camiseta", "maillot", "trikot", "top", "number", "sleeve", "cup", "world",
     "league", "serie", "liga", "rrp", "bnwt", "nwt", "new", "tags", "player",
     "version", "authentic", "replica", "star", "stars", "fc", "afc", "cf",
+    "ligue",
+    # clubes con numero en el nombre ("Hannover 96", "FC Ingolstadt 04")
+    "hannover", "ingolstadt", "schalke", "bayer", "mainz", "darmstadt", "paderborn",
 }
 _NAME_NUM_RE = re.compile(r"\b([A-Za-z][A-Za-z'\-]{2,})\s+#?(\d{1,2})\b(?!\s*[\"\u2033])")
 _HASH_NUM_RE = re.compile(r"#\s?\d{1,2}\b")
 NOT_A_GARMENT_RE = re.compile(
     r"name\s*set|nameset|heat\s*(press|transfer)|\bonly\s+patch\b|\bbadge\s+only\b"
-    r"|\bsigned\b|autograph|\bfirmad[ao]\b|autografat", re.I)  # firmadas: 3 en la tanda del 10-12
+    r"|\bsigned\b|autograph|\bfirma[dt][ao]\b|autografat", re.I)  # firmadas: 3 en la tanda del 10-12
 
 
 def has_player_print(title):

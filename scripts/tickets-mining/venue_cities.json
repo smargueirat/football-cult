@@ -97,6 +97,11 @@
  "Bursa Buyuksehir Belediye Stadyumu": null,
  "Campo de Futbol de Vallecas": null,
  "Cardiff City Stadium": null,
+ "Cegeka Arena": {
+  "city": "Genk",
+  "desc": "football stadium in Genk, Belgium",
+  "qid": "Q925654"
+ },
  "Celtic Park": {
   "city": "Glasgow",
   "desc": "football stadium in Glasgow, Scotland, UK",
@@ -198,6 +203,7 @@
   "desc": "football stadium in Estoril, Portugal",
   "qid": "Q1370647"
  },
+ "Estadio Carlos Belmonte": null,
  "Estadio Carlos Tartiere": {
   "city": "Oviedo",
   "desc": "football stadium in Oviedo, Asturias, Spain",
@@ -223,6 +229,7 @@
   "desc": "association football stadium in Pamplona, Spain",
   "qid": "Q735783"
  },
+ "Estadio Heliodoro Rodriguez Lopez": null,
  "Estadio Jose Alvalade": {
   "city": "Lisbon",
   "desc": "football stadium in Lisbon, Portugal",
@@ -257,6 +264,11 @@
   "desc": "football stadium in Lisbon, Portugal",
   "qid": "Q7875112"
  },
+ "Estadio da Madeira": {
+  "city": "Funchal",
+  "desc": "football stadium in Funchal, Madeira, Portugal",
+  "qid": "Q1370765"
+ },
  "Estadio de La Cartuja": null,
  "Estadio de Sao Miguel": {
   "city": "Ponta Delgada",
@@ -268,6 +280,7 @@
   "desc": "football stadium in Vila-real, Spain",
   "qid": "Q741157"
  },
+ "Estadio de los Juegos Mediterraneos": null,
  "Estadio do Dragao": {
   "city": "Porto",
   "desc": "football stadium in Porto, Portugal",

@@ -347,6 +347,7 @@
 "australia-retro-2016-home",
 "australia-retro-2018-away",
 "australia-retro-2018-home",
+"australia-retro-201820-home",
 "australia-retro-202021-home",
 "australia-retro-2022-away",
 "australia-retro-2022-home",
@@ -432,6 +433,7 @@
 "barcelona-retro-202324-home",
 "barcelona-retro-202425-away",
 "barcelona-retro-202425-home",
+"bastia-retro-200607-away",
 "bayern-retro-1991-home",
 "bayern-retro-199193-home",
 "bayern-retro-1993-home",
@@ -764,6 +766,7 @@
 "celtic-retro-1998-away",
 "celtic-retro-1999-away",
 "celtic-retro-1999-home",
+"celtic-retro-200405-home",
 "celtic-retro-2005-away",
 "celtic-retro-2008-away",
 "celtic-retro-200809-away",
@@ -793,8 +796,14 @@
 "cerclebrugge-retro-201314-home",
 "cerezoosaka-retro-2014-away",
 "cerezoosaka-retro-2015-away",
+"cesena-retro-200708-home",
+"cesena-retro-201819-third",
+"charlton-retro-200910-home",
 "charlton-retro-202021-third",
+"charlton-retro-202122-home",
+"charlton-retro-202223-home",
 "charlton-retro-202324-home",
+"charlton-retro-202425-third",
 "chelsea-retro-198991-home",
 "chelsea-retro-199294-away",
 "chelsea-retro-199394-away",
@@ -870,6 +879,7 @@
 "chile-retro-1994-home",
 "chile-retro-1996-home",
 "chile-retro-1998-home",
+"chile-retro-200709-home",
 "chile-retro-2010-home",
 "chile-retro-2012-away",
 "chile-retro-2014-away",
@@ -877,6 +887,7 @@
 "chile-retro-201415-away",
 "chile-retro-201617-away",
 "chile-retro-201617-home",
+"chile-retro-2018-away",
 "chile-retro-2018-home",
 "chile-retro-201819-home",
 "chile-retro-2019-home",
@@ -931,6 +942,7 @@
 "chivas-retro-202021-home",
 "chivas-retro-202021-third",
 "chivas-retro-202122-away",
+"chivas-retro-202122-home",
 "chivas-retro-202122-third",
 "chivas-retro-2022-third",
 "chivas-retro-202223-away",
@@ -1105,6 +1117,12 @@
 "costarica-retro-2022-away",
 "costarica-retro-2022-home",
 "costarica-retro-2024-home",
+"coventry-retro-201012-away",
+"coventry-retro-201213-home",
+"coventry-retro-201920-away",
+"coventry-retro-202324-away",
+"coventry-retro-202324-home",
+"coventry-retro-202324-third",
 "cremonese-retro-199596-home",
 "croacia-retro-1998-away",
 "croacia-retro-1998-home",
@@ -1204,6 +1222,7 @@
 "dinamarca-retro-2016-away",
 "dinamarca-retro-201617-away",
 "dinamarca-retro-201617-home",
+"dinamarca-retro-201819-home",
 "dinamarca-retro-201920-away",
 "dinamarca-retro-2020-home",
 "dinamarca-retro-202223-away",
@@ -1250,6 +1269,14 @@
 "dortmund-retro-202324-third",
 "dortmund-retro-2024-home",
 "dortmund-retro-202425-third",
+"dynamokyiv-retro-201314-away",
+"dynamokyiv-retro-201920-away",
+"dynamokyiv-retro-202021-home",
+"dynamokyiv-retro-202021-third",
+"dynamokyiv-retro-202223-away",
+"dynamokyiv-retro-202425-away",
+"dynamokyiv-retro-202425-home",
+"ecuador-retro-200304-away",
 "ecuador-retro-200910-home",
 "ecuador-retro-201415-home",
 "ecuador-retro-2022-away",
@@ -1266,6 +1293,7 @@
 "egipto-retro-202223-away",
 "egipto-retro-2024-away",
 "egipto-retro-202425-away",
+"eibar-retro-202324-home",
 "elche-retro-202021-home",
 "elpasolocomotive-retro-2024-away",
 "elsalvador-retro-1970-home",
@@ -1291,6 +1319,7 @@
 "escocia-retro-199901-home",
 "escocia-retro-2000-away",
 "escocia-retro-2002-third",
+"escocia-retro-200203-away",
 "escocia-retro-2003-away",
 "escocia-retro-2003-home",
 "escocia-retro-2004-away",
@@ -1372,6 +1401,7 @@
 "estadosunidos-retro-201112-away",
 "estadosunidos-retro-2012-away",
 "estadosunidos-retro-2014-home",
+"estadosunidos-retro-201415-away",
 "estadosunidos-retro-201516-away",
 "estadosunidos-retro-2016-home",
 "estadosunidos-retro-201617-home",
@@ -1449,6 +1479,9 @@
 "fcingolstadt-retro-201618-third",
 "fcingolstadt-retro-202425-home",
 "fcmagdeburg-retro-202425-third",
+"fczurich-retro-202324-home",
+"fczurich-retro-202425-away",
+"fczurich-retro-202425-third",
 "fenerbahce-retro-199495-home",
 "fenerbahce-retro-199900-home",
 "fenerbahce-retro-200607-home",
@@ -1541,6 +1574,7 @@
 "flamengo-retro-2022-third",
 "flamengo-retro-202223-away",
 "flamengo-retro-202223-third",
+"flamengo-retro-202324-away",
 "flamengo-retro-202324-home",
 "flamengo-retro-202324-third",
 "flamengo-retro-2024-third",
@@ -1746,6 +1780,8 @@
 "gladbach-retro-202324-away",
 "gladbach-retro-202324-home",
 "gladbach-retro-202324-third",
+"granada-retro-201617-third",
+"granada-retro-202425-third",
 "grecia-retro-2004-away",
 "grecia-retro-2004-home",
 "grecia-retro-200608-away",
@@ -1783,6 +1819,7 @@
 "guatemala-retro-201920-home",
 "guatemala-retro-2021-away",
 "guatemala-retro-202324-home",
+"guinea-retro-2022-away",
 "guinea-retro-2022-third",
 "hamburg-retro-1982-home",
 "hamburg-retro-199900-third",
@@ -1829,6 +1866,7 @@
 "hertaberlin-retro-201920-away",
 "hertaberlin-retro-202122-away",
 "hertaberlin-retro-202324-away",
+"hibernian-retro-200405-home",
 "hoffenheim-retro-200910-away",
 "hoffenheim-retro-200910-third",
 "hoffenheim-retro-201112-home",
@@ -1860,6 +1898,7 @@
 "huddersfield-retro-1997-away",
 "huddersfield-retro-1997-home",
 "huddersfield-retro-2001-home",
+"huddersfield-retro-200102-home",
 "huddersfield-retro-2002-home",
 "huddersfield-retro-2005-home",
 "huddersfield-retro-200708-home",
@@ -1875,6 +1914,7 @@
 "huddersfield-retro-202223-third",
 "huddersfield-retro-202425-away",
 "huddersfield-retro-202425-home",
+"huddersfield-retro-202425-third",
 "hullcity-retro-198182-home",
 "hullcity-retro-2001-home",
 "hullcity-retro-2003-away",
@@ -2154,6 +2194,9 @@
 "italia-retro-202425-home",
 "jamaica-retro-1998-away",
 "jamaica-retro-1998-home",
+"jamaica-retro-200406-home",
+"jamaica-retro-201516-home",
+"jamaica-retro-201518-third",
 "jamaica-retro-201617-away",
 "jamaica-retro-201617-home",
 "jamaica-retro-2018-away",
@@ -2551,6 +2594,8 @@
 "liverpool-retro-2023-away",
 "liverpool-retro-202324-third",
 "liverpool-retro-202425-third",
+"lorient-retro-202021-home",
+"lorient-retro-202122-third",
 "lyon-retro-1995-home",
 "lyon-retro-199596-home",
 "lyon-retro-2003-home",
@@ -2693,6 +2738,7 @@
 "marseille-retro-2000-away",
 "marseille-retro-2001-third",
 "marseille-retro-2002-home",
+"marseille-retro-200203-home",
 "marseille-retro-2004-away",
 "marseille-retro-2009-away",
 "marseille-retro-200910-home",
@@ -2728,6 +2774,7 @@
 "mexico-retro-200102-away",
 "mexico-retro-200102-home",
 "mexico-retro-2004-away",
+"mexico-retro-200405-home",
 "mexico-retro-2006-away",
 "mexico-retro-2006-home",
 "mexico-retro-200809-away",
@@ -2735,7 +2782,9 @@
 "mexico-retro-201112-away",
 "mexico-retro-2014-away",
 "mexico-retro-201516-away",
+"mexico-retro-2016-home",
 "mexico-retro-2018-away",
+"mexico-retro-2018-home",
 "mexico-retro-202021-away",
 "mexico-retro-2022-away",
 "mexico-retro-2022-home",
@@ -2751,6 +2800,7 @@
 "millwall-retro-2004-away",
 "millwall-retro-2007-away",
 "millwall-retro-201516-away",
+"millwall-retro-201516-third",
 "millwall-retro-2020-third",
 "minnesotaunited-retro-2015-home",
 "minnesotaunited-retro-201617-home",
@@ -2824,6 +2874,7 @@
 "napoli-retro-198485-home",
 "napoli-retro-1987-away",
 "napoli-retro-198889-away",
+"napoli-retro-199091-home",
 "napoli-retro-1991-away",
 "napoli-retro-1991-third",
 "napoli-retro-199596-away",
@@ -2917,6 +2968,7 @@
 "nigeria-retro-1999-home",
 "nigeria-retro-2000-home",
 "nigeria-retro-200607-home",
+"nigeria-retro-201415-home",
 "nigeria-retro-2016-away",
 "nigeria-retro-2018-away",
 "nigeria-retro-2020-away",
@@ -3168,6 +3220,8 @@
 "penarol-retro-202223-away",
 "penarol-retro-202223-home",
 "penarol-retro-2023-home",
+"penarol-retro-2024-away",
+"penarol-retro-2024-third",
 "peru-retro-1978-away",
 "peru-retro-1978-home",
 "peru-retro-199900-home",
@@ -3272,6 +3326,11 @@
 "porto-retro-202223-third",
 "porto-retro-202324-home",
 "porto-retro-202425-away",
+"portsmouth-retro-201314-home",
+"portsmouth-retro-201314-third",
+"portsmouth-retro-201516-away",
+"portsmouth-retro-201516-home",
+"portsmouth-retro-201617-home",
 "portugal-retro-1992-away",
 "portugal-retro-1992-home",
 "portugal-retro-2000-home",
@@ -3560,6 +3619,8 @@
 "realvalladolid-retro-200305-home",
 "realvalladolid-retro-201920-home",
 "realvalladolid-retro-202223-away",
+"realzaragoza-retro-200103-away",
+"realzaragoza-retro-201617-away",
 "redstarbelgrade-retro-2006-away",
 "redstarbelgrade-retro-200910-home",
 "redstarbelgrade-retro-201920-third",
@@ -3619,6 +3680,7 @@
 "roma-retro-200506-away",
 "roma-retro-2007-third",
 "roma-retro-2011-away",
+"roma-retro-201112-home",
 "roma-retro-201112-third",
 "roma-retro-201314-home",
 "roma-retro-2014-third",
@@ -3659,6 +3721,11 @@
 "rotherhamunited-retro-202021-home",
 "rotherhamunited-retro-202223-home",
 "rubinkazan-retro-202122-home",
+"sampdoria-retro-201718-home",
+"sampdoria-retro-201920-home",
+"sampdoria-retro-202425-away",
+"sampdoria-retro-202425-home",
+"sampdoria-retro-202425-third",
 "samsunspor-retro-201920-home",
 "samsunspor-retro-202324-away",
 "sandiegofc-retro-2024-away",
@@ -3736,6 +3803,7 @@
 "schalke04-retro-2022-away",
 "schalke04-retro-2022-third",
 "schalke04-retro-202425-away",
+"seattlesounders-retro-2011-away",
 "seattlesounders-retro-2011-home",
 "seattlesounders-retro-201314-away",
 "seattlesounders-retro-2015-away",
@@ -3745,6 +3813,7 @@
 "seattlesounders-retro-201718-away",
 "seattlesounders-retro-2018-away",
 "seattlesounders-retro-2018-home",
+"seattlesounders-retro-201920-away",
 "seattlesounders-retro-201920-home",
 "seattlesounders-retro-201920-third",
 "seattlesounders-retro-202021-home",
@@ -3804,6 +3873,7 @@
 "shimizuspulse-retro-2011-home",
 "shimizuspulse-retro-2013-home",
 "shimizuspulse-retro-2024-home",
+"slaviaprague-retro-202425-home",
 "southampton-retro-198485-home",
 "southampton-retro-1987-away",
 "southampton-retro-1997-home",
@@ -3854,6 +3924,7 @@
 "sportingcp-retro-202021-away",
 "sportingcp-retro-202324-third",
 "sportingcp-retro-202425-home",
+"sportinggijon-retro-202223-home",
 "sportingkc-retro-2010-home",
 "sportingkc-retro-201415-away",
 "sportingkc-retro-201516-third",
@@ -3923,6 +3994,7 @@
 "suecia-retro-1994-away",
 "suecia-retro-1994-home",
 "suecia-retro-1998-away",
+"suecia-retro-199800-away",
 "suecia-retro-2002-away",
 "suecia-retro-2002-home",
 "suecia-retro-200203-away",
@@ -3933,6 +4005,7 @@
 "suecia-retro-200608-away",
 "suecia-retro-2008-home",
 "suecia-retro-200910-home",
+"suecia-retro-201011-home",
 "suecia-retro-2013-away",
 "suecia-retro-201415-home",
 "suecia-retro-201617-away",
@@ -3940,6 +4013,7 @@
 "suecia-retro-2019-away",
 "suecia-retro-2020-home",
 "suecia-retro-202021-away",
+"suecia-retro-2021-home",
 "suecia-retro-2022-away",
 "suecia-retro-2022-home",
 "suecia-retro-202223-home",
@@ -3964,6 +4038,7 @@
 "suiza-retro-201617-home",
 "suiza-retro-201819-away",
 "suiza-retro-201819-home",
+"suiza-retro-2020-home",
 "suiza-retro-202122-home",
 "suiza-retro-2022-away",
 "suiza-retro-202223-away",
@@ -4006,6 +4081,7 @@
 "swansea-retro-2012-away",
 "swansea-retro-2013-away",
 "swansea-retro-2013-home",
+"swansea-retro-201314-away",
 "swansea-retro-2014-away",
 "swansea-retro-2014-home",
 "swansea-retro-2015-away",
@@ -4066,6 +4142,7 @@
 "torino-retro-2017-third",
 "torino-retro-202021-away",
 "torino-retro-202021-home",
+"torino-retro-202122-away",
 "tottenham-retro-1980-away",
 "tottenham-retro-1986-third",
 "tottenham-retro-198891-away",
@@ -4105,6 +4182,7 @@
 "toulouse-retro-2013-away",
 "toulouse-retro-2013-third",
 "toulouse-retro-201314-away",
+"toulouse-retro-201314-home",
 "toulouse-retro-201516-away",
 "toulouse-retro-201516-third",
 "toulouse-retro-201920-away",
@@ -4132,6 +4210,7 @@
 "turquia-retro-2018-home",
 "turquia-retro-2019-home",
 "turquia-retro-201920-third",
+"turquia-retro-2020-away",
 "turquia-retro-202021-away",
 "turquia-retro-202021-home",
 "turquia-retro-202021-third",
@@ -4279,6 +4358,7 @@
 "watford-retro-201112-away",
 "watford-retro-201314-home",
 "watford-retro-201617-away",
+"watford-retro-201718-away",
 "watford-retro-201920-home",
 "watford-retro-2020-home",
 "watford-retro-202021-away",
@@ -4333,6 +4413,7 @@
 "westbrom-retro-1994-home",
 "westbrom-retro-199697-home",
 "westbrom-retro-2002-home",
+"westbrom-retro-200203-home",
 "westbrom-retro-2003-home",
 "westbrom-retro-2004-away",
 "westbrom-retro-2006-home",
@@ -4436,6 +4517,9 @@
 "wolves-retro-202324-away",
 "wolves-retro-202324-home",
 "wolves-retro-202425-away",
+"wrexham-retro-202223-away",
+"wrexham-retro-202324-away",
+"wrexham-retro-202425-third",
 "wydad-retro-2009-away",
 "yokohamafmarinos-retro-2015-home",
 "yokohamafmarinos-retro-2017-home",
@@ -21537,6 +21621,333 @@
 "M"
 ],
 "shipping": 3.92
+},
+"dinamarca-retro-201819-home": {
+"title": "Esbjerg FB Home Football Shirt 2018-2019 (M) Jersey Nike Trikot Denmark",
+"price": 47.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/236585312558?_skw=Denmark+2018+home+shirt&hash=item371595612e%3Ag%3AtdkAAeSw7ixpammg&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|236585312558|0",
+"image": "https://i.ebayimg.com/images/g/tdkAAeSw7ixpammg/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 9.6
+},
+"turquia-retro-2020-away": {
+"title": "TURKEY 2020 AWAY FOOTBALL SHIRT JERSEY NIKE SIZE XS BNWT",
+"price": 59.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/356480764752?_skw=Turkey+2020+away+shirt&hash=item52ffe8cb50%3Ag%3Aql0AAOSwqBVniBN4&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|356480764752|0",
+"image": "https://i.ebayimg.com/images/g/ql0AAOSwqBVniBN4/s-l1600.jpg",
+"sizes": [
+"XS"
+],
+"shipping": 9.6
+},
+"chivas-retro-202122-home": {
+"title": "PUMA Chivas de Guadalajara 2021/22 Home Football Shirt Size Medium Excellent",
+"price": 42.3,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/237012611784?_skw=Chivas+Guadalajara+2021+home+shirt&hash=item372f0d72c8%3Ag%3AIr4AAeSwhFRqg4DA&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|237012611784|0",
+"image": "https://i.ebayimg.com/images/g/Ir4AAeSwhFRqg4DA/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 2.94
+},
+"nigeria-retro-201415-home": {
+"title": "Nigeria Home Football Shirt 2014/15 Adults Small Adidas Brand New With Tags",
+"price": 57.89,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/267320049708?_skw=Nigeria+2014+home+shirt&hash=item3e3d84402c%3Ag%3AxqMAAeSwNcJob5nZ&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|267320049708|0",
+"image": "https://i.ebayimg.com/images/g/xqMAAeSwNcJob5nZ/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 2.7
+},
+"charlton-retro-202122-home": {
+"title": "Charlton Athletic Home Shirt 2021/22 Adult Large Excellent Condition",
+"price": 26.69,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/800519113060?_skw=Charlton+Athletic+2021+home+shirt&hash=itemba62a84964%3Ag%3AJJsAAeSwXudqgfo8&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|800519113060|0",
+"image": "https://i.ebayimg.com/images/g/JJsAAeSwXudqgfo8/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 2.94
+},
+"cesena-retro-201819-third": {
+"title": "Cesena FC Third Football Shirt 2018-2019 (M) Mizuno Maglia Jersey",
+"price": 41.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/236784634224?_skw=Cesena+FC+2018+third+shirt&hash=item372176c970%3Ag%3A5p4AAeSw8kxp8LiN&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|236784634224|0",
+"image": "https://i.ebayimg.com/images/g/5p4AAeSw8kxp8LiN/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 9.6
+},
+"jamaica-retro-200406-home": {
+"title": "BNWT Authentic Jamaica 2004/06 Home Shirt (XL) New Rare Soccer Jersey TS4",
+"price": 115.1,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/298692650828?_skw=Jamaica+2004+home+shirt&hash=item458b78274c%3Ag%3A5T4AAeSwqYlqSN4q&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|298692650828|0",
+"image": "https://i.ebayimg.com/images/g/5T4AAeSwqYlqSN4q/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 3.98
+},
+"sampdoria-retro-202425-away": {
+"title": "2024-25 UC Sampdoria Away Soccer Football Jersey Shirt New With Tags",
+"price": 50.56,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/227428965753?_skw=UC+Sampdoria+2024+away+shirt&hash=item34f3d29d79%3Ag%3A%7EBAAAeSwZl5qVGra&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|227428965753|526619415944",
+"image": "https://i.ebayimg.com/images/g/~BAAAeSwZl5qVGra/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 18.97
+},
+"sampdoria-retro-202425-home": {
+"title": "Sampdoria Football Shirt Home 2024/2025 (M)",
+"price": 37.1,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/406961691540?_skw=UC+Sampdoria+2024+home+shirt&hash=item5ec0ce9b94%3Ag%3AogUAAeSwgY5qGqal&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|406961691540|0",
+"image": "https://i.ebayimg.com/images/g/ogUAAeSwgY5qGqal/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 2.94
+},
+"coventry-retro-201920-away": {
+"title": "COVENTRY CITY FC 2019/20 Away Shirt size XL  BNWT £47.00",
+"price": 52.7,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/327114466839?_skw=Coventry+City+2019+away+shirt&hash=item4c298aa617%3Ag%3AtpsAAeSw16pp5qWO&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|327114466839|0",
+"image": "https://i.ebayimg.com/images/g/tpsAAeSw16pp5qWO/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 2.96
+},
+"coventry-retro-202324-away": {
+"title": "mens COVENTRY CITY away shirt - size M ( 2023/24 ) BNWT FREE P&P ( ref LEW )",
+"price": 30.0,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/117041525370?_skw=Coventry+City+2023+away+shirt&hash=item1b4037f27a%3Ag%3A5mEAAeSwtchpk9g2&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|117041525370|0",
+"image": "https://i.ebayimg.com/images/g/5mEAAeSwtchpk9g2/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 0.0
+},
+"coventry-retro-201213-home": {
+"title": "Coventry City 2012/13 Home Football Shirt Puma 3XL XXXL BNWT Soccer Jersey",
+"price": 44.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/278349923771?_skw=Coventry+City+2012+home+shirt&hash=item40cef2c5bb%3Ag%3AL8IAAeSwjFZqnb1i&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|278349923771|0",
+"image": "https://i.ebayimg.com/images/g/L8IAAeSwjFZqnb1i/s-l1600.jpg",
+"sizes": [
+"3XL"
+],
+"shipping": 3.49
+},
+"coventry-retro-202324-home": {
+"title": "COVENTRY CITY FC OFFICIAL HUMMEL 2023/24 KING OF SHAVES HOME SHIRT BNWT S 39'",
+"price": 39.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/257789244575?_skw=Coventry+City+2023+home+shirt&hash=item3c056fb49f%3Ag%3AK-QAAeSwYelqYMuc&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|257789244575|0",
+"image": "https://i.ebayimg.com/images/g/K-QAAeSwYelqYMuc/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 2.94
+},
+"coventry-retro-202324-third": {
+"title": "Coventry City 2023/2024 Third Football Shirt- Hummel- Size Medium New with Tags",
+"price": 25.0,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/158270552461?_skw=Coventry+City+2023+third+shirt&hash=item24d9a8f98d%3Ag%3A%7EV0AAeSwywhqn9KL&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|158270552461|0",
+"image": "https://i.ebayimg.com/images/g/~V0AAeSwywhqn9KL/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 3.38
+},
+"dynamokyiv-retro-202021-home": {
+"title": "Dynamo Kyiv 2020/21 Home Shirt ",
+"price": 26.7,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/127388852893?_skw=Dynamo+Kyiv+2020+home+shirt&hash=item1da8f7a29d%3Ag%3Af1gAAeSwXx9oIFh2&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kSwSiXlVSHMloHFzMl4m%2BYyzLgU9vaqrMnxbdYQvLJy%2BIEAdqc4CUIMQMN45%2FC654q5vp2mJEdVI8o1WkgLdarFhUjP7u6zkrZsMQMPaGmtA1vt5fuu4WFJsSy6OcqJFRNPoOuWBe36AWKmwyW8K9uByms0pxNsWZiS9x2QZiSc6QHWtKBIai%2BOJvmxVFNv%2FEna9jLkLu0jTqlgb2bdXftWhIzgHK1S5Za2vyYb3Jq%2F6PhlUNtPoTjbieH4JvHflZ9qcSaNV%2FEPgvTIUKrHpBnoBd0kj4B8al5LI0%2BgmBd3EDBliHWZtOS1xOSz3TbbgY%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|127388852893|0",
+"image": "https://i.ebayimg.com/images/g/f1gAAeSwXx9oIFh2/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 2.94
+},
+"dynamokyiv-retro-202425-home": {
+"title": "DYNAMO KYIV New Balance Home Shirt 2024-25 NEW Mens Sizes BNWT Jersey BNIB",
+"price": 49.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/800382538380?_skw=Dynamo+Kyiv+2024+home+shirt&hash=itemba5a84528c%3Ag%3ABJQAAeSwvTxqX1Wk&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|800382538380|657429608442",
+"image": "https://i.ebayimg.com/images/g/BJQAAeSwvTxqX1Wk/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 0.0
+},
+"portsmouth-retro-201314-third": {
+"title": "Portsmouth Third Away Shirt 2013/14 (XL)",
+"price": 50.68,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/277115495497?_skw=Portsmouth+FC+2013+third+shirt&hash=item40855ee449%3Ag%3A5HAAAOSwZHxoJzRn&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7msoq9DL%2B0%2FjKBXo9XpRc4HMnq%2FYP%2FAPUgQfbh7cjK11e%2Br8gyfE9zHkEy7LmfJI0jkg6IqPzaXNI2D6fXcgyV1%2BTTnGwDKjOEi8XKeBv7dcHUFoPdqcNmf8Gyr7%2FslcJrq1dPrgHikksRgNBTA%2BFiD5V0ErRlr%2FsvUPZeW7mbsgU6mI9fcqrHoWc8Th8bop9zY8zhlcP4XPa5GMlWdg2fwnGfV7hQ6gYhCd4qCFW6WBuvKjiJmZnFSAlnUdeJzgfagWtfXLsaAQY8RFZKhPxgl83Bgjsp%2F1lwTisPl8kmf%2BlSoUhgNb2zf2DzxR3DUduM%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|277115495497|0",
+"image": "https://i.ebayimg.com/images/g/5HAAAOSwZHxoJzRn/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 19.76
+},
+"wrexham-retro-202223-away": {
+"title": "Wrexham AFC 2022/23 Away Shirt Size Medium. New with Tags Official Merchandise",
+"price": 52.7,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/178345494872?_skw=Wrexham+AFC+2022+away+shirt&hash=item2986384958%3Ag%3Al5kAAeSw2MxqZipt&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|178345494872|0",
+"image": "https://i.ebayimg.com/images/g/l5kAAeSw2MxqZipt/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 2.94
+},
+"wrexham-retro-202324-away": {
+"title": "Wrexham AFC Away Shirt 23/24 Brand New! Unopened! Football Soccer Size Small (S)",
+"price": 26.7,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/227116002278?_skw=Wrexham+AFC+2023+away+shirt&hash=item34e12b2be6%3Ag%3AbO8AAeSw2Mxqcv7x&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|227116002278|0",
+"image": "https://i.ebayimg.com/images/g/bO8AAeSw2Mxqcv7x/s-l1600.jpg",
+"sizes": [
+"XS"
+],
+"shipping": 2.94
+},
+"wrexham-retro-202425-third": {
+"title": "Wrexham Football Shirt 2024/2025 Third Mens Large BNWT Genuine w/ Club Shop Bag",
+"price": 78.7,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/257676147435?_skw=Wrexham+AFC+2024+third+shirt&hash=item3bfeb1faeb%3Ag%3ABMgAAeSwyJFqfHEg&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|257676147435|0",
+"image": "https://i.ebayimg.com/images/g/BMgAAeSwyJFqfHEg/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 3.38
+},
+"dynamokyiv-retro-201920-away": {
+"title": "Dynamo Kyiv 2019-20 Away Jersey New Balance NB Dry - White/Blue Size MB",
+"price": 29.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/800238075542?_skw=Dynamo+Kyiv+2019+away+shirt&hash=itemba51e7fe96%3Ag%3AvMIAAeSwDs5qPD9i&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n%2FMN2B4k4DBQ9HcNcwEMUxvhTdoAvt5WqhJTUz%2BqS2zPfv20k7hbuTo%2FT8BJoX4M0YWZOavCO1ElgE58ycS3hiysog3yNZn10wSlEp%2BLAo0oMKYkUan%2B%2BzfbTg6oY2ogbXIJ%2FuYF0KyiFayd97RT7kbA5tJ7fO%2BbIXk6nOkPy76hWoGxplo2HNgP%2F6BCDp7qfKpYfLdn%2BA4%2FCANETU8FJ9BD1MSStysAT8Z6mOQflbJKMs7Yi3nBIs%2FJWrCT5igE8zqITrcON4NtkdpJDnFLniCAupbnAbDMXFhrGGrvK5giqSBzhArsAQ4Is2QA5S%2F%2Bw%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|800238075542|0",
+"image": "https://i.ebayimg.com/images/g/vMIAAeSwDs5qPD9i/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 2.95
+},
+"dynamokyiv-retro-202425-away": {
+"title": "DYNAMO KYIV New Balance Away Football Shirt 2024-2025 NEW Mens BNWT Jersey Kiev",
+"price": 49.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/177060939867?_skw=Dynamo+Kyiv+2024+away+shirt&hash=item2939a7885b%3Ag%3AA-4AAeSw0QtoFJT-&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|177060939867|476762865662",
+"image": "https://i.ebayimg.com/images/g/A-4AAeSw0QtoFJT-/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 0.0
+},
+"slaviaprague-retro-202425-home": {
+"title": "PUMA SK Slavia Prague 2024/25 Home Football Shirt Red/White Adult M BNWT",
+"price": 23.58,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/960038608713?_skw=Slavia+Prague+2024+home+shirt&hash=itemdf86c29f49%3Ag%3Ar5MAAeSwRtZqx-6A&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|960038608713|0",
+"image": "https://i.ebayimg.com/images/g/r5MAAeSwRtZqx-6A/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 2.94
+},
+"charlton-retro-200910-home": {
+"title": "Charlton Athletic Shirt Mens XXL Red Home Kit 2009 2010 Joma Soccer Jersey BNWT",
+"price": 60.0,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/920024021834?_skw=Charlton+Athletic+2009+home+shirt&hash=itemd635b47b4a%3Ag%3AvBEAAeSwsa5qyQ9i&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|920024021834|0",
+"image": "https://i.ebayimg.com/images/g/vBEAAeSwsa5qyQ9i/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 3.1
+},
+"huddersfield-retro-202425-third": {
+"title": "Huddersfield Town Football Club 2024-25 Third Shirt Size Medium Umbro Red& Black",
+"price": 16.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/366685514977?_skw=Huddersfield+Town+2024+third+shirt&hash=item556028ece1%3Ag%3AV4YAAeSwSOlqsspV&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|366685514977|0",
+"image": "https://i.ebayimg.com/images/g/V4YAAeSwSOlqsspV/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 2.85
+},
+"millwall-retro-201516-third": {
+"title": "Millwall 2015/16 Adults Third Shirt Yellow Size 2xl xxl Jersey football ",
+"price": 32.68,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/227119748742?_skw=Millwall+2015+third+shirt&hash=item34e1645686%3Ag%3A050AAeSwVm5pNH1A&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|227119748742|0",
+"image": "https://i.ebayimg.com/images/g/050AAeSwVm5pNH1A/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 2.94
+},
+"watford-retro-201718-away": {
+"title": "Original Watford Away Football Shirt 2017/18 Men’s S New with tag",
+"price": 17.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/298679768695?_skw=Watford+2017+away+shirt&hash=item458ab39677%3Ag%3ARzAAAeSwkxFqqpUT&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|298679768695|0",
+"image": "https://i.ebayimg.com/images/g/RzAAAeSwkxFqqpUT/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 2.69
 }
 }
 }
