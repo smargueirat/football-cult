@@ -90376,30 +90376,6 @@ const productsData = [
     ],
   },
 {
-    id: "birminghamcity-retro-201213-away",
-    teamKey: "birminghamcity",
-    season: "2012/13",
-    typeKey: "retro",
-    colorHex: "#0053A0",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 75.62, shipping: 30.03, currency: "EUR", url: "https://www.ebay.es/itm/174509196462?_skw=Birmingham+City+away+soccer+jersey&hash=item28a18f04ae%3Ag%3A3WkAAOxy4fVTE7CW&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "CAMISETA DE FUTBOL BIRMINGHAM CITY 2012/13 VISITANTE XL, M NEGRA ROSA S/SL DIADORA", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/3WkAAOxy4fVTE7CW/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "birminghamcity-retro-201213-home",
-    teamKey: "birminghamcity",
-    season: "2012/13",
-    typeKey: "retro",
-    colorHex: "#0053A0",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay IT", price: 76.25, shipping: 31.18, currency: "EUR", url: "https://www.ebay.it/itm/173721580342?_skw=Birmingham+City+home+soccer+jersey&hash=item28729cf336%3Ag%3AAWoAAOSwFb5aTm4v&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "MAGLIA CALCIO BIRMINGHAM CITY 2012/13 HOME (XL,M) BLU SH/SLEEVE DIADORA", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/AWoAAOSwFb5aTm4v/s-l1600.jpg" },
-    ],
-  },
-{
     id: "charlton-retro-200910-home",
     teamKey: "charlton",
     season: "2009/10",
@@ -90469,18 +90445,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay ES", price: 71.45, shipping: 15.11, currency: "EUR", url: "https://www.ebay.es/itm/158075710795?_skw=Huddersfield+Town+home+soccer+jersey&hash=item24ce0bed4b%3Ag%3A7nIAAOSwFrlkHC-y&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "CAMISETA DE FUTBOL LOCAL DE HUDDERSFIELD TOWN 2001 2002 BLOGGS TALLA XL ADULTO", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/7nIAAOSwFrlkHC-y/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "huddersfield-retro-202021-home",
-    teamKey: "huddersfield",
-    season: "2020/21",
-    typeKey: "retro",
-    colorHex: "#0E63AD",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 75.62, shipping: 30.03, currency: "EUR", url: "https://www.ebay.es/itm/174831289662?_skw=Huddersfield+Town+home+soccer+jersey&hash=item28b4c1c53e%3Ag%3AdsEAAOSwVGdg5d%7Ev&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "CAMISETA DE FUTBOL HUDDERSFIELD TOWN 2020/21 HOME (XL, L) UMBRO MANGA SH AZUL/BLANCA", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/dsEAAOSwVGdg5d~v/s-l1600.jpg" },
     ],
   },
 {
