@@ -1361,6 +1361,19 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/158107699222",  # birminghamcity; home|1971: reedicion (reissue)|CAMISETA DE FUTBOL LOCAL BIRMINGHAM CIT
     "/itm/171843960916",  # watford; away|2011/12: L&S sleeve ambiguous|MAGLIA MAGLIA CALCIO BURRDA MANICA 
     "/itm/171843960916",  # watford; away|2011/12: L&S sleeve ambiguous|CAMISETA DE FUTBOL WATFORD 2011/12 
+    # --- Daily pass 2026-10-15, eBay US current ---
+    "/itm/267787249725",  # palermo; home: $28.98 JERSEY template seller|JERSEY Palermo Soccer Home Men 26-
+    "/itm/267787249727",  # palermo; away: $28.98 JERSEY template seller|JERSEY Palermo Soccer Away Men 26-
+    "/itm/376366241249",  # shakhtar; home: $28.98 JERSEY template seller|JERSEY FC Shakhtar Donetsk Mens Ho
+    "/itm/227264619518",  # kashimaantlers; home: $28.98 JERSEY template seller|JERSEY Kashima Antlers Home 2026
+    "/itm/227264619528",  # urawareds; home: $28.98 JERSEY template seller|JERSEY Urawa Red Diamonds Home 202
+    "/itm/366644728237",  # alhilal; home: replica-factory wall photo, generic 26-27 title|26-27 Al-Hilal H
+    # --- Daily pass 2026-10-15, eBay retro ---
+    "/itm/137148490515",  # palermo; away|2010: player name / signed|Boca Juniors Away Jersey 2010 Martin P
+    "/itm/358092430907",  # palermo; away|2004/05: player name / signed|Boca Juniors Away Jersey 2004/05. P
+    "/itm/287190462984",  # ssvjahnregensburg; home|2023/24: player name / signed|Maglia SSV Jahn Regensburg 2023/202
+    "/itm/900010634178",  # clubbrugge; third|2024/25: player name / signed|Camiseta de fútbol Club Brugge KV 
+    "/itm/287190462984",  # ssvjahnregensburg; home|2023/24: player name / signed|Camiseta SSV Jahn Regensburg 2023/2
 ]
 
 

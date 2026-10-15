@@ -1476,6 +1476,7 @@
 "fcingolstadt-retro-2007-home",
 "fcingolstadt-retro-2014-away",
 "fcingolstadt-retro-2015-home",
+"fcingolstadt-retro-2016-away",
 "fcingolstadt-retro-201618-third",
 "fcingolstadt-retro-202425-home",
 "fcmagdeburg-retro-202425-third",
@@ -1864,6 +1865,7 @@
 "hertaberlin-retro-201819-away",
 "hertaberlin-retro-201819-home",
 "hertaberlin-retro-201920-away",
+"hertaberlin-retro-201920-home",
 "hertaberlin-retro-202122-away",
 "hertaberlin-retro-202324-away",
 "hibernian-retro-200405-home",
@@ -2503,6 +2505,7 @@
 "leicester-retro-2023-away",
 "leicester-retro-202324-away",
 "leicester-retro-202324-home",
+"leicester-retro-202324-third",
 "leicester-retro-202425-away",
 "leicester-retro-202425-third",
 "lens-retro-200102-home",
@@ -2802,6 +2805,7 @@
 "millwall-retro-201516-away",
 "millwall-retro-201516-third",
 "millwall-retro-2020-third",
+"millwall-retro-202223-away",
 "minnesotaunited-retro-2015-home",
 "minnesotaunited-retro-201617-home",
 "minnesotaunited-retro-201819-home",
@@ -2820,6 +2824,7 @@
 "mkdons-retro-2022-home",
 "mkdons-retro-202324-home",
 "mkdons-retro-2024-third",
+"mkdons-retro-202425-home",
 "monaco-retro-1996-home",
 "monaco-retro-199798-home",
 "monaco-retro-1999-home",
@@ -4368,6 +4373,8 @@
 "watford-retro-202122-home",
 "watford-retro-202122-third",
 "watford-retro-2022-home",
+"watford-retro-202324-home",
+"watford-retro-202324-third",
 "werderbremen-retro-198788-home",
 "werderbremen-retro-198889-away",
 "werderbremen-retro-1995-home",
@@ -4432,6 +4439,7 @@
 "westbrom-retro-2020-third",
 "westbrom-retro-202223-home",
 "westbrom-retro-202425-away",
+"westbrom-retro-202425-home",
 "westham-retro-198587-home",
 "westham-retro-1990-home",
 "westham-retro-199395-away",
@@ -21948,6 +21956,92 @@
 "S"
 ],
 "shipping": 2.69
+},
+"leicester-retro-202324-third": {
+"title": "Men's Third Football Shirt Gold 2023-2024 Leicester City Soccer Jersey Tee Top",
+"price": 46.25,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/178482502368?_skw=Leicester+City+2023+third+shirt&hash=item298e62dae0%3Ag%3AvNsAAeSw0JZqoXzr&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|178482502368|477813211390",
+"image": "https://i.ebayimg.com/images/g/vNsAAeSw0JZqoXzr/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 3.75
+},
+"millwall-retro-202223-away": {
+"title": "MILLWALL FC football shirt SIZE Large  Away 2022/23 Soccer Jersey  Hummel",
+"price": 34.63,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/175734095335?_skw=Millwall+2022+away+shirt&hash=item28ea917de7%3Ag%3AIDMAAOSwaZNkZnNB&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|175734095335|0",
+"image": "https://i.ebayimg.com/images/g/IDMAAOSwaZNkZnNB/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 3.99
+},
+"watford-retro-202324-home": {
+"title": "WATFORD Football shirt 2023/24 Home Soccer JERSEY KELME  adult large",
+"price": 16.14,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/126701425607?_skw=Watford+2023+home+shirt&hash=item1d7ffe53c7%3Ag%3A4-IAAOSwF89m%7EFxx&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|126701425607|0",
+"image": "https://i.ebayimg.com/images/g/4-IAAOSwF89m~Fxx/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 3.38
+},
+"watford-retro-202324-third": {
+"title": "WATFORD Football shirt 2023/24 Third Soccer JERSEY KELME Football Top",
+"price": 23.01,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/186592064847?_skw=Watford+2023+third+shirt&hash=item2b71c0f54f%3Ag%3ABcsAAOSwI55mosdu&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|186592064847|696047719976",
+"image": "https://i.ebayimg.com/images/g/BcsAAOSwI55mosdu/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 3.99
+},
+"westbrom-retro-202425-home": {
+"title": "West Brom 2024/25 Home Shirt - Medium - Authentic Vintage Macron Football Kit",
+"price": 33.04,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/127953995151?_skw=West+Bromwich+Albion+2024+home+shirt&hash=item1dcaa7058f%3Ag%3ANjgAAeSwLw9qRqyC&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|127953995151|0",
+"image": "https://i.ebayimg.com/images/g/NjgAAeSwLw9qRqyC/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 2.94
+},
+"hertaberlin-retro-201920-home": {
+"title": "Hertha Berlin Authentic 2019-20 home shirt - adult extra small (30-34\")",
+"price": 20.0,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/254696121268?_skw=Hertha+Berlin+2019+home+shirt&hash=item3b4d1263b4%3Ag%3A5PEAAOSwA3tfQQTA&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|254696121268|0",
+"image": "https://i.ebayimg.com/images/g/5PEAAOSwA3tfQQTA/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 0.0
+},
+"mkdons-retro-202425-home": {
+"title": "Castore 2024/25 MK Dons Home Shirt Size 16 Medium/large ",
+"price": 16.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/227194014372?_skw=MK+Dons+2024+home+shirt&hash=item34e5d18aa4%3Ag%3AC8IAAeSwxsRpe1ba&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7k6A5MHucWGPKb48zfqXREV94gxkgwqWYMNC0iCIb9cHSYDKa3huqjhX8BpmYlOfiv8GB42abS48JTgAHY%2BI2AJDrLngUSQIrslzLxPu3UDf0egVJWwcsN3hsDtm0CknWiqtlBzGDyqTfJR4rIUuqaN3BX7Nt9RJZX3n%2FQXAG1CTQpsJyEOIKgd70Jyd8xtOzoeXeE9T%2B4Hher1WUI5Ero646O%2B0nGKHJbYvyxtNyzxlDC4qm7%2B1C0QnkPfhifP3422PjmUo0QJODcYty3ZkgCkUU2BzR%2BdhXIWQKT6bwSF4AWPVLiP8VHtkbtqs91Emiw%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|227194014372|0",
+"image": "https://i.ebayimg.com/images/g/C8IAAeSwxsRpe1ba/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 0.0
 }
 }
 }
