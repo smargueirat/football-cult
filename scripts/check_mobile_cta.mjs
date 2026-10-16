@@ -20,6 +20,10 @@ const { chromium } = require(process.env.PW_CORE || "/home/piojo/vuelos-argentin
 const CHROME = process.env.CHROME || "/home/piojo/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome";
 const BASE = (process.argv[2] || "https://football-cult.com").replace(/\/$/, "");
 const JERSEY = process.env.JERSEY || "valencia-home-202627";
+// BUST=1: query única por página para saltar la caché de Cloudflare (regla
+// "paginas-html": guarda el HTML 2 h y no se purga al desplegar), y así probar
+// el código que sirve el origen justo después de un deploy.
+const bust = (path) => (process.env.BUST ? `${path}${path.includes("?") ? "&" : "?"}nc=${Date.now()}` : path);
 
 const BAR = '[data-testid="best-offer-bar"] a[href^="/go/"]';
 const HUBS = new Set(["marca", "linea", "terreno", "ninos", "futbol-sala", "tipo"]);
@@ -38,7 +42,7 @@ const mobile = {
 async function firstFicha(section) {
   const ctx = await browser.newContext(mobile);
   const p = await ctx.newPage();
-  await p.goto(`${BASE}/es/${section}`, { waitUntil: "domcontentloaded", timeout: 60000 });
+  await p.goto(BASE + bust(`/es/${section}`), { waitUntil: "domcontentloaded", timeout: 60000 });
   await p.waitForSelector(`a[href^="/es/${section}/"]`, { timeout: 60000 });
   const hrefs = await p.$$eval(`a[href^="/es/${section}/"]`, (as) => as.map((a) => a.getAttribute("href")));
   await ctx.close();
@@ -60,7 +64,7 @@ async function check(name, path, selector, reject) {
   });
   const out = { name, state: reject ? "tras rechazar" : "1ª visita", path, ok: false, why: "" };
   try {
-    await p.goto(BASE + path, { waitUntil: "domcontentloaded", timeout: 60000 });
+    await p.goto(BASE + bust(path), { waitUntil: "domcontentloaded", timeout: 60000 });
     if (reject) {
       await p.getByRole("button", { name: "Rechazar" }).click({ timeout: 10000 });
     } else {
