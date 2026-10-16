@@ -118,7 +118,7 @@ export default function TicketsPageClient({
       {!isHub && (
         <>
           <BackToCatalogLink />
-          <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-3xl">{t.tickets.pageTitle}</h1>
+          <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-3xl">{t.tickets.pageH1}</h1>
           <p className="mt-1 text-sm text-[#675c44]">{t.tickets.pageSubtitle.replace("{n}", String(ticketProducts.length))}</p>
         </>
       )}

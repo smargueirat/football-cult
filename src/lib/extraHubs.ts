@@ -1,10 +1,14 @@
-import { products, bestOffer } from "@/data/products";
+import { products, bestOffer, type TeamKey } from "@/data/products";
+import type { HubLocale } from "@/data/teamMeta";
 import { BOOT_LINES, bootLinesOf } from "@/lib/bootLines";
 import { MIN_HUB_ITEMS, gearItems, kidsBootItems, type GearItem } from "@/lib/gearHubs";
-import type { HubItem } from "@/lib/hubs";
-import { offerTotalInEUR } from "@/lib/offerMoney";
+import { teamName, type HubItem } from "@/lib/hubs";
+import { formatOfferMoney, offerTotalInEUR } from "@/lib/offerMoney";
 import { ticketCompetitionFacets, ticketTeamFacets } from "@/lib/ticketHubs";
-import { isVintageRetro, seasonSortValue } from "@/lib/productMeta";
+import { isVintageRetro, seasonSortValue, teamCategory } from "@/lib/productMeta";
+import { distinctRetailerLabels } from "@/lib/retailerFamily";
+import { EXTRA } from "@/lib/extraHubStrings";
+import { withBrand } from "@/lib/seoMeta";
 
 // Hubs nuevos del 2026-10-09: botas por línea de modelo, de niño y de sala;
 // retro por equipo y por década; entradas por equipo y por competición.
@@ -30,7 +34,9 @@ export { kidsBootItems };
 
 // ---------- retro (temporada <= 2006, isVintageRetro) ----------
 
-export const RETRO_MIN = 5;
+// 3 (antes 5, 2026-10-16): las consultas retro que ya salen en página 1-2 son
+// de clubes medianos con pocas camisetas; un hub de 3 reales ya compara.
+export const RETRO_MIN = 3;
 export const decadeOf = (season: string) => Math.floor(seasonSortValue(season) / 10) * 10;
 
 let vintageCache: HubItem[] | null = null;
@@ -59,6 +65,71 @@ export const retroDecadeFacets = () =>
     .map(([decade, count]) => ({ decade, count }))
     .sort((a, b) => a.decade - b.decade);
 
+// Equipo + década (/retro/manutd/1990): solo para equipos con AL MENOS DOS
+// décadas de RETRO_MIN+ camisetas cada una. Con una sola, el hub de década
+// sería casi el del equipo con otra URL (contenido duplicado).
+export const retroTeamDecadeItems = (team: string, decade: number) => retroTeamItems(team).filter((i) => decadeOf(i.product.season) === decade);
+export function retroTeamDecadeFacets(team?: string) {
+  const raw = countBy(team ? retroTeamItems(team) : vintage(), (i) => `${i.product.teamKey}|${decadeOf(i.product.season)}`).map(([k, count]) => ({
+    team: k.split("|")[0],
+    decade: Number(k.split("|")[1]),
+    count,
+  }));
+  const perTeam = new Map<string, number>();
+  for (const f of raw) perTeam.set(f.team, (perTeam.get(f.team) ?? 0) + 1);
+  return raw.filter((f) => perTeam.get(f.team)! >= 2).sort((a, b) => a.team.localeCompare(b.team) || a.decade - b.decade);
+}
+
+// Datos de un hub retro (equipo, década o equipo+década) para la página, el
+// <title> y scripts/check_query_patterns.mts. null = no existe (404).
+export type RetroSpec = { team: string; decade?: string } | { decade: string };
+
+export function retroHub(spec: RetroSpec, locale: HubLocale) {
+  const x = EXTRA[locale];
+  const team = "team" in spec ? spec.team : undefined;
+  const decade = spec.decade === undefined ? undefined : Number(spec.decade);
+  if (spec.decade !== undefined && (!/^\d{4}$/.test(spec.decade) || decade! % 10)) return null;
+  let items: HubItem[];
+  let headline: string;
+  let path: string;
+  const name = team ? teamName(team, locale) : x.decadeName(decade!);
+  const national = !!team && teamCategory[team as TeamKey] === "national";
+  if (team && decade !== undefined) {
+    if (!retroTeamDecadeFacets(team).some((f) => f.decade === decade)) return null;
+    items = retroTeamDecadeItems(team, decade);
+    headline = x.retroTeamDecadeH1(name, national, decade);
+    path = `/retro/${team}/${decade}`;
+  } else if (team) {
+    items = retroTeamItems(team);
+    headline = x.retroTeamH1(name, national);
+    path = `/retro/${team}`;
+  } else {
+    items = retroDecadeItems(decade!);
+    headline = x.retroDecadeH1(decade!);
+    path = `/retro/decada/${decade}`;
+  }
+  if (items.length < RETRO_MIN) return null;
+  const seasons = [...new Set(items.map((i) => i.product.season))].sort((a, b) => seasonSortValue(a) - seasonSortValue(b) || a.localeCompare(b));
+  const stores = distinctRetailerLabels(items.flatMap((i) => i.product.offers.filter((o) => o.inStock !== false)));
+  const eurs = items.map((i) => i.eur);
+  const lo = formatOfferMoney(Math.min(...eurs), "EUR");
+  const hi = formatOfferMoney(Math.max(...eurs), "EUR");
+  const y0 = seasonSortValue(seasons[0]);
+  const y1 = seasonSortValue(seasons[seasons.length - 1]);
+  const range = y0 === y1 ? String(y0) : `${y0}-${y1}`;
+  return {
+    items,
+    team: team as TeamKey | undefined,
+    decade,
+    name,
+    headline,
+    path,
+    title: withBrand(x.retroTitle(headline, range)),
+    description: x.retroMeta({ subject: headline, n: items.length, price: lo, range }),
+    intro: x.retroIntro({ subject: headline, n: items.length, seasons, stores, price: lo === hi ? lo : `${lo} – ${hi}` }),
+  };
+}
+
 // ---------- sitemap ----------
 
 /** Rutas (sin locale) de todos los hubs de este archivo que existen hoy. */
@@ -69,6 +140,7 @@ export function extraHubPaths(): { kind: string; path: string }[] {
     ...(futsalItems().length >= MIN_HUB_ITEMS ? [{ kind: "botas-sala", path: "/botas/futbol-sala" }] : []),
     ...retroTeamFacets().map((f) => ({ kind: "retro-equipo", path: `/retro/${f.team}` })),
     ...retroDecadeFacets().map((f) => ({ kind: "retro-decada", path: `/retro/decada/${f.decade}` })),
+    ...retroTeamDecadeFacets().map((f) => ({ kind: "retro-equipo-decada", path: `/retro/${f.team}/${f.decade}` })),
     ...ticketTeamFacets().map((f) => ({ kind: "entradas-equipo", path: `/tickets/equipo/${f.slug}` })),
     ...ticketCompetitionFacets().map((f) => ({ kind: "entradas-competicion", path: `/tickets/competicion/${f.slug}` })),
   ];

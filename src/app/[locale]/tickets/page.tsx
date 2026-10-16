@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import { Locale } from "@/lib/i18n/translations";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import TicketsPageClient from "./TicketsPageClient";
 import { asLocale } from "@/lib/hubPages";
@@ -8,31 +7,7 @@ import { EXTRA } from "@/lib/extraHubStrings";
 import { teamNames } from "@/lib/productMeta";
 import { LinkChipRow } from "@/components/hubs/HubLinkParts";
 import { QaList } from "@/components/hubs/HubParts";
-import { ticketFaq } from "@/lib/ticketFacts";
-
-const META: Record<Locale, { title: string; description: string }> = {
-  es: {
-    title: "Entradas de fútbol: comparador de precios | Football Cult",
-    description: "Entradas de partidos de fútbol con precio y enlace directo a la tienda: Premier League, LaLiga, Champions League y más.",
-  },
-  en: {
-    title: "Football Tickets: Price Comparison | Football Cult",
-    description: "Football match tickets with price and a direct link to the store: Premier League, LaLiga, Champions League and more.",
-  },
-  pt: {
-    title: "Ingressos de futebol: comparador de preços | Football Cult",
-    description: "Ingressos de partidas de futebol com preço e link direto para a loja: Premier League, LaLiga, Champions League e mais.",
-  },
-  fr: {
-    // "comparateur billets foot": posición 2,2 en Search Console (sep-oct 2026).
-    title: "Comparateur de billets de foot | Football Cult",
-    description: "Comparateur de billets de foot : prix de plusieurs vendeurs pour chaque match et lien direct vers l'achat. Premier League, LaLiga, Ligue 1, Ligue des Champions et plus.",
-  },
-  it: {
-    title: "Biglietti calcio: comparatore di prezzi | Football Cult",
-    description: "Biglietti per partite di calcio con prezzo e link diretto al negozio: Premier League, LaLiga, Champions League e altri.",
-  },
-};
+import { ticketFaq, ticketsPageMeta } from "@/lib/ticketFacts";
 
 export async function generateMetadata({
   params,
@@ -42,7 +17,7 @@ export async function generateMetadata({
   const { locale: rawLocale } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   return {
-    ...META[locale],
+    ...ticketsPageMeta(locale),
     alternates: buildAlternates(locale, "/tickets"),
   };
 }

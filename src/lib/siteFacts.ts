@@ -69,6 +69,39 @@ const TEXT: Record<HubLocale, { h2: string; qa: (f: F) => QA[] }> = {
   },
 };
 
+// <title> y description de la home por idioma (2026-10-16): la consulta de
+// intención va primero ("football price comparison" posición 7,6;
+// "comparador camisetas fútbol", "comparateur maillots foot", "confronto
+// prezzi maglie calcio"), con las cifras de hoy. Comprobación:
+// scripts/check_query_patterns.mts.
+const HOME_META: Record<HubLocale, { title: string; description: (n: string, s: number) => string }> = {
+  es: {
+    title: "Comparador de camisetas de fútbol y botas | Football Cult",
+    description: (n, s) => `Comparador de camisetas de fútbol, botas, guantes, balones y entradas: ${n} productos comparados en ${s} tiendas, con el envío a tu país sumado. Precios revisados cada noche.`,
+  },
+  en: {
+    title: "Football Price Comparison: Shirts, Boots & Tickets | Football Cult",
+    description: (n, s) => `Football price comparison for shirts, boots, goalkeeper gloves, balls and match tickets: ${n} products compared across ${s} stores, delivery to your country included. Prices checked every night.`,
+  },
+  pt: {
+    title: "Comparador de preços de camisas de futebol | Football Cult",
+    description: (n, s) => `Comparador de preços de camisas de futebol, chuteiras, luvas, bolas e ingressos: ${n} produtos comparados em ${s} lojas, com o envio para o teu país incluído. Preços revistos todas as noites.`,
+  },
+  fr: {
+    title: "Comparateur de maillots de foot et crampons | Football Cult",
+    description: (n, s) => `Comparateur de maillots de foot, crampons, gants, ballons et billets : ${n} produits comparés dans ${s} boutiques, livraison vers votre pays comprise. Prix vérifiés chaque nuit.`,
+  },
+  it: {
+    title: "Confronto prezzi maglie da calcio e scarpe | Football Cult",
+    description: (n, s) => `Confronto prezzi di maglie da calcio, scarpe, guanti, palloni e biglietti: ${n} prodotti confrontati in ${s} negozi, con la spedizione nel tuo paese inclusa. Prezzi controllati ogni notte.`,
+  },
+};
+
+export function homeMeta(locale: HubLocale): { title: string; description: string } {
+  const t = trustStats();
+  return { title: HOME_META[locale].title, description: HOME_META[locale].description(groupThousands(t.comparedProducts, locale), t.stores) };
+}
+
 export function siteFaq(locale: HubLocale): { h2: string; qa: QA[] } {
   const t = trustStats();
   return {

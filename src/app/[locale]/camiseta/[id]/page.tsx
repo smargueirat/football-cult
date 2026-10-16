@@ -206,6 +206,7 @@ export default async function JerseyDetailPage({
         sameTeamProducts={sameTeamProducts}
         archiveStats={archiveStatsFor(product.offers.map((o) => o.url))}
         manufacturerCode={productCode(product.offers)}
+        canonicalName={jerseyName(product, locale)}
       />
       <JerseyFaq product={product} locale={locale} />
       <RelatedLinks related={jerseyRelated(product, locale)} />
