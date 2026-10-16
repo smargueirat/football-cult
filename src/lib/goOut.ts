@@ -148,6 +148,10 @@ export function botReason(h: Headers, js: boolean, now = Date.now()): BotReason 
   // entran en la regla de versión (Sec-Fetch llegó tarde en 16.4).
   const version = Number(ua.match(/(?:Chrome|Firefox)\/(\d+)/)?.[1] ?? 0);
   if (!h.get("sec-fetch-mode") && (!h.get("accept-language") || version >= 90)) return "headers";
+  // /go/ solo se enlaza desde nuestras páginas (Telegram y el feed apuntan a
+  // la ficha): "none" = URL pegada o abierta por un script, no un clic en el
+  // sitio. Del 15 al 16-oct, 469 de 494 "personas" eran así, desde Singapur.
+  if (h.get("sec-fetch-site") === "none" && !js) return "headers";
 
   const ip = h.get("cf-connecting-ip") ?? h.get("x-forwarded-for")?.split(",")[0]?.trim();
   if (ip) {
