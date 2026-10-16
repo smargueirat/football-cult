@@ -5,6 +5,8 @@ import HeroSearch from "@/components/HeroSearch";
 import CategorySections from "@/components/CategorySections";
 import PriceDropsSection from "@/components/PriceDropsSection";
 import LeagueShortcuts from "@/components/LeagueShortcuts";
+import SeasonalBanner from "@/components/SeasonalBanner";
+import { todayIso } from "@/lib/seasonal";
 import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { translations } from "@/lib/i18n/translations";
 import { SITE_URL } from "@/lib/hubPages";
@@ -128,6 +130,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             niños, botas), cada una con una foto real de una oferta
             cargada -- reemplaza la placa chica de siempre. */}
         <section className="mx-auto w-full max-w-[1800px] px-4 pt-3 sm:px-8 sm:pt-6">
+          {/* Black Friday / Navidad y Reyes: solo en su ventana (src/lib/seasonal.ts). */}
+          <SeasonalBanner today={todayIso()} />
           <HeroCarousel />
           {/* H1 fijo con la propuesta de valor. Antes el H1 era el título
               del carrusel y rotaba con él, así que ni el visitante ni
@@ -271,6 +275,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 { href: `/${locale}/ofertas-de-la-semana`, label: DEALS_NAV[locale].week },
                 { href: `/${locale}/bajadas-de-precio`, label: DEALS_NAV[locale].drops },
                 { href: `/${locale}/minimos-historicos`, label: DEALS_NAV[locale].lows },
+                { href: `/${locale}/black-friday`, label: DEALS_NAV[locale].bf },
+                { href: `/${locale}/regalos-futbol`, label: DEALS_NAV[locale].gifts },
                 { href: `/${locale}/guia`, label: GUIDE_UI[locale].index },
                 { href: `/${locale}/estudios/precios-camisetas`, label: t.footer.priceStudy },
               ]}

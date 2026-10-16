@@ -23,8 +23,8 @@ import { productImage } from "@/lib/productPhoto";
 export type DealSection = "camiseta" | "botas" | "tickets" | "ropa" | "guantes" | "pelotas" | "entrenamiento";
 export const DEAL_SECTIONS: DealSection[] = ["camiseta", "botas", "tickets", "ropa", "guantes", "pelotas", "entrenamiento"];
 
-type AnyOffer = { store: string; price: number; shipping?: number; currency: string; url: string; inStock?: boolean; imageUrl?: string };
-type AnyItem = { id: string; imageUrl?: string; offers: readonly AnyOffer[] };
+export type AnyOffer = { store: string; price: number; shipping?: number; currency: string; url: string; inStock?: boolean; imageUrl?: string };
+export type AnyItem = { id: string; imageUrl?: string; offers: readonly AnyOffer[] };
 
 const LISTS: Record<DealSection, readonly AnyItem[]> = {
   camiseta: products as unknown as AnyItem[],
@@ -38,7 +38,7 @@ const LISTS: Record<DealSection, readonly AnyItem[]> = {
 
 /** Total en EUR (precio + envío; las entradas no tienen envío) para ordenar y
  *  para los topes de cordura. El precio que se MUESTRA es siempre el real. */
-function eurOf(section: DealSection, o: AnyOffer): number {
+export function eurOf(section: DealSection, o: AnyOffer): number {
   if (section === "tickets") return ticketOfferTotalInEUR({ price: o.price, currency: o.currency as OfferCurrencyCode });
   if (section === "camiseta") return offerTotalInEUR({ price: o.price, shipping: o.shipping ?? 0, currency: o.currency as OfferCurrencyCode });
   return bootOfferTotalInEUR({ price: o.price, shipping: o.shipping ?? 0, currency: o.currency as BootCurrencyCode });
@@ -64,11 +64,13 @@ export interface DealRow {
 
 export const dealHref = (r: DealRow, locale: HubLocale) => `/${locale}/${r.section}/${r.item.id}`;
 
-export function dealName(r: DealRow, locale: HubLocale): string {
-  if (r.section === "camiseta") return jerseyName(r.item as never, locale);
-  if (r.section === "tickets") return ticketName(r.item as never, locale);
-  return gearName(r.section, r.item as unknown as GearLike, locale);
+export function itemName(section: DealSection, item: AnyItem, locale: HubLocale): string {
+  if (section === "camiseta") return jerseyName(item as never, locale);
+  if (section === "tickets") return ticketName(item as never, locale);
+  return gearName(section, item as unknown as GearLike, locale);
 }
+
+export const dealName = (r: DealRow, locale: HubLocale) => itemName(r.section, r.item, locale);
 
 export function dealImage(r: DealRow): string {
   if (r.section === "camiseta") return productImage(r.item as never) ?? "";
@@ -111,8 +113,8 @@ export function verifiedDropRows(): DealRow[] {
 
 /** Tope de cordura para las listas "destacadas": una entrada de reventa de
  *  40.000 GBP o un -2 % no son una oferta de la semana (crecimiento.md F2). */
-const MAX_EUR = 1000;
-const MIN_PCT = 5;
+export const MAX_EUR = 1000;
+export const MIN_PCT = 5;
 const PER_SECTION_WEEK = 12;
 
 /** Bajadas verificadas de los últimos 7 días del archivo, máx. 12 por sección. */

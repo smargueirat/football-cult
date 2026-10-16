@@ -25,21 +25,23 @@ export interface GiftOffer {
 
 export interface Giftable {
   id: string;
-  offers: GiftOffer[];
+  /** Las entradas llevan la foto (la del estadio) en la ficha, no en la oferta. */
+  imageUrl?: string;
+  offers: readonly GiftOffer[];
 }
 
 export interface GiftBand {
-  /** Sufijo de la clave de traducción en GIFTS_UI (bandUpTo25, etc). */
-  key: "upTo25" | "upTo50" | "upTo100" | "over100";
+  /** Clave del texto del tramo (seasonalStrings.ts). */
+  key: "upTo30" | "upTo60" | "upTo100" | "over100";
   min: number;
   /** Exclusivo. Infinity en el último tramo. */
   max: number;
 }
 
 export const GIFT_BANDS: GiftBand[] = [
-  { key: "upTo25", min: 0, max: 25 },
-  { key: "upTo50", min: 25, max: 50 },
-  { key: "upTo100", min: 50, max: 100 },
+  { key: "upTo30", min: 0, max: 30 },
+  { key: "upTo60", min: 30, max: 60 },
+  { key: "upTo100", min: 60, max: 100 },
   { key: "over100", min: 100, max: Infinity },
 ];
 
@@ -50,7 +52,7 @@ function total(o: GiftOffer): number {
 /** La oferta más barata que de verdad se puede comprar hoy. */
 function cheapestLive(item: Giftable): GiftOffer | undefined {
   return item.offers
-    .filter((o) => o.inStock !== false && (o.imageUrl ?? "").trim() !== "")
+    .filter((o) => o.inStock !== false && o.price > 0 && (o.imageUrl ?? item.imageUrl ?? "").trim() !== "")
     .sort((a, b) => total(a) - total(b))[0];
 }
 

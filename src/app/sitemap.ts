@@ -126,7 +126,7 @@ function lastModOf(item: Tierable): string | undefined {
 // volviendo esta constante a LOCALES.
 const SITEMAP_LOCALES = [DEFAULT_LOCALE];
 
-const DAILY_PAGES = ["/bajadas-de-precio", "/ofertas-de-la-semana", "/minimos-historicos"];
+const DAILY_PAGES = ["/bajadas-de-precio", "/ofertas-de-la-semana", "/minimos-historicos", "/black-friday", "/regalos-futbol"];
 /** Cambian con cada corrida del scan: lastmod = última corrida del archivo. */
 const DATED = new Set(["/ofertas", "/novedades", ...DAILY_PAGES, "/guia/camisetas-mundial-2026", "/guia/cuando-bajan-de-precio-las-camisetas"]);
 
@@ -187,12 +187,10 @@ function buildGroups(): { groups: MetadataRoute.Sitemap[]; counts: Record<Tier, 
     // Hubs de temporada, ofertas y de botas/guantes/pelotas/ropa (marca,
     // terreno, tipo): solo los que tienen suficiente producto hoy.
     "/ofertas",
-    // Bajadas verificadas, resumen semanal y mínimos (2026-10-09): cambian con
-    // cada corrida, como /ofertas.
+    // Bajadas verificadas, resumen semanal y mínimos (2026-10-09), Black Friday
+    // y regalos (2026-10-16, misma URL cada año): cambian con cada corrida.
     ...DAILY_PAGES,
-    // Puerta de entrada por presupuesto (regalos): una sola URL, no una por
-    // tramo -- ver el comentario de la propia página.
-    "/regalos",
+    // (/regalos pasó a /regalos-futbol, en DAILY_PAGES, con redirección 308.)
     // Camisetas recién salidas: cambia a diario, es la que más conviene que
     // Google revisite.
     "/novedades",
