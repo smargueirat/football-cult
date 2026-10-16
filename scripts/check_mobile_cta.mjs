@@ -11,7 +11,8 @@
 // tienda" de la barra fija: el toque se lo llevaba el banner.
 //
 // Variables: PW_CORE (playwright-core), CHROME (ejecutable de Chromium);
-// JERSEY / BOTA / GUANTE fijan las fichas (si no, la primera de cada listado).
+// JERSEY / BOTA / GUANTE fijan las fichas (si no, la primera de cada listado);
+// ONLY=home,camiseta,botas,guantes limita las páginas.
 import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
@@ -96,14 +97,15 @@ async function check(name, path, selector, reject) {
   return out;
 }
 
+const ONLY = process.env.ONLY?.split(","); // p. ej. ONLY=botas,guantes
 const pages = [
   ["home", "/es", '[data-testid="deal-go"]'],
   ["camiseta", `/es/camiseta/${JERSEY}`, BAR],
-  ["botas", process.env.BOTA ? `/es/botas/${process.env.BOTA}` : await firstFicha("botas"), BAR],
-  ["guantes", process.env.GUANTE ? `/es/guantes/${process.env.GUANTE}` : await firstFicha("guantes"), BAR],
+  ["botas", ONLY && !ONLY.includes("botas") ? "" : process.env.BOTA ? `/es/botas/${process.env.BOTA}` : await firstFicha("botas"), BAR],
+  ["guantes", ONLY && !ONLY.includes("guantes") ? "" : process.env.GUANTE ? `/es/guantes/${process.env.GUANTE}` : await firstFicha("guantes"), BAR],
 ];
 const results = [];
-for (const [name, path, sel] of pages) for (const reject of [false, true]) results.push(await check(name, path, sel, reject));
+for (const [name, path, sel] of pages.filter(([n]) => !ONLY || ONLY.includes(n))) for (const reject of [false, true]) results.push(await check(name, path, sel, reject));
 await browser.close();
 
 for (const r of results) console.log(`${r.ok ? "OK  " : "FALLO"} ${r.name.padEnd(9)} ${r.state.padEnd(13)} ${r.path}\n      ${r.label ?? ""}  ${r.why}`);
