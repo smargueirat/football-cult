@@ -4,7 +4,6 @@ import Link from "@/lib/i18n/LocaleLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { HUB } from "@/lib/hubStrings";
 import { SEASON_UI } from "@/lib/seasonStrings";
-import { GIFTS_UI } from "@/lib/giftStrings";
 import { NEW_UI } from "@/lib/newStrings";
 import { GUIDE_UI } from "@/lib/guideUi";
 import { DEALS_NAV } from "@/lib/dealsNav";
@@ -136,8 +135,11 @@ export default function Footer() {
         <Link href="/guia/cuando-bajan-de-precio-las-camisetas" className="transition-colors hover:text-[#F3E9C9]">
           {GUIDE_UI[locale].whenDrop}
         </Link>
-        <Link href="/regalos" className="transition-colors hover:text-[#F3E9C9]">
-          {GIFTS_UI[locale].h1}
+        <Link href="/black-friday" className="transition-colors hover:text-[#F3E9C9]">
+          {DEALS_NAV[locale].bf}
+        </Link>
+        <Link href="/regalos-futbol" className="transition-colors hover:text-[#F3E9C9]">
+          {DEALS_NAV[locale].gifts}
         </Link>
         <Link href="/novedades" className="transition-colors hover:text-[#F3E9C9]">
           {NEW_UI[locale].h1}

@@ -2,7 +2,7 @@ import type { Locale } from "@/lib/i18n/translations";
 
 // Textos del banner de consentimiento y de las tres páginas legales
 // (/aviso-legal, /privacidad, /como-ganamos-dinero) en los cinco idiomas.
-// Archivo propio, como giftStrings.ts: translations.ts ya pasa de 3.000
+// Archivo propio, como seasonalStrings.ts: translations.ts ya pasa de 3.000
 // líneas y estos textos solo los leen estas piezas.
 //
 // {email} se reemplaza por LEGAL_ENTITY.email al renderizar. Los datos del

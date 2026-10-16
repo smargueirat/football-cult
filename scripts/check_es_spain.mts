@@ -7,6 +7,8 @@ import assert from "node:assert/strict";
 import { translations } from "../src/lib/i18n/translations";
 import { translateTitleVocabulary } from "../src/lib/i18n/titleGlossary";
 import { formatOfferMoney } from "../src/lib/offerMoney";
+import { SEASONAL } from "../src/lib/seasonalStrings";
+import { DEALS_NAV } from "../src/lib/dealsNav";
 
 const BAD =
   /(?<![\p{L}])(buscá|compará|comprá|elegí|probá|tocá|explorá|revisá|iniciá|escribí|describí|intentá|tenés|podés|querés|sabés|comprás|ahorrás|vos|acá|talles?|arquero|titular(?! del)|suplente|remera|canilleras|hincha|avisame|escribinos|contanos|dejanos|pelotas?)(?![\p{L}])/iu;
@@ -20,6 +22,8 @@ function walk(v: unknown, path: string, out: string[]) {
 }
 const bad: string[] = [];
 walk(translations.es, "es", bad);
+walk(SEASONAL.es, "seasonal.es", bad);
+walk(DEALS_NAV.es, "dealsNav.es", bad);
 assert.deepEqual(bad, [], `Voseo o vocabulario rioplatense en /es:\n${bad.join("\n")}`);
 
 assert.equal(

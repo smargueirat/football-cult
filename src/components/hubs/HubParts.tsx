@@ -11,6 +11,8 @@ import { getDisplaySrc } from "@/lib/images";
 import { mainPhoto } from "@/lib/officialStores";
 
 import { countDistinctRetailers } from "@/lib/retailerFamily";
+import SeasonalBanner from "@/components/SeasonalBanner";
+import { todayIso } from "@/lib/seasonal";
 // Piezas de servidor de las páginas hub: HTML puro con <a> reales para
 // que Google siga los enlaces sin ejecutar JavaScript.
 
@@ -41,6 +43,9 @@ export function HubHeader({ h1, intro }: { h1: string; intro: string }) {
     <header className="mb-8">
       <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-4xl">{h1}</h1>
       <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[#675c44] sm:text-base">{intro}</p>
+      <div className="mt-4 empty:hidden">
+        <SeasonalBanner today={todayIso()} />
+      </div>
     </header>
   );
 }

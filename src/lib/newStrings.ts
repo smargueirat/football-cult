@@ -1,6 +1,6 @@
 import type { HubLocale } from "@/data/teamMeta";
 
-// Textos de /novedades. Archivo propio por el mismo motivo que giftStrings.ts.
+// Textos de /novedades. Archivo propio por el mismo motivo que seasonalStrings.ts.
 
 // El Node del servidor trae solo el locale inglés (ICU reducido), así que
 // toLocaleDateString("es") devuelve inglés sin avisar. El mes va a mano.

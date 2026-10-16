@@ -52,8 +52,10 @@ export function DealTable({ rows, locale, mode }: { rows: DealRow[]; locale: Hub
   );
 }
 
-/** ItemList con las fichas enlazadas (las primeras 50). */
-export function dealsListLd(rows: DealRow[], locale: HubLocale, name: string, path: string) {
+/** CollectionPage + ItemList con las fichas enlazadas (las primeras 50). Solo
+ *  URL y nombre: el Product/Offer con precio vive en cada ficha (marcar
+ *  productos en una página de listado va contra las pautas de Google). */
+export function listLd(locale: HubLocale, name: string, path: string, items: { href: string; name: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -62,13 +64,17 @@ export function dealsListLd(rows: DealRow[], locale: HubLocale, name: string, pa
     inLanguage: locale,
     mainEntity: {
       "@type": "ItemList",
-      numberOfItems: rows.length,
-      itemListElement: rows.slice(0, 50).map((r, i) => ({ "@type": "ListItem", position: i + 1, url: `${SITE_URL}${dealHref(r, locale)}`, name: dealName(r, locale) })),
+      // Lo que de verdad lista el marcado, no el total de la página.
+      numberOfItems: Math.min(items.length, 50),
+      itemListElement: items.slice(0, 50).map((x, i) => ({ "@type": "ListItem", position: i + 1, url: `${SITE_URL}${x.href}`, name: x.name })),
     },
   };
 }
 
-export type DealPage = "/ofertas" | "/bajadas-de-precio" | "/ofertas-de-la-semana" | "/minimos-historicos";
+export const dealsListLd = (rows: DealRow[], locale: HubLocale, name: string, path: string) =>
+  listLd(locale, name, path, rows.map((r) => ({ href: dealHref(r, locale), name: dealName(r, locale) })));
+
+export type DealPage = "/ofertas" | "/bajadas-de-precio" | "/ofertas-de-la-semana" | "/minimos-historicos" | "/black-friday" | "/regalos-futbol";
 
 export function DealsRelated({ locale, current }: { locale: HubLocale; current: DealPage | "" }) {
   const n = DEALS_NAV[locale];
@@ -76,6 +82,8 @@ export function DealsRelated({ locale, current }: { locale: HubLocale; current: 
     { href: "/ofertas-de-la-semana", label: n.week },
     { href: "/bajadas-de-precio", label: n.drops },
     { href: "/minimos-historicos", label: n.lows },
+    { href: "/black-friday", label: n.bf },
+    { href: "/regalos-futbol", label: n.gifts },
     { href: "/ofertas", label: SEASON_UI[locale].offersH1 },
     { href: "/guia/cuando-bajan-de-precio-las-camisetas", label: GUIDES["cuando-bajan-de-precio-las-camisetas"][locale].title },
   ].filter((i) => i.href !== current);

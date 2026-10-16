@@ -5,6 +5,7 @@ import SearchExplorer from "./SearchExplorer";
 import type { AgeGroup, CategoryKey, TypeKey } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { GUIDE_UI } from "@/lib/guideUi";
+import SeasonalBanner from "./SeasonalBanner";
 
 interface Props {
   // Índice en t.heroSlides (mismo orden que src/lib/sections.ts) -- el
@@ -37,6 +38,7 @@ export default function CategoryCatalogPage({ sectionIndex, category, type, ageG
   return (
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
       <BackToCatalogLink />
+      <SeasonalBanner />
       <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-3xl">{slide?.title}</h1>
       <p className="mt-1 text-sm text-[#675c44]">{slide?.subtitle}</p>
       {guideSlug && (

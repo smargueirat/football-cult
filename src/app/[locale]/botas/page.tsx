@@ -6,6 +6,8 @@ import { asLocale, breadcrumbLd } from "@/lib/hubPages";
 import { HUB } from "@/lib/hubStrings";
 import { JsonLd } from "@/components/hubs/HubParts";
 import BotasPageClient from "./BotasPageClient";
+import SeasonalBanner from "@/components/SeasonalBanner";
+import { todayIso } from "@/lib/seasonal";
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
@@ -64,6 +66,9 @@ export default async function BotasPage({ params }: { params: Promise<{ locale: 
           "/botas",
         )}
       />
+      <div className="mx-auto w-full max-w-[1800px] px-4 pt-4 sm:px-8 empty:hidden">
+        <SeasonalBanner today={todayIso()} />
+      </div>
       <BotasPageClient />
       <GearHubLinks section="botas" locale={asLocale(locale)} />
     </>
