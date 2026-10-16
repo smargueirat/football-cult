@@ -6,6 +6,7 @@ import type { AgeGroup, CategoryKey, TypeKey } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { GUIDE_UI } from "@/lib/guideUi";
 import SeasonalBanner from "./SeasonalBanner";
+import type { ReactNode } from "react";
 
 interface Props {
   // Índice en t.heroSlides (mismo orden que src/lib/sections.ts) -- el
@@ -20,6 +21,8 @@ interface Props {
    *  Solo el slug: el texto del enlace vive en translations, porque es
    *  este componente el que conoce el idioma. */
   guideSlug?: "que-es-una-camiseta-retro" | "camisetas-mundial-2026";
+  /** Bloque de servidor bajo el título (p. ej. "Mejores ofertas de hoy"). */
+  children?: ReactNode;
 }
 
 // Página delgada para cada sección de camisetas (clubes, selecciones,
@@ -31,7 +34,7 @@ interface Props {
 // antes de "saltar" a lo correcto. Al forzarlo por prop, el filtro es
 // correcto ya en el primer render, tanto en el server como en el
 // cliente.
-export default function CategoryCatalogPage({ sectionIndex, category, type, ageGroup, guideSlug }: Props) {
+export default function CategoryCatalogPage({ sectionIndex, category, type, ageGroup, guideSlug, children }: Props) {
   const { t, locale } = useLanguage();
   const slide = t.heroSlides[sectionIndex];
 
@@ -51,6 +54,7 @@ export default function CategoryCatalogPage({ sectionIndex, category, type, ageG
           </a>
         </p>
       )}
+      {children}
       <div className="mt-5">
         <SearchExplorer forcedCategory={category} forcedType={type} forcedAgeGroup={ageGroup} forcedSection="jerseys" />
       </div>

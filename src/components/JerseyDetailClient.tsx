@@ -30,10 +30,14 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import DiscoveryCarousel from "./DiscoveryCarousel";
 import HeritageStory from "./HeritageStory";
 import JerseyGallery from "./JerseyGallery";
-import PriceAlertInline from "./PriceAlertInline";
 import PriceHistorySparkline from "./PriceHistorySparkline";
 import PriceArchiveLine from "./PriceArchiveLine";
 import StickyBestOfferBar from "./StickyBestOfferBar";
+import BestOfferBox, { proofLine } from "./BestOfferBox";
+import DirectDeals from "./DirectDeals";
+import ReturnCapture from "./ReturnCapture";
+import type { DirectDeal } from "@/lib/directDeals";
+import { CONV } from "@/lib/convStrings";
 import { savingsVsMedian } from "@/lib/offerStats";
 import type { OfferPriceStats } from "@/lib/priceArchive";
 import ReportProductModal from "./ReportProductModal";
@@ -79,6 +83,7 @@ export default function JerseyDetailClient({
   manufacturerCode,
   canonicalName,
   archiveStats = {},
+  alternatives = [],
 }: {
   product: Product;
   priceHistory: Record<string, { date: string; price: number }[]>;
@@ -91,6 +96,8 @@ export default function JerseyDetailClient({
   /** Mínimo/mediana del archivo durable de precios, por URL de oferta.
    *  Solo trae las ofertas con historial suficiente (>= 14 días). */
   archiveStats?: Record<string, OfferPriceStats>;
+  /** Mismo equipo con stock y botón directo (se muestran si esta está agotada). */
+  alternatives?: DirectDeal[];
 }) {
   const { locale, t } = useLanguage();
   const { country, countryCode } = useCountry();
@@ -356,9 +363,10 @@ export default function JerseyDetailClient({
         return {
           totalText: formatOfferMoney(total, bestOffer.currency),
           approx: approxPriceLabel(total, bestOffer.currency, country.currency),
-          label: liveTotal == null && shippingUnknown(bestOffer, countryCode) ? t.detail.from : t.detail.total,
+          label: liveTotal == null && shippingUnknown(bestOffer, countryCode) ? t.detail.from : CONV[locale].totalWithShipping,
           storeLabel: selectedSize ? `${bestOffer.store} · ${selectedSize}` : bestOffer.store,
-          goLabel: t.detail.goToStore.replace("{store}", bestOffer.store),
+          goLabel: CONV[locale].goStore.replace("{store}", bestOffer.store),
+          proof: proofLine(storesLabel, archiveStats[bestOffer.url], bestOffer.price, CONV[locale].lowestInDays),
           href: goHref({
             kind: "j",
             productId: product.id,
@@ -722,37 +730,6 @@ export default function JerseyDetailClient({
                 )}
               </p>
             )}
-            {/* Canal público de bajadas. No hay "seguir a este equipo" a
-                propósito: el bot no tiene servidor que reciba el /start
-                (ver el informe), así que no se promete aviso por equipo. */}
-            <a
-              href="https://t.me/FootballCultOfertas"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-[#675c44] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
-            >
-              {t.priceDrop.channelCta} · {t.priceDrop.channelLink} →
-            </a>
-            {/* Mismo toggleFavorite que el corazón de la foto (favoritar YA
-                suscribe a la alerta de precio por mail, ver
-                FavoritesContext.tsx) -- esto solo lo hace visible acá, en
-                vez de depender de que alguien note el ícono chiquito de la
-                esquina o llegue a /favoritos para enterarse de que existe. */}
-            <button
-              onClick={() => {
-                triggerHaptic();
-                toggleFavorite(product.id);
-              }}
-              className="hidden"
-              aria-hidden
-            >
-              {favorite ? t.detail.priceAlertCtaOn : t.detail.priceAlertCtaOff}
-            </button>
-            {/* Pedir una alerta ya no obliga a crear cuenta: con sesión
-                sigue siendo el favorito de siempre, sin ella alcanza el
-                mail (auditoría 2026-09-24, era la fricción más cara del
-                sitio para la función que más retiene). */}
-            <PriceAlertInline productId={product.id} />
           </div>
         </div>
 
@@ -829,28 +806,17 @@ export default function JerseyDetailClient({
               quedaba en el borde del pliegue; esta caja deja precio, tienda
               y botón a la vista bajo el título. */}
           {bestCta && (
-            <div className="hidden items-center justify-between gap-4 rounded-2xl border border-[#B8923F]/60 bg-white/70 p-4 ring-1 ring-[#C9A24B]/30 lg:flex">
-              <div className="min-w-0">
-                <p className="text-[11px] uppercase tracking-wide text-[#675c44]">{bestCta.label}</p>
-                <p className="text-2xl font-semibold leading-tight text-[#B45309]">
-                  {bestCta.totalText}
-                  {bestCta.approx && (
-                    <span className="ml-2 text-sm font-normal text-[#675c44]">{bestCta.approx}</span>
-                  )}
-                </p>
-                <p className="truncate text-sm text-[#675c44]">{bestCta.storeLabel}</p>
-              </div>
-              <a
-                href={bestCta.href}
-                target="_blank"
-                rel="noopener noreferrer nofollow sponsored"
-                onClick={bestCta.track}
-                className="flex min-h-11 shrink-0 items-center gap-1.5 rounded-full bg-[#1B3B2B] px-5 py-2.5 text-sm font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f]"
-              >
-                {bestCta.goLabel}
-                <span aria-hidden>→</span>
-              </a>
-            </div>
+            <BestOfferBox
+              className="hidden lg:flex"
+              label={bestCta.label}
+              total={bestCta.totalText}
+              approx={bestCta.approx}
+              store={bestCta.storeLabel}
+              proof={bestCta.proof}
+              goLabel={bestCta.goLabel}
+              href={bestCta.href}
+              onClick={bestCta.track}
+            />
           )}
 
           {shippableOffers.length === 0 && !product.offers.some((o) => o.inStock) ? (
@@ -970,6 +936,14 @@ export default function JerseyDetailClient({
               </div>
             </>
           )}
+
+          {/* Agotada o sin envío aquí: alternativas del mismo equipo con
+              botón directo, en vez de una lista de enlaces a más fichas. */}
+          {buyableOffers.length === 0 && (
+            <DirectDeals deals={alternatives} title={CONV[locale].altSoldOut} max={4} surface="alt" />
+          )}
+
+          <ReturnCapture productId={product.id} team={{ key: product.teamKey, name: team }} />
         </div>
       </div>
 
@@ -1004,6 +978,7 @@ export default function JerseyDetailClient({
           total={bestCta.totalText}
           approx={bestCta.approx}
           fromLabel={bestCta.label}
+          proof={bestCta.proof}
           goLabel={bestCta.goLabel}
           href={bestCta.href}
           onClick={bestCta.track}

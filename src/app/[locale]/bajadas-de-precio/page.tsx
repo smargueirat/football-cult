@@ -4,7 +4,7 @@ import { asLocale, breadcrumbLd, hubMetadata } from "@/lib/hubPages";
 import { DEAL_SECTIONS, archiveDates, verifiedDropRows } from "@/lib/dealsData";
 import { DEALS, longDate } from "@/lib/dealsStrings";
 import { Crumbs, HubHeader, JsonLd, Section } from "@/components/hubs/HubParts";
-import { DealTable, DealsRelated, FeedLink, dealsListLd, feedPath } from "@/components/hubs/DealParts";
+import { DealTable, DealsCapture, DealsRelated, FeedLink, dealsListLd, feedPath } from "@/components/hubs/DealParts";
 
 // Registro de bajadas VERIFICADAS (priceDrops.json + fecha del archivo), en
 // tabla. /ofertas es la vitrina con fotos; esta es la lista con antes, ahora y
@@ -30,6 +30,7 @@ export default async function DropsPage({ params }: P) {
       <Crumbs locale={locale} trail={[{ label: s.dropsH1 }]} />
       <HubHeader h1={s.dropsH1} intro={rows.length ? s.dropsIntro(rows.length, longDate(archiveDates().last, locale)) : s.dropsEmpty} />
       <FeedLink locale={locale} />
+      <DealsCapture locale={locale} />
       <div className="mt-6">
         {DEAL_SECTIONS.map((sec) => {
           const list = rows.filter((r) => r.section === sec);

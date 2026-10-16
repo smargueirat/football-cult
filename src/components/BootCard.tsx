@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "@/lib/i18n/LocaleLink";
+import CardGo from "./CardGo";
 import { useEffect, useRef, useState } from "react";
 import { BootProduct } from "@/data/boots";
 import { formatOfferMoney, bootOfferTotalInEUR, previousOfferTotal, shippingNotMeasured } from "@/lib/offerMoney";
@@ -73,11 +74,12 @@ export default function BootCard({
   }
 
   return (
+    <div className="flex h-full flex-col">
     <Link
       href={`/botas/${boot.id}`}
       onMouseEnter={handlePrefetchPhoto}
       onTouchStart={handlePrefetchPhoto}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] shadow-[0_14px_28px_-10px_rgba(43,32,10,0.45)] transition-transform duration-150 ease-out hover:-translate-y-0.5 [content-visibility:auto] [contain-intrinsic-size:auto_300px_auto_420px]"
+      className="group relative flex flex-1 flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] shadow-[0_14px_28px_-10px_rgba(43,32,10,0.45)] transition-transform duration-150 ease-out hover:-translate-y-0.5 [content-visibility:auto] [contain-intrinsic-size:auto_300px_auto_420px]"
     >
       <div
         className="relative flex aspect-[4/5] items-center justify-center overflow-hidden p-2.5 sm:p-4 lg:p-6"
@@ -214,5 +216,7 @@ export default function BootCard({
         </p>
       </div>
     </Link>
+    <CardGo kind="b" productId={boot.id} offer={cheapest} total={cheapestTotal} />
+    </div>
   );
 }

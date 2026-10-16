@@ -8,6 +8,9 @@ import { JsonLd } from "@/components/hubs/HubParts";
 import BotasPageClient from "./BotasPageClient";
 import SeasonalBanner from "@/components/SeasonalBanner";
 import { todayIso } from "@/lib/seasonal";
+import DirectDeals from "@/components/DirectDeals";
+import { todaysDeals } from "@/lib/directDeals";
+import { CONV } from "@/lib/convStrings";
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
@@ -69,7 +72,9 @@ export default async function BotasPage({ params }: { params: Promise<{ locale: 
       <div className="mx-auto w-full max-w-[1800px] px-4 pt-4 sm:px-8 empty:hidden">
         <SeasonalBanner today={todayIso()} />
       </div>
-      <BotasPageClient />
+      <BotasPageClient>
+        <DirectDeals deals={todaysDeals(asLocale(locale), ["botas"], "listado")} title={CONV[asLocale(locale)].dealsTitle} surface="listado" />
+      </BotasPageClient>
       <GearHubLinks section="botas" locale={asLocale(locale)} />
     </>
   );

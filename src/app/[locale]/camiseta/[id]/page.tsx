@@ -6,6 +6,7 @@ import JerseyDetailClient from "@/components/JerseyDetailClient";
 import JerseyFaq from "@/components/JerseyFaq";
 import priceHistoryData from "@/data/priceHistory.json";
 import { archiveStatsFor } from "@/lib/priceArchive";
+import { jerseyAlternatives } from "@/lib/directDeals";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { productCode, singleSizeGtin } from "@/lib/offerGtin";
 import type { HubLocale } from "@/data/teamMeta";
@@ -207,6 +208,7 @@ export default async function JerseyDetailPage({
         archiveStats={archiveStatsFor(product.offers.map((o) => o.url))}
         manufacturerCode={productCode(product.offers)}
         canonicalName={jerseyName(product, locale)}
+        alternatives={jerseyAlternatives(sameTeamProducts, locale)}
       />
       <JerseyFaq product={product} locale={locale} />
       <RelatedLinks related={jerseyRelated(product, locale)} />

@@ -26,6 +26,7 @@ import { markCatalogVisited } from "@/lib/search/catalogVisit";
 // compartidos para no duplicar ese formato a mano en cada sección.
 interface GearOffer {
   store: string;
+  url: string;
   price: number;
   shipping: number;
   currency: "EUR" | "CLP";

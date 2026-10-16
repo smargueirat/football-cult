@@ -14,7 +14,7 @@ import { trackPriceAlertSignup } from "@/lib/analytics";
 //  - con sesión iniciada sigue siendo el favorito de siempre (así la
 //    camiseta también aparece en /favoritos);
 //  - sin sesión, se despliega un campo de mail y listo.
-export default function PriceAlertInline({ productId }: { productId: string }) {
+export default function PriceAlertInline({ productId, prominent = false }: { productId: string; prominent?: boolean }) {
   const { t, locale } = useLanguage();
   const { status } = useSession();
   const { isFavorite, toggleFavorite } = useFavorites();
@@ -23,13 +23,14 @@ export default function PriceAlertInline({ productId }: { productId: string }) {
   const [state, setState] = useState<"idle" | "sending" | "pending" | "done" | "error">("idle");
 
   const favorited = isFavorite(productId);
+  // prominent: botón de verdad (44 px) en vez de un enlace de 14 px.
+  const ctaClass = prominent
+    ? "vintage-plaque mt-3 inline-flex min-h-11 items-center rounded-full px-4 py-2 text-left text-sm font-semibold"
+    : "mt-2 text-left text-sm text-[#8a6a1f] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]";
 
   if (status === "authenticated") {
     return (
-      <button
-        onClick={() => toggleFavorite(productId)}
-        className="mt-2 text-left text-sm text-[#8a6a1f] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
-      >
+      <button onClick={() => toggleFavorite(productId)} className={ctaClass}>
         {favorited ? t.detail.priceAlertCtaOn : t.detail.priceAlertCtaOff}
       </button>
     );
@@ -47,10 +48,7 @@ export default function PriceAlertInline({ productId }: { productId: string }) {
 
   if (!open) {
     return (
-      <button
-        onClick={() => setOpen(true)}
-        className="mt-2 text-left text-sm text-[#8a6a1f] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
-      >
+      <button onClick={() => setOpen(true)} className={ctaClass} data-testid="price-alert-open">
         {t.detail.priceAlertCtaOff}
       </button>
     );

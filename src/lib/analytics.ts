@@ -19,6 +19,8 @@ export function trackOfferClick(params: {
   position?: number;
   isBest?: boolean;
   version?: "player" | "fan";
+  /** Dónde estaba el botón: home | listado | alt | bajadas (vacío = ficha). */
+  surface?: string;
 }) {
   if (typeof window === "undefined") return;
   const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
@@ -41,6 +43,7 @@ export function trackOfferClick(params: {
     position: params.position,
     is_best: params.isBest,
     jersey_version: params.version,
+    surface: params.surface,
   });
 }
 

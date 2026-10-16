@@ -46,6 +46,7 @@ function sizeSortKey(s: string): number {
 
 interface ApparelOffer {
   store: string;
+  url: string;
   price: number;
   shipping: number;
   currency: "EUR" | "CLP";
