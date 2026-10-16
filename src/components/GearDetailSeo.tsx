@@ -10,6 +10,9 @@ import { OG_LOCALE, SITE_URL, aggregateOfferLd, brandLabel, gearDescription, gea
 import { gearRelated, gearTrail } from "@/lib/detailLinks";
 import { JsonLd } from "@/components/hubs/HubParts";
 import { DetailCrumbs, RelatedLinks } from "@/components/DetailNav";
+import DirectDeals from "@/components/DirectDeals";
+import { cheaperAlternatives } from "@/lib/directDeals";
+import { CONV } from "@/lib/convStrings";
 
 // Metadatos, JSON-LD, migas y relacionados de las cinco fichas de
 // equipamiento (botas, ropa, guantes, pelotas, entrenamiento): eran cinco
@@ -69,6 +72,10 @@ export function GearDetailFrame({
       <JsonLd data={jsonLd} />
       <DetailCrumbs locale={locale} trail={gearTrail(section, item, locale)} current={path} />
       {children}
+      {/* Ficha cara: parecidas un 15 %+ más baratas, con botón directo. */}
+      <div className="mx-auto w-full max-w-6xl px-3 sm:px-6">
+        <DirectDeals deals={cheaperAlternatives(section, item, all, locale)} title={CONV[locale].altCheaper} max={3} surface="alt" />
+      </div>
       {/* El código en texto, no solo en el JSON-LD: es lo que se busca
           ("ie1802", "893873") y lo que un comprador compara entre tiendas. */}
       {mpn && (

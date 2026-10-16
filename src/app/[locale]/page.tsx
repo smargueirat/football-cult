@@ -15,6 +15,9 @@ import { siteFaq } from "@/lib/siteFacts";
 import { DEALS_NAV } from "@/lib/dealsNav";
 import { GUIDE_UI } from "@/lib/guideUi";
 import { QaList } from "@/components/hubs/HubParts";
+import DirectDeals from "@/components/DirectDeals";
+import { todaysDeals } from "@/lib/directDeals";
+import { CONV } from "@/lib/convStrings";
 import { LinkChipRow } from "@/components/hubs/HubLinkParts";
 import {
   SEASONS,
@@ -68,6 +71,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const trust = trustStats();
   const { dropProducts, dropIdsByCountry } = computePriceDrops();
   const faq = siteFaq(locale);
+  const deals = todaysDeals(locale, ["botas", "camiseta"], "home");
 
   return (
     <>
@@ -194,6 +198,17 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 de poder buscar. Esto escribe en el mismo estado
                 compartido, no es un segundo buscador. */}
             <HeroSearch suggestions={suggestions} />
+
+            {/* Home -> tienda en un toque. La home recibía el 64 % de las
+                entradas y no producía NINGÚN clic a tienda (GA4, 90 días):
+                el único camino pasaba por ficha. */}
+            <DirectDeals
+              deals={deals}
+              eyebrow={CONV[locale].dealsEyebrow}
+              title={CONV[locale].dealsTitle}
+              sub={CONV[locale].dealsSub}
+              surface="home"
+            />
 
             {/* Franja de confianza con números CONTADOS del catálogo.
                 La versión propuesta decía "+10.000 artículos comparados"

@@ -6,6 +6,9 @@ import { asLocale, breadcrumbLd } from "@/lib/hubPages";
 import { HUB } from "@/lib/hubStrings";
 import { JsonLd } from "@/components/hubs/HubParts";
 import BotasPageClient from "./BotasPageClient";
+import DirectDeals from "@/components/DirectDeals";
+import { todaysDeals } from "@/lib/directDeals";
+import { CONV } from "@/lib/convStrings";
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
@@ -64,7 +67,9 @@ export default async function BotasPage({ params }: { params: Promise<{ locale: 
           "/botas",
         )}
       />
-      <BotasPageClient />
+      <BotasPageClient>
+        <DirectDeals deals={todaysDeals(asLocale(locale), ["botas"], "listado")} title={CONV[asLocale(locale)].dealsTitle} surface="listado" />
+      </BotasPageClient>
       <GearHubLinks section="botas" locale={asLocale(locale)} />
     </>
   );

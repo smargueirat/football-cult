@@ -41,8 +41,9 @@ export function goHref(p: {
   productId: string;
   url: string;
   locale: string;
-  /** Tipo de página donde está el botón: ficha | comparar. */
-  origin: "ficha" | "comparar";
+  /** Dónde está el botón: ficha | comparar | home (módulo de ofertas) |
+   *  listado (tarjeta) | alt (alternativas de una ficha) | bajadas (tabla). */
+  origin: "ficha" | "comparar" | "home" | "listado" | "alt" | "bajadas";
   position?: number;
   isBest?: boolean;
 }): string {
@@ -66,5 +67,7 @@ export function markGoClicks(): void {
     if (a && href && !/[?&]j=1/.test(href)) a.setAttribute("href", `${href}&j=1`);
   };
   document.addEventListener("pointerdown", mark, true);
+  // Safari/iOS < 13 no tiene pointer events; el toque igual llega acá.
+  document.addEventListener("touchstart", mark, { capture: true, passive: true });
   document.addEventListener("click", mark, true);
 }

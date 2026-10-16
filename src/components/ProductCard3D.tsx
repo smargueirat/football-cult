@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "@/lib/i18n/LocaleLink";
+import CardGo from "./CardGo";
 import { useEffect, useRef, useState, useMemo } from "react";
 import {
   Product,
@@ -178,6 +179,7 @@ export default function ProductCard3D({
   // (varía por breakpoint/columnas del grid) en vez de forzar un ancho
   // inventado mientras está fuera de pantalla.
   return (
+    <div className="flex h-full flex-col">
     <Link
       ref={cardRef}
       href={`/camiseta/${product.id}`}
@@ -186,7 +188,7 @@ export default function ProductCard3D({
       onMouseEnter={handlePrefetchPhoto}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
-      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] [content-visibility:auto] [contain-intrinsic-size:auto_300px_auto_420px]"
+      className="group relative flex flex-1 flex-col overflow-hidden rounded-2xl border border-[#C9A24B]/35 bg-gradient-to-b from-[#fffdf8] to-[#f6efdd] [content-visibility:auto] [contain-intrinsic-size:auto_300px_auto_420px]"
     >
       {/* El tilt 3D vive en este div interno, no en el <a> de arriba --
           un transform en vivo (que cambia en cada mousemove) puesto
@@ -397,5 +399,7 @@ export default function ProductCard3D({
       </div>
       </div>
     </Link>
+    {best && <CardGo kind="j" productId={product.id} offer={best} total={bestTotal} />}
+    </div>
   );
 }

@@ -8,6 +8,10 @@ import { GUIDES } from "@/lib/guides";
 import { SITE_URL } from "@/lib/hubPages";
 import { formatOfferMoney } from "@/lib/offerMoney";
 import { LinkChipRow } from "@/components/hubs/HubLinkParts";
+import { goHref, type GoKind } from "@/lib/go";
+import { CONV } from "@/lib/convStrings";
+
+const GO_KIND: Record<DealRow["section"], GoKind> = { camiseta: "j", botas: "b", tickets: "t", ropa: "a", guantes: "g", pelotas: "p", entrenamiento: "e" };
 
 // Piezas de servidor de las páginas de bajadas y mínimos: tabla en HTML plano
 // (citable tal cual por un buscador o un asistente) y enlaces entre ellas.
@@ -37,6 +41,15 @@ export function DealTable({ rows, locale, mode }: { rows: DealRow[]; locale: Hub
                 <Link className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B]/60 underline-offset-2" href={dealHref(r, locale)}>
                   {dealName(r, locale)}
                 </Link>
+                {/* Directo a la tienda: la tabla era solo enlaces a fichas. */}
+                <a
+                  href={goHref({ kind: GO_KIND[r.section], productId: r.item.id, url: r.offerUrl, locale, origin: "bajadas" })}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow sponsored"
+                  className="mt-1.5 flex min-h-11 w-fit items-center rounded-full bg-[#1B3B2B] px-3 py-1 text-xs font-medium text-[#F3E9C9] hover:bg-[#15301f]"
+                >
+                  {CONV[locale].goStore.replace("{store}", r.store)} →
+                </a>
               </td>
               <td className={td}>{r.store}</td>
               <td className={`${td} text-[#675c44] line-through`}>{formatOfferMoney(r.before, r.currency)}</td>
@@ -97,5 +110,26 @@ export function FeedLink({ locale }: { locale: HubLocale }) {
         {DEALS[locale].feedLink}
       </a>
     </p>
+  );
+}
+
+/** Captura de vuelta en las páginas de bajadas: canal, bot por equipo y la
+ *  alerta por correo de cada ficha. */
+export function DealsCapture({ locale }: { locale: HubLocale }) {
+  const c = CONV[locale];
+  const pill = "inline-flex min-h-11 items-center rounded-full px-4 py-2 text-sm font-semibold";
+  return (
+    <div className="mt-4 rounded-2xl border border-[#C9A24B]/50 bg-[#fffaf0] p-4" data-testid="return-capture">
+      <p className="font-semibold text-[#1B3B2B]">{c.dropsCaptureTitle}</p>
+      <p className="mt-1 text-sm text-[#675c44]">{c.dropsCaptureBody}</p>
+      <div className="mt-3 flex flex-wrap gap-2">
+        <a href="https://t.me/FootballCultOfertas" target="_blank" rel="noopener noreferrer" className={`${pill} bg-[#1B3B2B] text-[#F3E9C9]`}>
+          {c.tgChannel}
+        </a>
+        <a href="https://t.me/FootballCultBot" target="_blank" rel="nofollow noopener noreferrer" className={`${pill} border border-[#1B3B2B]/30 bg-white text-[#1B3B2B]`}>
+          {c.tgBot}
+        </a>
+      </div>
+    </div>
   );
 }

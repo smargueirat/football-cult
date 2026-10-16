@@ -26,6 +26,7 @@ export default function ConsentBanner() {
   const [analytics, setAnalytics] = useState(false);
   const [affiliate, setAffiliate] = useState(false);
   const firstRef = useRef<HTMLButtonElement>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
 
   // Arranque: defaults denegados siempre; si ya hay elección, se aplica.
   useEffect(() => {
@@ -63,6 +64,24 @@ export default function ConsentBanner() {
     if (open && panel) firstRef.current?.focus();
   }, [open, panel]);
 
+  // Altura del banner en --consent-h: la barra fija de las fichas
+  // (StickyBestOfferBar) se apoya encima en vez de quedar debajo. Medido
+  // 2026-10-16 en móvil 390x844: en la primera visita el botón "Rechazar"
+  // tapaba justo el "Ir a tienda" y el toque se lo llevaba el banner.
+  useEffect(() => {
+    const el = rootRef.current;
+    const html = document.documentElement;
+    if (!open || !el) return;
+    const set = () => html.style.setProperty("--consent-h", `${el.offsetHeight}px`);
+    set();
+    const ro = new ResizeObserver(set);
+    ro.observe(el);
+    return () => {
+      ro.disconnect();
+      html.style.removeProperty("--consent-h");
+    };
+  }, [open]);
+
   const choose = useCallback((next: Consent) => {
     const reload = needsReload(next);
     writeConsent(next);
@@ -83,6 +102,7 @@ export default function ConsentBanner() {
 
   return (
     <div
+      ref={rootRef}
       role="region"
       aria-label={c.region}
       className="fixed inset-x-0 bottom-0 z-[100] max-h-[90vh] overflow-y-auto border-t border-[#C9A24B]/40 bg-[#1b1812] px-4 py-3 text-[#F3E9C9] sm:py-4 shadow-[0_-8px_30px_rgba(0,0,0,0.45)] sm:px-8"

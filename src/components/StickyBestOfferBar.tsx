@@ -22,6 +22,7 @@ export default function StickyBestOfferBar({
   onClick,
   hideFrom,
   approx,
+  proof,
 }: {
   store: string;
   total: string;
@@ -34,6 +35,8 @@ export default function StickyBestOfferBar({
   hideFrom: "sm" | "lg";
   /** Equivalente aproximado en la moneda del visitante ("≈ 54 EUR"), si aplica. */
   approx?: string | null;
+  /** Prueba social verdadera: "Comparando 5 tiendas · Precio más bajo en 30 días". */
+  proof?: string;
 }) {
   const [footerVisible, setFooterVisible] = useState(false);
 
@@ -47,7 +50,9 @@ export default function StickyBestOfferBar({
 
   return (
     <div
-      className={`shadow-vintage-lg fixed inset-x-0 bottom-0 z-40 border-t border-[#C9A24B]/30 bg-[#fffdf8]/95 backdrop-blur-md transition-transform duration-200 motion-reduce:transition-none ${
+      // Encima del banner de cookies mientras está abierto (--consent-h, ver ConsentBanner).
+      style={{ bottom: "var(--consent-h, 0px)" }}
+      className={`shadow-vintage-lg fixed inset-x-0 z-40 border-t border-[#C9A24B]/30 bg-[#fffdf8]/95 backdrop-blur-md transition-transform duration-200 motion-reduce:transition-none ${
         hideFrom === "sm" ? "sm:hidden" : "lg:hidden"
       } ${footerVisible ? "translate-y-full" : "translate-y-0"}`}
       data-testid="best-offer-bar"
@@ -60,6 +65,7 @@ export default function StickyBestOfferBar({
             {store}
             {approx ? ` · ${approx}` : ""}
           </p>
+          {proof && <p className="truncate text-[10px] leading-tight font-medium text-[#1B3B2B]">{proof}</p>}
         </div>
         <a
           href={href}

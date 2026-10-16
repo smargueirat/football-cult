@@ -16,6 +16,10 @@ import { useFavorites } from "@/lib/favorites/FavoritesContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { getDisplaySrc } from "@/lib/images";
 import StickyBestOfferBar from "./StickyBestOfferBar";
+import BestOfferBox, { proofLine } from "./BestOfferBox";
+import ReturnCapture from "./ReturnCapture";
+import { CONV } from "@/lib/convStrings";
+import { retailerCountText } from "@/lib/retailerFamily";
 
 // Mismo patrón que BootDetailClient.tsx (foto grande + selector de
 // oferta + selector de talla real por oferta), generalizado para
@@ -207,6 +211,26 @@ export default function GearDetailClient({
     );
   }
 
+  const bar = cheapestOffer
+    ? (() => {
+        const sp = activeSizePrice(cheapestOffer);
+        const url = sp ? sp.url : cheapestOffer.url;
+        const price = sp ? sp.price : cheapestOffer.price;
+        const total = price + cheapestOffer.shipping;
+        const from = (!sp && !!cheapestOffer.priceMax) || shippingUnknown(cheapestOffer, countryCode);
+        return {
+          label: from ? t.botas.from : CONV[locale].totalWithShipping,
+          total: formatOfferMoney(total, cheapestOffer.currency),
+          approx: approxPriceLabel(total, cheapestOffer.currency, country.currency),
+          goLabel: CONV[locale].goStore.replace("{store}", cheapestOffer.store),
+          proof: proofLine(retailerCountText(shippable, t.product), null, price, CONV[locale].lowestInDays),
+          href: goHref({ kind: GEAR_KIND[basePath], productId: item.id, url, locale, origin: "ficha", position: 1, isBest: true }),
+          track: () =>
+            trackOfferClick({ productId: item.id, position: 1, isBest: true, store: cheapestOffer.store, url, price, currency: cheapestOffer.currency }),
+        };
+      })()
+    : null;
+
   return (
     <div className="mx-auto w-full max-w-6xl px-3 pt-8 pb-28 sm:px-6 sm:pb-8">
       <BackToCatalogLink fallbackHref={`/${basePath}`} />
@@ -243,26 +267,21 @@ export default function GearDetailClient({
         <div>
           <span className="text-xs uppercase tracking-wide text-[#B8933F]">{item.brand}</span>
           <h1 className="font-vintage mt-1 text-2xl text-[#1B3B2B]">{localizeGearModel(item.model, item.brand, locale)}</h1>
-          {cheapestOffer ? (
-            <p className="mt-2 text-sm text-[#675c44]">
-              {t.botas.bestPrice}: {cheapestOffer.priceMax || shippingUnknown(cheapestOffer, countryCode) ? `${t.botas.from} ` : ""}
-              {formatOfferMoney(cheapestTotal, cheapestOffer.currency)} {shippingUnknown(cheapestOffer, countryCode) ? "" : t.botas.shippingIncluded}{" "}
-              <ApproxPrice amount={cheapestTotal} currency={cheapestOffer.currency} className="text-xs" />
-            </p>
+          {bar && cheapestOffer ? (
+            <BestOfferBox
+              className="mt-3 flex"
+              label={bar.label}
+              total={bar.total}
+              approx={bar.approx}
+              store={cheapestOffer.store}
+              proof={bar.proof}
+              goLabel={bar.goLabel}
+              href={bar.href}
+              onClick={bar.track}
+            />
           ) : (
             <p className="mt-2 text-sm text-[#675c44]">{t.countryPanel.notAvailable}</p>
           )}
-
-          {/* Mismo corazón de arriba, favoritar ya suscribe a la alerta de
-              precio por mail (ver FavoritesContext.tsx). Desde que
-              check-prices también revisa botas/guantes/pelotas/ropa
-              (09-23, antes solo camisetas) esta promesa ya es real acá. */}
-          <button
-            onClick={() => toggleFavorite(item.id)}
-            className="mt-2 text-left text-sm text-[#8a6a1f] underline decoration-[#C9A24B] underline-offset-2 hover:text-[#1B3B2B]"
-          >
-            {favorite ? t.detail.priceAlertCtaOn : t.detail.priceAlertCtaOff}
-          </button>
 
           {hasDistinctPhotos && (
             <p className="mt-4 text-xs text-[#675c44]">{t.botas.differentPhotosNote}</p>
@@ -281,30 +300,25 @@ export default function GearDetailClient({
               </details>
             )}
           </div>
+          <ReturnCapture productId={item.id} />
         </div>
       </div>
 
       {/* Barra fija en celular: un toque a la mejor tienda (tienda + total),
           igual que en botas. */}
-      {cheapestOffer && (() => {
-        const sp = activeSizePrice(cheapestOffer);
-        const barUrl = sp ? sp.url : cheapestOffer.url;
-        const barPrice = sp ? sp.price : cheapestOffer.price;
-        return (
-          <StickyBestOfferBar
-            hideFrom="sm"
-            store={cheapestOffer.store}
-            total={`${!sp && cheapestOffer.priceMax ? `${t.botas.from} ` : ""}${formatOfferMoney(barPrice + cheapestOffer.shipping, cheapestOffer.currency)}`}
-            approx={approxPriceLabel(barPrice + cheapestOffer.shipping, cheapestOffer.currency, country.currency)}
-            fromLabel={t.botas.bestPrice}
-            goLabel={t.detail.goToStore.replace("{store}", cheapestOffer.store)}
-            href={goHref({ kind: GEAR_KIND[basePath], productId: item.id, url: barUrl, locale, origin: "ficha", position: 1, isBest: true })}
-            onClick={() =>
-              trackOfferClick({ productId: item.id, position: 1, isBest: true, store: cheapestOffer.store, url: barUrl, price: barPrice, currency: cheapestOffer.currency })
-            }
-          />
-        );
-      })()}
+      {bar && cheapestOffer && (
+        <StickyBestOfferBar
+          hideFrom="sm"
+          store={cheapestOffer.store}
+          total={bar.total}
+          approx={bar.approx}
+          fromLabel={bar.label}
+          proof={bar.proof}
+          goLabel={bar.goLabel}
+          href={bar.href}
+          onClick={bar.track}
+        />
+      )}
     </div>
   );
 }

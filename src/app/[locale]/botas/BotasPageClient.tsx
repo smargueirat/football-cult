@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import BackToCatalogLink from "@/components/BackToCatalogLink";
 import { bootProducts } from "@/data/boots";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import type { ReactNode } from "react";
 
 // A diferencia del home (donde SearchExplorer es una sección más, ver
 // LazySearchExplorer.tsx), acá ES el contenido principal de la página --
@@ -30,7 +31,7 @@ const SearchExplorer = dynamic(() => import("@/components/SearchExplorer"), {
 // las páginas de camisetas por categoría (ver CategoryCatalogPage.tsx) --
 // da buscador, filtros de marca/talla/color/nivel/precio y el "Ver más"
 // paginado gratis, sin mantener una segunda implementación en paralelo.
-export default function BotasPageClient() {
+export default function BotasPageClient({ children }: { children?: ReactNode }) {
   const { t } = useLanguage();
 
   return (
@@ -40,6 +41,7 @@ export default function BotasPageClient() {
       <p className="mt-1 text-sm text-[#675c44]">
         {t.botas.pageSubtitle.replace("{n}", String(bootProducts.length))}
       </p>
+      {children}
       <div className="mt-5">
         <SearchExplorer forcedSection="boots" />
       </div>
