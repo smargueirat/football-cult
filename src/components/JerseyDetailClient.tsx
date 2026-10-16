@@ -77,6 +77,7 @@ export default function JerseyDetailClient({
   priceHistory,
   sameTeamProducts,
   manufacturerCode,
+  canonicalName,
   archiveStats = {},
 }: {
   product: Product;
@@ -84,6 +85,9 @@ export default function JerseyDetailClient({
   sameTeamProducts: Product[];
   /** Código del fabricante ("KC3993"), si alguna tienda lo publica. */
   manufacturerCode?: string;
+  /** Nombre canónico de la ficha ("France 2018 away shirt", seoMeta
+   *  jerseyName): subtítulo bajo el H1, que es el nombre real de la tienda. */
+  canonicalName?: string;
   /** Mínimo/mediana del archivo durable de precios, por URL de oferta.
    *  Solo trae las ofertas con historial suficiente (>= 14 días). */
   archiveStats?: Record<string, OfferPriceStats>;
@@ -763,6 +767,21 @@ export default function JerseyDetailClient({
               <h1 className="font-card-title text-lg leading-snug text-balance text-[#1a1a1a] sm:text-xl lg:text-2xl">
                 {displayName}
               </h1>
+              {/* Subtítulo (2026-10-16): lo que se busca ("{equipo} {año}
+                  {equipación}") y el código del fabricante ("893873 euros",
+                  posición 6,8 en Search Console) pegados al H1, que sigue
+                  siendo el nombre real de la tienda. */}
+              {(canonicalName || manufacturerCode) && (
+                <p className="mt-1 text-sm font-medium text-[#3f3a2f]">
+                  {canonicalName && canonicalName.toLowerCase() !== displayName.toLowerCase() ? canonicalName : null}
+                  {canonicalName && canonicalName.toLowerCase() !== displayName.toLowerCase() && manufacturerCode ? " · " : null}
+                  {manufacturerCode && (
+                    <>
+                      {t.detail.manufacturerCode}: <span className="font-mono">{manufacturerCode}</span>
+                    </>
+                  )}
+                </p>
+              )}
               <p className="mt-1 flex items-center gap-1.5 text-sm text-[#675c44]">
                 <span>{country.flag}</span>
                 {storesLabel}
@@ -922,14 +941,9 @@ export default function JerseyDetailClient({
                     {t.detail.trustLink}
                   </Link>
                 </p>
-                {/* Visible y no solo en los datos estructurados: hay gente que
-                    busca por el código de la etiqueta, y uno ya nos puso en la
-                    posición 8 de Google ("s08244", Search Console, sept. 2026). */}
-                {manufacturerCode && (
-                  <p className="mb-3 text-xs text-[#5b5442]">
-                    {t.detail.manufacturerCode}: <span className="font-mono">{manufacturerCode}</span>
-                  </p>
-                )}
+                {/* El código del fabricante va ahora bajo el H1 (visible y no
+                    solo en los datos estructurados: "s08244" posición 8,
+                    "893873 euros" posición 6,8 en Search Console). */}
 
                 <div className="flex flex-col gap-3">
                   {/* Las ofertas agotadas (inStock: false) no se muestran --

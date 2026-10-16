@@ -11,7 +11,9 @@ import { SITE_URL } from "@/lib/hubPages";
 import { heroSuggestions } from "@/lib/heroSuggestions";
 import { groupThousands, trustStats } from "@/lib/trustStrip";
 import { countries, type CountryCode } from "@/data/countries";
-import { siteFaq } from "@/lib/siteFacts";
+import { homeMeta, siteFaq } from "@/lib/siteFacts";
+import type { Metadata } from "next";
+import { buildAlternates, OG_LOCALE } from "@/lib/i18n/locales";
 import { DEALS_NAV } from "@/lib/dealsNav";
 import { GUIDE_UI } from "@/lib/guideUi";
 import { QaList } from "@/components/hubs/HubParts";
@@ -58,6 +60,21 @@ function computePriceDrops() {
   }
 
   return { dropProducts: Array.from(byId.values()), dropIdsByCountry };
+}
+
+// Título y descripción propios de la home (los del layout quedan como
+// reserva genérica): la consulta de intención primero y cifras de hoy.
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale: rawLocale } = await params;
+  const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
+  const { title, description } = homeMeta(locale);
+  return {
+    title,
+    description,
+    alternates: buildAlternates(locale, ""),
+    openGraph: { title, description, siteName: "Football Cult", type: "website", locale: OG_LOCALE[locale] },
+    twitter: { card: "summary_large_image", title, description },
+  };
 }
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {

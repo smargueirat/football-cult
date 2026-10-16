@@ -74,3 +74,36 @@ export function ticketFaq(locale: HubLocale): { h2: string; qa: QA[] } | null {
     }),
   };
 }
+
+// <title>/description de /tickets (antes en la página; aquí para que los lea
+// scripts/check_query_patterns.mts). La intención va primero y la
+// descripción lleva las cifras de hoy.
+const META: Record<HubLocale, { title: string; description: (n: string, s: number) => string }> = {
+  es: {
+    title: "Entradas de fútbol: comparador de precios | Football Cult",
+    description: (n, s) => `Comparador de entradas de fútbol: ${n} partidos con precio de ${s} vendedores y enlace directo a la compra. Premier League, LaLiga, Champions League y más.`,
+  },
+  en: {
+    title: "Football Tickets: Price Comparison | Football Cult",
+    description: (n, s) => `Football ticket price comparison: ${n} matches priced by ${s} sellers, with a direct link to buy. Premier League, LaLiga, Champions League and more.`,
+  },
+  pt: {
+    title: "Ingressos de futebol: comparador de preços | Football Cult",
+    description: (n, s) => `Comparador de ingressos de futebol: ${n} jogos com preço de ${s} vendedores e link direto para a compra. Premier League, LaLiga, Champions League e mais.`,
+  },
+  fr: {
+    // "comparateur billets foot": posición 2,2 en Search Console (sep-oct 2026).
+    title: "Comparateur de billets de foot | Football Cult",
+    description: (n, s) => `Comparateur de billets de foot : ${n} matchs avec les prix de ${s} vendeurs et un lien direct vers l'achat. Premier League, LaLiga, Ligue 1, Ligue des Champions et plus.`,
+  },
+  it: {
+    title: "Biglietti calcio: confronto prezzi | Football Cult",
+    description: (n, s) => `Confronto prezzi dei biglietti di calcio: ${n} partite con i prezzi di ${s} rivenditori e link diretto all'acquisto. Premier League, LaLiga, Champions League e altre.`,
+  },
+};
+
+export function ticketsPageMeta(locale: HubLocale): { title: string; description: string } {
+  const live = ticketProducts.filter((t) => t.offers.some((o) => o.price > 0));
+  const s = ticketSellers(live.flatMap((t) => t.offers)).length;
+  return { title: META[locale].title, description: META[locale].description(groupThousands(live.length, locale), s) };
+}

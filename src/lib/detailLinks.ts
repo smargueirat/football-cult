@@ -10,7 +10,7 @@ import { seasonList, seasonSlug } from "@/lib/seasonHubs";
 import { HUB } from "@/lib/hubStrings";
 import { EXTRA } from "@/lib/extraHubStrings";
 import { MIN_HUB_ITEMS } from "@/lib/gearHubs";
-import { decadeOf, futsalItems, kidsBootItems, lineFacets, retroDecadeFacets, retroTeamFacets } from "@/lib/extraHubs";
+import { decadeOf, futsalItems, kidsBootItems, lineFacets, retroDecadeFacets, retroTeamDecadeFacets, retroTeamFacets } from "@/lib/extraHubs";
 import { bootLinesOf, isKidsBoot } from "@/lib/bootLines";
 import { teamKeyForTicketName, ticketCompetitionFacets, ticketSlug, ticketTeamFacets, ticketTeams } from "@/lib/ticketHubs";
 import { brandLabel, gearName, jerseyName, ticketName, type GearLike } from "@/lib/seoMeta";
@@ -127,14 +127,19 @@ export function jerseyTrail(p: Product, locale: HubLocale): Crumb[] {
       : teamCategory[p.teamKey] === "national"
         ? [{ name: T[locale].nationalTeams, path: "/selecciones" }]
         : [];
-  // Retro (<= 2006): Inicio > Retro > Retro del equipo, si ese hub existe.
+  // Retro (<= 2006): Inicio > Retro > Retro del equipo > Retro del equipo
+  // de esa década, cada uno si ese hub existe.
   if (isVintageRetro(p)) {
     const x = EXTRA[locale];
     const teamHub = retroTeamFacets().some((f) => f.team === p.teamKey);
+    const d = decadeOf(p.season);
+    const decadeHub = teamHub && retroTeamDecadeFacets(p.teamKey).some((f) => f.decade === d);
+    const national = teamCategory[p.teamKey] === "national";
     return [
       { name: s.home, path: "" },
       { name: x.retroAll, path: "/retro" },
-      ...(teamHub ? [{ name: x.retroTeamH1(team(p.teamKey, locale), teamCategory[p.teamKey] === "national"), path: `/retro/${p.teamKey}` }] : []),
+      ...(teamHub ? [{ name: x.retroTeamH1(team(p.teamKey, locale), national), path: `/retro/${p.teamKey}` }] : []),
+      ...(decadeHub ? [{ name: x.retroTeamDecadeH1(team(p.teamKey, locale), national, d), path: `/retro/${p.teamKey}/${d}` }] : []),
       { name: jerseyName(p, locale) },
     ];
   }
@@ -145,9 +150,13 @@ function retroHubs(p: Product, locale: HubLocale): LinkItem[] {
   if (!isVintageRetro(p)) return [];
   const x = EXTRA[locale];
   const d = decadeOf(p.season);
+  const national = teamCategory[p.teamKey] === "national";
   return [
     ...(retroTeamFacets().some((f) => f.team === p.teamKey)
-      ? [{ href: `/${locale}/retro/${p.teamKey}`, label: x.retroTeamH1(team(p.teamKey, locale), teamCategory[p.teamKey] === "national") }]
+      ? [{ href: `/${locale}/retro/${p.teamKey}`, label: x.retroTeamH1(team(p.teamKey, locale), national) }]
+      : []),
+    ...(retroTeamDecadeFacets(p.teamKey).some((f) => f.decade === d)
+      ? [{ href: `/${locale}/retro/${p.teamKey}/${d}`, label: x.retroTeamDecadeH1(team(p.teamKey, locale), national, d) }]
       : []),
     ...(retroDecadeFacets().some((f) => f.decade === d) ? [{ href: `/${locale}/retro/decada/${d}`, label: x.retroDecadeH1(d) }] : []),
   ];

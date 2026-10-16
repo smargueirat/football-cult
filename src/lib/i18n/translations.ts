@@ -472,6 +472,9 @@ export interface Translations {
   tickets: {
     navLabel: string;
     pageTitle: string;
+    /** H1 de /tickets con la intención de búsqueda ("comparateur billets
+     *  foot", posición 2,2); pageTitle sigue siendo el nombre corto (migas). */
+    pageH1: string;
     pageSubtitle: string;
     clubLabel: string;
     leagueLabel: string;
@@ -566,7 +569,7 @@ export const translations: Record<Locale, Translations> = {
         "Comparamos precios de camisetas de selecciones, clubes y ligas de todo el mundo. Tú compras directamente donde quieras.",
       cta: "Ver catálogo",
       h1Eyebrow: "Comparador de precios",
-      h1: "Camisetas y material de fútbol:",
+      h1: "Comparador de camisetas y material de fútbol:",
       h1Accent: "el precio final, con envío incluido",
       h1Sub: "Buscamos el mismo producto oficial en {s} tiendas y te mostramos cuánto cuesta de verdad en cada una, con el envío ya sumado.",
       h1Items: ["Camisetas", "Botas", "Guantes", "Balones", "Ropa", "Entrenamiento"],
@@ -1039,6 +1042,7 @@ export const translations: Record<Locale, Translations> = {
     tickets: {
       navLabel: "Entradas",
       pageTitle: "Entradas de fútbol",
+      pageH1: "Entradas de fútbol: comparador de precios",
       pageSubtitle: "{n} partidos reales con entradas disponibles.",
       clubLabel: "Club",
       leagueLabel: "Liga",
@@ -1131,7 +1135,7 @@ export const translations: Record<Locale, Translations> = {
         "Comparamos preços de camisas de seleções, clubes e ligas do mundo todo. Você compra direto onde quiser.",
       cta: "Ver catálogo",
       h1Eyebrow: "Comparador de preços",
-      h1: "Camisolas e material de futebol:",
+      h1: "Comparador de camisolas e material de futebol:",
       h1Accent: "o preço final, com portes incluídos",
       h1Sub: "Procuramos o mesmo produto oficial em {s} lojas e mostramos quanto custa mesmo em cada uma, com os portes já somados.",
       h1Items: ["Camisolas", "Chuteiras", "Luvas", "Bolas", "Roupa", "Treino"],
@@ -1603,6 +1607,7 @@ export const translations: Record<Locale, Translations> = {
     tickets: {
       navLabel: "Ingressos",
       pageTitle: "Ingressos de futebol",
+      pageH1: "Ingressos de futebol: comparador de preços",
       pageSubtitle: "{n} partidas reais com ingressos disponíveis.",
       clubLabel: "Clube",
       leagueLabel: "Liga",
@@ -1695,7 +1700,7 @@ export const translations: Record<Locale, Translations> = {
         "We compare prices on national team, club, and league jerseys from all over the world. You buy directly wherever you want.",
       cta: "Shop now",
       h1Eyebrow: "Price comparison",
-      h1: "Football shirts and gear:",
+      h1: "Football price comparison for shirts and gear:",
       h1Accent: "the final price, shipping included",
       h1Sub: "We find the same official product across {s} stores and show what it really costs at each one, with shipping already added.",
       h1Items: ["Shirts", "Boots", "Gloves", "Balls", "Apparel", "Training"],
@@ -2167,6 +2172,7 @@ export const translations: Record<Locale, Translations> = {
     tickets: {
       navLabel: "Tickets",
       pageTitle: "Football tickets",
+      pageH1: "Football tickets: price comparison",
       pageSubtitle: "{n} real matches with tickets available.",
       clubLabel: "Club",
       leagueLabel: "League",
@@ -2259,7 +2265,7 @@ export const translations: Record<Locale, Translations> = {
         "Nous comparons les prix des maillots de sélections, de clubs et de championnats du monde entier. Vous achetez directement où vous voulez.",
       cta: "Acheter maintenant",
       h1Eyebrow: "Comparateur de prix",
-      h1: "Maillots et équipement de football :",
+      h1: "Comparateur de maillots et d'équipement de foot :",
       h1Accent: "le prix final, livraison comprise",
       h1Sub: "Nous cherchons le même produit officiel dans {s} boutiques et montrons ce qu'il coûte vraiment dans chacune, livraison déjà incluse.",
       h1Items: ["Maillots", "Chaussures", "Gants", "Ballons", "Vêtements", "Entraînement"],
@@ -2731,6 +2737,7 @@ export const translations: Record<Locale, Translations> = {
     tickets: {
       navLabel: "Billets",
       pageTitle: "Billets de football",
+      pageH1: "Comparateur de billets de foot",
       pageSubtitle: "{n} matchs réels avec billets disponibles.",
       clubLabel: "Club",
       leagueLabel: "Ligue",
@@ -2823,7 +2830,7 @@ export const translations: Record<Locale, Translations> = {
         "Confrontiamo i prezzi delle maglie di nazionali, club e campionati di tutto il mondo. Acquisti direttamente dove vuoi.",
       cta: "Acquista ora",
       h1Eyebrow: "Comparatore di prezzi",
-      h1: "Maglie e materiale da calcio:",
+      h1: "Confronto prezzi di maglie e materiale da calcio:",
       h1Accent: "il prezzo finale, spedizione inclusa",
       h1Sub: "Cerchiamo lo stesso prodotto ufficiale in {s} negozi e mostriamo quanto costa davvero in ciascuno, spedizione già inclusa.",
       h1Items: ["Maglie", "Scarpini", "Guanti", "Palloni", "Abbigliamento", "Allenamento"],
@@ -3295,6 +3302,7 @@ export const translations: Record<Locale, Translations> = {
     tickets: {
       navLabel: "Biglietti",
       pageTitle: "Biglietti di calcio",
+      pageH1: "Biglietti di calcio: confronto prezzi",
       pageSubtitle: "{n} partite reali con biglietti disponibili.",
       clubLabel: "Club",
       leagueLabel: "Campionato",
