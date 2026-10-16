@@ -1374,6 +1374,20 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/287190462984",  # ssvjahnregensburg; home|2023/24: player name / signed|Maglia SSV Jahn Regensburg 2023/202
     "/itm/900010634178",  # clubbrugge; third|2024/25: player name / signed|Camiseta de fútbol Club Brugge KV 
     "/itm/287190462984",  # ssvjahnregensburg; home|2023/24: player name / signed|Camiseta SSV Jahn Regensburg 2023/2
+    # --- Daily pass 2026-10-16, ebay_gb_retro ---
+    "/itm/278077283194",  # prestonnorthend-retro-202425-home: womens cut (Ladies Size 18); Preston North End PNE Football Shirt 2024-25 Home - Womans Ladies Size
+    # --- Daily pass 2026-10-16, CSV refresh ---
+    "nike_ib4606-480",  # FootStoreES francia-training-202526: LONG-SLEEVE Strike top, swapped onto the short-sleeve ficha 10-15 and 10-16
+    # --- Daily pass 2026-10-16, eBay current ---
+    "/itm/227264619533",  # cerezoosaka-away-2026: $28.98 template seller (JERSEY X Home 2026); JERSEY Cerezo Osaka Away 2026 Mens
+    "/itm/287192268345",  # kawasakifrontale-away-2026: $28.98 template seller (JERSEY X Home 2026); JERSEY Kawasaki Frontale Away 2026
+    "/itm/227264619530",  # kawasakifrontale-home-2026: $28.98 template seller (JERSEY X Home 2026); JERSEY Kawasaki Frontale Home 2026
+    "/itm/137012563714",  # shimizuspulse-home-2026: $28.98 template seller (JERSEY X Home 2026); Shimizu S-Pulse Home Jersey 2026 Mens
+    "/itm/227496041873",  # cerezoosaka-home-2026: $28.98 template seller (JERSEY X Home 2026); JERSEY Cerezo Osaka Home 2026 Mens
+    "/itm/336811263122",  # arsenal-away-202627: 17.99 GBP player-fit 26/27, implausible price; Arsenal 26/27 Away Player Fit Shirt Size large Men’s
+    # --- Daily pass 2026-10-16, eBay retro ---
+    "/itm/267158347112",  # wanted ad (*LOOKING FOR*); Oakland Roots 2019 Jersey Home New *LOOKING FOR*
+    "/itm/157241468982",  # Al Hilal home listed as purple United, reproduction title; Camiseta de fútbol local para hombre púrpura 2023-2024 Al Hilal United
 ]
 
 
