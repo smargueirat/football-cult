@@ -38,6 +38,21 @@ if [ "$code" != "200" ]; then
 fi
 echo "publicado $(git -C "$NEW" log --oneline -1)"
 
+# Purga de Cloudflare: la regla "paginas-html" guarda el HTML 2 h y, sin esto,
+# lo publicado no se ve hasta que caduca (2026-10-16: el arreglo del CTA móvil
+# estaba en el origen y Cloudflare seguía sirviendo la página vieja). Solo si
+# el dueño dejó CF_API_TOKEN (permiso Zone > Cache Purge) y CF_ZONE_ID en
+# ~/.config/fc-alerts.env (fuera del repo). Nunca hace fallar el deploy.
+[ -f "$HOME/.config/fc-alerts.env" ] && set -a && . "$HOME/.config/fc-alerts.env" && set +a
+if [ -n "${CF_API_TOKEN:-}" ] && [ -n "${CF_ZONE_ID:-}" ]; then
+  curl -s --max-time 20 -X POST "https://api.cloudflare.com/client/v4/zones/$CF_ZONE_ID/purge_cache" \
+    -H "Authorization: Bearer $CF_API_TOKEN" -H "Content-Type: application/json" \
+    --data '{"purge_everything":true}' | grep -q '"success":true' \
+    && echo "caché de Cloudflare purgada" || echo "AVISO: no se pudo purgar la caché de Cloudflare"
+else
+  echo "AVISO: sin CF_API_TOKEN/CF_ZONE_ID, Cloudflare servirá el HTML viejo hasta 2 h"
+fi
+
 # Copia de respaldo en Oracle (ver scripts/sync_vm.sh): en segundo plano y sin
 # afectar al resultado de este deploy.
 nohup bash /home/piojo/football-cult/scripts/sync_vm.sh >> /home/piojo/football-cult/scripts/sync_vm.log 2>&1 &
