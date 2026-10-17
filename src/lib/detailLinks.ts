@@ -1,7 +1,7 @@
 import { products, teamNames, type Product } from "@/data/products";
 import { ticketProducts, type TicketProduct } from "@/data/tickets";
 import { leagueName, leagueOfTeam, type HubLocale } from "@/data/teamMeta";
-import { isVintageRetro, kitOf, seasonSortValue, teamCategory } from "@/lib/productMeta";
+import { isClassicKit, isVintageRetro, kitOf, seasonSortValue, teamCategory } from "@/lib/productMeta";
 import { bootOfferTotalInEUR, ticketOfferTotalInEUR, type BootCurrencyCode } from "@/lib/offerMoney";
 import { translations } from "@/lib/i18n/translations";
 import { brandFacets, brandGroundCombos, groundFacets, groundSlug, slugify, typeFacets, type GearSection } from "@/lib/gearHubs";
@@ -9,8 +9,9 @@ import { brandHeadline, groundHeadline, groundName, sectionNoun } from "@/lib/ge
 import { seasonList, seasonSlug } from "@/lib/seasonHubs";
 import { HUB } from "@/lib/hubStrings";
 import { EXTRA } from "@/lib/extraHubStrings";
+import { CLASSIC } from "@/lib/classicStrings";
 import { MIN_HUB_ITEMS } from "@/lib/gearHubs";
-import { decadeOf, futsalItems, kidsBootItems, lineFacets, retroDecadeFacets, retroTeamDecadeFacets, retroTeamFacets } from "@/lib/extraHubs";
+import { classicTeamDecadeFacets, classicTeamFacets, decadeOf, futsalItems, kidsBootItems, lineFacets, retroDecadeFacets, retroTeamDecadeFacets, retroTeamFacets } from "@/lib/extraHubs";
 import { bootLinesOf, isKidsBoot } from "@/lib/bootLines";
 import { teamKeyForTicketName, ticketCompetitionFacets, ticketSlug, ticketTeamFacets, ticketTeams } from "@/lib/ticketHubs";
 import { brandLabel, gearName, jerseyName, ticketName, type GearLike } from "@/lib/seoMeta";
@@ -143,7 +144,38 @@ export function jerseyTrail(p: Product, locale: HubLocale): Crumb[] {
       { name: jerseyName(p, locale) },
     ];
   }
+  // Clásica (2007-2019): Inicio > Clásicas > del equipo > del equipo y
+  // década, igual que retro.
+  if (isClassicKit(p)) {
+    const c = CLASSIC[locale];
+    const teamHub = classicTeamFacets().some((f) => f.team === p.teamKey);
+    const d = decadeOf(p.season);
+    const decadeHub = teamHub && classicTeamDecadeFacets(p.teamKey).some((f) => f.decade === d);
+    const national = teamCategory[p.teamKey] === "national";
+    return [
+      { name: s.home, path: "" },
+      { name: c.nav, path: "/clasicas" },
+      ...(teamHub ? [{ name: c.teamH1(team(p.teamKey, locale), national), path: `/clasicas/${p.teamKey}` }] : []),
+      ...(decadeHub ? [{ name: c.teamDecadeH1(team(p.teamKey, locale), national, d), path: `/clasicas/${p.teamKey}/${d}` }] : []),
+      { name: jerseyName(p, locale) },
+    ];
+  }
   return [{ name: s.home, path: "" }, ...up, { name: team(p.teamKey, locale), path: `/equipo/${p.teamKey}` }, { name: jerseyName(p, locale) }];
+}
+
+function classicHubs(p: Product, locale: HubLocale): LinkItem[] {
+  if (!isClassicKit(p)) return [];
+  const c = CLASSIC[locale];
+  const d = decadeOf(p.season);
+  const national = teamCategory[p.teamKey] === "national";
+  const teamHub = classicTeamFacets().some((f) => f.team === p.teamKey);
+  return [
+    ...(teamHub ? [{ href: `/${locale}/clasicas/${p.teamKey}`, label: c.teamH1(team(p.teamKey, locale), national) }] : []),
+    ...(teamHub && classicTeamDecadeFacets(p.teamKey).some((f) => f.decade === d)
+      ? [{ href: `/${locale}/clasicas/${p.teamKey}/${d}`, label: c.teamDecadeH1(team(p.teamKey, locale), national, d) }]
+      : []),
+    ...(teamHub ? [] : [{ href: `/${locale}/clasicas`, label: c.allH1 }]),
+  ];
 }
 
 function retroHubs(p: Product, locale: HubLocale): LinkItem[] {
@@ -192,6 +224,7 @@ export function jerseyRelated(p: Product, locale: HubLocale): Related {
     ],
     hubs: [
       ...retroHubs(p, locale),
+      ...classicHubs(p, locale),
       { href: `/${locale}/equipo/${p.teamKey}`, label: HUB[locale].teamH1(name) },
       ...(league ? [{ href: `/${locale}/liga/${league.slug}`, label: HUB[locale].leagueH1(leagueName(league, locale)) }] : []),
       ...(season ? [{ href: `/${locale}/temporada/${seasonSlug(season)}`, label: `${HUB[locale].seasonLabel} ${season}` }] : []),

@@ -5,6 +5,7 @@ import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { asLocale } from "@/lib/hubPages";
 import { retroDecadeFacets, retroTeamFacets } from "@/lib/extraHubs";
 import { EXTRA } from "@/lib/extraHubStrings";
+import { CLASSIC } from "@/lib/classicStrings";
 import { teamName } from "@/lib/hubs";
 import { LinkChipRow } from "@/components/hubs/HubLinkParts";
 
@@ -35,6 +36,8 @@ export default async function RetroPage({ params }: { params: Promise<{ locale: 
         <LinkChipRow title={x.retroByTeam} items={retroTeamFacets()
             .map((t) => ({ href: `/${locale}/retro/${t.team}`, label: teamName(t.team, locale) }))
             .sort((a, b) => a.label.localeCompare(b.label))} />
+        {/* 2007-2019 no es retro: van a Clásicas (2026-10-17). */}
+        <LinkChipRow title={CLASSIC[locale].nav} items={[{ href: `/${locale}/clasicas`, label: CLASSIC[locale].allH1 }]} />
       </nav>
     </>
   );

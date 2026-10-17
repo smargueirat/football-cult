@@ -5,9 +5,10 @@ import { MIN_HUB_ITEMS, gearItems, kidsBootItems, type GearItem } from "@/lib/ge
 import { teamName, type HubItem } from "@/lib/hubs";
 import { formatOfferMoney, offerTotalInEUR } from "@/lib/offerMoney";
 import { ticketCompetitionFacets, ticketTeamFacets } from "@/lib/ticketHubs";
-import { isVintageRetro, seasonSortValue, teamCategory } from "@/lib/productMeta";
+import { isClassicKit, isVintageRetro, seasonSortValue, teamCategory } from "@/lib/productMeta";
 import { distinctRetailerLabels } from "@/lib/retailerFamily";
 import { EXTRA } from "@/lib/extraHubStrings";
+import { CLASSIC } from "@/lib/classicStrings";
 import { withBrand } from "@/lib/seoMeta";
 
 // Hubs nuevos del 2026-10-09: botas por línea de modelo, de niño y de sala;
@@ -39,17 +40,21 @@ export { kidsBootItems };
 export const RETRO_MIN = 3;
 export const decadeOf = (season: string) => Math.floor(seasonSortValue(season) / 10) * 10;
 
-let vintageCache: HubItem[] | null = null;
-function vintage(): HubItem[] {
-  if (vintageCache) return vintageCache;
+const eraCache = new Map<string, HubItem[]>();
+function era(key: "retro" | "classic", keep: (p: (typeof products)[number]) => boolean): HubItem[] {
+  const hit = eraCache.get(key);
+  if (hit) return hit;
   const out: HubItem[] = [];
   for (const product of products) {
-    if (!isVintageRetro(product) || seasonSortValue(product.season) === 0) continue;
+    if (!keep(product) || seasonSortValue(product.season) === 0) continue;
     const offer = bestOffer(product);
     if (offer) out.push({ product, offer, eur: offerTotalInEUR(offer) });
   }
-  return (vintageCache = out.sort((a, b) => seasonSortValue(a.product.season) - seasonSortValue(b.product.season) || a.eur - b.eur));
+  out.sort((a, b) => seasonSortValue(a.product.season) - seasonSortValue(b.product.season) || a.eur - b.eur);
+  eraCache.set(key, out);
+  return out;
 }
+const vintage = () => era("retro", isVintageRetro);
 
 export const retroTeamItems = (team: string) => vintage().filter((i) => i.product.teamKey === team);
 export const retroDecadeItems = (decade: number) => vintage().filter((i) => decadeOf(i.product.season) === decade);
@@ -69,8 +74,9 @@ export const retroDecadeFacets = () =>
 // décadas de RETRO_MIN+ camisetas cada una. Con una sola, el hub de década
 // sería casi el del equipo con otra URL (contenido duplicado).
 export const retroTeamDecadeItems = (team: string, decade: number) => retroTeamItems(team).filter((i) => decadeOf(i.product.season) === decade);
-export function retroTeamDecadeFacets(team?: string) {
-  const raw = countBy(team ? retroTeamItems(team) : vintage(), (i) => `${i.product.teamKey}|${decadeOf(i.product.season)}`).map(([k, count]) => ({
+export const retroTeamDecadeFacets = (team?: string) => teamDecadeFacets(team ? retroTeamItems(team) : vintage());
+function teamDecadeFacets(items: HubItem[]) {
+  const raw = countBy(items, (i) => `${i.product.teamKey}|${decadeOf(i.product.season)}`).map(([k, count]) => ({
     team: k.split("|")[0],
     decade: Number(k.split("|")[1]),
     count,
@@ -109,14 +115,7 @@ export function retroHub(spec: RetroSpec, locale: HubLocale) {
     path = `/retro/decada/${decade}`;
   }
   if (items.length < RETRO_MIN) return null;
-  const seasons = [...new Set(items.map((i) => i.product.season))].sort((a, b) => seasonSortValue(a) - seasonSortValue(b) || a.localeCompare(b));
-  const stores = distinctRetailerLabels(items.flatMap((i) => i.product.offers.filter((o) => o.inStock !== false)));
-  const eurs = items.map((i) => i.eur);
-  const lo = formatOfferMoney(Math.min(...eurs), "EUR");
-  const hi = formatOfferMoney(Math.max(...eurs), "EUR");
-  const y0 = seasonSortValue(seasons[0]);
-  const y1 = seasonSortValue(seasons[seasons.length - 1]);
-  const range = y0 === y1 ? String(y0) : `${y0}-${y1}`;
+  const { seasons, stores, lo, hi, range } = hubStats(items);
   return {
     items,
     team: team as TeamKey | undefined,
@@ -127,6 +126,71 @@ export function retroHub(spec: RetroSpec, locale: HubLocale) {
     title: withBrand(x.retroTitle(headline, range)),
     description: x.retroMeta({ subject: headline, n: items.length, price: lo, range }),
     intro: x.retroIntro({ subject: headline, n: items.length, seasons, stores, price: lo === hi ? lo : `${lo} – ${hi}` }),
+  };
+}
+
+/** Temporadas, tiendas, precio mínimo/máximo y rango de años de un hub. */
+function hubStats(items: HubItem[]) {
+  const seasons = [...new Set(items.map((i) => i.product.season))].sort((a, b) => seasonSortValue(a) - seasonSortValue(b) || a.localeCompare(b));
+  const stores = distinctRetailerLabels(items.flatMap((i) => i.product.offers.filter((o) => o.inStock !== false)));
+  const eurs = items.map((i) => i.eur);
+  const lo = formatOfferMoney(Math.min(...eurs), "EUR");
+  const hi = formatOfferMoney(Math.max(...eurs), "EUR");
+  const y0 = seasonSortValue(seasons[0]);
+  const y1 = seasonSortValue(seasons[seasons.length - 1]);
+  return { seasons, stores, lo, hi, range: y0 === y1 ? String(y0) : `${y0}-${y1}` };
+}
+
+// ---------- clásicas (temporada 2007-2019, isClassicKit; 2026-10-17) ----------
+
+// Mismo umbral y mismas reglas que retro: equipo con 3+ camisetas; equipo +
+// década (2000 = 2007-2009, 2010 = 2010-2019) solo si el equipo tiene las
+// dos décadas con 3+ cada una. Portada: /clasicas.
+export const classics = () => era("classic", isClassicKit);
+export const classicTeamItems = (team: string) => classics().filter((i) => i.product.teamKey === team);
+export const classicTeamFacets = () => countBy(classics(), (i) => i.product.teamKey).map(([team, count]) => ({ team, count }));
+export const classicTeamDecadeFacets = (team?: string) => teamDecadeFacets(team ? classicTeamItems(team) : classics());
+
+export type ClassicSpec = { team?: string; decade?: string };
+
+export function classicHub(spec: ClassicSpec, locale: HubLocale) {
+  const c = CLASSIC[locale];
+  const team = spec.team;
+  const decade = spec.decade === undefined ? undefined : Number(spec.decade);
+  if (spec.decade !== undefined && (!team || !/^\d{4}$/.test(spec.decade) || decade! % 10)) return null;
+  const name = team ? teamName(team, locale) : c.nav;
+  const national = !!team && teamCategory[team as TeamKey] === "national";
+  let items: HubItem[];
+  let headline: string;
+  let path: string;
+  if (team && decade !== undefined) {
+    if (!classicTeamDecadeFacets(team).some((f) => f.decade === decade)) return null;
+    items = classicTeamItems(team).filter((i) => decadeOf(i.product.season) === decade);
+    headline = c.teamDecadeH1(name, national, decade);
+    path = `/clasicas/${team}/${decade}`;
+  } else if (team) {
+    items = classicTeamItems(team);
+    headline = c.teamH1(name, national);
+    path = `/clasicas/${team}`;
+  } else {
+    items = classics();
+    headline = c.allH1;
+    path = "/clasicas";
+  }
+  if (items.length < RETRO_MIN) return null;
+  const { seasons, stores, lo, hi } = hubStats(items);
+  const price = lo === hi ? lo : `${lo} – ${hi}`;
+  const all = { n: items.length, teams: new Set(items.map((i) => i.product.teamKey)).size, seasons: seasons.length, stores: stores.length, price: lo };
+  return {
+    items,
+    team: team as TeamKey | undefined,
+    decade,
+    name,
+    headline,
+    path,
+    title: withBrand(team ? headline : c.allTitle),
+    description: team ? c.meta({ subject: headline, n: items.length, price: lo }) : c.allMeta(all),
+    intro: team ? c.intro({ subject: headline, n: items.length, seasons, stores, price }) : c.allIntro({ ...all, price }),
   };
 }
 
@@ -141,6 +205,9 @@ export function extraHubPaths(): { kind: string; path: string }[] {
     ...retroTeamFacets().map((f) => ({ kind: "retro-equipo", path: `/retro/${f.team}` })),
     ...retroDecadeFacets().map((f) => ({ kind: "retro-decada", path: `/retro/decada/${f.decade}` })),
     ...retroTeamDecadeFacets().map((f) => ({ kind: "retro-equipo-decada", path: `/retro/${f.team}/${f.decade}` })),
+    ...(classics().length >= RETRO_MIN ? [{ kind: "clasicas", path: "/clasicas" }] : []),
+    ...classicTeamFacets().map((f) => ({ kind: "clasicas-equipo", path: `/clasicas/${f.team}` })),
+    ...classicTeamDecadeFacets().map((f) => ({ kind: "clasicas-equipo-decada", path: `/clasicas/${f.team}/${f.decade}` })),
     ...ticketTeamFacets().map((f) => ({ kind: "entradas-equipo", path: `/tickets/equipo/${f.slug}` })),
     ...ticketCompetitionFacets().map((f) => ({ kind: "entradas-competicion", path: `/tickets/competicion/${f.slug}` })),
   ];

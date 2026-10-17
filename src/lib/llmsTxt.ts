@@ -56,6 +56,7 @@ export function llmsTxt(full = false): string {
     li("Clubs", u("/clubes")),
     li("Leagues", u("/ligas")),
     li("Retro shirts (season 2006/07 or older)", u("/retro")),
+    li("Classic shirts (seasons 2007/08 to 2019/20)", u("/clasicas")),
     li("Women", u("/mujer")),
     li("Kids", u("/ninos")),
     li("Football boots", u("/botas")),

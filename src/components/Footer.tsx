@@ -8,6 +8,7 @@ import { NEW_UI } from "@/lib/newStrings";
 import { GUIDE_UI } from "@/lib/guideUi";
 import { DEALS_NAV } from "@/lib/dealsNav";
 import { LEGAL } from "@/lib/legalStrings";
+import { CLASSIC } from "@/lib/classicStrings";
 import CookieSettingsButton from "@/components/CookieSettingsButton";
 import { LEAGUES, leagueName } from "@/data/teamMeta";
 
@@ -83,6 +84,9 @@ export default function Footer() {
           </Link>
           <Link href="/entrenamiento" className="transition-colors hover:text-[#F3E9C9]">
             {t.entrenamiento.navLabel}
+          </Link>
+          <Link href="/clasicas" className="transition-colors hover:text-[#F3E9C9]">
+            {CLASSIC[locale].nav}
           </Link>
           <Link href="/estudios/precios-camisetas" className="transition-colors hover:text-[#F3E9C9]">
             {t.footer.priceStudy}
