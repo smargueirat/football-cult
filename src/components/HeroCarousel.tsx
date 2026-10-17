@@ -174,6 +174,8 @@ export default function HeroCarousel() {
             >
               <img
                 src={getDisplaySrc(slide.photo, 1600)}
+                loading="lazy"
+                decoding="async"
                 alt=""
                 aria-hidden
                 className={`absolute inset-0 h-full w-full ${

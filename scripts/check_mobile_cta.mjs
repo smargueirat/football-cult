@@ -73,7 +73,12 @@ async function check(name, path, selector, reject) {
     }
     const cta = p.locator(selector).first();
     await cta.waitFor({ state: "visible", timeout: 30000 });
-    await cta.scrollIntoViewIfNeeded();
+    // Al centro, como haría quien va a tocarlo: desde el rediseño de la
+    // cabecera (2026-10-17) el botón de la home ya cae en la primera
+    // pantalla, justo detrás del banner de cookies de la 1ª visita, y
+    // scrollIntoViewIfNeeded no lo movía. La barra fija de las fichas no
+    // se desplaza, así que para ella la prueba sigue siendo la misma.
+    await cta.evaluate((el) => el.scrollIntoView({ block: "center" }));
     await p.waitForTimeout(400); // transición de la barra
     const box = await cta.boundingBox();
     const vp = p.viewportSize();

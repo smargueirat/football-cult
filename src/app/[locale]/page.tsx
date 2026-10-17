@@ -2,6 +2,7 @@ import LazySearchExplorer from "@/components/LazySearchExplorer";
 import FloatingFilterButton from "@/components/FloatingFilterButton";
 import HeroCarousel from "@/components/HeroCarousel";
 import HeroSearch from "@/components/HeroSearch";
+import HomeCategoryTiles from "@/components/HomeCategoryTiles";
 import CategorySections from "@/components/CategorySections";
 import PriceDropsSection from "@/components/PriceDropsSection";
 import LeagueShortcuts from "@/components/LeagueShortcuts";
@@ -88,6 +89,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const t = translations[locale];
   const suggestions = heroSuggestions(locale);
   const trust = trustStats();
+  const heroSub = t.hero.h1Sub
+    .replace("{n}", groupThousands(trust.comparedProducts, locale))
+    .replace("{s}", String(trust.stores));
   const { dropProducts, dropIdsByCountry } = computePriceDrops();
   const faq = siteFaq(locale);
   const deals = todaysDeals(locale, ["botas", "camiseta"], "home");
@@ -120,7 +124,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               name: t.brand,
               url: `${SITE_URL}/${locale}`,
               logo: `${SITE_URL}/logo-badge.png`,
-              description: t.hero.h1Sub.replace("{s}", String(trust.stores)),
+              description: heroSub,
               // Perfiles oficiales de la marca. Es lo que usa Google para
               // saber que la cuenta de X y el canal de Telegram son de este
               // sitio y no de otro "Football Cult" (hay varios).
@@ -146,116 +150,68 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         }}
       />
       <div className="flex flex-1 flex-col">
-        {/* Hero: carrusel dinámico que va rotando entre las secciones
-            reales del catálogo (selecciones, clubes, retro, mujer,
-            niños, botas), cada una con una foto real de una oferta
-            cargada -- reemplaza la placa chica de siempre. */}
-        <section className="mx-auto w-full max-w-[1800px] px-4 pt-3 sm:px-8 sm:pt-6">
+        {/* Cabecera (rediseño 2026-10-17, captura del dueño en iPhone): en
+            390x844 la primera pantalla tiene que enseñar qué es esto, el
+            buscador, las categorías y el comienzo de las ofertas con botón
+            directo a tienda. Antes el carrusel (300 px) y un H1 de 5 líneas
+            se comían la pantalla y el buscador caía en el borde: la home es
+            el 75 % de las visitas y casi no daba clics a tienda.
+            - H1 corto con la consulta clave por idioma (3 líneas en móvil, 2 en escritorio);
+              el resto del mensaje va de subtítulo con las cifras contadas.
+            - "Gratis, sin registro" y "N tiendas · envío incluido" son una
+              línea de confianza, no una pastilla más entre categorías.
+            - Categorías: 6 casillas iguales con icono (HomeCategoryTiles).
+            - El carrusel emotivo baja debajo de las ofertas. */}
+        <section className="mx-auto w-full max-w-[1800px] px-4 pt-3 sm:px-8 sm:pt-8">
           {/* Black Friday / Navidad y Reyes: solo en su ventana (src/lib/seasonal.ts). */}
           <SeasonalBanner today={todayIso()} />
-          <HeroCarousel />
-          {/* H1 fijo con la propuesta de valor. Antes el H1 era el título
-              del carrusel y rotaba con él, así que ni el visitante ni
-              Google llegaban a saber qué hace el sitio: el copy de las
-              diapositivas es emotivo ("Los colores que elegiste de chico")
-              y nunca dice que esto compara precios. El copy emotivo se
-              queda arriba, en las diapositivas; la explicación va acá
-              (auditoría 2026-09-24).
-
-              La composición usa el mismo vocabulario que el resto del
-              sitio -- volanta en font-tagline dorada, titular en
-              font-vintage, vintage-divider, fichas con borde dorado --
-              porque en su primera versión eran dos párrafos planos sin
-              jerarquía y, siendo lo primero que se ve, parecía un
-              documento de texto. */}
-          <div className="mt-6 sm:mt-9">
-            {/* La volanta estaba en 10px dorado claro sobre crema: casi
-                no se leía. Sube de tamaño y baja a un dorado más oscuro,
-                que sobre el fondo claro sí contrasta. */}
-            <span className="font-tagline text-[11px] uppercase text-[#8a6a1f] sm:text-sm">
-              {t.hero.h1Eyebrow}
-            </span>
-
-            <h1 className="font-vintage mt-2.5 max-w-4xl text-[26px] leading-[1.1] text-balance text-[#1B3B2B] sm:mt-3 sm:text-[38px] lg:text-[46px]">
-              {t.hero.h1}{" "}
-              {/* El remate va en dorado y subrayado a mano: es lo que nos
-                  diferencia de mirar el precio suelto en cada tienda. */}
-              <span className="relative inline-block text-[#8a6a1f]">
-                {t.hero.h1Accent}
-                <span
-                  aria-hidden
-                  className="absolute inset-x-0 -bottom-0.5 h-[0.14em] rounded-full bg-[#C9A24B]/55 sm:-bottom-1"
-                />
-              </span>
+          <div className="max-w-5xl">
+            {/* min-h: el alto final (3 líneas en móvil, 2 en escritorio) se
+                reserva antes de que llegue la fuente; con la de reserva, más
+                estrecha, salía una línea menos y todo saltaba al cargar. */}
+            <h1 className="font-vintage min-h-[3.36em] text-[25px] leading-[1.12] text-balance text-[#1B3B2B] sm:min-h-[2.24em] sm:text-[38px] lg:text-[44px]">
+              {/* En escritorio el remate va en su propia línea: así son 2
+                  líneas con la fuente final y con la de reserva, y el
+                  texto no se reacomoda (CLS) cuando llega la fuente. */}
+              {t.hero.h1} <span className="text-[#8a6a1f] sm:block">{t.hero.h1Accent}</span>
             </h1>
-
-            <div className="vintage-divider mt-6 max-w-2xl sm:mt-7" />
-
-            <p className="mt-4 max-w-2xl text-base leading-relaxed text-[#3f3a2f] sm:text-lg">
-              {/* El número de tiendas sale del contador real, no escrito
-                  a mano: la volanta decía "14 tiendas" (las del estudio de
-                  camisetas en euros) mientras la franja de abajo contaba
-                  37, dos cifras distintas en la misma pantalla. */}
-              {t.hero.h1Sub.replace("{s}", String(trust.stores))}
+            {/* Cifras del contador real (no escritas a mano): antes dos
+                bloques de la misma pantalla daban números distintos. */}
+            <p className="mt-2 max-w-3xl text-[15px] leading-snug text-[#3f3a2f] sm:mt-3 sm:text-lg" data-hero="sub">
+              {heroSub}
             </p>
-
-            <ul className="mt-4 flex flex-wrap items-center gap-2">
-              {t.hero.h1Items.map((item) => (
-                <li
-                  key={item}
-                  className="font-card-title rounded-full border border-[#C9A24B]/45 bg-white/70 px-3.5 py-1.5 text-xs tracking-wide text-[#4a4438] sm:text-[13px]"
-                >
-                  {item}
-                </li>
-              ))}
-              <li className="font-card-title rounded-full bg-[#1B3B2B] px-3.5 py-1.5 text-xs tracking-wide text-[#F3E9C9] sm:text-[13px]">
-                {t.hero.h1Free}
-              </li>
-            </ul>
-
-            {/* El catálogo y sus filtros vivían al final de la página,
-                después del carrusel, las categorías, las ligas y las
-                bajadas de precio: había que hacer bastante scroll antes
-                de poder buscar. Esto escribe en el mismo estado
-                compartido, no es un segundo buscador. */}
-            <HeroSearch suggestions={suggestions} />
-
-            {/* Home -> tienda en un toque. La home recibía el 64 % de las
-                entradas y no producía NINGÚN clic a tienda (GA4, 90 días):
-                el único camino pasaba por ficha. */}
-            <DirectDeals
-              deals={deals}
-              eyebrow={CONV[locale].dealsEyebrow}
-              title={CONV[locale].dealsTitle}
-              sub={CONV[locale].dealsSub}
-              surface="home"
-            />
-
-            {/* Franja de confianza con números CONTADOS del catálogo.
-                La versión propuesta decía "+10.000 artículos comparados"
-                y "tiendas 100% verificadas y oficiales": las dos falsas y
-                comprobables (comparan 7.584, y listamos eBay, Amazon y
-                una tienda de réplicas). Una franja de confianza que
-                miente es peor que no tenerla. */}
-            <ul className="mt-7 grid gap-3 sm:mt-8 sm:grid-cols-3 sm:gap-4">
-              {[
-                t.hero.trustCompared
-                  .replace("{n}", groupThousands(trust.comparedProducts, locale))
-                  .replace("{s}", String(trust.stores)),
-                t.hero.trustShipping,
-                t.hero.trustFresh,
-              ].map((line) => (
-                <li
-                  key={line}
-                  className="vintage-card flex items-start gap-2.5 rounded-xl px-4 py-3.5 text-sm leading-snug text-[#3f3a2f] sm:text-[15px]"
-                >
-                  <span aria-hidden className="mt-px text-[#B8933F]">
-                    ◆
-                  </span>
+            <ul className="mt-2.5 flex flex-wrap gap-x-4 gap-y-1 text-[13px] font-medium text-[#1B3B2B]" data-hero="trust">
+              {[t.hero.h1Free, t.hero.trustShipping.replace("{s}", String(trust.stores))].map((line) => (
+                <li key={line} className="flex items-center gap-1.5">
+                  <svg viewBox="0 0 20 20" aria-hidden className="h-4 w-4 shrink-0 fill-[#8a6a1f]">
+                    <path d="M10 1.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17Zm-1.2 12-3.5-3.4 1.2-1.2 2.3 2.2 4.8-4.9 1.2 1.2-6 6.1Z" />
+                  </svg>
                   {line}
                 </li>
               ))}
             </ul>
+
+            {/* Escribe en el mismo estado compartido que el catálogo de
+                abajo (no es un segundo buscador). */}
+            <HeroSearch suggestions={suggestions} />
+            <HomeCategoryTiles locale={locale} labels={t.hero.cats} />
+          </div>
+
+          {/* Home -> tienda en un toque. La home recibía el 64 % de las
+              entradas y no producía NINGÚN clic a tienda (GA4, 90 días):
+              el único camino pasaba por ficha. */}
+          <DirectDeals
+            deals={deals}
+            eyebrow={CONV[locale].dealsEyebrow}
+            title={CONV[locale].dealsTitle}
+            sub={CONV[locale].dealsSub}
+            surface="home"
+          />
+
+          {/* Carrusel de secciones: copy emotivo y fotos de campaña. Iba
+              arriba del todo y empujaba el buscador fuera de la pantalla. */}
+          <div className="mt-8">
+            <HeroCarousel />
           </div>
         </section>
 
