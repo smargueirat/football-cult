@@ -4,8 +4,9 @@ import { notFound } from "next/navigation";
 import type { HubLocale } from "@/data/teamMeta";
 import { teamCategory, typeNames } from "@/lib/productMeta";
 import { translations } from "@/lib/i18n/translations";
-import { retroDecadeFacets, retroHub, retroTeamDecadeFacets, retroTeamFacets, type RetroSpec } from "@/lib/extraHubs";
+import { classicTeamFacets, retroDecadeFacets, retroHub, retroTeamDecadeFacets, retroTeamFacets, type RetroSpec } from "@/lib/extraHubs";
 import { EXTRA } from "@/lib/extraHubStrings";
+import { CLASSIC } from "@/lib/classicStrings";
 import { hubFacts } from "@/lib/hubFaq";
 import { teamItems, teamName } from "@/lib/hubs";
 import { breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
@@ -76,13 +77,18 @@ export default function RetroHub({ spec, locale }: { spec: RetroSpec; locale: Hu
           />
         </nav>
       )}
-      {r.team && teamItems(r.team).length > r.items.length && (
-        <p className="-mt-5 mb-6 text-sm">
+      <p className="-mt-5 mb-6 flex flex-wrap gap-4 text-sm">
+        {r.team && teamItems(r.team).length > r.items.length && (
           <Link className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2" href={`/${locale}/equipo/${r.team}`}>
             {x.retroCurrent(r.name)} →
           </Link>
-        </p>
-      )}
+        )}
+        {(!r.team || classicTeamFacets().some((f) => f.team === r.team)) && (
+          <Link className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2" href={`/${locale}/clasicas${r.team ? `/${r.team}` : ""}`}>
+            {r.team ? CLASSIC[locale].teamH1(r.name, national) : CLASSIC[locale].allH1} →
+          </Link>
+        )}
+      </p>
 
       <HubCatalog forcedSection="jerseys" forcedType="retro" forcedTeam={r.team} forcedDecade={r.decade} />
 

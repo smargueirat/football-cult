@@ -23,6 +23,7 @@ import DirectDeals from "@/components/DirectDeals";
 import { todaysDeals } from "@/lib/directDeals";
 import { CONV } from "@/lib/convStrings";
 import { LinkChipRow } from "@/components/hubs/HubLinkParts";
+import { CLASSIC } from "@/lib/classicStrings";
 import {
   SEASONS,
   bestOfferForCountry,
@@ -309,6 +310,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 { href: `/${locale}/minimos-historicos`, label: DEALS_NAV[locale].lows },
                 { href: `/${locale}/black-friday`, label: DEALS_NAV[locale].bf },
                 { href: `/${locale}/regalos-futbol`, label: DEALS_NAV[locale].gifts },
+                { href: `/${locale}/clasicas`, label: CLASSIC[locale].allH1 },
                 { href: `/${locale}/guia`, label: GUIDE_UI[locale].index },
                 { href: `/${locale}/estudios/precios-camisetas`, label: t.footer.priceStudy },
               ]}

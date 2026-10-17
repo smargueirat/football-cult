@@ -20,6 +20,7 @@ import { brandFacets, groundFromSlug } from "@/lib/gearHubs";
 import { groundName, sectionNoun } from "@/lib/gearHubStrings";
 import { GUIDES, type GuideSlug } from "@/lib/guides";
 import { EXTRA } from "@/lib/extraHubStrings";
+import { CLASSIC } from "@/lib/classicStrings";
 import { bootLineBySlug } from "@/lib/bootLines";
 import { teamKeyForTicketName, ticketCompetitionFacets, ticketTeamFacets } from "@/lib/ticketHubs";
 import { teamCategory } from "@/lib/productMeta";
@@ -91,6 +92,11 @@ function label(path: string, locale: HubLocale): string {
   if (a === "botas" && b === "ninos" && !c) return x.kidsH1;
   if (a === "botas" && b === "futbol-sala" && !c) return x.futsalH1;
   if (a === "retro" && b === "decada" && c) return x.retroDecadeH1(Number(c));
+  if (a === "clasicas") {
+    const national = teamCategory[b as keyof typeof teamCategory] === "national";
+    if (!b) return CLASSIC[locale].allH1;
+    return c ? CLASSIC[locale].teamDecadeH1(team(b) ?? humanize(b), national, Number(c)) : CLASSIC[locale].teamH1(team(b) ?? humanize(b), national);
+  }
   if (a === "retro" && b) return x.retroTeamH1(team(b) ?? humanize(b), teamCategory[b as keyof typeof teamCategory] === "national");
   if (a === "tickets" && b === "competicion" && c) return x.ticketsOf(ticketCompetitionFacets().find((f) => f.slug === c)?.name ?? humanize(c));
   if (a === "tickets" && b === "equipo" && c) {

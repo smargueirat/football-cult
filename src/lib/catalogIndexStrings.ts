@@ -30,7 +30,7 @@ export const CATALOG_INDEX: Record<HubLocale, IndexCopy> = {
     pages: "Páginas",
     hubs: "Todas las categorías",
     more: "Más páginas",
-    groups: { equipo: "Equipos", liga: "Ligas", pais: "Países", temporada: "Temporadas", guia: "Guías", estudios: "Estudios", botas: "Botas", ropa: "Ropa", entrenamiento: "Entrenamiento", guantes: "Guantes", pelotas: "Balones", tickets: "Entradas", retro: "Retro" },
+    groups: { equipo: "Equipos", liga: "Ligas", pais: "Países", temporada: "Temporadas", guia: "Guías", estudios: "Estudios", botas: "Botas", ropa: "Ropa", entrenamiento: "Entrenamiento", guantes: "Guantes", pelotas: "Balones", tickets: "Entradas", retro: "Retro", clasicas: "Clásicas" },
   },
   en: {
     index: "Catalogue index",
@@ -44,7 +44,7 @@ export const CATALOG_INDEX: Record<HubLocale, IndexCopy> = {
     pages: "Pages",
     hubs: "All categories",
     more: "More pages",
-    groups: { equipo: "Teams", liga: "Leagues", pais: "Countries", temporada: "Seasons", guia: "Guides", estudios: "Studies", botas: "Boots", ropa: "Apparel", entrenamiento: "Training", guantes: "Gloves", pelotas: "Balls", tickets: "Tickets", retro: "Retro" },
+    groups: { equipo: "Teams", liga: "Leagues", pais: "Countries", temporada: "Seasons", guia: "Guides", estudios: "Studies", botas: "Boots", ropa: "Apparel", entrenamiento: "Training", guantes: "Gloves", pelotas: "Balls", tickets: "Tickets", retro: "Retro", clasicas: "Classics" },
   },
   pt: {
     index: "Índice do catálogo",
@@ -58,7 +58,7 @@ export const CATALOG_INDEX: Record<HubLocale, IndexCopy> = {
     pages: "Páginas",
     hubs: "Todas as categorias",
     more: "Mais páginas",
-    groups: { equipo: "Equipas", liga: "Ligas", pais: "Países", temporada: "Temporadas", guia: "Guias", estudios: "Estudos", botas: "Chuteiras", ropa: "Roupa", entrenamiento: "Treino", guantes: "Luvas", pelotas: "Bolas", tickets: "Ingressos", retro: "Retrô" },
+    groups: { equipo: "Equipas", liga: "Ligas", pais: "Países", temporada: "Temporadas", guia: "Guias", estudios: "Estudos", botas: "Chuteiras", ropa: "Roupa", entrenamiento: "Treino", guantes: "Luvas", pelotas: "Bolas", tickets: "Ingressos", retro: "Retrô", clasicas: "Clássicas" },
   },
   fr: {
     index: "Index du catalogue",
@@ -72,7 +72,7 @@ export const CATALOG_INDEX: Record<HubLocale, IndexCopy> = {
     pages: "Pages",
     hubs: "Toutes les catégories",
     more: "Autres pages",
-    groups: { equipo: "Équipes", liga: "Championnats", pais: "Pays", temporada: "Saisons", guia: "Guides", estudios: "Études", botas: "Chaussures", ropa: "Vêtements", entrenamiento: "Entraînement", guantes: "Gants", pelotas: "Ballons", tickets: "Billets", retro: "Rétro" },
+    groups: { equipo: "Équipes", liga: "Championnats", pais: "Pays", temporada: "Saisons", guia: "Guides", estudios: "Études", botas: "Chaussures", ropa: "Vêtements", entrenamiento: "Entraînement", guantes: "Gants", pelotas: "Ballons", tickets: "Billets", retro: "Rétro", clasicas: "Classiques" },
   },
   it: {
     index: "Indice del catalogo",
@@ -86,6 +86,6 @@ export const CATALOG_INDEX: Record<HubLocale, IndexCopy> = {
     pages: "Pagine",
     hubs: "Tutte le categorie",
     more: "Altre pagine",
-    groups: { equipo: "Squadre", liga: "Campionati", pais: "Paesi", temporada: "Stagioni", guia: "Guide", estudios: "Studi", botas: "Scarpini", ropa: "Abbigliamento", entrenamiento: "Allenamento", guantes: "Guanti", pelotas: "Palloni", tickets: "Biglietti", retro: "Retrò" },
+    groups: { equipo: "Squadre", liga: "Campionati", pais: "Paesi", temporada: "Stagioni", guia: "Guide", estudios: "Studi", botas: "Scarpini", ropa: "Abbigliamento", entrenamiento: "Allenamento", guantes: "Guanti", pelotas: "Palloni", tickets: "Biglietti", retro: "Retrò", clasicas: "Classiche" },
   },
 };

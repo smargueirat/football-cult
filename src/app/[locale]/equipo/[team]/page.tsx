@@ -12,7 +12,8 @@ import { Crumbs, HubHeader, JerseyGrid, JsonLd, Section, TeamLinks } from "@/com
 import HubFaq from "@/components/hubs/HubFaq";
 import { hubFacts } from "@/lib/hubFaq";
 import { botDeepLink } from "@/lib/telegramBot";
-import { retroTeamFacets } from "@/lib/extraHubs";
+import { classicTeamFacets, retroTeamFacets } from "@/lib/extraHubs";
+import { CLASSIC } from "@/lib/classicStrings";
 import { ticketTeamSlugForKey } from "@/lib/ticketHubs";
 import { EXTRA } from "@/lib/extraHubStrings";
 import { teamCategory } from "@/lib/productMeta";
@@ -70,6 +71,7 @@ export default async function TeamHub({ params }: P) {
     : [];
 
   const hasRetroHub = retroTeamFacets().some((f) => f.team === team);
+  const hasClassicHub = classicTeamFacets().some((f) => f.team === team);
   const ticketSlug = ticketTeamSlugForKey(team);
 
   const trail = [
@@ -118,11 +120,16 @@ export default async function TeamHub({ params }: P) {
           {s.telegramFollow}
         </a>
       </p>
-      {(hasRetroHub || ticketSlug) && (
+      {(hasRetroHub || hasClassicHub || ticketSlug) && (
         <p className="-mt-5 mb-8 flex flex-wrap gap-4 text-sm">
           {hasRetroHub && (
             <a className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2" href={`/${locale}/retro/${team}`}>
               {EXTRA[locale].retroTeamH1(name, teamCategory[team as TeamKey] === "national")} →
+            </a>
+          )}
+          {hasClassicHub && (
+            <a className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B] underline-offset-2" href={`/${locale}/clasicas/${team}`}>
+              {CLASSIC[locale].teamH1(name, teamCategory[team as TeamKey] === "national")} →
             </a>
           )}
           {ticketSlug && (

@@ -686,6 +686,15 @@ export function isVintageRetro(product: Product): boolean {
   return seasonSortValue(product.season) <= 2006;
 }
 
+/** "Clásica" (2026-10-17, decisión del dueño): temporada 2007-2019, con la
+ *  misma regla de temporada partida que isVintageRetro (manda el primer año:
+ *  2006/07 es retro, 2019/20 clásica, 2020/21 actual). Nunca se llama
+ *  "Retro". Comprobación: scripts/check_classic_kits.mts. */
+export function isClassicKit(product: Pick<Product, "season">): boolean {
+  const y = seasonSortValue(product.season);
+  return y >= 2007 && y <= 2019;
+}
+
 // Las implementaciones reales viven en src/lib/priceDrops.ts desde que
 // las bajadas dejaron de ser un campo inyectado en products.ts y pasaron
 // a un mapa por URL que cubre las siete secciones (ver el comentario

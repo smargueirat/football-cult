@@ -16,7 +16,7 @@ import { LOCALES } from "../src/lib/i18n/locales";
 import { isVintageRetro } from "../src/lib/productMeta";
 import { jerseyDescription, jerseyTitle, TITLE_MAX } from "../src/lib/seoMeta";
 import { productCode } from "../src/lib/offerGtin";
-import { retroHub, retroTeamDecadeFacets, retroTeamFacets, retroTeamItems } from "../src/lib/extraHubs";
+import { classicHub, retroHub, retroTeamDecadeFacets, retroTeamFacets, retroTeamItems } from "../src/lib/extraHubs";
 import { jerseyRelated, jerseyTrail } from "../src/lib/detailLinks";
 import { teamName } from "../src/lib/hubs";
 import { homeMeta } from "../src/lib/siteFacts";
@@ -107,7 +107,11 @@ const QUERIES: { q: string; url: string; meta: () => { title: string; descriptio
 for (const [q, team] of [["retro orlando city shirt", "orlandocity"], ["retro hellas verona football shirt", "hellasverona"], ["retro osasuna shirt", "osasuna"], ["retro rennes shirt", "rennes"], ["retro celtic shirt", "celtic"], ["retro lazio shirt", "lazio"]] as const) {
   const h = retroHub({ team }, "en");
   if (h) QUERIES.push({ q, url: `/en${h.path}`, meta: () => h });
-  else console.log(`INFO "${q}": sin hub retro (${retroTeamItems(team).length} camisetas ≤2006, mínimo 3); la ficha 2007+ responde a "{team} {año} shirt" sin "retro" (regla isVintageRetro)`);
+  else {
+    // 2007-2019: hub de clásicas (título sin "retro"; la palabra va en la descripción). Detalle en check_classic_kits.mts.
+    const c = classicHub({ team }, "en");
+    console.log(`INFO "${q}": sin hub retro (${retroTeamItems(team).length} camisetas ≤2006, mínimo 3); ${c ? `hub de clásicas /en${c.path}: "${c.title}"` : "sin hub de clásicas (menos de 3 de 2007-2019)"}`);
+  }
 }
 for (const { q, url, meta } of QUERIES) {
   const m = meta();

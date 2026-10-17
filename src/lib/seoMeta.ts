@@ -7,7 +7,7 @@ import { trainingProducts } from "@/data/training";
 import type { TicketProduct } from "@/data/tickets";
 import { findCountry, type CountryCode } from "@/data/countries";
 import type { HubLocale } from "@/data/teamMeta";
-import { brandNames, isVintageRetro, kitOf, offerShipsTo, typeNames } from "@/lib/productMeta";
+import { brandNames, isClassicKit, isVintageRetro, kitOf, offerShipsTo, typeNames } from "@/lib/productMeta";
 import { formatOfferMoney, type OfferCurrencyCode } from "@/lib/offerMoney";
 import { countDistinctRetailers } from "@/lib/retailerFamily";
 import { localizeGearModel, localizeGearColour } from "@/lib/gearText";
@@ -220,6 +220,9 @@ const KIT_TITLE: Record<HubLocale, Record<Kit | "none", string>> = {
   },
 };
 const RETRO_WORD: Record<HubLocale, string> = { es: "retro", en: "retro", pt: "retrô", fr: "rétro", it: "retrò" };
+// 2007-2019 (isClassicKit): "clásica", nunca "retro". Concuerda con el
+// sustantivo con el que empieza cada plantilla (Camiseta/Camisa/Maglia/Maillot).
+const CLASSIC_WORD: Record<HubLocale, string> = { es: "clásica", en: "classic", pt: "clássica", fr: "classique", it: "classica" };
 const AGE: Record<HubLocale, { women: string; kids: string }> = {
   es: { women: "mujer", kids: "niño" },
   en: { women: "women's", kids: "kids" },
@@ -228,13 +231,23 @@ const AGE: Record<HubLocale, { women: string; kids: string }> = {
   it: { women: "donna", kids: "bambino" },
 };
 
+// "Retro" solo para las vintage (temporada <= 2006, isVintageRetro).
+// "Clásica" para 2007-2019 (isClassicKit), solo si cabe junto con el código
+// del fabricante en TITLE_MAX: el código es una consulta real con clics
+// ("893873 euros") y la palabra no debe sacarlo del <title>.
 function jerseyBase(p: Product, locale: HubLocale): string {
+  if (p.typeKey !== "retro") return kitTitle(p, locale);
+  if (isVintageRetro(p)) return kitTitle(p, locale, RETRO_WORD[locale]);
+  if (!isClassicKit(p)) return kitTitle(p, locale);
+  const t = kitTitle(p, locale, CLASSIC_WORD[locale]);
+  const code = productCode(p.offers);
+  return (code ? `${t} ${code}` : t).length <= TITLE_MAX ? t : kitTitle(p, locale);
+}
+
+function kitTitle(p: Product, locale: HubLocale, era?: string): string {
   const team = teamNames[p.teamKey]?.[locale] ?? p.teamKey;
   let t = KIT_TITLE[locale][kitOf(p) ?? "none"];
-  // "Retro" solo para las vintage (temporada <= 2006, isVintageRetro).
-  if (p.typeKey === "retro" && isVintageRetro(p)) {
-    t = locale === "en" ? t.replace("{t}", `{t} ${RETRO_WORD.en}`) : t.replace(/^(\S+)/, `$1 ${RETRO_WORD[locale]}`);
-  }
+  if (era) t = locale === "en" ? t.replace("{t}", `{t} ${era}`) : t.replace(/^(\S+)/, `$1 ${era}`);
   t = t.replace("{t}", team);
   // en: "Real Madrid 2026/27 home shirt"; el resto: temporada al final.
   t = locale === "en" ? t.replace(team, `${team} ${p.season}`) : `${t} ${p.season}`;

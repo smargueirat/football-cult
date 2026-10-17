@@ -27,6 +27,7 @@ import {
   teamPopularity,
   typeNames,
 } from "@/data/products";
+import { isClassicKit } from "@/lib/productMeta";
 import { BootProduct, bootProducts } from "@/data/boots";
 import { bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { offerShipsTo, offersForCountry } from "@/lib/productMeta";
@@ -106,6 +107,9 @@ export interface SearchExplorerProps {
   forcedBootGround?: BootGroundType;
   forcedTeam?: TeamKey;
   forcedDecade?: number;
+  /** Clásicas (/clasicas): con forcedType "retro", tramo 2007-2019
+   *  (isClassicKit) en vez de <= 2006. */
+  forcedClassic?: boolean;
 }
 
 export default function SearchExplorer({
@@ -118,6 +122,7 @@ export default function SearchExplorer({
   forcedBootGround,
   forcedTeam,
   forcedDecade,
+  forcedClassic,
 }: SearchExplorerProps = {}) {
   const { locale, t } = useLanguage();
   const {
@@ -308,7 +313,7 @@ export default function SearchExplorer({
         effectiveTypeFilter.length === 0 ||
         effectiveTypeFilter.some((tf) => {
           if (p.typeKey !== tf) return false;
-          if (tf === "retro") return seasonSortValue(p.season) <= 2006;
+          if (tf === "retro") return forcedClassic ? isClassicKit(p) : seasonSortValue(p.season) <= 2006;
           return true;
         });
       const matchesCategory =
@@ -405,6 +410,7 @@ export default function SearchExplorer({
     effectiveCategoryFilter,
     forcedTeam,
     forcedDecade,
+    forcedClassic,
     seasonFilter,
     effectiveAgeGroupFilter,
     brandFilter,
