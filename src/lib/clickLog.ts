@@ -11,7 +11,8 @@ import path from "node:path";
 // nueva en cada publicación: el valor por omisión (data/clicks dentro del
 // cwd) se perdería en cada deploy. En producción hay que apuntarlo a una
 // carpeta fija.
-const DIR = process.env.CLICK_LOG_DIR || path.join(process.cwd(), "data", "clicks");
+export const CLICK_LOG_DIR = process.env.CLICK_LOG_DIR || path.join(process.cwd(), "data", "clicks");
+const DIR = CLICK_LOG_DIR;
 
 // Tope de escrituras por minuto: un bot que pegue a /go/ con ids al azar
 // no debe poder llenar el disco. Los clics reales de un sitio con este

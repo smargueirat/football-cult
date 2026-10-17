@@ -95,7 +95,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     .replace("{s}", String(trust.stores));
   const { dropProducts, dropIdsByCountry } = computePriceDrops();
   const faq = siteFaq(locale);
-  const deals = todaysDeals(locale, ["botas", "camiseta"], "home");
+  const deals = todaysDeals(locale, ["camiseta", "botas", "ropa", "guantes", "pelotas"], "home");
 
   return (
     <>
