@@ -18,7 +18,7 @@ cd "$NEW"
 # lee por su cuenta). .env.local tiene además las claves de minería (Awin,
 # eBay, Amazon, Telegram...) y no tienen por qué vivir en un proceso público.
 keys=$( (grep -rhoE "process\.env\.[A-Z_0-9]+" src | sed 's/process\.env\.//'; \
-         printf '%s\n' AUTH_SECRET AUTH_GOOGLE_ID AUTH_GOOGLE_SECRET AUTH_TRUST_HOST) | sort -u | paste -sd'|')
+         printf '%s\n' AUTH_SECRET AUTH_GOOGLE_ID AUTH_GOOGLE_SECRET AUTH_TRUST_HOST AUTH_URL) | sort -u | paste -sd'|')
 grep -E "^($keys)=" /home/piojo/football-cult/.env.local > .env.local
 npm ci --no-audit --no-fund --silent
 # choom 1000: si falta memoria, el kernel mata este build y no fc-web (el
