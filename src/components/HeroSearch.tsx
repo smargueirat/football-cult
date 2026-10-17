@@ -29,14 +29,17 @@ export default function HeroSearch({ suggestions }: { suggestions: HeroSuggestio
     document.getElementById("catalogo")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  // Buscador grande (52 px, botón con lupa) y atajos en UNA fila con
+  // scroll lateral: antes se partían en filas desiguales y la etiqueta
+  // "Prueba" iba en 10 px dorado claro, casi invisible (2026-10-17).
   return (
-    <div className="mt-6 sm:mt-7">
+    <div className="mt-4">
       <form
         onSubmit={(e) => {
           e.preventDefault();
           run(query.trim());
         }}
-        className="flex max-w-2xl flex-wrap gap-2"
+        className="flex h-[52px] max-w-2xl items-center rounded-full border border-[#C9A24B]/60 bg-white p-1 shadow-sm transition-colors focus-within:border-[#1B3B2B] focus-within:ring-2 focus-within:ring-[#1B3B2B]/20"
         role="search"
       >
         <label className="sr-only" htmlFor="hero-search">
@@ -45,29 +48,32 @@ export default function HeroSearch({ suggestions }: { suggestions: HeroSuggestio
         <input
           id="hero-search"
           type="search"
+          enterKeyHint="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={t.hero.searchPlaceholder}
-          className="min-w-0 flex-1 rounded-full border border-[#C9A24B]/50 bg-white/90 px-5 py-3 text-[15px] text-[#1a1a1a] shadow-sm outline-none transition-colors focus:border-[#1B3B2B]"
+          className="h-full min-w-0 flex-1 bg-transparent pl-4 pr-2 text-base text-[#1a1a1a] outline-none placeholder:text-[#6b6455]"
         />
         <button
           type="submit"
-          className="vintage-plaque shrink-0 rounded-full px-6 py-3 text-sm font-semibold uppercase tracking-wide"
+          className="flex h-full shrink-0 items-center gap-1.5 rounded-full bg-[#1B3B2B] px-4 text-sm font-semibold text-[#F3E9C9] transition-colors hover:bg-[#15301f] sm:px-5"
         >
+          <svg viewBox="0 0 24 24" aria-hidden className="h-4 w-4 fill-none stroke-current" strokeWidth={2.2} strokeLinecap="round">
+            <circle cx="11" cy="11" r="6.5" />
+            <path d="m16 16 4.5 4.5" />
+          </svg>
           {t.hero.searchCta}
         </button>
       </form>
 
-      <div className="mt-3 flex flex-wrap items-center gap-2">
-        <span className="font-tagline text-[10px] uppercase text-[#B8933F]">
-          {t.hero.searchTry}
-        </span>
+      <div className="-mx-4 mt-2 flex items-center gap-2 overflow-x-auto px-4 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0" data-hero="suggest">
+        <span className="shrink-0 text-xs font-semibold text-[#5b4a1f]">{t.hero.searchTry}</span>
         {suggestions.map((s) => (
           <button
             key={s.label}
             type="button"
             onClick={() => run(s.query)}
-            className="font-card-title rounded-full border border-[#C9A24B]/45 bg-white/60 px-3 py-1 text-[11px] tracking-wide text-[#5b5442] transition-colors hover:border-[#1B3B2B]/50 hover:text-[#1a1a1a] sm:text-xs"
+            className="min-h-11 shrink-0 whitespace-nowrap rounded-full px-1.5 text-[13px] text-[#1B3B2B] underline decoration-[#C9A24B] decoration-1 underline-offset-4 transition-colors hover:text-[#8a6a1f]"
           >
             {s.label}
           </button>
