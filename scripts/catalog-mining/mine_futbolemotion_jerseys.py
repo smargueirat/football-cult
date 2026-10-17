@@ -118,7 +118,8 @@ def classify(rows, teams, types, known_teams):
     women = not kids and (bool(WOMEN_SIGNAL_RE.search(name)) or (r0.get("gender") or "") == "female")
     age = "kids" if kids else "women" if women else None
     if (KIDS_EXCLUDE_RE if kids else WOMEN_EXCLUDE_RE if women else EXCLUDE_RE).search(name) or EXTRA_EXCLUDE.search(name) \
-            or re.search(r"sin mangas|sleeveless", slug):
+            or re.search(r"sin mangas|sleeveless", slug) \
+            or re.search(r"/comprar/pantalon", tt_key(r0.get("productURL"))):  # pantalón en "Camisetas oficiales" (Málaga training niño, 10-17)
         return None, "excluida"
     hit = match_team(name, teams)
     if not hit:

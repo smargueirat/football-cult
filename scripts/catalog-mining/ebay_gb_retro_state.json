@@ -1017,6 +1017,7 @@
 "clubtijuana-retro-201920-away",
 "clubtijuana-retro-2020-home",
 "clubtijuana-retro-202223-away",
+"clubtijuana-retro-2024-home",
 "clubtijuana-retro-202425-home",
 "colocolo-retro-1991-away",
 "colocolo-retro-1998-away",
@@ -3056,6 +3057,7 @@
 "numancia-retro-1999-home",
 "numancia-retro-200607-home",
 "numancia-retro-200809-home",
+"numancia-retro-202425-away",
 "nurnberg-retro-2002-away",
 "nurnberg-retro-202021-away",
 "nurnberg-retro-202021-home",
@@ -3889,6 +3891,7 @@
 "shakhtar-retro-202425-third",
 "shimizuspulse-retro-2011-home",
 "shimizuspulse-retro-2013-home",
+"shimizuspulse-retro-2014-home",
 "shimizuspulse-retro-2024-home",
 "slaviaprague-retro-202425-home",
 "southampton-retro-198485-home",
@@ -4546,6 +4549,7 @@
 "yokohamafmarinos-retro-2015-home",
 "yokohamafmarinos-retro-2017-home",
 "yokohamafmarinos-retro-2020-away",
+"yokohamafmarinos-retro-2023-away",
 "yokohamafmarinos-retro-202425-home",
 "youngboys-retro-200405-away",
 "youngboys-retro-2013-away",
@@ -22141,6 +22145,30 @@
 "L"
 ],
 "shipping": 2.94
+},
+"yokohamafmarinos-retro-2023-away": {
+"title": "Men's Football Shirt White 2023 Yokohama F Marinos Away Soccer Jersey Tee Top",
+"price": 32.8,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/157260330641?_skw=Yokohama+F.+Marinos+2023+away+shirt&hash=item249d723691%3Ag%3AAscAAeSwBdlopwaC&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|157260330641|458754419001",
+"image": "https://i.ebayimg.com/images/g/AscAAeSwBdlopwaC/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 3.75
+},
+"numancia-retro-202425-away": {
+"title": "NUMANCIA CD Errea Away Football Shirt 2024-25 NEW Mens Sizes Camiseta BNIB BNWT",
+"price": 43.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/176643023600?_skw=Numancia+2024+away+shirt&hash=item2920bea2f0%3Ag%3ATIEAAOSw91ZnGL6Z&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|176643023600|476298238668",
+"image": "https://i.ebayimg.com/images/g/TIEAAOSw91ZnGL6Z/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 0.0
 }
 }
 }

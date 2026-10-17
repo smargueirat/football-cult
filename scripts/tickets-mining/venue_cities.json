@@ -297,6 +297,11 @@
   "qid": "Q1272724"
  },
  "Estadio do Rio Ave": null,
+ "Estádio Dr. Magalhães Pessoa": {
+  "city": "Leiria",
+  "desc": "football stadium in Leiria, Portugal",
+  "qid": "Q1056864"
+ },
  "Etihad Stadium": {
   "city": "Manchester",
   "desc": "stadium in Manchester, England",
@@ -439,6 +444,7 @@
   "desc": "football stadium in Košice",
   "qid": "Q105515105"
  },
+ "Kybunpark": null,
  "La Rosaleda Stadium": {
   "city": "Málaga",
   "desc": "football stadium in Málaga, Spain",
@@ -820,6 +826,11 @@
   "city": "Craiova",
   "desc": "football stadium in Craiova, Romania",
   "qid": "Q1409157"
+ },
+ "Stadionul Steaua": {
+  "city": "Bucharest",
+  "desc": "former football stadium in Bucharest",
+  "qid": "Q909374"
  },
  "Stadium Municipal": {
   "city": "Toulouse",

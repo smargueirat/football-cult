@@ -1388,6 +1388,18 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # --- Daily pass 2026-10-16, eBay retro ---
     "/itm/267158347112",  # wanted ad (*LOOKING FOR*); Oakland Roots 2019 Jersey Home New *LOOKING FOR*
     "/itm/157241468982",  # Al Hilal home listed as purple United, reproduction title; Camiseta de fútbol local para hombre púrpura 2023-2024 Al Hilal United
+    # --- Daily pass 2026-10-17, eBay retro by eye ---
+    "/itm/257229731550",  # jubiloiwata; home|2018/19 player name|Maglia calcio Jubilo Iwata 2018/2019 Shunsuke
+    "/itm/177872334231",  # clubtijuana; home|2023/24 kids|Maglia calcio Club Tijuana Xolos 23/24 Home Futbol n
+    "/itm/178442836897",  # clubtijuana; home|2021/22 kids|Maglia calcio Club Tijuana Xolos 21/22 Home Futbol n
+    "/itm/176298989471",  # clubtijuana; home|2022/23 kids|Maglia Charly Club Tijuana Xolos 22/23 Home Futbol n
+    "/itm/920007785360",  # latvia; home|2009/10 club under national key|LIEPAJAS METALURGS Home 2009-2010
+    "/itm/388860651021",  # clubtijuana; home|2020/21 kids|Maglia Charly Club Tijuana Xoloitzcuintles Xolos 20/
+    "/itm/178159566465",  # tampicomadero; home|2019/20 kids|Maglia Charly Tampico Madero Jaiba Brava 19/20 Home 
+    "/itm/177464485660",  # tampicomadero; home|2021/22 kids|Maglia Charly Tampico Madero Jaiba Brava 21/22 Home 
+    # --- Daily pass 2026-10-17, CSV refresh swaps ---
+    "maillot-portugal-domicile-nuno-mendes-25-2026",  # PlanetFoot por-home-2026: player print (Nuno Mendes N°25) swapped onto the plain home
+    "camiseta-replica-real-betis-primera-equipacion-001478",  # Shop Real Betis realbetis-home-202627: older (Apr 2025) 39.95 replica swapped in for the 26/27 home
 ]
 
 
