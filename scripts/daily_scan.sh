@@ -261,6 +261,10 @@ python3 scripts/fixes/seo_redirects.py | sed -n '1p;$p'
 git add src/data/productAliases.ts src/data/bootAliases.json src/data/gearAliases.json ${PRODUCTS_CLEAN:+src/data/products.ts} && \
   { git diff --cached --quiet || git commit -q -m "chore(seo): redirecciones de fichas retiradas ($(date +%Y-%m-%d))"; }
 
+# Páginas de temporada y de datos: solo avisan en el log, no frenan el deploy.
+npx tsx scripts/check_seasonal.mts 2>&1 | tail -1 | sed 's/^/check_seasonal: /'
+npx tsx scripts/check_data_pages.mts 2>&1 | tail -1 | sed 's/^/check_data_pages: /'
+
 # Publicar en el servidor de esta PC (desde 2026-09-29; antes lo hacía Vercel
 # al recibir el push). Va al final para incluir todos los commits de la noche.
 scripts/deploy_local.sh 2>&1 | tail -5

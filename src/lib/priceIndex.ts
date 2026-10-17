@@ -23,7 +23,10 @@ import { leagueOfTeam } from "@/data/teamMeta";
 //    cuando el archivo cubre al menos dos meses calendario completos.
 
 export const MIN_GROUP = 5;
-const MIN_COVERAGE = 0.8;
+// Base = primer día con precio en la mitad de las filas. Con 0,8 la base se
+// corría hacia delante cada vez que el estudio sumaba camisetas nuevas y el
+// índice citaba menos días que la ficha ("mínimo registrado en N días").
+const MIN_COVERAGE = 0.5;
 
 export interface GroupRow {
   key: string;
