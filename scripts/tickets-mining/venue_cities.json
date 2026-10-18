@@ -107,6 +107,7 @@
   "desc": "football stadium in Glasgow, Scotland, UK",
   "qid": "Q216037"
  },
+ "Cepheus Park Randers": null,
  "City Ground": {
   "city": "West Bridgford",
   "desc": "association football stadium in West Bridgford, England",
@@ -463,6 +464,11 @@
   "qid": "Q1887221"
  },
  "MATRADE Loftus Road": null,
+ "MCH Arena": {
+  "city": "Herning",
+  "desc": "football stadium in Herning, Denmark",
+  "qid": "Q1557426"
+ },
  "MDCC Arena": null,
  "MKM Stadium": {
   "city": "Kingston upon Hull",
@@ -511,6 +517,11 @@
   "qid": "Q878622"
  },
  "Mestalla": null,
+ "Mikheil Meskhi Stadium": {
+  "city": "Tbilisi",
+  "desc": "football stadium in Tbilisi, Georgia",
+  "qid": "Q1535913"
+ },
  "Millerntor-Stadion": null,
  "Molineux": null,
  "Molineux Stadium": null,
@@ -998,5 +1009,6 @@
   "city": "Prague",
   "desc": "football stadium in Prague, Czechia",
   "qid": "Q60103"
- }
+ },
+ "Åråsen Stadion": null
 }

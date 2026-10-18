@@ -1400,6 +1400,17 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # --- Daily pass 2026-10-17, CSV refresh swaps ---
     "maillot-portugal-domicile-nuno-mendes-25-2026",  # PlanetFoot por-home-2026: player print (Nuno Mendes N°25) swapped onto the plain home
     "camiseta-replica-real-betis-primera-equipacion-001478",  # Shop Real Betis realbetis-home-202627: older (Apr 2025) 39.95 replica swapped in for the 26/27 home
+    # --- Daily pass 2026-10-18, eBay current ---
+    "/itm/257198480493",  # 28.98 template seller; Venezia F.C. Third 2025-26 Jersey
+    "/itm/206316063797",  # 28.98 template seller; CURAÇAO Home Mens Jersey 26-27
+    "/itm/198081667272",  # name+number print; Atletico Nacional de Medellin Away Jersey 2026 + name + number. BNWT. 
+    "/itm/336789435023",  # render-only photo at 17.54 GBP; Millwall 26/27 Home Shirt Size Adults XL
+    # --- Daily pass 2026-10-18, eBay retro ---
+    "/itm/117346398147",  # player name print (Rivaldo); AEK Athens 2007-08 Puma Home Kit Soccer Jersey Football Shirt Rivaldo 
+    "/itm/396362126786",  # damaged (danneggiata); Adidas 19/20 Sporting Kansas City Autentica Maglia Home Uomo Taglia La
+    # --- Daily pass 2026-10-18, CSV refresh swaps ---
+    "maillot-portugal-domicile-rafael-leao-17-2026",  # PlanetFoot por-home-2026: player print (Rafael Leao N17) swapped onto the plain home
+    "adidas-km2002-white",  # FootStoreES lyon-home-202627: "OL Lyonnes" = the women's club's own kit (other crest, Mastercard), not Lyon's
 ]
 
 
