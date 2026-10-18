@@ -337,8 +337,10 @@ def add_gigsberg_offers(merged):
 if __name__ == "__main__":
     regions = [
         # Football TicketNet DE: programa Awin CERRADO el 2026-09-01 (el nombre del
-        # anunciante en Awin dice "CLOSED 01.09.2026") -> sus links ya no pagan
-        # comision. Se deja afuera; UK/US siguen vigentes.
+        # anunciante en Awin dice "CLOSED 01.09.2026") -> no consta que sus links aún
+        # paguen comision. Fuera por defecto; TICKETNET_DE=1 lo vuelve a leer (y
+        # download_feeds.py a bajarlo) una vez confirmado en el panel de Awin.
+        *([("TICKETNET_DE.csv", "FootballTicketNetDE", "EUR")] if os.environ.get("TICKETNET_DE") == "1" else []),
         ("TICKETNET_UK.csv", "FootballTicketNetUK", "GBP"),
         ("TICKETNET_US.csv", "FootballTicketNetUS", "USD"),
     ]

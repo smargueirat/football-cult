@@ -22,7 +22,10 @@ import concurrent.futures, gzip, os, re, shutil, sys, urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, "..", ".."))
 FEED_DIR = os.environ.get("FEED_DIR", "/tmp/feeds")
-SKIP = {"TICKETNET_DE"}
+# TICKETNET_DE: el anunciante se llama "CLOSED 01.09.2026" (cerró el 2026-09-01); Awin sigue
+# sirviendo su feed (2.683 filas EUR, tracking vivo) pero no consta que aún pague comisión.
+# Para volver a bajarlo: TICKETNET_DE=1 (y mine_tickets.py lo lee con la misma variable).
+SKIP = set() if os.environ.get("TICKETNET_DE") == "1" else {"TICKETNET_DE"}
 TT = "https://pf.tradetracker.net/?aid=514692&encoding=utf-8&type=csv&fid={}&categoryType=2&additionalType=2&csvDelimiter=%3B&csvEnclosure=%22&filter_extended=1"
 TRADETRACKER = {"FUTBOLFACTORY": TT.format(2551751), "SHOPREALBETIS": TT.format(2291247),
                 "futbolemotion_feed": TT.format(2066871)}
@@ -74,8 +77,23 @@ def download(name, url):
         return f"FAIL {name}: {type(e).__name__}: {e} (se conserva el archivo anterior)"
 
 
+def restore_prodirect():
+    """Los feeds de Pro:Direct se generan por cron (semanal/nocturno, ver crontab) y viven
+    en /tmp, que es tmpfs: un reinicio los borra y la minería los daba por "no hay feed"
+    (2026-10-03 se perdieron 1.104 ofertas de botas). Cada cron deja una copia en
+    STATE_DIR con su fecha original (copy2); si falta en FEED_DIR, se restaura. La regla
+    de "menos de 24 h" del scan sigue mirando la fecha real, así que no se mina dos veces."""
+    state = os.path.expanduser("~/.local/state/fc-feeds")
+    for name in os.listdir(state) if os.path.isdir(state) else []:
+        dst = os.path.join(FEED_DIR, name)
+        if name.startswith("PRODIRECT_") and not os.path.exists(dst):
+            shutil.copy2(os.path.join(state, name), dst)
+            print(f"RESTORED {name} desde {state}")
+
+
 def main(only):
     os.makedirs(FEED_DIR, exist_ok=True)
+    restore_prodirect()
     todo = {k: v for k, v in feeds().items() if not only or k in only}
     with concurrent.futures.ThreadPoolExecutor(4) as ex:
         res = list(ex.map(lambda kv: download(*kv), todo.items()))

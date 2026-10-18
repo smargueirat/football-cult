@@ -29,7 +29,7 @@ en libras, y no envía ni a la UE ni a EE.UU.: sirve para los visitantes de
 Reino Unido. Envío estándar a Reino Unido 4,99 GBP. Los títulos vienen en
 inglés, que pick.py ya entiende.
 """
-import csv, json, re, sys, time, urllib.request
+import csv, json, os, re, shutil, sys, time, urllib.error, urllib.request
 
 sys.path.insert(0, __import__("os").path.dirname(__import__("os").path.abspath(__file__)))
 import extract
@@ -46,10 +46,19 @@ CURRENT = re.compile(r"2025-26|2026-27|25-26|26-27|-2026-|-26-")
 PREMATCH = re.compile(r"pre.?partido|pre.?match")
 
 
+STATE_DIR = os.path.expanduser("~/.local/state/fc-feeds")  # fuera de /tmp (tmpfs, se vacía al reiniciar)
+
+
 def get(url, tries=3):
     for i in range(tries):
         try:
             return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40).read()
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                return None  # el producto ya no existe: no es un fallo de la tienda
+            # 429/5xx: respeta Retry-After (hasta 2 min) en vez de reintentar a ciegas
+            ra = e.headers.get("Retry-After", "")
+            time.sleep(min(int(ra), 120) if ra.isdigit() else 15 * (i + 1) if e.code == 429 else 3 * (i + 1))
         except Exception:
             time.sleep(3 * (i + 1))
     return None
@@ -75,7 +84,9 @@ def main(out_path):
     if len(hs) < 10000:
         sys.exit(f"el sitemap devolvió solo {len(hs)} productos: algo cambió en la tienda, no sigo")
 
-    with open(out_path, "w", newline="", encoding="utf-8") as f:
+    tmp = out_path + ".tmp"  # se publica con os.replace al final: nunca queda un CSV a medias
+    failed = 0
+    with open(tmp, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["product_name", "price", "delivery_cost", "custom_1",
                                           "aw_deep_link", "aw_image_url", "brand"])
         w.writeheader()
@@ -85,6 +96,7 @@ def main(out_path):
             raw = get(url + ".js", tries=2)
             time.sleep(0.5)
             if not raw:
+                failed += 1
                 continue
             p = json.loads(raw)
             desc = re.sub(r"<[^>]+>", " ", p.get("description") or "").lower()
@@ -102,6 +114,14 @@ def main(out_path):
             ok += 1
             if i % 100 == 0:
                 print(f"  {i}/{len(keep)} productos, {rows} filas", flush=True)
+    # Un 404 también cuenta aquí (retirado); más de un 25 % sin respuesta es la tienda
+    # limitando (429) o caída: mejor dejar el archivo de la semana pasada que uno mutilado.
+    if failed > 0.25 * len(keep) or rows < 50:
+        os.remove(tmp)
+        sys.exit(f"{failed}/{len(keep)} productos sin respuesta, {rows} filas: no piso {out_path}")
+    os.replace(tmp, out_path)
+    os.makedirs(STATE_DIR, exist_ok=True)
+    shutil.copy2(out_path, STATE_DIR)  # download_feeds.py lo restaura si /tmp se vacía
     print(f"listo: {ok}/{len(keep)} productos, {rows} filas en stock -> {out_path}", flush=True)
 
 
