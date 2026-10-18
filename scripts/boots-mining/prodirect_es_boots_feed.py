@@ -20,7 +20,7 @@ Dos modos, porque bajar ~7.000 productos tarda ~5 h:
 
 Uso: python3 -u prodirect_es_boots_feed.py [--all] [/tmp/feeds/PRODIRECT_ES_BOOTS.json]
 """
-import json, os, re, sys, time, urllib.request
+import json, os, re, shutil, sys, time, urllib.error, urllib.request
 
 DOM = "www.prodirectsport.es"
 UA = {"User-Agent": "Mozilla/5.0"}
@@ -29,10 +29,18 @@ BAD = re.compile(r"kids|junior|youth|infant|baby|\bjr\b|-j-|bag|sock|insole|lace
                  r"box|keyring|mini|indoor|futsal|-ic-|-in-|sala|trainer|slide|sandal|rugby")
 
 
+STATE_DIR = os.path.expanduser("~/.local/state/fc-feeds")  # fuera de /tmp (tmpfs, se vacía al reiniciar)
+
+
 def get(url, tries=3):
     for i in range(tries):
         try:
             return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40).read()
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                return None
+            ra = e.headers.get("Retry-After", "")  # 429/5xx: respeta Retry-After (hasta 2 min)
+            time.sleep(min(int(ra), 120) if ra.isdigit() else 15 * (i + 1) if e.code == 429 else 3 * (i + 1))
         except Exception:
             time.sleep(3 * (i + 1))
     return None
@@ -95,6 +103,8 @@ def main(out_path, full):
     tmp = out_path + ".tmp"
     json.dump(res, open(tmp, "w"), ensure_ascii=False)
     os.replace(tmp, out_path)
+    os.makedirs(STATE_DIR, exist_ok=True)
+    shutil.copy2(out_path, STATE_DIR)  # download_feeds.py lo restaura si /tmp se vacía
     print(f"listo: {len(res)} botas con stock -> {out_path}", flush=True)
 
 

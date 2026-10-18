@@ -27,6 +27,77 @@ variante o hay varias candidatas, no adivina ("dudosa" en el resumen). Si no
 hay ficha, la crea. También sincroniza la unión `TeamKey` de products.ts con
 `teamNames` de productMeta.ts (un club nuevo en el código no rompe tsc).
 
+## Huecos de catálogo (2026-10-18)
+
+Script para regenerar los datos en `main`: `bash scripts/fixes/huecos_catalogo.sh`
+(cifras antes/después con `scripts/fixes/huecos_cifras.mts`).
+
+- **Futbol Emotion, colorways que no entraban.** `mine_futbolemotion_jerseys.py`
+  marcaba "dudosa" (134 casos) todo lo que ya tenía una oferta FE de la misma
+  variante jugador/manga. Casi todos eran OTRO producto: la Pre-Match Away junto a
+  la Home, el Training de otro color, el portero 2ª/3ª, la versión Niño/Mujer con
+  otro código. Ahora, en este orden: (1) mismo código de fabricante que una oferta
+  de la ficha (`offerMpns.json`, o escrito en su URL/título) -> la misma ficha; si
+  la ficha ya tiene ese código de FE, se omite; (2) mismo rasgo del título (`LABEL_RE`:
+  home/away/third, técnico, jugador, winter, UCL...) + misma marca + mismo color
+  del feed (o el color en inglés en el id de la ficha, `bayern-prematch-black-...`)
+  -> oferta de esa ficha (Niño/Juvenil, "2 estrellas", otro código de la misma
+  prenda); (3) si no -> **ficha nueva por colorway** (`x-prematch-away-202627`,
+  `x-training-azul-202526-kids`; las de varias candidatas sin FE tampoco se
+  adivinan). Medido el 18-10: 134 dudosas -> 39 ofertas a fichas existentes,
+  93 fichas nuevas, 1 repetida. Además: "Kappa Genova" -> genoa, "adidas Los
+  Angeles" -> lafc, "adidas Rc Strasbourg" (el prefijo `rc` bloqueaba).
+- **Clubes sin ficha de temporada actual.** Ligue 1: Lorient, Brest; Ligue 2:
+  Guingamp, Reims, Bastia, Versailles; LaLiga: Elche, Rayo; Serie A: Lecce; Serie B:
+  Bari, Brescia, Perugia; Bundesliga: Friburgo, Heidenheim; 2. Bundesliga: Kiel,
+  Ingolstadt, 1860, Aalen, Bielefeld; EFL: Huddersfield, Preston, Swansea. Barrido de
+  todos los feeds de `/tmp/feeds` (línea entera, no solo título): **ninguno trae una
+  camiseta 2025/26 o 2026/27 de ellos** (Lorient: 0 filas en cualquier feed;
+  Guingamp/Versailles/Brescia solo 2024/25; Bastia/Bielefeld solo retro;
+  "Brest" es balonmano). Lorient ya está en `teamMeta` (ligue-1). Si aparece, entra
+  sola por la minería; la fuente que queda es eBay (`ebay_mine_cycle.py`).
+- **Temporada de un solo año en ligas de temporada partida**
+  (`fix_single_year_seasons.py --apply`): como `cremonese-home-2025` ->
+  `cremonese-home-202526`. La temporada la dicen los títulos (o el slug de la URL);
+  un año suelto no cuenta. Misma temporada en todas -> la ficha pasa a T; mezcla ->
+  cada oferta a la ficha de su temporada (`alaves-home-2026` -> `-202526` con FE y
+  ForumSport, y `-202627` con el anuncio de eBay); sin evidencia -> no se toca (36
+  fichas: Clermont, Fiorentina, Werder..., quedan listadas en la salida). Id viejo =
+  alias en `productAliases.ts` (y aplana cadenas: `cremonese-retro-199596-home`
+  apuntaba a un alias), y las claves de `productFirstSeen.json` /
+  `productDominantColors.json` siguen al id nuevo para que no salgan como novedad.
+  Medido: 93 -> 36 fichas de año suelto no retro.
+- **Football TicketNet DE (aid 109000), por qué no se descargaba.** No es un fallo:
+  `download_feeds.py` lo salta a propósito (`SKIP`) y `mine_tickets.py` no lo lee desde
+  el 09-10, porque el anunciante se llama "CLOSED 01.09.2026". Medido hoy: el feed
+  sigue vivo (HTTP 200, 2.683 filas EUR, importado hoy), el enlace de seguimiento
+  redirige y pone la cookie `aw109000`; lo que NO consta es que pague comisión
+  (hay que mirarlo en el panel de Awin). Con `TICKETNET_DE=1` se descarga y se
+  mina (prueba: 2.355 ofertas EUR sobre 2.362 eventos, +1 evento). Activar solo si
+  el panel confirma comisión.
+- **Rakuten Umbro (MID 41001).** Medido hoy desde esta PC (el FTP SÍ funciona aquí;
+  el bloqueo de `project_rakuten_ftp_egress_blocked` era del sandbox en la nube): el
+  listado raíz de `aftp.linksynergy.com` sigue con los mismos 5 MID (54196/7/8,
+  54200, 54213) y `41001_4733330_mp.{txt,xml}.gz` da 550 (no existe). Hay dos
+  carpetas, `GLOBAL` y `ADDITIONAL`, que nuestro usuario no puede abrir (550/"access
+  denied"); Umbro es un anunciante global, así que lo más probable es que su feed esté
+  en `GLOBAL`. No hay camino HTTPS sin credenciales (la Product Search API pide un
+  token del panel y el panel pide login). **Pendiente del dueño:** pedir a Rakuten
+  Support que habiliten `GLOBAL`/`ADDITIONAL` para el canal 4733330, o que confirmen
+  si Umbro 41001 tiene feed de productos; la página "Noticias de productos" del panel
+  dice qué feeds tenemos suscritos. Además, los 5 archivos BR de `/tmp/feeds/rakuten`
+  son del 08-10: solo los baja la sesión de Claude del scan.
+- **Pro:Direct (crons semanales).** Los logs (`scripts/prodirect_*.log`) no tienen un
+  solo error ni 429 en las tres últimas semanas; los archivos "que no existen" tenían
+  dos causas: (1) `/tmp` es tmpfs y un reinicio los borra (pasó el 03-10: faltó el
+  JSON de botas y se perdieron 1.104 ofertas), (2) la regla "menos de 24 h" del scan
+  salta el CSV de camisetas de lunes a sábado (por diseño: es semanal). Arreglado: los
+  dos scripts dejan copia en `~/.local/state/fc-feeds/` y `download_feeds.py` la
+  restaura si falta en `/tmp/feeds` (conserva la fecha); `prodirect_es_feed.py` ya
+  escribe a `.tmp` y publica con `os.replace`, respeta `Retry-After` en 429/5xx y no
+  pisa el archivo de la semana pasada si >25 % de los productos no responde. No se
+  cambió el crontab.
+
 ## eBay (Partner Network + Browse API — not Awin)
 
 Approved separately from Awin: eBay Partner Network (EPN, for affiliate

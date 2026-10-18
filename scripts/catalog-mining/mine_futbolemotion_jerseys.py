@@ -30,7 +30,7 @@ Guarda: la misma de refresh_offers.py (feed de hoy y >= 80 % de filas).
 
 Uso: python3 scripts/catalog-mining/mine_futbolemotion_jerseys.py [--apply] [-v]
 """
-import csv, json, os, re, sys
+import csv, json, os, re, sys, unicodedata
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -51,12 +51,53 @@ EXTRA_EXCLUDE = re.compile(
     r"fanswear|\btravel\b|warm ?up|\bcuarta\b|\bfourth\b|\bretro\b|\d0[´'’]?s\b|\+|\s[xX]\s+\w", re.I)
 # Lo que puede ir después de la temporada sin que sea otra prenda (dorsal, parche).
 TAIL_OK = re.compile(r"^(?:\s|ni[ñn][oa]s?|jr|junior|juvenil|kids?|mujer|women|m/l|authentic|portero)*$", re.I)
-PRE_OK = re.compile(r"^(?:\s|authentic|porteros?|pre-?match|training|fc|cf|club|sd|cd|ud|ac|as|ca|rcd|vfl|sl|slb|uc|us|olympique|glasgow|borussia|stade|sociedad|deportiva)*$", re.I)
+PRE_OK = re.compile(r"^(?:\s|authentic|porteros?|pre-?match|training|fc|cf|club|sd|cd|ud|ac|as|ca|rc|rcd|vfl|sl|slb|uc|us|olympique|glasgow|borussia|stade|sociedad|deportiva)*$", re.I)
+# Nombres que Futbol Emotion escribe distinto de extract.py ("Kappa Genova", "adidas Los Angeles"
+# = LAFC, la camiseta negra: el Galaxy se llama "La Galaxy" en su feed).
+FE_ALIAS = [(re.compile(r"\bgenova\b", re.I), "genoa"), (re.compile(r"\bLos Angeles\b(?! FC| Galaxy)"), "lafc")]
 BRANDS = {"adidas": "adidas", "nike": "nike", "puma": "puma", "jako": "jako", "joma": "joma", "errea": "errea",
           "kappa": "kappa", "hummel": "hummel", "macron": "macron", "umbro": "umbro", "new balance": "newbalance",
           "under armour": "underarmour", "kelme": "kelme", "legea": "legea", "uhlsport": "uhlsport", "lotto": "lotto",
           "mizuno": "mizuno", "reebok": "reebok"}
 SEASON_TOKEN = re.compile(r"\b(?:19|20)\d\d(?:\s*[-/]\s*(?:19|20)?\d\d)?\b|\b\d\d-\d\d\b")
+
+
+# Rasgos del título que hacen otro producto (no otra talla ni otra versión): una
+# Pre-Match "Away" no es la "Home", un Training "Técnico" no es el "Jugadores".
+LABEL_RE = {"home": r"primera|1[ªa]\b|\bhome\b|\blocal\b", "away": r"segunda|2[ªa]\b|\baway\b|visitante",
+            "third": r"tercera|3[ªa]\b|\bthird\b", "tecnico": r"t[eé]cnic", "jugador": r"jugador",
+            "winter": r"winter", "lightweight": r"lightweight", "ucl": r"\bucl\b", "capsula": r"c[aá]psula",
+            "tee": r"\btee\b", "estrellas": r"estrella"}
+
+
+def label(name, typ):
+    n = name.lower()
+    s = {k for k, p in LABEL_RE.items() if re.search(p, n)}
+    if typ == "training" and "portero" in n:
+        s.add("portero")
+    return frozenset(s)
+
+
+def colors_of(c):
+    return frozenset(x.strip().lower() for x in re.split(r"[/,]", c or "") if x.strip())
+
+
+# Las fichas viejas llevan el color en inglés en el id (bayern-prematch-black-202526).
+COLOR_EN = {"negro": "black", "blanco": "white", "rojo": "red", "azul": "blue", "verde": "green", "rosa": "pink",
+            "naranja": "orange", "marrón": "brown", "turquesa": "mint|menta", "gris": "grey|gray"}
+
+
+def id_has_color(pid, colors):
+    return any(re.search(rf"-({COLOR_EN[c]})-", pid) for c in colors if c in COLOR_EN)
+
+
+def brand_of(name):
+    return re.sub(r"^Camiseta\s+", "", name).split(" ")[0].lower()
+
+
+def slug_of(text):
+    t = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
 
 
 def fld(block, key):
@@ -121,7 +162,7 @@ def classify(rows, teams, types, known_teams):
             or re.search(r"sin mangas|sleeveless", slug) \
             or re.search(r"/comprar/pantalon", tt_key(r0.get("productURL"))):  # pantalón en "Camisetas oficiales" (Málaga training niño, 10-17)
         return None, "excluida"
-    hit = match_team(name, teams)
+    hit = match_team(name, teams) or next(((k, m) for p, k in FE_ALIAS if (m := p.search(name))), None)
     if not hit:
         return None, "sin equipo"
     team = hit[0]
@@ -190,9 +231,12 @@ def main(argv):
         if fld(b, "typeKey") != "retro":
             by_key[(fld(b, "teamKey"), fld(b, "typeKey"), fld(b, "ageGroup"))].append(i)
 
+    groups = feed_groups()
+    info = {tt_key(rs[0]["productURL"]): {"color": rs[0].get("color"), "mpn": (rs[0].get("MPN") or "").strip().upper()}
+            for rs in groups.values()}
     stats = defaultdict(int)
     picks, added, new = [], defaultdict(list), defaultdict(list)
-    for rows in feed_groups().values():
+    for rows in groups.values():
         o, why = classify(rows, teams, types, known_teams)
         stats["camisetas en el feed"] += 1
         if not o:
@@ -203,21 +247,45 @@ def main(argv):
             continue
         picks.append(o)
 
+    def fe_offers(i):
+        """(url, título) de las ofertas de Futbol Emotion de la ficha i."""
+        return [(re.search(r'url: "([^"]+)"', l).group(1), (re.search(r'title: "((?:[^"\\]|\\.)*)"', l) or [0, ""])[1])
+                for l in blocks[i].split("\n") if f'store: "{STORE}"' in l and 'url: "' in l]
+
+    def same_product(o, i):
+        """¿La ficha i ya tiene de Futbol Emotion este mismo producto (otro código de
+        fabricante, misma prenda: otra talla, Niño/Juvenil, 2 estrellas)? Mismo rasgo
+        del título + misma marca + mismo color (o color desconocido en alguno)."""
+        for u, t in fe_offers(i):
+            c = colors_of(info.get(tt_key(u), {}).get("color"))
+            if label(t, o["type"]) == label(o["name"], o["type"]) and brand_of(t) == brand_of(o["name"]) \
+                    and (not c or not o["colors"] or c == o["colors"]):
+                return True
+        return False
+
     for o in picks:
+        o["colors"] = colors_of(info.get(o["key"], {}).get("color"))
         same = [i for i in ficha_of_mpn.get(o["mpn"], ()) if fld(blocks[i], "teamKey") == o["team"]
                 and fld(blocks[i], "ageGroup") == o["age"]] if o["mpn"] else []
         if len(same) != 1:
-            same = [i for i in by_key[(o["team"], o["type"], o["age"])] if seasons_equivalent(fld(blocks[i], "season"), o["season"])]
-        if len(same) > 1:
-            stats["dudosa (varias fichas candidatas)"] += 1
-            continue
+            cands = [i for i in by_key[(o["team"], o["type"], o["age"])] if seasons_equivalent(fld(blocks[i], "season"), o["season"])]
+            # El código del fabricante suele ir en la URL o el título de otras tiendas.
+            same = [i for i in cands if same_product(o, i) or len(o["mpn"]) >= 6 and o["mpn"].lower() in blocks[i].lower()
+                    or len(o["colors"]) == 1 and id_has_color(fld(blocks[i], "id"), o["colors"])]
+            if not same and len(cands) == 1 and not fe_offers(cands[0]):
+                same = cands  # única ficha y sin Futbol Emotion todavía: es esa
+            if len(same) > 1:
+                same = [i for i in same if any(colors_of(info.get(tt_key(u), {}).get("color")) == o["colors"] for u, _ in fe_offers(i))] or same
+            if len(same) > 1:
+                stats["dudosa (varias fichas candidatas)"] += 1
+                continue
         if same:
             i = same[0]
-            fe = [variant(t) for t in re.findall(rf'store: "{STORE}", [^\n]*?title: "((?:[^"\\]|\\.)*)"', blocks[i])]
-            if o["variant"] in fe + [x["variant"] for x in added[i]]:
-                stats["dudosa (la ficha ya tiene esa variante)"] += 1
+            have_mpn = {info.get(tt_key(u), {}).get("mpn") for u, _ in fe_offers(i)} | {x["mpn"] for x in added[i]}
+            if o["mpn"] and o["mpn"] in have_mpn:
+                stats["omitida (mismo código de fabricante ya en la ficha)"] += 1
                 if verbose:
-                    print("  dudosa:", fld(blocks[i], "id"), "<-", o["name"])
+                    print("  repetida:", fld(blocks[i], "id"), "<-", o["name"])
                 continue
             added[i].append(o)
         else:
@@ -232,30 +300,41 @@ def main(argv):
                 print(f"  + {fld(blocks[i], 'id'):34} {o['price']:>7} {o['name']}")
     fresh = []
     for (team, typ, season, age), offers in sorted(new.items(), key=lambda kv: tuple(str(x) for x in kv[0])):
-        by_var = {}
-        for o in sorted(offers, key=lambda o: (score(o["name"]), o["price"])):
-            by_var.setdefault(o["variant"], o)
-        stats["dudosa (misma variante, otro colorway)"] += len(offers) - len(by_var)
+        # Una ficha por colorway: mismo rasgo del título y mismo color; dentro de ella, una
+        # oferta por variante (jugador/manga larga), la de título más simple.
+        colorways = defaultdict(list)
+        for o in offers:
+            colorways[(label(o["name"], typ), "/".join(sorted(o["colors"])))].append(o)
         slug = season.replace("/", "")
-        pid = f"{team}-{typ}-{age}" if age else f"{team}-{typ}-{slug}"
-        if pid in ids:
-            pid = f"{team}-{typ}-{slug}-{age}" if age else f"{pid}-fe"
-        if pid in ids or team not in colors:
-            stats["ficha nueva sin id libre o sin colores"] += 1
-            continue
-        ids.add(pid)
-        c1, c2 = colors[team]
-        brand = next((o["brand"] for o in by_var.values() if o["brand"]), None)
-        fresh.append(
-            "  {\n"
-            f'    id: "{pid}",\n    teamKey: "{team}",\n    season: "{season}",\n    typeKey: "{typ}",\n'
-            f'    colorHex: "{c1}",\n    colorHexSecondary: "{c2}",\n    jerseyPattern: "solid",\n'
-            + (f'    ageGroup: "{age}",\n' if age else "") + (f'    brand: "{brand}",\n' if brand else "")
-            + "    offers: [\n" + "".join(offer_line(o) for o in by_var.values()) + "    ],\n  },\n")
-        stats["fichas nuevas"] += 1
-        stats["ofertas en fichas nuevas"] += len(by_var)
-        if verbose:
-            print(f"  NUEVA {pid:34} " + " | ".join(o["name"] for o in by_var.values()))
+        for n, ((lab, col), group) in enumerate(sorted(colorways.items(), key=lambda kv: (sorted(kv[0][0]), kv[0][1]))):
+            by_var = {}
+            for o in sorted(group, key=lambda o: (score(o["name"]), o["price"])):
+                by_var.setdefault(o["variant"], o)
+            stats["dudosa (misma variante y color, otro código)"] += len(group) - len(by_var)
+            pid = f"{team}-{typ}-{age}" if age else f"{team}-{typ}-{slug}"
+            if n or pid in ids:
+                # Otro colorway de la misma prenda: sufijo con el rasgo (away, third...) o el color.
+                word = next((w for w in ("away", "third", "home") if w in lab and w != typ), "")
+                opts = [x for x in (word, slug_of(col.split("/")[0]) if col else "", slug_of(group[0]["mpn"])) if x]
+                pid = next((c for c in (f"{team}-{typ}-{x}-{slug}" + (f"-{age}" if age else "") for x in opts) if c not in ids), None)
+                if pid is None:
+                    pid = f"{team}-{typ}-{slug_of(group[0]['mpn'])}-{slug}" + (f"-{age}" if age else "")
+            if pid in ids or team not in colors:
+                stats["ficha nueva sin id libre o sin colores"] += 1
+                continue
+            ids.add(pid)
+            c1, c2 = colors[team]
+            brand = next((o["brand"] for o in by_var.values() if o["brand"]), None)
+            fresh.append(
+                "  {\n"
+                f'    id: "{pid}",\n    teamKey: "{team}",\n    season: "{season}",\n    typeKey: "{typ}",\n'
+                f'    colorHex: "{c1}",\n    colorHexSecondary: "{c2}",\n    jerseyPattern: "solid",\n'
+                + (f'    ageGroup: "{age}",\n' if age else "") + (f'    brand: "{brand}",\n' if brand else "")
+                + "    offers: [\n" + "".join(offer_line(o) for o in by_var.values()) + "    ],\n  },\n")
+            stats["fichas nuevas"] += 1
+            stats["ofertas en fichas nuevas"] += len(by_var)
+            if verbose:
+                print(f"  NUEVA {pid:44} " + " | ".join(o["name"] for o in by_var.values()))
     print("mine_futbolemotion_jerseys:", json.dumps(stats, ensure_ascii=False))
     if not apply:
         print("(ensayo: --apply para escribir)")
