@@ -1411,6 +1411,25 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     # --- Daily pass 2026-10-18, CSV refresh swaps ---
     "maillot-portugal-domicile-rafael-leao-17-2026",  # PlanetFoot por-home-2026: player print (Rafael Leao N17) swapped onto the plain home
     "adidas-km2002-white",  # FootStoreES lyon-home-202627: "OL Lyonnes" = the women's club's own kit (other crest, Mastercard), not Lyon's
+    # --- Daily pass 2026-10-19, CSV swaps ---
+    "maillot-portugal-ronaldo-home-rouge-vert-2026-homme",  # por-home-2026: PlanetFoot Ronaldo N°7 print swapped in
+    # --- Daily pass 2026-10-19, eBay current ---
+    "/itm/188812062363",  # replica player version; Bahia Soccer Jersey Home 26/27 - Player Version ( M, L, XL and 2XL siz
+    "/itm/188205496042",  # wire-mesh replica wall; 25-26 Men's Le Havre AC Third Jersey 
+    "/itm/336225662944",  # wire-mesh replica wall; JERSEY AJ Auxerre Home 2025-26
+    "/itm/820163504039",  # template seller render; Paris FC Home Men Jersey 26-27
+    "/itm/267790169013",  # replica-factory hanger 31 EUR; Venezia F.C. Camiseta local 26-27
+    "/itm/267790169015",  # replica-factory hanger 31 EUR; Venezia F.C. Camiseta visitante 26-27
+    "/itm/227531276400",  # replica-factory hanger 31 EUR; Venezia F.C. Tercera camiseta 26-27
+    "/itm/267790169013",  # replica-factory hanger 31 EUR; Venezia F.C. Maglia Home 26-27
+    "/itm/178449512638",  # youth size; Maglia calcio futbol portiere Nike Pumas UNAM 2026 nuova con etichette
+    # --- Daily pass 2026-10-19, eBay retro ---
+    "/itm/157878167703",  # long sleeve; STOKE CITY 2013/2014 AWAY FOOTBALL SHIRT JERSEY ADIDAS SIZE XXL ADULT 
+    "/itm/266920227885",  # long sleeve; BNWT HELLAS VERONA 2018 2019 AWAY FOOTBALL SHIRT JERSEY MACRON SIZE S 
+    "/itm/177494427454",  # kids (giovani bambini); Maglia Calcio Futbol Lotto Pumas UNAM 08/09 Away Giovani Bambini Tagli
+    "/itm/205763308754",  # kids (giovane); Maglia home Nike Pumas UNAM 2018 nuova con etichette giovane media pre
+    "/itm/175885826862",  # kids (giovane); Maglia calcio Nike Dri-Fit Pumas UNAM 20/21 Home Futbol nuova con etic
+    "/itm/198619561215",  # kids (giovane); PUMA Pumas UNAM 2013/2014 maglia home giovane grande
 ]
 
 
