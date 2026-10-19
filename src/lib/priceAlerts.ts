@@ -3,7 +3,8 @@ import type { RedisClientType } from "redis";
 import type { Locale } from "@/lib/i18n/translations";
 
 // Alertas de precio por email: claves de Redis, enlaces y textos de los
-// correos. Lo usan /api/price-alerts (alta, confirmación, baja), la página
+// correos de confirmación (el aviso de bajada vive en priceAlertEmail.ts).
+// Lo usan /api/price-alerts (alta, confirmación, baja), la página
 // /[locale]/alerta-precio y scripts/check_price_alerts.mts (el envío
 // semanal, fuera del proceso web).
 //
@@ -98,8 +99,6 @@ export async function deactivate(redis: RedisClientType, email: string, productI
 interface Copy {
   confirmSubject: string;
   confirmBody: (link: string, productId: string) => string;
-  alertSubject: (name: string) => string;
-  alertBody: (a: { name: string; from: string; to: string; store: string; url: string; unsub: string }) => string;
 }
 
 export const EMAIL_COPY: Record<Locale, Copy> = {
@@ -107,40 +106,25 @@ export const EMAIL_COPY: Record<Locale, Copy> = {
     confirmSubject: "Confirma tu alerta de precio",
     confirmBody: (link, p) =>
       `Has pedido que te avisemos por email cuando baje el precio de este producto en Football Cult (${p}).\n\nPara activar la alerta, confirma aquí:\n${link}\n\nSi no lo has pedido tú, ignora este mensaje: no te volveremos a escribir.`,
-    alertSubject: (name) => `Ha bajado de precio: ${name}`,
-    alertBody: (a) =>
-      `${a.name} ha bajado de ${a.from} a ${a.to} en ${a.store}.\n\nVer: ${a.url}\n\n--\nRecibes este email porque pediste una alerta de precio para este producto en football-cult.com.\nDarte de baja: ${a.unsub}`,
   },
   en: {
     confirmSubject: "Confirm your price alert",
     confirmBody: (link, p) =>
       `You asked us to email you when the price of this product drops on Football Cult (${p}).\n\nTo turn the alert on, confirm here:\n${link}\n\nIf you didn't ask for this, just ignore this email: we won't write again.`,
-    alertSubject: (name) => `Price drop: ${name}`,
-    alertBody: (a) =>
-      `${a.name} dropped from ${a.from} to ${a.to} at ${a.store}.\n\nSee it: ${a.url}\n\n--\nYou're getting this because you asked for a price alert for this product on football-cult.com.\nUnsubscribe: ${a.unsub}`,
   },
   pt: {
     confirmSubject: "Confirma o teu alerta de preço",
     confirmBody: (link, p) =>
       `Pediste que te avisemos por e-mail quando o preço deste produto baixar na Football Cult (${p}).\n\nPara ativar o alerta, confirma aqui:\n${link}\n\nSe não foste tu, ignora esta mensagem: não voltaremos a escrever-te.`,
-    alertSubject: (name) => `Baixou de preço: ${name}`,
-    alertBody: (a) =>
-      `${a.name} baixou de ${a.from} para ${a.to} em ${a.store}.\n\nVer: ${a.url}\n\n--\nRecebes este e-mail porque pediste um alerta de preço para este produto em football-cult.com.\nCancelar: ${a.unsub}`,
   },
   fr: {
     confirmSubject: "Confirmez votre alerte de prix",
     confirmBody: (link, p) =>
       `Vous avez demandé à être prévenu par e-mail quand le prix de ce produit baisse sur Football Cult (${p}).\n\nPour activer l'alerte, confirmez ici :\n${link}\n\nSi vous n'êtes pas à l'origine de cette demande, ignorez ce message : nous ne vous écrirons plus.`,
-    alertSubject: (name) => `Baisse de prix : ${name}`,
-    alertBody: (a) =>
-      `${a.name} est passé de ${a.from} à ${a.to} chez ${a.store}.\n\nVoir : ${a.url}\n\n--\nVous recevez cet e-mail car vous avez demandé une alerte de prix pour ce produit sur football-cult.com.\nSe désinscrire : ${a.unsub}`,
   },
   it: {
     confirmSubject: "Conferma il tuo avviso di prezzo",
     confirmBody: (link, p) =>
       `Hai chiesto di essere avvisato via email quando il prezzo di questo prodotto scende su Football Cult (${p}).\n\nPer attivare l'avviso, conferma qui:\n${link}\n\nSe non sei stato tu, ignora questo messaggio: non ti scriveremo più.`,
-    alertSubject: (name) => `Prezzo sceso: ${name}`,
-    alertBody: (a) =>
-      `Il prezzo di ${a.name} è sceso da ${a.from} a ${a.to} su ${a.store}.\n\nVedi: ${a.url}\n\n--\nRicevi questa email perché hai chiesto un avviso di prezzo per questo prodotto su football-cult.com.\nCancellati: ${a.unsub}`,
   },
 };
