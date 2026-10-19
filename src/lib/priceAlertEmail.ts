@@ -1,5 +1,5 @@
 import { formatOfferMoney, offerTotalInEUR, type OfferCurrencyCode } from "@/lib/offerMoney";
-import { LEGAL_ENTITY, entityValue } from "@/lib/legalEntity";
+import { LEGAL_ENTITY } from "@/lib/legalEntity";
 import type { Locale } from "@/lib/i18n/translations";
 
 // Correo de "ha bajado de precio" (HTML + texto plano) y la regla de cuándo
@@ -255,8 +255,9 @@ export function renderAlertEmail(l: Locale, items: AlertItem[]): RenderedAlert {
   const pre = n === 1
     ? c.preheader({ pct: pctLabel(l, (first.from - first.to) / first.from), store: first.store, from: money(first.from, first.currency) })
     : intro;
-  const address = entityValue("address");
-  const legal = [LEGAL_ENTITY.brand + " · " + LEGAL_ENTITY.domain, LEGAL_ENTITY.name, address].filter(Boolean).join(" · ");
+  // Identificación del remitente (LSSI art. 20) por enlace al Aviso legal, que ya
+  // publica los datos del titular: el pie del correo no repite nombre ni domicilio.
+  const legal = `${LEGAL_ENTITY.brand} · ${LEGAL_ENTITY.domain} · https://${LEGAL_ENTITY.domain}/${l}/aviso-legal`;
   const body = items
     .map((i, k) => `<tr><td style="padding:${k === 0 ? 0 : 20}px 0 20px;${k === 0 ? "" : `border-top:1px solid ${C.line}`}" class="ln">${itemBlock(l, c, i, n === 1)}</td></tr>`)
     .join("");

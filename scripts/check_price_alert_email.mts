@@ -113,6 +113,7 @@ assert.equal(d.subject, "Han bajado 5 productos que sigues");
 assert.ok(!d.html.includes("Otras ofertas parecidas"));
 
 // Pie: motivo del envío y dirección legal.
-assert.ok(/Rivas-Vaciamadrid/.test(d.html) && /Recibes este email porque pediste/.test(d.html));
+assert.ok(/aviso-legal/.test(d.html) && /Recibes este email porque pediste/.test(d.html));
+assert.ok(!/Rivas-Vaciamadrid|Agatha|Margueirat/.test(d.html + d.text), "el pie no debe llevar nombre ni domicilio del titular");
 
 console.log("check_price_alert_email: OK");
