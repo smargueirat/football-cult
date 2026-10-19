@@ -3,9 +3,9 @@
  "cycle": 4,
  "cycle_started": "2026-10-18",
  "last_run": {
-  "date": "2026-10-18",
-  "checked": 3962,
-  "dead": 55,
-  "live_ids": 6171
+  "date": "2026-10-19",
+  "checked": 0,
+  "dead": 0,
+  "live_ids": 6119
  }
 }
