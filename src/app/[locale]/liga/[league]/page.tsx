@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { hubFrom } from "@/lib/seoMeta";
+import { hubFrom, modifiedLd } from "@/lib/seoMeta";
 import type { Metadata } from "next";
 import { HUB } from "@/lib/hubStrings";
 import { asLocale, breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
@@ -69,6 +69,7 @@ export default async function LeagueHub({ params }: P) {
             "@type": "CollectionPage",
             name: s.leagueH1(name),
             url: `${SITE_URL}/${locale}/liga/${slug}`,
+            ...modifiedLd(d.items.flatMap((it) => it.product.offers)),
             mainEntity: {
               "@type": "ItemList",
               numberOfItems: d.teams.length,

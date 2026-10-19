@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { hubFrom } from "@/lib/seoMeta";
+import { hubFrom, modifiedLd } from "@/lib/seoMeta";
 import type { Metadata } from "next";
 import { HUB } from "@/lib/hubStrings";
 import { SEASON_UI, typePlural } from "@/lib/seasonStrings";
@@ -52,6 +52,7 @@ export default async function SeasonHub({ params }: P) {
             "@type": "CollectionPage",
             name: h1,
             url: `${SITE_URL}/${locale}/temporada/${slug}`,
+            ...modifiedLd(items.flatMap((it) => it.product.offers)),
             mainEntity: {
               "@type": "ItemList",
               numberOfItems: teams.length,

@@ -37,7 +37,9 @@ export interface ExtraUi {
   retroTitle: (h1: string, range: string) => string;
   /** seasons/stores: listas reales del catálogo; price: "12 € – 90 €". */
   retroIntro: (o: { subject: string; n: number; seasons: string[]; stores: string[]; price: string }) => string;
-  retroMeta: (o: { subject: string; n: number; price: string; range: string }) => string;
+  /** Meta description en trozos: el primero siempre; los demás se suman en
+   *  orden mientras quepan en 160 caracteres (retroHub, extraHubs.ts). */
+  retroMeta: (o: { subject: string; n: number; price: string; range: string; stores: number; seasons: number }) => string[];
   retroByDecade: string;
   retroByTeam: string;
   retroAll: string;
@@ -68,7 +70,12 @@ export const EXTRA: Record<HubLocale, ExtraUi> = {
     retroTitle: (h1, range) => `${h1}: equipaciones vintage ${range}`,
     retroIntro: ({ subject, n, seasons, stores, price }) =>
       `${subject}: ${n} ${n === 1 ? "camiseta" : "camisetas"} de ${seasons.length === 1 ? "la temporada" : `${seasons.length} temporadas:`} ${list(seasons)}. ${stores.length === 1 ? "Tienda" : `${stores.length} tiendas`}: ${list(stores, 5)}. Precio hoy: ${price}. Aquí «retro» es la temporada 2006 o anterior.`,
-    retroMeta: ({ subject, n, price, range }) => `${subject}: compara ${n} camisetas vintage (${range}) entre tiendas. Desde ${price}.`,
+    retroMeta: ({ subject, n, price, range, stores, seasons }) => [
+      `${subject}: compara ${n} camisetas vintage (${range}) en ${stores} ${stores === 1 ? "tienda" : "tiendas"}. Desde ${price}.`,
+      " Precios revisados a diario.",
+      " Enlace directo a la tienda.",
+      seasons > 1 ? ` ${seasons} temporadas.` : "",
+    ],
     retroByDecade: "Retro por década",
     retroByTeam: "Retro por equipo",
     retroAll: "Todas las camisetas retro",
@@ -101,7 +108,12 @@ export const EXTRA: Record<HubLocale, ExtraUi> = {
     retroTitle: (h1, range) => `${h1}: vintage kits ${range}`,
     retroIntro: ({ subject, n, seasons, stores, price }) =>
       `${subject}: ${n} ${n === 1 ? "shirt" : "shirts"} from ${seasons.length === 1 ? "the season" : `${seasons.length} seasons:`} ${list(seasons)}. ${stores.length === 1 ? "Store" : `${stores.length} stores`}: ${list(stores, 5)}. Price today: ${price}. Here "retro" means the 2006 season or earlier.`,
-    retroMeta: ({ subject, n, price, range }) => `${subject}: compare ${n} vintage shirts (${range}) across stores. From ${price}.`,
+    retroMeta: ({ subject, n, price, range, stores, seasons }) => [
+      `${subject}: compare ${n} vintage shirts (${range}) in ${stores} ${stores === 1 ? "store" : "stores"}. From ${price}.`,
+      " Prices checked daily.",
+      " Direct link to the store.",
+      seasons > 1 ? ` ${seasons} seasons.` : "",
+    ],
     retroByDecade: "Retro by decade",
     retroByTeam: "Retro by team",
     retroAll: "All retro shirts",
@@ -131,7 +143,12 @@ export const EXTRA: Record<HubLocale, ExtraUi> = {
     retroTitle: (h1, range) => `${h1}: vintage ${range}`,
     retroIntro: ({ subject, n, seasons, stores, price }) =>
       `${subject}: ${n} ${n === 1 ? "camisa" : "camisas"} de ${seasons.length === 1 ? "a temporada" : `${seasons.length} temporadas:`} ${list(seasons)}. ${stores.length === 1 ? "Loja" : `${stores.length} lojas`}: ${list(stores, 5)}. Preço hoje: ${price}. Aqui «retrô» é a temporada 2006 ou anterior.`,
-    retroMeta: ({ subject, n, price, range }) => `${subject}: compare ${n} camisas vintage (${range}) entre lojas. A partir de ${price}.`,
+    retroMeta: ({ subject, n, price, range, stores, seasons }) => [
+      `${subject}: compare ${n} camisas vintage (${range}) em ${stores} ${stores === 1 ? "loja" : "lojas"}. A partir de ${price}.`,
+      " Preços revistos todos os dias.",
+      " Link direto para a loja.",
+      seasons > 1 ? ` ${seasons} temporadas.` : "",
+    ],
     retroByDecade: "Retrô por década",
     retroByTeam: "Retrô por time",
     retroAll: "Todas as camisas retrô",
@@ -161,7 +178,12 @@ export const EXTRA: Record<HubLocale, ExtraUi> = {
     retroTitle: (h1, range) => `${h1} : maillots vintage ${range}`,
     retroIntro: ({ subject, n, seasons, stores, price }) =>
       `${subject} : ${n} ${n === 1 ? "maillot" : "maillots"} de ${seasons.length === 1 ? "la saison" : `${seasons.length} saisons :`} ${list(seasons)}. ${stores.length === 1 ? "Boutique" : `${stores.length} boutiques`} : ${list(stores, 5)}. Prix aujourd'hui : ${price}. Ici, « rétro » veut dire la saison 2006 ou avant.`,
-    retroMeta: ({ subject, n, price, range }) => `${subject} : comparez ${n} maillots vintage (${range}) entre boutiques. Dès ${price}.`,
+    retroMeta: ({ subject, n, price, range, stores, seasons }) => [
+      `${subject} : comparez ${n} maillots vintage (${range}) dans ${stores} ${stores === 1 ? "boutique" : "boutiques"}. Dès ${price}.`,
+      " Prix vérifiés chaque jour.",
+      " Lien direct vers la boutique.",
+      seasons > 1 ? ` ${seasons} saisons.` : "",
+    ],
     retroByDecade: "Rétro par décennie",
     retroByTeam: "Rétro par équipe",
     retroAll: "Tous les maillots rétro",
@@ -191,7 +213,12 @@ export const EXTRA: Record<HubLocale, ExtraUi> = {
     retroTitle: (h1, range) => `${h1}: maglie vintage ${range}`,
     retroIntro: ({ subject, n, seasons, stores, price }) =>
       `${subject}: ${n} ${n === 1 ? "maglia" : "maglie"} di ${seasons.length === 1 ? "la stagione" : `${seasons.length} stagioni:`} ${list(seasons)}. ${stores.length === 1 ? "Negozio" : `${stores.length} negozi`}: ${list(stores, 5)}. Prezzo oggi: ${price}. Qui «retrò» significa la stagione 2006 o precedente.`,
-    retroMeta: ({ subject, n, price, range }) => `${subject}: confronta ${n} maglie vintage (${range}) tra negozi. Da ${price}.`,
+    retroMeta: ({ subject, n, price, range, stores, seasons }) => [
+      `${subject}: confronta ${n} maglie vintage (${range}) in ${stores} ${stores === 1 ? "negozio" : "negozi"}. Da ${price}.`,
+      " Prezzi controllati ogni giorno.",
+      " Link diretto al negozio.",
+      seasons > 1 ? ` ${seasons} stagioni.` : "",
+    ],
     retroByDecade: "Retrò per decennio",
     retroByTeam: "Retrò per squadra",
     retroAll: "Tutte le maglie retrò",

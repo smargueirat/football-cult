@@ -65,6 +65,7 @@ export default function StadiumWatermark() {
         <Image
           src="/images/pitch-ground-level.jpg"
           alt=""
+          aria-hidden
           fill
           priority
           unoptimized

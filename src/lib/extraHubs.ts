@@ -124,10 +124,15 @@ export function retroHub(spec: RetroSpec, locale: HubLocale) {
     headline,
     path,
     title: withBrand(x.retroTitle(headline, range)),
-    description: x.retroMeta({ subject: headline, n: items.length, price: lo, range }),
+    description: fitMeta(x.retroMeta({ subject: headline, n: items.length, price: lo, range, stores: stores.length, seasons: seasons.length })),
     intro: x.retroIntro({ subject: headline, n: items.length, seasons, stores, price: lo === hi ? lo : `${lo} – ${hi}` }),
   };
 }
+
+/** Descripción de 140-160 caracteres: el primer trozo y, en orden, los que
+ *  sigan cabiendo (cada hub tiene un nombre de otra longitud). */
+export const META_MAX = 160;
+const fitMeta = ([core, ...more]: string[]) => more.reduce((d, m) => (d + m).length <= META_MAX ? d + m : d, core);
 
 /** Temporadas, tiendas, precio mínimo/máximo y rango de años de un hub. */
 function hubStats(items: HubItem[]) {

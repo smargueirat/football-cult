@@ -21,7 +21,11 @@ import csv, json, os, re, sys
 
 csv.field_size_limit(10**9)
 HERE = os.path.dirname(os.path.abspath(__file__))
-PRODUCTS_TS = os.path.join(HERE, "..", "..", "src", "data", "products.ts")
+DATA = os.path.join(HERE, "..", "..", "src", "data")
+# Camisetas, botas, guantes y balones. Ropa y entrenamiento quedan fuera a
+# proposito: son casi 40.000 ofertas por talla de Foot-Store que triplicarian
+# estos JSON (11 MB) y se cargan en cada ruta de servidor que arma JSON-LD.
+CATALOGS = ["products", "boots", "gloves", "balls"]
 OUT = os.path.join(HERE, "..", "..", "src", "data", "offerGtins.json")
 OUT_MPN = os.path.join(HERE, "..", "..", "src", "data", "offerMpns.json")
 
@@ -42,6 +46,8 @@ GTIN_COL = {
     "BSTN_IT": "ean", "BSTN_UK": "ean", "DEPORTEOUTLET": "ean",
     "GIGASPORT_DE": "ean", "GIGASPORT_CH": "ean", "GIGASPORT_FR": "ean",
     "CLOVIS_BR": "gtin", "PROSOCCER": "gtin",
+    # Botas de adidas Chile y Reebok Alemania (cabecera verificada 2026-10-19).
+    "ADIDAS_CL": "product_GTIN", "REEBOK_DE": "product_GTIN",
 }
 LINK_COLS = ["aw_deep_link", "aw_product_link", "link"]
 # Un EAN/GTIN valido es numerico de 8, 12, 13 o 14 digitos. Los feeds meten de
@@ -50,9 +56,17 @@ LINK_COLS = ["aw_deep_link", "aw_product_link", "link"]
 VALID = re.compile(r"^\d{8}$|^\d{12,14}$")
 
 
+def check_digit_ok(g):
+    """Digito de control GS1: pesos 3,1,3,1... desde la derecha (sin el control)."""
+    t = sum(int(c) * (3 if i % 2 == 0 else 1) for i, c in enumerate(reversed(g[:-1])))
+    return (10 - t % 10) % 10 == int(g[-1])
+
+
 def main(feed_dir="/tmp/feeds"):
-    src = open(PRODUCTS_TS, encoding="utf-8").read()
-    wanted = set(re.findall(r'url: "([^"]+)"', src))
+    wanted = set()
+    for name in CATALOGS:
+        with open(os.path.join(DATA, name + ".ts"), encoding="utf-8") as fh:
+            wanted |= set(re.findall(r'url: "([^"]+)"', fh.read()))
     print(f"URLs de oferta en el catalogo: {len(wanted)}")
 
     out, rejected = {}, 0
@@ -82,7 +96,7 @@ def main(feed_dir="/tmp/feeds"):
                 g = (r.get(col) or "").strip().lstrip("'")
                 if not g:
                     continue
-                if not VALID.match(g):
+                if not (VALID.match(g) and check_digit_ok(g)):
                     rejected += 1
                     continue
                 out[url] = g

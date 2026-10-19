@@ -3,10 +3,10 @@ import type { ReactNode } from "react";
 import type { HubLocale } from "@/data/teamMeta";
 import { buildAlternates } from "@/lib/i18n/locales";
 import { bootOfferTotalInEUR, type BootCurrencyCode } from "@/lib/offerMoney";
-import { singleSizeGtin } from "@/lib/offerGtin";
+import { productGtin, singleSizeGtin } from "@/lib/offerGtin";
 import { translations } from "@/lib/i18n/translations";
 import type { GearSection } from "@/lib/gearHubs";
-import { OG_LOCALE, SITE_URL, aggregateOfferLd, brandLabel, gearDescription, gearMpn, gearName, gearTitle, ldImage, ogImages, type GearLike } from "@/lib/seoMeta";
+import { OG_LOCALE, SITE_URL, aggregateOfferLd, brandLabel, gearDescription, itemPageLd, gearMpn, gearName, gearTitle, ldImage, ogImages, type GearLike } from "@/lib/seoMeta";
 import { gearRelated, gearTrail } from "@/lib/detailLinks";
 import { JsonLd } from "@/components/hubs/HubParts";
 import { DetailCrumbs, RelatedLinks } from "@/components/DetailNav";
@@ -51,22 +51,28 @@ export function GearDetailFrame({
   const url = `${SITE_URL}/${locale}${path}`;
   const image = ldImage(firstImage(item));
   const mpn = gearMpn(item);
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: gearName(section, item, locale),
-    image: image ? [image.url] : undefined,
-    url,
-    brand: { "@type": "Brand", name: brandLabel(item.brand) },
-    ...(mpn ? { mpn } : {}),
-    ...(item.colour ? { color: item.colour } : {}),
-    offers: aggregateOfferLd(
-      item.offers,
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": `${url}#product`,
+      name: gearName(section, item, locale),
+      image: image ? [image.url] : undefined,
       url,
-      (o) => bootOfferTotalInEUR({ price: o.price, shipping: o.shipping ?? 0, currency: o.currency as BootCurrencyCode }),
-      singleSizeGtin,
-    ),
-  };
+      sku: item.id,
+      brand: { "@type": "Brand", name: brandLabel(item.brand) },
+      ...(mpn ? { mpn } : {}),
+      ...productGtin(item.offers),
+      ...(item.colour ? { color: item.colour } : {}),
+      offers: aggregateOfferLd(
+        item.offers,
+        url,
+        (o) => bootOfferTotalInEUR({ price: o.price, shipping: o.shipping ?? 0, currency: o.currency as BootCurrencyCode }),
+        singleSizeGtin,
+      ),
+    },
+    ...itemPageLd(url, item.offers),
+  ];
   return (
     <>
       <JsonLd data={jsonLd} />
