@@ -10,6 +10,9 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-10-19: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "realvalladolid-third-2025": "realvalladolid-third-202526",
   // 2026-10-18: temporada de un solo año -> 2025/26 o 2026/27 según los títulos
   // (scripts/catalog-mining/fix_single_year_seasons.py); redirigen a la ficha vigente.
   "hoffenheim-away-2026": "hoffenheim-away-202627",
