@@ -8,10 +8,10 @@ import priceHistoryData from "@/data/priceHistory.json";
 import { archiveStatsFor } from "@/lib/priceArchive";
 import { jerseyAlternatives } from "@/lib/directDeals";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
-import { productCode, singleSizeGtin } from "@/lib/offerGtin";
+import { productCode, productGtin, singleSizeGtin } from "@/lib/offerGtin";
 import type { HubLocale } from "@/data/teamMeta";
 import { offerTotalInEUR } from "@/lib/offerMoney";
-import { OG_LOCALE, SITE_URL, aggregateOfferLd, jerseyBrand, jerseyDescription, jerseyName, jerseyTitle, ldImage, ogImages } from "@/lib/seoMeta";
+import { OG_LOCALE, SITE_URL, aggregateOfferLd, itemPageLd, jerseyBrand, jerseyDescription, jerseyName, jerseyTitle, ldImage, ogImages } from "@/lib/seoMeta";
 import { jerseyRelated, jerseyTrail } from "@/lib/detailLinks";
 import { DetailCrumbs, RelatedLinks } from "@/components/DetailNav";
 
@@ -30,19 +30,26 @@ function productJsonLd(product: Product, locale: HubLocale) {
   const image = ldImage(productImage(product));
   const brand = jerseyBrand(product);
   const mpn = productCode(product.offers);
-  return {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: jerseyName(product, locale),
-    image: image ? [image.url] : undefined,
-    url,
-    ...(brand ? { brand: { "@type": "Brand", name: brand } } : {}),
-    // Código del fabricante: con marca + mpn Google puede identificar el
-    // producto exacto. El EAN es de UNA talla y esta ficha agrupa todas: solo
-    // va en la Offer de una oferta de talla única (ver offerGtin.ts).
-    ...(mpn ? { mpn } : {}),
-    offers: aggregateOfferLd(product.offers, url, offerTotalInEUR, singleSizeGtin),
-  };
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": `${url}#product`,
+      name: jerseyName(product, locale),
+      image: image ? [image.url] : undefined,
+      url,
+      sku: product.id,
+      ...(brand ? { brand: { "@type": "Brand", name: brand } } : {}),
+      // Código del fabricante: con marca + mpn Google puede identificar el
+      // producto exacto. El EAN es de UNA talla y esta ficha agrupa todas: va
+      // en el Product solo si sus ofertas de talla única coinciden y, si no,
+      // en la Offer de cada una (ver offerGtin.ts). Todo con dígito de control.
+      ...(mpn ? { mpn } : {}),
+      ...productGtin(product.offers),
+      offers: aggregateOfferLd(product.offers, url, offerTotalInEUR, singleSizeGtin),
+    },
+    ...itemPageLd(url, product.offers),
+  ];
 }
 
 // ISR (2026-09-20): sin generateStaticParams estas páginas eran ƒ

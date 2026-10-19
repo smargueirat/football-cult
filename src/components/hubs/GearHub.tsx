@@ -23,7 +23,7 @@ import {
   gearFacts,
 } from "@/lib/gearHubs";
 import { breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
-import { gearHubFrom } from "@/lib/seoMeta";
+import { gearHubFrom, gearHubModified } from "@/lib/seoMeta";
 import { Crumbs, HubHeader, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
 import HubFaq from "@/components/hubs/HubFaq";
 import { lineFacets } from "@/lib/extraHubs";
@@ -107,6 +107,7 @@ export default function GearHub({ spec, locale }: { spec: GearSpec; locale: HubL
             "@type": "CollectionPage",
             name: r.headline,
             url: `${SITE_URL}/${locale}${r.path}`,
+            ...gearHubModified(section, r.items.map((i) => i.id)),
             mainEntity: {
               "@type": "ItemList",
               numberOfItems: r.items.length,

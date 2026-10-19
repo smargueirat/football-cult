@@ -14,16 +14,36 @@ import mpns from "@/data/offerMpns.json";
 // inventa: si la tienda no lo publica, la oferta simplemente no está acá.
 const MAP = gtins as Record<string, string>;
 
-/** El GTIN de esa oferta, o undefined si su tienda no lo publica. */
-export function gtinFor(url: string): string | undefined {
-  return MAP[url];
+/** Dígito de control GS1 de un EAN-8 / UPC-A / EAN-13 / GTIN-14: Google
+ *  descarta (y Merchant Center marca) los que no cuadran. */
+export function validGtin(g: string): boolean {
+  if (!/^(\d{8}|\d{12,14})$/.test(g)) return false;
+  const sum = [...g.slice(0, -1)].reverse().reduce((t, c, i) => t + Number(c) * (i % 2 ? 1 : 3), 0);
+  return (10 - (sum % 10)) % 10 === Number(g.slice(-1));
 }
 
-/** `{ gtin }` para el JSON-LD de una Offer solo si la oferta es de UNA talla
+/** El GTIN de esa oferta, o undefined si su tienda no lo publica (o no es válido). */
+export function gtinFor(url: string): string | undefined {
+  const g = MAP[url];
+  return g && validGtin(g) ? g : undefined;
+}
+
+/** `{ gtin13: "…" }` (gtin8/12/14 según la longitud) para el JSON-LD. */
+const gtinLd = (g?: string): Record<string, string> => (g ? { [`gtin${g.length}`]: g } : {});
+
+type Sized = { url: string; sizes?: readonly string[] };
+
+/** El GTIN para el JSON-LD de una Offer, solo si la oferta es de UNA talla
  *  (el EAN identifica una talla concreta). */
-export function singleSizeGtin(o: { url: string; sizes?: readonly string[] }): { gtin?: string } {
-  const g = o.sizes?.length === 1 ? MAP[o.url] : undefined;
-  return g ? { gtin: g } : {};
+export function singleSizeGtin(o: Sized): Record<string, string> {
+  return gtinLd(o.sizes?.length === 1 ? gtinFor(o.url) : undefined);
+}
+
+/** El GTIN del Product: el de sus ofertas de talla única, solo si todas
+ *  coinciden (con tallas distintas hay un EAN por talla: ninguno es "la" ficha). */
+export function productGtin(offers: readonly Sized[]): Record<string, string> {
+  const all = new Set(offers.map((o) => (o.sizes?.length === 1 ? gtinFor(o.url) : undefined)).filter(Boolean));
+  return all.size === 1 ? gtinLd([...all][0]) : {};
 }
 
 const MPN = mpns as Record<string, string>;

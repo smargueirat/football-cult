@@ -16,6 +16,7 @@ import { trainingProducts } from "../src/data/training";
 import { ticketProducts } from "../src/data/tickets";
 import { LOCALES } from "../src/lib/i18n/locales";
 import { isVintageRetro } from "../src/lib/productMeta";
+import { META_MAX, retroDecadeFacets, retroHub, retroTeamDecadeFacets, retroTeamFacets } from "../src/lib/extraHubs";
 import { gearTitle, jerseyTitle, ticketTitle, TITLE_MAX, jerseyDescription } from "../src/lib/seoMeta";
 
 const showDups = process.argv.includes("--dups");
@@ -60,5 +61,22 @@ console.log(`Camisetas de temporada > 2006 con "Retro" en título/descripción: 
 if (badRetro.length) {
   failed = true;
   console.log(badRetro.slice(0, 10).map((p) => `   ${p.id}: ${jerseyTitle(p, "es")}`).join("\n"));
+}
+
+// Descripciones de los hubs retro: 140-160 caracteres y distintas entre sí.
+for (const locale of LOCALES) {
+  const specs = [
+    ...retroTeamFacets().map((f) => ({ team: f.team })),
+    ...retroDecadeFacets().map((f) => ({ decade: String(f.decade) })),
+    ...retroTeamDecadeFacets().map((f) => ({ team: f.team, decade: String(f.decade) })),
+  ];
+  const ds = specs.map((s) => retroHub(s, locale)!.description);
+  const off = ds.filter((d) => d.length < 140 || d.length > META_MAX);
+  const dups = ds.length - new Set(ds).size;
+  console.log(`[${locale}] hubs retro: ${ds.length} descripciones, ${Math.min(...ds.map((d) => d.length))}-${Math.max(...ds.map((d) => d.length))} caracteres, fuera de 140-${META_MAX}: ${off.length}, repetidas: ${dups}`);
+  if (off.length || dups) {
+    failed = true;
+    for (const d of off.slice(0, 3)) console.log(`   ${d.length}: ${d}`);
+  }
 }
 process.exit(failed ? 1 : 0);

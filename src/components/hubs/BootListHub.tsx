@@ -10,6 +10,7 @@ import { futsalItems, kidsBootItems, lineFacets, lineItems, lineKidsCount } from
 import { EXTRA } from "@/lib/extraHubStrings";
 import { breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
 import { HUB } from "@/lib/hubStrings";
+import { gearHubModified } from "@/lib/seoMeta";
 import { Crumbs, HubHeader, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
 import HubFaq from "@/components/hubs/HubFaq";
 import HubCatalog from "@/components/hubs/HubCatalog";
@@ -75,6 +76,7 @@ export default function BootListHub({ spec, locale }: { spec: BootHubSpec; local
             "@type": "CollectionPage",
             name: r.headline,
             url: `${SITE_URL}/${locale}${r.path}`,
+            ...gearHubModified("botas", r.items.map((i) => i.id)),
             mainEntity: {
               "@type": "ItemList",
               numberOfItems: r.items.length,

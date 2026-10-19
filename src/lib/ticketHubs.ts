@@ -60,7 +60,7 @@ let compFacetCache: ReturnType<typeof ticketFacets> | null = null;
 export const ticketTeamFacets = () => (teamFacetCache ??= ticketFacets((t) => ticketTeams(t.event)));
 export const ticketCompetitionFacets = () => (compFacetCache ??= ticketFacets((t) => [t.competition]));
 
-const byDate = (a: TicketProduct, b: TicketProduct) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`);
+export const byDate = (a: TicketProduct, b: TicketProduct) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`);
 export const ticketTeamItems = (slug: string) => ticketProducts.filter((t) => ticketTeams(t.event).some((n) => slugify(n) === slug)).sort(byDate);
 export const ticketCompetitionItems = (slug: string) => ticketProducts.filter((t) => slugify(t.competition) === slug).sort(byDate);
 

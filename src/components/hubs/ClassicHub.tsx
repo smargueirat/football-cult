@@ -10,6 +10,7 @@ import { hubFacts } from "@/lib/hubFaq";
 import { teamItems, teamName } from "@/lib/hubs";
 import { breadcrumbLd, hubMetadata, SITE_URL } from "@/lib/hubPages";
 import { HUB } from "@/lib/hubStrings";
+import { modifiedLd } from "@/lib/seoMeta";
 import { Crumbs, HubHeader, JsonLd, Section, TeamLinks } from "@/components/hubs/HubParts";
 import HubFaq from "@/components/hubs/HubFaq";
 import HubCatalog from "@/components/hubs/HubCatalog";
@@ -48,6 +49,7 @@ export default function ClassicHub({ spec, locale }: { spec: ClassicSpec; locale
             "@type": "CollectionPage",
             name: r.headline,
             url: `${SITE_URL}/${locale}${r.path}`,
+            ...modifiedLd(r.items.flatMap((it) => it.product.offers)),
             mainEntity: {
               "@type": "ItemList",
               numberOfItems: r.items.length,

@@ -176,8 +176,7 @@ export default function HeroCarousel() {
                 src={getDisplaySrc(slide.photo, 1600)}
                 loading="lazy"
                 decoding="async"
-                alt=""
-                aria-hidden
+                alt={`${slide.eyebrow}: ${slide.title}`}
                 className={`absolute inset-0 h-full w-full ${
                   SECTION_HERO_FIT[i] === "contain" ? "object-contain object-center p-6 sm:p-10" : "object-cover"
                 } ${i === active ? "hero-photo-kenburns" : ""}`}

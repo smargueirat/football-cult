@@ -12,6 +12,7 @@ import { formatOfferMoney, type OfferCurrencyCode } from "@/lib/offerMoney";
 import { countDistinctRetailers } from "@/lib/retailerFamily";
 import { localizeGearModel, localizeGearColour } from "@/lib/gearText";
 import { productCode, productMpn } from "@/lib/offerGtin";
+import { archive, lastChangeDate } from "@/lib/priceArchive";
 import { bootColorKey, COLOR_LABEL_KEY } from "@/lib/colorClassify";
 import { upsizeBootDetailPhoto } from "@/lib/images";
 import { translations } from "@/lib/i18n/translations";
@@ -79,6 +80,12 @@ export const hubFrom = (items: readonly { product: Product }[], locale: HubLocal
 export function gearHubFrom(section: GearSection, ids: readonly string[], locale: HubLocale): string {
   const want = new Set(ids);
   return fromPrice(SECTION_ITEMS[section].filter((i) => want.has(i.id)).flatMap((i) => i.offers), locale) ?? "";
+}
+
+/** `dateModified` de un hub de equipamiento (ver modifiedLd). */
+export function gearHubModified(section: GearSection, ids: readonly string[]) {
+  const want = new Set(ids);
+  return modifiedLd(SECTION_ITEMS[section].filter((i) => want.has(i.id)).flatMap((i) => i.offers));
 }
 
 /** Tiendas distintas con precio vigente (FootStoreES + FootStoreFR = una). */
@@ -301,17 +308,22 @@ function jerseyTitles(locale: HubLocale) {
 /** Nombre canónico de la ficha (sin la marca del sitio): H1 secundario,
  *  JSON-LD `name`, migas. */
 export const jerseyName = (p: Product, locale: HubLocale) => jerseyTitles(locale).get(p.id) ?? jerseyBase(p, locale);
-export const jerseyTitle = (p: Product, locale: HubLocale) => withCode(jerseyName(p, locale), productCode(p.offers));
+export const jerseyTitle = (p: Product, locale: HubLocale) => withCode(jerseyName(p, locale), productCode(p.offers), taken(`camisetas:${locale}`, jerseyTitles(locale)));
 export const jerseyDescription = (p: Product, locale: HubLocale) => describe(jerseyName(p, locale), p.offers, locale, productCode(p.offers));
 
 /** El código del fabricante es una consulta real ("893873 euros", posición
  *  6,8 en Search Console): va en el <title> si cabe en TITLE_MAX; si no, el
  *  nombre manda y el código queda en la descripción y en la ficha. */
-function withCode(name: string, code: string | undefined): string {
+function withCode(name: string, code: string | undefined, used: ReadonlyMap<string, string>): string {
   if (!code || name.toLowerCase().includes(code.toLowerCase())) return withBrand(name);
   const t = `${name} ${code}`;
-  return t.length <= TITLE_MAX ? withBrand(t) : withBrand(name);
+  // Si "nombre + código" es justo el nombre de OTRA ficha (el mismo modelo en dos
+  // fichas sin fundir, una con el código en el texto de la tienda), el código
+  // no se añade: el título tiene que seguir siendo único.
+  return t.length <= TITLE_MAX && !used.has(t.toLowerCase()) ? withBrand(t) : withBrand(name);
 }
+/** Nombres ya asignados en una sección e idioma, en minúsculas (ver withCode). */
+const taken = (key: string, titles: Map<string, string>) => memo(`taken:${key}`, () => new Map([...titles.values()].map((v) => [v.toLowerCase(), v])));
 
 // ---------------------------------------------------------------- equipamiento
 
@@ -458,7 +470,7 @@ function gearTitles(section: GearSection, locale: HubLocale) {
 
 export const gearName = (section: GearSection, item: GearLike, locale: HubLocale) =>
   gearTitles(section, locale).get(item.id) ?? gearBase(section, item, locale);
-export const gearTitle = (section: GearSection, item: GearLike, locale: HubLocale) => withCode(gearName(section, item, locale), gearMpn(item));
+export const gearTitle = (section: GearSection, item: GearLike, locale: HubLocale) => withCode(gearName(section, item, locale), gearMpn(item), taken(`${section}:${locale}`, gearTitles(section, locale)));
 export const gearDescription = (section: GearSection, item: GearLike, locale: HubLocale) =>
   describe(gearName(section, item, locale), item.offers, locale, gearMpn(item));
 
@@ -510,6 +522,27 @@ export function ldImage(url: string | undefined): { url: string; width?: number;
 export function ogImages(url: string | undefined) {
   const img = ldImage(url);
   return img ? [img] : undefined;
+}
+
+/** `{ dateModified }` = el último cambio de precio REAL entre estas ofertas
+ *  (archivo de precios, priceArchive.ts); `{}` si ninguna tiene uno: nunca se
+ *  inventa la fecha. */
+export function modifiedLd(offers: readonly { url: string }[]): { dateModified?: string } {
+  const a = archive();
+  let last = "";
+  for (const o of offers) {
+    const d = lastChangeDate(o.url, a);
+    if (d && d > last) last = d;
+  }
+  return last ? { dateModified: last } : {};
+}
+
+/** Nodo ItemPage con la fecha de modificación de una ficha (`dateModified`
+ *  no es propiedad de Product): apunta al Product por su @id (`url#product`).
+ *  Array vacío si no hay fecha real. */
+export function itemPageLd(url: string, offers: readonly { url: string }[]) {
+  const m = modifiedLd(offers);
+  return m.dateModified ? [{ "@context": "https://schema.org", "@type": "ItemPage", url, ...m, mainEntity: { "@id": `${url}#product` } }] : [];
 }
 
 /** AggregateOffer de UNA moneda. El HTML que ve Google se renderiza con el

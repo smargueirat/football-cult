@@ -119,6 +119,7 @@ export default async function Image({
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={photo}
+                alt=""
                 width={360}
                 height={360}
                 style={{ objectFit: "contain" }}
