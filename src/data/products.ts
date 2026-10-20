@@ -61501,19 +61501,6 @@ const productsData = [
     ],
   },
 {
-    id: "curacao-home-kids",
-    teamKey: "curacao",
-    season: "2026",
-    typeKey: "home",
-    colorHex: "#002B7F",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    ageGroup: "kids",
-    offers: [
-      { store: "eBay", price: 54.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/198373180380?_skw=Cura%C3%A7ao+home+soccer+jersey+kids+youth&hash=item2e2ff683dc%3Ag%3Ap0EAAeSwOftqEHfX&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Curacao Fifa 2026 Home Kit Jersey Blue Wave Kids Size XS-XL 100% Authentic", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/p0EAAeSwOftqEHfX/s-l1600.jpg" },
-    ],
-  },
-{
     id: "dortmund-away-202526-kids",
     teamKey: "dortmund",
     season: "2025/26",
@@ -74532,18 +74519,6 @@ const productsData = [
       { store: "FootStoreES", price: 109.99, shipping: 8.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46014584322&a=3013769&m=65912", title: "Maillot Tercer Inter de Milán 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-ii6653-069-iron-grey-black-tour-yellow-6a9e864addcad-2.jpg&feedId=89032&k=1242a27d2702e2ac81c5b968dc4e56a872bceabe" },
       { store: "Futbol Emotion", price: 109.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Finter-milan-tercera-equipacion-2026-2027-grey", title: "Camiseta Nike Inter Milan Tercera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/336040/750/camiseta-nike-inter-milan-tercera-equipacion-2026-2027-grey-1.jpg" },
       { store: "Futbol Emotion", price: 159.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Finter-milan-tercera-equipacion-authentic-2026-2027-grey", title: "Camiseta Nike Authentic Inter Milan Tercera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/336041/750/camiseta-nike-inter-milan-tercera-equipacion-authentic-2026-2027-grey-1.jpg" },
-    ],
-  },
-{
-    id: "rotherhamunited-away-202526",
-    teamKey: "rotherhamunited",
-    season: "2025/26",
-    typeKey: "away",
-    colorHex: "#DD0031",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay GB", price: 15.28, shipping: 3.99, currency: "GBP", url: "https://www.ebay.co.uk/itm/188343500638?_skw=Rotherham+United+away+soccer+jersey&hash=item2bda25bf5e%3Ag%3A9FwAAeSw9NpqB7DH&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Rotherham United Football Shirt Away S-6XL Soccer Jersey 2025/26 Puma BNWT", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/9FwAAeSw9NpqB7DH/s-l1600.jpg" },
     ],
   },
 {
@@ -92381,18 +92356,6 @@ const productsData = [
     brand: "adidas",
     offers: [
       { store: "FootStoreES", price: 80.5, shipping: 8.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46163858134&a=3013769&m=65912", title: "Maillot Tercero Inter Miami FC 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke6326-blanc-6a7086bff1f07-1.jpg&feedId=89032&k=bbb3af9cbe0cbc352925ae4f0dbad3562c3c1d13" },
-    ],
-  },
-{
-    id: "burnley-retro-202021-away",
-    teamKey: "burnley",
-    season: "2020/21",
-    typeKey: "retro",
-    colorHex: "#6C1D45",
-    colorHexSecondary: "#99D6EA",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/174911320894?_skw=Burnley+FC+away+soccer+jersey&hash=item28b986f33e%3Ag%3APPEAAOSwWv5hKN-9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "BURNLEY 2020/21 AWAY (2XL,XL,L,M) GRAY/BLACK UMBRO SH/SLEEVE SOCCER SHIRT JERSEY", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/PPEAAOSwWv5hKN-9/s-l1600.jpg" },
     ],
   },
 {
