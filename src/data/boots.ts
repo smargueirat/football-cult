@@ -57231,15 +57231,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/k/k/kk1342.webp",
         sizes: ["25", "25.5", "26", "26.5"],
       },
-      {
-        store: "ForumSport",
-        price: 31.73,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249384447&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135189-00-P-X-20260814125636.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDE0NHxpbWFnZS9qcGVnfGFHRTFMMmc1TWk4eE16azFOREk0TnpBME1qVTVNQzl0WldScFlYTmZNVEF3TVRFek5URTRPVjh3TUY5UVgxZ3RNakF5TmpBNE1UUXhNalUyTXpZdWFuQm58NWExNTg0NzVmMDU0M2UyMzc5ZmEyMTkyMzA2ZWFiNTVlZjdhOTk0N2Q0OTEwNTU0ZThjOWY3NjZiOTQwZjIyYw&feedId=58083&k=04330894dc0f52acdedf4bdd226e5d0078377c84",
-        sizes: ["25", "25.5", "26.5", "28.5", "30.5", "32"],
-      },
     ],
   },
   {
@@ -57666,6 +57657,15 @@ const minedBootProductsChunk9: BootProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-enfant-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/k/kk1342.webp",
         sizes: ["27", "28.5", "29", "30.5", "31.5"],
+      },
+      {
+        store: "ForumSport",
+        price: 31.73,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249384447&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135189-00-P-X-20260814125636.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDE0NHxpbWFnZS9qcGVnfGFHRTFMMmc1TWk4eE16azFOREk0TnpBME1qVTVNQzl0WldScFlYTmZNVEF3TVRFek5URTRPVjh3TUY5UVgxZ3RNakF5TmpBNE1UUXhNalUyTXpZdWFuQm58NWExNTg0NzVmMDU0M2UyMzc5ZmEyMTkyMzA2ZWFiNTVlZjdhOTk0N2Q0OTEwNTU0ZThjOWY3NjZiOTQwZjIyYw&feedId=58083&k=04330894dc0f52acdedf4bdd226e5d0078377c84",
+        sizes: ["25", "25.5", "26.5", "28.5", "30.5", "32"],
       },
     ],
   },
@@ -59510,6 +59510,24 @@ const minedBootProductsChunk9: BootProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-234857-7162-allure-7.jpg&feedId=89032&k=d1b51355a5bcf90963d46546b5bb3bd2fd2ed42b",
         sizes: ["24", "25", "26"],
       },
+      {
+        store: "FootStoreFR",
+        price: 28.11,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-7162-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-allure",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-7162-allure-7.webp",
+        sizes: ["24", "25", "26"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 28.57,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234857-7162-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-allure",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-7162-allure-7.webp",
+        sizes: ["27"],
+      },
     ],
   },
   {
@@ -59561,6 +59579,21 @@ const minedBootProductsChunk9: BootProduct[] = [
           { size: "26", price: 32.78, url: "https://www.awin1.com/pclick.php?p=45526323860&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreFR",
+        price: 26.53,
+        priceMax: 28.11,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-black-silver",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-2250-black-silver-1.webp",
+        sizes: ["24", "25", "26"],
+        sizePrices: [
+          { size: "24", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "25", price: 28.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "26", price: 28.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-black-silver" },
+        ],
+      },
     ],
   },
   {
@@ -59597,30 +59630,6 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-hummel-botas-de-futbol-para-bebes-hummel-top-star-2-0-vc-f-g-ninos-234857-3638",
-    brand: "Hummel",
-    model: "Botas de fútbol para bebés Hummel Top Star 2.0 VC F.G",
-    groundType: "",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 28.58,
-        priceMax: 31.06,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45287096840&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-234857-3638-pink-a-boo-7.jpg&feedId=89032&k=5141fcda285dc492994a0582b9e0b50801173287",
-        sizes: ["24", "25", "26"],
-        sizePrices: [
-          { size: "24", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865344&a=3013769&m=65912" },
-          { size: "25", price: 28.58, url: "https://www.awin1.com/pclick.php?p=45287096840&a=3013769&m=65912" },
-          { size: "26", price: 29.05, url: "https://www.awin1.com/pclick.php?p=45204865345&a=3013769&m=65912" },
-        ],
-      },
-    ],
-  },
-  {
     id: "footstorees-hummel-botas-de-futbol-para-bebes-hummel-top-star-2-0-vc-fg-fg-ninos",
     brand: "Hummel",
     model: "Botas de fútbol para bebés Hummel Top Star 2.0 VC FG",
@@ -59634,15 +59643,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45195666194&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-234857-2001-black-4.jpg&feedId=89032&k=c3d08c4e3b5bde004e65e8600d57faf7a872877a",
-        sizes: ["24", "25", "26"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 26.53,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2001-chaussures-de-football-bebe-hummel-top-star-2-0-vc-fg-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-2001-black-4.webp",
         sizes: ["24", "25", "26"],
       },
     ],
@@ -59680,42 +59680,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44301920679&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-216568-6429-june-bug-pink-flambe-69c3b9df71195-1.jpg&feedId=89032&k=4fb84f559b372ecd3ffcb852fbf033e2ecb5360a",
         sizes: ["26"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 16.47,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-bebe-hummel-top-star-fg-june-bug-pink-flambe",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-6429-june-bug-pink-flambe-69c3b9df71195-1.webp",
-        sizes: ["26", "27"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 16.77,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-6429-june-bug-pink-flambe-69c3b9df71195-1.webp",
-        sizes: ["35", "36", "37"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-hummel-botas-de-futbol-para-bebes-hummel-top-star-fg-fg-ninos-216568-3916",
-    brand: "Hummel",
-    model: "Botas de fútbol para bebés Hummel Top Star FG",
-    groundType: "FG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 20.04,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46004648343&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.jpg&feedId=89032&k=a597f02728f05849090b71281ba29ca0dce8bac1",
-        sizes: ["25", "26"],
       },
     ],
   },
@@ -59887,15 +59851,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45195666196&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-234866-2001-black-4.jpg&feedId=89032&k=4d0030ce85c68c0f58efec875e4da6922732a7b5",
-        sizes: ["24", "25", "26"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 26.53,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2001-chaussures-de-football-bebe-hummel-top-star-vc-2-0-ic-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-2001-black-4.webp",
         sizes: ["24", "25", "26"],
       },
     ],
@@ -60259,13 +60214,20 @@ const minedBootProductsChunk9: BootProduct[] = [
         priceMax: 28.11,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-black-silver",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-2250-black-silver-1.webp",
-        sizes: ["24", "25", "26"],
+        sizes: ["27", "29", "30", "31", "32", "33", "34", "35", "37", "38"],
         sizePrices: [
-          { size: "24", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-black-silver" },
-          { size: "25", price: 28.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-black-silver" },
-          { size: "26", price: 28.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "27", price: 28.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "29", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "30", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "31", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "32", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "33", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "34", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "35", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "37", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "38", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
         ],
       },
     ],
@@ -60933,9 +60895,9 @@ const minedBootProductsChunk9: BootProduct[] = [
         price: 26.53,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2001-chaussures-de-football-enfant-hummel-top-star-vc-2-0-ic-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-2001-black-5.webp",
-        sizes: ["27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2001-chaussures-de-football-bebe-hummel-top-star-vc-2-0-ic-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-2001-black-4.webp",
+        sizes: ["24", "25", "26"],
       },
     ],
   },
@@ -61152,9 +61114,6 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "footstorees-hummel-botas-de-futbol-para-ninos-hummel-top-star-vc-2-0-turf-ninos-234863-9639",
     brand: "Hummel",
@@ -61208,6 +61167,9 @@ const minedBootProductsChunk10: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "footstorees-jako-botas-de-futbol-jako-opura-team-fg-ag-fg-ag",
     brand: "Jako",
@@ -64598,15 +64560,6 @@ const minedBootProductsChunk10: BootProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-scjs2504inv-bleu-2.jpg&feedId=89032&k=b03b3634c64b30cc4167cc658644d1417daa453b",
         sizes: ["24", "25", "27"],
       },
-      {
-        store: "FootStoreFR",
-        price: 51.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fscjs2504inv-chaussures-de-football-bebe-joma-super-copa-in-bleu",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/o/joma-scjs2504inv-bleu-1.jpg",
-        sizes: ["24", "25", "27"],
-      },
     ],
   },
   {
@@ -64882,9 +64835,9 @@ const minedBootProductsChunk10: BootProduct[] = [
         price: 51.0,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fscjs2504inv-chaussures-de-football-enfant-joma-super-copa-in-bleu",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fscjs2504inv-chaussures-de-football-bebe-joma-super-copa-in-bleu",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/o/joma-scjs2504inv-bleu-1.jpg",
-        sizes: ["28", "29", "30", "31", "32"],
+        sizes: ["24", "25", "27"],
       },
     ],
   },
@@ -66369,9 +66322,6 @@ const minedBootProductsChunk10: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk11: BootProduct[] = [
   {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-a-iii-japan-fg-ag-fg-ag",
     brand: "Mizuno",
@@ -66429,6 +66379,9 @@ const minedBootProductsChunk11: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk11: BootProduct[] = [
   {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-alpha-2-japan-fg-fg",
     brand: "Mizuno",
@@ -72299,9 +72252,6 @@ const minedBootProductsChunk11: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk12: BootProduct[] = [
   {
     id: "footstorees-mizuno-zapatillas-de-futsal-mizuno-morelia-sala-pro-in-ic-ic",
     brand: "Mizuno",
@@ -72346,6 +72296,9 @@ const minedBootProductsChunk12: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk12: BootProduct[] = [
   {
     id: "footstorees-new-balance-botas-de-futbol-new-balance-furon-elite-v8-mg-mg",
     brand: "New Balance",
@@ -78895,9 +78848,6 @@ const minedBootProductsChunk12: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk13: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-vapor-16-club-tf-tf-fq8446-446",
     brand: "Nike",
@@ -78955,6 +78905,9 @@ const minedBootProductsChunk13: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk13: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-vapor-16-elite-ag",
     brand: "Nike",
@@ -82109,15 +82062,6 @@ const minedBootProductsChunk13: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46339518055&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-hq2278-100-white-dusty-cactus-white-6ab2a075aaf49-1.jpg&feedId=89032&k=f6009c0f6d61bd4b20e413e0923305587bfd3f65",
         sizes: ["42", "42.5", "43", "44"],
-      },
-      {
-        store: "Pro:Direct ES",
-        price: 95.0,
-        shipping: 3.62,
-        currency: "EUR",
-        url: "https://www.prodirectsport.es/products/nike-phantom-6-high-academy-para-terreno-firme-mixto-blanco-dusty-cactus-blanco-botas-para-adultos-4005948",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4005948_main.jpg?v=1792442982",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
       },
     ],
   },
@@ -85655,9 +85599,6 @@ const minedBootProductsChunk13: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk14: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-gx-academy-tf-tf-dd9477-600",
     brand: "Nike",
@@ -85710,6 +85651,9 @@ const minedBootProductsChunk14: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk14: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-gx-ii-academy-fg-mg-fg-fd6723-100",
     brand: "Nike",
@@ -91916,9 +91860,6 @@ const minedBootProductsChunk14: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk15: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-zoom-superfly-10-pro-fg-fg",
     brand: "Nike",
@@ -92004,6 +91945,9 @@ const minedBootProductsChunk15: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk15: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-zoom-superfly-10-sg-sg",
     brand: "Nike",
@@ -92511,6 +92455,15 @@ const minedBootProductsChunk15: BootProduct[] = [
           { size: "27", price: 35.76, url: "https://www.awin1.com/pclick.php?p=46114046078&a=3013769&m=65912" },
           { size: "27.5", price: 35.76, url: "https://www.awin1.com/pclick.php?p=46114046079&a=3013769&m=65912" },
         ],
+      },
+      {
+        store: "FootStoreFR",
+        price: 32.37,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-001-chaussures-de-football-bebe-garcon-nike-mercurial-vapor-17-club-ps-mg-noir-noir-illusion-green",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-001-noir-noir-illusion-green-6aa01613eb40d-1.webp",
+        sizes: ["25", "27", "27.5"],
       },
     ],
   },
@@ -97234,9 +97187,9 @@ const minedBootProductsChunk15: BootProduct[] = [
         price: 32.37,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-001-chaussures-de-football-bebe-garcon-nike-mercurial-vapor-17-club-ps-mg-noir-noir-illusion-green",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-001-noir-noir-illusion-green-6aa01613eb40d-1.webp",
-        sizes: ["25", "27", "27.5"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-001-chaussures-de-football-enfant-nike-mercurial-vapor-17-club-ps-mg-noir-noir-illusion-green",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-001-noir-noir-illusion-green-6aa0162048ba3-1.webp",
+        sizes: ["28", "28.5", "29.5", "31", "31.5"],
       },
     ],
   },
@@ -97762,9 +97715,6 @@ const minedBootProductsChunk15: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk16: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-phantom-6-academy-ic-ic-ninos",
     brand: "Nike",
@@ -97831,6 +97781,9 @@ const minedBootProductsChunk16: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk16: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-phantom-6-academy-mg-mg-ninos",
     brand: "Nike",
@@ -101151,15 +101104,6 @@ const minedBootProductsChunk16: BootProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fj2603-300-phsrh000.jpg&feedId=89032&k=863db71112070e751fd95c2742c18569ed152eae",
         sizes: ["35"],
       },
-      {
-        store: "FootStoreFR",
-        price: 41.66,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj2603-300-chaussures-de-football-enfant-nike-phantom-luna-2-academy-mg-mint-red-off-noir",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fj2603-300-phsrh000.webp",
-        sizes: ["35"],
-      },
     ],
   },
   {
@@ -101183,9 +101127,9 @@ const minedBootProductsChunk16: BootProduct[] = [
         price: 41.66,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj2603-300-chaussures-de-football-enfant-nike-phantom-luna-2-academy-mg-mint-atomic-red",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj2603-300-chaussures-de-football-enfant-nike-phantom-luna-2-academy-mg-mint-red-off-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fj2603-300-phsrh000.webp",
-        sizes: ["36", "37.5", "38", "38.5"],
+        sizes: ["35"],
       },
     ],
   },
@@ -103275,9 +103219,6 @@ const minedBootProductsChunk16: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk17: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-zoom-superfly-10-academy-kylian-mbappe-ag-ag-ninos-io9815-200",
     brand: "Nike",
@@ -103355,6 +103296,9 @@ const minedBootProductsChunk17: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk17: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-zoom-superfly-9-academy-mds-ag-ag-ninos",
     brand: "Nike",
@@ -108802,9 +108746,6 @@ const minedBootProductsChunk17: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk18: BootProduct[] = [
   {
     id: "footstorees-under-armour-botas-de-futbol-para-ninos-under-armour-shadow-club-4-fg-fg-ninos",
     brand: "Under Armour",
@@ -108880,6 +108821,9 @@ const minedBootProductsChunk18: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk18: BootProduct[] = [
   {
     id: "footstorees-under-armour-botas-de-futbol-under-armour-magnetico-elite-5-fg-fg-6000544-825",
     brand: "Under Armour",
@@ -110554,50 +110498,78 @@ const minedBootProductsChunk18: BootProduct[] = [
     ],
   },
   {
-    id: "footstorefr-hummel-hummel-top-star-2-0-vc-f-g-ninos-234857-2250",
+    id: "footstorefr-hummel-hummel-top-star-2-0-vc-fg-fg-ninos",
     brand: "Hummel",
-    model: "Hummel Top Star 2.0 VC F.G",
-    groundType: "",
+    model: "Hummel Top Star 2.0 VC FG",
+    groundType: "FG",
     ageGroup: "kids",
     offers: [
       {
         store: "FootStoreFR",
         price: 26.53,
-        priceMax: 28.11,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-2250-black-silver-1.webp",
-        sizes: ["27", "29", "30", "31", "32", "33", "34", "35", "37", "38"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2001-chaussures-de-football-enfant-hummel-top-star-2-0-vc-fg-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-2001-black-5.webp",
+        sizes: ["27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 26.97,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234857-2001-chaussures-de-football-enfant-hummel-top-star-2-0-vc-fg-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-2001-black-5.webp",
+        sizes: ["30"],
+      },
+    ],
+  },
+  {
+    id: "footstorefr-hummel-hummel-top-star-fg-fg-ninos",
+    brand: "Hummel",
+    model: "Hummel Top Star FG",
+    groundType: "FG",
+    ageGroup: "kids",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 16.18,
+        priceMax: 16.47,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-6429-june-bug-pink-flambe-69c3b9df71195-1.webp",
+        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
         sizePrices: [
-          { size: "27", price: 28.11, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
-          { size: "29", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
-          { size: "30", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
-          { size: "31", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
-          { size: "32", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
-          { size: "33", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
-          { size: "34", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
-          { size: "35", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
-          { size: "37", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
-          { size: "38", price: 26.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2250-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-black-silver" },
+          { size: "28", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
+          { size: "29", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
+          { size: "30", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
+          { size: "31", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
+          { size: "32", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
+          { size: "33", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
+          { size: "34", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
+          { size: "35", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
+          { size: "36", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
+          { size: "37", price: 16.18, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
+          { size: "38", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
         ],
       },
     ],
   },
   {
-    id: "footstorefr-hummel-hummel-top-star-2-0-vc-f-g-ninos-234857-7162",
+    id: "footstorefr-hummel-hummel-top-star-vc-2-0-ic-ic-ninos",
     brand: "Hummel",
-    model: "Hummel Top Star 2.0 VC F.G",
-    groundType: "",
+    model: "Hummel Top Star VC 2.0 IC",
+    groundType: "IC",
     ageGroup: "kids",
     offers: [
       {
         store: "FootStoreFR",
-        price: 28.11,
+        price: 26.53,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-7162-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-allure",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-7162-allure-7.webp",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2001-chaussures-de-football-enfant-hummel-top-star-vc-2-0-ic-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-2001-black-5.webp",
         sizes: ["27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
       },
     ],
@@ -111070,6 +111042,24 @@ const minedBootProductsChunk18: BootProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsups2441fg-chaussures-de-football-joma-super-copa-2441-fg-negro",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_sups2441fg_0.webp",
         sizes: ["42"],
+      },
+    ],
+  },
+  {
+    id: "footstorefr-joma-joma-super-copa-in-ic-ninos",
+    brand: "Joma",
+    model: "Joma Super Copa IN",
+    groundType: "IC",
+    ageGroup: "kids",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 51.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fscjs2504inv-chaussures-de-football-enfant-joma-super-copa-in-bleu",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/o/joma-scjs2504inv-bleu-1.jpg",
+        sizes: ["28", "29", "30", "31", "32"],
       },
     ],
   },
@@ -112480,24 +112470,6 @@ const minedBootProductsChunk18: BootProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-nike-mercurial-vapor-17-club-ps-mg-mg-ninos",
-    brand: "Nike",
-    model: "Nike Mercurial Vapor 17 Club PS MG",
-    groundType: "MG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 32.37,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-001-chaussures-de-football-enfant-nike-mercurial-vapor-17-club-ps-mg-noir-noir-illusion-green",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-001-noir-noir-illusion-green-6aa0162048ba3-1.webp",
-        sizes: ["28", "28.5", "29.5", "31", "31.5"],
-      },
-    ],
-  },
-  {
     id: "footstorefr-nike-nike-mercurial-vapor-17-elite-sg-sg",
     brand: "Nike",
     model: "Nike Mercurial Vapor 17 Elite SG",
@@ -112552,9 +112524,6 @@ const minedBootProductsChunk18: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk19: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-mercurial-vapor-17-pro-tf-tf",
     brand: "Nike",
@@ -112581,6 +112550,9 @@ const minedBootProductsChunk19: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk19: BootProduct[] = [
   {
     id: "footstorefr-nike-nike-phantom-6-academy-tf-tf",
     brand: "Nike",
@@ -112980,6 +112952,24 @@ const minedBootProductsChunk19: BootProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdd9473-300-chaussures-de-football-nike-phantom-gx-academy-fg-mg-peak-ready-pack-hyper-turq-black-fuchsia-dream-white-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dd9473-300-phsrh000_s23.webp",
         sizes: ["45"],
+      },
+    ],
+  },
+  {
+    id: "footstorefr-nike-nike-phantom-luna-2-academy-mg-mg-ninos",
+    brand: "Nike",
+    model: "Nike Phantom Luna 2 Academy MG",
+    groundType: "MG",
+    ageGroup: "kids",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 41.66,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj2603-300-chaussures-de-football-enfant-nike-phantom-luna-2-academy-mg-mint-atomic-red",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fj2603-300-phsrh000.webp",
+        sizes: ["36", "37.5", "38", "38.5"],
       },
     ],
   },
@@ -120565,6 +120555,15 @@ const minedBootProductsChunk21: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46196971521&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126986-00-P-X-20260922093139.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDQ1NHxpbWFnZS9qcGVnfGFESmtMMmd3TVM4eE5EQXpNalkxTWprMU9UYzNOQzl0WldScFlYTmZNVEF3TVRFeU5qazRObDh3TUY5UVgxZ3RNakF5TmpBNU1qSXdPVE14TXprdWFuQm58YWIzNTExYjM3ODM4YzlhMWY5MjY2NzM5OGUzNGRlMzJhYzMzNTQ1ZDg2NzUyMmM3ODExNTUwMWQ5ZmE2YTc0NA&feedId=58083&k=17e74c6f4997b5d95502ff3be0ae4f5d421e663d",
         sizes: ["36.5", "37.5", "38", "38.5", "44.5", "45.5", "47"],
+      },
+      {
+        store: "Pro:Direct ES",
+        price: 95.0,
+        shipping: 3.62,
+        currency: "EUR",
+        url: "https://www.prodirectsport.es/products/nike-phantom-6-high-academy-para-terreno-firme-mixto-blanco-dusty-cactus-blanco-botas-para-adultos-4005948",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4005948_main.jpg?v=1792442982",
+        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
       },
     ],
   },
@@ -139277,6 +139276,40 @@ const minedBootProductsChunk27: BootProduct[] = [
     ],
   },
   {
+    id: "futbolemotion-nike-nike-tiempo-maestro-elite-sg-pro-sg",
+    brand: "Nike",
+    model: "Nike Tiempo Maestro Elite SG-Pro",
+    groundType: "SG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 220.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-maestro-elite-sg-pro-black-illusion-green-black",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/336719/750/bota-nike-tiempo-maestro-elite-sg-pro-black-illusion-green-black-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-tiempo-maestro-elite-sg-pro-sg-2",
+    brand: "Nike",
+    model: "Nike Tiempo Maestro Elite SG-Pro",
+    groundType: "SG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 194.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-maestro-elite-sg-pro-white-blur-brt-crimson",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/336718/750/bota-nike-tiempo-maestro-elite-sg-pro-white-blur-brt-crimson-1.jpg",
+        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43"],
+      },
+    ],
+  },
+  {
     id: "futbolemotion-nike-nike-tiempo-react-gato-ic",
     brand: "Nike",
     model: "Nike Tiempo React Gato",
@@ -141385,6 +141418,9 @@ const minedBootProductsChunk27: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk28: BootProduct[] = [
   {
     id: "futbolemotion-puma-puma-ultra-6-match-it-mid-nino-ic-ninos",
     brand: "Puma",
@@ -141421,9 +141457,6 @@ const minedBootProductsChunk27: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk28: BootProduct[] = [
   {
     id: "futbolemotion-puma-puma-ultra-6-match-mg-nino-mg-ninos",
     brand: "Puma",
@@ -144561,6 +144594,9 @@ const minedBootProductsChunk28: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk29: BootProduct[] = [
   {
     id: "pro-direct-es-diadora-diadora-b-elite-tech-fg-fg-2",
     brand: "Diadora",
@@ -144595,9 +144631,6 @@ const minedBootProductsChunk28: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk29: BootProduct[] = [
   {
     id: "pro-direct-es-diadora-diadora-b-elite-tech-fg-fg-4",
     brand: "Diadora",
@@ -147625,6 +147658,9 @@ const minedBootProductsChunk29: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk30: BootProduct[] = [
   {
     id: "pro-direct-es-nike-nike-air-zoom-mercurial-vapor-xvi-pro-fg-fg",
     brand: "Nike",
@@ -147659,9 +147695,6 @@ const minedBootProductsChunk29: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk30: BootProduct[] = [
   {
     id: "pro-direct-es-nike-nike-air-zoom-mercurial-vapor-xvii-elite-ag-pro-ag",
     brand: "Nike",
@@ -150688,6 +150721,9 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk31: BootProduct[] = [
   {
     id: "pro-direct-es-puma-puma-future-ultimate-sg-sg",
     brand: "Puma",
@@ -150722,9 +150758,6 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk31: BootProduct[] = [
   {
     id: "pro-direct-es-puma-puma-king-20-match-fg-ag-fg-ag",
     brand: "Puma",
@@ -154095,6 +154128,9 @@ const minedBootProductsChunk31: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk32: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-copa-pure-2-league-fg-fg",
     brand: "Adidas",
@@ -154209,9 +154245,6 @@ const minedBootProductsChunk31: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk32: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-copa-pure-3-fg-fg",
     brand: "Adidas",
@@ -164531,6 +164564,9 @@ const minedBootProductsChunk32: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk33: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-para-ninos-adidas-predator-elite-ll-fg-fg-ninos",
     brand: "Adidas",
@@ -164644,9 +164680,6 @@ const minedBootProductsChunk32: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk33: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-para-ninos-adidas-predator-league-fg-fg-ninos-ig7747",
     brand: "Adidas",
@@ -165379,25 +165412,17 @@ const minedBootProductsChunk33: BootProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 29.05,
+        price: 28.58,
         priceMax: 31.06,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45204865362&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45287096840&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-234857-3638-pink-a-boo-7.jpg&feedId=89032&k=5141fcda285dc492994a0582b9e0b50801173287",
-        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
+        sizes: ["24", "25", "26"],
         sizePrices: [
-          { size: "28", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865360&a=3013769&m=65912" },
-          { size: "29", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865361&a=3013769&m=65912" },
-          { size: "30", price: 29.05, url: "https://www.awin1.com/pclick.php?p=45204865362&a=3013769&m=65912" },
-          { size: "31", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865363&a=3013769&m=65912" },
-          { size: "32", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865364&a=3013769&m=65912" },
-          { size: "33", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865365&a=3013769&m=65912" },
-          { size: "34", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865366&a=3013769&m=65912" },
-          { size: "35", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45195667636&a=3013769&m=65912" },
-          { size: "36", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45195667637&a=3013769&m=65912" },
-          { size: "37", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45195667638&a=3013769&m=65912" },
-          { size: "38", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865367&a=3013769&m=65912" },
+          { size: "24", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865344&a=3013769&m=65912" },
+          { size: "25", price: 28.58, url: "https://www.awin1.com/pclick.php?p=45287096840&a=3013769&m=65912" },
+          { size: "26", price: 29.05, url: "https://www.awin1.com/pclick.php?p=45204865345&a=3013769&m=65912" },
         ],
       },
       {
@@ -165438,23 +165463,12 @@ const minedBootProductsChunk33: BootProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 18.64,
-        priceMax: 20.04,
+        price: 20.04,
         shipping: 8.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45195663800&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46004648343&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.jpg&feedId=89032&k=a597f02728f05849090b71281ba29ca0dce8bac1",
-        sizes: ["30", "32", "33", "34", "35", "36", "37", "38"],
-        sizePrices: [
-          { size: "30", price: 20.04, url: "https://www.awin1.com/pclick.php?p=46277689315&a=3013769&m=65912" },
-          { size: "32", price: 20.04, url: "https://www.awin1.com/pclick.php?p=46339513498&a=3013769&m=65912" },
-          { size: "33", price: 20.04, url: "https://www.awin1.com/pclick.php?p=45195663798&a=3013769&m=65912" },
-          { size: "34", price: 20.04, url: "https://www.awin1.com/pclick.php?p=45195663799&a=3013769&m=65912" },
-          { size: "35", price: 18.64, url: "https://www.awin1.com/pclick.php?p=45195663800&a=3013769&m=65912" },
-          { size: "36", price: 18.64, url: "https://www.awin1.com/pclick.php?p=45195663801&a=3013769&m=65912" },
-          { size: "37", price: 20.04, url: "https://www.awin1.com/pclick.php?p=45195663802&a=3013769&m=65912" },
-          { size: "38", price: 20.04, url: "https://www.awin1.com/pclick.php?p=44301920706&a=3013769&m=65912" },
-        ],
+        sizes: ["25", "26"],
       },
       {
         store: "SportIsGoodFR",
@@ -165703,6 +165717,29 @@ const minedBootProductsChunk33: BootProduct[] = [
         sizes: ["29", "30", "33", "36"],
       },
       {
+        store: "FootStoreES",
+        price: 29.05,
+        priceMax: 31.06,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45204865362&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-234857-3638-pink-a-boo-7.jpg&feedId=89032&k=5141fcda285dc492994a0582b9e0b50801173287",
+        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
+        sizePrices: [
+          { size: "28", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865360&a=3013769&m=65912" },
+          { size: "29", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865361&a=3013769&m=65912" },
+          { size: "30", price: 29.05, url: "https://www.awin1.com/pclick.php?p=45204865362&a=3013769&m=65912" },
+          { size: "31", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865363&a=3013769&m=65912" },
+          { size: "32", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865364&a=3013769&m=65912" },
+          { size: "33", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865365&a=3013769&m=65912" },
+          { size: "34", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865366&a=3013769&m=65912" },
+          { size: "35", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45195667636&a=3013769&m=65912" },
+          { size: "36", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45195667637&a=3013769&m=65912" },
+          { size: "37", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45195667638&a=3013769&m=65912" },
+          { size: "38", price: 31.06, url: "https://www.awin1.com/pclick.php?p=45204865367&a=3013769&m=65912" },
+        ],
+      },
+      {
         store: "FootStoreFR",
         price: 26.53,
         shipping: 6.99,
@@ -165767,18 +165804,9 @@ const minedBootProductsChunk33: BootProduct[] = [
         price: 28.11,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-7162-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-allure",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-7162-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-allure",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-7162-allure-7.webp",
-        sizes: ["24", "25", "26"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 28.57,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234857-7162-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-allure",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-7162-allure-7.webp",
-        sizes: ["27"],
+        sizes: ["27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
       },
     ],
   },
@@ -165827,18 +165855,9 @@ const minedBootProductsChunk33: BootProduct[] = [
         price: 26.53,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2001-chaussures-de-football-enfant-hummel-top-star-2-0-vc-fg-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-2001-black-5.webp",
-        sizes: ["27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 26.97,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234857-2001-chaussures-de-football-enfant-hummel-top-star-2-0-vc-fg-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-2001-black-5.webp",
-        sizes: ["30"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-2001-chaussures-de-football-bebe-hummel-top-star-2-0-vc-fg-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-2001-black-4.webp",
+        sizes: ["24", "25", "26"],
       },
     ],
   },
@@ -165883,26 +165902,21 @@ const minedBootProductsChunk33: BootProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.18,
-        priceMax: 16.47,
+        price: 16.47,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-bebe-hummel-top-star-fg-june-bug-pink-flambe",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-6429-june-bug-pink-flambe-69c3b9df71195-1.webp",
-        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
-        sizePrices: [
-          { size: "28", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
-          { size: "29", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
-          { size: "30", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
-          { size: "31", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
-          { size: "32", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
-          { size: "33", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
-          { size: "34", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
-          { size: "35", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
-          { size: "36", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
-          { size: "37", price: 16.18, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
-          { size: "38", price: 16.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe" },
-        ],
+        sizes: ["26", "27"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 16.77,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F216568-6429-chaussures-de-football-enfant-hummel-top-star-fg-june-bug-pink-flambe",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-6429-june-bug-pink-flambe-69c3b9df71195-1.webp",
+        sizes: ["35", "36", "37"],
       },
     ],
   },
@@ -165921,6 +165935,26 @@ const minedBootProductsChunk33: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45959606251&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.jpg&feedId=89044&k=a597f02728f05849090b71281ba29ca0dce8bac1",
         sizes: ["35", "36"],
+      },
+      {
+        store: "FootStoreES",
+        price: 18.64,
+        priceMax: 20.04,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45195663800&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.jpg&feedId=89032&k=a597f02728f05849090b71281ba29ca0dce8bac1",
+        sizes: ["30", "32", "33", "34", "35", "36", "37", "38"],
+        sizePrices: [
+          { size: "30", price: 20.04, url: "https://www.awin1.com/pclick.php?p=46277689315&a=3013769&m=65912" },
+          { size: "32", price: 20.04, url: "https://www.awin1.com/pclick.php?p=46339513498&a=3013769&m=65912" },
+          { size: "33", price: 20.04, url: "https://www.awin1.com/pclick.php?p=45195663798&a=3013769&m=65912" },
+          { size: "34", price: 20.04, url: "https://www.awin1.com/pclick.php?p=45195663799&a=3013769&m=65912" },
+          { size: "35", price: 18.64, url: "https://www.awin1.com/pclick.php?p=45195663800&a=3013769&m=65912" },
+          { size: "36", price: 18.64, url: "https://www.awin1.com/pclick.php?p=45195663801&a=3013769&m=65912" },
+          { size: "37", price: 20.04, url: "https://www.awin1.com/pclick.php?p=45195663802&a=3013769&m=65912" },
+          { size: "38", price: 20.04, url: "https://www.awin1.com/pclick.php?p=44301920706&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -174576,6 +174610,9 @@ const minedBootProductsChunk33: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk34: BootProduct[] = [
   {
     id: "sportisgoodes-puma-botas-de-futbol-puma-future-pro-fg-ag-fg-ag-108712-01",
     brand: "Puma",
@@ -174669,9 +174706,6 @@ const minedBootProductsChunk33: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk34: BootProduct[] = [
   {
     id: "sportisgoodes-puma-botas-de-futbol-puma-future-ultimate-fg-ag-fg-ag-107916-02",
     brand: "Puma",

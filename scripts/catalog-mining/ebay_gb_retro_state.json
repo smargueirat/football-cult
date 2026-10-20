@@ -717,6 +717,7 @@
 "cagliari-retro-2005-away",
 "cagliari-retro-2023-away",
 "cagliari-retro-202324-away",
+"cagliari-retro-202425-away",
 "cagliari-retro-202425-home",
 "cambodia-retro-2018-away",
 "cambodia-retro-202425-home",
@@ -868,15 +869,18 @@
 "chequia-retro-201415-home",
 "chequia-retro-201516-home",
 "chequia-retro-2016-home",
+"chequia-retro-201617-home",
 "chequia-retro-201718-home",
 "chequia-retro-2018-away",
 "chequia-retro-2018-home",
+"chequia-retro-201819-home",
 "chequia-retro-202021-away",
 "chequia-retro-202021-home",
 "chequia-retro-2021-away",
 "chequia-retro-202122-away",
 "chequia-retro-2022-away",
 "chequia-retro-2022-home",
+"chequia-retro-202223-away",
 "chequia-retro-2024-away",
 "chile-retro-1994-home",
 "chile-retro-1996-home",
@@ -1359,7 +1363,9 @@
 "eslovaquia-retro-202223-away",
 "eslovenia-retro-2002-away",
 "eslovenia-retro-200203-away",
+"eslovenia-retro-200809-away",
 "eslovenia-retro-201011-away",
+"eslovenia-retro-201011-home",
 "eslovenia-retro-201617-away",
 "eslovenia-retro-201617-home",
 "eslovenia-retro-2018-away",
@@ -1727,6 +1733,7 @@
 "gales-retro-2024-home",
 "gales-retro-202425-home",
 "gales-retro-202426-home",
+"gambia-retro-201920-away",
 "genoa-retro-199900-away",
 "genoa-retro-199900-home",
 "genoa-retro-200405-away",
@@ -1825,6 +1832,7 @@
 "guatemala-retro-201920-home",
 "guatemala-retro-2021-away",
 "guatemala-retro-202324-home",
+"guatemala-retro-202425-away",
 "guinea-retro-2022-away",
 "guinea-retro-2022-third",
 "hamburg-retro-1982-home",
@@ -1865,6 +1873,7 @@
 "hellasverona-retro-2020-third",
 "hellasverona-retro-202021-home",
 "hellasverona-retro-202021-third",
+"hellasverona-retro-202425-away",
 "hertaberlin-retro-200708-home",
 "hertaberlin-retro-201617-away",
 "hertaberlin-retro-201819-away",
@@ -2103,8 +2112,10 @@
 "ipswichtown-retro-2015-home",
 "ipswichtown-retro-2017-away",
 "ipswichtown-retro-201718-home",
+"ipswichtown-retro-201920-home",
 "ipswichtown-retro-202324-home",
 "ipswichtown-retro-2024-away",
+"ipswichtown-retro-202425-home",
 "iran-retro-1998-away",
 "iran-retro-201011-away",
 "iran-retro-201011-home",
@@ -2689,6 +2700,7 @@
 "mancity-retro-202324-third",
 "mancity-retro-2024-away",
 "mancity-retro-2024-home",
+"manisaspor-retro-201617-home",
 "manutd-retro-1984-away",
 "manutd-retro-198688-third",
 "manutd-retro-1988-away",
@@ -3126,6 +3138,7 @@
 "orlandocity-retro-202425-away",
 "orlandocity-retro-202425-home",
 "orlandopirates-retro-2008-home",
+"orlandopirates-retro-201920-away",
 "orlandopirates-retro-202324-away",
 "osasuna-retro-1998-home",
 "osasuna-retro-199899-home",
@@ -3466,6 +3479,8 @@
 "pumasunam-retro-201011-third",
 "pumasunam-retro-201718-away",
 "pumasunam-retro-201920-home",
+"pumasunam-retro-202223-away",
+"pumasunam-retro-202223-home",
 "pumasunam-retro-202223-third",
 "pumasunam-retro-202324-away",
 "pumasunam-retro-202324-home",
@@ -3730,6 +3745,7 @@
 "romania-retro-1994-away",
 "romania-retro-1994-home",
 "romania-retro-2000-home",
+"romania-retro-201617-home",
 "romania-retro-2018-home",
 "romania-retro-2023-home",
 "romania-retro-202324-home",
@@ -3802,9 +3818,11 @@
 "saopaulo-retro-2024-away",
 "saopaulo-retro-2024-home",
 "sassuolo-retro-2017-home",
+"sassuolo-retro-201718-home",
 "sassuolo-retro-201819-home",
 "sassuolo-retro-2021-away",
 "sassuolo-retro-2021-home",
+"sassuolo-retro-202122-away",
 "schalke04-retro-1978-home",
 "schalke04-retro-1994-home",
 "schalke04-retro-1998-home",
@@ -3812,6 +3830,8 @@
 "schalke04-retro-2005-away",
 "schalke04-retro-2008-home",
 "schalke04-retro-201011-home",
+"schalke04-retro-201011-third",
+"schalke04-retro-201213-home",
 "schalke04-retro-2013-away",
 "schalke04-retro-201314-third",
 "schalke04-retro-2015-third",
@@ -3819,10 +3839,13 @@
 "schalke04-retro-201718-third",
 "schalke04-retro-201819-third",
 "schalke04-retro-201920-away",
+"schalke04-retro-202021-away",
 "schalke04-retro-202021-third",
 "schalke04-retro-202122-third",
 "schalke04-retro-2022-away",
 "schalke04-retro-2022-third",
+"schalke04-retro-202223-away",
+"schalke04-retro-202223-third",
 "schalke04-retro-202425-away",
 "seattlesounders-retro-2011-away",
 "seattlesounders-retro-2011-home",
@@ -3952,6 +3975,7 @@
 "sportingkc-retro-201415-away",
 "sportingkc-retro-201516-third",
 "sportingkc-retro-2018-away",
+"sportingkc-retro-2019-home",
 "sportingkc-retro-2020-away",
 "sportingkc-retro-2022-home",
 "sportingkc-retro-2023-away",
@@ -3963,6 +3987,7 @@
 "sportrecife-retro-202324-away",
 "sportrecife-retro-2024-home",
 "stlouiscity-retro-202223-away",
+"stlouiscity-retro-202425-away",
 "stokecity-retro-1995-home",
 "stokecity-retro-1999-home",
 "stokecity-retro-2001-home",
@@ -22196,6 +22221,138 @@
 "S"
 ],
 "shipping": 3.75
+},
+"manisaspor-retro-201617-home": {
+"title": "Men's Home Football Shirt Black 2016-2017 Manisaspor Soccer Sport Jersey Top",
+"price": 17.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/157221699791?_skw=Manisaspor+2016+home+shirt&hash=item249b24c0cf%3Ag%3AnG4AAeSwu9FokiHW&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|157221699791|458713621727",
+"image": "https://i.ebayimg.com/images/g/nG4AAeSwu9FokiHW/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 3.75
+},
+"gambia-retro-201920-away": {
+"title": "Men's Away Football Shirt Blue 2019-2020 Gambia Soccer Sport Jersey Top T-Shirt",
+"price": 24.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/157221762266?_skw=Gambia+2019+away+shirt&hash=item249b25b4da%3Ag%3A1lwAAeSwn6Vokiwg&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|157221762266|458713652001",
+"image": "https://i.ebayimg.com/images/g/1lwAAeSwn6Vokiwg/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 3.75
+},
+"hellasverona-retro-202425-away": {
+"title": "Men's Football Shirt White 2024-2025 Hellas Verona Away Soccer Jersey Tee Top",
+"price": 32.39,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/167732511525?_skw=Hellas+Verona+2024+away+shirt&hash=item270da30325%3Ag%3AXzUAAeSw5g5opxf%7E&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|167732511525|467329338302",
+"image": "https://i.ebayimg.com/images/g/XzUAAeSw5g5opxf~/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 3.75
+},
+"sportingkc-retro-2019-home": {
+"title": "Sporting Kansas City 2019 Home Shirt Adidas DP4827 MLS Soccer Jersey Mens M ",
+"price": 29.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/267632446779?_skw=Sporting+Kansas+City+2019+home+shirt&hash=item3e50230d3b%3Ag%3AIQQAAeSwmURp1Xv8&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|267632446779|0",
+"image": "https://i.ebayimg.com/images/g/IQQAAeSwmURp1Xv8/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 2.94
+},
+"ipswichtown-retro-201920-home": {
+"title": "Adidas Ipswich Town Home Football Shirt Mens M Blue 2019/20 Jersey Kit",
+"price": 21.5,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/137580786076?_skw=Ipswich+Town+2019+home+shirt&hash=item200874319c%3Ag%3AdncAAeSwB-dqcGcQ&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|137580786076|0",
+"image": "https://i.ebayimg.com/images/g/dncAAeSwB-dqcGcQ/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 3.0
+},
+"ipswichtown-retro-202425-home": {
+"title": "Ipswich Town 2024/25 Home Shirt Umbro Ed Sheeran Football Jersey Blue Size s",
+"price": 36.66,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/318889809038?_skw=Ipswich+Town+2024+home+shirt&hash=item4a3f50548e%3Ag%3A3OwAAeSwvClqrZsc&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|318889809038|0",
+"image": "https://i.ebayimg.com/images/g/3OwAAeSwvClqrZsc/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 3.38
+},
+"orlandopirates-retro-201920-away": {
+"title": "Orlando Pirates 2019-2020 Away Football Shirt (BNWT) XS",
+"price": 39.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/157383329879?_skw=Orlando+Pirates+2019+away+shirt&hash=item24a4c70857%3Ag%3AIAUAAeSw%7Eado6o-y&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|157383329879|0",
+"image": "https://i.ebayimg.com/images/g/IAUAAeSw~ado6o-y/s-l1600.jpg",
+"sizes": [
+"XS"
+],
+"shipping": 0.0
+},
+"chequia-retro-202223-away": {
+"title": "Czech Republic 2022-2023 Away Football Shirt (BNWT) S",
+"price": 49.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/960047370374?_skw=Czech+Republic+2022+away+shirt&hash=itemdf87485086%3Ag%3A210AAeSwdaVo3Q5%7E&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|960047370374|0",
+"image": "https://i.ebayimg.com/images/g/210AAeSwdaVo3Q5~/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 0.0
+},
+"chequia-retro-201819-home": {
+"title": "Czech Republic 2018-2019 Home Football Shirt (BNWT) XXL",
+"price": 49.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/960026288724?_skw=Czech+Republic+2018+home+shirt&hash=itemdf8606a254%3Ag%3AYLMAAeSwh5Vo5T0V&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|960026288724|0",
+"image": "https://i.ebayimg.com/images/g/YLMAAeSwh5Vo5T0V/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 0.0
+},
+"schalke04-retro-202021-away": {
+"title": "Umbro FC Schalke 04 2020/2021 Away Football Shirt.",
+"price": 19.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/800780367263?_skw=FC+Schalke+04+2020+away+shirt&hash=itemba723ab59f%3Ag%3AKZwAAeSwzZhqypl%7E&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m652LQbGzmjriIWtxBTrVmd4s5aRUiz2kXw%2FxlAN2HBGyaQ7SFgddOOCjiCclb%2F67wii%2B2pNQujPc72%2B%2FfY9eSKIiN%2BrCFAE84RI3Ri468F3NWUVf2l69I3MzTVM9QUCJpxoeUU0Zspm4%2Fq8L2q%2FvWfmdBpRfTWkB%2F9VvE%2BXYszkiPJNbzadvu6ttWEXB4bdP4mLv9rBhtMQ4WlgKfRZmBtUjXMk5EIlLAyhW6x0x81gSHwOONsiQgAlx%2B%2BvCsvNnz0eNkbSIrgwJ9kjgokJ3ipF4ZIMuiiLycBQZvJvEk%2BvgTUa5gg1hhnVJoM485SN4%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|800780367263|0",
+"image": "https://i.ebayimg.com/images/g/KZwAAeSwzZhqypl~/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 3.38
+},
+"schalke04-retro-202223-third": {
+"title": "Schalke 04 Third Shirt 2022/23 - Size L",
+"price": 28.78,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/880007915094?_skw=FC+Schalke+04+2022+third+shirt&hash=itemcce48f2656%3Ag%3AdKUAAeSwgzhqy7o2&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mkO7JFcaadqKONl0fP%2FRbejWy9Op3eA%2F6SEhpO7e8yQ94u19Z%2Bb4fdDZyN1arQtRTetLYAeWpb5gWek2W5YvdxP3yF3VkrcYKMrhrG43izynWkW5PCr4B%2ByJAxba5fGHNENrzy7sYBEMigaokTqb75vAuBX9qyAjdha3GUDVaGCeMeJq%2BFSgtJMF1THyqBWCjqMh%2BhaYFZkM3Ju43OrzCmZOZI7MxzxpevL1g8AczauMrUU0iaoiWD3nwsin%2F3Pm1dTVEcx7uEzwkH%2FSIl%2F9LA4ghvtxMGoMza%2BIHq2cLNrlOr37hMtMdro%2BKXgQlXOdU%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|880007915094|0",
+"image": "https://i.ebayimg.com/images/g/dKUAAeSwgzhqy7o2/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 2.94
 }
 }
 }
