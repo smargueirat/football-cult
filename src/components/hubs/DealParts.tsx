@@ -52,8 +52,8 @@ export function DealTable({ rows, locale, mode }: { rows: DealRow[]; locale: Hub
                 </a>
               </td>
               <td className={td}>{r.store}</td>
-              <td className={`${td} text-[#675c44] line-through`}>{formatOfferMoney(r.before, r.currency)}</td>
-              <td className={`${td} font-semibold text-[#1B3B2B]`}>{formatOfferMoney(r.price, r.currency)}</td>
+              <td className={`${td} text-[#675c44] line-through`}>{formatOfferMoney(r.before, r.currency, locale)}</td>
+              <td className={`${td} font-semibold text-[#1B3B2B]`}>{formatOfferMoney(r.price, r.currency, locale)}</td>
               <td className={`${td} font-semibold text-[#B45309]`}>-{Math.round(r.pct)} %</td>
               <td className={`${td} whitespace-nowrap`}>{longDate(r.since, locale)}</td>
               {mode === "low" && <td className={td}>{r.days}</td>}

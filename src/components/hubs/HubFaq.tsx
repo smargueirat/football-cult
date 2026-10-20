@@ -29,7 +29,7 @@ export default function HubFaq({
   variant?: "jersey" | "gear";
 }) {
   const s = HUB[locale];
-  const money = (eur: number) => formatOfferMoney(eur, "EUR");
+  const money = (eur: number) => formatOfferMoney(eur, "EUR", locale);
 
   const gear = variant === "gear";
   const qa: { q: string; a: string }[] = [];

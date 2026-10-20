@@ -64,7 +64,7 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
           </p>
           <p className="mt-2 text-sm text-[#675c44]">
             {compared ? `${t.botas.bestPrice}: ` : ""}
-            {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency)}{" "}
+            {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency, locale)}{" "}
             <ApproxPrice amount={cheapest.price} currency={cheapest.currency} className="text-xs" />
           </p>
           {compared ? (
@@ -116,7 +116,7 @@ export default function TicketDetailClient({ ticket }: { ticket: TicketProduct }
                     </button>
                   </div>
                   <p className="text-xs text-[#675c44]">
-                    {formatOfferMoney(offer.price, offer.currency)}{" "}
+                    {formatOfferMoney(offer.price, offer.currency, locale)}{" "}
                     <ApproxPrice amount={offer.price} currency={offer.currency} />
                   </p>
                 </div>

@@ -43,7 +43,7 @@ export default function BootCard({
   colorLabel?: string;
   colorHex?: string;
 }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   const { isFavorite, toggleFavorite } = useFavorites();
   const { isComparing, toggleCompare, maxReached } = useCompare();
   const { countryCode } = useCountry();
@@ -124,12 +124,12 @@ export default function BootCard({
         <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]">
           {dropped && (
             <span className="text-[9px] leading-none line-through opacity-60 sm:text-[10px]">
-              {formatOfferMoney(previousOfferTotal(cheapest, cheapestTotal), cheapest.currency)}
+              {formatOfferMoney(previousOfferTotal(cheapest, cheapestTotal), cheapest.currency, locale)}
             </span>
           )}
           <span className="text-sm font-semibold">
             {cheapest.priceMax ? `${t.botas.from} ` : ""}
-            {formatOfferMoney(cheapestTotal, cheapest.currency)}
+            {formatOfferMoney(cheapestTotal, cheapest.currency, locale)}
           </span>
           <ApproxPrice amount={cheapestTotal} currency={cheapest.currency} className="text-[9px] leading-none opacity-80 sm:text-[10px]" />
           {(cheapest.shipping > 0 || shippingNotMeasured(cheapest, countryCode)) && (

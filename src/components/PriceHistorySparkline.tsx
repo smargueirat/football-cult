@@ -1,4 +1,5 @@
 import type { Offer } from "@/data/products";
+import type { Locale } from "@/lib/i18n/translations";
 import { formatOfferMoney } from "@/lib/offerMoney";
 
 const WIDTH = 200;
@@ -8,10 +9,12 @@ export default function PriceHistorySparkline({
   history,
   currency,
   label,
+  locale,
 }: {
   history: { date: string; price: number }[];
   currency: Offer["currency"];
   label: string;
+  locale: Locale;
 }) {
   // Un solo punto (o ninguno) no dibuja una línea de nada -- no tiene
   // sentido mostrar el gráfico hasta que haya al menos 2 días de datos
@@ -40,7 +43,7 @@ export default function PriceHistorySparkline({
           <polyline points={points} fill="none" stroke="#1B3B2B" strokeWidth={2} vectorEffect="non-scaling-stroke" />
         </svg>
         <div className="flex flex-col text-xs text-[#675c44]">
-          <span>{formatOfferMoney(min, currency)} – {formatOfferMoney(max, currency)}</span>
+          <span>{formatOfferMoney(min, currency, locale)} – {formatOfferMoney(max, currency, locale)}</span>
         </div>
       </div>
     </div>

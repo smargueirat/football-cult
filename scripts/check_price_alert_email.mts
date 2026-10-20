@@ -85,7 +85,7 @@ for (const l of ["es", "en", "pt", "fr", "it"] as Locale[]) {
   const a = item();
   const r = renderAlertEmail(l, [a]);
   assertSafeAndComplete(r.html, r.text, [a.unsub]);
-  assert.ok(r.subject.includes("Arsenal Prepartido 2026/27") && r.subject.includes("50,19"), `asunto ${l}: ${r.subject}`);
+  assert.ok(r.subject.includes("Arsenal Prepartido 2026/27") && r.subject.includes(l === "en" ? "€50.19" : "50,19"), `asunto ${l}: ${r.subject}`);
   assert.ok(r.html.includes("<img") && r.html.includes("Arsenal Local 2026/27"), "foto y relacionadas");
 }
 assert.equal(renderAlertEmail("es", [item()]).subject, "Bajó Arsenal Prepartido 2026/27: ahora 50,19 €");

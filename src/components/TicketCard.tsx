@@ -72,7 +72,7 @@ export default function TicketCard({ ticket, priority = false }: { ticket: Ticke
 
         <div className="shadow-vintage-md absolute bottom-3 right-3 flex flex-col items-end gap-0.5 rounded-2xl border border-[#8a6a1f]/40 bg-gradient-to-br from-[#F3D889] to-[#B8923F] px-3 py-1.5 text-[#2A2410]">
           <span className="text-sm font-semibold">
-            {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency)}
+            {t.botas.from} {formatOfferMoney(cheapest.price, cheapest.currency, locale)}
           </span>
           <ApproxPrice amount={cheapest.price} currency={cheapest.currency} className="text-[9px] leading-none opacity-80 sm:text-[10px]" />
         </div>

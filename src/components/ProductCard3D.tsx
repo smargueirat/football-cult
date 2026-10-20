@@ -291,11 +291,11 @@ export default function ProductCard3D({
           >
             {isPriceDropped(best) && (
               <span className="text-[9px] leading-none line-through opacity-60 sm:text-[10px]">
-                {formatOfferMoney(previousOfferTotal(best, bestTotal), best.currency)}
+                {formatOfferMoney(previousOfferTotal(best, bestTotal), best.currency, locale)}
               </span>
             )}
             <span className="text-xs font-semibold sm:text-sm">
-              {formatOfferMoney(bestTotal, best.currency)}
+              {formatOfferMoney(bestTotal, best.currency, locale)}
             </span>
             <ApproxPrice amount={bestTotal} currency={best.currency} className="text-[9px] leading-none opacity-80 sm:text-[10px]" />
             {(noShipping || bestTotal > best.price) && (

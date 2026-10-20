@@ -39,12 +39,12 @@ function resolve(spec: BootHubSpec, locale: HubLocale) {
 
 // En EUR (total con envío convertido), no en la moneda de la tienda: un
 // "Desde BRL 99,99" en /es no le dice nada a nadie (seo-tecnico F4).
-const money = (i: GearItem) => formatOfferMoney(i.eur, "EUR");
+const money = (i: GearItem, locale: HubLocale) => formatOfferMoney(i.eur, "EUR", locale);
 
 export function bootHubMetadata(spec: BootHubSpec, locale: HubLocale): Metadata {
   const r = resolve(spec, locale);
   if (!r) return {};
-  return hubMetadata(locale, r.path, r.headline, UI[locale].meta({ headline: r.headline, n: r.items.length, price: money(cheapestFirst(r.items)[0]) }));
+  return hubMetadata(locale, r.path, r.headline, UI[locale].meta({ headline: r.headline, n: r.items.length, price: money(cheapestFirst(r.items)[0], locale) }));
 }
 
 export default function BootListHub({ spec, locale }: { spec: BootHubSpec; locale: HubLocale }) {
@@ -86,7 +86,7 @@ export default function BootListHub({ spec, locale }: { spec: BootHubSpec; local
         ]}
       />
       <Crumbs locale={locale} trail={[...trail.map((c) => ({ label: c.name, href: `/${locale}${c.path}` })), { label: r.headline }]} />
-      <HubHeader h1={r.headline} intro={ui.intro({ headline: r.headline, n: r.items.length, stores, price: money(sorted[0]) })} />
+      <HubHeader h1={r.headline} intro={ui.intro({ headline: r.headline, n: r.items.length, stores, price: money(sorted[0], locale) })} />
       {r.kidsCount > 0 && (
         <p className="-mt-5 mb-6 text-sm text-[#675c44]">
           {x.lineKidsNote(r.kidsCount)}{" "}

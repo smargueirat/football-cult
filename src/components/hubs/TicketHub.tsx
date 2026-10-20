@@ -44,13 +44,13 @@ function resolve(spec: TicketSpec, locale: HubLocale) {
   return { items, raw: facet.name, key: undefined, name: facet.name, headline: x.ticketCompH1(facet.name), path: `/tickets/competicion/${spec.competition}`, isTeam: false };
 }
 
-const eur = (n: number) => formatOfferMoney(n, "EUR");
+const eur = (n: number, locale: HubLocale) => formatOfferMoney(n, "EUR", locale);
 
 export function ticketHubMetadata(spec: TicketSpec, locale: HubLocale): Metadata {
   const r = resolve(spec, locale);
   if (!r || r.items.length < TICKET_MIN) return {};
   const s = ticketStats(r.items);
-  return hubMetadata(locale, r.path, r.headline, EXTRA[locale].ticketMeta({ subject: r.headline, n: s.n, price: eur(s.minEur) }));
+  return hubMetadata(locale, r.path, r.headline, EXTRA[locale].ticketMeta({ subject: r.headline, n: s.n, price: eur(s.minEur, locale) }));
 }
 
 export default function TicketHub({ spec, locale }: { spec: TicketSpec; locale: HubLocale }) {
@@ -86,7 +86,7 @@ export default function TicketHub({ spec, locale }: { spec: TicketSpec; locale: 
         ]}
       />
       <Crumbs locale={locale} trail={[{ label: ticketsName, href: `/${locale}/tickets` }, { label: r.headline }]} />
-      <HubHeader h1={r.headline} intro={x.ticketIntro({ subject: r.headline, n: s.n, first: s.first, last: s.last, sellers: s.sellers, price: eur(s.minEur) })} />
+      <HubHeader h1={r.headline} intro={x.ticketIntro({ subject: r.headline, n: s.n, first: s.first, last: s.last, sellers: s.sellers, price: eur(s.minEur, locale) })} />
       {/* Equipo también en el catálogo de camisetas: enlace a su hub. */}
       {r.key && (
         <p className="-mt-5 mb-6 text-sm">

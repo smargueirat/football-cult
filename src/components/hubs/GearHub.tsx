@@ -75,7 +75,7 @@ function resolve(spec: GearSpec, locale: HubLocale) {
   return { items, headline, path, min, stores };
 }
 
-const money = (i: GearItem) => formatOfferMoney(i.price + i.shipping, i.currency);
+const money = (i: GearItem, locale: HubLocale) => formatOfferMoney(i.price + i.shipping, i.currency, locale);
 
 export function gearMetadata(spec: GearSpec, locale: HubLocale): Metadata {
   const r = resolve(spec, locale);
@@ -117,7 +117,7 @@ export default function GearHub({ spec, locale }: { spec: GearSpec; locale: HubL
         ]}
       />
       <Crumbs locale={locale} trail={[{ label: noun, href: `/${locale}/${section}` }, { label: r.headline }]} />
-      <HubHeader h1={r.headline} intro={ui.intro({ headline: r.headline, n: r.items.length, stores: r.stores, price: money(r.min) })} />
+      <HubHeader h1={r.headline} intro={ui.intro({ headline: r.headline, n: r.items.length, stores: r.stores, price: money(r.min, locale) })} />
 
       <Section title={sample.length < r.items.length ? ui.cheapest : ui.all}>
         <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 xl:grid-cols-6">
@@ -134,7 +134,7 @@ export default function GearHub({ spec, locale }: { spec: GearSpec; locale: HubL
                 <div className="flex flex-1 flex-col gap-1 p-3">
                   <span className="text-sm font-medium leading-snug text-[#1B3B2B]">{it.model}</span>
                   <span className="mt-auto text-xs text-[#675c44]">
-                    {ui.from} {money(it)} · {ui.stores(it.stores)}
+                    {ui.from} {money(it, locale)} · {ui.stores(it.stores)}
                   </span>
                 </div>
               </Link>

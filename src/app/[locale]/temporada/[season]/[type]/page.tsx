@@ -1,3 +1,4 @@
+import type { Locale } from "@/lib/i18n/translations";
 import { notFound } from "next/navigation";
 import { hubFrom, modifiedLd } from "@/lib/seoMeta";
 import type { Metadata } from "next";
@@ -17,7 +18,7 @@ export function generateStaticParams() {
 
 type P = { params: Promise<{ locale: string; season: string; type: string }> };
 
-const money = (o: { price: number; shipping: number; currency: Parameters<typeof formatOfferMoney>[1] } | undefined) => (o ? formatOfferMoney(o.price + o.shipping, o.currency) : "");
+const money = (o: { price: number; shipping: number; currency: Parameters<typeof formatOfferMoney>[1] } | undefined, locale: Locale) => (o ? formatOfferMoney(o.price + o.shipping, o.currency, locale) : "");
 
 function load(slug: string, type: string) {
   const season = seasonFromSlug(slug);
@@ -65,7 +66,7 @@ export default async function SeasonTypeHub({ params }: P) {
         ]}
       />
       <Crumbs locale={locale} trail={[{ label: ui.seasonH1(d.season), href: `/${locale}/temporada/${slug}` }, { label: h1 }]} />
-      <HubHeader h1={h1} intro={ui.typeIntro({ type: plural, season: d.season, n: items.length, price: money(statsOf(items).minOffer) })} />
+      <HubHeader h1={h1} intro={ui.typeIntro({ type: plural, season: d.season, n: items.length, price: money(statsOf(items).minOffer, locale) })} />
       <JerseyGrid items={items} locale={locale} showTeam />
     </div>
   );

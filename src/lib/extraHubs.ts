@@ -115,7 +115,7 @@ export function retroHub(spec: RetroSpec, locale: HubLocale) {
     path = `/retro/decada/${decade}`;
   }
   if (items.length < RETRO_MIN) return null;
-  const { seasons, stores, lo, hi, range } = hubStats(items);
+  const { seasons, stores, lo, hi, range } = hubStats(items, locale);
   return {
     items,
     team: team as TeamKey | undefined,
@@ -135,12 +135,12 @@ export const META_MAX = 160;
 const fitMeta = ([core, ...more]: string[]) => more.reduce((d, m) => (d + m).length <= META_MAX ? d + m : d, core);
 
 /** Temporadas, tiendas, precio mínimo/máximo y rango de años de un hub. */
-function hubStats(items: HubItem[]) {
+function hubStats(items: HubItem[], locale: HubLocale) {
   const seasons = [...new Set(items.map((i) => i.product.season))].sort((a, b) => seasonSortValue(a) - seasonSortValue(b) || a.localeCompare(b));
   const stores = distinctRetailerLabels(items.flatMap((i) => i.product.offers.filter((o) => o.inStock !== false)));
   const eurs = items.map((i) => i.eur);
-  const lo = formatOfferMoney(Math.min(...eurs), "EUR");
-  const hi = formatOfferMoney(Math.max(...eurs), "EUR");
+  const lo = formatOfferMoney(Math.min(...eurs), "EUR", locale);
+  const hi = formatOfferMoney(Math.max(...eurs), "EUR", locale);
   const y0 = seasonSortValue(seasons[0]);
   const y1 = seasonSortValue(seasons[seasons.length - 1]);
   return { seasons, stores, lo, hi, range: y0 === y1 ? String(y0) : `${y0}-${y1}` };
@@ -183,7 +183,7 @@ export function classicHub(spec: ClassicSpec, locale: HubLocale) {
     path = "/clasicas";
   }
   if (items.length < RETRO_MIN) return null;
-  const { seasons, stores, lo, hi } = hubStats(items);
+  const { seasons, stores, lo, hi } = hubStats(items, locale);
   const price = lo === hi ? lo : `${lo} – ${hi}`;
   const all = { n: items.length, teams: new Set(items.map((i) => i.product.teamKey)).size, seasons: seasons.length, stores: stores.length, price: lo };
   return {

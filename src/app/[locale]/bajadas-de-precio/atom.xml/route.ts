@@ -30,8 +30,8 @@ export async function GET(_request: Request, { params }: { params: Promise<{ loc
     const url = `${SITE_URL}${dealHref(r, locale)}?utm_source=atom&utm_medium=feed&utm_campaign=bajadas`;
     const title = s.feedEntry({
       name: dealName(r, locale),
-      before: formatOfferMoney(r.before, r.currency),
-      now: formatOfferMoney(r.price, r.currency),
+      before: formatOfferMoney(r.before, r.currency, locale),
+      now: formatOfferMoney(r.price, r.currency, locale),
       pct: Math.round(r.pct),
       store: r.store,
     });

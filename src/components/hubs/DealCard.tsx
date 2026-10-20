@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getDisplaySrc } from "@/lib/images";
+import type { Locale } from "@/lib/i18n/translations";
 import { formatOfferMoney, type OfferCurrencyCode } from "@/lib/offerMoney";
 
 // Tarjeta de servidor para los listados de ofertas.
@@ -22,6 +23,7 @@ export default function DealCard({
   currency,
   pct,
   store,
+  locale,
   priority = false,
 }: {
   href: string;
@@ -33,6 +35,7 @@ export default function DealCard({
    *  productos por presupuesto, no rebajas. */
   pct?: number;
   store: string;
+  locale: Locale;
   priority?: boolean;
 }) {
   return (
@@ -58,7 +61,7 @@ export default function DealCard({
       <div className="flex flex-1 flex-col gap-1 p-3">
         <span className="text-sm font-medium leading-snug text-[#1B3B2B]">{title}</span>
         <span className="mt-auto text-xs text-[#675c44]">
-          {formatOfferMoney(price, currency)} · {store}
+          {formatOfferMoney(price, currency, locale)} · {store}
         </span>
       </div>
     </Link>

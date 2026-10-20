@@ -180,12 +180,12 @@ export default function GearDetailClient({
             )}
             <p className="text-xs text-[#675c44]">
               {!sp && offer.priceMax ? `${t.botas.from} ` : ""}
-              {formatOfferMoney(rowPrice, offer.currency)}{" "}
+              {formatOfferMoney(rowPrice, offer.currency, locale)}{" "}
               <ApproxPrice amount={rowPrice} currency={offer.currency} />
               {shippingUnknown(offer, countryCode)
                 ? ` · ${t.detail.shipping}: ${t.compare.shippingToCheck}`
                 : offer.shipping > 0
-                  ? ` + ${formatOfferMoney(offer.shipping, offer.currency)} ${t.botas.shippingCost}`
+                  ? ` + ${formatOfferMoney(offer.shipping, offer.currency, locale)} ${t.botas.shippingCost}`
                   : ` · ${t.botas.freeShipping}`}
             </p>
           </div>
@@ -220,8 +220,8 @@ export default function GearDetailClient({
         const from = (!sp && !!cheapestOffer.priceMax) || shippingUnknown(cheapestOffer, countryCode);
         return {
           label: from ? t.botas.from : CONV[locale].totalWithShipping,
-          total: formatOfferMoney(total, cheapestOffer.currency),
-          approx: approxPriceLabel(total, cheapestOffer.currency, country.currency),
+          total: formatOfferMoney(total, cheapestOffer.currency, locale),
+          approx: approxPriceLabel(total, cheapestOffer.currency, country.currency, locale),
           goLabel: CONV[locale].goStore.replace("{store}", cheapestOffer.store),
           proof: proofLine(retailerCountText(shippable, t.product), null, price, CONV[locale].lowestInDays),
           href: goHref({ kind: GEAR_KIND[basePath], productId: item.id, url, locale, origin: "ficha", position: 1, isBest: true }),

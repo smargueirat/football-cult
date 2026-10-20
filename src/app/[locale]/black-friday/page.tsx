@@ -65,8 +65,8 @@ function RefTable({ rows, locale }: { rows: RefRow[]; locale: HubLocale }) {
                   </Link>
                 </td>
                 <td className={td}>{r.store}</td>
-                <td className={`${td} font-semibold text-[#1B3B2B]`}>{formatOfferMoney(r.price, cur)}</td>
-                <td className={td}>{formatOfferMoney(r.min, cur)}</td>
+                <td className={`${td} font-semibold text-[#1B3B2B]`}>{formatOfferMoney(r.price, cur, locale)}</td>
+                <td className={td}>{formatOfferMoney(r.min, cur, locale)}</td>
                 <td className={`${td} whitespace-nowrap`}>{longDate(r.minDate, locale)}</td>
                 <td className={`${td} font-semibold ${r.price > r.min ? "text-[#675c44]" : "text-[#B45309]"}`}>{diff}</td>
                 <td className={td}>{r.days}</td>
@@ -149,6 +149,7 @@ export default async function BlackFridayPage({ params }: P) {
                     currency={r.currency}
                     pct={Math.round(r.pct)}
                     store={r.store}
+                    locale={locale}
                   />
                 ))}
               </div>

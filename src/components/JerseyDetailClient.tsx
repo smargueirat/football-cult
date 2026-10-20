@@ -1,5 +1,6 @@
 "use client";
 
+import type { Locale } from "@/lib/i18n/translations";
 import Link from "@/lib/i18n/LocaleLink";
 import BackToCatalogLink from "./BackToCatalogLink";
 import { HUB } from "@/lib/hubStrings";
@@ -58,9 +59,9 @@ type KnownCurrency = (typeof KNOWN_CURRENCIES)[number];
 // our 4 supported offer currencies) -- fall back to a plain "amount
 // CODE" string instead of a type-unsafe cast, for the rare country
 // where that happens.
-function formatMaybeKnownMoney(amount: number, currency: string): string {
+function formatMaybeKnownMoney(amount: number, currency: string, locale: Locale): string {
   if ((KNOWN_CURRENCIES as readonly string[]).includes(currency)) {
-    return formatOfferMoney(amount, currency as KnownCurrency);
+    return formatOfferMoney(amount, currency as KnownCurrency, locale);
   }
   return `${amount.toFixed(2)} ${currency}`;
 }
@@ -361,8 +362,8 @@ export default function JerseyDetailClient({
             : null;
         const total = liveTotal ?? offerTotal(bestOffer);
         return {
-          totalText: formatOfferMoney(total, bestOffer.currency),
-          approx: approxPriceLabel(total, bestOffer.currency, country.currency),
+          totalText: formatOfferMoney(total, bestOffer.currency, locale),
+          approx: approxPriceLabel(total, bestOffer.currency, country.currency, locale),
           label: liveTotal == null && shippingUnknown(bestOffer, countryCode) ? t.detail.from : CONV[locale].totalWithShipping,
           storeLabel: selectedSize ? `${bestOffer.store} · ${selectedSize}` : bestOffer.store,
           goLabel: CONV[locale].goStore.replace("{store}", bestOffer.store),
@@ -511,9 +512,9 @@ export default function JerseyDetailClient({
                 <>
                   <p className="text-xs text-[#675c44]">
                     {noShipping ? (
-                      <>{formatOfferMoney(offer.price, offer.currency)} · {t.detail.shipping}: {t.compare.shippingToCheck}</>
+                      <>{formatOfferMoney(offer.price, offer.currency, locale)} · {t.detail.shipping}: {t.compare.shippingToCheck}</>
                     ) : (
-                      <>{formatOfferMoney(offer.price, offer.currency)} + {formatOfferMoney(offer.shipping, offer.currency)} {t.detail.shipping.toLowerCase()}</>
+                      <>{formatOfferMoney(offer.price, offer.currency, locale)} + {formatOfferMoney(offer.shipping, offer.currency, locale)} {t.detail.shipping.toLowerCase()}</>
                     )}
                     {offer.sizes.length > 0 && (
                       <> · {offer.sizes.join(", ")}</>
@@ -526,14 +527,16 @@ export default function JerseyDetailClient({
                           {t.detail.realShippingTo.replace("{country}", country.name[locale])}:{" "}
                           {formatMaybeKnownMoney(
                             liveEbayCosts[offer.url]!.shipping,
-                            liveEbayCosts[offer.url]!.currency
+                            liveEbayCosts[offer.url]!.currency,
+                            locale
                           )}
                           {liveEbayCosts[offer.url]!.importCharges != null && (
                             <>
                               {" + "}
                               {formatMaybeKnownMoney(
                                 liveEbayCosts[offer.url]!.importCharges!,
-                                liveEbayCosts[offer.url]!.currency
+                                liveEbayCosts[offer.url]!.currency,
+                                locale
                               )}{" "}
                               {t.detail.importCharges.toLowerCase()}
                             </>
@@ -560,7 +563,7 @@ export default function JerseyDetailClient({
                   isBest ? "text-[#B45309]" : "text-[#3a3a36]"
                 }`}
               >
-                {formatOfferMoney(displayTotal, offer.currency)}
+                {formatOfferMoney(displayTotal, offer.currency, locale)}
               </p>
               <ApproxPrice amount={displayTotal} currency={offer.currency} />
             </div>
@@ -717,7 +720,7 @@ export default function JerseyDetailClient({
             {shownSavings && (
               <p className="mt-2 inline-flex rounded-lg bg-[#1B3B2B]/10 px-3 py-1.5 text-sm font-medium text-[#1B3B2B]">
                 {shownSavings.text
-                  .replace("{amount}", formatOfferMoney(shownSavings.abs, "EUR"))
+                  .replace("{amount}", formatOfferMoney(shownSavings.abs, "EUR", locale))
                   .replace("{pct}", String(shownSavings.pct))}
               </p>
             )}
@@ -853,6 +856,7 @@ export default function JerseyDetailClient({
                 <PriceHistorySparkline
                   history={priceHistory[bestOffer.url]}
                   currency={bestOffer.currency}
+                  locale={locale}
                   label={t.detail.priceHistoryLabel.replace(
                     "{n}",
                     String(priceHistory[bestOffer.url].length)

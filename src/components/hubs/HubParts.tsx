@@ -98,7 +98,7 @@ export function JerseyGrid({ items, locale, showTeam, badges }: { items: HubItem
               <div className="flex flex-1 flex-col gap-1 p-3">
                 <span className="text-sm font-medium leading-snug text-[#1B3B2B]">{label}</span>
                 <span className="mt-auto text-xs text-[#675c44]">
-                  {s.from} {formatOfferMoney(offer.price + offer.shipping, offer.currency)} · {s.stores(stores)}
+                  {s.from} {formatOfferMoney(offer.price + offer.shipping, offer.currency, locale)} · {s.stores(stores)}
                 </span>
               </div>
             </Link>

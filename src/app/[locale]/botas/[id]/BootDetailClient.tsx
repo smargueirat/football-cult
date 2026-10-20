@@ -189,7 +189,7 @@ export default function BootDetailClient({
             )}
             <p className="text-xs text-[#675c44]">
               {!sp && offer.priceMax ? `${t.botas.from} ` : ""}
-              {formatOfferMoney(rowPrice, offer.currency)}{" "}
+              {formatOfferMoney(rowPrice, offer.currency, locale)}{" "}
               <ApproxPrice amount={rowPrice} currency={offer.currency} />
               {shippingUnknown(offer, countryCode)
                 ? // Sin dato de envío de esta tienda para este país (ver
@@ -197,7 +197,7 @@ export default function BootDetailClient({
                   // gratis" acá sería un dato falso, no una aproximación.
                   ` · ${t.botas.shippingCalculatedAtStore}`
                 : offer.shipping > 0
-                  ? ` + ${formatOfferMoney(offer.shipping, offer.currency)} ${t.botas.shippingCost}`
+                  ? ` + ${formatOfferMoney(offer.shipping, offer.currency, locale)} ${t.botas.shippingCost}`
                   : ` · ${t.botas.freeShipping}`}
             </p>
           </div>
@@ -234,8 +234,8 @@ export default function BootDetailClient({
         const from = (!sp && !!cheapestOffer.priceMax) || shippingUnknown(cheapestOffer, countryCode);
         return {
           label: from ? t.botas.from : CONV[locale].totalWithShipping,
-          total: formatOfferMoney(total, cheapestOffer.currency),
-          approx: approxPriceLabel(total, cheapestOffer.currency, country.currency),
+          total: formatOfferMoney(total, cheapestOffer.currency, locale),
+          approx: approxPriceLabel(total, cheapestOffer.currency, country.currency, locale),
           goLabel: CONV[locale].goStore.replace("{store}", cheapestOffer.store),
           proof: proofLine(retailerCountText(shippable, t.product), archiveStats[cheapestOffer.url], cheapestOffer.price, CONV[locale].lowestInDays),
           href: goHref({ kind: "b", productId: boot.id, url, locale, origin: "ficha", position: 1, isBest: true }),
@@ -313,7 +313,7 @@ export default function BootDetailClient({
             <p className="mt-2 inline-flex rounded-lg bg-[#1B3B2B]/10 px-3 py-1.5 text-sm font-medium text-[#1B3B2B]">
               {t.detail.savingsVsMedian
                 .replace("{n}", String(medianSavings.stores))
-                .replace("{amount}", formatOfferMoney(medianSavings.abs, "EUR"))
+                .replace("{amount}", formatOfferMoney(medianSavings.abs, "EUR", locale))
                 .replace("{pct}", String(medianSavings.pct))}
             </p>
           )}
