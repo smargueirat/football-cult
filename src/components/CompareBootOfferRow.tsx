@@ -57,7 +57,7 @@ export default function CompareBootOfferRow({
         <span className="text-[#675c44]">{t.compare.price}</span>
         <span className="font-medium text-[#1a1a1a]">
           {offer.priceMax ? `${t.botas.from} ` : ""}
-          {formatOfferMoney(offer.price, offer.currency)}
+          {formatOfferMoney(offer.price, offer.currency, locale)}
         </span>
       </div>
       <div className="flex justify-between text-xs">
@@ -66,7 +66,7 @@ export default function CompareBootOfferRow({
           {noShipping
             ? t.botas.shippingCalculatedAtStore
             : offer.shipping > 0
-              ? formatOfferMoney(offer.shipping, offer.currency)
+              ? formatOfferMoney(offer.shipping, offer.currency, locale)
               : t.compare.freeShipping}
         </span>
       </div>
@@ -74,7 +74,7 @@ export default function CompareBootOfferRow({
         <span className="font-medium text-[#675c44]">{t.compare.total}</span>
         <span className="font-semibold text-[#B45309]">
           {offer.priceMax ? `${t.botas.from} ` : ""}
-          {formatOfferMoney(total, offer.currency)}
+          {formatOfferMoney(total, offer.currency, locale)}
           {noShipping && "+"}
         </span>
       </div>

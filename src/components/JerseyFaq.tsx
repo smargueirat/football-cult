@@ -19,7 +19,7 @@ export default function JerseyFaq({ product, locale }: { product: Product; local
     team,
     type: kitTypeName(product, locale).toLowerCase(),
     season: product.season,
-    price: best ? formatOfferMoney(best.price + best.shipping, best.currency) : "",
+    price: best ? formatOfferMoney(best.price + best.shipping, best.currency, locale) : "",
     store: best?.store ?? "",
     stores: countDistinctRetailers(product.offers.filter((o) => o.inStock)),
     sizes,

@@ -17,6 +17,8 @@
 // importa Offer/BootOffer desde los archivos grandes) para que este
 // archivo no dependa de ellos en ningún sentido.
 import { previousPriceOf } from "@/lib/priceDrops";
+// Solo el tipo (se borra al compilar): no arrastra translations.ts al bundle.
+import type { Locale } from "@/lib/i18n/translations";
 
 export type OfferCurrencyCode = "EUR" | "USD" | "GBP" | "BRL" | "CLP" | "ARS";
 export type BootCurrencyCode = "EUR" | "USD" | "CLP" | "ARS" | "BRL";
@@ -33,7 +35,32 @@ const OFFER_CURRENCY_LOCALE: Record<OfferCurrencyCode, string> = {
   ARS: "es-AR",
 };
 
-export function formatOfferMoney(amount: number, currency: OfferCurrencyCode): string {
+// Con `locale`, el NÚMERO sigue el idioma de la página (/en "€22.20",
+// /es "22,20 €", /fr "22,20 €", /it, /pt) en vez de la convención de la moneda.
+// Se arma a mano, sin Intl: el servidor y el navegador (o un Node con ICU
+// reducido) devuelven separadores distintos y daría error de hidratación.
+// Mismo criterio: sin decimales desde 100; EUR con símbolo, el resto con código.
+const NUM_FORMAT: Record<Locale, { group: string; dec: string }> = {
+  es: { group: ".", dec: "," },
+  en: { group: ",", dec: "." },
+  pt: { group: "\u00A0", dec: "," },
+  fr: { group: "\u202F", dec: "," },
+  it: { group: ".", dec: "," },
+};
+
+function formatLocalized(amount: number, currency: OfferCurrencyCode, locale: Locale, symbol: boolean, whole = false): string {
+  const { group, dec } = NUM_FORMAT[locale];
+  const fixed = whole || amount >= 100 ? String(Math.round(amount)) : currency === "CLP" ? String(+amount.toFixed(2)) : amount.toFixed(2);
+  const [int, frac] = fixed.split(".");
+  const num = int.replace(/\B(?=(\d{3})+(?!\d))/g, group) + (frac ? dec + frac : "");
+  if (symbol && locale === "en") return `\u20AC${num}`;
+  const nbsp = "\u00A0";
+  if (symbol) return `${num}${nbsp}\u20AC`;
+  return locale === "en" ? `${currency}${nbsp}${num}` : `${num}${nbsp}${currency}`;
+}
+
+export function formatOfferMoney(amount: number, currency: OfferCurrencyCode, locale?: Locale): string {
+  if (locale) return formatLocalized(amount, currency, locale, currency === "EUR");
   const maximumFractionDigits = amount >= 100 ? 0 : 2;
   // currencyDisplay: "code" muestra "USD"/"EUR" en vez del símbolo ($/€),
   // porque la tienda de destino puede mostrarle al usuario un precio
@@ -69,10 +96,11 @@ export function offerTotalInEUR(offer: { price: number; shipping: number; curren
 // mismas tasas fijas del orden. Va SIEMPRE junto al precio real de la tienda,
 // nunca en su lugar. `to` es la moneda del país del visitante; si no la
 // soportamos (CHF, MXN...) se usa EUR. null si ya está en esa moneda.
-export function approxPriceLabel(amount: number, from: OfferCurrencyCode, to: string): string | null {
+export function approxPriceLabel(amount: number, from: OfferCurrencyCode, to: string, locale?: Locale): string | null {
   const target: OfferCurrencyCode = to in OFFER_CURRENCY_TO_EUR ? (to as OfferCurrencyCode) : "EUR";
   if (target === from) return null;
   const value = (amount / OFFER_CURRENCY_TO_EUR[from]) * OFFER_CURRENCY_TO_EUR[target];
+  if (locale) return `≈ ${formatLocalized(value, target, locale, false, true)}`;
   return `≈ ${new Intl.NumberFormat(OFFER_CURRENCY_LOCALE[target], {
     style: "currency",
     currency: target,

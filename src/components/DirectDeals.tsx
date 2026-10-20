@@ -55,7 +55,7 @@ export default function DirectDeals({
         {shown.map(({ d, o }, i) => {
           const measured = !shippingNotMeasured(o, countryCode);
           const total = measured ? o.price + o.shipping : o.price;
-          const price = formatOfferMoney(total, o.currency);
+          const price = formatOfferMoney(total, o.currency, locale);
           return (
             <div key={d.key} className="vintage-card flex w-44 shrink-0 snap-start flex-col overflow-hidden rounded-2xl sm:w-52">
               <Link href={d.path} className="group flex flex-1 flex-col">
@@ -84,7 +84,7 @@ export default function DirectDeals({
               <div className="px-2.5 pb-2.5 pt-1">
                 <p className="text-[11px] text-[#675c44]">
                   {d.before && o === d.offers[0] ? (
-                    <span className="mr-1 line-through">{c.before.replace("{price}", formatOfferMoney(d.before, o.currency))}</span>
+                    <span className="mr-1 line-through">{c.before.replace("{price}", formatOfferMoney(d.before, o.currency, locale))}</span>
                   ) : null}
                   {measured ? t.product.shippingIncluded : t.product.shippingNotIncluded}
                 </p>

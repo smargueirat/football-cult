@@ -9,7 +9,7 @@ import type { OfferPriceStats } from "@/lib/priceArchive";
 // cobertura suficiente (>= 14 días): sin historial real no se muestra nada,
 // ni un gráfico ni un porcentaje.
 export default function PriceArchiveLine({ stats }: { stats: OfferPriceStats | null }) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
   if (!stats) return null;
   const pct = Math.round(Math.abs(stats.vsMedianPct));
   const moved = stats.distinct > 1;
@@ -20,7 +20,7 @@ export default function PriceArchiveLine({ stats }: { stats: OfferPriceStats | n
           <p>
             {t.detail.priceMinLine
               .replace("{days}", String(stats.coverageDays))
-              .replace("{price}", formatOfferMoney(stats.min, stats.currency as OfferCurrencyCode))}
+              .replace("{price}", formatOfferMoney(stats.min, stats.currency as OfferCurrencyCode, locale))}
           </p>
           {pct >= 1 && (
             <p className="font-medium text-[#1B3B2B]">

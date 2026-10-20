@@ -50,13 +50,13 @@ export default function CompareOfferRow({
       <div className="flex justify-between text-xs">
         <span className="text-[#675c44]">{t.compare.price}</span>
         <span className="font-medium text-[#1a1a1a]">
-          {formatOfferMoney(offer.price, offer.currency)}
+          {formatOfferMoney(offer.price, offer.currency, locale)}
         </span>
       </div>
       <div className="flex justify-between text-xs">
         <span className="text-[#675c44]">{t.compare.taxes}</span>
         <span className="font-medium text-[#1a1a1a]">
-          {importCharges > 0 ? formatOfferMoney(importCharges, offer.currency) : t.compare.taxesIncluded}
+          {importCharges > 0 ? formatOfferMoney(importCharges, offer.currency, locale) : t.compare.taxesIncluded}
         </span>
       </div>
       <div className="flex justify-between text-xs">
@@ -65,14 +65,14 @@ export default function CompareOfferRow({
           {noShipping
             ? t.compare.shippingToCheck
             : shipping > 0
-              ? formatOfferMoney(shipping, offer.currency)
+              ? formatOfferMoney(shipping, offer.currency, locale)
               : t.compare.freeShipping}
         </span>
       </div>
       <div className="mt-0.5 flex justify-between border-t border-[#C9A24B]/15 pt-1.5 text-sm">
         <span className="font-medium text-[#675c44]">{noShipping ? t.detail.from : t.compare.total}</span>
         <span className="font-semibold text-[#B45309]">
-          {formatOfferMoney(total, offer.currency)}
+          {formatOfferMoney(total, offer.currency, locale)}
         </span>
       </div>
     </a>

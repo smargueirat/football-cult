@@ -66,10 +66,8 @@ export function fromPrice(offers: readonly MoneyOffer[], locale: HubLocale): str
   return min < Infinity ? eurText(min, locale) : undefined;
 }
 
-const NUM_LOCALE: Record<HubLocale, string> = { es: "es-ES", en: "en-IE", pt: "pt-PT", fr: "fr-FR", it: "it-IT" };
 /** "29,99 €" / "€29.99" según el idioma (sin decimales desde 100). */
-export const eurText = (amount: number, locale: HubLocale) =>
-  new Intl.NumberFormat(NUM_LOCALE[locale], { style: "currency", currency: "EUR", maximumFractionDigits: amount >= 100 ? 0 : 2 }).format(amount);
+export const eurText = (amount: number, locale: HubLocale) => formatOfferMoney(amount, "EUR", locale);
 
 /** El "desde" de un hub de camisetas (equipo, liga, país, temporada), "" si
  *  ninguna oferta en EUR envía al mercado del idioma. */
@@ -503,7 +501,7 @@ export function ticketDescription(t: TicketProduct, locale: HubLocale, sellers: 
     comp: t.competition,
     place: t.city ? `${t.venue} (${t.city})` : t.venue,
     when: `${ticketDate(t, locale)} ${t.time.slice(0, 5)}`,
-    price: cheapest ? formatOfferMoney(cheapest.price, cheapest.currency) : undefined,
+    price: cheapest ? formatOfferMoney(cheapest.price, cheapest.currency, locale) : undefined,
     n: Math.max(1, sellers),
   });
 }

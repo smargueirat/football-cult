@@ -1,3 +1,4 @@
+import type { Locale } from "@/lib/i18n/translations";
 import { notFound } from "next/navigation";
 import { hubFrom, modifiedLd } from "@/lib/seoMeta";
 import type { Metadata } from "next";
@@ -27,8 +28,8 @@ function load(slug: string) {
   return { league, teams, items, stats: statsOf(items) };
 }
 
-function money(o: { price: number; shipping: number; currency: Parameters<typeof formatOfferMoney>[1] } | undefined) {
-  return o ? formatOfferMoney(o.price + o.shipping, o.currency) : "";
+function money(o: { price: number; shipping: number; currency: Parameters<typeof formatOfferMoney>[1] } | undefined, locale: Locale) {
+  return o ? formatOfferMoney(o.price + o.shipping, o.currency, locale) : "";
 }
 
 export async function generateMetadata({ params }: P): Promise<Metadata> {
@@ -51,7 +52,7 @@ export default async function LeagueHub({ params }: P) {
   const teamLinks = d.teams
     .map((k) => {
       const items = teamItems(k);
-      return { href: `/${locale}/equipo/${k}`, name: teamName(k, locale), count: items.length, price: money(statsOf(items).minOffer) };
+      return { href: `/${locale}/equipo/${k}`, name: teamName(k, locale), count: items.length, price: money(statsOf(items).minOffer, locale) };
     })
     .sort((a, b) => a.name.localeCompare(b.name, locale));
 
@@ -82,7 +83,7 @@ export default async function LeagueHub({ params }: P) {
         <Crumbs locale={locale} trail={[{ label: countryName, href: `/${locale}/pais/${d.league.country}` }, { label: name }]} />
         <HubHeader
           h1={s.leagueH1(name)}
-          intro={s.leagueIntro({ league: name, teams: d.teams.length, n: d.stats.count, price: money(d.stats.minOffer) })}
+          intro={s.leagueIntro({ league: name, teams: d.teams.length, n: d.stats.count, price: money(d.stats.minOffer, locale) })}
         />
         <Section title={s.teams}>
           <TeamLinks items={teamLinks} locale={locale} />

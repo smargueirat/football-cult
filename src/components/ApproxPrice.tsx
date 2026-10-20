@@ -1,6 +1,7 @@
 "use client";
 
 import { useCountry } from "@/lib/country/CountryContext";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { approxPriceLabel, type OfferCurrencyCode } from "@/lib/offerMoney";
 
 // "≈ 54 EUR" junto a un precio en moneda ajena (USD/GBP/CLP/ARS/BRL) para el
@@ -15,6 +16,7 @@ export default function ApproxPrice({
   className?: string;
 }) {
   const { country } = useCountry();
-  const label = approxPriceLabel(amount, currency, country.currency);
+  const { locale } = useLanguage();
+  const label = approxPriceLabel(amount, currency, country.currency, locale);
   return label ? <span className={className}>{label}</span> : null;
 }

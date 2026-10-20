@@ -97,6 +97,7 @@ export default async function Offers({ params }: P) {
                   currency={o.currency}
                   pct={b.pct}
                   store={o.store}
+                  locale={locale}
                   priority={i < 4}
                 />
               );
@@ -120,6 +121,7 @@ export default async function Offers({ params }: P) {
                   currency={o.currency}
                   pct={x.pct}
                   store={o.store}
+                  locale={locale}
                   priority={i < 4}
                 />
               );
@@ -143,6 +145,7 @@ export default async function Offers({ params }: P) {
                   currency={o.currency}
                   pct={x.pct}
                   store={o.store}
+                  locale={locale}
                   priority={i < 4}
                 />
               );

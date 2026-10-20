@@ -1,3 +1,4 @@
+import type { Locale } from "@/lib/i18n/translations";
 import type { Metadata } from "next";
 import { priceStudy } from "@/lib/priceStudy";
 import { STUDY, studyUnits } from "@/lib/priceStudyStrings";
@@ -16,7 +17,7 @@ import { INDEX } from "@/lib/priceIndexStrings";
 export const revalidate = 86400;
 
 const PATH = "/estudios/precios-camisetas";
-const eur = (n: number) => formatOfferMoney(n, "EUR");
+const eur = (n: number, locale: Locale) => formatOfferMoney(n, "EUR", locale);
 const pct = (n: number, l: string) => `${l === "en" ? n.toFixed(1) : n.toFixed(1).replace(".", ",")}%`;
 
 function fill(s: string, vars: Record<string, string>) {
@@ -55,7 +56,7 @@ export default async function PriceStudyPage({ params }: P) {
   const stats = [
     { big: pct(s.avgGapPct, locale), label: c.statAvgGap, note: c.statAvgGapNote },
     { big: `${s.shareOver20.toFixed(0)}%`, label: c.statOver20, note: c.statOver20Note },
-    { big: eur(s.maxGapAbs), label: c.statMaxGap, note: c.statMaxGapNote },
+    { big: eur(s.maxGapAbs, locale), label: c.statMaxGap, note: c.statMaxGapNote },
     { big: `${s.shareSamePrice.toFixed(0)}%`, label: c.statSamePrice, note: c.statSamePriceNote },
   ];
 
@@ -107,7 +108,7 @@ export default async function PriceStudyPage({ params }: P) {
               <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                 <span className="text-sm font-medium text-[#1a1a1a]">{shirtName(e)}</span>
                 <span className="font-vintage text-lg text-[#8a6a1f]">
-                  +{eur(e.gapAbs)} <span className="text-xs text-[#675c44]">({e.gapPct.toFixed(0)}%)</span>
+                  +{eur(e.gapAbs, locale)} <span className="text-xs text-[#675c44]">({e.gapPct.toFixed(0)}%)</span>
                 </span>
               </div>
               {/* Barra proporcional: ancho = precio barato sobre el caro.
@@ -117,10 +118,10 @@ export default async function PriceStudyPage({ params }: P) {
               </div>
               <div className="mt-1.5 flex flex-wrap justify-between gap-x-3 text-xs text-[#675c44]">
                 <span>
-                  {c.colCheapest}: <strong className="text-[#1B3B2B]">{eur(e.low)}</strong> · {e.lowStore}
+                  {c.colCheapest}: <strong className="text-[#1B3B2B]">{eur(e.low, locale)}</strong> · {e.lowStore}
                 </span>
                 <span>
-                  {c.colDearest}: <strong className="text-[#1a1a1a]">{eur(e.high)}</strong> · {e.highStore}
+                  {c.colDearest}: <strong className="text-[#1a1a1a]">{eur(e.high, locale)}</strong> · {e.highStore}
                 </span>
               </div>
             </div>

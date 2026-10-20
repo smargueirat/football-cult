@@ -74,7 +74,7 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
                   >
                     <span className="truncate text-sm text-[#1a1a1a]">{item.boot.model}</span>
                     <span className="text-sm font-semibold text-[#B45309]">
-                      {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency)}
+                      {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency, locale)}
                     </span>
                   </Link>
                 </li>
@@ -93,7 +93,7 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
                   >
                     <span className="truncate text-sm text-[#1a1a1a]">{item.ticket.event}</span>
                     <span className="text-sm font-semibold text-[#B45309]">
-                      {formatOfferMoney(cheapest.price, cheapest.currency)}
+                      {formatOfferMoney(cheapest.price, cheapest.currency, locale)}
                     </span>
                   </Link>
                 </li>
@@ -114,7 +114,7 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
                   >
                     <span className="truncate text-sm text-[#1a1a1a]">{gearItem.model}</span>
                     <span className="text-sm font-semibold text-[#B45309]">
-                      {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency)}
+                      {formatOfferMoney(cheapest.price + cheapest.shipping, cheapest.currency, locale)}
                     </span>
                   </Link>
                 </li>
@@ -135,7 +135,7 @@ export default function FavoritesPanelContent({ onNavigate }: { onNavigate: () =
                   <span className="truncate text-sm text-[#1a1a1a]">{displayName}</span>
                   {best ? (
                     <span className="text-sm font-semibold text-[#B45309]">
-                      {formatOfferMoney(offerTotal(best), best.currency)}
+                      {formatOfferMoney(offerTotal(best), best.currency, locale)}
                     </span>
                   ) : (
                     <span className="text-xs text-[#b3b3ad]">

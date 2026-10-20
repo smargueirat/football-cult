@@ -46,6 +46,7 @@ export default async function WeekPage({ params }: P) {
                   currency={r.currency}
                   pct={Math.round(r.pct)}
                   store={r.store}
+                  locale={locale}
                   priority={i < 4 && sec === rows[0].section}
                 />
               ))}

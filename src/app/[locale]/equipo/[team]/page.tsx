@@ -1,3 +1,4 @@
+import type { Locale } from "@/lib/i18n/translations";
 import { notFound } from "next/navigation";
 import { hubFrom, modifiedLd } from "@/lib/seoMeta";
 import type { Metadata } from "next";
@@ -29,9 +30,9 @@ export function generateStaticParams() {
 
 type P = { params: Promise<{ locale: string; team: string }> };
 
-function priceOf(items: ReturnType<typeof teamItems>) {
+function priceOf(items: ReturnType<typeof teamItems>, locale: Locale) {
   const o = statsOf(items).minOffer;
-  return o ? formatOfferMoney(o.price + o.shipping, o.currency) : "";
+  return o ? formatOfferMoney(o.price + o.shipping, o.currency, locale) : "";
 }
 
 export async function generateMetadata({ params }: P): Promise<Metadata> {
@@ -109,7 +110,7 @@ export default async function TeamHub({ params }: P) {
       <Crumbs locale={locale} trail={trail} />
       <HubHeader
         h1={s.teamH1(name)}
-        intro={s.teamIntro({ team: name, n: stats.count, stores: stats.stores, price: priceOf(items), kinds })}
+        intro={s.teamIntro({ team: name, n: stats.count, stores: stats.stores, price: priceOf(items, locale), kinds })}
       />
       <p className="-mt-5 mb-8 text-sm">
         <a

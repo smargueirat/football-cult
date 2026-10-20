@@ -194,11 +194,11 @@ const withUtm = (url: string, content?: string) => {
 const photo = (url: string | undefined, w: number) =>
   url ? `https://images.weserv.nl/?url=${encodeURIComponent(url)}&w=${w}&output=jpg` : undefined;
 
-const money = (n: number, c: OfferCurrencyCode) => formatOfferMoney(n, c);
+const money = (n: number, c: OfferCurrencyCode, l: Locale) => formatOfferMoney(n, c, l);
 const pctLabel = (l: Locale, pct: number) => `−${Math.round(pct * 100)}${l === "en" ? "%" : " %"}`;
 
-function shipLine(c: Copy, i: AlertItem) {
-  return i.shipping === "free" ? c.shipFree : i.shipping === "check" ? c.shipCheck : c.shipPaid(money(i.shipping, i.currency));
+function shipLine(l: Locale, c: Copy, i: AlertItem) {
+  return i.shipping === "free" ? c.shipFree : i.shipping === "check" ? c.shipCheck : c.shipPaid(money(i.shipping, i.currency, l));
 }
 
 function button(href: string, label: string, small = false) {
@@ -211,10 +211,10 @@ function itemBlock(l: Locale, c: Copy, i: AlertItem, big: boolean) {
   const href = safeUrl(withUtm(i.url));
   const img = safeUrl(photo(i.image, big ? 960 : 240));
   const prices =
-    `<p style="margin:0 0 2px;font:14px ${SANS};color:${C.muted}" class="mut">${esc(c.was)} <span style="text-decoration:line-through">${esc(money(i.from, i.currency))}</span>` +
+    `<p style="margin:0 0 2px;font:14px ${SANS};color:${C.muted}" class="mut">${esc(c.was)} <span style="text-decoration:line-through">${esc(money(i.from, i.currency, l))}</span>` +
     ` &nbsp;<span style="display:inline-block;padding:2px 8px;border-radius:3px;background:${C.gold};color:${C.green};font:700 13px ${SANS}">${esc(pctLabel(l, pct))}</span></p>` +
-    `<p style="margin:0;font:700 ${big ? 38 : 28}px/1.15 ${SERIF};color:${C.green}" class="new">${esc(money(i.to, i.currency))}</p>`;
-  const meta = `<p style="margin:6px 0 0;font:14px/1.4 ${SANS};color:${C.muted}" class="mut">${esc(c.at)} <strong>${esc(i.store)}</strong> · ${esc(shipLine(c, i))}</p>`;
+    `<p style="margin:0;font:700 ${big ? 38 : 28}px/1.15 ${SERIF};color:${C.green}" class="new">${esc(money(i.to, i.currency, l))}</p>`;
+  const meta = `<p style="margin:6px 0 0;font:14px/1.4 ${SANS};color:${C.muted}" class="mut">${esc(c.at)} <strong>${esc(i.store)}</strong> · ${esc(shipLine(l, c, i))}</p>`;
   const title = (sz: number) => `<p style="margin:0 0 10px;font:700 ${sz}px/1.25 ${SERIF};color:${C.ink}" class="ink">${esc(i.name)}</p>`;
   if (big) {
     return (
@@ -238,7 +238,7 @@ function relatedBlock(l: Locale, c: Copy, items: RelatedItem[]) {
       const img = safeUrl(photo(r.image, 120));
       return `<tr><td style="padding:8px 0;border-top:1px solid ${C.line}" class="ln"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>` +
         (img ? `<td width="56" valign="middle" style="width:56px"><a href="${href}"><img src="${img}" alt="" width="48" style="display:block;width:48px;height:auto;border:0;background:#ffffff"></a></td>` : "") +
-        `<td valign="middle" style="font:14px/1.35 ${SANS}"><a href="${href}" style="color:${C.ink};text-decoration:none;font-weight:700" class="ink">${esc(r.name)}</a><br><span style="color:${C.green}" class="new">${esc(money(r.price, r.currency))}</span></td></tr></table></td></tr>`;
+        `<td valign="middle" style="font:14px/1.35 ${SANS}"><a href="${href}" style="color:${C.ink};text-decoration:none;font-weight:700" class="ink">${esc(r.name)}</a><br><span style="color:${C.green}" class="new">${esc(money(r.price, r.currency, l))}</span></td></tr></table></td></tr>`;
     })
     .join("");
   return `<div style="height:26px;line-height:26px">&nbsp;</div><p style="margin:0 0 6px;font:700 13px ${SANS};letter-spacing:1.5px;text-transform:uppercase;color:${C.muted}" class="mut">${esc(c.related)}</p><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${rows}</table>`;
@@ -250,10 +250,10 @@ export function renderAlertEmail(l: Locale, items: AlertItem[]): RenderedAlert {
   const c = COPY[l];
   const n = items.length;
   const first = items[0];
-  const subject = oneLine(n === 1 ? c.subject1(first.name, money(first.to, first.currency)) : c.subjectN(n));
+  const subject = oneLine(n === 1 ? c.subject1(first.name, money(first.to, first.currency, l)) : c.subjectN(n));
   const intro = n === 1 ? c.intro1 : c.introN(n);
   const pre = n === 1
-    ? c.preheader({ pct: pctLabel(l, (first.from - first.to) / first.from), store: first.store, from: money(first.from, first.currency) })
+    ? c.preheader({ pct: pctLabel(l, (first.from - first.to) / first.from), store: first.store, from: money(first.from, first.currency, l) })
     : intro;
   // Identificación del remitente (LSSI art. 20) por enlace al Aviso legal, que ya
   // publica los datos del titular: el pie del correo no repite nombre ni domicilio.
@@ -307,13 +307,13 @@ ${esc(legal)}</span></td></tr>
     const pct = pctLabel(l, (i.from - i.to) / i.from);
     return [
       `${i.name}`,
-      `${c.was} ${money(i.from, i.currency)} → ${money(i.to, i.currency)} (${pct}) ${c.at} ${i.store} · ${shipLine(c, i)}`,
+      `${c.was} ${money(i.from, i.currency, l)} → ${money(i.to, i.currency, l)} (${pct}) ${c.at} ${i.store} · ${shipLine(l, c, i)}`,
       `${c.cta}: ${withUtm(i.url)}`,
       ...(n > 1 ? [`${c.unsubOne}: ${i.unsub}`] : []),
     ].join("\n");
   });
   const rel = n === 1 && first.related?.length
-    ? [`\n${c.related}:`, ...first.related.map((r) => `- ${r.name} · ${money(r.price, r.currency)} · ${withUtm(r.url, "relacionadas")}`)]
+    ? [`\n${c.related}:`, ...first.related.map((r) => `- ${r.name} · ${money(r.price, r.currency, l)} · ${withUtm(r.url, "relacionadas")}`)]
     : [];
   const text = [
     intro, "", lines.join("\n\n"), ...rel, "", "--", c.why + (n > 1 ? " " + c.unsubEach : ""),

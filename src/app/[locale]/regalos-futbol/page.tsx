@@ -1,3 +1,4 @@
+import type { Locale } from "@/lib/i18n/translations";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { HUB } from "@/lib/hubStrings";
@@ -38,11 +39,11 @@ function Block({ id, title, children }: { id: string; title: string; children: R
   );
 }
 
-function Grid({ cards }: { cards: GiftCard[] }) {
+function Grid({ cards, locale }: { cards: GiftCard[]; locale: Locale }) {
   return (
     <div className={GRID}>
       {cards.map((c) => (
-        <DealCard key={`${c.section}/${c.id}`} href={c.href} title={c.title} image={c.image} price={c.total} currency={c.currency as OfferCurrencyCode} store={c.store} />
+        <DealCard key={`${c.section}/${c.id}`} href={c.href} title={c.title} image={c.image} price={c.total} currency={c.currency as OfferCurrencyCode} store={c.store} locale={locale} />
       ))}
     </div>
   );
@@ -78,14 +79,14 @@ export default async function GiftsPage({ params }: P) {
       <h2 className="font-vintage mb-4 text-2xl text-[#1B3B2B] sm:text-3xl">{s.budgetH2}</h2>
       {budget.map(({ band, cards }) => (
         <Block key={band.key} id={band.key} title={SEASONAL[locale].bands[band.key]}>
-          <Grid cards={cards} />
+          <Grid cards={cards} locale={locale} />
         </Block>
       ))}
 
       <h2 className="font-vintage mb-4 text-2xl text-[#1B3B2B] sm:text-3xl">{s.typeH2}</h2>
       {types.map(({ type, cards }) => (
         <Block key={type} id={type} title={s.type[type]}>
-          <Grid cards={cards} />
+          <Grid cards={cards} locale={locale} />
           {type === "tickets" && <p className="mt-3 text-xs text-[#675c44]">{s.ticketsNote}</p>}
         </Block>
       ))}

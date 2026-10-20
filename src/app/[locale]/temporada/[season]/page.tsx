@@ -1,3 +1,4 @@
+import type { Locale } from "@/lib/i18n/translations";
 import { notFound } from "next/navigation";
 import { hubFrom, modifiedLd } from "@/lib/seoMeta";
 import type { Metadata } from "next";
@@ -19,7 +20,7 @@ export function generateStaticParams() {
 
 type P = { params: Promise<{ locale: string; season: string }> };
 
-const money = (o: { price: number; shipping: number; currency: Parameters<typeof formatOfferMoney>[1] } | undefined) => (o ? formatOfferMoney(o.price + o.shipping, o.currency) : "");
+const money = (o: { price: number; shipping: number; currency: Parameters<typeof formatOfferMoney>[1] } | undefined, locale: Locale) => (o ? formatOfferMoney(o.price + o.shipping, o.currency, locale) : "");
 
 export async function generateMetadata({ params }: P): Promise<Metadata> {
   const { locale: raw, season: slug } = await params;
@@ -62,7 +63,7 @@ export default async function SeasonHub({ params }: P) {
         ]}
       />
       <Crumbs locale={locale} trail={[{ label: h1 }]} />
-      <HubHeader h1={h1} intro={ui.seasonIntro({ season, n: items.length, teams: teams.length, price: money(statsOf(items).minOffer) })} />
+      <HubHeader h1={h1} intro={ui.seasonIntro({ season, n: items.length, teams: teams.length, price: money(statsOf(items).minOffer, locale) })} />
       <Section title={ui.byType}>
         <TeamLinks
           locale={locale}
