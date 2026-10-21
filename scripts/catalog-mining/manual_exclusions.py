@@ -12,6 +12,29 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-10-21 ---
+    "/itm/137367102206",  # 2026-10-21 removed: Iraq Third Mens Soccer Jersey 26-27
+    "/itm/137367102206",  # 2026-10-21 removed: Maglia calcio uomo Iraq Third 26-27
+    "/itm/137367103383",  # 2026-10-21 removed: Camiseta de fútbol Iraq Home para hombre 26-27
+    "/itm/168545513809",  # 2026-10-21 removed: MAGLIA Albania Nazionale Calcio Home Uomo 2026
+    "/itm/178130326165",  # 2026-10-21 removed: Maglia calcio uomo Iraq Away 26
+    "/itm/189038633993",  # 2026-10-21 removed: Nike Tottenham Hotspur 25-26 Home Jersey Football 
+    "/itm/226911943721",  # 2026-10-21 removed: Camiseta de fútbol local para hombre Joma Honduras
+    "/itm/226911943721",  # 2026-10-21 removed: Maglia calcio Joma Honduras uomo home 2023 taglia 
+    "/itm/306863423098",  # 2026-10-21 removed: James Maddison Signed Tottenham 2025/26 Away Jerse
+    "/itm/307216539260",  # 2026-10-21 removed: Germany National Team adidas 2026 Third Replica Je
+    "/itm/336519606315",  # 2026-10-21 removed: Maglia Nazionale Paraguay Home 2026
+    "/itm/358802487952",  # 2026-10-21 removed: Camiseta Albania Fútbol Nacional Visitante Hombre 
+    "/itm/388116655431",  # 2026-10-21 removed: Maglia calcio Umbro Guatemala Home giovanile 25/26
+    "/itm/389530893480",  # 2026-10-21 removed: Maglia calcio Umbro El Salvador Home giovanile 25/
+    "/itm/398446335010",  # 2026-10-21 removed: Camiseta local FC SCHALKE 04 2026/2027 Jersey 26/2
+    "/itm/398446335010",  # 2026-10-21 removed: Maglia home FC SCHALKE 04 2026/2027 jersey 26/27 h
+    "/itm/800017254829",  # 2026-10-21 removed: JERSEY Uzbekistan Soccer Away Men 2026
+    "p=46363351639",  # FootStoreES intermiami-home-women: Messi print (title "Messi")
+    "napoli-third-away-euro-jersey-2026-27",  # FansJerseyHub napoli-third-202627: "Euro Jersey" variant, not the league kit
+    "fenerbahce-home-player-version-soccer-jersey-2026-27",  # FansJerseyHub: player version
+    "fenerbahce-away-player-version-soccer-jersey-2026-27",  # FansJerseyHub: player version
+    "neymar-jr-10-santos-fc-away-soccer-jersey-full-sponsor-set",  # FansJerseyHub: Neymar print
     # --- Daily pass 2026-10-10, eBay US/IT/ES/GB ---
     "/itm/267746188311",  # eBay GB croacia-retro-2020-away: Modric #10 print
     "/itm/267768253339",  # eBay GB inglaterra-retro-2002-home: "Retro Replica" reproduction

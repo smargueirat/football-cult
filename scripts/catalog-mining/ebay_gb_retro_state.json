@@ -618,6 +618,7 @@
 "bologna-retro-202021-away",
 "bologna-retro-2024-away",
 "bologna-retro-202425-third",
+"bosnia-retro-2014-away",
 "bosnia-retro-2016-home",
 "botafogo-retro-2005-home",
 "botafogo-retro-2023-home",
@@ -650,6 +651,7 @@
 "brasil-retro-2004-away",
 "brasil-retro-2004-home",
 "brasil-retro-2005-third",
+"brasil-retro-2006-away",
 "brasil-retro-200607-home",
 "brasil-retro-200809-home",
 "brasil-retro-2010-away",
@@ -881,6 +883,7 @@
 "chequia-retro-2022-away",
 "chequia-retro-2022-home",
 "chequia-retro-202223-away",
+"chequia-retro-202223-home",
 "chequia-retro-2024-away",
 "chile-retro-1994-home",
 "chile-retro-1996-home",
@@ -1360,6 +1363,7 @@
 "escocia-retro-202425-home",
 "escocia-retro-202425-third",
 "eslovaquia-retro-2014-home",
+"eslovaquia-retro-201516-home",
 "eslovaquia-retro-202223-away",
 "eslovenia-retro-2002-away",
 "eslovenia-retro-200203-away",
@@ -1380,12 +1384,14 @@
 "espana-retro-2002-third",
 "espana-retro-2006-home",
 "espana-retro-2010-goalkeeper",
+"espana-retro-2012-away",
 "espana-retro-2012-home",
 "espana-retro-201213-away",
 "espana-retro-2014-away",
 "espana-retro-2014-home",
 "espana-retro-2016-away",
 "espana-retro-2018-away",
+"espana-retro-2018-home",
 "espana-retro-201819-home",
 "espana-retro-2020-away",
 "espana-retro-2022-home",
@@ -1625,6 +1631,7 @@
 "francia-retro-201314-away",
 "francia-retro-2015-away",
 "francia-retro-2016-home",
+"francia-retro-201617-home",
 "francia-retro-2018-away",
 "francia-retro-201819-away",
 "francia-retro-201920-away",
@@ -1829,8 +1836,10 @@
 "grullamorioka-retro-2024-away",
 "guatemala-retro-200506-away",
 "guatemala-retro-201718-away",
+"guatemala-retro-201920-away",
 "guatemala-retro-201920-home",
 "guatemala-retro-2021-away",
+"guatemala-retro-202122-away",
 "guatemala-retro-202324-home",
 "guatemala-retro-202425-away",
 "guinea-retro-2022-away",
@@ -1858,6 +1867,7 @@
 "heerenveen-retro-2005-home",
 "heerenveen-retro-2006-away",
 "heidenheim-retro-2018-home",
+"heidenheim-retro-201819-home",
 "heidenheim-retro-202223-home",
 "heidenheim-retro-2024-home",
 "heidenheim-retro-202425-home",
@@ -1866,6 +1876,7 @@
 "hellasverona-retro-201516-third",
 "hellasverona-retro-2016-home",
 "hellasverona-retro-201617-away",
+"hellasverona-retro-201617-home",
 "hellasverona-retro-2017-third",
 "hellasverona-retro-2018-away",
 "hellasverona-retro-201819-home",
@@ -2181,6 +2192,7 @@
 "israel-retro-2003-home",
 "israel-retro-2007-away",
 "israel-retro-201718-third",
+"israel-retro-202224-home",
 "italia-retro-1970-home",
 "italia-retro-199092-third",
 "italia-retro-1994-home",
@@ -2210,6 +2222,7 @@
 "italia-retro-202021-home",
 "italia-retro-202122-third",
 "italia-retro-202223-away-mens",
+"italia-retro-2023-home",
 "italia-retro-202324-third",
 "italia-retro-2024-away",
 "italia-retro-202425-home",
@@ -2832,6 +2845,7 @@
 "millwall-retro-202223-away",
 "minnesotaunited-retro-2015-home",
 "minnesotaunited-retro-201617-home",
+"minnesotaunited-retro-201718-away",
 "minnesotaunited-retro-201819-home",
 "minnesotaunited-retro-2019-home",
 "minnesotaunited-retro-202021-home",
@@ -2946,9 +2960,11 @@
 "nashvillesc-retro-2020-away",
 "nashvillesc-retro-202021-away",
 "nashvillesc-retro-2022-home",
+"nashvillesc-retro-202324-away",
 "nashvillesc-retro-202324-home",
 "nashvillesc-retro-2024-away",
 "nashvillesc-retro-2024-third",
+"nashvillesc-retro-202425-home",
 "newcastle-retro-199395-home",
 "newcastle-retro-199596-home",
 "newcastle-retro-199597-away",
@@ -3241,6 +3257,7 @@
 "parmacalcio-retro-202223-away",
 "parmacalcio-retro-202223-third",
 "parmacalcio-retro-2023-away",
+"parmacalcio-retro-202324-away",
 "parmacalcio-retro-202425-away",
 "partizanbelgrade-retro-201415-home",
 "penarol-retro-2014-home",
@@ -3998,11 +4015,14 @@
 "stokecity-retro-2013-home",
 "stokecity-retro-201415-away",
 "stokecity-retro-2015-away",
+"stokecity-retro-201516-away",
 "stokecity-retro-2016-away",
 "stokecity-retro-2017-away",
 "stokecity-retro-2017-third",
+"stokecity-retro-201819-away",
 "stokecity-retro-201920-home",
 "stokecity-retro-2020-away",
+"stokecity-retro-202021-home",
 "stokecity-retro-202425-home",
 "stokecity-retro-202425-third",
 "stpauli-retro-1997-away",
@@ -22353,6 +22373,128 @@
 "L"
 ],
 "shipping": 2.94
+},
+"chequia-retro-202223-home": {
+"title": "Czech Republic 2022-2023 Home Football Shirt (BNWT) L",
+"price": 49.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/960062204666?_skw=Czech+Republic+2022+home+shirt&hash=itemdf882aaafa%3Ag%3Abv4AAeSwOI9o3yYJ&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|960062204666|0",
+"image": "https://i.ebayimg.com/images/g/bv4AAeSwOI9o3yYJ/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 0.0
+},
+"guatemala-retro-201920-away": {
+"title": "Men's Football Shirt 2019-2020 Blue Guatemala Away Soccer National Team T-Shirt",
+"price": 32.8,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/157238164746?_skw=Guatemala+2019+away+shirt&hash=item249c1ffd0a%3Ag%3ADvYAAeSwEOJomx0c&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|157238164746|458732917136",
+"image": "https://i.ebayimg.com/images/g/DvYAAeSwEOJomx0c/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 3.75
+},
+"nashvillesc-retro-202425-home": {
+"title": "adidas Nashville SC 2024-25 Home Authentic Jersey 'The 615 Kit'",
+"price": 71.75,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/178076223618?_skw=Nashville+SC+2024+home+shirt&hash=item29762b8882%3Ag%3AS%7EwAAeSwbKFqLFNh&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|178076223618|0",
+"image": "https://i.ebayimg.com/images/g/S~wAAeSwbKFqLFNh/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 13.09
+},
+"stokecity-retro-201516-away": {
+"title": "BNWT 2015 2016 STOKE CITY AWAY NEW BALANCE FOOTBALL SHIRT MEN'S XXL",
+"price": 70.0,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/356385727241?_skw=Stoke+City+2015+away+shirt&hash=item52fa3ea309%3Ag%3A7pcAAOSwktZnYs6b&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|356385727241|0",
+"image": "https://i.ebayimg.com/images/g/7pcAAOSwktZnYs6b/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 3.6
+},
+"stokecity-retro-201819-away": {
+"title": "Stoke City Football Away Shirt Macron Men’s 2XL 2018-19 Never Worn ",
+"price": 19.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/860035507465?_skw=Stoke+City+2018+away+shirt&hash=itemc83e1c6509%3Ag%3AkwgAAeSwPPxnrYe-&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|860035507465|0",
+"image": "https://i.ebayimg.com/images/g/kwgAAeSwPPxnrYe-/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 2.94
+},
+"stokecity-retro-202021-home": {
+"title": "Stoke City Home 2020/21 Football Shirt BNWT XL",
+"price": 29.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/327333157805?_skw=Stoke+City+2020+home+shirt&hash=item4c36939bad%3Ag%3A-4kAAeSwSzBpV6qP&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|327333157805|0",
+"image": "https://i.ebayimg.com/images/g/-4kAAeSwSzBpV6qP/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 3.75
+},
+"bosnia-retro-2014-away": {
+"title": "Bosnia and Herzegovina Official World Cup 2014 Adidas Away Jersey Shirt",
+"price": 65.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/158010210705?_skw=Bosnia+and+Herzegovina+2014+away+shirt&hash=item24ca247991%3Ag%3APwwAAeSwC1pqNANh&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|158010210705|459310448075",
+"image": "https://i.ebayimg.com/images/g/PwwAAeSwC1pqNANh/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 11.99
+},
+"francia-retro-201617-home": {
+"title": "FRANCE 2016/2017 HOME FOOTBALL SHIRT - MEDIUM - BRAND NEW WITH TAGS ",
+"price": 57.9,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/336848747938?_skw=France+2016+home+shirt&hash=item4e6dbffda2%3Ag%3A9zYAAeSwPQNqPWtA&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|336848747938|0",
+"image": "https://i.ebayimg.com/images/g/9zYAAeSwPQNqPWtA/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 2.94
+},
+"guatemala-retro-202122-away": {
+"title": "GUATEMALA Umbro Away Football Shirt 2021-22 BNWT Mens Sizes Jersey Camiseta",
+"price": 41.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/176933610953?_skw=Guatemala+2021+away+shirt&hash=item293210a5c9%3Ag%3AhYMAAeSwWH5n2YBA&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|176933610953|476666004494",
+"image": "https://i.ebayimg.com/images/g/hYMAAeSwWH5n2YBA/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 0.0
+},
+"italia-retro-2023-home": {
+"title": "Italy 2023 home shirt",
+"price": 26.7,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/237125857208?_skw=Italy+2023+home+shirt&hash=item3735cd6fb8%3Ag%3AwrcAAeSwfsNqtt7i&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|237125857208|0",
+"image": "https://i.ebayimg.com/images/g/wrcAAeSwfsNqtt7i/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 2.96
 }
 }
 }

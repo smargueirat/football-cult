@@ -629,6 +629,11 @@
   "qid": "Q151893"
  },
  "Rheinpark Stadion": null,
+ "Riverside Stadium": {
+  "city": "Middlesbrough",
+  "desc": "association football stadium in Middlesbrough",
+  "qid": "Q822886"
+ },
  "Roazhon Park": {
   "city": "Rennes",
   "desc": "football stadium in Rennes, France",
@@ -886,6 +891,11 @@
   "qid": "Q908481"
  },
  "The Falkirk Stadium": null,
+ "The Hawthorns": {
+  "city": "West Bromwich",
+  "desc": "football stadium in West Bromwich, Sandwell, England",
+  "qid": "Q31678"
+ },
  "The Valley": {
   "city": "London",
   "desc": "football stadium in London, home to Charlton Athletic FC",
