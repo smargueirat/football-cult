@@ -64670,18 +64670,6 @@ const productsData = [
     ],
   },
 {
-    id: "pumasunam-away-202627",
-    teamKey: "pumasunam",
-    season: "2026/27",
-    typeKey: "away",
-    colorHex: "#003DA5",
-    colorHexSecondary: "#FFD700",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 29.95, shipping: 12.85, currency: "USD", url: "https://www.ebay.com/itm/117457123862?_skw=Pumas+UNAM+away+soccer+jersey&hash=item1b58fd7a16%3Ag%3Al0IAAeSwIiNqyTsZ&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kanYkX4qUCdHn%2FRSiC%2B%2FBALwRT45VZdPqMZiRu71ssNr8ar37sisQdgcfRHnT1D4%2BvAepkcIwukjP2PJ%2FODjp8nYAdYsjRR5EfQyp4mA5GUJeFxT%2FUoFin0NTTDlhuu0jRdz0RIELneAk5Ni6PewwZLtL6n%2BeKtsjy%2FZGO6RFQLlmDU24xpaZmY8z0HEJixPBHJdVlpqY7TUp5LM%2BLt6JolGUdjTdbF%2Bh9ewkXOQe3%2B4x70GLM8rGFw1Lj5FVy4zaxE7mlqhi%2Fs%2Bj9IpOR4xR%2Bwz%2BPz02z354gOh1NSd%2Byy80%2Bm5NCUoMq6iOyKr4Fqe8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Pumas UNAM Away visitante 26/27 jersey Size Medium ", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/l0IAAeSwIiNqyTsZ/s-l1600.jpg" },
-    ],
-  },
-{
     id: "pumasunam-home-202526-kids",
     teamKey: "pumasunam",
     season: "2025/26",
