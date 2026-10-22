@@ -12,6 +12,22 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-10-22 ---
+    "/itm/137803693095",  # 2026-10-22 swap reverted: Croatia Home Mens Jersey 27 template
+    "/itm/137803693140",  # 2026-10-22 swap reverted: Croatia Away Mens Jersey 27 template
+    "/itm/168747599525",  # 2026-10-22 swap reverted: Uruguay home D. Nunez print
+    "/itm/287543846069",  # 2026-10-22 swap reverted: Colombia away Richard Rios print
+    "/itm/318617147544",  # 2026-10-22 swap reverted: Indonesia home Beckham print
+    "/itm/327339220167",  # 2026-10-22 swap reverted: PSG home Dembele 10 print
+    "/itm/377559953777",  # 2026-10-22 swap reverted: France home template
+    "/itm/800668668863",  # 2026-10-22 swap reverted: Argentina home MESSI 10 print
+    "p=46363346618",  # FootStoreES intermiami-home-women: Messi print
+    "p=46309373604",  # FootStoreES alemania-third-women: long-sleeve swap +10%
+    "lewandowski-9-barcelona-away-soccer-jersey-2025-26-ucl",  # FansJerseyHub bar-away-2025: Lewandowski print swapped in
+    "p=46381749566",  # FootStoreES estunis-third-202526: Pro version 108 EUR swapped over the 62 EUR one
+    "p=46394661338",  # ForumSport argelia-prematch-2026: +12% swap, different title
+    "sc-freiburg-away-soccer-jersey-2026-27",  # FansJerseyHub freiburg-away: only source, dropped 10-21 too
+    "rayo-vallecano-home-soccer-jersey-2026-27",  # FansJerseyHub rayo-home: AI-generated photo
     # --- Daily pass 2026-10-21 ---
     "/itm/137367102206",  # 2026-10-21 removed: Iraq Third Mens Soccer Jersey 26-27
     "/itm/137367102206",  # 2026-10-21 removed: Maglia calcio uomo Iraq Third 26-27
