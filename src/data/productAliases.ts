@@ -10,6 +10,22 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-10-23: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "barcelona-retro-2018-third": "barcelona-retro-201819-third",
+  "bayern-retro-2017-away": "bayern-retro-201718-away",
+  "chelsea-retro-2004-away": "chelsea-retro-200405-away",
+  "nottinghamforest-retro-2011-home": "nottinghamforest-retro-201112-home",
+  "sunderland-retro-2020-away": "sunderland-retro-202021-away",
+  "sunderland-retro-2007-home": "sunderland-retro-200708-home",
+  "juventus-retro-2006-away": "juventus-retro-200607-away",
+  "manutd-retro-2020-third": "manutd-retro-202021-third",
+  "psg-retro-2018-away": "psg-retro-201819-away",
+  "chelsea-retro-1997-home": "chelsea-retro-199798-home",
+  "arsenal-retro-2013-away": "arsenal-retro-201314-away",
+  "crystalpalace-retro-1991-away": "crystalpalace-retro-199192-away",
+  "everton-retro-2012-home": "everton-retro-201213-home",
+  "juventus-retro-2013-home": "juventus-retro-201314-home",
   // 2026-10-21: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "pumasunam-away-202627": "pumasunam-retro-202425-away",
