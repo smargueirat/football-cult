@@ -156,7 +156,7 @@ if [[ -n "$(git status --porcelain)" ]]; then
 
   if git diff --cached --quiet; then
     echo "=== safety net: nothing from the known file list was staged, leaving as-is ==="
-  elif npx tsc --noEmit && node -e '
+  elif NODE_OPTIONS=--max-old-space-size=6144 npx tsc --noEmit && node -e '
       const fs = require("fs");
       const src = fs.readFileSync("src/data/products.ts", "utf8");
       const start = src.indexOf("const productsData = [");
