@@ -12,6 +12,8 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-10-23 ---
+    "adidas_ji6815_easpnk",  # FootStoreES intermiami-home-women: Messi print, new p= id each pull
     # --- Daily pass 2026-10-22 ---
     "/itm/137803693095",  # 2026-10-22 swap reverted: Croatia Home Mens Jersey 27 template
     "/itm/137803693140",  # 2026-10-22 swap reverted: Croatia Away Mens Jersey 27 template
