@@ -31,6 +31,7 @@ import json
 import os
 import re
 import subprocess
+from urllib.parse import unquote
 import sys
 import unicodedata
 import urllib.parse
@@ -90,8 +91,17 @@ def parse(src):
             "ground": field(body, "groundType"),
             "urls": set(re.findall(r'url: "([^"]+)"', body)),
             "photos": {k for k in (photo_key(u) for u in re.findall(r'imageUrl: "([^"]+)"', body)) if k},
+            "kid": field(body, "ageGroup") == "kids" or bool(KID.search(pid)),
+            "codes": set(CODE.findall(unquote(pid + " " + " ".join(re.findall(r'url: "([^"]+)"', body))).lower())),
         }
     return out
+
+
+# Código del fabricante (adidas "ji1093", Nike "fq8333-800"): misma bota aunque
+# cambien la tienda, la URL y la foto. Solo se usa si lleva a UNA ficha viva.
+CODE = re.compile(r"(?<![a-z0-9])([a-z]{2}\d{4}(?:-\d{3})?)(?![a-z0-9])")
+# Niño y adulto comparten foto y a veces código: nunca se redirige de uno al otro.
+KID = re.compile(r"(?<![a-z])(ni[nñ]os?|kids?|infantil|bebes?|baby|enfant|junior|bambin[oi]|crian[cç]as?)(?![a-z])")
 
 
 # ---------------------------------------------------------------- camisetas
@@ -236,6 +246,10 @@ def main():
         aliases = boot_aliases if section == "botas" else gear_aliases.setdefault(section, {})
         url_to_id = {u: k for k in live for u in current[k]["urls"]}
         photo_to_id = {p: k for k in live for p in current[k]["photos"]}
+        code_to_ids = {}
+        for k in live:
+            for c in current[k]["codes"]:
+                code_to_ids.setdefault(c, set()).add(k)
         for p, k in registry.get(section, {}).items():
             if k in live:
                 photo_to_id.setdefault(p.lower(), k)
@@ -262,15 +276,26 @@ def main():
         stats = Counter()
         for k in dead:
             cur = aliases.get(k)
-            if cur and (cur.startswith("/") or cur in live):
+            if cur and cur in live:
                 stats["ya"] += 1
                 continue
             v = history[k]
-            target = next((url_to_id[u] for u in v["urls"] if u in url_to_id), None)
+            same = lambda t: current[t]["kid"] == v["kid"]  # noqa: E731
+            target = next((url_to_id[u] for u in v["urls"] if u in url_to_id and same(url_to_id[u])), None)
             how = "url"
             if not target:
-                target = next((photo_to_id[p] for p in v["photos"] if p in photo_to_id), None)
+                target = next((photo_to_id[p] for p in v["photos"] if p in photo_to_id and same(photo_to_id[p])), None)
                 how = "foto"
+            if not target:
+                cands = {t for c in v["codes"] for t in code_to_ids.get(c, ()) if same(t)}
+                target = next(iter(cands)) if len(cands) == 1 else None
+                how = "codigo"
+            # Un alias al hub se reintenta en cada pasada: la ficha buena puede
+            # aparecer después (fusión por EAN). Así se quedaba para siempre en
+            # /botas/marca/adidas/fg una bota con suscriptor de alerta (2026-10-24).
+            if not target and cur and cur.startswith("/"):
+                stats["ya"] += 1
+                continue
             if not target:
                 target, how = hub(v), "hub"
             aliases[k] = target
@@ -280,7 +305,7 @@ def main():
             del aliases[k]
         report.append(
             f"{section}: {len(history)} ids en el historial, {len(dead)} retirados; sin redirección antes {before}, "
-            f"después 0 (ya tenían {stats['ya']}, nuevos: {stats['url']} misma oferta, {stats['foto']} misma foto, {stats['hub']} al hub)"
+            f"después 0 (ya tenían {stats['ya']}, nuevos: {stats['url']} misma oferta, {stats['foto']} misma foto, {stats['codigo']} mismo código, {stats['hub']} al hub)"
         )
 
     print("\n".join(report))
