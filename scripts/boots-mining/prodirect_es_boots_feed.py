@@ -30,9 +30,14 @@ BAD = re.compile(r"kids|junior|youth|infant|baby|\bjr\b|-j-|bag|sock|insole|lace
 
 
 STATE_DIR = os.path.expanduser("~/.local/state/fc-feeds")  # fuera de /tmp (tmpfs, se vacía al reiniciar)
+# Pedidos que agotaron los reintentos (429/5xx/red). Un fallo NO es "sin
+# stock": en oct-2026 la tienda nos limitó y la pasada diaria guardó 334 y
+# luego 68 botas de 1.046, que ya no se volvían a pedir hasta el sábado.
+FAILS = 0
 
 
 def get(url, tries=3):
+    global FAILS
     for i in range(tries):
         try:
             return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40).read()
@@ -43,6 +48,7 @@ def get(url, tries=3):
             time.sleep(min(int(ra), 120) if ra.isdigit() else 15 * (i + 1) if e.code == 429 else 3 * (i + 1))
         except Exception:
             time.sleep(3 * (i + 1))
+    FAILS += 1
     return None
 
 
@@ -100,6 +106,8 @@ def main(out_path, full):
         time.sleep(0.5)
     if len(res) < 50:
         sys.exit(f"solo {len(res)} botas con stock: algo falló, no piso el archivo anterior")
+    if FAILS > len(handles) * 0.05:
+        sys.exit(f"{FAILS} de {len(handles)} pedidos fallaron (¿nos limitan?): no piso el archivo anterior")
     tmp = out_path + ".tmp"
     json.dump(res, open(tmp, "w"), ensure_ascii=False)
     os.replace(tmp, out_path)
