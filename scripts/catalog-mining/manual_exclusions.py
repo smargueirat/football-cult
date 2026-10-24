@@ -12,6 +12,24 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-10-24 ---
+    "/itm/900037096522",  # 2026-10-24 removed: eBay GB ipswich home 26.7 template price
+    "/itm/336838397745",  # 2026-10-24 removed: eBay GB ipswich away long sleeve
+    "/itm/189040233381",  # 2026-10-24 removed: eBay GB manutd away B.Fernandes print
+    "/itm/307243550282",  # 2026-10-24 removed: eBay GB chelsea home 26/27 "M-4XL" template
+    "/itm/307243548233",  # 2026-10-24 removed: eBay GB chelsea away 26/27 "M-4XL" template
+    "/itm/128148769242",  # 2026-10-24 removed: eBay GB chelsea third Estevao 41 print
+    "/itm/336860481098",  # 2026-10-24 removed: eBay GB leeds third 26/27 26.7 template
+    "/itm/860051179507",  # 2026-10-24 removed: eBay GB nottinghamforest away 21.49 template
+    "/itm/188970087056",  # 2026-10-24 removed: eBay IT sunderland-home O'Nien print
+    "/itm/840048243041",  # 2026-10-24 removed: eBay IT mancity-away 26/27 Haaland print
+    "/itm/188709964811",  # 2026-10-24 removed: eBay IT everton-home Grealish print
+    "/itm/407300442811",  # 2026-10-24 removed: eBay IT nottinghamforest-home vague "S Rubins" listing
+    "/itm/336728341808",  # 2026-10-24 removed: eBay IT mancity-home 21.78 EUR "replica" listing
+    "/itm/257793719893",  # 2026-10-24 removed: eBay IT westham-away women's size 20
+    "/itm/257592383680",  # 2026-10-24 removed: eBay westham-home Lamadrid print
+    "/itm/168810477767",  # 2026-10-24 removed: eBay atleticomadrid-third 130 USD untitled listing
+    "/itm/298718317443",  # 2026-10-24 swap reverted: Hummel "Betis Sevilla" mislabeled Betis away as Sevilla third/Betis third
     # --- Daily pass 2026-10-23 ---
     "adidas_ji6815_easpnk",  # FootStoreES intermiami-home-women: Messi print, new p= id each pull
     # --- Daily pass 2026-10-22 ---
