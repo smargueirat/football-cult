@@ -90445,18 +90445,6 @@ const productsData = [
     ],
   },
 {
-    id: "stuttgart-away-202627",
-    teamKey: "stuttgart",
-    season: "2026/27",
-    typeKey: "away",
-    colorHex: "#E32219",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 168.02, shipping: 27.99, currency: "USD", url: "https://www.ebay.com/itm/398345186815?_skw=VfB+Stuttgart+away+soccer+jersey&hash=item5cbf392dff%3Ag%3AOD4AAeSw7zhqlhNX&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "VFB STUTTGART Champions League Away Jersey 2026/2027 Jersey Away CL 26/27", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/OD4AAeSw7zhqlhNX/s-l1600.jpg" },
-    ],
-  },
-{
     id: "celtic-prematch-202526",
     teamKey: "celtic",
     season: "2025/26",
@@ -90502,18 +90490,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay ES", price: 177.38, shipping: 28.83, currency: "EUR", url: "https://www.ebay.es/itm/880038892761?_skw=Germany+home+soccer+jersey&hash=itemcce667d4d9%3Ag%3AI0wAAeSwGodq2TEn&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol local Adidas 1988 1990 Alemania Occidental de colección para hombre grande", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/I0wAAeSwGodq2TEn/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "alemania-retro-202223-home",
-    teamKey: "alemania",
-    season: "2022/23",
-    typeKey: "retro",
-    colorHex: "#F5F5F5",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 52.34, shipping: 15.78, currency: "EUR", url: "https://www.ebay.es/itm/127948522709?_skw=Germany+home+soccer+jersey&hash=item1dca5384d5%3Ag%3AYusAAeSwEJNqQvlv&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m8YoEoYo%2FIkMWUcILGS9hkC9TTLe9Enc1KNtrLUM0D4pXYmpbTa6h6zg2PUPSsGZL1iBTFhcutSJzeoZakLH8IAO0O%2BYzVog8vYhgqDcvYZkt%2FmP9mozbcafJPfEbT4x2nydc3oeogKuI8tzZRxFPg5jVe5MvjJzKQpyF7fs0Q1S4cK50%2F4ukRpG1JaSBuEZd7EEdZCXdoq4lWcDrcRNIEkMkJPqhUlkgjN71eNfx2%2B9PEKw5ePOYzZ6COf2fjNjTlPej59tQo1wH0rCJMIlnSJKbbt%2FWHxPkmhufpYkaoBUeUufhsTTMC6viAjIeRmbo%3D&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol Adidas Alemania Home Slim Fit blanca 2022/23", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/YusAAeSwEJNqQvlv/s-l1600.jpg" },
     ],
   },
 {

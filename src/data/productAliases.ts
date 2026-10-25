@@ -28,7 +28,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "bay-home-heritage-2025": "bay-home-2025",
   "kallithea-retro-202425-third": "kallithea-third-202526",
   "australia-retro-2002-home": "australia-retro-2010-home",
-  "alemania-retro-202223-home": "alemania-home-women",
+  "alemania-retro-202223-home": "alemania-retro-2022-home",
   "arsenal-retro-200102-home": "arsenal-retro-200204-home",
   "asse-away-202627": "asse-retro-202425-away",
   "honduras-retro-2024-away": "honduras-retro-202425-away",
