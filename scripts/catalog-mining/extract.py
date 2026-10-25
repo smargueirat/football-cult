@@ -455,7 +455,7 @@ TEAM_PATTERNS = {
 TYPE_PATTERNS = {
     # goalkeeper se chequea primero: títulos como "Maillot de portero
     # local" contienen "local" pero son de arquero, no de titular.
-    "goalkeeper": r"portero|gardien|arquero|goalkeeper|\bgk\b|meta\b|guarda-?redes|portiere|goleiro|torwart",
+    "goalkeeper": r"portero|gardien|arquero|goal ?keeper|\bgk\b|meta\b|guarda-?redes|portiere|goleiro|torwart",
     # prematch se chequea antes que training: son productos distintos
     # (remera de calentamiento pre-partido vs. buzo/conjunto de
     # entrenamiento) aunque durante un tiempo compartieron el mismo
@@ -514,7 +514,9 @@ EXCLUDE_RE = re.compile(
     # age-range fallback below either, since "24/26" wasn't at the end of
     # the title and 24 isn't a plausible kid age) sailed through as an
     # adult "home" pick. Added.
-    r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bchild\b|\bjunior\b|\byouth\b|\bjuvenil\b|mujer|women|\bwmns\b|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
+    # "Boy's" (Reebok UK, 2026-10-25) solo CON apóstrofo: un "boys" pelado
+    # excluiría al BSC Young Boys entero (misma trampa que "Juniors").
+    r"infantil|niñ|nino|bebé|bebe|baby|kids?|\bboy['’]s\b|\bchild\b|\bjunior\b|\byouth\b|\bjuvenil\b|mujer|women|\bwmns\b|dama|f[ée]minin|femenin|\bfemme\b|crian[çc]a|"
     r"\benfant\b|bambin[oa]|ragazz[oi]|neonato|\bmini\b|"
     r"ciclismo|chandal|chándal|sudadera|hoodie|pantal|short|medias|calcetin|"
     r"retro|vintage|clásic|classic|hist[oó]ric|retr[oôò]|riedizione|años? \d0\b|"
@@ -592,7 +594,7 @@ KIDS_EXCLUDE_RE = re.compile(
     re.I,
 )
 KIDS_SIGNAL_RE = re.compile(
-    r"infantil|\bjungen\b|\bkinder\b|\bniñ|\bnino|\bkids?\b|\bchild\b|\bjunior\b|\bjuvenil\b|\benfant|crian[çc]a|"
+    r"infantil|\bjungen\b|\bkinder\b|\bboy['’]s\b|\bniñ|\bnino|\bkids?\b|\bchild\b|\bjunior\b|\bjuvenil\b|\benfant|crian[çc]a|"
     # "youth" only, NOT "young" -- BSC Young Boys is a real club in the
     # catalog and a bare "young" would flag every one of its own listings.
     r"\byouth\b|"

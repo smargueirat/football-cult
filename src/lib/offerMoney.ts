@@ -21,7 +21,7 @@ import { previousPriceOf } from "@/lib/priceDrops";
 import type { Locale } from "@/lib/i18n/translations";
 
 export type OfferCurrencyCode = "EUR" | "USD" | "GBP" | "BRL" | "CLP" | "ARS";
-export type BootCurrencyCode = "EUR" | "USD" | "CLP" | "ARS" | "BRL";
+export type BootCurrencyCode = "EUR" | "USD" | "GBP" | "CLP" | "ARS" | "BRL";
 
 // Formatea un monto en SU propia moneda real (la de la tienda), sin
 // convertir a la moneda del país seleccionado. Así el precio mostrado
@@ -156,6 +156,8 @@ export const SHIPPING_KNOWN_FOR: Record<string, readonly string[] | "all"> = {
   "Pro:Direct ES": ["ES", "IT", "FR", "DE"],
   // reebok.eu: 5,99 EUR / gratis desde 50 en la UE; CZ y CH pagan 9,95, GB en GBP.
   "Reebok DE": ["DE", "AT", "BE", "BG", "DK", "ES", "FI", "FR", "GR", "HR", "HU", "IE", "IT", "NL", "NO", "PL", "PT", "RO", "SE", "SK"],
+  // reebok.eu/en-gb (feed Awin "Reebok UK"): 5,99 GBP / gratis desde 50 GBP.
+  "Reebok UK": ["GB"],
   // El feed IT (EUR) es la tarifa de la UE.
   BSTNIT: ["ES", "FR", "DE", "IT", "PT", "NL", "BE", "AT", "IE", "GR", "FI", "SE", "DK", "PL", "CZ", "HU", "RO", "BG", "HR", "SK", "SI"],
   AdidasCL: [],
@@ -216,6 +218,7 @@ export function previousOfferTotal(
 const BOOT_CURRENCY_TO_EUR: Record<BootCurrencyCode, number> = {
   EUR: 1,
   USD: 1.08,
+  GBP: 0.86,
   CLP: 1076.5,
   ARS: 1754.6,
   BRL: 6.05,

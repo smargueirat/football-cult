@@ -493,6 +493,8 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
     "DE", "AT", "BE", "BG", "CH", "CZ", "DK", "ES", "FI", "FR", "GB", "GR",
     "HR", "HU", "IE", "IT", "NL", "NO", "PL", "PT", "RO", "SE", "SK",
   ],
+  // Mismo reebok.eu en su tienda de Reino Unido (/en-gb, GBP, Awin 121516).
+  "Reebok UK": ["GB"],
   FootStoreES: [
     "DE", "AT", "BG", "BE", "HR", "DK", "SK", "SI", "ES", "US", "FR", "GR",
     "HU", "IE", "IS", "IT", "NL", "PL", "PT", "GB", "CZ", "RO", "SE", "CH", "TR",
