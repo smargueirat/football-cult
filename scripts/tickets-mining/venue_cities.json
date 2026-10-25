@@ -398,6 +398,11 @@
   "desc": "stadium in Helsinki, Finland",
   "qid": "Q332219"
  },
+ "Highbury Stadium": {
+  "city": "London",
+  "desc": "former football stadium in Highbury, North London, England",
+  "qid": "Q205309"
+ },
  "Hill Dickinson Stadium": {
   "city": "Liverpool",
   "desc": "football stadium in Liverpool, England, UK",

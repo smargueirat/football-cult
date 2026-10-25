@@ -12,6 +12,116 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-10-25 ---
+    "/itm/167710770396",  # 2026-10-25 removed: eBay GB retro Men's Football Shirt 2023-2024 Red Alban
+    "/itm/127965687484",  # 2026-10-25 removed: eBay GB retro Germany Adidas DFB Jersey Shirt Techfit 
+    "/itm/227224017999",  # 2026-10-25 removed: eBay GB retro NEW Adidas Andy Carroll Liverpool FC 201
+    "/itm/257596638061",  # 2026-10-25 removed: eBay GB retro Manchester United - 2007 to 2008 - Home 
+    "/itm/128030078156",  # 2026-10-25 removed: eBay GB retro Real Madrid ‘Raul’ 2008/09 Home Shirt BN
+    "/itm/406932666436",  # 2026-10-25 removed: eBay GB retro West Ham united  2016/17  L/s away footb
+    "/itm/358390800069",  # 2026-10-25 removed: eBay GB retro 2014-15 Manchester City Home Shirt [Good
+    "/itm/406925830153",  # 2026-10-25 removed: eBay GB retro Manchester City 2019/20 Home Puma 125th 
+    "/itm/800817859766",  # 2026-10-25 removed: eBay GB retro Sunderland Umbro Home Shirt 2008/2009 Si
+    "/itm/267813290803",  # 2026-10-25 retro rejected (uruguay|away|2023): ORIGINAL URUGUAY 2023 DARIO NUÑEZ AWAY J
+    "/itm/315788666161",  # 2026-10-25 retro rejected (boca|home|2020/21): Boca Juniors Home 20/21 Jersey - 10 - Ad
+    "/itm/800802869348",  # 2026-10-25 retro rejected (bayern|third|2019): Bayern Munich 2019 20 Third Thomas Mulle
+    "/itm/168765566410",  # 2026-10-25 retro rejected (intermilan|home|1989): Uhlsport Inter Milan 88/1989 Home Jersey
+    "/itm/128122923939",  # 2026-10-25 retro rejected (acmilan|home|1990): AC Milan 1990 Home Soccer Adidas Jersey 
+    "/itm/128122923939",  # 2026-10-25 retro rejected (acmilan|home|1990): Maglia Adidas AC Milan 1990 Home Soccer 
+    "/itm/128122923939",  # 2026-10-25 retro rejected (acmilan|home|1990): Camiseta Adidas de fútbol local AC Milan
+    "/itm/257778495778",  # 2026-10-25 retro rejected (acmilan|away|2011/12): AC Milan 2011-12 Adidas Away Soccer Jers
+    "/itm/137008321297",  # 2026-10-25 retro rejected (napoli|home|1984): Napoli 1984 Home Jersey CIRIO
+    "/itm/137008321297",  # 2026-10-25 retro rejected (napoli|home|1984): Maglia Napoli 1984 Home CIRIO
+    "/itm/137008321297",  # 2026-10-25 retro rejected (napoli|home|1984): Camiseta local Napoli 1984 Cirio
+    "/itm/131560490961",  # 2026-10-25 retro rejected (lazio|home|2017/18): SS JERSEY LAZIO OFFICIAL IMMOBILE 17 OFF
+    "/itm/168797095346",  # 2026-10-25 retro rejected (fiorentina|away|1994/95): FIORENTINA Jersey AWAY Shirt 1994-95 BAT
+    "/itm/168797095346",  # 2026-10-25 retro rejected (fiorentina|away|1994/95): FIORENTINA Maglia AWAY Shirt 1994-95 BAT
+    "/itm/205682371364",  # 2026-10-25 retro rejected (bologna|third|2023/24): Size M - Macron Bolonia FC 1909 Third Je
+    "/itm/205682371364",  # 2026-10-25 retro rejected (bologna|third|2023/24): Talla M - Macron Bolonia FC 1909 Tercera
+    "/itm/178466572956",  # 2026-10-25 retro rejected (udinese|home|1991): Udinese Calcio 1991‑1992 Black White Str
+    "/itm/227531276363",  # 2026-10-25 retro rejected (udinese|home|1999/00): Udinese Calcio 99-00 Home Vintage Jersey
+    "/itm/227531276363",  # 2026-10-25 retro rejected (udinese|home|1999/00): Maglia Udinese Calcio 99-00 Home Vintage
+    "/itm/227531276363",  # 2026-10-25 retro rejected (udinese|home|1999/00): Camiseta deportiva vintage local del Udi
+    "/itm/157202049098",  # 2026-10-25 retro rejected (udinese|away|2024/25): Udinese 2024/25 Away Shirt Macron Footba
+    "/itm/920024733492",  # 2026-10-25 retro rejected (dortmund|third|2023/04): Borussia Dortmund Puma Authentic Soccer 
+    "/itm/920024733492",  # 2026-10-25 retro rejected (dortmund|third|2023/04): Tercera camiseta de fútbol auténtica Bor
+    "/itm/137859558811",  # 2026-10-25 retro rejected (marseille|home|1996/97): BNWT 1996-1997 Marseille Original Home J
+    "/itm/820093492432",  # 2026-10-25 retro rejected (hertaberlin|home|1999/00): Maglia Hertha BSC Berlino Vintage Home R
+    "/itm/396273415916",  # 2026-10-25 retro rejected (jordania|away|2022/23): Air Jordan Maglia Uomo Medium Paris Sain
+    "/itm/188365860044",  # 2026-10-25 retro rejected (jordania|away|2022/23): Camiseta de fútbol visitante Nike Air Jo
+    "/itm/196142543982",  # 2026-10-25 retro rejected (mali|away|2023/24): MAGLIA MALI NAZIONALE CALCIO AWAY 2023-2
+    "/itm/196142543982",  # 2026-10-25 retro rejected (mali|away|2023/24): JERSEY Malí Fútbol Nacional Visitante 20
+    "/itm/318465365753",  # 2026-10-25 retro rejected (argentina|home|1994): ARGENTINA Maglia HOME Shirt World Cup 19
+    "/itm/318465365753",  # 2026-10-25 retro rejected (argentina|home|1994): ARGENTINA Camiseta HOME Copa Mundial 199
+    "/itm/156162093402",  # 2026-10-25 retro rejected (brasil|third|2023/24): VOLT VITORIA THIRD JERSEY BRAZIL SOCCER 
+    "/itm/156162093402",  # 2026-10-25 retro rejected (brasil|third|2023/24): VOLT VITORIA THIRD JERSEY BRAZIL SOCCER 
+    "/itm/377566702820",  # 2026-10-25 retro rejected (alemania|away|2018): Maglia Muller Germany maglia away calcio
+    "/itm/377566702820",  # 2026-10-25 retro rejected (alemania|away|2018): Camiseta de fútbol visitante Muller Alem
+    "/itm/377546088580",  # 2026-10-25 retro rejected (italia|home|1996/97): Maglia calcio vintage Nike uomo 1996-97 
+    "/itm/377546088580",  # 2026-10-25 retro rejected (italia|home|1996/97): Camiseta deportiva de fútbol local de It
+    "/itm/820262279909",  # 2026-10-25 retro rejected (rayovallecano|away|2000/01): MAGLIA RAYO VALLECANO Uomo Away 00-01
+    "/itm/820262279909",  # 2026-10-25 retro rejected (rayovallecano|away|2000/01): JERSEY Rayo Vallecano Hombre Visitante 0
+    "/itm/406823381400",  # 2026-10-25 retro rejected (intermilan|away|2021): Maglia Calcio 2021 Nike Inter Milan Away
+    "/itm/168809486066",  # 2026-10-25 retro rejected (acmilan|third|2013/14): MILAN KAKÁ 22 Maglia THIRD 2013-2014 Cha
+    "/itm/168809486066",  # 2026-10-25 retro rejected (acmilan|third|2013/14): Camiseta deportiva de fútbol Boateng Pat
+    "/itm/168701996135",  # 2026-10-25 retro rejected (napoli|home|1981/82): Maglia Uomo Napoli Home 81-82 Retrò
+    "/itm/366635675904",  # 2026-10-25 retro rejected (napoli|home|1995/96): Maglia Uomo Napoli Home 95-96 Retrò
+    "/itm/128016428039",  # 2026-10-25 retro rejected (napoli|home|2006/07): Maglia Uomo Napoli Home 06-07 Retrò
+    "/itm/188519244741",  # 2026-10-25 retro rejected (napoli|home|1999/00): Maglia Uomo Napoli Home 99-00 Retrò
+    "/itm/256946423997",  # 2026-10-25 retro rejected (napoli|away|1987): Maglia Uomo Napoli Away Uomo 1987 Retrò
+    "/itm/366635675876",  # 2026-10-25 retro rejected (napoli|away|1995/96): Maglia Uomo Napoli Away 95-96 Retrò
+    "/itm/227494940276",  # 2026-10-25 retro rejected (torino|home|1992/93): Maglia Torino Home Uomo MAGLIA Retrò 92-
+    "/itm/178466572956",  # 2026-10-25 retro rejected (udinese|home|1991/92): Maglia Udinese Calcio 1991-1992 Nero Bia
+    "/itm/178466572956",  # 2026-10-25 retro rejected (udinese|home|1991/92): Camiseta deportiva vintage de casa a ray
+    "/itm/326744450564",  # 2026-10-25 retro rejected (jordania|third|2024/25): Camiseta PSG 2024/25 Tercera Camiseta Co
+    "/itm/326917623848",  # 2026-10-25 retro rejected (india|home|2016/17): Camiseta de fútbol rara MIFA Malasia Umb
+    "/itm/196142543971",  # 2026-10-25 retro rejected (mali|third|2023/24): JERSEY Malí Fútbol Nacional Tercera 2023
+    "/itm/407281737834",  # 2026-10-25 retro rejected (brasil|home|2020/21): Camiseta de fútbol local Brasil 2020/202
+    "/itm/358564552934",  # 2026-10-25 retro rejected (espana|away|2024): Camiseta de fútbol visitante Rodrigo Esp
+    "/itm/186897954635",  # 2026-10-25 retro rejected (italia|third|2020): CAMISETA DE FUTBOL MANGA CORTA ALESSANDR
+    "/itm/175126481560",  # 2026-10-25 retro rejected (italia|third|2017/18): CAMISETA DE FUTBOL CHIEVO VERONA 2017/18
+    "/itm/127517240072",  # 2026-10-25 retro rejected (inglaterra|home|1996/97): Camiseta de fútbol vintage Inglaterra 19
+    "/itm/820187674420",  # 2026-10-25 retro rejected (acmilan|home|2000/02): Auténtica camiseta de fútbol local AC MI
+    "/itm/236758688193",  # 2026-10-25 removed: kids old-season shirt Camiseta Nike Portugal Juvenil (Niños) Visitante T
+    "/itm/236758688193",  # 2026-10-25 removed: kids old-season shirt Nike Portugal Youth (Kids) Away Jersey Taglia XS -
+    "/itm/236758688193",  # 2026-10-25 removed: kids old-season shirt Nike Portugal Youth (Kids) Away Jersey Size XS - W
+    "/itm/205654641868",  # 2026-10-25 removed: kids old-season shirt Youth Adidas Colombia National Away Soccer Jersey 
+    "/itm/365707322869",  # 2026-10-25 removed: kids old-season shirt Nike ROBBEN Netherlands Away Soccer Jersey, 724703
+    "/itm/117059476293",  # 2026-10-25 removed: kids old-season shirt Nike FC Barcelona Dri-Fit Away Gold Soccer Jersey 
+    "/itm/117245933534",  # 2026-10-25 removed: kids old-season shirt Nike RB Leipzig Youth Away Soccer Jersey White Red
+    "/itm/189038633703",  # 2026-10-25 removed: eBay GB print/template Nike Tottenham Hotspur 25-26 Home Jersey Football 
+    "/itm/407314160429",  # 2026-10-25 removed: eBay GB print/template Hull City 26/27 Home Shirt Adult Size S-4XL Regula
+    "/itm/188670369099",  # 2026-10-25 removed: eBay GB template/unverifiable 25/26 Watford FC Away Shirt
+    "/itm/188343500638",  # 2026-10-25 removed: eBay GB template/unverifiable Rotherham United Football Shirt Away S-6XL Soccer 
+    "/itm/336854353460",  # 2026-10-25 removed: eBay GB template/unverifiable Portsmouth Fc 2026/27 Away Shirt  Size: Large
+    "/itm/267229105542",  # 2026-10-25 removed: eBay US template/print JERSEY Uruguay Soccer Home Men 2025-26
+    "/itm/800260657740",  # 2026-10-25 removed: eBay US template/print Colombia Training Black Men 2026 jersey
+    "/itm/317663297370",  # 2026-10-25 removed: eBay US template/print Boca Juniors 25/26 Third Jersey  S-4X Read Descrip
+    "/itm/287603243988",  # 2026-10-25 removed: eBay US template/print JERSEY Boca Juniors Mens 26 training White
+    "/itm/327339124089",  # 2026-10-25 removed: eBay US template/print 26/27 Adidas F.C. Bayern Munich Harry Kane #9 Home
+    "/itm/327339202581",  # 2026-10-25 removed: eBay US template/print 26/27 Puma AC Milan Rafael Leão #10 Away Jersey - 
+    "/itm/820150377980",  # 2026-10-25 removed: eBay US template/print PUMA AC Milan 26/27 Third Jersey XL Black Red Offi
+    "/itm/327339104259",  # 2026-10-25 removed: eBay US template/print 26/27 Puma Borussia Dortmund Felix Nmecha #8 Home 
+    "/itm/188396370133",  # 2026-10-25 removed: eBay US template/print JERSEY Eintracht Frankfurt Mens Away 26-27
+    "/itm/188396370095",  # 2026-10-25 removed: eBay US template/print JERSEY Borussia Monchengladbach Soccer Mens Away 2
+    "/itm/336670827236",  # 2026-10-25 removed: eBay US template/print JERSEY Olympique Lyonnais Home 26-27
+    "/itm/117226632378",  # 2026-10-25 removed: eBay US template/print Adidas Olympique Lyonnais 2025/26 Away Jersey #4 P
+    "/itm/287659894924",  # 2026-10-25 removed: eBay US club under national key/template Penarol 2026 Pinerolo Third Soccer Jersey  Uruguay
+    "/itm/198037550224",  # 2026-10-25 removed: eBay US club under national key/template Umbro Deportes Tolima Colombia 2026 Third Jersey. 
+    "/itm/287667926403",  # 2026-10-25 removed: eBay US club under national key/template JERSEY Udinese Mens Third 26-27
+    "/itm/227502518457",  # 2026-10-25 removed: kids Ronaldo print set Conjunto corto y camiseta de fútbol local roja Por
+    "/itm/389556534429",  # 2026-10-25 removed: kids Kipsta generic Maglia Calcio Nuova Con Etichetta Import Italia Yo
+    "/itm/188740974722",  # 2026-10-25 removed: eBay ES template/untitled Camiseta visitante portero España 2026 (LEER DESCR
+    "/itm/366635675879",  # 2026-10-25 removed: eBay ES template/untitled Camiseta Napoli Tercera Hombre 26-27
+    "/itm/287667926510",  # 2026-10-25 removed: eBay ES template/untitled Camiseta Atalanta Hombre Tercera 26-27
+    "/itm/227494939957",  # 2026-10-25 removed: eBay ES template/untitled JERSEY Fiorentina Home Hombre 26-27
+    "/itm/287667926397",  # 2026-10-25 removed: eBay ES template/untitled JERSEY Bologna Hombre Visitante 26-27
+    "/itm/188768755562",  # 2026-10-25 removed: eBay IT T-shirt portiere Nike France FFF 2026 Mondiali tag
+    "/itm/147461034369",  # 2026-10-25 removed: eBay IT Maglia calcio uomo 2026 Puma Portugal Home Ronaldo
+    "/itm/267227645777",  # 2026-10-25 removed: eBay IT MAGLIA URUGUAY calcio away uomo 2025-26
+    "/itm/287475227101",  # 2026-10-25 removed: eBay IT MAGLIA Maglia Napoli Champions League Home Uomo 20
+    "/itm/366635675894",  # 2026-10-25 removed: eBay IT MAGLIA Napoli Shirt Away Uomo 26-27
+    "/itm/227494940139",  # 2026-10-25 removed: eBay IT MAGLIA Torino Home Uomo 26-27
     # --- Daily pass 2026-10-24 ---
     "/itm/900037096522",  # 2026-10-24 removed: eBay GB ipswich home 26.7 template price
     "/itm/336838397745",  # 2026-10-24 removed: eBay GB ipswich away long sleeve
