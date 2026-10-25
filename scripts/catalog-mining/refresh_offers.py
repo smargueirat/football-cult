@@ -413,15 +413,22 @@ def main(argv):
             st["SALTADA"] = "--no-net"
             continue
         results = {}
+        total = len({LINE_RE.match(lines[i])["url"] for i in by_store[store]})
+        fails = 0
         for i in by_store[store]:
             url = LINE_RE.match(lines[i])["url"]
             if url not in results:
                 results[url] = prodirect_check(url)
+                fails += results[url] is None
+                # Pasado el 20 % de fallos la tienda se salta igual: cortar aquí.
+                # Con Pro:Direct limitándonos (oct-2026) cada fallo son 100-220 s
+                # de reintentos y el refresco tardaba ~9,5 h en descartarlo todo.
+                if fails > 0.2 * total:
+                    break
                 time.sleep(1)
-        fails = sum(1 for r in results.values() if r is None)
         st["fallidas"] = fails
-        if results and fails > 0.2 * len(results):
-            st["SALTADA"] = f"{fails}/{len(results)} consultas fallidas"
+        if results and fails > 0.2 * total:
+            st["SALTADA"] = f"{fails} fallidas de {len(results)} consultadas ({total} en total)"
             print(f"{store:16} SALTADA: {st['SALTADA']} -- no se toca nada")
             continue
         for i in by_store[store]:
