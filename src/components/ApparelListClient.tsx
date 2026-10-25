@@ -49,7 +49,7 @@ interface ApparelOffer {
   url: string;
   price: number;
   shipping: number;
-  currency: "EUR" | "CLP";
+  currency: "EUR" | "GBP" | "CLP";
   imageUrl: string;
   sizes: string[];
 }
