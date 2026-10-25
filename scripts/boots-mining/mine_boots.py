@@ -2,7 +2,7 @@
 """Mina botas de fútbol adulto reales de los feeds Awin ya aprobados
 (adidas ES, Sport is Good ES/FR, Foot-Store ES/FR, Decathlon Irlanda,
 Deporte Outlet, Pro Soccer, Gigasport DE/CH/FR, Clovis Calçados BR,
-Reebok DE) desde el cache de feeds del scan diario (/tmp/feeds/*.csv), más
+Reebok DE/UK) desde el cache de feeds del scan diario (/tmp/feeds/*.csv), más
 FutbolEmotion (TradeTracker) desde un snapshot manual -- ver la nota en
 mine_futbolemotion() sobre por qué esa no se refresca sola todavía.
 Escribe scripts/boots-mining/mined_boots.json -- entrada de
@@ -26,7 +26,7 @@ y `groundType: "IC"` (sala/futsal/indoor/salle o el código de suela
 "IC"/"IN"). La web los separa: las de niño no salen en el listado por
 defecto ni en los hubs de adulto (filtro "Edad" y /botas/ninos), las de
 sala tienen su chip de tapón y /botas/futbol-sala. Siguen solo adulto y
-de campo ProSoccer, Reebok DE y adidas CL (EXCLUDE_KEYWORDS) y la sala de
+de campo ProSoccer, Reebok DE/UK y adidas CL (EXCLUDE_KEYWORDS) y la sala de
 Gigasport (su categoría mezcla balonmano y voley).
 """
 import csv, re, json, unicodedata, os
@@ -1033,15 +1033,22 @@ def mine_prodirect():
 # código de artículo Reebok de la URL (".../sidewinder-26-elite-fg-100261669-
 # 261669") es el código de fabricante del colorway; product_GTIN funde con
 # Pro:Direct (que llama "Premier"/"Club" a lo que Reebok llama Elite/League).
-def mine_reebok_de():
-    if not os.path.exists(f"{FEEDS}/REEBOK_DE.csv"):
-        print('Reebok DE: feed not found, skipped')
+# Reebok UK (Awin 121516, aprobado 2026-10-25): el MISMO catálogo de
+# reebok.eu/en-gb en inglés ("... FG Football Boots, ..., Size: 42") y en
+# GBP, con los mismos EAN y parent_product_id: se funde por EAN con la de DE.
+REEBOK_FEEDS = [('REEBOK_DE.csv', 'Reebok DE', 'EUR', 'Fußballschuh'),
+                ('REEBOK_UK.csv', 'Reebok UK', 'GBP', 'Football Boot')]
+
+
+def mine_reebok(fname, store, currency, boot_word):
+    if not os.path.exists(f"{FEEDS}/{fname}"):
+        print(f'{store}: feed not found, skipped')
         return
     groups = {}
-    with open(f"{FEEDS}/REEBOK_DE.csv", newline='', encoding='utf-8', errors='replace') as f:
+    with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
             title = row.get('product_name') or ''
-            if 'Fußballschuh' not in title or row.get('in_stock') != '1':
+            if boot_word not in title or row.get('in_stock') != '1':
                 continue
             if EXCLUDE_KEYWORDS.search(title) or GIGASPORT_KIDS_RE.search(title):
                 continue
@@ -1052,15 +1059,16 @@ def mine_reebok_de():
         rows.sort(key=lambda r: size_sort_key(r.get('Fashion:size', '')))
         rep = min(rows, key=lambda r: parse_price(r['search_price']))
         model = re.sub(r'^Reebok\s*-\s*', '', rep['product_name'].split(',')[0])
-        model = re.sub(r'\s*Fußballschuhe?\b', '', model).strip()
+        model = re.sub(r'\s*(Fußballschuhe?|Football Boots?)\b', '', model).strip()
         code = re.search(r'-(\d{9})-\d+\?', rep.get('merchant_deep_link') or '')
         prices = [parse_price(r['search_price']) for r in rows]
         entry = {
-            'store': 'Reebok DE', 'brand': 'Reebok', 'model': model, 'groundType': infer_ground(model),
-            # delivery_cost del feed siempre 0/vacío y es falso. Medido en
-            # reebok.eu/pages/shipping-delivery: gratis desde 50 EUR, si no 5,99.
+            'store': store, 'brand': 'Reebok', 'model': model, 'groundType': infer_ground(model),
+            # delivery_cost del feed es falso (DE: siempre 0/vacío; UK: siempre
+            # 5.99). Medido en reebok.eu/pages/shipping-delivery: gratis desde
+            # 50, si no 5,99 (EUR en la UE, GBP en Reino Unido).
             'price': min(prices), 'shipping': 0 if min(prices) >= 50 else 5.99,
-            'currency': 'EUR',
+            'currency': currency,
             'url': rep['aw_deep_link'], 'imageUrl': rep['aw_image_url'],
             'sizes': [dot_size(r['Fashion:size']) for r in rows if r.get('Fashion:size')],
             'eans': sorted({(r.get('product_GTIN') or '').strip() for r in rows} - {''}),
@@ -1072,7 +1080,7 @@ def mine_reebok_de():
                                    for r, p in zip(rows, prices)]
         results.append(entry)
         n += 1
-    print('Reebok DE:', n)
+    print(f'{store}:', n)
 
 # ---------- adidas Chile (Awin 79922, aprobado 2026-10-07) ----------
 # Feed en pesos chilenos (CLP), una fila por talla. Botas = categoría
@@ -1262,7 +1270,8 @@ if __name__ == '__main__':
     mine_prodirect()
     # Después de Pro:Direct: las Reebok que ya tenía (mismo EAN) suman su
     # oferta a esa ficha y la ficha conserva su id.
-    mine_reebok_de()
+    for feed in REEBOK_FEEDS:
+        mine_reebok(*feed)
     # adidas CL (CLP): sus botas comparten código de estilo con adidas ES/PT.
     mine_adidas_cl()
 

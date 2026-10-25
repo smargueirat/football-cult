@@ -33,7 +33,7 @@
 // producto (Decathlon IE), se dejó en 0 con el motivo documentado en el
 // código en vez de inventar un número.
 export interface BootOffer {
-  store: "FutbolEmotion" | "ForumSport" | "AdidasES" | "SportIsGoodES" | "FootStoreES" | "DecathlonIE" | "FootStoreFR" | "SportIsGoodFR" | "DeporteOutlet" | "ProSoccer" | "NikeCL" | "NikeAR" | "PumaAR" | "GigasportDE" | "GigasportCH" | "GigasportFR" | "ClovisCalcadosBR" | "Pro:Direct ES" | "Reebok DE" | "AdidasCL";
+  store: "FutbolEmotion" | "ForumSport" | "AdidasES" | "SportIsGoodES" | "FootStoreES" | "DecathlonIE" | "FootStoreFR" | "SportIsGoodFR" | "DeporteOutlet" | "ProSoccer" | "NikeCL" | "NikeAR" | "PumaAR" | "GigasportDE" | "GigasportCH" | "GigasportFR" | "ClovisCalcadosBR" | "Pro:Direct ES" | "Reebok DE" | "Reebok UK" | "AdidasCL";
   price: number;
   // precio real de la talla MÁS BARATA del colorway -- algunas tiendas
   // (confirmado en FootStoreES/SportIsGoodES/FootStoreFR) cobran distinto
@@ -88,7 +88,7 @@ export interface BootProduct {
 // es la única tienda de botas en BRL -- mismo motivo que Pro Soccer en
 // USD (comparar/ordenar entre monedas distintas, nunca convertido para
 // el usuario). Ver scripts/boots-mining/mine_boots.py#mine_clovis.
-export type BootCurrency = "EUR" | "USD" | "CLP" | "ARS" | "BRL";
+export type BootCurrency = "EUR" | "USD" | "GBP" | "CLP" | "ARS" | "BRL";
 
 // La función real vive en src/lib/offerMoney.ts, no acá -- un componente
 // "use client" que la importa desde ESTE archivo arrastra el catálogo
@@ -147178,6 +147178,15 @@ const minedBootProductsChunk30: BootProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2FJPG-100263080_SLC_eCom.jpg%3Fv%3D1790848963&feedId=112608&k=714480bbb481c9ef3dc12f00993be9cda3600974",
         sizes: ["37.5", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "47"],
       },
+      {
+        store: "Reebok UK",
+        price: 210.0,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=46196786813&a=3013769&m=121516",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2FJPG-100263080_SLC_eCom.jpg%3Fv%3D1790848963&feedId=112612&k=714480bbb481c9ef3dc12f00993be9cda3600974",
+        sizes: ["37.5", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "47"],
+      },
     ],
   },
   {
@@ -147212,6 +147221,15 @@ const minedBootProductsChunk30: BootProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2FJPG-100263103_SLC_eCom.jpg%3Fv%3D1791361882&feedId=112608&k=deac3570564c161ff18d955c192cceef400ff2ce",
         sizes: ["37.5", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "47"],
       },
+      {
+        store: "Reebok UK",
+        price: 70.0,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=46254271669&a=3013769&m=121516",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2FJPG-100263103_SLC_eCom.jpg%3Fv%3D1791361882&feedId=112612&k=deac3570564c161ff18d955c192cceef400ff2ce",
+        sizes: ["37.5", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "47"],
+      },
     ],
   },
   {
@@ -147227,6 +147245,15 @@ const minedBootProductsChunk30: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46029533525&a=3013769&m=121508",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2FJPG-100271977_SLC_eCom.jpg%3Fv%3D1787156541&feedId=112608&k=35ac3c60bfae7af37e94f91a0e121f94bcabc6ef",
+        sizes: ["37.5", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "47"],
+      },
+      {
+        store: "Reebok UK",
+        price: 125.0,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=46029539325&a=3013769&m=121516",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2FJPG-100271977_SLC_eCom.jpg%3Fv%3D1787156541&feedId=112612&k=35ac3c60bfae7af37e94f91a0e121f94bcabc6ef",
         sizes: ["37.5", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "47"],
       },
     ],
@@ -147246,6 +147273,15 @@ const minedBootProductsChunk30: BootProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100263560_SLC_eCom.jpg%3Fv%3D1786527031&feedId=112608&k=734e3477479ace06dbbcdf1070ee7e73cdf93e0c",
         sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45.5"],
       },
+      {
+        store: "Reebok UK",
+        price: 40.0,
+        shipping: 5.99,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=45590419581&a=3013769&m=121516",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100263560_SLC_eCom.jpg%3Fv%3D1786527031&feedId=112612&k=734e3477479ace06dbbcdf1070ee7e73cdf93e0c",
+        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45.5"],
+      },
     ],
   },
   {
@@ -147261,6 +147297,15 @@ const minedBootProductsChunk30: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45720554801&a=3013769&m=121508",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100263546_SLC_eCom.jpg%3Fv%3D1787304166&feedId=112608&k=055685630be383c5d0ea19eab59569e855239913",
+        sizes: ["37.5", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "47"],
+      },
+      {
+        store: "Reebok UK",
+        price: 40.0,
+        shipping: 5.99,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=45721056677&a=3013769&m=121516",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0897%2F4467%2F1068%2Ffiles%2F100263546_SLC_eCom.jpg%3Fv%3D1787304166&feedId=112612&k=055685630be383c5d0ea19eab59569e855239913",
         sizes: ["37.5", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "47"],
       },
     ],
