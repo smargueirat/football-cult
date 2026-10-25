@@ -383,7 +383,7 @@ STORE_FEED = {
     "SportIsGoodES": "SPORTISGOOD_ES.csv", "SportIsGoodFR": "SPORTISGOOD_FR.csv",
     "DeporteOutlet": "DEPORTEOUTLET.csv", "GigasportDE": "GIGASPORT_DE.csv",
     "GigasportCH": "GIGASPORT_CH.csv", "GigasportFR": "GIGASPORT_FR.csv",
-    "Reebok DE": "REEBOK_DE.csv", "AdidasCL": "ADIDAS_CL.csv",
+    "Reebok DE": "REEBOK_DE.csv", "Reebok UK": "REEBOK_UK.csv", "AdidasCL": "ADIDAS_CL.csv",
 }
 
 

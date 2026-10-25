@@ -702,17 +702,21 @@ def mine_apparel_type(type_key, category_kw, out_list):
 # por boots-mining y las camisetas de club (Hibernian, Hansa Rostock...)
 # por catalog-mining. El modelo se arma como "<prefijo del glosario>
 # Reebok <línea> - <color>" para que gearText.ts lo traduzca.
-REEBOK_FOOTBALL_RE = re.compile(r'fu(ß|ss)ball|football', re.I)
-REEBOK_SKIP_RE = re.compile(r'schuhe|sneaker|basketball|heimtrikot|ausw[äa]rts|torwart|pre-match', re.I)
+# Reebok UK (Awin 121516, 2026-10-25): mismo catálogo en inglés y GBP; cada
+# regla alemana lleva al lado su equivalente inglés (Boots, Home/Away,
+# Goalkeeper, Pre Match, Boy's/Kids', Track Jacket, Quarter Zip, Women's).
+REEBOK_FOOTBALL_RE = re.compile(r'fu(ß|ss)ball|football|soccer', re.I)
+REEBOK_SKIP_RE = re.compile(r"schuhe|sneaker|basketball|heimtrikot|ausw[äa]rts|torwart|pre-match"
+                            r"|\bboots?\b|\bhome\b|\baway\b|goal ?keeper|pre match|\bboy'?s\b|\bkids'?|\bgirl'?s\b", re.I)
 # Primer patrón que encaja gana: (regex, type, prefijo castellano del glosario)
 REEBOK_TYPES = [
     (r'hoodie', 'sweatshirt', 'Sudadera con capucha'),
     (r'sweatshirt', 'sweatshirt', 'Sudadera de cuello redondo'),
-    (r'viertelrei(ß|ss)verschluss', 'sweatshirt', 'Top de entrenamiento con 1/4 de cremallera'),
-    (r'trainingsjacke', 'jacket', 'Chaqueta de chándal'),
-    (r'trainingshose', 'pants', 'Pantalón de entrenamiento'),
+    (r'viertelrei(ß|ss)verschluss|quarter zip', 'sweatshirt', 'Top de entrenamiento con 1/4 de cremallera'),
+    (r'trainingsjacke|track jacket', 'jacket', 'Chaqueta de chándal'),
+    (r'trainingshose|track pants?\b', 'pants', 'Pantalón de entrenamiento'),
     (r'shorts?\b', 'shorts', 'Pantalón corto'),
-    (r'shirt|trikot', 'tshirt', 'Camiseta'),
+    (r'shirt|trikot|jersey', 'tshirt', 'Camiseta'),
 ]
 # "Argentinien Fußball T-Shirt": remera de algodón de aficionado con
 # bandera, NO la camiseta de la selección (Reebok no viste a ninguna).
@@ -720,7 +724,8 @@ REEBOK_FAN_RE = re.compile(r'^Reebok - (?!ID\b|Street\b)(\w+) (?:Fu(?:ß|ss)ball
 REEBOK_COUNTRIES = {'argentinien': 'Argentina', 'brasilien': 'Brasil', 'deutschland': 'Alemania',
                     'england': 'Inglaterra', 'france': 'Francia', 'italien': 'Italia', 'kanada': 'Canadá',
                     'niederlande': 'Países Bajos', 'polska': 'Polonia', 'spanien': 'España',
-                    'usa': 'Estados Unidos'}
+                    'usa': 'Estados Unidos', 'canada': 'Canadá', 'netherlands': 'Países Bajos',
+                    'spain': 'España'}
 # Color dominante = el primero que nombra el feed ("BLACK/DIGITAL LIME" -> Negro).
 REEBOK_COLOURS = [('black', 'Negro'), ('white', 'Blanco'), ('grey', 'Gris'), ('gray', 'Gris'),
                   ('navy', 'Azul'), ('blue', 'Azul'), ('red', 'Rojo'), ('cherry', 'Rojo'),
@@ -746,7 +751,7 @@ def reebok_classify(title):
             break
     else:
         return None
-    if re.search(r'damen', title, re.I):
+    if re.search(r"damen|women'?s", title, re.I):
         prefix += ' de mujer'
     line = 'ID Football' if re.search(r'\bID (Football|Fu(ß|ss)ball)', title, re.I) else ''
     if re.search(r'sidewinder', title, re.I):
@@ -756,10 +761,12 @@ def reebok_classify(title):
     return typ, f'{prefix} Reebok {line or "Football"}'
 
 
-def mine_reebok(out_list):
-    fname = 'REEBOK_DE.csv'
+REEBOK_FEEDS = [('REEBOK_DE.csv', 'Reebok DE', 'EUR'), ('REEBOK_UK.csv', 'Reebok UK', 'GBP')]
+
+
+def mine_reebok(out_list, fname, store, currency):
     if not os.path.exists(f"{FEEDS}/{fname}"):
-        print('Reebok DE: feed not found, skipped')
+        print(f'{store}: feed not found, skipped')
         return
     groups = {}
     with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
@@ -768,7 +775,7 @@ def mine_reebok(out_list):
             cls = reebok_classify(title)
             if not cls or not parse_price(row.get('search_price')):
                 continue
-            key = row.get('parent_product_id') or re.sub(r',\s*Größe:.*$', '', title)
+            key = row.get('parent_product_id') or re.sub(r',\s*(Größe|Size):.*$', '', title)
             groups.setdefault(key, (cls, []))[1].append(row)
     for (typ, model), rows in groups.values():
         rep = min(rows, key=lambda r: parse_price(r.get('search_price')))
@@ -776,12 +783,13 @@ def mine_reebok(out_list):
         price_max = max(parse_price(r.get('search_price')) for r in rows)
         colour = _reebok_colour(rep.get('colour'))
         entry = {
-            'store': 'Reebok DE', 'brand': 'Reebok', 'model': f'{model} - {colour}',
+            'store': store, 'brand': 'Reebok', 'model': f'{model} - {colour}',
             'colour': colour, 'type': typ,
-            # delivery_cost del feed es falso (0/vacío): reebok.eu cobra 5,99
-            # por debajo de 50 EUR y envía gratis desde 50 (medido 2026-10-05).
+            # delivery_cost del feed es falso (DE 0/vacío, UK siempre 5.99):
+            # reebok.eu cobra 5,99 por debajo de 50 y envía gratis desde 50
+            # (EUR en la UE, GBP en Reino Unido; medido 2026-10-05).
             'price': price, 'shipping': 0 if price >= 50 else 5.99,
-            'currency': 'EUR',
+            'currency': currency,
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'),
             'sizes': sorted({r['Fashion:size'].strip() for r in rows if (r.get('Fashion:size') or '').strip()}, key=size_sort_key),
             'eans': _eans(rows, 'product_GTIN'),
@@ -793,7 +801,7 @@ def mine_reebok(out_list):
                  for r in rows if (r.get('Fashion:size') or '').strip()),
                 key=lambda sp: size_sort_key(sp['size']))
         out_list.append(entry)
-    print('Reebok DE:', len(groups))
+    print(f'{store}:', len(groups))
 
 
 # ---------- ADIDAS CL (Awin 79922, aprobada 2026-10-07) ----------
@@ -1010,7 +1018,8 @@ if __name__ == '__main__':
     # sección Entrenamiento de abajo (type 'petos').
     for kw in ('Sous maillot', 'Legging', 'Cuissard', 'Manchon jambe'):
         mine_apparel_type('baselayer', kw, apparel_results)
-    mine_reebok(apparel_results)
+    for feed in REEBOK_FEEDS:
+        mine_reebok(apparel_results, *feed)
     mine_adidas_cl(gloves_results, balls_results, apparel_results)
 
     print('=== ENTRENAMIENTO ===')

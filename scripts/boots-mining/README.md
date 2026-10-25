@@ -4,7 +4,7 @@ Keeps `src/data/boots.ts` prices/tallas/fotos actualizados contra los
 feeds Awin/Google-Shopping ya aprobados que tienen botas reales: adidas
 ES, Sport is Good ES/FR, Foot-Store ES/FR, Decathlon Irlanda, Deporte
 Outlet, Pro Soccer (USD), Gigasport DE/CH/FR, Clovis Calçados BR (BRL),
-Reebok DE, adidas CL (CLP),
+Reebok DE/UK (GBP), adidas CL (CLP),
 más FutbolEmotion (TradeTracker) desde un snapshot manual. Reusa el
 mismo cache de feeds (`/tmp/feeds/*.csv`) que el scan diario de
 camisetas ya descarga -- no hace su propia descarga.
@@ -75,6 +75,12 @@ FG, Touch TF/MG), una oferta por `parent_product_id` (= color). El
 gratis desde 50 EUR, si no 5,99. Lo que Reebok llama Elite/League,
 Pro:Direct lo llama Premier/Club: el EAN las funde igual. Se mina después de
 Pro:Direct para que esas fichas conserven su id.
+
+Reebok UK (Awin 121516, 2026-10-25): el mismo catálogo en inglés y GBP
+(`REEBOK_UK.csv`, "Football Boots" en el título). `mine_reebok()` mina las dos
+tiendas con la misma regla (`REEBOK_FEEDS`); UK va después de DE, así que se
+funde por EAN en la ficha de DE y la ficha conserva su id. Envío igual: 5,99
+GBP por debajo de 50, gratis desde 50 (el feed dice siempre 5.99).
 
 ## adidas Chile (2026-10-07)
 

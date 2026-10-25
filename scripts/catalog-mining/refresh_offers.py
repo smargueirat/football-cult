@@ -67,6 +67,7 @@ FEEDS = {
     "BSTNIT": ("BSTN_IT", "awin"),
     "BSTNUK": ("BSTN_UK", "awin"),
     "Reebok DE": ("REEBOK_DE", "awin"),
+    "Reebok UK": ("REEBOK_UK", "awin"),
     "DecathlonIE": ("DECATHLONIE", "awin"),
     "FootStoreFR": ("FOOTSTORE_FR", "google"),
     "SportIsGoodFR": ("SPORTISGOOD_FR", "google"),
@@ -88,6 +89,10 @@ IGNORE_AVAILABILITY = {"FansJerseyHub"}
 # Futbol Factory no trae columna de tallas (rango fijo validado a mano).
 KEEP_SIZES = {"Futbol Factory"}
 PRODIRECT = {"Pro:Direct ES", "Pro:Direct Soccer"}
+# Envío real medido en la tienda cuando el delivery_cost del feed es falso:
+# reebok.eu cobra 5,99 por debajo de 50 y nada desde 50 (EUR en la UE, GBP en
+# Reino Unido), pero su feed DE dice siempre 0 y el UK siempre 5.99.
+FREE_FROM = {"Reebok DE": (50, 5.99), "Reebok UK": (50, 5.99)}
 
 LINE_RE = re.compile(
     r'^(      \{ store: "(?P<store>[^"]+)", price: )(?P<price>[\d.]+)(, shipping: )(?P<ship>[\d.]+)'
@@ -271,7 +276,9 @@ def refreshed(store, fmt, row, group, old):
     if prices:
         out["price"] = min(prices)
     ships = [r["ship"] for r in same_link if r["ship"] is not None]
-    if ships:
+    if store in FREE_FROM and "price" in out:
+        out["ship"] = 0.0 if out["price"] >= FREE_FROM[store][0] else FREE_FROM[store][1]
+    elif ships:
         out["ship"] = ships[0]
     if store not in KEEP_SIZES:
         old_sizes = re.findall(r'"([^"]+)"', old["sizes"])

@@ -1,6 +1,7 @@
 import re, json, sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from manual_exclusions import is_manually_excluded
+from refresh_offers import FREE_FROM
 
 ID_RE = re.compile(r'^    id: "([^"]+)",$', re.M)
 TEAM_RE = re.compile(r'^    teamKey: "([a-z0-9]+)",$', re.M)
@@ -164,6 +165,8 @@ def refresh(products_ts_path, picks_json_path, store_name, currency="EUR", dry_r
         sizes_ts = ", ".join(f'"{s}"' for s in d["sizes"])
         price = d["price"]
         shipping = d["shipping"]
+        if store_name in FREE_FROM and price is not None:  # delivery_cost del feed falso
+            shipping = 0.0 if price >= FREE_FROM[store_name][0] else FREE_FROM[store_name][1]
         link = d["link"].replace('"', '\\"')
         image = (d["image"] or "").replace('"', '\\"')
         title_esc = (d.get("title") or "").replace('"', '\\"')

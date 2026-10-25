@@ -5031,3 +5031,17 @@ eBay rotation IT, ES, US, then GB (day-of-year 298 mod 3 = 1), all four with a f
 - eBay retro (IT/ES/US): 698 keys after text filters, 88 existing-ficha keys merged (19 price-up swaps reverted), 25 new fichas of 73 candidates after photo review. Photo-dropped: Inter 88/89 Uhlsport, Milan 1990 Mediolanum, Napoli 1984 CIRIO, Marseille 96/97, Italy 96/97 (all reproduction looks), Milan "2000-02" (is the 2003/04 Meriva shirt), Milan 2011/12 away (is 12/13), Udinese 2024/25 away ("Io sono Friuli" yellow), Bologna third.
 - `ebay_gb_retro.py` re-applied its cache again: 81 "inserted", 16 with an item id not in HEAD, 7 kept after text review; the other 74 removed.
 - Women: 0 new fichas, offers refreshed in 10 stores (9 price-up swaps reverted).
+
+## Reebok UK (2026-10-25)
+
+Awin aid 121516. `AWIN_FEED_URL_REEBOK_UK` -> `/tmp/feeds/REEBOK_UK.csv`: the
+same reebok.eu catalogue as Reebok DE (same `product_GTIN` and
+`parent_product_id`), in English and GBP, links to reebok.eu/en-gb. Use
+`store_name "Reebok UK"`, currency `GBP`. Its 26 jersey offers sit next to the
+Reebok DE offer of the same ficha (matched by `parent_product_id`), and
+`refresh_offers.py` refreshes them nightly. `delivery_cost` is always 5.99
+and wrong: `FREE_FROM` in refresh_offers.py (also applied by refresh.py)
+charges 5.99 under 50 and 0 from 50, for both Reebok stores. extract.py
+learned "Goal Keeper" (two words) and "Boy's" (kids; only WITH the
+apostrophe, so BSC Young Boys still matches). Kids sizes YXS/YS/YM/YL/YXL are
+stored as 5-6/7-8/9-10/11-12/13-14, women's 36-44 as S-XXL, as for DE.
