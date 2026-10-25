@@ -10,6 +10,15 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-10-25: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "manutd-retro-1999-home": "manutd-retro-199899-home",
+  "napoli-retro-1996-away": "napoli-retro-199697-away",
+  "dortmund-retro-2013-home": "dortmund-retro-201314-home",
+  "intermilan-retro-2016-away": "intermilan-retro-201516-away",
+  "pumasunam-retro-2024-third": "pumasunam-retro-202425-third",
+  "everton-retro-2014-home": "everton-retro-201415-home",
+  "intermilan-retro-2003-away": "intermilan-retro-200203-away",
   // 2026-10-24: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "dinamarca-retro-2012-home": "dinamarca-retro-201213-home",
@@ -85,7 +94,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "corinthians-retro-2023-third": "corinthians-retro-202223-third",
   "romania-retro-202425-home": "romania-home-202526",
   "manutd-retro-198688-third": "manutd-retro-199496-third",
-  "napoli-retro-199596-away": "napoli-retro-1996-away",
+  "napoli-retro-199596-away": "napoli-retro-199697-away",
   "chequia-retro-2024-away": "chequia-away-2026",
   "nyredbulls-retro-201718-home": "nyredbulls-retro-2017-home",
   "venezuela-retro-202324-home": "venezuela-retro-2024-home",
@@ -212,7 +221,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "georgia-retro-202425-home": "georgia-retro-202324-home",
   "flamengo-retro-2005-third": "flamengo-retro-2022-third",
   "seattlesounders-home-2026": "seattlesounders-retro-202425-home",
-  "dortmund-retro-201213-home": "dortmund-retro-2013-home",
+  "dortmund-retro-201213-home": "dortmund-retro-201314-home",
   "corinthians-retro-2021-away": "corinthians-retro-202122-away",
   "chelsea-retro-201617-home": "chelsea-home-kids",
   "juventus-training-jacket-202526": "juventus-training-202526",
@@ -375,7 +384,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "munich1860-away-202526": "munich1860-retro-202223-away",
   "cagliari-retro-199293-home": "cagliari-retro-199697-home",
   "como-retro-202324-training": "como-training-202526",
-  "napoli-retro-1998-away": "napoli-retro-1996-away",
+  "napoli-retro-1998-away": "napoli-retro-199697-away",
   "tigresuanl-retro-1980-away": "tigresuanl-retro-1992-away",
   "lazio-retro-200001-away": "lazio-retro-199900-away",
   "corinthians-retro-1990-away": "corinthians-retro-201112-away",
@@ -541,7 +550,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "clubamerica-retro-1988-home": "clubamerica-retro-1995-home",
   "riverplate-retro-2021-home": "riverplate-retro-2022-home",
   "japon-retro-1994-home": "japon-retro-1993-home",
-  "napoli-retro-199798-away": "napoli-retro-1996-away",
+  "napoli-retro-199798-away": "napoli-retro-199697-away",
   "psveindhoven-retro-199596-home": "psveindhoven-retro-199495-home",
   "flamengo-retro-1995-third": "flamengo-retro-2022-third",
   "intermiami-retro-2021-third": "intermiami-retro-202425-third",
