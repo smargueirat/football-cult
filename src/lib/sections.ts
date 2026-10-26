@@ -39,6 +39,13 @@ export const SECTION_PHOTOS: string[] = [
 // un recuadro ancho sea seguro acá y no lo era con las fotos de
 // estudio (ver el bug documentado en SECTION_HERO_FIT).
 //
+// Selecciones: Messi con la camiseta especial de despedida de
+// Argentina (Sol de Mayo, detalles dorados) puesta, bandera argentina
+// real de fondo -- reemplaza a las camisetas colgadas (SECTION_PHOTOS[0])
+// en la rotación quincenal (2026-10-26). Él está corrido a la derecha
+// en la foto original, así que el escudo de la AFA queda fuera del
+// degradé sin transform
+// (news.adidas.com/football/adidas-celebrates-lionel-messi-s-legendary-argentina-career-with-a-special-edition-jersey)
 // Clubes: adidas + Real Madrid, jugadores reales con la camiseta
 // puesta en el túnel del estadio (Real Madrid pega más que Liverpool
 // en una audiencia de habla hispana -- reemplazo pedido explícitamente
@@ -78,7 +85,7 @@ export const SECTION_PHOTOS: string[] = [
 // el degradé al probarla con el ancho real de escritorio (ver
 // historial de commits).
 export const HERO_PHOTOS: string[] = [
-  SECTION_PHOTOS[0],
+  "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/731778.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/669240_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/705622_v2.jpg",
   "https://preview.thenewsmarket.com/Previews/ADID/StillAssets/1920x1080/647944_v2.jpg",
@@ -127,13 +134,17 @@ export const SECTION_HERO_FIT: ("cover" | "contain")[] = ["cover", "cover", "cov
 //   borde de la zona visible (probado top/30%/50%/70%/bottom).
 // Guantes/pelotas: sin efecto real con fit "contain" (object-position
 // sólo importa con "cover"), queda "center" como valor sin uso.
+// - Selecciones: "50% 10%" -- con "top" en escritorio sólo entraba
+//   cuello y escudo; 15% ya cortaba el pelo. 10% deja la cabeza entera
+//   y el escudo con las estrellas fuera del degradé (probado
+//   top/10%/15%/30% a 1736x460 y 360x300).
 // - Mujer: "50% 15%" deja la cara arriba y baja lo justo para que en
 //   celular entre el "Emirates" del pecho antes del degradé de abajo.
 // Tickets: foto ya panorámica (1920x1080, casi el ratio real del
 // banner) con el trofeo+pelota en el medio vertical, ni arriba ni
 // abajo del todo -- "50% 40%" deja algo de margen para el degradé
 // oscuro de abajo sin cortar el trofeo por arriba.
-export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "50% 15%", "50% 40%", "50% 50%", "center", "center", "50% 40%", "center"];
+export const SECTION_HERO_POSITION: string[] = ["50% 10%", "top", "top", "50% 15%", "50% 40%", "50% 50%", "center", "center", "50% 40%", "center"];
 
 // Transform extra (Botas y Mujer): pedido explícito del usuario -- quería
 // ver más de las dos botas, no sólo la suela asomando en el borde del
@@ -157,14 +168,17 @@ export const SECTION_HERO_POSITION: string[] = ["top", "top", "top", "50% 15%", 
 // que crea la escala), 1.2/8% dejaba media cara en el degradé; 1.3/11%
 // muestra escudo y "RMCF" del cuello fuera del degradé en escritorio y
 // la camiseta entera en celular, sin franja vacía.
+// Ojo con el índice: en esa rotación el valor de Mujer se insertó en vez
+// de reemplazar el suyo y corrió todo un lugar (Mujer sin transform y
+// tapada, Niños corrido, Botas sin transform) -- corregido 2026-10-26.
 export const SECTION_HERO_TRANSFORM: (string | undefined)[] = [
-  undefined,
   undefined,
   undefined,
   undefined,
   "scale(1.3) translateX(11%)",
   undefined,
   "scale(1.2) translateX(8%)",
+  undefined,
   undefined,
   undefined,
   undefined,
