@@ -33,6 +33,7 @@
 "acmilan-retro-201415-home",
 "acmilan-retro-201516-away",
 "acmilan-retro-201516-home",
+"acmilan-retro-201718-away",
 "acmilan-retro-201718-home",
 "acmilan-retro-2018-away",
 "acmilan-retro-201819-away",
@@ -1269,6 +1270,7 @@
 "dinamarca-retro-2016-away",
 "dinamarca-retro-201617-away",
 "dinamarca-retro-201617-home",
+"dinamarca-retro-201819-away",
 "dinamarca-retro-201819-home",
 "dinamarca-retro-201920-away",
 "dinamarca-retro-2020-home",
@@ -1301,6 +1303,7 @@
 "dortmund-retro-201718-away",
 "dortmund-retro-201718-home",
 "dortmund-retro-201718-third",
+"dortmund-retro-201819-home",
 "dortmund-retro-202021-away",
 "dortmund-retro-202021-third",
 "dortmund-retro-2021-home",
@@ -1312,6 +1315,7 @@
 "dortmund-retro-202223-home",
 "dortmund-retro-202223-third",
 "dortmund-retro-2023-away",
+"dortmund-retro-202324-away",
 "dortmund-retro-202324-home",
 "dortmund-retro-202324-third",
 "dortmund-retro-2024-home",
@@ -1697,9 +1701,11 @@
 "frankfurt-retro-201011-home",
 "frankfurt-retro-201415-home",
 "frankfurt-retro-201415-third",
+"frankfurt-retro-201516-away",
 "frankfurt-retro-201718-away",
 "frankfurt-retro-201920-home",
 "frankfurt-retro-2022-home",
+"frankfurt-retro-202324-home",
 "frankfurt-retro-202324-third",
 "frankfurt-retro-202425-third",
 "freiburg-retro-1994-away",
@@ -1836,6 +1842,7 @@
 "gladbach-retro-201516-home",
 "gladbach-retro-201617-home",
 "gladbach-retro-2017-home",
+"gladbach-retro-201819-away",
 "gladbach-retro-201819-home",
 "gladbach-retro-201920-away",
 "gladbach-retro-201920-home",
@@ -1945,11 +1952,14 @@
 "hertaberlin-retro-202324-away",
 "hibernian-retro-200405-home",
 "hoffenheim-retro-200910-away",
+"hoffenheim-retro-200910-home",
 "hoffenheim-retro-200910-third",
 "hoffenheim-retro-201112-home",
 "hoffenheim-retro-201415-away",
+"hoffenheim-retro-201516-third",
 "hoffenheim-retro-2016-home",
 "hoffenheim-retro-201920-away",
+"hoffenheim-retro-202021-home",
 "hoffenheim-retro-202122-away",
 "hoffenheim-retro-202223-home",
 "hoffenheim-retro-202324-third",
@@ -2123,6 +2133,7 @@
 "intermilan-retro-200910-away",
 "intermilan-retro-200910-home",
 "intermilan-retro-2010-home",
+"intermilan-retro-201011-away",
 "intermilan-retro-201112-away",
 "intermilan-retro-201112-home",
 "intermilan-retro-201213-home",
@@ -2425,6 +2436,7 @@
 "koln-retro-2005-home",
 "koln-retro-2015-home",
 "koln-retro-2016-home",
+"koln-retro-201819-home",
 "koln-retro-202021-third",
 "koln-retro-2023-home",
 "koln-retro-202425-away",
@@ -2645,6 +2657,8 @@
 "leverkusen-retro-202425-third",
 "lille-retro-2000-home",
 "lille-retro-2014-home",
+"lille-retro-201819-away",
+"lille-retro-202021-third",
 "lille-retro-202122-away",
 "lille-retro-2022-third",
 "lille-retro-202223-away",
@@ -2709,6 +2723,7 @@
 "lyon-retro-202324-away",
 "lyon-retro-202324-home",
 "lyon-retro-202425-away",
+"mainz-retro-201314-home",
 "mainz-retro-202021-home",
 "mainz-retro-202425-home",
 "mainz-retro-202425-third",
@@ -2980,6 +2995,7 @@
 "nacional-retro-2022-home",
 "nacional-retro-2024-away",
 "nacional-retro-2024-home",
+"nantes-retro-200809-home",
 "napoli-retro-198182-home",
 "napoli-retro-198384-home",
 "napoli-retro-1984-home",
@@ -3628,6 +3644,7 @@
 "rangers-retro-202425-third",
 "rayovallecano-retro-199596-home",
 "rayovallecano-retro-202425-home",
+"rbleipzig-retro-201617-away",
 "rbleipzig-retro-201819-away",
 "rbleipzig-retro-201819-home",
 "rbleipzig-retro-201920-third",
@@ -4424,6 +4441,7 @@
 "unionberlin-retro-202021-home",
 "unionberlin-retro-202122-home",
 "unionberlin-retro-202324-home",
+"unionberlin-retro-202425-away",
 "unionberlin-retro-202425-home",
 "urawareds-retro-2008-home",
 "urawareds-retro-2023-away",
@@ -23280,6 +23298,79 @@
 "S"
 ],
 "shipping": 5.15
+},
+"dortmund-retro-202324-away": {
+"title": "Puma Borussia Dortmund 2023-24 away shirt (M)",
+"price": 37.1,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/256823774378?_skw=Borussia+Dortmund+2023+away+shirt&hash=item3bcbe3ccaa%3Ag%3AtlcAAeSwivtntbZ2&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|256823774378|0",
+"image": "https://i.ebayimg.com/images/g/tlcAAeSwivtntbZ2/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 2.94
+},
+"dortmund-retro-201819-home": {
+"title": "PUMA Borussia Dortmund 2018/2019 Home Football Jersey Size XL",
+"price": 42.3,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/117361028972?_skw=Borussia+Dortmund+2018+home+shirt&hash=item1b53432f6c%3Ag%3AIugAAeSwqhJqgHvy&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|117361028972|0",
+"image": "https://i.ebayimg.com/images/g/IugAAeSwqhJqgHvy/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 3.38
+},
+"intermilan-retro-201011-away": {
+"title": " Inter Milan 2010/11 Away Shirt - No. 4 Zanetti, Medium",
+"price": 26.7,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/800830133033?_skw=Inter+Milan+2010+away+shirt&hash=itemba75321329%3Ag%3A8qYAAeSwm5Jq25eK&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|800830133033|0",
+"image": "https://i.ebayimg.com/images/g/8qYAAeSwm5Jq25eK/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 2.94
+},
+"gladbach-retro-201819-away": {
+"title": "Puma Borussia Mönchengladbach 2018-19 Away Shirt Player Version evoKNIT XXL NWT",
+"price": 37.1,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/227261159413?_skw=Borussia+M%C3%B6nchengladbach+2018+away+shirt&hash=item34e9d217f5%3Ag%3AE1UAAeSwKDdpuZdC&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|227261159413|0",
+"image": "https://i.ebayimg.com/images/g/E1UAAeSwKDdpuZdC/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 2.94
+},
+"nantes-retro-200809-home": {
+"title": "FC Nantes 2008-09 Home Soccer Jersey XL Kappa NWT Yellow Synergie",
+"price": 53.38,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/880011116703?_skw=FC+Nantes+2008+home+shirt&hash=itemcce4c0009f%3Ag%3A0RMAAeSwahRqzQig&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mzSJGCtvhUNwSV2uD79VCD0BJQBLBRFlArSZhesztZyMa9FJ%2FFNdbPOH3vwSNbsrtA2QhSB9ytELY7CRKUh0oUYOmDmTZt7dUUOpkKexKXj0KupFawq2ANX5WbNHLYM43IAxJmeDCDftngszkIWKZfZjJPhk9FmT3p%2BKyx5JlWrB%2B3iHzXplhuqVxedYUrD5dA1HdHXPHsGi0nfv9%2Fo%2BT7mkHz%2FP%2BzrzRVQFmHOGTB7XykkgK80N2%2BHdVC%2Ff9PXCjT2cJ%2BMOuyJXa7Yr4hB2VhvY%2BnJAIzqamI0RpiDmP%2BmuYq%2FURGuUHPh--hrrgfFyY%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|880011116703|0",
+"image": "https://i.ebayimg.com/images/g/0RMAAeSwahRqzQig/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 17.02
+},
+"unionberlin-retro-202425-away": {
+"title": "FC Union Berlin 2024/25 Away Football Shirt Authentic Adidas (L) BNWT",
+"price": 42.29,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/398356704676?_skw=Union+Berlin+2024+away+shirt&hash=item5cbfe8eda4%3Ag%3AJiwAAeSwG9Fqmhcf&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|398356704676|0",
+"image": "https://i.ebayimg.com/images/g/JiwAAeSwG9Fqmhcf/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 2.94
 }
 }
 }

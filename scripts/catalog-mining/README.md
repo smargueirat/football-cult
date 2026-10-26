@@ -5032,6 +5032,18 @@ eBay rotation IT, ES, US, then GB (day-of-year 298 mod 3 = 1), all four with a f
 - `ebay_gb_retro.py` re-applied its cache again: 81 "inserted", 16 with an item id not in HEAD, 7 kept after text review; the other 74 removed.
 - Women: 0 new fichas, offers refreshed in 10 stores (9 price-up swaps reverted).
 
+## Daily pass (2026-10-26)
+
+eBay rotation ES, US, IT, then GB (day-of-year 299 mod 3 = 2), full 5000/5000 quota at the start, all four with 20 teams and zero 429s (ES 260/411 and IT 260/411 cycle 2, US 269/411 cycle 5, GB 20/50 cycle 5). Pro:Direct skipped (Oct 18 files). Soicos skipped (no claude-in-chrome). Umbro MID 41001 still absent from the Rakuten FTP (35th pass); Santos (54196) timed out once, `gzip -t` + retry. Boots / gear not re-run (no FAIL/WARNING in daily_refresh).
+
+- CSV feeds: 1 new ficha, `paisesbajos-prematch-2026` (FootStore ES, Nike x Patta IH1678, photo-checked). Skipped: FansJerseyHub Pumas third 26/27 (only source), Tigres third 26/27 (AI-generated model photo, blocklisted), Besiktas "Player Version" x2 (blocklisted), ShopTimao LS "Jogador" training; all other season conflicts are repeats (FJH 25/26 thirds, PSG third 26/27, ForumSport "25" prematch, Internacional "26", Norway 2025). Rakuten player prints came back (Santos "Everton nº7" x3, Cruzeiro "Néiser Villarreal Nº22", Inter "Matheus Bahia Nº6") -- removed again and **now blocklisted by product code** (SID-02AH-374 etc.), they were not before. Swaps reverted: 113 price-up >5 %, Inter treino preto->cinza, Roma LS training->warm-up (again), Reebok UK titles "Reebok - X, Size: S".
+- Women: 238 picks, 0 new, 10 price-up swaps reverted.
+- eBay current: 4 new (`stuttgart-away-202627` Jako red ES, `werderbremen-training-202627` hummel US, `mainz-third-202526` Jako cream US, `leicester-training-202627` adidas GB). The $28.98 / 31.31 EUR "JERSEY X ..." template seller (Freiburg, Werder, Union, Augsburg, Köln, Mainz, Nice) blocklisted again by item id, plus Pogba/Knauff/Hincapie prints and a Stuttgart name+number transfer set. **`mainz-home-202526` and `werderbremen-third-202526` are now empty fichas** -- their only offers were that template seller.
+- eBay retro: 38 dropped by text (Balotelli, Pizarro x3, Stindl, Golovin, Wirtz, Werner, Kainz, Glatzel, Valbuena..., shirt pins, a 15-16Y kids, a "7/10" used, generic "Camiseta de fútbol para hombre roja ... Red Bull Leipzig" knock-off titles), 300-400 EUR seller skipped for new fichas; 104 offers merged (8 price-up swaps reverted), 16 new fichas after photo review (Belgium away 08/09 was a render, dropped).
+- `ebay_gb_retro.py` re-applied its cache again: 71 "inserted", 4 genuinely new item ids kept (a Zanetti print blocklisted).
+- **Helper pitfall**: a quick "remove offers by item id" script that drops a block once it has no `store:` line also drops the ~100 legitimate empty-offers fichas (`offers: [\n    ],`). Never drop blocks when removing offers.
+- Tickets 2 new / 28 dropped of 2326. GTIN 23492 of 36262. Colours 18 new, 0 errors. Price drops 808; Telegram posted 10.
+
 ## Reebok UK (2026-10-25)
 
 Awin aid 121516. `AWIN_FEED_URL_REEBOK_UK` -> `/tmp/feeds/REEBOK_UK.csv`: the

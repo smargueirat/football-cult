@@ -12,6 +12,33 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-10-26 ---
+    "/itm/800830133033",  # 2026-10-26 gb retro: Inter 2010/11 away "No. 4 Zanetti" print
+    "/itm/267716245904",  # 2026-10-26 removed: Monaco home 25/26 "Pogba 8" print
+    "/itm/267743857026",  # 2026-10-26 removed: Frankfurt away 25/26 Knauff print
+    "/itm/287475235414",  # 2026-10-26 removed: "JERSEY Mainz 05 Home 2025-26" template seller
+    "/itm/167583700137",  # 2026-10-26 removed: "JERSEY Werder Bremen Third 2025-26" template seller
+    "/itm/326772411859",  # 2026-10-26 removed: Leverkusen home 25/26 Hincapie print
+    "/itm/820163504031",  # 2026-10-26 removed: "JERSEY OGC Nice Away 26-27" template seller
+    "/itm/287625719356",  # 2026-10-26 removed: "JERSEY OGC Nice Home 26-27" template seller
+    "/itm/198660179679",  # 2026-10-26 $28.98/31.31 EUR "JERSEY ..." template seller: Freiburg home 26-27
+    "/itm/198660179722",  # 2026-10-26 $28.98/31.31 EUR "JERSEY ..." template seller: Freiburg away 26-27
+    "/itm/198642796124",  # 2026-10-26 $28.98/31.31 EUR "JERSEY ..." template seller: Werder home 26-27
+    "/itm/198642796129",  # 2026-10-26 $28.98/31.31 EUR "JERSEY ..." template seller: Werder away 26-27
+    "/itm/198642796127",  # 2026-10-26 $28.98/31.31 EUR "JERSEY ..." template seller: Werder third 26-27
+    "/itm/227531276341",  # 2026-10-26 $28.98/31.31 EUR "JERSEY ..." template seller: Union Berlin away 26-27
+    "/itm/157089543053",  # 2026-10-26 $28.98/31.31 EUR "JERSEY ..." template seller: Augsburg home 2025-26
+    "/itm/800590051249",  # 2026-10-26 $28.98/31.31 EUR "JERSEY ..." template seller: Koln third 26-27
+    "/itm/327418338357",  # 2026-10-26 not a garment: Stuttgart 26/27 name+number transfer set
+    "/itm/157778220518",  # 2026-10-26 Hoffenheim "home 2025-26" at 29.99 is a navy Joma shirt, not the 25/26 home
+    "FBA-864K-016",  # 2026-10-26 InterStore: Internacional home 26/27 "Matheus Bahia No 6" print, filed under bahia
+    "SID-02AH-374",  # 2026-10-26 SantosStore: Santos home 26/27 "Everton no7" print, filed under everton
+    "SID-02AI-028",  # 2026-10-26 SantosStore: Santos away 26/27 "Everton no7" print, filed under everton
+    "SID-02AM-026",  # 2026-10-26 SantosStore: Santos third 26/27 "Everton no7" Jogador print, filed under everton
+    "FBA-85HN-310",  # 2026-10-26 CruzeiroStore: Cruzeiro home 26/27 "Neiser Villarreal No22" print, filed under villarreal
+    "tigres-uanl-third-away-soccer-jersey-2026-27",  # 2026-10-26 FansJerseyHub: AI-generated model photo (garbled patch)
+    "besiktas-away-player-version-soccer-jersey-2026-27",  # 2026-10-26 FansJerseyHub: player version
+    "besiktas-home-player-version-soccer-jersey-2026-27",  # 2026-10-26 FansJerseyHub: player version
     # --- Daily pass 2026-10-25 ---
     "/itm/167710770396",  # 2026-10-25 removed: eBay GB retro Men's Football Shirt 2023-2024 Red Alban
     "/itm/127965687484",  # 2026-10-25 removed: eBay GB retro Germany Adidas DFB Jersey Shirt Techfit 
