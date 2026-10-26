@@ -105,7 +105,7 @@ export default function HeroCarousel() {
 
   return (
     <div
-      className="vintage-dark shadow-vintage-lg relative h-[300px] overflow-hidden rounded-2xl sm:h-[460px] sm:rounded-3xl"
+      className="vintage-dark shadow-vintage-lg relative h-[360px] overflow-hidden rounded-2xl sm:h-[460px] sm:rounded-3xl"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -165,10 +165,16 @@ export default function HeroCarousel() {
               zoom lento de siempre, y el wrapper la corre/agranda un
               poco más para revelar más bota, pedido explícito del
               usuario (ver sections.ts para el porqué del valor). */}
+          {/* Encuadre 2026-10-26: la foto (16:9) ya no va debajo del texto.
+              Escritorio: solo a la derecha del 44 %, donde nada la tapa
+              (antes el degradé sólido cubría el 48 % y cover dejaba ver
+              una franja: caras cortadas). Celular: arriba, en un recuadro
+              casi 16:9 (360 px de alto, 56 % para la foto), y el texto
+              debajo sobre fondo oscuro en vez de encima de la camiseta. */}
           {slide.photo && (
             <div
               className={`absolute inset-0 ${
-                SECTION_HERO_FIT[i] === "contain" ? "bg-white sm:left-[38%]" : ""
+                SECTION_HERO_FIT[i] === "contain" ? "bg-white sm:left-[38%]" : "bottom-[44%] sm:bottom-0 sm:left-[44%]"
               }`}
               style={{ transform: SECTION_HERO_TRANSFORM[i] }}
             >
@@ -197,11 +203,11 @@ export default function HeroCarousel() {
               parejo sea cual sea la foto de atrás. */}
           <div
             className="absolute inset-0 sm:hidden"
-            style={{ background: "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.92) 34%, transparent 58%)" }}
+            style={{ background: "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.92) 40%, transparent 56%)" }}
           />
           <div
             className="absolute inset-0 hidden sm:block"
-            style={{ background: "linear-gradient(to right, #14261c 0%, #14261c 48%, transparent 68%)" }}
+            style={{ background: "linear-gradient(to right, #14261c 0%, #14261c 44%, transparent 56%)" }}
           />
 
           <div className="relative z-10 flex h-full flex-col items-start justify-end gap-1.5 px-5 py-5 text-left sm:max-w-[52%] sm:justify-center sm:gap-3 sm:px-12 sm:py-6">

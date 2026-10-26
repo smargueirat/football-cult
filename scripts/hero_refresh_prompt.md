@@ -22,13 +22,15 @@ Reglas:
    por IA, nada de renders inventados. La foto tiene que mostrar el producto real de esa categoría
    (retro = temporada 2006 o anterior, según isVintageRetro(); mujer = plantel o modelo femenino
    con la camiseta; niños = chico real con la camiseta infantil).
-3. Composición panorámica con el sujeto corrido a un costado y aire alrededor. Una persona
-   centrada en la foto original queda tapada por el degradé: descartala.
+3. Foto 16:9 (1920x1080) con el sujeto entero y algo de aire arriba. Desde el 2026-10-26 la foto
+   NO va debajo del texto: en escritorio ocupa solo el 56 % derecho del banner (recuadro
+   ~972x460) y en celular la franja de arriba (~358x202, casi 16:9). Ya no hace falta que el
+   sujeto esté corrido a un costado, y NO uses SECTION_HERO_TRANSFORM (scale/translate) para
+   esquivar el degradé: deja ese valor en undefined.
 4. Verificación obligatoria por cada candidata: bajala y armá con sharp
-   (/home/piojo/football-cult/node_modules/sharp) un compuesto con el degradé REAL del slide
-   (copiá los linear-gradient de HeroCarousel.tsx) en las dos medidas reales del banner,
-   1736x460 (escritorio) y 360x300 (celular), con el FIT/POSITION que vas a usar. Miralo con Read.
-   Solo sirve si la camiseta/producto se ve bien fuera del degradé en las DOS medidas.
+   (/home/piojo/football-cult/node_modules/sharp) un recorte cover con el POSITION que vas a usar
+   en las dos medidas reales de la foto, 972x460 (escritorio) y 358x202 (celular). Miralo con
+   Read. Solo sirve si cara y camiseta/producto entran enteras en las DOS medidas.
 5. Preferí equipos de habla hispana o con mucha audiencia hispana (Real Madrid, Argentina, España,
    Boca, México, Colombia...) y que el resultado se vea distinto del anterior. No repitas ninguna
    URL que esté hoy en HERO_PHOTOS.
