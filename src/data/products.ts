@@ -34494,43 +34494,6 @@ const productsData = [
     ],
   },
 {
-    id: "tailandia-third-2026",
-    teamKey: "tailandia",
-    season: "2026",
-    typeKey: "third",
-    colorHex: "#A51931",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 64.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/336708914623?_skw=Thailand+third+soccer+jersey&hash=item4e656a4dbf%3Ag%3AC5EAAeSwcXdqaFxF&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026 Official Thailand National Football Soccer Team Jersey Third Shirt White", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/C5EAAeSwcXdqaFxF/s-l1600.jpg" },
-      { store: "eBay ES", price: 51.7, shipping: 10.76, currency: "EUR", url: "https://www.ebay.es/itm/307117805545?_skw=Thailand+third+soccer+jersey&hash=item4781a5cfe9%3Ag%3AVs4AAeSwYTBqebvo&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol blanca de la tercera selección nacional de Tailandia 2025-26", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Vs4AAeSwYTBqebvo/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "tailandia-training-2026",
-    teamKey: "tailandia",
-    season: "2026",
-    typeKey: "training",
-    colorHex: "#A51931",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 53.86, shipping: 10.76, currency: "EUR", url: "https://www.ebay.es/itm/336561712010?_skw=Thailand+training+soccer+jersey&hash=item4e5ca42b8a%3Ag%3ATG8AAeSw8K9p9A-8&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Oficial de Entrenamiento de la Selección Nacional de Fútbol de Tailandia 2026 Blanca", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/TG8AAeSw8K9p9A-8/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "vietnam-away-2026",
-    teamKey: "vietnam",
-    season: "2026",
-    typeKey: "away",
-    colorHex: "#DA251D",
-    colorHexSecondary: "#FFD700",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 59.24, shipping: 10.76, currency: "EUR", url: "https://www.ebay.es/itm/336692886964?_skw=Vietnam+away+soccer+jersey&hash=item4e6475bdb4%3Ag%3AgcsAAeSwObdqWf1N&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta blanca visitante de la selección nacional de fútbol de Vietnam 2026", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/gcsAAeSwObdqWf1N/s-l1600.jpg" },
-    ],
-  },
-{
     id: "bolivia-retro-199697-home",
     teamKey: "bolivia",
     season: "1996/97",
@@ -83833,18 +83796,6 @@ const productsData = [
     ],
   },
 {
-    id: "millwall-goalkeeper-202627",
-    teamKey: "millwall",
-    season: "2026/27",
-    typeKey: "goalkeeper",
-    colorHex: "#001C58",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay GB", price: 55.0, shipping: 2.95, currency: "GBP", url: "https://www.ebay.co.uk/itm/327193754216?_skw=Millwall+goalkeeper+soccer+jersey&hash=item4c2e447a68%3Ag%3A1cwAAeSwVxNq3dqO&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Millwall FC Football Shirt Home Goalkeeper 2026-27 Errea Gold Mens Official", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/1cwAAeSwVxNq3dqO/s-l1600.jpg" },
-    ],
-  },
-{
     id: "norwich-away-202526",
     teamKey: "norwich",
     season: "2025/26",
@@ -88614,30 +88565,6 @@ const productsData = [
     ],
   },
 {
-    id: "boca-goalkeeper-202627",
-    teamKey: "boca",
-    season: "2026/27",
-    typeKey: "goalkeeper",
-    colorHex: "#1B3A6B",
-    colorHexSecondary: "#F5C742",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 185.0, shipping: 27.9, currency: "USD", url: "https://www.ebay.com/itm/318681855887?_skw=Boca+Juniors+goalkeeper+soccer+jersey&hash=item4a32eb378f%3Ag%3AQ00AAeSwU7hqcy6U&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "BOCA JUNIORS 26/27 GOALKEEPER  JERSEY - CLIMACOOL - ADIDAS  KB6242", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/Q00AAeSwU7hqcy6U/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "boca-prematch-202627",
-    teamKey: "boca",
-    season: "2026/27",
-    typeKey: "prematch",
-    colorHex: "#1B3A6B",
-    colorHexSecondary: "#F5C742",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 140.0, shipping: 27.9, currency: "USD", url: "https://www.ebay.com/itm/318681766183?_skw=Boca+Juniors+pre-match+soccer+jersey&hash=item4a32e9d927%3Ag%3A5s0AAeSwqNVqcyiP&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "BOCA JUNIORS 26/27 PREMATCH JERSEY - ADIDAS KB6265", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/5s0AAeSwqNVqcyiP/s-l1600.jpg" },
-    ],
-  },
-{
     id: "celtic-prematch-202526",
     teamKey: "celtic",
     season: "2025/26",
@@ -88918,19 +88845,6 @@ const productsData = [
     ],
   },
 {
-    id: "paisesbajos-prematch-2026",
-    teamKey: "paisesbajos",
-    season: "2026",
-    typeKey: "prematch",
-    colorHex: "#FF6600",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    brand: "nike",
-    offers: [
-      { store: "FootStoreES", price: 57.58, shipping: 9.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46305663273&a=3013769&m=65912", title: "Maillot Prematch Países Bajos Coupe du monde 2026", inStock: false, sizes: ["XS"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fi%2Fh%2Fih1678-010.jpg&feedId=89032&k=3b2cac2a1ce3648dff3e38b6129880623ab69b73" },
-    ],
-  },
-{
     id: "mainz-third-202526",
     teamKey: "mainz",
     season: "2025/26",
@@ -88954,19 +88868,6 @@ const productsData = [
     brand: "hummel",
     offers: [
       { store: "eBay", price: 48.16, shipping: 67.2, currency: "USD", url: "https://www.ebay.com/itm/820187013874?_skw=Werder+Bremen+training+soccer+jersey&hash=itembef6f4a2f2%3Ag%3A6O0AAeSwW3hqawGd&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Hummel Werder Bremen Staff Training Jersey 26 27 Green SVW Training Shirt M - 4XL", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/6O0AAeSwW3hqawGd/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "stuttgart-away-202627",
-    teamKey: "stuttgart",
-    season: "2026/27",
-    typeKey: "away",
-    colorHex: "#E32219",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    brand: "jako",
-    offers: [
-      { store: "eBay ES", price: 91.76, shipping: 18.0, currency: "EUR", url: "https://www.ebay.es/itm/327330906877?_skw=VfB+Stuttgart+away+soccer+jersey&hash=item4c367142fd%3Ag%3AxWAAAeSwGDJqkcLK&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta visitante JAKO VfB Stuttgart 26/27 - ST4226A", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/xWAAAeSwGDJqkcLK/s-l1600.jpg" },
     ],
   },
 {
@@ -89301,18 +89202,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay ES", price: 75.79, shipping: 34.59, currency: "EUR", url: "https://www.ebay.es/itm/387240095949?_skw=Chile+home+soccer+jersey&hash=item5a294ef0cd%3Ag%3AYzgAAOSwjdVm43RX&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol para hombre Nike Chile Home 16-17 roja-azul", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/YzgAAOSwjdVm43RX/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "dinamarca-retro-202223-away",
-    teamKey: "dinamarca",
-    season: "2022/23",
-    typeKey: "retro",
-    colorHex: "#C60C30",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 86.62, shipping: 34.94, currency: "EUR", url: "https://www.ebay.es/itm/386275151839?_skw=Denmark+away+soccer+jersey&hash=item59efcb0fdf%3Ag%3AvQUAAOSwIEBlUAGY&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta visitante Hummel Dinamarca 22/23 - blanca", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/vQUAAOSwIEBlUAGY/s-l1600.jpg" },
     ],
   },
 {
