@@ -495,6 +495,8 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
   ],
   // Mismo reebok.eu en su tienda de Reino Unido (/en-gb, GBP, Awin 121516).
   "Reebok UK": ["GB"],
+  // Sportsafe UK (Awin 118941): proveedor de colegios y clubes, solo Reino Unido.
+  "Sportsafe UK": ["GB"],
   FootStoreES: [
     "DE", "AT", "BG", "BE", "HR", "DK", "SK", "SI", "ES", "US", "FR", "GR",
     "HU", "IE", "IS", "IT", "NL", "PL", "PT", "GB", "CZ", "RO", "SE", "CH", "TR",

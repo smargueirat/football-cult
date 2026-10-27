@@ -101,6 +101,9 @@ const RATES: Record<string, number> = {
   "Reebok DE": 0.08,
   // Awin aid 121516, aprobado 2026-10-25: 8,23% publicado.
   "Reebok UK": 0.08,
+  // Sportsafe UK (Awin 118941, aprobado 2026-10-27): PROVISIONAL, sin tarifa
+  // publicada ni EPC medido todavía; la de por defecto. Revisar en Awin.
+  "Sportsafe UK": 0.03,
 
   // Entradas: porcentaje parecido al retail pero sobre un ticket medio de
   // €91, así que por clic paga más que una camiseta.

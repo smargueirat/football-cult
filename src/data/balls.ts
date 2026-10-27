@@ -33,11 +33,12 @@ export interface BallOffer {
     | "GigasportDE"
     | "GigasportCH"
     | "GigasportFR"
-    | "AdidasCL";
+    | "AdidasCL"
+    | "Sportsafe UK";
   price: number;
   priceMax?: number;
   shipping: number;
-  currency: "EUR" | "CLP";
+  currency: "EUR" | "GBP" | "CLP";
   url: string;
   imageUrl: string;
   sizes: string[];
@@ -22641,6 +22642,459 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
+  {
+    id: "mitre-balon-de-futbol-mitre-calcio-orange-black-teal",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Calcio - Orange/Black/Teal",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 12.32,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683614&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01800C49Y1_phDq9y3H0-scaled-1.jpg&feedId=109102&k=d70acb09fd731e46de370c284c5ce1ecbcf1c001",
+        sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683614&a=3013769&m=118941" },
+          { size: "4", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683611&a=3013769&m=118941" },
+          { size: "5", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683608&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-calcio-white-blue-black",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Calcio - White/Blue/Black",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 12.32,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683613&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01800C21Y1_A0pNam6_8E-scaled-1.jpg&feedId=109102&k=68890bf322786eccf6964be21d977c041c3e0418",
+        sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683613&a=3013769&m=118941" },
+          { size: "4", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683610&a=3013769&m=118941" },
+          { size: "5", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683607&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-calcio-yellow-black-grey",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Calcio - Yellow/Black/Grey",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 12.32,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683609&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01800C60Y1_3QuRfQ_jJk-scaled-1.jpg&feedId=109102&k=380f2d6d10cd218013a42c027e71c41fd06e033f",
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683609&a=3013769&m=118941" },
+          { size: "5", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683606&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-delta-one-white-blue",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Delta One - White/Blue",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 38.56,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683603&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01787C21Y1_7_W_l7zkIE-scaled-1.jpg&feedId=109102&k=f51626a84e6a59b85d1924132f66c7a8fa66f855",
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 38.56, url: "https://www.awin1.com/pclick.php?p=42124683603&a=3013769&m=118941" },
+          { size: "5", price: 38.56, url: "https://www.awin1.com/pclick.php?p=42124683601&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-delta-one-yellow-black-grey",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Delta One - Yellow/Black/Grey",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 38.56,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124682344&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01787C60Y1_YOYTZwRCbk-scaled-1.jpg&feedId=109102&k=9fdd4591361f6bc42f4a4e70a1d45b9a09a9d3a8",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-impel-evo-white-red-black",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Impel EVO - White/Red/Black",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 18.49,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683557&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01790C29Y1_xhVpajwREk-scaled-1.jpg&feedId=109102&k=4ed9b862b01aaf35d10fa5dc93ca9e68f890b89d",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-impel-evo-yellow-black-grey",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Impel EVO - Yellow/Black/Grey",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 18.49,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683556&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01790C60Y1_MTbGsr1LwU-scaled-1.jpg&feedId=109102&k=d0b644cefe9ebceca81c7a37565333334fb94581",
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 18.49, url: "https://www.awin1.com/pclick.php?p=42124683556&a=3013769&m=118941" },
+          { size: "5", price: 18.49, url: "https://www.awin1.com/pclick.php?p=42124683554&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-impel-one",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Impel One",
+    colour: "N/D",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 12.32,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124682357&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01791C39Y1_7AdYzwmpjk-scaled-1.jpg&feedId=109102&k=f309d422574cab2421fb330ed45ba11b45b32cd3",
+        sizes: ["2"],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-impel-one-pink-white-teal",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Impel One - Pink/White/Teal",
+    colour: "Rosa",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 12.32,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683571&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01791C37Y1_XCIyYf11E-scaled-1.jpg&feedId=109102&k=4345789fa16cf8639a802b602806fa4366e8fd54",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-impel-one-white-black-sage",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Impel One - White/Black/Sage",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 12.32,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683570&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01791C31Y1_YnuLctUZtk-scaled-1.jpg&feedId=109102&k=44844131aefed2ea5cb8a17e2c4e30c02c8c10db",
+        sizes: ["4"],
+      },
+    ],
+  },
+];
+
+const minedBallProductsChunk6: BallProduct[] = [
+  {
+    id: "mitre-balon-de-futbol-mitre-impel-one-white-black-teal",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Impel One - White/Black/Teal",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 12.32,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683569&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01791C39Y1_pszG_o4c00-scaled-1.jpg&feedId=109102&k=8a147a7d29051b38ad3a76922532282c2a28dfa9",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-impel-one-yellow-black-grey",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Impel One - Yellow/Black/Grey",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 12.32,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683572&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01791C60Y1_4XAmRDH4E-scaled-1.jpg&feedId=109102&k=93afba53e93e59f5f7f354ea5d2579764b98a9e1",
+        sizes: ["3", "4"],
+        sizePrices: [
+          { size: "3", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683572&a=3013769&m=118941" },
+          { size: "4", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683568&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-impel-one-yellow-black-red",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Impel One - Yellow/Black/Red",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 12.32,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683567&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01791C36Y1_FTqcjesPJE-scaled-1.jpg&feedId=109102&k=729d7181034fb3a110b75159288f2e0dab72efec",
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683567&a=3013769&m=118941" },
+          { size: "5", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683562&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-super-dimple",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Super Dimple",
+    colour: "N/D",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 13.87,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683679&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01794C29Y1_yhNV0RPSk-scaled-1.jpg&feedId=109102&k=eb21a559fd44b250428d1ae5c188795e8ef87bd0",
+        sizes: ["3", "4"],
+        sizePrices: [
+          { size: "3", price: 13.87, url: "https://www.awin1.com/pclick.php?p=42124683679&a=3013769&m=118941" },
+          { size: "4", price: 13.87, url: "https://www.awin1.com/pclick.php?p=42124683680&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-ultimatch-evo-white-black-teal",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Ultimatch Evo - White/Black/Teal",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 32.39,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124682202&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01788C23Y1_sVQCJih6pk-scaled-1.jpg&feedId=109102&k=59d81cfe55f7717d475f3a6385ebc9bf6ae72eca",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-ultimatch-evo-yellow-gold",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Ultimatch Evo - Yellow/Gold",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 32.39,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683860&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01788C24Y1_yBWRtx2cX0-scaled-1.jpg&feedId=109102&k=2019bb075ef3aa76543b268c1b25b8ff6fa96d1f",
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 32.39, url: "https://www.awin1.com/pclick.php?p=42124683860&a=3013769&m=118941" },
+          { size: "5", price: 32.39, url: "https://www.awin1.com/pclick.php?p=42124683694&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-ultimatch-one-white-red-black",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Ultimatch One - White/Red/Black",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 27.76,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683689&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01789C29Y1_lItlCkheQ0-scaled-1.jpg&feedId=109102&k=d7b459e170f11ccf5490cfc3a0de644dd5de3b13",
+        sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 27.76, url: "https://www.awin1.com/pclick.php?p=42124683689&a=3013769&m=118941" },
+          { size: "4", price: 27.76, url: "https://www.awin1.com/pclick.php?p=42124683687&a=3013769&m=118941" },
+          { size: "5", price: 27.76, url: "https://www.awin1.com/pclick.php?p=42124683685&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-ultimatch-one-yellow-black-grey",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Ultimatch One - Yellow/Black/Grey",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 27.76,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683686&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01789C60Y1_TK7U2_UFE-scaled-1.jpg&feedId=109102&k=20bfd81d463f229395faf855f23c662c5ffa2ab5",
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 27.76, url: "https://www.awin1.com/pclick.php?p=42124683686&a=3013769&m=118941" },
+          { size: "5", price: 27.76, url: "https://www.awin1.com/pclick.php?p=42124683684&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "precision-balon-de-futbol-precision-fusion-lite-football-290",
+    brand: "Precision",
+    model: "Balón de fútbol Precision Fusion Lite Football 290",
+    colour: "N/D",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 15.41,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683600&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2FPFBP10372_1425537-DAV-SPT-W02.jpg&feedId=109102&k=65b597eefeee78c0f0fdb9fe8af976f1d618ed51",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "precision-balon-de-futbol-precision-street-mania",
+    brand: "Precision",
+    model: "Balón de fútbol Precision Street Mania",
+    colour: "N/D",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 18.49,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683587&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2FHE1478410_151844-P1-1.jpg&feedId=109102&k=53199eaa69c51a9e0a7f224c53fb21841a5eb7da",
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 18.49, url: "https://www.awin1.com/pclick.php?p=42124683587&a=3013769&m=118941" },
+          { size: "5", price: 18.49, url: "https://www.awin1.com/pclick.php?p=42124683597&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "samba-balon-de-futbol-samba-edu-white-blue-silver",
+    brand: "Samba",
+    model: "Balón de fútbol Samba Edu - White/Blue/Silver",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 11.56,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683988&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2FBALL893002_v6k3uSVCy0.webp&feedId=109102&k=fa9accb78b08a4e7401f22edd6bd454ff118e238",
+        sizes: ["3", "4"],
+        sizePrices: [
+          { size: "3", price: 11.56, url: "https://www.awin1.com/pclick.php?p=42124683988&a=3013769&m=118941" },
+          { size: "4", price: 11.56, url: "https://www.awin1.com/pclick.php?p=42124683965&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "samba-balon-de-futbol-samba-infiniti-match",
+    brand: "Samba",
+    model: "Balón de fútbol Samba Infiniti Match",
+    colour: "N/D",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 27.76,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683962&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2FBALL76300_FRONT_pEsW309TCk.png&feedId=109102&k=5d7cba2d0230a5d4455d95fe44477bc18da685f8",
+        sizes: ["3", "4"],
+        sizePrices: [
+          { size: "3", price: 27.76, url: "https://www.awin1.com/pclick.php?p=42124683962&a=3013769&m=118941" },
+          { size: "4", price: 27.76, url: "https://www.awin1.com/pclick.php?p=42124683963&a=3013769&m=118941" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "spordas-balon-de-futbol-spordas-supersafe",
+    brand: "Spordas",
+    model: "Balón de fútbol Spordas Supersafe",
+    colour: "N/D",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 10.79,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683004&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2FPPEP17798_E17798-DAV-PES-P01.jpg&feedId=109102&k=2d68aa3e4b5c01ceb70201983fd7df8d866683b3",
+        sizes: [],
+      },
+    ],
+  },
 ];
 
 export const ballProducts: BallProduct[] = [
@@ -22649,4 +23103,5 @@ export const ballProducts: BallProduct[] = [
   ...minedBallProductsChunk3,
   ...minedBallProductsChunk4,
   ...minedBallProductsChunk5,
+  ...minedBallProductsChunk6,
 ];

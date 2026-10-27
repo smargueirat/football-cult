@@ -974,6 +974,135 @@ def mine_adidas_cl(gloves, balls, apparel):
     print('AdidasCL:', n)
 
 
+# ---------- SPORTSAFE UK (Awin 118941, aprobada 2026-10-27) ----------
+# Proveedor británico de material para colegios y clubes: feed en inglés y
+# GBP, UNA fila por artículo (cada talla de pelota es otro producto con su
+# propio enlace), brand_name y EAN vacíos en todo el feed. Solo sus tres
+# categorías de fútbol; el resto del feed es de otros deportes/gimnasio.
+#  - Marca: la del principio del título o, si no, la que nombra la
+#    descripción ("The Samba® Aluminium Folding Goal"). Sin marca conocida
+#    se salta: sin marca no hay qué mostrar y gearText.ts no traduce.
+#  - search_price es SIN IVA: la ficha de la tienda dice "£3.84 ex VAT /
+#    £4.61 inc VAT" (medido 2026-10-27 en 5 productos) -> x1,20.
+#  - Envío: unas fichas dicen "FREE mainland UK delivery" y otras "£3.95
+#    por debajo de 40 ex VAT", y el feed no dice cuál: 0 + "a calcular en la
+#    tienda" (SHIPPING_KNOWN_FOR vacío en offerMoney.ts).
+#  - Los productos "variable" (redes y porterías con precio según medida)
+#    traen solo el precio mínimo: fuera, el precio no sería el de la ficha.
+SPORTSAFE_CATS = ('Footballs', 'Football Accessories', 'Football Goals')
+SPORTSAFE_BRANDS = ('Mitre', 'Precision', 'Samba', 'Slazenger', 'Fox 40', 'Spordas')
+# Lotes (el precio no es de una unidad), bolsas, y otros deportes que el
+# feed mete en fútbol: goalball ("with Bells"), críquet ("Airball", "Kick
+# Flick"), balonmano, kits de portero de hockey ("Goalkeeping"), pelota
+# saltarina ("Hopper"), bocina ("Air Horn and Pump").
+SPORTSAFE_SKIP_RE = re.compile(r'\bpack\b|pack of|including bag|\bsack\b|\bbag\b|\bset\b|bells|airball'
+                               r'|hopper|handball|goalkeeping|kick flick|air horn|\binfants?\b|\byouths\b', re.I)
+SPORTSAFE_PAIR_RE = re.compile(r'\bpair\b|\btwo (football )?goals\b|\(2 goals\)|\b2 x [\w -]{0,20}goals'
+                               r'|(?<!\d)2 x (nets|locking systems)', re.I)
+# Fotos que en la tienda son el cartel "No Image Available" (revisadas una a una).
+SPORTSAFE_NO_PHOTO = {'COACH200_highres_8zxc7O2jtk'}
+# (regex sobre el título, sección, type, sustantivo del glosario, cola que se quita del nombre)
+SPORTSAFE_RULES = [
+    (r'gk gloves', 'gloves', None, 'Guantes de portero', r'\s*gk gloves$'),
+    (r'\bgoal\b', 'training', 'porterias', 'Portería de fútbol', r'\s*(\b(offer|pair|package)\b|\((two|2) goals\))'),
+    (r'whistle and lanyard', 'training', 'silbatos', 'Silbato con cuerda', r'\s*whistle and lanyard$'),
+    (r'whistle', 'training', 'silbatos', 'Silbato', r'\s*whistle$'),
+    (r'\bnet\b', 'training', 'redes', 'Red de fútbol', r'\s*(football )?net$'),
+    (r'coaching folder', 'training', 'tactica', 'Carta táctica', None),
+    (r'\bpump\b', 'training', 'infladores', 'Bomba', None),
+    (r'\bladder\b', 'training', 'escaleras', 'Escala rítmica', None),
+    (r'\bbib\b', 'training', 'petos', 'Peto', r'\s*(training )?bib$'),
+]
+SPORTSAFE_COLOUR_RE = re.compile(r'\b(' + '|'.join(en for en, _ in REEBOK_COLOURS) + r'|fluor?o|royal|teal|sage|silver)\b', re.I)
+
+
+def sportsafe_classify(row):
+    """Fila del feed -> (sección, type, marca, modelo, color, talla) o None."""
+    title = row.get('product_name') or ''
+    cat = row.get('merchant_category') or ''
+    if cat not in SPORTSAFE_CATS or row.get('in_stock') != '1' or row.get('product_type') != 'simple':
+        return None
+    if SPORTSAFE_SKIP_RE.search(title) or EXCLUDE_KEYWORDS.search(title):
+        return None
+    if cat == 'Footballs':
+        dest, typ, noun, tail = 'balls', None, 'Balón de fútbol', r'\s*(football|ball)$'
+    else:
+        rule = next((r for r in SPORTSAFE_RULES if re.search(r[0], title, re.I)), None)
+        if not rule or (rule[2] == 'porterias' and cat != 'Football Goals'):
+            return None
+        dest, typ, noun, tail = rule[1:]
+    name, *parts = [p.strip() for p in title.split(' - ')]
+    size, colourway, extra = '', '', []
+    for p in parts:
+        m = re.fullmatch(r'size (\d+)', p, re.I)
+        if m:
+            size = m.group(1)
+        elif re.fullmatch(r'adult|senior', p, re.I):
+            continue
+        elif SPORTSAFE_COLOUR_RE.search(p):
+            colourway = p
+        else:
+            extra.append(p)
+    name = re.sub(tail, '', ' '.join([name] + extra), flags=re.I).strip() if tail else ' '.join([name] + extra)
+    hay = f"{title} {row.get('description') or ''}"
+    brand = next((b for b in SPORTSAFE_BRANDS if name.lower().startswith(b.lower())), None)
+    if brand is None:
+        hits = [(m.start(), b) for b in SPORTSAFE_BRANDS for m in [re.search(r'\b' + re.escape(b) + r'\b', hay)] if m]
+        if not hits:
+            return None
+        brand = min(hits)[1]
+        name = f'{brand} {name}'
+    if typ in ('porterias', 'redes') and SPORTSAFE_PAIR_RE.search(hay):
+        name += ' (x2)'
+    colour = _reebok_colour(colourway) if colourway else 'N/D'
+    model = f'{noun} {name}'
+    if colourway:
+        model += f" - {colourway if '/' in colourway else colour}"
+    return dest, typ, brand, model, colour, size
+
+
+def mine_sportsafe(balls, training, gloves):
+    fname, store = 'SPORTSAFE_UK.csv', 'Sportsafe UK'
+    if not os.path.exists(f"{FEEDS}/{fname}"):
+        print(f'{store}: feed not found, skipped')
+        return
+    groups = {}
+    with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
+        for row in csv.DictReader(f):
+            cls = sportsafe_classify(row)
+            img = os.path.splitext(os.path.basename(row.get('merchant_image_url') or ''))[0]
+            if cls and parse_price(row.get('search_price')) and img not in SPORTSAFE_NO_PHOTO:
+                groups.setdefault(cls[:5], {}).setdefault(cls[5], []).append(row)
+    n = {'balls': 0, 'training': 0, 'gloves': 0}
+    for (dest, typ, brand, model, colour), by_size in groups.items():
+        # Dos productos distintos que dan el mismo nombre y talla: no se
+        # adivina cuál es cuál (pasó con "Samba Match Goal ... Offer", el par).
+        if any(len(v) > 1 for v in by_size.values()):
+            print(f'{store}: nombre repetido, saltado: {model}')
+            continue
+        by_size = {s: v[0] for s, v in by_size.items()}
+        vat = lambda r: round(parse_price(r.get('search_price')) * 1.2, 2)
+        rows = sorted(by_size.items(), key=lambda kv: size_sort_key(kv[0]))
+        rep = min((r for _, r in rows), key=vat)
+        price, price_max = vat(rep), max(vat(r) for _, r in rows)
+        entry = {
+            'store': store, 'brand': brand, 'model': model, 'colour': colour,
+            'price': price, 'shipping': 0, 'currency': 'GBP',
+            'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'),
+            'sizes': [s for s, _ in rows if s], 'eans': [],
+        }
+        if typ:
+            entry['type'] = typ
+        if price_max > price:
+            entry['priceMax'] = price_max
+        # Cada talla es otro producto de la tienda: su propio enlace.
+        if len(rows) > 1:
+            entry['sizePrices'] = [{'size': s, 'price': vat(r), 'url': r.get('aw_deep_link')} for s, r in rows]
+        {'balls': balls, 'training': training, 'gloves': gloves}[dest].append(entry)
+        n[dest] += 1
+    print(f'{store}:', n)
+
+
 if __name__ == '__main__':
     print('=== GUANTES DE ARQUERO ===')
     mine_blaz_category('FOOTSTORE_ES.csv', 'FootStoreES', 'Gants de gardien', gloves_results)
@@ -1024,6 +1153,7 @@ if __name__ == '__main__':
 
     print('=== ENTRENAMIENTO ===')
     mine_training(training_results)
+    mine_sportsafe(balls_results, training_results, gloves_results)
 
     drop_no_image(gloves_results, 'guantes')
     drop_no_image(balls_results, 'pelotas')
