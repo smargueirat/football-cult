@@ -33,7 +33,7 @@ import csv, json, os, re, shutil, sys, time, urllib.error, urllib.request
 
 sys.path.insert(0, __import__("os").path.dirname(__import__("os").path.abspath(__file__)))
 import extract
-from shopify_feed_to_csv import parse_size
+from shopify_feed_to_csv import curl_get, parse_size
 
 SITES = {"es": ("www.prodirectsport.es", "3.62"), "uk": ("www.prodirectsport.com", "4.99")}
 DOM, SHIP = SITES["es"]
@@ -50,18 +50,9 @@ STATE_DIR = os.path.expanduser("~/.local/state/fc-feeds")  # fuera de /tmp (tmpf
 
 
 def get(url, tries=3):
-    for i in range(tries):
-        try:
-            return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40).read()
-        except urllib.error.HTTPError as e:
-            if e.code == 404:
-                return None  # el producto ya no existe: no es un fallo de la tienda
-            # 429/5xx: respeta Retry-After (hasta 2 min) en vez de reintentar a ciegas
-            ra = e.headers.get("Retry-After", "")
-            time.sleep(min(int(ra), 120) if ra.isdigit() else 15 * (i + 1) if e.code == 429 else 3 * (i + 1))
-        except Exception:
-            time.sleep(3 * (i + 1))
-    return None
+    # Por curl, no urllib: el Cloudflare de Pro:Direct da 429 a urllib desde la
+    # primera consulta (2026-10-27; ver curl_get). None = 404 o fallo.
+    return curl_get(url, tries)[1]
 
 
 def handles():
