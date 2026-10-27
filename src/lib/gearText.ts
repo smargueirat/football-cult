@@ -254,6 +254,7 @@ const TERMS: Record<string, Record<HubLocale, string>> = {
   "plumifero": { es: "Plumífero", en: "Padded jacket", pt: "Casaco acolchoado", fr: "Doudoune", it: "Piumino" },
   "plumifero largo": { es: "Plumífero largo", en: "Long padded jacket", pt: "Casaco acolchoado comprido", fr: "Doudoune longue", it: "Piumino lungo" },
   "polo": { es: "Polo", en: "Polo shirt", pt: "Polo", fr: "Polo", it: "Polo" },
+  "porteria de futbol": { es: "Portería de fútbol", en: "Football goal", pt: "Baliza de futebol", fr: "But de football", it: "Porta da calcio" },
   "protege-tibias": { es: "Espinilleras", en: "Shin guards", pt: "Caneleiras", fr: "Protège-tibias", it: "Parastinchi" },
   "puno": { es: "Muñequera", en: "Wristband", pt: "Punho", fr: "Poignet", it: "Polsino" },
   "red": { es: "Red", en: "Net", pt: "Rede", fr: "Filet", it: "Rete" },

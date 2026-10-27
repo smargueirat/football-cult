@@ -31,14 +31,15 @@ export interface GloveOffer {
     | "GigasportDE"
     | "GigasportCH"
     | "GigasportFR"
-    | "AdidasCL";
+    | "AdidasCL"
+    | "Sportsafe UK";
   price: number;
   // Precio real de la talla más barata del colorway -- mismo motivo que
   // BootOffer.priceMax, algunas tiendas cobran distinto según talla del
   // mismo modelo/color real.
   priceMax?: number;
   shipping: number;
-  currency: "EUR" | "CLP";
+  currency: "EUR" | "GBP" | "CLP";
   url: string;
   imageUrl: string;
   sizes: string[];
@@ -16641,6 +16642,23 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101130801-gants-de-gardien-uhlsport-powerline-supersoft-hn-noir-rouge-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/u/h/uhlsport_101130801_0.jpg",
         sizes: ["8.5"],
+      },
+    ],
+  },
+  {
+    id: "mitre-guantes-de-portero-mitre-magnetite",
+    brand: "Mitre",
+    model: "Guantes de portero Mitre Magnetite",
+    colour: "N/D",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 16.96,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124682221&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01808BJ7Y1_6e3p3ILDIE-scaled-1.jpg&feedId=109102&k=f86c3a8b7e6200e5fdaabd121daa74d12a1f56e4",
+        sizes: ["8"],
       },
     ],
   },

@@ -21,7 +21,8 @@ export default function CompareBootOfferRow({
   kind,
   productId,
 }: {
-  offer: BootOffer;
+  // También ofertas de guantes/pelotas/ropa, de tiendas sin botas (Sportsafe UK).
+  offer: Omit<BootOffer, "store"> & { store: string };
   isBest: boolean;
   kind: GoKind;
   productId: string;
