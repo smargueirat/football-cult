@@ -24,7 +24,7 @@ import ApproxPrice from "./ApproxPrice";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { offerVersion, splitByVersion, variantKey } from "@/lib/jerseyVersion";
-import { isComparableStore, isMarketplace, photoOrder } from "@/lib/officialStores";
+import { isComparableStore, isMarketplace, photoOrder, pickOfficial } from "@/lib/officialStores";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -159,7 +159,7 @@ export default function JerseyDetailClient({
   // una oferta de eBay podía quedar marcada como la más barata mientras
   // en verdad, una vez sumado el envío real a tu país, terminaba
   // costando más que otra tienda.
-  const sortedOffers = useMemo(() => {
+  const { sortedOffers, totalInEUR } = useMemo(() => {
     function totalInEUR(offer: Offer): number {
       const live = isEbayStore(offer.store) ? liveEbayCosts[offer.url] : null;
       if (live && live.currency === offer.currency) {
@@ -170,7 +170,7 @@ export default function JerseyDetailClient({
     }
     // Las que envían al país van primero; dentro, precio total y, solo en
     // empate (±1 %), comisión (offerOrder.ts).
-    return rankOffers(product.offers, totalInEUR, (o) => offerShipsTo(o.store, countryCode), (o) => !shippingNotMeasured(o, countryCode));
+    return { sortedOffers: rankOffers(product.offers, totalInEUR, (o) => offerShipsTo(o.store, countryCode), (o) => !shippingNotMeasured(o, countryCode)), totalInEUR };
   }, [product.offers, liveEbayCosts, countryCode]);
 
   useEffect(() => {
@@ -234,6 +234,19 @@ export default function JerseyDetailClient({
     shippableHere.find(matchesSize) ??
     sortedOffers.find((o) => o.inStock && shipsHere(o) && matchesSize(o)) ??
     shippableHere[0];
+  // «Mejor oficial»: si la más barata es una réplica (FansJerseyHub), la
+  // oficial más barata de la misma prenda (versión + manga, talla elegida);
+  // sin envío medido el total no es comparable, igual que en el ahorro. El
+  // CTA principal (barra fija y caja de escritorio) va a ella si cuesta
+  // menos de un 15 % más (pickOfficial).
+  const bestKey = bestOffer && variantKey(bestOffer);
+  const { official: bestOfficial, cta: ctaOffer } = pickOfficial(
+    bestOffer,
+    sortedOffers.filter(
+      (o) => o.inStock && shipsHere(o) && matchesSize(o) && variantKey(o) === bestKey && !shippingNotMeasured(o, countryCode),
+    ),
+    totalInEUR,
+  );
   // Ahorro real frente a la oferta más cara de la MISMA versión: es el
   // número que justifica que el usuario esté acá y no comprando directo
   // en la primera tienda que encontró. Solo se muestra si hay 2+ tiendas
@@ -352,41 +365,42 @@ export default function JerseyDetailClient({
   const elsewhereOffers = inStockOffers.filter((o) => !shipsHere(o));
 
   // Datos del CTA principal (barra fija en móvil, caja arriba en escritorio):
-  // la misma oferta destacada, con el total real de eBay si ya llegó.
-  const bestCta = bestOffer
+  // la oferta destacada (o la oficial, ver pickOfficial), con el total real
+  // de eBay si ya llegó.
+  const bestCta = ctaOffer
     ? (() => {
-        const live = isEbayStore(bestOffer.store) ? liveEbayCosts[bestOffer.url] : null;
+        const live = isEbayStore(ctaOffer.store) ? liveEbayCosts[ctaOffer.url] : null;
         const liveTotal =
-          live && live.currency === bestOffer.currency
-            ? bestOffer.price + live.shipping + (live.importCharges ?? 0)
+          live && live.currency === ctaOffer.currency
+            ? ctaOffer.price + live.shipping + (live.importCharges ?? 0)
             : null;
-        const total = liveTotal ?? offerTotal(bestOffer);
+        const total = liveTotal ?? offerTotal(ctaOffer);
         return {
-          totalText: formatOfferMoney(total, bestOffer.currency, locale),
-          approx: approxPriceLabel(total, bestOffer.currency, country.currency, locale),
-          label: liveTotal == null && shippingUnknown(bestOffer, countryCode) ? t.detail.from : CONV[locale].totalWithShipping,
-          storeLabel: selectedSize ? `${bestOffer.store} · ${selectedSize}` : bestOffer.store,
-          goLabel: CONV[locale].goStore.replace("{store}", bestOffer.store),
-          proof: proofLine(storesLabel, archiveStats[bestOffer.url], bestOffer.price, CONV[locale].lowestInDays),
+          totalText: formatOfferMoney(total, ctaOffer.currency, locale),
+          approx: approxPriceLabel(total, ctaOffer.currency, country.currency, locale),
+          label: liveTotal == null && shippingUnknown(ctaOffer, countryCode) ? t.detail.from : CONV[locale].totalWithShipping,
+          storeLabel: selectedSize ? `${ctaOffer.store} · ${selectedSize}` : ctaOffer.store,
+          goLabel: CONV[locale].goStore.replace("{store}", ctaOffer.store),
+          proof: proofLine(storesLabel, archiveStats[ctaOffer.url], ctaOffer.price, CONV[locale].lowestInDays),
           href: goHref({
             kind: "j",
             productId: product.id,
-            url: bestOffer.url,
+            url: ctaOffer.url,
             locale,
             origin: "ficha",
             position: 1,
-            isBest: true,
+            isBest: ctaOffer === bestOffer,
           }),
           track: () =>
             trackOfferClick({
               productId: product.id,
               position: 1,
-              isBest: true,
-              version: offerVersion(bestOffer),
-              store: bestOffer.store,
-              url: bestOffer.url,
+              isBest: ctaOffer === bestOffer,
+              version: offerVersion(ctaOffer),
+              store: ctaOffer.store,
+              url: ctaOffer.url,
               price: total,
-              currency: bestOffer.currency,
+              currency: ctaOffer.currency,
             }),
         };
       })()
@@ -396,6 +410,7 @@ export default function JerseyDetailClient({
     const ships = shipsHere(offer);
     const match = offer.inStock && ships && matchesSize(offer);
     const isBest = offer === bestOffer && match;
+    const isBestOfficial = offer === bestOfficial;
     // Cuando eBay devolvió un costo real de envío (+ impuestos
     // si aplica) en la misma moneda que el precio del
     // producto, se suma directo al TOTAL en vez de quedar
@@ -485,6 +500,11 @@ export default function JerseyDetailClient({
                 {isBest && (
                   <span className="rounded-full bg-[#B45309] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
                     {t.detail.bestPriceBadge}
+                  </span>
+                )}
+                {isBestOfficial && (
+                  <span className="rounded-full bg-[#1B3B2B] px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#F3E9C9]">
+                    {t.detail.bestOfficialBadge}
                   </span>
                 )}
                 {offer.store === "FansJerseyHub" && (
