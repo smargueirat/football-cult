@@ -187,6 +187,7 @@ export interface Translations {
     trustLink: string;
     manufacturerCode: string;
     bestPriceBadge: string;
+    bestOfficialBadge: string;
     retroBadge: string;
     from: string;
     viewFullComparison: string;
@@ -750,7 +751,8 @@ export const translations: Record<Locale, Translations> = {
       trustLine: "Comparamos tiendas oficiales y autorizadas, y también marketplaces. Te marcamos cada réplica y cada vendedor de marketplace antes de que hagas clic.",
       trustLink: "Cómo reconocer una camiseta original",
       manufacturerCode: "Código del fabricante",
-      bestPriceBadge: "Oferta Top",
+      bestPriceBadge: "Mejor precio",
+      bestOfficialBadge: "Mejor oficial",
       retroBadge: "Retro / Colección",
       from: "Desde",
       viewFullComparison: "Ver comparativa completa",
@@ -1312,7 +1314,8 @@ export const translations: Record<Locale, Translations> = {
       trustLine: "Comparamos lojas oficiais e autorizadas, e também marketplaces. Marcamos cada réplica e cada vendedor de marketplace antes de você clicar.",
       trustLink: "Como reconhecer uma camisa original",
       manufacturerCode: "Código do fabricante",
-      bestPriceBadge: "Oferta Top",
+      bestPriceBadge: "Melhor preço",
+      bestOfficialBadge: "Melhor oficial",
       retroBadge: "Retrô / Coleção",
       from: "A partir de",
       viewFullComparison: "Ver comparação completa",
@@ -1874,7 +1877,8 @@ export const translations: Record<Locale, Translations> = {
       trustLine: "We compare official and authorised stores, plus marketplaces. We flag every replica and every marketplace seller before you click.",
       trustLink: "How to spot a genuine shirt",
       manufacturerCode: "Manufacturer code",
-      bestPriceBadge: "Top Deal",
+      bestPriceBadge: "Best price",
+      bestOfficialBadge: "Best official",
       retroBadge: "Retro / Collection",
       from: "From",
       viewFullComparison: "View full comparison",
@@ -2436,7 +2440,8 @@ export const translations: Record<Locale, Translations> = {
       trustLine: "Nous comparons des boutiques officielles et agréées, ainsi que des marketplaces. Nous signalons chaque réplique et chaque vendeur de marketplace avant que vous cliquiez.",
       trustLink: "Comment reconnaître un maillot authentique",
       manufacturerCode: "Référence fabricant",
-      bestPriceBadge: "Meilleure offre",
+      bestPriceBadge: "Meilleur prix",
+      bestOfficialBadge: "Meilleur officiel",
       retroBadge: "Rétro / Collection",
       from: "À partir de",
       viewFullComparison: "Voir la comparaison complète",
@@ -2998,7 +3003,8 @@ export const translations: Record<Locale, Translations> = {
       trustLine: "Confrontiamo negozi ufficiali e autorizzati, e anche marketplace. Segnaliamo ogni replica e ogni venditore di marketplace prima che tu clicchi.",
       trustLink: "Come riconoscere una maglia originale",
       manufacturerCode: "Codice produttore",
-      bestPriceBadge: "Migliore offerta",
+      bestPriceBadge: "Miglior prezzo",
+      bestOfficialBadge: "Miglior ufficiale",
       retroBadge: "Retrò / Collezione",
       from: "Da",
       viewFullComparison: "Vedi il confronto completo",
