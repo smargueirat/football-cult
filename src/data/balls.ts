@@ -23095,6 +23095,40 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
     ],
   },
+  {
+    id: "sportsafe-balon-de-futbol-sportsafe-pvc-practice-naranja",
+    brand: "Sportsafe",
+    model: "Balón de fútbol Sportsafe PVC Practice - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 10.79,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683287&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2FHE1003871_D58915-DAV-SPT-P01.jpg&feedId=109102&k=dd847bf35aad749e8b77683ed50acd59b7cab9b9",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "sportsafe-balon-de-futbol-sportsafe-zoft-touch",
+    brand: "Sportsafe",
+    model: "Balón de fútbol Sportsafe Zoft Touch",
+    colour: "N/D",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 14.64,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683164&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2FHE1827000_1430631-DAV-SPT-P01.jpg&feedId=109102&k=7fd369cba85ab384f3fe977a88a6428b80e13c28",
+        sizes: [],
+      },
+    ],
+  },
 ];
 
 export const ballProducts: BallProduct[] = [
