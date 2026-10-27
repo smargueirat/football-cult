@@ -23,6 +23,9 @@ assert.deepEqual(pickOfficial(fjh, [fjh, lejos], total), { official: lejos, cta:
 // Sin ninguna oficial: nada que destacar, barra a la más barata.
 assert.deepEqual(pickOfficial(fjh, [fjh, ebay], total), { official: undefined, cta: fjh });
 
+// eBay/Amazon más baratos no son réplicas: sin «Mejor oficial».
+assert.deepEqual(pickOfficial(ebay, [ebay, cerca], total), { official: undefined, cta: ebay });
+
 // Sin ofertas.
 assert.deepEqual(pickOfficial(undefined, [], total), { official: undefined, cta: undefined });
 

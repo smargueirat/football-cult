@@ -234,7 +234,7 @@ export default function JerseyDetailClient({
     shippableHere.find(matchesSize) ??
     sortedOffers.find((o) => o.inStock && shipsHere(o) && matchesSize(o)) ??
     shippableHere[0];
-  // «Mejor oficial»: si la más barata es una réplica o un marketplace, la
+  // «Mejor oficial»: si la más barata es una réplica (FansJerseyHub), la
   // oficial más barata de la misma prenda (versión + manga, talla elegida);
   // sin envío medido el total no es comparable, igual que en el ahorro. El
   // CTA principal (barra fija y caja de escritorio) va a ella si cuesta
