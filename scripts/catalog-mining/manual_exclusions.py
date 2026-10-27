@@ -12,6 +12,48 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-10-27 ---
+    "/itm/366401589669",  # 2026-10-27 removed: Norway Third Mens Jersey 26
+    "/itm/377559967148",  # 2026-10-27 removed: Turkey 2026 Away Hakan Çalhanoğlu Fans Version Soccer Jersey
+    "/itm/205507685598",  # 2026-10-27 removed: JERSEY Ecuador Soccer Home Mens 2025-26
+    "/itm/366601434933",  # 2026-10-27 removed: MEXICO NEW 2026 Third Black Shirt Jersey (PLAYER VERSION) US
+    "/itm/358535964957",  # 2026-10-27 removed: Mexico Goalkeeper Purple Mens Soccer 2026 Jersey
+    "/itm/188289988536",  # 2026-10-27 removed: JERSEY Mexico 2026 Black Training Men Soccer
+    "/itm/137653178567",  # 2026-10-27 removed: 2xl  NEW USA 2026 World Cup HOME Soccer JERSEY Men's . FAST 
+    "/itm/137690811633",  # 2026-10-27 removed: FIFA World Cup 2026 USMNT Official away Jersey soccer
+    "/itm/227504271592",  # 2026-10-27 removed: Japan 2026 WC Home Soccer Jersey Football Shirt Blue Samurai
+    "/itm/358713548349",  # 2026-10-27 removed: South Korea Team World Cup 2026 Home Player Soccer Jersey Au
+    "/itm/336814709698",  # 2026-10-27 removed: Morocco 2026 Away Soccer Jersey BONO no 1 for  boy size 18 -
+    "/itm/188377695159",  # 2026-10-27 removed: JERSEY Senegal National Soccer Home 2026
+    "/itm/178130319360",  # 2026-10-27 removed: JERSEY Senegal National Soccer Away 2026
+    "/itm/205513536182",  # 2026-10-27 removed: JERSEY Nigeria Soccer Men Home 2025-26
+    "/itm/127933061478",  # 2026-10-27 removed: Saudi Arabia World Cup 2026 Soccer Away Jersey Saudi Arabia 
+    "/itm/198526267558",  # 2026-10-27 removed: Peru National Team 2026 Adidas Home / Away Soccer Jersey
+    "/itm/860061751030",  # 2026-10-27 removed: SCOTLAND TEAM MC TOMINAY 2026 FOOTBALL SHIRT JERSEY ADIDAS A
+    "/itm/147634586694",  # 2026-10-27 removed: Adidas Mexico 2026 26 Away Pre Match Warm Up Jersey Sweatshi
+    "/itm/336749061909",  # 2026-10-27 removed: Norway National Team Nike 2026 World Cup Academy Pre-Match T
+    "/itm/336713919730",  # 2026-10-27 removed: Maglia calcio home 2026 USMNT 
+    "/itm/206433630966",  # 2026-10-27 removed: Maglia Adidas Mexico Portiere Viola Mondiali 2026 Taglia Lar
+    "/itm/147634586694",  # 2026-10-27 removed: Felpa Adidas Mexico 2026 26 Away Pre Match Warm Up Jersey Tg
+    "/itm/366401589669",  # 2026-10-27 removed: Camiseta Norway Third para hombre 26
+    "/itm/860061751030",  # 2026-10-27 removed: CAMISETA DE FUTBOL DEL EQUIPO ESCOCIA MC TOMINAY 2026 ADIDAS
+    "/itm/406991307184",  # 2026-10-27 removed: Camiseta de fútbol de México 2026 visitante
+    "/itm/358535964957",  # 2026-10-27 removed: Camiseta de fútbol 2026 púrpura portero de México para hombr
+    "/itm/358535965077",  # 2026-10-27 removed: Camiseta de fútbol blanca de entrenamiento de México para ho
+    "/itm/287490628384",  # 2026-10-27 removed: Camiseta deportiva blanca con estrellas del equipo local Cop
+    "/itm/137730018184",  # 2026-10-27 removed: 2xl La camiseta visitante de la selección masculina de Estad
+    "/itm/800802099174",  # 2026-10-27 removed: Arsenal FC 2025/26 Adidas Pre Match Warm Up Shirt, Medium, E
+    "/itm/336678348923",  # 2026-10-27 removed: Liverpool 2025/26 Away Jersey Nike Unreleased Prototype Rare
+    "/itm/366401595519",  # 2026-10-27 removed: Norway Training template
+    "/itm/137500658753",  # 2026-10-27 removed: Saudi training template
+    "/itm/336857698805",  # 2026-10-27 removed: Colo-Colo under chile
+    "/itm/860000435512",  # 2026-10-27 removed: Real Madrid under japon
+    "/itm/840016876025",  # 2026-10-27 removed: Wales template
+    "/itm/287647296527",  # 2026-10-27 removed: Wales template
+    "/itm/377303534678",  # 2026-10-27 removed: Norway away template
+    "/itm/287233738438",  # 2026-10-27 removed: Ecuador template
+    "/itm/840016876064",  # 2026-10-27 removed: Australia template
+    "/itm/960069460558",  # 2026-10-27 removed: Wales template ES
     # --- Daily pass 2026-10-26 ---
     "/itm/800830133033",  # 2026-10-26 gb retro: Inter 2010/11 away "No. 4 Zanetti" print
     "/itm/267716245904",  # 2026-10-26 removed: Monaco home 25/26 "Pogba 8" print
