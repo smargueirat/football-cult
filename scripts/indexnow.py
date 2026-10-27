@@ -25,6 +25,7 @@ STATE = os.path.expanduser("~/.local/state/fc-indexnow.json")
 PER_DAY = 1000  # ~6.800 URLs en el sitemap -> cada una cada ~7 días
 CHUNK = 100
 PAUSE = 10  # segundos entre grupos
+MIN_AGE = 6  # días antes de reenviar una URL
 
 
 def sitemap_urls():
@@ -38,9 +39,12 @@ def sitemap_urls():
     return sorted(set(urls))
 
 
-def todays_batch(urls, sent, n=PER_DAY):
-    """Nunca enviadas primero (en orden del sitemap), luego las más viejas."""
-    return sorted(urls, key=lambda u: (u in sent, sent.get(u, "")))[:n]
+def todays_batch(urls, sent, n=PER_DAY, today=None):
+    """Nunca enviadas primero (en orden del sitemap), luego las más viejas;
+    nada que se haya enviado hace menos de MIN_AGE días."""
+    cut = ((today or datetime.date.today()) - datetime.timedelta(days=MIN_AGE)).isoformat()
+    due = [u for u in urls if sent.get(u, "") <= cut]
+    return sorted(due, key=lambda u: (u in sent, sent.get(u, "")))[:n]
 
 
 def submit(batch):
@@ -54,7 +58,7 @@ def submit(batch):
 
 
 if __name__ == "__main__":
-    assert todays_batch(["a", "b", "c"], {"a": "2026-10-20", "c": "2026-10-25"}, 2) == ["b", "a"]
+    assert todays_batch(["a", "b", "c"], {"a": "2026-10-20", "c": "2026-10-25"}, 2, datetime.date(2026, 10, 27)) == ["b", "a"]
     urls = sitemap_urls()
     if len(urls) < 1000:
         sys.exit(f"el sitemap devolvió solo {len(urls)} URLs: no envío nada")
