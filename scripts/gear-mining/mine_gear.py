@@ -981,7 +981,7 @@ def mine_adidas_cl(gloves, balls, apparel):
 # categorías de fútbol; el resto del feed es de otros deportes/gimnasio.
 #  - Marca: la del principio del título o, si no, la que nombra la
 #    descripción ("The Samba® Aluminium Folding Goal"). Sin marca conocida
-#    se salta: sin marca no hay qué mostrar y gearText.ts no traduce.
+#    es "Sportsafe" (gearText.ts necesita una marca para traducir).
 #  - search_price es SIN IVA: la ficha de la tienda dice "£3.84 ex VAT /
 #    £4.61 inc VAT" (medido 2026-10-27 en 5 productos) -> x1,20.
 #  - Envío: unas fichas dicen "FREE mainland UK delivery" y otras "£3.95
@@ -994,9 +994,12 @@ SPORTSAFE_BRANDS = ('Mitre', 'Precision', 'Samba', 'Slazenger', 'Fox 40', 'Spord
 # Lotes (el precio no es de una unidad), bolsas, y otros deportes que el
 # feed mete en fútbol: goalball ("with Bells"), críquet ("Airball", "Kick
 # Flick"), balonmano, kits de portero de hockey ("Goalkeeping"), pelota
-# saltarina ("Hopper"), bocina ("Air Horn and Pump").
+# saltarina ("Hopper"), bocina ("Air Horn and Pump"). Y material de
+# primaria aunque el título no diga "kids": la pelota de espuma
+# ("Zoftskin") y el peto de recreo ("Play Leader Bib").
 SPORTSAFE_SKIP_RE = re.compile(r'\bpack\b|pack of|including bag|\bsack\b|\bbag\b|\bset\b|bells|airball'
-                               r'|hopper|handball|goalkeeping|kick flick|air horn|\binfants?\b|\byouths\b', re.I)
+                               r'|hopper|handball|goalkeeping|kick flick|air horn|\binfants?\b|\byouths\b'
+                               r'|zoftskin|play leader', re.I)
 SPORTSAFE_PAIR_RE = re.compile(r'\bpair\b|\btwo (football )?goals\b|\(2 goals\)|\b2 x [\w -]{0,20}goals'
                                r'|(?<!\d)2 x (nets|locking systems)', re.I)
 # Fotos que en la tienda son el cartel "No Image Available" (revisadas una a una).
@@ -1011,7 +1014,7 @@ SPORTSAFE_RULES = [
     (r'coaching folder', 'training', 'tactica', 'Carta táctica', None),
     (r'\bpump\b', 'training', 'infladores', 'Bomba', None),
     (r'\bladder\b', 'training', 'escaleras', 'Escala rítmica', None),
-    (r'\bbib\b', 'training', 'petos', 'Peto', r'\s*(training )?bib$'),
+    (r'\bbib\b', 'training', 'petos', 'Peto', r'\s*(training )?bib( age 15\+ years)?$'),
 ]
 SPORTSAFE_COLOUR_RE = re.compile(r'\b(' + '|'.join(en for en, _ in REEBOK_COLOURS) + r'|fluor?o|royal|teal|sage|silver)\b', re.I)
 
@@ -1045,16 +1048,18 @@ def sportsafe_classify(row):
             extra.append(p)
     name = re.sub(tail, '', ' '.join([name] + extra), flags=re.I).strip() if tail else ' '.join([name] + extra)
     hay = f"{title} {row.get('description') or ''}"
-    brand = next((b for b in SPORTSAFE_BRANDS if name.lower().startswith(b.lower())), None)
+    brand = next((b for b in SPORTSAFE_BRANDS + ('Sportsafe',) if name.lower().startswith(b.lower())), None)
     if brand is None:
         hits = [(m.start(), b) for b in SPORTSAFE_BRANDS for m in [re.search(r'\b' + re.escape(b) + r'\b', hay)] if m]
-        if not hits:
-            return None
-        brand = min(hits)[1]
+        # Sin marca de fabricante (petos, escaleras, redes, porterías
+        # genéricas): es material propio de la tienda, "Sportsafe"
+        # (aprobado por el dueño 2026-10-27).
+        brand = min(hits)[1] if hits else 'Sportsafe'
         name = f'{brand} {name}'
     if typ in ('porterias', 'redes') and SPORTSAFE_PAIR_RE.search(hay):
         name += ' (x2)'
-    colour = _reebok_colour(colourway) if colourway else 'N/D'
+    # "Royal" (azul rey) solo en Sportsafe: en Reebok cambiaría colores ya publicados.
+    colour = _reebok_colour(re.sub(r'\broyal\b', 'blue', colourway, flags=re.I)) if colourway else 'N/D'
     model = f'{noun} {name}'
     if colourway:
         model += f" - {colourway if '/' in colourway else colour}"
