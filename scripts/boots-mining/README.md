@@ -48,11 +48,18 @@ Primera corrida: 3.485 -> 5.536 fichas (1.689 de niño, 690 de sala).
 
 Pro:Direct no tiene feed de afiliados: es un Shopify abierto y el enlace
 directo lo monetiza Skimlinks. `prodirect_es_boots_feed.py` arma
-`/tmp/feeds/PRODIRECT_ES_BOOTS.json` desde el sitemap (el único listado
-completo) y `/products/<handle>.js` (el único que dice qué talle hay en
-stock). Todo el sitemap tarda ~5 h: el sábado a las 20:00 va completo
-(`--all`) y las demás noches a las 00:30 solo se refrescan las que tenían
-stock, por crontab. `mine_prodirect()` lo lee; envío 3,62 EUR a la UE.
+`/tmp/feeds/PRODIRECT_ES_BOOTS.json` desde
+`/collections/football-boots/products.json` (250 productos por pedido, ~45
+pedidos, ~6 min; precio, talle y stock por talle). Hasta oct-2026 se pedía un
+`/products/<handle>.js` por bota, pero Pro:Direct empezó a cortar con 429 y no
+se refrescaba nunca. products.json no trae el EAN: se guarda por (handle,
+talle) en `~/.local/state/fc-feeds/prodirect_es_boot_eans.json` y solo se pide
+el `.js` de las botas con algún talle sin EAN conocido (60 por noche, 600 el
+sábado con `--all`, que es la única diferencia entre los dos modos). Las
+demás salen sin EAN hasta que una corrida lo llene. Todo va por curl: el
+Cloudflare de la tienda da 429 a urllib de Python desde el primer pedido.
+`mine_prodirect()` lo lee; envío 3,62 EUR a la UE. Prueba sin red:
+`python3 check_prodirect_bulk.py`.
 
 Cada talle de Pro:Direct, Foot-Store, Sport is Good y adidas trae su **EAN**,
 y cada colorway su **código de fabricante** (Nike "FJ2586-002", adidas

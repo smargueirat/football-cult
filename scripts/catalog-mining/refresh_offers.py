@@ -24,9 +24,12 @@ vino completo (>= 80 % de las filas de la última vez que pasó la guarda, cabec
 con las columnas esperadas). Si no, esa tienda queda exactamente como estaba.
 
 Fuentes sin feed descargable:
-  - Pro:Direct ES / Soccer (Shopify): se mira cada oferta en <url>.js (precio y
-    tallas disponibles, ~1 s por oferta). Si fallan más del 20 % de las
-    consultas no se toca ninguna oferta de esa tienda.
+  - Pro:Direct ES / Soccer (Shopify): la colección football-kits entera por
+    /products.json (~30-45 pedidos de 250 productos; un .js por oferta ya no
+    pasa, nos limitan desde oct-2026): precio y tallas disponibles por handle.
+    Lo que no está en la colección se mira por su .js (hasta PRODIRECT_JS_CAP;
+    404 = retirada -> inStock: false). Si la colección no se baja entera o trae
+    <1.000 productos o <80 % de la última vez, esa tienda no se toca.
   - Amazon: sin PA-API no hay forma masiva de leer precio. Cada oferta guarda la
     fecha de su última verificación en offer_seen.json (la primera vez que el
     script la ve se toma hoy); a los AMAZON_MAX_DAYS días sin verificar pasa a
@@ -40,7 +43,7 @@ Uso:
   opciones: --no-net (sin consultas a Pro:Direct), --only Tienda[,Tienda]
 Estado (no versionado, ver .gitignore): feed_rows.json, offer_seen.json.
 """
-import csv, datetime, json, os, re, subprocess, sys, time, urllib.error, urllib.request
+import csv, datetime, json, os, re, subprocess, sys, time
 from urllib.parse import parse_qs, unquote, urlparse
 
 csv.field_size_limit(10**9)
@@ -291,33 +294,38 @@ def refreshed(store, fmt, row, group, old):
 
 # ---------------------------------------------------------------- Pro:Direct
 
-def prodirect_check(url):
-    """dict como refreshed(), o None si la consulta falló (no se sabe)."""
-    sys.path.insert(0, HERE)
-    from shopify_feed_to_csv import parse_size
-    req = urllib.request.Request(url.split("?")[0] + ".js", headers={"User-Agent": "Mozilla/5.0"})
-    data = None
-    for wait in (10, 30, 60, None):  # Shopify corta con 429 tras ~80 seguidas
-        try:
-            with urllib.request.urlopen(req, timeout=30) as r:
-                data = json.loads(r.read())
-            break
-        except urllib.error.HTTPError as e:
-            if e.code in (404, 410):
-                return dict(stock="false")
-        except Exception:  # noqa: BLE001 -- red caída / JSON raro: se reintenta
-            pass
-        if wait is None:
-            return None
-        time.sleep(wait)
-    live = [v for v in data.get("variants", []) if v.get("available")]
+sys.path.insert(0, HERE)
+import shopify_feed_to_csv as shop
+
+# Tienda -> dominio. Las camisetas que seguimos están en la colección football-kits
+# (medido 2026-10-27: 167/173 ES y 230/231 UK; las que faltaban daban 404).
+PRODIRECT_DOM = {"Pro:Direct ES": "www.prodirectsport.es", "Pro:Direct Soccer": "www.prodirectsport.com"}
+PRODIRECT_JS_CAP = 30  # ofertas que no están en la colección: se miran por .js, pocas
+
+
+def prodirect_new(p):
+    """Producto de Shopify (products.json o .js) -> dict como refreshed()."""
+    live = [v for v in p.get("variants", []) if v.get("available")]
     if not live:
         return dict(stock="false")
-    out = dict(stock="true", price=min(v["price"] for v in live) / 100)
-    sizes = [s for s in (parse_size(v.get("option1")) for v in live) if s]
+    # products.json trae el precio en euros ("85.00"); .js, en céntimos (8500).
+    div = 1 if isinstance(live[0]["price"], str) else 100
+    out = dict(stock="true", price=min(float(v["price"]) for v in live) / div)
+    sizes = [s for s in (shop.parse_size(v.get("option1")) for v in live) if s]
     if sizes:
         out["sizes"] = sort_sizes(sizes)
     return out
+
+
+def prodirect_check(url):
+    """Una oferta por su .js: dict como refreshed(), o None si la consulta falló (no se sabe)."""
+    code, raw = shop.curl_get(url.split("?")[0] + ".js")
+    if code in (404, 410):
+        return dict(stock="false")
+    try:
+        return prodirect_new(json.loads(raw)) if raw else None
+    except ValueError:
+        return None
 
 
 # ---------------------------------------------------------------- main
@@ -419,25 +427,32 @@ def main(argv):
         if no_net:
             st["SALTADA"] = "--no-net"
             continue
-        results = {}
-        total = len({LINE_RE.match(lines[i])["url"] for i in by_store[store]})
-        fails = 0
-        for i in by_store[store]:
-            url = LINE_RE.match(lines[i])["url"]
-            if url not in results:
-                results[url] = prodirect_check(url)
-                fails += results[url] is None
-                # Pasado el 20 % de fallos la tienda se salta igual: cortar aquí.
-                # Con Pro:Direct limitándonos (oct-2026) cada fallo son 100-220 s
-                # de reintentos y el refresco tardaba ~9,5 h en descartarlo todo.
-                if fails > 0.2 * total:
-                    break
-                time.sleep(1)
-        st["fallidas"] = fails
-        if results and fails > 0.2 * total:
-            st["SALTADA"] = f"{fails} fallidas de {len(results)} consultadas ({total} en total)"
+        # Una pasada por products.json (250 por pedido) en vez de un .js por
+        # oferta: desde oct-2026 Pro:Direct corta con 429 tras 3-4 .js seguidos.
+        dom = PRODIRECT_DOM[store]
+        cat = shop.catalog(dom, "football-kits")
+        key = f"PRODIRECT:{dom}"
+        prev = last_rows.get(key)
+        if cat is None or len(cat) < 1000 or (prev and len(cat) < MIN_RATIO * prev):
+            st["SALTADA"] = f"products.json {'falló' if cat is None else f'con {len(cat)} productos (la última vez {prev})'}"
             print(f"{store:16} SALTADA: {st['SALTADA']} -- no se toca nada")
             continue
+        last_rows[key] = len(cat)
+        by_handle = {p["handle"]: p for p in cat}
+        results, asked = {}, 0
+        for i in by_store[store]:
+            url = LINE_RE.match(lines[i])["url"]
+            m_h = re.match(rf"https://{re.escape(dom)}/products/([^/?#]+)", url)
+            if url in results or not m_h:  # enlace acortado (sovrn): no se toca
+                continue
+            if m_h.group(1) in by_handle:
+                results[url] = prodirect_new(by_handle[m_h.group(1)])
+            elif asked < PRODIRECT_JS_CAP:  # fuera de la colección: casi siempre retirada (404)
+                asked += 1
+                results[url] = prodirect_check(url)
+                st["fallidas"] += results[url] is None
+                time.sleep(2)
+        st["por_js"] = asked
         for i in by_store[store]:
             m = LINE_RE.match(lines[i])
             new = results.get(m["url"])

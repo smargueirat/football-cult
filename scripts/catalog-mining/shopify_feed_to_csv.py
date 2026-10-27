@@ -8,9 +8,51 @@ Usage:
     python3 shopify_feed_to_csv.py <domain> <awinmid> <out_csv>
     # e.g. python3 shopify_feed_to_csv.py mysteryshirtclub.com 124324 /tmp/msc.csv
 """
-import csv, re, sys, urllib.parse, urllib.request, json
+import csv, re, subprocess, sys, time, urllib.parse, urllib.request, json
 
 AWINAFFID = "3013769"
+def curl_get(url, tries=3):
+    """(código HTTP, cuerpo o None). Va por curl y no por urllib: medido el
+    2026-10-27, el Cloudflare de Pro:Direct da 429 (Retry-After: 60) a urllib
+    desde la primera consulta mientras deja pasar a curl en el mismo minuto.
+    Sin --compressed: con Accept-Encoding la tienda UK responde 403 (desafío).
+    404/410 = el producto ya no existe; 429/5xx/403 se reintentan respetando
+    Retry-After (hasta 2 min)."""
+    code = 0
+    for i in range(tries):
+        r = subprocess.run(["curl", "-sS", "-m", "90", "-A", "Mozilla/5.0",
+                            "-w", "\n%{http_code} %header{retry-after}", url], capture_output=True)
+        body, _, tail = r.stdout.rpartition(b"\n")
+        code_s, _, ra = tail.decode(errors="replace").partition(" ")
+        code = int(code_s) if code_s.isdigit() else 0
+        if code in (200, 404, 410):
+            return code, body if code == 200 else None
+        if i < tries - 1:
+            ra = ra.strip()
+            time.sleep(min(int(ra), 120) if ra.isdigit() else 15 * (i + 1))
+    return code, None
+
+
+def catalog(domain, collection, pause=1.5):
+    """Toda una colección por /collections/<c>/products.json, 250 productos por
+    pedido (un .js por producto ya no pasa: Pro:Direct limita, oct-2026). None si
+    alguna página falló o se llegó al tope de Shopify (página 100 = 25.000): un
+    catálogo a medias haría pasar por agotado lo que no se llegó a leer."""
+    out = []
+    for page in range(1, 101):
+        code, body = curl_get(f"https://{domain}/collections/{collection}/products.json?limit=250&page={page}")
+        try:
+            ps = json.loads(body)["products"] if code == 200 else None
+        except (ValueError, KeyError, TypeError):
+            ps = None
+        if ps is None:
+            print(f"  {domain}/{collection}: página {page} falló (HTTP {code})", flush=True)
+            return None
+        if not ps:
+            return out
+        out += ps
+        time.sleep(pause)
+    return None
 
 
 def parse_size(opt):
