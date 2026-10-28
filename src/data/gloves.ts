@@ -138,17 +138,17 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.88,
-        priceMax: 25.92,
+        price: 24.82,
+        priceMax: 26.88,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163831324&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kz2088_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=2a1eccaeee14143eb827eafbce06fc36c4838084",
         sizes: ["Talla 10", "Talla 10.5", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 23.88, url: "https://www.awin1.com/pclick.php?p=46163831324&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 25.92, url: "https://www.awin1.com/pclick.php?p=46353987517&a=3013769&m=65912" },
-          { size: "Talla 9", price: 23.88, url: "https://www.awin1.com/pclick.php?p=46163872036&a=3013769&m=65912" },
+          { size: "Talla 10", price: 24.82, url: "https://www.awin1.com/pclick.php?p=46163831324&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 26.88, url: "https://www.awin1.com/pclick.php?p=46353987517&a=3013769&m=65912" },
+          { size: "Talla 9", price: 24.82, url: "https://www.awin1.com/pclick.php?p=46163872036&a=3013769&m=65912" },
         ],
       },
       {
@@ -159,6 +159,43 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkz2088-gants-de-gardien-trainig-adidas-predator-soltur-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kz2088_1_hardware_photography_front_center_view_white.webp",
         sizes: ["9", "10"],
+      },
+    ],
+  },
+  {
+    id: "adidas-gants-de-gardien-d-entrainement-adidas-predator-2026-noir",
+    brand: "Adidas",
+    model: "Gants de gardien d'entraînement adidas Predator 2026 - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "AdidasCL",
+        price: 32990.0,
+        shipping: 0,
+        currency: "CLP",
+        url: "https://www.awin1.com/pclick.php?p=46385839445&a=3013769&m=79922",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F78f6f79596424947b9dfb2aaed1275a5_9366%2FGUANTES_DE_ARQUERO_PREDATOR_TRAINING_Negro_KA7787_21_model.jpg&feedId=95016&k=4ac06296c6c890b3b4ea6e94abcf799c26d72f42",
+        sizes: ["8", "9", "10"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 21.0,
+        priceMax: 22.28,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ka7787-black-black-lucred-1.webp",
+        sizes: ["7", "8", "8.5", "9", "9.5", "10", "11", "12"],
+        sizePrices: [
+          { size: "7", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
+          { size: "8", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
+          { size: "8.5", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
+          { size: "9", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
+          { size: "9.5", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
+          { size: "10", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
+          { size: "11", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
+          { size: "12", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
+        ],
       },
     ],
   },
@@ -230,10 +267,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.0,
+        price: 26.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45270280053&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42576866248&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jn5355_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=ee1a5fc0060c769bb65ea0bb6e58f6b9c8079fcc",
         sizes: ["Talla 10", "Talla 9"],
       },
@@ -259,7 +296,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 23.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43705565609&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43705565606&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F0%2F2025_12_adidas_ka7804_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=234fcdb206fcb6fa7909649ce1f5123438e03fb0",
         sizes: ["Talla 11", "Talla 8", "Talla 9"],
       },
@@ -308,17 +345,17 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.7,
-        priceMax: 20.74,
+        price: 19.55,
+        priceMax: 21.62,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163859062&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ka7805_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=e9e05d5e7a38ae4e27e65c137a04a3d1054f677e",
         sizes: ["Talla 11", "Talla 7", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 11", price: 18.7, url: "https://www.awin1.com/pclick.php?p=46163859062&a=3013769&m=65912" },
-          { size: "Talla 7", price: 18.7, url: "https://www.awin1.com/pclick.php?p=45304855214&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 20.74, url: "https://www.awin1.com/pclick.php?p=45319435904&a=3013769&m=65912" },
+          { size: "Talla 11", price: 19.55, url: "https://www.awin1.com/pclick.php?p=46163859062&a=3013769&m=65912" },
+          { size: "Talla 7", price: 19.55, url: "https://www.awin1.com/pclick.php?p=45304855214&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 21.62, url: "https://www.awin1.com/pclick.php?p=45319435904&a=3013769&m=65912" },
         ],
       },
       {
@@ -354,10 +391,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 47.0,
+        price: 48.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529885402&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529885401&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh3794_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=a25883f7dbab277b4956380736027f558213d4c8",
         sizes: ["Talla 10.5", "Talla 11", "Talla 11.5"],
       },
@@ -380,7 +417,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.0,
+        price: 60.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43877230538&a=3013769&m=65912",
@@ -406,20 +443,20 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 50.16,
+        price: 51.47,
         priceMax: 65.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163866160&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163933289&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fa%2Fka7811.jpg&feedId=89032&k=ed95ff30acf5468d45fd9f1c96e2611d92961df6",
         sizes: ["Talla 10", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 50.16, url: "https://www.awin1.com/pclick.php?p=46163866160&a=3013769&m=65912" },
-          { size: "Talla 7", price: 52.2, url: "https://www.awin1.com/pclick.php?p=45304855220&a=3013769&m=65912" },
+          { size: "Talla 10", price: 51.47, url: "https://www.awin1.com/pclick.php?p=46163866160&a=3013769&m=65912" },
+          { size: "Talla 7", price: 53.54, url: "https://www.awin1.com/pclick.php?p=45304855220&a=3013769&m=65912" },
           { size: "Talla 7.5", price: 65.0, url: "https://www.awin1.com/pclick.php?p=45304855221&a=3013769&m=65912" },
-          { size: "Talla 8", price: 52.2, url: "https://www.awin1.com/pclick.php?p=45304855222&a=3013769&m=65912" },
+          { size: "Talla 8", price: 53.54, url: "https://www.awin1.com/pclick.php?p=45304855222&a=3013769&m=65912" },
           { size: "Talla 8.5", price: 65.0, url: "https://www.awin1.com/pclick.php?p=45304855223&a=3013769&m=65912" },
-          { size: "Talla 9", price: 50.16, url: "https://www.awin1.com/pclick.php?p=46163933289&a=3013769&m=65912" },
+          { size: "Talla 9", price: 51.47, url: "https://www.awin1.com/pclick.php?p=46163933289&a=3013769&m=65912" },
         ],
       },
       {
@@ -453,21 +490,21 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 76.0,
-        priceMax: 99.0,
+        price: 77.0,
+        priceMax: 101.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529885408&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jf8897_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=aa270351c1606386826e128d0c609f6f5f0e0814",
         sizes: ["Talla 11", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 11", price: 86.0, url: "https://www.awin1.com/pclick.php?p=42529885413&a=3013769&m=65912" },
-          { size: "Talla 7", price: 90.0, url: "https://www.awin1.com/pclick.php?p=42529885405&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 90.0, url: "https://www.awin1.com/pclick.php?p=42529885406&a=3013769&m=65912" },
-          { size: "Talla 8", price: 90.0, url: "https://www.awin1.com/pclick.php?p=42529885407&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 76.0, url: "https://www.awin1.com/pclick.php?p=42529885408&a=3013769&m=65912" },
-          { size: "Talla 9", price: 99.0, url: "https://www.awin1.com/pclick.php?p=42529885409&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 90.0, url: "https://www.awin1.com/pclick.php?p=42529885410&a=3013769&m=65912" },
+          { size: "Talla 11", price: 87.0, url: "https://www.awin1.com/pclick.php?p=42529885413&a=3013769&m=65912" },
+          { size: "Talla 7", price: 91.0, url: "https://www.awin1.com/pclick.php?p=42529885405&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 92.0, url: "https://www.awin1.com/pclick.php?p=42529885406&a=3013769&m=65912" },
+          { size: "Talla 8", price: 91.0, url: "https://www.awin1.com/pclick.php?p=42529885407&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 77.0, url: "https://www.awin1.com/pclick.php?p=42529885408&a=3013769&m=65912" },
+          { size: "Talla 9", price: 101.0, url: "https://www.awin1.com/pclick.php?p=42529885409&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 91.0, url: "https://www.awin1.com/pclick.php?p=42529885410&a=3013769&m=65912" },
         ],
       },
       {
@@ -499,19 +536,19 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 100.0,
-        priceMax: 109.0,
+        price: 102.0,
+        priceMax: 110.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43877230544&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43877230546&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fa%2Fka7801.jpg&feedId=89032&k=22829e207e10eb4ff6dd886a56988d7495465597",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 100.0, url: "https://www.awin1.com/pclick.php?p=43877230546&a=3013769&m=65912" },
-          { size: "Talla 11", price: 100.0, url: "https://www.awin1.com/pclick.php?p=43877230547&a=3013769&m=65912" },
-          { size: "Talla 7", price: 100.0, url: "https://www.awin1.com/pclick.php?p=43877230543&a=3013769&m=65912" },
-          { size: "Talla 8", price: 100.0, url: "https://www.awin1.com/pclick.php?p=43877230544&a=3013769&m=65912" },
-          { size: "Talla 9", price: 109.0, url: "https://www.awin1.com/pclick.php?p=43877230545&a=3013769&m=65912" },
+          { size: "Talla 10", price: 102.0, url: "https://www.awin1.com/pclick.php?p=43877230546&a=3013769&m=65912" },
+          { size: "Talla 11", price: 102.0, url: "https://www.awin1.com/pclick.php?p=43877230547&a=3013769&m=65912" },
+          { size: "Talla 7", price: 102.0, url: "https://www.awin1.com/pclick.php?p=43877230543&a=3013769&m=65912" },
+          { size: "Talla 8", price: 102.0, url: "https://www.awin1.com/pclick.php?p=43877230544&a=3013769&m=65912" },
+          { size: "Talla 9", price: 110.0, url: "https://www.awin1.com/pclick.php?p=43877230545&a=3013769&m=65912" },
         ],
       },
       {
@@ -541,23 +578,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 106.32,
-        priceMax: 108.36,
+        price: 108.45,
+        priceMax: 110.51,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163951802&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163914294&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9744-white-lurabl-dkblue-6a444d7c30759-2.jpg&feedId=89032&k=0b31e3803cd7a739cd05cf861c2c5c6e2652222a",
         sizes: ["Talla 10.5", "Talla 11", "Talla 12", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10.5", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46163899071&a=3013769&m=65912" },
-          { size: "Talla 11", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46163951802&a=3013769&m=65912" },
-          { size: "Talla 12", price: 108.36, url: "https://www.awin1.com/pclick.php?p=46353995488&a=3013769&m=65912" },
-          { size: "Talla 7", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46163914294&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46163914295&a=3013769&m=65912" },
-          { size: "Talla 8", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46163893357&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46163886930&a=3013769&m=65912" },
-          { size: "Talla 9", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46163918283&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46163905129&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163899071&a=3013769&m=65912" },
+          { size: "Talla 11", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163951802&a=3013769&m=65912" },
+          { size: "Talla 12", price: 110.51, url: "https://www.awin1.com/pclick.php?p=46353995488&a=3013769&m=65912" },
+          { size: "Talla 7", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163914294&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163914295&a=3013769&m=65912" },
+          { size: "Talla 8", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163893357&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163886930&a=3013769&m=65912" },
+          { size: "Talla 9", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163918283&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163905129&a=3013769&m=65912" },
         ],
       },
       {
@@ -579,12 +616,18 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 107.0,
+        price: 108.0,
+        priceMax: 109.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44729494571&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44729494570&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fa%2Fka7803.jpg&feedId=89032&k=92253d7d54c0a7afd9d9332389b3635af56b8a07",
         sizes: ["Talla 11", "Talla 8", "Talla 9"],
+        sizePrices: [
+          { size: "Talla 11", price: 109.0, url: "https://www.awin1.com/pclick.php?p=44729494573&a=3013769&m=65912" },
+          { size: "Talla 8", price: 108.0, url: "https://www.awin1.com/pclick.php?p=44729494570&a=3013769&m=65912" },
+          { size: "Talla 9", price: 109.0, url: "https://www.awin1.com/pclick.php?p=44729494571&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -608,8 +651,8 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 120.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46114041045&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jn5335_black-carbon-luclem_1.jpg&feedId=89032&k=7eb6db2efd6614e2224e231a8a19f86416112dad",
+        url: "https://www.awin1.com/pclick.php?p=46089286998&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jn5335_black-carbon-luclem_1.jpg&feedId=89032&k=cd7129ff9dcefda54970a959dc4c7c00d90ec0b7",
         sizes: ["Talla 10.5", "Talla 8.5"],
       },
       {
@@ -631,24 +674,24 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 100.87,
-        priceMax: 124.0,
+        price: 102.92,
+        priceMax: 126.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45304855233&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45304855231&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ka7802_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=1dd5d0d36b1767be99f88b483eaa43cc9b53779f",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 11.5", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 123.0, url: "https://www.awin1.com/pclick.php?p=45304855235&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 123.0, url: "https://www.awin1.com/pclick.php?p=45304855236&a=3013769&m=65912" },
-          { size: "Talla 11", price: 123.0, url: "https://www.awin1.com/pclick.php?p=45304855237&a=3013769&m=65912" },
-          { size: "Talla 11.5", price: 124.0, url: "https://www.awin1.com/pclick.php?p=45304855238&a=3013769&m=65912" },
-          { size: "Talla 7", price: 100.87, url: "https://www.awin1.com/pclick.php?p=45304855229&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 124.0, url: "https://www.awin1.com/pclick.php?p=45304855230&a=3013769&m=65912" },
-          { size: "Talla 8", price: 100.87, url: "https://www.awin1.com/pclick.php?p=45304855231&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 122.0, url: "https://www.awin1.com/pclick.php?p=45304855232&a=3013769&m=65912" },
-          { size: "Talla 9", price: 100.87, url: "https://www.awin1.com/pclick.php?p=45304855233&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 123.0, url: "https://www.awin1.com/pclick.php?p=45304855234&a=3013769&m=65912" },
+          { size: "Talla 10", price: 125.0, url: "https://www.awin1.com/pclick.php?p=45304855235&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 125.0, url: "https://www.awin1.com/pclick.php?p=45304855236&a=3013769&m=65912" },
+          { size: "Talla 11", price: 125.0, url: "https://www.awin1.com/pclick.php?p=45304855237&a=3013769&m=65912" },
+          { size: "Talla 11.5", price: 126.0, url: "https://www.awin1.com/pclick.php?p=45304855238&a=3013769&m=65912" },
+          { size: "Talla 7", price: 102.92, url: "https://www.awin1.com/pclick.php?p=45304855229&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 126.0, url: "https://www.awin1.com/pclick.php?p=45304855230&a=3013769&m=65912" },
+          { size: "Talla 8", price: 102.92, url: "https://www.awin1.com/pclick.php?p=45304855231&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 124.0, url: "https://www.awin1.com/pclick.php?p=45304855232&a=3013769&m=65912" },
+          { size: "Talla 9", price: 102.92, url: "https://www.awin1.com/pclick.php?p=45304855233&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 125.0, url: "https://www.awin1.com/pclick.php?p=45304855234&a=3013769&m=65912" },
         ],
       },
       {
@@ -683,7 +726,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 91.0,
+        price: 92.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530173282&a=3013769&m=65912",
@@ -698,6 +741,35 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8169-gants-de-gardien-adidas-copa-pro-better-scarlet-bright-red-silver-metallic",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/2/0/2025_09_adidas_jd8169_1_hardware_photography_front_center_view_white.jpg",
         sizes: ["8.5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-portero-adidas-copa-pro-rose",
+    brand: "Adidas",
+    model: "Guantes de portero adidas Copa Pro - Rose",
+    colour: "Rose",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 126.0,
+        priceMax: 129.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46450281162&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fu%2Fku7658.jpg&feedId=89032&k=dbf37d1e9bfa22ced486c2aef6665e69973fb605",
+        sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
+        sizePrices: [
+          { size: "Talla 10", price: 129.0, url: "https://www.awin1.com/pclick.php?p=46450294604&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 126.0, url: "https://www.awin1.com/pclick.php?p=46450281162&a=3013769&m=65912" },
+          { size: "Talla 11", price: 126.0, url: "https://www.awin1.com/pclick.php?p=46450294068&a=3013769&m=65912" },
+          { size: "Talla 7", price: 126.0, url: "https://www.awin1.com/pclick.php?p=46450295246&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 126.0, url: "https://www.awin1.com/pclick.php?p=46450295245&a=3013769&m=65912" },
+          { size: "Talla 8", price: 126.0, url: "https://www.awin1.com/pclick.php?p=46450284100&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 126.0, url: "https://www.awin1.com/pclick.php?p=46450285201&a=3013769&m=65912" },
+          { size: "Talla 9", price: 126.0, url: "https://www.awin1.com/pclick.php?p=46450284386&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 126.0, url: "https://www.awin1.com/pclick.php?p=46450282843&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -755,7 +827,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 60.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44746185127&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44746185129&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F0%2F2025_09_adidas_ix3878_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=7154800eab56acfd094c3a3b843c8ee069ddd989",
         sizes: ["Talla 10", "Talla 9", "Talla 9.5"],
       },
@@ -778,7 +850,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 76.0,
+        price: 77.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945476072&a=3013769&m=65912",
@@ -805,16 +877,11 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 62.99,
-        priceMax: 68.88,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163925012&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ke9718_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=78d62f8aae4a4a79b0e49e5fa397e34e1de407fa",
-        sizes: ["Talla 8", "Talla 9"],
-        sizePrices: [
-          { size: "Talla 8", price: 62.99, url: "https://www.awin1.com/pclick.php?p=46163925012&a=3013769&m=65912" },
-          { size: "Talla 9", price: 68.88, url: "https://www.awin1.com/pclick.php?p=46163948003&a=3013769&m=65912" },
-        ],
+        sizes: ["Talla 8"],
       },
       {
         store: "FootStoreFR",
@@ -835,21 +902,21 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.0,
-        priceMax: 28.0,
+        price: 20.0,
+        priceMax: 29.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529885421&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529885418&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh3806_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=617b245966f8aaf3e8f5009b24b0de47fd6eacfa",
         sizes: ["Talla 10", "Talla 10.5", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529885422&a=3013769&m=65912" },
+          { size: "Talla 10", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529885422&a=3013769&m=65912" },
           { size: "Talla 10.5", price: 20.0, url: "https://www.awin1.com/pclick.php?p=42529885423&a=3013769&m=65912" },
-          { size: "Talla 7", price: 28.0, url: "https://www.awin1.com/pclick.php?p=42529885416&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529885417&a=3013769&m=65912" },
-          { size: "Talla 8", price: 19.0, url: "https://www.awin1.com/pclick.php?p=42529885418&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529885419&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 19.0, url: "https://www.awin1.com/pclick.php?p=42529885421&a=3013769&m=65912" },
+          { size: "Talla 7", price: 29.0, url: "https://www.awin1.com/pclick.php?p=42529885416&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529885417&a=3013769&m=65912" },
+          { size: "Talla 8", price: 20.0, url: "https://www.awin1.com/pclick.php?p=42529885418&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529885419&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 20.0, url: "https://www.awin1.com/pclick.php?p=42529885421&a=3013769&m=65912" },
         ],
       },
       {
@@ -881,7 +948,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 84.0,
+        price: 85.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44406807423&a=3013769&m=65912",
@@ -936,7 +1003,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 100.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46363349683&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46363354613&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jn5371_luclem-white-black_5.jpg&feedId=89032&k=4e061623c9514de1bfaa7721e54d0056bc39984f",
         sizes: ["Talla 10", "Talla 10.5", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -958,7 +1025,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh3820_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=bb367bc826b1bb3dad767bc5677abbcedaddf8e1",
         sizes: ["Talla 10.5", "Talla 11.5", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10.5", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42529796805&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42529796805&a=3013769&m=65912" },
           { size: "Talla 11.5", price: 44.0, url: "https://www.awin1.com/pclick.php?p=42529796803&a=3013769&m=65912" },
           { size: "Talla 9", price: 60.0, url: "https://www.awin1.com/pclick.php?p=41840083974&a=3013769&m=65912" },
         ],
@@ -1015,22 +1082,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.0,
+        price: 36.14,
         priceMax: 55.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529796796&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46391425394&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh3819_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=a4dd2a16da7dc47580c20d263e75e6df96c7ff73",
-        sizes: ["Talla 10", "Talla 10.5", "Talla 11.5", "Talla 7", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
+        sizes: ["Talla 10", "Talla 10.5", "Talla 11.5", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
           { size: "Talla 10", price: 55.0, url: "https://www.awin1.com/pclick.php?p=42529796795&a=3013769&m=65912" },
           { size: "Talla 10.5", price: 52.0, url: "https://www.awin1.com/pclick.php?p=42529796796&a=3013769&m=65912" },
           { size: "Talla 11.5", price: 52.0, url: "https://www.awin1.com/pclick.php?p=42529796794&a=3013769&m=65912" },
           { size: "Talla 7", price: 55.0, url: "https://www.awin1.com/pclick.php?p=44914972107&a=3013769&m=65912" },
-          { size: "Talla 8", price: 52.5, url: "https://www.awin1.com/pclick.php?p=46391425394&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 52.5, url: "https://www.awin1.com/pclick.php?p=46391423025&a=3013769&m=65912" },
-          { size: "Talla 9", price: 52.5, url: "https://www.awin1.com/pclick.php?p=44914972109&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 52.5, url: "https://www.awin1.com/pclick.php?p=46391424075&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 55.0, url: "https://www.awin1.com/pclick.php?p=44914972108&a=3013769&m=65912" },
+          { size: "Talla 8", price: 36.14, url: "https://www.awin1.com/pclick.php?p=46391425394&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 36.14, url: "https://www.awin1.com/pclick.php?p=46391423025&a=3013769&m=65912" },
+          { size: "Talla 9", price: 36.14, url: "https://www.awin1.com/pclick.php?p=44914972109&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 36.14, url: "https://www.awin1.com/pclick.php?p=46391424075&a=3013769&m=65912" },
         ],
       },
       {
@@ -1086,23 +1154,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "adidas-guantes-de-portero-adidas-predator-match-blanc-2",
-    brand: "Adidas",
-    model: "Guantes de portero adidas Predator Match - Blanc",
-    colour: "Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 50.16,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163845212&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ke9702_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=2293f31a93009ad6636a80cff15eb75b57edec15",
-        sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
-      },
-    ],
-  },
-  {
     id: "adidas-guantes-de-portero-adidas-predator-match-blanc-3",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Match - Blanc",
@@ -1110,10 +1161,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.14,
+        price: 36.23,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46414689137&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163917200&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9700-white-black-soltur-6a444d8126885-2.jpg&feedId=89032&k=de1c286c3d2d7f568255bc678106d03b9fd1cf4b",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 11.5", "Talla 12", "Talla 6", "Talla 6.5", "Talla 7", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -1144,6 +1195,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-guantes-de-portero-adidas-predator-match-blanc-2",
+    brand: "Adidas",
+    model: "Guantes de portero adidas Predator Match - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 51.47,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46163929199&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ke9702_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=2293f31a93009ad6636a80cff15eb75b57edec15",
+        sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
+      },
+    ],
+  },
+  {
     id: "adidas-guantes-de-portero-adidas-predator-match-bleu",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Match - Bleu",
@@ -1151,16 +1219,16 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 56.0,
-        priceMax: 62.0,
+        price: 57.0,
+        priceMax: 63.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44353657859&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ka7785_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=f7db469cf2d9c36b6033a629df808a8181309277",
         sizes: ["Talla 10", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 56.0, url: "https://www.awin1.com/pclick.php?p=44353657859&a=3013769&m=65912" },
-          { size: "Talla 9", price: 62.0, url: "https://www.awin1.com/pclick.php?p=44353657858&a=3013769&m=65912" },
+          { size: "Talla 10", price: 57.0, url: "https://www.awin1.com/pclick.php?p=44353657859&a=3013769&m=65912" },
+          { size: "Talla 9", price: 63.0, url: "https://www.awin1.com/pclick.php?p=44353657858&a=3013769&m=65912" },
         ],
       },
       {
@@ -1189,7 +1257,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 39.0,
-        priceMax: 49.0,
+        priceMax: 50.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529885436&a=3013769&m=65912",
@@ -1198,7 +1266,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         sizePrices: [
           { size: "Talla 10.5", price: 45.0, url: "https://www.awin1.com/pclick.php?p=42529885434&a=3013769&m=65912" },
           { size: "Talla 11.5", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42529885436&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 49.0, url: "https://www.awin1.com/pclick.php?p=42529885432&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 50.0, url: "https://www.awin1.com/pclick.php?p=42529885432&a=3013769&m=65912" },
         ],
       },
       {
@@ -1226,18 +1294,12 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 64.0,
-        priceMax: 65.0,
+        price: 65.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45304855245&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45304855244&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kr0471_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=0dcb2d1a75a3664ca6226b476e82f78aa1e33543",
         sizes: ["Talla 7", "Talla 9", "Talla 9.5"],
-        sizePrices: [
-          { size: "Talla 7", price: 65.0, url: "https://www.awin1.com/pclick.php?p=45304855240&a=3013769&m=65912" },
-          { size: "Talla 9", price: 64.0, url: "https://www.awin1.com/pclick.php?p=45304855244&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 64.0, url: "https://www.awin1.com/pclick.php?p=45304855245&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreFR",
@@ -1277,7 +1339,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         sizes: ["Talla 10.5", "Talla 11", "Talla 9.5"],
         sizePrices: [
           { size: "Talla 10.5", price: 28.0, url: "https://www.awin1.com/pclick.php?p=46391426942&a=3013769&m=65912" },
-          { size: "Talla 11", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529356986&a=3013769&m=65912" },
+          { size: "Talla 11", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529356986&a=3013769&m=65912" },
           { size: "Talla 9.5", price: 19.0, url: "https://www.awin1.com/pclick.php?p=42529356984&a=3013769&m=65912" },
         ],
       },
@@ -1308,7 +1370,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 24.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163845263&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163902245&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9705-black-pulmin-silvmt-6a444e405e779-1.jpg&feedId=89032&k=eda21814028a93ff94a5e6b81bd81dcf4831ca37",
         sizes: ["Talla 11", "Talla 11.5", "Talla 7", "Talla 7.5", "Talla 9.5"],
       },
@@ -1331,25 +1393,25 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 106.32,
+        price: 108.45,
         priceMax: 140.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46135718004&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44914988153&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kv6524_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=bdac50d0bb60489c39070550d174460c6f42b790",
         sizes: ["Talla 10.5", "Talla 11", "Talla 11.5", "Talla 5", "Talla 5.5", "Talla 6", "Talla 6.5", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10.5", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46135718004&a=3013769&m=65912" },
-          { size: "Talla 11", price: 106.32, url: "https://www.awin1.com/pclick.php?p=44914988153&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46135718004&a=3013769&m=65912" },
+          { size: "Talla 11", price: 108.45, url: "https://www.awin1.com/pclick.php?p=44914988153&a=3013769&m=65912" },
           { size: "Talla 11.5", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44914988154&a=3013769&m=65912" },
-          { size: "Talla 5", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46135722806&a=3013769&m=65912" },
-          { size: "Talla 5.5", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46135719122&a=3013769&m=65912" },
-          { size: "Talla 6", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46135717302&a=3013769&m=65912" },
-          { size: "Talla 6.5", price: 106.32, url: "https://www.awin1.com/pclick.php?p=44954304067&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 106.32, url: "https://www.awin1.com/pclick.php?p=44954304068&a=3013769&m=65912" },
-          { size: "Talla 8", price: 106.32, url: "https://www.awin1.com/pclick.php?p=44954304069&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 132.0, url: "https://www.awin1.com/pclick.php?p=44914988149&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 139.0, url: "https://www.awin1.com/pclick.php?p=44914988150&a=3013769&m=65912" },
+          { size: "Talla 5", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46135722806&a=3013769&m=65912" },
+          { size: "Talla 5.5", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46135719122&a=3013769&m=65912" },
+          { size: "Talla 6", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46135717302&a=3013769&m=65912" },
+          { size: "Talla 6.5", price: 108.45, url: "https://www.awin1.com/pclick.php?p=44954304067&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 108.45, url: "https://www.awin1.com/pclick.php?p=44954304068&a=3013769&m=65912" },
+          { size: "Talla 8", price: 108.45, url: "https://www.awin1.com/pclick.php?p=44954304069&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 134.0, url: "https://www.awin1.com/pclick.php?p=44914988149&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 140.0, url: "https://www.awin1.com/pclick.php?p=44914988150&a=3013769&m=65912" },
         ],
       },
       {
@@ -1386,7 +1448,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 126.0,
+        price: 128.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43984919585&a=3013769&m=65912",
@@ -1417,7 +1479,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 111.0,
+        price: 112.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44406810491&a=3013769&m=65912",
@@ -1446,7 +1508,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 140.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46089289873&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46089289871&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ke9697_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=160c7574ffccf5c408ffdc2b1a7b660782e05acb",
         sizes: ["Talla 10", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -1469,18 +1531,19 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 106.32,
+        price: 108.45,
         priceMax: 140.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163807856&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fa%2Fka7780.jpg&feedId=89032&k=59c6032029e943e6b252b7f02b8620e3febe1626",
-        sizes: ["Talla 11.5", "Talla 7", "Talla 8", "Talla 9"],
+        sizes: ["Talla 10", "Talla 11.5", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
+          { size: "Talla 10", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163897639&a=3013769&m=65912" },
           { size: "Talla 11.5", price: 140.0, url: "https://www.awin1.com/pclick.php?p=45304856477&a=3013769&m=65912" },
-          { size: "Talla 7", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46163851109&a=3013769&m=65912" },
-          { size: "Talla 8", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46163938500&a=3013769&m=65912" },
-          { size: "Talla 9", price: 106.32, url: "https://www.awin1.com/pclick.php?p=46163807856&a=3013769&m=65912" },
+          { size: "Talla 7", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163851109&a=3013769&m=65912" },
+          { size: "Talla 8", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163938500&a=3013769&m=65912" },
+          { size: "Talla 9", price: 108.45, url: "https://www.awin1.com/pclick.php?p=46163807856&a=3013769&m=65912" },
         ],
       },
       {
@@ -1510,15 +1573,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 78.0,
-        priceMax: 97.5,
+        price: 40.55,
+        priceMax: 98.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529796807&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41843982319&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_iw6276_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=76b4aa157bed6ab59384539bbb1e06a569f2ae6a",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 11.5", "Talla 12", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 91.0, url: "https://www.awin1.com/pclick.php?p=42529796812&a=3013769&m=65912" },
+          { size: "Talla 10", price: 92.0, url: "https://www.awin1.com/pclick.php?p=42529796812&a=3013769&m=65912" },
           { size: "Talla 10.5", price: 78.0, url: "https://www.awin1.com/pclick.php?p=42529796813&a=3013769&m=65912" },
           { size: "Talla 11", price: 78.0, url: "https://www.awin1.com/pclick.php?p=42529796810&a=3013769&m=65912" },
           { size: "Talla 11.5", price: 78.0, url: "https://www.awin1.com/pclick.php?p=42529796811&a=3013769&m=65912" },
@@ -1527,8 +1590,8 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "Talla 7.5", price: 78.0, url: "https://www.awin1.com/pclick.php?p=42529796808&a=3013769&m=65912" },
           { size: "Talla 8", price: 78.0, url: "https://www.awin1.com/pclick.php?p=41843982320&a=3013769&m=65912" },
           { size: "Talla 8.5", price: 78.0, url: "https://www.awin1.com/pclick.php?p=42529796815&a=3013769&m=65912" },
-          { size: "Talla 9", price: 97.5, url: "https://www.awin1.com/pclick.php?p=41843982319&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 97.0, url: "https://www.awin1.com/pclick.php?p=42529796814&a=3013769&m=65912" },
+          { size: "Talla 9", price: 40.55, url: "https://www.awin1.com/pclick.php?p=41843982319&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 98.0, url: "https://www.awin1.com/pclick.php?p=42529796814&a=3013769&m=65912" },
         ],
       },
       {
@@ -1582,7 +1645,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 106.32,
+        price: 108.45,
         priceMax: 140.0,
         shipping: 9.99,
         currency: "EUR",
@@ -1593,7 +1656,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "Talla 10", price: 140.0, url: "https://www.awin1.com/pclick.php?p=45302526763&a=3013769&m=65912" },
           { size: "Talla 10.5", price: 140.0, url: "https://www.awin1.com/pclick.php?p=45302526764&a=3013769&m=65912" },
           { size: "Talla 11", price: 140.0, url: "https://www.awin1.com/pclick.php?p=45302526765&a=3013769&m=65912" },
-          { size: "Talla 8", price: 106.32, url: "https://www.awin1.com/pclick.php?p=45302526759&a=3013769&m=65912" },
+          { size: "Talla 8", price: 108.45, url: "https://www.awin1.com/pclick.php?p=45302526759&a=3013769&m=65912" },
           { size: "Talla 9", price: 140.0, url: "https://www.awin1.com/pclick.php?p=45302526761&a=3013769&m=65912" },
         ],
       },
@@ -1633,12 +1696,12 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 106.32,
+        price: 108.45,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163899072&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163914289&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9721-soltur-black-white-6a444d9167275-1.jpg&feedId=89032&k=4b4eff471afb488ae3ace7ae7670800118efdce9",
-        sizes: ["Talla 11", "Talla 5", "Talla 5.5", "Talla 6", "Talla 6.5", "Talla 7", "Talla 8"],
+        sizes: ["Talla 11", "Talla 5", "Talla 5.5", "Talla 6", "Talla 6.5", "Talla 7", "Talla 8", "Talla 9"],
       },
       {
         store: "FootStoreFR",
@@ -1659,10 +1722,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.88,
+        price: 24.82,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45304863348&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45304863345&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9703-soltur-black-white-6a444d7e53ee5-1.jpg&feedId=89032&k=aefd93591f8a2e40c33bbf01cded545c235923e8",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -1688,7 +1751,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 32.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43755752985&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43755752984&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jy6311_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=0d1f6ce2453e2b3d3cf23f2a8fa11a3206c99f5b",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -1714,7 +1777,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 25.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45906301903&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163921205&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ia0874_1_hardware_photography_front_center_view_white-nw0324.jpg&feedId=89032&k=7b0f04a5224c239de6c08a23cf8bb97e3ab39e04",
         sizes: ["Talla 10.5", "Talla 11", "Talla 12"],
       },
@@ -1740,7 +1803,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 26.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41332002453&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41332002573&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_iq4026_6_hardware_on_model_front_view_white.jpg&feedId=89032&k=5d157b5bbc15e9e642a3c7e2db01bb41cc532dae",
         sizes: ["Talla 10", "Talla 8.5", "Talla 9.5"],
       },
@@ -1799,7 +1862,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 21.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44126446254&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44126446253&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hn5610_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=f864147df299ed357d11c54fbc003440f5c6f24f",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -1823,23 +1886,11 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 33.0,
-        priceMax: 34.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44216755737&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44645282356&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hn5609_1_hardware_photography_standard_view_white.jpg&feedId=89032&k=5bc079ab81ad3199eec87b9db6e0f6da18b51edd",
         sizes: ["Talla 10", "Talla 4", "Talla 4.5", "Talla 5", "Talla 6", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9.5"],
-        sizePrices: [
-          { size: "Talla 10", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44645282356&a=3013769&m=65912" },
-          { size: "Talla 4", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44216755736&a=3013769&m=65912" },
-          { size: "Talla 4.5", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44212463752&a=3013769&m=65912" },
-          { size: "Talla 5", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44212463753&a=3013769&m=65912" },
-          { size: "Talla 6", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44216755737&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 34.0, url: "https://www.awin1.com/pclick.php?p=46391417117&a=3013769&m=65912" },
-          { size: "Talla 8", price: 33.0, url: "https://www.awin1.com/pclick.php?p=46391427553&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 33.0, url: "https://www.awin1.com/pclick.php?p=46391439241&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 33.0, url: "https://www.awin1.com/pclick.php?p=44905479195&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreFR",
@@ -1860,7 +1911,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.0,
+        price: 36.0,
         priceMax: 60.0,
         shipping: 9.99,
         currency: "EUR",
@@ -1868,14 +1919,14 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hn5612_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=bfd5472af5ccee37678a301ee7bae3d8a9778213",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 7", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 57.0, url: "https://www.awin1.com/pclick.php?p=44645282355&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42529356995&a=3013769&m=65912" },
+          { size: "Talla 10", price: 58.0, url: "https://www.awin1.com/pclick.php?p=44645282355&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42529356995&a=3013769&m=65912" },
           { size: "Talla 11", price: 60.0, url: "https://www.awin1.com/pclick.php?p=44992207148&a=3013769&m=65912" },
           { size: "Talla 7", price: 60.0, url: "https://www.awin1.com/pclick.php?p=45184717499&a=3013769&m=65912" },
           { size: "Talla 8", price: 60.0, url: "https://www.awin1.com/pclick.php?p=45184717500&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 48.0, url: "https://www.awin1.com/pclick.php?p=41104840333&a=3013769&m=65912" },
-          { size: "Talla 9", price: 57.0, url: "https://www.awin1.com/pclick.php?p=44645282354&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 35.0, url: "https://www.awin1.com/pclick.php?p=41104840335&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 49.0, url: "https://www.awin1.com/pclick.php?p=41104840333&a=3013769&m=65912" },
+          { size: "Talla 9", price: 58.0, url: "https://www.awin1.com/pclick.php?p=44645282354&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 36.0, url: "https://www.awin1.com/pclick.php?p=41104840335&a=3013769&m=65912" },
         ],
       },
       {
@@ -1908,22 +1959,22 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.0,
-        priceMax: 67.0,
+        price: 50.0,
+        priceMax: 68.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104838848&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hn5611_1_hardware_photography_front_center_view_white_xo.jpg&feedId=89032&k=c3b09a6cf93f4a898bfbd20095e8211060244816",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 64.0, url: "https://www.awin1.com/pclick.php?p=41104838852&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 64.0, url: "https://www.awin1.com/pclick.php?p=44645281997&a=3013769&m=65912" },
-          { size: "Talla 11", price: 67.0, url: "https://www.awin1.com/pclick.php?p=41104838854&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 49.0, url: "https://www.awin1.com/pclick.php?p=41104838848&a=3013769&m=65912" },
-          { size: "Talla 8", price: 49.0, url: "https://www.awin1.com/pclick.php?p=40255216159&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 64.0, url: "https://www.awin1.com/pclick.php?p=41104838849&a=3013769&m=65912" },
-          { size: "Talla 9", price: 64.0, url: "https://www.awin1.com/pclick.php?p=41104838850&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 64.0, url: "https://www.awin1.com/pclick.php?p=41104838851&a=3013769&m=65912" },
+          { size: "Talla 10", price: 65.0, url: "https://www.awin1.com/pclick.php?p=41104838852&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 65.0, url: "https://www.awin1.com/pclick.php?p=44645281997&a=3013769&m=65912" },
+          { size: "Talla 11", price: 68.0, url: "https://www.awin1.com/pclick.php?p=41104838854&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 50.0, url: "https://www.awin1.com/pclick.php?p=41104838848&a=3013769&m=65912" },
+          { size: "Talla 8", price: 50.0, url: "https://www.awin1.com/pclick.php?p=40255216159&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 65.0, url: "https://www.awin1.com/pclick.php?p=41104838849&a=3013769&m=65912" },
+          { size: "Talla 9", price: 65.0, url: "https://www.awin1.com/pclick.php?p=41104838850&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 65.0, url: "https://www.awin1.com/pclick.php?p=41104838851&a=3013769&m=65912" },
         ],
       },
       {
@@ -1965,7 +2016,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         sizes: ["Talla 10", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
           { size: "Talla 10", price: 24.0, url: "https://www.awin1.com/pclick.php?p=44552705757&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 47.0, url: "https://www.awin1.com/pclick.php?p=42630377855&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 48.0, url: "https://www.awin1.com/pclick.php?p=42630377855&a=3013769&m=65912" },
           { size: "Talla 9", price: 52.0, url: "https://www.awin1.com/pclick.php?p=44944605846&a=3013769&m=65912" },
           { size: "Talla 9.5", price: 52.0, url: "https://www.awin1.com/pclick.php?p=42630377857&a=3013769&m=65912" },
         ],
@@ -2017,7 +2068,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 30.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44216759372&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46391436771&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ix3870_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=07ad7d2f584fb02c7b407416c38449ca225955f7",
         sizes: ["Talla 10", "Talla 8", "Talla 9", "Talla 9.5"],
       },
@@ -2031,7 +2082,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.0,
+        price: 22.0,
         priceMax: 24.0,
         shipping: 9.99,
         currency: "EUR",
@@ -2042,7 +2093,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "Talla 10", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529796824&a=3013769&m=65912" },
           { size: "Talla 10.5", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529796833&a=3013769&m=65912" },
           { size: "Talla 11", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529796831&a=3013769&m=65912" },
-          { size: "Talla 11.5", price: 21.0, url: "https://www.awin1.com/pclick.php?p=42529796832&a=3013769&m=65912" },
+          { size: "Talla 11.5", price: 22.0, url: "https://www.awin1.com/pclick.php?p=42529796832&a=3013769&m=65912" },
           { size: "Talla 8", price: 24.0, url: "https://www.awin1.com/pclick.php?p=41840083980&a=3013769&m=65912" },
           { size: "Talla 8.5", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529796827&a=3013769&m=65912" },
           { size: "Talla 9.5", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529796826&a=3013769&m=65912" },
@@ -2080,7 +2131,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 104.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163827486&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46353993469&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9727-clemin-zeromt-black-6a444e5853293-2.jpg&feedId=89032&k=49ddc37743fa8407875838de67f202afc17c272b",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 11.5", "Talla 12", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -2103,17 +2154,17 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.48,
-        priceMax: 24.52,
+        price: 23.39,
+        priceMax: 25.46,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163958029&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163928923&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kr4600_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=0a4b219ff4fab3c72efc254d47b01cfd7de73559",
         sizes: ["S", "M", "L"],
         sizePrices: [
-          { size: "S", price: 22.48, url: "https://www.awin1.com/pclick.php?p=46163958029&a=3013769&m=65912" },
-          { size: "M", price: 24.52, url: "https://www.awin1.com/pclick.php?p=46277686299&a=3013769&m=65912" },
-          { size: "L", price: 22.48, url: "https://www.awin1.com/pclick.php?p=46163928923&a=3013769&m=65912" },
+          { size: "S", price: 23.39, url: "https://www.awin1.com/pclick.php?p=46163958029&a=3013769&m=65912" },
+          { size: "M", price: 25.46, url: "https://www.awin1.com/pclick.php?p=46277686299&a=3013769&m=65912" },
+          { size: "L", price: 23.39, url: "https://www.awin1.com/pclick.php?p=46163928923&a=3013769&m=65912" },
         ],
       },
       {
@@ -2135,10 +2186,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.48,
+        price: 23.39,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163812420&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163933663&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jv5901_black-mufred_1.jpg&feedId=89032&k=7774b021aa4429c7d3f4c7525e543aa1d2fe82e7",
         sizes: ["S", "M", "L"],
       },
@@ -2187,20 +2238,20 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 54.0,
-        priceMax: 66.0,
+        price: 55.0,
+        priceMax: 68.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42630378050&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42721414406&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jn5369_1_hardware_photography_standard_view_white.jpg&feedId=89032&k=fc4edb4006b86e61e9dd2eb0b1ef8501058121cb",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 11.5", "Talla 8", "Talla 9.5"],
         sizePrices: [
           { size: "Talla 10", price: 60.0, url: "https://www.awin1.com/pclick.php?p=45254167605&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 54.0, url: "https://www.awin1.com/pclick.php?p=42721414406&a=3013769&m=65912" },
-          { size: "Talla 11", price: 54.0, url: "https://www.awin1.com/pclick.php?p=42721414405&a=3013769&m=65912" },
-          { size: "Talla 11.5", price: 66.0, url: "https://www.awin1.com/pclick.php?p=42721414404&a=3013769&m=65912" },
-          { size: "Talla 8", price: 60.0, url: "https://www.awin1.com/pclick.php?p=45277988942&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 54.0, url: "https://www.awin1.com/pclick.php?p=42630378050&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 55.0, url: "https://www.awin1.com/pclick.php?p=42721414406&a=3013769&m=65912" },
+          { size: "Talla 11", price: 55.0, url: "https://www.awin1.com/pclick.php?p=42721414405&a=3013769&m=65912" },
+          { size: "Talla 11.5", price: 68.0, url: "https://www.awin1.com/pclick.php?p=42721414404&a=3013769&m=65912" },
+          { size: "Talla 8", price: 61.0, url: "https://www.awin1.com/pclick.php?p=45277988942&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 55.0, url: "https://www.awin1.com/pclick.php?p=42630378050&a=3013769&m=65912" },
         ],
       },
       {
@@ -2231,7 +2282,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 50.0,
+        price: 51.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45039258257&a=3013769&m=65912",
@@ -2260,7 +2311,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 130.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44651306330&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44552705790&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jj3531_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=c4f8005b2f48b6251ff2240916628a8a0cda7ba0",
         sizes: ["Talla 10", "Talla 11", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -2309,10 +2360,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.38,
+        price: 16.19,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507730022&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44507730023&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fv%2Favento-45kh-ybl-fluorescent-yellow-black-69e09062b2822-2.jpg&feedId=89032&k=2b64baa1a3434b533e29f4dc1576f019358a09e8",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -2335,10 +2386,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.38,
+        price: 16.19,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507730026&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44507730027&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fv%2Favento-45kh-rbw-red-black-69e0906478192-2.jpg&feedId=89032&k=d3cc88cee9d3f8df8d8384529693f0bc2d017f70",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -2361,7 +2412,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 62.55,
+        price: 63.05,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43691274106&a=3013769&m=65912",
@@ -2405,10 +2456,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.81,
+        price: 37.31,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44719157572&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44719157569&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fd%2Fe%2Fderbystar-f20493-gris-blanc-orange-69fdf0e4dcff5-1.jpg&feedId=89032&k=b771b62d9ccddd8622f169c05931b63e2eee7349",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 8", "Talla 9"],
       },
@@ -2431,17 +2482,17 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.59,
-        priceMax: 33.8,
+        price: 31.09,
+        priceMax: 34.3,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529857861&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fd%2Fe%2Fderbystar_f20390_black-green_1.jpg&feedId=89032&k=39be1b3d4fc2db10987c1bd09ef2907fa50d9ade",
         sizes: ["Talla 11", "Talla 12", "Talla 7"],
         sizePrices: [
-          { size: "Talla 11", price: 33.8, url: "https://www.awin1.com/pclick.php?p=46255332046&a=3013769&m=65912" },
-          { size: "Talla 12", price: 33.8, url: "https://www.awin1.com/pclick.php?p=45242362936&a=3013769&m=65912" },
-          { size: "Talla 7", price: 30.59, url: "https://www.awin1.com/pclick.php?p=42529857861&a=3013769&m=65912" },
+          { size: "Talla 11", price: 34.3, url: "https://www.awin1.com/pclick.php?p=46255332046&a=3013769&m=65912" },
+          { size: "Talla 12", price: 34.3, url: "https://www.awin1.com/pclick.php?p=45242362936&a=3013769&m=65912" },
+          { size: "Talla 7", price: 31.09, url: "https://www.awin1.com/pclick.php?p=42529857861&a=3013769&m=65912" },
         ],
       },
       {
@@ -2468,7 +2519,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.59,
+        price: 31.09,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46353988652&a=3013769&m=65912",
@@ -2493,6 +2544,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     colour: "Noir",
     offers: [
       {
+        store: "FootStoreES",
+        price: 73.78,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45356588323&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport-el5000840-black-mat-6a5ddfdca6dd8-1.jpg&feedId=89032&k=c9d369c188eda68e5841cd427e1e562fb4a3daea",
+        sizes: ["Talla 10", "Talla 11", "Talla 5", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
         store: "FootStoreFR",
         price: 63.08,
         priceMax: 69.0,
@@ -2511,15 +2571,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "11", price: 63.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fel5000840-gants-de-gardien-elite-sport-aztlan-black-mat" },
         ],
       },
-      {
-        store: "FootStoreES",
-        price: 72.14,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45356588320&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport-el5000840-black-mat-6a5ddfdca6dd8-1.jpg&feedId=89032&k=c9d369c188eda68e5841cd427e1e562fb4a3daea",
-        sizes: ["Talla 10", "Talla 11", "Talla 5", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
-      },
     ],
   },
   {
@@ -2530,10 +2581,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 76.72,
+        price: 78.42,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530112981&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530112982&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4004740_black-white_1.jpg&feedId=89032&k=7401faad63570419080e499ea474d79758999b59",
         sizes: ["Talla 10", "Talla 11", "Talla 5", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -2556,20 +2607,20 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 88.31,
-        priceMax: 95.05,
+        price: 88.81,
+        priceMax: 97.01,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45356588329&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45356588330&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport-el5000780-bleu-marine-blanc-6a5ddfdd2c340-1.jpg&feedId=89032&k=e04a5b4012a44c6f39aa48ad577165ae9c0d39f2",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 88.31, url: "https://www.awin1.com/pclick.php?p=45356588329&a=3013769&m=65912" },
-          { size: "Talla 11", price: 88.31, url: "https://www.awin1.com/pclick.php?p=45356588330&a=3013769&m=65912" },
-          { size: "Talla 6", price: 95.05, url: "https://www.awin1.com/pclick.php?p=45356588325&a=3013769&m=65912" },
-          { size: "Talla 7", price: 88.31, url: "https://www.awin1.com/pclick.php?p=45356588326&a=3013769&m=65912" },
-          { size: "Talla 8", price: 88.31, url: "https://www.awin1.com/pclick.php?p=45356588327&a=3013769&m=65912" },
-          { size: "Talla 9", price: 95.05, url: "https://www.awin1.com/pclick.php?p=45356588328&a=3013769&m=65912" },
+          { size: "Talla 10", price: 88.81, url: "https://www.awin1.com/pclick.php?p=45356588329&a=3013769&m=65912" },
+          { size: "Talla 11", price: 88.81, url: "https://www.awin1.com/pclick.php?p=45356588330&a=3013769&m=65912" },
+          { size: "Talla 6", price: 97.01, url: "https://www.awin1.com/pclick.php?p=45356588325&a=3013769&m=65912" },
+          { size: "Talla 7", price: 88.81, url: "https://www.awin1.com/pclick.php?p=45356588326&a=3013769&m=65912" },
+          { size: "Talla 8", price: 88.81, url: "https://www.awin1.com/pclick.php?p=45356588327&a=3013769&m=65912" },
+          { size: "Talla 9", price: 97.01, url: "https://www.awin1.com/pclick.php?p=45356588328&a=3013769&m=65912" },
         ],
       },
       {
@@ -2618,7 +2669,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 85.89,
+        price: 87.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41013650827&a=3013769&m=65912",
@@ -2644,7 +2695,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 110.62,
+        price: 112.81,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41013650838&a=3013769&m=65912",
@@ -2676,10 +2727,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 122.53,
+        price: 124.89,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530113007&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530113008&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4003600_white_1.jpg&feedId=89032&k=403f521a4b90c283d19e53e535398b9dac987722",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8"],
       },
@@ -2702,10 +2753,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 122.53,
+        price: 124.89,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530113014&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530113017&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4003720_white-black_1.jpg&feedId=89032&k=9b72c94037bd4953b6b67d00cc51f43de0f5a674",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -2728,20 +2779,20 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 96.24,
-        priceMax: 113.96,
+        price: 96.74,
+        priceMax: 114.46,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530112989&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4003660_black_1.jpg&feedId=89032&k=39d40af9c095e1e214186570d7347c7e1cc2dd7f",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 96.24, url: "https://www.awin1.com/pclick.php?p=42530112992&a=3013769&m=65912" },
-          { size: "Talla 11", price: 96.24, url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912" },
-          { size: "Talla 6", price: 96.24, url: "https://www.awin1.com/pclick.php?p=42530112988&a=3013769&m=65912" },
-          { size: "Talla 7", price: 96.24, url: "https://www.awin1.com/pclick.php?p=42530112989&a=3013769&m=65912" },
-          { size: "Talla 8", price: 113.96, url: "https://www.awin1.com/pclick.php?p=42530112990&a=3013769&m=65912" },
-          { size: "Talla 9", price: 113.96, url: "https://www.awin1.com/pclick.php?p=42530112991&a=3013769&m=65912" },
+          { size: "Talla 10", price: 96.74, url: "https://www.awin1.com/pclick.php?p=42530112992&a=3013769&m=65912" },
+          { size: "Talla 11", price: 96.74, url: "https://www.awin1.com/pclick.php?p=42530112993&a=3013769&m=65912" },
+          { size: "Talla 6", price: 96.74, url: "https://www.awin1.com/pclick.php?p=42530112988&a=3013769&m=65912" },
+          { size: "Talla 7", price: 96.74, url: "https://www.awin1.com/pclick.php?p=42530112989&a=3013769&m=65912" },
+          { size: "Talla 8", price: 114.46, url: "https://www.awin1.com/pclick.php?p=42530112990&a=3013769&m=65912" },
+          { size: "Talla 9", price: 114.46, url: "https://www.awin1.com/pclick.php?p=42530112991&a=3013769&m=65912" },
         ],
       },
       {
@@ -2808,10 +2859,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 122.53,
+        price: 124.89,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530112994&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530112998&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4003840_black-aqua_1.jpg&feedId=89032&k=c3cad772a2233722e285933128dd763e86043354",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -2834,10 +2885,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 122.53,
+        price: 124.89,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530113002&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530113004&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4003780_black-white_1.jpg&feedId=89032&k=5b745cc338849e4b841d13f5232979fd3d32f92f",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -2851,10 +2902,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 115.58,
+        price: 116.08,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45725059075&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45725059072&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport-el5000240-blanc-6a882bfe4cdc4-1.jpg&feedId=89032&k=a36907e6b3cc7305f4ea1efd01713eaf0b39c380",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -2895,10 +2946,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 122.53,
+        price: 124.89,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45725059076&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45725059080&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport-el5000420-noir-6a882f6384347-1.jpg&feedId=89032&k=b878a4814217d029c080c413519da62edcfea1a8",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 8", "Talla 9"],
       },
@@ -2921,10 +2972,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 122.53,
+        price: 124.89,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45356588332&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45356588336&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport-el5000180-bleu-marine-bleu-ciel-6a5ddfdb9d1ee-1.jpg&feedId=89032&k=396f6434ff745ea79fcf97a1e761a238877648d2",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -2947,20 +2998,20 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 115.58,
-        priceMax: 117.25,
+        price: 116.08,
+        priceMax: 117.75,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45725059087&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45725059085&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport-el5000300-noir-6a882f676cf10-1.jpg&feedId=89032&k=5d2f0bef22bba2c5f615488556a664a645e588a2",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 115.58, url: "https://www.awin1.com/pclick.php?p=45725059086&a=3013769&m=65912" },
-          { size: "Talla 11", price: 115.58, url: "https://www.awin1.com/pclick.php?p=45725059087&a=3013769&m=65912" },
-          { size: "Talla 6", price: 117.25, url: "https://www.awin1.com/pclick.php?p=45725059082&a=3013769&m=65912" },
-          { size: "Talla 7", price: 115.58, url: "https://www.awin1.com/pclick.php?p=45725059083&a=3013769&m=65912" },
-          { size: "Talla 8", price: 115.58, url: "https://www.awin1.com/pclick.php?p=45725059084&a=3013769&m=65912" },
-          { size: "Talla 9", price: 115.58, url: "https://www.awin1.com/pclick.php?p=45725059085&a=3013769&m=65912" },
+          { size: "Talla 10", price: 116.08, url: "https://www.awin1.com/pclick.php?p=45725059086&a=3013769&m=65912" },
+          { size: "Talla 11", price: 116.08, url: "https://www.awin1.com/pclick.php?p=45725059087&a=3013769&m=65912" },
+          { size: "Talla 6", price: 117.75, url: "https://www.awin1.com/pclick.php?p=45725059082&a=3013769&m=65912" },
+          { size: "Talla 7", price: 116.08, url: "https://www.awin1.com/pclick.php?p=45725059083&a=3013769&m=65912" },
+          { size: "Talla 8", price: 116.08, url: "https://www.awin1.com/pclick.php?p=45725059084&a=3013769&m=65912" },
+          { size: "Talla 9", price: 116.08, url: "https://www.awin1.com/pclick.php?p=45725059085&a=3013769&m=65912" },
         ],
       },
       {
@@ -3000,7 +3051,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 122.53,
+        price: 124.89,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45725059089&a=3013769&m=65912",
@@ -3026,10 +3077,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 85.89,
+        price: 87.72,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530113026&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530113024&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4004570_white-gold_1.jpg&feedId=89032&k=18dd80f076f04c96c22fc13ce5f1733682bc4427",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -3052,7 +3103,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 85.89,
+        price: 87.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530113023&a=3013769&m=65912",
@@ -3078,20 +3129,20 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.58,
-        priceMax: 53.82,
+        price: 42.08,
+        priceMax: 54.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530113029&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4003260_white_1.jpg&feedId=89032&k=3f992d7aa03887b81621fc1cca1e85c0c4c6d6d3",
         sizes: ["Talla 10", "Talla 11", "Talla 5", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 53.82, url: "https://www.awin1.com/pclick.php?p=42530113034&a=3013769&m=65912" },
-          { size: "Talla 11", price: 53.82, url: "https://www.awin1.com/pclick.php?p=42530113035&a=3013769&m=65912" },
-          { size: "Talla 5", price: 41.58, url: "https://www.awin1.com/pclick.php?p=42530113029&a=3013769&m=65912" },
-          { size: "Talla 7", price: 53.82, url: "https://www.awin1.com/pclick.php?p=42530113031&a=3013769&m=65912" },
-          { size: "Talla 8", price: 53.82, url: "https://www.awin1.com/pclick.php?p=42530113032&a=3013769&m=65912" },
-          { size: "Talla 9", price: 53.82, url: "https://www.awin1.com/pclick.php?p=42530113033&a=3013769&m=65912" },
+          { size: "Talla 10", price: 54.95, url: "https://www.awin1.com/pclick.php?p=42530113034&a=3013769&m=65912" },
+          { size: "Talla 11", price: 54.95, url: "https://www.awin1.com/pclick.php?p=42530113035&a=3013769&m=65912" },
+          { size: "Talla 5", price: 42.08, url: "https://www.awin1.com/pclick.php?p=42530113029&a=3013769&m=65912" },
+          { size: "Talla 7", price: 54.95, url: "https://www.awin1.com/pclick.php?p=42530113031&a=3013769&m=65912" },
+          { size: "Talla 8", price: 54.95, url: "https://www.awin1.com/pclick.php?p=42530113032&a=3013769&m=65912" },
+          { size: "Talla 9", price: 54.95, url: "https://www.awin1.com/pclick.php?p=42530113033&a=3013769&m=65912" },
         ],
       },
       {
@@ -3140,7 +3191,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 78.0,
+        price: 79.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529806093&a=3013769&m=65912",
@@ -3171,10 +3222,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 95.05,
+        price: 97.01,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530113039&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530113038&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4004260_blue-red-white_1.jpg&feedId=89032&k=287cd0b023a2a82b66c20f6fe3e0f5614900d5cc",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -3197,7 +3248,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 94.13,
+        price: 96.08,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41013650840&a=3013769&m=65912",
@@ -3226,7 +3277,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 89.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41701519020&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41701519021&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el3001300_1.jpg&feedId=89032&k=13b3e6c01bd92e07166ba99f1d0a50ed9ac8e75e",
         sizes: ["Talla 11", "Talla 6", "Talla 7", "Talla 8"],
       },
@@ -3275,7 +3326,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 95.05,
+        price: 97.01,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530113045&a=3013769&m=65912",
@@ -3301,10 +3352,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 95.05,
+        price: 97.01,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530113055&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530113056&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4002630_white_1.jpg&feedId=89032&k=4e8df2a64fafb7b187ee643ff60163661df58842",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -3327,10 +3378,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 95.05,
+        price: 97.01,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530113057&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530113059&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4002680_white_1.jpg&feedId=89032&k=c970c5f43d2826f938e1b35994a820ca2e3327b1",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8"],
       },
@@ -3353,10 +3404,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 85.89,
+        price: 87.72,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43362486135&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43362486134&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4003460_black_1.jpg&feedId=89032&k=1f90d6d78b9285b97a84135a0fe5645263b01d4c",
         sizes: ["Talla 6", "Talla 7"],
       },
@@ -3379,11 +3430,11 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 113.37,
+        price: 115.6,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43573623409&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport-el4004950-black-blue-bleu-1.jpg&feedId=89032&k=ae747493542932953807caea55ed6664d6453f33",
+        url: "https://www.awin1.com/pclick.php?p=43573623408&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport-el4004950-black-blue-bleu-1.jpg&feedId=89032&k=f5c73ac3f8c05742d60d854a610a637cf7afd870",
         sizes: ["Talla 10", "Talla 11", "Talla 9"],
       },
       {
@@ -3405,10 +3456,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 131.69,
+        price: 134.19,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45356588341&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45356588337&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport-el5000000-black-6a5ddfdc1f9cf-1.jpg&feedId=89032&k=b5750e6532e4aad81038c14fa689b41354f2da53",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -3431,21 +3482,20 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.58,
-        priceMax: 54.0,
+        price: 42.08,
+        priceMax: 54.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529806101&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fl%2Felite-sport_el4003190_noir_1.jpg&feedId=89032&k=714b1f8fc1442be3d5f3d12d9b28a7fea6282db3",
-        sizes: ["Talla 10", "Talla 11", "Talla 5", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+        sizes: ["Talla 10", "Talla 11", "Talla 5", "Talla 6", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 41.58, url: "https://www.awin1.com/pclick.php?p=40815967330&a=3013769&m=65912" },
-          { size: "Talla 11", price: 41.58, url: "https://www.awin1.com/pclick.php?p=42529806101&a=3013769&m=65912" },
+          { size: "Talla 10", price: 42.08, url: "https://www.awin1.com/pclick.php?p=40815967330&a=3013769&m=65912" },
+          { size: "Talla 11", price: 42.08, url: "https://www.awin1.com/pclick.php?p=42529806101&a=3013769&m=65912" },
           { size: "Talla 5", price: 54.0, url: "https://www.awin1.com/pclick.php?p=42529806097&a=3013769&m=65912" },
-          { size: "Talla 6", price: 53.82, url: "https://www.awin1.com/pclick.php?p=41701520904&a=3013769&m=65912" },
-          { size: "Talla 7", price: 54.0, url: "https://www.awin1.com/pclick.php?p=45137692978&a=3013769&m=65912" },
-          { size: "Talla 8", price: 41.58, url: "https://www.awin1.com/pclick.php?p=42529806099&a=3013769&m=65912" },
-          { size: "Talla 9", price: 53.82, url: "https://www.awin1.com/pclick.php?p=42529806100&a=3013769&m=65912" },
+          { size: "Talla 6", price: 54.95, url: "https://www.awin1.com/pclick.php?p=41701520904&a=3013769&m=65912" },
+          { size: "Talla 8", price: 42.08, url: "https://www.awin1.com/pclick.php?p=42529806099&a=3013769&m=65912" },
+          { size: "Talla 9", price: 54.95, url: "https://www.awin1.com/pclick.php?p=42529806100&a=3013769&m=65912" },
         ],
       },
       {
@@ -3501,13 +3551,13 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "erima-gants-de-gardien-erima-flex-ray-hardground-gris",
-    brand: "Erima",
+    brand: "erima",
     model: "Guantes de portero Erima Flex-Ray Hardground - Gris",
     colour: "Gris",
     offers: [
       {
         store: "FootStoreES",
-        price: 33.0,
+        price: 34.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46422330613&a=3013769&m=65912",
@@ -3527,7 +3577,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "erima-guantes-de-portero-erima-flex-ray-match-eco-gris",
-    brand: "Erima",
+    brand: "erima",
     model: "Guantes de portero Erima Flex-Ray Match Eco - Gris",
     colour: "Gris",
     offers: [
@@ -3536,7 +3586,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 89.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42630363617&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42630363616&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferima_7222407_0.jpg&feedId=89032&k=bbae05c25ede6fb565a4bfa9b5a2332a3398a84b",
         sizes: ["Talla 11", "Talla 12", "Talla 8"],
       },
@@ -3553,7 +3603,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "erima-guantes-de-portero-erima-flex-ray-pro-hardground-gris",
-    brand: "Erima",
+    brand: "erima",
     model: "Guantes de portero Erima Flex-Ray Pro Hardground - Gris",
     colour: "Gris",
     offers: [
@@ -3579,7 +3629,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "erima-guantes-de-portero-erima-flex-ray-protect-gris",
-    brand: "Erima",
+    brand: "erima",
     model: "Guantes de portero Erima Flex-Ray Protect - Gris",
     colour: "Gris",
     offers: [
@@ -3588,7 +3638,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 32.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529570201&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529570202&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferima_7222402_0.jpg&feedId=89032&k=fa1b1f41163f1c8b6b6ac19b372b5ee472931989",
         sizes: ["Talla 10", "Talla 9"],
       },
@@ -3605,7 +3655,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   },
   {
     id: "erima-guantes-de-portero-erima-flex-ray-robusto-gris",
-    brand: "Erima",
+    brand: "erima",
     model: "Guantes de portero Erima Flex-Ray Robusto - Gris",
     colour: "Gris",
     offers: [
@@ -3635,6 +3685,32 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "erima-guantes-de-portero-erima-flexinator-knit-negro",
+    brand: "erima",
+    model: "Guantes de portero Erima Flexinator Knit - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 70.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46157590441&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2F7%2F2%2F7221902_v.jpg&feedId=89032&k=c49dfe73519aa435729d382115c15c342324ac36",
+        sizes: ["12"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 70.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgants-de-gardiens-erima-flexinator-knit-noir-gris-vert",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/7/2/7221902_v.jpg",
+        sizes: ["12"],
+      },
+    ],
+  },
+  {
     id: "gisix-guantes-de-portero-gisix-effect-25-base-model-negro",
     brand: "Gisix",
     model: "Guantes de portero Gisix Effect 25 Base model - Negro",
@@ -3642,16 +3718,16 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.47,
-        priceMax: 15.08,
+        price: 12.92,
+        priceMax: 15.58,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42075916194&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgisix_g155blk_black-gold_1.jpg&feedId=89032&k=a6a65ee9384ed0ca8bfddaadd13312cb2655dbbd",
         sizes: ["Talla 6", "Talla 7"],
         sizePrices: [
-          { size: "Talla 6", price: 12.47, url: "https://www.awin1.com/pclick.php?p=42075916194&a=3013769&m=65912" },
-          { size: "Talla 7", price: 15.08, url: "https://www.awin1.com/pclick.php?p=42075916195&a=3013769&m=65912" },
+          { size: "Talla 6", price: 12.92, url: "https://www.awin1.com/pclick.php?p=42075916194&a=3013769&m=65912" },
+          { size: "Talla 7", price: 15.58, url: "https://www.awin1.com/pclick.php?p=42075916195&a=3013769&m=65912" },
         ],
       },
       {
@@ -3706,10 +3782,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.57,
+        price: 22.97,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42075916201&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42075916199&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgisix_g154blk_black_1.jpg&feedId=89032&k=5140611be7c3143a5f9fbe6963b26a4ee04f2366",
         sizes: ["Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -3750,10 +3826,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.93,
+        price: 32.38,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42164864474&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42164864471&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgisix_g145blk_black_1.jpg&feedId=89032&k=112f71f837839e791f5e49089f9a7f7b7ed90f0b",
         sizes: ["Talla 8", "Talla 9.5"],
       },
@@ -3797,7 +3873,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 15.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45028630360&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45028630361&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgivova_gu09-2810_arancio-fluo-nero_1.jpg&feedId=89032&k=2b5422a0521420ade55b4ef40d2aacb825d8a476",
         sizes: ["Talla 11", "Talla 7"],
       },
@@ -3851,19 +3927,19 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.11,
-        priceMax: 27.62,
+        price: 15.51,
+        priceMax: 28.6,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37580380319&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_224976-9031_0.jpg&feedId=89032&k=96301ff0e4a5d4840ec95767ab9582ea0ee31dd1",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 27.62, url: "https://www.awin1.com/pclick.php?p=43945445286&a=3013769&m=65912" },
-          { size: "Talla 11", price: 15.11, url: "https://www.awin1.com/pclick.php?p=37580380319&a=3013769&m=65912" },
-          { size: "Talla 7", price: 27.62, url: "https://www.awin1.com/pclick.php?p=43945445284&a=3013769&m=65912" },
-          { size: "Talla 8", price: 27.62, url: "https://www.awin1.com/pclick.php?p=41104843134&a=3013769&m=65912" },
-          { size: "Talla 9", price: 27.62, url: "https://www.awin1.com/pclick.php?p=43945445285&a=3013769&m=65912" },
+          { size: "Talla 10", price: 28.6, url: "https://www.awin1.com/pclick.php?p=43945445286&a=3013769&m=65912" },
+          { size: "Talla 11", price: 15.51, url: "https://www.awin1.com/pclick.php?p=37580380319&a=3013769&m=65912" },
+          { size: "Talla 7", price: 28.6, url: "https://www.awin1.com/pclick.php?p=43945445284&a=3013769&m=65912" },
+          { size: "Talla 8", price: 28.6, url: "https://www.awin1.com/pclick.php?p=41104843134&a=3013769&m=65912" },
+          { size: "Talla 9", price: 28.6, url: "https://www.awin1.com/pclick.php?p=43945445285&a=3013769&m=65912" },
         ],
       },
       {
@@ -3911,18 +3987,18 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.26,
-        priceMax: 20.3,
+        price: 19.12,
+        priceMax: 21.19,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46246409454&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46246415652&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-236349-2934-black-yellow-69bbe89159f44-1.jpg&feedId=89032&k=6d7c0d4ee7876871ffedff2e99ca55e074aa762d",
         sizes: ["Talla 10", "Talla 11", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 10", price: 18.26, url: "https://www.awin1.com/pclick.php?p=46246409454&a=3013769&m=65912" },
-          { size: "Talla 11", price: 20.3, url: "https://www.awin1.com/pclick.php?p=46339469012&a=3013769&m=65912" },
-          { size: "Talla 4", price: 18.26, url: "https://www.awin1.com/pclick.php?p=46246408211&a=3013769&m=65912" },
-          { size: "Talla 5", price: 18.26, url: "https://www.awin1.com/pclick.php?p=46246415652&a=3013769&m=65912" },
+          { size: "Talla 10", price: 19.12, url: "https://www.awin1.com/pclick.php?p=46246409454&a=3013769&m=65912" },
+          { size: "Talla 11", price: 21.19, url: "https://www.awin1.com/pclick.php?p=46339469012&a=3013769&m=65912" },
+          { size: "Talla 4", price: 19.12, url: "https://www.awin1.com/pclick.php?p=46246408211&a=3013769&m=65912" },
+          { size: "Talla 5", price: 19.12, url: "https://www.awin1.com/pclick.php?p=46246415652&a=3013769&m=65912" },
         ],
       },
     ],
@@ -3935,19 +4011,19 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.68,
-        priceMax: 17.33,
+        price: 9.08,
+        priceMax: 18.17,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37580380323&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_224975-9210_0.jpg&feedId=89032&k=697c55b805a9dbdac309abe49bb6567b3836f908",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 17.33, url: "https://www.awin1.com/pclick.php?p=43945445290&a=3013769&m=65912" },
-          { size: "Talla 11", price: 8.68, url: "https://www.awin1.com/pclick.php?p=37580380323&a=3013769&m=65912" },
-          { size: "Talla 7", price: 17.33, url: "https://www.awin1.com/pclick.php?p=43945445287&a=3013769&m=65912" },
-          { size: "Talla 8", price: 17.33, url: "https://www.awin1.com/pclick.php?p=43945445288&a=3013769&m=65912" },
-          { size: "Talla 9", price: 17.33, url: "https://www.awin1.com/pclick.php?p=43945445289&a=3013769&m=65912" },
+          { size: "Talla 10", price: 18.17, url: "https://www.awin1.com/pclick.php?p=43945445290&a=3013769&m=65912" },
+          { size: "Talla 11", price: 9.08, url: "https://www.awin1.com/pclick.php?p=37580380323&a=3013769&m=65912" },
+          { size: "Talla 7", price: 18.17, url: "https://www.awin1.com/pclick.php?p=43945445287&a=3013769&m=65912" },
+          { size: "Talla 8", price: 18.17, url: "https://www.awin1.com/pclick.php?p=43945445288&a=3013769&m=65912" },
+          { size: "Talla 9", price: 18.17, url: "https://www.awin1.com/pclick.php?p=43945445289&a=3013769&m=65912" },
         ],
       },
       {
@@ -3988,6 +4064,37 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "jako-guantes-de-portero-jako-animal-basic-rc-protection-negro",
+    brand: "Jako",
+    model: "Guantes de portero Jako Animal Basic RC Protection - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 40.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46226026736&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fa%2Fjako_2595-u-810_noir-blanc-vert-fluo_1.jpg&feedId=89032&k=37389fce0c9b821d7b27ebbad8042096c10c82c9",
+        sizes: ["Talla 12"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 39.0,
+        priceMax: 40.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2595-u-810-gants-de-gardien-jako-animal-basic-rc-protection-noir-blanc-vert-fluo",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/a/jako_2595-u-810_noir-blanc-vert-fluo_1.jpg",
+        sizes: ["11", "12"],
+        sizePrices: [
+          { size: "11", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2595-u-810-gants-de-gardien-jako-animal-basic-rc-protection-noir-blanc-vert-fluo" },
+          { size: "12", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2595-u-810-gants-de-gardien-jako-animal-basic-rc-protection-noir-blanc-vert-fluo" },
+        ],
+      },
+    ],
+  },
+  {
     id: "jako-guantes-de-portero-jako-animal-giga-nc-blanco",
     brand: "Jako",
     model: "Guantes de portero Jako Animal GIGA NC - Blanco",
@@ -3995,16 +4102,17 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 64.0,
+        price: 65.0,
         priceMax: 89.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630379208&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fa%2Fjako_2592-u-014_blanc-noir-vert-fluo_1.jpg&feedId=89032&k=0ec91c8f5ddd3758cd65ca262bddeaa414adf6ef",
-        sizes: ["Talla 12", "Talla 7.5"],
+        sizes: ["Talla 11.5", "Talla 12", "Talla 7.5"],
         sizePrices: [
+          { size: "Talla 11.5", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379216&a=3013769&m=65912" },
           { size: "Talla 12", price: 89.0, url: "https://www.awin1.com/pclick.php?p=42630379217&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 64.0, url: "https://www.awin1.com/pclick.php?p=42630379208&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 65.0, url: "https://www.awin1.com/pclick.php?p=42630379208&a=3013769&m=65912" },
         ],
       },
       {
@@ -4032,7 +4140,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.0,
+        price: 40.0,
         priceMax: 59.0,
         shipping: 9.99,
         currency: "EUR",
@@ -4042,7 +4150,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         sizePrices: [
           { size: "Talla 11.5", price: 59.0, url: "https://www.awin1.com/pclick.php?p=42630379226&a=3013769&m=65912" },
           { size: "Talla 12", price: 59.0, url: "https://www.awin1.com/pclick.php?p=42630379227&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42630379222&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 40.0, url: "https://www.awin1.com/pclick.php?p=42630379222&a=3013769&m=65912" },
         ],
       },
       {
@@ -4073,7 +4181,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 59.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42630379236&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42630379235&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fa%2Fjako_2593-u-806_noir-vert-fluo_1.jpg&feedId=89032&k=eb5adadae1c675cdb69e3e6cb144a40753188eb7",
         sizes: ["Talla 11", "Talla 11.5"],
       },
@@ -4125,9 +4233,9 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 129.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44702289922&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44627811863&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fa%2Fjako-2546-u-667-blanc-rhodamine-rouge-bleu-69b14a24ea7d4-1.jpg&feedId=89032&k=c1e63b88932f1112e99d137f01d87fab46e07ddb",
-        sizes: ["Talla 10", "Talla 10.5", "Talla 12", "Talla 7", "Talla 8", "Talla 9", "Talla 9.5"],
+        sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9", "Talla 9.5"],
       },
       {
         store: "FootStoreFR",
@@ -4151,7 +4259,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 89.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44627811869&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44627811871&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fa%2Fjako-2548-u-667-blanc-rhodamine-rouge-bleu-69b14a32c717d-1.jpg&feedId=89032&k=55ad2680d947c4900f5e845d912dd882998a204e",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 12", "Talla 8", "Talla 9", "Talla 9.5"],
       },
@@ -4177,7 +4285,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 79.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44627811877&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46381764401&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fa%2Fjako-2547-u-667-blanc-rhodamine-rouge-bleu-69b14a33390f9-1.jpg&feedId=89032&k=3b76aa523ce17473b26f0cd92976d449d245a119",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 12", "Talla 7", "Talla 9", "Talla 9.5"],
       },
@@ -4217,10 +4325,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 55.27,
+        price: 56.66,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443431&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443427&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401711-201-white-black-6a91abab92ee5-1.jpg&feedId=89032&k=5149e7c90251805e24d8d5ec1495ee3f12f6590c",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4243,7 +4351,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 79.92,
+        price: 81.67,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44323037061&a=3013769&m=65912",
@@ -4269,10 +4377,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 94.62,
+        price: 96.57,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40755405581&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44338943069&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401362.013_turquesa-fluor_1.jpg&feedId=89032&k=499c24e3067d1e338bc20032542422443346d72b",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4304,10 +4412,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 94.62,
+        price: 96.57,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44338943064&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38827720282&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401362.603_rojo-marino_1.jpg&feedId=89032&k=d6b14dec151028c64ba92c5185ad6acf85bf7e00",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4339,10 +4447,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.36,
+        price: 49.65,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443436&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443432&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401713-201-white-black-6a91abad2354d-1.jpg&feedId=89032&k=90c7109266b7201df40e2c8cdce5cc98717c761f",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4365,10 +4473,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 100.67,
+        price: 102.71,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443443&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443444&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401943-201-white-black-6a91abb4e1e7a-1.jpg&feedId=89032&k=564875f3a66cb5df8181f83fcd42718727d130cd",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4391,10 +4499,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 100.67,
+        price: 102.71,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529441704&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529441705&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401181.108_0.jpg&feedId=89032&k=e753063cf438044e70cdc148f835ae12306b0265",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4417,20 +4525,20 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.0,
-        priceMax: 100.67,
+        price: 49.0,
+        priceMax: 102.71,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529441706&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401181.121_0.jpg&feedId=89032&k=2f7da43bd34e660221775e9d99348a3802e9f19a",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 100.67, url: "https://www.awin1.com/pclick.php?p=42529441708&a=3013769&m=65912" },
-          { size: "Talla 11", price: 100.67, url: "https://www.awin1.com/pclick.php?p=42529441709&a=3013769&m=65912" },
-          { size: "Talla 12", price: 100.67, url: "https://www.awin1.com/pclick.php?p=42529441710&a=3013769&m=65912" },
-          { size: "Talla 7", price: 48.0, url: "https://www.awin1.com/pclick.php?p=42529441706&a=3013769&m=65912" },
-          { size: "Talla 8", price: 100.67, url: "https://www.awin1.com/pclick.php?p=42529441707&a=3013769&m=65912" },
-          { size: "Talla 9", price: 100.67, url: "https://www.awin1.com/pclick.php?p=37923975939&a=3013769&m=65912" },
+          { size: "Talla 10", price: 102.71, url: "https://www.awin1.com/pclick.php?p=42529441708&a=3013769&m=65912" },
+          { size: "Talla 11", price: 102.71, url: "https://www.awin1.com/pclick.php?p=42529441709&a=3013769&m=65912" },
+          { size: "Talla 12", price: 102.71, url: "https://www.awin1.com/pclick.php?p=42529441710&a=3013769&m=65912" },
+          { size: "Talla 7", price: 49.0, url: "https://www.awin1.com/pclick.php?p=42529441706&a=3013769&m=65912" },
+          { size: "Talla 8", price: 102.71, url: "https://www.awin1.com/pclick.php?p=42529441707&a=3013769&m=65912" },
+          { size: "Talla 9", price: 102.71, url: "https://www.awin1.com/pclick.php?p=37923975939&a=3013769&m=65912" },
         ],
       },
       {
@@ -4461,10 +4569,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.63,
+        price: 47.89,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44338938766&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44338938768&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_400911.105_0.jpg&feedId=89032&k=5b965e460b99e970f89190e4612e10326409a734",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4487,10 +4595,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.36,
+        price: 49.65,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443438&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443439&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401712-117-negro-verde-fluor-6a91abb357b1c-1.jpg&feedId=89032&k=f5bab4b85617d628b9f6a76b4beda58ce40beb53",
         sizes: ["Talla 10", "Talla 9"],
       },
@@ -4513,10 +4621,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.36,
+        price: 49.65,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443425&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443420&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401712-207-white-royal-6a91aba651a5d-1.jpg&feedId=89032&k=df04cb2a338d4f9ad10099e73c2b33f4a283b4da",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4539,10 +4647,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 88.57,
+        price: 90.44,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443413&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443408&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401942-701-royal-black-6a91ae2b81ecc-1.jpg&feedId=89032&k=59bd58eeda7f79472fb8f152c665434cd9526ad3",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4565,10 +4673,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.36,
+        price: 49.65,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443382&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443383&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401713-119-black-6a91ab9a18688-1.jpg&feedId=89032&k=cb1bdea4d5a717bf8c6d59ab12c7aa21f9b8d2c1",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4591,10 +4699,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.36,
+        price: 49.65,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443388&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443385&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401712-106-black-red-6a91ab9b90773-1.jpg&feedId=89032&k=15b2676bedb4307c15a364c3f6ac8c8986ed8eed",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4617,10 +4725,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 55.27,
+        price: 56.66,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443396&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443398&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401711-117-negro-verde-fluor-6a91ab9fa96eb-1.jpg&feedId=89032&k=c19a710d83d33da9aba04e241596fd0e0ccc936e",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4643,10 +4751,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 100.67,
+        price: 102.71,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443392&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443390&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401943-051-naranja-fluor-6a91ab9e01932-1.jpg&feedId=89032&k=58b7c954d22dd128dd222c131aeb7b99d02a7c1e",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4669,19 +4777,19 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.07,
-        priceMax: 69.0,
+        price: 32.11,
+        priceMax: 70.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44338937040&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38942325960&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_400422.501_0.jpg&feedId=89032&k=3cba45c70387d962bd69993c9d8abab4e30892b3",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 31.07, url: "https://www.awin1.com/pclick.php?p=38942325960&a=3013769&m=65912" },
-          { size: "Talla 11", price: 69.0, url: "https://www.awin1.com/pclick.php?p=38942325961&a=3013769&m=65912" },
-          { size: "Talla 12", price: 31.07, url: "https://www.awin1.com/pclick.php?p=44338937040&a=3013769&m=65912" },
-          { size: "Talla 8", price: 69.0, url: "https://www.awin1.com/pclick.php?p=38942325958&a=3013769&m=65912" },
-          { size: "Talla 9", price: 31.07, url: "https://www.awin1.com/pclick.php?p=38942325959&a=3013769&m=65912" },
+          { size: "Talla 10", price: 32.11, url: "https://www.awin1.com/pclick.php?p=38942325960&a=3013769&m=65912" },
+          { size: "Talla 11", price: 70.0, url: "https://www.awin1.com/pclick.php?p=38942325961&a=3013769&m=65912" },
+          { size: "Talla 12", price: 32.11, url: "https://www.awin1.com/pclick.php?p=44338937040&a=3013769&m=65912" },
+          { size: "Talla 8", price: 70.0, url: "https://www.awin1.com/pclick.php?p=38942325958&a=3013769&m=65912" },
+          { size: "Talla 9", price: 32.11, url: "https://www.awin1.com/pclick.php?p=38942325959&a=3013769&m=65912" },
         ],
       },
       {
@@ -4711,10 +4819,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 88.57,
+        price: 90.44,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443407&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443404&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401942-530-pink-6a91ae25ee35a-1.jpg&feedId=89032&k=6caa69e94f9a5bacaf717a28bb03e14581d167eb",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4737,10 +4845,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 112.77,
+        price: 114.99,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443455&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443452&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401944-201-white-black-6a91abb7a431d-1.jpg&feedId=89032&k=29f060cd74ee098fd0874cc04b8edbf33d79c97f",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4763,10 +4871,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 112.77,
+        price: 114.99,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443448&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443449&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401944-116-black-turquoise-6a91abb684f27-1.jpg&feedId=89032&k=dd4987889cd32a28cd0759942dca515a795ae0f2",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4789,10 +4897,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 100.67,
+        price: 102.71,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443417&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443418&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401943-021-verde-fluor-negro-6a91aba4014ee-1.jpg&feedId=89032&k=62afcc546bc5ba40b64689edbe6232b34b8bf37d",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4815,10 +4923,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.18,
+        price: 60.62,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529622818&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43787648402&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401366.721_royal-amarillo-fluor_1.jpg&feedId=89032&k=78599883ae6fb276df0c3011ad75aa6147611e35",
         sizes: ["Talla 10", "Talla 11", "Talla 9"],
       },
@@ -4841,10 +4949,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.07,
+        price: 32.11,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443485&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443488&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401709-700-royal-6a91ae3a26efa-1.jpg&feedId=89032&k=65c577886192b4d0145bf4172ea3e61d8f3b8b25",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 8", "Talla 9"],
       },
@@ -4868,14 +4976,14 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 52.0,
-        priceMax: 54.43,
+        priceMax: 55.8,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529441711&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401183.220_0.jpg&feedId=89032&k=fc9729cec38c201fe1d9a7d883c121f1a6373558",
         sizes: ["Talla 12", "Talla 9"],
         sizePrices: [
-          { size: "Talla 12", price: 54.43, url: "https://www.awin1.com/pclick.php?p=44338937041&a=3013769&m=65912" },
+          { size: "Talla 12", price: 55.8, url: "https://www.awin1.com/pclick.php?p=44338937041&a=3013769&m=65912" },
           { size: "Talla 9", price: 52.0, url: "https://www.awin1.com/pclick.php?p=42529441711&a=3013769&m=65912" },
         ],
       },
@@ -4929,10 +5037,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.18,
+        price: 60.62,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529622815&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529622813&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401366.105_negro-rosa_1.jpg&feedId=89032&k=756b63f368e48624dae3767d037c73175d4bfe6c",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 8", "Talla 9"],
       },
@@ -4955,10 +5063,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.27,
+        price: 53.61,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443460&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443462&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401947-118-black-6a91ae32486c9-1.jpg&feedId=89032&k=cbf66a5aadfb21fad1b515b2fbb8d171e756df31",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -4981,7 +5089,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.27,
+        price: 53.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45860443464&a=3013769&m=65912",
@@ -5007,10 +5115,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.27,
+        price: 53.61,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443478&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443477&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401947-117-negro-verde-fluor-6a91ae3647efa-1.jpg&feedId=89032&k=d021077ae4fcfb05f8a3c275d1f9b74208ccb649",
         sizes: ["Talla 11", "Talla 12"],
       },
@@ -5033,10 +5141,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.07,
+        price: 32.11,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443479&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443484&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401709-600-red-6a91ae37a09d0-1.jpg&feedId=89032&k=d2193001e59b5f39508db5f05436035003ef0ee7",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5068,7 +5176,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.52,
+        price: 16.33,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44338937043&a=3013769&m=65912",
@@ -5094,7 +5202,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.52,
+        price: 16.33,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44338937042&a=3013769&m=65912",
@@ -5123,7 +5231,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 23.98,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443507&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443508&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401950-701-royal-6a91b59e29976-1.jpg&feedId=89032&k=279a827e3da38f72953bc07ba771040a90c8beb6",
         sizes: ["Talla 4", "Talla 5", "Talla 6", "Talla 7", "Talla 8"],
       },
@@ -5146,10 +5254,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.52,
+        price: 16.33,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443512&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443510&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401707-717-royal-verde-fluor-6a91b5a23b6aa-1.jpg&feedId=89032&k=0a270a6d70e5615a53a7b4affa6970e41eee945e",
         sizes: ["Talla 4", "Talla 5", "Talla 6", "Talla 7", "Talla 8"],
       },
@@ -5172,7 +5280,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.52,
+        price: 16.33,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45860443492&a=3013769&m=65912",
@@ -5198,7 +5306,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.52,
+        price: 16.33,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45860443497&a=3013769&m=65912",
@@ -5235,7 +5343,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 23.98,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443501&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443503&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401950-601-red-black-6a91b59a0f643-1.jpg&feedId=89032&k=54b2bf086132780022f9f6220cc54717cf600e4a",
         sizes: ["Talla 4", "Talla 5", "Talla 6", "Talla 7", "Talla 8"],
       },
@@ -5261,7 +5369,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 23.98,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443515&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443519&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401950-021-verde-fluor-negro-6a91b5a67943a-1.jpg&feedId=89032&k=4c069e095d934c66e0f12a5a7146204babdb292a",
         sizes: ["Talla 4", "Talla 5", "Talla 6", "Talla 7", "Talla 8"],
       },
@@ -5284,18 +5392,18 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 58.0,
-        priceMax: 60.91,
+        price: 59.0,
+        priceMax: 62.38,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529441718&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401182.308_0.jpg&feedId=89032&k=ba19e5f1abe49bd83fcb1d11bc6ed746cb85181d",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 60.91, url: "https://www.awin1.com/pclick.php?p=44338937045&a=3013769&m=65912" },
-          { size: "Talla 11", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42529441718&a=3013769&m=65912" },
-          { size: "Talla 12", price: 60.91, url: "https://www.awin1.com/pclick.php?p=42529441719&a=3013769&m=65912" },
-          { size: "Talla 9", price: 60.91, url: "https://www.awin1.com/pclick.php?p=44338937044&a=3013769&m=65912" },
+          { size: "Talla 10", price: 62.38, url: "https://www.awin1.com/pclick.php?p=44338937045&a=3013769&m=65912" },
+          { size: "Talla 11", price: 59.0, url: "https://www.awin1.com/pclick.php?p=42529441718&a=3013769&m=65912" },
+          { size: "Talla 12", price: 62.38, url: "https://www.awin1.com/pclick.php?p=42529441719&a=3013769&m=65912" },
+          { size: "Talla 9", price: 62.38, url: "https://www.awin1.com/pclick.php?p=44338937044&a=3013769&m=65912" },
         ],
       },
       {
@@ -5325,19 +5433,19 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 53.0,
-        priceMax: 60.91,
+        priceMax: 62.38,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42553066809&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42553066808&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401182.317_0.jpg&feedId=89032&k=c4028760e459b844fb185dbe146f55fb1c28edc8",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 60.91, url: "https://www.awin1.com/pclick.php?p=42529441721&a=3013769&m=65912" },
-          { size: "Talla 11", price: 60.91, url: "https://www.awin1.com/pclick.php?p=42529441722&a=3013769&m=65912" },
-          { size: "Talla 12", price: 60.91, url: "https://www.awin1.com/pclick.php?p=42529441723&a=3013769&m=65912" },
+          { size: "Talla 10", price: 62.38, url: "https://www.awin1.com/pclick.php?p=42529441721&a=3013769&m=65912" },
+          { size: "Talla 11", price: 62.38, url: "https://www.awin1.com/pclick.php?p=42529441722&a=3013769&m=65912" },
+          { size: "Talla 12", price: 62.38, url: "https://www.awin1.com/pclick.php?p=42529441723&a=3013769&m=65912" },
           { size: "Talla 7", price: 53.0, url: "https://www.awin1.com/pclick.php?p=42553066808&a=3013769&m=65912" },
           { size: "Talla 8", price: 53.0, url: "https://www.awin1.com/pclick.php?p=42553066809&a=3013769&m=65912" },
-          { size: "Talla 9", price: 60.91, url: "https://www.awin1.com/pclick.php?p=44338937046&a=3013769&m=65912" },
+          { size: "Talla 9", price: 62.38, url: "https://www.awin1.com/pclick.php?p=44338937046&a=3013769&m=65912" },
         ],
       },
       {
@@ -5368,10 +5476,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 40.17,
+        price: 41.33,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443533&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443534&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401945-208-white-orange-6a91b5b4efed5-1.jpg&feedId=89032&k=d602d04fe9389e7aae230b69c3a520bcde1c6326",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5394,10 +5502,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.62,
+        price: 28.6,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44338943076&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43877217787&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_400908.216_blanco-turquesa_1.jpg&feedId=89032&k=d56bb48d8dc3868a938fc274455c51cc8cd4ed4b",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5428,17 +5536,17 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.62,
+        price: 28.6,
         priceMax: 59.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529622827&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46318025616&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_400908.106_negro-rojo_1.jpg&feedId=89032&k=13a7c8e1862980652bb736751170b728798fb1a1",
         sizes: ["Talla 11", "Talla 12", "Talla 7", "Talla 9"],
         sizePrices: [
-          { size: "Talla 11", price: 27.62, url: "https://www.awin1.com/pclick.php?p=44338943078&a=3013769&m=65912" },
-          { size: "Talla 12", price: 27.62, url: "https://www.awin1.com/pclick.php?p=46318025616&a=3013769&m=65912" },
-          { size: "Talla 7", price: 27.62, url: "https://www.awin1.com/pclick.php?p=42529622827&a=3013769&m=65912" },
+          { size: "Talla 11", price: 28.6, url: "https://www.awin1.com/pclick.php?p=44338943078&a=3013769&m=65912" },
+          { size: "Talla 12", price: 28.6, url: "https://www.awin1.com/pclick.php?p=46318025616&a=3013769&m=65912" },
+          { size: "Talla 7", price: 28.6, url: "https://www.awin1.com/pclick.php?p=42529622827&a=3013769&m=65912" },
           { size: "Talla 9", price: 59.0, url: "https://www.awin1.com/pclick.php?p=42529622829&a=3013769&m=65912" },
         ],
       },
@@ -5468,10 +5576,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 40.17,
+        price: 41.33,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443522&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443525&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401945-122-black-gold-6a91b5ab31e1b-1.jpg&feedId=89032&k=c982d1a0e9a7c804e22afa4d5f745ced94d959e6",
         sizes: ["Talla 10", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5494,7 +5602,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 40.17,
+        price: 41.33,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45860443531&a=3013769&m=65912",
@@ -5520,7 +5628,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.07,
+        price: 28.5,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45860443553&a=3013769&m=65912",
@@ -5572,10 +5680,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.07,
+        price: 28.5,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443542&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443546&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401949-116-black-turquoise-6a91b5bd6aea0-1.jpg&feedId=89032&k=1db3988a3faa8170982bdc7770b17232949ca941",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 4", "Talla 5", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5590,6 +5698,9 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-hunter-orange-2",
     brand: "Joma",
@@ -5598,10 +5709,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.07,
+        price: 28.5,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443565&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443564&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401949-809-naranja-amarillo-6a91b5c771294-1.jpg&feedId=89032&k=fedbcafe6e956279477914fabea3889267e4f25e",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 4", "Talla 5", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5624,10 +5735,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.52,
+        price: 16.33,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443566&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443569&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401708-880-orange-6a91b5cc95d00-1.jpg&feedId=89032&k=1d28bdedc7124e5d08d72221472cc216c5cea37c",
         sizes: ["Talla 4", "Talla 6", "Talla 7", "Talla 8"],
       },
@@ -5653,7 +5764,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 28.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44212468252&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529622842&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401477.601_rojo-negro_1.jpg&feedId=89032&k=29a1d9d66fe94b14f02ffe2fca3644bc15561266",
         sizes: ["Talla 12", "Talla 7"],
       },
@@ -5671,19 +5782,16 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         priceMax: 39.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44212464510&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529441724&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_400909.417_0.jpg&feedId=89032&k=d077d5ebe75a4d6821fa72706739b23496269238",
         sizes: ["Talla 7", "Talla 8"],
         sizePrices: [
-          { size: "Talla 7", price: 39.0, url: "https://www.awin1.com/pclick.php?p=42529441724&a=3013769&m=65912" },
-          { size: "Talla 8", price: 38.0, url: "https://www.awin1.com/pclick.php?p=44212464510&a=3013769&m=65912" },
+          { size: "Talla 7", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42529441724&a=3013769&m=65912" },
+          { size: "Talla 8", price: 39.0, url: "https://www.awin1.com/pclick.php?p=44212464510&a=3013769&m=65912" },
         ],
       },
     ],
   },
-];
-
-const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-gants-de-gardien-joma-hunter-vert",
     brand: "Joma",
@@ -5692,7 +5800,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.07,
+        price: 28.5,
         priceMax: 30.0,
         shipping: 9.99,
         currency: "EUR",
@@ -5700,7 +5808,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401477.021_verde-fluor-negro_1.jpg&feedId=89032&k=c92e6d4982c44b22fe6f0750a7aaaa15813e1335",
         sizes: ["Talla 5", "Talla 7"],
         sizePrices: [
-          { size: "Talla 5", price: 28.07, url: "https://www.awin1.com/pclick.php?p=44338943094&a=3013769&m=65912" },
+          { size: "Talla 5", price: 28.5, url: "https://www.awin1.com/pclick.php?p=44338943094&a=3013769&m=65912" },
           { size: "Talla 7", price: 30.0, url: "https://www.awin1.com/pclick.php?p=44212468254&a=3013769&m=65912" },
         ],
       },
@@ -5723,10 +5831,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 43.17,
+        price: 44.39,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443594&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443590&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401714-204-white-green-6a91ae83c18b9-1.jpg&feedId=89032&k=e51391ddf9fb015b3d1c81ca3a4626da6c296744",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5749,10 +5857,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 43.17,
+        price: 44.39,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443600&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443597&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401714-203-white-navy-6a91ae89c6bd0-1.jpg&feedId=89032&k=be0e893cca63b0ae2a6d3b249cb53a5324245d64",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5775,10 +5883,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 76.47,
+        price: 78.16,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44338943100&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44338943099&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401361.801_naranja-negro_1.jpg&feedId=89032&k=ca6e87ac0a67cbac0a58ce42e7bad5fee5af7f19",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5801,10 +5909,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 76.47,
+        price: 78.16,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44338943101&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44338943102&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401361.108_negro-naranja_1.jpg&feedId=89032&k=3d41a78a4f06ebf66c096b1f42c6b9193aa1587c",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5836,10 +5944,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 76.47,
+        price: 78.16,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443576&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443572&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401946-116-black-6a91ae6aa4f28-1.jpg&feedId=89032&k=bcfb7048988228eb669218fa4b5f8feaf776bd61",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5862,10 +5970,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 76.47,
+        price: 78.16,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443580&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443583&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401946-114-black-violet-6a91ae7295f18-1.jpg&feedId=89032&k=967d5b64f48fedd4ff078bc42ca5a90fb0cd1616",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -5888,7 +5996,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 76.47,
+        price: 78.16,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45860443585&a=3013769&m=65912",
@@ -5914,19 +6022,19 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 53.0,
-        priceMax: 64.8,
+        price: 54.0,
+        priceMax: 66.32,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42553066814&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401195.301_0.jpg&feedId=89032&k=42d9b3300db53e372f4d14517e3ef1bc1170110d",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 64.8, url: "https://www.awin1.com/pclick.php?p=42529441727&a=3013769&m=65912" },
-          { size: "Talla 11", price: 57.0, url: "https://www.awin1.com/pclick.php?p=42553066815&a=3013769&m=65912" },
-          { size: "Talla 12", price: 64.8, url: "https://www.awin1.com/pclick.php?p=44338937047&a=3013769&m=65912" },
-          { size: "Talla 8", price: 53.0, url: "https://www.awin1.com/pclick.php?p=42553066814&a=3013769&m=65912" },
-          { size: "Talla 9", price: 64.8, url: "https://www.awin1.com/pclick.php?p=42529441726&a=3013769&m=65912" },
+          { size: "Talla 10", price: 66.32, url: "https://www.awin1.com/pclick.php?p=42529441727&a=3013769&m=65912" },
+          { size: "Talla 11", price: 58.0, url: "https://www.awin1.com/pclick.php?p=42553066815&a=3013769&m=65912" },
+          { size: "Talla 12", price: 66.32, url: "https://www.awin1.com/pclick.php?p=44338937047&a=3013769&m=65912" },
+          { size: "Talla 8", price: 54.0, url: "https://www.awin1.com/pclick.php?p=42553066814&a=3013769&m=65912" },
+          { size: "Talla 9", price: 66.32, url: "https://www.awin1.com/pclick.php?p=42529441726&a=3013769&m=65912" },
         ],
       },
       {
@@ -5959,7 +6067,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 42.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42553066811&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42553066812&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401195.201_0.jpg&feedId=89032&k=53dfa594f4d6a6b08766b670b5004048b502b2c2",
         sizes: ["Talla 11", "Talla 12", "Talla 8"],
       },
@@ -5988,10 +6096,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 63.93,
+        price: 65.45,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443627&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443628&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401948-717-royal-6a91ae9a867a2-1.jpg&feedId=89032&k=341d51964d0a5bb5fa78c12ec0d08e03247aa44f",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -6014,10 +6122,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 34.53,
+        price: 35.62,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443603&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443605&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401710-061-amarillo-fluor-negro-6a91ae8b88ac1-1.jpg&feedId=89032&k=0d5cbef944ee9c11f30d4e77d5fbd40b4fbf1e40",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -6049,10 +6157,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 63.93,
+        price: 65.45,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529622859&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529622860&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_401364.170_antracita-amarillo-fluor_1.jpg&feedId=89032&k=8d05a5536d48e4e2753843e3e71fede948228502",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 8", "Talla 9"],
       },
@@ -6083,7 +6191,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 63.93,
+        price: 65.45,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44338943112&a=3013769&m=65912",
@@ -6109,10 +6217,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 63.93,
+        price: 65.45,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443610&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443608&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401948-881-orange-black-6a91ae8f1afc1-1.jpg&feedId=89032&k=6a4ab5bf8dfacbfc0f8b346e3cf9a54529e9a5c6",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -6135,10 +6243,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 34.53,
+        price: 35.62,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443624&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443622&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401710-031-rosa-fluor-negro-6a91ae92f0d78-1.jpg&feedId=89032&k=a9af8f2ff869de305d808959376801a43e691488",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -6161,10 +6269,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 63.93,
+        price: 65.45,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45860443617&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45860443614&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-401948-601-red-black-6a91ae90bc2fd-1.jpg&feedId=89032&k=03b9803d2c2a22dccf01f343555884cf4abddba6",
         sizes: ["Talla 10", "Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -6180,32 +6288,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "joma-guantes-de-portero-para-mujer-joma-gk-pro-negro",
-    brand: "Joma",
-    model: "Guantes de portero para mujer Joma Gk-Pro - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 27.62,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45092193581&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_400908.109_0.jpg&feedId=89032&k=2b77f870fa1cb707ac264f5361a517541974c2e0",
-        sizes: ["Talla 7"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 22.41,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-109-gants-de-gardien-femme-joma-gk-pro-noir",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400908.109_0.webp",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
     id: "kappa-guantes-de-portero-fc-metz-noir",
     brand: "Kappa",
     model: "Guantes de portero FC Metz - Noir",
@@ -6213,7 +6295,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.84,
+        price: 26.8,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44291088686&a=3013769&m=65912",
@@ -6239,10 +6321,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.84,
+        price: 26.8,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44291088688&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44291088687&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fa%2Fkappa-34225mw-005-black-69c250835a9bd-1.jpg&feedId=89032&k=5b3dfd8122007ac59903a8b6cf32c594c814aae0",
         sizes: ["Talla 3", "Talla 7"],
       },
@@ -6265,10 +6347,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.39,
+        price: 36.89,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46255292938&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46255292939&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fl%2Fe%2Flegea-aclm22021009-10-black-6abf7afd7e192-1.jpg&feedId=89032&k=c9e0530b3ad985006c2ab8d1116519adca27ebeb",
         sizes: ["Talla 10", "Talla 11", "Talla 8", "Talla 9"],
       },
@@ -6282,10 +6364,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.39,
+        price: 36.89,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46255300859&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46255327644&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fl%2Fe%2Flegea-aclm22024002-10-fluo-neon-yellow-6abf7afe243b0-1.jpg&feedId=89032&k=fad37c80c599de7a13028fe8300e7495a6671b44",
         sizes: ["Talla 10", "Talla 11", "Talla 8", "Talla 9"],
       },
@@ -6302,7 +6384,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 24.9,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46255298010&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46255320794&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fl%2Fe%2Flegea-aclm22011006-10-black-6abf7890929ee-1.jpg&feedId=89032&k=344800d393905ec28b6abb3c3e064cbce973de07",
         sizes: ["Talla 10", "Talla 11", "Talla 9"],
       },
@@ -6316,10 +6398,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.13,
+        price: 29.63,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46255301933&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46255325231&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fl%2Fe%2Flegea-aclm22030310-10-white-6abf7aff0f9f6-1.jpg&feedId=89032&k=ea0cb8c6abd9afd1c0638f90fff312654c92759a",
         sizes: ["Talla 10", "Talla 11", "Talla 5", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -6333,12 +6415,29 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.13,
+        price: 29.63,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46255292936&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46255325233&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fl%2Fe%2Flegea-aclm22036104-10-light-blue-6abf7afe8eb33-1.jpg&feedId=89032&k=eae3a29954526563f0c366563e11af06f247f0e4",
         sizes: ["Talla 10", "Talla 11", "Talla 5", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "mitre-guantes-de-portero-mitre-magnetite",
+    brand: "Mitre",
+    model: "Guantes de portero Mitre Magnetite",
+    colour: "N/D",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 16.96,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124682221&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01808BJ7Y1_6e3p3ILDIE-scaled-1.jpg&feedId=109102&k=f86c3a8b7e6200e5fdaabd121daa74d12a1f56e4",
+        sizes: ["8"],
       },
     ],
   },
@@ -6350,7 +6449,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.58,
+        price: 27.03,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485368025&a=3013769&m=65912",
@@ -6376,19 +6475,19 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.86,
-        priceMax: 19.22,
+        price: 16.31,
+        priceMax: 19.72,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36830047576&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=36830047577&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fj4862-011-phslh000_s23.jpg&feedId=89032&k=0352b444fac43f519f0767ac0395cca7c307466d",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 15.86, url: "https://www.awin1.com/pclick.php?p=36830047576&a=3013769&m=65912" },
-          { size: "Talla 11", price: 15.86, url: "https://www.awin1.com/pclick.php?p=36830047577&a=3013769&m=65912" },
-          { size: "Talla 7", price: 19.22, url: "https://www.awin1.com/pclick.php?p=36823588869&a=3013769&m=65912" },
-          { size: "Talla 8", price: 15.86, url: "https://www.awin1.com/pclick.php?p=36823588868&a=3013769&m=65912" },
-          { size: "Talla 9", price: 19.22, url: "https://www.awin1.com/pclick.php?p=36823588867&a=3013769&m=65912" },
+          { size: "Talla 10", price: 16.31, url: "https://www.awin1.com/pclick.php?p=36830047576&a=3013769&m=65912" },
+          { size: "Talla 11", price: 16.31, url: "https://www.awin1.com/pclick.php?p=36830047577&a=3013769&m=65912" },
+          { size: "Talla 7", price: 19.72, url: "https://www.awin1.com/pclick.php?p=36823588869&a=3013769&m=65912" },
+          { size: "Talla 8", price: 16.31, url: "https://www.awin1.com/pclick.php?p=36823588868&a=3013769&m=65912" },
+          { size: "Talla 9", price: 19.72, url: "https://www.awin1.com/pclick.php?p=36823588867&a=3013769&m=65912" },
         ],
       },
       {
@@ -6418,10 +6517,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.92,
+        price: 16.21,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39603007649&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=39603007650&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_hf0546-013-phslh001-ss25.jpg&feedId=89032&k=0337b1c2df78122a684962c1facb31feebf920d9",
         sizes: ["S", "M", "L"],
       },
@@ -6444,17 +6543,17 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.45,
+        price: 17.9,
         priceMax: 32.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39656024986&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=39656024984&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_hf0546-011-phsfz001-nw110824.jpg&feedId=89032&k=31547c8567aa909c5d1189a09ae1b086fee780d2",
         sizes: ["S", "M", "L", "XL"],
         sizePrices: [
-          { size: "S", price: 21.06, url: "https://www.awin1.com/pclick.php?p=39656024983&a=3013769&m=65912" },
-          { size: "M", price: 17.45, url: "https://www.awin1.com/pclick.php?p=39656024986&a=3013769&m=65912" },
-          { size: "L", price: 17.45, url: "https://www.awin1.com/pclick.php?p=39656024984&a=3013769&m=65912" },
+          { size: "S", price: 21.56, url: "https://www.awin1.com/pclick.php?p=39656024983&a=3013769&m=65912" },
+          { size: "M", price: 17.9, url: "https://www.awin1.com/pclick.php?p=39656024986&a=3013769&m=65912" },
+          { size: "L", price: 17.9, url: "https://www.awin1.com/pclick.php?p=39656024984&a=3013769&m=65912" },
           { size: "XL", price: 32.0, url: "https://www.awin1.com/pclick.php?p=39656024985&a=3013769&m=65912" },
         ],
       },
@@ -6487,7 +6586,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 32.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43745910825&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45361861781&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_hf0546-010_black-black-black_1.jpg&feedId=89032&k=e4e1d525c6f4a0c851f6bb3eb907dd78a1d7817b",
         sizes: ["S", "M", "L"],
       },
@@ -6510,7 +6609,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.54,
+        price: 27.52,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348248651&a=3013769&m=65912",
@@ -6536,10 +6635,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.54,
+        price: 27.52,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45348248654&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45348248657&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-iq0662-011-black-off-white-off-white-6a5a5b33b7290-1.jpg&feedId=89032&k=4551719976ac65e695e93ff91e61ac5f42e8998c",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -6562,10 +6661,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.77,
+        price: 33.83,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46318089453&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46318029482&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-hv6409-010-noir-noir-noir-6acf7d4fa5d47-1.jpg&feedId=89032&k=c876c94689259588f8f64d7fe12daae53637a034",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -6579,19 +6678,19 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.86,
+        price: 16.31,
         priceMax: 29.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38388346114&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38388346113&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fj4862-420-phsfz001.jpg&feedId=89032&k=3bcd9728d4acb27b729295405903539ff54dd7a8",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 15.86, url: "https://www.awin1.com/pclick.php?p=38388346113&a=3013769&m=65912" },
-          { size: "Talla 11", price: 15.86, url: "https://www.awin1.com/pclick.php?p=38388346114&a=3013769&m=65912" },
+          { size: "Talla 10", price: 16.31, url: "https://www.awin1.com/pclick.php?p=38388346113&a=3013769&m=65912" },
+          { size: "Talla 11", price: 16.31, url: "https://www.awin1.com/pclick.php?p=38388346114&a=3013769&m=65912" },
           { size: "Talla 7", price: 29.0, url: "https://www.awin1.com/pclick.php?p=41104848263&a=3013769&m=65912" },
           { size: "Talla 8", price: 29.0, url: "https://www.awin1.com/pclick.php?p=38388346111&a=3013769&m=65912" },
-          { size: "Talla 9", price: 15.86, url: "https://www.awin1.com/pclick.php?p=38388346112&a=3013769&m=65912" },
+          { size: "Talla 9", price: 16.31, url: "https://www.awin1.com/pclick.php?p=38388346112&a=3013769&m=65912" },
         ],
       },
       {
@@ -6647,12 +6746,12 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.11,
+        price: 32.15,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46353982611&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46353991846&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-hq0257-101-white-dusty-cactus-dusty-cactus-6acf7d4d6c3b8-1.jpg&feedId=89032&k=bedecfe27d0b8132b0385f0f5befa564036771d1",
-        sizes: ["Talla 8"],
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
     ],
   },
@@ -6690,10 +6789,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.93,
+        price: 13.23,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36485372601&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=36485372600&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_cq7799-445_a.jpg&feedId=89032&k=782f1fba41f943f574cb3844dbdc0cca9bb82159",
         sizes: ["Talla 10", "Talla 8", "Talla 9"],
       },
@@ -6716,17 +6815,17 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.67,
-        priceMax: 37.0,
+        price: 37.07,
+        priceMax: 37.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38553234401&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fb2998-420-phslh001.jpg&feedId=89032&k=3d7abf96ffcf7b3e3f5cd3c57c079075ce0284cf",
         sizes: ["Talla 11", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 11", price: 37.0, url: "https://www.awin1.com/pclick.php?p=38553234403&a=3013769&m=65912" },
-          { size: "Talla 8", price: 36.67, url: "https://www.awin1.com/pclick.php?p=38553234401&a=3013769&m=65912" },
-          { size: "Talla 9", price: 36.67, url: "https://www.awin1.com/pclick.php?p=38553234402&a=3013769&m=65912" },
+          { size: "Talla 11", price: 37.46, url: "https://www.awin1.com/pclick.php?p=38553234403&a=3013769&m=65912" },
+          { size: "Talla 8", price: 37.07, url: "https://www.awin1.com/pclick.php?p=38553234401&a=3013769&m=65912" },
+          { size: "Talla 9", price: 37.46, url: "https://www.awin1.com/pclick.php?p=38553234402&a=3013769&m=65912" },
         ],
       },
       {
@@ -6737,6 +6836,23 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb2998-420-gants-de-gardien-nike-grip3-blue-fury-glacier-blue-blackened-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fb2998-420-phslh001.webp",
         sizes: ["8", "9", "11"],
+      },
+    ],
+  },
+  {
+    id: "nike-guantes-de-portero-nike-grip3-blanc",
+    brand: "Nike",
+    model: "Guantes de portero Nike Grip3 - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 63.61,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46353992183&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-hq0256-100-white-dusty-cactus-dusty-cactus-6acf7d50f29a3-1.jpg&feedId=89032&k=784ab8dfc643fc09f89e5e840adbd2f788c2508c",
+        sizes: ["Talla 10", "Talla 6", "Talla 8"],
       },
     ],
   },
@@ -6774,10 +6890,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.44,
+        price: 49.94,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43654228227&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43654228229&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_hq0256-458_00.jpg&feedId=89032&k=16c29a3608082d89a1746fb4cb3b297a9d6c1623",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -6800,12 +6916,17 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.61,
+        price: 32.01,
+        priceMax: 32.34,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37731061063&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=36485373787&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_cn5651-015_a.jpg&feedId=89032&k=5a3e4fe4b4cbc12bf4ea0eaca54689f022e22dab",
         sizes: ["Talla 7", "Talla 8"],
+        sizePrices: [
+          { size: "Talla 7", price: 32.01, url: "https://www.awin1.com/pclick.php?p=36485373787&a=3013769&m=65912" },
+          { size: "Talla 8", price: 32.34, url: "https://www.awin1.com/pclick.php?p=37731061063&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -6826,18 +6947,18 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 37.81,
-        priceMax: 44.99,
+        price: 38.21,
+        priceMax: 45.49,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37067489011&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37067489009&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fb2998-011-phslh001-ss25.jpg&feedId=89032&k=01e1da243772e4d699d5f89b810b9852a939aa9e",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 37.81, url: "https://www.awin1.com/pclick.php?p=37067489011&a=3013769&m=65912" },
-          { size: "Talla 7", price: 38.15, url: "https://www.awin1.com/pclick.php?p=37067489012&a=3013769&m=65912" },
-          { size: "Talla 8", price: 37.81, url: "https://www.awin1.com/pclick.php?p=37067489009&a=3013769&m=65912" },
-          { size: "Talla 9", price: 44.99, url: "https://www.awin1.com/pclick.php?p=37067489010&a=3013769&m=65912" },
+          { size: "Talla 10", price: 38.6, url: "https://www.awin1.com/pclick.php?p=37067489011&a=3013769&m=65912" },
+          { size: "Talla 7", price: 38.6, url: "https://www.awin1.com/pclick.php?p=37067489012&a=3013769&m=65912" },
+          { size: "Talla 8", price: 38.21, url: "https://www.awin1.com/pclick.php?p=37067489009&a=3013769&m=65912" },
+          { size: "Talla 9", price: 45.49, url: "https://www.awin1.com/pclick.php?p=37067489010&a=3013769&m=65912" },
         ],
       },
       {
@@ -6866,16 +6987,16 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.7,
-        priceMax: 38.69,
+        price: 33.15,
+        priceMax: 39.19,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40334421482&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_cn5651-636-phslh001-ss25.jpg&feedId=89032&k=e87b2d5de22a2dd9451fcaa854c07e62f119f704",
         sizes: ["Talla 11", "Talla 8"],
         sizePrices: [
-          { size: "Talla 11", price: 32.7, url: "https://www.awin1.com/pclick.php?p=40334421482&a=3013769&m=65912" },
-          { size: "Talla 8", price: 38.69, url: "https://www.awin1.com/pclick.php?p=37891492798&a=3013769&m=65912" },
+          { size: "Talla 11", price: 33.15, url: "https://www.awin1.com/pclick.php?p=40334421482&a=3013769&m=65912" },
+          { size: "Talla 8", price: 39.19, url: "https://www.awin1.com/pclick.php?p=37891492798&a=3013769&m=65912" },
         ],
       },
       {
@@ -6895,37 +7016,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "nike-guantes-de-portero-nike-match-blanco",
-    brand: "Nike",
-    model: "Guantes de portero Nike Match - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 31.11,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43745917917&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F0%2F2025_08_nike_hq0257-100-phslh001.jpg&feedId=89032&k=fb26ac3136c7a54509e0e8fa668f50085b61ebea",
-        sizes: ["Talla 6"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 25.6,
-        priceMax: 32.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0257-100-gants-de-gardien-nike-match-white-black-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_08_nike_hq0257-100-phslh001.webp",
-        sizes: ["6", "11"],
-        sizePrices: [
-          { size: "6", price: 25.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0257-100-gants-de-gardien-nike-match-white-black-black" },
-          { size: "11", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0257-100-gants-de-gardien-nike-match-white-black-black" },
-        ],
-      },
-    ],
-  },
-  {
     id: "nike-guantes-de-portero-nike-match-bleu",
     brand: "Nike",
     model: "Guantes de portero Nike Match - Bleu",
@@ -6933,7 +7023,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.0,
+        price: 31.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46432579373&a=3013769&m=65912",
@@ -6950,7 +7040,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.28,
+        price: 13.74,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485373791&a=3013769&m=65912",
@@ -6976,7 +7066,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.99,
+        price: 18.49,
         priceMax: 27.0,
         shipping: 9.99,
         currency: "EUR",
@@ -6985,7 +7075,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         sizes: ["Talla 8", "Talla 9"],
         sizePrices: [
           { size: "Talla 8", price: 27.0, url: "https://www.awin1.com/pclick.php?p=36501568770&a=3013769&m=65912" },
-          { size: "Talla 9", price: 17.99, url: "https://www.awin1.com/pclick.php?p=36501568771&a=3013769&m=65912" },
+          { size: "Talla 9", price: 18.49, url: "https://www.awin1.com/pclick.php?p=36501568771&a=3013769&m=65912" },
         ],
       },
       {
@@ -7012,10 +7102,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.35,
+        price: 16.8,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38047250215&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38047250216&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fj4862-014-phsfz001.jpg&feedId=89032&k=b9eedf2be285642ff31bc4b5a5d709007c8a408a",
         sizes: ["Talla 10", "Talla 11"],
       },
@@ -7038,12 +7128,12 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.11,
+        price: 32.15,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43745910852&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43745910851&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_hq0257-010_black-white-white_1.jpg&feedId=89032&k=170af5f754d0016aa305ea845beecdb08e5e783d",
-        sizes: ["Talla 8", "Talla 9"],
+        sizes: ["Talla 7", "Talla 8"],
       },
       {
         store: "FootStoreFR",
@@ -7064,18 +7154,18 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.62,
-        priceMax: 25.0,
+        price: 14.07,
+        priceMax: 24.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485378013&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_cq7799-637_rouge_1.jpg&feedId=89032&k=1dc5d2f86e97387a8ad32be68b8712a50216d560",
         sizes: ["Talla 6", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 6", price: 25.0, url: "https://www.awin1.com/pclick.php?p=41104843126&a=3013769&m=65912" },
+          { size: "Talla 6", price: 24.0, url: "https://www.awin1.com/pclick.php?p=41104843126&a=3013769&m=65912" },
           { size: "Talla 7", price: 24.0, url: "https://www.awin1.com/pclick.php?p=41104843127&a=3013769&m=65912" },
           { size: "Talla 8", price: 24.0, url: "https://www.awin1.com/pclick.php?p=41104843128&a=3013769&m=65912" },
-          { size: "Talla 9", price: 13.62, url: "https://www.awin1.com/pclick.php?p=36485378013&a=3013769&m=65912" },
+          { size: "Talla 9", price: 14.07, url: "https://www.awin1.com/pclick.php?p=36485378013&a=3013769&m=65912" },
         ],
       },
       {
@@ -7133,7 +7223,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 29.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529824435&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529824437&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_hq0257-850_ember-glow-aurora-green-aurora-green_1.jpg&feedId=89032&k=7b0b20faa17b1a0fdf6fbf0bd0be045b5c37fbb2",
         sizes: ["Talla 10", "Talla 8", "Talla 9"],
       },
@@ -7156,7 +7246,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.35,
+        price: 16.8,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37146361025&a=3013769&m=65912",
@@ -7201,6 +7291,37 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
+    id: "nike-gants-de-gardien-nike-vapor-grip3-bleu",
+    brand: "Nike",
+    model: "Guantes de portero Nike Vapor Grip3 - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 119.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43839293123&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fb2999-420-phsfz001-nw112724.jpg&feedId=89032&k=d76caf4200aa500fbe66d286244f971002d6427f",
+        sizes: ["Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 88.0,
+        priceMax: 119.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0304-458-gants-de-gardien-nike-vapor-grip3-racer-blue-black-pink-blast",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-hq0304-458-racer-blue-black-pink-blast-1.webp",
+        sizes: ["7", "9"],
+        sizePrices: [
+          { size: "7", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0304-458-gants-de-gardien-nike-vapor-grip3-racer-blue-black-pink-blast" },
+          { size: "9", price: 119.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb2999-420-gants-de-gardien-nike-vapor-grip3-blue-fury-glacier-blue-blackened-blue" },
+        ],
+      },
+    ],
+  },
+  {
     id: "nike-guantes-de-portero-nike-vapor-grip3-blanco",
     brand: "Nike",
     model: "Guantes de portero Nike Vapor Grip3 - Blanco",
@@ -7208,7 +7329,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 53.17,
+        price: 53.62,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485372602&a=3013769&m=65912",
@@ -7227,25 +7348,11 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "nike-gants-de-gardien-nike-vapor-grip3-bleu",
+    id: "nike-guantes-de-portero-nike-vapor-grip3-bleu",
     brand: "Nike",
     model: "Guantes de portero Nike Vapor Grip3 - Bleu",
     colour: "Bleu",
     offers: [
-      {
-        store: "FootStoreFR",
-        price: 88.0,
-        priceMax: 119.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0304-458-gants-de-gardien-nike-vapor-grip3-racer-blue-black-pink-blast",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-hq0304-458-racer-blue-black-pink-blast-1.webp",
-        sizes: ["7", "9"],
-        sizePrices: [
-          { size: "7", price: 88.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0304-458-gants-de-gardien-nike-vapor-grip3-racer-blue-black-pink-blast" },
-          { size: "9", price: 119.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb2999-420-gants-de-gardien-nike-vapor-grip3-blue-fury-glacier-blue-blackened-blue" },
-        ],
-      },
       {
         store: "FootStoreES",
         price: 119.0,
@@ -7265,12 +7372,17 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 57.63,
+        price: 58.03,
+        priceMax: 109.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36501568773&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fb2999-010-phslh001-ss25.jpg&feedId=89032&k=3dfabe6a00e4f136e5462da3fcc357332170144e",
-        sizes: ["Talla 7"],
+        sizes: ["Talla 7", "Talla 8.5"],
+        sizePrices: [
+          { size: "Talla 7", price: 58.03, url: "https://www.awin1.com/pclick.php?p=36501568773&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 109.0, url: "https://www.awin1.com/pclick.php?p=36490404578&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -7296,17 +7408,17 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 87.2,
-        priceMax: 101.71,
+        price: 87.65,
+        priceMax: 102.21,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37146361029&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fd5766-011-phslh001-ss25.jpg&feedId=89032&k=42bbe8682826bd9564742d3ab4176932f3b3c3e2",
         sizes: ["Talla 8", "Talla 8.5", "Talla 9"],
         sizePrices: [
-          { size: "Talla 8", price: 101.71, url: "https://www.awin1.com/pclick.php?p=37146361028&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 87.2, url: "https://www.awin1.com/pclick.php?p=37146361031&a=3013769&m=65912" },
-          { size: "Talla 9", price: 87.2, url: "https://www.awin1.com/pclick.php?p=37146361029&a=3013769&m=65912" },
+          { size: "Talla 8", price: 102.21, url: "https://www.awin1.com/pclick.php?p=37146361028&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 87.65, url: "https://www.awin1.com/pclick.php?p=37146361031&a=3013769&m=65912" },
+          { size: "Talla 9", price: 87.65, url: "https://www.awin1.com/pclick.php?p=37146361029&a=3013769&m=65912" },
         ],
       },
       {
@@ -7334,10 +7446,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 65.4,
+        price: 65.85,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37146361032&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37146361033&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fb2999-011-phslh001-ss25.jpg&feedId=89032&k=dbaa10bce2ffaedc659c1b352abceb234ebbe84e",
         sizes: ["Talla 8", "Talla 8.5", "Talla 9"],
       },
@@ -7386,7 +7498,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.18,
+        price: 49.48,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485370898&a=3013769&m=65912",
@@ -7429,7 +7541,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.58,
+        price: 27.03,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40334420776&a=3013769&m=65912",
@@ -7448,7 +7560,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-negro-2",
+    id: "precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-negro",
     brand: "Precision",
     model: "Guantes de portero con protección para los dedos Precision Fusion X - Negro",
     colour: "Negro",
@@ -7464,17 +7576,12 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 24.0,
-        priceMax: 27.0,
+        price: 24.09,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529643601&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15811_black-fluo-yellow_1.jpg&feedId=89032&k=b79d230da2299dcf60c5b2b8df478fb5574dcff5",
-        sizes: ["Talla 10", "Talla 11"],
-        sizePrices: [
-          { size: "Talla 10", price: 27.0, url: "https://www.awin1.com/pclick.php?p=42529643602&a=3013769&m=65912" },
-          { size: "Talla 11", price: 24.0, url: "https://www.awin1.com/pclick.php?p=42529643601&a=3013769&m=65912" },
-        ],
+        sizes: ["Talla 11"],
       },
     ],
   },
@@ -7495,7 +7602,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 16.83,
+        price: 17.33,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529646161&a=3013769&m=65912",
@@ -7512,20 +7619,12 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 74.87,
-        priceMax: 75.0,
+        price: 75.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529646163&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg14808_black-fluo-orange_1.jpg&feedId=89032&k=0ded5ed8bf4b0b48a9e0e145e8d5e58b97c32202",
+        url: "https://www.awin1.com/pclick.php?p=42529646166&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg14808_black-fluo-orange_1.jpg&feedId=89032&k=d44e49f50a15d6462278affa4c397392843db660",
         sizes: ["Talla 10", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
-        sizePrices: [
-          { size: "Talla 10", price: 74.87, url: "https://www.awin1.com/pclick.php?p=42529646167&a=3013769&m=65912" },
-          { size: "Talla 8", price: 74.87, url: "https://www.awin1.com/pclick.php?p=42529646163&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 74.87, url: "https://www.awin1.com/pclick.php?p=42529646164&a=3013769&m=65912" },
-          { size: "Talla 9", price: 74.87, url: "https://www.awin1.com/pclick.php?p=42529646165&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 75.0, url: "https://www.awin1.com/pclick.php?p=42529646166&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreFR",
@@ -7554,10 +7653,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 70.66,
+        price: 72.28,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44078833934&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44078833932&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision-prg85006-noir-1.jpg&feedId=89032&k=24e7dc0824e700802d911f95615262cd924d7314",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -7580,10 +7679,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 67.56,
+        price: 69.12,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43318507499&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43654226675&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision-prg84206-blanc-noir-1.jpg&feedId=89032&k=b5a623621b444801933c6748808a37a5411506d2",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -7606,11 +7705,11 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 57.21,
+        price: 58.63,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43318507507&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision-prg84606-blanc-bleu-1.jpg&feedId=89032&k=01a04204266b6faaba4c05929f1b3b20cb12c79a",
+        url: "https://www.awin1.com/pclick.php?p=43318507506&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision-prg84606-blanc-bleu-1.jpg&feedId=89032&k=2f67f0d4e5be424bc8f881e2c384d30cbdf7cf93",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
       {
@@ -7632,21 +7731,21 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.88,
-        priceMax: 53.07,
+        price: 50.38,
+        priceMax: 54.43,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43318507511&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision-prg84806-bleu-noir-1.jpg&feedId=89032&k=ba0cb4645a2daa6c6447826e95a3ceb4542f11ee",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 53.07, url: "https://www.awin1.com/pclick.php?p=43318507515&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 53.07, url: "https://www.awin1.com/pclick.php?p=43318507516&a=3013769&m=65912" },
-          { size: "Talla 11", price: 53.07, url: "https://www.awin1.com/pclick.php?p=43318507517&a=3013769&m=65912" },
-          { size: "Talla 8", price: 49.88, url: "https://www.awin1.com/pclick.php?p=43318507511&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 53.07, url: "https://www.awin1.com/pclick.php?p=43318507512&a=3013769&m=65912" },
-          { size: "Talla 9", price: 53.07, url: "https://www.awin1.com/pclick.php?p=43318507513&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 53.07, url: "https://www.awin1.com/pclick.php?p=43318507514&a=3013769&m=65912" },
+          { size: "Talla 10", price: 54.43, url: "https://www.awin1.com/pclick.php?p=43318507515&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 54.43, url: "https://www.awin1.com/pclick.php?p=43318507516&a=3013769&m=65912" },
+          { size: "Talla 11", price: 54.43, url: "https://www.awin1.com/pclick.php?p=43318507517&a=3013769&m=65912" },
+          { size: "Talla 8", price: 50.38, url: "https://www.awin1.com/pclick.php?p=43318507511&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 54.43, url: "https://www.awin1.com/pclick.php?p=43318507512&a=3013769&m=65912" },
+          { size: "Talla 9", price: 54.43, url: "https://www.awin1.com/pclick.php?p=43318507513&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 54.43, url: "https://www.awin1.com/pclick.php?p=43318507514&a=3013769&m=65912" },
         ],
       },
       {
@@ -7668,10 +7767,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 62.38,
+        price: 63.87,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43318507521&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43318507520&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision-prg84406-noir-blanc-bleu-1.jpg&feedId=89032&k=15c2f88a6c8cd12d0a3a994b7d6085ae92b9928c",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -7733,7 +7832,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 34.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39474498685&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=39474498684&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15507_white-fluo-orange-black_1.jpg&feedId=89032&k=d60cf124862fe240e6882d58ffbb5cc43b2d6977",
         sizes: ["Talla 10", "Talla 11", "Talla 8", "Talla 9"],
       },
@@ -7759,7 +7858,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 41.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529646199&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529646198&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15408_black-fluo-orange-white_1.jpg&feedId=89032&k=8a5fedb9a9de706269d3fcf13e3f5a462ec00334",
         sizes: ["Talla 10", "Talla 11", "Talla 8", "Talla 9"],
       },
@@ -7782,7 +7881,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 43.27,
+        price: 43.67,
         priceMax: 72.0,
         shipping: 9.99,
         currency: "EUR",
@@ -7795,7 +7894,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
           { size: "Talla 8", price: 72.0, url: "https://www.awin1.com/pclick.php?p=38879724236&a=3013769&m=65912" },
           { size: "Talla 8.5", price: 72.0, url: "https://www.awin1.com/pclick.php?p=38879724237&a=3013769&m=65912" },
           { size: "Talla 9", price: 72.0, url: "https://www.awin1.com/pclick.php?p=38879724238&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 43.27, url: "https://www.awin1.com/pclick.php?p=38879724239&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 43.67, url: "https://www.awin1.com/pclick.php?p=38879724239&a=3013769&m=65912" },
         ],
       },
       {
@@ -7873,7 +7972,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 46.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529646205&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529646207&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.jpg&feedId=89032&k=6bbe7dc22023fd26a62e0145deeff4458306e5b1",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 9", "Talla 9.5"],
       },
@@ -7899,7 +7998,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 78.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529643593&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529643591&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg14608_white-fluo-orange-black_1.jpg&feedId=89032&k=acd0ee196bf698ce053eb1c74674ded2d5021ff2",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -7925,8 +8024,8 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 72.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529643600&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15008_black-fluo-yellow_1.jpg&feedId=89032&k=4aa209a1859d4492e8a350aff7203bd0379fe176",
+        url: "https://www.awin1.com/pclick.php?p=42529643594&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15008_black-fluo-yellow_1.jpg&feedId=89032&k=f90b33007a662f4abfda8162f0c0a225e6ad5548",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9.5"],
       },
       {
@@ -7948,10 +8047,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.74,
+        price: 17.57,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46356665549&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46356662708&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fu%2Fpuma_041952-02_1.jpg&feedId=89032&k=a06de3a83c7258899cdfd921da366db2cecc746e",
         sizes: ["Talla 10", "Talla 11", "Talla 5", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -7965,7 +8064,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 88.13,
+        price: 90.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45698877261&a=3013769&m=65912",
@@ -7991,10 +8090,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.74,
+        price: 17.57,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45663298191&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45663298190&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fu%2Fpuma-042145-01-beige-6a831ffb47f19-1.jpg&feedId=89032&k=ae3d17b63f100a3aff73821fbc0f4599fd9723b7",
         sizes: ["Talla 8", "Talla 9"],
       },
@@ -8051,7 +8150,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 111.47,
+        price: 113.67,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46391423175&a=3013769&m=65912",
@@ -8097,7 +8196,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 60.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45398895312&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45995961479&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670210-7783-black-shocking-orange-1.jpg&feedId=89032&k=c00e5ac1892fdfb0f4b463aa5c6c4267737f669f",
         sizes: ["Talla 10", "Talla 10.5", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -8123,7 +8222,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 40.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46305660141&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46305668289&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670215-7090-blck-aqua-blu-shock-orng-6accd828937e8-1.jpg&feedId=89032&k=4acae2b1fefb35bc837f87cf7bbcd11d800ad683",
         sizes: ["Talla 7", "Talla 7.5"],
       },
@@ -8166,7 +8265,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 125.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38902242331&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38902242333&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F5%2F4%2F5470455-7410.jpg&feedId=89032&k=26b9390fb935a8013d4fba698c2ae68d366cb58f",
         sizes: ["Talla 8", "Talla 8.5", "Talla 9"],
       },
@@ -8192,7 +8291,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 85.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529690729&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529690731&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F5%2F4%2F5470439-7410.jpg&feedId=89032&k=7a1b23061bc5ce648b9b04815114ed9f19c1fedf",
         sizes: ["Talla 10.5", "Talla 8.5"],
       },
@@ -8235,7 +8334,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 135.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529567449&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529567451&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5470055_4411_7.jpg&feedId=89032&k=ff2a0f73a2ab3cfe201322d787e1abc9bf7f9ab9",
         sizes: ["Talla 8.5", "Talla 9.5"],
       },
@@ -8261,8 +8360,8 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 100.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529567445&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5470025_2211_7.jpg&feedId=89032&k=7a8e6d0b18f299ea0fc1ae5d888b825c0fa6d48e",
+        url: "https://www.awin1.com/pclick.php?p=42529567442&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5470025_2211_7.jpg&feedId=89032&k=0d9c16d18faf1c8c949d916c8e2ce5210a42ee1d",
         sizes: ["Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9.5"],
       },
       {
@@ -8287,7 +8386,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 90.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529427035&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529427036&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5370025-3333_0_00.jpg&feedId=89032&k=94d832662e1d596483fd51ad486229cba44ba1e4",
         sizes: ["Talla 8.5", "Talla 9.5"],
       },
@@ -8376,7 +8475,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43468487546&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670995-4129-blu-shock-orang-1.jpg&feedId=89032&k=f7d2f455610fe1f8993a75816e6fb96c8611cc15",
-        sizes: ["Talla 8"],
+        sizes: ["Talla 10", "Talla 10.5", "Talla 8"],
       },
     ],
   },
@@ -8417,7 +8516,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 180.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46402722839&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43468487553&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670990-4414-blue-white-1.jpg&feedId=89032&k=8752d7c6f2761c59b8daac4206906c19048abb4e",
         sizes: ["Talla 8", "Talla 9"],
       },
@@ -8477,7 +8576,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 90.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923983735&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923983736&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5370130-3333_0.jpg&feedId=89032&k=28950acb80c9a708c46bab58ff3caa3a0dd871ee",
         sizes: ["Talla 8", "Talla 8.5"],
       },
@@ -8529,7 +8628,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 80.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43468487566&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43468487568&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670730-7700-black-1.jpg&feedId=89032&k=b9128fe610785e0ceacd0986fcaf06e30547ecd0",
         sizes: ["Talla 10", "Talla 10.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -8581,7 +8680,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 60.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44002233208&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46414677747&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F5%2F6%2F5670735-7700.jpg&feedId=89032&k=3a252281f48136e3991aeef50f014b960b38b838",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -8710,7 +8809,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 100.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46339463477&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46339468743&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F5%2F6%2F5670905-4126.jpg&feedId=89032&k=a71be2bc19e78d88b67e08534ff0c068a3f0b345",
         sizes: ["Talla 8", "Talla 8.5"],
       },
@@ -8788,7 +8887,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 90.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38680783303&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37924007284&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5470150_7700_0.jpg&feedId=89032&k=cdd031740aaf1d0f75c5526a55b5c7207829fe41",
         sizes: ["Talla 8", "Talla 8.5", "Talla 9.5"],
       },
@@ -8935,8 +9034,8 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 95.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42235252234&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5470974_4410_0.jpg&feedId=89032&k=3e2f96ccf7eca4a3d036f7b9e32e362ea1c54483",
+        url: "https://www.awin1.com/pclick.php?p=44552702710&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5470974_4410_0.jpg&feedId=89032&k=bfa676fcee71941d4a9bb459756bb493f5a66e75",
         sizes: ["Talla 10", "Talla 8", "Talla 9", "Talla 9.5"],
       },
       {
@@ -8961,7 +9060,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 130.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923969046&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923969047&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F5%2F3%2F5370975_1011_1.jpg&feedId=89032&k=6354ceb73c0207193a33dc815a49aee0c6b31a76",
         sizes: ["Talla 7.5", "Talla 8", "Talla 8.5"],
       },
@@ -8987,7 +9086,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 120.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46339516578&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46339517789&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Ft%2Ftt1.jpg&feedId=89032&k=712483d0b146132904c4a56df51f7762af69ecfa",
         sizes: ["Talla 11", "Talla 8"],
       },
@@ -9021,7 +9120,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 80.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44809662427&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44809662426&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670056-2290-orange-blue-6a2bf75997703-1.jpg&feedId=89032&k=f7ef360c49a1bb4f8aeae78b889246865d333d24",
         sizes: ["Talla 11", "Talla 9", "Talla 9.5"],
       },
@@ -9065,7 +9164,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 120.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46414665660&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45010084730&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670960-7701-noir-blanc-1.jpg&feedId=89032&k=a75a35f94085a66fdfea806534faf1864aa60b21",
         sizes: ["Talla 10", "Talla 10.5", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -9143,7 +9242,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 30.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43468487571&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43468487572&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670815-4126-sharpblu-wht-shock-orng-1.jpg&feedId=89032&k=7d0849408d08d79b6c3e32b6eee6ee4af443a6b3",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -9194,23 +9293,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "reusch-guantes-de-portero-reusch-attrakt-infinity-evolution-nc-bleu",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Infinity Evolution NC - Bleu",
-    colour: "Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 50.0,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46318089985&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670725-4127-sharp-blu-shock-orng-blck-2.jpg&feedId=89032&k=54e6090c8f8dafe2c3b09f60cb63f0f4c076ac26",
-        sizes: ["Talla 8"],
-      },
-    ],
-  },
-  {
     id: "reusch-guantes-de-portero-reusch-attrakt-infinity-finger-support-bleu",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Infinity Finger Support - Bleu",
@@ -9221,7 +9303,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 45.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46285549972&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43573623581&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670710-4127-sharp-blu-shock-orng-blck-5.jpg&feedId=89032&k=2a2adc6c5d46027318339858ce8f660fa3178465",
         sizes: ["Talla 10", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -9351,7 +9433,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 130.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529690746&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529690745&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F5%2F4%2F5470555-7737.jpg&feedId=89032&k=9d9fe10b3a841ee5d1459e635407809e605def18",
         sizes: ["Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -9377,7 +9459,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 35.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43573623415&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43573623410&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670615-7700-black-1.jpg&feedId=89032&k=3699274eed1e79080a36825bf8d10be159f04d6d",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -9482,7 +9564,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 20.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43468487711&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43468487714&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670515-4126-sharpblu-wht-shock-orng-1.jpg&feedId=89032&k=023bb32fc2dddc79552905a807a39aaeda825ba1",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -9494,23 +9576,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670515-4126-gants-de-gardien-reusch-attrakt-solid-sharpblu-wht-shock-orng",
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-4126-sharpblu-wht-shock-orng-1.webp",
         sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "reusch-guantes-de-portero-reusch-attrakt-solid-bleu-2",
-    brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Bleu",
-    colour: "Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 20.0,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44729493538&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670515-4129-blu-shock-orang-1.jpg&feedId=89032&k=a6415beb39b969894c0d584a670586e368745f42",
-        sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
       {
         store: "SportIsGoodES",
@@ -9534,7 +9599,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 20.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46339468092&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46339473520&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5470515-2210_0.jpg&feedId=89032&k=b2b315e5d14b7c812199829a79cd52e27a34603c",
         sizes: ["Talla 10", "Talla 7.5"],
       },
@@ -9551,8 +9616,8 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 20.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40174230619&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5570515-7752_black-safety-yellow_1.jpg&feedId=89032&k=1e2bb50d0ac942964fa6c1d640ecc76ee50e97de",
+        url: "https://www.awin1.com/pclick.php?p=44552703854&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5570515-2290_black_1.jpg&feedId=89032&k=28beb95e0bfa2505535481307c8dfe0756460878",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
       {
@@ -9585,6 +9650,23 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
+    id: "reusch-guantes-de-portero-reusch-attrakt-solid-negro-2",
+    brand: "Reusch",
+    model: "Guantes de portero Reusch Attrakt Solid - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 20.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45010072987&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5570515-4467_noir-bleu_1.jpg&feedId=89032&k=095f89b011f8f87a206614d5c2c865c35d5f53b7",
+        sizes: ["Talla 10", "Talla 8.5", "Talla 9", "Talla 9.5"],
+      },
+    ],
+  },
+  {
     id: "reusch-guantes-de-portero-reusch-attrakt-solid-noir",
     brand: "Reusch",
     model: "Guantes de portero Reusch Attrakt Solid - Noir",
@@ -9595,7 +9677,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 20.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43573623417&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43573623421&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670515-7090-blck-aquablu-shock-orng-1.jpg&feedId=89032&k=327c59ea3ee98f2d56564d9003d9bda0e09181f8",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -9630,7 +9712,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 20.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46391429323&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46391436960&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670516-2290-shocking-orange-blue-6a2c12af923f9-1.jpg&feedId=89032&k=74517f62e5ca11a816039244fc5c4019a6e6f72e",
         sizes: ["Talla 10", "Talla 7.5"],
       },
@@ -9647,7 +9729,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 140.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45018629049&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45018629048&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670085-2290-orange-blue-6a2bf751dea11-1.jpg&feedId=89032&k=cfa808f08b757931f994baa1acee612ab0446ae4",
         sizes: ["Talla 8", "Talla 8.5"],
       },
@@ -9691,7 +9773,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 20.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46339468737&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44023889825&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670514-4126-sharp-blu-wht-shock-orng-8.jpg&feedId=89032&k=b2ec7cc867c8dd4d63d9dfae4a69e15a81a87ce4",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8"],
       },
@@ -9717,7 +9799,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 20.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46402705560&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46402726201&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670514-7783-6ad8964f39a2f-1.jpg&feedId=89032&k=8a7f511234b585a8dfddab04e98b9c743a27938c",
         sizes: ["Talla 7", "Talla 7.5", "Talla 9", "Talla 9.5"],
       },
@@ -9734,7 +9816,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 20.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529427040&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44263418245&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5370501-7700_0_00.jpg&feedId=89032&k=44a4f6d64117f821df1c016b47ce3ffe7f6899a1",
         sizes: ["Talla 10", "Talla 11", "Talla 8", "Talla 9"],
       },
@@ -9922,7 +10004,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.47,
+        price: 32.97,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42964795342&a=3013769&m=65912",
@@ -9951,7 +10033,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         price: 23.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795349&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795346&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-arsi5613m-bleu-1.jpg&feedId=89032&k=4b44a939ebfaed7fa54ff267eadc091dc5bea15b",
         sizes: ["Talla 10", "Talla 9"],
       },
@@ -9998,10 +10080,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.67,
+        price: 20.17,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795357&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795354&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-arga1090m-noir-1.jpg&feedId=89032&k=dd4797869143812e5bc4b0064a727a83d98d8f07",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -10024,10 +10106,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.44,
+        price: 49.94,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40632647594&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40632647593&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_arri2004_yellow-white_1.jpg&feedId=89032&k=c80a0407d888a5a9281e27e200b12512df84b855",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -10050,7 +10132,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.44,
+        price: 49.94,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748511&a=3013769&m=65912",
@@ -10076,7 +10158,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 49.44,
+        price: 49.94,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748515&a=3013769&m=65912",
@@ -10102,10 +10184,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.61,
+        price: 28.11,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795350&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795353&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-arsa1090m-noir-1.jpg&feedId=89032&k=b4b51200d18365cf05e7a1850c7f7642548fd55f",
         sizes: ["Talla 10", "Talla 9"],
       },
@@ -10128,7 +10210,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.41,
+        price: 52.91,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42964795363&a=3013769&m=65912",
@@ -10160,14 +10242,14 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 47.0,
-        priceMax: 52.41,
+        priceMax: 52.91,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42964795360&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-aeei1094-black-1.jpg&feedId=89032&k=4cdeb705adfd96d45eac93e12e2bc915d8b03265",
         sizes: ["Talla 7", "Talla 8"],
         sizePrices: [
-          { size: "Talla 7", price: 52.41, url: "https://www.awin1.com/pclick.php?p=42964795359&a=3013769&m=65912" },
+          { size: "Talla 7", price: 52.91, url: "https://www.awin1.com/pclick.php?p=42964795359&a=3013769&m=65912" },
           { size: "Talla 8", price: 47.0, url: "https://www.awin1.com/pclick.php?p=42964795360&a=3013769&m=65912" },
         ],
       },
@@ -10181,10 +10263,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 113.83,
+        price: 114.33,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795373&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795374&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-arpa5610m-blue-1.jpg&feedId=89032&k=dca8aad50a2d80eab115476f281ee452be80a27c",
         sizes: ["Talla 7", "Talla 8"],
       },
@@ -10207,10 +10289,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 113.83,
+        price: 114.33,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795368&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795367&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-arpa1090m-black-1.jpg&feedId=89032&k=33e1c9fb1de233500081983e06f53c654ad625e3",
         sizes: ["Talla 11", "Talla 7"],
       },
@@ -10233,7 +10315,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.35,
+        price: 48.85,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42964795381&a=3013769&m=65912",
@@ -10259,10 +10341,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.61,
+        price: 28.11,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795387&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795384&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-assa1090m-black-1.jpg&feedId=89032&k=1d787f4e17ef33746a90174c7d2bce3431664dbe",
         sizes: ["Talla 10", "Talla 8", "Talla 9"],
       },
@@ -10285,10 +10367,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 47.95,
+        price: 48.45,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795389&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795388&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-asna1090-black-1.jpg&feedId=89032&k=5fbc5426ba3f851a1b39488857571f0401e3ef5b",
         sizes: ["Talla 7", "Talla 8"],
       },
@@ -10312,17 +10394,17 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 37.0,
-        priceMax: 40.41,
+        priceMax: 40.91,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42964795392&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-asti1094m-black-1.jpg&feedId=89032&k=eab4df40927fbfded9b1550d8af797c761b369a1",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 40.41, url: "https://www.awin1.com/pclick.php?p=42964795391&a=3013769&m=65912" },
+          { size: "Talla 10", price: 40.91, url: "https://www.awin1.com/pclick.php?p=42964795391&a=3013769&m=65912" },
           { size: "Talla 7", price: 37.0, url: "https://www.awin1.com/pclick.php?p=42964795392&a=3013769&m=65912" },
-          { size: "Talla 8", price: 40.41, url: "https://www.awin1.com/pclick.php?p=42964795393&a=3013769&m=65912" },
-          { size: "Talla 9", price: 40.41, url: "https://www.awin1.com/pclick.php?p=42964795394&a=3013769&m=65912" },
+          { size: "Talla 8", price: 40.91, url: "https://www.awin1.com/pclick.php?p=42964795393&a=3013769&m=65912" },
+          { size: "Talla 9", price: 40.91, url: "https://www.awin1.com/pclick.php?p=42964795394&a=3013769&m=65912" },
         ],
       },
       {
@@ -10351,11 +10433,11 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.5,
+        price: 42.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795402&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-xtta6470-white-red-blue-1.jpg&feedId=89032&k=afbf74cccc93919dae9ae13de1fcfdeca8d2a549",
+        url: "https://www.awin1.com/pclick.php?p=42964795401&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-xtta6470-white-red-blue-1.jpg&feedId=89032&k=3a456d0e00f27aca2b1402f153ea7af524e549b4",
         sizes: ["Talla 8", "Talla 9"],
       },
       {
@@ -10377,7 +10459,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.0,
+        price: 21.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748521&a=3013769&m=65912",
@@ -10403,7 +10485,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 44.38,
+        price: 44.88,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41070885239&a=3013769&m=65912",
@@ -10421,6 +10503,9 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-guantes-de-portero-rinat-dominius-prime-verde",
     brand: "Rinat",
@@ -10429,7 +10514,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 44.38,
+        price: 44.88,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748524&a=3013769&m=65912",
@@ -10455,7 +10540,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 106.0,
+        price: 107.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630371721&a=3013769&m=65912",
@@ -10472,10 +10557,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.47,
+        price: 32.97,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795405&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795406&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-egoa1330m-orange-black-1.jpg&feedId=89032&k=055e072d6a509caf65570e7a421416a9dc283693",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -10498,10 +10583,10 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 51.42,
+        price: 51.92,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795410&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795407&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-exra1330-orange-black-1.jpg&feedId=89032&k=e9c68519d21e4d4bd9326e5f74d7fa8a8b0ad67b",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -10516,9 +10601,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-guantes-de-portero-rinat-egotiko-pro-orange",
     brand: "Rinat",
@@ -10527,7 +10609,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 115.82,
+        price: 116.32,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42964795412&a=3013769&m=65912",
@@ -10553,10 +10635,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.07,
+        price: 32.57,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795416&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795418&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-egta6700-black-yellow-1.jpg&feedId=89032&k=03807a88b6077f69ee0a2282378d8c57e949a7b6",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -10617,7 +10699,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 38.52,
+        price: 39.02,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40236338779&a=3013769&m=65912",
@@ -10644,15 +10726,15 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 15.0,
-        priceMax: 17.79,
+        priceMax: 18.29,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529748543&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529748542&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_eggi2973_royal-blue-red_1.jpg&feedId=89032&k=ac50c11d73cd551af4188256274f3f4cbb453563",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
           { size: "Talla 10", price: 17.0, url: "https://www.awin1.com/pclick.php?p=44230425553&a=3013769&m=65912" },
-          { size: "Talla 7", price: 17.79, url: "https://www.awin1.com/pclick.php?p=42529748541&a=3013769&m=65912" },
+          { size: "Talla 7", price: 18.29, url: "https://www.awin1.com/pclick.php?p=42529748541&a=3013769&m=65912" },
           { size: "Talla 8", price: 15.0, url: "https://www.awin1.com/pclick.php?p=42529748542&a=3013769&m=65912" },
           { size: "Talla 9", price: 15.0, url: "https://www.awin1.com/pclick.php?p=42529748543&a=3013769&m=65912" },
         ],
@@ -10682,11 +10764,11 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.5,
+        price: 42.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42761963775&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_egri1493_white-navy-blue_1.jpg&feedId=89032&k=b2e6ca8e6c747bf119ba099c65b0048500091286",
+        url: "https://www.awin1.com/pclick.php?p=42529748550&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_egri1493_white-navy-blue_1.jpg&feedId=89032&k=410cb49e9ce86abe4bdd71139f84369f17c843ee",
         sizes: ["Talla 11", "Talla 7", "Talla 8"],
       },
       {
@@ -10709,16 +10791,16 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 38.0,
-        priceMax: 41.5,
+        priceMax: 42.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748547&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_egri1913_orange-white_1.jpg&feedId=89032&k=2a0559cefb342f7a06efe5f0775e07c774ba4431",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 41.5, url: "https://www.awin1.com/pclick.php?p=42529748544&a=3013769&m=65912" },
-          { size: "Talla 7", price: 41.5, url: "https://www.awin1.com/pclick.php?p=42529748545&a=3013769&m=65912" },
-          { size: "Talla 8", price: 41.5, url: "https://www.awin1.com/pclick.php?p=42529748546&a=3013769&m=65912" },
+          { size: "Talla 10", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529748544&a=3013769&m=65912" },
+          { size: "Talla 7", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529748545&a=3013769&m=65912" },
+          { size: "Talla 8", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529748546&a=3013769&m=65912" },
           { size: "Talla 9", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42529748547&a=3013769&m=65912" },
         ],
       },
@@ -10748,19 +10830,12 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.0,
-        priceMax: 32.0,
+        price: 32.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748562&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_egti1914_orange-white_1.jpg&feedId=89032&k=3c2def531c4e4dfcbcb354daef57380d23ee458d",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
-        sizePrices: [
-          { size: "Talla 10", price: 32.0, url: "https://www.awin1.com/pclick.php?p=42529748559&a=3013769&m=65912" },
-          { size: "Talla 7", price: 32.0, url: "https://www.awin1.com/pclick.php?p=42529748560&a=3013769&m=65912" },
-          { size: "Talla 8", price: 32.0, url: "https://www.awin1.com/pclick.php?p=42529748561&a=3013769&m=65912" },
-          { size: "Talla 9", price: 31.0, url: "https://www.awin1.com/pclick.php?p=42529748562&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreFR",
@@ -10807,10 +10882,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 51.42,
+        price: 51.92,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795431&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795430&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-fira6460m-gold-black-1.jpg&feedId=89032&k=1525c9796a3e85d4e96a97af8cf740c814c9dd7f",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -10833,10 +10908,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 51.42,
+        price: 51.92,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795433&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795434&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-fira5100m-green-orange-1.jpg&feedId=89032&k=c93fe24bdcffbf26c88d2867eef730296e58d6bd",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -10859,10 +10934,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 111.85,
+        price: 112.35,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795440&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795437&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-fipa6460m-gold-black-1.jpg&feedId=89032&k=f195289711adcb666115d67efdc949ea4140055f",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 9"],
       },
@@ -10885,11 +10960,11 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 111.85,
+        price: 112.35,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45177317674&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-fipa5100m-green-orange-1.jpg&feedId=89032&k=b0bc12c50896bff8ca532d1887a450ccda400856",
+        url: "https://www.awin1.com/pclick.php?p=42964795441&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-fipa5100m-green-orange-1.jpg&feedId=89032&k=b6985d8d5d1cd0277f08f1c5b0b88869d6df1bfe",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
       },
       {
@@ -10940,7 +11015,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         price: 21.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529748564&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529748567&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_kasi1233_blue-white_1.jpg&feedId=89032&k=9892d7627469df5ec2f87e14ab7a3743270c7688",
         sizes: ["Talla 10", "Talla 8", "Talla 9"],
       },
@@ -10963,10 +11038,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.5,
+        price: 42.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45698856467&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45698856465&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-krtfa1107-white-1.jpg&feedId=89032&k=4652869178cbdefb6e52684be24e9a815097e129",
         sizes: ["Talla 7", "Talla 8", "Talla 9"],
       },
@@ -10990,14 +11065,14 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 38.0,
-        priceMax: 41.5,
+        priceMax: 42.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45698844069&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_krtfa1090_black_1.jpg&feedId=89032&k=e741e0cea3123cdad34280f5987f946c9f463687",
         sizes: ["Talla 10", "Talla 7", "Talla 8"],
         sizePrices: [
-          { size: "Talla 10", price: 41.5, url: "https://www.awin1.com/pclick.php?p=45698844067&a=3013769&m=65912" },
+          { size: "Talla 10", price: 42.0, url: "https://www.awin1.com/pclick.php?p=45698844067&a=3013769&m=65912" },
           { size: "Talla 7", price: 38.0, url: "https://www.awin1.com/pclick.php?p=45698844068&a=3013769&m=65912" },
           { size: "Talla 8", price: 38.0, url: "https://www.awin1.com/pclick.php?p=45698844069&a=3013769&m=65912" },
         ],
@@ -11021,7 +11096,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.5,
+        price: 42.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45698844070&a=3013769&m=65912",
@@ -11047,7 +11122,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.35,
+        price: 48.85,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748579&a=3013769&m=65912",
@@ -11073,7 +11148,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 44.48,
+        price: 44.98,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748581&a=3013769&m=65912",
@@ -11100,14 +11175,14 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 26.0,
-        priceMax: 29.59,
+        priceMax: 30.09,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748585&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_masi6683_oxford-white_1.jpg&feedId=89032&k=4008e3d4b20e22ab6a67aa7115b4f531ff1f524a",
         sizes: ["Talla 10", "Talla 7"],
         sizePrices: [
-          { size: "Talla 10", price: 29.59, url: "https://www.awin1.com/pclick.php?p=42529748584&a=3013769&m=65912" },
+          { size: "Talla 10", price: 30.09, url: "https://www.awin1.com/pclick.php?p=42529748584&a=3013769&m=65912" },
           { size: "Talla 7", price: 26.0, url: "https://www.awin1.com/pclick.php?p=42529748585&a=3013769&m=65912" },
         ],
       },
@@ -11130,7 +11205,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.0,
+        price: 26.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529748582&a=3013769&m=65912",
@@ -11156,10 +11231,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.19,
+        price: 30.69,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40152187463&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40152187465&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_nkaa689_0.jpg&feedId=89032&k=33996ce9e6ee39f366d548d0ef4fda5ba6a509aa",
         sizes: ["Talla 10", "Talla 7"],
       },
@@ -11183,7 +11258,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 27.0,
-        priceMax: 29.59,
+        priceMax: 30.09,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46381755736&a=3013769&m=65912",
@@ -11191,7 +11266,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         sizes: ["Talla 8", "Talla 9"],
         sizePrices: [
           { size: "Talla 8", price: 27.0, url: "https://www.awin1.com/pclick.php?p=46381755736&a=3013769&m=65912" },
-          { size: "Talla 9", price: 29.59, url: "https://www.awin1.com/pclick.php?p=42529820108&a=3013769&m=65912" },
+          { size: "Talla 9", price: 30.09, url: "https://www.awin1.com/pclick.php?p=42529820108&a=3013769&m=65912" },
         ],
       },
       {
@@ -11213,10 +11288,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.07,
+        price: 32.57,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42393329021&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42393329020&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_nkqi6834_royal-blue-white_1.jpg&feedId=89032&k=6962928a4e38bc2749832f239f87b01f7cab682b",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -11239,10 +11314,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.47,
+        price: 32.97,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529820103&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529820104&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_nkqi2074_white-green-aqua_1.jpg&feedId=89032&k=3507ccb6dddeee3a44df177b75de2da949da0399",
         sizes: ["Talla 8", "Talla 9"],
       },
@@ -11265,7 +11340,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 45.47,
+        price: 45.97,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42431402823&a=3013769&m=65912",
@@ -11291,7 +11366,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.36,
+        price: 46.86,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41297913145&a=3013769&m=65912",
@@ -11318,16 +11393,16 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 38.0,
-        priceMax: 43.48,
+        priceMax: 43.98,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529750180&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_nkra1400_red-white_1.jpg&feedId=89032&k=b6b4a9744d6db8dc7933e306d30bc6ac75d7d692",
         sizes: ["Talla 4", "Talla 5", "Talla 7"],
         sizePrices: [
-          { size: "Talla 4", price: 41.5, url: "https://www.awin1.com/pclick.php?p=42529750179&a=3013769&m=65912" },
+          { size: "Talla 4", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529750179&a=3013769&m=65912" },
           { size: "Talla 5", price: 38.0, url: "https://www.awin1.com/pclick.php?p=42529750180&a=3013769&m=65912" },
-          { size: "Talla 7", price: 43.48, url: "https://www.awin1.com/pclick.php?p=42529750182&a=3013769&m=65912" },
+          { size: "Talla 7", price: 43.98, url: "https://www.awin1.com/pclick.php?p=42529750182&a=3013769&m=65912" },
         ],
       },
       {
@@ -11355,7 +11430,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 54.2,
+        price: 54.7,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42216186216&a=3013769&m=65912",
@@ -11381,7 +11456,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 54.2,
+        price: 54.7,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40152187468&a=3013769&m=65912",
@@ -11407,12 +11482,19 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 74.14,
+        price: 71.0,
+        priceMax: 74.64,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45698844078&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_saaa1100_white_1.jpg&feedId=89032&k=038f85710c1cc0707e14368569b44fb7c4147083",
-        sizes: ["Talla 10", "Talla 7", "Talla 8"],
+        url: "https://www.awin1.com/pclick.php?p=45698844079&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_saaa1100_white_1.jpg&feedId=89032&k=d46df064c338105ed5502cdb88266e3ffd5cd6df",
+        sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
+        sizePrices: [
+          { size: "Talla 10", price: 74.64, url: "https://www.awin1.com/pclick.php?p=45698844076&a=3013769&m=65912" },
+          { size: "Talla 7", price: 74.64, url: "https://www.awin1.com/pclick.php?p=45698844077&a=3013769&m=65912" },
+          { size: "Talla 8", price: 74.64, url: "https://www.awin1.com/pclick.php?p=45698844078&a=3013769&m=65912" },
+          { size: "Talla 9", price: 71.0, url: "https://www.awin1.com/pclick.php?p=45698844079&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -11433,10 +11515,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 74.14,
+        price: 74.64,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45698844072&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45698844074&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat_saaa1090_black_1.jpg&feedId=89032&k=6d3743714a853c360774bef3427d326acd991d62",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -11459,7 +11541,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.61,
+        price: 28.11,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42964795452&a=3013769&m=65912",
@@ -11485,7 +11567,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 72.16,
+        price: 72.66,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41929584114&a=3013769&m=65912",
@@ -11504,19 +11586,28 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "rinat-guantes-de-portero-rinat-santoloco-noir-2",
+    id: "rinat-guantes-de-portero-rinat-santoloco-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Santoloco - Noir",
     colour: "Noir",
     offers: [
       {
         store: "FootStoreES",
-        price: 27.61,
+        price: 28.11,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42988083274&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-sasi1093m-black-1.jpg&feedId=89032&k=679813775fd565f6867a6b500e00285a5cff8dcf",
+        url: "https://www.awin1.com/pclick.php?p=42964795451&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-sasa1090m-black-1.jpg&feedId=89032&k=79dc1fdd9b46933402544fe552c4fb15dda1408e",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 24.6,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsasa1090m-gants-de-gardien-rinat-santoloco-black",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/i/rinat-sasa1090m-black-1.jpg",
+        sizes: ["7", "8", "9", "10"],
       },
     ],
   },
@@ -11528,7 +11619,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 50.33,
+        price: 50.83,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42964795461&a=3013769&m=65912",
@@ -11555,15 +11646,15 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 47.0,
-        priceMax: 50.33,
+        priceMax: 50.83,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795458&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795459&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-sari1094-black-1.jpg&feedId=89032&k=991ab63ca71a6e847b9c70bbdc664737bcfda636",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 50.33, url: "https://www.awin1.com/pclick.php?p=42964795456&a=3013769&m=65912" },
-          { size: "Talla 7", price: 50.33, url: "https://www.awin1.com/pclick.php?p=42964795457&a=3013769&m=65912" },
+          { size: "Talla 10", price: 50.83, url: "https://www.awin1.com/pclick.php?p=42964795456&a=3013769&m=65912" },
+          { size: "Talla 7", price: 50.83, url: "https://www.awin1.com/pclick.php?p=42964795457&a=3013769&m=65912" },
           { size: "Talla 8", price: 47.0, url: "https://www.awin1.com/pclick.php?p=42964795458&a=3013769&m=65912" },
           { size: "Talla 9", price: 47.0, url: "https://www.awin1.com/pclick.php?p=42964795459&a=3013769&m=65912" },
         ],
@@ -11595,14 +11686,14 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 110.0,
-        priceMax: 111.85,
+        priceMax: 112.35,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42964795468&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-sapa1090m-black-1.jpg&feedId=89032&k=99b90bcd8f178c1815372a765e052216d3a77c16",
         sizes: ["Talla 7", "Talla 9"],
         sizePrices: [
-          { size: "Talla 7", price: 111.85, url: "https://www.awin1.com/pclick.php?p=42964795466&a=3013769&m=65912" },
+          { size: "Talla 7", price: 112.35, url: "https://www.awin1.com/pclick.php?p=42964795466&a=3013769&m=65912" },
           { size: "Talla 9", price: 110.0, url: "https://www.awin1.com/pclick.php?p=42964795468&a=3013769&m=65912" },
         ],
       },
@@ -11630,7 +11721,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 62.34,
+        price: 62.84,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529750190&a=3013769&m=65912",
@@ -11656,10 +11747,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 82.08,
+        price: 82.58,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795478&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42964795482&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-xtma6470-white-red-blue-1.jpg&feedId=89032&k=68d96ce89b64560acd141c83fe44930fd124006d",
         sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -11675,20 +11766,11 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "rinat-guantes-de-portero-rinat-xtreme-dominius-pro-blanc",
+    id: "rinat-gants-de-gardien-rinat-xtreme-dominius-pro-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Xtreme Dominius Pro - Blanc",
     colour: "Blanc",
     offers: [
-      {
-        store: "FootStoreES",
-        price: 116.91,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42964795486&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-xtpa6470-white-red-blue-1.jpg&feedId=89032&k=40c354435df44d3af33a366d825e25a974d6a11a",
-        sizes: ["Talla 11", "Talla 7", "Talla 8", "Talla 9"],
-      },
       {
         store: "FootStoreFR",
         price: 111.99,
@@ -11697,6 +11779,15 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fxtpa6470-gants-de-gardien-rinat-xtreme-dominius-pro-white-red-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat-xtti6474-white-red-blue-1.webp",
         sizes: ["7", "8", "9", "11"],
+      },
+      {
+        store: "FootStoreES",
+        price: 117.41,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42964795486&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fi%2Frinat-xtti6474-white-red-blue-1.jpg&feedId=89032&k=5e3f245284658660e10950ad4bf86b15702566f8",
+        sizes: ["Talla 11", "Talla 7", "Talla 8", "Talla 9"],
       },
     ],
   },
@@ -11708,7 +11799,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 40.77,
+        price: 41.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923903551&a=3013769&m=65912",
@@ -11763,7 +11854,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         price: 34.95,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529218607&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529218605&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2000350.jpg&feedId=89032&k=fd58477394df80f673525ec88ff91b8e7d6cdd4e",
         sizes: ["4", "5", "7"],
       },
@@ -11792,10 +11883,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.44,
+        price: 59.95,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38846276188&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38846276186&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2001250_1.jpg&feedId=89032&k=bdc2e8502ec326dcb661d461d32afedbf3ecaa04",
         sizes: ["5", "6", "7", "8", "9", "10"],
       },
@@ -11818,7 +11909,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.44,
+        price: 59.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529218608&a=3013769&m=65912",
@@ -11844,10 +11935,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 106.11,
+        price: 108.24,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529218610&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529218612&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2001440.jpg&feedId=89032&k=59ae9a4bd3dd21adcb9f3abba5c69080635c055b",
         sizes: ["7", "8", "9", "10", "11"],
       },
@@ -11870,10 +11961,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 78.11,
+        price: 79.83,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529218615&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529218616&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2001350_1.jpg&feedId=89032&k=aec476fd77e31e0f11a0e6b19d69e1fb99d2699c",
         sizes: ["7", "8", "9", "10", "11"],
       },
@@ -11896,10 +11987,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 95.84,
+        price: 97.82,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529218622&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529218620&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2000150.jpg&feedId=89032&k=86156d5e014ee1dd5b9b52d232009bd7dd0ab3c7",
         sizes: ["7", "8", "9", "10", "11"],
       },
@@ -11930,7 +12021,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 95.84,
+        price: 97.82,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40387243761&a=3013769&m=65912",
@@ -11956,11 +12047,11 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 87.44,
+        price: 89.3,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40405491173&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2001130.jpg&feedId=89032&k=fe4606ec6ee1b67c0f01d7b7834d47c1cbedfe1b",
+        url: "https://www.awin1.com/pclick.php?p=40405491174&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2001130.jpg&feedId=89032&k=3e1e8b17e5405bfdc7d261809bef9ffd49320edb",
         sizes: ["7", "8", "11"],
       },
       {
@@ -11988,7 +12079,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 87.44,
+        price: 89.3,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923903557&a=3013769&m=65912",
@@ -12020,10 +12111,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 96.78,
+        price: 98.77,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529218625&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529218624&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2000700.jpg&feedId=89032&k=3ccf5394fb252227ce55672313d6ce6bcbfd6b14",
         sizes: ["7", "8", "9", "10", "11"],
       },
@@ -12054,10 +12145,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 96.78,
+        price: 98.77,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529218631&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529218630&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2000750.jpg&feedId=89032&k=de6dcb4cc184d1fbf62e08437ab830bcc2bfe592",
         sizes: ["7", "8", "10", "11"],
       },
@@ -12080,10 +12171,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 96.78,
+        price: 98.77,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923903564&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923903563&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2000600.jpg&feedId=89032&k=817f6624ef7ba03dab9e8b1f60a788c81319c38d",
         sizes: ["7", "10", "11"],
       },
@@ -12112,10 +12203,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 96.78,
+        price: 98.77,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529218634&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529218633&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2000690.jpg&feedId=89032&k=cf979f151c2d58437ea17287c474f118b78640d7",
         sizes: ["8", "9", "10", "11"],
       },
@@ -12145,10 +12236,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 92.11,
+        price: 94.03,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529218637&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529218638&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2000250.jpg&feedId=89032&k=f7eafc8be7dddafbf15c13e7e670ef5571ea1632",
         sizes: ["7", "8", "9", "10", "11"],
       },
@@ -12171,10 +12262,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 92.11,
+        price: 94.03,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529218644&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529218643&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2000200.jpg&feedId=89032&k=da251372d8227a0d3c9d63d3a7f70c92ae5dc3b6",
         sizes: ["7", "8", "10", "11"],
       },
@@ -12204,10 +12295,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 68.77,
+        price: 69.95,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529218645&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529218650&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2000800.jpg&feedId=89032&k=17126ac7381ea0128828e371f36e1a18fdf66472",
         sizes: ["6", "7", "8", "9", "10", "11"],
       },
@@ -12239,7 +12330,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 68.77,
+        price: 69.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529218653&a=3013769&m=65912",
@@ -12265,10 +12356,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 68.77,
+        price: 69.95,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529218661&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529218657&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fr%2Fw%2Frw2000930.jpg&feedId=89032&k=793e4e9aa72718b512e73854c9378641e13036ec",
         sizes: ["6", "7", "8", "9", "10", "11"],
       },
@@ -12300,7 +12391,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.83,
+        price: 28.82,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529662427&a=3013769&m=65912",
@@ -12331,10 +12422,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 43.51,
+        price: 44.73,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529662429&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529662430&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fe%2Fselect_a002126.a80.112_negro-blanco_1.jpg&feedId=89032&k=c52971c2bd36d70fe76b59fadeb69c70ed482401",
         sizes: ["Talla 10.5", "Talla 8.5", "Talla 9.5"],
       },
@@ -12357,10 +12448,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.19,
+        price: 43.39,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529662433&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529662431&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fe%2Fselect_a002125.002.112_blanco_1.jpg&feedId=89032&k=70e3c2e13175b861b06360507fab031bdd133f52",
         sizes: ["Talla 10.5", "Talla 8.5", "Talla 9.5"],
       },
@@ -12383,10 +12474,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 57.77,
+        price: 59.2,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529662435&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529662436&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fe%2Fselect_a002124.b27.112_blanco-oro_1.jpg&feedId=89032&k=a521d475fe95b01fab209b4a8ae9d1ed9d9a2971",
         sizes: ["Talla 10.5", "Talla 8.5", "Talla 9.5"],
       },
@@ -12415,7 +12506,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.75,
+        price: 14.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39277402210&a=3013769&m=65912",
@@ -12432,10 +12523,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.99,
+        price: 20.34,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44572519216&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44572519218&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee-a005682-a55-3-rosa-negro-69eb23ecb292d-1.jpg&feedId=89032&k=93126f67cc968abaea9df6bcb315281103f136af",
         sizes: ["Talla 3", "Talla 4", "Talla 5", "Talla 6", "Talla 7"],
       },
@@ -12458,10 +12549,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.99,
+        price: 18.44,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44572519211&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44572519214&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee-a005681-a33-3-violeta-negro-69eb23ec6794f-1.jpg&feedId=89032&k=7e48c086c6946912f86e3368a6cf4db28ac7d364",
         sizes: ["Talla 3", "Talla 4", "Talla 5", "Talla 6", "Talla 7"],
       },
@@ -12498,21 +12589,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         ],
       },
       {
-        store: "FootStoreES",
-        price: 7.39,
-        priceMax: 13.75,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923993880&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_2.jpg&feedId=89032&k=96c79e5c15c37b9ce89a11b687dce78068787bb2",
-        sizes: ["Talla 7", "Talla 8", "Talla 9"],
-        sizePrices: [
-          { size: "Talla 7", price: 13.75, url: "https://www.awin1.com/pclick.php?p=42529515545&a=3013769&m=65912" },
-          { size: "Talla 8", price: 7.39, url: "https://www.awin1.com/pclick.php?p=37923993880&a=3013769&m=65912" },
-          { size: "Talla 9", price: 13.75, url: "https://www.awin1.com/pclick.php?p=42529515546&a=3013769&m=65912" },
-        ],
-      },
-      {
         store: "SportIsGoodFR",
         price: 7.53,
         shipping: 6.99,
@@ -12530,6 +12606,21 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_2.jpg&feedId=89044&k=96c79e5c15c37b9ce89a11b687dce78068787bb2",
         sizes: ["Talla 8"],
       },
+      {
+        store: "FootStoreES",
+        price: 7.84,
+        priceMax: 14.25,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37923993880&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_2.jpg&feedId=89032&k=96c79e5c15c37b9ce89a11b687dce78068787bb2",
+        sizes: ["Talla 7", "Talla 8", "Talla 9"],
+        sizePrices: [
+          { size: "Talla 7", price: 14.25, url: "https://www.awin1.com/pclick.php?p=42529515545&a=3013769&m=65912" },
+          { size: "Talla 8", price: 7.84, url: "https://www.awin1.com/pclick.php?p=37923993880&a=3013769&m=65912" },
+          { size: "Talla 9", price: 14.25, url: "https://www.awin1.com/pclick.php?p=42529515546&a=3013769&m=65912" },
+        ],
+      },
     ],
   },
   {
@@ -12540,7 +12631,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.23,
+        price: 12.73,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44572519225&a=3013769&m=65912",
@@ -12566,7 +12657,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.75,
+        price: 14.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515543&a=3013769&m=65912",
@@ -12592,7 +12683,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.61,
+        price: 61.06,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530160265&a=3013769&m=65912",
@@ -12618,7 +12709,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 94.18,
+        price: 96.14,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856141&a=3013769&m=65912",
@@ -12647,7 +12738,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         price: 79.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41104843813&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41104843812&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Ft%2Fstanno_481373-8000_1.jpg&feedId=89032&k=59998e88a835848a0b0dcb6c21c72b1c04bd3281",
         sizes: ["Talla 7", "Talla 7.5"],
       },
@@ -12673,7 +12764,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         price: 84.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530160278&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530160270&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Ft%2Fstanno_481413-8820_black-gold_5.jpg&feedId=89032&k=493631a5c40b58f9add4974c73085acc1df37256",
         sizes: ["Talla 10", "Talla 9.5"],
       },
@@ -12696,7 +12787,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 81.22,
+        price: 82.98,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856144&a=3013769&m=65912",
@@ -12722,12 +12813,12 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 50.97,
+        price: 52.29,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42530160290&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42530160291&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Fs%2Ft%2Fstanno_480251-8200_black-white_5.jpg&feedId=89032&k=c4a7f679a8e27bfafa9a3e8cac3942f2d79ae71a",
-        sizes: ["Talla 10.5", "Talla 11"],
+        sizes: ["Talla 11"],
       },
       {
         store: "FootStoreFR",
@@ -12767,6 +12858,101 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-blanco",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 3.0 - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40071722126&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202324-fp_0.jpg&feedId=89032&k=b5879ad4693e2927b37c063477b2f023e86d4694",
+        sizes: ["Talla 7"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 89.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202324-gants-de-gardien-t1tan-beast-3-0-white",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202324-fp_0.jpg",
+        sizes: ["6", "7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-azul",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 3.0 (FP) - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42694573374&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202430-06-fp_bleu_1.jpg&feedId=89032&k=c06a54c86204ef93d20175bf069fedb32e04d7f1",
+        sizes: ["Talla 10", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 99.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202430-06-fp-gants-de-gardien-t1tan-beast-3-0-fp-bleu",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202430-06-fp_bleu_1.jpg",
+        sizes: ["6", "7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-blanco",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 3.0 (FP) - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37924007339&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202324-fp_0.jpg&feedId=89032&k=b5879ad4693e2927b37c063477b2f023e86d4694",
+        sizes: ["Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-gris",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 3.0 (FP) - Gris",
+    colour: "Gris",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40071722133&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202323-fp_0.jpg&feedId=89032&k=1bd7b24fa1a2ce2e78e0b34b0b17f22042ac4c7c",
+        sizes: ["Talla 10", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 99.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202323-gants-de-gardien-t1tan-beast-3-0-fp-gris",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202323-fp_0.jpg",
+        sizes: ["6", "7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
     id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-negro",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Beast 3.0 (FP) - Negro",
@@ -12775,11 +12961,11 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 99.99,
-        shipping: 9.99,
+        shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42694573381&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42694573378&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202488-06-fp_noir_1.jpg&feedId=89032&k=b384efe58449b2fe3460245dc747d6ee79e99a3e",
-        sizes: ["Talla 10"],
+        sizes: ["Talla 10", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
       {
         store: "FootStoreFR",
@@ -12793,6 +12979,419 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-rojo",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 3.0 (FP) - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40434447718&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202322-fp_0.jpg&feedId=89032&k=a1d29a34243a777ca101098364f5544789fc014c",
+        sizes: ["Talla 10", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 99.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202322-gants-de-gardien-t1tan-beast-3-0-fp-red",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan_202322-fp_0.webp",
+        sizes: ["6", "7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-gris",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 3.0 - Gris",
+    colour: "Gris",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39188888176&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202323-fp_0.jpg&feedId=89032&k=1bd7b24fa1a2ce2e78e0b34b0b17f22042ac4c7c",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-rojo",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 3.0 - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37924007325&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202322-fp_0.jpg&feedId=89032&k=a1d29a34243a777ca101098364f5544789fc014c",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-beast-4-0-bleu",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 4.0 - Bleu",
+    colour: "Bleu",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46402732183&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan-202608-blue-6ad76bdc44bf1-1.jpg&feedId=89032&k=dfb652c1c0aa87b523a1435fcf2df740724f768f",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-beast-4-0-fp-rouge",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 4.0 (FP) - Rouge",
+    colour: "Rouge",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46402710864&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan-202605-fp-red-6ad76bfddb242-1.jpg&feedId=89032&k=b9a82b09c0eca7725ce8c8b0c16d7e83bf35d9fe",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-beast-4-0-jaune",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 4.0 - Jaune",
+    colour: "Jaune",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 109.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46163930186&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan-202610-06-electric-yellow-6aab8d8de9052-1.jpg&feedId=89032&k=9a1178399f5559e46603e55606b2b8b98c477017",
+        sizes: ["Talla 10", "Talla 7"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 90.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202610-06-gants-de-gardien-t1tan-beast-4-0-electric-yellow",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan-202610-06-electric-yellow-6aab8d8de9052-1.webp",
+        sizes: ["7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-beast-4-0-rouge",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 4.0 - Rouge",
+    colour: "Rouge",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46402726281&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan-202604-red-6ad76bec853f9-1.jpg&feedId=89032&k=92751f50427509c9214dd103519c7c65fbef84a1",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-beast-4-0-vampire-black-fp-noir",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast 4.0 Vampire Black (FP) - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46246400526&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan-202602-06-fp-black-6ac4bdd238952-1.jpg&feedId=89032&k=ec3d30469e5f3421f6cd6dd53ffcc618d72821b4",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-beast-vampire-noir",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Beast Vampire - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46163926704&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan-202601-07-black-6aab8d8dad5f1-1.jpg&feedId=89032&k=8e7d9cca0bb03393b763a3e61c95fa1507cb5f29",
+        sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 110.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202601-07-gants-de-gardien-t1tan-beast-vampire-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan-202601-07-black-6aab8d8dad5f1-1.webp",
+        sizes: ["7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-blue-best-3-0-azul",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Blue Best 3.0 - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42964791008&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan-202429-06-bleu-1.jpg&feedId=89032&k=10ca26e8805dd3a2645a6f1edacf14b12f071795",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 79.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202429-06-gants-de-gardien-t1tan-blue-best-3-0-bleu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan-202429-06-bleu-1.webp",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-blanco",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Classic 1.0 - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 54.99,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37924007344&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202328-fp_0.jpg&feedId=89032&k=b44fe038046113deba627d75966f9ae80eca84ca",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 49.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202328-gants-de-gardien-t1tan-classic-1-0-white-out",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan_202328-fp_0.webp",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-fp-blanco",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Classic 1.0 (FP) - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 64.99,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37924007349&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202328-fp_0.jpg&feedId=89032&k=b44fe038046113deba627d75966f9ae80eca84ca",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-fp-negro",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Classic 1.0 (FP) - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 64.99,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40316816036&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202365-06-fp_black_1.jpg&feedId=89032&k=d963a66bf3ddf339cfc9db35e7399f6530e096bb",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 59.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202365-09-fp-gants-de-gardien-t1tan-classic-1-0-fp-black",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202365-06-fp_black_1.jpg",
+        sizes: ["8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-negro",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Classic 1.0 - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 54.99,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45152994551&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202364-06_black-out_1.jpg&feedId=89032&k=2f20d4244dccc68cbfd2611c8aa56ed3f7f6f524",
+        sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 49.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202364-10-gants-de-gardien-t1tan-classic-1-0-black-out",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202364-06_black-out_1.jpg",
+        sizes: ["7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-noir",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Classic 1.0 - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 54.99,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46402717662&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan-202364-black-6ad76c0e9dd1f-1.jpg&feedId=89032&k=154e12b40b2ab5cef5478fee4d29856ea5c0ec62",
+        sizes: ["Talla 6"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-legend-1-0-blanco",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Legend 1.0 - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 79.99,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42694573383&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_2024127-06_blanc_1.jpg&feedId=89032&k=78470004cdfaba32a0f3586bcee272fd63ff60df",
+        sizes: ["Talla 11", "Talla 6"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 79.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2024127-06-gants-de-gardien-t1tan-legend-1-0-blanc",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_2024127-06_blanc_1.jpg",
+        sizes: ["6", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-legend-1-0-fp-blanco",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Legend 1.0 (FP) - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42694573388&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_2024127-06_blanc_1.jpg&feedId=89032&k=78470004cdfaba32a0f3586bcee272fd63ff60df",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-legend-1-0-white-out-blanco",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Legend 1.0 White-out - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 79.99,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42682751501&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_2024127-07_blanc_1.jpg&feedId=89032&k=4f364b993604c38fe95e5b6fe0d315eaccf5669e",
+        sizes: ["Talla 10", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 69.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2024127-10-gants-de-gardien-t1tan-legend-1-0-white-out-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan_2024127-07_blanc_1.webp",
+        sizes: ["7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-azul",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Rebel 2.0 - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42121868656&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202405-06_blue_1.jpg&feedId=89032&k=c7c7962925784ba306006a2c8f69b73e01cae7f3",
+        sizes: ["Talla 10", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 99.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202405-11-gants-de-gardien-t1tan-rebel-2-0-blue",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202405-06_blue_1.jpg",
+        sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
     id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-blanco",
     brand: "T1TAN",
     model: "Guantes de portero T1TAN Rebel 2.0 - Blanco",
@@ -12801,11 +13400,11 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 89.99,
-        shipping: 9.99,
+        shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40985461626&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40985461625&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202403-06_white_1.jpg&feedId=89032&k=e0c08236123357c80dfc3c54b3055fee667ec5d9",
-        sizes: ["Talla 6"],
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
       {
         store: "FootStoreFR",
@@ -12819,6 +13418,239 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-bleu",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Rebel 2.0 - Bleu",
+    colour: "Bleu",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46402706465&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan-202405-blue-6ad76c67b0c89-1.jpg&feedId=89032&k=b31ce8bcdfd638acdce310a10679e9859ce7fd4b",
+        sizes: ["Talla 11", "Talla 6", "Talla 7"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-azul",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Rebel 2.0 (FP) - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 109.99,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41287435358&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202406-06-fp_sky-blue_1.jpg&feedId=89032&k=341431bbccb766742a5bb9fda5ecf715e10230a4",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 109.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202406-06-fp-gants-de-gardien-t1tan-rebel-2-0-fp-sky-blue",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202406-06-fp_sky-blue_1.jpg",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-blanco",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Rebel 2.0 (FP) - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41060851176&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202404-06-fp_white_1.jpg&feedId=89032&k=049718a00a40f57e4165f27fabb0ba116da385f3",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 99.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202404-06-fp-gants-de-gardien-t1tan-rebel-2-0-fp-white",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202404-06-fp_white_1.jpg",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-negro",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Rebel 2.0 (FP) - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41114189098&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202402-06-fp_noir_1.jpg&feedId=89032&k=f118d384c79f2497c036fc09118edf2acbf4c3ef",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 99.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202402-06-fp-gants-de-gardien-t1tan-rebel-2-0-fp-noir",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202402-06-fp_noir_1.jpg",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-rojo",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Rebel 2.0 (FP) - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42257429748&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202408-06-fp_solar-red_1.jpg&feedId=89032&k=eceae7fadfd98a504924a536d53f47766a3c5050",
+        sizes: ["Talla 10", "Talla 11", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 99.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202408-06-fp-gants-de-gardien-t1tan-rebel-2-0-fp-solar-red",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202408-06-fp_solar-red_1.jpg",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-negro",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Rebel 2.0 - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44291081745&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202401-06_noir_1.jpg&feedId=89032&k=89f1a449c99a1c5118e9251a6178ae31ffe575ec",
+        sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 89.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202401-06-gants-de-gardien-t1tan-rebel-2-0-noir",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202401-06_noir_1.jpg",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-rojo",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Rebel 2.0 - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529775576&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202407-06_red-solar_1.jpg&feedId=89032&k=e176cadf30f852b4eaf2784824f759912cfb7886",
+        sizes: ["Talla 10", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 89.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202407-08-gants-de-gardien-t1tan-rebel-2-0-red-solar",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202407-06_red-solar_1.jpg",
+        sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-rouge",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Rebel 2.0 - Rouge",
+    colour: "Rouge",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 79.99,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46402732184&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan-202407-red-6ad76c6c027ed-1.jpg&feedId=89032&k=285fa453bb41d1b77546902b931d178529e62818",
+        sizes: ["Talla 11", "Talla 7"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-shadow-beast-3-0-noir",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Shadow Beast 3.0 - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 79.99,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46402706672&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan-202487-black-6ad76c8099465-1.jpg&feedId=89032&k=80c0bc2bdb00fa62f400ba5790514bb7501c7bbd",
+        sizes: ["Talla 6", "Talla 7"],
+      },
+    ],
+  },
+  {
+    id: "t1tan-guantes-de-portero-t1tan-shadow-best-3-0-negro",
+    brand: "T1TAN",
+    model: "Guantes de portero T1TAN Shadow Best 3.0 - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42682747292&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2F1%2Ft1tan_202487-10_0.jpg&feedId=89032&k=25d421d258ef3432d3d015f3842476769edac55d",
+        sizes: ["Talla 10", "Talla 8", "Talla 9"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 79.99,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202487-06-gants-de-gardien-t1tan-shadow-best-3-0-noir-mat",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202487-08_0.jpg",
+        sizes: ["8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
     id: "twofive-guantes-de-portero-twofive-atlanta-advance-bleu",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Atlanta Advance - Bleu",
@@ -12826,7 +13658,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.44,
+        price: 33.5,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44480986139&a=3013769&m=65912",
@@ -12852,7 +13684,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.44,
+        price: 33.5,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44480986144&a=3013769&m=65912",
@@ -12879,7 +13711,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 39.0,
-        priceMax: 39.3,
+        priceMax: 39.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46427065095&a=3013769&m=65912",
@@ -12887,7 +13719,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         sizes: ["Talla 10", "Talla 11"],
         sizePrices: [
           { size: "Talla 10", price: 39.0, url: "https://www.awin1.com/pclick.php?p=46427065095&a=3013769&m=65912" },
-          { size: "Talla 11", price: 39.3, url: "https://www.awin1.com/pclick.php?p=44023889631&a=3013769&m=65912" },
+          { size: "Talla 11", price: 39.9, url: "https://www.awin1.com/pclick.php?p=44023889631&a=3013769&m=65912" },
         ],
       },
       {
@@ -12909,10 +13741,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 75.26,
+        price: 76.93,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44023889639&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44023889638&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fw%2Ftwofive-10919-white-6a1ea9f2ec2a7-1.jpg&feedId=89032&k=2722d6f9913a2f5bc1c9f4e5f55c0d1841e4175d",
         sizes: ["Talla 10", "Talla 11", "Talla 8", "Talla 9"],
       },
@@ -12942,10 +13774,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 75.26,
+        price: 76.93,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44023889636&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44023889634&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fw%2Ftwofive-10847-black-6a1ea9f2e5adf-1.jpg&feedId=89032&k=86e06d14c4a8ad92a1d5bea27d8bec2b5c78d103",
         sizes: ["Talla 10", "Talla 11", "Talla 6", "Talla 7", "Talla 8", "Talla 9"],
       },
@@ -12987,6 +13819,23 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "twofive-guantes-de-portero-twofive-los-angeles-advance-vert",
+    brand: "TwoFive",
+    model: "Guantes de portero TwoFive Los Angeles Advance - Vert",
+    colour: "Vert",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 45.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46450283989&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fw%2Ftwofive-13766-green-69dcf8396d9df-1.jpg&feedId=89032&k=987f424f9bb0a795ead91b78b4843ccab61423b2",
+        sizes: ["Talla 8"],
+      },
+    ],
+  },
+  {
     id: "twofive-guantes-de-portero-twofive-madrid-pro-rose",
     brand: "TwoFive",
     model: "Guantes de portero TwoFive Madrid Pro - Rose",
@@ -12994,7 +13843,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 63.55,
+        price: 65.06,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44472588878&a=3013769&m=65912",
@@ -13020,7 +13869,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.0,
+        price: 45.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44480986172&a=3013769&m=65912",
@@ -13046,7 +13895,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 63.55,
+        price: 65.06,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44472588884&a=3013769&m=65912",
@@ -13072,7 +13921,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 81.22,
+        price: 82.98,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40632647589&a=3013769&m=65912",
@@ -13098,10 +13947,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.4,
+        price: 17.22,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923784611&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923784609&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F1000969012.jpg&feedId=89032&k=09f1ccbd20495856adae8d5f4b3baf0fa4ee2588",
         sizes: ["5", "6", "7", "8", "9", "10", "11"],
       },
@@ -13124,20 +13973,20 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.41,
-        priceMax: 54.86,
+        price: 42.91,
+        priceMax: 56.24,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45047894156&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45047894155&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport-101139901-white-black-red-6a2fbaa8b4b05-1.jpg&feedId=89032&k=bda790eeefe4f1debf29e6a4dfabf6c18450dd3f",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 54.86, url: "https://www.awin1.com/pclick.php?p=45047894159&a=3013769&m=65912" },
-          { size: "Talla 7", price: 42.41, url: "https://www.awin1.com/pclick.php?p=45047894155&a=3013769&m=65912" },
-          { size: "Talla 8", price: 42.41, url: "https://www.awin1.com/pclick.php?p=45047894156&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 54.86, url: "https://www.awin1.com/pclick.php?p=45047894157&a=3013769&m=65912" },
-          { size: "Talla 9", price: 54.86, url: "https://www.awin1.com/pclick.php?p=45047894158&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 50.8, url: "https://www.awin1.com/pclick.php?p=45242386043&a=3013769&m=65912" },
+          { size: "Talla 10", price: 56.24, url: "https://www.awin1.com/pclick.php?p=45047894159&a=3013769&m=65912" },
+          { size: "Talla 7", price: 42.91, url: "https://www.awin1.com/pclick.php?p=45047894155&a=3013769&m=65912" },
+          { size: "Talla 8", price: 42.91, url: "https://www.awin1.com/pclick.php?p=45047894156&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 56.24, url: "https://www.awin1.com/pclick.php?p=45047894157&a=3013769&m=65912" },
+          { size: "Talla 9", price: 56.24, url: "https://www.awin1.com/pclick.php?p=45047894158&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 51.3, url: "https://www.awin1.com/pclick.php?p=45242386043&a=3013769&m=65912" },
         ],
       },
       {
@@ -13203,17 +14052,17 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.73,
-        priceMax: 52.0,
+        price: 40.9,
+        priceMax: 53.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37488693088&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37488693087&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101135101_0.jpg&feedId=89032&k=b84ef86b0c347d76146ad6ec32c26a6c1a4cea41",
         sizes: ["Talla 7.5", "Talla 8", "Talla 8.5"],
         sizePrices: [
-          { size: "Talla 7.5", price: 39.73, url: "https://www.awin1.com/pclick.php?p=37488693087&a=3013769&m=65912" },
-          { size: "Talla 8", price: 39.73, url: "https://www.awin1.com/pclick.php?p=37488693088&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 52.0, url: "https://www.awin1.com/pclick.php?p=37488693089&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 40.9, url: "https://www.awin1.com/pclick.php?p=37488693087&a=3013769&m=65912" },
+          { size: "Talla 8", price: 40.9, url: "https://www.awin1.com/pclick.php?p=37488693088&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 53.0, url: "https://www.awin1.com/pclick.php?p=37488693089&a=3013769&m=65912" },
         ],
       },
       {
@@ -13252,7 +14101,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 94.0,
+        price: 95.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40755405523&a=3013769&m=65912",
@@ -13278,10 +14127,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 50.1,
+        price: 51.42,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41716515742&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41716515739&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101134101_bleu-pacifique-vert-fluo-blanc_1.jpg&feedId=89032&k=bea50df04bb364041b4e19f3df686cecfeafe9a3",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -13304,18 +14153,18 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 55.0,
-        priceMax: 73.0,
+        price: 56.0,
+        priceMax: 74.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529517141&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529517134&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101131501_bleu-pacifique-vert-fluo-blanc_1.jpg&feedId=89032&k=812a13cf12ac9b6d0f7784b3269868111b1c594c",
         sizes: ["Talla 10", "Talla 11", "Talla 7.5", "Talla 8"],
         sizePrices: [
-          { size: "Talla 10", price: 73.0, url: "https://www.awin1.com/pclick.php?p=42529517139&a=3013769&m=65912" },
-          { size: "Talla 11", price: 55.0, url: "https://www.awin1.com/pclick.php?p=42529517141&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 55.0, url: "https://www.awin1.com/pclick.php?p=42529517134&a=3013769&m=65912" },
-          { size: "Talla 8", price: 73.0, url: "https://www.awin1.com/pclick.php?p=42529517135&a=3013769&m=65912" },
+          { size: "Talla 10", price: 74.0, url: "https://www.awin1.com/pclick.php?p=42529517139&a=3013769&m=65912" },
+          { size: "Talla 11", price: 56.0, url: "https://www.awin1.com/pclick.php?p=42529517141&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 56.0, url: "https://www.awin1.com/pclick.php?p=42529517134&a=3013769&m=65912" },
+          { size: "Talla 8", price: 74.0, url: "https://www.awin1.com/pclick.php?p=42529517135&a=3013769&m=65912" },
         ],
       },
       {
@@ -13347,7 +14196,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         price: 62.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41104844068&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41104844067&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101131401_bleu-pacifique-vert-fluo-blanc_1.jpg&feedId=89032&k=1f9d051a566cc1d26efb135ca174095646f7ba63",
         sizes: ["Talla 7.5", "Talla 8"],
       },
@@ -13370,10 +14219,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 79.0,
+        price: 80.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41554274492&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41554274493&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101134001_bleu-pacifique-vert-fluo-blanc_1.jpg&feedId=89032&k=b872869fcd31275e62d44bc5a122c9f559ce093b",
         sizes: ["Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9.5"],
       },
@@ -13445,22 +14294,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 54.22,
-        priceMax: 58.52,
+        price: 54.72,
+        priceMax: 59.96,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45356587825&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport-101143001-black-69babd260436a-1.jpg&feedId=89032&k=c2c8fc78ff948876d7da32e87fb69684a5aa5d18",
         sizes: ["Talla 10", "Talla 10.5", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 58.52, url: "https://www.awin1.com/pclick.php?p=45018628243&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 58.52, url: "https://www.awin1.com/pclick.php?p=45371031215&a=3013769&m=65912" },
-          { size: "Talla 7", price: 58.52, url: "https://www.awin1.com/pclick.php?p=44536077544&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 54.22, url: "https://www.awin1.com/pclick.php?p=45356587825&a=3013769&m=65912" },
-          { size: "Talla 8", price: 58.52, url: "https://www.awin1.com/pclick.php?p=45018628241&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 58.52, url: "https://www.awin1.com/pclick.php?p=44755565202&a=3013769&m=65912" },
-          { size: "Talla 9", price: 58.52, url: "https://www.awin1.com/pclick.php?p=45018628242&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 58.52, url: "https://www.awin1.com/pclick.php?p=45356587826&a=3013769&m=65912" },
+          { size: "Talla 10", price: 59.96, url: "https://www.awin1.com/pclick.php?p=45018628243&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 59.96, url: "https://www.awin1.com/pclick.php?p=45371031215&a=3013769&m=65912" },
+          { size: "Talla 7", price: 59.96, url: "https://www.awin1.com/pclick.php?p=44536077544&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 54.72, url: "https://www.awin1.com/pclick.php?p=45356587825&a=3013769&m=65912" },
+          { size: "Talla 8", price: 59.96, url: "https://www.awin1.com/pclick.php?p=45018628241&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 59.96, url: "https://www.awin1.com/pclick.php?p=44755565202&a=3013769&m=65912" },
+          { size: "Talla 9", price: 59.96, url: "https://www.awin1.com/pclick.php?p=45018628242&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 59.96, url: "https://www.awin1.com/pclick.php?p=45356587826&a=3013769&m=65912" },
         ],
       },
       {
@@ -13508,7 +14357,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 54.86,
+        price: 56.24,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46309364444&a=3013769&m=65912",
@@ -13560,7 +14409,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 62.2,
+        price: 63.69,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43383153749&a=3013769&m=65912",
@@ -13586,7 +14435,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 121.0,
+        price: 122.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41747473628&a=3013769&m=65912",
@@ -13612,26 +14461,26 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.0,
-        priceMax: 29.36,
+        price: 25.5,
+        priceMax: 30.37,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529973926&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101138201_blanc-cyber-bleu-noir_1.jpg&feedId=89032&k=aef557870e3cb0a6063a9b3ddc73d99e362d06b4",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 4", "Talla 4.5", "Talla 5.5", "Talla 6.5", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 29.36, url: "https://www.awin1.com/pclick.php?p=42529973930&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 29.36, url: "https://www.awin1.com/pclick.php?p=42529973931&a=3013769&m=65912" },
-          { size: "Talla 11", price: 29.36, url: "https://www.awin1.com/pclick.php?p=42529973932&a=3013769&m=65912" },
-          { size: "Talla 4", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42529973918&a=3013769&m=65912" },
-          { size: "Talla 4.5", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42529973919&a=3013769&m=65912" },
-          { size: "Talla 5.5", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42529973921&a=3013769&m=65912" },
-          { size: "Talla 6.5", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42529973923&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42529973925&a=3013769&m=65912" },
-          { size: "Talla 8", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42529973926&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 27.45, url: "https://www.awin1.com/pclick.php?p=42529973927&a=3013769&m=65912" },
-          { size: "Talla 9", price: 29.36, url: "https://www.awin1.com/pclick.php?p=42529973928&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 29.36, url: "https://www.awin1.com/pclick.php?p=42529973929&a=3013769&m=65912" },
+          { size: "Talla 10", price: 30.37, url: "https://www.awin1.com/pclick.php?p=42529973930&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 30.37, url: "https://www.awin1.com/pclick.php?p=42529973931&a=3013769&m=65912" },
+          { size: "Talla 11", price: 30.37, url: "https://www.awin1.com/pclick.php?p=42529973932&a=3013769&m=65912" },
+          { size: "Talla 4", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42529973918&a=3013769&m=65912" },
+          { size: "Talla 4.5", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42529973919&a=3013769&m=65912" },
+          { size: "Talla 5.5", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42529973921&a=3013769&m=65912" },
+          { size: "Talla 6.5", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42529973923&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42529973925&a=3013769&m=65912" },
+          { size: "Talla 8", price: 25.5, url: "https://www.awin1.com/pclick.php?p=42529973926&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 27.95, url: "https://www.awin1.com/pclick.php?p=42529973927&a=3013769&m=65912" },
+          { size: "Talla 9", price: 30.37, url: "https://www.awin1.com/pclick.php?p=42529973928&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 30.37, url: "https://www.awin1.com/pclick.php?p=42529973929&a=3013769&m=65912" },
         ],
       },
       {
@@ -13686,24 +14535,24 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.74,
-        priceMax: 21.58,
+        price: 20.24,
+        priceMax: 22.48,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41670116762&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F101138301.jpg&feedId=89032&k=8845a8e0f7874d518b1c82b5ca65335271eb3ddc",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 4", "Talla 4.5", "Talla 5.5", "Talla 6.5", "Talla 7.5", "Talla 8.5", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 21.58, url: "https://www.awin1.com/pclick.php?p=41670116767&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 21.58, url: "https://www.awin1.com/pclick.php?p=41670116768&a=3013769&m=65912" },
-          { size: "Talla 11", price: 21.58, url: "https://www.awin1.com/pclick.php?p=41670116769&a=3013769&m=65912" },
-          { size: "Talla 4", price: 21.58, url: "https://www.awin1.com/pclick.php?p=42529973933&a=3013769&m=65912" },
-          { size: "Talla 4.5", price: 21.58, url: "https://www.awin1.com/pclick.php?p=42529973934&a=3013769&m=65912" },
-          { size: "Talla 5.5", price: 21.58, url: "https://www.awin1.com/pclick.php?p=42529973936&a=3013769&m=65912" },
-          { size: "Talla 6.5", price: 21.58, url: "https://www.awin1.com/pclick.php?p=42529973938&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 19.74, url: "https://www.awin1.com/pclick.php?p=41670116762&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 20.09, url: "https://www.awin1.com/pclick.php?p=41670116764&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 21.58, url: "https://www.awin1.com/pclick.php?p=41670116766&a=3013769&m=65912" },
+          { size: "Talla 10", price: 22.48, url: "https://www.awin1.com/pclick.php?p=41670116767&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 22.48, url: "https://www.awin1.com/pclick.php?p=41670116768&a=3013769&m=65912" },
+          { size: "Talla 11", price: 22.48, url: "https://www.awin1.com/pclick.php?p=41670116769&a=3013769&m=65912" },
+          { size: "Talla 4", price: 22.48, url: "https://www.awin1.com/pclick.php?p=42529973933&a=3013769&m=65912" },
+          { size: "Talla 4.5", price: 22.48, url: "https://www.awin1.com/pclick.php?p=42529973934&a=3013769&m=65912" },
+          { size: "Talla 5.5", price: 22.48, url: "https://www.awin1.com/pclick.php?p=42529973936&a=3013769&m=65912" },
+          { size: "Talla 6.5", price: 22.48, url: "https://www.awin1.com/pclick.php?p=42529973938&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 20.24, url: "https://www.awin1.com/pclick.php?p=41670116762&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 20.59, url: "https://www.awin1.com/pclick.php?p=41670116764&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 22.48, url: "https://www.awin1.com/pclick.php?p=41670116766&a=3013769&m=65912" },
         ],
       },
       {
@@ -13743,29 +14592,29 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.8,
+        price: 14.59,
         priceMax: 20.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41773059764&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46339473841&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101138401_blanc-cyber-bleu-noir_1.jpg&feedId=89032&k=b61762397bdba330f5f0ad715e9b392dc16593f2",
         sizes: ["Talla 10", "Talla 11", "Talla 2", "Talla 2.5", "Talla 3", "Talla 3.5", "Talla 4", "Talla 4.5", "Talla 5", "Talla 5.5", "Talla 6", "Talla 6.5", "Talla 7.5", "Talla 8", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 13.8, url: "https://www.awin1.com/pclick.php?p=41773059777&a=3013769&m=65912" },
-          { size: "Talla 11", price: 13.8, url: "https://www.awin1.com/pclick.php?p=41773059778&a=3013769&m=65912" },
-          { size: "Talla 2", price: 13.8, url: "https://www.awin1.com/pclick.php?p=41773059763&a=3013769&m=65912" },
-          { size: "Talla 2.5", price: 13.8, url: "https://www.awin1.com/pclick.php?p=41773059764&a=3013769&m=65912" },
-          { size: "Talla 3", price: 13.8, url: "https://www.awin1.com/pclick.php?p=41773059765&a=3013769&m=65912" },
-          { size: "Talla 3.5", price: 13.8, url: "https://www.awin1.com/pclick.php?p=41773059766&a=3013769&m=65912" },
-          { size: "Talla 4", price: 13.8, url: "https://www.awin1.com/pclick.php?p=41773059767&a=3013769&m=65912" },
-          { size: "Talla 4.5", price: 13.8, url: "https://www.awin1.com/pclick.php?p=41773059768&a=3013769&m=65912" },
-          { size: "Talla 5", price: 13.8, url: "https://www.awin1.com/pclick.php?p=41773059769&a=3013769&m=65912" },
+          { size: "Talla 10", price: 14.59, url: "https://www.awin1.com/pclick.php?p=41773059777&a=3013769&m=65912" },
+          { size: "Talla 11", price: 14.59, url: "https://www.awin1.com/pclick.php?p=41773059778&a=3013769&m=65912" },
+          { size: "Talla 2", price: 14.59, url: "https://www.awin1.com/pclick.php?p=41773059763&a=3013769&m=65912" },
+          { size: "Talla 2.5", price: 14.59, url: "https://www.awin1.com/pclick.php?p=41773059764&a=3013769&m=65912" },
+          { size: "Talla 3", price: 14.59, url: "https://www.awin1.com/pclick.php?p=41773059765&a=3013769&m=65912" },
+          { size: "Talla 3.5", price: 14.59, url: "https://www.awin1.com/pclick.php?p=41773059766&a=3013769&m=65912" },
+          { size: "Talla 4", price: 14.59, url: "https://www.awin1.com/pclick.php?p=41773059767&a=3013769&m=65912" },
+          { size: "Talla 4.5", price: 14.59, url: "https://www.awin1.com/pclick.php?p=41773059768&a=3013769&m=65912" },
+          { size: "Talla 5", price: 14.59, url: "https://www.awin1.com/pclick.php?p=41773059769&a=3013769&m=65912" },
           { size: "Talla 5.5", price: 20.0, url: "https://www.awin1.com/pclick.php?p=41773059770&a=3013769&m=65912" },
           { size: "Talla 6", price: 20.0, url: "https://www.awin1.com/pclick.php?p=41773059771&a=3013769&m=65912" },
           { size: "Talla 6.5", price: 20.0, url: "https://www.awin1.com/pclick.php?p=41773059772&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 13.8, url: "https://www.awin1.com/pclick.php?p=41773059774&a=3013769&m=65912" },
-          { size: "Talla 8", price: 13.8, url: "https://www.awin1.com/pclick.php?p=46339473841&a=3013769&m=65912" },
-          { size: "Talla 9", price: 13.8, url: "https://www.awin1.com/pclick.php?p=41773059776&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 14.59, url: "https://www.awin1.com/pclick.php?p=41773059774&a=3013769&m=65912" },
+          { size: "Talla 8", price: 14.59, url: "https://www.awin1.com/pclick.php?p=46339473841&a=3013769&m=65912" },
+          { size: "Talla 9", price: 14.59, url: "https://www.awin1.com/pclick.php?p=41773059776&a=3013769&m=65912" },
         ],
       },
       {
@@ -13804,16 +14653,16 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 81.22,
-        priceMax: 109.0,
+        price: 82.98,
+        priceMax: 110.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41877230965&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F101137401.jpg&feedId=89032&k=1e205aafcdc996f0edb5d51dc969b0035dba2bcb",
         sizes: ["Talla 12", "Talla 7"],
         sizePrices: [
-          { size: "Talla 12", price: 81.22, url: "https://www.awin1.com/pclick.php?p=41877230965&a=3013769&m=65912" },
-          { size: "Talla 7", price: 109.0, url: "https://www.awin1.com/pclick.php?p=41670116770&a=3013769&m=65912" },
+          { size: "Talla 12", price: 82.98, url: "https://www.awin1.com/pclick.php?p=41877230965&a=3013769&m=65912" },
+          { size: "Talla 7", price: 110.0, url: "https://www.awin1.com/pclick.php?p=41670116770&a=3013769&m=65912" },
         ],
       },
       {
@@ -13840,16 +14689,16 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 71.6,
-        priceMax: 131.0,
+        price: 72.1,
+        priceMax: 132.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43397421056&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F101137501.jpg&feedId=89032&k=6ab219050f17c7d53b93b87b80ab502cd4c0d1bf",
         sizes: ["Talla 12", "Talla 7"],
         sizePrices: [
-          { size: "Talla 12", price: 131.0, url: "https://www.awin1.com/pclick.php?p=46422349322&a=3013769&m=65912" },
-          { size: "Talla 7", price: 71.6, url: "https://www.awin1.com/pclick.php?p=43397421056&a=3013769&m=65912" },
+          { size: "Talla 12", price: 132.0, url: "https://www.awin1.com/pclick.php?p=46422349322&a=3013769&m=65912" },
+          { size: "Talla 7", price: 72.1, url: "https://www.awin1.com/pclick.php?p=43397421056&a=3013769&m=65912" },
         ],
       },
       {
@@ -13889,22 +14738,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 34.55,
+        price: 35.64,
         priceMax: 59.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41670116794&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41670116795&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F101138101.jpg&feedId=89032&k=1608e299b096797348a60871726d75861907f33c",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 6.5", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 34.55, url: "https://www.awin1.com/pclick.php?p=41670116794&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 34.55, url: "https://www.awin1.com/pclick.php?p=41670116795&a=3013769&m=65912" },
-          { size: "Talla 11", price: 34.55, url: "https://www.awin1.com/pclick.php?p=41670116796&a=3013769&m=65912" },
-          { size: "Talla 6.5", price: 34.55, url: "https://www.awin1.com/pclick.php?p=42529973939&a=3013769&m=65912" },
+          { size: "Talla 10", price: 35.64, url: "https://www.awin1.com/pclick.php?p=41670116794&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 35.64, url: "https://www.awin1.com/pclick.php?p=41670116795&a=3013769&m=65912" },
+          { size: "Talla 11", price: 35.64, url: "https://www.awin1.com/pclick.php?p=41670116796&a=3013769&m=65912" },
+          { size: "Talla 6.5", price: 35.64, url: "https://www.awin1.com/pclick.php?p=42529973939&a=3013769&m=65912" },
           { size: "Talla 7", price: 59.0, url: "https://www.awin1.com/pclick.php?p=41670116788&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 34.55, url: "https://www.awin1.com/pclick.php?p=41670116789&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 35.64, url: "https://www.awin1.com/pclick.php?p=41670116789&a=3013769&m=65912" },
           { size: "Talla 8", price: 42.0, url: "https://www.awin1.com/pclick.php?p=41670116790&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 34.55, url: "https://www.awin1.com/pclick.php?p=41670116791&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 35.64, url: "https://www.awin1.com/pclick.php?p=41670116791&a=3013769&m=65912" },
           { size: "Talla 9", price: 42.0, url: "https://www.awin1.com/pclick.php?p=41670116792&a=3013769&m=65912" },
           { size: "Talla 9.5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=41670116793&a=3013769&m=65912" },
         ],
@@ -13959,22 +14808,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.73,
-        priceMax: 67.0,
+        price: 40.9,
+        priceMax: 68.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42370948067&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42370948068&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F101138001.jpg&feedId=89032&k=e5ff5f44f22a93da8c4ea18d323cbf1a0e9edf1f",
         sizes: ["Talla 4", "Talla 4.5", "Talla 5", "Talla 5.5", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 4", price: 39.73, url: "https://www.awin1.com/pclick.php?p=42370948067&a=3013769&m=65912" },
-          { size: "Talla 4.5", price: 39.73, url: "https://www.awin1.com/pclick.php?p=42370948068&a=3013769&m=65912" },
-          { size: "Talla 5", price: 67.0, url: "https://www.awin1.com/pclick.php?p=42370948069&a=3013769&m=65912" },
-          { size: "Talla 5.5", price: 39.73, url: "https://www.awin1.com/pclick.php?p=42370948070&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 67.0, url: "https://www.awin1.com/pclick.php?p=41670116798&a=3013769&m=65912" },
-          { size: "Talla 8", price: 67.0, url: "https://www.awin1.com/pclick.php?p=41670116799&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 39.73, url: "https://www.awin1.com/pclick.php?p=42370948073&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 39.73, url: "https://www.awin1.com/pclick.php?p=42370948074&a=3013769&m=65912" },
+          { size: "Talla 4", price: 40.9, url: "https://www.awin1.com/pclick.php?p=42370948067&a=3013769&m=65912" },
+          { size: "Talla 4.5", price: 40.9, url: "https://www.awin1.com/pclick.php?p=42370948068&a=3013769&m=65912" },
+          { size: "Talla 5", price: 68.0, url: "https://www.awin1.com/pclick.php?p=42370948069&a=3013769&m=65912" },
+          { size: "Talla 5.5", price: 40.9, url: "https://www.awin1.com/pclick.php?p=42370948070&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 68.0, url: "https://www.awin1.com/pclick.php?p=41670116798&a=3013769&m=65912" },
+          { size: "Talla 8", price: 68.0, url: "https://www.awin1.com/pclick.php?p=41670116799&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 49.0, url: "https://www.awin1.com/pclick.php?p=42370948073&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 40.9, url: "https://www.awin1.com/pclick.php?p=42370948074&a=3013769&m=65912" },
         ],
       },
       {
@@ -14007,16 +14856,16 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 86.31,
-        priceMax: 91.59,
+        price: 86.81,
+        priceMax: 93.5,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41747473634&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F101137201.jpg&feedId=89032&k=919c7dc03b565c71682397a2d4f9fc20522a7b48",
         sizes: ["Talla 12", "Talla 7"],
         sizePrices: [
-          { size: "Talla 12", price: 86.31, url: "https://www.awin1.com/pclick.php?p=41747473634&a=3013769&m=65912" },
-          { size: "Talla 7", price: 91.59, url: "https://www.awin1.com/pclick.php?p=41747473629&a=3013769&m=65912" },
+          { size: "Talla 12", price: 86.81, url: "https://www.awin1.com/pclick.php?p=41747473634&a=3013769&m=65912" },
+          { size: "Talla 7", price: 93.5, url: "https://www.awin1.com/pclick.php?p=41747473629&a=3013769&m=65912" },
         ],
       },
       {
@@ -14038,7 +14887,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 80.24,
+        price: 80.74,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41670116810&a=3013769&m=65912",
@@ -14082,7 +14931,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 120.98,
+        price: 123.32,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46422337673&a=3013769&m=65912",
@@ -14099,16 +14948,16 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 113.63,
-        priceMax: 139.0,
+        price: 115.86,
+        priceMax: 141.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45971960037&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101138501_bleu-marine-bleu-pacifique-blanc_1.jpg&feedId=89032&k=24820e475090afe98f6f61fba11ee1b9eec11069",
         sizes: ["Talla 12", "Talla 8"],
         sizePrices: [
-          { size: "Talla 12", price: 113.63, url: "https://www.awin1.com/pclick.php?p=45971960037&a=3013769&m=65912" },
-          { size: "Talla 8", price: 139.0, url: "https://www.awin1.com/pclick.php?p=44086762588&a=3013769&m=65912" },
+          { size: "Talla 12", price: 115.86, url: "https://www.awin1.com/pclick.php?p=45971960037&a=3013769&m=65912" },
+          { size: "Talla 8", price: 141.0, url: "https://www.awin1.com/pclick.php?p=44086762588&a=3013769&m=65912" },
         ],
       },
       {
@@ -14130,10 +14979,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 69.55,
+        price: 71.15,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42283602925&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42283602927&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101138601_bleu-marine-bleu-pacifique-blanc_1.jpg&feedId=89032&k=7cd8e6137bb738cea96da2e49a10c8602b15362c",
         sizes: ["Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -14156,27 +15005,27 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
-        priceMax: 26.77,
+        price: 25.11,
+        priceMax: 27.74,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41670116835&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41670116832&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101138901_noir-orange-fluo_1.jpg&feedId=89032&k=85da191e3178e6aeb6b9d57173a11c9c6a026436",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 5", "Talla 5.5", "Talla 6", "Talla 6.5", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42313338014&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42313338015&a=3013769&m=65912" },
-          { size: "Talla 11", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42313338016&a=3013769&m=65912" },
-          { size: "Talla 5", price: 24.18, url: "https://www.awin1.com/pclick.php?p=41670116831&a=3013769&m=65912" },
-          { size: "Talla 5.5", price: 24.18, url: "https://www.awin1.com/pclick.php?p=41670116832&a=3013769&m=65912" },
-          { size: "Talla 6", price: 24.18, url: "https://www.awin1.com/pclick.php?p=41670116833&a=3013769&m=65912" },
-          { size: "Talla 6.5", price: 24.18, url: "https://www.awin1.com/pclick.php?p=41670116834&a=3013769&m=65912" },
-          { size: "Talla 7", price: 24.18, url: "https://www.awin1.com/pclick.php?p=41670116835&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 24.18, url: "https://www.awin1.com/pclick.php?p=41670116836&a=3013769&m=65912" },
-          { size: "Talla 8", price: 24.18, url: "https://www.awin1.com/pclick.php?p=41670116837&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42313338011&a=3013769&m=65912" },
-          { size: "Talla 9", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42313338012&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42313338013&a=3013769&m=65912" },
+          { size: "Talla 10", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42313338014&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42313338015&a=3013769&m=65912" },
+          { size: "Talla 11", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42313338016&a=3013769&m=65912" },
+          { size: "Talla 5", price: 25.11, url: "https://www.awin1.com/pclick.php?p=41670116831&a=3013769&m=65912" },
+          { size: "Talla 5.5", price: 25.11, url: "https://www.awin1.com/pclick.php?p=41670116832&a=3013769&m=65912" },
+          { size: "Talla 6", price: 25.11, url: "https://www.awin1.com/pclick.php?p=41670116833&a=3013769&m=65912" },
+          { size: "Talla 6.5", price: 25.11, url: "https://www.awin1.com/pclick.php?p=41670116834&a=3013769&m=65912" },
+          { size: "Talla 7", price: 25.11, url: "https://www.awin1.com/pclick.php?p=41670116835&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 25.11, url: "https://www.awin1.com/pclick.php?p=41670116836&a=3013769&m=65912" },
+          { size: "Talla 8", price: 25.11, url: "https://www.awin1.com/pclick.php?p=41670116837&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42313338011&a=3013769&m=65912" },
+          { size: "Talla 9", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42313338012&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42313338013&a=3013769&m=65912" },
         ],
       },
       {
@@ -14232,10 +15081,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 25.11,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41670116825&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=41670116829&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101139001_noir-orange-fluo_1.jpg&feedId=89032&k=f2eb05aea9f6882cd310d8a04a63a56a2b95d43d",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 5", "Talla 5.5", "Talla 6", "Talla 6.5", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -14258,10 +15107,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.77,
+        price: 13.54,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44216767650&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529973952&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101139101_noir-orange-fluo_1.jpg&feedId=89032&k=25f41d9e35550d5c5e69064c6118a33ff7807a17",
         sizes: ["Talla 10", "Talla 11", "Talla 3", "Talla 3.5", "Talla 4.5", "Talla 5.5", "Talla 6.5", "Talla 7", "Talla 7.5", "Talla 8", "Talla 9"],
       },
@@ -14302,24 +15151,24 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 44.92,
+        price: 46.16,
         priceMax: 80.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41670116841&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42482243945&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101138801_noir-orange-fluo_1.jpg&feedId=89032&k=f0fff304deea17b5cedc8668d5ae359ea282ceb5",
         sizes: ["Talla 11", "Talla 3", "Talla 3.5", "Talla 4", "Talla 4.5", "Talla 5", "Talla 5.5", "Talla 6", "Talla 8", "Talla 8.5"],
         sizePrices: [
           { size: "Talla 11", price: 56.0, url: "https://www.awin1.com/pclick.php?p=44216767651&a=3013769&m=65912" },
-          { size: "Talla 3", price: 44.92, url: "https://www.awin1.com/pclick.php?p=42482243941&a=3013769&m=65912" },
-          { size: "Talla 3.5", price: 44.92, url: "https://www.awin1.com/pclick.php?p=42482243942&a=3013769&m=65912" },
-          { size: "Talla 4", price: 44.92, url: "https://www.awin1.com/pclick.php?p=42482243943&a=3013769&m=65912" },
-          { size: "Talla 4.5", price: 44.92, url: "https://www.awin1.com/pclick.php?p=42482243944&a=3013769&m=65912" },
-          { size: "Talla 5", price: 44.92, url: "https://www.awin1.com/pclick.php?p=42482243945&a=3013769&m=65912" },
-          { size: "Talla 5.5", price: 44.92, url: "https://www.awin1.com/pclick.php?p=42482243946&a=3013769&m=65912" },
-          { size: "Talla 6", price: 77.0, url: "https://www.awin1.com/pclick.php?p=42482243947&a=3013769&m=65912" },
+          { size: "Talla 3", price: 46.16, url: "https://www.awin1.com/pclick.php?p=42482243941&a=3013769&m=65912" },
+          { size: "Talla 3.5", price: 46.16, url: "https://www.awin1.com/pclick.php?p=42482243942&a=3013769&m=65912" },
+          { size: "Talla 4", price: 46.16, url: "https://www.awin1.com/pclick.php?p=42482243943&a=3013769&m=65912" },
+          { size: "Talla 4.5", price: 46.16, url: "https://www.awin1.com/pclick.php?p=42482243944&a=3013769&m=65912" },
+          { size: "Talla 5", price: 46.16, url: "https://www.awin1.com/pclick.php?p=42482243945&a=3013769&m=65912" },
+          { size: "Talla 5.5", price: 46.16, url: "https://www.awin1.com/pclick.php?p=42482243946&a=3013769&m=65912" },
+          { size: "Talla 6", price: 78.0, url: "https://www.awin1.com/pclick.php?p=42482243947&a=3013769&m=65912" },
           { size: "Talla 8", price: 80.0, url: "https://www.awin1.com/pclick.php?p=41670116840&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 44.92, url: "https://www.awin1.com/pclick.php?p=41670116841&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 46.16, url: "https://www.awin1.com/pclick.php?p=41670116841&a=3013769&m=65912" },
         ],
       },
       {
@@ -14418,19 +15267,18 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 72.0,
-        priceMax: 85.0,
+        priceMax: 87.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45075022545&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45819221860&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport-101141501-rouge-fluo-blanc-jaune-fluo-6a3267f898829-1.jpg&feedId=89032&k=ecd3ad5d4d5872bef2adaa0f7a9b73f59d2b9659",
-        sizes: ["Talla 10.5", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
+        sizes: ["Talla 10.5", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9"],
         sizePrices: [
           { size: "Talla 10.5", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45819221860&a=3013769&m=65912" },
-          { size: "Talla 7.5", price: 85.0, url: "https://www.awin1.com/pclick.php?p=45075022542&a=3013769&m=65912" },
+          { size: "Talla 7.5", price: 87.0, url: "https://www.awin1.com/pclick.php?p=45075022542&a=3013769&m=65912" },
           { size: "Talla 8", price: 72.0, url: "https://www.awin1.com/pclick.php?p=46246404757&a=3013769&m=65912" },
           { size: "Talla 8.5", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45075022544&a=3013769&m=65912" },
           { size: "Talla 9", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45075022545&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 72.0, url: "https://www.awin1.com/pclick.php?p=45075022546&a=3013769&m=65912" },
         ],
       },
       {
@@ -14540,7 +15388,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.62,
+        price: 15.42,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45819222216&a=3013769&m=65912",
@@ -14566,7 +15414,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 60.16,
+        price: 61.62,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45229569665&a=3013769&m=65912",
@@ -14595,7 +15443,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         price: 120.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45075022551&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45075022557&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport-101141001-rouge-fluo-blanc-jaune-fluo-6a3267f9c9895-1.jpg&feedId=89032&k=c988d250832268587a52d608678702df6980254d",
         sizes: ["Talla 10", "Talla 7", "Talla 7.5", "Talla 8"],
       },
@@ -14639,7 +15487,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         price: 112.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45075022558&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45819221861&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport-101141101-rouge-fluo-blanc-jaune-fluo-6a3267fa82b23-1.jpg&feedId=89032&k=ccc4344b42ebd53008a4113248de90f45321d041",
         sizes: ["Talla 10", "Talla 10.5", "Talla 8", "Talla 8.5", "Talla 9"],
       },
@@ -14707,11 +15555,19 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       {
         store: "FootStoreES",
         price: 120.0,
+        priceMax: 121.25,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45075022562&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45075022564&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport-101140801-rouge-fluo-blanc-jaune-fluo-6a3267fb369ab-1.jpg&feedId=89032&k=1b7135ece15729e3a3a19ac74e866a9d3d84a641",
-        sizes: ["Talla 11", "Talla 12", "Talla 7", "Talla 9"],
+        sizes: ["Talla 11", "Talla 12", "Talla 7", "Talla 8", "Talla 9"],
+        sizePrices: [
+          { size: "Talla 11", price: 121.25, url: "https://www.awin1.com/pclick.php?p=45075022570&a=3013769&m=65912" },
+          { size: "Talla 12", price: 121.25, url: "https://www.awin1.com/pclick.php?p=45888246135&a=3013769&m=65912" },
+          { size: "Talla 7", price: 120.0, url: "https://www.awin1.com/pclick.php?p=45075022562&a=3013769&m=65912" },
+          { size: "Talla 8", price: 120.0, url: "https://www.awin1.com/pclick.php?p=45075022564&a=3013769&m=65912" },
+          { size: "Talla 9", price: 120.0, url: "https://www.awin1.com/pclick.php?p=45075022566&a=3013769&m=65912" },
+        ],
       },
       {
         store: "SportIsGoodES",
@@ -14761,7 +15617,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 151.0,
+        price: 153.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45888246257&a=3013769&m=65912",
@@ -14787,7 +15643,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 25.11,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529844223&a=3013769&m=65912",
@@ -14813,7 +15669,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.57,
+        price: 37.07,
         priceMax: 60.0,
         shipping: 9.99,
         currency: "EUR",
@@ -14821,10 +15677,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101130901_0.jpg&feedId=89032&k=f80860d777aae74a2082cab38ba830233fcc4499",
         sizes: ["Talla 10", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 36.57, url: "https://www.awin1.com/pclick.php?p=41104842471&a=3013769&m=65912" },
-          { size: "Talla 7", price: 50.0, url: "https://www.awin1.com/pclick.php?p=41104842465&a=3013769&m=65912" },
+          { size: "Talla 10", price: 37.07, url: "https://www.awin1.com/pclick.php?p=41104842471&a=3013769&m=65912" },
+          { size: "Talla 7", price: 51.0, url: "https://www.awin1.com/pclick.php?p=41104842465&a=3013769&m=65912" },
           { size: "Talla 7.5", price: 44.0, url: "https://www.awin1.com/pclick.php?p=41104842466&a=3013769&m=65912" },
-          { size: "Talla 8", price: 50.0, url: "https://www.awin1.com/pclick.php?p=41104842467&a=3013769&m=65912" },
+          { size: "Talla 8", price: 51.0, url: "https://www.awin1.com/pclick.php?p=41104842467&a=3013769&m=65912" },
           { size: "Talla 8.5", price: 50.0, url: "https://www.awin1.com/pclick.php?p=41104842468&a=3013769&m=65912" },
           { size: "Talla 9", price: 60.0, url: "https://www.awin1.com/pclick.php?p=41104842469&a=3013769&m=65912" },
         ],
@@ -14875,12 +15731,12 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.36,
+        price: 30.37,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40132376466&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40132376468&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101133601_bleu-marine-blanc-jaune-fluo_1.jpg&feedId=89032&k=1ee01bee1889693681afd4dc1b078f5823e368d8",
-        sizes: ["Talla 8.5", "Talla 9", "Talla 9.5"],
+        sizes: ["Talla 8.5", "Talla 9.5"],
       },
       {
         store: "FootStoreFR",
@@ -14901,21 +15757,21 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.58,
+        price: 22.48,
         priceMax: 36.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40249036265&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40249036263&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101133701_bleu-marine-blanc-jaune-fluo_1.jpg&feedId=89032&k=e80bff9b827b4678bd36fa102fee33e1815f4456",
         sizes: ["Talla 10", "Talla 10.5", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10", price: 21.58, url: "https://www.awin1.com/pclick.php?p=40249036265&a=3013769&m=65912" },
-          { size: "Talla 10.5", price: 21.58, url: "https://www.awin1.com/pclick.php?p=40249036266&a=3013769&m=65912" },
+          { size: "Talla 10", price: 22.48, url: "https://www.awin1.com/pclick.php?p=40249036265&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 22.48, url: "https://www.awin1.com/pclick.php?p=40249036266&a=3013769&m=65912" },
           { size: "Talla 7.5", price: 35.0, url: "https://www.awin1.com/pclick.php?p=40249036260&a=3013769&m=65912" },
           { size: "Talla 8", price: 36.0, url: "https://www.awin1.com/pclick.php?p=40249036261&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 21.58, url: "https://www.awin1.com/pclick.php?p=40249036262&a=3013769&m=65912" },
-          { size: "Talla 9", price: 21.58, url: "https://www.awin1.com/pclick.php?p=40249036263&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 21.58, url: "https://www.awin1.com/pclick.php?p=40249036264&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 22.48, url: "https://www.awin1.com/pclick.php?p=40249036262&a=3013769&m=65912" },
+          { size: "Talla 9", price: 22.48, url: "https://www.awin1.com/pclick.php?p=40249036263&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 22.48, url: "https://www.awin1.com/pclick.php?p=40249036264&a=3013769&m=65912" },
         ],
       },
       {
@@ -14998,10 +15854,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 34.55,
+        price: 35.64,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38371707401&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38371707404&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F101133501.jpg&feedId=89032&k=c3667bd4f14f865d0301c90a5b5a30ce3eee638e",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 7", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
@@ -15033,10 +15889,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.73,
+        price: 40.9,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38371707406&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38371707407&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F101133401.jpg&feedId=89032&k=826cb03f52893033334365597059774429f91977",
         sizes: ["Talla 7", "Talla 7.5"],
       },
@@ -15058,6 +15914,15 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     colour: "Blanco",
     offers: [
       {
+        store: "FootStoreES",
+        price: 19.85,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529877449&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101136901_blanc-noir-vert-fluo_1.jpg&feedId=89032&k=24827685bf07d77d40af6cb1c2dacedb49ce4a2d",
+        sizes: ["Talla 10", "Talla 8", "Talla 9", "Talla 9.5"],
+      },
+      {
         store: "FootStoreFR",
         price: 14.53,
         shipping: 6.99,
@@ -15066,17 +15931,11 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101135501_0.webp",
         sizes: ["8", "9", "9.5", "10", "10.5"],
       },
-      {
-        store: "FootStoreES",
-        price: 18.99,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529877449&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101136901_blanc-noir-vert-fluo_1.jpg&feedId=89032&k=24827685bf07d77d40af6cb1c2dacedb49ce4a2d",
-        sizes: ["Talla 10", "Talla 8", "Talla 9", "Talla 9.5"],
-      },
     ],
   },
+];
+
+const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-soft-hn-negro",
     brand: "uhlsport",
@@ -15085,10 +15944,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.77,
+        price: 27.74,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38925471639&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38925471638&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101135401_0.jpg&feedId=89032&k=65fc0a87cac06029cf821efe171202a3c49eb9f2",
         sizes: ["Talla 8", "Talla 8.5"],
       },
@@ -15111,18 +15970,18 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
-        priceMax: 41.0,
+        price: 25.11,
+        priceMax: 42.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529737589&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101134301_orange-fluo-blanc-noir_1.jpg&feedId=89032&k=0d23293c45a061be37f6509c352e00a3e8f215c9",
         sizes: ["Talla 11", "Talla 8", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 11", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42529737595&a=3013769&m=65912" },
-          { size: "Talla 8", price: 24.18, url: "https://www.awin1.com/pclick.php?p=42529737589&a=3013769&m=65912" },
-          { size: "Talla 9", price: 26.77, url: "https://www.awin1.com/pclick.php?p=42529737591&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 41.0, url: "https://www.awin1.com/pclick.php?p=42529737592&a=3013769&m=65912" },
+          { size: "Talla 11", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42529737595&a=3013769&m=65912" },
+          { size: "Talla 8", price: 25.11, url: "https://www.awin1.com/pclick.php?p=42529737589&a=3013769&m=65912" },
+          { size: "Talla 9", price: 27.74, url: "https://www.awin1.com/pclick.php?p=42529737591&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42529737592&a=3013769&m=65912" },
         ],
       },
       {
@@ -15151,17 +16010,17 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.36,
-        priceMax: 41.0,
+        price: 30.37,
+        priceMax: 42.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923982053&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101131701_0.jpg&feedId=89032&k=cb37e4cb4f6d4f43a9361e775a66bf2c0180e41a",
         sizes: ["Talla 10.5", "Talla 9", "Talla 9.5"],
         sizePrices: [
-          { size: "Talla 10.5", price: 41.0, url: "https://www.awin1.com/pclick.php?p=37923982055&a=3013769&m=65912" },
-          { size: "Talla 9", price: 29.36, url: "https://www.awin1.com/pclick.php?p=37923982052&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 29.36, url: "https://www.awin1.com/pclick.php?p=37923982053&a=3013769&m=65912" },
+          { size: "Talla 10.5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=37923982055&a=3013769&m=65912" },
+          { size: "Talla 9", price: 30.37, url: "https://www.awin1.com/pclick.php?p=37923982052&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 30.37, url: "https://www.awin1.com/pclick.php?p=37923982053&a=3013769&m=65912" },
         ],
       },
       {
@@ -15182,6 +16041,44 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "uhlsport-guantes-de-portero-uhlsport-soft-resist-naranja",
+    brand: "uhlsport",
+    model: "Guantes de portero Uhlsport Soft Resist - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.11,
+        priceMax: 35.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37923982044&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101131801_0.jpg&feedId=89032&k=1f0da9e5085a842488f5b189060177ec182b0e23",
+        sizes: ["Talla 7.5", "Talla 8.5", "Talla 9.5"],
+        sizePrices: [
+          { size: "Talla 7.5", price: 35.0, url: "https://www.awin1.com/pclick.php?p=37923982042&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 25.11, url: "https://www.awin1.com/pclick.php?p=37923982044&a=3013769&m=65912" },
+          { size: "Talla 9.5", price: 25.11, url: "https://www.awin1.com/pclick.php?p=40152187335&a=3013769&m=65912" },
+        ],
+      },
+      {
+        store: "FootStoreFR",
+        price: 19.27,
+        priceMax: 36.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101131801_0.webp",
+        sizes: ["7.5", "8.5", "9.5"],
+        sizePrices: [
+          { size: "7.5", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc" },
+          { size: "8.5", price: 19.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc" },
+          { size: "9.5", price: 19.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc" },
+        ],
+      },
+    ],
+  },
+  {
     id: "uhlsport-guantes-de-portero-uhlsport-soft-resist-naranja-2",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Soft Resist+ - Naranja",
@@ -15189,17 +16086,17 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.18,
+        price: 25.11,
         priceMax: 38.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38371707421&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38371707418&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F101134401.jpg&feedId=89032&k=58b246aa3656d0d423e2242391389002b67deefd",
         sizes: ["Talla 10", "Talla 11", "Talla 8.5", "Talla 9"],
         sizePrices: [
-          { size: "Talla 10", price: 24.18, url: "https://www.awin1.com/pclick.php?p=38371707421&a=3013769&m=65912" },
-          { size: "Talla 11", price: 24.18, url: "https://www.awin1.com/pclick.php?p=39589569240&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 24.18, url: "https://www.awin1.com/pclick.php?p=38371707418&a=3013769&m=65912" },
+          { size: "Talla 10", price: 25.11, url: "https://www.awin1.com/pclick.php?p=38371707421&a=3013769&m=65912" },
+          { size: "Talla 11", price: 25.11, url: "https://www.awin1.com/pclick.php?p=39589569240&a=3013769&m=65912" },
+          { size: "Talla 8.5", price: 25.11, url: "https://www.awin1.com/pclick.php?p=38371707418&a=3013769&m=65912" },
           { size: "Talla 9", price: 38.0, url: "https://www.awin1.com/pclick.php?p=38371707419&a=3013769&m=65912" },
         ],
       },
@@ -15223,44 +16120,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "uhlsport-guantes-de-portero-uhlsport-soft-resist-naranja",
-    brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Soft Resist - Naranja",
-    colour: "Naranja",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 24.18,
-        priceMax: 35.0,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40152187335&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101131801_0.jpg&feedId=89032&k=1f0da9e5085a842488f5b189060177ec182b0e23",
-        sizes: ["Talla 7.5", "Talla 8.5", "Talla 9.5"],
-        sizePrices: [
-          { size: "Talla 7.5", price: 35.0, url: "https://www.awin1.com/pclick.php?p=37923982042&a=3013769&m=65912" },
-          { size: "Talla 8.5", price: 24.18, url: "https://www.awin1.com/pclick.php?p=37923982044&a=3013769&m=65912" },
-          { size: "Talla 9.5", price: 24.18, url: "https://www.awin1.com/pclick.php?p=40152187335&a=3013769&m=65912" },
-        ],
-      },
-      {
-        store: "FootStoreFR",
-        price: 19.27,
-        priceMax: 36.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101131801_0.webp",
-        sizes: ["7.5", "8.5", "9.5"],
-        sizePrices: [
-          { size: "7.5", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc" },
-          { size: "8.5", price: 19.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc" },
-          { size: "9.5", price: 19.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131801-gants-de-gardien-uhlsport-soft-resist-orange-fluo-noir-blanc" },
-        ],
-      },
-    ],
-  },
-  {
     id: "uhlsport-guantes-de-portero-uhlsport-speed-contact-supersoft-negro",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Speed Contact Supersoft - Negro",
@@ -15268,7 +16127,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.26,
+        price: 23.76,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43656578077&a=3013769&m=65912",
@@ -15312,7 +16171,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.8,
+        price: 14.59,
         priceMax: 20.0,
         shipping: 9.99,
         currency: "EUR",
@@ -15322,7 +16181,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         sizePrices: [
           { size: "Talla 7", price: 20.0, url: "https://www.awin1.com/pclick.php?p=39714945130&a=3013769&m=65912" },
           { size: "Talla 7.5", price: 20.0, url: "https://www.awin1.com/pclick.php?p=42529732554&a=3013769&m=65912" },
-          { size: "Talla 8", price: 13.8, url: "https://www.awin1.com/pclick.php?p=42529732555&a=3013769&m=65912" },
+          { size: "Talla 8", price: 14.59, url: "https://www.awin1.com/pclick.php?p=42529732555&a=3013769&m=65912" },
         ],
       },
       {
@@ -15349,7 +16208,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45983282375&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fa%2Fgants-uhlsport-supersoft-hn-flex-frame--barettes--2022-p-image-41038-grande.jpg&feedId=89032&k=68651596baae139135833b11bb8ab34a2ddab978",
-        sizes: ["10.5"],
+        sizes: ["10", "10.5"],
       },
       {
         store: "FootStoreFR",
@@ -15370,10 +16229,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.73,
+        price: 40.9,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37488693115&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37488693116&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101135201_0.jpg&feedId=89032&k=6ab6a7dae91265fe6f0b4e002681d68604b024fc",
         sizes: ["Talla 7.5", "Talla 8"],
       },
@@ -15577,6 +16436,45 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "joma-guantes-de-portero-para-mujer-joma-gk-pro-negro",
+    brand: "Joma",
+    model: "Guantes de portero para mujer Joma Gk-Pro - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 22.41,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400908-109-gants-de-gardien-femme-joma-gk-pro-noir",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400908.109_0.webp",
+        sizes: ["7"],
+      },
+    ],
+  },
+  {
+    id: "nike-guantes-de-portero-nike-match-blanco",
+    brand: "Nike",
+    model: "Guantes de portero Nike Match - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 25.6,
+        priceMax: 32.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0257-100-gants-de-gardien-nike-match-white-black-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_08_nike_hq0257-100-phslh001.webp",
+        sizes: ["6", "11"],
+        sizePrices: [
+          { size: "6", price: 25.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0257-100-gants-de-gardien-nike-match-white-black-black" },
+          { size: "11", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0257-100-gants-de-gardien-nike-match-white-black-black" },
+        ],
+      },
+    ],
+  },
+  {
     id: "adidas-gants-de-gardien-adidas-copa-club-beige",
     brand: "Adidas",
     model: "Gants de gardien adidas Copa Club - Beige",
@@ -15647,34 +16545,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
           { size: "8", price: 64.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
           { size: "8.5", price: 62.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
           { size: "11", price: 63.38, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf9621-gants-de-gardien-adidas-predator-black" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "adidas-gants-de-gardien-d-entrainement-adidas-predator-2026-noir",
-    brand: "Adidas",
-    model: "Gants de gardien d'entraînement adidas Predator 2026 - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 21.0,
-        priceMax: 22.28,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ka7787-black-black-lucred-1.webp",
-        sizes: ["7", "8", "8.5", "9", "9.5", "10", "11", "12"],
-        sizePrices: [
-          { size: "7", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
-          { size: "8", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
-          { size: "8.5", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
-          { size: "9", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
-          { size: "9.5", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
-          { size: "10", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
-          { size: "11", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
-          { size: "12", price: 22.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7787-gants-de-gardien-d-entrainement-adidas-predator-2026-black-black-lucred" },
         ],
       },
     ],
@@ -15765,23 +16635,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "erima-guantes-de-portero-erima-flexinator-knit-negro",
-    brand: "Erima",
-    model: "Gants de gardiens Erima Flexinator Knit - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 70.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fgants-de-gardiens-erima-flexinator-knit-noir-gris-vert",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/7/2/7221902_v.jpg",
-        sizes: ["12"],
-      },
-    ],
-  },
-  {
     id: "huari-guantes-de-portero-huari-higino-blanco",
     brand: "Huari",
     model: "Gants de gardien Huari Higino - Blanc",
@@ -15850,28 +16703,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "jako-guantes-de-portero-jako-animal-basic-rc-protection-negro",
-    brand: "Jako",
-    model: "Guantes de portero Jako Animal Basic RC Protection - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 39.0,
-        priceMax: 40.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2595-u-810-gants-de-gardien-jako-animal-basic-rc-protection-noir-blanc-vert-fluo",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/j/a/jako_2595-u-810_noir-blanc-vert-fluo_1.jpg",
-        sizes: ["11", "12"],
-        sizePrices: [
-          { size: "11", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2595-u-810-gants-de-gardien-jako-animal-basic-rc-protection-noir-blanc-vert-fluo" },
-          { size: "12", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2595-u-810-gants-de-gardien-jako-animal-basic-rc-protection-noir-blanc-vert-fluo" },
-        ],
-      },
-    ],
-  },
-  {
     id: "kappa-guantes-de-portero-deportivo-la-corogne-bleu",
     brand: "Kappa",
     model: "Gants de gardien Deportivo La Corogne - Bleu",
@@ -15922,9 +16753,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "macron-gants-de-gardien-macron-leopard-jaune",
     brand: "Macron",
@@ -16153,23 +16981,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "rinat-guantes-de-portero-rinat-santoloco-noir",
-    brand: "Rinat",
-    model: "Guantes de portero Rinat Santoloco - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 24.6,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsasa1090m-gants-de-gardien-rinat-santoloco-black",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/i/rinat-sasa1090m-black-1.jpg",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
     id: "t1tan-guantes-de-portero-t1tan-alien-gravity-blue-2-0-azul",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Alien Gravity Blue 2.0 - Bleu",
@@ -16187,23 +16998,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-blanco",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Beast 3.0 - Blanc",
-    colour: "Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 89.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202324-gants-de-gardien-t1tan-beast-3-0-white",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202324-fp_0.jpg",
-        sizes: ["6", "7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
     id: "t1tan-gants-de-gardien-t1tan-beast-3-0-fp-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Beast 3.0 (FP) - Blanc",
@@ -16216,57 +17010,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202324-gants-de-gardien-t1tan-beast-3-0-fp-white",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202324-fp_0.jpg",
-        sizes: ["6", "7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-azul",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Beast 3.0 (FP) - Bleu",
-    colour: "Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 99.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202430-06-fp-gants-de-gardien-t1tan-beast-3-0-fp-bleu",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202430-06-fp_bleu_1.jpg",
-        sizes: ["6", "7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-gris",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Beast 3.0 (FP) - Gris",
-    colour: "Gris",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 99.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202323-gants-de-gardien-t1tan-beast-3-0-fp-gris",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202323-fp_0.jpg",
-        sizes: ["6", "7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-beast-3-0-fp-rojo",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Beast 3.0 (FP) - Rouge",
-    colour: "Rouge",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 99.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202322-gants-de-gardien-t1tan-beast-3-0-fp-red",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan_202322-fp_0.webp",
         sizes: ["6", "7", "8", "9", "10"],
       },
     ],
@@ -16306,74 +17049,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "t1tan-guantes-de-portero-t1tan-beast-4-0-jaune",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Beast 4.0 - Jaune",
-    colour: "Jaune",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 90.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202610-06-gants-de-gardien-t1tan-beast-4-0-electric-yellow",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan-202610-06-electric-yellow-6aab8d8de9052-1.webp",
-        sizes: ["7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-beast-vampire-noir",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Beast Vampire - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 110.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202601-07-gants-de-gardien-t1tan-beast-vampire-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan-202601-07-black-6aab8d8dad5f1-1.webp",
-        sizes: ["7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-blue-best-3-0-azul",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Blue Best 3.0 - Bleu",
-    colour: "Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 79.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202429-06-gants-de-gardien-t1tan-blue-best-3-0-bleu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan-202429-06-bleu-1.webp",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-blanco",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Classic 1.0 - Blanc",
-    colour: "Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 49.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202328-gants-de-gardien-t1tan-classic-1-0-white-out",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan_202328-fp_0.webp",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
     id: "t1tan-gants-de-gardien-t1tan-classic-1-0-fp-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Classic 1.0 (FP) - Blanc",
@@ -16391,57 +17066,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-fp-negro",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Classic 1.0 (FP) - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 59.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202365-09-fp-gants-de-gardien-t1tan-classic-1-0-fp-black",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202365-06-fp_black_1.jpg",
-        sizes: ["8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-classic-1-0-negro",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Classic 1.0 - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 49.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202364-10-gants-de-gardien-t1tan-classic-1-0-black-out",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202364-06_black-out_1.jpg",
-        sizes: ["7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-legend-1-0-blanco",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Legend 1.0 - Blanc",
-    colour: "Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 79.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2024127-06-gants-de-gardien-t1tan-legend-1-0-blanc",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_2024127-06_blanc_1.jpg",
-        sizes: ["6", "11"],
-      },
-    ],
-  },
-  {
     id: "t1tan-gants-de-gardien-t1tan-legend-1-0-fp-blanc",
     brand: "T1TAN",
     model: "Gants de gardien T1TAN Legend 1.0 (FP) - Blanc",
@@ -16455,159 +17079,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2024128-06-fp-gants-de-gardien-t1tan-legend-1-0-fp-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan_2024127-06_blanc_1.webp",
         sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-legend-1-0-white-out-blanco",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Legend 1.0 White-out - Blanc",
-    colour: "Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 69.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2024127-10-gants-de-gardien-t1tan-legend-1-0-white-out-blanc",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/1/t1tan_2024127-07_blanc_1.webp",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-azul",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Rebel 2.0 - Bleu",
-    colour: "Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 99.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202405-11-gants-de-gardien-t1tan-rebel-2-0-blue",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202405-06_blue_1.jpg",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-blanco",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Rebel 2.0 (FP) - Blanc",
-    colour: "Blanc",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 99.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202404-06-fp-gants-de-gardien-t1tan-rebel-2-0-fp-white",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202404-06-fp_white_1.jpg",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-azul",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Rebel 2.0 (FP) - Bleu",
-    colour: "Bleu",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 109.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202406-06-fp-gants-de-gardien-t1tan-rebel-2-0-fp-sky-blue",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202406-06-fp_sky-blue_1.jpg",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-negro",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Rebel 2.0 (FP) - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 99.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202402-06-fp-gants-de-gardien-t1tan-rebel-2-0-fp-noir",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202402-06-fp_noir_1.jpg",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-fp-rojo",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Rebel 2.0 (FP) - Rouge",
-    colour: "Rouge",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 99.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202408-06-fp-gants-de-gardien-t1tan-rebel-2-0-fp-solar-red",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202408-06-fp_solar-red_1.jpg",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-negro",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Rebel 2.0 - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 89.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202401-06-gants-de-gardien-t1tan-rebel-2-0-noir",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202401-06_noir_1.jpg",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-rebel-2-0-rojo",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Rebel 2.0 - Rouge",
-    colour: "Rouge",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 89.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202407-08-gants-de-gardien-t1tan-rebel-2-0-red-solar",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202407-06_red-solar_1.jpg",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "t1tan-guantes-de-portero-t1tan-shadow-best-3-0-negro",
-    brand: "T1TAN",
-    model: "Gants de gardien T1TAN Shadow Best 3.0 - Noir",
-    colour: "Noir",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 79.99,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F202487-06-gants-de-gardien-t1tan-shadow-best-3-0-noir-mat",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/t/1/t1tan_202487-08_0.jpg",
-        sizes: ["8", "9", "10", "11"],
       },
     ],
   },
@@ -16642,23 +17113,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101130801-gants-de-gardien-uhlsport-powerline-supersoft-hn-noir-rouge-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/u/h/uhlsport_101130801_0.jpg",
         sizes: ["8.5"],
-      },
-    ],
-  },
-  {
-    id: "mitre-guantes-de-portero-mitre-magnetite",
-    brand: "Mitre",
-    model: "Guantes de portero Mitre Magnetite",
-    colour: "N/D",
-    offers: [
-      {
-        store: "Sportsafe UK",
-        price: 16.96,
-        shipping: 0,
-        currency: "GBP",
-        url: "https://www.awin1.com/pclick.php?p=42124682221&a=3013769&m=118941",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01808BJ7Y1_6e3p3ILDIE-scaled-1.jpg&feedId=109102&k=f86c3a8b7e6200e5fdaabd121daa74d12a1f56e4",
-        sizes: ["8"],
       },
     ],
   },
