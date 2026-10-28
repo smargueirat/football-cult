@@ -12,6 +12,76 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-10-28 ---
+    "/itm/307113548449",  # 2026-10-28 removed: gb retro: style code not 2023/24 Corinthians CD4152-100 filed as 2023/24
+    "/itm/197624130845",  # 2026-10-28 removed: retro photo: long sleeve / yellow home filed as away Glasgow Rangers 2020 - 2021 Third football Castore
+    "/itm/206299039373",  # 2026-10-28 removed: retro photo: long sleeve / yellow home filed as away Camiseta de visitante vintage Adidas 2012 de la se
+    "/itm/186351741968",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier JERSEY SOCIEDADE ESPORTIVA PALMEIRAS Away 2024
+    "/itm/186351741968",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier MAGLIA SOCIEDADE ESPORTIVA PALMEIRAS Away 2024
+    "/itm/377599425336",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Corinthians Brazil 2024/25 Away Blackout Nike Dri-
+    "/itm/377599425336",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Maglia calcio Corinthians Brasile 2024/25 Away Bla
+    "/itm/377599425336",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Camiseta de fútbol Corinthians Brasil 2024/25 visi
+    "/itm/377601774702",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Corinthians Brazil - Special Edition Vintage 1977 
+    "/itm/377601774702",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Maglia calcio Corinthians Brasile - Edizione Speci
+    "/itm/377601774702",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Camiseta de fútbol visitante vintage 1977 Corinthi
+    "/itm/227586029074",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Charly Santos 2019/20 Jersey Away New With Tags Or
+    "/itm/372480274536",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Maglia Club Santos Home Puma Aqua/Verde manica cor
+    "/itm/372480274536",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Camiseta Club Santos Home Puma Aqua/Verde Manga Co
+    "/itm/336854325879",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier AFC Ajax Amsterdam Jersey Men 2XL Official Umbro 1
+    "/itm/336854325879",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Maglia AFC Ajax Amsterdam Uomo 2XL Ufficiale Umbro
+    "/itm/336854325879",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Camiseta AFC Ajax Amsterdam Hombre 2XL Oficial Umb
+    "/itm/257820984652",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier CELTIC FC FOOTBALL HOME JERSEY 1967 Cup winners XL
+    "/itm/157225894937",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Camiseta de fútbol para hombre verde 2024-2025 Ara
+    "/itm/327424103607",  # 2026-10-28 removed: retro: template/Santos Laguna/reproduction/outlier Ukraine NEW Jersey Euro 2024 Third Football Soccer
+    "/itm/186351806800",  # 2026-10-28 removed: retro player print/reissue/wrong club/template JERSEY SOCIEDADE ESPORTIVA PALMEIRAS Home 2024
+    "/itm/186351806800",  # 2026-10-28 removed: retro player print/reissue/wrong club/template MAGLIA SOCIEDADE ESPORTIVA PALMEIRAS Home 2024
+    "/itm/236728829008",  # 2026-10-28 removed: retro player print/reissue/wrong club/template CORINTHIANS 1982 - SOCRATES - OFFICIAL NR HOME OLD
+    "/itm/407194050745",  # 2026-10-28 removed: retro player print/reissue/wrong club/template 2012 Nike Corinthians Home Soccer Jersey Paolo Gue
+    "/itm/407194050745",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Maglia Calcio Nike Corinthians Home 2012 Paolo Gue
+    "/itm/116167396495",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Charly Santos Laguna Home Green & White 2022/23 So
+    "/itm/277970957367",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Umbro Santos 2022 Classic Third Shirt Jersey 10 M
+    "/itm/326945557450",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Gremio Suarez Jersey 2022/2023 Away Football Socce
+    "/itm/327422071067",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Gremio Suarez Jersey 2022/2023 Away Football Socce
+    "/itm/364316593188",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Official Umbro Gremio Third Jersey 2021 / Large / 
+    "/itm/820143987524",  # 2026-10-28 removed: retro player print/reissue/wrong club/template adidas Internacional 2023/24 Away Jersey G/L Vitão
+    "/itm/397582427219",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Peñarol Jersey  2023 - Peñarol Home Camiseta Local
+    "/itm/358882283891",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Ad1das Ajax Amsterdam 2024/25 Home Jersey Shirt Wh
+    "/itm/358882283891",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Maglia Home Ad1das Ajax Amsterdam 2024/25 Camicia 
+    "/itm/358882283891",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Camiseta deportiva local Ad1das Ajax Amsterdam 202
+    "/itm/147470617535",  # 2026-10-28 removed: retro player print/reissue/wrong club/template NWT Donny van de Beek Ajax 2019/2020 Adidas Home J
+    "/itm/147470617535",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Maglia Home Adidas Donny van de Beek Ajax 2019/202
+    "/itm/147470617535",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Camiseta deportiva local Adidas de Donny van de Be
+    "/itm/358821990648",  # 2026-10-28 removed: retro player print/reissue/wrong club/template L AJAX AMSTERDAM 2020/21 2021 AWAY SHIRT ANTONY KI
+    "/itm/358821990648",  # 2026-10-28 removed: retro player print/reissue/wrong club/template CAMISETA VISITANTE L AJAX AMSTERDAM 2020/21 2021 A
+    "/itm/257706353864",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Sporting CP Lisbon 2017/2018 Faria Portugal Away S
+    "/itm/206451738339",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Celtic FC 2008 2009 Nike Away Shirt Shunsuke Nakam
+    "/itm/135619506566",  # 2026-10-28 removed: retro player print/reissue/wrong club/template FC Rangers Glasgow, Away Jersey Castore 2022/23, S
+    "/itm/117371325264",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Maglia Calcio Nike Nigeria Nazionale 1999 Riedizio
+    "/itm/117371325264",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Camiseta de fútbol local Nike Selección Nacional d
+    "/itm/177037270943",  # 2026-10-28 removed: retro player print/reissue/wrong club/template MAGLIA AWAY FLAMENGO ADIDAS 2018-2019 AUTENTICA - 
+    "/itm/177037270943",  # 2026-10-28 removed: retro player print/reissue/wrong club/template CAMISETA VISITANTE AUTÉNTICA FLAMENGO ADIDAS 2018-
+    "/itm/177965419969",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Camiseta de fútbol local JAPÓN 🇯🇵 2022 - 2023 🌟Nue
+    "/itm/298605281586",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Camiseta de fútbol Adidas Originals Japón 1993 loc
+    "/itm/318600830294",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Camiseta de fútbol local RARA HEUNGMIN Corea del S
+    "/itm/366717640892",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Camiseta de fútbol visitante MAS fes Marruecos 202
+    "/itm/267681883294",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Nike Australia 2022 Olyroos U23 Home Player Issue 
+    "/itm/168391212221",  # 2026-10-28 removed: retro player print/reissue/wrong club/template ⚽Jersey de fútbol local original de UCRANIA 🇺🇦 200
+    "/itm/298440735808",  # 2026-10-28 removed: retro player print/reissue/wrong club/template ⚽Original UCRANIA 🇺🇦 2005-2006 Visitante Camiseta 
+    "/itm/327414136823",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Camiseta Ucrania Zinchenko Euro 2021 Tercera Fútbo
+    "/itm/800244995258",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Camiseta de fútbol Flamengo 2022 2023 Adidas terce
+    "/itm/117225119960",  # 2026-10-28 removed: retro player print/reissue/wrong club/template Camiseta deportiva de fútbol Overmars de Boer Rijk
+    "/itm/860019581311",  # 2026-10-28 removed: template seller / Santos Laguna under santos XL Santos Laguna Home Jersey 2026
+    "/itm/188205496046",  # 2026-10-28 removed: template seller / Santos Laguna under santos PENAROL HOME Mens 2026 Jersey
+    "/itm/377359901014",  # 2026-10-28 removed: template seller / Santos Laguna under santos PENAROL Third Mens 26 Jersey
+    "/itm/267768668500",  # 2026-10-28 removed: template seller / Santos Laguna under santos JERSEY Sporting Clube de Braga Home 26-27
+    "/itm/257753383887",  # 2026-10-28 removed: template seller / Santos Laguna under santos JERSEY Sporting Clube de Braga Away 26-27
+    "/itm/267790169014",  # 2026-10-28 removed: template seller / Santos Laguna under santos JERSEY Sporting Clube de Braga Third 26-27
+    "/itm/287291056238",  # 2026-10-28 removed: template seller / Santos Laguna under santos JERSEY GREMIO Men Home 2026
+    "/itm/377579276756",  # 2026-10-28 removed: template seller / Santos Laguna under santos JERSEY Santos Third Mens 2026
+    "/itm/198356546872",  # 2026-10-28 removed: template seller JERSEY X 31.52 EUR JERSEY GREMIO Hombre Visitante 2026
+    "/itm/377579276739",  # 2026-10-28 removed: template seller JERSEY X 31.52 EUR JERSEY Grêmio Third Hombre 2026
+    "/itm/287256293557",  # 2026-10-28 removed: template seller JERSEY X 31.52 EUR JERSEY Colo-Colo Hombre Pre Match Blanco 26
+    "/itm/377579276697",  # 2026-10-28 removed: template seller JERSEY X 31.52 EUR JERSEY Palmeiras Third Hombre 2026
     # --- Daily pass 2026-10-27 ---
     "/itm/366401589669",  # 2026-10-27 removed: Norway Third Mens Jersey 26
     "/itm/377559967148",  # 2026-10-27 removed: Turkey 2026 Away Hakan Çalhanoğlu Fans Version Soccer Jersey

@@ -359,8 +359,10 @@
 "augsburg-retro-202425-home",
 "australia-retro-2002-home",
 "australia-retro-200405-away",
+"australia-retro-200809-home",
 "australia-retro-2010-home",
 "australia-retro-2014-home",
+"australia-retro-201415-away",
 "australia-retro-201415-home",
 "australia-retro-2015-away",
 "australia-retro-2016-home",
@@ -513,6 +515,7 @@
 "belgica-retro-200001-home",
 "belgica-retro-2002-away",
 "belgica-retro-2002-home",
+"belgica-retro-200203-home",
 "belgica-retro-2016-away",
 "belgica-retro-2016-home",
 "belgica-retro-2017-home",
@@ -662,6 +665,7 @@
 "bournemouth-retro-202324-home",
 "bournemouth-retro-202425-home",
 "bournemouth-retro-202425-third",
+"braga-retro-201819-third",
 "braga-retro-202223-home",
 "brasil-retro-1986-home",
 "brasil-retro-1993-home",
@@ -818,6 +822,7 @@
 "celtic-retro-201819-home",
 "celtic-retro-201920-away",
 "celtic-retro-201920-third",
+"celtic-retro-202021-home",
 "celtic-retro-202122-home",
 "celtic-retro-2022-third",
 "celtic-retro-202223-home",
@@ -920,6 +925,7 @@
 "chile-retro-1994-home",
 "chile-retro-1996-home",
 "chile-retro-1998-home",
+"chile-retro-2003-home",
 "chile-retro-200709-home",
 "chile-retro-2010-home",
 "chile-retro-2012-away",
@@ -1098,6 +1104,7 @@
 "coreadelsur-retro-200203-away",
 "coreadelsur-retro-2004-home",
 "coreadelsur-retro-2006-home",
+"coreadelsur-retro-201213-home",
 "coreadelsur-retro-2018-away",
 "coreadelsur-retro-2020-away",
 "coreadelsur-retro-2020-home",
@@ -1122,6 +1129,7 @@
 "corinthians-retro-2012-home",
 "corinthians-retro-201213-third",
 "corinthians-retro-2018-third",
+"corinthians-retro-201819-away",
 "corinthians-retro-201819-home",
 "corinthians-retro-2020-home",
 "corinthians-retro-2021-away",
@@ -1133,6 +1141,7 @@
 "corinthians-retro-2023-away",
 "corinthians-retro-2023-home",
 "corinthians-retro-2023-third",
+"corinthians-retro-202324-away",
 "corinthians-retro-2024-home",
 "corinthians-retro-2024-third",
 "corinthians-retro-202425-away",
@@ -1578,6 +1587,7 @@
 "feyenoord-retro-2006-away",
 "feyenoord-retro-200607-away",
 "feyenoord-retro-2007-away",
+"feyenoord-retro-200708-away",
 "feyenoord-retro-2022-home",
 "feyenoord-retro-202324-home",
 "feyenoord-retro-202425-away",
@@ -2323,6 +2333,7 @@
 "japon-retro-2012-away",
 "japon-retro-2014-home",
 "japon-retro-201415-away",
+"japon-retro-201415-home",
 "japon-retro-201617-away",
 "japon-retro-201718-home",
 "japon-retro-2018-away",
@@ -2851,6 +2862,7 @@
 "marruecos-retro-2022-home",
 "marruecos-retro-202223-away",
 "marruecos-retro-202223-home",
+"marruecos-retro-202324-home",
 "marruecos-retro-2024-away",
 "marruecos-retro-202425-away",
 "marruecos-retro-202425-home",
@@ -3410,6 +3422,7 @@
 "polonia-retro-201012-home",
 "polonia-retro-2012-away",
 "polonia-retro-2012-home",
+"polonia-retro-201617-home",
 "polonia-retro-2018-away",
 "polonia-retro-2018-home",
 "polonia-retro-201819-home",
@@ -3627,6 +3640,7 @@
 "rangers-retro-200506-away",
 "rangers-retro-200506-third",
 "rangers-retro-200910-away",
+"rangers-retro-201011-home",
 "rangers-retro-201112-home",
 "rangers-retro-201617-away",
 "rangers-retro-201819-away",
@@ -3911,6 +3925,7 @@
 "santos-retro-201213-away",
 "santos-retro-201213-third",
 "santos-retro-202021-away",
+"santos-retro-202021-home",
 "santos-retro-2021-home",
 "santos-retro-202122-away",
 "santos-retro-2022-home",
@@ -3918,6 +3933,7 @@
 "santos-retro-202223-away",
 "santos-retro-202223-goalkeeper",
 "santos-retro-2023-home",
+"santos-retro-2023-third",
 "santos-retro-202324-goalkeeper",
 "santos-retro-2024-away",
 "santos-retro-2024-goalkeeper",
@@ -4088,6 +4104,7 @@
 "sportingcp-retro-201718-away",
 "sportingcp-retro-201920-away",
 "sportingcp-retro-202021-away",
+"sportingcp-retro-202324-home",
 "sportingcp-retro-202324-third",
 "sportingcp-retro-202425-home",
 "sportinggijon-retro-202223-home",
@@ -23369,6 +23386,66 @@
 "image": "https://i.ebayimg.com/images/g/JiwAAeSwG9Fqmhcf/s-l1600.jpg",
 "sizes": [
 "L"
+],
+"shipping": 2.94
+},
+"braga-retro-201819-third": {
+"title": "SC Braga Football Shirt 2018/19 Lacatoni Third Soccer Jersey BNWT Men's 2XL",
+"price": 29.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/227574292719?_skw=SC+Braga+2018+third+shirt&hash=item34fc7c20ef%3Ag%3Als8AAeSwM0Zq0mMI&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|227574292719|0",
+"image": "https://i.ebayimg.com/images/g/ls8AAeSwM0Zq0mMI/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 0.0
+},
+"celtic-retro-202021-home": {
+"title": "Celtic Football Shirt Home 2020/21 Mens Size M *BNWT* ",
+"price": 42.29,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/188930282007?_skw=Celtic+FC+2020+home+shirt&hash=item2bfd1f5217%3Ag%3ALgkAAeSwx6lqqCf7&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|188930282007|0",
+"image": "https://i.ebayimg.com/images/g/LgkAAeSwx6lqqCf7/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 3.38
+},
+"corinthians-retro-202324-away": {
+"title": "Nike Corinthians 2023/24 Away Match Jersey Black White CD4152-100 Mens Small NEW",
+"price": 25.15,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/307113548449?_skw=Corinthians+2023+away+shirt&hash=item478164daa1%3Ag%3ABG4AAeSw5ctqdmny&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|307113548449|0",
+"image": "https://i.ebayimg.com/images/g/BG4AAeSw5ctqdmny/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 17.29
+},
+"japon-retro-201415-home": {
+"title": "Japan  2014/15 Adidas Home Football Shirt Mens Extra Large",
+"price": 27.74,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/178137717489?_skw=Japan+2014+home+shirt&hash=item2979d5daf1%3Ag%3AATMAAeSwJ%7EFqB6bB&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|178137717489|0",
+"image": "https://i.ebayimg.com/images/g/ATMAAeSwJ~FqB6bB/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 2.94
+},
+"santos-retro-202021-home": {
+"title": "Umbro Santos FC 2020-2021 Home Shirt BNWT Size S (B420)",
+"price": 26.7,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/227562270579?_skw=Santos+FC+2020+home+shirt&hash=item34fbc4af73%3Ag%3ADOwAAeSwxYpqy1l0&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l3068fE69dYCA83F8pxPbu%2FFgu09ltG3aPTVl%2FeeHVjlkgPW5Jh01NY6s41HEuuJmV2yqahtjyMyKsL%2FlvbV8hjWh2BtND29WA2xucj1sB3tSHM747wqH92AXpWR5KT4guLQMOWhuerw6JjTdjwLDJ7DZ1wWVQ3C39xMmZYJShyJHLSvZG79aQD%2Bkdhz0jCb85hD%2BRP9MLjcxSn5P%2B7iZESQX9ChtywQPvw%2Fu3mY3mWMVYdX%2ByQqfB6VMwHi5ss5D2tXL3sP%2FYIIwYH2nCDqr4XKe9VFVqdTB3Gm2C2DHh97w74%2FcLt9%2BpZgM0ZDl4B28%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|227562270579|0",
+"image": "https://i.ebayimg.com/images/g/DOwAAeSwxYpqy1l0/s-l1600.jpg",
+"sizes": [
+"S"
 ],
 "shipping": 2.94
 }
