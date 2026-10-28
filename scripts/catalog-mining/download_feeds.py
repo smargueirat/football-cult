@@ -8,7 +8,9 @@ invocar a Claude (scripts/daily_refresh.sh).
 
 Qué baja: cada `AWIN_FEED_URL_<NOMBRE>` de .env.local -> <NOMBRE>.csv (menos
 TICKETNET_DE: el programa cerró el 2026-09-01) y los tres feeds TradeTracker
-que ya se bajaban (FUTBOLFACTORY, SHOPREALBETIS, futbolemotion_feed).
+que ya se bajaban (FUTBOLFACTORY, SHOPREALBETIS, futbolemotion_feed). Las dos
+FR se traducen al esquema Google (ver GOOGLE). Al final avisa "STALE <NOMBRE>
+<N> días" por cada archivo de más de 48 h.
 
 Guarda: cada archivo se baja a <nombre>.csv.tmp y solo reemplaza al anterior
 si trae cabecera y al menos el 80 % de las líneas del anterior. Si no, el
@@ -17,7 +19,7 @@ descargado hoy" y no toca esa tienda). Nunca deja un archivo a medias.
 
 Uso: python3 scripts/catalog-mining/download_feeds.py [NOMBRE ...]
 """
-import concurrent.futures, gzip, os, re, shutil, sys, urllib.request
+import concurrent.futures, csv, gzip, os, re, shutil, sys, time, urllib.parse, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(HERE, "..", ".."))
@@ -26,6 +28,18 @@ FEED_DIR = os.environ.get("FEED_DIR", "/tmp/feeds")
 # sirviendo su feed (2.683 filas EUR, tracking vivo) pero no consta que aún pague comisión.
 # Para volver a bajarlo: TICKETNET_DE=1 (y mine_tickets.py lo lee con la misma variable).
 SKIP = set() if os.environ.get("TICKETNET_DE") == "1" else {"TICKETNET_DE"}
+# FOOTSTORE_FR / SPORTISGOOD_FR venían de un feed "darwin" de Awin con esquema Google
+# Shopping (F4134/F4137), que da 404 desde el 2026-10-27. Ahora se bajan del feed estándar
+# (fid 86405/87833) y aquí se traducen al esquema Google de siempre, para que
+# refresh_offers, mine_boots, mine_gear, refresh_gear, mine_women y update_gtins no cambien.
+# Comprobado contra el darwin del 10-26 (Sport Is Good, mismos datos): link, aw_deep_link
+# (cread con ued=link), gtin, mpn, talla, color, item_group_id, precios y foto salen idénticos
+# en >99,8 % de las filas. Diferencia que queda: la descripción viene cortada a ~1.000
+# caracteres y con tildes.
+GOOGLE = {"FOOTSTORE_FR", "SPORTISGOOD_FR"}
+GOOGLE_COLS = ["advertiser_id", "advertiser_name", "id", "title", "description", "link", "image_link",
+               "aw_deep_link", "product_type", "gtin", "mpn", "brand", "availability", "price",
+               "sale_price", "condition", "color", "gender", "size", "item_group_id", "shipping"]
 TT = "https://pf.tradetracker.net/?aid=514692&encoding=utf-8&type=csv&fid={}&categoryType=2&additionalType=2&csvDelimiter=%3B&csvEnclosure=%22&filter_extended=1"
 TRADETRACKER = {"FUTBOLFACTORY": TT.format(2551751), "SHOPREALBETIS": TT.format(2291247),
                 "futbolemotion_feed": TT.format(2066871)}
@@ -47,6 +61,43 @@ def lines(path):
     return n
 
 
+def to_google(src, dst):
+    """Feed estándar de Awin (cabecera aw_product_id...) -> esquema Google del feed darwin."""
+    with open(src, newline="", encoding="utf-8-sig") as f, open(dst, "w", newline="", encoding="utf-8-sig") as g:
+        w = csv.writer(g)
+        w.writerow(GOOGLE_COLS)
+        for r in csv.DictReader(f):
+            link = r["merchant_deep_link"].split("?")[0]  # el estándar añade ?variant=<talla>
+            aff = re.search(r"[?&]a=(\d+)", r["aw_deep_link"]).group(1)
+            cur, now = r["currency"] or "EUR", r["search_price"]
+            was = r["rrp_price"] if r["rrp_price"] and float(r["rrp_price"]) > float(now) else now
+            # El darwin traía la marca con la grafía del título ("adidas", "Erima"); el
+            # estándar a veces no ("Adidas", "erima").
+            brand = r["brand_name"]
+            i = r["product_name"].lower().find(brand.lower()) if brand else -1
+            # El darwin dejaba vacío el EAN que no pasa el dígito de control (~1.300 filas,
+            # códigos internos de 11 dígitos): igual aquí, que el EAN fusiona botas entre tiendas.
+            ean = r["ean"]
+            ok = ean.isdigit() and len(ean) in (8, 12, 13, 14) and \
+                sum(int(x) * (1 + 2 * (k % 2)) for k, x in enumerate(reversed(ean))) % 10 == 0
+            # La misma redirección 301 que hace el CDN (catalog/X.jpg -> 1800/X.webp): el darwin
+            # traía la URL final. El nombre del archivo (ancla de gear_ids.json) no cambia.
+            img = r["merchant_image_url"]
+            if img.startswith(BLAZ := "https://cdn.blazimg.com/catalog/"):
+                img = "https://cdn.blazimg.com/1800/" + re.sub(r"\.jpg$", ".webp", img[len(BLAZ):])
+            w.writerow([
+                r["merchant_id"], r["merchant_name"], r["merchant_product_id"], r["product_name"],
+                r["description"], link, img,
+                f"https://www.awin1.com/cread.php?awinmid={r['merchant_id']}&awinaffid={aff}"
+                f"&ued={urllib.parse.quote(link, safe='')}",
+                r["merchant_category"], ean if ok else "", r["mpn"],
+                r["product_name"][i:i + len(brand)] if i >= 0 else brand,
+                "in_stock" if r["in_stock"] == "1" else "out_of_stock",
+                f"{was} {cur}", f"{now} {cur}" if was != now else "", "new", r["colour"],
+                r["custom_2"].lower(), r["custom_1"], r["parent_product_id"],
+                f"FR:::{r['delivery_cost']} {cur}" if r["delivery_cost"] else ""])
+
+
 def download(name, url):
     dst = os.path.join(FEED_DIR, f"{name}.csv")
     tmp = dst + ".tmp"
@@ -63,6 +114,10 @@ def download(name, url):
         else:
             os.replace(tmp + ".raw", tmp)
         head = open(tmp, encoding="utf-8", errors="replace").readline()
+        if name in GOOGLE and "aw_product_id" in head:
+            to_google(tmp, tmp + ".raw")
+            os.replace(tmp + ".raw", tmp)
+            head = open(tmp, encoding="utf-8", errors="replace").readline()
         n, prev = lines(tmp), (lines(dst) if os.path.exists(dst) else 0)
         if len(re.split(r"[,;]", head)) < 5:
             raise ValueError(f"cabecera rara: {head[:60]!r}")
@@ -101,6 +156,13 @@ def main(only):
         print(line)
     bad = [r for r in res if r.startswith("FAIL")]
     print(f"=== download_feeds: {len(res) - len(bad)} OK, {len(bad)} FAIL ===")
+    # Un FAIL conserva el archivo viejo y nadie se entera (FR: 404 desde el 10-27, visto el
+    # 10-28): la fecha del archivo es la señal. daily_scan.sh manda mail si hay líneas STALE.
+    for name in sorted(feeds()):
+        p = os.path.join(FEED_DIR, f"{name}.csv")
+        age = time.time() - os.path.getmtime(p) if os.path.exists(p) else 0
+        if age > 48 * 3600:
+            print(f"STALE {name} {int(age // 86400)} días")
     return 0
 
 
