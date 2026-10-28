@@ -122,6 +122,12 @@ if printf '%s' "$REFRESH_OUT" | grep -q '^AVISO amazon:'; then
 Sin PA-API no se puede leer el precio de Amazon en bloque: cada oferta caduca (inStock:false) a los 14 días sin verificar. Abrir cada enlace, corregir el precio en src/data/products.ts si cambió y marcarla verificada con el comando de arriba."
 fi
 
+if printf '%s' "$REFRESH_OUT" | grep -q '^STALE '; then
+  send_alert "Feeds sin actualizar (más de 48 h)" "$(printf '%s' "$REFRESH_OUT" | grep -E '^(STALE|FAIL) ')
+
+download_feeds.py conserva el archivo anterior cuando una descarga falla, así que esas tiendas no se refrescan. Revisar la URL en .env.local y el motivo del FAIL en scripts/daily_scan.log."
+fi
+
 if [[ -n "$(git status --porcelain)" ]]; then
   echo "=== $(date -u +%Y-%m-%dT%H:%M:%SZ) uncommitted changes found after run, attempting safety-net commit ==="
   BRANCH="$(git branch --show-current)"
