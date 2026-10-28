@@ -317,6 +317,8 @@ const CURRENCY: Record<string, { symbol: string; name: string }> = {
   BRL: { symbol: "R$", name: "reales" },
   CLP: { symbol: "CLP", name: "pesos chilenos" },
   ARS: { symbol: "ARS", name: "pesos argentinos" },
+  MXN: { symbol: "MXN", name: "pesos mexicanos" },
+  COP: { symbol: "COP", name: "pesos colombianos" },
 };
 
 // Formato de España: "1.234,56 €". Sin toLocaleString: este Node corre con

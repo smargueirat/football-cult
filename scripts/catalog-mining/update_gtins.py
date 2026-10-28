@@ -47,7 +47,7 @@ GTIN_COL = {
     "GIGASPORT_DE": "ean", "GIGASPORT_CH": "ean", "GIGASPORT_FR": "ean",
     "CLOVIS_BR": "gtin", "PROSOCCER": "gtin",
     # Botas de adidas Chile y Reebok Alemania (cabecera verificada 2026-10-19).
-    "ADIDAS_CL": "product_GTIN", "REEBOK_DE": "product_GTIN",
+    "ADIDAS_CL": "product_GTIN", "ADIDAS_MX": "product_GTIN", "ADIDAS_CO": "product_GTIN", "REEBOK_DE": "product_GTIN",
     "REEBOK_UK": "product_GTIN",  # misma cabecera que DE (2026-10-25)
 }
 LINK_COLS = ["aw_deep_link", "aw_product_link", "link"]

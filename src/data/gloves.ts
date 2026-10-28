@@ -32,6 +32,8 @@ export interface GloveOffer {
     | "GigasportCH"
     | "GigasportFR"
     | "AdidasCL"
+    | "AdidasMX"
+    | "AdidasCO"
     | "Sportsafe UK";
   price: number;
   // Precio real de la talla más barata del colorway -- mismo motivo que
@@ -39,7 +41,7 @@ export interface GloveOffer {
   // mismo modelo/color real.
   priceMax?: number;
   shipping: number;
-  currency: "EUR" | "GBP" | "CLP";
+  currency: "EUR" | "GBP" | "CLP" | "MXN" | "COP";
   url: string;
   imageUrl: string;
   sizes: string[];
@@ -149,6 +151,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "10.5", price: 26.3, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkz2088-gants-de-gardien-trainig-adidas-predator-soltur-black-white" },
         ],
       },
+      {
+        store: "AdidasCO",
+        price: 179950.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=44912012795&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa7198d1e98c7468798bf25d9f385b869_9366%2FGuantes_de_Arquero_Predator_Entrenamiento_Rosa_KZ2088_21_model.jpg&feedId=95017&k=7931487a7245130a7a93c835d68a1714490c9496",
+        sizes: ["7", "8", "9", "10"],
+      },
     ],
   },
   {
@@ -172,6 +183,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "10", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4016-gants-de-gardien-adidas-copa-club-ivory-black" },
         ],
       },
+      {
+        store: "AdidasMX",
+        price: 524.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=43275496194&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F39cf6b0606bf449daec6373bf71a3493_9366%2FGuantes_de_Arquero_Copa_Club_Beige_IQ4016_01_standard_hover.jpg&feedId=95013&k=b988dafde54233e9ca9a3bcd855c732e25157ad6",
+        sizes: ["7", "8", "9", "10"],
+      },
     ],
   },
   {
@@ -188,6 +208,24 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5339-gants-de-gardien-adidas-copa-club-owhite-lucblu-sigcor",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_jn5339_1_hardware_photography_front_center_view_white.jpg",
         sizes: ["10"],
+      },
+      {
+        store: "AdidasMX",
+        price: 559.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=44480435588&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcc44a947744d455eab846d12e3761bd0_9366%2FGuantes_de_Arquero_Copa_Club_Blanco_JN5339_21_model.jpg&feedId=95013&k=f66a9ce29e14903562b276d4c58a1bbfa7a982d2",
+        sizes: ["7", "8", "9", "10"],
+      },
+      {
+        store: "AdidasCO",
+        price: 149950.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=45301496655&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbdb72d2ffa344089afab6e8c246fd944_9366%2FGuantes_de_Arquero_Copa_Club_Blanco_KE9731_21_model.jpg&feedId=95017&k=d721b177e40a1243478313f6dc36e637913b486a",
+        sizes: ["7", "8", "9", "10", "11"],
       },
     ],
   },
@@ -287,6 +325,108 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-guantes-de-arquero-adidas-copa-club-adolescentes-rojo",
+    brand: "Adidas",
+    model: "Guantes de Arquero adidas Copa Club (Adolescentes) - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "AdidasMX",
+        price: 353.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=44138103751&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc488ed67b55548469323183d711e7382_9366%2FGuantes_de_Arquero_Copa_Club_Adolescentes_Granate_IN1605_23_hover_model.jpg&feedId=95013&k=a5a8ae4495e92325a9d566deea73ba3e011e2a8a",
+        sizes: ["3", "4"],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-arquero-adidas-copa-club-blanco",
+    brand: "Adidas",
+    model: "Guantes de Arquero adidas Copa Club - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "AdidasMX",
+        price: 279.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=38600333334&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F731b1621bbb64ede80a4f8b7a3e3117a_9366%2FGuantes_de_Arquero_Copa_Club_Blanco_IX3834_01_standard.jpg&feedId=95013&k=ea8fa42b590f07bb6900e02538e6218ecb4cb05c",
+        sizes: ["4", "5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-arquero-adidas-copa-club-blanco-2",
+    brand: "Adidas",
+    model: "Guantes de Arquero adidas Copa Club - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "AdidasMX",
+        price: 639.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=40357933197&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa78ddf7d0fe04a1aa97e1f8f67ae45e2_9366%2FGuantes_de_Arquero_Copa_Club_Blanco_JH3789_21_model.jpg&feedId=95013&k=2c3d5e3fc2d22c1ee6243a208897716d7cc24f38",
+        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-arquero-adidas-copa-club-blanco-3",
+    brand: "Adidas",
+    model: "Guantes de Arquero adidas Copa Club - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "AdidasMX",
+        price: 384.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=41625623273&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F83f788fb726b4ccb9059aab3ea22a584_9366%2FGuantes_de_Arquero_Copa_Club_Blanco_JH3792_21_model.jpg&feedId=95013&k=2b833fe589dc1a99444a2e4e1c9b3392d9c2b051",
+        sizes: ["3", "4", "5", "6"],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-arquero-adidas-copa-club-para-jovenes-negro",
+    brand: "Adidas",
+    model: "Guantes de Arquero adidas Copa Club para Jóvenes - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "AdidasCO",
+        price: 69975.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=43782337550&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F39b5369f85df4f2db49f3e65853fcc67_9366%2FGUANTES_DE_ARQUERO_COPA_CLUB_PARA_JOVENES_Negro_KA7809_01_00_standard.jpg&feedId=95017&k=c32f0467103cc99c997b564a541549ed4c33c980",
+        sizes: ["3", "4", "5", "6"],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-arquero-adidas-copa-pro-blanco",
+    brand: "Adidas",
+    model: "Guantes DE Arquero adidas Copa Pro - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "AdidasMX",
+        price: 2499.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=45909906635&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9541cdbe395247b194c4134eafece1a8_9366%2FGUANTES_DE_ARQUERO_COPA_PRO_Blanco_KA7801_21_model.jpg&feedId=95013&k=6da96c5869aa75b63de90daa5f6e66fdd395bb8a",
+        sizes: ["9.5"],
+      },
+    ],
+  },
+  {
     id: "adidas-gants-de-gardien-d-entrainement-adidas-predator-2026-noir",
     brand: "Adidas",
     model: "Guantes de Arquero adidas Predator Training - Negro",
@@ -371,6 +511,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-guantes-de-portero-adidas-copa-club-blanco",
+    brand: "Adidas",
+    model: "Guantes de Portero adidas Copa Club - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "AdidasMX",
+        price: 699.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=45301501363&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbdb72d2ffa344089afab6e8c246fd944_9366%2FGuantes_de_Portero_COPA_Club_Blanco_KE9731_21_model.jpg&feedId=95013&k=92bded08ada7c16163e57fdd450d05e1cd8c02bf",
+        sizes: ["7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
     id: "adidas-guantes-de-portero-adidas-copa-club-negro",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa Club - Negro",
@@ -384,6 +541,24 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44212475212&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F0%2F2025_09_adidas_iw6282_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=cf0f351c00118b9806e2d748d232fc4b395bb5be",
         sizes: ["Talla 8"],
+      },
+      {
+        store: "AdidasMX",
+        price: 639.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=42111793345&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb0d9318e6ed2494a8380b024ee1d5c19_9366%2FGuantes_de_portero_Copa_Club_Negro_JN5340_21_model.jpg&feedId=95013&k=a5746e707575ebb446393f9e3cfb6d3f3f24bf5c",
+        sizes: ["7", "8", "9", "10"],
+      },
+      {
+        store: "AdidasCO",
+        price: 97965.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=43650433436&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa3093371753c4a0b81746d8c78bf8768_9366%2FGuantes_de_portero_Copa_Club_Negro_JY0626_21_model.jpg&feedId=95017&k=779a68cc906944227517e3203e48781d09deee8d",
+        sizes: ["3", "6", "7"],
       },
     ],
   },
@@ -422,6 +597,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "9.5", price: 21.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7805-gants-de-gardien-adidas-copa-club-black-white-lucred" },
           { size: "11", price: 19.36, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7805-gants-de-gardien-adidas-copa-club-black-white-lucred" },
         ],
+      },
+      {
+        store: "AdidasMX",
+        price: 699.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=44903088905&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9ec6c5c7a40044e99ce0b917a90c50b6_9366%2FGUANTES_DE_PORTERO_COPA_CLUB_Negro_KA7805_21_model.jpg&feedId=95013&k=4572fadbc74966a7d31c9ac09b54ef3ca4dc5c59",
+        sizes: ["7", "8", "9"],
       },
     ],
   },
@@ -474,6 +658,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7810-gants-de-gardien-adidas-copa-league-white-lucred-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/a/ka7810.webp",
         sizes: ["7"],
+      },
+      {
+        store: "AdidasMX",
+        price: 1999.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=46390570342&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2227933eb8e942d4a8c0b50051b51dc2_9366%2FGuantes_de_portero_COPA_LEAGUE_Blanco_KA7810_21_model.jpg&feedId=95013&k=afd2904ab6ccfa8784ba4662ac1db669e39ea199",
+        sizes: ["7", "8", "9", "10", "11", "12"],
       },
     ],
   },
@@ -679,6 +872,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "Talla 8", price: 108.0, url: "https://www.awin1.com/pclick.php?p=44729494570&a=3013769&m=65912" },
           { size: "Talla 9", price: 109.0, url: "https://www.awin1.com/pclick.php?p=44729494571&a=3013769&m=65912" },
         ],
+      },
+      {
+        store: "AdidasMX",
+        price: 2499.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=44282365831&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F69c884e30aea48319f5a9e76e267c9ab_9366%2FGUANTES_DE_PORTERO_COPA_PRO_Gris_KA7803_21_model.jpg&feedId=95013&k=b4908ddbca211807943cd80455e79aee619ef7dc",
+        sizes: ["7.5", "8"],
       },
       {
         store: "FootStoreFR",
@@ -1509,6 +1711,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "11.5", price: 140.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv6524-gants-de-gardien-adidas-predator-pro-ivory-solar-turbo-gold-met" },
         ],
       },
+      {
+        store: "AdidasCO",
+        price: 519960.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=46343279571&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F601e287315aa403d91a12d890b113141_9366%2FGuantes_de_Arquero_Predator_Pro_Beige_KV6524_21_model.jpg&feedId=95017&k=5b60759601193f5b95c173568d62fcda0e287dbc",
+        sizes: ["7", "8", "9", "10"],
+      },
     ],
   },
   {
@@ -1821,6 +2032,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke9703-soltur-black-white-6a444d7e53ee5-1.webp",
         sizes: ["7", "8", "8.5", "9", "9.5", "10", "11", "12"],
       },
+      {
+        store: "AdidasCO",
+        price: 179950.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=45301497130&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa33d8d8d9c0c45e2ace17c91e8d4b093_9366%2FGuantes_de_Arquero_Predator_Training_Rosa_KE9703_21_model.jpg&feedId=95017&k=6de772c55293139bebe36d6d5b96fa0488ba2bf3",
+        sizes: ["7", "8", "8.5", "9", "10", "11"],
+      },
     ],
   },
   {
@@ -1846,6 +2066,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43947683702&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F065892f221ea490d9c157e41e9eabfa6_9366%2FGuantes_de_arquero_Predator_Goalkeeper_Training_Blanco_JY6311_21_model.jpg&feedId=95016&k=a2d044f1ea3c836fe3789af14d50fcc6ffabc1db",
         sizes: ["7", "8", "9", "10"],
+      },
+      {
+        store: "AdidasCO",
+        price: 107970.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=43947712033&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F065892f221ea490d9c157e41e9eabfa6_9366%2FGUANTES_DE_ENTRENAMIENTO_PARA_PORTERO_PREDATOR_Blanco_JY6311_21_model.jpg&feedId=95017&k=e4d38b60f2501609213748084cae19d592daf43b",
+        sizes: ["7", "8", "9", "10", "11"],
       },
     ],
   },
@@ -5494,6 +5723,9 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-gk-panther-azul-2",
     brand: "Joma",
@@ -5708,9 +5940,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-hunter-orange",
     brand: "Joma",
@@ -10462,6 +10691,9 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "reusch-guantes-de-portero-reusch-fusion-strapless-adaptiveflex-azul",
     brand: "Reusch",
@@ -10680,9 +10912,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-guantes-de-portero-rinat-aries-gravity-noir",
     brand: "Rinat",
@@ -15815,6 +16044,9 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-starter-resist-negro",
     brand: "uhlsport",
@@ -16093,9 +16325,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-starter-resist-noir",
     brand: "uhlsport",

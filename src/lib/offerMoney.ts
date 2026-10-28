@@ -20,8 +20,8 @@ import { previousPriceOf } from "@/lib/priceDrops";
 // Solo el tipo (se borra al compilar): no arrastra translations.ts al bundle.
 import type { Locale } from "@/lib/i18n/translations";
 
-export type OfferCurrencyCode = "EUR" | "USD" | "GBP" | "BRL" | "CLP" | "ARS";
-export type BootCurrencyCode = "EUR" | "USD" | "GBP" | "CLP" | "ARS" | "BRL";
+export type OfferCurrencyCode = "EUR" | "USD" | "GBP" | "BRL" | "CLP" | "ARS" | "MXN" | "COP";
+export type BootCurrencyCode = OfferCurrencyCode;
 
 // Formatea un monto en SU propia moneda real (la de la tienda), sin
 // convertir a la moneda del país seleccionado. Así el precio mostrado
@@ -33,6 +33,8 @@ const OFFER_CURRENCY_LOCALE: Record<OfferCurrencyCode, string> = {
   BRL: "pt-BR",
   CLP: "es-CL",
   ARS: "es-AR",
+  MXN: "es-MX",
+  COP: "es-CO",
 };
 
 // Con `locale`, el NÚMERO sigue el idioma de la página (/en "€22.20",
@@ -86,6 +88,9 @@ const OFFER_CURRENCY_TO_EUR: Record<OfferCurrencyCode, number> = {
   BRL: 6.05,
   CLP: 1076.5,
   ARS: 1754.6,
+  // adidas MX / CO (2026-10-28): tasas orientativas, solo para ordenar y para el "≈".
+  MXN: 20.5,
+  COP: 4300,
 };
 
 export function offerTotalInEUR(offer: { price: number; shipping: number; currency: OfferCurrencyCode }): number {
@@ -95,7 +100,7 @@ export function offerTotalInEUR(offer: { price: number; shipping: number; curren
 // Equivalente aproximado ("≈ 54 EUR") de un importe en otra moneda, con las
 // mismas tasas fijas del orden. Va SIEMPRE junto al precio real de la tienda,
 // nunca en su lugar. `to` es la moneda del país del visitante; si no la
-// soportamos (CHF, MXN...) se usa EUR. null si ya está en esa moneda.
+// soportamos (CHF, UYU...) se usa EUR. null si ya está en esa moneda.
 export function approxPriceLabel(amount: number, from: OfferCurrencyCode, to: string, locale?: Locale): string | null {
   const target: OfferCurrencyCode = to in OFFER_CURRENCY_TO_EUR ? (to as OfferCurrencyCode) : "EUR";
   if (target === from) return null;
@@ -164,6 +169,8 @@ export const SHIPPING_KNOWN_FOR: Record<string, readonly string[] | "all"> = {
   // El feed IT (EUR) es la tarifa de la UE.
   BSTNIT: ["ES", "FR", "DE", "IT", "PT", "NL", "BE", "AT", "IE", "GR", "FI", "SE", "DK", "PL", "CZ", "HU", "RO", "BG", "HR", "SK", "SI"],
   AdidasCL: [],
+  AdidasMX: [],
+  AdidasCO: [],
   DecathlonIE: [],
   ClovisCalcadosBR: [],
   ComoFCShop: [],
@@ -218,17 +225,8 @@ export function previousOfferTotal(
   return (previousPriceOf(offer) ?? offer.price) + (currentTotal - offer.price);
 }
 
-const BOOT_CURRENCY_TO_EUR: Record<BootCurrencyCode, number> = {
-  EUR: 1,
-  USD: 1.08,
-  GBP: 0.86,
-  CLP: 1076.5,
-  ARS: 1754.6,
-  BRL: 6.05,
-};
-
 export function bootOfferTotalInEUR(offer: { price: number; shipping: number; currency: BootCurrencyCode }): number {
-  return (offer.price + offer.shipping) / BOOT_CURRENCY_TO_EUR[offer.currency];
+  return (offer.price + offer.shipping) / OFFER_CURRENCY_TO_EUR[offer.currency];
 }
 
 // Entradas de partidos (tickets.ts): mismo motivo que bootOfferTotalInEUR

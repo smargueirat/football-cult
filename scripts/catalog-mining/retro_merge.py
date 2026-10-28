@@ -13,6 +13,8 @@ STORE_META = {
     "AdidasES": (0.0, "EUR"),
     "AdidasPT": (4.99, "EUR"),
     "AdidasCL": (0.0, "CLP"),
+    "AdidasMX": (0.0, "MXN"),
+    "AdidasCO": (0.0, "COP"),
     "PlanetFoot": (0.0, "EUR"),
     "FansJerseyHub": (0.0, "USD"),
     "ComoFCShop": (0.0, "EUR"),

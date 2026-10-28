@@ -1,7 +1,7 @@
 // Chequeo de offersForCountry (botas y equipamiento respetan el país de envío):
 //   npx tsx scripts/check_offers_for_country.mts
 import assert from "node:assert";
-import { offersForCountry } from "../src/lib/productMeta";
+import { offersForCountry, servesEurope } from "../src/lib/productMeta";
 
 const stores = (offers: { store: string }[]) => offers.map((o) => o.store);
 const cl = { store: "AdidasCL", price: 90000 };
@@ -13,5 +13,14 @@ assert.deepStrictEqual(stores(offersForCountry([cl, eu], "CL")), ["AdidasCL", "P
 
 // Ninguna envía al país: devuelve todas (la ficha no desaparece)
 assert.deepStrictEqual(stores(offersForCountry([cl], "ES")), ["AdidasCL"]);
+
+// adidas MX / CO (2026-10-28): solo su país; ninguna de las tres sirve a Europa (hubs/FAQ sin país elegido).
+const mx = { store: "AdidasMX", price: 1999 };
+const co = { store: "AdidasCO", price: 189975 };
+assert.deepStrictEqual(stores(offersForCountry([mx, co, eu], "ES")), ["PlanetFoot"]);
+assert.deepStrictEqual(stores(offersForCountry([mx, co, eu], "MX")), ["AdidasMX", "PlanetFoot"]);
+assert.deepStrictEqual(stores(offersForCountry([mx, co], "CO")), ["AdidasCO"]);
+assert.ok(!servesEurope("AdidasMX") && !servesEurope("AdidasCO") && !servesEurope("AdidasCL"));
+assert.ok(servesEurope("AdidasES") && servesEurope("AdidasPT") && servesEurope("eBay ES") && servesEurope("Futbol Emotion"));
 
 console.log("ok");

@@ -32,7 +32,7 @@ Gigasport (su categoría mezcla balonmano y voley).
 import csv, re, json, unicodedata, os
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-FEEDS = "/tmp/feeds"
+FEEDS = os.environ.get("FEED_DIR", "/tmp/feeds")
 OUT_PATH = os.path.join(SCRIPT_DIR, "mined_boots.json")
 
 # Snapshot manual del feed TradeTracker de FutbolEmotion (semicolon-CSV,
@@ -1093,7 +1093,7 @@ def mine_reebok(fname, store, currency, boot_word):
 # El feed no trae costo de envío y adidas.cl está detrás de un WAF que bloquea
 # el fetch (403), así que no se pudo medir: shipping 0 = "no publicado", mismo
 # criterio que DecathlonIE/Clovis (no se inventa un número).
-CL_PREFIX_RE = re.compile(r'^(zapatos|zapatillas|calzado)(\s+de)?(\s+f[uú]t?bo[lL])?\s+', re.I)
+CL_PREFIX_RE = re.compile(r'^(zapatos|zapatillas|calzado|tacos|guayos)(\s+de)?(\s+f[uú]t?bo[lL])?\s+', re.I)
 
 def cl_model(title):
     t = re.sub(r'^adidas\s+', '', title.strip(), flags=re.I)
@@ -1118,16 +1118,21 @@ def infer_ground_cl(title):
         return 'FG/AG'
     if re.search(r'terreno firme|firm ground', t):
         return 'FG'
-    if re.search(r'pasto (artificial|sint[eé]tico)|terreno artificial', t):
+    if re.search(r'pasto (artificial|sint[eé]tico)|terreno artificial|c[eé]sped artificial', t):
         return 'AG'
-    return 'MG' if 'multiterreno' in t else ''
+    return 'MG' if re.search(r'multi-?terreno|flexible ground', t) else ''
 
-def mine_adidas_cl():
-    if not os.path.exists(f"{FEEDS}/ADIDAS_CL.csv"):
-        print('AdidasCL: feed not found, skipped')
+# adidas Chile / México / Colombia (Awin 79922 / 79918 / 79924): tienda, feed, moneda. MX y CO llegan ya
+# traducidos al esquema de CL por download_feeds.py (adidas_latam_feed.py): la talla de MX ("MX 5") viene
+# como "US 7", así que cl_eu_size sirve igual.
+ADIDAS_LATAM = [('AdidasCL', 'ADIDAS_CL.csv', 'CLP'), ('AdidasMX', 'ADIDAS_MX.csv', 'MXN'), ('AdidasCO', 'ADIDAS_CO.csv', 'COP')]
+
+def mine_adidas_latam(store, fname, currency):
+    if not os.path.exists(f"{FEEDS}/{fname}"):
+        print(f'{store}: feed not found, skipped')
         return
     groups = {}
-    with open(f"{FEEDS}/ADIDAS_CL.csv", newline='', encoding='utf-8', errors='replace') as f:
+    with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
             if not (row.get('merchant_category') or '').startswith('Zapatos de Fútbol') or row.get('custom_1') != 'Adult':
                 continue
@@ -1149,8 +1154,8 @@ def mine_adidas_cl():
         sizes = dict(sorted(sizes.items(), key=lambda kv: size_sort_key(kv[0])))
         prices = [parse_price(r['search_price']) for r in sizes.values()] or [parse_price(rep['search_price'])]
         entry = {
-            'store': 'AdidasCL', 'brand': 'Adidas', 'model': model, 'groundType': infer_ground_cl(model),
-            'price': min(prices), 'shipping': 0, 'currency': 'CLP',
+            'store': store, 'brand': 'Adidas', 'model': model, 'groundType': infer_ground_cl(model),
+            'price': min(prices), 'shipping': 0, 'currency': currency,
             'url': rep['aw_deep_link'], 'imageUrl': rep['aw_image_url'], 'sizes': list(sizes),
             'eans': sorted({(r.get('product_GTIN') or '').strip() for r in rows} - {''}),
             'style': style,
@@ -1160,7 +1165,7 @@ def mine_adidas_cl():
             entry['sizePrices'] = [{'size': k, 'price': p, 'url': r['aw_deep_link']} for (k, r), p in zip(sizes.items(), prices)]
         results.append(entry)
         n += 1
-    print('AdidasCL:', n)
+    print(f'{store}:', n)
 
 # ---------- FORUM SPORT (Awin 23805) ----------
 # Hasta 2026-10-09 solo entraban sus botas cruzadas a mano en los 71 legacy;
@@ -1272,8 +1277,9 @@ if __name__ == '__main__':
     # oferta a esa ficha y la ficha conserva su id.
     for feed in REEBOK_FEEDS:
         mine_reebok(*feed)
-    # adidas CL (CLP): sus botas comparten código de estilo con adidas ES/PT.
-    mine_adidas_cl()
+    # adidas CL / MX / CO: sus botas comparten código de estilo con adidas ES/PT.
+    for store in ADIDAS_LATAM:
+        mine_adidas_latam(*store)
 
     # Guardia real, un solo punto para las 13 tiendas de arriba (mismo
     # espíritu que EXCLUDE_KEYWORDS): sin foto la card sale como caja

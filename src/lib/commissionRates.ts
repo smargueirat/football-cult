@@ -84,6 +84,9 @@ const RATES: Record<string, number> = {
   // venta medida todavía. 6 % = por debajo de lo medido en adidas ES, a
   // propósito. Revisar en el directorio de Awin cuando haya EPC.
   AdidasCL: 0.06,
+  // Igual que AdidasCL (28-10): 6 % PROVISIONAL, sin dato publicado para MX/CO; revisar el EPC real en Awin.
+  AdidasMX: 0.06,
+  AdidasCO: 0.06,
   DecathlonIE: 0.03,
   // Publicado en sus propios términos: 8% a precio completo, 5% en
   // rebajas. Casi todo lo que mostramos de ellos está rebajado.
