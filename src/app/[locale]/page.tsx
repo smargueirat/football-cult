@@ -166,6 +166,12 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <section className="mx-auto w-full max-w-[1800px] px-4 pt-3 sm:px-8 sm:pt-8">
           {/* Black Friday / Navidad y Reyes: solo en su ventana (src/lib/seasonal.ts). */}
           <SeasonalBanner today={todayIso()} />
+          {/* Escritorio grande (xl): el carrusel va a la derecha del título y
+              el buscador (antes esa mitad quedaba vacía y el carrusel, lo más
+              vistoso, abajo del todo); las ofertas, debajo a todo el ancho.
+              Celular y tablet: igual que antes, el carrusel después de las
+              ofertas. */}
+          <div className="xl:grid xl:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] xl:items-center xl:gap-8">
           <div className="max-w-5xl">
             {/* min-h: el alto final (3 líneas en móvil, 2 en escritorio) se
                 reserva antes de que llegue la fuente; con la de reserva, más
@@ -201,18 +207,21 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           {/* Home -> tienda en un toque. La home recibía el 64 % de las
               entradas y no producía NINGÚN clic a tienda (GA4, 90 días):
               el único camino pasaba por ficha. */}
-          <DirectDeals
-            deals={deals}
-            eyebrow={CONV[locale].dealsEyebrow}
-            title={CONV[locale].dealsTitle}
-            sub={CONV[locale].dealsSub}
-            surface="home"
-          />
+          <div className="xl:col-span-2">
+            <DirectDeals
+              deals={deals}
+              eyebrow={CONV[locale].dealsEyebrow}
+              title={CONV[locale].dealsTitle}
+              sub={CONV[locale].dealsSub}
+              surface="home"
+            />
+          </div>
 
           {/* Carrusel de secciones: copy emotivo y fotos de campaña. Iba
               arriba del todo y empujaba el buscador fuera de la pantalla. */}
-          <div className="mt-8">
+          <div className="mt-8 xl:col-start-2 xl:row-start-1 xl:mt-0">
             <HeroCarousel />
+          </div>
           </div>
         </section>
 

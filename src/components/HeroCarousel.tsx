@@ -103,9 +103,14 @@ export default function HeroCarousel() {
     router.push(`/${locale}${SLIDE_PATHS[index]}`);
   }
 
+  // Diseño por ancho del PROPIO recuadro (container query), no de la
+  // pantalla: en escritorio grande va en la columna derecha de la cabecera
+  // (~470-680 px) y ahí usa el diseño apilado del celular. Apilado, la foto
+  // ocupa 16:9 exacto arriba (56,25cqw) y el texto 160 px abajo: no se corta.
   return (
+    <div className="@container">
     <div
-      className="vintage-dark shadow-vintage-lg relative h-[360px] overflow-hidden rounded-2xl sm:h-[460px] sm:rounded-3xl"
+      className="vintage-dark shadow-vintage-lg relative h-[calc(56.25cqw+160px)] overflow-hidden rounded-2xl sm:rounded-3xl @3xl:h-[460px]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -174,7 +179,7 @@ export default function HeroCarousel() {
           {slide.photo && (
             <div
               className={`absolute inset-0 ${
-                SECTION_HERO_FIT[i] === "contain" ? "bg-white sm:left-[38%]" : "bottom-[44%] sm:bottom-0 sm:left-[44%]"
+                SECTION_HERO_FIT[i] === "contain" ? "bg-white @3xl:left-[38%]" : "bottom-[160px] @3xl:bottom-0 @3xl:left-[44%]"
               }`}
               style={{ transform: SECTION_HERO_TRANSFORM[i] }}
             >
@@ -202,16 +207,16 @@ export default function HeroCarousel() {
               empieza a desvanecerse -- así el fondo del texto es siempre
               parejo sea cual sea la foto de atrás. */}
           <div
-            className="absolute inset-0 sm:hidden"
-            style={{ background: "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.92) 40%, transparent 56%)" }}
+            className="absolute inset-0 @3xl:hidden"
+            style={{ background: "linear-gradient(to top, rgba(0,0,0,0.92) 0, rgba(0,0,0,0.92) 145px, transparent 205px)" }}
           />
           <div
-            className="absolute inset-0 hidden sm:block"
+            className="absolute inset-0 hidden @3xl:block"
             style={{ background: "linear-gradient(to right, #14261c 0%, #14261c 44%, transparent 56%)" }}
           />
 
-          <div className="relative z-10 flex h-full flex-col items-start justify-end gap-1.5 px-5 py-5 text-left sm:max-w-[52%] sm:justify-center sm:gap-3 sm:px-12 sm:py-6">
-            <span className="font-tagline text-[11px] uppercase text-[#E7C567] sm:text-sm">
+          <div className="relative z-10 flex h-full flex-col items-start justify-end gap-1.5 px-5 py-5 text-left @3xl:max-w-[52%] @3xl:justify-center @3xl:gap-3 @3xl:px-12 @3xl:py-6">
+            <span className="font-tagline text-[11px] uppercase text-[#E7C567] @3xl:text-sm">
               {slide.eyebrow}
             </span>
             {/* El título de cada diapositiva pasó a <p>: el <h1> ahora es
@@ -219,10 +224,10 @@ export default function HeroCarousel() {
                 así que ni el visitante ni Google sabían de qué va el sitio
                 -- "Los colores que elegiste de chico" es lindo pero no dice
                 que esto compara precios (auditoría 2026-09-24). */}
-            <p className="font-vintage text-2xl leading-tight text-[#F3E9C9] sm:text-5xl lg:text-6xl">
+            <p className="font-vintage text-2xl leading-tight text-[#F3E9C9] @lg:text-3xl @3xl:text-5xl @5xl:text-6xl">
               {slide.title}
             </p>
-            <p className="line-clamp-2 max-w-md text-xs text-[#D9CFAE] sm:max-w-lg sm:text-base">
+            <p className="line-clamp-2 max-w-md text-xs text-[#D9CFAE] @lg:text-sm @3xl:max-w-lg @3xl:text-base">
               {slide.subtitle}
             </p>
             <button
@@ -230,7 +235,7 @@ export default function HeroCarousel() {
                 e.stopPropagation();
                 goToSection(i);
               }}
-              className="shadow-vintage-md relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] transition-transform hover:scale-[1.03] sm:px-6 sm:py-2.5 sm:text-sm"
+              className="shadow-vintage-md relative mt-1 inline-flex items-center gap-2 rounded-full border border-[#B8923F] bg-gradient-to-b from-[#E7C567] to-[#B8923F] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-wide text-[#2A2410] transition-transform hover:scale-[1.03] @3xl:px-6 @3xl:py-2.5 @3xl:text-sm"
             >
               {slide.cta}
               <span aria-hidden>→</span>
@@ -275,6 +280,7 @@ export default function HeroCarousel() {
       >
         ›
       </button>
+    </div>
     </div>
   );
 }
