@@ -45,7 +45,10 @@ export default function HeroCarousel() {
 
   const slides = useMemo(
     () =>
-      t.heroSlides.map((text, i) => ({
+      // Solo las SLIDE_COUNT con foto panorámica: las demás secciones no
+      // tienen (HERO_PHOTOS de la 7 en adelante son fotos de producto) y
+      // salían 11 puntitos para un carrusel que rota entre 6.
+      t.heroSlides.slice(0, SLIDE_COUNT).map((text, i) => ({
         ...text,
         photo: CURATED_SLIDE_PHOTOS[i],
       })),
