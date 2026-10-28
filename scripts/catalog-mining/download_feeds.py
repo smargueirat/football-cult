@@ -40,6 +40,9 @@ GOOGLE = {"FOOTSTORE_FR", "SPORTISGOOD_FR"}
 GOOGLE_COLS = ["advertiser_id", "advertiser_name", "id", "title", "description", "link", "image_link",
                "aw_deep_link", "product_type", "gtin", "mpn", "brand", "availability", "price",
                "sale_price", "condition", "color", "gender", "size", "item_group_id", "shipping"]
+# ADIDAS_MX / ADIDAS_CO (Awin 79918 / 79924, aprobados 2026-10-28): esquema distinto al de adidas CL; se
+# traducen al de CL al bajarlos para que toda la minería los lea con el mismo código (adidas_latam_feed.py).
+ADIDAS_LATAM = {"ADIDAS_MX", "ADIDAS_CO"}
 TT = "https://pf.tradetracker.net/?aid=514692&encoding=utf-8&type=csv&fid={}&categoryType=2&additionalType=2&csvDelimiter=%3B&csvEnclosure=%22&filter_extended=1"
 TRADETRACKER = {"FUTBOLFACTORY": TT.format(2551751), "SHOPREALBETIS": TT.format(2291247),
                 "futbolemotion_feed": TT.format(2066871)}
@@ -118,6 +121,11 @@ def download(name, url):
             to_google(tmp, tmp + ".raw")
             os.replace(tmp + ".raw", tmp)
             head = open(tmp, encoding="utf-8", errors="replace").readline()
+        if name in ADIDAS_LATAM and "custom_1" in head:
+            sys.path.insert(0, HERE)
+            from adidas_latam_feed import translate
+            translate(tmp, tmp + ".raw")
+            os.replace(tmp + ".raw", tmp)
         n, prev = lines(tmp), (lines(dst) if os.path.exists(dst) else 0)
         if len(re.split(r"[,;]", head)) < 5:
             raise ValueError(f"cabecera rara: {head[:60]!r}")

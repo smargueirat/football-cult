@@ -35,6 +35,8 @@ assert.equal(shippingUnknown({ store: "Futbol Emotion", shipping: 0 }, "ES"), fa
 assert.equal(shippingUnknown({ store: "Futbol Emotion", shipping: 0 }, "AR"), true);
 assert.equal(shippingUnknown({ store: "FansJerseyHub", shipping: 0 }, "AR"), false); // gratis a todo el mundo
 assert.equal(shippingUnknown({ store: "AdidasCL", shipping: 0 }, "CL"), true); // la tienda no lo publica
+assert.equal(shippingUnknown({ store: "AdidasMX", shipping: 0 }, "MX"), true);
+assert.equal(shippingUnknown({ store: "AdidasCO", shipping: 0 }, "CO"), true);
 assert.equal(shippingUnknown({ store: "eBay ES", shipping: 0 }, "ES"), true); // en vivo
 assert.equal(shippingUnknown({ store: "eBay ES", shipping: 5 }, "AR"), false);
 assert.equal(shippingUnknown({ store: "Amazon", shipping: 0, url: "https://www.amazon.es/dp/X?tag=y" }, "ES"), false);

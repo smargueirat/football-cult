@@ -51,7 +51,7 @@ function badgeColor(store: string) {
   return BADGE_COLORS[sum % BADGE_COLORS.length];
 }
 
-const KNOWN_CURRENCIES = ["EUR", "USD", "GBP", "BRL", "CLP", "ARS"] as const;
+const KNOWN_CURRENCIES = ["EUR", "USD", "GBP", "BRL", "CLP", "ARS", "MXN", "COP"] as const;
 type KnownCurrency = (typeof KNOWN_CURRENCIES)[number];
 
 // eBay's live shipping endpoint can in principle return a currency for

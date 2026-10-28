@@ -4848,6 +4848,36 @@ Feed `ADIDAS_CL.csv` (22.161 filas, UNA POR TALLA, CLP). Columnas para pick.py: 
 - **"Universidad de Chile" se archivaba como la seleccion de Chile** (`\bchile\b`): 5 ofertas de club iban a `chile-home-2026`. Equipo nuevo `udechile` (batch17, antes de `chile` en TEAM_PATTERNS). "Seleccion Chilena" / "Seleccion Peruana" no matcheaban (`chilena`, `peruana` agregados).
 - Falsos positivos que NO entran solos: rugby All Blacks (sin patron de equipo), Mercedes/Audi F1, Fortnite, `Polera EQT`/`LFSTLR`/`Originals` sin tipo local/visitante (sin tipo no hay pick), conjuntos camiseta+short. Foto de `japon|prematch` (conflicto de temporada): la ficha existente (eBay, negra/blanca Originals) es OTRO diseno que el azul de CL, no se mezclaron. `italia|prematch` y `alemania|prematch` tienen varias fichas por colorway: `refresh.py` las salta como ambiguas; la oferta CL se puso a mano en `italia-prematch-white-2026` y `alemania-prematch-2026` (foto comparada), asi que cada noche el refresh vuelve a saltarlas sin tocar la oferta.
 
+## adidas México y Colombia (`AdidasMX` MXN / `AdidasCO` COP, Awin 79918 / 79924) -- integrado 2026-10-28
+
+Mismo recorrido que adidas CL (arriba), pero sus feeds NO tienen el esquema de CL, así que `download_feeds.py` los traduce al bajarlos
+(`adidas_latam_feed.py`, igual que `to_google` con las FR): después de eso `ADIDAS_MX.csv` / `ADIDAS_CO.csv` se leen en `refresh_offers`,
+`mine_boots`, `mine_gear`, `refresh_gear`, `mine_women`, `update_gtins`, `pick.py` y `retro_extract.py` con el mismo código que `ADIDAS_CL.csv`
+(solo hay que dar de alta la tienda en cada tabla). Comprobado el 28-10 sobre los feeds crudos:
+
+- **El precio de venta NO está en `search_price`.** `search_price` y `product_price_old` traen siempre el precio de lista; la rebaja (20/30/40/50 %: 439/549,
+  1799/2999, 119970/199950) viene en `custom_1` (MX 21 % de las filas, CO 36 %). La traducción deja el menor de los dos en `search_price`. adidas.mx /
+  adidas.co responden con un desafío anti-bot (como adidas.cl con 403), así que no se pudo contrastar con la tienda; si algún día un precio no coincide,
+  empezar por aquí.
+- `Fashion:suitable_for` es el DEPORTE (Fútbol, Originals, Golf...), no el sexo; `Fashion:size` y `mpn` traen el mismo código; `colour` es la categoría. Sexo/edad
+  en el sufijo de `merchant_category` ("Jerseys/Mujer"), talla en el sufijo de `merchant_product_id` ("JZ2492-0002_XS"), color (familia: Blanco, Negro...) en la
+  descripción ("... - Negro en adidas.mx"). Títulos MX "adidas Jersey X Negro - Hombre" (color pegado); CO "adidas Camiseta X Hombre M".
+- **Tallas de bota MX** ("MX 5"): medido contra los EAN que MX comparte con CL/CO/ES (720 de 2.035 filas), MX + 2 = talla US de hombre/unisex y MX + 3 = talla US de
+  mujer, sin excepciones; se traduce a "US n" y `cl_eu_size` hace el resto. Las de niño (MX 16-25, cm) no se usan: solo adulto, como CL.
+- Categorías de MX/CO que no existen en CL (Jerseys, Calzado de Fútbol, Balones, Espinilleras, Playeras, Sudaderas, Chamarras, Guayos, Medias, Buzos...) se llevan al
+  nombre de CL en `CATEGORY`. Los nombres propios (Balón, Playera, Chamarra, Buzo, Morral, Tula, Guayera...) los traduce `gearText.ts`.
+- Envío: el feed no lo trae y las tiendas no se pueden consultar: `shipping: 0` = "a verificar" (`SHIPPING_KNOWN_FOR: []`), solo envían a MX / CO (`storeShipping`).
+  Comisión 6 % PROVISIONAL (igual que CL; comprobar el EPC real en Awin).
+- Camisetas: `pick.py ... product_name "Fashion:size" aw_deep_link aw_image_url` sobre el feed traducido -> `split_picks.py` -> `gen_new_teams.py` -> `refresh.py`
+  (hombre), `mine_women.py` / `apply_women.py` (mujer), `mine_kids_awin.py` + `gen_kids_teams.py` + `refresh.py --kids` (niño; antes era a mano) y
+  `retro_extract.py ... awin AdidasMX` -> `retro_merge.py` -> `retro_offer_merge.py`. Las que `refresh.py` salta por ambiguas (varias fichas del mismo equipo y tipo) se
+  colocan a mano comparando la foto. No hizo falta ningún equipo nuevo: no hay Chivas / Cruz Azul / Pumas (Puma, Joma, Nike) ni Millonarios / Nacional en estos feeds;
+  de México solo adidas viste al Club América y a los Tigres (ya estaban).
+- **`extract.is_old_season`**: "93/94" (par de años de dos cifras consecutivos) no contaba como temporada vieja (`a < 25` solo cubría 20xx), y la camiseta retro
+  "Selección Chilena 93/94" / "Newcastle 95/96" de adidas MX pasaba como actual y se pegaba a la ficha de la temporada en curso. Ahora `a >= 30` también es antiguo.
+- `bestOffer()` (hubs, FAQ, fotos; sin país elegido) y `gearHubs`/`hubFaq` ya no eligen una oferta de una tienda que no envía a Europa (`servesEurope`): el CO al -50 % en
+  pesos ganaba en euros a las de España (en 119 de 6.590 fichas la oferta global más barata era de adidas CL/MX/CO).
+
 ## Daily pass (2026-10-08) -- manual run, the cron's OAuth session had expired
 
 The 06:07 cron run died at start with `Failed to authenticate: OAuth session

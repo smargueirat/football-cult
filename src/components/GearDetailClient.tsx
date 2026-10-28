@@ -31,7 +31,7 @@ interface GearOffer {
   price: number;
   priceMax?: number;
   shipping: number;
-  currency: "EUR" | "GBP" | "CLP";
+  currency: "EUR" | "GBP" | "CLP" | "MXN" | "COP";
   url: string;
   imageUrl: string;
   sizes: string[];

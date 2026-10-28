@@ -541,6 +541,9 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
   AdidasPT: ["PT"],
   // adidas.cl (feed Awin 79922, aprobado 2026-10-06): solo envía dentro de Chile.
   AdidasCL: ["CL"],
+  // adidas.mx / adidas.co (feeds Awin 79918 y 79924, aprobados 2026-10-28): cada sitio solo envía a su país.
+  AdidasMX: ["MX"],
+  AdidasCO: ["CO"],
   // Decathlon operates separate regional storefronts per country
   // (decathlon.ie for Ireland, decathlon.co.uk for the UK, etc.), same
   // pattern as adidas's regional sites above -- decathlon.ie's own order
@@ -620,6 +623,15 @@ export function offerShipsTo(store: string, country: CountryCode): boolean {
   const shipping = storeShipping[store];
   if (!shipping) return true;
   return shipping === "all" || shipping.includes(country);
+}
+
+// Países de Europa donde el sitio tiene mercado (es/en/pt/fr/it) o tienda propia (GB/DE).
+const EUROPE_MARKETS: CountryCode[] = ["ES", "IE", "PT", "FR", "IT", "GB", "DE"];
+
+/** ¿Envía la tienda a algún país europeo del sitio? adidas CL/MX/CO, las tiendas de BR y Nike/Puma AR no: sin
+ *  país elegido (hubs, FAQ, fotos) su oferta no puede ser "la mejor", aunque en euros salga más barata. */
+export function servesEurope(store: string): boolean {
+  return EUROPE_MARKETS.some((c) => offerShipsTo(store, c));
 }
 
 // Ofertas que sí envían a `country`. Si NINGUNA envía devuelve todas (la ficha
@@ -730,6 +742,8 @@ export const STORE_LOCALE: Partial<Record<string, Locale>> = {
   SportIsGoodES: "es",
   AdidasPT: "pt",
   AdidasCL: "es",
+  AdidasMX: "es",
+  AdidasCO: "es",
   FansJerseyHub: "en",
   FootStoreFR: "fr",
   SportIsGoodFR: "fr",

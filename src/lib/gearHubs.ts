@@ -5,6 +5,7 @@ import { apparelProducts } from "@/data/apparel";
 import { trainingProducts } from "@/data/training";
 import { bootOfferTotalInEUR } from "@/lib/offerMoney";
 import { isComparableStore } from "@/lib/officialStores";
+import { servesEurope } from "@/lib/productMeta";
 import type { HubFacts } from "@/lib/hubFaq";
 
 import { bestPerRetailer, countDistinctRetailers, distinctRetailerLabels } from "@/lib/retailerFamily";
@@ -25,7 +26,7 @@ export interface GearItem {
   image: string;
   price: number;
   shipping: number;
-  currency: "EUR" | "USD" | "CLP" | "ARS";
+  currency: "EUR" | "USD" | "CLP" | "ARS" | "MXN" | "COP";
   eur: number;
   stores: number;
   storeNames: string[];
@@ -53,7 +54,7 @@ export function slugify(s: string): string {
 interface RawOffer {
   price: number;
   shipping: number;
-  currency: "EUR" | "USD" | "CLP" | "ARS";
+  currency: "EUR" | "USD" | "CLP" | "ARS" | "MXN" | "COP";
   imageUrl: string;
   store: string;
 }
@@ -77,7 +78,7 @@ function spreadOf(offers: Raw["offers"]): GearItem["spread"] {
   // Una cifra por tienda: el espejo ES/FR de un mismo minorista no cuenta.
   const comp = bestPerRetailer(
     offers
-      .filter((o) => isComparableStore(o.store))
+      .filter((o) => isComparableStore(o.store) && servesEurope(o.store))
       .map((o) => ({ store: o.store, eur: bootOfferTotalInEUR(o) })),
     (a, b) => a.eur < b.eur,
   ).sort((a, b) => a.eur - b.eur);
@@ -106,7 +107,9 @@ function build(section: GearSection, raws: Raw[]): GearItem[] {
   for (const r of raws) {
     const offers = r.offers.filter((o) => o.imageUrl);
     if (!r.offers.length || !offers.length) continue;
-    const best = [...r.offers].sort((a, b) => bootOfferTotalInEUR(a) - bootOfferTotalInEUR(b))[0];
+    // Solo entre las que envían a Europa (adidas CL/MX/CO ganarían en euros a las de España sin poder comprarse acá).
+    const eu = r.offers.filter((o) => servesEurope(o.store));
+    const best = [...(eu.length ? eu : r.offers)].sort((a, b) => bootOfferTotalInEUR(a) - bootOfferTotalInEUR(b))[0];
     const brandSlug = slugify(r.brand);
     if (!brandSlug || r.brand === "N/D") continue;
     out.push({

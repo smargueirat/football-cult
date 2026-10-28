@@ -820,17 +820,20 @@ ADIDAS_CL_GENDER = r'(?:Hombre|Mujer|Niño|Niña|Niños|Niñas|Unisex)'
 # reediciones con año): no es equipamiento de fútbol.
 ADIDAS_CL_LIFESTYLE_RE = re.compile(
     r'originals|\beqt\b|\badn\b|\bdna\b|\bog\b|bob marley|avengers|aniversario|mascota|\btour\b'
-    r'|estampad|emblema|copa mundial|\b(?:19\d\d|20[01]\d)\b', re.I)
+    r'|estampad|emblema|copa mundial|\b(?:19\d\d|20[01]\d)\b'
+    # MX/CO: reediciones con años de dos cifras ("Arsenal 92-94", "Liverpool FC 95") y colaboraciones
+    r'|\b[6-9]\d[-/][6-9]\d\b|\b[6-9]\d$|someone somewhere', re.I)
 ADIDAS_CL_APPAREL = {  # categoría -> type de apparel.ts
     'Calcetines': 'socks', 'Canilleras': 'shinguards', 'Shorts': 'shorts', 'Poleras': 'tshirt',
     'Pantalones': 'pants', 'Bolsos y mochilas': 'bag', 'Chaquetas': 'jacket', 'Polerones': 'sweatshirt',
 }
 ADIDAS_CL_COLOURS = [  # primer color que nombra el feed -> color canónico
     (r'negro|onix|carbon|black', 'Negro'), (r'blanco|ivory|white|crystal', 'Blanco'),
-    (r'azul|navy|royal|aqua|sky|blue', 'Azul'), (r'rojo|maroon|crimson|burgundy', 'Rojo'),
+    (r'azul|navy|royal|aqua|sky|blue|turquesa', 'Azul'), (r'rojo|maroon|crimson|burgundy|granate', 'Rojo'),
     (r'verde|ivy|lime|slime|mint', 'Verde'), (r'amarillo|lemon|solar turbo|gold|oro', 'Amarillo'),
     (r'naranja|orange|tangerine', 'Naranja'), (r'gris|plata|silver|grey|gray|iron', 'Gris'),
-    (r'rosa|magenta|pink', 'Rosa'), (r'violeta|purple|burst', 'Violeta'), (r'marr[oó]n|brown', 'Marrón'),
+    (r'rosa|magenta|pink', 'Rosa'), (r'violeta|purple|burst|morado', 'Violeta'), (r'marr[oó]n|brown|caf[eé]', 'Marrón'),
+    (r'beige', 'Beige'),  # MX/CO usan familias de color (Beige, Granate, Café, Morado, Turquesa)
 ]
 ADIDAS_CL_SMALL = {'de', 'del', 'con', 'para', 'y', 'la', 'el', 'en', 'a'}
 _TERM_KEYS = None
@@ -912,10 +915,15 @@ def adidas_cl_sizes(rows):
     return out
 
 
-def mine_adidas_cl(gloves, balls, apparel):
-    fname = 'ADIDAS_CL.csv'
+# MX (Awin 79918, MXN) y CO (79924, COP) llegan ya traducidos al esquema de CL por download_feeds.py
+# (adidas_latam_feed.py): mismas categorías, mismo título doblado con la talla, mismo precio en search_price.
+# Sus palabras propias (Balón, Espinilleras, Chamarra, Playera...) las pone el glosario de gearText.ts.
+ADIDAS_LATAM = [('AdidasCL', 'ADIDAS_CL.csv', 'CLP'), ('AdidasMX', 'ADIDAS_MX.csv', 'MXN'), ('AdidasCO', 'ADIDAS_CO.csv', 'COP')]
+
+
+def mine_adidas_latam(store, fname, currency, gloves, balls, apparel):
     if not os.path.exists(f"{FEEDS}/{fname}"):
-        print('AdidasCL: feed not found, skipped')
+        print(f'{store}: feed not found, skipped')
         return
     groups = {}
     with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
@@ -954,12 +962,12 @@ def mine_adidas_cl(gloves, balls, apparel):
         mujer = (rep.get('merchant_category') or '').endswith('/Mujer')
         sort = lambda d: dict(sorted(d.items(), key=lambda kv: size_sort_key(kv[0])))
         entry = {
-            'store': 'AdidasCL', 'brand': 'Adidas', 'model': adidas_cl_model(name, colour, mujer),
+            'store': store, 'brand': 'Adidas', 'model': adidas_cl_model(name, colour, mujer),
             'colour': colour,
             # delivery_cost no viene en el feed y adidas.cl bloquea el acceso
             # automático (403): el costo real no se pudo medir, 0 = "a verificar"
             # (la ficha lo muestra con shippingUnknown, no como envío gratis).
-            'price': price, 'shipping': 0, 'currency': 'CLP',
+            'price': price, 'shipping': 0, 'currency': currency,
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'),
             'sizes': list(sort(sz)),
             'eans': _eans(rows, 'product_GTIN'),
@@ -968,10 +976,10 @@ def mine_adidas_cl(gloves, balls, apparel):
             entry['priceMax'] = price_max
             entry['sizePrices'] = [{'size': s, 'price': p, 'url': u} for s, (p, u) in sort(sz).items()]
         if dest == 'apparel':
-            entry['type'] = 'jacket' if cat == 'Polerones' and name.lower().startswith('chaqueta') else ADIDAS_CL_APPAREL[cat]
+            entry['type'] = 'jacket' if cat == 'Polerones' and name.lower().startswith(('chaqueta', 'chamarra')) else ADIDAS_CL_APPAREL[cat]
         {'gloves': gloves, 'balls': balls, 'apparel': apparel}[dest].append(entry)
         n[dest] += 1
-    print('AdidasCL:', n)
+    print(f'{store}:', n)
 
 
 # ---------- SPORTSAFE UK (Awin 118941, aprobada 2026-10-27) ----------
@@ -1154,7 +1162,8 @@ if __name__ == '__main__':
         mine_apparel_type('baselayer', kw, apparel_results)
     for feed in REEBOK_FEEDS:
         mine_reebok(apparel_results, *feed)
-    mine_adidas_cl(gloves_results, balls_results, apparel_results)
+    for store in ADIDAS_LATAM:
+        mine_adidas_latam(*store, gloves_results, balls_results, apparel_results)
 
     print('=== ENTRENAMIENTO ===')
     mine_training(training_results)

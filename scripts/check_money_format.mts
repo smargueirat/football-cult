@@ -18,12 +18,14 @@ const DealCard = (DealCardModule as unknown as { default?: typeof DealCardModule
 const NB = "\u00A0";
 const NNB = "\u202F";
 // [importe, moneda, es, en, pt, fr, it]
-const CASES: [number, "EUR" | "USD" | "CLP", string, string, string, string, string][] = [
+const CASES: [number, "EUR" | "USD" | "CLP" | "MXN" | "COP", string, string, string, string, string][] = [
   [22.2, "EUR", `22,20${NB}€`, "€22.20", `22,20${NB}€`, `22,20${NB}€`, `22,20${NB}€`],
   [1234.5, "EUR", `1.235${NB}€`, "€1,235", `1${NB}235${NB}€`, `1${NNB}235${NB}€`, `1.235${NB}€`],
   [36.99, "USD", `36,99${NB}USD`, `USD${NB}36.99`, `36,99${NB}USD`, `36,99${NB}USD`, `36,99${NB}USD`],
   [109.99, "EUR", `110${NB}€`, "€110", `110${NB}€`, `110${NB}€`, `110${NB}€`],
   [1076.5, "CLP", `1.077${NB}CLP`, `CLP${NB}1,077`, `1${NB}077${NB}CLP`, `1${NNB}077${NB}CLP`, `1.077${NB}CLP`],
+  [1999, "MXN", `1.999${NB}MXN`, `MXN${NB}1,999`, `1${NB}999${NB}MXN`, `1${NNB}999${NB}MXN`, `1.999${NB}MXN`],
+  [189975, "COP", `189.975${NB}COP`, `COP${NB}189,975`, `189${NB}975${NB}COP`, `189${NNB}975${NB}COP`, `189.975${NB}COP`],
   [1234.56, "EUR", `1.235${NB}€`, "€1,235", `1${NB}235${NB}€`, `1${NNB}235${NB}€`, `1.235${NB}€`],
   [0.5, "EUR", `0,50${NB}€`, "€0.50", `0,50${NB}€`, `0,50${NB}€`, `0,50${NB}€`],
 ];

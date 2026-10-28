@@ -1,7 +1,7 @@
 import type { HubItem } from "@/lib/hubs";
 import { isComparableStore } from "@/lib/officialStores";
 import { offerTotalInEUR } from "@/lib/offerMoney";
-import { seasonSortValue } from "@/lib/productMeta";
+import { seasonSortValue, servesEurope } from "@/lib/productMeta";
 
 import { bestPerRetailer, getRetailerFamily } from "@/lib/retailerFamily";
 // Datos para el bloque de preguntas frecuentes de los hubs.
@@ -44,7 +44,7 @@ export function hubFacts(items: HubItem[]): HubFacts {
     // de marketplace se siguen listando en la ficha; lo que no se hace es
     // apoyar una respuesta en ellas.
     for (const o of it.product.offers) {
-      if (!o.inStock || !isComparableStore(o.store)) continue;
+      if (!o.inStock || !isComparableStore(o.store) || !servesEurope(o.store)) continue;
       const eur = offerTotalInEUR(o);
       if (!cheapest || eur < cheapest.eur) {
         cheapest = { store: o.store, eur, productId: it.product.id };
@@ -64,7 +64,7 @@ export function hubFacts(items: HubItem[]): HubFacts {
     // FootStoreFR no es un ahorro entre minoristas.
     const comparable = bestPerRetailer(
       it.product.offers
-        .filter((o) => o.inStock && isComparableStore(o.store))
+        .filter((o) => o.inStock && isComparableStore(o.store) && servesEurope(o.store))
         .map((o) => ({ store: o.store, eur: offerTotalInEUR(o) })),
       (a, b) => a.eur < b.eur,
     ).sort((a, b) => a.eur - b.eur);

@@ -706,7 +706,8 @@ def is_old_season(title):
         a, b = int(m.group(1)), int(m.group(2))
         # solo lo tratamos como temporada si son años consecutivos (25/26, 24/25, etc.)
         if b == (a + 1) % 100:
-            return a < 25
+            # 93/94 es 1993/94 (retro de adidas MX: "Selección Chilena 93/94"), no un futuro 2093.
+            return a < 25 or a >= 30
     m = SEASON_BARE_YEAR_RE.search(title)
     if m:
         return int(m.group(1)) < 2025

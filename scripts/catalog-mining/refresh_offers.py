@@ -65,6 +65,8 @@ FEEDS = {
     "AdidasES": ("ADIDAS_ES", "awin"),
     "AdidasPT": ("ADIDAS_PT", "awin"),
     "AdidasCL": ("ADIDAS_CL", "awin"),
+    "AdidasMX": ("ADIDAS_MX", "awin"),
+    "AdidasCO": ("ADIDAS_CO", "awin"),
     "ForumSport": ("FORUMSPORT", "awin"),
     "DeporteOutlet": ("DEPORTEOUTLET", "awin"),
     "BSTNIT": ("BSTN_IT", "awin"),
