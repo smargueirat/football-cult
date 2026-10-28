@@ -1,5 +1,5 @@
 import { teamKeysWithItems, teamItems, type HubItem } from "@/lib/hubs";
-import { seasonSortValue, isPriceDropped, priceDropPercent } from "@/lib/productMeta";
+import { seasonSortValue, isPriceDropped, priceDropPercent, servesEurope } from "@/lib/productMeta";
 import type { TypeKey } from "@/data/products";
 
 // Hubs por temporada (/temporada/2026-27, /temporada/2026-27/home) y de
@@ -60,7 +60,7 @@ export function priceDrops(): (HubItem & { pct: number })[] {
   const out: (HubItem & { pct: number })[] = [];
   for (const team of teamKeysWithItems()) {
     for (const it of teamItems(team)) {
-      const dropped = it.product.offers.filter((o) => o.inStock && isPriceDropped(o));
+      const dropped = it.product.offers.filter((o) => o.inStock && servesEurope(o.store) && isPriceDropped(o));
       if (!dropped.length) continue;
       const best = dropped.reduce((a, b) => (priceDropPercent(b) > priceDropPercent(a) ? b : a));
       out.push({ ...it, offer: best, pct: priceDropPercent(best) });

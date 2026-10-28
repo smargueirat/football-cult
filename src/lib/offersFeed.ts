@@ -1,4 +1,5 @@
 import { isPriceDropped, priceDropPercent } from "@/lib/priceDrops";
+import { servesEurope } from "@/lib/productMeta";
 
 // Fichas en baja de las secciones que NO son camisetas.
 //
@@ -16,7 +17,7 @@ import { isPriceDropped, priceDropPercent } from "@/lib/priceDrops";
 
 /** Lo minimo que necesita esta funcion de cualquier seccion. */
 interface DroppableProduct {
-  offers: { url: string; price: number; inStock?: boolean }[];
+  offers: { store: string; url: string; price: number; inStock?: boolean }[];
 }
 
 /**
@@ -31,7 +32,9 @@ export function sectionDrops<T extends DroppableProduct>(
   for (const item of list) {
     // inStock solo cuenta cuando la seccion lo trae: en varias el feed no
     // da disponibilidad fiable y exigirlo las dejaria fuera enteras.
-    const dropped = item.offers.filter((o) => o.inStock !== false && isPriceDropped(o));
+    // /ofertas es estática (sin país): solo bajadas de tiendas que envían a Europa,
+    // para no mostrar a un visitante de España un -30% de adidas México.
+    const dropped = item.offers.filter((o) => o.inStock !== false && servesEurope(o.store) && isPriceDropped(o));
     if (!dropped.length) continue;
     const pct = Math.max(...dropped.map(priceDropPercent));
     out.push({ ...item, pct });

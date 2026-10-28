@@ -30,7 +30,7 @@ import {
 import { isClassicKit } from "@/lib/productMeta";
 import { BootProduct, bootProducts } from "@/data/boots";
 import { bootOfferTotalInEUR } from "@/lib/offerMoney";
-import { offerShipsTo, offersForCountry } from "@/lib/productMeta";
+import { offerShipsTo, offersForCountry, shipsAnywhere } from "@/lib/productMeta";
 import BootCard from "./BootCard";
 import {
   AGE_GROUP_FILTERS,
@@ -447,6 +447,7 @@ export default function SearchExplorer({
       // Niño o adulto, nunca mezclados: otras tallas, y "más baratas
       // primero" abría con botas de niño a 20 EUR.
       if (isKidsBoot(b) !== effectiveBootKids) return false;
+      if (!shipsAnywhere(b.offers, countryCode)) return false;
       if (forcedBootLine && !bootLinesOf(b).includes(forcedBootLine)) return false;
       const matchesQuery =
         queryWords.length === 0 ||

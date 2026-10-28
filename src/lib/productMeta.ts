@@ -642,6 +642,11 @@ export function offersForCountry<T extends { store: string }>(offers: readonly T
   return ships.length > 0 ? ships : [...offers];
 }
 
+/** ¿Alguna oferta envía a `country`? Las fichas que solo venden en otro país (adidas CL/MX/CO, tiendas de BR, Nike/Puma AR) no se listan. */
+export function shipsAnywhere(offers: readonly { store: string }[], country: CountryCode): boolean {
+  return offers.some((o) => offerShipsTo(o.store, country));
+}
+
 export const typeNames: Record<TypeKey, Record<Locale, string>> = {
   home: { es: "Primera equipación", en: "Home", pt: "Titular", fr: "Domicile", it: "Casa" },
   away: { es: "Segunda equipación", en: "Away", pt: "Reserva", fr: "Extérieur", it: "Trasferta" },

@@ -8,7 +8,7 @@ import ScrollArrowRow from "./ScrollArrowRow";
 import FilterSheet from "./FilterSheet";
 import SortDropdown from "./SortDropdown";
 import { useCountry } from "@/lib/country/CountryContext";
-import { offersForCountry } from "@/lib/productMeta";
+import { offersForCountry, shipsAnywhere } from "@/lib/productMeta";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { localizeGearColour } from "@/lib/gearText";
 import { offerTotalInEUR } from "@/lib/offerMoney";
@@ -100,6 +100,7 @@ export default function GearListClient({
     const q = query.trim().toLowerCase();
     const base = items.filter((i) => {
       if (q && !`${i.brand} ${i.model}`.toLowerCase().includes(q)) return false;
+      if (!shipsAnywhere(i.offers, countryCode)) return false;
       if (brandFilter && i.brand !== brandFilter) return false;
       if (colourFilter && i.colour !== colourFilter) return false;
       if (sizeFilter && !i.offers.some((o) => o.sizes.includes(sizeFilter))) return false;

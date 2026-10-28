@@ -2,7 +2,7 @@ import { bestOffer, products, teamNames, type TeamKey } from "@/data/products";
 import { bootProducts } from "@/data/boots";
 import { COUNTRY_FLAGS, COUNTRY_SLUGS, LEAGUES, leagueName, type HubLocale } from "@/data/teamMeta";
 import { countryTeams, leagueTeams, teamItems, teamKeysWithItems, teamName } from "@/lib/hubs";
-import { getAgeGroup, kitTypeName, seasonSortValue, teamCategory } from "@/lib/productMeta";
+import { getAgeGroup, kitTypeName, seasonSortValue, servesEurope, teamCategory } from "@/lib/productMeta";
 import { countDistinctRetailers } from "@/lib/retailerFamily";
 import { mainPhoto } from "@/lib/officialStores";
 import { localizeGearModel } from "@/lib/gearText";
@@ -66,7 +66,7 @@ export function searchIndex(locale: HubLocale): TypeaheadEntry[] {
 
   const s = HUB[locale];
   const jerseys: TypeaheadEntry[] = products
-    .filter((p) => countDistinctRetailers(p.offers.filter((o) => o.inStock)) >= 2)
+    .filter((p) => countDistinctRetailers(p.offers.filter((o) => o.inStock)) >= 2 && p.offers.some((o) => servesEurope(o.store)))
     // Temporada más nueva primero; dentro de ella, adulto antes que niño/mujer
     // y la de local antes que el resto.
     .sort(
@@ -82,7 +82,7 @@ export function searchIndex(locale: HubLocale): TypeaheadEntry[] {
     });
 
   const boots: TypeaheadEntry[] = bootProducts
-    .filter((b) => b.offers.length && countDistinctRetailers(b.offers) >= 2)
+    .filter((b) => b.offers.length && countDistinctRetailers(b.offers) >= 2 && b.offers.some((o) => servesEurope(o.store)))
     .sort((a, b) => countDistinctRetailers(b.offers) - countDistinctRetailers(a.offers))
     .map((b) => ({ g: "p", n: localizeGearModel(b.model, b.brand, locale), h: `/botas/${b.id}`, i: mainPhoto(undefined, b.offers) }));
 
