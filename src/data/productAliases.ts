@@ -10,6 +10,23 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-10-28: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "galatasaray-training-202627": "galatasaray-training-202526",
+  "santos-retro-202021-away": "santos-retro-202122-away",
+  "osasuna-home-kids": "osasuna-home-202627-kids",
+  "realmadrid-retro-1994-home": "realmadrid-retro-199697-home",
+  "porto-retro-201415-home": "porto-retro-201718-home",
+  "realbetis-retro-200708-home": "realbetis-retro-200809-home",
+  "coventry-retro-201012-away": "coventry-retro-201920-away",
+  "marseille-retro-2000-away": "marseille-retro-2004-away",
+  "reading-retro-202324-home": "reading-retro-202223-home",
+  "portsmouth-retro-201314-home": "portsmouth-retro-201516-home",
+  "dynamokyiv-retro-202425-away": "dynamokyiv-away-202526",
+  "sassuolo-retro-2021-home": "sassuolo-retro-201819-home",
+  "liverpool-retro-2000-away": "liverpool-retro-200305-away",
+  "sunderland-retro-1978-away": "sunderland-retro-199192-away",
+  "fcbasel-away-202526": "fcbasel-retro-200405-away",
   // 2026-10-27: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
   // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
   "polonia-retro-2020-home": "polonia-retro-202021-home",
