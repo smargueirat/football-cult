@@ -5056,6 +5056,16 @@ eBay rotation US, IT, ES, then GB (day-of-year 300 mod 3 = 0), 5000/5000 quota a
 - `ebay_gb_retro.py`: **"single-store retro fichas unreviewed: 0"** -- the pass has run out of fichas; its 63 "inserted" were all item ids already on file (cache re-apply), restored.
 - Tickets 1 new / 25 dropped of 2302. GTIN 23490 of 36307. Colours 8 new, 0 errors. Price drops 887; Telegram posted 10.
 
+## Daily pass (2026-10-28)
+
+eBay rotation IT, ES, US, then GB (day-of-year 301 mod 3 = 1), started at 06:24 UTC with 1000 calls left in the old window; all four ran 20 teams, no 429s (IT 300/411 and ES 300/411 cycle 2, US 309/411 cycle 5, **GB finished cycle 5**). FootStore FR / Sport is Good FR still 404 (2nd day): left out of the adult and women passes. Pro:Direct skipped (Oct 18 files). Soicos skipped (no claude-in-chrome). Umbro MID 41001 still absent from the Rakuten FTP (37th pass). Boots / gear not re-run.
+
+- CSV feeds: 0 new fichas. Skipped: FootStore ES Netherlands prematch (only XS left, the ficha was retired 10-27 for being sold out), FansJerseyHub Real Sociedad third 26/27 and Panama third 2025 (only source), ShopTimao LS "Jogador" training, all repeat conflicts. Swaps reverted: 51 price-up >5 %, Real Madrid GK third, Inter treino colour, Roma warm-up, Reebok UK "Size: S" titles; Santos "Everton Nº 7" insert removed again.
+- Women: 1 new (`venezuela-home-women`, adidas CL JY5077, brand added by hand); Chelsea Authentic / Spain "2 Étoiles" swaps reverted.
+- eBay current: 2 new (`penarol-home-2026` Puma, `wolves-goalkeeper-202526` SUDU black). The $28.98 / 31.52 EUR "JERSEY X" template seller is back on Brazilian/Portuguese clubs (Grêmio, Colo-Colo, Palmeiras, Braga, Peñarol, Santos) -- blocklisted. **"Charly"/"Club Santos ... Puma" = Santos Laguna under `santos`** (current and retro) -- blocklisted. Grêmio home "2026 Banrisul" on carpet without the sponsor dropped. Sunderland GK GB colourway swap reverted.
+- eBay retro: 41 dropped by title on existing fichas (player names, reissues, Ad1das fakes, MAS Fès under `marruecos`, Olyroos U23), 20 new fichas after photo review; 3 twins merged (Flamengo 2024 -> 2024/25, Celtic Bumblebee 2009 -> 2009/10). Photo-dropped: Ukraine "away 2012" (yellow home again), Rangers LS third, São Paulo 2023 away/third (unverifiable), Flamengo 22/23 carpet replica.
+- `ebay_gb_retro.py`: 17 single-store fichas, 70 "inserted" of which 7 new item ids -- kept 6 (a Corinthians CD4152 "2023/24" removed).
+
 ## Reebok UK (2026-10-25)
 
 Awin aid 121516. `AWIN_FEED_URL_REEBOK_UK` -> `/tmp/feeds/REEBOK_UK.csv`: the
