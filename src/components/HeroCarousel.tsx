@@ -188,7 +188,11 @@ export default function HeroCarousel() {
             >
               <img
                 src={getDisplaySrc(slide.photo, 1600)}
-                loading="lazy"
+                // En escritorio grande la 1.ª diapositiva está arriba de todo
+                // (es el LCP): sin lazy. srcSet: el celular baja 800 px, no 1600.
+                srcSet={`${getDisplaySrc(slide.photo, 800)} 800w, ${getDisplaySrc(slide.photo, 1600)} 1600w`}
+                sizes="(min-width: 1280px) 40vw, 100vw"
+                loading={i === 0 ? "eager" : "lazy"}
                 decoding="async"
                 alt={`${slide.eyebrow}: ${slide.title}`}
                 className={`absolute inset-0 h-full w-full ${
