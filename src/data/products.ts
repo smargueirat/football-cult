@@ -45469,9 +45469,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 120.89, shipping: 6.99, currency: "USD", url: "https://www.ebay.com/itm/298564801869?_skw=Celtic+FC+away+soccer+jersey&hash=item4583d9554d%3Ag%3AwGoAAeSwf4Jqc5d0&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7latWhhtZyaE0SKDYz%2BeQfHxtSy%2BJZOFWy2toPVeWBm1wFkR1XUckczIBr5cePG6MakmjLREst%2FGmJct05eYGSeI%2B%2By2ek2qSxgvMy7r18cAr9b2cS4lfNDLGcjF%2Bb0V7asofgNx5vyxrwehgd5wiaimLnIwFgjHNcmiYY0P9iVT8hO2WXOw2L86880OS7rhXGNKBUMIhXUn2S30jKOMVh41YD9iSbHjbVGjUWIbkE64t8THKxgqYi9Xdn7o9OkcUtsAYkmuYmMSTFeAHMqfQ9rDYCntGymuzqOYoEt48HilCYIaWMZS1Olx3RwSgx7ie8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWOT Celtic FC Bumblebee Jersey Mens Small Yellow Striped Nike 2009 Away", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/wGoAAeSwf4Jqc5d0/s-l1600.jpg" },
       { store: "eBay ES", price: 131.15, shipping: 27.49, currency: "EUR", url: "https://www.ebay.es/itm/298564801869?_skw=Celtic+FC+away+soccer+jersey&hash=item4583d9554d%3Ag%3AwGoAAeSwf4Jqc5d0&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7latWhhtZyaE0SKDYz%2BeQfHxtSy%2BJZOFWy2toPVeWBm1wFkR1XUckczIBr5cePG6MakmjLREst%2FGmJct05eYGSeI%2B%2By2ek2qSxgvMy7r18cAr9b2cS4lfNDLGcjF%2Bb0V7ZgWZwjUtJ72bl7GGyJz1lrI%2FkS6QURn8congkIqy5zi2Y3%2FGIFbWH4SoFqxyRhi%2FAqoKYqjy1vD3I%2Fbq7is8hYlibWETY1fR8g10M1ylm3F9UG4eYi0t5RJJ5izv9dtuPv0SaSN%2FqchFZDZRfaoA1L5Rnimig%2BTZfEtVf4DK%2FoLRKosLYOyX7QB5jAT77kbps%3D&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nueva sin etiquetas Camiseta Celtic FC Bumblebee Para Hombre Pequeña Rayas Amarillas Nike 2009 Visitante", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/wGoAAeSwf4Jqc5d0/s-l1600.jpg" },
-      { store: "eBay IT", price: 132.23, shipping: 28.15, currency: "EUR", url: "https://www.ebay.it/itm/298564801869?_skw=Celtic+FC+away+soccer+jersey&hash=item4583d9554d%3Ag%3AwGoAAeSwf4Jqc5d0&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7latWhhtZyaE0SKDYz%2BeQfHxtSy%2BJZOFWy2toPVeWBm1wFkR1XUckczIBr5cePG6MakmjLREst%2FGmJct05eYGSeI%2B%2By2ek2qSxgvMy7r18cAr9b2cS4lfNDLGcjF%2Bb0V7ap1YeHhE%2BM5R58bimp8vqP5WkIjWY3SSa3tUH5llBe51mKDDlUEP2qEQ2u1mYsss10iicWuLFczmSRXUYXxGTpJP01URlDoVR8ztJw6I%2FXOCT3hKPP87c9G1Nzf65tWUOxJdlang93%2FKTVrvx0x6yFWhMidXarb6EnwhsIUXbOWoTyvYE%2Fj%2BeBqgH2l6xk%2BhI%3D&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia Celtic FC Bumblebee uomo piccola gialla a righe Nike 2009 away nuova senza etichette", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/wGoAAeSwf4Jqc5d0/s-l1600.jpg" },
     ],
   },
 {
@@ -90219,7 +90217,6 @@ const productsData = [
     colorHexSecondary: "#00296B",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 149.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/960046161431?_skw=Club+Am%C3%A9rica+third+soccer+jersey&hash=itemdf8735de17%3Ag%3AoKoAAeSwaGRqybht&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT Nike Club America 2017/2018 Third Stadium Football Soccer Jersey (size: M)", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/oKoAAeSwaGRqybht/s-l1600.jpg" },
       { store: "eBay ES", price: 162.71, shipping: 34.71, currency: "EUR", url: "https://www.ebay.es/itm/960046161431?_skw=Club+Am%C3%A9rica+third+soccer+jersey&hash=itemdf8735de17%3Ag%3AoKoAAeSwaGRqybht&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol Nike Club America 2017/2018 Third Stadium nueva con etiquetas (talla: M)", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/oKoAAeSwaGRqybht/s-l1600.jpg" },
     ],
   },
@@ -90232,7 +90229,6 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 39.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/156298604935?_skw=Cruz+Azul+away+soccer+jersey&hash=item24641f7187%3Ag%3ALRYAAOSwznhmiywZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2021/22 Cruz Azul Away Jersey Joma LigaMX Soccer NEW", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/LRYAAOSwznhmiywZ/s-l1600.jpg" },
       { store: "eBay ES", price: 43.38, shipping: 26.43, currency: "EUR", url: "https://www.ebay.es/itm/156298604935?_skw=Cruz+Azul+away+soccer+jersey&hash=item24641f7187%3Ag%3ALRYAAOSwznhmiywZ&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol Cruz Azul 2021/22 visitante Joma LigaMX nueva", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/LRYAAOSwznhmiywZ/s-l1600.jpg" },
       { store: "eBay IT", price: 87.49, shipping: 25.99, currency: "EUR", url: "https://www.ebay.it/itm/275298519093?_skw=Cruz+Azul+away+soccer+jersey&hash=item4019120835%3Ag%3AS6kAAOSw86tiRe-R&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "maglia cruz azul joma 2021-2022 autentica away jersey adulto uomo ", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/S6kAAOSw86tiRe-R/s-l1600.jpg" },
     ],
@@ -90246,9 +90242,7 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 79.99, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/158318874525?_skw=Cruz+Azul+away+soccer+jersey&hash=item24dc8a4f9d%3Ag%3ACZIAAeSwMqpqscwC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Official Joma Cruz Azul Black Away Jersey 2022-23 Liga MX Soccer Shirt NWT", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/CZIAAeSwMqpqscwC/s-l1600.jpg" },
       { store: "eBay ES", price: 86.78, shipping: 23.89, currency: "EUR", url: "https://www.ebay.es/itm/158318874525?_skw=Cruz+Azul+away+soccer+jersey&hash=item24dc8a4f9d%3Ag%3ACZIAAeSwMqpqscwC&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Oficial Joma Cruz Azul Visitante Negra 2022-23 Liga MX Camiseta de Fútbol Nueva con Etiquetas", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/CZIAAeSwMqpqscwC/s-l1600.jpg" },
-      { store: "eBay IT", price: 87.49, shipping: 24.9, currency: "EUR", url: "https://www.ebay.it/itm/158318874525?_skw=Cruz+Azul+away+soccer+jersey&hash=item24dc8a4f9d%3Ag%3ACZIAAeSwMqpqscwC&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia calcio ufficiale Joma Cruz Azul nera away 2022-23 Liga MX nuova con etichetta", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/CZIAAeSwMqpqscwC/s-l1600.jpg" },
     ],
   },
 {
@@ -90260,7 +90254,6 @@ const productsData = [
     colorHexSecondary: "#FFFFFF",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 79.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/388873893560?_skw=Cruz+Azul+third+soccer+jersey&hash=item5a8ab0b6b8%3Ag%3A1E0AAeSwK2doqiD9&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma Men's Cruz Azul Third Jersey 22/23 - Black/White/Red/Blue", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/1E0AAeSwK2doqiD9/s-l1600.jpg" },
       { store: "eBay ES", price: 86.78, shipping: 36.47, currency: "EUR", url: "https://www.ebay.es/itm/388873893560?_skw=Cruz+Azul+third+soccer+jersey&hash=item5a8ab0b6b8%3Ag%3A1E0AAeSwK2doqiD9&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva para hombre Joma Cruz Azul Third 22/23 - negra/blanca/roja/azul", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/1E0AAeSwK2doqiD9/s-l1600.jpg" },
     ],
   },
@@ -90322,9 +90315,7 @@ const productsData = [
     colorHexSecondary: "#B7A036",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/800792151970?_skw=Portland+Timbers+away+soccer+jersey&hash=itemba72ee87a2%3Ag%3AsJ0AAeSwlVxqzptW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas Portland Timbers 2022 Men's Away Soccer Jersey Size 3XL", inStock: true, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/sJ0AAeSwlVxqzptW/s-l1600.jpg" },
       { store: "eBay ES", price: 75.93, shipping: 34.65, currency: "EUR", url: "https://www.ebay.es/itm/800792151970?_skw=Portland+Timbers+away+soccer+jersey&hash=itemba72ee87a2%3Ag%3AsJ0AAeSwlVxqzptW&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol visitante Adidas Portland Timbers 2022 para hombre talla 3XL", inStock: true, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/sJ0AAeSwlVxqzptW/s-l1600.jpg" },
-      { store: "eBay IT", price: 76.56, shipping: 34.53, currency: "EUR", url: "https://www.ebay.it/itm/800792151970?_skw=Portland+Timbers+away+soccer+jersey&hash=itemba72ee87a2%3Ag%3AsJ0AAeSwlVxqzptW&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Portland Timbers 2022 maglia calcio away uomo taglia 3XL", inStock: true, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/sJ0AAeSwlVxqzptW/s-l1600.jpg" },
     ],
   },
 {
@@ -90336,9 +90327,7 @@ const productsData = [
     colorHexSecondary: "#B7A036",
     jerseyPattern: "solid",
     offers: [
-      { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/880056577039?_skw=Portland+Timbers+home+soccer+jersey&hash=itemcce775ac0f%3Ag%3A-wgAAeSwfvxq4Lee&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Portland Timbers 2015 Home Jersey Men's XL Green MLS Soccer NWT S29925", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/-wgAAeSwfvxq4Lee/s-l1600.jpg" },
       { store: "eBay ES", price: 97.62, shipping: 25.57, currency: "EUR", url: "https://www.ebay.es/itm/880056577039?_skw=Portland+Timbers+home+soccer+jersey&hash=itemcce775ac0f%3Ag%3A-wgAAeSwfvxq4Lee&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Adidas Portland Timbers 2015 local para hombre XL verde MLS fútbol nueva con etiquetas S29925", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/-wgAAeSwfvxq4Lee/s-l1600.jpg" },
-      { store: "eBay IT", price: 98.43, shipping: 25.18, currency: "EUR", url: "https://www.ebay.it/itm/880056577039?_skw=Portland+Timbers+home+soccer+jersey&hash=itemcce775ac0f%3Ag%3A-wgAAeSwfvxq4Lee&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Portland Timbers 2015 Home Jersey Uomo XL Verde MLS Calcio Nuova con etichette S29925", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/-wgAAeSwfvxq4Lee/s-l1600.jpg" },
     ],
   },
 {
