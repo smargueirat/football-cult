@@ -25172,19 +25172,6 @@ const productsData = [
     ],
   },
 {
-    id: "acmilan-retro-202425-training",
-    teamKey: "acmilan",
-    season: "2024/25",
-    typeKey: "retro",
-    colorHex: "#FB090B",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    brand: "puma",
-    offers: [
-      { store: "FootStoreES", price: 32.58, shipping: 8.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44914970889&a=3013769&m=65912", title: "Camiseta de entrenamiento Milan AC 2024/25", inStock: false, sizes: ["XS", "S"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fp%2Fu%2Fpuma_777496-04_1-nw071624.webp&feedId=89032&k=a400a1c8817577b9fb7b413aab048d6ef34a19fd" },
-    ],
-  },
-{
     id: "ajax-retro-202324-away",
     teamKey: "ajax",
     season: "2023/24",
@@ -43885,18 +43872,6 @@ const productsData = [
     offers: [
       { store: "eBay ES", price: 79.26, shipping: 24.35, currency: "EUR", url: "https://www.ebay.es/itm/227531672438?_skw=Anderlecht+home+soccer+jersey&hash=item34f9f1cb76%3Ag%3A1YgAAOSwHdpmU2fI&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol local XL Amir Murillo Joma RSC Anderlecht 19/20", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/1YgAAOSwHdpmU2fI/s-l1600.jpg" },
       { store: "eBay GB", price: 52.8, shipping: 0.0, currency: "GBP", url: "https://www.ebay.co.uk/itm/277161241400?_skw=Anderlecht+2019+home+shirt&hash=item408818eb38%3Ag%3ALgoAAeSwtLRoPGO1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Anderlecht 2019/2020 home football shirt- joma- purple- size medium ", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/LgoAAeSwtLRoPGO1/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "anderlecht-retro-202021-home",
-    teamKey: "anderlecht",
-    season: "2020/21",
-    typeKey: "retro",
-    colorHex: "#5B2A86",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 75.92, shipping: 24.54, currency: "EUR", url: "https://www.ebay.es/itm/317256852083?_skw=Anderlecht+home+soccer+jersey&hash=item49ddfb6273%3Ag%3ARw8AAeSwalJovy9p&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol local RSC Anderlecht 2020-21 2XL nueva con etiquetas", inStock: false, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/Rw8AAeSwalJovy9p/s-l1600.jpg" },
     ],
   },
 {
@@ -89203,19 +89178,6 @@ const productsData = [
     brand: "kappa",
     offers: [
       { store: "FootStoreES", price: 79.34, shipping: 9.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46402724024&a=3013769&m=65912", title: "Camiseta de visitante Red Star FC 2026/27", inStock: true, sizes: ["M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fa%2Fkappa-33263mw-s01-noir-vert-6ad8c96c2a205-1.jpg&feedId=89032&k=90415a72be50257f4e6be1dac94242a34681f391" },
-    ],
-  },
-{
-    id: "everton-goalkeeper-202627",
-    teamKey: "everton",
-    season: "2026/27",
-    typeKey: "goalkeeper",
-    colorHex: "#E6F05A",
-    colorHexSecondary: "#3B3B1F",
-    jerseyPattern: "solid",
-    brand: "castore",
-    offers: [
-      { store: "eBay GB", price: 59.49, shipping: 0.0, currency: "GBP", url: "https://www.ebay.co.uk/itm/227453338331?_skw=Everton+goalkeeper+soccer+jersey&hash=item34f54682db%3Ag%3A1EwAAeSwYUhqaeRu&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n3Fd37ZJyf1KuJ%2F0YyTSWDrw0X%2BHnHbfm0dft3Ad0PBABjOIiXWZ5QVcOKLqoOvhpQNHlXxa9Ir1lI7WKwQ4ryIq7l9H%2B5qq8rKcWIVZP4T3MkWZd2a5jxc2qnp94Ulz4UxAAGRd5tidaTzLjQ%2By1dvdRowsSOk15vHB1TjYtHS7KqcNOpsYqFPc5gLmCfy5qNWuch3PTjusjSv2kMwJps8Nht6fbQAnpe9OuXNMPyyWvPQR72KN683aAwRI2PjBUUcmypcdmItI9Vishb4DWR99szxaQUO85Vf268bT6RpnZruzxQf20M79rlfxlS%2BII%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Everton Castore Pro Goalkeeper Shirt 2026/27 Away Player Spec Jersey BNWT Men's", inStock: false, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/1EwAAeSwYUhqaeRu/s-l1600.jpg" },
     ],
   },
 {
