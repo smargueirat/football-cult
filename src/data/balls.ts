@@ -881,23 +881,6 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-adidas-balon-ucl-pro-25-26-league-stage-blanco",
-    brand: "Adidas",
-    model: "Balón adidas UCL Pro 25/26 League Stage - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "AdidasCL",
-        price: 89990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=41895016826&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F29c2687e5a044ec4a0f8248c4a3e033c_faec%2FBalon_UCL_Pro_25-26_League_Stage_Blanco_JD0188_db01_00_standard.tiff.jpg&feedId=95016&k=0d755f5b82a8ceec9b566d875fa1120704f1e142",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
     id: "adidas-balon-de-entrenamiento-adidas-uefa-champions-league-blanco",
     brand: "Adidas",
     model: "Balón de Entrenamiento adidas Uefa Champions League - Blanco",
@@ -5190,9 +5173,6 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-tiro-competition-blanc-2",
     brand: "Adidas",
@@ -5219,6 +5199,9 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-tiro-league-blanc",
     brand: "Adidas",
@@ -10163,9 +10146,6 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "errea-balones-de-futbol-errea-ra-heritage-rouge",
     brand: "Errea",
@@ -10192,6 +10172,9 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "errea-balones-de-futbol-errea-stream-hybrid-heritage-blanc-2",
     brand: "Errea",
@@ -14508,6 +14491,23 @@ const minedBallProductsChunk3: BallProduct[] = [
     ],
   },
   {
+    id: "lizenz-copa-mundial-de-la-fifa-2026-lizenz-balon-de-futbol-1100296-blanco",
+    brand: "Lizenz",
+    model: "Copa Mundial de la FIFA 2026 Lizenz Balón de fútbol 1100296 - blanco",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 7.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44477844936&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F32%2Fa9%2F58%2F1100296-1D9WORrMX2xJoI_600x600.jpg&feedId=99907&k=225fcd819c4d9238ab9f94aadcf5b230b6751bf9",
+        sizes: [],
+      },
+    ],
+  },
+  {
     id: "macron-ballon-de-football-macron-earthquake-xi-n-5-blanc",
     brand: "Macron",
     model: "Ballon de football Macron Earthquake XI N.5 - Blanc",
@@ -15603,6 +15603,23 @@ const minedBallProductsChunk4: BallProduct[] = [
           { size: "4", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683567&a=3013769&m=118941" },
           { size: "5", price: 12.32, url: "https://www.awin1.com/pclick.php?p=42124683562&a=3013769&m=118941" },
         ],
+      },
+    ],
+  },
+  {
+    id: "mitre-balon-de-futbol-mitre-street-soccer",
+    brand: "Mitre",
+    model: "Balón de fútbol Mitre Street Soccer",
+    colour: "N/D",
+    offers: [
+      {
+        store: "Sportsafe UK",
+        price: 15.41,
+        shipping: 0,
+        currency: "GBP",
+        url: "https://www.awin1.com/pclick.php?p=42124683668&a=3013769&m=118941",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01797C29Y1_JyklcNEGBk-scaled-1.jpg&feedId=109102&k=93eff52ab9dc2ef89c2ff20eb2c26cd4803e42e4",
+        sizes: ["4"],
       },
     ],
   },
@@ -19414,6 +19431,9 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-balones-de-futbol-puma-orbita-6-efl-sky-bet-2025-26-jaune",
     brand: "Puma",
@@ -19440,9 +19460,6 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-balones-de-futbol-puma-orbita-6-ms-blanco",
     brand: "Puma",
@@ -23992,6 +24009,9 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "uhlsport-balones-de-futbol-uhlsport-revolution-thermobonded-amarillo",
     brand: "uhlsport",
@@ -24009,9 +24029,6 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "uhlsport-balones-de-futbol-uhlsport-team-azul",
     brand: "uhlsport",

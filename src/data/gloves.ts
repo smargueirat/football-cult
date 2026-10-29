@@ -439,7 +439,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=43773704874&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F78f6f79596424947b9dfb2aaed1275a5_9366%2FGUANTES_DE_ARQUERO_PREDATOR_TRAINING_Negro_KA7787_21_model.jpg&feedId=95016&k=4ac06296c6c890b3b4ea6e94abcf799c26d72f42",
-        sizes: ["7", "9", "10"],
+        sizes: ["7", "8", "9", "10"],
       },
     ],
   },

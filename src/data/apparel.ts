@@ -17384,24 +17384,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-chaqueta-adidas-peru-multicolor",
-    brand: "Adidas",
-    model: "Chaqueta adidas Perú - Multicolor",
-    colour: "Multicolor",
-    type: "jacket",
-    offers: [
-      {
-        store: "AdidasCL",
-        price: 49990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=41880968342&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7120a7ff9d8245aba0944cecbcacaf18_faec%2FChaqueta_Peru_Rojo_JM7309_db21_model.tiff.jpg&feedId=95016&k=0ead2246570ba48ca8eaf15fd9db814abd05972f",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
     id: "adidas-chaqueta-adidas-salah-squadra-rojo",
     brand: "Adidas",
     model: "Chaqueta adidas Salah Squadra - Rojo",
@@ -17619,9 +17601,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk4: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-adidas-squadra-21-training-negro",
     brand: "Adidas",
@@ -17659,6 +17638,9 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk4: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-adidas-squadra-21-training-rojo",
     brand: "Adidas",
@@ -24253,9 +24235,6 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk5: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-chandal-con-capucha-adidas-essentials-3-stripes-vert-2",
     brand: "Adidas",
@@ -24283,6 +24262,9 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk5: ApparelProduct[] = [
   {
     id: "adidas-veste-de-survetement-a-capuche-adidas-squadra-25-bleu",
     brand: "Adidas",
@@ -31061,9 +31043,6 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk6: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-entrenamiento-prematch-bayern-munich-2026-27-bleu",
     brand: "Adidas",
@@ -31091,6 +31070,9 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk6: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-entrenamiento-prematch-ol-2025-26-gris",
     brand: "Adidas",
@@ -37427,9 +37409,6 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk7: ApparelProduct[] = [
   {
     id: "adidas-cortavientos-adidas-tiro-26-vert",
     brand: "Adidas",
@@ -37475,6 +37454,9 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk7: ApparelProduct[] = [
   {
     id: "adidas-cortavientos-adidas-tiro-travel-travel-bleu",
     brand: "Adidas",
@@ -43174,9 +43156,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk8: ApparelProduct[] = [
   {
     id: "adidas-mochila-arsenal-rouge",
     brand: "Adidas",
@@ -43204,6 +43183,9 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk8: ApparelProduct[] = [
   {
     id: "adidas-mochila-belgica-coupe-du-monde-2026-noir",
     brand: "Adidas",
@@ -48396,7 +48378,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 24990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46385826906&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=46385826907&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff26b879982d34208a977b7436eb2f979_9366%2FShorts_Tiro_26_Essentials_Negro_KH3209_21_model.jpg&feedId=95016&k=45193eaf01068a81f60a9c5031ce6d282debb608",
         sizes: ["M", "L", "XL"],
       },
@@ -49480,9 +49462,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-pantalon-corto-de-chandal-adidas-tiro-26-league-noir",
     brand: "Adidas",
@@ -49530,6 +49509,9 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-pantalon-corto-de-chandal-mujer-adidas-tiro-26-league-bleu",
     brand: "Adidas",
@@ -55929,9 +55911,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-adidas-condivo-22-predator-azul",
     brand: "Adidas",
@@ -55959,6 +55938,9 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-adidas-core-18-negro",
     brand: "Adidas",
@@ -62810,9 +62792,6 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-jamaique-2024-25-negro",
     brand: "Adidas",
@@ -62858,6 +62837,9 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-japon-tt-coupe-du-monde-2026-bleu",
     brand: "Adidas",
@@ -66163,24 +66145,6 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-pantalon-de-entrenamiento-adidas-colo-colo-tiro26-competition-negro",
-    brand: "Adidas",
-    model: "Pantalón de entrenamiento adidas Colo-Colo Tiro26 Competition - Negro",
-    colour: "Negro",
-    type: "pants",
-    offers: [
-      {
-        store: "AdidasCL",
-        price: 35990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46194189704&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F00d626668d514069ae09369da7f04b27_9366%2FPantalon_de_entrenamiento_Colo-Colo_Tiro26_Competition_Negro_JW2639_21_model.jpg&feedId=95016&k=bda3b5c9bfe91419de4cfb391e15873fcc1b7f0d",
-        sizes: ["XL", "2XL"],
-      },
-    ],
-  },
-  {
     id: "adidas-pantalon-d-entrainement-femme-adidas-entrada-22-bleu",
     brand: "Adidas",
     model: "Pantalón de entrenamiento adidas Entrada 22 - Azul",
@@ -69090,9 +69054,6 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-pantalones-cortos-de-portero-adidas-condivo-22-azul",
     brand: "Adidas",
@@ -69147,6 +69108,9 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-pantalones-cortos-de-portero-adidas-condivo-22-rojo",
     brand: "Adidas",
@@ -73779,9 +73743,9 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         price: 33990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=44438161346&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=44438161347&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe756d03c41704141a39feb0546519c39_9366%2FPolera_con_cuello_de_entrenamiento_Colo-Colo_26_Tiro_26_Competition_Rojo_JW2633_21_model.jpg&feedId=95016&k=bdc854a34ea49b648579e7c3b4cb592ee88db897",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -74114,7 +74078,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=43600494080&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff5738d76cc4f44e8a9bab7d7b65c94c4_9366%2FPoleron_de_entrenamiento_Tiro26_Competition_Universidad_de_Chile_Morado_JW4391_21_model.jpg&feedId=95016&k=c8209ad09212b28a7fdca217447e919da0272208",
-        sizes: ["M", "L", "XL", "2XL"],
+        sizes: ["M", "L", "XL"],
       },
     ],
   },
@@ -74226,9 +74190,6 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-polo-adidas-entrada-22-azul",
     brand: "Adidas",
@@ -74308,6 +74269,9 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-polo-adidas-entrada-22-blanco",
     brand: "Adidas",
@@ -79497,9 +79461,6 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-shorts-adidas-tigres-stadium-azul",
     brand: "Adidas",
@@ -79536,6 +79497,9 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-shorts-adidas-tigres-uanl-25-26-equipo-femenino-violeta",
     brand: "Adidas",
@@ -80286,9 +80250,9 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         price: 37990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46194188781&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=46194188782&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6fad24e757704e68b0811a199d74ee13_9366%2FShorts_Visitantes_Colo-Colo_26_Negro_JL6692_21_model.jpg&feedId=95016&k=985b66a5db8271f7aa53b9d462913716d8e8fa21",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizes: ["S", "M", "L", "XL", "2XL"],
       },
     ],
   },
@@ -85004,9 +84968,6 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-sudadera-con-capucha-adidas-tiro-24-negro-2",
     brand: "Adidas",
@@ -85081,6 +85042,9 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-sudadera-con-capucha-adidas-tiro-25-bleu",
     brand: "Adidas",
@@ -90678,9 +90642,6 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "adidas-veste-impermeable-italie-tiro-coupe-du-monde-2026-bleu",
     brand: "Adidas",
@@ -90717,6 +90678,9 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "aggs-calcetines-tecnicos-antideslizantes-aggs-blanc",
     brand: "Aggs",
@@ -95647,9 +95611,6 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "copa-football-chaqueta-de-chandal-con-cremallera-angleterre-1966-azul",
     brand: "Copa Football",
@@ -95704,6 +95665,9 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "copa-football-chaqueta-de-chandal-con-cremallera-as-roma-1981-1982-blanco",
     brand: "Copa Football",
@@ -101418,9 +101382,6 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "erima-pantalon-corto-erima-rio-2-0-azul-3",
     brand: "erima",
@@ -101475,6 +101436,9 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "erima-pantalon-corto-erima-rio-2-0-negro",
     brand: "erima",
@@ -107258,9 +107222,6 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "errea-pantalon-corto-errea-dallas-3-0-rojo",
     brand: "Errea",
@@ -107315,6 +107276,9 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "errea-pantalon-corto-errea-dallas-3-0-verde",
     brand: "Errea",
@@ -113322,9 +113286,6 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "givova-conjunto-de-camiseta-y-pantalon-pantalon-corto-givova-flag-azul",
     brand: "Givova",
@@ -113379,6 +113340,9 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "givova-conjunto-de-camiseta-y-pantalon-pantalon-corto-givova-flag-rojo",
     brand: "Givova",
@@ -118715,9 +118679,6 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "hummel-chaqueta-de-chandal-hummel-violet",
     brand: "Hummel",
@@ -118804,6 +118765,9 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "hummel-chaqueta-de-presentacion-asse-2026-27-vert-2",
     brand: "Hummel",
@@ -124692,9 +124656,6 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk22: ApparelProduct[] = [
   {
     id: "jako-calcetines-jako-lazio-negro",
     brand: "Jako",
@@ -124749,6 +124710,9 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk22: ApparelProduct[] = [
   {
     id: "jako-calcetines-jako-lazio-verde",
     brand: "Jako",
@@ -130165,9 +130129,6 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "jako-pantalon-corto-jako-palermo-2-0-negro",
     brand: "Jako",
@@ -130222,6 +130183,9 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "jako-pantalon-corto-jako-premium-basics-azul",
     brand: "Jako",
@@ -135904,9 +135868,6 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "joma-chaqueta-de-chandal-joma-championship-20-bleu-10",
     brand: "Joma",
@@ -135961,6 +135922,9 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "joma-chaqueta-de-chandal-joma-championship-20-jaune-2",
     brand: "Joma",
@@ -141847,9 +141811,6 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-espinilleras-joma-attack-rojo",
     brand: "Joma",
@@ -141904,6 +141865,9 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-espinilleras-joma-attack-turquesa",
     brand: "Joma",
@@ -147082,9 +147046,6 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "joma-pantalon-corto-mujer-joma-tokyo-rojo-2",
     brand: "Joma",
@@ -147139,6 +147100,9 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "joma-pantalon-corto-mujer-joma-tokyo-violeta",
     brand: "Joma",
@@ -152708,9 +152672,6 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "kappa-chaqueta-de-chandal-as-monaco-2022-23-blanco",
     brand: "Kappa",
@@ -152765,6 +152726,9 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "kappa-chaqueta-de-chandal-as-monaco-ablas-pro-8-2024-25-naranja",
     brand: "Kappa",
@@ -158525,9 +158489,6 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-polo-kappa-jimmo-azul",
     brand: "Kappa",
@@ -158582,6 +158543,9 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-polo-kappa-jimmo-negro",
     brand: "Kappa",
@@ -163401,9 +163365,6 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "macron-polo-bologne-patm-ii-2024-25-bleu",
     brand: "Macron",
@@ -163440,6 +163401,9 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "macron-polo-femme-macron-uefa-2019-vert",
     brand: "Macron",
@@ -167067,9 +167031,6 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mcdavid-pantalon-corto-de-compresion-mcdavid-hdc-negro",
     brand: "McDavid",
@@ -167172,6 +167133,9 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mcdavid-pantalon-corto-de-sujecion-para-aductores-mcdavid-cross-compression-negro",
     brand: "McDavid",
@@ -172757,9 +172721,6 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk31: ApparelProduct[] = [
   {
     id: "nike-calcetines-nike-squad-negro",
     brand: "Nike",
@@ -172814,6 +172775,9 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk31: ApparelProduct[] = [
   {
     id: "nike-calcetines-nike-strike-blanc",
     brand: "Nike",
@@ -178363,9 +178327,6 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk32: ApparelProduct[] = [
   {
     id: "nike-chaqueta-de-chandal-3a-equipacion-inter-milan-dri-fit-strike-2024-25-azul",
     brand: "Nike",
@@ -178439,6 +178400,9 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk32: ApparelProduct[] = [
   {
     id: "nike-chaqueta-de-chandal-atletico-de-madrid-strike-2025-26-rojo",
     brand: "Nike",
@@ -183773,9 +183737,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk33: ApparelProduct[] = [
   {
     id: "nike-chaqueta-psg-tech-fleece-2026-27-bleu",
     brand: "Nike",
@@ -183863,6 +183824,9 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk33: ApparelProduct[] = [
   {
     id: "nike-chaussettes-domicile-inter-milan-strike-2025-26-noir",
     brand: "Nike",
@@ -189254,9 +189218,6 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk34: ApparelProduct[] = [
   {
     id: "nike-pantalon-corto-nike-dri-fit-park-iii-rojo-2",
     brand: "Nike",
@@ -189311,6 +189272,9 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk34: ApparelProduct[] = [
   {
     id: "nike-pantalon-corto-nike-dri-fit-park-iii-turquesa",
     brand: "Nike",
@@ -194569,9 +194533,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-chandal-nike-fleece-park20-negro",
     brand: "Nike",
@@ -194626,6 +194587,9 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-chandal-nike-phoenix-rouge",
     brand: "Nike",
@@ -199747,9 +199711,6 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-polo-femme-nike-dynamic-fit-park20-rouge",
     brand: "Nike",
@@ -199804,6 +199765,9 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-polo-fc-barcelona-club-2026-27-bleu",
     brand: "Nike",
@@ -204863,9 +204827,6 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "nike-sudadera-con-capucha-para-mujer-nike-fleece-park20-amarillo",
     brand: "Nike",
@@ -204933,6 +204894,9 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "nike-sweat-a-capuche-femme-nike-fleece-park20-bleu",
     brand: "Nike",
@@ -209583,9 +209547,6 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "precision-bolsa-para-balones-precision-tubular-negro",
     brand: "Precision",
@@ -209636,6 +209597,9 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "precision-brazalete-de-capitan-precision-azul",
     brand: "Precision",
@@ -214482,9 +214446,6 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "puma-calcetines-puma-teamliga26-core-violet",
     brand: "Puma",
@@ -214539,6 +214500,9 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "puma-calcetines-puma-teamliga26-rouge",
     brand: "Puma",
@@ -220901,9 +220865,6 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-mallas-de-compresion-puma-amarillo",
     brand: "Puma",
@@ -220958,6 +220919,9 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-mallas-puma-teamliga26-noir",
     brand: "Puma",
@@ -227500,9 +227464,6 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "puma-short-de-marruecos-multicolore",
     brand: "Puma",
@@ -227557,6 +227518,9 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "puma-short-de-portero-om-2026-27-jaune",
     brand: "Puma",
@@ -233007,9 +232971,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "sporti-bolsa-para-12-a-15-pelotas-sporti-negro",
     brand: "Sporti",
@@ -233064,6 +233025,9 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "sporti-brazalete-de-velcro-de-capitan-sporti-amarillo",
     brand: "Sporti",
@@ -238144,9 +238108,6 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "uhlsport-calcetines-uhlsport-team-pro-essential-ftp-verde-3",
     brand: "uhlsport",
@@ -238201,6 +238162,9 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "uhlsport-calcetines-uhlsport-team-pro-essential-naranja",
     brand: "uhlsport",
@@ -244465,9 +244429,6 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "uhlsport-chaqueta-uhlsport-stream-22-negro-3",
     brand: "uhlsport",
@@ -244522,6 +244483,9 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "uhlsport-chubasquero-uhlsport-score-azul",
     brand: "uhlsport",
@@ -251017,9 +250981,6 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-polo-uhlsport-goal-gris",
     brand: "uhlsport",
@@ -251102,6 +251063,9 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-polo-uhlsport-goal-negro-2",
     brand: "uhlsport",
