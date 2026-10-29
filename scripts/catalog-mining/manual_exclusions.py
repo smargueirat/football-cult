@@ -12,6 +12,37 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-10-29 ---
+    "/itm/237135086340",  # 2026-10-29 removed: template seller quarter-zip top MAGLIA Club America Quarter-Zip Training Top Blu U
+    "/itm/227517990518",  # 2026-10-29 removed: template seller Nike training VEST under atleticomineiro (adidas club)
+    "/itm/178433308723",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Club Leon F.C. Home 26
+    "/itm/287625719347",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Club Leon F.C. Away 26
+    "/itm/900010985589",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Club América Mens 26-27 Purple Goalkeeper J
+    "/itm/377461653152",  # 2026-10-29 removed: template seller / player version / 3D Pirma Club de Futbol Cruz Azul Away Jersey 26/27 P
+    "/itm/287660242078",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Cruz Azul Mens 2026 Yellow Goalkeeper Jerse
+    "/itm/198604805339",  # 2026-10-29 removed: template seller / player version / 3D Tigres UANL 26/27 Home Player Version Jersey Slim 
+    "/itm/287340342760",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Tigres UANL Mens Away 2026
+    "/itm/287475230142",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Racing Club de Avellane da Mens Home 2026
+    "/itm/188377690413",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Racing Club de Argentina 2026 Away Mens
+    "/itm/287344309446",  # 2026-10-29 removed: template seller / player version / 3D JERSEY CLUB ATLÉTICO SAN LORENZO DE ALMAGRO Home 2
+    "/itm/287344309458",  # 2026-10-29 removed: template seller / player version / 3D JERSEY CLUB ATLÉTICO SAN LORENZO DE ALMAGRO Away 2
+    "/itm/188205496034",  # 2026-10-29 removed: template seller / player version / 3D Cruzeiro Esporte Clube Home Men 2026 Jersey
+    "/itm/358661185568",  # 2026-10-29 removed: template seller / player version / 3D Cruzeiro Esporte Clube Away Men 2026 Jersey
+    "/itm/298702820002",  # 2026-10-29 removed: template seller / player version / 3D Cruzeiro Esporte Clube Third Men 2026 Jersey
+    "/itm/287603243992",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Men Botafogo Third 26
+    "/itm/366665938524",  # 2026-10-29 removed: template seller / player version / 3D 2026 Botafogo Blue Goalkeeper JERSEY Men
+    "/itm/188016868415",  # 2026-10-29 removed: template seller / player version / 3D JERSEY CLUB DE REGATAS VASCO DA GAMA Away 2026
+    "/itm/287625719347",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Club Leon F.C. Away 26
+    "/itm/377567761963",  # 2026-10-29 removed: template seller / player version / 3D Camiseta de fútbol Chivas Guadalajara 26-27 visita
+    "/itm/287660242078",  # 2026-10-29 removed: template seller / player version / 3D Camiseta de portero amarillo Cruz Azul para hombre
+    "/itm/287340342760",  # 2026-10-29 removed: template seller / player version / 3D Camiseta Tigres UANL Hombre Visitante 2026
+    "/itm/287660242226",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Atlético Mineiro Third Mens 2026
+    "/itm/257646606248",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Men Botafogo Away 26
+    "/itm/137867924568",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Olympiacos Third Mens 26-27
+    "/itm/287660242240",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Cruz Azul Third Mens 2026
+    "/itm/188016868414",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Clube Atlético Mineiro Home Mens 2026
+    "/itm/188016868408",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Clube Atlético Mineiro Away Mens 2026
+    "/itm/287660242240",  # 2026-10-29 removed: template seller / player version / 3D JERSEY Cruz Azul Tercera Hombre 2026
     # --- Daily pass 2026-10-28 ---
     "/itm/307113548449",  # 2026-10-28 removed: gb retro: style code not 2023/24 Corinthians CD4152-100 filed as 2023/24
     "/itm/197624130845",  # 2026-10-28 removed: retro photo: long sleeve / yellow home filed as away Glasgow Rangers 2020 - 2021 Third football Castore

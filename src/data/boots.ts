@@ -854,7 +854,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45997708548&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141739-00-P-X-20260827124458.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA5MXxpbWFnZS9qcGVnfGFEZGxMMmd3Tnk4eE16azNPRFF3TVRjek5EWTROaTl0WldScFlYTmZNVEF3TVRFME1UY3pPVjh3TUY5UVgxZ3RNakF5TmpBNE1qY3hNalEwTlRndWFuQm58NjMzNDYwOWY3YTIyNjVhNzNmZGQyZWU3Y2VhMzViYWE4N2U3ZTdhYWQ3YWEyMjAwOGM2MzI0YjRlNTc1NWVlMQ&feedId=58083&k=d7543e8fd7aa9c722596eb148580af00d7ffad4f",
-        sizes: ["36", "37", "37.5", "42", "42.5", "43", "44", "44.5", "46.5"],
+        sizes: ["36", "37", "37.5", "43", "44", "44.5"],
       },
     ],
   },
@@ -991,7 +991,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45692365328&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001031341-00-P-X-20240715160527.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzUyNXxpbWFnZS9qcGVnfGFHRXpMMmd4TkM4eE1qSTFPREV6TURneU1URTFNQzl0WldScFlYTmZNVEF3TVRBek1UTTBNVjh3TUY5UVgxZ3RNakF5TkRBM01UVXhOakExTWpjdWFuQm58NTk3ZGFlNGM3NjQ2ZDJkZDNjY2ExMWFlMjZkODJkMjliMzViNDIzOTFiOGY4Zjc5MTQ4MTg0MDc4Mzc2ZWFmZQ&feedId=58083&k=4818c2557484d63730525f18525676af4e66f044",
-        sizes: ["37.5", "39", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
+        sizes: ["37.5", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47.5"],
       },
     ],
   },
@@ -4945,7 +4945,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46077306462&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001101995-00-P-X-20260824131234.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzM0OXxpbWFnZS9qcGVnfGFEbGlMMmcyTnk4eE16azNNVGt3TVRjM05Ua3dNaTl0WldScFlYTmZNVEF3TVRFd01UazVOVjh3TUY5UVgxZ3RNakF5TmpBNE1qUXhNekV5TXpRdWFuQm58N2E5YjAzNmZmOTRjODA5MmQxNGYwNzk3OWVhNmNkNjFlMDNhOGM0OTA0YWFjMDIyMDg2MGZjNmI0NmIyYjlhMQ&feedId=58083&k=3592db4c997e4bf0c2326538b47199a1c7f2612d",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
+        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
       },
       {
         store: "Pro:Direct ES",
@@ -5121,7 +5121,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46249374757&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111519-00-P-X-20260205141246.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTExOHxpbWFnZS9qcGVnfGFETXpMMmhrWkM4eE16VTFNRGt6TXpNME5ESTROaTl0WldScFlYTmZNVEF3TVRFeE1UVXhPVjh3TUY5UVgxZ3RNakF5TmpBeU1EVXhOREV5TkRZdWFuQm58OTNjNTFmZDBiMjc2NzZlNzY0YjFkYmUwOWEwNmM4ODYwMzAzOWU1ODdmMjM2Y2M2MTNjNDQ0ZTgwYTQxZTcyYg&feedId=58083&k=b9ff6450cde9a4152aab8579f4c5016ebbe82531",
-        sizes: ["39 1/3", "40", "42 2/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+        sizes: ["39 1/3", "42 2/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
       },
     ],
   },
@@ -9618,14 +9618,16 @@ const minedBootProductsChunk1: BootProduct[] = [
         priceMax: 39.29,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-bebe-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kk1345_1_footwear_photography_side_lateral_center_view_white.webp",
-        sizes: ["25", "25.5", "26", "27"],
+        sizes: ["29", "30", "30.5", "31", "31.5", "32"],
         sizePrices: [
-          { size: "25", price: 39.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-bebe-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
-          { size: "25.5", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-bebe-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
-          { size: "26", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-bebe-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
-          { size: "27", price: 39.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-bebe-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
+          { size: "29", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
+          { size: "30", price: 39.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
+          { size: "30.5", price: 39.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
+          { size: "31", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
+          { size: "31.5", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
+          { size: "32", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
         ],
       },
       {
@@ -9744,9 +9746,9 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 72.99,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249369232&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249369242&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001035702-00-P-X-20250310165336.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDIxNHxpbWFnZS9qcGVnfGFHTXdMMmd5T1M4eE1qYzVNVFEyTVRnek9EZzNPQzl0WldScFlYTmZNVEF3TVRBek5UY3dNbDh3TUY5UVgxZ3RNakF5TlRBek1UQXhOalV6TXpZdWFuQm58YTFmNzMzNDgwYTI3YmFhNTYwNDgwYTBiMWE4ZTE4NmQ2NjExM2QzM2NhYzFiZTcxN2UyNWQ5MDQ2N2RjOTg5Mw&feedId=58083&k=b28c399f66ec2259228a826fd2a609d434c7587a",
-        sizes: ["42 2/3", "43 1/3", "44", "45 1/3"],
+        sizes: ["43 1/3", "44", "45 1/3"],
       },
       {
         store: "Pro:Direct ES",
@@ -10018,6 +10020,15 @@ const minedBootProductsChunk1: BootProduct[] = [
           { size: "46", price: 55.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjr6185-chaussures-de-football-adidas-copa-pure-iv-club-fg-cblack-ftwwht-lucred" },
           { size: "46 2/3", price: 47.2, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjr6185-chaussures-de-football-adidas-copa-pure-iv-club-fg-cblack-ftwwht-lucred" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 56.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249375472&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111552-00-P-X-20260205141246.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ3NHxpbWFnZS9qcGVnfGFESXdMMmczTUM4eE16VTFNRGsxTnpVeU56QTNNQzl0WldScFlYTmZNVEF3TVRFeE1UVTFNbDh3TUY5UVgxZ3RNakF5TmpBeU1EVXhOREV5TkRZdWFuQm58YmU1MWYzZDUzMGExNDY1YjZkYjM3NjBlY2JjMzk3ZWJkNGQxOTg0OGNlY2VjYzE3ODVlZTk2YzZkOGQ0NTliYg&feedId=58083&k=0fbcbca37a744fb99e3cd5f34b9b26d9a9c0a159",
+        sizes: ["43 1/3"],
       },
       {
         store: "Pro:Direct ES",
@@ -12169,7 +12180,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45286186247&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102089-00-P-X-20260618094939.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTczN3xpbWFnZS9qcGVnfGFEWXlMMmd6TlM4eE16Z3pOVGcyTkRJME5ESTFOQzl0WldScFlYTmZNVEF3TVRFd01qQTRPVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPVFE1TXprdWFuQm58ZWU0MGM4ZGQ2ZjM0NjZmNTE2NzE2NDgxMWM0NWI1MDU4YTBiMDNkN2I3YzMzYjU2NTRjZGNjM2JjOGJhY2ZiMg&feedId=58083&k=987a1b51e840761f586f4992eefee016bf16c2c4",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3"],
+        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
       },
       {
         store: "Pro:Direct ES",
@@ -15041,7 +15052,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45478523757&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001101997-00-P-X-20260727160640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODkzM3xpbWFnZS9qcGVnfGFHRTFMMmd3TUM4eE16a3hOekl6TXpVM09EQXhOQzl0WldScFlYTmZNVEF3TVRFd01UazVOMTh3TUY5UVgxZ3RNakF5TmpBM01qY3hOakEyTkRBdWFuQm58YTY4NjUwYWY3NThiZjA3MWYzYThkZTEzMzYzYTcyNGI2NzY2YzkyY2EyZWQ2NDliZWZjNDVmZDM1MWQ4MGY2NQ&feedId=58083&k=5f61690585a97e66f23c2fb83e826a03e5c5d839",
-        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "38", "38 2/3"],
+        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "38"],
       },
     ],
   },
@@ -16527,6 +16538,15 @@ const minedBootProductsChunk2: BootProduct[] = [
           { size: "38", price: 53.91, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkk1321-chaussures-de-football-enfant-adidas-f50-hyperfast-league-tf-ftwr-white-solar-purple-solar-turbo" },
           { size: "38 2/3", price: 53.91, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkk1321-chaussures-de-football-enfant-adidas-f50-hyperfast-league-tf-ftwr-white-solar-purple-solar-turbo" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 69.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249385808&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001139290-00-P-X-20260708132942.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzUzNHxpbWFnZS9qcGVnfGFHWTBMMmd4TUM4eE16ZzRNREE0TWpZMk1UUXdOaTl0WldScFlYTmZNVEF3TVRFek9USTVNRjh3TUY5UVgxZ3RNakF5TmpBM01EZ3hNekk1TkRJdWFuQm58NmUyNTA4OGE1ZWEwZmM4MzU2ZTJkZDJjODRmMDNiZWYxNGE2NjgxNDVhNGE2ZWRhMTM2YzY5MjMwYjExOGQzNg&feedId=58083&k=564d284d529f5b1a374def00779f2341e957f1f3",
+        sizes: ["30", "31", "31.5", "32", "33", "33.5", "34", "35", "35.5"],
       },
     ],
   },
@@ -18420,15 +18440,6 @@ const minedBootProductsChunk2: BootProduct[] = [
           { size: "44 2/3", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjq0940-chaussures-de-football-adidas-f50-messi-league-2g-3g-ag-ftwwht-lucpnk-flaaqu" },
           { size: "45 1/3", price: 92.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjq0940-chaussures-de-football-adidas-f50-messi-league-2g-3g-ag-ftwwht-lucpnk-flaaqu" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 85.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46308977968&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111339-00-P-X-20260211152944.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM2MXxpbWFnZS9qcGVnfGFEQTBMMmcwTVM4eE16VTNNVEF6TURZME5qZ3hOQzl0WldScFlYTmZNVEF3TVRFeE1UTXpPVjh3TUY5UVgxZ3RNakF5TmpBeU1URXhOVEk1TkRRdWFuQm58YzY0YjI2ZWM2M2JhZWUxYjMxOWUwNWNkOTIzOTViZjI2NGNjNWRkZWRkZjBiZTUwYWM3MTI2MTJkNjI4MGE4YQ&feedId=58083&k=40498c1edeb6a83560796e8f95b0d643fce7862b",
-        sizes: ["43 1/3"],
       },
     ],
   },
@@ -22065,7 +22076,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45944622467&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075143-00-P-X-20260121161537.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTgzMHxpbWFnZS9qcGVnfGFESXlMMmd4WVM4eE16VXhNakUxTmpNNE1USXhOQzl0WldScFlYTmZNVEF3TVRBM05URTBNMTh3TUY5UVgxZ3RNakF5TmpBeE1qRXhOakUxTXpjdWFuQm58ZDU4M2I0NjgzMzBhN2IxNzdjYmYzZjY1OTE1ZjRmNDliNjVlNjE1Njg3YTk1ZDNkMmZmMmQ0ZmVmOGE5M2FhNg&feedId=58083&k=70286c3a4094945b96fd339b55e4ac96b25f6edc",
-        sizes: ["28", "30", "31", "33", "34", "35", "36", "37 1/3"],
+        sizes: ["28", "30", "31", "33", "34", "35", "36", "37 1/3", "38 2/3"],
       },
     ],
   },
@@ -23236,7 +23247,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46077308102&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102110-00-P-X-20260824131234.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQwOXxpbWFnZS9qcGVnfGFHSXhMMmcyWXk4eE16azNNVGt4TWpNMU9UazJOaTl0WldScFlYTmZNVEF3TVRFd01qRXhNRjh3TUY5UVgxZ3RNakF5TmpBNE1qUXhNekV5TXpRdWFuQm58OTlkZTFhZTBmODk5Njc1MzJiODE3YjExODViOTA5YTA3YmFiOTVlOTNlMTJlZGVkYjc5ZmNjMjhmZjA4Y2Y2Nw&feedId=58083&k=01946ed442585e85aa778402c81a59e140eb34b9",
-        sizes: ["29", "30", "31", "32", "33", "34", "35", "36 2/3", "38", "38 2/3"],
+        sizes: ["29", "30", "31", "33", "34", "35", "36 2/3", "38", "38 2/3"],
       },
     ],
   },
@@ -23281,7 +23292,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45286186269&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102111-00-P-X-20260618120018.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDM4MHxpbWFnZS9qcGVnfGFEUTFMMmczT1M4eE16Z3pOalV6TnpneU16STJNaTl0WldScFlYTmZNVEF3TVRFd01qRXhNVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hNakF3TVRndWFuQm58ODhmZTBmMmM2ZTFiNDBhMWQ2NzllNjFiM2RiYmI4Y2Y3MzM1M2U1NTdiOTM5NjI3Y2ViMzA2NjM0NGIzODkyNA&feedId=58083&k=f6a6c7f9fb4906f193df12d3954d93e969ca8ae7",
-        sizes: ["29", "33", "35", "36"],
+        sizes: ["29", "30", "33", "35", "36"],
       },
     ],
   },
@@ -24218,7 +24229,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46077308072&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102009-00-P-X-20260824131234.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDI3M3xpbWFnZS9qcGVnfGFEUTJMMmhqWVM4eE16azNNVGt3TnpBMU1UVTFNQzl0WldScFlYTmZNVEF3TVRFd01qQXdPVjh3TUY5UVgxZ3RNakF5TmpBNE1qUXhNekV5TXpRdWFuQm58MDYyNDkxZTEyOGEzNzc0YTZiYWFjZThkY2QyMmU3MDZlMTQ1ZDNiMzVhYmNlNzc0ZjA4MjZlMTRkOGUzYTA4YQ&feedId=58083&k=8398bc40ccffc5c877d3ad08d194841275013121",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "44 2/3", "45 1/3", "46"],
+        sizes: ["40", "40 2/3", "41 1/3", "42", "44 2/3", "46"],
       },
       {
         store: "Pro:Direct ES",
@@ -25123,6 +25134,15 @@ const minedBootProductsChunk2: BootProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkj3418-chaussures-de-football-adidas-f50-hyperfast-league-ll-fg-pulse-mint-night-navy-solar-lemon",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kj3418-pulse-mint-night-navy-solar-lemon-6a980b963cb38-1.webp",
         sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
+      },
+      {
+        store: "ForumSport",
+        price: 99.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249386269&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001139254-00-P-X-20260824124949.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk1NXxpbWFnZS9qcGVnfGFHVXlMMmd6WkM4eE16azNNVGcwTkRrMU5qRTVNQzl0WldScFlYTmZNVEF3TVRFek9USTFORjh3TUY5UVgxZ3RNakF5TmpBNE1qUXhNalE1TkRrdWFuQm58NmNlMjEyZWRlZDg2MTZmZjZkMTM0ZGFmNDVlMWJmNGJhYTFkMzNhNTU1ZWM0ZmZkODY3N2Y0N2ZjYzcwMmIyOA&feedId=58083&k=c4b0889040d67e979cfe67eb01dcc090835de5a6",
+        sizes: ["43 1/3"],
       },
       {
         store: "Pro:Direct ES",
@@ -32142,7 +32162,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44014295381&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000518937-00-P-X-20181121162343.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyMDc4MTR8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzFPQzlvTkdJdk9EazJORFF6TXpRME5EZzVOQzVxY0djfDJjMTVmYjEzZTI0NzY1YzE0OGVkNWYxNWU3MzEzMGJhYTEzNTMyYTAxMjVjZjEyZDgzM2U2YWY0MTA5MDk1NDI&feedId=58083&k=b4773dc32c816461eee59b58185ce4245ebbc51f",
-        sizes: ["36", "39 1/3", "46 2/3", "47 1/3", "48"],
+        sizes: ["36", "46 2/3", "47 1/3", "48"],
       },
       {
         store: "AdidasCL",
@@ -52810,7 +52830,7 @@ const minedBootProductsChunk7: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45939765844&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048494-00-P-X-20250819141245.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTAwM3xpbWFnZS9qcGVnfGFHVmhMMmhrT0M4eE16RXlOekU1TlRBd01EZzJNaTl0WldScFlYTmZNVEF3TVRBME9EUTVORjh3TUY5UVgxZ3RNakF5TlRBNE1Ua3hOREV5TkRVdWFuQm58YWQ0OGJkMGIxZmVhZDBmMDkzZTg2ODc2NjhiM2RhMWQ3ZTQxOWNiOThkNDE0MjRlM2RjMDU4MDUwNGU0YWM4OQ&feedId=58083&k=937a91187b760062a338f2b6d9095fa19c470796",
-        sizes: ["40 2/3", "42"],
+        sizes: ["40 2/3", "42", "42 2/3"],
       },
     ],
   },
@@ -56505,24 +56525,6 @@ const minedBootProductsChunk8: BootProduct[] = [
           { size: "32", price: 38.76, url: "https://www.awin1.com/pclick.php?p=46163858131&a=3013769&m=65912" },
         ],
       },
-      {
-        store: "FootStoreFR",
-        price: 38.65,
-        priceMax: 39.29,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kk1345_1_footwear_photography_side_lateral_center_view_white.webp",
-        sizes: ["29", "30", "30.5", "31", "31.5", "32"],
-        sizePrices: [
-          { size: "29", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
-          { size: "30", price: 39.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
-          { size: "30.5", price: 39.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
-          { size: "31", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
-          { size: "31.5", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
-          { size: "32", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-enfant-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
-        ],
-      },
     ],
   },
   {
@@ -58492,7 +58494,7 @@ const minedBootProductsChunk8: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45854596102&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048421-00-P-X-20250623161006.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NzQ3N3xpbWFnZS9qcGVnfGFHWTBMMmd3WXk4eE16QXdOemN5TURZME5EWXpPQzl0WldScFlYTmZNVEF3TVRBME9EUXlNVjh3TUY5UVgxZ3RNakF5TlRBMk1qTXhOakV3TURZdWFuQm58NGQ5OGE2NDE5YjYwOWY4MWFlNWJhNjg2ODViYTE0MWM1NjU1ZWVmZDg2YzE4MjY2ODE1MWQ5Y2M1OTU1ZTk3Ng&feedId=58083&k=ac0ffa6bae274834dd421acf18711c59a1535b34",
-        sizes: ["38"],
+        sizes: ["32", "38"],
       },
     ],
   },
@@ -59136,7 +59138,7 @@ const minedBootProductsChunk9: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45805793274&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001101985-00-P-X-20260824124949.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTg4NXxpbWFnZS9qcGVnfGFHSmxMMmhtTXk4eE16azNNVFk1TXpZNU9URXdNaTl0WldScFlYTmZNVEF3TVRFd01UazROVjh3TUY5UVgxZ3RNakF5TmpBNE1qUXhNalE1TkRrdWFuQm58ZDBhMWUzZjU5YmVhZDg1NjM1M2ZhZjUxY2VlNmU0MjRiOWRhYjExYjFkNmM1ZDE5MjNkNmQ3OGExNGRjZWU3Nw&feedId=58083&k=d410cc29124e6a2bcf815202c87150a9ed5b59f4",
-        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "36", "37 1/3"],
+        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "36"],
       },
     ],
   },
@@ -62178,7 +62180,7 @@ const minedBootProductsChunk9: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45854596290&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048548-00-P-X-20250910154733.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDU2M3xpbWFnZS9qcGVnfGFEbG1MMmc1WWk4eE16RTNORGN4TnpZeE1qQTJNaTl0WldScFlYTmZNVEF3TVRBME9EVTBPRjh3TUY5UVgxZ3RNakF5TlRBNU1UQXhOVFEzTXpNdWFuQm58ZTgxNzQ0YTVmNzljYzkwMTY4NDI0ODFmOWJiMTIzZWQ5NTUwYzY3NzI3MDMyN2E5MTMxYmY2Y2RiOWI2N2M5OA&feedId=58083&k=bb548e9ad36624db19c24e470b42f27586e6cbcc",
-        sizes: ["28", "29", "30", "31", "32"],
+        sizes: ["28", "29", "30", "31", "32", "35"],
       },
     ],
   },
@@ -62286,7 +62288,7 @@ const minedBootProductsChunk9: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46261271144&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112628-00-P-X-20260219085143.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM5N3xpbWFnZS9qcGVnfGFEYzJMMmcwT0M4eE16VTRPRGt5TmpBM01EZ3hOQzl0WldScFlYTmZNVEF3TVRFeE1qWXlPRjh3TUY5UVgxZ3RNakF5TmpBeU1Ua3dPRFV4TkRNdWFuQm58MDFmZTM0ZjRiYjY1NjhmMTQxZjBiMGFhNGZjNTgxZTY2ODQ2YTFjZGZhNmE5NGQ4YmI1ZTJmMDkxYWM3MjVlNw&feedId=58083&k=008825f65b63b83776d07d5104915ca3afc3a546",
-        sizes: ["37 1/3", "38 2/3"],
+        sizes: ["36", "37 1/3", "38 2/3"],
       },
     ],
   },
@@ -62304,15 +62306,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163834202&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fk%2Fkk1342.jpg&feedId=89032&k=deedd8c2992fed9feb73933827583cb7df572211",
-        sizes: ["25", "25.5", "26.5"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 38.65,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-bebe-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl",
-        imageUrl: "https://cdn.blazimg.com/1800/product/k/k/kk1342.webp",
         sizes: ["25", "25.5", "26.5"],
       },
     ],
@@ -62925,18 +62918,12 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 31.49,
-        priceMax: 38.65,
+        price: 38.65,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-enfant-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-bebe-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/k/kk1342.webp",
-        sizes: ["28.5", "30.5", "31.5"],
-        sizePrices: [
-          { size: "28.5", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-enfant-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl" },
-          { size: "30.5", price: 31.49, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-enfant-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl" },
-          { size: "31.5", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-enfant-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl" },
-        ],
+        sizes: ["25", "25.5", "26.5"],
       },
       {
         store: "ForumSport",
@@ -63264,7 +63251,7 @@ const minedBootProductsChunk9: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45071652156&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102133-00-P-X-20260525114252.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDg4M3xpbWFnZS9qcGVnfGFESmtMMmhtTmk4eE16YzROekE1TkRNeE9URXpOQzl0WldScFlYTmZNVEF3TVRFd01qRXpNMTh3TUY5UVgxZ3RNakF5TmpBMU1qVXhNVFF5TlRJdWFuQm58MzA5M2E5MTE3NDNkNjc5Nzc2MDQ5MzkxZjA4OGRiYTgxMjRhYmFlMzEwY2U2NzY3MDFjZGVjOTRiNTQ1YjdiOQ&feedId=58083&k=5d2f0c43fdbc8420929652a8e8446b32843a3f1b",
-        sizes: ["30", "33", "36 2/3", "37 1/3", "38", "38 2/3"],
+        sizes: ["33", "36 2/3", "37 1/3", "38", "38 2/3"],
       },
     ],
   },
@@ -65237,6 +65224,31 @@ const minedBootProductsChunk10: BootProduct[] = [
           { size: "27", price: 32.09, url: "https://www.awin1.com/pclick.php?p=45195667372&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreFR",
+        price: 28.55,
+        priceMax: 31.46,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-2250-black-silver-4.webp",
+        sizes: ["24", "25", "26", "27"],
+        sizePrices: [
+          { size: "24", price: 31.46, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver" },
+          { size: "25", price: 28.55, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver" },
+          { size: "26", price: 31.46, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver" },
+          { size: "27", price: 31.46, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver" },
+        ],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 26.97,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-2250-black-silver-4.webp",
+        sizes: ["25"],
+      },
     ],
   },
   {
@@ -65584,9 +65596,9 @@ const minedBootProductsChunk10: BootProduct[] = [
         price: 31.46,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-9639-chaussures-de-football-enfant-hummel-top-star-vc-2-0-turf-white-multicolor",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-9639-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-white-multicolor",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234863-9639-white-multicolor-5.webp",
-        sizes: ["27", "29", "30", "31", "32", "33", "34", "35", "37", "38"],
+        sizes: ["24", "25", "26"],
       },
     ],
   },
@@ -66804,6 +66816,15 @@ const minedBootProductsChunk10: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45229568275&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-234863-9639-white-multicolor-5.jpg&feedId=89032&k=efb4bde184495142ae55bf17f715bafbc5a989b4",
+        sizes: ["27", "29", "30", "31", "32", "33", "34", "35", "37", "38"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 31.46,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-9639-chaussures-de-football-enfant-hummel-top-star-vc-2-0-turf-white-multicolor",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234863-9639-white-multicolor-5.webp",
         sizes: ["27", "29", "30", "31", "32", "33", "34", "35", "37", "38"],
       },
     ],
@@ -79629,7 +79650,7 @@ const minedBootProductsChunk12: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45813877497&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125158-00-P-X-20260619091415.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY5MHxpbWFnZS9qcGVnfGFHVXlMMmhsTmk4eE16Z3pPREl3TVRRMU5EWXlNaTl0WldScFlYTmZNVEF3TVRFeU5URTFPRjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dPVEUwTVRVdWFuQm58ZDAyZDgyZjk4NjAyMjNhN2Q5YmU2YWY2YjYxYzVhNjg3ODE3OWRjZWUzY2RkYTdhOWVmZGY4MjlhYmFmNGQzOA&feedId=58083&k=cc5a6da380ff09dedd198d0dca82afadc3ceead4",
-        sizes: ["38.5", "40", "40.5", "45.5", "46", "47.5"],
+        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
       },
     ],
   },
@@ -80232,6 +80253,15 @@ const minedBootProductsChunk12: BootProduct[] = [
           { size: "45.5", price: 94.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8329-001-chaussures-de-football-nike-mercurial-superfly-10-academy-ag-black-ice-blue" },
           { size: "46", price: 71.24, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffq8329-001-chaussures-de-football-nike-mercurial-superfly-10-academy-ag-black-ice-blue" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 67.89,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45849118835&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053702-00-P-X-20250703160045.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY0NXxpbWFnZS9qcGVnfGFEVTFMMmcyTUM4eE16QXpNVEE1TURNNE9UQXlNaTl0WldScFlYTmZNVEF3TVRBMU16Y3dNbDh3TUY5UVgxZ3RNakF5TlRBM01ETXhOakF3TkRVdWFuQm58Zjk2YjdjZThkMzFkNTQxNWJiYWM1OGUzZDkyYzVhMTBjNWM0ODk3NTNjNGRhMmUyMTA2MmZjY2ZkYTVkMzg5Yw&feedId=58083&k=860b82f80378376320743ef0ac6484532d9027bf",
+        sizes: ["38", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
       },
     ],
   },
@@ -81292,9 +81322,9 @@ const minedBootProductsChunk12: BootProduct[] = [
         price: 48.29,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43782451533&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43782451294&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001073814-00-P-X-20250807134857.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTg1M3xpbWFnZS9qcGVnfGFHVmxMMmhsT0M4eE16RXdOVFEwTmpVNE5ETTFNQzl0WldScFlYTmZNVEF3TVRBM016Z3hORjh3TUY5UVgxZ3RNakF5TlRBNE1EY3hNelE0TlRjdWFuQm58YzViMWMwNDg5YWJkMDVlZGEyMTQ1NDk3ZDE3YzYwODVkMWI5N2M5YjlkOTgxZWZmZmE3MTNkMDczYTAyYTVhMA&feedId=58083&k=6f5ce56747e9554e5f8356607795754c3181ee4d",
-        sizes: ["37.5", "40", "40.5", "41", "42.5", "46"],
+        sizes: ["36.5", "37.5", "38", "38.5", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47.5"],
       },
     ],
   },
@@ -81387,7 +81417,7 @@ const minedBootProductsChunk12: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43576612404&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001078961-00-P-X-20251211144707.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzAyOHxpbWFnZS9qcGVnfGFHVTBMMmd5WVM4eE16TTVOekF4TVRRMk5ESXlNaTl0WldScFlYTmZNVEF3TVRBM09EazJNVjh3TUY5UVgxZ3RNakF5TlRFeU1URXhORFEzTURjdWFuQm58ZmQyZjUxZmJmNWZhNDAyNDI4MWQ0ZjFjMTNhYmFiYmNlZjRkNDRlMGQwMjNkYjBkMDcwMWMwYzg4MjJiOWYzMQ&feedId=58083&k=1ca5a5c3d1ebcb0957218a7f144307e6b9529368",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -82447,9 +82477,9 @@ const minedBootProductsChunk13: BootProduct[] = [
         price: 90.2,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46196971526&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46196971861&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001127462-00-P-X-20261006132749.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI3M3xpbWFnZS9qcGVnfGFHUmpMMmhoTnk4eE5EQTJNVEV5TWpneE16azRNaTl0WldScFlYTmZNVEF3TVRFeU56UTJNbDh3TUY5UVgxZ3RNakF5TmpFd01EWXhNekkzTkRrdWFuQm58Nzk0ZTRjNTU0OWUxOTY4NDIxOTRhYzY4ZTY3ZmQ2NzJmNGMxNzA4MjJkMzNmNjQzZjFhMmFmNzc4NTIyMzc0OA&feedId=58083&k=195a8bff29908e99c3ad661b32f2233fef149868",
-        sizes: ["36.5", "37.5", "40", "41", "42", "42.5", "44", "45", "45.5", "46", "47", "47.5"],
+        sizes: ["44", "45"],
       },
       {
         store: "Pro:Direct ES",
@@ -82683,7 +82713,7 @@ const minedBootProductsChunk13: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45187775706&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125716-00-P-X-20260619091416.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjYwMXxpbWFnZS9qcGVnfGFERTBMMmhoT1M4eE16Z3pPREl4TlRJME9UazFNQzl0WldScFlYTmZNVEF3TVRFeU5UY3hObDh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dPVEUwTVRZdWFuQm58NmYzNjcwMzcyZjg4MGQ0ZjY4ZGYyMTQ0MTMzYWE5MDU5MmI3OTJkYmUxZjM0MTU1Mjc4MGE3Zjk4MjI5YTdmZA&feedId=58083&k=df954f3305f466aa06000c9769b8daa4e9bf8af0",
-        sizes: ["38", "38.5", "40", "41", "42", "43", "44", "44.5", "45", "45.5", "46"],
+        sizes: ["38", "38.5", "40", "41", "42", "43", "44", "44.5", "45.5", "46", "47"],
       },
       {
         store: "Pro:Direct ES",
@@ -82834,9 +82864,9 @@ const minedBootProductsChunk13: BootProduct[] = [
         price: 70.99,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45803613721&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45803613717&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125723-00-P-X-20260619074024.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg5NnxpbWFnZS9qcGVnfGFHSmpMMmd3Tmk4eE16Z3pPREExT1RZd01UazFNQzl0WldScFlYTmZNVEF3TVRFeU5UY3lNMTh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dOelF3TWpRdWFuQm58OWE0YTQyNjVmMDFlNTAxZTI0YzUyZjNhMjI4YjJmNDQwY2JjMmJkOTFiMmIyZmQ1ZjhjMTg5NjVlMGU1ZmYwZA&feedId=58083&k=93aa546cfc02f069f4c1e30e41853385d7053a02",
-        sizes: ["40.5", "41", "42", "43", "44.5", "45", "45.5", "47"],
+        sizes: ["39", "40.5", "41", "45.5"],
       },
       {
         store: "Pro:Direct ES",
@@ -82935,7 +82965,7 @@ const minedBootProductsChunk13: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46049656005&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125733-00-P-X-20260619074024.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc1OXxpbWFnZS9qcGVnfGFEWTJMMmc1Tmk4eE16Z3pPREEyTVRFd09USTNPQzl0WldScFlYTmZNVEF3TVRFeU5UY3pNMTh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dOelF3TWpRdWFuQm58NzI5MTcyNTAzZTkyNmQzMzBhOGY3ZmVmOTYzMmFmNjEzYjVhOWYwMTFiMThhYjU3ODFhYjhjMzRkMTM1ZTA2Nw&feedId=58083&k=741b36d8c082ec5beaa0c2cc1e4cbe0002a4429a",
-        sizes: ["40", "41", "42", "42.5", "44", "45"],
+        sizes: ["44"],
       },
       {
         store: "Pro:Direct ES",
@@ -83007,7 +83037,7 @@ const minedBootProductsChunk13: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45677104393&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001124401-00-P-X-20260619091415.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTAzM3xpbWFnZS9qcGVnfGFHWXdMMmc1TXk4eE16Z3pPREU1TWpFNE1USTNPQzl0WldScFlYTmZNVEF3TVRFeU5EUXdNVjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dPVEUwTVRVdWFuQm58MmVlMWFlZWEwNDFhMzc0MmRkZTFmMDcyZmQ4ZjExYjI3MThlYjEwNzEyNDhiMThjOGRkNTQ1ZWM1YmEzM2IzZQ&feedId=58083&k=fc24d4162b81d9e0165c1605188159080ed09205",
-        sizes: ["42"],
+        sizes: ["38", "39", "40.5", "42", "43"],
       },
       {
         store: "Pro:Direct ES",
@@ -83131,7 +83161,7 @@ const minedBootProductsChunk13: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45311935004&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103729-00-P-X-20260619074024.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTU1OHxpbWFnZS9qcGVnfGFEZGxMMmcyTUM4eE16Z3pPREEwTnprek5qVTBNaTl0WldScFlYTmZNVEF3TVRFd016Y3lPVjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dOelF3TWpRdWFuQm58ZTNjMWMyMjAxYTE0ZTNhMDZjZjA4MjMxYmU0NDI5NjdmNmU3ZmQ3NmM4M2I1ZDhlOGFmNjZiZTE0OTdkMjY3MA&feedId=58083&k=81ec212dedb0be4a7655529c52ae108848f0efbb",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["40", "40.5", "41", "42", "43", "44", "44.5", "45"],
       },
       {
         store: "Pro:Direct ES",
@@ -85159,7 +85189,7 @@ const minedBootProductsChunk13: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45843265546&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001078965-00-P-X-20251211144707.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjQzM3xpbWFnZS9qcGVnfGFEUmtMMmhtTkM4eE16TTVOekF4TXpneU16VXhPQzl0WldScFlYTmZNVEF3TVRBM09EazJOVjh3TUY5UVgxZ3RNakF5TlRFeU1URXhORFEzTURjdWFuQm58OGMzODM3OTJiYjk1NDE1YzJiODJhOTU4MDJmNzIwYThmNjBlNDYxMTkxZWY4ZDQ3ZjFjMWFmNzAyMmIwYjRiYw&feedId=58083&k=52bd552f9b6ac30632e0d6d6b31c57ddc77a14ab",
-        sizes: ["39", "40", "41", "42", "44", "44.5", "45"],
+        sizes: ["40", "41", "44", "44.5"],
       },
     ],
   },
@@ -85477,7 +85507,7 @@ const minedBootProductsChunk13: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43782451336&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001073842-00-P-X-20250728100536.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTg3MXxpbWFnZS9qcGVnfGFESTVMMmhoTWk4eE16QTRNekExT0Rjd01ETXhPQzl0WldScFlYTmZNVEF3TVRBM016ZzBNbDh3TUY5UVgxZ3RNakF5TlRBM01qZ3hNREExTXpZdWFuQm58NjM1MWM1MzcxMmZmNTEyZDNhMzA4MDE3ZjNiN2Y3Y2M1ODYxODQxYWJmNTY5NzhiYjY2ODA4MmRiYTdkZDI1MA&feedId=58083&k=c6bd61a2b41c8b2726f4c5acdafc90b052e170e3",
-        sizes: ["42.5", "43", "44", "45", "46"],
+        sizes: ["36.5", "38.5", "40", "42.5", "43", "44", "45", "47.5"],
       },
     ],
   },
@@ -86582,7 +86612,7 @@ const minedBootProductsChunk13: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45187775716&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126459-00-P-X-20260619074024.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY1NHxpbWFnZS9qcGVnfGFHRmxMMmcxWmk4eE16Z3pPREEyT0RZME5Ua3hPQzl0WldScFlYTmZNVEF3TVRFeU5qUTFPVjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dOelF3TWpRdWFuQm58ZGQ2ZGIwYzkxN2VlNzA2NGM5NzdjMzExN2M4NTFkOTliNmJkN2JkNzk1NmQyNTE1ZTY1MDYwYTU0YjE4MjY1Ng&feedId=58083&k=070811729f3efd971c8687340dc100ac80689376",
-        sizes: ["36", "36.5", "37.5", "38", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
+        sizes: ["40", "41", "42.5", "44", "45", "46"],
       },
       {
         store: "Pro:Direct ES",
@@ -86654,9 +86684,9 @@ const minedBootProductsChunk13: BootProduct[] = [
         price: 64.79,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45387736718&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45387736730&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103690-00-P-X-20260722163639.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzUzNHxpbWFnZS9qcGVnfGFEQmpMMmc0WkM4eE16a3dPVEF4TURNMU1ERXhNQzl0WldScFlYTmZNVEF3TVRFd016WTVNRjh3TUY5UVgxZ3RNakF5TmpBM01qSXhOak0yTXprdWFuQm58NTZmYWZiMWNiZDBiNzM4OGE3ODc0ZGZjYjg1MmQzNDMyZmQ0YTFkYWMzMjc1NGUxN2I5NTQ1YjlhMzAzN2JkYg&feedId=58083&k=3b8633b053dfcb0787ce6c7e6c56b9efa1124567",
-        sizes: ["38", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
       },
       {
         store: "Pro:Direct ES",
@@ -86851,9 +86881,9 @@ const minedBootProductsChunk13: BootProduct[] = [
         price: 46.22,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45671487574&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45579937747&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001124398-00-P-X-20260619112012.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ4MXxpbWFnZS9qcGVnfGFEVTNMMmd6TlM4eE16Z3pPRE00TkRRek1URXpOQzl0WldScFlYTmZNVEF3TVRFeU5ETTVPRjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3hNVEl3TVRJdWFuQm58ZmRiZTg1ZGRjZTlmZWY1NTc2NzBjNzY0MzEwOTgzNTIyMmRiM2MwMDMyZmNmYjc0NmQwMmVmNzM3YWRhNmU2Zg&feedId=58083&k=173b71537478ba7897111261eb572748b8a4a988",
-        sizes: ["40.5", "42", "43", "44.5", "45.5", "47"],
+        sizes: ["36.5", "38", "38.5", "40.5", "42", "43", "44.5", "45.5", "46", "47", "47.5"],
       },
       {
         store: "Pro:Direct ES",
@@ -86909,9 +86939,9 @@ const minedBootProductsChunk13: BootProduct[] = [
         price: 46.22,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45318475697&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45318476048&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125177-00-P-X-20260619112012.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc1OXxpbWFnZS9qcGVnfGFERXlMMmhpTUM4eE16Z3pPRE01TVRBNE16QXpPQzl0WldScFlYTmZNVEF3TVRFeU5URTNOMTh3TUY5UVgxZ3RNakF5TmpBMk1Ua3hNVEl3TVRJdWFuQm58MWRmZTMzMTNjMGNhZjc1YWVjNDBhYjUzMDMzODlkY2JhYTFiN2I2YzYzNGY3NWFiMDg0MGI3MjAyMTVkZmFmMg&feedId=58083&k=2ea3ad980449244b2df4c866fd15584d415d2304",
-        sizes: ["43", "44.5", "46", "47"],
+        sizes: ["38", "38.5", "44.5", "45.5", "46", "47"],
       },
       {
         store: "Pro:Direct ES",
@@ -86955,7 +86985,7 @@ const minedBootProductsChunk13: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46049635037&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118808-00-P-X-20260619091415.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYyN3xpbWFnZS9qcGVnfGFHUmpMMmhpTXk4eE16Z3pPREUzTkRjeE5Ua3pOQzl0WldScFlYTmZNVEF3TVRFeE9EZ3dPRjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dPVEUwTVRVdWFuQm58MzZjNDczODA0NjI3NzYyNTVkMThiNmVkMzFmYzQ0YTllZDJmYzVhY2VhZjZmMTBjNTVhNDZmMTI2ZTgzMDljZQ&feedId=58083&k=70bbc6ebc6b7990c65ec19398009db1bbf5b7fa4",
-        sizes: ["37.5", "38", "38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47"],
+        sizes: ["38", "38.5", "40", "40.5", "41", "42", "43", "44", "44.5", "45", "45.5", "46", "47"],
       },
     ],
   },
@@ -87101,7 +87131,7 @@ const minedBootProductsChunk13: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45387736715&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103728-00-P-X-20260722151919.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM1MHxpbWFnZS9qcGVnfGFERmlMMmhoWlM4eE16a3dPRGMzTWpFNU1qSTROaTl0WldScFlYTmZNVEF3TVRFd016Y3lPRjh3TUY5UVgxZ3RNakF5TmpBM01qSXhOVEU1TVRrdWFuQm58N2M0ODhhYmIwYmQ0OTJhMDc3NTdiMGJjMTMyMTg2MjQzYjk0YzU0YjRkMjgzYjZmZGYyZmRhNTdiNDdjZmQ4Yw&feedId=58083&k=2fe4d63047bb3281502351949a91f0cfc4629438",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
+        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
       },
       {
         store: "Pro:Direct ES",
@@ -89105,9 +89135,9 @@ const minedBootProductsChunk13: BootProduct[] = [
         price: 67.89,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45183973557&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45183973628&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125550-00-P-X-20260619112012.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE4N3xpbWFnZS9qcGVnfGFESTJMMmhrTmk4eE16Z3pPRFF3TVRBeE1UYzBNaTl0WldScFlYTmZNVEF3TVRFeU5UVTFNRjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3hNVEl3TVRJdWFuQm58ZmFlZmM3OGE0MjliZDEzN2YwN2FjZGMyNzdkMDJiMmNhZWYxOTUxNTg2MDQ4NTJlYTgyNjI4NTczNTk0NGI5Mg&feedId=58083&k=a24120bc280822f1289694b8eefff47e7449f969",
-        sizes: ["37.5", "38.5", "40.5", "43", "44.5", "45.5", "47", "47.5"],
+        sizes: ["40.5", "43", "44.5", "45.5", "47", "47.5"],
       },
       {
         store: "Pro:Direct ES",
@@ -90238,9 +90268,9 @@ const minedBootProductsChunk14: BootProduct[] = [
         price: 89.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45183973359&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45308849573&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125388-00-P-X-20260619074024.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjUyMnxpbWFnZS9qcGVnfGFHTmhMMmc1TVM4eE16Z3pPREExTXpFM09UUXlNaTl0WldScFlYTmZNVEF3TVRFeU5UTTRPRjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dOelF3TWpRdWFuQm58YzdkNTMzZTUzY2RkNWFkZDFmNmRlYTEwNjQ2Yzg0ZDViOTc1YWM2N2E2ZjAzYzhlYmFkZDNhNzc5NGJiMjM4Mg&feedId=58083&k=00cd74b523fd4bf93ca58791e0f85bebf251c40e",
-        sizes: ["36.5", "38", "38.5", "39", "40", "40.5", "43", "44", "44.5", "45.5", "47"],
+        sizes: ["44", "44.5"],
       },
       {
         store: "Pro:Direct ES",
@@ -90308,9 +90338,9 @@ const minedBootProductsChunk14: BootProduct[] = [
         price: 64.79,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45391908755&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45376031115&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103648-00-P-X-20260722151919.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTY3N3xpbWFnZS9qcGVnfGFHTmhMMmd6TXk4eE16a3dPRGMyTlRVd056WXhOQzl0WldScFlYTmZNVEF3TVRFd016WTBPRjh3TUY5UVgxZ3RNakF5TmpBM01qSXhOVEU1TVRrdWFuQm58NWYyMmExYmI1MmY0ZmJkZDI2MTNkN2IzYWZjMDIxN2FhM2Y1MDY2MTk1NmE0ZDBhZWE0OTIzOGVlNDJlOGQ2ZA&feedId=58083&k=e674ef4c8a7919997c6c3017442441254d5b34e0",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
       {
         store: "Pro:Direct ES",
@@ -90354,7 +90384,7 @@ const minedBootProductsChunk14: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46196971600&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126963-00-P-X-20260922093139.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODEwMXxpbWFnZS9qcGVnfGFEZzJMMmc0TUM4eE5EQXpNalkxTVRJMU5UZ3pPQzl0WldScFlYTmZNVEF3TVRFeU5qazJNMTh3TUY5UVgxZ3RNakF5TmpBNU1qSXdPVE14TXprdWFuQm58MjUxNTY5YjkyYTIxMmRkYWVlYzk3MDkzYmMwNjJjOTg2YjI5MDhiYTg0ZDVjMTlkM2ZiZWIyZDVjMTMxZDQ3ZA&feedId=58083&k=fef16460b547604f193770109c164fd6c68838b5",
-        sizes: ["39", "40", "40.5", "41", "45", "45.5", "46", "47"],
+        sizes: ["39", "40", "40.5", "41", "45"],
       },
       {
         store: "Pro:Direct ES",
@@ -90466,15 +90496,6 @@ const minedBootProductsChunk14: BootProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq2325-100-chaussures-de-football-nike-phantom-6-low-academy-tf-white-dusty-cactus-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-hq2325-100-white-dusty-cactus-white-6acf7b7727cb0-1.webp",
         sizes: ["38.5", "40.5", "45.5", "47", "47.5"],
-      },
-      {
-        store: "ForumSport",
-        price: 89.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46196971576&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126988-00-P-X-20260922093139.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NTcxN3xpbWFnZS9qcGVnfGFEbGxMMmhqWkM4eE5EQXpNalkxTkRjeU9USTBOaTl0WldScFlYTmZNVEF3TVRFeU5qazRPRjh3TUY5UVgxZ3RNakF5TmpBNU1qSXdPVE14TXprdWFuQm58ZWFjZThkOTY0NGEzYmI1MjMwZGY2ZDNiNGViOTE5MDg5OWIxY2QxMzQ3NjdiNDc5NTYwZGFmNDg2ZTMxN2NmYQ&feedId=58083&k=07788206c1bce25e292b61f010022375c49d3fbe",
-        sizes: ["40.5", "45.5", "47", "47.5"],
       },
       {
         store: "Pro:Direct ES",
@@ -90683,7 +90704,7 @@ const minedBootProductsChunk14: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45318473799&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125439-00-P-X-20260619091415.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzkxNHxpbWFnZS9qcGVnfGFEUm1MMmd6T0M4eE16Z3pPREl3TXpneE16a3hPQzl0WldScFlYTmZNVEF3TVRFeU5UUXpPVjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dPVEUwTVRVdWFuQm58Y2RhYWRmY2M5N2U0Yzg2M2JjNTdkMTk5NDJkNzE3ZDU1MmM1MWYwMzJhNzBlZDA4ODAyZjQ4ODk0YTk5YzIxOQ&feedId=58083&k=20213a61e26f35a5c8f9f45004ef94056ba0ce67",
-        sizes: ["38", "41", "42", "43", "44"],
+        sizes: ["41", "42", "43", "44", "47.5"],
       },
       {
         store: "Pro:Direct ES",
@@ -94366,7 +94387,7 @@ const minedBootProductsChunk14: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44382263525&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001031351-00-P-X-20240715160527.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU5MXxpbWFnZS9qcGVnfGFEQmhMMmhqTXk4eE1qSTFPREV6TWprNE16Z3pPQzl0WldScFlYTmZNVEF3TVRBek1UTTFNVjh3TUY5UVgxZ3RNakF5TkRBM01UVXhOakExTWpjdWFuQm58NDI5NTRkOGRhZWY5NWY4YTVjNjZmNmVjYTBhMWFjYmQ4ODVhNTE2MTQwMmY1N2MxZTc3NWM0NzI0MzAwMmMzYw&feedId=58083&k=780b441fbfd29c4a2fdf67fb1c99b3197fdc989b",
-        sizes: ["36.5", "37.5", "40", "40.5", "41", "45.5", "46", "47", "47.5"],
+        sizes: ["36.5", "37.5", "40.5", "45.5", "46", "47.5"],
       },
     ],
   },
@@ -96148,6 +96169,15 @@ const minedBootProductsChunk15: BootProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 149.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46473250025&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001101157-00-P-X-20260310104838.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU0MHxpbWFnZS9qcGVnfGFHTmxMMmd4Tmk4eE16WXlPVFF3TmpRM09ETTJOaTl0WldScFlYTmZNVEF3TVRFd01URTFOMTh3TUY5UVgxZ3RNakF5TmpBek1UQXhNRFE0TXpndWFuQm58NjhlZmM0NzI2NTg1MzdjMGVjZmRhZjM1ZTc1MDNlZGFhOTI4OTAyYTgzNWU3ZjI1ZGVlZTk2ZDVjMGVkODc4MA&feedId=58083&k=cefbd01948fd690bfa6a330971c91e0d6a0208a3",
+        sizes: ["44"],
+      },
+      {
         store: "Pro:Direct ES",
         price: 135.0,
         shipping: 3.62,
@@ -96282,9 +96312,9 @@ const minedBootProductsChunk15: BootProduct[] = [
         price: 103.49,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45183973829&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45183973844&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125645-00-P-X-20260619074024.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDQxMHxpbWFnZS9qcGVnfGFETXhMMmczWkM4eE16Z3pPREExT0RJNU1USXpNQzl0WldScFlYTmZNVEF3TVRFeU5UWTBOVjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dOelF3TWpRdWFuQm58MGU3NWI2YWQ2MTNjNjZhZjQ2N2E4MmQwNDJjY2NkMDI3YmZjMzE1MDM3NzY4OGUxOWY1MjRiNjY3MmNmYmQ4Ng&feedId=58083&k=fef053d52cbac80cc9e88f9c730f8e128ca37bed",
-        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
+        sizes: ["42", "43", "44"],
       },
       {
         store: "Pro:Direct ES",
@@ -96508,7 +96538,7 @@ const minedBootProductsChunk15: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43787077952&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001078991-00-P-X-20260114162419.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA4NXxpbWFnZS9qcGVnfGFHUmpMMmhrWmk4eE16UTVOekExTURreU16QXpPQzl0WldScFlYTmZNVEF3TVRBM09EazVNVjh3TUY5UVgxZ3RNakF5TmpBeE1UUXhOakkwTVRrdWFuQm58YWUxNzQ1ZDcxMmVkZGYyMjcwYTI0ODA4ZmI4NDY3ZTc1NmRjOTI0Y2VlYmEwMjI4YjY3ZGY3YTUwYjU4Y2IyYQ&feedId=58083&k=ca018f86370f23d6473a93389eb5797874caf95c",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5"],
+        sizes: ["39", "40", "40.5", "42", "42.5", "43", "44", "44.5"],
       },
     ],
   },
@@ -96811,7 +96841,7 @@ const minedBootProductsChunk15: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45183973715&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125951-00-P-X-20260619074024.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTczMnxpbWFnZS9qcGVnfGFHUTJMMmcwWWk4eE16Z3pPREEyTXpVNU9UWTBOaTl0WldScFlYTmZNVEF3TVRFeU5UazFNVjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dOelF3TWpRdWFuQm58MzA3MWViYjM3MmZlOWZmYjVjNjZhOTgzZGY3ZTg3ZjNkZTg5NGJmMzFjMWEyOGFjZDAwYjE3MjY1YWVmMmI3OA&feedId=58083&k=4d8ed835e6d511b95d9831b48d9d5a417b1071d7",
-        sizes: ["41", "43", "44", "44.5", "45.5", "46"],
+        sizes: ["41", "44", "45.5", "46"],
       },
       {
         store: "Pro:Direct ES",
@@ -96847,15 +96877,6 @@ const minedBootProductsChunk15: BootProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib4478-001-chaussures-de-football-nike-tiempo-maestro-academy-sg-noir-noir-illusion-green",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ib4478-001-noir-noir-illusion-green-6aa55fdf35377-1.webp",
         sizes: ["39", "40.5", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
-      },
-      {
-        store: "ForumSport",
-        price: 63.89,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45803613730&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126039-00-P-X-20260708154308.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQxNnxpbWFnZS9qcGVnfGFEUTFMMmhoTVM4eE16ZzRNRFF4TVRneE5UazJOaTl0WldScFlYTmZNVEF3TVRFeU5qQXpPVjh3TUY5UVgxZ3RNakF5TmpBM01EZ3hOVFF6TURndWFuQm58N2U0MTUwMGI0ZmU5YTA2ZmQwYzFhNzZmOTZmMmE5NThjOTE2OWI1NGE2YTAyOTExMTcxYTYxOGI3N2JhNTFlYQ&feedId=58083&k=609a69adac9aaf782fd94629e1b6d8025992f69f",
-        sizes: ["38", "39", "40.5", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
       },
     ],
   },
@@ -97005,9 +97026,9 @@ const minedBootProductsChunk15: BootProduct[] = [
         price: 43.79,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45374509973&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45365873184&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125957-00-P-X-20260619074024.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI4NnxpbWFnZS9qcGVnfGFEUmxMMmhpWmk4eE16Z3pPREEyTkRnME5EZ3pNQzl0WldScFlYTmZNVEF3TVRFeU5UazFOMTh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dOelF3TWpRdWFuQm58ZDk3YTg4ZTc5YTRiNDQyYTYzZDAxNzM1MjQ1ZmE5MmFlZmNmYjEwZTQ4ZmQ4YjFkMTc5NTdlODY3Mzc2MWI5MA&feedId=58083&k=98ea15534ff49ab903e349f27ff983577c328d9b",
-        sizes: ["36.5", "37.5", "38", "40.5", "44.5", "45.5", "46", "47"],
+        sizes: ["36.5", "37.5", "38", "38.5", "39", "40", "43", "44.5", "45.5", "46", "47", "47.5"],
       },
       {
         store: "Pro:Direct ES",
@@ -97093,7 +97114,7 @@ const minedBootProductsChunk15: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45586032760&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103677-00-P-X-20260619074024.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTE5NXxpbWFnZS9qcGVnfGFEbGhMMmd6Tnk4eE16Z3pPREEwTWpJek5Ea3hNQzl0WldScFlYTmZNVEF3TVRFd016WTNOMTh3TUY5UVgxZ3RNakF5TmpBMk1Ua3dOelF3TWpRdWFuQm58NTUxNmU1MjZkZjY3YTYwOTgyYWEwNDExMjVlMzJkZmY5N2ZkYTg0NDczM2ZkZTQxM2NhOWMxZjNlYjNkZjc5Ng&feedId=58083&k=1d4b6058926561afa5c17f0df1365dc1a9208bd0",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "45", "46", "47"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "45", "46"],
       },
       {
         store: "Pro:Direct ES",
@@ -97773,6 +97794,15 @@ const minedBootProductsChunk15: BootProduct[] = [
         sizes: ["44", "45", "45.5", "46", "47", "47.5"],
       },
       {
+        store: "ForumSport",
+        price: 119.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44036500714&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001078984-00-P-X-20260219115345.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY3MXxpbWFnZS9qcGVnfGFEa3lMMmhpTUM4eE16VTRPVEUxT1Rjd05qWTFOQzl0WldScFlYTmZNVEF3TVRBM09EazRORjh3TUY5UVgxZ3RNakF5TmpBeU1Ua3hNVFV6TkRVdWFuQm58MzYxMTVlYjFmYjQ4ZjkxZGNmNDkyYzRkNDI5N2QyNDczYzZjZjlmMWE3ZmExYmIyZjI0MjhjODNjMTZjODQ2MQ&feedId=58083&k=b0f2df0f82d05502bdf5ff60b395ed7b2567f5e6",
+        sizes: ["46", "47.5"],
+      },
+      {
         store: "Pro:Direct ES",
         price: 100.0,
         shipping: 3.62,
@@ -98067,7 +98097,7 @@ const minedBootProductsChunk15: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46196971280&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118804-00-P-X-20260922093139.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTM0MXxpbWFnZS9qcGVnfGFERTVMMmczTVM4eE5EQXpNalU0TURnM01ERTNOQzl0WldScFlYTmZNVEF3TVRFeE9EZ3dORjh3TUY5UVgxZ3RNakF5TmpBNU1qSXdPVE14TXprdWFuQm58ZGQ5NjBmZmIxNjQ0YWQwMzEyOTczMDM0ODUxYmZhMTYxNGMxM2U1MmQ4YmJjYmUxMGVkMTc5MDM5OWY2NjZmYg&feedId=58083&k=33a7b35511fb524edc09babdf36dd177a91fcc8a",
-        sizes: ["42.5", "43", "44", "44.5", "45", "45.5", "46", "47.5"],
+        sizes: ["42.5", "43", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -98138,7 +98168,7 @@ const minedBootProductsChunk15: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45830729592&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103671-00-P-X-20260624110600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzUwM3xpbWFnZS9qcGVnfGFEYzFMMmhpTnk4eE16ZzBPVFV3T1RFNU9Ua3dNaTl0WldScFlYTmZNVEF3TVRFd016WTNNVjh3TUY5UVgxZ3RNakF5TmpBMk1qUXhNVEEyTURBdWFuQm58YmRjOGQ0YWFjODVhNDFkMTNkYzI3ODU0ZjRmYmJiMDhiNDM0ODBkNzA3N2I3MWZkNmE2OTY0MzViOWUxMDEyZg&feedId=58083&k=edea5f375ff04a6832eece8b28ad2956d252fc12",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47.5"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
       },
       {
         store: "Pro:Direct ES",
@@ -98483,7 +98513,7 @@ const minedBootProductsChunk15: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45843266646&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091598-00-P-X-20260414145307.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA3OHxpbWFnZS9qcGVnfGFEbGhMMmhoWVM4eE16WTVPRFUyTkRNNU1EazBNaTl0WldScFlYTmZNVEF3TVRBNU1UVTVPRjh3TUY5UVgxZ3RNakF5TmpBME1UUXhORFV6TURjdWFuQm58YzVjOGFjNDkyM2FlYjk3ZGI2ZTJhZGUwMzcxYTUzYWIyODcyYTVlMmY4YmU1MzhjYTJiOGMxODFiMWFhZDc0OA&feedId=58083&k=dbd41153a067bdf6f586ef94e5afc88ff6b8bd15",
-        sizes: ["40", "40.5", "41"],
+        sizes: ["40", "40.5", "41", "43"],
       },
     ],
   },
@@ -99964,6 +99994,15 @@ const minedBootProductsChunk15: BootProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-io1486-600-bright-crimson-blur-6ab2a27a14236-1.jpg&feedId=89032&k=4efc5abb3dc40869cb56379d7144495a2b86913e",
         sizes: ["27.5"],
       },
+      {
+        store: "FootStoreFR",
+        price: 36.77,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-600-chaussures-de-football-bebe-garcon-nike-17-club-ps-ag-bright-crimson-blur",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-600-bright-crimson-blur-6ab2a27a14236-1.webp",
+        sizes: ["27.5"],
+      },
     ],
   },
   {
@@ -100094,20 +100133,11 @@ const minedBootProductsChunk15: BootProduct[] = [
       {
         store: "FootStoreFR",
         price: 41.0,
-        priceMax: 41.64,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-bebe-garcon-nike-tiempo-maestro-flex-tf-black-black-volt",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ib5030-007-black-black-volt-3.webp",
-        sizes: ["27.5", "28", "28.5", "29.5", "31", "31.5"],
-        sizePrices: [
-          { size: "27.5", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
-          { size: "28", price: 41.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
-          { size: "28.5", price: 41.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
-          { size: "29.5", price: 41.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
-          { size: "31", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
-          { size: "31.5", price: 41.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
-        ],
+        sizes: ["25", "25.5", "26.5"],
       },
     ],
   },
@@ -100414,9 +100444,9 @@ const minedBootProductsChunk15: BootProduct[] = [
         price: 36.77,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-600-chaussures-de-football-bebe-garcon-nike-17-club-ps-ag-bright-crimson-blur",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-600-bright-crimson-blur-6ab2a27a14236-1.webp",
-        sizes: ["27.5"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-600-chaussures-de-football-enfant-nike-17-club-ps-ag-bright-crimson-blur",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-600-bright-crimson-blur-6ab2a291d2129-1.webp",
+        sizes: ["28.5", "30", "31.5"],
       },
     ],
   },
@@ -104477,7 +104507,7 @@ const minedBootProductsChunk16: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45247785511&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091595-00-P-X-20260529134249.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTU2OXxpbWFnZS9qcGVnfGFHTmpMMmhpWWk4eE16YzVOalkzT0RnNU16VTVPQzl0WldScFlYTmZNVEF3TVRBNU1UVTVOVjh3TUY5UVgxZ3RNakF5TmpBMU1qa3hNelF5TkRrdWFuQm58ZTY0MThhYWUyZWMxMzMzNGZhYWNhMjI4MmFiN2M1NDEzYzdiYjI4ZmU1NTlhNDMyMTdhYzI0MDdiYmI0Y2YxZg&feedId=58083&k=6a0152d9ba7bcaf524f92ae590a00b64c6088fc6",
-        sizes: ["32", "33", "33.5", "34", "35", "35.5", "36.5", "38", "38.5"],
+        sizes: ["32", "33", "33.5", "34", "35", "35.5", "36.5", "38"],
       },
     ],
   },
@@ -106125,7 +106155,7 @@ const minedBootProductsChunk16: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46346067317&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118829-00-P-X-20260624154432.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDA2MHxpbWFnZS9qcGVnfGFHUTNMMmd6WXk4eE16ZzFNREE1TXpNNE56Z3dOaTl0WldScFlYTmZNVEF3TVRFeE9EZ3lPVjh3TUY5UVgxZ3RNakF5TmpBMk1qUXhOVFEwTXpJdWFuQm58ZmYwZDhlMzY1YWEzY2M0YzM5YzIxOThmZDRjMTBjZWY1NGVlZTJlZGJkNjQ0YjNjM2M3YzdlYjFjMmRjZWQ1Ng&feedId=58083&k=da4875fa23230fb63e1b8da213ee8301514b470d",
-        sizes: ["33", "34", "35", "35.5", "36", "36.5", "37.5", "38", "38.5"],
+        sizes: ["32", "33", "33.5", "34", "35", "35.5", "36", "36.5", "37.5", "38", "38.5"],
       },
     ],
   },
@@ -110961,6 +110991,24 @@ const minedBootProductsChunk17: BootProduct[] = [
           { size: "31.5", price: 42.35, url: "https://www.awin1.com/pclick.php?p=46183231752&a=3013769&m=65912" },
         ],
       },
+      {
+        store: "FootStoreFR",
+        price: 41.0,
+        priceMax: 41.64,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ib5030-007-black-black-volt-3.webp",
+        sizes: ["27.5", "28", "28.5", "29.5", "31", "31.5"],
+        sizePrices: [
+          { size: "27.5", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
+          { size: "28", price: 41.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
+          { size: "28.5", price: 41.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
+          { size: "29.5", price: 41.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
+          { size: "31", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
+          { size: "31.5", price: 41.64, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-enfant-nike-tiempo-maestro-flex-tf-black-black-volt" },
+        ],
+      },
     ],
   },
   {
@@ -112099,7 +112147,7 @@ const minedBootProductsChunk17: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45187774079&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103743-00-P-X-20260630155044.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODUxOHxpbWFnZS9qcGVnfGFETTNMMmcwTkM4eE16ZzJNakUxTnpBMU9EQTNPQzl0WldScFlYTmZNVEF3TVRFd016YzBNMTh3TUY5UVgxZ3RNakF5TmpBMk16QXhOVFV3TkRRdWFuQm58ZGQ3YjcxMDdlYWE4ZTc3ODg0NGI3ZTNjMWM5MzZmNDhhZTdlYWRmYmYyOGQ2YWZmMTkzZWRlN2JlOWEyZjUxMQ&feedId=58083&k=546fc4b778c333546547f69f7dbefb312c9ffdb0",
-        sizes: ["36", "37.5", "38.5"],
+        sizes: ["36", "37.5", "38", "38.5"],
       },
     ],
   },
@@ -118709,6 +118757,55 @@ const minedBootProductsChunk18: BootProduct[] = [
     ],
   },
   {
+    id: "footstorefr-adidas-adidas-f50-hyperfast-club-fg-mg-mg-ninos",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast Club FG/MG",
+    groundType: "MG",
+    ageGroup: "kids",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 38.65,
+        priceMax: 39.29,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-bebe-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kk1345_1_footwear_photography_side_lateral_center_view_white.webp",
+        sizes: ["25", "25.5", "26", "27"],
+        sizePrices: [
+          { size: "25", price: 39.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-bebe-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
+          { size: "25.5", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-bebe-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
+          { size: "26", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-bebe-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
+          { size: "27", price: 39.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1345-chaussures-de-football-bebe-adidas-f50-hyperfast-club-fg-mg-ftwbla-viosol-tursol" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "footstorefr-adidas-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-fg-ninos",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast Club Hook And Loop FG/MG",
+    groundType: "FG",
+    ageGroup: "kids",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 31.49,
+        priceMax: 38.65,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-enfant-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl",
+        imageUrl: "https://cdn.blazimg.com/1800/product/k/k/kk1342.webp",
+        sizes: ["28.5", "30.5", "31.5"],
+        sizePrices: [
+          { size: "28.5", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-enfant-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl" },
+          { size: "30.5", price: 31.49, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-enfant-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl" },
+          { size: "31.5", price: 38.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-enfant-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl" },
+        ],
+      },
+    ],
+  },
+  {
     id: "footstorefr-adidas-adidas-f50-league-as",
     brand: "adidas",
     model: "adidas F50 League AS",
@@ -119006,24 +119103,6 @@ const minedBootProductsChunk18: BootProduct[] = [
     ],
   },
   {
-    id: "footstorefr-hummel-hummel-top-star-i-c-vc-2-0-ic-ic-ninos",
-    brand: "Hummel",
-    model: "Hummel Top Star I.C. VC 2.0 IC",
-    groundType: "IC",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 31.46,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-enfant-hummel-top-star-i-c-vc-2-0-ic-black-silver",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-2250-black-silver-3.webp",
-        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
-      },
-    ],
-  },
-  {
     id: "footstorefr-hummel-hummel-top-star-vc-2-0-i-c-ic-ninos",
     brand: "Hummel",
     model: "Hummel Top Star VC 2.0 I.C",
@@ -119038,24 +119117,6 @@ const minedBootProductsChunk18: BootProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-3638-chaussures-de-football-bebe-hummel-top-star-vc-2-0-i-c-pink-a-boo",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-3638-pink-a-boo-6.webp",
         sizes: ["26"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-hummel-hummel-top-star-vc-2-0-turf-ninos",
-    brand: "Hummel",
-    model: "Hummel Top Star VC 2.0 Turf",
-    groundType: "",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 31.46,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-9639-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-white-multicolor",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234863-9639-white-multicolor-5.webp",
-        sizes: ["24", "25", "26"],
       },
     ],
   },
@@ -119804,24 +119865,6 @@ const minedBootProductsChunk19: BootProduct[] = [
         url: "https://www.prodirectsport.es/products/nike-air-zoom-mercurial-vapor-xvii-academy-soft-ground-pro-anti-clog-negro-verde-ilusion-negro-botas-para-adultos-4002049",
         imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4002049_main.jpg?v=1793227594",
         sizes: ["40.5", "41", "42.5", "43", "44", "44.5", "45", "45.5"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-nike-nike-17-club-ps-ag-ag-ninos",
-    brand: "Nike",
-    model: "Nike 17 Club PS AG",
-    groundType: "AG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 36.77,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-600-chaussures-de-football-enfant-nike-17-club-ps-ag-bright-crimson-blur",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-600-bright-crimson-blur-6ab2a291d2129-1.webp",
-        sizes: ["28.5", "30", "31.5"],
       },
     ],
   },
@@ -120799,24 +120842,6 @@ const minedBootProductsChunk19: BootProduct[] = [
     ],
   },
   {
-    id: "footstorefr-nike-nike-tiempo-maestro-flex-tf-tf-ninos",
-    brand: "Nike",
-    model: "Nike Tiempo Maestro Flex TF",
-    groundType: "TF",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 41.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib5030-007-chaussures-de-football-bebe-garcon-nike-tiempo-maestro-flex-tf-black-black-volt",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-ib5030-007-black-black-volt-3.webp",
-        sizes: ["25", "25.5", "26.5"],
-      },
-    ],
-  },
-  {
     id: "footstorefr-nike-nike-tiempo-streetgato-ic-ic-ninos",
     brand: "Nike",
     model: "Nike Tiempo Streetgato IC",
@@ -121042,6 +121067,24 @@ const minedBootProductsChunk19: BootProduct[] = [
     ],
   },
   {
+    id: "forumsport-adidas-adidas-copa-club-tf-tf-ninos",
+    brand: "Adidas",
+    model: "Adidas Copa Club TF",
+    groundType: "TF",
+    ageGroup: "kids",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 33.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46473249271&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075111-00-P-X-20260102153706.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTk3NXxpbWFnZS9qcGVnfGFEVmhMMmc0TWk4eE16UTJOREV4T1RVM05EVTFPQzl0WldScFlYTmZNVEF3TVRBM05URXhNVjh3TUY5UVgxZ3RNakF5TmpBeE1ESXhOVE0zTURZdWFuQm58YWNhNWZkNzk4ODliNjJiM2NkMzdkNjE5YzJlNWFkYjhiODRmMjhhYzI2ZTg3NWU5ZDkzNGYzODUyMGQ5ODU1Ng&feedId=58083&k=7a1f95c9c2cb1a33f9c7f8427083a9ce1ca04fe3",
+        sizes: ["29", "35"],
+      },
+    ],
+  },
+  {
     id: "forumsport-adidas-adidas-copa-pure-club-in-ic-ninos-kj1426",
     brand: "Adidas",
     model: "Adidas Copa Pure Club IN",
@@ -121108,23 +121151,6 @@ const minedBootProductsChunk19: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46103489232&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001017812-00-P-X-20250107161339.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDgxOXxpbWFnZS9qcGVnfGFEWmtMMmcxWmk4eE1qWTFORGM0TWprd05qTTVPQzl0WldScFlYTmZNVEF3TVRBeE56Z3hNbDh3TUY5UVgxZ3RNakF5TlRBeE1EY3hOakV6TXprdWFuQm58YzVlNzkzOTA5ZjQxMjljNTVmNWFkZTAxNzViODYxYzJkODAzZDkxZDkzYjgyY2UwYzc3NmU0MTBmNjZiYWQ1Zg&feedId=58083&k=57831c7753b8859752c7470b4da62fb32a2509b9",
         sizes: ["42 2/3"],
-      },
-    ],
-  },
-  {
-    id: "forumsport-adidas-adidas-copa-pure-iii-elite-2g-3g-artificial-ground-ag",
-    brand: "Adidas",
-    model: "Adidas Copa Pure III Elite 2g/3g Artificial Ground",
-    groundType: "AG",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 167.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46237076236&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087679-00-P-X-20250805111552.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTEyMXxpbWFnZS9qcGVnfGFHVXlMMmhoTlM4eE16RXdNREkxT0RJMk16QTNNQzl0WldScFlYTmZNVEF3TVRBNE56WTNPVjh3TUY5UVgxZ3RNakF5TlRBNE1EVXhNVEUxTlRJdWFuQm58ZDE5MGMxYmMxNTM3Yjc2MzkxZDk4ZmRhNzQzZDJlNTZhYjBlMWE5YzQ2MTJmZjJhZDcwMzdkMzkwODllOTEwYQ&feedId=58083&k=548b6acbecf7a1fc319ce635a88030e1a80e0051",
-        sizes: ["42"],
       },
     ],
   },
@@ -121353,7 +121379,7 @@ const minedBootProductsChunk19: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45854599879&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001017799-00-P-X-20250120164002.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzE3NXxpbWFnZS9qcGVnfGFHSmxMMmc1Tnk4eE1qWTVNRFV5TXpjeE56WTJNaTl0WldScFlYTmZNVEF3TVRBeE56YzVPVjh3TUY5UVgxZ3RNakF5TlRBeE1qQXhOalF3TURJdWFuQm58YzFjOWQ4ZTU5ZmJjODllZWQ1MzM4NzJjODNmYjU1YzczYTMyZDA3NmUyMjZkMjQ1MWE3YzA4MmJlMjA5NDgxNw&feedId=58083&k=ab2c8ae3fab82f805f706af2e197fd4f6743212a",
-        sizes: ["28", "30", "36 2/3"],
+        sizes: ["28", "30", "35", "36 2/3"],
       },
     ],
   },
@@ -122041,6 +122067,23 @@ const minedBootProductsChunk19: BootProduct[] = [
     ],
   },
   {
+    id: "forumsport-adidas-adidas-predator-elite-ag-ag",
+    brand: "Adidas",
+    model: "Adidas Predator Elite AG",
+    groundType: "AG",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 155.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46473248874&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000974346-00-P-X-20240521165515.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzI5OXxpbWFnZS9qcGVnfGFHSTRMMmcwTmk4eE1qRTFNalV3T1RRNU56TTNOQzl0WldScFlYTmZNVEF3TURrM05ETTBObDh3TUY5UVgxZ3RNakF5TkRBMU1qRXhOalUxTVRVdWFuQm58ZTA3ZTMyODc3NjA5MTE1YTkzYjZiOWJkZTFiZDhlYjYwNmVlMGE0NzM5Y2IxOWMxODkzZjc3NmVkODVlYjdkNw&feedId=58083&k=6aa10904a8091e187bb25097d30fdb747340c7dc",
+        sizes: ["44"],
+      },
+    ],
+  },
+  {
     id: "forumsport-adidas-adidas-predator-elite-ft-ag-ag",
     brand: "Adidas",
     model: "Adidas Predator Elite Ft AG",
@@ -122053,7 +122096,7 @@ const minedBootProductsChunk19: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44497495513&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001017814-00-P-X-20250107161339.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM2OHxpbWFnZS9qcGVnfGFHRTVMMmczTmk4eE1qWTFORGM0TlRNNU5qYzJOaTl0WldScFlYTmZNVEF3TVRBeE56Z3hORjh3TUY5UVgxZ3RNakF5TlRBeE1EY3hOakV6TXprdWFuQm58NjM1YWRhYzc2NDg3ZmJhYWY4MjZiYWI4MmM3N2I3MjFmODdmOTczODRhMmZiYTI0MTEwY2FlMmYxNTk2ZGFhMQ&feedId=58083&k=4ae9eb3d5cbb4572f4d5b0e63f776b0edb0c4a38",
-        sizes: ["41 1/3"],
+        sizes: ["41 1/3", "43 1/3"],
       },
     ],
   },
@@ -122127,23 +122170,6 @@ const minedBootProductsChunk19: BootProduct[] = [
     ],
   },
   {
-    id: "forumsport-adidas-adidas-predator-league-ft-ag-ag",
-    brand: "Adidas",
-    model: "Adidas Predator League Ft AG",
-    groundType: "AG",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 69.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45954917027&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001070637-00-P-X-20251114084043.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU1NHxpbWFnZS9qcGVnfGFETXhMMmcyWWk4eE16TXhNRFkwTURBeU9UY3lOaTl0WldScFlYTmZNVEF3TVRBM01EWXpOMTh3TUY5UVgxZ3RNakF5TlRFeE1UUXdPRFF3TkRNdWFuQm58MmQxZWU1ODA4NzYwOGU3MzQ5ODA4ZjMzMGNiN2VjNTFiODM2M2Y0N2NiMGE3MGI3NjY1NGI2ZWFkYTA1Zjk4Yw&feedId=58083&k=ad637b996fa3b024fe6a218c69d08ef4dbecf29d",
-        sizes: ["44"],
-      },
-    ],
-  },
-  {
     id: "forumsport-adidas-adidas-predator-league-ft-fg-mg-fg",
     brand: "Adidas",
     model: "Adidas Predator League Ft FG/MG",
@@ -122191,7 +122217,7 @@ const minedBootProductsChunk19: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46390646785&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000974341-00-P-X-20240611134343.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU1NnxpbWFnZS9qcGVnfGFHWXpMMmczT1M4eE1qRTVNakkyTnpZNU9ESXdOaTl0WldScFlYTmZNVEF3TURrM05ETTBNVjh3TUY5UVgxZ3RNakF5TkRBMk1URXhNelF6TkRNdWFuQm58Yjc0MDQ0ODE3MWExNjcwYWFlZTE5N2Q0YTE2ZTZiZDlmNGE3MmNjNjdiMTI4ZDM4MzVkN2ZmMWZiOTc2OTVkNg&feedId=58083&k=391e21977bbe3ce3ec7f58ab5ced0a1fe5046500",
-        sizes: ["42", "44"],
+        sizes: ["42"],
       },
     ],
   },
@@ -122766,9 +122792,6 @@ const minedBootProductsChunk19: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk20: BootProduct[] = [
   {
     id: "forumsport-joma-joma-toledo-tf-infantil-tf-ninos",
     brand: "Joma",
@@ -122804,6 +122827,9 @@ const minedBootProductsChunk20: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk20: BootProduct[] = [
   {
     id: "forumsport-mizuno-mizuno-alpha-ii-japan-ag",
     brand: "Mizuno",
@@ -123412,9 +123438,9 @@ const minedBootProductsChunk20: BootProduct[] = [
         price: 39.89,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46237075884&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001081038-00-P-X-20260204123809.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjUyMnxpbWFnZS9qcGVnfGFESmpMMmcyT0M4eE16VTBOREV6TmpRME1UZzROaTl0WldScFlYTmZNVEF3TVRBNE1UQXpPRjh3TUY5UVgxZ3RNakF5TmpBeU1EUXhNak00TURrdWFuQm58ZjhjMjdiNTZkZmZkNjMzODc1YWE2NjEyYTY2ZWVjMGZlNzM1MDU2NTJlNDA1NWVhYWNiMTJlNzFhZDRiNGU3ZQ&feedId=58083&k=8660900ec03960beb682e6985ecc5dd6b72b157d",
-        sizes: ["33", "38"],
+        url: "https://www.awin1.com/pclick.php?p=46237075912&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001081039-00-P-X-20260204123809.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzczOXxpbWFnZS9qcGVnfGFHVTVMMmd3T0M4eE16VTBOREV6TnpZNE56QTNNQzl0WldScFlYTmZNVEF3TVRBNE1UQXpPVjh3TUY5UVgxZ3RNakF5TmpBeU1EUXhNak00TURrdWFuQm58OGYwYTA0N2M1YzFjNWVkMTFlYzIyYWJlMjRjYmQ2ODMyNWNiNDE1MmIwYjYxNDYyODk1NTg2OTA3ODk0MzI3MQ&feedId=58083&k=90b2cec149be51f138f90ce72bb932762f6b23c6",
+        sizes: ["33", "34", "37"],
       },
     ],
   },
@@ -123430,9 +123456,9 @@ const minedBootProductsChunk20: BootProduct[] = [
         price: 39.89,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46237075912&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001081039-00-P-X-20260204123809.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzczOXxpbWFnZS9qcGVnfGFHVTVMMmd3T0M4eE16VTBOREV6TnpZNE56QTNNQzl0WldScFlYTmZNVEF3TVRBNE1UQXpPVjh3TUY5UVgxZ3RNakF5TmpBeU1EUXhNak00TURrdWFuQm58OGYwYTA0N2M1YzFjNWVkMTFlYzIyYWJlMjRjYmQ2ODMyNWNiNDE1MmIwYjYxNDYyODk1NTg2OTA3ODk0MzI3MQ&feedId=58083&k=90b2cec149be51f138f90ce72bb932762f6b23c6",
-        sizes: ["33", "34", "37"],
+        url: "https://www.awin1.com/pclick.php?p=46237075924&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001081038-00-P-X-20260204123809.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjUyMnxpbWFnZS9qcGVnfGFESmpMMmcyT0M4eE16VTBOREV6TmpRME1UZzROaTl0WldScFlYTmZNVEF3TVRBNE1UQXpPRjh3TUY5UVgxZ3RNakF5TmpBeU1EUXhNak00TURrdWFuQm58ZjhjMjdiNTZkZmZkNjMzODc1YWE2NjEyYTY2ZWVjMGZlNzM1MDU2NTJlNDA1NWVhYWNiMTJlNzFhZDRiNGU3ZQ&feedId=58083&k=8660900ec03960beb682e6985ecc5dd6b72b157d",
+        sizes: ["33"],
       },
     ],
   },
@@ -125242,23 +125268,6 @@ const minedBootProductsChunk20: BootProduct[] = [
     ],
   },
   {
-    id: "forumsport-nike-nike-mercurial-superfly-10-academy-ag-ag",
-    brand: "Nike",
-    model: "Nike Mercurial Superfly 10 Academy AG",
-    groundType: "AG",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 67.89,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45849118856&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053702-00-P-X-20250703160045.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY0NXxpbWFnZS9qcGVnfGFEVTFMMmcyTUM4eE16QXpNVEE1TURNNE9UQXlNaTl0WldScFlYTmZNVEF3TVRBMU16Y3dNbDh3TUY5UVgxZ3RNakF5TlRBM01ETXhOakF3TkRVdWFuQm58Zjk2YjdjZThkMzFkNTQxNWJiYWM1OGUzZDkyYzVhMTBjNWM0ODk3NTNjNGRhMmUyMTA2MmZjY2ZkYTVkMzg5Yw&feedId=58083&k=860b82f80378376320743ef0ac6484532d9027bf",
-        sizes: ["40"],
-      },
-    ],
-  },
-  {
     id: "forumsport-nike-nike-mercurial-superfly-10-academy-ic-ic-ninos",
     brand: "Nike",
     model: "Nike Mercurial Superfly 10 Academy IC",
@@ -125272,7 +125281,7 @@ const minedBootProductsChunk20: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46258196117&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001078960-00-P-X-20251216150737.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTIzMXxpbWFnZS9qcGVnfGFHWmhMMmd6WVM4eE16UXhNalF5T0RnME1EazVNQzl0WldScFlYTmZNVEF3TVRBM09EazJNRjh3TUY5UVgxZ3RNakF5TlRFeU1UWXhOVEEzTXpjdWFuQm58ZWU2ZDVjYjBjM2ZmZWI2ZjNiZmE5NDcyZDExODIwM2Y4NTU4MzkxZWNhNzcwMjg2YjVjNmZlYmE2MzE1ZGMxNw&feedId=58083&k=820a545e0d3c4e10da582728391a35269bc9660d",
-        sizes: ["36.5", "37.5", "38", "38.5"],
+        sizes: ["36", "36.5", "37.5", "38", "38.5"],
       },
     ],
   },
@@ -125605,7 +125614,7 @@ const minedBootProductsChunk20: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44844150938&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068843-00-P-X-20250929133824.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ1M3xpbWFnZS9qcGVnfGFHSmhMMmhtWmk4eE16SXhORFkzTmpjME5qSTNNQzl0WldScFlYTmZNVEF3TVRBMk9EZzBNMTh3TUY5UVgxZ3RNakF5TlRBNU1qa3hNek00TWpRdWFuQm58YTkzMDgyZDFjODE3YWMyYTg5YzEyZjE4NjQ2ZmFiYjE5MzM2Njc4Y2NkMmY3ZTQxYzZjOGYyOTQwNWNmMzcxOQ&feedId=58083&k=74a3a970b74c088e96a48039061e3055ace6f7e0",
-        sizes: ["42", "43", "44.5", "45", "45.5"],
+        sizes: ["39", "42", "43", "44.5", "45", "45.5"],
       },
     ],
   },
@@ -125751,9 +125760,9 @@ const minedBootProductsChunk20: BootProduct[] = [
         price: 99.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46394664807&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46394664940&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001127653-00-P-X-20261019155418.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzIxMXxpbWFnZS9qcGVnfGFHUTNMMmczTUM4eE5EQTROamt5TWpVek5EazBNaTl0WldScFlYTmZNVEF3TVRFeU56WTFNMTh3TUY5UVgxZ3RNakF5TmpFd01Ua3hOVFUwTVRndWFuQm58YTZhNDJmNmM0MDcxNzU1ZjZjMzAxMTdmYTE3ODAzMjg1NTE1YjlmMmY5OTYyYTJiNjMyNzEyYTNmYzI2M2U2NQ&feedId=58083&k=4fa44fb0240f70b3499c2cdd54f8bf420d956296",
-        sizes: ["37.5", "38", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47"],
+        sizes: ["44"],
       },
       {
         store: "Pro:Direct ES",
@@ -125795,9 +125804,9 @@ const minedBootProductsChunk20: BootProduct[] = [
         price: 53.12,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45831622346&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45831622349&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103655-00-P-X-20260727160640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODcyMHxpbWFnZS9qcGVnfGFEbGtMMmd3Tmk4eE16a3hOekkwTVRRM05URXdNaTl0WldScFlYTmZNVEF3TVRFd016WTFOVjh3TUY5UVgxZ3RNakF5TmpBM01qY3hOakEyTkRBdWFuQm58MDJhY2E0Y2IzYmE3Y2I3NDU3N2QwNTUzODQ3MjM3NmUzNGQxZmRiNzRiOTBkM2MwNDJlZmNjOWNiZGI5NjdhZQ&feedId=58083&k=3697b0c0715d362ab6e6fb7cc5284b3f954a98f2",
-        sizes: ["32", "35.5", "36", "38", "38.5"],
+        sizes: ["32", "35.5", "38", "38.5"],
       },
     ],
   },
@@ -125922,9 +125931,6 @@ const minedBootProductsChunk20: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk21: BootProduct[] = [
   {
     id: "forumsport-nike-nike-phantom-6-low-acad-ic-ic",
     brand: "Nike",
@@ -125977,6 +125983,9 @@ const minedBootProductsChunk21: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk21: BootProduct[] = [
   {
     id: "forumsport-nike-nike-phantom-6-low-academy-ic-ic-ninos",
     brand: "Nike",
@@ -126151,7 +126160,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46230523166&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118822-00-P-X-20260928135211.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc4OXxpbWFnZS9qcGVnfGFEbGhMMmhrWlM4eE5EQTBORFl5TXpJME1USTBOaTl0WldScFlYTmZNVEF3TVRFeE9EZ3lNbDh3TUY5UVgxZ3RNakF5TmpBNU1qZ3hNelV5TVRFdWFuQm58NWExOGU4NDA1Yjk4YjMwMTQzNzgwNWM0ZjY3ZDhjMDUyYTEyYjYyYTg0YjcyM2YwYmRjYzYwYTVhMTgwYWI4Yw&feedId=58083&k=e6de26a11fcbedaa6c74e483d15f450741186d32",
-        sizes: ["39", "40", "40.5", "41", "43", "44", "44.5", "45.5", "46", "47", "47.5"],
+        sizes: ["39", "40", "40.5", "41", "42.5", "43", "44", "44.5", "45.5", "46", "47", "47.5"],
       },
       {
         store: "Pro:Direct ES",
@@ -126536,23 +126545,6 @@ const minedBootProductsChunk21: BootProduct[] = [
     ],
   },
   {
-    id: "forumsport-nike-nike-tiempo-maestro-acad-fg-mg-nu4-fg",
-    brand: "Nike",
-    model: "Nike Tiempo Maestro Acad FG/MG Nu4",
-    groundType: "FG",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 89.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46394664937&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001127664-00-P-X-20261019155418.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTQ0N3xpbWFnZS9qcGVnfGFHWTNMMmd4TkM4eE5EQTROamt5TmpRMk56RXdNaTl0WldScFlYTmZNVEF3TVRFeU56WTJORjh3TUY5UVgxZ3RNakF5TmpFd01Ua3hOVFUwTVRndWFuQm58MDc1OGRhN2NiZjE4NTk4ZGM2ODJlM2RjZmYyOTA5OWRhMWZjY2M0YjBlYmNkYTYzOTRmZWZhNzgxMTc2MGMwZg&feedId=58083&k=306b02a49fcdd8274bea0e121b0507fd38d8efab",
-        sizes: ["40", "42", "43"],
-      },
-    ],
-  },
-  {
     id: "forumsport-nike-nike-tiempo-maestro-academy-fg-mg-fg",
     brand: "Nike",
     model: "Nike Tiempo Maestro Academy FG/MG",
@@ -126563,9 +126555,9 @@ const minedBootProductsChunk21: BootProduct[] = [
         price: 80.9,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46196971827&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46196971884&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001127079-00-P-X-20260922093139.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODcwNnxpbWFnZS9qcGVnfGFEZGpMMmhqT0M4eE5EQXpNalkyTXpnM01UVXhPQzl0WldScFlYTmZNVEF3TVRFeU56QTNPVjh3TUY5UVgxZ3RNakF5TmpBNU1qSXdPVE14TXprdWFuQm58MTIxZGIxYWU0YzkwNjNkODE5NmJkOGNjYzZlNWU0ZDk4OTEyMGI4MDA2NDQ2YjYxOTUzMTcyMmFkY2Y0YTY3OQ&feedId=58083&k=1bbedc3428db0b02242cff91da0f6b259cdf2297",
-        sizes: ["40.5", "45.5", "46", "47", "47.5"],
+        sizes: ["46"],
       },
     ],
   },
@@ -126644,7 +126636,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43577716687&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001078994-00-P-X-20260112172206.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NjM0NHxpbWFnZS9qcGVnfGFEVTJMMmhqWXk4eE16UTVNVEU1TWpFd01qazBNaTl0WldScFlYTmZNVEF3TVRBM09EazVORjh3TUY5UVgxZ3RNakF5TmpBeE1USXhOekl5TURZdWFuQm58NDg2MjZhZjM0YWZjNGQ4ZTljMWM1ZmJjMTYzMTI1NTJiZTU1MzUwMGM5NTYxYjY2OGZiMzgzNDlhMDhhOGQ3MQ&feedId=58083&k=aac68ab8d9740b69b9dcae5770bf293da2020740",
-        sizes: ["35.5", "38"],
+        sizes: ["35.5", "37.5", "38"],
       },
     ],
   },
@@ -126731,7 +126723,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46394664806&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001127840-00-P-X-20261019155418.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTYyM3xpbWFnZS9qcGVnfGFEZ3pMMmhrTXk4eE5EQTROamt6TVRRME56Z3pPQzl0WldScFlYTmZNVEF3TVRFeU56ZzBNRjh3TUY5UVgxZ3RNakF5TmpFd01Ua3hOVFUwTVRndWFuQm58ZTZmNmI3OWUwMzFmZTQ3N2YyNDVlNmIxY2VkYWI1ZmVhZjc1ZTQ3ZTEzMDdiNDJlZDRhMzU0OWM5MzVjZWNlNQ&feedId=58083&k=bf71b210fd1e6d11bcd795be7a5715e4b4fecc1e",
-        sizes: ["40", "41"],
+        sizes: ["40", "41", "46"],
       },
       {
         store: "Pro:Direct ES",
@@ -126741,6 +126733,32 @@ const minedBootProductsChunk21: BootProduct[] = [
         url: "https://www.prodirectsport.es/products/nike-tiempo-maestro-elite-artificial-grass-pro-multicolor-negro-botas-para-adultos-4006022",
         imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4006022_main.jpg?v=1793022675",
         sizes: ["40", "40.5", "42", "42.5", "43", "44", "44.5", "45", "46"],
+      },
+    ],
+  },
+  {
+    id: "forumsport-nike-nike-tiempo-maestro-elite-fg-nu4-fg",
+    brand: "Nike",
+    model: "Nike Tiempo Maestro Elite FG Nu4",
+    groundType: "FG",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 259.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46473250714&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001127663-00-P-X-20261019155418.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDQ0OHxpbWFnZS9qcGVnfGFERmxMMmcxWXk4eE5EQTROamt5TlRJeU1Ua3hPQzl0WldScFlYTmZNVEF3TVRFeU56WTJNMTh3TUY5UVgxZ3RNakF5TmpFd01Ua3hOVFUwTVRndWFuQm58M2YzMWRhMzQyNDczMTJjYmQ1NmE0Nzc2NzA4ZGQ4Mzc3NTQ1NDFmOTk3YjQ4YmU2N2ZkZmEzYjZiODE3ZWMxNA&feedId=58083&k=ee5b364542ef79ddf63113eb446877273baecf4c",
+        sizes: ["39", "40", "41", "42"],
+      },
+      {
+        store: "Pro:Direct ES",
+        price: 260.0,
+        shipping: 3.62,
+        currency: "EUR",
+        url: "https://www.prodirectsport.es/products/nike-tiempo-maestro-elite-firm-ground-multicolor-negro-botas-para-adultos-4006021",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4006021_main.jpg?v=1793209674",
+        sizes: ["36", "36.5", "37.5", "38", "38.5", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
       },
     ],
   },
@@ -126837,7 +126855,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45843265504&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001079003-00-P-X-20260224163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc0NnxpbWFnZS9qcGVnfGFHUTVMMmc1T0M4eE16WXdNREk0TmpVM01qVTNOQzl0WldScFlYTmZNVEF3TVRBM09UQXdNMTh3TUY5UVgxZ3RNakF5TmpBeU1qUXhOak14TXpNdWFuQm58MzgwNmRjYjNlOTUxYWJjMmU5NWMyNmI5ODkzYWNjMjI4NTJhNDM5M2U5MzYxNTA2NTljZmMzZjM3NjIyODhjYw&feedId=58083&k=cf2684cc9761ecf2c8453c0d056aa52e6a6ad1e0",
-        sizes: ["35.5", "36.5", "38"],
+        sizes: ["35.5", "36.5", "37.5", "38"],
       },
     ],
   },
@@ -126863,32 +126881,6 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://www.prodirectsport.es/products/nike-air-zoom-mercurial-vapor-xvii-academy-para-terreno-firme-mixto-multicolor-negro-botas-para-adultos-4006003",
         imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4006003_main.jpg?v=1793205288",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
-      },
-    ],
-  },
-  {
-    id: "forumsport-nike-nike-vapor-17-academy-tf-nu4-tf",
-    brand: "Nike",
-    model: "Nike Vapor 17 Academy TF Nu4",
-    groundType: "TF",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 96.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46394664811&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001127655-00-P-X-20261019155418.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjQyNHxpbWFnZS9qcGVnfGFHWmxMMmhsTkM4eE5EQTROamt5TXpnME5UWTJNaTl0WldScFlYTmZNVEF3TVRFeU56WTFOVjh3TUY5UVgxZ3RNakF5TmpFd01Ua3hOVFUwTVRndWFuQm58Y2MyZDMwZTQ2ODRjMTZlZDdlYzI0NTU0ZDgyNjFlMjNkMWFkOGE3MzI1NzEzNWM0OTgxNjJmY2E1Mzc0M2EyZA&feedId=58083&k=77c10aa1c366a72753ee98f0855992b5e82e17f1",
-        sizes: ["44", "44.5", "45", "45.5"],
-      },
-      {
-        store: "Pro:Direct ES",
-        price: 95.0,
-        shipping: 3.62,
-        currency: "EUR",
-        url: "https://www.prodirectsport.es/products/nike-air-zoom-mercurial-vapor-xvii-academy-turf-multicolor-negro-botas-para-adultos-4006005",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4006005_main.jpg?v=1793223716",
         sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
       },
     ],
@@ -127527,7 +127519,24 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45624386564&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001017886-00-P-X-20250313143035.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI5NHxpbWFnZS9qcGVnfGFEWmtMMmc0TlM4eE1qYzVPVEU0T1RVNE1UZzFOQzl0WldScFlYTmZNVEF3TVRBeE56ZzRObDh3TUY5UVgxZ3RNakF5TlRBek1UTXhORE13TXpVdWFuQm58MjQ1OGQxOWRiZjhhMDZlMzg3ZTAxZDM0ZTRkZTFhZTJhN2ZjMzllNjVhMzkxMDlkMTViNzVmYThmZDc3NTk1MQ&feedId=58083&k=649b9ecbd1d846df7d0ae9adcd67ad7b6a321958",
-        sizes: ["36", "37.5", "38.5"],
+        sizes: ["34", "36", "37.5", "38.5"],
+      },
+    ],
+  },
+  {
+    id: "forumsport-puma-puma-future-8-match-mxsg-fg",
+    brand: "Puma",
+    model: "Puma Future 8 Match MXSG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 56.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46473249458&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001079680-00-P-X-20250814155916.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDkxN3xpbWFnZS9qcGVnfGFEVTNMMmhqTVM4eE16RXhPVFkxTVRRM09UVTRNaTl0WldScFlYTmZNVEF3TVRBM09UWTRNRjh3TUY5UVgxZ3RNakF5TlRBNE1UUXhOVFU1TVRZdWFuQm58ODI0NTA3NzQ2ZDViZDZiMDRkY2NkNzI0NGZlYjA0MmUxZDEzM2FjOTkyNTBlOTljNDVjMjBmMGI1NTAxYTk5MQ&feedId=58083&k=1818cdb6502d7866ff345332d4d8c088df655d65",
+        sizes: ["43"],
       },
     ],
   },
@@ -127596,7 +127605,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41903461171&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048074-00-P-X-20250724154641.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mjg3NHxpbWFnZS9qcGVnfGFERmxMMmczTlM4eE16QTNPREF3TXpFeU1qSXdOaTl0WldScFlYTmZNVEF3TVRBME9EQTNORjh3TUY5UVgxZ3RNakF5TlRBM01qUXhOVFEyTkRFdWFuQm58ZmZiOGYyZDNiODNhOTA3ZjkxZDJhOWI1OTc4ZDdkNzRkYjU1MmRlZWEyOGY1ZjNmNGQyNzBhY2RjNjBiNTk2Yw&feedId=58083&k=4a020704fbfed39a9a591b524927960f87694294",
-        sizes: ["40.5", "41", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -127684,7 +127693,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44686176429&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001016179-00-P-X-20250114171852.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjQwN3xpbWFnZS9qcGVnfGFHRTNMMmhsTkM4eE1qWTNOakEzTVRNNU1USTJNaTl0WldScFlYTmZNVEF3TVRBeE5qRTNPVjh3TUY5UVgxZ3RNakF5TlRBeE1UUXhOekU0TlRJdWFuQm58ODQ3ZThhOWNiZDQ2NDA2YTg5NDFmYjdjYTdiODE2YmI5YzE1YTJlOWNhOTllNWRkNWFkNWEyNWVmZDVmNzg2NA&feedId=58083&k=f6cbc68b5f148c521d8476a0bac729889837fff3",
-        sizes: ["37.5", "38.5"],
+        sizes: ["33", "37.5", "38.5"],
       },
     ],
   },
@@ -127824,7 +127833,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41912438525&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048066-00-P-X-20250724154641.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzYyNnxpbWFnZS9qcGVnfGFESTJMMmcyTmk4eE16QTNPREF3TURnNU16azRNaTl0WldScFlYTmZNVEF3TVRBME9EQTJObDh3TUY5UVgxZ3RNakF5TlRBM01qUXhOVFEyTkRFdWFuQm58ZmRiYmQ3MGIxZWYyNThmNzY2ZmUyMGE1OWE0MzcyNzViYTAxMDIyZjQyYjk2MTAzNzEwMTZmOTVjMGNmNDY1MQ&feedId=58083&k=a8a84776f459b81303771a94b9dd8917403ffe61",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44"],
       },
     ],
   },
@@ -128152,7 +128161,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44620486211&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001072890-00-P-X-20260128101009.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzE1OHxpbWFnZS9qcGVnfGFHWXpMMmcwWVM4eE16VXlOemczTVRVeU1EYzVPQzl0WldScFlYTmZNVEF3TVRBM01qZzVNRjh3TUY5UVgxZ3RNakF5TmpBeE1qZ3hNREV3TURrdWFuQm58YjBhYWVhYjQ4NWI4NzZiYTNlNjY5YjIwZTBhNjEyMmYxY2U3MThlNDkwMDIxZDAxZGUwMDExYjY0ZGI4ZTJhNw&feedId=58083&k=0f7c9925c1311154921e36e09b6f56e93f38cd46",
-        sizes: ["31", "33", "34", "38", "38.5"],
+        sizes: ["31", "33", "34", "35", "38", "38.5"],
       },
     ],
   },
@@ -129152,9 +129161,6 @@ const minedBootProductsChunk21: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk22: BootProduct[] = [
   {
     id: "forumsport-puma-puma-king-20-ultimate-mxs-fg",
     brand: "Puma",
@@ -129206,6 +129212,9 @@ const minedBootProductsChunk22: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk22: BootProduct[] = [
   {
     id: "forumsport-puma-puma-king-liga-it-ic",
     brand: "Puma",
@@ -129474,7 +129483,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46237074430&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048060-00-P-X-20250806132511.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njk1MHxpbWFnZS9qcGVnfGFEY3hMMmhoTUM4eE16RXdNall3TWpjME56a3pOQzl0WldScFlYTmZNVEF3TVRBME9EQTJNRjh3TUY5UVgxZ3RNakF5TlRBNE1EWXhNekkxTVRFdWFuQm58OGE4Yzc3NGFmMzYwOTM1MTMwZTc1NTkzNDcxZjQwMzljMmIxYWY4NjM1Yjk4MjIzNzcwN2Y0MDk2MDBlOGU5OQ&feedId=58083&k=896ef13d4df020251f3dfb8d54fa27fb38991188",
-        sizes: ["39", "40", "40.5", "45"],
+        sizes: ["39", "40", "40.5", "44", "45"],
       },
     ],
   },
@@ -129492,7 +129501,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45787434903&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102163-00-P-X-20260427090900.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTczMXxpbWFnZS9qcGVnfGFEQTVMMmhsWmk4eE16Y3lPRE0yT1RnMk9EZ3pNQzl0WldScFlYTmZNVEF3TVRFd01qRTJNMTh3TUY5UVgxZ3RNakF5TmpBME1qY3dPVEE1TURBdWFuQm58NWU4MTFkNjI0NDc5MmIzZDJlNGI4MmY5ZmNkMDNkM2ZhNWEyYjhlMDQ5MmY4YzdkYjU1ZDBhMDg4MThiNjQ1NA&feedId=58083&k=65d6e51c9f674b587da542bf8e255d97a8435ce8",
-        sizes: ["34", "34.5", "35", "35.5", "36", "37", "37.5", "38", "38.5"],
+        sizes: ["34", "35", "35.5", "36", "37", "37.5", "38", "38.5"],
       },
     ],
   },
@@ -129930,7 +129939,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45721130808&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001079481-00-P-X-20250724154641.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM0N3xpbWFnZS9qcGVnfGFEaGxMMmhqWVM4eE16QTNPREV5T1RBME9UWXpNQzl0WldScFlYTmZNVEF3TVRBM09UUTRNVjh3TUY5UVgxZ3RNakF5TlRBM01qUXhOVFEyTkRFdWFuQm58NGRiZWUyYWQ1MTNjMTY5OGUyM2UzMTJhMTBlYzFiYTViNGE4NGI5NDEzYjkyYzFjMmUxZDUwZjU5MWE4MzM4Yg&feedId=58083&k=5c3f70c749be2c78abda5063d3bb4ee8192c2475",
-        sizes: ["38"],
+        sizes: ["37", "38"],
       },
     ],
   },
@@ -130215,7 +130224,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45944624898&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001041498-00-P-X-20260625091041.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU1OXxpbWFnZS9qcGVnfGFESmhMMmcwTnk4eE16ZzFNVE14TnpFME1UVXpOQzl0WldScFlYTmZNVEF3TVRBME1UUTVPRjh3TUY5UVgxZ3RNakF5TmpBMk1qVXdPVEV3TkRFdWFuQm58YjYwZDAwN2IwNGIzMzkxNGVlYTExMmJkNmY4ZmJhMWM4M2IyNGMwMDFiYjNmYzBiOTg2OGEyMGFjNDI1MjcwYw&feedId=58083&k=f2051f731f7a97552ee841dd6272479f30d1995b",
-        sizes: ["29", "30", "31", "32", "33", "34", "35", "36", "37", "37.5", "38", "38.5"],
+        sizes: ["29", "30", "31", "32", "33", "34", "35", "37", "37.5", "38", "38.5"],
       },
     ],
   },
@@ -132304,9 +132313,6 @@ const minedBootProductsChunk22: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk23: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-f50-hyperfast-club-cinta-adhesiva-fg-mg-nino-fg-ninos",
     brand: "adidas",
@@ -132361,6 +132367,9 @@ const minedBootProductsChunk23: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk23: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-f50-hyperfast-club-fg-mg-fg",
     brand: "adidas",
@@ -135447,9 +135456,6 @@ const minedBootProductsChunk23: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk24: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-predator-l-elite-fg-fg",
     brand: "adidas",
@@ -135501,6 +135507,9 @@ const minedBootProductsChunk24: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk24: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-predator-league-ft-ag-nino-ag-ninos",
     brand: "adidas",
@@ -138604,9 +138613,6 @@ const minedBootProductsChunk24: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk25: BootProduct[] = [
   {
     id: "futbolemotion-new-balance-new-balance-442-v2-academy-fg-nino-fg-ninos",
     brand: "New Balance",
@@ -138659,6 +138665,9 @@ const minedBootProductsChunk25: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk25: BootProduct[] = [
   {
     id: "futbolemotion-new-balance-new-balance-furon-destroy-fg-v7-fg",
     brand: "New Balance",
@@ -141730,9 +141739,6 @@ const minedBootProductsChunk25: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-17-academy-ic-ic-2",
     brand: "Nike",
@@ -141785,6 +141791,9 @@ const minedBootProductsChunk26: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-17-academy-turf",
     brand: "Nike",
@@ -144871,9 +144880,6 @@ const minedBootProductsChunk26: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk27: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-tiempo-maestro-club-turf-nino-ninos",
     brand: "Nike",
@@ -144926,6 +144932,9 @@ const minedBootProductsChunk27: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk27: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-tiempo-maestro-elite-ag-pro-ag-3",
     brand: "Nike",
@@ -148011,9 +148020,6 @@ const minedBootProductsChunk27: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk28: BootProduct[] = [
   {
     id: "futbolemotion-under-armour-under-armour-magnetico-pro-4-fg-fg",
     brand: "Under Armour",
@@ -148065,6 +148071,9 @@ const minedBootProductsChunk28: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk28: BootProduct[] = [
   {
     id: "futbolemotion-under-armour-under-armour-magnetico-pro-5-fg-fg",
     brand: "Under Armour",
@@ -151144,9 +151153,6 @@ const minedBootProductsChunk28: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk29: BootProduct[] = [
   {
     id: "pro-direct-es-diadora-diadora-maximus-elite-pro-sg-sg",
     brand: "Diadora",
@@ -151198,6 +151204,9 @@ const minedBootProductsChunk29: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk29: BootProduct[] = [
   {
     id: "pro-direct-es-lotto-lotto-solista-100-viii-gravity-fg-fg",
     brand: "Lotto",
@@ -154090,6 +154099,23 @@ const minedBootProductsChunk29: BootProduct[] = [
     ],
   },
   {
+    id: "pro-direct-es-nike-nike-air-zoom-mercurial-vapor-xvii-academy-tf-multi-tf",
+    brand: "Nike",
+    model: "Nike Air Zoom Mercurial Vapor XVII Academy TF - Multi",
+    groundType: "TF",
+    offers: [
+      {
+        store: "Pro:Direct ES",
+        price: 95.0,
+        shipping: 3.62,
+        currency: "EUR",
+        url: "https://www.prodirectsport.es/products/nike-air-zoom-mercurial-vapor-xvii-academy-turf-multicolor-negro-botas-para-adultos-4006005",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4006005_main.jpg?v=1793223716",
+        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
+      },
+    ],
+  },
+  {
     id: "pro-direct-es-nike-nike-air-zoom-mercurial-vapor-xvii-elite-ag-pro-ag",
     brand: "Nike",
     model: "Nike Air Zoom Mercurial Vapor XVII Elite AG-Pro",
@@ -154208,9 +154234,6 @@ const minedBootProductsChunk29: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk30: BootProduct[] = [
   {
     id: "pro-direct-es-nike-nike-mercurial-vapor-xvii-academy-tf-tf",
     brand: "Nike",
@@ -154245,6 +154268,9 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk30: BootProduct[] = [
   {
     id: "pro-direct-es-nike-nike-phantom-6-elite-low-sg-pro-sg",
     brand: "Nike",
@@ -155347,23 +155373,6 @@ const minedBootProductsChunk30: BootProduct[] = [
         url: "https://www.prodirectsport.es/products/nike-tiempo-maestro-elite-fg-phantom-carmesi-latat-pulso-royal-botas-para-hombre-1052865",
         imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1052865_main.jpg?v=1793196995",
         sizes: ["40"],
-      },
-    ],
-  },
-  {
-    id: "pro-direct-es-nike-nike-tiempo-maestro-elite-fg-multi-fg",
-    brand: "Nike",
-    model: "Nike Tiempo Maestro Elite FG - Multi",
-    groundType: "FG",
-    offers: [
-      {
-        store: "Pro:Direct ES",
-        price: 260.0,
-        shipping: 3.62,
-        currency: "EUR",
-        url: "https://www.prodirectsport.es/products/nike-tiempo-maestro-elite-firm-ground-multicolor-negro-botas-para-adultos-4006021",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4006021_main.jpg?v=1793209674",
-        sizes: ["36", "36.5", "37.5", "38", "38.5", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46", "47", "47.5"],
       },
     ],
   },
@@ -157271,9 +157280,6 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk31: BootProduct[] = [
   {
     id: "pro-direct-es-puma-puma-ultra-nitro-7-pro-fg-fg",
     brand: "Puma",
@@ -157325,6 +157331,9 @@ const minedBootProductsChunk31: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk31: BootProduct[] = [
   {
     id: "pro-direct-es-puma-puma-ultra-nitro-7-ultimate-ag-ag-2",
     brand: "Puma",
@@ -162228,7 +162237,7 @@ const minedBootProductsChunk31: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46249371792&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075086-00-P-X-20260102150724.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODUwN3xpbWFnZS9qcGVnfGFEVTJMMmc1T0M4eE16UTJOREV4TnpBeE9EWTFOQzl0WldScFlYTmZNVEF3TVRBM05UQTRObDh3TUY5UVgxZ3RNakF5TmpBeE1ESXhOVEEzTWpRdWFuQm58OWNiODg3OTVhMWU5ZWU3NjAzMTdiMzI0MDJiMzYyNzc1YzU2Yzc4MDkwZTA1YjY5MmM5NzAzMjM5NzEwYWVlMA&feedId=58083&k=9894e4190e7788931fde2d2c6adada2c8abf3a41",
-        sizes: ["40 2/3"],
+        sizes: ["40 2/3", "44 2/3"],
       },
     ],
   },
@@ -162979,9 +162988,6 @@ const minedBootProductsChunk31: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk32: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-messi-elite-fg-fg-jp7435",
     brand: "Adidas",
@@ -163164,6 +163170,9 @@ const minedBootProductsChunk32: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk32: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-f50-messi-league-fg-ag-fg-ag",
     brand: "Adidas",
@@ -168665,7 +168674,7 @@ const minedBootProductsChunk32: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46453433491&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091768-00-P-X-20250930102614.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIwN3xpbWFnZS9qcGVnfGFHRXhMMmcyWVM4eE16SXhOVFUwTWpFME9URTFNQzl0WldScFlYTmZNVEF3TVRBNU1UYzJPRjh3TUY5UVgxZ3RNakF5TlRBNU16QXhNREkyTVRRdWFuQm58YjVkZjU4M2I1MjM1MTdjZDFhYjIyZmExMTIwNTcxM2ZhMmMwYTc1YzlhODFhNmNlMGEwNDc0YzJjOTYxYmUzYQ&feedId=58083&k=2dcd405fd8feb92bf9eefd7e043b136f101c4446",
-        sizes: ["38"],
+        sizes: ["38", "39 1/3"],
       },
     ],
   },
@@ -171918,28 +171927,12 @@ const minedBootProductsChunk32: BootProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 28.55,
-        priceMax: 31.46,
+        price: 31.46,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-2250-black-silver-4.webp",
-        sizes: ["24", "25", "26", "27"],
-        sizePrices: [
-          { size: "24", price: 31.46, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver" },
-          { size: "25", price: 28.55, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver" },
-          { size: "26", price: 31.46, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver" },
-          { size: "27", price: 31.46, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver" },
-        ],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 26.97,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234866-2250-chaussures-de-football-bebe-hummel-top-star-i-c-vc-2-0-ic-black-silver",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-2250-black-silver-4.webp",
-        sizes: ["25"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-2250-chaussures-de-football-enfant-hummel-top-star-i-c-vc-2-0-ic-black-silver",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-2250-black-silver-3.webp",
+        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
       },
     ],
   },
@@ -173649,9 +173642,6 @@ const minedBootProductsChunk32: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk33: BootProduct[] = [
   {
     id: "sportisgoodes-mizuno-botas-de-futbol-mizuno-alpha-ii-elite-ag-ag",
     brand: "Mizuno",
@@ -173796,6 +173786,9 @@ const minedBootProductsChunk33: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk33: BootProduct[] = [
   {
     id: "sportisgoodes-mizuno-botas-de-futbol-mizuno-alpha-ii-pro-md",
     brand: "Mizuno",
@@ -183078,9 +183071,6 @@ const minedBootProductsChunk33: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk34: BootProduct[] = [
   {
     id: "sportisgoodes-puma-botas-de-futbol-puma-ultra-6-pro-fg-ag-fg-ag-108551-03",
     brand: "Puma",
@@ -183231,6 +183221,9 @@ const minedBootProductsChunk34: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk34: BootProduct[] = [
   {
     id: "sportisgoodes-puma-botas-de-futbol-puma-ultra-6-ultimate-fg-fg-108557-01",
     brand: "Puma",
