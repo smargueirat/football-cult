@@ -10,6 +10,25 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-10-30: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "panama-retro-2018-home": "panama-retro-201516-home",
+  "nyredbulls-retro-2024-home": "nyredbulls-retro-202425-home",
+  "leverkusen-retro-2004-home": "leverkusen-retro-199900-home",
+  "prestonnorthend-retro-202425-home": "prestonnorthend-retro-2023-home",
+  "nuevazelanda-retro-2023-away": "nuevazelanda-away-2026",
+  "fenerbahce-away-202627": "fenerbahce-away-202526",
+  "clubamerica-retro-2005-home": "clubamerica-retro-2004-home",
+  "athleticoparanaense-home-202526": "athleticoparanaense-retro-202021-home",
+  "orlandocity-retro-201516-home": "orlandocity-retro-2015-home",
+  "lagalaxy-retro-201820-home": "lagalaxy-retro-2018-home",
+  "barcelona-retro-202324-home": "barcelona-retro-202223-home",
+  "clubamerica-retro-200607-home": "clubamerica-retro-200708-home",
+  "dinamozagreb-retro-202425-home": "dinamozagreb-home-202526",
+  "urawareds-away-2026": "urawareds-retro-2023-away",
+  "sanjoseearthquakes-retro-201213-home": "sanjoseearthquakes-retro-2015-home",
+  "yokohamafmarinos-retro-2023-away": "yokohamafmarinos-retro-2020-away",
+  "schalke04-retro-201011-home": "schalke04-retro-2008-home",
   // 2026-10-29: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "anderlecht-retro-202021-home": "anderlecht-retro-201920-home",
