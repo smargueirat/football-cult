@@ -180,6 +180,7 @@
 "argelia-retro-2022-away",
 "argelia-retro-2022-home",
 "argelia-retro-202223-away",
+"argelia-retro-202223-home",
 "argelia-retro-2024-home",
 "argelia-retro-202425-away",
 "argentina-retro-1996-home",
@@ -763,6 +764,7 @@
 "camerun-retro-200406-away",
 "camerun-retro-200406-third",
 "camerun-retro-200607-away",
+"camerun-retro-200607-home",
 "camerun-retro-2008-away",
 "camerun-retro-2010-away",
 "camerun-retro-201011-away",
@@ -23491,6 +23493,18 @@
 "M"
 ],
 "shipping": 2.94
+},
+"argelia-retro-202223-home": {
+"title": "Adidas Algeria Football Federation White Home Football Shirt Jersey 2022/23",
+"price": 17.95,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/377161252235?_skw=Algeria+2022+home+shirt&hash=item57d08ffd8b%3Ag%3ACAAAAeSwhLRp-FGM&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|377161252235|645587013550",
+"image": "https://i.ebayimg.com/images/g/CAAAAeSwhLRp-FGM/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 0.0
 }
 }
 }

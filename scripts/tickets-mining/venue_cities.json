@@ -458,6 +458,7 @@
   "qid": "Q695879"
  },
  "Laugardalsvollur": null,
+ "Ljudski vrt Stadium": null,
  "Loftus Road": {
   "city": "London",
   "desc": "football stadium in London",
@@ -892,6 +893,11 @@
   "qid": "Q692534"
  },
  "Ta Qali National Stadium": null,
+ "Tammelan Stadion": {
+  "city": "Tampere",
+  "desc": "former association football stadion in Tampere, Finland",
+  "qid": "Q5493026"
+ },
  "Tannadice Park": {
   "city": "Dundee",
   "desc": "football stadium in Dundee, Scotland, UK",
@@ -1034,6 +1040,7 @@
   "qid": "Q590268"
  },
  "Wirsol Rhein Neckar Arena": null,
+ "Wroclaw Stadium": null,
  "Zimbru Stadium": null,
  "epet ARENA": {
   "city": "Prague",

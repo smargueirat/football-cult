@@ -25636,6 +25636,7 @@ const productsData = [
     brand: "adidas",
     offers: [
       { store: "eBay ES", price: 70.35, shipping: 26.02, currency: "EUR", url: "https://www.ebay.es/itm/198597605054?_skw=Algeria+home+soccer+jersey&hash=item2e3d56f6be%3Ag%3AAzUAAeSwuVhqj5l3&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7lhjWQcTtxR7HRKSGpe46juFajtwZOSY2B4tgm47aCnU6sDdBn4CEOqfUCpNgtoOitxfJuDOFY%2B%2BgHWG%2BO76KoKfJys6yVwPN10GTqKdRTa%2FamETGgPvc8jtzHwJzinM1K6XFYatNLtU8p2bcTGGLZRsXQlVkpaFZPHs9nRRL62HUpd%2FS%2BtGy%2BAtaDtEdOhqbB%2B3AJjM7J2u7VymzKGJaK1CMlbIbDXfs1ME4kG%2FJUmP0RvVbKnow6pSuqiLerYa0rT8Q56fY%2BA%2B7%2B8rQslXfPapnUazV9a225p3LB1zueRNA%3D%3D&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol local Argelia 2022 - 2023 Camiseta del equipo Adidas blanca para hombre talla 3XL", inStock: true, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/AzUAAeSwuVhqj5l3/s-l1600.jpg" },
+      { store: "eBay GB", price: 17.95, shipping: 0.0, currency: "GBP", url: "https://www.ebay.co.uk/itm/377161252235?_skw=Algeria+2022+home+shirt&hash=item57d08ffd8b%3Ag%3ACAAAAeSwhLRp-FGM&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Algeria Football Federation White Home Football Shirt Jersey 2022/23", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/CAAAAeSwhLRp-FGM/s-l1600.jpg" },
     ],
   },
 {
@@ -45247,6 +45248,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay ES", price: 75.75, shipping: 27.12, currency: "EUR", url: "https://www.ebay.es/itm/800792319647?_skw=Cameroon+away+soccer+jersey&hash=itemba72f1169f%3Ag%3ASXMAAeSwsPxqzqq2&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de visitante PUMA Camerún 2008/09 talla: XL", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/SXMAAeSwsPxqzqq2/s-l1600.jpg" },
+      { store: "eBay GB", price: 59.49, shipping: 0.0, currency: "GBP", url: "https://www.ebay.co.uk/itm/227101127764?_skw=Cameroon+2008+away+shirt&hash=item34e0483454%3Ag%3AAjAAAeSwxOBpJGLg&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "PUMA Cameroon Football Shirt 2008 Away Soccer Jersey BNWT Men's XL Original", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/AjAAAeSwxOBpJGLg/s-l1600.jpg" },
     ],
   },
 {
