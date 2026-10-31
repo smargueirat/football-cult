@@ -2061,19 +2061,6 @@ const productsData = [
     ],
   },
 {
-    id: "leicester-retro-202324-third",
-    teamKey: "leicester",
-    season: "2023/24",
-    typeKey: "retro",
-    colorHex: "#003090",
-    colorHexSecondary: "#FDBE11",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 35.24, shipping: 15.02, currency: "EUR", url: "https://www.ebay.es/itm/157241457464?_skw=Leicester+City+third+soccer+jersey&hash=item249c523b38%3Ag%3Ae7AAAeSwM0NonKxV&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol para hombre Third dorada 2023-2024 Leicester City camiseta de fútbol", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/e7AAAeSwM0NonKxV/s-l1600.jpg" },
-      { store: "eBay GB", price: 46.25, shipping: 3.75, currency: "GBP", url: "https://www.ebay.co.uk/itm/178482502368?_skw=Leicester+City+2023+third+shirt&hash=item298e62dae0%3Ag%3AvNsAAeSw0JZqoXzr&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Third Football Shirt Gold 2023-2024 Leicester City Soccer Jersey Tee Top", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/vNsAAeSw0JZqoXzr/s-l1600.jpg" },
-    ],
-  },
-{
     id: "malta-retro-202223-away",
     teamKey: "malta",
     season: "2022/23",
@@ -2240,18 +2227,6 @@ const productsData = [
     ],
   },
 {
-    id: "shimizuspulse-retro-2023-away",
-    teamKey: "shimizuspulse",
-    season: "2023",
-    typeKey: "retro",
-    colorHex: "#F39800",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 38.73, shipping: 15.18, currency: "EUR", url: "https://www.ebay.es/itm/167732114409?_skw=Shimizu+S-Pulse+away+soccer+jersey&hash=item270d9cf3e9%3Ag%3AhD8AAeSwfm5opthV&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol para hombre azul marino 2023 Shimisu S-Pulse visitante camiseta camiseta deportiva", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/hD8AAeSwfm5opthV/s-l1600.jpg" },
-    ],
-  },
-{
     id: "shimizuspulse-retro-2023-home",
     teamKey: "shimizuspulse",
     season: "2023",
@@ -2341,19 +2316,6 @@ const productsData = [
     colorHexSecondary: "#EE3524",
     jerseyPattern: "solid",
     offers: [
-    ],
-  },
-{
-    id: "vfraalen-retro-201920-home",
-    teamKey: "vfraalen",
-    season: "2019/20",
-    typeKey: "retro",
-    colorHex: "#003DA5",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 15.64, shipping: 14.33, currency: "EUR", url: "https://www.ebay.es/itm/167713823190?_skw=VfR+Aalen+home+soccer+jersey&hash=item270c85d9d6%3Ag%3AhaYAAeSwf5RonJkJ&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol para hombre negra VFR Aalen Home 2019-2020 camiseta de fútbol camiseta superior", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/haYAAeSwf5RonJkJ/s-l1600.jpg" },
-      { store: "eBay GB", price: 16.4, shipping: 3.75, currency: "GBP", url: "https://www.ebay.co.uk/itm/178482435774?_skw=VfR+Aalen+2019+home+shirt&hash=item298e61d6be%3Ag%3AW-IAAeSw3lJqoXW3&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men's Football Shirt Black VFR Aalen Home 2019-2020 Soccer Jersey Top T-Shirt", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/W-IAAeSw3lJqoXW3/s-l1600.jpg" },
     ],
   },
 {
@@ -42938,18 +42900,6 @@ const productsData = [
     ],
   },
 {
-    id: "kashimaantlers-home-2026",
-    teamKey: "kashimaantlers",
-    season: "2026",
-    typeKey: "home",
-    colorHex: "#C00000",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 160.42, shipping: 0.0, currency: "EUR", url: "https://www.ebay.es/itm/158308280260?_skw=Kashima+Antlers+home+soccer+jersey&hash=item24dbe8a7c4%3Ag%3Ag5QAAeSwDW5qrhhh&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva local Nike de Kashima Antlers 2026 parche de campeones de la J.League Japón", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/g5QAAeSwDW5qrhhh/s-l1600.jpg" },
-    ],
-  },
-{
     id: "minnesotaunited-away-202526",
     teamKey: "minnesotaunited",
     season: "2025/26",
@@ -43011,18 +42961,6 @@ const productsData = [
     offers: [
       { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/376366241249?_skw=Shakhtar+Donetsk+home+soccer+jersey&hash=item57a12d15e1%3Ag%3AqmkAAOSwuNVoXSE2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY FC Shakhtar Donetsk Mens Home 2025-26", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/qmkAAOSwuNVoXSE2/s-l1600.jpg" },
       { store: "Pro:Direct Soccer", price: 59.5, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/puma-shakhtar-donetsk-25-26-home-shirt-w-o-sponsor-rickie-orange-puma-black-mens-replica-1034289", title: "Puma Shakhtar Donetsk 25/26 Home Shirt w/o Sponsor", inStock: true, sizes: ["M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1034289_main.jpg?v=1791286004" },
-    ],
-  },
-{
-    id: "urawareds-home-2026",
-    teamKey: "urawareds",
-    season: "2026",
-    typeKey: "home",
-    colorHex: "#E4002B",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 196.07, shipping: 0.0, currency: "EUR", url: "https://www.ebay.es/itm/158308431524?_skw=Urawa+Red+Diamonds+home+soccer+jersey&hash=item24dbeaf6a4%3Ag%3AgW8AAeSweQVqrii3&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Urawa Red Diamonds Nike Home 2026 J.League Japón Nuevas Etiquetas", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/gW8AAeSweQVqrii3/s-l1600.jpg" },
     ],
   },
 {
@@ -48048,20 +47986,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336671569220?_skw=Gr%C3%AAmio+home+soccer+jersey&hash=item4e63307544%3Ag%3AKCgAAeSwiCJqkdqB&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZBWjOIeqKELGVnXLs%2BZxt%2BXHJ4hXGDqQWQPe9iP3jNP3Yc34Hy8tKam7hFk6uvwZgNdcHV5%2B6f7JsdMRBJLQgD2C0jLnlzrtfmVsvx74Ih9P2a0dTmQwmOMVp61M6RHppm20Cp424zNQQOXDiJ3FPN4tZ%2BxV%2BPYrdaM9jThi%2BFvEdnhsNrWOHhQPPSjwHvIXp4B0g3%2FWqg8FSqGyjdQtZD9m%2F1NqaaNhgpDIsa%2BWiE9WhsJaujM2r5vl6u556O2rR8LZs41olHQ30NgZaC2JnGNMJHHJgPv1iUs2zCpZvKbg%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "​Umbro Gremio Home Jersey Men’s Large NWT Brazil Soccer Football Shirt 2024 New", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/KCgAAeSwiCJqkdqB/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "grullamorioka-retro-2024-away",
-    teamKey: "grullamorioka",
-    season: "2024",
-    typeKey: "retro",
-    colorHex: "#8B0000",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 73.05, shipping: 19.99, currency: "USD", url: "https://www.ebay.com/itm/178541099640?_skw=Grulla+Morioka+away+soccer+jersey&hash=item2991e0fa78%3Ag%3AfDcAAOSwkv1mugal&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "IWATE GRULLA MORIOKA (Japan) Kelme Away Football Shirt 2024 NEW Mens Jersey BNWT", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/fDcAAOSwkv1mugal/s-l1600.jpg" },
-      { store: "eBay GB", price: 36.99, shipping: 0.0, currency: "GBP", url: "https://www.ebay.co.uk/itm/176520975857?_skw=Grulla+Morioka+2024+away+shirt&hash=item29197855f1%3Ag%3AfDcAAOSwkv1mugal&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "IWATE GRULLA MORIOKA (Japan) Kelme Away Football Shirt 2024 NEW Mens Jersey BNWT", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/fDcAAOSwkv1mugal/s-l1600.jpg" },
-      { store: "eBay ES", price: 59.62, shipping: 14.52, currency: "EUR", url: "https://www.ebay.es/itm/176913294171?_skw=Grulla+Morioka+away+soccer+jersey&hash=item2930daa35b%3Ag%3AfDcAAOSwkv1mugal&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol Iwate Grulla Morioka (Japón) Kelme visitante 2024 nueva camiseta hombre", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/fDcAAOSwkv1mugal/s-l1600.jpg" },
     ],
   },
 {
@@ -58409,19 +58333,6 @@ const productsData = [
     offers: [
       { store: "eBay", price: 30.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/398042007329?_skw=San+Diego+FC+home+soccer+jersey+kids+youth&hash=item5cad270721%3Ag%3ACz8AAeSwycNqJxMO&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbXiuDqfFztThtamxMAs86II7p%2FMuw6jHtFf82t4qVcvuBtheRZUhCwBLeh3gQuacZWZKeZ%2FiLLf8qCI2yhZxXPsWd554gV7KMMvflDYzgvDFUee18RQzn3eZ8vP54284K9wqm%2BcSLkaedex0mOrXhMiuHE67FouexvgZpmgPb4WuCoqEtm9iUrvuFyhzlKKPCEPFwD%2FJKP%2BLcNot1vlox3wLhAvdiDP2%2FyjGYt6Mc0UHGBilpqtyFpxa%2BPvc5npipHYxjexxF8G5eY6q%2FlsPoR5Q7DHbv5z5y%2BJNO27KOfMLEItL%2BMI07jmL6bM52vbeo%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas San Diego FC Jersey Boys XS White Home MLS Soccer Youth New no tags.", inStock: true, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/Cz8AAeSwycNqJxMO/s-l1600.jpg" },
       { store: "eBay ES", price: 37.8, shipping: 21.78, currency: "EUR", url: "https://www.ebay.es/itm/206142490260?_skw=San+Diego+FC+home+soccer+jersey+kids+youth&hash=item2fff0cc694%3Ag%3AUOcAAeSwPsRpt4tW&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Adidas San Diego FC Juvenil 25/26 local XS Noche Azul Marino Precio de venta sugerido por el fabricante $80 nueva con etiquetas", inStock: true, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/UOcAAeSwPsRpt4tW/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "seattlesounders-away-kids",
-    teamKey: "seattlesounders",
-    season: "2026",
-    typeKey: "away",
-    colorHex: "#5D9732",
-    colorHexSecondary: "#0033A0",
-    jerseyPattern: "solid",
-    ageGroup: "kids",
-    offers: [
-      { store: "eBay ES", price: 54.02, shipping: 29.6, currency: "EUR", url: "https://www.ebay.es/itm/188050143795?_skw=Seattle+Sounders+away+soccer+jersey+kids+youth&hash=item2bc8a97a33%3Ag%3AoMcAAeSw2iRpjOHM&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta Adidas Seattle Sounders 2025/26 Visitante Tinta Azul Réplica Juvenil Talla US S (9-10)", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/oMcAAeSw2iRpjOHM/s-l1600.jpg" },
     ],
   },
 {
@@ -71592,19 +71503,6 @@ const productsData = [
       { store: "SportIsGoodFR", price: 82.15, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F400125330001-maillot-domicile-udinese-2026-27-blanc-noir", title: "Maillot Domicile Udinese 2026/27", inStock: true, sizes: ["M", "L"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron-400125330001-blanc-noir-6a82ebc13898d-1.webp" },
       { store: "eBay", price: 124.99, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267795894943?_skw=Udinese+home+soccer+jersey&hash=item3e59e1129f%3Ag%3AWA8AAeSwzfhq2zsq&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron 2026-27 Udinese Men's Authentic Home Soccer Jersey", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/WA8AAeSwzfhq2zsq/s-l1600.jpg" },
       { store: "Futbol Emotion", price: 99.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fmacron%2Fudinese-primera-equipacion-2026-2027-white-black", title: "Camiseta Macron Udinese Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/340455/750/camiseta-macron-udinese-primera-equipacion-2026-2027-white-black-1.jpg" },
-    ],
-  },
-{
-    id: "canada-retro-2023-home",
-    teamKey: "canada",
-    season: "2023",
-    typeKey: "retro",
-    colorHex: "#FF0000",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 28.98, shipping: 5.0, currency: "USD", url: "https://www.ebay.com/itm/285263364898?_skw=Canada+home+soccer+jersey&hash=item426b058322%3Ag%3Aka8AAOSwB6hoQlXx&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "JERSEY Canada Soccer Home 2023", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/ka8AAOSwB6hoQlXx/s-l1600.jpg" },
-      { store: "eBay GB", price: 77.51, shipping: 30.84, currency: "GBP", url: "https://www.ebay.co.uk/itm/206389211050?_skw=Canada+2023+home+shirt&hash=item300dc16faa%3Ag%3Aw-UAAeSw4f5qRpuh&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nike Men’s Red Canada National Team 2023 Home Replica Jersey Sample", inStock: false, sizes: ["XS"], imageUrl: "https://i.ebayimg.com/images/g/w-UAAeSw4f5qRpuh/s-l1600.jpg" },
     ],
   },
 {
@@ -90304,18 +90202,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 89.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/295006539559?_skw=Iceland+away+soccer+jersey&hash=item44afc28f27%3Ag%3AKVMAAOSweZtikVe8&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Iceland 2020 Jersey Away White Puma New S-3XL 758874_02", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/KVMAAOSweZtikVe8/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "panama-retro-201920-away",
-    teamKey: "panama",
-    season: "2019/20",
-    typeKey: "retro",
-    colorHex: "#DA121A",
-    colorHexSecondary: "#072357",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 49.99, shipping: 9.99, currency: "USD", url: "https://www.ebay.com/itm/156258178171?_skw=Panama+away+soccer+jersey&hash=item2461b6947b%3Ag%3A2VkAAOSwNuthkeVs&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2019/20 Panama Away Jersey NEW BALANCE MEDIUM Gold Cup Soccer NEW", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/2VkAAOSwNuthkeVs/s-l1600.jpg" },
     ],
   },
 {
