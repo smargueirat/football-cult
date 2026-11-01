@@ -35687,19 +35687,6 @@ const productsData = [
     ],
   },
 {
-    id: "roma-away-kids",
-    teamKey: "roma",
-    season: "2026",
-    typeKey: "away",
-    colorHex: "#8E1F2F",
-    colorHexSecondary: "#F0BC42",
-    jerseyPattern: "solid",
-    ageGroup: "kids",
-    offers: [
-      { store: "eBay ES", price: 24.19, shipping: 21.27, currency: "EUR", url: "https://www.ebay.es/itm/227495674323?_skw=AS+Roma+away+soccer+jersey+kids+youth&hash=item34f7cc81d3%3Ag%3AIIoAAeSwcXFqkeIi&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Nueva camiseta de fútbol visitante Adidas Roma JN9060 juvenil XL", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/IIoAAeSwcXFqkeIi/s-l1600.jpg" },
-    ],
-  },
-{
     id: "sanlorenzo-away-kids",
     teamKey: "sanlorenzo",
     season: "2026",
@@ -50001,18 +49988,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 91.46, shipping: 19.0, currency: "USD", url: "https://www.ebay.com/itm/188489093545?_skw=Kaizer+Chiefs+home+soccer+jersey&hash=item2be2d351a9%3Ag%3At9sAAOSwCppeYd0s&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "BNWT Kaizer Chiefs adults M 2018 home original football shirt jersey soccer", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/t9sAAOSwCppeYd0s/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "kaizerchiefs-retro-2021-home",
-    teamKey: "kaizerchiefs",
-    season: "2021",
-    typeKey: "retro",
-    colorHex: "#FFB81C",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 70.1, shipping: 32.36, currency: "EUR", url: "https://www.ebay.es/itm/285526589171?_skw=Kaizer+Chiefs+home+soccer+jersey&hash=item427ab5fef3%3Ag%3ANUoAAOSw6TZlNLaR&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nTpuaO6y6EVHq85PCytM6PvIZGsExy%2Fvuo%2FLQHjqapMut1qhsd7INOcW%2Bzf9BetIPa9VpN%2FLyuM2fMJQhvORTOvVPLHRXMc5LD5Ylm2q%2FwdZYXYzlbTmI9ryZ789EpCX2hS8NymMbdah5m1KENtJIuCnPYaWGiFD9L1tBZCYsO69YAMqnlr2ngINBIle58YeuAKl5R7C%2Br4qhbmutQohQthATvhLJTbYQhld0dVHYS8E28rfKVgKA3jWzZ3aWnnSmX1U0pGSNim3PJwaHMC5AUyJiaPgQPoEffInhezwkSM6L2HWwO2Cyzc2e4pCW%2FHSo%3D&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta para hombre Nike Kaizer Chiefs Home 2021 amarilla CV7901 706 talla MEDIANA", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/NUoAAOSw6TZlNLaR/s-l1600.jpg" },
     ],
   },
 {
@@ -66223,18 +66198,6 @@ const productsData = [
     ],
   },
 {
-    id: "fiorentina-retro-199293-home",
-    teamKey: "fiorentina",
-    season: "1992/93",
-    typeKey: "retro",
-    colorHex: "#642F8E",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 449.99, shipping: 20.0, currency: "USD", url: "https://www.ebay.com/itm/398368567952?_skw=Fiorentina+home+soccer+jersey&hash=item5cc09df290%3Ag%3AlG4AAeSwie9qhaK7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "ACF Fiorentina Lotto Home Jersey 1992-93 7UP Long Sleeve Purple Size L BNWT", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/lG4AAeSwie9qhaK7/s-l1600.jpg" },
-    ],
-  },
-{
     id: "fiorentina-retro-201617-third",
     teamKey: "fiorentina",
     season: "2016/17",
@@ -70850,18 +70813,6 @@ const productsData = [
     ],
   },
 {
-    id: "vancouverwhitecaps-retro-201112-away",
-    teamKey: "vancouverwhitecaps",
-    season: "2011/12",
-    typeKey: "retro",
-    colorHex: "#00245D",
-    colorHexSecondary: "#9BCBEB",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 96.18, shipping: 23.91, currency: "EUR", url: "https://www.ebay.es/itm/318884089822?_skw=Vancouver+Whitecaps+FC+away+soccer+jersey&hash=item4a3ef90fde%3Ag%3AaOAAAeSwmXNqrFUU&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de visitante Vancouver Whitecaps 2011-2012 *Especificaciones del jugador | TOTALMENTE NUEVA Fútbol XL", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/aOAAAeSwmXNqrFUU/s-l1600.jpg" },
-    ],
-  },
-{
     id: "girona-home-202627",
     teamKey: "girona",
     season: "2026/27",
@@ -70952,18 +70903,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 119.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/336800679209?_skw=Seattle+Sounders+third+soccer+jersey&hash=item4e6ae28529%3Ag%3AJHMAAeSwi8lqreNa&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGaROWFbL0XBmwJ5eG7HWZFH9A1eORXzuF0JMK5d4tsd5Lh1CxY1rWE3oSJ8dyfsKg8y273zZ1ukWgTq5h%2FyQX3Tz1QQQwjyX0P07kQKjWS%2FdOwl2eL8D9IWVZm6MEXXBBUWBU6rOKpjw87hQPa39%2By%2Bcs7BCRArvvdUauCfLRIqWEy%2FTf5ChPL4bg4LPPTLmBcgPP29jStUR1iY2SCh2UChJYKSgSjs%2BXf%2BoSOp5piwsLCbC85syzne375gQmPlJfPUzxA3bGjc9deyWolMjdj0lriE9z%2BOn3wLbaT1CzuFGArHk%2B7l9zZRQIfgdcFduy8%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "New Adidas Seattle Sounders 19/20  Authentic Third Jersey M Medium Black Pink", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/JHMAAeSwi8lqreNa/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "albania-training-202526",
-    teamKey: "albania",
-    season: "2025/26",
-    typeKey: "training",
-    colorHex: "#E41E20",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "DeporteOutlet", price: 10.07, shipping: 8.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46077677066&a=3013769&m=19598", title: "Albania macron Hombre Camiseta de entrenamiento 40005260", inStock: false, sizes: ["3XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Faa%2F55%2Fdb%2F40005260-1_600x600.jpg&feedId=99907&k=f48e05ee41c60e538e0e67a0b76ef708ed7ce86f" },
     ],
   },
 {
@@ -84993,20 +84932,6 @@ const productsData = [
     ],
   },
 {
-    id: "chile-away-women",
-    teamKey: "chile",
-    season: "2026",
-    typeKey: "away",
-    colorHex: "#D52B1E",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    brand: "adidas",
-    ageGroup: "women",
-    offers: [
-      { store: "AdidasCL", price: 69990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=44269450243&a=3013769&m=79922", title: "Camiseta Visitante Selección Chilena 26", inStock: false, sizes: ["XS", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff7ea492a74924d56b3a06e10df01e40a_9366%2FCamiseta_Visitante_Seleccion_Chilena_26_Beige_KB3428_21_model.jpg&feedId=95016&k=a4999ffdc380d9482d9c3fa7dac2e2b6e98a6162" },
-    ],
-  },
-{
     id: "burnley-home-202526",
     teamKey: "burnley",
     season: "2025/26",
@@ -90037,32 +89962,6 @@ const productsData = [
     offers: [
       { store: "FootStoreES", price: 76.78, shipping: 9.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46501542931&a=3013769&m=65912", title: "Maillot Extérieur mujer AS Roma 2026/27", inStock: true, sizes: ["M"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-kb8709-wonwhi-6a75bbb6a2909-1.jpg&feedId=89032&k=f6db6242aedd98bc08a7c28ae6dd98a75a050a2d" },
       { store: "FootStoreFR", price: 75.81, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb8709-maillot-exterieur-femme-as-roma-2026-27-wonwhi", title: "Maillot Extérieur femme AS Roma 2026/27", inStock: true, sizes: ["M"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kb8709-wonwhi-6a75bbb6a2909-1.webp" },
-    ],
-  },
-{
-    id: "egipto-prematch-2026",
-    teamKey: "egipto",
-    season: "2026",
-    typeKey: "prematch",
-    colorHex: "#1A1A1A",
-    colorHexSecondary: "#E4532B",
-    jerseyPattern: "solid",
-    brand: "puma",
-    offers: [
-      { store: "eBay", price: 56.91, shipping: 67.07, currency: "USD", url: "https://www.ebay.com/itm/298717481474?_skw=Egypt+pre-match+soccer+jersey&hash=item458cf30a02%3Ag%3AsYMAAeSwVnNp60cx&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma Egypt Warm Up Jersey 26 EFA Prematch Shirt World Cup Egypt Warm Up Jersey M - 3XL", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/sYMAAeSwVnNp60cx/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "nuevazelanda-prematch-2026",
-    teamKey: "nuevazelanda",
-    season: "2026",
-    typeKey: "prematch",
-    colorHex: "#4A4A4A",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    brand: "puma",
-    offers: [
-      { store: "eBay", price: 63.99, shipping: 9.03, currency: "USD", url: "https://www.ebay.com/itm/227586330417?_skw=New+Zealand+pre-match+soccer+jersey&hash=item34fd33cf31%3Ag%3AuPcAAeSwoT1q4T9M&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Puma 2026 New Zealand Men's Pre-Match Soccer Jersey ProSoccer Apparel", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/uPcAAeSwoT1q4T9M/s-l1600.jpg" },
     ],
   },
 {
