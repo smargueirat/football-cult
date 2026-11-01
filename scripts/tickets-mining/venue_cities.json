@@ -764,6 +764,11 @@
   "qid": "Q1968221"
  },
  "Stade de Luxembourg": null,
+ "Stade de l'Abbe-Deschamps": {
+  "city": "Auxerre",
+  "desc": "Stadium in Auxerre, France",
+  "qid": "Q1347183"
+ },
  "Stade de l'Aube": {
   "city": "Troyes",
   "desc": "multi-use stadium in Troyes, France",
