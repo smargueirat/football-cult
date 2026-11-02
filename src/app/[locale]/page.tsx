@@ -11,6 +11,7 @@ import { todayIso } from "@/lib/seasonal";
 import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { translations } from "@/lib/i18n/translations";
 import { SITE_URL } from "@/lib/hubPages";
+import { OG_DEFAULT } from "@/lib/ogDefault";
 import { heroSuggestions } from "@/lib/heroSuggestions";
 import { groupThousands, trustStats } from "@/lib/trustStrip";
 import { countries, type CountryCode } from "@/data/countries";
@@ -79,8 +80,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title,
     description,
     alternates: buildAlternates(locale, ""),
-    openGraph: { title, description, siteName: "Football Cult", type: "website", locale: OG_LOCALE[locale] },
-    twitter: { card: "summary_large_image", title, description },
+    openGraph: { title, description, siteName: "Football Cult", type: "website", locale: OG_LOCALE[locale], images: OG_DEFAULT },
+    twitter: { card: "summary_large_image", title, description, images: OG_DEFAULT.map((i) => i.url) },
   };
 }
 

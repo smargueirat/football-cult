@@ -79,7 +79,7 @@ export function GearDetailFrame({
       <DetailCrumbs locale={locale} trail={gearTrail(section, item, locale)} current={path} />
       {children}
       {/* Ficha cara: parecidas un 15 %+ más baratas, con botón directo. */}
-      <div className="mx-auto w-full max-w-6xl px-3 sm:px-6">
+      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
         <DirectDeals deals={cheaperAlternatives(section, item, all, locale)} title={CONV[locale].altCheaper} max={3} surface="alt" />
       </div>
       {/* El código en texto, no solo en el JSON-LD: es lo que se busca

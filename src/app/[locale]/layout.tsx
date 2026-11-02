@@ -17,6 +17,7 @@ import SearchQueryUrlSync from "@/components/SearchQueryUrlSync";
 import ConsentBanner from "@/components/ConsentBanner";
 import { Locale } from "@/lib/i18n/translations";
 import { LOCALES, OG_LOCALE, buildAlternates, isLocale } from "@/lib/i18n/locales";
+import { OG_DEFAULT } from "@/lib/ogDefault";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -103,11 +104,13 @@ export async function generateMetadata({
       siteName: "Football Cult",
       type: "website",
       locale: OG_LOCALE[locale],
+      images: OG_DEFAULT,
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: OG_DEFAULT.map((i) => i.url),
     },
   };
 }

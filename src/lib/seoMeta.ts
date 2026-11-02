@@ -1,4 +1,5 @@
 import { products, teamNames, type Product } from "@/data/products";
+import { OG_DEFAULT } from "@/lib/ogDefault";
 import { bootProducts } from "@/data/boots";
 import { gloveProducts } from "@/data/gloves";
 import { ballProducts } from "@/data/balls";
@@ -519,7 +520,7 @@ export function ldImage(url: string | undefined): { url: string; width?: number;
 
 export function ogImages(url: string | undefined) {
   const img = ldImage(url);
-  return img ? [img] : undefined;
+  return img ? [img] : OG_DEFAULT;
 }
 
 /** `{ dateModified }` = el último cambio de precio REAL entre estas ofertas

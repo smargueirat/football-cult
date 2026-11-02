@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import type { HubLocale } from "@/data/teamMeta";
+import { OG_DEFAULT } from "@/lib/ogDefault";
 
 export const SITE_URL = "https://football-cult.com";
 
@@ -13,8 +14,8 @@ export function hubMetadata(locale: HubLocale, path: string, title: string, desc
     title: `${title} | Football Cult`,
     description,
     alternates: buildAlternates(locale, path),
-    openGraph: { title, description, type: "website" },
-    twitter: { card: "summary", title, description },
+    openGraph: { title, description, type: "website", images: OG_DEFAULT },
+    twitter: { card: "summary_large_image", title, description, images: OG_DEFAULT.map((i) => i.url) },
   };
 }
 
