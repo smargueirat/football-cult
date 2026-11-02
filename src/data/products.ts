@@ -42984,19 +42984,6 @@ const productsData = [
     ],
   },
 {
-    id: "fcbasel-home-202627",
-    teamKey: "fcbasel",
-    season: "2026/27",
-    typeKey: "home",
-    colorHex: "#ED1C24",
-    colorHexSecondary: "#002F6C",
-    jerseyPattern: "solid",
-    brand: "macron",
-    offers: [
-      { store: "eBay", price: 149.99, shipping: 7.95, currency: "USD", url: "https://www.ebay.com/itm/178408822186?_skw=FC+Basel+home+soccer+jersey+2025+2026&hash=item2989fe95aa%3Ag%3AjgoAAeSwhQNqcPBj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Macron FC Basel 2026- 27 Authentic Home Jersey - Red/Royal Blue/Gold", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/jgoAAeSwhQNqcPBj/s-l1600.jpg" },
-    ],
-  },
-{
     id: "independiente-home-2025",
     teamKey: "independiente",
     season: "2025",
@@ -58023,19 +58010,6 @@ const productsData = [
     ],
   },
 {
-    id: "monterrey-away-202627-kids",
-    teamKey: "monterrey",
-    season: "2026/27",
-    typeKey: "away",
-    colorHex: "#003DA5",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    ageGroup: "kids",
-    offers: [
-      { store: "eBay", price: 80.0, shipping: 5.99, currency: "USD", url: "https://www.ebay.com/itm/358826348906?_skw=CF+Monterrey+away+soccer+jersey+kids+youth&hash=item538bb7916a%3Ag%3AvVsAAeSwKs5qX6go&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Youth Puma  White CF Monterrey 2026/27 Away Replica Jersey", inStock: false, sizes: ["9-10", "11-12"], imageUrl: "https://i.ebayimg.com/images/g/vVsAAeSwKs5qX6go/s-l1600.jpg" },
-    ],
-  },
-{
     id: "nashvillesc-third-kids",
     teamKey: "nashvillesc",
     season: "2026",
@@ -59910,20 +59884,6 @@ const productsData = [
       { store: "Futbol Emotion", price: 59.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Farsenal-fc-primera-equipacion-2025-2026-better-scarlet-white", title: "Camiseta adidas Arsenal FC Primera Equipación 2025-2026", inStock: false, sizes: ["L"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/264665/750/camiseta-adidas-arsenal-fc-primera-equipacion-2025-2026-better-scarlet-white-1.jpg" },
       { store: "eBay GB", price: 100.0, shipping: 3.38, currency: "GBP", url: "https://www.ebay.co.uk/itm/318925048938?_skw=Arsenal+home+soccer+jersey&hash=item4a416a0c6a%3Ag%3AMPUAAeSwx%7EhquS0o&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kbRjbo%2FToF91jh5zf1WSshe8w2wf%2FH3NRGFfr5n2GXk%2BmjjKNCb6aQpYaLaqbK0yDf5t2BQwjvDF3rQGR5Ny%2FuNUkDJMVmhoiQn3uHmGKpY%2FEI4OZupyFgxrN0DWIfHnlRZovADsibCDWVXi%2BZzx9m1%2BioTbWIyjik47IVdmTZiUXXVIHoN9W6ddLXF1MtcUJsvSDVP6Rtf4XIrz19lhwpWW%2B0Bjhl3BghJMrL%2FEv0hkwgPWbvl707OUPiv3bUMGLgVAvCaEOGJ9R1oyHAOedCTgeOKUj1V%2Fg7WTWy0GNGx06Q6niC7nUlbQIDg2ohep8%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Authentic Arsenal 25/26 Home Shirt Medium", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/MPUAAeSwx~hquS0o/s-l1600.jpg" },
       { store: "AdidasMX", price: 1999.0, shipping: 0.0, currency: "MXN", url: "https://www.awin1.com/pclick.php?p=41320572007&a=3013769&m=79918", title: "Jersey Local Arsenal 25/26", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe86b3148bca44d478e0bc4bd6fea586f_9366%2Fjersey_Local_Arsenal_25-26_Rojo_JI9517_21_model.jpg&feedId=95013&k=13b64d35929811370849ec319673c08b765a445f" },
-    ],
-  },
-{
-    id: "liverpool-training-202526",
-    teamKey: "liverpool",
-    season: "2025/26",
-    typeKey: "training",
-    colorHex: "#0A0A0A",
-    colorHexSecondary: "#2FD9C4",
-    jerseyPattern: "solid",
-    brand: "adidas",
-    offers: [
-      { store: "eBay", price: 39.99, shipping: 7.0, currency: "USD", url: "https://www.ebay.com/itm/377457974083?_skw=Liverpool+training+soccer+jersey&hash=item57e23f9b43%3Ag%3AJSsAAeSw%7EgZqW-Dh&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYEdQsFawObUNvocXglk39IahY0JCpaIHK5Gucs4HzABCJxLh0O%2FM3jKFVxOjF2THO2pFx9jFium3H8QHyUeRWzvd4AdzjWdelwwJqSFqA5g6Ym3gak5%2Fu70pJh9LcsOFwPLBnQmOFPvsVrMRGRimdGjL6zxZtjKx%2BOlofQAUV1qbhWz7A9GOn%2FgEHULA7a92Uc32kY6qNlTDOEtnBVEDP%2FipAnXVRakUfvXf3T7ZaMYAPHuovEToYcNACXdakU2zjAruaGLTUa8%2F0lWNrLawvwUJ5j8FHv1kOc3OAFxeajijB8BkmlkVs6A7rQQk%2BzybU%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Liverpool Adidas Training Jersey Black 2026 Size Large", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/JSsAAeSw~gZqW-Dh/s-l1600.jpg" },
-      { store: "AdidasES", price: 70.0, shipping: 4.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46381366571&a=3013769&m=77008", title: "Camiseta calentamiento Liverpool FC 25/26", inStock: false, sizes: ["M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7794506271c34760abd4ed7767ba9d09_9366%2FCamiseta_calentamiento_Liverpool_FC_25-26_Negro_KB1447_21_model.jpg&feedId=92152&k=12855ef6c7dd482d2498a2b083240f37db7398e0" },
     ],
   },
 {
@@ -76369,18 +76329,6 @@ const productsData = [
     ],
   },
 {
-    id: "leon-home-202526",
-    teamKey: "leon",
-    season: "2025/26",
-    typeKey: "home",
-    colorHex: "#00693E",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay IT", price: 43.47, shipping: 37.17, currency: "EUR", url: "https://www.ebay.it/itm/317379516732?_skw=Club+Le%C3%B3n+home+soccer+jersey&hash=item49e54b193c%3Ag%3AmogAAeSwr%7Eto40uZ&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia León Home 25-26 Charly Uomo Taglie S - XL Nuova con etichette Verde Club Leon Liga MX", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/mogAAeSwr~to40uZ/s-l1600.jpg" },
-    ],
-  },
-{
     id: "tigresuanl-home-202627",
     teamKey: "tigresuanl",
     season: "2026/27",
@@ -85744,20 +85692,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "Futbol Emotion", price: 19.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fsoka%2Fsociedad-deportiva-huesca-training-winter-2025-2026-fucsia", title: "Camiseta Soka Sociedad Deportiva Huesca Training Winter 2025-2026", inStock: true, sizes: ["XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/271733/750/camiseta-soka-sociedad-deportiva-huesca-training-winter-2025-2026-fucsia-1.jpg" },
-    ],
-  },
-{
-    id: "intermilan-prematch-azul-oscuro-202526-kids",
-    teamKey: "intermilan",
-    season: "2025/26",
-    typeKey: "prematch",
-    colorHex: "#010E80",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    ageGroup: "kids",
-    brand: "nike",
-    offers: [
-      { store: "Futbol Emotion", price: 41.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fnike%2Finter-milan-pre-match-2025-2026-nino-chlorine-blue-black-chlorine-blue-full-sponso", title: "Camiseta Nike Inter Milan Pre-Match 2025-2026 Niño", inStock: false, sizes: ["M"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/260763/750/camiseta-nike-inter-milan-pre-match-2025-2026-nino-chlorine-blue-black-chlorine-blue-full-sponso-1.jpg" },
     ],
   },
 {
