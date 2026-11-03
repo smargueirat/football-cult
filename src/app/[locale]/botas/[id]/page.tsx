@@ -12,6 +12,15 @@ function findBoot(id: string) {
   return bootProducts.find((p) => p.id === id);
 }
 
+// Los alias apuntan a /botas/marca/<marca>/<terreno>, pero ese hub solo existe
+// con MIN_HUB_ITEMS botas (brandGroundCombos): si no, Search Console lo veía
+// como 404 (hummel/fg). Sin el combo se cae al hub de la marca.
+function liveHub(target: string) {
+  const m = target.match(/^\/botas\/marca\/([^/]+)\/([^/]+)$/);
+  if (!m || brandGroundCombos().some((c) => c.brandSlug === m[1] && c.ground === m[2])) return target;
+  return `/botas/marca/${m[1]}`;
+}
+
 // ISR (2026-09-20): sin generateStaticParams estas páginas eran ƒ
 // (cache-control no-store): cada visita de un usuario o de Googlebot
 // ejecutaba una función que carga el catálogo entero -- la causa más
@@ -72,7 +81,7 @@ export default async function BootDetailPage({
     // scripts/boots-mining/refresh_boots.py): su URL vieja redirige a la que
     // la absorbió en vez de dar 404.
     const target = (bootAliases as Record<string, string>)[id];
-    if (target?.startsWith("/")) permanentRedirect(`/${locale}${target}`);
+    if (target?.startsWith("/")) permanentRedirect(`/${locale}${liveHub(target)}`);
     if (target && findBoot(target)) permanentRedirect(`/${locale}/botas/${target}`);
     notFound();
   }
