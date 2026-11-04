@@ -10,6 +10,24 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-04: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "venezia-retro-202122-home": "venezia-retro-202223-home",
+  "honduras-retro-2010-away": "honduras-retro-202425-away",
+  "galatasaray-third-202627": "galatasaray-third-202526",
+  "fcingolstadt-retro-202425-home": "fcingolstadt-retro-2015-home",
+  "guatemala-retro-201920-away": "guatemala-retro-201718-away",
+  "schalke04-home-202627": "schalke04-home-202526",
+  "eslovaquia-retro-201516-home": "eslovaquia-retro-2014-home",
+  "guatemala-home-202526": "guatemala-home-2025",
+  "eslovenia-retro-200809-away": "eslovenia-retro-201011-away",
+  "guatemala-retro-202122-away": "guatemala-retro-2021-away",
+  "chequia-retro-201617-home": "chequia-retro-2016-home",
+  "tunez-retro-2024-home": "tunez-home-202526",
+  "romania-retro-201617-home": "romania-retro-201820-home",
+  "canada-retro-202425-home": "canada-retro-2024-home",
+  "eslovenia-retro-201011-home": "eslovenia-retro-201819-home",
+  "espana-retro-2012-away": "espana-retro-201213-away",
   // 2026-11-04: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
   // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
   "birminghamcity-retro-2023-away": "birminghamcity-retro-202324-away",
@@ -519,7 +537,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "genoa-home-2026": "genoa-home-202526",
   "genoa-third-2026": "genoa-third-202526",
   "galatasaray-home-2026": "galatasaray-home-202627",
-  "galatasaray-third-2026": "galatasaray-third-202627",
+  "galatasaray-third-2026": "galatasaray-third-202526",
   "napoli-third-2026": "napoli-third-202526",
   "rangers-third-2025": "rangers-third-202526",
   "stuttgart-home-2026": "stuttgart-home-202526",
