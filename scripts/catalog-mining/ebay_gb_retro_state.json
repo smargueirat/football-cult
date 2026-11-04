@@ -555,6 +555,7 @@
 "birminghamcity-retro-1998-away",
 "birminghamcity-retro-2004-home",
 "birminghamcity-retro-200506-home",
+"birminghamcity-retro-200809-away",
 "birminghamcity-retro-201011-away",
 "birminghamcity-retro-201213-away",
 "birminghamcity-retro-201213-home",
@@ -562,6 +563,7 @@
 "birminghamcity-retro-201516-home",
 "birminghamcity-retro-2020-away",
 "birminghamcity-retro-2022-home",
+"birminghamcity-retro-202223-home",
 "birminghamcity-retro-2023-away",
 "birminghamcity-retro-202425-home",
 "birminghamcity-retro-202425-third",
@@ -588,6 +590,7 @@
 "blackburn-retro-2012-away",
 "blackburn-retro-201819-home",
 "blackburn-retro-2019-home",
+"blackburn-retro-201920-home",
 "blackburn-retro-202425-away",
 "boca-retro-199798-home",
 "boca-retro-199799-home",
@@ -955,6 +958,7 @@
 "china-retro-1986-away",
 "china-retro-200002-home",
 "china-retro-2016-away",
+"china-retro-201617-away",
 "china-retro-2018-home",
 "china-retro-202223-away",
 "china-retro-202223-home",
@@ -1168,6 +1172,7 @@
 "costarica-retro-2014-home",
 "costarica-retro-2015-away",
 "costarica-retro-2015-home",
+"costarica-retro-201516-away",
 "costarica-retro-2018-away",
 "costarica-retro-2018-home",
 "costarica-retro-201819-away",
@@ -1182,6 +1187,7 @@
 "costarica-retro-2022-home",
 "costarica-retro-2024-home",
 "costarica-retro-202425-home",
+"coventry-retro-201011-home",
 "coventry-retro-201012-away",
 "coventry-retro-201213-home",
 "coventry-retro-201920-away",
@@ -1349,6 +1355,7 @@
 "dynamokyiv-retro-202021-home",
 "dynamokyiv-retro-202021-third",
 "dynamokyiv-retro-202223-away",
+"dynamokyiv-retro-202223-home",
 "dynamokyiv-retro-202425-away",
 "dynamokyiv-retro-202425-home",
 "ecuador-retro-200304-away",
@@ -1369,6 +1376,7 @@
 "egipto-retro-2024-away",
 "egipto-retro-202425-away",
 "eibar-retro-202324-home",
+"eibar-retro-202425-third",
 "elche-retro-202021-home",
 "elpasolocomotive-retro-2024-away",
 "elsalvador-retro-1970-home",
@@ -1583,11 +1591,14 @@
 "fenerbahce-retro-201819-away",
 "fenerbahce-retro-201819-third",
 "fenerbahce-retro-201920-away",
+"fenerbahce-retro-201920-home",
+"fenerbahce-retro-201920-third",
 "fenerbahce-retro-2020-away",
 "fenerbahce-retro-2020-home",
 "fenerbahce-retro-202021-away",
 "fenerbahce-retro-202021-home",
 "fenerbahce-retro-202122-away",
+"fenerbahce-retro-202122-home",
 "fenerbahce-retro-202122-third",
 "fenerbahce-retro-202324-home",
 "fenerbahce-retro-202425-away",
@@ -1770,6 +1781,7 @@
 "galatasaray-retro-2009-third",
 "galatasaray-retro-200910-home",
 "galatasaray-retro-2010-third",
+"galatasaray-retro-201011-away",
 "galatasaray-retro-201011-third",
 "galatasaray-retro-2011-third",
 "galatasaray-retro-201314-home",
@@ -1780,6 +1792,7 @@
 "galatasaray-retro-2018-home",
 "galatasaray-retro-201819-home",
 "galatasaray-retro-2019-away",
+"galatasaray-retro-201920-away",
 "galatasaray-retro-202021-home",
 "galatasaray-retro-202021-third",
 "galatasaray-retro-202122-away",
@@ -1888,9 +1901,11 @@
 "grecia-retro-2008-home",
 "grecia-retro-200809-away",
 "grecia-retro-2010-home",
+"grecia-retro-201011-home",
 "grecia-retro-201012-away",
 "grecia-retro-2012-away",
 "grecia-retro-2014-away",
+"grecia-retro-201415-away",
 "greenvilletriumph-retro-2024-home",
 "greenvilletriumph-retro-202425-home",
 "gremio-retro-198384-home",
@@ -2023,6 +2038,7 @@
 "huddersfield-retro-201718-home",
 "huddersfield-retro-2018-home",
 "huddersfield-retro-201819-away",
+"huddersfield-retro-201819-third",
 "huddersfield-retro-202021-away",
 "huddersfield-retro-202021-home",
 "huddersfield-retro-202122-home",
@@ -4207,11 +4223,13 @@
 "sudafrica-retro-2002-home",
 "sudafrica-retro-2005-away",
 "sudafrica-retro-2006-home",
+"sudafrica-retro-2010-home",
 "sudafrica-retro-2012-home",
 "sudafrica-retro-201214-home",
 "sudafrica-retro-201819-away",
 "sudafrica-retro-201819-home",
 "sudafrica-retro-2023-away",
+"sudafrica-retro-202324-away",
 "sudafrica-retro-202324-home",
 "sudafrica-retro-202324-third",
 "suecia-retro-1994-away",
@@ -4311,12 +4329,15 @@
 "swansea-retro-201314-away",
 "swansea-retro-2014-away",
 "swansea-retro-2014-home",
+"swansea-retro-201415-home",
 "swansea-retro-2015-away",
+"swansea-retro-201516-away",
 "swansea-retro-2017-home",
 "swansea-retro-201718-away",
 "swansea-retro-201718-home",
 "swansea-retro-2018-away",
 "swansea-retro-201819-home",
+"swansea-retro-201819-third",
 "swansea-retro-202122-home",
 "swansea-retro-202223-away",
 "swansea-retro-202223-home",
@@ -4650,6 +4671,7 @@
 "werderbremen-retro-202425-away",
 "westbrom-retro-1993-away",
 "westbrom-retro-1994-home",
+"westbrom-retro-199495-home",
 "westbrom-retro-199697-home",
 "westbrom-retro-2002-home",
 "westbrom-retro-200203-home",
@@ -23569,6 +23591,91 @@
 "L"
 ],
 "shipping": 12.0
+},
+"dynamokyiv-retro-202223-home": {
+"title": "DYNAMO KYIV New Balance Home Football Shirt 2022-23 NEW Mens BNWT Jersey Kiev",
+"price": 46.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/386937535053?_skw=Dynamo+Kyiv+2022+home+shirt&hash=item5a17463a4d%3Ag%3Ar2QAAOSwQA9mIPb%7E&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|386937535053|656493751320",
+"image": "https://i.ebayimg.com/images/g/r2QAAOSwQA9mIPb~/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 0.0
+},
+"galatasaray-retro-201011-away": {
+"title": "Galatasaray 2010/2011 Away shirt ",
+"price": 21.5,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/396425391731?_skw=Galatasaray+2010+away+shirt&hash=item5c4ccb6e73%3Ag%3AVLEAAOSwsHFn9YCY&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|396425391731|0",
+"image": "https://i.ebayimg.com/images/g/VLEAAOSwsHFn9YCY/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 2.94
+},
+"galatasaray-retro-201920-away": {
+"title": "Galatasaray 2019/2020 Away Football Shirt - Large - Nike",
+"price": 40.56,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/188390169172?_skw=Galatasaray+2019+away+shirt&hash=item2bdcedda54%3Ag%3AS6kAAeSw6SNqCJh1&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|188390169172|0",
+"image": "https://i.ebayimg.com/images/g/S6kAAeSw6SNqCJh1/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 20.78
+},
+"sudafrica-retro-2010-home": {
+"title": "South Africa \"SFA\" No.438 Adidas Home World Cup Jersey 2010 Size XXL New",
+"price": 80.09,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/168654830731?_skw=South+Africa+2010+home+shirt&hash=item27449c7c8b%3Ag%3AdkQAAOSwAtlask8G&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|168654830731|0",
+"image": "https://i.ebayimg.com/images/g/dkQAAOSwAtlask8G/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 12.01
+},
+"birminghamcity-retro-200809-away": {
+"title": "Birmingham City 08/09 Away Shirt, Unworn, Immaculate Condition. XL",
+"price": 42.29,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/278425187484?_skw=Birmingham+City+2008+away+shirt&hash=item40d36f349c%3Ag%3Anw4AAeSw-jBpX4JP&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|278425187484|0",
+"image": "https://i.ebayimg.com/images/g/nw4AAeSw-jBpX4JP/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 3.38
+},
+"birminghamcity-retro-202223-home": {
+"title": "Birmingham city 2022-23 home shirt ",
+"price": 21.5,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/237145741099?_skw=Birmingham+City+2022+home+shirt&hash=item3736fcd72b%3Ag%3ADusAAeSwm-xqxT2p&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|237145741099|0",
+"image": "https://i.ebayimg.com/images/g/DusAAeSwm-xqxT2p/s-l1600.jpg",
+"sizes": [
+"XS"
+],
+"shipping": 2.96
+},
+"huddersfield-retro-201819-third": {
+"title": "Huddersfield Town Shirt Mens Small Green Umbro Third 3rd Jersey 2018/2019 BNWT",
+"price": 24.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/137731587516?_skw=Huddersfield+Town+2018+third+shirt&hash=item2011713dbc%3Ag%3AYZcAAOSwQ9llspq%7E&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|137731587516|0",
+"image": "https://i.ebayimg.com/images/g/YZcAAOSwQ9llspq~/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 3.19
 }
 }
 }
