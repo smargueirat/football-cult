@@ -10,6 +10,22 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-04: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "birminghamcity-retro-2023-away": "birminghamcity-retro-202324-away",
+  "birminghamcity-retro-2022-home": "birminghamcity-retro-202223-home",
+  "blackburn-retro-2019-home": "blackburn-retro-201920-home",
+  "mkdons-retro-2017-home": "mkdons-retro-201718-home",
+  "mkdons-retro-2022-home": "mkdons-retro-202223-home",
+  "norwich-retro-2019-third": "norwich-retro-201920-third",
+  "southampton-retro-2015-away": "southampton-retro-201516-away",
+  "swansea-retro-2014-home": "swansea-retro-201415-home",
+  "watford-retro-2022-home": "watford-retro-202223-home",
+  "westbrom-retro-1994-home": "westbrom-retro-199495-home",
+  "westbrom-retro-2016-home": "westbrom-retro-201617-home",
+  "norwich-retro-2020-home": "norwich-retro-202021-home",
+  "swansea-retro-2015-away": "swansea-retro-201516-away",
+  "southampton-retro-2021-away": "southampton-retro-202122-away",
   // 2026-11-03: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "hellasverona-retro-202425-away": "hellasverona-away-202526",
@@ -320,7 +336,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "polonia-retro-202425-home": "polonia-home-2026",
   "galatasaray-retro-199697-home": "galatasaray-retro-199899-home",
   "tunez-retro-202122-home": "tunez-retro-202223-home",
-  "birminghamcity-retro-202425-home": "birminghamcity-retro-2022-home",
+  "birminghamcity-retro-202425-home": "birminghamcity-retro-202223-home",
   "gremio-retro-202223-home": "gremio-retro-202324-home",
   "tunez-retro-2024-third": "tunez-third-202526",
   "atleticomadrid-retro-2017-home": "atleticomadrid-retro-201718-home",
@@ -659,7 +675,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "cruzazul-retro-2022-home": "cruzazul-retro-202223-home",
   "nacional-home-2026": "nacional-retro-2022-home",
   "huddersfield-retro-202021-home": "huddersfield-retro-202122-home",
-  "birminghamcity-home-202526": "birminghamcity-retro-2022-home",
+  "birminghamcity-home-202526": "birminghamcity-retro-202223-home",
   "penarol-retro-2022-away": "penarol-retro-2024-away",
   "belgica-retro-2002-home": "belgica-retro-2000-home",
   "romania-retro-2023-home": "romania-retro-202324-home",
