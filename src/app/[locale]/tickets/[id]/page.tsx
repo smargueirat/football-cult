@@ -1,10 +1,11 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { ticketProducts } from "@/data/tickets";
 import { ticketSeller, ticketOfferTotalInEUR } from "@/lib/offerMoney";
 import { buildAlternates, isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { OG_LOCALE, SITE_URL, ldImage, ogImages, ticketDescription, ticketTitle } from "@/lib/seoMeta";
 import { ticketRelated, ticketTrail } from "@/lib/detailLinks";
+import { ticketTeamFacets } from "@/lib/ticketHubs";
 import { DetailCrumbs, RelatedLinks } from "@/components/DetailNav";
 import TicketDetailPageClient from "./TicketDetailPageClient";
 
@@ -64,7 +65,15 @@ export default async function TicketDetailPage({
   const { locale: rawLocale, id } = await params;
   const locale = isLocale(rawLocale) ? rawLocale : DEFAULT_LOCALE;
   const ticket = findTicket(id);
-  if (!ticket?.offers.length) notFound();
+  if (!ticket?.offers.length) {
+    // Partido ya jugado (la ficha sale del catálogo): quien llega desde Google
+    // o un enlace viejo ve los próximos partidos del equipo, no un 404. Si el
+    // id no tiene forma de partido (o ningún equipo tiene hub), sigue el 404.
+    const m = id.match(/^(.+?)-vs-(.+?)-\d{4}-\d{2}-\d{2}$/);
+    const hub = m && ticketTeamFacets().find((f) => f.slug === m[1] || f.slug === m[2])?.slug;
+    if (hub) redirect(`/${locale}/tickets/equipo/${hub}`);
+    notFound();
+  }
   const url = `${SITE_URL}/${locale}/tickets/${ticket.id}`;
   const image = ldImage(ticket.imageUrl);
 
