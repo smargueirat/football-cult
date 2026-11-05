@@ -565,6 +565,7 @@
 "birminghamcity-retro-2022-home",
 "birminghamcity-retro-202223-home",
 "birminghamcity-retro-2023-away",
+"birminghamcity-retro-202324-away",
 "birminghamcity-retro-202425-home",
 "birminghamcity-retro-202425-third",
 "blackburn-retro-1994-away",
@@ -2971,6 +2972,7 @@
 "millwall-retro-2007-away",
 "millwall-retro-201516-away",
 "millwall-retro-201516-third",
+"millwall-retro-201920-away",
 "millwall-retro-2020-third",
 "millwall-retro-202223-away",
 "minnesotaunited-retro-2015-home",
@@ -2987,9 +2989,11 @@
 "mkdons-retro-201112-away",
 "mkdons-retro-2015-home",
 "mkdons-retro-2017-home",
+"mkdons-retro-201718-home",
 "mkdons-retro-201920-away",
 "mkdons-retro-201920-third",
 "mkdons-retro-2022-home",
+"mkdons-retro-202223-home",
 "mkdons-retro-202324-home",
 "mkdons-retro-2024-third",
 "mkdons-retro-202425-home",
@@ -3190,6 +3194,7 @@
 "norwich-retro-2019-third",
 "norwich-retro-201920-away",
 "norwich-retro-201920-home",
+"norwich-retro-201920-third",
 "norwich-retro-2020-home",
 "norwich-retro-202122-home",
 "nottinghamforest-retro-1970-third",
@@ -4117,6 +4122,7 @@
 "southampton-retro-2013-home",
 "southampton-retro-201314-home",
 "southampton-retro-2015-away",
+"southampton-retro-201516-away",
 "southampton-retro-2016-home",
 "southampton-retro-201617-away",
 "southampton-retro-201617-home",
@@ -4336,6 +4342,7 @@
 "swansea-retro-201718-away",
 "swansea-retro-201718-home",
 "swansea-retro-2018-away",
+"swansea-retro-201819-away",
 "swansea-retro-201819-home",
 "swansea-retro-201819-third",
 "swansea-retro-202122-home",
@@ -4500,6 +4507,7 @@
 "ucrania-retro-202425-away",
 "ucrania-retro-202425-home",
 "ucrania-retro-202425-third",
+"udechile-retro-2022-away",
 "udinese-retro-1991-home",
 "udinese-retro-199899-home",
 "udinese-retro-201819-home",
@@ -4688,6 +4696,7 @@
 "westbrom-retro-201314-home",
 "westbrom-retro-2016-away",
 "westbrom-retro-2016-home",
+"westbrom-retro-201617-home",
 "westbrom-retro-201718-away",
 "westbrom-retro-2018-home",
 "westbrom-retro-2020-third",
@@ -23676,6 +23685,92 @@
 "S"
 ],
 "shipping": 3.19
+},
+"birminghamcity-retro-202324-away": {
+"title": "Birmingham City 2023/24 Away Shirt BNWT Size Small",
+"price": 31.9,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/375998067188?_skw=Birmingham+City+2023+away+shirt&hash=item578b3b31f4%3Ag%3AkP8AAeSwscJnsLkA&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|375998067188|0",
+"image": "https://i.ebayimg.com/images/g/kP8AAeSwscJnsLkA/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 2.94
+},
+"millwall-retro-201920-away": {
+"title": "Millwall Shirt Mens 5XL Yellow Macron Away Jersey Top Long Sleeve 2019-2020 NWT",
+"price": 30.0,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/146951360081?_skw=Millwall+2019+away+shirt&hash=item2236fbce51%3Ag%3Ay6cAAeSwvKFpDwLW&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|146951360081|0",
+"image": "https://i.ebayimg.com/images/g/y6cAAeSwvKFpDwLW/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 3.8
+},
+"mkdons-retro-201718-home": {
+"title": "2017-18 MK Dons Home NEW S Shirt Jersey Trikot Camiseta Maglia Maillot Maglietta",
+"price": 35.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/116051320199?_skw=MK+Dons+2017+home+shirt&hash=item1b05329d87%3Ag%3A9D0AAOSw8iJfSTeB&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|116051320199|0",
+"image": "https://i.ebayimg.com/images/g/9D0AAOSw8iJfSTeB/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 9.6
+},
+"mkdons-retro-202223-home": {
+"title": "MK Dons Home Shirt 2022/23 Castore White Black Football Jersey Mens XXL NWT",
+"price": 19.95,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/800729903526?_skw=MK+Dons+2022+home+shirt&hash=itemba6f38b1a6%3Ag%3Ade4AAeSweVZqurTS&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|800729903526|0",
+"image": "https://i.ebayimg.com/images/g/de4AAeSweVZqurTS/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 3.98
+},
+"norwich-retro-201920-third": {
+"title": "Norwich City Grey/Black Third Football Shirt 2019-20 Errea BNWT 4XL",
+"price": 16.15,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/357509726516?_skw=Norwich+City+2019+third+shirt&hash=item533d3d8134%3Ag%3Ag%7EsAAOSwXBlmmP5R&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|357509726516|0",
+"image": "https://i.ebayimg.com/images/g/g~sAAOSwXBlmmP5R/s-l1600.jpg",
+"sizes": [
+"4XL"
+],
+"shipping": 2.94
+},
+"southampton-retro-201516-away": {
+"title": "Southampton Away Shirt 2015-16",
+"price": 66.05,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/335667158558?_skw=Southampton+2015+away+shirt&hash=item4e27525e1e%3Ag%3AufcAAOSwbbtnJ4Rb&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|335667158558|0",
+"image": "https://i.ebayimg.com/images/g/ufcAAOSwbbtnJ4Rb/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 3.38
+},
+"swansea-retro-201819-away": {
+"title": "Swansea City 2018/19 Away Shirt, Large, Excellent Condition",
+"price": 19.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/800787387639?_skw=Swansea+City+2018+away+shirt&hash=itemba72a5d4f7%3Ag%3A5y4AAeSwNEhpZ-tU&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|800787387639|0",
+"image": "https://i.ebayimg.com/images/g/5y4AAeSwNEhpZ-tU/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 2.99
 }
 }
 }

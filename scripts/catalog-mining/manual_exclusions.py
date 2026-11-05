@@ -12,6 +12,12 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-11-05 ---
+    "/itm/860110090868",  # 2026-11-05 removed: Leeds home 25/26 with "Wembley 26" back print
+    "/itm/187933894081",  # 2026-11-05 removed: $28.98 template seller Hertha home 2025-26
+    "/itm/298717477704",  # 2026-11-05 removed: third-party "M - 5XL" listing, Magdeburg home 26/27
+    "/itm/298717476827",  # 2026-11-05 removed: third-party "M - 5XL" listing, Magdeburg away 26/27
+    "/itm/900000514266",  # 2026-11-05 removed: third-party "M-4XL" listing, Jahn Regensburg away
     # --- Daily pass 2026-10-29 ---
     "/itm/237135086340",  # 2026-10-29 removed: template seller quarter-zip top MAGLIA Club America Quarter-Zip Training Top Blu U
     "/itm/227517990518",  # 2026-10-29 removed: template seller Nike training VEST under atleticomineiro (adidas club)
