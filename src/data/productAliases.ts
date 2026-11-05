@@ -10,6 +10,19 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-05: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "barcelona-retro-200708-away": "barcelona-retro-200809-away",
+  "italia-retro-1996-away": "italia-retro-1994-away",
+  "barcelona-retro-199697-away": "barcelona-retro-1992-away",
+  "costarica-retro-1990-home": "costarica-retro-2014-home",
+  "iran-retro-1998-away": "iran-retro-201011-away",
+  "barcelona-retro-199697-home": "barcelona-retro-199597-home",
+  "tailandia-retro-1984-home": "tailandia-retro-2010-home",
+  "romania-retro-1994-home": "romania-retro-201820-home",
+  "holsteinkiel-retro-202223-away": "holsteinkiel-retro-202425-away",
+  "barcelona-retro-198082-home": "barcelona-retro-199316-home",
+  "celtic-retro-1980-home": "celtic-retro-1995-home",
   // 2026-11-05: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
   // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
   "clubbrugge-retro-2021-away": "clubbrugge-retro-202122-away",
