@@ -137,6 +137,8 @@
 "alemania-retro-202425-home",
 "alhilal-retro-201415-away",
 "alhilal-retro-202223-away",
+"alhilal-retro-202324-away",
+"alhilal-retro-202324-third",
 "alhilal-retro-2024-away",
 "alhilal-retro-2024-home",
 "alhilal-retro-202425-away",
@@ -156,6 +158,7 @@
 "alnassr-retro-202324-third",
 "alnassr-retro-202425-away",
 "anderlecht-retro-201213-away",
+"anderlecht-retro-201314-away",
 "anderlecht-retro-201314-home",
 "anderlecht-retro-201516-away",
 "anderlecht-retro-201920-home",
@@ -1064,6 +1067,7 @@
 "clubbrugge-retro-2008-away",
 "clubbrugge-retro-201011-home",
 "clubbrugge-retro-2021-away",
+"clubbrugge-retro-202122-away",
 "clubtijuana-retro-200910-home",
 "clubtijuana-retro-201213-away",
 "clubtijuana-retro-2014-home",
@@ -1575,6 +1579,7 @@
 "fcingolstadt-retro-2016-away",
 "fcingolstadt-retro-2016-third",
 "fcingolstadt-retro-201618-third",
+"fcingolstadt-retro-202021-away",
 "fcingolstadt-retro-202425-home",
 "fcmagdeburg-retro-202425-third",
 "fczurich-retro-202324-home",
@@ -1947,8 +1952,12 @@
 "hamburg-retro-201213-away",
 "hamburg-retro-201415-home",
 "hamburg-retro-201516-home",
+"hannover96-retro-201213-home",
 "hannover96-retro-201213-third",
+"hannover96-retro-201314-home",
+"hannover96-retro-201415-home",
 "hannover96-retro-2015-home",
+"hannover96-retro-201516-home",
 "hannover96-retro-201617-home",
 "hannover96-retro-201718-home",
 "hannover96-retro-2018-home",
@@ -1984,6 +1993,7 @@
 "hellasverona-retro-202425-away",
 "hertaberlin-retro-200708-home",
 "hertaberlin-retro-201617-away",
+"hertaberlin-retro-201718-away",
 "hertaberlin-retro-201819-away",
 "hertaberlin-retro-201819-home",
 "hertaberlin-retro-201920-away",
@@ -3562,6 +3572,7 @@
 "prestonnorthend-retro-2002-third",
 "prestonnorthend-retro-2021-home",
 "prestonnorthend-retro-2023-home",
+"prestonnorthend-retro-202324-away",
 "prestonnorthend-retro-202425-away",
 "prestonnorthend-retro-202425-home",
 "psg-retro-1992-home",
@@ -23771,6 +23782,55 @@
 "L"
 ],
 "shipping": 2.99
+},
+"alhilal-retro-202324-away": {
+"title": "Al Hilal Neymar Jr Away Football Shirt 2023/24 Number 10",
+"price": 36.01,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/366513908802?_skw=Al+Hilal+2023+away+shirt&hash=item5555ee6c42%3Ag%3AGNcAAeSwvAFqRFJI&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7noLq0HzRZvJxvL9o%2F0xrgqidW7UB5j7EXPkmePwOibBvyNJBwENTrmpACLyUT0fu%2F6EtcBnWYVG5VPc3gggCZiZdKjPcPCnWDPNpP%2BW1MNtiK4djH4mN9vTak6PoXtVCdZciiBRerErWZq8DVuxfJGNI1ozz8VLYHrvJ5psy%2FXj%2F1CA85VTGLEaMktWY69tr9f4%2BHO7GuVw94gsDi%2BRUS2QuoRQgK7unMLy2QcNSqL%2BfqotE8zexFqKkof51uJHeFnvTwV4WTj3NowVkdIxefMqipu%2B9%2Fnm05UPtLy4%2BkprQ%3D%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|366513908802|0",
+"image": "https://i.ebayimg.com/images/g/GNcAAeSwvAFqRFJI/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 0.0
+},
+"prestonnorthend-retro-202324-away": {
+"title": "Preston North End 2023/24 Away Shirt, Small, BNWT.",
+"price": 15.74,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/840074636597?_skw=Preston+North+End+2023+away+shirt&hash=itemc39859ad35%3Ag%3AGMoAAeSwLipq5HvR&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|840074636597|0",
+"image": "https://i.ebayimg.com/images/g/GMoAAeSwLipq5HvR/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 2.94
+},
+"hannover96-retro-201516-home": {
+"title": "Hannover 96 Jako home shirt 2015/16 \"Heinz von Heiden\" + No. 22 Almeida size M New",
+"price": 130.12,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/158245383429?_skw=Hannover+96+2015+home+shirt&hash=item24d828ed05%3Ag%3At3oAAOSw8btZf0L6&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|158245383429|0",
+"image": "https://i.ebayimg.com/images/g/t3oAAOSw8btZf0L6/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 12.01
+},
+"hertaberlin-retro-201718-away": {
+"title": "HERTHA BERLIN 2017/2018 AWAY FOOTBALL SHIRT NIKE SOCCER JERSEY SIZE S ADULT",
+"price": 42.29,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/177835366719?_skw=Hertha+Berlin+2017+away+shirt&hash=item2967d0593f%3Ag%3A2tMAAeSwa8Jpg5J0&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|177835366719|0",
+"image": "https://i.ebayimg.com/images/g/2tMAAeSwa8Jpg5J0/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 3.55
 }
 }
 }
