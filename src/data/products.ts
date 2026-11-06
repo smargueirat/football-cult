@@ -27666,20 +27666,6 @@ const productsData = [
     ],
   },
 {
-    id: "fcmetz-retro-202324-home",
-    teamKey: "fcmetz",
-    season: "2023/24",
-    typeKey: "retro",
-    colorHex: "#7A1F2B",
-    colorHexSecondary: "#87CEEB",
-    jerseyPattern: "solid",
-    brand: "kappa",
-    offers: [
-      { store: "FootStoreES", price: 89.35, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=43654191020&a=3013769&m=65912", title: "Camiseta primera equipación Metz Kombat Pro 2023/24", inStock: false, sizes: ["XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2F1800%2Fproduct%2Fk%2Fa%2Fkappa_351g71w-a01_red-granata-red-dk-orange-flam_1.webp&feedId=89032&k=d340f856e018b0e459a02b76c76bee7b5f6d7226" },
-      { store: "FootStoreFR", price: 87.68, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F351g71w-a01-maillot-domicile-metz-kombat-pro-2023-24-red-granata-red-dk-orange-flam", title: "Maillot Domicile Metz Kombat Pro 2023/24", inStock: false, sizes: ["XL"], imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_351g71w-a01_red-granata-red-dk-orange-flam_1.webp" },
-    ],
-  },
-{
     id: "fcmetz-retro-202425-home",
     teamKey: "fcmetz",
     season: "2024/25",
@@ -89702,18 +89688,6 @@ const productsData = [
     ],
   },
 {
-    id: "nuevazelanda-retro-2003-home",
-    teamKey: "nuevazelanda",
-    season: "2003",
-    typeKey: "retro",
-    colorHex: "#000000",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 54.21, shipping: 26.78, currency: "EUR", url: "https://www.ebay.es/itm/318896216829?_skw=New+Zealand+home+soccer+jersey&hash=item4a3fb21afd%3Ag%3AaXsAAeSwl5xqCfpy&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva local vintage Adidas 2003 de la selección nacional de fútbol de Nueva Zelanda sin mangas - L", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/aXsAAeSwl5xqCfpy/s-l1600.jpg" },
-    ],
-  },
-{
     id: "sandiegofc-retro-202425-away",
     teamKey: "sandiegofc",
     season: "2024/25",
@@ -90406,19 +90380,6 @@ const productsData = [
     ],
   },
 {
-    id: "everton-goalkeeper-202627",
-    teamKey: "everton",
-    season: "2026/27",
-    typeKey: "goalkeeper",
-    colorHex: "#003399",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    brand: "castore",
-    offers: [
-      { store: "eBay GB", price: 69.99, shipping: 0.0, currency: "GBP", url: "https://www.ebay.co.uk/itm/227453338331?_skw=Everton+goalkeeper+soccer+jersey&hash=item34f54682db%3Ag%3A1EwAAeSwYUhqaeRu&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7n3Fd37ZJyf1KuJ%2F0YyTSWDrw0X%2BHnHbfm0dft3Ad0PBABjOIiXWZ5QVcOKLqoOvhpQNHlXxa9Ir1lI7WKwQ4ryIq7l9H%2B5qq8rKcWIVZP4T3MkWZd2a5jxc2qnp94Ulz6aIlSNCi%2BF2xrzBMoPtKwNR6t%2FJ08sV%2Fn%2F8H2lu7ogzQtDWeFyY%2BgITrGZ8CZAl3FeiHBHxXtnOEAnhX2qO5XaFSNyN6iHgfazPAf1kE%2Fw%2BQR2Bv2nrpp8h0XA4%2BXKOARz1s9lFM4Vpq7zEMzEXe4cb6GY%2B3tfK44veMwTluQNTccZNdY8zgIzUGTUqFctGoY%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Everton Castore Pro Goalkeeper Shirt 2026/27 Away Player Spec Jersey BNWT Men's", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/1EwAAeSwYUhqaeRu/s-l1600.jpg" },
-    ],
-  },
-{
     id: "newcastle-goalkeeper-202526",
     teamKey: "newcastle",
     season: "2025/26",
@@ -90491,18 +90452,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "AdidasCL", price: 23990.0, shipping: 0.0, currency: "CLP", url: "https://www.awin1.com/pclick.php?p=46606875121&a=3013769&m=79922", title: "Tercera Camiseta Colo-Colo", inStock: true, sizes: ["XS", "S", "M", "L", "XL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fca702c540e3c4cdeb3f14b19422855e5_9366%2FTercera_Camiseta_Colo-Colo_Rojo_KL2128_01_laydown.jpg&feedId=95016&k=546a40a2458fa32e232bad333b52a5d794ce1736" },
-    ],
-  },
-{
-    id: "fenerbahce-training-202526",
-    teamKey: "fenerbahce",
-    season: "2025/26",
-    typeKey: "training",
-    colorHex: "#FFED00",
-    colorHexSecondary: "#0A3B77",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 159.0, shipping: 15.95, currency: "USD", url: "https://www.ebay.com/itm/257008311784?_skw=Fenerbah%C3%A7e+training+soccer+jersey&hash=item3bd6e39de8%3Ag%3A5Q8AAeSwixdobZIF&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Fenerbahce 2025/26 First Team Navy T-Shirt Official Training Jersey Men’s", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/5Q8AAeSwixdobZIF/s-l1600.jpg" },
     ],
   },
 {

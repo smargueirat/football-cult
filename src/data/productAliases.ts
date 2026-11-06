@@ -10,6 +10,9 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-06: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "fcmetz-retro-202324-home": "fcmetz-retro-202425-home",
   // 2026-11-05: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "barcelona-retro-200708-away": "barcelona-retro-200809-away",
