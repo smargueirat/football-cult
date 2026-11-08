@@ -10,6 +10,24 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-08: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "westham-retro-202425-home": "westham-home-202526",
+  "barcelona-retro-1995-away": "barcelona-retro-1992-away",
+  "atalanta-retro-199394-away": "atalanta-retro-199192-away",
+  "tenerife-home-202526": "tenerife-retro-1992-home",
+  "tottenham-retro-1991-home": "tottenham-retro-1986-home",
+  "portlandtimbers-away-202627": "portlandtimbers-retro-202425-away",
+  "fulham-retro-2010-away": "fulham-retro-2011-away",
+  "vancouverwhitecaps-retro-202223-away": "vancouverwhitecaps-retro-202021-away",
+  "paraguay-retro-2002-home": "paraguay-retro-2006-home",
+  "barcelona-retro-201011-home": "barcelona-retro-201112-home",
+  "newcastle-goalkeeper-202627": "newcastle-goalkeeper-202526",
+  "uruguay-retro-2014-home": "uruguay-retro-2016-home",
+  "clubtijuana-retro-201213-away": "clubtijuana-retro-201718-away",
+  "canada-retro-2020-away": "canada-retro-202324-away",
+  "riverplate-retro-200001-third": "riverplate-retro-201718-third",
+  "paraguay-retro-2015-away": "paraguay-away-2026",
   // 2026-11-07: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "athleticbilbao-retro-202223-home": "athleticbilbao-home-202526",
@@ -378,7 +396,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "hartlepool-home-202526": "hartlepool-home-202627",
   "manutd-retro-199900-home": "manutd-retro-199899-home",
   "watford-away-202526": "watford-retro-202021-away",
-  "vancouverwhitecaps-away-2026": "vancouverwhitecaps-retro-202223-away",
+  "vancouverwhitecaps-away-2026": "vancouverwhitecaps-retro-202021-away",
   "galatasaray-retro-199798-home": "galatasaray-retro-199899-home",
   "clubamerica-retro-201112-home": "clubamerica-retro-200809-home",
   "polonia-retro-202425-home": "polonia-home-2026",
@@ -1238,7 +1256,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   // temporada); la que quedó vacía redirige a la de su temporada real.
   "acmilan-retro-2018-away": "acmilan-retro-201819-away",
   "astonvilla-retro-2020-third": "astonvilla-retro-202021-third",
-  "atalanta-retro-1993-away": "atalanta-retro-199394-away",
+  "atalanta-retro-1993-away": "atalanta-retro-199192-away",
   "atalanta-retro-2024-away": "atalanta-retro-202425-away",
   "atalanta-retro-2010-home": "atalanta-retro-201011-home",
   "augsburg-retro-2021-away": "augsburg-retro-202122-away",
@@ -1315,7 +1333,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "psg-retro-1995-away": "psg-retro-199596-away",
   "psveindhoven-retro-2018-home": "psveindhoven-retro-201819-home",
   "riverplate-retro-2000-away": "riverplate-retro-200001-away",
-  "riverplate-retro-2000-third": "riverplate-retro-200001-third",
+  "riverplate-retro-2000-third": "riverplate-retro-201718-third",
   "roma-retro-1991-third": "roma-retro-199920-third",
   "werderbremen-retro-2000-home": "werderbremen-retro-199697-home",
   "westham-retro-2022-away": "westham-retro-202223-away",
