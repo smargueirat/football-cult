@@ -103,7 +103,7 @@ export default function HeroSearch({ suggestions }: { suggestions: HeroSuggestio
   const ui = TYPEAHEAD_UI[locale];
   return (
     <div className="mt-4">
-      <div ref={box} className="relative max-w-2xl">
+      <div ref={box} className="relative max-w-2xl xl:mx-auto">
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -192,7 +192,7 @@ export default function HeroSearch({ suggestions }: { suggestions: HeroSuggestio
         </ul>
       </div>
 
-      <div className="-mx-4 mt-2 flex items-center gap-2 overflow-x-auto px-4 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0" data-hero="suggest">
+      <div className="-mx-4 mt-2 flex items-center gap-2 overflow-x-auto px-4 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0 xl:justify-center" data-hero="suggest">
         <span className="shrink-0 text-xs font-semibold text-[#5b4a1f]">{t.hero.searchTry}</span>
         {suggestions.map((s) => (
           <button

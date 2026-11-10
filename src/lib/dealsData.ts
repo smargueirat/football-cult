@@ -72,10 +72,12 @@ export function itemName(section: DealSection, item: AnyItem, locale: HubLocale)
 
 export const dealName = (r: DealRow, locale: HubLocale) => itemName(r.section, r.item, locale);
 
-export function dealImage(r: DealRow): string {
-  if (r.section === "camiseta") return productImage(r.item as never) ?? "";
-  return r.item.imageUrl ?? r.item.offers.find((o) => o.imageUrl)?.imageUrl ?? "";
+export function itemImage(section: DealSection, item: AnyItem): string {
+  if (section === "camiseta") return productImage(item as never) ?? "";
+  return item.imageUrl ?? item.offers.find((o) => o.imageUrl)?.imageUrl ?? "";
 }
+
+export const dealImage = (r: DealRow): string => itemImage(r.section, r.item);
 
 let dropsCache: DealRow[] | null = null;
 /** Una fila por ficha (la oferta en stock con mayor bajada), de mayor a menor %. */

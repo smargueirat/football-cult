@@ -51,6 +51,9 @@ KIDS_RE = re.compile(r"\bjunior\b|\bni[ñn]os?\b|\benfants?\b|\bkinder\b", re.I)
 # confirmados contaminados, todos de esta marca/categoría.
 COLLECTIBLE_RE = re.compile(r"coleccionista|collector'?s?\b|signable|mystery box|\bfunko\b", re.I)
 
+# Ropa/accesorios que el feed titula "Balón de fútbol ..." (ver el filtro final de pelotas).
+NOT_A_BALL_RE = re.compile(r"conjunto de f[uú]tbol|\d+ piezas|\bkit pumero\b|espinillera|\bkicker\b|\bfutbol[ií]n", re.I)
+
 # custom_1 en Foot-Store/Sport is Good ES viene inconsistente entre filas
 # del MISMO feed: a veces "9" pelado, a veces "Taille 9" -- confirmado
 # real con Joma Area 19 (3 tallas, las 3 con el prefijo), rompía el
@@ -1168,6 +1171,14 @@ if __name__ == '__main__':
     print('=== ENTRENAMIENTO ===')
     mine_training(training_results)
     mine_sportsafe(balls_results, training_results, gloves_results)
+
+    # 2026-11-10 (captura del dueño): 7 "Zeus Kit Pumero Balón de fútbol Conjunto de
+    # fútbol 2 piezas" (camiseta+short, talla 2XS) de Deporte Outlet entraban como
+    # pelotas porque el título dice "Balón de fútbol"; también futbolines ("Kicker
+    # (x10)", 35 mm) y un pack con espinilleras. Se filtra por título ya fundido.
+    before = len(balls_results)
+    balls_results[:] = [b for b in balls_results if not NOT_A_BALL_RE.search(b.get('model') or '')]
+    print(f'pelotas: {before - len(balls_results)} que no son balones, fuera por título')
 
     drop_no_image(gloves_results, 'guantes')
     drop_no_image(balls_results, 'pelotas')

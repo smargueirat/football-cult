@@ -6,12 +6,16 @@ import HomeCategoryTiles from "@/components/HomeCategoryTiles";
 import CategorySections from "@/components/CategorySections";
 import PriceDropsSection from "@/components/PriceDropsSection";
 import LeagueShortcuts from "@/components/LeagueShortcuts";
-import SeasonalBanner from "@/components/SeasonalBanner";
+import SeasonalBanner, { type BannerPhoto } from "@/components/SeasonalBanner";
+import { bfDrops } from "@/lib/seasonalData";
+import { dealImage, dealName } from "@/lib/dealsData";
+import { activeSeasonal } from "@/lib/seasonal";
 import { todayIso } from "@/lib/seasonal";
 import { isLocale, DEFAULT_LOCALE } from "@/lib/i18n/locales";
 import { translations } from "@/lib/i18n/translations";
 import { SITE_URL } from "@/lib/hubPages";
 import { OG_DEFAULT } from "@/lib/ogDefault";
+import { getAgeGroup } from "@/lib/productMeta";
 import { heroSuggestions } from "@/lib/heroSuggestions";
 import { groupThousands, trustStats } from "@/lib/trustStrip";
 import { countries, type CountryCode } from "@/data/countries";
@@ -30,6 +34,7 @@ import {
   SEASONS,
   bestOfferForCountry,
   priceDropPercent,
+  productImage,
   products,
   productPriceDropped,
   type Product,
@@ -51,7 +56,7 @@ function computePriceDrops() {
   const dropIdsByCountry: Partial<Record<CountryCode, string[]>> = {};
 
   for (const country of countries) {
-    const ranked = products
+    const sorted = products
       .filter((p) => productPriceDropped(p, country.code))
       .sort((a, b) => {
         const bestA = bestOfferForCountry(a, country.code);
@@ -59,6 +64,27 @@ function computePriceDrops() {
         const dropA = bestA ? priceDropPercent(bestA) : 0;
         const dropB = bestB ? priceDropPercent(bestB) : 0;
         return dropB - dropA;
+      });
+    // Una sola tarjeta por equipación (2026-11-10, captura del dueño): Reebok DE
+    // publica la misma camiseta como hombre / mujer / niño con la MISMA foto y el
+    // carrusel mostraba 3 casi idénticas. Se queda la de hombre (la versión
+    // "normal"); a igualdad, la de mayor bajada (el orden ya viene así).
+    const AGE_RANK = { men: 0, women: 1, kids: 2 } as const;
+    const best = new Map<string, Product>();
+    for (const p of sorted) {
+      const k = `${p.teamKey}|${p.season}|${p.typeKey}`;
+      const cur = best.get(k);
+      if (!cur || AGE_RANK[getAgeGroup(p)] < AGE_RANK[getAgeGroup(cur)]) best.set(k, p);
+    }
+    const seenImg = new Set<string>();
+    const ranked = sorted
+      .filter((p) => best.get(`${p.teamKey}|${p.season}|${p.typeKey}`) === p)
+      .filter((p) => {
+        const img = productImage(p);
+        if (!img) return true;
+        if (seenImg.has(img)) return false;
+        seenImg.add(img);
+        return true;
       })
       .slice(0, MAX_DROPS_SHOWN);
 
@@ -96,6 +122,13 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
     .replace("{s}", String(trust.stores));
   const { dropProducts, dropIdsByCountry } = computePriceDrops();
   const faq = siteFaq(locale);
+  // Fotos de las mayores bajadas para el aviso de Black Friday (solo si está vigente).
+  const bfPhotos: BannerPhoto[] = activeSeasonal(todayIso()).some((e) => e.id === "black-friday")
+    ? bfDrops(locale)
+        .filter((r) => dealImage(r))
+        .slice(0, 4)
+        .map((r) => ({ src: dealImage(r), alt: dealName(r, locale), pct: Math.round(r.pct) }))
+    : [];
   const deals = todaysDeals(locale, ["camiseta", "botas", "ropa", "guantes", "pelotas"], "home");
 
   return (
@@ -166,14 +199,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             - El carrusel emotivo baja debajo de las ofertas. */}
         <section className="mx-auto w-full max-w-[1800px] px-4 pt-3 sm:px-8 sm:pt-8">
           {/* Black Friday / Navidad y Reyes: solo en su ventana (src/lib/seasonal.ts). */}
-          <SeasonalBanner today={todayIso()} />
-          {/* Escritorio grande (xl): el carrusel va a la derecha del título y
-              el buscador (antes esa mitad quedaba vacía y el carrusel, lo más
-              vistoso, abajo del todo); las ofertas, debajo a todo el ancho.
+          <SeasonalBanner today={todayIso()} photos={bfPhotos} />
+          {/* Escritorio grande (xl): cabecera centrada y, justo debajo de los
+              accesos, el carrusel a todo el ancho como banner (2026-11-10,
+              pedido del dueño: más profesional); las ofertas, después.
               Celular y tablet: igual que antes, el carrusel después de las
               ofertas. */}
-          <div className="xl:grid xl:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] xl:items-center xl:gap-8">
-          <div className="max-w-5xl">
+          <div className="flex flex-col">
+          <div className="max-w-5xl xl:order-1 xl:mx-auto xl:text-center">
             {/* min-h: el alto final (3 líneas en móvil, 2 en escritorio) se
                 reserva antes de que llegue la fuente; con la de reserva, más
                 estrecha, salía una línea menos y todo saltaba al cargar. */}
@@ -185,10 +218,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             </h1>
             {/* Cifras del contador real (no escritas a mano): antes dos
                 bloques de la misma pantalla daban números distintos. */}
-            <p className="mt-2 max-w-3xl text-[15px] leading-snug text-[#3f3a2f] sm:mt-3 sm:text-lg" data-hero="sub">
+            <p className="mt-2 max-w-3xl text-[15px] xl:mx-auto leading-snug text-[#3f3a2f] sm:mt-3 sm:text-lg" data-hero="sub">
               {heroSub}
             </p>
-            <ul className="mt-2.5 flex flex-wrap gap-x-4 gap-y-1 text-[13px] font-medium text-[#1B3B2B]" data-hero="trust">
+            <ul className="mt-2.5 flex flex-wrap gap-x-4 gap-y-1 text-[13px] font-medium text-[#1B3B2B] xl:justify-center" data-hero="trust">
               {[t.hero.h1Free, t.hero.trustShipping.replace("{s}", String(trust.stores))].map((line) => (
                 <li key={line} className="flex items-center gap-1.5">
                   <svg viewBox="0 0 20 20" aria-hidden className="h-4 w-4 shrink-0 fill-[#8a6a1f]">
@@ -208,7 +241,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           {/* Home -> tienda en un toque. La home recibía el 64 % de las
               entradas y no producía NINGÚN clic a tienda (GA4, 90 días):
               el único camino pasaba por ficha. */}
-          <div className="xl:col-span-2">
+          <div className="xl:order-3">
             <DirectDeals
               deals={deals}
               eyebrow={CONV[locale].dealsEyebrow}
@@ -220,7 +253,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
           {/* Carrusel de secciones: copy emotivo y fotos de campaña. Iba
               arriba del todo y empujaba el buscador fuera de la pantalla. */}
-          <div className="mt-8 xl:col-start-2 xl:row-start-1 xl:mt-0">
+          <div className="mt-8 xl:order-2 xl:mt-8">
             <HeroCarousel />
           </div>
           </div>

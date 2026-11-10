@@ -3,7 +3,7 @@ import Link from "next/link";
 import { HUB } from "@/lib/hubStrings";
 import { asLocale, breadcrumbLd, hubMetadata } from "@/lib/hubPages";
 import { withBrand } from "@/lib/seoMeta";
-import { archiveDates, dealHref, dealImage, dealName, itemName } from "@/lib/dealsData";
+import { archiveDates, dealHref, dealImage, dealName, itemImage, itemName } from "@/lib/dealsData";
 import { DEALS, longDate } from "@/lib/dealsStrings";
 import { BF_GROUPS, bfBands, bfDrops, bfGroupOf, bfLows, bfReference, type RefRow } from "@/lib/seasonalData";
 import { SEASONAL } from "@/lib/seasonalStrings";
@@ -11,7 +11,7 @@ import { currentBlackFriday, todayIso } from "@/lib/seasonal";
 import { formatOfferMoney, type OfferCurrencyCode } from "@/lib/offerMoney";
 import type { HubLocale } from "@/data/teamMeta";
 import { Crumbs, HubHeader, JsonLd, Section } from "@/components/hubs/HubParts";
-import { DealTable, DealsRelated, listLd } from "@/components/hubs/DealParts";
+import { DealTable, DealThumb, DealsRelated, listLd } from "@/components/hubs/DealParts";
 import DealCard from "@/components/hubs/DealCard";
 
 // Black Friday (viernes tras el 4.º jueves de noviembre) y Cyber Monday. Misma
@@ -23,6 +23,7 @@ export const revalidate = 3600;
 const PER_GROUP = 20;
 const PER_BAND = 8;
 const REF_ROWS = 15;
+const TOP_CARDS = 8;
 const PATH = "/black-friday";
 const GRID = "grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4";
 
@@ -41,7 +42,7 @@ function RefTable({ rows, locale }: { rows: RefRow[]; locale: HubLocale }) {
   const td = "px-2 py-2 align-top";
   return (
     <div className="overflow-x-auto rounded-2xl border border-[#C9A24B]/35 bg-[#fffdf8]">
-      <table className="w-full min-w-[640px] text-sm text-[#3a3a36]">
+      <table className="w-full min-w-[720px] text-sm text-[#3a3a36]">
         <thead className="bg-[#f6efdd] text-[#1B3B2B]">
           <tr>
             <th className={th}>{c.product}</th>
@@ -60,9 +61,12 @@ function RefTable({ rows, locale }: { rows: RefRow[]; locale: HubLocale }) {
             return (
               <tr key={r.item.id} className="border-t border-[#C9A24B]/20">
                 <td className={td}>
-                  <Link className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B]/60 underline-offset-2" href={`/${locale}/${r.section}/${r.item.id}`}>
-                    {itemName(r.section, r.item, locale)}
-                  </Link>
+                  <div className="flex items-start gap-3">
+                    <DealThumb src={itemImage(r.section, r.item)} alt={itemName(r.section, r.item, locale)} />
+                    <Link className="min-w-0 font-medium text-[#1B3B2B] underline decoration-[#C9A24B]/60 underline-offset-2" href={`/${locale}/${r.section}/${r.item.id}`}>
+                      {itemName(r.section, r.item, locale)}
+                    </Link>
+                  </div>
                 </td>
                 <td className={td}>{r.store}</td>
                 <td className={`${td} font-semibold text-[#1B3B2B]`}>{formatOfferMoney(r.price, cur, locale)}</td>
@@ -101,6 +105,8 @@ export default async function BlackFridayPage({ params }: P) {
     last: longDate(archiveDates().last, locale),
   });
   const listed = [...drops.slice(0, 30), ...lows.slice(0, 20)];
+  // Las mayores bajadas con foto, a la vista antes de las tablas.
+  const top = drops.filter((r) => dealImage(r)).slice(0, TOP_CARDS);
 
   return (
     <div className="mx-auto w-full max-w-5xl px-4 py-6 sm:px-8">
@@ -112,6 +118,27 @@ export default async function BlackFridayPage({ params }: P) {
       />
       <Crumbs locale={locale} trail={[{ label: s.title }]} />
       <HubHeader h1={s.title} intro={intro} />
+
+      {top.length > 0 && (
+        <Section title={s.dropsH2}>
+          <div className={GRID}>
+            {top.map((r, i) => (
+              <DealCard
+                key={`${r.section}/${r.item.id}`}
+                href={dealHref(r, locale)}
+                title={dealName(r, locale)}
+                image={dealImage(r)}
+                price={r.price}
+                currency={r.currency}
+                pct={Math.round(r.pct)}
+                store={r.store}
+                locale={locale}
+                priority={i < 4}
+              />
+            ))}
+          </div>
+        </Section>
+      )}
 
       {ref.length > 0 && (
         <Section title={s.refH2}>

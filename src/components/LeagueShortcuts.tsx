@@ -26,7 +26,7 @@ export default function LeagueShortcuts() {
 
   return (
     <section aria-label={s.browseLeagues} className="mx-auto w-full max-w-[1800px] px-4 pt-6 sm:px-8">
-      <div className="flex items-baseline justify-between gap-4">
+      <div className="flex items-center justify-between gap-4">
         <h2 className="font-vintage text-xl text-[#1B3B2B] sm:text-2xl">{s.browseLeagues}</h2>
         <Link
           href="/ligas"

@@ -92,3 +92,24 @@ export function bannerText(e: SeasonalEvent, l: HubLocale): string {
     it: "Regali di calcio per Natale e la Befana, per budget e con prezzi reali",
   }[l];
 }
+
+type L5 = Record<HubLocale, string>;
+const BF_TAG: L5 = { es: "Bajadas reales verificadas", en: "Verified real price drops", pt: "Baixas reais verificadas", fr: "Vraies baisses vérifiées", it: "Ribassi reali verificati" };
+const BF_HEAD: L5 = {
+  es: "Camisetas y botas al mejor precio, comprobado",
+  en: "Shirts and boots at their best price, checked",
+  pt: "Camisas e chuteiras ao melhor preço, comprovado",
+  fr: "Maillots et chaussures au meilleur prix, vérifié",
+  it: "Maglie e scarpe al miglior prezzo, verificato",
+};
+const BF_CTA: L5 = { es: "Ver las ofertas", en: "See the deals", pt: "Ver as ofertas", fr: "Voir les offres", it: "Vedi le offerte" };
+const GIFT_TAG: L5 = { es: "Navidad y Reyes", en: "Christmas gifts", pt: "Natal e Reis", fr: "Noël", it: "Natale e Befana" };
+const GIFT_CTA: L5 = { es: "Ver los regalos", en: "See the gifts", pt: "Ver os presentes", fr: "Voir les cadeaux", it: "Vedi i regali" };
+
+/** Piezas del aviso grande: etiqueta, fechas, titular y botón. */
+export function bannerParts(e: SeasonalEvent, l: HubLocale): { eyebrow: string; dates: string; headline: string; tag: string; cta: string } {
+  if (e.id === "black-friday") {
+    return { eyebrow: `Black Friday ${e.year}`, dates: `${dm(e.start, l)} – ${dm(e.end, l)}`, headline: BF_HEAD[l], tag: BF_TAG[l], cta: BF_CTA[l] };
+  }
+  return { eyebrow: GIFT_TAG[l], dates: `${dm(e.start, l)} – ${dm(e.end, l)}`, headline: bannerText(e, l), tag: "", cta: GIFT_CTA[l] };
+}

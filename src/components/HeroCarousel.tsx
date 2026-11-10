@@ -113,7 +113,7 @@ export default function HeroCarousel() {
   return (
     <div className="@container">
     <div
-      className="vintage-dark shadow-vintage-lg relative h-[calc(56.25cqw+160px)] overflow-hidden rounded-2xl sm:rounded-3xl @3xl:h-[460px]"
+      className="vintage-dark shadow-vintage-lg relative h-[calc(56.25cqw+160px)] overflow-hidden rounded-2xl sm:rounded-3xl @3xl:h-[460px] @7xl:h-[420px]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
