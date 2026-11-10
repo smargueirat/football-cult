@@ -309,6 +309,7 @@ export const TEAM_LEAGUE: Record<string, string> = {
   jubiloiwata: "j-league",
   kashimaantlers: "j-league",
   kawasakifrontale: "j-league",
+  omiyaardija: "j-league",
   shimizuspulse: "j-league",
   urawareds: "j-league",
   yokohamafmarinos: "j-league",
