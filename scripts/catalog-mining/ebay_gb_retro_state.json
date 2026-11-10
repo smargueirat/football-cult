@@ -1076,9 +1076,12 @@
 "clubtijuana-retro-201718-away",
 "clubtijuana-retro-201718-third",
 "clubtijuana-retro-201819-home",
+"clubtijuana-retro-2019-third",
 "clubtijuana-retro-201920-away",
 "clubtijuana-retro-2020-home",
+"clubtijuana-retro-202122-home",
 "clubtijuana-retro-202223-away",
+"clubtijuana-retro-2023-home",
 "clubtijuana-retro-2024-home",
 "clubtijuana-retro-202425-home",
 "colocolo-retro-1991-away",
@@ -1314,9 +1317,14 @@
 "dinamozagreb-retro-201314-home",
 "dinamozagreb-retro-2022-home",
 "doradossinaloa-retro-201718-away",
+"doradossinaloa-retro-2019-away",
 "doradossinaloa-retro-202021-home",
 "doradossinaloa-retro-2022-home",
+"doradossinaloa-retro-2022-third",
+"doradossinaloa-retro-202223-away",
+"doradossinaloa-retro-202223-home",
 "doradossinaloa-retro-202324-away",
+"doradossinaloa-retro-202425-home",
 "dortmund-retro-1995-home",
 "dortmund-retro-199697-home",
 "dortmund-retro-1997-away",
@@ -2403,6 +2411,7 @@
 "jordania-retro-202021-home",
 "jskabylie-retro-200506-away",
 "jskabylie-retro-200607-home",
+"jubiloiwata-retro-2010-away",
 "jubiloiwata-retro-201819-home",
 "jubiloiwata-retro-2019-home",
 "juventus-retro-1995-home",
@@ -2477,6 +2486,7 @@
 "kashimaantlers-retro-2018-home",
 "kawasakifrontale-retro-2019-home",
 "kawasakifrontale-retro-2019-third",
+"kawasakifrontale-retro-2023-home",
 "keralablasters-retro-2023-away",
 "koln-retro-1978-away",
 "koln-retro-1978-home",
@@ -2548,6 +2558,8 @@
 "lasvegaslights-retro-2018-away",
 "lasvegaslights-retro-201819-home",
 "lasvegaslights-retro-2019-home",
+"lasvegaslights-retro-2020-away",
+"lasvegaslights-retro-2020-home",
 "lasvegaslights-retro-2022-away",
 "latvia-retro-2006-home",
 "latvia-retro-200607-home",
@@ -3284,6 +3296,8 @@
 "nyredbulls-retro-2024-home",
 "oaklandroots-retro-2019-home",
 "oaklandroots-retro-2023-away",
+"oaklandroots-retro-2024-home",
+"oaklandroots-retro-2024-third",
 "olympiacos-retro-200304-home",
 "olympiacos-retro-2005-home",
 "olympiacos-retro-2006-home",
@@ -23831,6 +23845,18 @@
 "S"
 ],
 "shipping": 3.55
+},
+"doradossinaloa-retro-202425-home": {
+"title": "Dorados de Sinaloa football shirt jersey Mexico Charly 2024 2025 home gold size",
+"price": 38.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/840018955334?_skw=Dorados+de+Sinaloa+2024+home+shirt&hash=itemc395080c46%3Ag%3AD9MAAeSw%7EdRqzqav&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|840018955334|0",
+"image": "https://i.ebayimg.com/images/g/D9MAAeSw~dRqzqav/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 3.49
 }
 }
 }

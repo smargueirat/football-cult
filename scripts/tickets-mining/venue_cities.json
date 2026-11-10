@@ -242,6 +242,11 @@
   "desc": "football stadium in Amadora, Portugal",
   "qid": "Q3059095"
  },
+ "Estadio Manuel Marques": {
+  "city": "Torres Vedras",
+  "desc": "football stadium in Torres Vedras, Portugal",
+  "qid": "Q5028447"
+ },
  "Estadio Manuel Martinez Valero": null,
  "Estadio Municipal 22 de Junho": null,
  "Estadio Municipal de Arouca": null,
@@ -311,6 +316,11 @@
  },
  "Europa Sports Park": null,
  "Europa-Park Stadion": null,
+ "Ewood Park": {
+  "city": "Blackburn",
+  "desc": "football stadium in Blackburn, England",
+  "qid": "Q245085"
+ },
  "Fadil Vokrri Stadium": {
   "city": "Pristina",
   "desc": "Football stadium in the capital of Kosovo, Pristina",
