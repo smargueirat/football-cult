@@ -52,7 +52,7 @@ KIDS_RE = re.compile(r"\bjunior\b|\bni[ñn]os?\b|\benfants?\b|\bkinder\b", re.I)
 COLLECTIBLE_RE = re.compile(r"coleccionista|collector'?s?\b|signable|mystery box|\bfunko\b", re.I)
 
 # Ropa/accesorios que el feed titula "Balón de fútbol ..." (ver el filtro final de pelotas).
-NOT_A_BALL_RE = re.compile(r"conjunto de f[uú]tbol|\d+ piezas|\bkit pumero\b|espinillera|\bkicker\b|\bfutbol[ií]n", re.I)
+NOT_A_BALL_RE = re.compile(r"conjunto de f[uú]tbol|\d+ piezas|\bkit pumero\b|espinillera|\bkicker\b|\bfutbol[ií]n|dodgeball|inflable|sensoriomotor", re.I)
 
 # custom_1 en Foot-Store/Sport is Good ES viene inconsistente entre filas
 # del MISMO feed: a veces "9" pelado, a veces "Taille 9" -- confirmado
