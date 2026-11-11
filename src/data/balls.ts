@@ -61,6 +61,550 @@ export interface BallProduct {
 
 const minedBallProductsChunk1: BallProduct[] = [
   {
+    id: "adidas-adidas-euro-training-balon-de-futbol-in9366-blanco",
+    brand: "Adidas",
+    model: "adidas EURO Training Balón de fútbol IN9366 - blanco",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 9.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45840879386&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa7%2Ff4%2F11%2FIN9366-1_600x600.jpg&feedId=99907&k=4f716f0ee5f09fdedd8ababac5f0666778310188",
+        sizes: ["3"],
+      },
+    ],
+  },
+  {
+    id: "adidas-adidas-predator-training-balon-de-futbol-ip1655-negro",
+    brand: "Adidas",
+    model: "adidas PREDATOR Training Balón de fútbol IP1655 - negro",
+    colour: "negro",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 11.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45840879387&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa2%2Fcc%2F18%2FIP1655-1_600x600.jpg&feedId=99907&k=6f773bffa9dfa756b302e6c1227ba1d41334ea64",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "jelex-jelex-bolzplatzheld-balon-de-futbol-de-goma-negro-amarillo",
+    brand: "JELEX",
+    model: "JELEX Bolzplatzheld Balón de fútbol de goma negro-amarillo",
+    colour: "negro",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 7.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324648772&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F6e%2Fd3%2F5c%2FJLX-183-1_600x600.jpg&feedId=99907&k=d83890cac3e692f1b77f3a3a3a12d3a6e75821fe",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "jelex-jelex-goalgetter-balon-de-futbol-azul",
+    brand: "JELEX",
+    model: "JELEX Goalgetter Balón de fútbol azul",
+    colour: "azul",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 9.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324648757&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F36%2Fd4%2F26%2FJLX-180-1_600x600.jpg&feedId=99907&k=e729f42e6de320c2a01d283b16868d521382ac70",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "jelex-jelex-goalgetter-balon-de-futbol-rojo",
+    brand: "JELEX",
+    model: "JELEX Goalgetter Balón de fútbol rojo",
+    colour: "rojo",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 9.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324648759&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F39%2F1d%2F5d%2FJLX-181-1_600x600.jpg&feedId=99907&k=746cb474d1e78a1b72df373093ed9752b9a866dc",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "jelex-jelex-neon-luz-led-balon-de-futbol-azul-naranja",
+    brand: "JELEX",
+    model: "JELEX \"Neon\" Luz LED Balón de fútbol azul/naranja",
+    colour: "azul",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 19.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324656517&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Ff0%2Fa8%2F95%2FJLX-321-1-new_600x600.jpg&feedId=99907&k=8dad31fca2bda600d3f4f9a610bfd092fa1c8ca0",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "jelex-jelex-neon-luz-led-balon-de-futbol-negro-naranja",
+    brand: "JELEX",
+    model: "JELEX \"Neon\" Luz LED Balón de fútbol negro/naranja",
+    colour: "negro",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 19.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324656516&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F30%2Fb8%2F1b%2FJLX-318-1-new_600x600.jpg&feedId=99907&k=befd7978a4726d25832bfd6b6b3f3a5e47103e5e",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "jelex-jelex-oldschool-vintage-balon-de-futbol-marra3n",
+    brand: "JELEX",
+    model: "JELEX \"Oldschool\" Vintage Balón de fútbol - marrÃ³n",
+    colour: "marrÃ³n",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 14.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324656606&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F76%2F3b%2Fa0%2FJLX-322-1_600x600.jpg&feedId=99907&k=98a6887ba9ff87c994c20ad506287123c5461660",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "jelex-jelex-topscorer-balon-de-futbol-amarillo-multicolor",
+    brand: "JELEX",
+    model: "JELEX \"Topscorer\" Balón de fútbol amarillo - multicolor",
+    colour: "multicolor",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 9.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324651866&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fc6%2Fae%2F7c%2FJLX-246-1ipCW43pkRp8j5_600x600.jpg&feedId=99907&k=335b938ac3b75572ab4fd53dd4518a70021a742a",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "jelex-jelex-topscorer-balon-de-futbol-azul-multicolor",
+    brand: "JELEX",
+    model: "JELEX \"Topscorer\" Balón de fútbol azul - multicolor",
+    colour: "multicolor",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 9.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324651865&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fba%2F57%2F97%2FJLX-245-1zdTBY3u8DQvjQ_600x600.jpg&feedId=99907&k=8bffd9c4a07cf716d1bbe10513920762ee744151",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "jelex-jelex-topscorer-balon-de-futbol-naranja-multicolor",
+    brand: "JELEX",
+    model: "JELEX \"Topscorer\" Balón de fútbol naranja - multicolor",
+    colour: "multicolor",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 9.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324651867&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F1b%2F97%2F83%2FJLX-247-1l8iE3nDJIhqzd_600x600.jpg&feedId=99907&k=a5439c2fd617a2455de17318e649527761a68c5a",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "macron-suiza-sfl-macron-fifa-basic-balon-de-futbol-60005754-blanco",
+    brand: "Macron",
+    model: "Suiza SFL macron FIFA Basic Balón de fútbol 60005754 - blanco",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 17.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46090530072&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa3%2Fd8%2F77%2F60005754-1_600x600.jpg&feedId=99907&k=6c268ed111f60a4129a72af338332291f3a022e3",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "macron-suiza-sfl-macron-fifa-quality-pro-match-ball-balon-de-futbol-40002994-blanco",
+    brand: "Macron",
+    model: "Suiza SFL macron FIFA QUALITY PRO Match Ball Balón de fútbol 40002994 - blanco",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 49.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46100200776&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fdb%2F54%2Fa8%2F40002994-1_600x600.jpg&feedId=99907&k=782915b4002e6c2a1f0ec38a1fdad293e5c95462",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "macron-suiza-sfl-macron-fifa-quality-pro-winter-match-ball-balon-de-futbol-40002995-naranja",
+    brand: "Macron",
+    model: "Suiza SFL macron FIFA QUALITY PRO Winter Match Ball Balón de fútbol 40002995 - naranja",
+    colour: "naranja",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 49.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46100200817&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fd5%2Fe0%2F51%2F40002995-1_600x600.jpg&feedId=99907&k=a142a52bc1fca173f558be54cf221caeee5cc96f",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "muwo-muwo-topscorer-goma-balon-de-futbol-blanco-rojo",
+    brand: "MUWO",
+    model: "MUWO \"Topscorer\" goma Balón de fútbol blanco rojo",
+    colour: "rojo",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 6.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324654664&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Ff9%2F01%2Fb8%2FMW-322-1_600x600.jpg&feedId=99907&k=9f8506f8b292ab098ef34ded8f0498c7789dcad3",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "nike-nike-pitch-equipo-balon-de-futbol-fz7553-100-blanco",
+    brand: "Nike",
+    model: "Nike Pitch Equipo Balón de fútbol FZ7553-100 - blanco",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 9.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43024488588&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F80%2Fe1%2F93%2FFZ7553-100-1_600x600.jpg&feedId=99907&k=faca35086cf87dc6c720ab21fccd678cc1173c06",
+        sizes: ["3", "4"],
+      },
+    ],
+  },
+  {
+    id: "puma-puma-big-cat-ball-balon-de-futbol-084589-09-azul",
+    brand: "Puma",
+    model: "PUMA Big Cat Ball Balón de fútbol 084589-09 - azul",
+    colour: "azul",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 6.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46029313952&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F50%2Fca%2F93%2F084589-09-1_NEU_600x600.jpg&feedId=99907&k=c02df4b2339180a76d47de091ab1d6d57e646921",
+        sizes: ["3", "5"],
+      },
+    ],
+  },
+  {
+    id: "puma-puma-icon-ball-balon-de-futbol-083628-02-plata",
+    brand: "Puma",
+    model: "PUMA Icon Ball Balón de fútbol 083628-02 - plata",
+    colour: "plata",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 13.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41959280616&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F25%2F5e%2Fb1%2F083628-02-1_600x600.jpg&feedId=99907&k=ed7bff5fe836df35354d833c1a777d1ff3198d4d",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "puma-puma-orbita-5-hybrid-balon-de-futbol-083783-02-blanco",
+    brand: "Puma",
+    model: "PUMA Orbita 5 Hybrid Balón de fútbol 083783-02 - blanco",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 8.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46145379923&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F0e%2Fa4%2Fae%2F083783-02-1_600x600.jpg&feedId=99907&k=922c7d9ec02c00ce4f6a6d1bcf67d01732726fdd",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "puma-puma-prestigio-balon-de-futbol-083992-01-negro",
+    brand: "Puma",
+    model: "PUMA Prestigio Balón de fútbol 083992-01 - negro",
+    colour: "negro",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 6.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45128725135&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F22%2F42%2F1b%2F083992-01-1NZPYmOwYGYe9i_600x600.jpg&feedId=99907&k=add8ee833a752430c6702e31cfb0caf6565385f2",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-beach-soccer-balon-de-futbol-negro-azul",
+    brand: "Zeus",
+    model: "Zeus Beach Soccer Balón de fútbol negro azul",
+    colour: "azul",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 15.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324646888&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F03%2Ff1%2Fa3%2FPALLONE-BEACH-SOCCER-SAND-NERO-ROYAL-1_600x600.jpg&feedId=99907&k=10f8a5722b3d3596e05eaf56adf4b52a2f090306",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-beach-soccer-balon-de-futbol-neon-naranja-negro",
+    brand: "Zeus",
+    model: "Zeus Beach Soccer Balón de fútbol Neón Naranja Negro",
+    colour: "naranja",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 15.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324654034&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F2e%2F80%2F68%2FBeach-1-NEU_600x600.jpg&feedId=99907&k=87cfdb10bb3569927d8ff807479ea0636bc0a78d",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-beach-soccer-balon-de-futbol-neon-verde-negro",
+    brand: "Zeus",
+    model: "Zeus Beach Soccer Balón de fútbol Neón Verde Negro",
+    colour: "verde",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 15.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324646889&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F2d%2F19%2F9b%2FPALLONE-BEACH-SOCCER-SAND-VERDEFLOU-NERO-1_600x600.jpg&feedId=99907&k=b7ecc3b9c1e4262104095b864bf52b4f4629df41",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-pallone-glory-fifa-approved-balon-de-futbol-multicolor",
+    brand: "Zeus",
+    model: "Zeus Pallone Glory FIFA Approved Balón de fútbol - multicolor",
+    colour: "multicolor",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 49.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324657117&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fbb%2F9a%2F90%2FPALLONE-GLORY-FIFA-APPROVED-1Fnw8nmuRPn0pr_600x600.jpg&feedId=99907&k=dea8d32c83093e2f508f97047a512521634c8428",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-pallone-hybrid-balon-de-futbol-blanco-azul",
+    brand: "Zeus",
+    model: "Zeus Pallone Hybrid Balón de fútbol blanco/azul",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 14.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324659401&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fcb%2F58%2F1f%2F196006-1_600x600.jpg&feedId=99907&k=5d5b5c50bcce3970030030e4944b9e0a3ec395d1",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-pallone-hybrid-balon-de-futbol-blanco-rojo",
+    brand: "Zeus",
+    model: "Zeus Pallone Hybrid Balón de fútbol blanco/rojo",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 14.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324659402&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F4b%2F6e%2F68%2F195993-1_600x600.jpg&feedId=99907&k=fb8a5faf8fbee27c0e991d5588e7760e1c273fcf",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-pallone-tuono-balon-de-futbol-amarillo-azul-marino",
+    brand: "Zeus",
+    model: "Zeus Pallone Tuono Balón de fútbol amarillo azul marino",
+    colour: "amarillo",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 14.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324649631&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F7c%2Fec%2Fc9%2FPALLONE-TUONO-GIALLOFLUO-BLU-1_600x600.jpg&feedId=99907&k=b5b10573b5e8e76a1159846f1d29d140c171bf69",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-pallone-tuono-balon-de-futbol-amarillo-royal-blue",
+    brand: "Zeus",
+    model: "Zeus Pallone Tuono Balón de fútbol amarillo royal blue",
+    colour: "amarillo",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 14.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324649633&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Ffc%2Ff6%2F09%2FPALLONE-TUONO-GIALLOFLUO-LIGHT-ROYAL-1_600x600.jpg&feedId=99907&k=9aa80054dbd3e39f40be01981810584b421dbddf",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-pallone-tuono-balon-de-futbol-blanco-amarillo",
+    brand: "Zeus",
+    model: "Zeus Pallone Tuono Balón de fútbol blanco amarillo",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 14.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324649632&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fb0%2F6e%2F8a%2FPALLONE-TUONO-BIANCO-GIALLO-FLUO-1_600x600.jpg&feedId=99907&k=3cd17b668d79ea6887ea1758fb5bf965b85f6ba0",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-pallone-tuono-balon-de-futbol-blanco-rojo",
+    brand: "Zeus",
+    model: "Zeus Pallone Tuono Balón de fútbol blanco rojo",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 14.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324649630&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F4a%2F14%2Fd4%2FPALLONE-TUONO-BIANCO-ROSSO-1_600x600.jpg&feedId=99907&k=8ebb65a3dab16fc86013bc80b12bd811eed336ed",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-pallone-tuono-balon-de-futbol-blanco-royal-blue",
+    brand: "Zeus",
+    model: "Zeus Pallone Tuono Balón de fútbol blanco royal blue",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 14.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324649634&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F41%2F48%2Fd6%2FPALLONE-TUONO-BIANCO-LIGHT-ROYAL-1_600x600.jpg&feedId=99907&k=0e21cc2bf184f5b2a595d361d77ffeac09c71984",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-taigo-balon-de-futbol-gris-blanco",
+    brand: "Zeus",
+    model: "Zeus Taigo Balón de fútbol gris - blanco",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 14.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40656540348&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F5a%2F04%2Fd0%2F201441-1_600x600.jpg&feedId=99907&k=f521d310f08d40a9d8a145d8a70771a315d050ec",
+        sizes: [],
+      },
+    ],
+  },
+  {
     id: "acerbis-balones-de-futbol-acerbis-joy-290-x5-negro",
     brand: "Acerbis",
     model: "Balones de fútbol Acerbis Joy 290 (x5) - Negro",
@@ -305,23 +849,6 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-adidas-euro-training-balon-de-futbol-in9366-blanco",
-    brand: "Adidas",
-    model: "adidas EURO Training Balón de fútbol IN9366 - blanco",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 9.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45840879386&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa7%2Ff4%2F11%2FIN9366-1_600x600.jpg&feedId=99907&k=4f716f0ee5f09fdedd8ababac5f0666778310188",
-        sizes: ["3"],
-      },
-    ],
-  },
-  {
     id: "adidas-adidas-kings-league-la-caprichosa-minibalon-blanco",
     brand: "Adidas",
     model: "adidas Kings League La Caprichosa Minibalón - Blanco",
@@ -335,23 +862,6 @@ const minedBallProductsChunk1: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43791481202&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F035cb644cf014caa84cae02dfe00376c_9366%2FKings_League_La_Caprichosa_Minibalon_Blanco_JI8975_01_00_standard.jpg&feedId=95013&k=a34243fe04148df73892944d537adf4d9e722334",
         sizes: ["1"],
-      },
-    ],
-  },
-  {
-    id: "adidas-adidas-predator-training-balon-de-futbol-ip1655-negro",
-    brand: "Adidas",
-    model: "adidas PREDATOR Training Balón de fútbol IP1655 - negro",
-    colour: "negro",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 11.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45840879387&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa2%2Fcc%2F18%2FIP1655-1_600x600.jpg&feedId=99907&k=6f773bffa9dfa756b302e6c1227ba1d41334ea64",
-        sizes: [],
       },
     ],
   },
@@ -4002,6 +4512,9 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-ligue-des-champions-de-l-uefa-lge-2025-26-blanco",
     brand: "Adidas",
@@ -4902,9 +5415,6 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-tiro-blanc",
     brand: "Adidas",
@@ -9192,6 +9702,9 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "erima-ballon-de-football-erima-senzor-star-lite-350-bleu",
     brand: "erima",
@@ -10032,9 +10545,6 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "errea-balones-de-futbol-errea-stream-hybrid-heritage-blanc-2",
     brand: "Errea",
@@ -12876,159 +13386,6 @@ const minedBallProductsChunk3: BallProduct[] = [
     ],
   },
   {
-    id: "jelex-jelex-bolzplatzheld-balon-de-futbol-de-goma-negro-amarillo",
-    brand: "JELEX",
-    model: "JELEX Bolzplatzheld Balón de fútbol de goma negro-amarillo",
-    colour: "negro",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 7.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324648772&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F6e%2Fd3%2F5c%2FJLX-183-1_600x600.jpg&feedId=99907&k=d83890cac3e692f1b77f3a3a3a12d3a6e75821fe",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "jelex-jelex-goalgetter-balon-de-futbol-azul",
-    brand: "JELEX",
-    model: "JELEX Goalgetter Balón de fútbol azul",
-    colour: "azul",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 9.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324648757&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F36%2Fd4%2F26%2FJLX-180-1_600x600.jpg&feedId=99907&k=e729f42e6de320c2a01d283b16868d521382ac70",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "jelex-jelex-goalgetter-balon-de-futbol-rojo",
-    brand: "JELEX",
-    model: "JELEX Goalgetter Balón de fútbol rojo",
-    colour: "rojo",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 9.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324648759&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F39%2F1d%2F5d%2FJLX-181-1_600x600.jpg&feedId=99907&k=746cb474d1e78a1b72df373093ed9752b9a866dc",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "jelex-jelex-neon-luz-led-balon-de-futbol-azul-naranja",
-    brand: "JELEX",
-    model: "JELEX \"Neon\" Luz LED Balón de fútbol azul/naranja",
-    colour: "azul",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 19.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324656517&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Ff0%2Fa8%2F95%2FJLX-321-1-new_600x600.jpg&feedId=99907&k=8dad31fca2bda600d3f4f9a610bfd092fa1c8ca0",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "jelex-jelex-neon-luz-led-balon-de-futbol-negro-naranja",
-    brand: "JELEX",
-    model: "JELEX \"Neon\" Luz LED Balón de fútbol negro/naranja",
-    colour: "negro",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 19.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324656516&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F30%2Fb8%2F1b%2FJLX-318-1-new_600x600.jpg&feedId=99907&k=befd7978a4726d25832bfd6b6b3f3a5e47103e5e",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "jelex-jelex-oldschool-vintage-balon-de-futbol-marra3n",
-    brand: "JELEX",
-    model: "JELEX \"Oldschool\" Vintage Balón de fútbol - marrÃ³n",
-    colour: "marrÃ³n",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 14.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324656606&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F76%2F3b%2Fa0%2FJLX-322-1_600x600.jpg&feedId=99907&k=98a6887ba9ff87c994c20ad506287123c5461660",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "jelex-jelex-topscorer-balon-de-futbol-amarillo-multicolor",
-    brand: "JELEX",
-    model: "JELEX \"Topscorer\" Balón de fútbol amarillo - multicolor",
-    colour: "multicolor",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 9.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324651866&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fc6%2Fae%2F7c%2FJLX-246-1ipCW43pkRp8j5_600x600.jpg&feedId=99907&k=335b938ac3b75572ab4fd53dd4518a70021a742a",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "jelex-jelex-topscorer-balon-de-futbol-azul-multicolor",
-    brand: "JELEX",
-    model: "JELEX \"Topscorer\" Balón de fútbol azul - multicolor",
-    colour: "multicolor",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 9.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324651865&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fba%2F57%2F97%2FJLX-245-1zdTBY3u8DQvjQ_600x600.jpg&feedId=99907&k=8bffd9c4a07cf716d1bbe10513920762ee744151",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "jelex-jelex-topscorer-balon-de-futbol-naranja-multicolor",
-    brand: "JELEX",
-    model: "JELEX \"Topscorer\" Balón de fútbol naranja - multicolor",
-    colour: "multicolor",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 9.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324651867&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F1b%2F97%2F83%2FJLX-247-1l8iE3nDJIhqzd_600x600.jpg&feedId=99907&k=a5439c2fd617a2455de17318e649527761a68c5a",
-        sizes: [],
-      },
-    ],
-  },
-  {
     id: "joma-balon-de-futbol-luminoso-joma-blanco",
     brand: "Joma",
     model: "Balón de fútbol luminoso Joma - Blanco",
@@ -14229,6 +14586,9 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "macron-ballon-de-football-macron-lancer-n-4-blanc",
     brand: "Macron",
@@ -14525,60 +14885,6 @@ const minedBallProductsChunk3: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5827199-ballon-de-football-macron-xh-n-4-x12-white-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron_5827199_white_1.webp",
         sizes: ["TU"],
-      },
-    ],
-  },
-];
-
-const minedBallProductsChunk4: BallProduct[] = [
-  {
-    id: "macron-suiza-sfl-macron-fifa-basic-balon-de-futbol-60005754-blanco",
-    brand: "Macron",
-    model: "Suiza SFL macron FIFA Basic Balón de fútbol 60005754 - blanco",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 17.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46090530072&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa3%2Fd8%2F77%2F60005754-1_600x600.jpg&feedId=99907&k=6c268ed111f60a4129a72af338332291f3a022e3",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "macron-suiza-sfl-macron-fifa-quality-pro-match-ball-balon-de-futbol-40002994-blanco",
-    brand: "Macron",
-    model: "Suiza SFL macron FIFA QUALITY PRO Match Ball Balón de fútbol 40002994 - blanco",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 49.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46100200776&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fdb%2F54%2Fa8%2F40002994-1_600x600.jpg&feedId=99907&k=782915b4002e6c2a1f0ec38a1fdad293e5c95462",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "macron-suiza-sfl-macron-fifa-quality-pro-winter-match-ball-balon-de-futbol-40002995-naranja",
-    brand: "Macron",
-    model: "Suiza SFL macron FIFA QUALITY PRO Winter Match Ball Balón de fútbol 40002995 - naranja",
-    colour: "naranja",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 49.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46100200817&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fd5%2Fe0%2F51%2F40002995-1_600x600.jpg&feedId=99907&k=a142a52bc1fca173f558be54cf221caeee5cc96f",
-        sizes: [],
       },
     ],
   },
@@ -16535,23 +16841,6 @@ const minedBallProductsChunk4: BallProduct[] = [
     ],
   },
   {
-    id: "muwo-muwo-topscorer-goma-balon-de-futbol-blanco-rojo",
-    brand: "MUWO",
-    model: "MUWO \"Topscorer\" goma Balón de fútbol blanco rojo",
-    colour: "rojo",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 6.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324654664&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Ff9%2F01%2Fb8%2FMW-322-1_600x600.jpg&feedId=99907&k=9f8506f8b292ab098ef34ded8f0498c7789dcad3",
-        sizes: [],
-      },
-    ],
-  },
-  {
     id: "nike-balones-de-futbol-nike-park-2-0-amarillo",
     brand: "Nike",
     model: "Ballon de football Nike Park 2.0 - Jaune",
@@ -18200,23 +18489,6 @@ const minedBallProductsChunk4: BallProduct[] = [
     ],
   },
   {
-    id: "nike-nike-pitch-equipo-balon-de-futbol-fz7553-100-blanco",
-    brand: "Nike",
-    model: "Nike Pitch Equipo Balón de fútbol FZ7553-100 - blanco",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 9.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43024488588&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F80%2Fe1%2F93%2FFZ7553-100-1_600x600.jpg&feedId=99907&k=faca35086cf87dc6c720ab21fccd678cc1173c06",
-        sizes: ["3", "4"],
-      },
-    ],
-  },
-  {
     id: "out2play-balon-de-futbol-cosido-out2play-t5-amarillo",
     brand: "Out2Play",
     model: "Balón de fútbol cosido Out2Play T5 - Amarillo",
@@ -18934,6 +19206,9 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-balones-de-futbol-puma-orbita-6-efl-sky-bet-2025-26-jaune",
     brand: "Puma",
@@ -19253,94 +19528,6 @@ const minedBallProductsChunk4: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F085126-01-ballon-de-football-puma-stellar-nitro-ultimate-pl-reactivity-fifa-pro-puma-white-multicolor-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-085126-01-puma-white-multicolor-6a428fa2d193a-1.webp",
         sizes: ["5"],
-      },
-    ],
-  },
-];
-
-const minedBallProductsChunk5: BallProduct[] = [
-  {
-    id: "puma-puma-big-cat-ball-balon-de-futbol-084589-09-azul",
-    brand: "Puma",
-    model: "PUMA Big Cat Ball Balón de fútbol 084589-09 - azul",
-    colour: "azul",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 6.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46029313952&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F50%2Fca%2F93%2F084589-09-1_NEU_600x600.jpg&feedId=99907&k=c02df4b2339180a76d47de091ab1d6d57e646921",
-        sizes: ["3", "5"],
-      },
-    ],
-  },
-  {
-    id: "puma-puma-icon-ball-balon-de-futbol-083628-02-plata",
-    brand: "Puma",
-    model: "PUMA Icon Ball Balón de fútbol 083628-02 - plata",
-    colour: "plata",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 13.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41959280616&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F25%2F5e%2Fb1%2F083628-02-1_600x600.jpg&feedId=99907&k=ed7bff5fe836df35354d833c1a777d1ff3198d4d",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "puma-puma-orbita-5-hybrid-balon-de-futbol-083783-02-blanco",
-    brand: "Puma",
-    model: "PUMA Orbita 5 Hybrid Balón de fútbol 083783-02 - blanco",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 8.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46145379923&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F0e%2Fa4%2Fae%2F083783-02-1_600x600.jpg&feedId=99907&k=922c7d9ec02c00ce4f6a6d1bcf67d01732726fdd",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "puma-puma-prestigio-balon-de-futbol-083992-01-negro",
-    brand: "Puma",
-    model: "PUMA Prestigio Balón de fútbol 083992-01 - negro",
-    colour: "negro",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 6.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45128725135&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F22%2F42%2F1b%2F083992-01-1NZPYmOwYGYe9i_600x600.jpg&feedId=99907&k=add8ee833a752430c6702e31cfb0caf6565385f2",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "puma-puma-x-ea-sports-orbita-laliga-1-hybrid-balon-de-futbol-084287-01-blanco",
-    brand: "Puma",
-    model: "PUMA x EA SPORTS Orbita LaLiga 1 Hybrid Balón de fútbol 084287-01 - blanco",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 9.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46016564010&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F91%2F03%2F41%2F084287-01-1_600x600.jpg&feedId=99907&k=b0ab53ededa450be80073270193fcdec633503d5",
-        sizes: [],
       },
     ],
   },
@@ -23682,6 +23869,9 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "uhlsport-balones-de-futbol-uhlsport-team-mini-4x1-colour-naranja",
     brand: "uhlsport",
@@ -23838,9 +24028,6 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "virtufit-balones-de-futbol-virtufit-blanc",
     brand: "VirtuFit",
@@ -24072,210 +24259,6 @@ const minedBallProductsChunk6: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fwte8527xb-ballon-de-football-wilson-pentagon-blanc-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/W/T/WTE8527XB.webp",
         sizes: ["4", "5"],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-beach-soccer-balon-de-futbol-negro-azul",
-    brand: "Zeus",
-    model: "Zeus Beach Soccer Balón de fútbol negro azul",
-    colour: "azul",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 15.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324646888&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F03%2Ff1%2Fa3%2FPALLONE-BEACH-SOCCER-SAND-NERO-ROYAL-1_600x600.jpg&feedId=99907&k=10f8a5722b3d3596e05eaf56adf4b52a2f090306",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-beach-soccer-balon-de-futbol-neon-naranja-negro",
-    brand: "Zeus",
-    model: "Zeus Beach Soccer Balón de fútbol Neón Naranja Negro",
-    colour: "naranja",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 15.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324654034&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F2e%2F80%2F68%2FBeach-1-NEU_600x600.jpg&feedId=99907&k=87cfdb10bb3569927d8ff807479ea0636bc0a78d",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-beach-soccer-balon-de-futbol-neon-verde-negro",
-    brand: "Zeus",
-    model: "Zeus Beach Soccer Balón de fútbol Neón Verde Negro",
-    colour: "verde",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 15.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324646889&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F2d%2F19%2F9b%2FPALLONE-BEACH-SOCCER-SAND-VERDEFLOU-NERO-1_600x600.jpg&feedId=99907&k=b7ecc3b9c1e4262104095b864bf52b4f4629df41",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-pallone-glory-fifa-approved-balon-de-futbol-multicolor",
-    brand: "Zeus",
-    model: "Zeus Pallone Glory FIFA Approved Balón de fútbol - multicolor",
-    colour: "multicolor",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 49.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324657117&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fbb%2F9a%2F90%2FPALLONE-GLORY-FIFA-APPROVED-1Fnw8nmuRPn0pr_600x600.jpg&feedId=99907&k=dea8d32c83093e2f508f97047a512521634c8428",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-pallone-hybrid-balon-de-futbol-blanco-azul",
-    brand: "Zeus",
-    model: "Zeus Pallone Hybrid Balón de fútbol blanco/azul",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 14.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324659401&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fcb%2F58%2F1f%2F196006-1_600x600.jpg&feedId=99907&k=5d5b5c50bcce3970030030e4944b9e0a3ec395d1",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-pallone-hybrid-balon-de-futbol-blanco-rojo",
-    brand: "Zeus",
-    model: "Zeus Pallone Hybrid Balón de fútbol blanco/rojo",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 14.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324659402&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F4b%2F6e%2F68%2F195993-1_600x600.jpg&feedId=99907&k=fb8a5faf8fbee27c0e991d5588e7760e1c273fcf",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-pallone-tuono-balon-de-futbol-amarillo-azul-marino",
-    brand: "Zeus",
-    model: "Zeus Pallone Tuono Balón de fútbol amarillo azul marino",
-    colour: "amarillo",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 14.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324649631&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F7c%2Fec%2Fc9%2FPALLONE-TUONO-GIALLOFLUO-BLU-1_600x600.jpg&feedId=99907&k=b5b10573b5e8e76a1159846f1d29d140c171bf69",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-pallone-tuono-balon-de-futbol-amarillo-royal-blue",
-    brand: "Zeus",
-    model: "Zeus Pallone Tuono Balón de fútbol amarillo royal blue",
-    colour: "amarillo",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 14.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324649633&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Ffc%2Ff6%2F09%2FPALLONE-TUONO-GIALLOFLUO-LIGHT-ROYAL-1_600x600.jpg&feedId=99907&k=9aa80054dbd3e39f40be01981810584b421dbddf",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-pallone-tuono-balon-de-futbol-blanco-amarillo",
-    brand: "Zeus",
-    model: "Zeus Pallone Tuono Balón de fútbol blanco amarillo",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 14.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324649632&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fb0%2F6e%2F8a%2FPALLONE-TUONO-BIANCO-GIALLO-FLUO-1_600x600.jpg&feedId=99907&k=3cd17b668d79ea6887ea1758fb5bf965b85f6ba0",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-pallone-tuono-balon-de-futbol-blanco-rojo",
-    brand: "Zeus",
-    model: "Zeus Pallone Tuono Balón de fútbol blanco rojo",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 14.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324649630&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F4a%2F14%2Fd4%2FPALLONE-TUONO-BIANCO-ROSSO-1_600x600.jpg&feedId=99907&k=8ebb65a3dab16fc86013bc80b12bd811eed336ed",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-pallone-tuono-balon-de-futbol-blanco-royal-blue",
-    brand: "Zeus",
-    model: "Zeus Pallone Tuono Balón de fútbol blanco royal blue",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 14.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324649634&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F41%2F48%2Fd6%2FPALLONE-TUONO-BIANCO-LIGHT-ROYAL-1_600x600.jpg&feedId=99907&k=0e21cc2bf184f5b2a595d361d77ffeac09c71984",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-taigo-balon-de-futbol-gris-blanco",
-    brand: "Zeus",
-    model: "Zeus Taigo Balón de fútbol gris - blanco",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 14.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40656540348&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F5a%2F04%2Fd0%2F201441-1_600x600.jpg&feedId=99907&k=f521d310f08d40a9d8a145d8a70771a315d050ec",
-        sizes: [],
       },
     ],
   },

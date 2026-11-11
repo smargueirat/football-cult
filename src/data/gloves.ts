@@ -109,9 +109,206 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         price: 29.99,
         shipping: 8.0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46664306636&a=3013769&m=19598",
+        url: "https://www.awin1.com/pclick.php?p=46664306637&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fdb%2Fe5%2Fd0%2FJM6828-1_600x600.jpg&feedId=99907&k=faa902b2bc0e524d36a1f1bd51b00f7c8b36c4da",
-        sizes: ["7.5", "8", "8.5", "9", "9.5", "10", "10.5"],
+        sizes: ["8", "8.5", "9", "9.5", "10"],
+      },
+    ],
+  },
+  {
+    id: "adidas-adidas-predator-training-hombre-guantes-de-portero-jn5356x-verde",
+    brand: "Adidas",
+    model: "Guantes de portero adidas Predator Glove - Verde",
+    colour: "Verde",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 11.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46000153602&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fb6%2F5d%2F3e%2FJN5356-1_600x600.jpg&feedId=99907&k=51a4daa68224923c166e6e15198887e368f2122e",
+        sizes: ["7", "8", "9", "10", "11"],
+      },
+      {
+        store: "FootStoreES",
+        price: 30.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46654818896&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jn5356_luclem-white-black_1.jpg&feedId=89032&k=d041f443239b14f36dafc2bb4dc528c724efef11",
+        sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 11.5", "Talla 12", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 31.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5356-gants-de-gardien-adidas-predator-glove-luclem-white-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn5356_luclem-white-black_1.webp",
+        sizes: ["7.5", "8", "8.5"],
+      },
+      {
+        store: "AdidasCL",
+        price: 24990.0,
+        shipping: 0,
+        currency: "CLP",
+        url: "https://www.awin1.com/pclick.php?p=41645657141&a=3013769&m=79922",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcb20e186331e4f4f971fa26d4582130e_9366%2FGuantes_de_arquero_Predator_Training_Verde_JN5356_21_model.jpg&feedId=95016&k=62afeac394344a4881941dd189798c3f33db7fbc",
+        sizes: ["8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-eko-guantes-de-portero-bronce-blanco",
+    brand: "Zeus",
+    model: "Zeus Eko Guantes de portero bronce blanco",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 11.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324646955&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fed%2F33%2F7c%2FGUANTO-EKO-BIANCO-BRONZE-1_600x600.jpg&feedId=99907&k=578ea512fd89b4baf1bef7fdb7b3eb4038bd1127",
+        sizes: ["10", "11"],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-eko-guantes-de-portero-negro-amarillo-neon",
+    brand: "Zeus",
+    model: "Zeus Eko Guantes de portero negro amarillo neón",
+    colour: "negro",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 11.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46390290978&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fb0%2Ff5%2F31%2FGUANTO-EKO-NERO-1-neuvtkyHfjYgJb3d_600x600.jpg&feedId=99907&k=ec95251b14a985109b10f4fd37197e8cbc2574de",
+        sizes: ["4", "5", "6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-eko-guantes-de-portero-oro-blanco",
+    brand: "Zeus",
+    model: "Zeus Eko Guantes de portero oro blanco",
+    colour: "blanco",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 11.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46390290986&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F6f%2F63%2Fe6%2FGUANTO-EKO-BIANCO-1_600x600.jpg&feedId=99907&k=d6824340dd73aefa84bee58ecbec94af8aab89cd",
+        sizes: ["4", "5", "6", "7", "8", "9", "11"],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-guanto-space-guantes-de-portero-amarillo-neon",
+    brand: "Zeus",
+    model: "Zeus Guanto Space Guantes de portero amarillo neón",
+    colour: "amarillo",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 17.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324648822&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F99%2Fbd%2F17%2F1000003345-1_600x600.jpg&feedId=99907&k=15633c159bf26e74daca921f834a535b7a960654",
+        sizes: ["4", "5", "6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-guanto-space-guantes-de-portero-naranja-neon",
+    brand: "Zeus",
+    model: "Zeus Guanto Space Guantes de portero naranja neón",
+    colour: "naranja",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 17.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324648830&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F3f%2F5f%2F35%2F1000003343-1_600x600.jpg&feedId=99907&k=d38d594d4d45eb60914b131a9de9866c82e68507",
+        sizes: ["4", "5", "6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-guanto-space-guantes-de-portero-negro",
+    brand: "Zeus",
+    model: "Zeus Guanto Space Guantes de portero negro",
+    colour: "negro",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 17.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324648815&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F30%2Fbb%2F68%2F1000003344-1_600x600.jpg&feedId=99907&k=ee8efba4d3fb6235c935c18c26cb7d772d3996d5",
+        sizes: ["4", "5", "6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-z1-hombre-guantes-de-portero-azul",
+    brand: "Zeus",
+    model: "Zeus Z1 Hombre Guantes de portero - azul",
+    colour: "azul",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 37.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46410860234&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F81%2Fb3%2F06%2FGUANTO-PORTIERE-Z1-1_600x600.jpg&feedId=99907&k=b621f5bfbee22b8cecc23416d36448b7471558c6",
+        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-zpro-hombre-guantes-de-portero-negro",
+    brand: "Zeus",
+    model: "Zeus ZPro Hombre Guantes de portero negro",
+    colour: "negro",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 38.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324649591&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F13%2Fa1%2F23%2F80592262-1_600x600.jpg&feedId=99907&k=3cbb4e2dbf8e09f378726122849490ad8fa8be6b",
+        sizes: ["12"],
+      },
+    ],
+  },
+  {
+    id: "zeus-zeus-zpro-hombre-guantes-de-portero-royal-blue-naranja",
+    brand: "Zeus",
+    model: "Zeus ZPro Hombre Guantes de portero royal blue - naranja",
+    colour: "naranja",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 38.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40324649594&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F53%2F30%2Faf%2FGUANTO-ZPRO-ROYAL-1_600x600.jpg&feedId=99907&k=687f12df4249663947d058fe31d9e3412e7c849f",
+        sizes: ["12"],
       },
     ],
   },
@@ -1226,50 +1423,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5371-gants-de-gardien-adidas-predator-glove-competition-luclem-white-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn5371_luclem-white-black_5.webp",
         sizes: ["8.5", "9", "9.5", "10", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "adidas-adidas-predator-training-hombre-guantes-de-portero-jn5356x-verde",
-    brand: "Adidas",
-    model: "Guantes de portero adidas Predator Glove - Verde",
-    colour: "Verde",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 30.0,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46654818896&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jn5356_luclem-white-black_1.jpg&feedId=89032&k=d041f443239b14f36dafc2bb4dc528c724efef11",
-        sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 11.5", "Talla 12", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 31.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5356-gants-de-gardien-adidas-predator-glove-luclem-white-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn5356_luclem-white-black_1.webp",
-        sizes: ["7.5", "8", "8.5"],
-      },
-      {
-        store: "DeporteOutlet",
-        price: 11.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46000153605&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fb6%2F5d%2F3e%2FJN5356-1_600x600.jpg&feedId=99907&k=51a4daa68224923c166e6e15198887e368f2122e",
-        sizes: ["8", "9", "10", "11"],
-      },
-      {
-        store: "AdidasCL",
-        price: 24990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=41645657141&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcb20e186331e4f4f971fa26d4582130e_9366%2FGuantes_de_arquero_Predator_Training_Verde_JN5356_21_model.jpg&feedId=95016&k=62afeac394344a4881941dd189798c3f33db7fbc",
-        sizes: ["8", "9", "10", "11"],
       },
     ],
   },
@@ -5472,6 +5625,9 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-brave-bleu",
     brand: "Joma",
@@ -5716,9 +5872,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-calcio-23-verde",
     brand: "Joma",
@@ -10429,6 +10582,9 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "reusch-guantes-de-portero-reusch-attrakt-solid-naranja",
     brand: "Reusch",
@@ -10708,9 +10864,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "reusch-guantes-de-portero-reusch-fusion-strapless-adaptiveflex-azul",
     brand: "Reusch",
@@ -15466,6 +15619,9 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-aquasoft-hn-azul-2",
     brand: "uhlsport",
@@ -15858,9 +16014,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-starter-soft-blanco",
     brand: "uhlsport",
@@ -17549,159 +17702,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43863070694&a=3013769&m=121584",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.fr%2Fuhlsport-1-768_1024_100-7769534_1.jpg&feedId=112013&k=1fd4942eb7214dc72e8523b0a5fed6e03ee0a104",
         sizes: ["7", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-eko-guantes-de-portero-bronce-blanco",
-    brand: "Zeus",
-    model: "Zeus Eko Guantes de portero bronce blanco",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 11.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324646955&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fed%2F33%2F7c%2FGUANTO-EKO-BIANCO-BRONZE-1_600x600.jpg&feedId=99907&k=578ea512fd89b4baf1bef7fdb7b3eb4038bd1127",
-        sizes: ["10", "11"],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-eko-guantes-de-portero-negro-amarillo-neon",
-    brand: "Zeus",
-    model: "Zeus Eko Guantes de portero negro amarillo neón",
-    colour: "negro",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 11.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46390290978&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fb0%2Ff5%2F31%2FGUANTO-EKO-NERO-1-neuvtkyHfjYgJb3d_600x600.jpg&feedId=99907&k=ec95251b14a985109b10f4fd37197e8cbc2574de",
-        sizes: ["4", "5", "6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-eko-guantes-de-portero-oro-blanco",
-    brand: "Zeus",
-    model: "Zeus Eko Guantes de portero oro blanco",
-    colour: "blanco",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 11.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46390290986&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F6f%2F63%2Fe6%2FGUANTO-EKO-BIANCO-1_600x600.jpg&feedId=99907&k=d6824340dd73aefa84bee58ecbec94af8aab89cd",
-        sizes: ["4", "5", "6", "7", "8", "9", "11"],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-guanto-space-guantes-de-portero-amarillo-neon",
-    brand: "Zeus",
-    model: "Zeus Guanto Space Guantes de portero amarillo neón",
-    colour: "amarillo",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 17.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324648822&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F99%2Fbd%2F17%2F1000003345-1_600x600.jpg&feedId=99907&k=15633c159bf26e74daca921f834a535b7a960654",
-        sizes: ["4", "5", "6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-guanto-space-guantes-de-portero-naranja-neon",
-    brand: "Zeus",
-    model: "Zeus Guanto Space Guantes de portero naranja neón",
-    colour: "naranja",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 17.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324648830&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F3f%2F5f%2F35%2F1000003343-1_600x600.jpg&feedId=99907&k=d38d594d4d45eb60914b131a9de9866c82e68507",
-        sizes: ["4", "5", "6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-guanto-space-guantes-de-portero-negro",
-    brand: "Zeus",
-    model: "Zeus Guanto Space Guantes de portero negro",
-    colour: "negro",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 17.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324648815&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F30%2Fbb%2F68%2F1000003344-1_600x600.jpg&feedId=99907&k=ee8efba4d3fb6235c935c18c26cb7d772d3996d5",
-        sizes: ["4", "5", "6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-z1-hombre-guantes-de-portero-azul",
-    brand: "Zeus",
-    model: "Zeus Z1 Hombre Guantes de portero - azul",
-    colour: "azul",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 37.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46410860234&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F81%2Fb3%2F06%2FGUANTO-PORTIERE-Z1-1_600x600.jpg&feedId=99907&k=b621f5bfbee22b8cecc23416d36448b7471558c6",
-        sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-zpro-hombre-guantes-de-portero-negro",
-    brand: "Zeus",
-    model: "Zeus ZPro Hombre Guantes de portero negro",
-    colour: "negro",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 38.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324649591&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F13%2Fa1%2F23%2F80592262-1_600x600.jpg&feedId=99907&k=3cbb4e2dbf8e09f378726122849490ad8fa8be6b",
-        sizes: ["12"],
-      },
-    ],
-  },
-  {
-    id: "zeus-zeus-zpro-hombre-guantes-de-portero-royal-blue-naranja",
-    brand: "Zeus",
-    model: "Zeus ZPro Hombre Guantes de portero royal blue - naranja",
-    colour: "naranja",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 38.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40324649594&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F53%2F30%2Faf%2FGUANTO-ZPRO-ROYAL-1_600x600.jpg&feedId=99907&k=687f12df4249663947d058fe31d9e3412e7c849f",
-        sizes: ["12"],
       },
     ],
   },

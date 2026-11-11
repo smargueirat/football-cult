@@ -133,7 +133,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-ft-fg-lucid-red-core-black-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291506/750/bota-adidas-predator-league-ft-fg-rojo-1.jpg",
-        sizes: ["43", "44.5", "45"],
+        sizes: ["44.5", "45"],
       },
     ],
   },
@@ -261,7 +261,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-pro-fg-team-solar-yellow-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291415/750/bota-adidas-f50-pro-fg-naranja-1.jpg",
-        sizes: ["44", "44.5", "45"],
+        sizes: ["43", "44", "44.5", "45"],
       },
     ],
   },
@@ -768,7 +768,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-pro-ft-ag-core-black-white-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291696/750/bota-adidas-predator-pro-ft-ag-negro-1.jpg",
-        sizes: ["41", "42", "42.5", "43", "44", "45"],
+        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45", "46.5"],
       },
     ],
   },
@@ -982,7 +982,7 @@ const legacyBootProducts: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-maestro-elite-fg-t-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321524/750/bota-nike-tiempo-maestro-elite-fg-t-multi-color-black-1.jpg",
-        sizes: ["39", "40.5", "41", "42", "42.5", "43", "44", "44.5"],
+        sizes: ["39", "40.5", "41", "42", "42.5", "43", "44.5"],
       },
     ],
   },
@@ -38362,7 +38362,7 @@ const minedBootProductsChunk5: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45202618416&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fc2%2F82%2Ff1%2FIH5925-1_600x600.jpg&feedId=99907&k=73c2129759bd1fa00f263c20bd92c7138ca87c7e",
-        sizes: ["40", "41 1/3", "42", "43 1/3", "44", "46"],
+        sizes: ["40", "41 1/3", "42", "43 1/3", "44", "45 1/3", "46"],
       },
     ],
   },
@@ -38505,24 +38505,6 @@ const minedBootProductsChunk5: BootProduct[] = [
     ],
   },
   {
-    id: "deporteoutlet-adidas-adidas-predator-club-turf-botas-de-futbol-con-suela-multitacos-if6399-ag-ninos",
-    brand: "Adidas",
-    model: "adidas Predator Club Turf Botas de fútbol con suela multitacos IF6399",
-    groundType: "AG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 29.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45457989150&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F51%2F91%2F97%2FIF6399-1_600x600.jpg&feedId=99907&k=75402cfc927e50d6ef23703109c120ab719eb868",
-        sizes: ["40 2/3"],
-      },
-    ],
-  },
-  {
     id: "deporteoutlet-adidas-adidas-predator-elite-fg-teaser-premium-botas-de-futbol-if8883-fg-ninos",
     brand: "Adidas",
     model: "adidas Predator Elite FG Teaser Premium Botas de fútbol IF8883",
@@ -38638,9 +38620,9 @@ const minedBootProductsChunk5: BootProduct[] = [
         price: 24.99,
         shipping: 8.0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45134675011&a=3013769&m=19598",
+        url: "https://www.awin1.com/pclick.php?p=45134675012&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Ff3%2Fb9%2Fd1%2FIF6348-1_600x600.jpg&feedId=99907&k=f5babad38221253f708e5ebfafa83b2145b11873",
-        sizes: ["42", "42 2/3"],
+        sizes: ["42 2/3"],
       },
     ],
   },
@@ -38779,7 +38761,7 @@ const minedBootProductsChunk5: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45457988968&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F58%2Fa5%2F2c%2FIG7715-1_600x600.jpg&feedId=99907&k=025e6b101cd5538b60c96f94a4d101e8b6ec38cc",
-        sizes: ["40 2/3", "44", "46 2/3"],
+        sizes: ["40 2/3", "43 1/3", "44", "46 2/3"],
       },
     ],
   },
@@ -38953,7 +38935,7 @@ const minedBootProductsChunk5: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45230689114&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F6e%2F55%2Ff9%2FAGUS2504TF-1_600x600.jpg&feedId=99907&k=56d807e6a989f20793a14a8b30f3fa04651fcd1f",
-        sizes: ["40.5", "43.5"],
+        sizes: ["40.5"],
       },
     ],
   },
@@ -38970,7 +38952,7 @@ const minedBootProductsChunk5: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44977355677&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F9a%2Fda%2Fef%2FDRIW2502TF-1NeFwq2yMZUDcX_600x600.jpg&feedId=99907&k=04105164e498d2f4ff080397c183885f611a9640",
-        sizes: ["39", "40", "41"],
+        sizes: ["39", "40", "41", "44"],
       },
     ],
   },
@@ -39022,23 +39004,6 @@ const minedBootProductsChunk5: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45230689286&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Ff9%2F58%2F05%2FPOWW2501FG-1_600x600.jpg&feedId=99907&k=820abe6e2a3d88863d6408a06c06af86ea6f5cb6",
         sizes: ["40", "40.5", "41", "42", "42.5"],
-      },
-    ],
-  },
-  {
-    id: "deporteoutlet-joma-joma-score-ag-hombre-botas-de-futbol-scow2501ag-ag",
-    brand: "Joma",
-    model: "Joma SCORE AG Hombre Botas de fútbol SCOW2501AG",
-    groundType: "AG",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 15.99,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46638759898&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F59%2F03%2Fdb%2FSCOW2501AG-1_600x600.jpg&feedId=99907&k=f07904edd17cff9e2339e8219765034f7974a533",
-        sizes: ["42"],
       },
     ],
   },
@@ -39213,7 +39178,7 @@ const minedBootProductsChunk5: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46317154208&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F4c%2F78%2F71%2F107862-02-1_NEU_600x600.jpg&feedId=99907&k=e1c8c99cd345517f05cc08d2e9e2df3873fbe49e",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5", "47"],
       },
     ],
   },
@@ -39707,9 +39672,6 @@ const minedBootProductsChunk5: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-copa-gloro-ii-sg-sg",
     brand: "Adidas",
@@ -39762,6 +39724,9 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-copa-ii-1-ag-ag",
     brand: "Adidas",
@@ -45769,9 +45734,6 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-f50-pro-fg-fg-jh7684",
     brand: "Adidas",
@@ -45851,6 +45813,9 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-f50-pro-fg-fg-ie0596",
     brand: "Adidas",
@@ -51936,9 +51901,6 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-x-crazyfast-1-fg-fg-gy7416",
     brand: "Adidas",
@@ -51991,6 +51953,9 @@ const minedBootProductsChunk8: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-x-crazyfast-3-tf-tf",
     brand: "Adidas",
@@ -57396,9 +57361,6 @@ const minedBootProductsChunk8: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk9: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-para-ninos-adidas-predator-elite-fg-fg-ninos-id3757",
     brand: "Adidas",
@@ -57487,6 +57449,9 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk9: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-para-ninos-adidas-predator-elite-fg-fg-ninos-ji1178",
     brand: "Adidas",
@@ -60895,15 +60860,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/k/k/kk1342.webp",
         sizes: ["25", "25.5", "26", "26.5"],
       },
-      {
-        store: "ForumSport",
-        price: 31.73,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249384447&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135189-00-P-X-20260814125636.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDE0NHxpbWFnZS9qcGVnfGFHRTFMMmc1TWk4eE16azFOREk0TnpBME1qVTVNQzl0WldScFlYTmZNVEF3TVRFek5URTRPVjh3TUY5UVgxZ3RNakF5TmpBNE1UUXhNalUyTXpZdWFuQm58NWExNTg0NzVmMDU0M2UyMzc5ZmEyMTkyMzA2ZWFiNTVlZjdhOTk0N2Q0OTEwNTU0ZThjOWY3NjZiOTQwZjIyYw&feedId=58083&k=04330894dc0f52acdedf4bdd226e5d0078377c84",
-        sizes: ["25", "25.5", "26.5", "28.5", "31.5"],
-      },
     ],
   },
   {
@@ -61667,6 +61623,15 @@ const minedBootProductsChunk9: BootProduct[] = [
           { size: "30.5", price: 33.12, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-enfant-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl" },
           { size: "31.5", price: 39.29, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkk1342-chaussures-de-football-mini-enfant-adidas-f50-hyperfast-club-hook-and-loop-fg-mg-cblack-cblack-lurabl" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 31.73,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249384447&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135189-00-P-X-20260814125636.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDE0NHxpbWFnZS9qcGVnfGFHRTFMMmc1TWk4eE16azFOREk0TnpBME1qVTVNQzl0WldScFlYTmZNVEF3TVRFek5URTRPVjh3TUY5UVgxZ3RNakF5TmpBNE1UUXhNalUyTXpZdWFuQm58NWExNTg0NzVmMDU0M2UyMzc5ZmEyMTkyMzA2ZWFiNTVlZjdhOTk0N2Q0OTEwNTU0ZThjOWY3NjZiOTQwZjIyYw&feedId=58083&k=04330894dc0f52acdedf4bdd226e5d0078377c84",
+        sizes: ["25", "25.5", "26.5", "28.5", "31.5"],
       },
     ],
   },
@@ -63473,9 +63438,6 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "footstorees-hummel-botas-de-futbol-hummel-top-star-lc-turf-228344-7788",
     brand: "Hummel",
@@ -63540,6 +63502,9 @@ const minedBootProductsChunk10: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "footstorees-hummel-botas-de-futbol-hummel-top-star-turf-228343-6237",
     brand: "Hummel",
@@ -69027,9 +68992,6 @@ const minedBootProductsChunk10: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk11: BootProduct[] = [
   {
     id: "footstorees-joma-botas-de-futbol-para-ninos-joma-toledo-2601-indoor-ic-ninos",
     brand: "Joma",
@@ -69084,6 +69046,9 @@ const minedBootProductsChunk11: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk11: BootProduct[] = [
   {
     id: "footstorees-joma-botas-de-futbol-para-ninos-joma-toledo-2601-turf-mg-ninos",
     brand: "Joma",
@@ -74776,9 +74741,6 @@ const minedBootProductsChunk11: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk12: BootProduct[] = [
   {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-v-beta-pro-fg-fg",
     brand: "Mizuno",
@@ -74874,6 +74836,9 @@ const minedBootProductsChunk12: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk12: BootProduct[] = [
   {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-v-beta-select",
     brand: "Mizuno",
@@ -81280,9 +81245,6 @@ const minedBootProductsChunk12: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk13: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-11-elite-fg-fg-if8507-001",
     brand: "Nike",
@@ -81406,6 +81368,9 @@ const minedBootProductsChunk13: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk13: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-11-elite-fg-fg-io3790-300",
     brand: "Nike",
@@ -86867,15 +86832,6 @@ const minedBootProductsChunk13: BootProduct[] = [
           { size: "47.5", price: 85.1, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq2278-001-chaussures-de-football-nike-phantom-6-high-academy-fg-mg-noir-noir-illusion-green" },
         ],
       },
-      {
-        store: "Pro:Direct ES",
-        price: 67.0,
-        shipping: 3.62,
-        currency: "EUR",
-        url: "https://www.prodirectsport.es/products/nike-phantom-6-high-academy-para-terreno-firme-mixto-negro-verde-ilusion-negro-botas-para-adultos-4002068",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4002068_main.jpg?v=1793660919",
-        sizes: ["40", "40.5", "42.5", "43", "44", "44.5", "45", "46"],
-      },
     ],
   },
   {
@@ -88328,9 +88284,6 @@ const minedBootProductsChunk13: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk14: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-club-mg-mg-hm9202-003",
     brand: "Nike",
@@ -88411,6 +88364,9 @@ const minedBootProductsChunk14: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk14: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-6-low-club-mg-mg-hm8933-001",
     brand: "Nike",
@@ -94536,9 +94492,6 @@ const minedBootProductsChunk14: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk15: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-tiempo-maestro-elite-fg-fg-ih1776-901",
     brand: "Nike",
@@ -94655,6 +94608,9 @@ const minedBootProductsChunk15: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk15: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-tiempo-maestro-elite-fg-fg-hq3157-101",
     brand: "Nike",
@@ -100699,9 +100655,6 @@ const minedBootProductsChunk15: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk16: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-mercurial-vapor-16-club-fg-fg-ninos-fq8286-600",
     brand: "Nike",
@@ -100790,6 +100743,9 @@ const minedBootProductsChunk16: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk16: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-mercurial-vapor-16-club-fg-mg-fg-ninos",
     brand: "Nike",
@@ -106515,9 +106471,6 @@ const minedBootProductsChunk16: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk17: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-superfly-10-club-tf-tf-ninos",
     brand: "Nike",
@@ -106572,6 +106525,9 @@ const minedBootProductsChunk17: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk17: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-tiempo-legend-10-academy-ag-mg-ninos",
     brand: "Nike",
@@ -112244,9 +112200,6 @@ const minedBootProductsChunk17: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk18: BootProduct[] = [
   {
     id: "footstorees-puma-botas-de-futbol-puma-future-fg-ag-fg-ag",
     brand: "Puma",
@@ -112299,6 +112252,9 @@ const minedBootProductsChunk18: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk18: BootProduct[] = [
   {
     id: "footstorees-puma-botas-de-futbol-puma-future-play-fg-ag-fg-ag",
     brand: "Puma",
@@ -117306,9 +117262,6 @@ const minedBootProductsChunk18: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk19: BootProduct[] = [
   {
     id: "footstorefr-lotto-lotto-pacer-t-2600110t",
     brand: "Lotto",
@@ -117343,6 +117296,9 @@ const minedBootProductsChunk19: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk19: BootProduct[] = [
   {
     id: "footstorefr-mizuno-mizuno-monarcida-neo-iii-pro-fg-fg",
     brand: "Mizuno",
@@ -120470,9 +120426,6 @@ const minedBootProductsChunk19: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk20: BootProduct[] = [
   {
     id: "forumsport-munich-munich-gresca-ic-4",
     brand: "Munich",
@@ -120508,6 +120461,9 @@ const minedBootProductsChunk20: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk20: BootProduct[] = [
   {
     id: "forumsport-munich-munich-gresca-ic-ninos-2",
     brand: "Munich",
@@ -122188,7 +122144,7 @@ const minedBootProductsChunk20: BootProduct[] = [
     ],
   },
   {
-    id: "forumsport-nike-nike-phantom-6-high-academy-fg-mg-fg-2",
+    id: "forumsport-nike-nike-phantom-6-high-academy-fg-mg-fg-hq2278-001",
     brand: "Nike",
     model: "Nike Phantom 6 High Academy FG/MG",
     groundType: "FG",
@@ -122201,6 +122157,15 @@ const minedBootProductsChunk20: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45803613884&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001125550-00-P-X-20260619112012.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE4N3xpbWFnZS9qcGVnfGFESTJMMmhrTmk4eE16Z3pPRFF3TVRBeE1UYzBNaTl0WldScFlYTmZNVEF3TVRFeU5UVTFNRjh3TUY5UVgxZ3RNakF5TmpBMk1Ua3hNVEl3TVRJdWFuQm58ZmFlZmM3OGE0MjliZDEzN2YwN2FjZGMyNzdkMDJiMmNhZWYxOTUxNTg2MDQ4NTJlYTgyNjI4NTczNTk0NGI5Mg&feedId=58083&k=a24120bc280822f1289694b8eefff47e7449f969",
         sizes: ["44"],
+      },
+      {
+        store: "Pro:Direct ES",
+        price: 67.0,
+        shipping: 3.62,
+        currency: "EUR",
+        url: "https://www.prodirectsport.es/products/nike-phantom-6-high-academy-para-terreno-firme-mixto-negro-verde-ilusion-negro-botas-para-adultos-4002068",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4002068_main.jpg?v=1793660919",
+        sizes: ["40", "40.5", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -123679,9 +123644,6 @@ const minedBootProductsChunk20: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk21: BootProduct[] = [
   {
     id: "forumsport-puma-puma-future-8-match-mg-mg-ninos-3",
     brand: "Puma",
@@ -123718,6 +123680,9 @@ const minedBootProductsChunk21: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk21: BootProduct[] = [
   {
     id: "forumsport-puma-puma-future-8-match-playmakers-fg-ag-fg-ag",
     brand: "Puma",
@@ -126838,9 +126803,6 @@ const minedBootProductsChunk21: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk22: BootProduct[] = [
   {
     id: "forumsport-puma-puma-ultra-pro-fg-ag-fg-ag-2",
     brand: "Puma",
@@ -126875,6 +126837,9 @@ const minedBootProductsChunk22: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk22: BootProduct[] = [
   {
     id: "forumsport-puma-puma-ultra-pro-mg-mg-2",
     brand: "Puma",
@@ -127427,7 +127392,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iii-league-fgmg-nino-off-white-lucid-blue-signal-core",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/272988/750/bota-adidas-copa-pure-iii-league-fg-mg-nino-blanco-1.jpg",
-        sizes: ["36", "37.5", "38.5"],
+        sizes: ["36", "38.5"],
       },
     ],
   },
@@ -127954,7 +127919,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-club-fgmg-nino-lucid-ray-blue-team-solar-yellow-2-lucid-aqua",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291520/750/bota-adidas-f50-club-fgmg-kinder-azul-1.jpg",
-        sizes: ["35", "36.5", "37.5"],
+        sizes: ["35", "36.5", "37.5", "38.5"],
       },
     ],
   },
@@ -128232,7 +128197,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-elite-fg-y-3-azralu-core-black-reauni",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/341411/750/bota-adidas-f50-elite-fg-y-3-azralu-core-black-reauni-1.jpg",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "45", "46"],
+        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "45"],
       },
     ],
   },
@@ -128687,7 +128652,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-elite-ll-fg-nino-footwear-white-solar-purple-tursol",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335859/750/bota-adidas-f50-hyperfast-elite-ll-fg-nino-footwear-white-solar-purple-tursol-1.jpg",
-        sizes: ["32", "33", "35", "36", "36.5", "38.5"],
+        sizes: ["32", "33", "35", "36", "36.5", "37.5", "38.5"],
       },
     ],
   },
@@ -128706,24 +128671,6 @@ const minedBootProductsChunk22: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-elite-ll-fg-nino-pulse-mint-core-black-solar-lemon",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/339030/750/bota-adidas-f50-hyperfast-elite-ll-fg-nino-pulse-mint-core-black-solar-lemon-1.jpg",
         sizes: ["34", "35", "36", "36.5", "37.5", "38", "38.5"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-adidas-adidas-f50-hyperfast-elite-ll-fg-nino-fg-ninos-3",
-    brand: "adidas",
-    model: "adidas F50 Hyperfast Elite LL FG Niño",
-    groundType: "FG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 90.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-elite-ll-fg-nino-tursol-core-black-gold-metallic",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/327368/750/bota-adidas-f50-hyperfast-elite-ll-fg-nino-tursol-core-black-gold-metallic-1.jpg",
-        sizes: ["31"],
       },
     ],
   },
@@ -128876,7 +128823,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ag-pulse-mint-night-navy-solar-lemon",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/339035/750/bota-adidas-f50-hyperfast-league-ag-verde-1.jpg",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -129105,7 +129052,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ll-ag-white-solar-purple-tursol",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335870/750/bota-adidas-f50-hyperfast-league-ll-ag-blanco-1.jpg",
-        sizes: ["39", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -129420,26 +129367,9 @@ const minedBootProductsChunk22: BootProduct[] = [
         price: 149.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-pro-ag-pulse-mint-core-black-solar-lemon",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339017/750/bota-adidas-f50-hyperfast-pro-ag-verde-1.jpg",
-        sizes: ["39"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-adidas-adidas-f50-hyperfast-pro-ag-ag-2",
-    brand: "adidas",
-    model: "adidas F50 Hyperfast Pro AG",
-    groundType: "AG",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 149.99,
-        shipping: 0,
-        currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-pro-ag-white-solar-purple-tursol",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335837/750/bota-adidas-f50-hyperfast-pro-ag-blanco-1.jpg",
-        sizes: ["42", "44", "44.5"],
+        sizes: ["44", "44.5"],
       },
     ],
   },
@@ -129473,7 +129403,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-pro-ll-ag-white-solar-purple-tursol",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335835/750/bota-adidas-f50-hyperfast-pro-ll-ag-blanco-1.jpg",
-        sizes: ["41", "42", "44.5", "45", "46.5"],
+        sizes: ["41", "42", "44", "44.5", "45", "46.5"],
       },
     ],
   },
@@ -129698,7 +129628,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fadidas%2Ff50-league-in-team-solar-yellow-2-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291425/750/zapatilla-adidas-f50-league-in-naranja-1.jpg",
-        sizes: ["42", "44"],
+        sizes: ["44"],
       },
     ],
   },
@@ -129855,7 +129785,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-league-turf-core-black-lucid-red-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291429/750/bota-adidas-f50-league-turf-negro-1.jpg",
-        sizes: ["42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+        sizes: ["41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
       },
     ],
   },
@@ -129984,9 +129914,6 @@ const minedBootProductsChunk22: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk23: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-f50-messi-club-turf-nino-ninos",
     brand: "adidas",
@@ -130057,6 +129984,9 @@ const minedBootProductsChunk23: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk23: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-f50-messi-elite-fg-fg-2",
     brand: "adidas",
@@ -130194,24 +130124,6 @@ const minedBootProductsChunk23: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-messi-league-fgmg-nino-white-lucid-pink-flash-aqua",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291307/750/bota-adidas-f50-messi-league-fgmg-kinder-blanco-1.jpg",
         sizes: ["36.5", "37.5", "38", "38.5"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-adidas-adidas-f50-messi-league-ll-ag-nino-ag-ninos",
-    brand: "adidas",
-    model: "adidas F50 Messi League LL AG Niño",
-    groundType: "AG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 74.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-messi-league-ll-ag-nino-ivory-semi-blue-burst-icey-blue",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/333421/750/bota-adidas-f50-messi-league-ll-ag-nino-blanco-1.jpg",
-        sizes: ["36.5"],
       },
     ],
   },
@@ -130365,7 +130277,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-sparkfusion-elite-ll-fg-ag-tursol-footwear-white-distilled-pink",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335815/750/bota-adidas-f50-sparkfusion-elite-ll-fg-ag-tursol-footwear-white-distilled-pink-1.jpg",
-        sizes: ["36.5", "38", "38.5", "39", "40", "40.5", "41", "44", "45"],
+        sizes: ["36.5", "38", "38.5", "39", "40", "40.5", "41", "45"],
       },
     ],
   },
@@ -130467,7 +130379,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fadidas%2Fkaiser-5-goal-black-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/121565/750/zapatilla-adidas-kaiser-5-goal-black-white-1.jpg",
-        sizes: ["40", "44"],
+        sizes: ["44"],
       },
     ],
   },
@@ -130518,7 +130430,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fkaiser-liga-2-core-black-core-white-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291718/750/bota-adidas-kaiser-liga-2-negro-1.jpg",
-        sizes: ["40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -130886,24 +130798,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-club-hl-turf-nino-white-tursol-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335802/750/bota-adidas-predator-club-hl-turf-nino-blanco-1.jpg",
-        sizes: ["28", "30", "31", "32", "33", "34"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-adidas-adidas-predator-club-in-sala-ic",
-    brand: "adidas",
-    model: "adidas Predator Club IN Sala",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 41.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fadidas%2Fpredator-club-in-sala-crystal-sky-ray-blue-team-solar-yellow",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/291476/750/zapatilla-adidas-predator-club-in-sala-azul-1.jpg",
-        sizes: ["44"],
+        sizes: ["30", "31", "32", "33", "34"],
       },
     ],
   },
@@ -131390,7 +131285,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-elite-ll-fg-nino-lucid-red-core-black-ftwr-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291372/750/bota-adidas-predator-elite-ll-fg-nino-lucid-red-core-black-white-1.jpg",
-        sizes: ["31"],
+        sizes: ["31", "36"],
       },
     ],
   },
@@ -131807,29 +131702,12 @@ const minedBootProductsChunk23: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
-        price: 75.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-ft-sg-lucid-red-core-black-ftwr-white",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/291396/750/bota-adidas-predator-league-ft-sg-lucid-red-core-black-white-1.jpg",
-        sizes: ["42.5"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-adidas-adidas-predator-league-ft-sg-sg-3",
-    brand: "adidas",
-    model: "adidas Predator League FT SG",
-    groundType: "SG",
-    offers: [
-      {
-        store: "FutbolEmotion",
         price: 94.99,
         shipping: 0,
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-ft-sg-white-tursol-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335826/750/bota-adidas-predator-league-ft-sg-blanco-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44.5", "45"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "45"],
       },
     ],
   },
@@ -131898,7 +131776,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-ft-turf-nino-core-black-silver-metallic-pulse-mint",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/338982/750/bota-adidas-predator-league-ft-turf-nino-negro-1.jpg",
-        sizes: ["30", "31", "32", "33", "34", "35", "36", "36.5", "37.5", "38", "38.5"],
+        sizes: ["30", "32", "33", "34", "35", "36", "36.5", "37.5", "38", "38.5"],
       },
     ],
   },
@@ -132023,24 +131901,6 @@ const minedBootProductsChunk23: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-l-mg-signal-core-ftwr-white-beam-orange",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/273029/750/bota-adidas-predator-league-mg-coral-1.jpg",
         sizes: ["42", "42.5"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-adidas-adidas-predator-league-l-mg-nino-mg-ninos",
-    brand: "adidas",
-    model: "adidas Predator League L MG Niño",
-    groundType: "MG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 41.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-l-mg-nino-core-black-carbon-lucid-lemon",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/267675/750/bota-adidas-predator-league-l-mg-fur-kinder-negro-1.jpg",
-        sizes: ["38.5"],
       },
     ],
   },
@@ -132527,7 +132387,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fworld-cup-ftwr-white-core-black-ftwr-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/229250/750/bota-adidas-world-cup-blanco-1.jpg",
-        sizes: ["39", "40", "41", "42"],
+        sizes: ["39", "40", "41"],
       },
     ],
   },
@@ -133131,26 +132991,6 @@ const minedBootProductsChunk23: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk24: BootProduct[] = [
-  {
-    id: "futbolemotion-mizuno-mizuno-mizuno-alpha-iii-elite-mix-2",
-    brand: "Mizuno",
-    model: "Mizuno Mizuno Alpha III Elite Mix",
-    groundType: "",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 183.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmizuno-alpha-iii-elite-mix-celeste-white",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/331896/750/bota-mizuno-mizuno-alpha-iii-elite-mix-celeste-white-1.jpg",
-        sizes: ["41"],
-      },
-    ],
-  },
   {
     id: "futbolemotion-mizuno-mizuno-mizuno-alpha-iii-made-in-japan-ag-ag",
     brand: "Mizuno",
@@ -133186,23 +133026,6 @@ const minedBootProductsChunk24: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-mizuno-mizuno-morelia-ii-club-mix",
-    brand: "Mizuno",
-    model: "Mizuno Morelia II Club Mix",
-    groundType: "",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 31.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmorelia-ii-club-mix-black-red-black",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/271132/750/bota-mizuno-morelia-ii-club-mix-black-red-black-1.jpg",
-        sizes: ["44"],
-      },
-    ],
-  },
-  {
     id: "futbolemotion-mizuno-mizuno-morelia-ii-elite-fg-fg",
     brand: "Mizuno",
     model: "Mizuno Morelia II Elite FG",
@@ -133215,7 +133038,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmorelia-ii-elite-black-white-chinese-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/271159/750/bota-mizuno-morelia-ii-elite-black-white-chinese-red-1.jpg",
-        sizes: ["40", "40.5", "41", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["40.5", "41", "42.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -133233,6 +133056,23 @@ const minedBootProductsChunk24: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmorelia-ii-elite-fg-white-arcadia-lava-orange",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336322/750/bota-mizuno-morelia-ii-elite-fg-white-arcadia-lava-orange-1.jpg",
         sizes: ["41", "42", "42.5", "43", "44", "44.5", "45"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-mizuno-mizuno-morelia-ii-elite-fg-fg-3",
+    brand: "Mizuno",
+    model: "Mizuno Morelia II Elite FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 143.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmorelia-ii-elite-fg-white-football-gold-galaxy-silver",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/331883/750/bota-mizuno-morelia-ii-elite-fg-white-football-gold-galaxy-silver-1.jpg",
+        sizes: ["40"],
       },
     ],
   },
@@ -133283,10 +133123,13 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmorelia-neo-v-beta-elite-fg-black-lava-orange-arcadia",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336329/750/bota-mizuno-morelia-neo-v-beta-elite-fg-black-lava-orange-arcadia-1.jpg",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5"],
+        sizes: ["40", "40.5", "41", "42.5", "43", "44", "44.5"],
       },
     ],
   },
+];
+
+const minedBootProductsChunk24: BootProduct[] = [
   {
     id: "futbolemotion-mizuno-mizuno-morelia-neo-v-beta-elite-fg-fg-2",
     brand: "Mizuno",
@@ -133317,7 +133160,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmorelia-neo-v-beta-elite-mix-black-lava-orange-arcadia",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336340/750/bota-mizuno-morelia-neo-v-beta-elite-mix-black-lava-orange-arcadia-1.jpg",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "45"],
       },
     ],
   },
@@ -133402,7 +133245,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmorelia-neo-v-beta-pro-ag-black-lava-orange-arcadia",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336336/750/bota-mizuno-morelia-neo-v-beta-pro-ag-negro-1.jpg",
-        sizes: ["42", "42.5", "43", "44.5"],
+        sizes: ["42", "43", "44.5"],
       },
     ],
   },
@@ -133920,7 +133763,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fmunich%2Fjr-gresca-vco-blanca-azul",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/101747/750/zapatilla-munich-jr-gresca-vco-blanca-azul-1.jpg",
-        sizes: ["26", "27", "28", "29", "30", "31", "32"],
+        sizes: ["27", "28", "29", "30", "31", "32"],
       },
     ],
   },
@@ -134100,7 +133943,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fmunich%2Fone-nino-blanco-2",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/330402/750/zapatilla-munich-one-kid-blanco-1.jpg",
-        sizes: ["33", "34", "35", "36", "37", "38"],
+        sizes: ["33", "34", "36", "37", "38"],
       },
     ],
   },
@@ -134804,7 +134647,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2Ffuron-elite-turf-v9-white-alkaline-green",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336480/750/bota-new-balance-furon-elite-turf-v9-white-alkaline-green-1.jpg",
-        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "46"],
       },
     ],
   },
@@ -135270,7 +135113,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2Ftekela-team-fg-v5-blue-gemstone",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280562/750/bota-new-balance-tekela-team-fg-v5-azul-1.jpg",
-        sizes: ["40", "41", "42"],
+        sizes: ["40"],
       },
     ],
   },
@@ -135620,7 +135463,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-academy-fgmg-km-plum-eclipse-mtlc-silver",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301073/750/bota-nike-air-zoom-mercurial-superfly-10-academy-fgmg-km-plata-1.jpg",
-        sizes: ["44", "45"],
+        sizes: ["45"],
       },
     ],
   },
@@ -135691,7 +135534,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Fair-zoom-mercurial-superfly-10-academy-ic-nino-magic-flamingo-black-total-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268859/750/zapatilla-nike-kinder-air-zoom-mercurial-superfly-10-akademie-ic-rosa-1.jpg",
-        sizes: ["38"],
+        sizes: ["36.5", "38"],
       },
     ],
   },
@@ -135710,6 +135553,23 @@ const minedBootProductsChunk24: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-academy-mg-nino-magic-flamingo-black-total-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268858/750/bota-nike-air-zoom-mercurial-superfly-10-academy-mg-nino-rosa-1.jpg",
         sizes: ["32", "33", "37.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-10-academy-turf",
+    brand: "Nike",
+    model: "Nike Air Zoom Mercurial Superfly 10 Academy Turf",
+    groundType: "",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 56.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-academy-turf-magic-flamingo-black-total-crimson",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/268964/750/bota-nike-air-zoom-mercurial-superfly-10-akademie-rasen-rosa-1.jpg",
+        sizes: ["39"],
       },
     ],
   },
@@ -135812,7 +135672,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-10-ellite-sg-pro-racer-blue-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301080/750/bota-nike-air-zoom-mercurial-superfly-10-ellite-sg-pro-racer-blue-white-1.jpg",
-        sizes: ["39", "40", "40.5"],
+        sizes: ["39", "40"],
       },
     ],
   },
@@ -136215,7 +136075,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-elite-ag-pro-black-illusion-green-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336744/750/bota-nike-air-zoom-mercurial-superfly-11-elite-ag-pro-black-illusion-green-black-1.jpg",
-        sizes: ["40", "40.5", "42", "42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["40", "40.5", "42", "42.5", "43", "44.5", "45", "46"],
       },
     ],
   },
@@ -136270,9 +136130,6 @@ const minedBootProductsChunk24: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk25: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-11-elite-ag-pro-km-ag",
     brand: "Nike",
@@ -136409,6 +136266,9 @@ const minedBootProductsChunk25: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk25: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-11-elite-sg-pro-sg-2",
     brand: "Nike",
@@ -136422,7 +136282,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-elite-sg-pro-white-blur-brt-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336754/750/bota-nike-air-zoom-mercurial-superfly-11-elite-sg-pro-white-blur-brt-crimson-1.jpg",
-        sizes: ["38.5", "39", "40", "40.5", "41", "42"],
+        sizes: ["38.5", "39", "40", "40.5", "41"],
       },
     ],
   },
@@ -136473,7 +136333,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-pro-ag-white-blur-brt-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336755/750/bota-nike-air-zoom-mercurial-superfly-11-pro-ag-blanco-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "44", "44.5", "45", "45.5", "46"],
+        sizes: ["39", "40", "42", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -136646,7 +136506,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-fgmg-km-nino-plum-eclipse-mtlc-silver",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301022/750/bota-nike-air-zoom-mercurial-vapor-16-academy-fgmg-km-kinder-plata-1.jpg",
-        sizes: ["36", "36.5"],
+        sizes: ["36"],
       },
     ],
   },
@@ -136695,30 +136555,12 @@ const minedBootProductsChunk25: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
-        price: 22.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-fgmg-nino-magic-flamingo-black-total-crimson",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/268864/750/bota-nike-kinder-air-zoom-mercurial-vapor-16-akademie-fg-mg-rosa-1.jpg",
-        sizes: ["36.5"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-academy-fg-mg-nino-fg-ninos-4",
-    brand: "Nike",
-    model: "Nike Air Zoom Mercurial Vapor 16 Academy FG/MG Niño",
-    groundType: "FG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FutbolEmotion",
         price: 48.99,
         shipping: 0,
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-fgmg-nino-racer-blue-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301029/750/bota-nike-air-zoom-mercurial-vapor-16-academy-fgmg-kinder-azul-1.jpg",
-        sizes: ["32", "35.5", "36", "36.5"],
+        sizes: ["32", "36", "36.5"],
       },
     ],
   },
@@ -136769,7 +136611,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-ic-racer-blue-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/299708/750/zapatilla-nike-air-zoom-mercurial-vapor-16-academy-ic-azul-1.jpg",
-        sizes: ["42.5", "43", "44", "44.5", "45.5"],
+        sizes: ["42.5", "44", "44.5", "45.5"],
       },
     ],
   },
@@ -136787,7 +136629,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-turf-nino-magic-flamingo-black-total-crimson-0",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268868/750/zapatilla-nike-air-zoom-mercurial-vapor-16-academy-turf-nino-rosa-1.jpg",
-        sizes: ["36", "36.5"],
+        sizes: ["36.5"],
       },
     ],
   },
@@ -137018,6 +136860,23 @@ const minedBootProductsChunk25: BootProduct[] = [
     ],
   },
   {
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-elite-fg-fg-4",
+    brand: "Nike",
+    model: "Nike Air Zoom Mercurial Vapor 16 Elite FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 188.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fzm-vapor-16-elite-fg-magic-flamingo-black-total-crimson",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/268981/750/bota-nike-zm-vapor-16-elite-fg-magic-flamingo-black-total-crimson-1.jpg",
+        sizes: ["40"],
+      },
+    ],
+  },
+  {
     id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-elite-sg-pro-sg",
     brand: "Nike",
     model: "Nike Air Zoom Mercurial Vapor 16 Elite SG-Pro",
@@ -137030,7 +136889,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-elite-sg-pro-racer-blue-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301089/750/bota-nike-air-zoom-mercurial-vapor-16-elite-sg-pro-racer-blue-white-1.jpg",
-        sizes: ["39", "40.5"],
+        sizes: ["39"],
       },
     ],
   },
@@ -137095,24 +136954,6 @@ const minedBootProductsChunk25: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
-        price: 35.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-pro-fg-nino-black-black-deep-jungle",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/232397/750/bota-nike-air-zoom-mercurial-vapor-16-pro-fg-nino-black-black-deep-jungle-1.jpg",
-        sizes: ["34"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-pro-fg-nino-fg-ninos-2",
-    brand: "Nike",
-    model: "Nike Air Zoom Mercurial Vapor 16 Pro FG Niño",
-    groundType: "FG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FutbolEmotion",
         price: 125.99,
         shipping: 0,
         currency: "EUR",
@@ -137123,7 +136964,7 @@ const minedBootProductsChunk25: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-pro-fg-nino-fg-ninos-3",
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-pro-fg-nino-fg-ninos-2",
     brand: "Nike",
     model: "Nike Air Zoom Mercurial Vapor 16 Pro FG Niño",
     groundType: "FG",
@@ -137141,7 +136982,7 @@ const minedBootProductsChunk25: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-pro-fg-nino-fg-ninos-4",
+    id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-pro-fg-nino-fg-ninos-3",
     brand: "Nike",
     model: "Nike Air Zoom Mercurial Vapor 16 Pro FG Niño",
     groundType: "FG",
@@ -137223,7 +137064,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-academy-ag-multicolor-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/343571/750/bota-nike-air-zoom-mercurial-vapor-17-academy-ag-negro-1.jpg",
-        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
+        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -137240,7 +137081,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-academy-ag-white-dusty-cactus",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/343570/750/bota-nike-air-zoom-mercurial-vapor-17-academy-ag-blanco-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -137883,7 +137724,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-elite-sg-pro-t-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321533/750/bota-nike-air-zoom-mercurial-vapor-17-elite-sg-pro-t-multi-color-black-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43"],
       },
     ],
   },
@@ -138161,7 +138002,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-pro-turf-brt-crimson-blur",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336741/750/bota-nike-air-zoom-mercurial-vapor-17-pro-turf-rojo-1.jpg",
-        sizes: ["39", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["39", "40.5", "41", "42", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -138265,7 +138106,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-high-academy-ag-brt-crimson-blur-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336664/750/bota-nike-phantom-6-high-academy-ag-rojo-1.jpg",
-        sizes: ["38.5", "39", "40.5", "41", "42", "42.5", "43", "44", "45", "45.5"],
+        sizes: ["38.5", "39", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5"],
       },
     ],
   },
@@ -138383,6 +138224,23 @@ const minedBootProductsChunk25: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
+        price: 84.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-high-academy-fgmg-multi-color-black",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/321487/750/bota-nike-phantom-6-high-academy-fgmg-multi-color-black-1.jpg",
+        sizes: ["45"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-phantom-6-high-academy-fg-mg-fg-4",
+    brand: "Nike",
+    model: "Nike Phantom 6 High Academy FG/MG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
         price: 99.99,
         shipping: 0,
         currency: "EUR",
@@ -138393,7 +138251,7 @@ const minedBootProductsChunk25: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-nike-nike-phantom-6-high-academy-fg-mg-fg-4",
+    id: "futbolemotion-nike-nike-phantom-6-high-academy-fg-mg-fg-5",
     brand: "Nike",
     model: "Nike Phantom 6 High Academy FG/MG",
     groundType: "FG",
@@ -138943,6 +138801,24 @@ const minedBootProductsChunk25: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
+        price: 69.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-academy-fgmg-nino-multicolor-black",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/343513/750/bota-nike-phantom-6-low-academy-fgmg-nino-multicolor-black-1.jpg",
+        sizes: ["32", "33", "34", "35", "36.5", "37.5", "38", "38.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-phantom-6-low-academy-fg-mg-nino-fg-ninos-6",
+    brand: "Nike",
+    model: "Nike Phantom 6 Low Academy FG/MG Niño",
+    groundType: "FG",
+    ageGroup: "kids",
+    offers: [
+      {
+        store: "FutbolEmotion",
         price: 44.99,
         shipping: 0,
         currency: "EUR",
@@ -138953,7 +138829,7 @@ const minedBootProductsChunk25: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-nike-nike-phantom-6-low-academy-fg-mg-nino-fg-ninos-6",
+    id: "futbolemotion-nike-nike-phantom-6-low-academy-fg-mg-nino-fg-ninos-7",
     brand: "Nike",
     model: "Nike Phantom 6 Low Academy FG/MG Niño",
     groundType: "FG",
@@ -138971,7 +138847,7 @@ const minedBootProductsChunk25: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-nike-nike-phantom-6-low-academy-fg-mg-nino-fg-ninos-7",
+    id: "futbolemotion-nike-nike-phantom-6-low-academy-fg-mg-nino-fg-ninos-8",
     brand: "Nike",
     model: "Nike Phantom 6 Low Academy FG/MG Niño",
     groundType: "FG",
@@ -139001,7 +138877,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Fphantom-6-low-academy-ic-black-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268919/750/zapatilla-nike-phantom-6-low-acad-ic-negro-1.jpg",
-        sizes: ["38.5", "39", "44.5"],
+        sizes: ["44.5"],
       },
     ],
   },
@@ -139077,6 +138953,24 @@ const minedBootProductsChunk25: BootProduct[] = [
   },
   {
     id: "futbolemotion-nike-nike-phantom-6-low-academy-ic-nino-ic-ninos-3",
+    brand: "Nike",
+    model: "Nike Phantom 6 Low Academy IC Niño",
+    groundType: "IC",
+    ageGroup: "kids",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 44.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Fphantom-6-low-academy-ic-nino-racer-blue-pink-blast-white",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/299685/750/zapatilla-nike-zapatilla-futbol-sala-azul-1.jpg",
+        sizes: ["38"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-phantom-6-low-academy-ic-nino-ic-ninos-4",
     brand: "Nike",
     model: "Nike Phantom 6 Low Academy IC Niño",
     groundType: "IC",
@@ -139405,9 +139299,6 @@ const minedBootProductsChunk25: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-phantom-6-low-pro-fg-mg-eh-nino-fg-ninos",
     brand: "Nike",
@@ -139516,6 +139407,9 @@ const minedBootProductsChunk26: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-phantom-6-low-pro-turf",
     brand: "Nike",
@@ -139570,23 +139464,6 @@ const minedBootProductsChunk26: BootProduct[] = [
   },
   {
     id: "futbolemotion-nike-nike-premier-iii-sg-pro-anti-clog-sg",
-    brand: "Nike",
-    model: "Nike Premier III SG-Pro Anti-Clog",
-    groundType: "SG",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 53.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fthe-nike-premier-iii-sg-pro-ac-phantom-picante-red",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/280388/750/bota-nike-the-nike-premier-iii-sg-pro-ac-phantom-picante-red-1.jpg",
-        sizes: ["40.5"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-nike-nike-premier-iii-sg-pro-anti-clog-sg-2",
     brand: "Nike",
     model: "Nike Premier III SG Pro Anti-Clog",
     groundType: "SG",
@@ -139806,7 +139683,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Ftiempo-gato-multicolor-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321526/750/zapatilla-nike-tiempo-gato-multicolor-black-1.jpg",
-        sizes: ["40.5", "42", "44.5"],
+        sizes: ["40.5", "42", "44.5", "46"],
       },
     ],
   },
@@ -139823,7 +139700,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Ftiempo-gato-white-moon-particle",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336358/750/zapatilla-nike-tiempo-gato-white-moon-particle-1.jpg",
-        sizes: ["41", "42", "44"],
+        sizes: ["42", "44"],
       },
     ],
   },
@@ -140017,7 +139894,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Ftiempo-legend-10-academy-ic-black-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268874/750/zapatilla-nike-tiempo-legend-10-akademie-ic-negro-1.jpg",
-        sizes: ["38.5", "39"],
+        sizes: ["38.5", "39", "45"],
       },
     ],
   },
@@ -140071,6 +139948,23 @@ const minedBootProductsChunk26: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Ftiempo-legend-10-academy-ic-nino-volt-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/281090/750/zapatilla-nike-kinder-tiempo-legend-10-academy-ic-amarillo-1.jpg",
         sizes: ["38", "38.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-nike-nike-tiempo-legend-10-pro-turf",
+    brand: "Nike",
+    model: "Nike Tiempo Legend 10 Pro Turf",
+    groundType: "",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 90.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-legend-10-pro-turf-black-black",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/268896/750/bota-nike-tiempo-legend-10-pro-rasen-negro-1.jpg",
+        sizes: ["40"],
       },
     ],
   },
@@ -140189,7 +140083,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-ligera-pro-fg-ft-pearl-white-dk-obsidian",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321516/750/bota-nike-tiempo-ligera-pro-fg-ft-blanco-1.jpg",
-        sizes: ["39", "41", "44.5"],
+        sizes: ["39", "41"],
       },
     ],
   },
@@ -140291,7 +140185,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-maestro-academy-fgmg-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321517/750/bota-nike-tiempo-maestro-academy-fgmg-multicolor-1.jpg",
-        sizes: ["39", "40", "40.5", "42", "45", "45.5"],
+        sizes: ["39", "40", "40.5", "43", "45", "45.5"],
       },
     ],
   },
@@ -140308,7 +140202,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-maestro-academy-fgmg-white-black-racer-blue-pink-blast",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301059/750/bota-nike-tiempo-maestro-academy-fgmg-blanco-1.jpg",
-        sizes: ["39", "40"],
+        sizes: ["39"],
       },
     ],
   },
@@ -140342,7 +140236,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-maestro-academy-fgmg-white-dusty-cactus-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/343564/750/bota-nike-tiempo-maestro-academy-fgmg-blanco-1.jpg",
-        sizes: ["39", "40", "40.5", "44", "45", "45.5", "46"],
+        sizes: ["39", "40", "40.5", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -140414,7 +140308,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-maestro-academy-fgmg-nino-white-black-racer-blue-pink-blast",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301010/750/bota-nike-tiempo-maestro-academy-fgmg-nino-blanco-1.jpg",
-        sizes: ["33", "35", "35.5", "36.5"],
+        sizes: ["35", "35.5", "36.5"],
       },
     ],
   },
@@ -140831,7 +140725,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Ftiempo-reactgato-ic-hydrogen-blue-coconut",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321525/750/zapatilla-nike-tiempo-reactgato-ic-hydrogen-blue-coconut-1.jpg",
-        sizes: ["39", "40", "40.5", "44", "44.5", "47"],
+        sizes: ["39", "40", "40.5", "44", "44.5"],
       },
     ],
   },
@@ -140933,7 +140827,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Ftiempo-streetgato-bleaced-lilac-black-total-orange",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336360/750/zapatilla-nike-tiempo-streetgato-bleaced-lilac-black-total-orange-1.jpg",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -141386,23 +141280,6 @@ const minedBootProductsChunk26: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
-        price: 46.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-9-match-fgag-puma-red-puma-white-glowing-red-puma-black",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/285527/750/bota-puma-future-9-match-fgag-rojo-1.jpg",
-        sizes: ["41"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-puma-puma-future-9-match-fg-ag-fg-ag-3",
-    brand: "Puma",
-    model: "Puma Future 9 Match FG/AG",
-    groundType: "FG/AG",
-    offers: [
-      {
-        store: "FutbolEmotion",
         price: 56.99,
         shipping: 0,
         currency: "EUR",
@@ -141413,7 +141290,7 @@ const minedBootProductsChunk26: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-puma-puma-future-9-match-fg-ag-fg-ag-4",
+    id: "futbolemotion-puma-puma-future-9-match-fg-ag-fg-ag-3",
     brand: "Puma",
     model: "Puma Future 9 Match FG/AG",
     groundType: "FG/AG",
@@ -141566,6 +141443,24 @@ const minedBootProductsChunk26: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fpuma%2Ffuture-9-match-it-puma-red-puma-white-glowing-red-puma-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285529/750/zapatilla-puma-future-9-match-it-rojo-1.jpg",
         sizes: ["44.5", "45"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-puma-puma-future-9-match-it-mid-nino-ic-ninos",
+    brand: "Puma",
+    model: "Puma Future 9 Match IT + Mid Niño",
+    groundType: "IC",
+    ageGroup: "kids",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 31.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fpuma%2Ffuture-9-match-it-mid-nino-puma-red-puma-white-glowing-red-puma-black",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/285533/750/zapatilla-puma-future-9-match-it-mid-kinder-rojo-1.jpg",
+        sizes: ["36.5"],
       },
     ],
   },
@@ -142072,7 +141967,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-9-pro-fgag-nino-mint-jelly-black-aquatic",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/307250/750/bota-puma-future-9-pro-fgag-kinder-amarillo-limon-1.jpg",
-        sizes: ["33", "36", "38"],
+        sizes: ["36", "38"],
       },
     ],
   },
@@ -142314,7 +142209,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-9-ultimate-mxsg-sugared-almond-white-ultra-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/329604/750/bota-puma-future-9-ultimate-mxsg-sugared-almond-white-ultra-red-1.jpg",
-        sizes: ["40", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["40", "41", "42", "42.5", "43", "44", "44.5"],
       },
     ],
   },
@@ -142452,7 +142347,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fking-20-match-fgag-nino-white-poison-pink-bright-aqua",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/307311/750/bota-puma-king-20-match-fgag-nino-blanco-1.jpg",
-        sizes: ["36", "38", "38.5"],
+        sizes: ["36", "38.5"],
       },
     ],
   },
@@ -142543,9 +142438,6 @@ const minedBootProductsChunk26: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk27: BootProduct[] = [
   {
     id: "futbolemotion-puma-puma-king-20-ultimate-fg-ag-fg-ag-3",
     brand: "Puma",
@@ -142610,7 +142502,7 @@ const minedBootProductsChunk27: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fking-platinum-fgag-black-black-metallic-gold",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285560/750/bota-puma-king-platinum-fgag-negro-1.jpg",
-        sizes: ["42", "43"],
+        sizes: ["42"],
       },
     ],
   },
@@ -142648,6 +142540,9 @@ const minedBootProductsChunk27: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk27: BootProduct[] = [
   {
     id: "futbolemotion-puma-puma-pressing-iv-turf-ic-2",
     brand: "Puma",
@@ -142661,7 +142556,7 @@ const minedBootProductsChunk27: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fpuma%2Fpressing-iv-turf-white-black-vibrant-blue-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285630/750/zapatilla-puma-pressing-iv-tf-blanco-1.jpg",
-        sizes: ["39", "45"],
+        sizes: ["45"],
       },
     ],
   },
@@ -143274,7 +143169,7 @@ const minedBootProductsChunk27: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-nitro-7-ultimate-fg-sugared-almond-puma-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/329680/750/bota-puma-ultra-nitro-7-ultimate-fg-sugared-almond-puma-black-1.jpg",
-        sizes: ["40", "41", "42", "43", "44", "44.5"],
+        sizes: ["40", "41", "42", "44", "44.5"],
       },
     ],
   },
@@ -143688,7 +143583,7 @@ const minedBootProductsChunk27: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Funder-armour%2Fmagnetico-select-6-fg-nino-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/411673/750/bota-under-armour-magnetico-select-6-fg-nino-blanco-1.jpg",
-        sizes: ["33", "34", "35", "36", "37.5"],
+        sizes: ["33", "34", "36", "37.5"],
       },
     ],
   },
@@ -145703,9 +145598,6 @@ const minedBootProductsChunk27: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk28: BootProduct[] = [
   {
     id: "pro-direct-es-adidas-adidas-predator-elite-sin-cordones-sg-sg",
     brand: "adidas",
@@ -145808,6 +145700,9 @@ const minedBootProductsChunk28: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk28: BootProduct[] = [
   {
     id: "pro-direct-es-adidas-adidas-predator-league-ag-2g-3g-para-ninos-ag-ninos",
     brand: "adidas",
@@ -148768,9 +148663,6 @@ const minedBootProductsChunk28: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk29: BootProduct[] = [
   {
     id: "pro-direct-es-new-balance-new-balance-furon-v9-team-fg-fg-3",
     brand: "New Balance",
@@ -148873,6 +148765,9 @@ const minedBootProductsChunk29: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk29: BootProduct[] = [
   {
     id: "pro-direct-es-new-balance-new-balance-tekela-magia-v4-fg-low-fg",
     brand: "New Balance",
@@ -151831,9 +151726,6 @@ const minedBootProductsChunk29: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk30: BootProduct[] = [
   {
     id: "pro-direct-es-pantofola-d-oro-pantofola-doro-lazzarini-2-0-tongue-fg-made-in-italy-fg-2",
     brand: "Pantofola d'Oro",
@@ -151936,6 +151828,9 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk30: BootProduct[] = [
   {
     id: "pro-direct-es-pantofola-d-oro-pantofola-doro-lazzarini-og-6-stud-sg-made-in-italy-sg",
     brand: "Pantofola d'Oro",
@@ -155110,9 +155005,6 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk31: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-copa-pure-2-elite-fg-fg-ie7486",
     brand: "Adidas",
@@ -155506,6 +155398,9 @@ const minedBootProductsChunk31: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk31: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-copa-pure-ii-1-sg-sg",
     brand: "Adidas",
@@ -165934,9 +165829,6 @@ const minedBootProductsChunk31: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk32: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-para-ninos-adidas-predator-club-turf-ninos-ih2081",
     brand: "Adidas",
@@ -166276,6 +166168,9 @@ const minedBootProductsChunk32: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk32: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-para-ninos-adidas-predator-league-fg-fg-ninos-if6352",
     brand: "Adidas",
@@ -166973,21 +166868,13 @@ const minedBootProductsChunk32: BootProduct[] = [
         priceMax: 32.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-pink-a-boo",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-3638-pink-a-boo-7.webp",
-        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
+        sizes: ["24", "25", "26"],
         sizePrices: [
-          { size: "28", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "29", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "30", price: 28.55, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "31", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "32", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "33", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "34", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "35", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "36", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "37", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "38", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "24", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "25", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "26", price: 28.55, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
         ],
       },
       {
@@ -166995,9 +166882,9 @@ const minedBootProductsChunk32: BootProduct[] = [
         price: 26.97,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234857-3638-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-pink-a-boo",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-3638-pink-a-boo-7.webp",
-        sizes: ["25", "26"],
+        sizes: ["29", "30", "33", "36"],
       },
     ],
   },
@@ -167033,16 +166920,19 @@ const minedBootProductsChunk32: BootProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.67,
+        price: 18.36,
         priceMax: 20.76,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.webp",
-        sizes: ["24", "27"],
+        sizes: ["34", "35", "36", "37", "38"],
         sizePrices: [
-          { size: "24", price: 20.76, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue" },
-          { size: "27", price: 18.67, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue" },
+          { size: "34", price: 20.76, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
+          { size: "35", price: 18.36, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
+          { size: "36", price: 18.36, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
+          { size: "37", price: 20.76, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
+          { size: "38", price: 20.76, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
         ],
       },
       {
@@ -167050,9 +166940,9 @@ const minedBootProductsChunk32: BootProduct[] = [
         price: 16.77,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.webp",
-        sizes: ["35", "36"],
+        sizes: ["27"],
       },
     ],
   },
@@ -167361,23 +167251,22 @@ const minedBootProductsChunk32: BootProduct[] = [
         priceMax: 32.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-pink-a-boo",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-3638-pink-a-boo-7.webp",
-        sizes: ["24", "25", "26"],
+        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
         sizePrices: [
-          { size: "24", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "25", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
-          { size: "26", price: 28.55, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "28", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "29", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "30", price: 28.55, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "31", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "32", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "33", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "34", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "35", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "36", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "37", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
+          { size: "38", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo" },
         ],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 26.97,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234857-3638-chaussures-de-football-enfant-hummel-top-star-2-0-vc-f-g-pink-a-boo",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-3638-pink-a-boo-7.webp",
-        sizes: ["29", "30", "33", "36"],
       },
     ],
   },
@@ -167542,20 +167431,26 @@ const minedBootProductsChunk32: BootProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.36,
+        price: 18.67,
         priceMax: 20.76,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.webp",
-        sizes: ["34", "35", "36", "37", "38"],
+        sizes: ["24", "27"],
         sizePrices: [
-          { size: "34", price: 20.76, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
-          { size: "35", price: 18.36, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
-          { size: "36", price: 18.36, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
-          { size: "37", price: 20.76, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
-          { size: "38", price: 20.76, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
+          { size: "24", price: 20.76, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue" },
+          { size: "27", price: 18.67, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue" },
         ],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 16.77,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.webp",
+        sizes: ["35", "36"],
       },
     ],
   },
@@ -175728,9 +175623,6 @@ const minedBootProductsChunk32: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk33: BootProduct[] = [
   {
     id: "sportisgoodes-puma-botas-de-futbol-puma-future-play-it",
     brand: "Puma",
@@ -175965,6 +175857,9 @@ const minedBootProductsChunk33: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk33: BootProduct[] = [
   {
     id: "sportisgoodes-puma-botas-de-futbol-puma-future-ultimate-fg-fg",
     brand: "Puma",
@@ -182903,20 +182798,20 @@ const minedBootProductsChunk33: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodfr-hummel-hummel-top-star-fg-fg-ninos",
+    id: "sportisgoodfr-hummel-hummel-top-star-2-0-vc-f-g-ninos",
     brand: "Hummel",
-    model: "Hummel Top Star FG",
-    groundType: "FG",
+    model: "Hummel Top Star 2.0 VC F.G",
+    groundType: "",
     ageGroup: "kids",
     offers: [
       {
         store: "SportIsGoodFR",
-        price: 16.77,
+        price: 26.97,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.webp",
-        sizes: ["27"],
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234857-3638-chaussures-de-football-bebe-hummel-top-star-2-0-vc-f-g-pink-a-boo",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234857-3638-pink-a-boo-7.webp",
+        sizes: ["25", "26"],
       },
     ],
   },
