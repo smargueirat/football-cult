@@ -106,7 +106,7 @@ export default async function BlackFridayPage({ params }: P) {
   });
   const listed = [...drops.slice(0, 30), ...lows.slice(0, 20)];
   // Las mayores bajadas con foto, a la vista antes de las tablas.
-  const top = drops.filter((r) => dealImage(r)).slice(0, TOP_CARDS);
+  const top = drops.filter((r) => dealImage(r) && (r.section === "camiseta" || r.section === "botas")).slice(0, TOP_CARDS);
 
   return (
     <div className="mx-auto w-full max-w-5xl px-4 py-6 sm:px-8">

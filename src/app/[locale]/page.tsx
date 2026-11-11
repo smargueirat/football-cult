@@ -125,7 +125,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   // Fotos de las mayores bajadas para el aviso de Black Friday (solo si está vigente).
   const bfPhotos: BannerPhoto[] = activeSeasonal(todayIso()).some((e) => e.id === "black-friday")
     ? bfDrops(locale)
-        .filter((r) => dealImage(r))
+        .filter((r) => dealImage(r) && (r.section === "camiseta" || r.section === "botas"))
         .slice(0, 4)
         .map((r) => ({ src: dealImage(r), alt: dealName(r, locale), pct: Math.round(r.pct) }))
     : [];
