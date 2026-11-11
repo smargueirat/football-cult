@@ -82,6 +82,7 @@
  },
  "Bet365 Stadium": null,
  "Bielefelder Alm": null,
+ "Bilino Polje Stadium": null,
  "Boris Paichadze Dinamo Arena": {
   "city": "Tbilisi",
   "desc": "football stadium in Tbilisi, Georgia",
@@ -265,6 +266,11 @@
   "city": "Rio Maior",
   "desc": "football stadium in Rio Maior, Portugal",
   "qid": "Q2990539"
+ },
+ "Estadio Nacional": {
+  "city": "Oeiras",
+  "desc": "football national stadium in Oeiras, Portugal",
+  "qid": "Q1327324"
  },
  "Estadio da Luz": {
   "city": "Lisbon",
