@@ -10,6 +10,17 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-11: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "flamengo-retro-202425-home": "flamengo-retro-2023-home",
+  "estadosunidos-retro-202223-away": "estadosunidos-retro-2022-away",
+  "boca-retro-201213-away": "boca-retro-201112-away",
+  "palermo-retro-202324-away": "palermo-away-202526",
+  "belgica-retro-2016-home": "belgica-retro-2017-home",
+  "cagliari-retro-202324-away": "cagliari-retro-202425-away",
+  "bulgaria-home-202526": "bulgaria-retro-2020-home",
+  "hoffenheim-away-202627": "hoffenheim-retro-202122-away",
+  "pumasunam-retro-202223-away": "pumasunam-retro-202425-away",
   // 2026-11-11: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
   // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
   "cambodia-retro-2018-away": "cambodia-retro-201819-away",
@@ -800,7 +811,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "realvalladolid-third-2025": "realvalladolid-third-202526",
   // 2026-10-18: temporada de un solo año -> 2025/26 o 2026/27 según los títulos
   // (scripts/catalog-mining/fix_single_year_seasons.py); redirigen a la ficha vigente.
-  "hoffenheim-away-2026": "hoffenheim-away-202627",
+  "hoffenheim-away-2026": "hoffenheim-retro-202122-away",
   "tottenham-third-kids": "tottenham-third-202526-kids",
   "ajax-training-2026": "ajax-training-202526",
   "ajax-training-jacket-2026": "ajax-training-jacket-202526",
@@ -1567,7 +1578,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "westham-retro-2007-home": "westham-retro-200708-home",
   "eslovenia-retro-2002-away": "eslovenia-retro-200203-away",
   "burnley-retro-2024-third": "burnley-retro-202425-third",
-  "cagliari-retro-2023-away": "cagliari-retro-202324-away",
+  "cagliari-retro-2023-away": "cagliari-retro-202425-away",
   // 2026-09-30: misma camiseta en dos fichas (temporada o variante mal
   // asignada por el refresco nocturno, ver refresh.py); la vacía redirige.
   "costamarfil-home-2025": "costamarfil-home-2026",
