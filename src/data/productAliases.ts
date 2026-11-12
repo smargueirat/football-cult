@@ -10,6 +10,25 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-12: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "numancia-retro-200809-home": "numancia-retro-1999-home",
+  "canada-retro-200608-home": "canada-retro-2019-home",
+  "senegal-home-2025": "senegal-home-2026",
+  "chequia-retro-201213-home": "chequia-retro-201415-home",
+  "dortmund-retro-201415-away": "dortmund-retro-201617-away",
+  "deportivo-retro-202425-away": "deportivo-away-202526",
+  "monaco-retro-202324-goalkeeper": "monaco-retro-202425-goalkeeper",
+  "fiorentina-retro-202425-third": "fiorentina-retro-202223-third",
+  "brescia-retro-202425-home": "brescia-retro-200304-home",
+  "juventus-retro-200001-away": "juventus-retro-200203-away",
+  "stpauli-retro-202425-away": "stpauli-away-202627",
+  "marseille-retro-202425-training": "marseille-training-202526",
+  "venezia-retro-202223-third": "venezia-retro-2022-third",
+  "canada-retro-200406-home": "canada-retro-2019-home",
+  "numancia-retro-200607-home": "numancia-retro-1999-home",
+  "marseille-retro-202425-prematch": "marseille-prematch-202526",
+  "espana-retro-200204-home": "espana-retro-2004-home",
   // 2026-11-12: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
   // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
   "ipswichtown-retro-2008-away": "ipswichtown-retro-200809-away",
@@ -989,7 +1008,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "romania-retro-2023-home": "romania-retro-202324-home",
   "gladbach-retro-202324-away": "gladbach-retro-202122-away",
   "porto-retro-201718-home": "porto-retro-202021-home",
-  "stpauli-retro-199900-away": "stpauli-retro-202425-away",
+  "stpauli-retro-199900-away": "stpauli-away-202627",
   "fenerbahce-retro-199495-home": "fenerbahce-retro-199900-home",
   "japon-retro-1994-away": "japon-retro-1993-away",
   "irlandadelnorte-retro-201617-home": "irlandadelnorte-retro-2020-home",
@@ -1001,7 +1020,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "italia-retro-2010-away": "italia-retro-200708-away",
   "cruzazul-retro-202223-third": "cruzazul-retro-202122-third",
   "como-retro-202425-goalkeeper": "como-goalkeeper-home-202526",
-  "stpauli-retro-1997-away": "stpauli-retro-202425-away",
+  "stpauli-retro-1997-away": "stpauli-away-202627",
   "irlanda-retro-1991-away": "irlanda-retro-199092-away",
   "espana-retro-2002-away": "espana-retro-2000-away",
   "cruzazul-retro-202223-away": "cruzazul-retro-202425-away",
