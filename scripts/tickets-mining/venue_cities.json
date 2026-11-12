@@ -4,6 +4,7 @@
   "desc": "stadium in Alkmaar, the Netherlands",
   "qid": "Q291590"
  },
+ "AIL Arena (Lugano Arena)": null,
  "Academy Stadium": {
   "city": "Manchester",
   "desc": "football stadium in Manchester, UK",
@@ -507,6 +508,11 @@
   "city": "the UK",
   "desc": "sports venue in the UK",
   "qid": "Q85875045"
+ },
+ "Maksimir Stadium": {
+  "city": "Maksimir",
+  "desc": "stadium in Maksimir, Croatia",
+  "qid": "Q723603"
  },
  "Maracana": {
   "city": "Rio de Janeiro",

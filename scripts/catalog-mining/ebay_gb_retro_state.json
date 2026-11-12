@@ -2240,6 +2240,7 @@
 "ipswichtown-retro-200406-away",
 "ipswichtown-retro-2005-home",
 "ipswichtown-retro-2008-away",
+"ipswichtown-retro-200809-away",
 "ipswichtown-retro-2009-home",
 "ipswichtown-retro-201011-away",
 "ipswichtown-retro-201213-home",
@@ -2252,6 +2253,7 @@
 "ipswichtown-retro-202324-home",
 "ipswichtown-retro-2024-away",
 "ipswichtown-retro-202425-home",
+"ipswichtown-retro-202425-third",
 "iran-retro-1998-away",
 "iran-retro-201011-away",
 "iran-retro-201011-home",
@@ -2488,6 +2490,7 @@
 "kawasakifrontale-retro-2019-home",
 "kawasakifrontale-retro-2019-third",
 "kawasakifrontale-retro-2023-home",
+"keralablasters-retro-202223-away",
 "keralablasters-retro-2023-away",
 "koln-retro-1978-away",
 "koln-retro-1978-home",
@@ -3671,7 +3674,12 @@
 "pumasunam-retro-200809-home",
 "pumasunam-retro-2010-away",
 "pumasunam-retro-201011-third",
+"pumasunam-retro-201314-home",
+"pumasunam-retro-201415-third",
+"pumasunam-retro-201516-third",
 "pumasunam-retro-201718-away",
+"pumasunam-retro-201718-third",
+"pumasunam-retro-201819-third",
 "pumasunam-retro-201920-home",
 "pumasunam-retro-202223-away",
 "pumasunam-retro-202223-home",
@@ -3979,6 +3987,7 @@
 "sanjoseearthquakes-retro-2020-home",
 "sanjoseearthquakes-retro-202021-away",
 "sanjoseearthquakes-retro-202021-home",
+"sanjoseearthquakes-retro-2022-away",
 "sanjoseearthquakes-retro-202223-home",
 "sanjoseearthquakes-retro-2023-home",
 "sanlorenzo-retro-200001-away",
@@ -4194,6 +4203,7 @@
 "sportingkc-retro-201516-third",
 "sportingkc-retro-2018-away",
 "sportingkc-retro-2019-home",
+"sportingkc-retro-201920-home",
 "sportingkc-retro-2020-away",
 "sportingkc-retro-2022-home",
 "sportingkc-retro-2023-away",
@@ -23858,6 +23868,18 @@
 "M"
 ],
 "shipping": 3.49
+},
+"ipswichtown-retro-202425-third": {
+"title": "Ipswich Town Football Shirt 2024 2025 Umbro Third Mens XL BNWT Genuine",
+"price": 59.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/880064811553?_skw=Ipswich+Town+2024+third+shirt&hash=itemcce7f35221%3Ag%3AMVgAAeSwAp9q5Iu-&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mZVD0WMQvqcHikGX2jrQ22qdbLJiLRe9kfvXHErz1BSbvsgjopfa03jBLi4Vn8HV9NAugloxfrYGiaABh8CmDKJDs%2BgtgB5Smf1o6JATUvVbKv2sCGllk9cWygrAUKlTOEYbAb%2FAjIG381mzXO21gddI6IdhtxC8bcd2Mex49nfCqQnxh68ztkdr0VWyvLP%2FfGXdNUu%2ByQ6mmghvz3PC4Wp7V0%2Bt3%2BcJ9SMYfQM2UBgAorFq4OZ3BRjeGMtysHGEXvyNY8DV2y0JSYhJ5KzoLR4nPhjvPJI%2Fog9S1xUmrvcHedRZ7k6Ut8qSAQpW2R29w%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|880064811553|0",
+"image": "https://i.ebayimg.com/images/g/MVgAAeSwAp9q5Iu-/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 0.0
 }
 }
 }
