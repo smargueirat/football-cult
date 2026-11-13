@@ -10,6 +10,16 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-13: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "marruecos-retro-202324-home": "marruecos-retro-202425-home",
+  "portlandtimbers-retro-2022-away": "portlandtimbers-retro-202021-away",
+  "clubamerica-away-202526-kids": "clubamerica-away-202627-kids",
+  "costamarfil-retro-201718-home": "costamarfil-retro-2018-home",
+  "costarica-retro-202425-home": "costarica-home-2026",
+  "realmadrid-retro-202324-third": "realmadrid-retro-202425-third",
+  "corinthians-retro-2018-third": "corinthians-retro-202122-third",
+  "serbia-retro-201011-away": "serbia-retro-201819-away",
   // 2026-11-13: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
   // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
   "venezia-retro-2022-third": "venezia-retro-202122-third",
@@ -422,7 +432,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "santos-retro-202021-away": "santos-retro-202122-away",
   "osasuna-home-kids": "osasuna-home-202627-kids",
   "realmadrid-retro-1994-home": "realmadrid-retro-199697-home",
-  "porto-retro-201415-home": "porto-retro-201718-home",
+  "porto-retro-201415-home": "porto-retro-202021-home",
   "realbetis-retro-200708-home": "realbetis-retro-200809-home",
   "coventry-retro-201012-away": "coventry-retro-201920-away",
   "marseille-retro-2000-away": "marseille-retro-2004-away",
@@ -860,7 +870,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "alnassr-home-kids": "alnassr-home-202627-kids",
   "arsenal-home-kids": "arsenal-home-202627-kids",
   "celtic-home-kids": "celtic-home-202526-kids",
-  "clubamerica-away-kids": "clubamerica-away-202526-kids",
+  "clubamerica-away-kids": "clubamerica-away-202627-kids",
   "cruzazul-home-kids": "cruzazul-home-202627-kids",
   "dortmund-home-kids": "dortmund-home-202526-kids",
   "fiorentina-home-kids": "fiorentina-home-202526-kids",
