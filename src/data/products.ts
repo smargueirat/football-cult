@@ -87162,6 +87162,19 @@ const productsData = [
       { store: "ForumSport", price: 84.99, shipping: 3.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46731835212&a=3013769&m=23805", title: "Macron alaves 27 third jersey camiseta de fútbol oficiales", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001119079-00-P-X-20261110195207.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDAwMHxpbWFnZS9qcGVnfGFERTBMMmd6T0M4eE5ERXpPVFUzTWpFeU5UY3lOaTl0WldScFlYTmZNVEF3TVRFeE9UQTNPVjh3TUY5UVgxZ3RNakF5TmpFeE1UQXhPVFV5TURjdWFuQm58NTAxYThmMzFjOWM5YWNjMWEzYTk5ZTMyNjBiYjU3ZDc0MWIzZmIwNTVmOWYwNDc5NDZhYjkxYTY5NTYyOGIyNQ&feedId=58083&k=5ac630fcdbe2ba0f0cff4081daf73ac6b63a8e15" },
     ],
   },
+{
+    id: "jamaica-home-women",
+    teamKey: "jamaica",
+    season: "2026",
+    typeKey: "home",
+    colorHex: "#009B3A",
+    colorHexSecondary: "#FED100",
+    jerseyPattern: "solid",
+    ageGroup: "women",
+    offers: [
+      { store: "AdidasMX", price: 999.0, shipping: 0.0, currency: "MXN", url: "https://www.awin1.com/pclick.php?p=45732548511&a=3013769&m=79918", title: "Jersey Local Jamaica 26 x Bob Marley", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe534f4be0f2e4f4380e0e6221cf5639b_9366%2FJersey_Local_Jamaica_26_x_Bob_Marley_Amarillo_KB3390_21_model.jpg&feedId=95013&k=2de6b539c870b94a4a65f30ee53d3876c08105fd" },
+    ],
+  },
 ];
 
 // El array de arriba (sin anotación de tipo explícita) evita TS2590
