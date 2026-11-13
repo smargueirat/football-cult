@@ -32847,6 +32847,7 @@ const productsData = [
     offers: [
       { store: "eBay", price: 60.0, shipping: 8.0, currency: "USD", url: "https://www.ebay.com/itm/267408365973?_skw=Hellas+Verona+away+soccer+jersey&hash=item3e42c7d995%3Ag%3AfOsAAeSwEXdq1V2%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Joma 2025-26 Hellas Verona Men's Stadium Away Soccer Jersey", inStock: false, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/fOsAAeSwEXdq1V2~/s-l1600.jpg" },
       { store: "Futbol Emotion", price: 39.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fjoma%2Fhellas-verona-segunda-equipacion-2025-2026", title: "Camiseta Joma Hellas Verona Segunda Equipación 2025-2026", inStock: true, sizes: ["S"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/282465/750/camiseta-joma-hellas-verona-segunda-equipacion-2025-2026-1.jpg" },
+      { store: "eBay ES", price: 91.93, shipping: 27.18, currency: "EUR", url: "https://www.ebay.es/itm/227586273347?_skw=Hellas+Verona+away+soccer+jersey&hash=item34fd32f043%3Ag%3AUqUAAeSwdsxq4S%7Ez&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva de fútbol visitante Joma 2025-26 Hellas Verona para hombre ropa de fútbol profesional", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/UqUAAeSwdsxq4S~z/s-l1600.jpg" },
     ],
   },
 {
@@ -40665,6 +40666,8 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay ES", price: 80.93, shipping: 35.97, currency: "EUR", url: "https://www.ebay.es/itm/358408576849?_skw=Minnesota+United+away+soccer+jersey&hash=item5372d0df51%3Ag%3Aiq0AAeSw3Gdp0Gs%7E&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol visitante Adidas 2025-26 Minnesota United Stadium para hombre", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/iq0AAeSw3Gdp0Gs~/s-l1600.jpg" },
+      { store: "eBay", price: 75.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/358408576849?_skw=Minnesota+United+away+soccer+jersey&hash=item5372d0df51%3Ag%3Aiq0AAeSw3Gdp0Gs%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2025-26 Minnesota United Men's Stadium Away Soccer Jersey", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/iq0AAeSw3Gdp0Gs~/s-l1600.jpg" },
+      { store: "eBay IT", price: 150.08, shipping: 28.23, currency: "EUR", url: "https://www.ebay.it/itm/227585159754?_skw=Minnesota+United+away+soccer+jersey&hash=item34fd21f24a%3Ag%3AIIEAAeSwmOJq4Di1&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas 2025-26 Minnesota United Maglia Calcio Uomo Stadium Away ProSoccer", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/IIEAAeSwmOJq4Di1/s-l1600.jpg" },
     ],
   },
 {
@@ -58362,6 +58365,7 @@ const productsData = [
     offers: [
       { store: "FootStoreFR", price: 80.11, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400126050001-maillot-domicile-authentique-aj-auxerre-2026-27-blanc", title: "Maillot Domicile Authentique AJ Auxerre 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron-400126050001-blanc-6ae223868864f-1.webp" },
       { store: "SportIsGoodFR", price: 76.42, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F400126050001-maillot-domicile-authentique-aj-auxerre-2026-27-blanc", title: "Maillot Domicile Authentique AJ Auxerre 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron-400126050001-6aac346ac0886-1.webp" },
+      { store: "eBay IT", price: 38.62, shipping: 18.91, currency: "EUR", url: "https://www.ebay.it/itm/800905475474?_skw=AJ+Auxerre+home+soccer+jersey&hash=itemba79afb592%3Ag%3AVSsAAeSwhIlq9Pdm&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mhvme0ApBsCSqxa5xeoxT3tgGRfyk6bsn9g50qp1hQoT1tdbvvmeAV2IlCMkrDAEEQOpRvrVM6okLAXYAXojLuIXWssxWDdTGcLque9CnhxH%2FL0RQDdjK4bkPKK2SMzdRCmxIaJkFn%2FKq2e3mubT36GaL%2Bd1%2ByKvupQA6PkAn6vd1stWpBV32TonM0VL9Kad4jueLMPn9E4hSa%2Brk3qFdMJCB8BFTrJru2ToP7HmLjpq3%2BSDmmuJRmiyc7N0nlNrEYU0rNu58KZgLbfijNb9GAe2sMJ6d3atkGSOaILGYlNzVF3ac8iDhnONFKQoLZ9UI%3D&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Taglia Large - 2026-27 AJ Auxerre Macron Home Jersey abbigliamento tifoso", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/VSsAAeSwhIlq9Pdm/s-l1600.jpg" },
     ],
   },
 {
@@ -59926,6 +59930,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay ES", price: 33.89, shipping: 23.32, currency: "EUR", url: "https://www.ebay.es/itm/257701055576?_skw=Watford+home+soccer+jersey&hash=item3c002e0c58%3Ag%3AwgAAAeSwUjRqjSiG&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "26/27 Watford FC Home Football (Soccer) Jersey Shirt, Size 4XL - New w/ Tags", inStock: true, sizes: ["4XL"], imageUrl: "https://i.ebayimg.com/images/g/wgAAAeSwUjRqjSiG/s-l1600.jpg" },
+      { store: "eBay GB", price: 27.78, shipping: 18.05, currency: "GBP", url: "https://www.ebay.co.uk/itm/257701055576?_skw=Watford+home+soccer+jersey&hash=item3c002e0c58%3Ag%3AwgAAAeSwUjRqjSiG&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "26/27 Watford FC Home Football (Soccer) Jersey Shirt, Size 4XL - New w/ Tags", inStock: true, sizes: ["4XL"], imageUrl: "https://i.ebayimg.com/images/g/wgAAAeSwUjRqjSiG/s-l1600.jpg" },
     ],
   },
 {
@@ -87173,6 +87178,34 @@ const productsData = [
     ageGroup: "women",
     offers: [
       { store: "AdidasMX", price: 999.0, shipping: 0.0, currency: "MXN", url: "https://www.awin1.com/pclick.php?p=45732548511&a=3013769&m=79918", title: "Jersey Local Jamaica 26 x Bob Marley", inStock: true, sizes: ["L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe534f4be0f2e4f4380e0e6221cf5639b_9366%2FJersey_Local_Jamaica_26_x_Bob_Marley_Amarillo_KB3390_21_model.jpg&feedId=95013&k=2de6b539c870b94a4a65f30ee53d3876c08105fd" },
+    ],
+  },
+{
+    id: "lehavre-away-202627",
+    teamKey: "lehavre",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#00AEEF",
+    colorHexSecondary: "#001E62",
+    jerseyPattern: "solid",
+    brand: "hummel",
+    offers: [
+      { store: "eBay", price: 78.9, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/900035918172?_skw=Le+Havre+AC+away+soccer+jersey&hash=itemd18e52395c%3Ag%3AS3UAAeSwDAJq29tj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2026-27 Le Havre AC HAC Soccer Football Away Jersey Hummel NEW XL France Ligue 1", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/S3UAAeSwDAJq29tj/s-l1600.jpg" },
+      { store: "eBay ES", price: 86.36, shipping: 18.6, currency: "EUR", url: "https://www.ebay.es/itm/900035918172?_skw=Le+Havre+AC+away+soccer+jersey&hash=itemd18e52395c%3Ag%3AS3UAAeSwDAJq29tj&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol visitante Le Havre AC HAC 2026-27 Hummel NUEVA XL Francia Ligue 1", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/S3UAAeSwDAJq29tj/s-l1600.jpg" },
+    ],
+  },
+{
+    id: "minnesotaunited-training-2026",
+    teamKey: "minnesotaunited",
+    season: "2026",
+    typeKey: "training",
+    colorHex: "#8CD2E9",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    brand: "adidas",
+    offers: [
+      { store: "eBay", price: 55.2, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/920122325573?_skw=Minnesota+United+training+soccer+jersey&hash=itemd63b907a45%3Ag%3AqUkAAeSwx89q8f7T&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Men Adidas Silver Minnesota United FC 2026 Training Jersey Slim Fit Size Small", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/qUkAAeSwx89q8f7T/s-l1600.jpg" },
+      { store: "eBay ES", price: 60.42, shipping: 25.0, currency: "EUR", url: "https://www.ebay.es/itm/920122325573?_skw=Minnesota+United+training+soccer+jersey&hash=itemd63b907a45%3Ag%3AqUkAAeSwx89q8f7T&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de entrenamiento para hombre Adidas plateada Minnesota United FC 2026 calce ajustado talla pequeña", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/qUkAAeSwx89q8f7T/s-l1600.jpg" },
     ],
   },
 ];
