@@ -356,6 +356,7 @@
 "atleticomineiro-retro-2024-away",
 "atleticomineiro-retro-2024-home",
 "atleticomineiro-retro-2024-third",
+"atleticonacional-retro-200910-home",
 "atleticonacional-retro-2024-away",
 "atleticonacional-retro-2024-third",
 "augsburg-retro-201112-away",
@@ -730,6 +731,7 @@
 "brighton-retro-201314-away",
 "bulgaria-retro-1994-away",
 "bulgaria-retro-2020-home",
+"burnley-retro-199395-away",
 "burnley-retro-1999-away",
 "burnley-retro-2012-away",
 "burnley-retro-2012-third",
@@ -1079,6 +1081,7 @@
 "clubtijuana-retro-201819-home",
 "clubtijuana-retro-2019-third",
 "clubtijuana-retro-201920-away",
+"clubtijuana-retro-201920-home",
 "clubtijuana-retro-2020-home",
 "clubtijuana-retro-202122-home",
 "clubtijuana-retro-202223-away",
@@ -3003,6 +3006,7 @@
 "millwall-retro-202223-away",
 "minnesotaunited-retro-2015-home",
 "minnesotaunited-retro-201617-home",
+"minnesotaunited-retro-2017-away",
 "minnesotaunited-retro-201718-away",
 "minnesotaunited-retro-201819-home",
 "minnesotaunited-retro-2019-home",
@@ -3671,6 +3675,7 @@
 "pumasunam-retro-200001-away",
 "pumasunam-retro-200001-home",
 "pumasunam-retro-2004-away",
+"pumasunam-retro-200809-away",
 "pumasunam-retro-200809-home",
 "pumasunam-retro-2010-away",
 "pumasunam-retro-201011-third",
@@ -3981,6 +3986,7 @@
 "sandiegofc-retro-202425-home",
 "sanjoseearthquakes-retro-201213-home",
 "sanjoseearthquakes-retro-2015-home",
+"sanjoseearthquakes-retro-2016-away",
 "sanjoseearthquakes-retro-201718-home",
 "sanjoseearthquakes-retro-2019-home",
 "sanjoseearthquakes-retro-2020-away",
@@ -4215,7 +4221,9 @@
 "sportrecife-retro-202324-away",
 "sportrecife-retro-2024-home",
 "stlouiscity-retro-202223-away",
+"stlouiscity-retro-2024-home",
 "stlouiscity-retro-202425-away",
+"stlouiscity-retro-202425-home",
 "stokecity-retro-1995-home",
 "stokecity-retro-1999-home",
 "stokecity-retro-2001-home",
@@ -4618,6 +4626,7 @@
 "venezia-retro-199900-home",
 "venezia-retro-200506-away",
 "venezia-retro-201920-home",
+"venezia-retro-202021-away",
 "venezia-retro-202122-away",
 "venezia-retro-202122-home",
 "venezia-retro-202122-third",
@@ -23880,6 +23889,43 @@
 "XL"
 ],
 "shipping": 0.0
+},
+"clubtijuana-retro-201920-home": {
+"title": "Club Tijuana 2019-20 home shirt, Charly, Small, NWOT",
+"price": 43.34,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/267815366307?_skw=Club+Tijuana+2019+home+shirt&hash=item3e5b0a2ea3%3Ag%3A0%7EwAAOSwh9doDP3F&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|267815366307|0",
+"image": "https://i.ebayimg.com/images/g/0~wAAOSwh9doDP3F/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 2.7
+},
+"venezia-retro-202021-away": {
+"title": "Venezia 2020/21 Away Football Shirt Authentic Kappa (L)",
+"price": 57.89,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/920113181232?_skw=Venezia+FC+2020+away+shirt&hash=itemd63b04f230%3Ag%3AOKAAAeSwKzdq7jO1&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7m8FJR5IOvQVnNEz6eH2MrlsikpJVeJ%2BEE1Ptcl%2F29QaWKz3M630EknrT2ygkxy70Ll0CgdRMl6cbxcb2tR6QC7Lpj7kRQiBOj8tLkvgyi%2FotZ0gHgDF8hQHKW1YcI2kt2MStWvOuCiSIziYg33SgTQjx%2By0kSsvbCmz78iEXRDOhhjbpNLtZweHsMcZUz7FpwoMlIoFLF%2BfBw5JUhVLkQEz0UrwtH0Zdt3qRbuvFbHNatXXESZivmEwh2BbaMFVeoL9IWT%2BwUBStotnp6AwgmXx1WwwWiaqSyLVfzTRwoMR85DF%2Bw%2B%2BHGFtVHZfeYPtVA%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|920113181232|0",
+"image": "https://i.ebayimg.com/images/g/OKAAAeSwKzdq7jO1/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 2.94
+},
+"burnley-retro-199395-away": {
+"title": "Burnley FC Away Football shirt 1993-1995 (XL) Mitre Jersey",
+"price": 131.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/237161036694?_skw=Burnley+FC+1993+away+shirt&hash=item3737e63b96%3Ag%3AGR4AAeSwR79q6g5Q&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|237161036694|0",
+"image": "https://i.ebayimg.com/images/g/GR4AAeSwR79q6g5Q/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 9.6
 }
 }
 }
