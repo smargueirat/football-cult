@@ -73,7 +73,10 @@ def to_google(src, dst):
             link = r["merchant_deep_link"].split("?")[0]  # el estándar añade ?variant=<talla>
             aff = re.search(r"[?&]a=(\d+)", r["aw_deep_link"]).group(1)
             cur, now = r["currency"] or "EUR", r["search_price"]
-            was = r["rrp_price"] if r["rrp_price"] and float(r["rrp_price"]) > float(now) else now
+            try:
+                was = r["rrp_price"] if r["rrp_price"] and float(r["rrp_price"]) > float(now) else now
+            except ValueError:  # fila con comillas rotas en la descripción: columnas desplazadas (2026-11-13)
+                continue
             # El darwin traía la marca con la grafía del título ("adidas", "Erima"); el
             # estándar a veces no ("Adidas", "erima").
             brand = r["brand_name"]

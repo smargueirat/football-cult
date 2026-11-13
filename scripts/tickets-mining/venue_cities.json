@@ -111,6 +111,7 @@
   "qid": "Q216037"
  },
  "Cepheus Park Randers": null,
+ "Chobani Stadium": null,
  "City Ground": {
   "city": "West Bridgford",
   "desc": "association football stadium in West Bridgford, England",
@@ -233,6 +234,11 @@
   "desc": "association football stadium in Pamplona, Spain",
   "qid": "Q735783"
  },
+ "Estadio Gran Canaria": {
+  "city": "Las Palmas",
+  "desc": "sport stadium in Las Palmas, Canary Islands, Spain (European Union)",
+  "qid": "Q991419"
+ },
  "Estadio Heliodoro Rodriguez Lopez": null,
  "Estadio Jose Alvalade": {
   "city": "Lisbon",
@@ -273,6 +279,7 @@
   "desc": "football national stadium in Oeiras, Portugal",
   "qid": "Q1327324"
  },
+ "Estadio Nuevo Jose Zorrilla": null,
  "Estadio da Luz": {
   "city": "Lisbon",
   "desc": "football stadium in Lisbon, Portugal",
@@ -994,6 +1001,7 @@
   "desc": "Football stadium in Edinburgh, Scotland, UK",
   "qid": "Q1326446"
  },
+ "Tüpraş Stadium": null,
  "Ulker Stadium": null,
  "Ullevaal Stadion": {
   "city": "Oslo",
