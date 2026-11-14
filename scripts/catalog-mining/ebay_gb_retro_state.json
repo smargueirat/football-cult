@@ -1455,6 +1455,7 @@
 "escocia-retro-202425-third",
 "eslovaquia-retro-2014-home",
 "eslovaquia-retro-201516-home",
+"eslovaquia-retro-201617-home",
 "eslovaquia-retro-202223-away",
 "eslovenia-retro-2002-away",
 "eslovenia-retro-200203-away",
@@ -1859,6 +1860,7 @@
 "georgia-retro-2022-home",
 "georgia-retro-202324-home",
 "georgia-retro-202324-third",
+"georgia-retro-2024-away",
 "georgia-retro-2024-home",
 "georgia-retro-202425-away",
 "georgia-retro-202425-home",
@@ -1987,6 +1989,7 @@
 "heidenheim-retro-2018-home",
 "heidenheim-retro-201819-home",
 "heidenheim-retro-202223-home",
+"heidenheim-retro-202324-home",
 "heidenheim-retro-2024-home",
 "heidenheim-retro-202425-home",
 "hellasverona-retro-2015-away",
@@ -2614,6 +2617,7 @@
 "lecce-retro-199192-home",
 "lecce-retro-199596-home",
 "lecce-retro-2000-away",
+"lecce-retro-201920-home",
 "leeds-retro-1977-home",
 "leeds-retro-197781-home",
 "leeds-retro-1988-home",
@@ -3131,6 +3135,7 @@
 "nashvillesc-retro-202324-home",
 "nashvillesc-retro-2024-away",
 "nashvillesc-retro-2024-third",
+"nashvillesc-retro-202425-away",
 "nashvillesc-retro-202425-home",
 "newcastle-retro-199395-home",
 "newcastle-retro-199596-home",
@@ -4056,6 +4061,7 @@
 "schalke04-retro-201011-third",
 "schalke04-retro-201213-home",
 "schalke04-retro-2013-away",
+"schalke04-retro-201314-away",
 "schalke04-retro-201314-third",
 "schalke04-retro-2015-third",
 "schalke04-retro-201617-home",
@@ -4239,6 +4245,7 @@
 "stokecity-retro-2017-away",
 "stokecity-retro-2017-third",
 "stokecity-retro-201819-away",
+"stokecity-retro-201920-away",
 "stokecity-retro-201920-home",
 "stokecity-retro-2020-away",
 "stokecity-retro-202021-home",
@@ -23926,6 +23933,55 @@
 "XL"
 ],
 "shipping": 9.6
+},
+"stokecity-retro-201920-away": {
+"title": "*New* Stoke City Away Shirt 2019-2020 Football Black And Red Macron Size Medium",
+"price": 15.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/317164602109?_skw=Stoke+City+2019+away+shirt&hash=item49d87bc2fd%3Ag%3Au0AAAOSw61lmdvfe&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|317164602109|0",
+"image": "https://i.ebayimg.com/images/g/u0AAAOSw61lmdvfe/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 4.4
+},
+"eslovaquia-retro-201617-home": {
+"title": "Slovakia 2016 2017 Home Football Shirt Puma Euro 2016 BNWT Blank Men’s Medium M",
+"price": 73.18,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/336863372619?_skw=Slovakia+2016+home+shirt&hash=item4e6e9f254b%3Ag%3Ay38AAeSwD2Fq3t5S&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7m%2FD4GcRSlq2QAP0xviALR0SKUxHfprl8%2B5vovXjxu%2B77k3u1gXVK9NOJKV6pYSLxhK%2F9qRMKG1gPZOrDuI1V248e4Hy5Ox%2B11JLomsMp%2BylQAs236%2BoeM%2FthPom71JEkXhxaYufDalxlNC8yn7vg7J0l%2BTfSUOvl%2BXYCxMpmmTUSuucOI0P7%2FVhGmKLIcpgyuJrCbJpRod0LEgGS5aRhKt88TPqdARrDPi10qpM%2Ft9cT%2BcwWZjz7O5Lf636P37qcltOLFYRIlWEXB4njiJWEuElNDLpFgmdRJrDzsFOtOZ9g%3D%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|336863372619|0",
+"image": "https://i.ebayimg.com/images/g/y38AAeSwD2Fq3t5S/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 21.18
+},
+"georgia-retro-2024-away": {
+"title": "Georgia Football Shirt Mens XXL Away Macron Black 2024 Jersey 2XL",
+"price": 44.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/267836315669?_skw=Georgia+2024+away+shirt&hash=item3e5c49d815%3Ag%3AvlYAAeSwR%7E9q7vCz&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|267836315669|0",
+"image": "https://i.ebayimg.com/images/g/vlYAAeSwR~9q7vCz/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 0.0
+},
+"schalke04-retro-201314-away": {
+"title": "FC Schalke 04 original Adidas away jersey 2013/14 \"Gazprom\" size XXL new",
+"price": 90.08,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/168654832717?_skw=FC+Schalke+04+2013+away+shirt&hash=item27449c844d%3Ag%3AY6QAAOSwopRYhev0&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|168654832717|0",
+"image": "https://i.ebayimg.com/images/g/Y6QAAOSwopRYhev0/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 12.01
 }
 }
 }
