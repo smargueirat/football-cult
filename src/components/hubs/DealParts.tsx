@@ -57,6 +57,8 @@ export function DealTable({ rows, locale, mode }: { rows: DealRow[]; locale: Hub
                 <Link className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B]/60 underline-offset-2" href={dealHref(r, locale)}>
                   {dealName(r, locale)}
                 </Link>
+                {/* Celular: la columna del precio queda fuera de pantalla; se repite acá. */}
+                <span className="mt-1 block font-semibold text-[#1B3B2B] sm:hidden">{formatOfferMoney(r.price, r.currency, locale)}</span>
                 {/* Directo a la tienda: la tabla era solo enlaces a fichas. */}
                 <a
                   href={goHref({ kind: GO_KIND[r.section], productId: r.item.id, url: r.offerUrl, locale, origin: "bajadas" })}

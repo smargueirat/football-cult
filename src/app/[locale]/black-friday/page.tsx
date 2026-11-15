@@ -63,9 +63,13 @@ function RefTable({ rows, locale }: { rows: RefRow[]; locale: HubLocale }) {
                 <td className={td}>
                   <div className="flex items-start gap-3">
                     <DealThumb src={itemImage(r.section, r.item)} alt={itemName(r.section, r.item, locale)} />
-                    <Link className="min-w-0 font-medium text-[#1B3B2B] underline decoration-[#C9A24B]/60 underline-offset-2" href={`/${locale}/${r.section}/${r.item.id}`}>
-                      {itemName(r.section, r.item, locale)}
-                    </Link>
+                    <div className="min-w-0">
+                      <Link className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B]/60 underline-offset-2" href={`/${locale}/${r.section}/${r.item.id}`}>
+                        {itemName(r.section, r.item, locale)}
+                      </Link>
+                      {/* Celular: el precio de hoy queda fuera de pantalla; se repite acá. */}
+                      <span className="mt-1 block font-semibold text-[#1B3B2B] sm:hidden">{formatOfferMoney(r.price, cur, locale)}</span>
+                    </div>
                   </div>
                 </td>
                 <td className={td}>{r.store}</td>
