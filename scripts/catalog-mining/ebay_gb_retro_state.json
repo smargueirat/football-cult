@@ -792,6 +792,7 @@
 "canada-retro-200406-home",
 "canada-retro-200608-home",
 "canada-retro-2019-home",
+"canada-retro-201920-home",
 "canada-retro-202022-home",
 "canada-retro-2022-third",
 "canada-retro-202223-third",
@@ -936,6 +937,7 @@
 "chequia-retro-202223-away",
 "chequia-retro-202223-home",
 "chequia-retro-2024-away",
+"chequia-retro-202425-away",
 "chile-retro-1994-home",
 "chile-retro-1996-home",
 "chile-retro-1998-home",
@@ -1456,6 +1458,7 @@
 "eslovaquia-retro-2014-home",
 "eslovaquia-retro-201516-home",
 "eslovaquia-retro-201617-home",
+"eslovaquia-retro-201819-home",
 "eslovaquia-retro-202223-away",
 "eslovenia-retro-2002-away",
 "eslovenia-retro-200203-away",
@@ -1956,6 +1959,8 @@
 "guatemala-retro-201920-home",
 "guatemala-retro-2021-away",
 "guatemala-retro-202122-away",
+"guatemala-retro-202122-home",
+"guatemala-retro-202324-away",
 "guatemala-retro-202324-home",
 "guatemala-retro-202425-away",
 "guinea-retro-2022-away",
@@ -2043,6 +2048,7 @@
 "honduras-retro-201920-away",
 "honduras-retro-201920-home",
 "honduras-retro-202122-away",
+"honduras-retro-2023-away",
 "honduras-retro-2023-home",
 "honduras-retro-2024-away",
 "honduras-retro-2024-home",
@@ -3966,6 +3972,7 @@
 "romania-retro-1994-away",
 "romania-retro-1994-home",
 "romania-retro-2000-home",
+"romania-retro-201516-home",
 "romania-retro-201617-home",
 "romania-retro-2018-home",
 "romania-retro-201820-home",
@@ -4071,6 +4078,7 @@
 "schalke04-retro-201920-away",
 "schalke04-retro-201920-home",
 "schalke04-retro-202021-away",
+"schalke04-retro-202021-home",
 "schalke04-retro-202021-third",
 "schalke04-retro-202122-third",
 "schalke04-retro-2022-away",
@@ -23982,6 +23990,54 @@
 "L"
 ],
 "shipping": 12.01
+},
+"guatemala-retro-202324-away": {
+"title": "GUATEMALA Umbro Away Football Shirt 2023-24 size xxl",
+"price": 20.43,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/880102112041?_skw=Guatemala+2023+away+shirt&hash=itemccea2c7b29%3Ag%3Alx4AAeSwvnlq8xDE&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|880102112041|0",
+"image": "https://i.ebayimg.com/images/g/lx4AAeSwvnlq8xDE/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 3.38
+},
+"romania-retro-201516-home": {
+"title": "Romania National Team Home Soccer Jersey 2015 2016 Joma Euro 2016 Shirt Men’s S",
+"price": 57.27,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/336864465750?_skw=Romania+2015+home+shirt&hash=item4e6eafd356%3Ag%3AXocAAeSwsEpq37t9&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|336864465750|0",
+"image": "https://i.ebayimg.com/images/g/XocAAeSwsEpq37t9/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 20.71
+},
+"guatemala-retro-202122-home": {
+"title": "Guatemala Home Football Shirt Jersey 2021/22 Umbro BNWT XXL",
+"price": 22.0,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/820192156842?_skw=Guatemala+2021+home+shirt&hash=itembef7431caa%3Ag%3Ap9EAAeSwDslpgg7n&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|820192156842|0",
+"image": "https://i.ebayimg.com/images/g/p9EAAeSwDslpgg7n/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 2.7
+},
+"schalke04-retro-202021-home": {
+"title": "FC Schalke 04 Umbro Home Shirt 2020/21 Size Men’s Small - Germany",
+"price": 16.15,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/307075241629?_skw=FC+Schalke+04+2020+home+shirt&hash=item477f1c569d%3Ag%3AeIgAAeSwhEBqXjJE&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|307075241629|0",
+"image": "https://i.ebayimg.com/images/g/eIgAAeSwhEBqXjJE/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 2.94
 }
 }
 }

@@ -32,6 +32,11 @@
   "desc": "former sports venue in Sydney, Australia",
   "qid": "Q1053447"
  },
+ "Allwyn Arena": {
+  "city": "Nea Filadelfeia",
+  "desc": "stadium in Nea Filadelfeia, Attica Region, Greece",
+  "qid": "Q15284032"
+ },
  "American Express Stadium": null,
  "Anfield": {
   "city": "Anfield",
@@ -489,6 +494,7 @@
   "qid": "Q31670"
  },
  "London Stadium": null,
+ "Lyse Arena": null,
  "MAPEI Stadium - Citta del Tricolore": {
   "city": "Reggio Emilia",
   "desc": "multisport stadium located in Reggio Emilia, Italy",
