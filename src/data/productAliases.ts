@@ -10,6 +10,11 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-16: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "costarica-retro-201516-away": "costarica-retro-2018-away",
+  "columbuscrew-retro-2016-home": "columbuscrew-retro-202425-home",
+  "romania-retro-2000-home": "romania-retro-201516-home",
   // 2026-11-15: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "lazio-retro-202324-home": "lazio-retro-202425-home",
@@ -365,7 +370,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "guatemala-retro-202122-away": "guatemala-retro-2021-away",
   "chequia-retro-201617-home": "chequia-retro-2016-home",
   "tunez-retro-2024-home": "tunez-home-202526",
-  "romania-retro-201617-home": "romania-retro-201820-home",
+  "romania-retro-201617-home": "romania-retro-201516-home",
   "canada-retro-202425-home": "canada-retro-2024-home",
   "eslovenia-retro-201011-home": "eslovenia-retro-201819-home",
   "espana-retro-2012-away": "espana-retro-201213-away",
@@ -404,7 +409,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   // 2026-11-02: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
   // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
   "china-retro-2016-away": "china-retro-201617-away",
-  "costarica-retro-2015-away": "costarica-retro-201516-away",
+  "costarica-retro-2015-away": "costarica-retro-2018-away",
   "galatasaray-retro-2019-away": "galatasaray-retro-201920-away",
   "grecia-retro-2010-home": "grecia-retro-201011-home",
   "stpauli-retro-2007-home": "stpauli-retro-200708-home",
