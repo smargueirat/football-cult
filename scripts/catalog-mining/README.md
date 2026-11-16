@@ -5169,3 +5169,12 @@ eBay rotation ES, US, IT, then GB (day-of-year 317 mod 3 = 2), all four 20 teams
 - Women: Jamaica home (adidas) kept; Chivas third, Monterrey home/away and Napoli home/away dropped as AI renders.
 - eBay current: 2 new (`lehavre-away-202627`, `minnesotaunited-training-2026`); 1860 Munich 244-319 outlier prices, $28.98 templates (Paris FC, Auxerre, Cagliari, Lecce, Sassuolo), GB size-range/print listings dropped.
 - eBay retro: 13 new fichas after photo review; 51 `ebay_gb_retro.py` "inserted" rows were item ids already on file and were removed.
+
+## Daily pass (2026-11-16)
+
+eBay rotation ES, US, IT, then GB (day-of-year 320 mod 3 = 2), all four 20 teams, no 429s (ES/IT cycle 3 and US cycle 6 at 200/411, GB 20/50 cycle 11); IT slow (search/get_item timeouts), ~85 min in total. Umbro MID 41001 still absent from the Rakuten FTP (43rd pass); the 5 BR feeds re-downloaded and `gzip -t`-checked (note: `curl -f` on the FTP URL returns non-zero even on success here, drop `-f`). Pro:Direct skipped (Nov 15 files, >24 h). Soicos skipped (no claude-in-chrome). BSTN IT / FootStore ES / Reebok DE / Shop Real Betis / Adidas MX feeds had failed the 06:07 download (timeouts): re-downloaded, `refresh_offers --only`, boots and gear re-run.
+
+- CSV feeds: 0 new fichas, 4 offers inserted (Norway / Netherlands goalkeeper 2026, FootStore ES+FR). Skipped: DeporteOutlet West Ham Umbro Pro training TM12537-143 (season unverifiable), FJH-only 26/27 fichas, Como third 26/27 PlanetFoot (same price/colour as the 25/26 on file), ShopTimao LS "Jogador". Swaps reverted by baseline diff (HEAD block + only offers of stores the block lacked); junk inserts (player names, kids, LS, $28.98 templates) dropped by the same step. NB: `junior` in a title regex must be `\bjunior\b` or "Boca Juniors" is dropped everywhere.
+- Women: 1 new (`chelsea-away-women`, FJH, photo OK); 5 FJH AI renders (Chivas third, Monterrey home/away, Napoli home/away) dropped and blocklisted by slug.
+- eBay current: 1 new (`brentford-away-202627` Joma, official photo). Boca/River training/prematch/GK, Independiente polo, GB Watford/Millwall/Rotherham/Charlton rejected (templates, prints, outlier prices, signed). 
+- eBay retro: 13 new fichas after photo review (Brentford x3, Liverpool x3, Chelsea x2, Bayern, Bournemouth, Man Utd x2, PSG); 14 twins re-keyed onto existing ids. `ebay_gb_retro.py`: only 3 item ids not already on file were kept.

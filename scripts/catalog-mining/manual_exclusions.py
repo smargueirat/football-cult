@@ -12,6 +12,12 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    # --- Daily pass 2026-11-16 ---
+    "chivas-womens-third-away-soccer-jersey-2026-27",  # 2026-11-16 FansJerseyHub women chivas|third: AI-generated render
+    "womens-monterrey-home-soccer-jersey-2026-27",  # 2026-11-16 FansJerseyHub women monterrey|home: AI-generated render
+    "womens-monterrey-away-soccer-jersey-2026-27",  # 2026-11-16 FansJerseyHub women monterrey|away: AI-generated render
+    "womens-napoli-home-soccer-jersey-2026-27",  # 2026-11-16 FansJerseyHub women napoli|home: AI-generated render
+    "womens-napoli-away-soccer-jersey-2026-27",  # 2026-11-16 FansJerseyHub women napoli|away: AI-generated render
     # --- Daily pass 2026-11-05 ---
     "/itm/860110090868",  # 2026-11-05 removed: Leeds home 25/26 with "Wembley 26" back print
     "/itm/187933894081",  # 2026-11-05 removed: $28.98 template seller Hertha home 2025-26

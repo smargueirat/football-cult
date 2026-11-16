@@ -932,6 +932,38 @@
  },
  {
   "brand": "Softee",
+  "model": "Balones de Fútbol Softee Bronco FUTBOL 7 - Rojo",
+  "colour": "Rojo",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 10.87,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=46797464396&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_80673.003.11.jpg&feedId=89032&k=b198e01a60096c5f45fd4755779cf76df97c053f",
+    "sizes": [
+     "Talla 4"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 10.51,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80673-003-7-ballon-de-football-softee-bronco-futbol-7-rouge-taille-4",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/s/o/softee_80673.003.11.webp",
+    "sizes": [
+     "4"
+    ]
+   }
+  ],
+  "eans": [
+   "8435585042565"
+  ]
+ },
+ {
+  "brand": "Softee",
   "model": "Balones de Fútbol Softee Bronco FUTBOL 7 - Dorado",
   "colour": "Dorado",
   "offers": [
@@ -1563,7 +1595,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 31.0,
+    "price": 30.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=41104827326&a=3013769&m=65912",
@@ -1574,7 +1606,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 33.0,
+    "price": 32.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F207515-9031-ballon-de-football-hummel-elite-match-blanc-noir-rouge",
@@ -1903,9 +1935,10 @@
     "price": 499.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46388178131&a=3013769&m=79918",
+    "url": "https://www.awin1.com/pclick.php?p=46388178130&a=3013769&m=79918",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd30ada86204a48ef912ca7f500d2d487_9366%2FBalon_de_Futbol_Tango_Glider_Blanco_S12241_01_standard.jpg&feedId=95013&k=88f908a6e8fe417a6cef7ec3d6d713993831e611",
     "sizes": [
+     "4",
      "5"
     ]
    },
@@ -2061,7 +2094,7 @@
    {
     "store": "FootStoreES",
     "price": 14.5,
-    "priceMax": 17.0,
+    "priceMax": 18.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=42529348987&a=3013769&m=65912",
@@ -2075,7 +2108,7 @@
     "sizePrices": [
      {
       "size": "48 cm",
-      "price": 17.0,
+      "price": 18.0,
       "url": "https://www.awin1.com/pclick.php?p=42529348986&a=3013769&m=65912"
      },
      {
@@ -2204,7 +2237,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 26.0,
+    "price": 25.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhz6932-ballon-de-football-adidas-oceaunz-club-blanc-bleu-marine",
@@ -2355,7 +2388,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 36.0,
+    "price": 35.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=42529391244&a=3013769&m=65912",
@@ -4174,7 +4207,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 64.0,
+    "price": 65.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400855-220-ballon-de-football-joma-flame-iii-blanco-naranja-taille-5",
@@ -4195,7 +4228,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 38.0,
+    "price": 37.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=42529497208&a=3013769&m=65912",
@@ -4860,10 +4893,9 @@
     "price": 30.0,
     "shipping": 9.99,
     "currency": "EUR",
-    "url": "https://www.awin1.com/pclick.php?p=45270277178&a=3013769&m=65912",
+    "url": "https://www.awin1.com/pclick.php?p=44797439254&a=3013769&m=65912",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_in9366_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=bca066dcd914498729091eb544fedf32d76102e0",
     "sizes": [
-     "Talla 4",
      "Talla 5"
     ]
    },
@@ -4875,13 +4907,11 @@
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fin9366-ballon-de-football-adidas-euro-2024-trn-white-black-globlu",
     "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas_in9366_1_hardware_photography_front_center_view_white.webp",
     "sizes": [
-     "4",
      "5"
     ]
    }
   ],
   "eans": [
-   "4066766182134",
    "4066766185746"
   ]
  },
@@ -5444,7 +5474,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 19.0,
+    "price": 18.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip1646-ballon-de-football-adidas-starlancer-club-white-sopink",
@@ -6165,7 +6195,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 16.0,
+    "price": 17.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw6440-ballon-de-football-italie-2024-blue-royblu-white-panton-taille-mini",
@@ -7764,7 +7794,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 83.0,
+    "price": 84.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=44093081192&a=3013769&m=65912",
@@ -7775,7 +7805,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 81.0,
+    "price": 82.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib2241-ballon-de-football-adidas-tiro-pro-winter-sorang-black-ironmt-tmsoye-taille-5",
@@ -7984,7 +8014,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 23.0,
+    "price": 22.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz3048-869-ballon-de-football-nike-pl-pitch-fa24-orange-racer-blue-black-white",
@@ -8250,7 +8280,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 112.0,
+    "price": 113.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=44695074833&a=3013769&m=65912",
@@ -8776,7 +8806,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 22.0,
+    "price": 21.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz7551-803-ballon-de-football-nike-park-2-0-total-orange-white-thunder-blue",
@@ -8897,8 +8927,8 @@
     "price": 349.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=41485920334&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F84e42fb8e93146d1a121548e088f84e3_9366%2FBalon_Universadi_Blanco_IW3729_01_standard.jpg&feedId=95013&k=93423a0990d69b4480b3cf35ac6f4107ad317dec",
+    "url": "https://www.awin1.com/pclick.php?p=42271411244&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fffebe908636346eba3eaaab073377458_9366%2FBalon_Universadi_Blanco_KB9775_01_00_standard.jpg&feedId=95013&k=7d2b3021bcc27a2af530c3509003acef1ef170bd",
     "sizes": [
      "5"
     ]
@@ -8916,7 +8946,8 @@
    }
   ],
   "eans": [
-   "4067886691759"
+   "4067886691759",
+   "4068806332684"
   ]
  },
  {
@@ -9000,9 +9031,10 @@
     "price": 494.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=43791481204&a=3013769&m=79918",
+    "url": "https://www.awin1.com/pclick.php?p=43791481203&a=3013769&m=79918",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F19416fea12064c5f8fa02994eb1664c8_9366%2FBalon_Kings_League_La_Caprichosa_Blanco_JI8974_01_00_standard.jpg&feedId=95013&k=1a398f29bc4ac63f7123de759d008dc34f7493ba",
     "sizes": [
+     "4",
      "5"
     ]
    }
@@ -9014,18 +9046,50 @@
  },
  {
   "brand": "Givova",
+  "model": "Balones de Fútbol Givova King - Violeta",
+  "colour": "Violeta",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 26.0,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=46255319069&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgivova_pal024-1402_viola-azzurro_1.jpg&feedId=89032&k=d3560ce9d4426c66eb860bb730290b2507bf237c",
+    "sizes": [
+     "Talla 5"
+    ]
+   }
+  ],
+  "eans": [
+   "8034044853102"
+  ]
+ },
+ {
+  "brand": "Givova",
   "model": "Balones de Fútbol Givova New Maya - Azul",
   "colour": "Azul",
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 28.0,
+    "price": 26.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=46255332740&a=3013769&m=65912",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgivova_pal025-0204_azzurro-bleu_1.jpg&feedId=89032&k=11ffa02f45183820fd7f5acd37ccb141c93d47b2",
     "sizes": [
      "Talla 5"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 27.0,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpal025-0204-ballon-givova-new-maya-azzurro-bleu",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/g/i/givova_pal025-0204_azzurro-bleu_1.webp",
+    "sizes": [
+     "5"
     ]
    }
   ],
@@ -9040,13 +9104,24 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 27.0,
+    "price": 26.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=45586521349&a=3013769&m=65912",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgivova_pal025-1210_rosso-nero_1.jpg&feedId=89032&k=b5b23427b868433a9dba521ba644aea722f6fef9",
     "sizes": [
      "Talla 5"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 27.0,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpal025-1210-ballon-de-football-givova-new-maya-rosso-nero",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/g/i/givova_pal025-1210_rosso-nero_1.webp",
+    "sizes": [
+     "5"
     ]
    }
   ],
@@ -9072,7 +9147,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 133.0,
+    "price": 132.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji8976-ballon-de-football-adidas-queens-league-pro-white-panton-silvmt-taille-5",
@@ -9149,7 +9224,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 28.0,
+    "price": 29.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F811081-70-33-ballon-de-football-umbro-neo-fus-lg-ball-t5-blanc-taille-5",
@@ -9326,7 +9401,8 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 25.0,
+    "price": 24.0,
+    "priceMax": 25.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1308-ballon-de-football-adidas-2025-major-league-club-white-green-globlu",
@@ -9335,6 +9411,23 @@
      "3",
      "4",
      "5"
+    ],
+    "sizePrices": [
+     {
+      "size": "3",
+      "price": 25.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1308-ballon-de-football-adidas-2025-major-league-club-white-green-globlu"
+     },
+     {
+      "size": "4",
+      "price": 25.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1308-ballon-de-football-adidas-2025-major-league-club-white-green-globlu"
+     },
+     {
+      "size": "5",
+      "price": 24.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1308-ballon-de-football-adidas-2025-major-league-club-white-green-globlu"
+     }
     ]
    }
   ],
@@ -9631,7 +9724,8 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 25.0,
+    "price": 24.0,
+    "priceMax": 25.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1307-ballon-de-football-adidas-mls-25-club-silvmt-green",
@@ -9640,6 +9734,23 @@
      "3",
      "4",
      "5"
+    ],
+    "sizePrices": [
+     {
+      "size": "3",
+      "price": 25.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1307-ballon-de-football-adidas-mls-25-club-silvmt-green"
+     },
+     {
+      "size": "4",
+      "price": 25.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1307-ballon-de-football-adidas-mls-25-club-silvmt-green"
+     },
+     {
+      "size": "5",
+      "price": 24.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1307-ballon-de-football-adidas-mls-25-club-silvmt-green"
+     }
     ]
    }
   ],
@@ -11089,7 +11200,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 112.0,
+    "price": 113.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=44797447266&a=3013769&m=65912",
@@ -11391,6 +11502,38 @@
   ],
   "eans": [
    "4030793135357"
+  ]
+ },
+ {
+  "brand": "Derbystar",
+  "model": "Balones de Fútbol Derbystar Stratos TT - Amarillo",
+  "colour": "Amarillo",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 34.53,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=42529856335&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fd%2Fe%2Fderbystar_f17443_yellow-green-white_1.jpg&feedId=89032&k=773e4395b8b97256c5ce882790c9709e47b82f67",
+    "sizes": [
+     "20 cm"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 33.74,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17443-ballon-de-football-derbystar-stratos-tt-yellow-green-white-20-cm",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/d/e/derbystar_f17443_yellow-green-white_1.webp",
+    "sizes": [
+     "20 cm"
+    ]
+   }
+  ],
+  "eans": [
+   "4030793135333"
   ]
  },
  {
@@ -11915,6 +12058,38 @@
   ]
  },
  {
+  "brand": "Kuebler Sport",
+  "model": "Balones de Fútbol Kuebler Sport ProSoft - Azul",
+  "colour": "Azul",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 24.2,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=42529856345&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fu%2Fkuebler-sport_g1160_blue_1.jpg&feedId=89032&k=11a6e99bf239ad92ccd90176e2f00a9e1b7d5853",
+    "sizes": [
+     "22 cm"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 23.49,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg1160-ballon-de-football-kuebler-sport-prosoft-blue-22-cm",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/k/u/kuebler-sport_g1160_blue_1.webp",
+    "sizes": [
+     "22 cm"
+    ]
+   }
+  ],
+  "eans": [
+   "4251279500852"
+  ]
+ },
+ {
   "brand": "erima",
   "model": "Balones de Fútbol Erima Hybrid Training - Blanco",
   "colour": "Blanco",
@@ -12200,22 +12375,62 @@
    {
     "store": "FootStoreES",
     "price": 19.5,
+    "priceMax": 32.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=42663840712&a=3013769&m=65912",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jd8032_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=653c1e317b171332b9d4df98d2d890ae8670d17c",
     "sizes": [
+     "Talla 3",
      "Talla 5"
+    ],
+    "sizePrices": [
+     {
+      "size": "Talla 3",
+      "price": 32.0,
+      "url": "https://www.awin1.com/pclick.php?p=42663840714&a=3013769&m=65912"
+     },
+     {
+      "size": "Talla 5",
+      "price": 19.5,
+      "url": "https://www.awin1.com/pclick.php?p=42663840712&a=3013769&m=65912"
+     }
     ]
    },
    {
     "store": "FootStoreFR",
     "price": 19.5,
+    "priceMax": 32.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8032-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-white-royblu-solblu-powred",
     "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas_jd8032_1_hardware_photography_front_center_view_white.webp",
     "sizes": [
+     "3",
+     "5"
+    ],
+    "sizePrices": [
+     {
+      "size": "3",
+      "price": 32.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8032-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-white-royblu-solblu-powred"
+     },
+     {
+      "size": "5",
+      "price": 19.5,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8032-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-white-royblu-solblu-powred"
+     }
+    ]
+   },
+   {
+    "store": "AdidasCL",
+    "price": 19990.0,
+    "shipping": 0,
+    "currency": "CLP",
+    "url": "https://www.awin1.com/pclick.php?p=42661645839&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3f6dcc811fbe49a38397134fbfc5c3f9_9366%2FPelota_de_Entrenamiento_Trionda_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8032_01_00_standard.jpg&feedId=95016&k=d1e53daf3976d09414b95abed0dc45b75c155381",
+    "sizes": [
+     "4",
      "5"
     ]
    },
@@ -12246,24 +12461,64 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 40.0,
+    "price": 33.59,
+    "priceMax": 40.0,
     "shipping": 9.99,
     "currency": "EUR",
-    "url": "https://www.awin1.com/pclick.php?p=42721414112&a=3013769&m=65912",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fd%2Fjd8045_6.jpg&feedId=89032&k=8def2d84f6c93c7f0de98ea50bf9237b372869f1",
+    "url": "https://www.awin1.com/pclick.php?p=42694572328&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fd%2Fjd8045_5.jpg&feedId=89032&k=d9dba90d96c745ab3ba4d5c8e718133e61a20732",
     "sizes": [
-     "Talla 4"
+     "Talla 4",
+     "Talla 5"
+    ],
+    "sizePrices": [
+     {
+      "size": "Talla 4",
+      "price": 40.0,
+      "url": "https://www.awin1.com/pclick.php?p=42721414112&a=3013769&m=65912"
+     },
+     {
+      "size": "Talla 5",
+      "price": 33.59,
+      "url": "https://www.awin1.com/pclick.php?p=42694572328&a=3013769&m=65912"
+     }
     ]
    },
    {
     "store": "FootStoreFR",
-    "price": 40.0,
+    "price": 32.75,
+    "priceMax": 40.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8045-ballon-de-football-adidas-coupe-du-monde-2026-trionda-league-box-white-royblu-solblu-powred",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/j/d/jd8045_6.webp",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/j/d/jd8045_5.webp",
     "sizes": [
-     "4"
+     "4",
+     "5"
+    ],
+    "sizePrices": [
+     {
+      "size": "4",
+      "price": 40.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8045-ballon-de-football-adidas-coupe-du-monde-2026-trionda-league-box-white-royblu-solblu-powred"
+     },
+     {
+      "size": "5",
+      "price": 32.75,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8045-ballon-de-football-adidas-coupe-du-monde-2026-trionda-league-box-white-royblu-solblu-powred"
+     }
+    ]
+   },
+   {
+    "store": "AdidasCL",
+    "price": 30990.0,
+    "shipping": 0,
+    "currency": "CLP",
+    "url": "https://www.awin1.com/pclick.php?p=42661646186&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffa5659d887cb4767aeb6009a62602197_9366%2FPelota_League_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8045_41_detail.jpg&feedId=95016&k=4da75d703fde12e273fdbfb1ee29b90577fc2c1f",
+    "sizes": [
+     "4",
+     "5"
     ]
    },
    {
@@ -12316,32 +12571,13 @@
    {
     "store": "FootStoreFR",
     "price": 30.0,
-    "priceMax": 32.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1534-ballon-de-football-adidas-ucl-white-dkblue-panton-magold",
     "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas_jp1534_1_hardware_photography_front_center_view_white.webp",
     "sizes": [
-     "3",
      "4",
      "5"
-    ],
-    "sizePrices": [
-     {
-      "size": "3",
-      "price": 32.0,
-      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1534-ballon-de-football-adidas-ucl-white-dkblue-panton-magold"
-     },
-     {
-      "size": "4",
-      "price": 30.0,
-      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1534-ballon-de-football-adidas-ucl-white-dkblue-panton-magold"
-     },
-     {
-      "size": "5",
-      "price": 30.0,
-      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1534-ballon-de-football-adidas-ucl-white-dkblue-panton-magold"
-     }
     ]
    },
    {
@@ -12358,8 +12594,7 @@
   ],
   "eans": [
    "4068811955403",
-   "4068811955410",
-   "4068811955427"
+   "4068811955410"
   ]
  },
  {
@@ -12627,7 +12862,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 155.0,
+    "price": 154.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17653-ballon-de-football-derbystar-bundesliga-aps-season-2024-25-blue-taille-5",
@@ -13461,7 +13696,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 21.0,
+    "price": 20.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7370-ballon-de-football-adidas-epp-club-white-green",
@@ -13518,8 +13753,8 @@
     "price": 349.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=42271411244&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fffebe908636346eba3eaaab073377458_9366%2FBalon_Universadi_Blanco_KB9775_01_00_standard.jpg&feedId=95013&k=7d2b3021bcc27a2af530c3509003acef1ef170bd",
+    "url": "https://www.awin1.com/pclick.php?p=41485920334&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F84e42fb8e93146d1a121548e088f84e3_9366%2FBalon_Universadi_Blanco_IW3729_01_standard.jpg&feedId=95013&k=93423a0990d69b4480b3cf35ac6f4107ad317dec",
     "sizes": [
      "5"
     ]
@@ -13537,6 +13772,7 @@
    }
   ],
   "eans": [
+   "4067886691759",
    "4068806332684"
   ]
  },
@@ -13744,7 +13980,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 144.0,
+    "price": 143.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7371-ballon-de-football-adidas-coupe-du-monde-des-clubs-de-la-fifa-white-masblu-goldmt-dkblue-taille-5",
@@ -13755,7 +13991,7 @@
    },
    {
     "store": "AdidasMX",
-    "price": 2799.0,
+    "price": 2399.0,
     "shipping": 0,
     "currency": "MXN",
     "url": "https://www.awin1.com/pclick.php?p=41775128181&a=3013769&m=79918",
@@ -14194,57 +14430,28 @@
    {
     "store": "FootStoreES",
     "price": 25.0,
-    "priceMax": 28.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=46391418088&a=3013769&m=65912",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jp1538_red-black-white_1.jpg&feedId=89032&k=efe4c4ce6f8af7d01550c8d47674be5c38543fa6",
     "sizes": [
-     "Talla 4",
      "Talla 5"
-    ],
-    "sizePrices": [
-     {
-      "size": "Talla 4",
-      "price": 28.0,
-      "url": "https://www.awin1.com/pclick.php?p=46654818966&a=3013769&m=65912"
-     },
-     {
-      "size": "Talla 5",
-      "price": 25.0,
-      "url": "https://www.awin1.com/pclick.php?p=46391418088&a=3013769&m=65912"
-     }
     ]
    },
    {
     "store": "FootStoreFR",
     "price": 25.0,
-    "priceMax": 28.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1538-ballon-de-football-adidas-uefa-champions-league-club-red-black-white",
     "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas_jp1538_red-black-white_1.webp",
     "sizes": [
-     "4",
      "5"
-    ],
-    "sizePrices": [
-     {
-      "size": "4",
-      "price": 28.0,
-      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1538-ballon-de-football-adidas-uefa-champions-league-club-red-black-white"
-     },
-     {
-      "size": "5",
-      "price": 25.0,
-      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1538-ballon-de-football-adidas-uefa-champions-league-club-red-black-white"
-     }
     ]
    }
   ],
   "eans": [
-   "4068811955380",
-   "4068811955397"
+   "4068811955380"
   ]
  },
  {
@@ -14280,70 +14487,6 @@
   "eans": [
    "4068811951610",
    "4068811951627"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balones de Fútbol adidas UEFA Champions League Competition - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "FootStoreES",
-    "price": 60.0,
-    "shipping": 9.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/pclick.php?p=44686647188&a=3013769&m=65912",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jp1541_white-dkblue-panton-goldmt_1.jpg&feedId=89032&k=ab37f5b35f890ca7ed5878f70c27f8af2834bdcc",
-    "sizes": [
-     "Talla 4"
-    ]
-   },
-   {
-    "store": "FootStoreFR",
-    "price": 60.0,
-    "shipping": 7.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1541-ballon-de-football-adidas-uefa-champions-league-competition-white-dkblue-panton-goldmt",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas_jp1541_white-dkblue-panton-goldmt_1.webp",
-    "sizes": [
-     "4"
-    ]
-   }
-  ],
-  "eans": [
-   "4068811955328"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balones de Fútbol adidas UEFA Champions League Foil - Multicolor",
-  "colour": "Multicolor",
-  "offers": [
-   {
-    "store": "FootStoreES",
-    "price": 36.0,
-    "shipping": 9.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/pclick.php?p=46654818967&a=3013769&m=65912",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jp1549_multco-dkblue-panton-white_1.jpg&feedId=89032&k=8a0e138fdd97f2262a280672a9894036b8b7e577",
-    "sizes": [
-     "Talla 4"
-    ]
-   },
-   {
-    "store": "FootStoreFR",
-    "price": 35.0,
-    "shipping": 7.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1549-ballon-de-football-adidas-uefa-champions-league-foil-multco-dkblue-panton-white",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas_jp1549_multco-dkblue-panton-white_1.webp",
-    "sizes": [
-     "4"
-    ]
-   }
-  ],
-  "eans": [
-   "4068811955441"
   ]
  },
  {
@@ -14491,7 +14634,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 25.0,
+    "price": 26.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=46696883197&a=3013769&m=65912",
@@ -14523,7 +14666,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 39.0,
+    "price": 40.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv4392-100-ballon-de-football-nike-academy-plus-white-black-black",
@@ -14555,7 +14698,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 148.0,
+    "price": 146.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv4395-100-ballon-de-football-nike-control-fa25-white-black-black-taille-5",
@@ -15188,7 +15331,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 139.0,
+    "price": 138.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=42530161776&a=3013769&m=65912",
@@ -15199,7 +15342,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 123.0,
+    "price": 122.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5397-ballon-de-football-adidas-euro-25-pro-final-white-silvmt-luclem-taille-5",
@@ -15296,31 +15439,70 @@
    {
     "store": "FootStoreES",
     "price": 20.71,
+    "priceMax": 22.56,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=46183232824&a=3013769&m=65912",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jd8027_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=e6c419f21f78dbc02c7d8c2c79f45c329c8445eb",
     "sizes": [
+     "Talla 3",
      "Talla 4",
      "Talla 5"
+    ],
+    "sizePrices": [
+     {
+      "size": "Talla 3",
+      "price": 22.56,
+      "url": "https://www.awin1.com/pclick.php?p=46797468441&a=3013769&m=65912"
+     },
+     {
+      "size": "Talla 4",
+      "price": 20.71,
+      "url": "https://www.awin1.com/pclick.php?p=46183232824&a=3013769&m=65912"
+     },
+     {
+      "size": "Talla 5",
+      "price": 20.71,
+      "url": "https://www.awin1.com/pclick.php?p=46204543199&a=3013769&m=65912"
+     }
     ]
    },
    {
     "store": "FootStoreFR",
     "price": 19.92,
+    "priceMax": 21.82,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8027-ballon-de-football-coupe-du-monde-adidas-trionda-26-nindig-sepigl-silvmt",
     "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas_jd8027_1_hardware_photography_front_center_view_white.webp",
     "sizes": [
+     "3",
      "4",
      "5"
+    ],
+    "sizePrices": [
+     {
+      "size": "3",
+      "price": 21.82,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8027-ballon-coupe-du-monde-2026-trionda-nindig-sepigl-silvmt"
+     },
+     {
+      "size": "4",
+      "price": 19.92,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8027-ballon-de-football-coupe-du-monde-adidas-trionda-26-nindig-sepigl-silvmt"
+     },
+     {
+      "size": "5",
+      "price": 19.92,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8027-ballon-de-football-coupe-du-monde-adidas-trionda-26-nindig-sepigl-silvmt"
+     }
     ]
    }
   ],
   "eans": [
    "4068811947767",
-   "4068811947774"
+   "4068811947774",
+   "4068811947781"
   ]
  },
  {
@@ -15388,6 +15570,19 @@
       "price": 16.25,
       "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8028-ballon-de-football-adidas-coupe-du-monde-2026-trionda-club-white-vivred-globlu-green"
      }
+    ]
+   },
+   {
+    "store": "AdidasCL",
+    "price": 16990.0,
+    "shipping": 0,
+    "currency": "CLP",
+    "url": "https://www.awin1.com/pclick.php?p=42661646003&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F37c0e856f35a442b82dd00d60bc90276_9366%2FPelota_Trionda_Club_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8028_01_00_standard.jpg&feedId=95016&k=ae7177a4eccf0b8774e882a7d2985b99ebebb710",
+    "sizes": [
+     "3",
+     "4",
+     "5"
     ]
    },
    {
@@ -15599,6 +15794,63 @@
   "eans": [
    "4068811943943",
    "4068811943950"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Balones de Fútbol adidas Coupe du Monde 2026 Trionda Competition - Blanco",
+  "colour": "Blanco",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 60.0,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=46163964390&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jd8031_white-solblu-hirere-flalim_1.jpg&feedId=89032&k=4cf5e558098c3740cc48bf966513e42ebdf70876",
+    "sizes": [
+     "Talla 5"
+    ]
+   },
+   {
+    "store": "AdidasCL",
+    "price": 63990.0,
+    "shipping": 0,
+    "currency": "CLP",
+    "url": "https://www.awin1.com/pclick.php?p=42661645841&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3a5965320eeb418bb674cc98e81c7f6a_9366%2FPelota_Trionda_Competition_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8031_01_00_standard.jpg&feedId=95016&k=a3887165d0ce8ac3041cbc58e4a6024cab575224",
+    "sizes": [
+     "4",
+     "5"
+    ]
+   },
+   {
+    "store": "AdidasMX",
+    "price": 899.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=46682703277&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3a5965320eeb418bb674cc98e81c7f6a_9366%2FBalon_Trionda_Competition_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8031_01_00_standard.jpg&feedId=95013&k=6906303941cb424c7fae1acd7936c564f5cd1f47",
+    "sizes": [
+     "4",
+     "5"
+    ]
+   },
+   {
+    "store": "AdidasCO",
+    "price": 209970.0,
+    "shipping": 0,
+    "currency": "COP",
+    "url": "https://www.awin1.com/pclick.php?p=42666148118&a=3013769&m=79924",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3a5965320eeb418bb674cc98e81c7f6a_9366%2FBalon_Trionda_Competition_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8031_01_00_standard.jpg&feedId=95017&k=6906303941cb424c7fae1acd7936c564f5cd1f47",
+    "sizes": [
+     "4"
+    ]
+   }
+  ],
+  "eans": [
+   "4068807190429",
+   "4068807190436"
   ]
  },
  {
@@ -16374,7 +16626,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 41.0,
+    "price": 40.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=43829767412&a=3013769&m=65912",
@@ -16481,7 +16733,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 27.0,
+    "price": 26.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv4386-710-ballon-de-football-nike-academy-yellow-purple-hyper-pink",
@@ -17402,7 +17654,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 25.0,
+    "price": 26.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy0248-ballon-de-football-italie-coupe-du-monde-2026-hi-res-blue-taille-5",
@@ -17477,26 +17729,12 @@
    {
     "store": "FootStoreES",
     "price": 40.0,
-    "priceMax": 41.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=46163900349&a=3013769&m=65912",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-jx9101-dark-purple-6abb908b0d38e-1.jpg&feedId=89032&k=f82455348d1f21c11a1d20ff678f4e95cda91532",
     "sizes": [
-     "Talla 4",
      "Talla 5"
-    ],
-    "sizePrices": [
-     {
-      "size": "Talla 4",
-      "price": 41.0,
-      "url": "https://www.awin1.com/pclick.php?p=46654819740&a=3013769&m=65912"
-     },
-     {
-      "size": "Talla 5",
-      "price": 40.0,
-      "url": "https://www.awin1.com/pclick.php?p=46163900349&a=3013769&m=65912"
-     }
     ]
    },
    {
@@ -17515,38 +17753,6 @@
   "eans": [
    "4068815110020",
    "4068815110037"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balones de Fútbol adidas Starlancer - Noir",
-  "colour": "Noir",
-  "offers": [
-   {
-    "store": "FootStoreES",
-    "price": 17.38,
-    "shipping": 9.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/pclick.php?p=45115124728&a=3013769&m=65912",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F0%2F2025_12_adidas_jw1357_1.jpg&feedId=89032&k=743cf5a9483e296fbd7079997100f4f8978fa2bb",
-    "sizes": [
-     "Talla 5"
-    ]
-   },
-   {
-    "store": "FootStoreFR",
-    "price": 16.68,
-    "shipping": 7.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1357-ballon-de-football-adidas-starlancer-black-green",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/2/0/2025_12_adidas_jw1357_1.webp",
-    "sizes": [
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4068815106924"
   ]
  },
  {
@@ -17582,12 +17788,26 @@
    {
     "store": "FootStoreFR",
     "price": 13.62,
+    "priceMax": 21.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1358-ballon-de-football-adidas-starlancer-silvmt-drkgrn",
     "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas_jw1358_1_hardware_photography_front_center_view_white.webp",
     "sizes": [
-     "4"
+     "4",
+     "5"
+    ],
+    "sizePrices": [
+     {
+      "size": "4",
+      "price": 13.62,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1358-ballon-de-football-adidas-starlancer-silvmt-drkgrn"
+     },
+     {
+      "size": "5",
+      "price": 21.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1358-ballon-de-football-adidas-starlancer-silvmt-drkgrn"
+     }
     ]
    }
   ],
@@ -17830,7 +18050,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 19.0,
+    "price": 18.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy1296-ballon-de-football-adidas-ekstraklasa-white-taille-mini",
@@ -17851,7 +18071,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 142.0,
+    "price": 141.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=44480981276&a=3013769&m=65912",
@@ -17862,7 +18082,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 130.0,
+    "price": 129.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy1297-ballon-de-football-adidas-ekstraklasa-pro-white-taille-5",
@@ -17883,7 +18103,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 150.0,
+    "price": 149.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=44896720481&a=3013769&m=65912",
@@ -17894,7 +18114,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 149.0,
+    "price": 148.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5866-ballon-de-football-adidas-conext26-pro-white-black-silvmt-taille-5",
@@ -18832,7 +19052,7 @@
      },
      {
       "size": "4",
-      "price": 22.0,
+      "price": 23.0,
       "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf8846-ballon-de-football-adidas-tiro-club-white-poblue"
      },
      {
@@ -19080,38 +19300,6 @@
   ]
  },
  {
-  "brand": "Errea",
-  "model": "Balones de Fútbol Errea New Team Light - Blanc",
-  "colour": "Blanc",
-  "offers": [
-   {
-    "store": "FootStoreES",
-    "price": 20.59,
-    "shipping": 9.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/pclick.php?p=46391427602&a=3013769&m=65912",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea-ha1a0z79570-6ad753c964dfc-1.jpg&feedId=89032&k=575f15d6415d10d72ca6178623890edaf27780bf",
-    "sizes": [
-     "Talla 5"
-    ]
-   },
-   {
-    "store": "FootStoreFR",
-    "price": 19.86,
-    "shipping": 7.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha1a0z79570-ballon-de-football-errea-new-team-light-bianco-blu-turchese-taille-5",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/e/r/errea-ha1a0z79570-6ad753c964dfc-1.webp",
-    "sizes": [
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "8059490524949"
-  ]
- },
- {
   "brand": "Nike",
   "model": "Balones de Fútbol Nike Pitch - Bleu",
   "colour": "Bleu",
@@ -19139,7 +19327,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 147.0,
+    "price": 146.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=43994232013&a=3013769&m=65912",
@@ -19150,7 +19338,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 130.0,
+    "price": 129.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1325-ballon-de-football-ligue-des-champions-feminine-final-pro-2025-26-white-red-taille-5",
@@ -19219,7 +19407,8 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 25.0,
+    "price": 24.0,
+    "priceMax": 25.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1379-ballon-de-football-ligue-des-champions-feminine-final-club-2025-26-silvmt-red-white",
@@ -19228,6 +19417,23 @@
      "3",
      "4",
      "5"
+    ],
+    "sizePrices": [
+     {
+      "size": "3",
+      "price": 24.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1379-ballon-de-football-ligue-des-champions-feminine-final-club-2025-26-silvmt-red-white"
+     },
+     {
+      "size": "4",
+      "price": 25.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1379-ballon-de-football-ligue-des-champions-feminine-final-club-2025-26-silvmt-red-white"
+     },
+     {
+      "size": "5",
+      "price": 25.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1379-ballon-de-football-ligue-des-champions-feminine-final-club-2025-26-silvmt-red-white"
+     }
     ]
    }
   ],
@@ -19403,7 +19609,8 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 25.0,
+    "price": 24.0,
+    "priceMax": 25.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9093-ballon-de-football-ligue-des-champions-final-club-2025-26-white-shopur",
@@ -19412,6 +19619,23 @@
      "3",
      "4",
      "5"
+    ],
+    "sizePrices": [
+     {
+      "size": "3",
+      "price": 25.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9093-ballon-de-football-ligue-des-champions-final-club-2025-26-white-shopur"
+     },
+     {
+      "size": "4",
+      "price": 24.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9093-ballon-de-football-ligue-des-champions-final-club-2025-26-white-shopur"
+     },
+     {
+      "size": "5",
+      "price": 25.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9093-ballon-de-football-ligue-des-champions-final-club-2025-26-white-shopur"
+     }
     ]
    }
   ],
@@ -23240,13 +23464,12 @@
    },
    {
     "store": "AdidasMX",
-    "price": 389.0,
+    "price": 324.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=45320243332&a=3013769&m=79918",
+    "url": "https://www.awin1.com/pclick.php?p=45320243333&a=3013769&m=79918",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb25b34ef46914df3a2d6debf5a433100_9366%2FBalon_Club_Argentum_Gambeta_Seleccion_Argentina_Azul_KE5088_01_00_standard.jpg&feedId=95013&k=8ea62b24b39382104c882595c8843e65346f35bc",
     "sizes": [
-     "4",
      "5"
     ]
    }
@@ -23371,7 +23594,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 18.0,
+    "price": 17.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9770-mini-ballon-de-football-adidas-ucl-2026-27-blanc-multco-taille-1",
@@ -23432,6 +23655,17 @@
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9771-blanc-multco-6a5e40a508a4d-1.jpg&feedId=89032&k=139d212d603c95e591e7430e41166df573b8f42a",
     "sizes": [
      "Talla 4"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 40.0,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9771-ballon-de-football-adidas-ucl-2026-27-blanc-multco",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas-ke9771-blanc-multco-6a5e40a508a4d-1.webp",
+    "sizes": [
+     "4"
     ]
    },
    {
@@ -24911,19 +25145,33 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 60.0,
+    "price": 46.54,
+    "priceMax": 60.0,
     "shipping": 9.99,
     "currency": "EUR",
-    "url": "https://www.awin1.com/pclick.php?p=45348247453&a=3013769&m=65912",
+    "url": "https://www.awin1.com/pclick.php?p=45348247454&a=3013769&m=65912",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ke9766_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=6ca80550c04604b67d7f98fad60fd5a224e4d5a0",
     "sizes": [
      "Talla 4",
      "Talla 5"
+    ],
+    "sizePrices": [
+     {
+      "size": "Talla 4",
+      "price": 60.0,
+      "url": "https://www.awin1.com/pclick.php?p=45348247453&a=3013769&m=65912"
+     },
+     {
+      "size": "Talla 5",
+      "price": 46.54,
+      "url": "https://www.awin1.com/pclick.php?p=45348247454&a=3013769&m=65912"
+     }
     ]
    },
    {
     "store": "FootStoreFR",
-    "price": 60.0,
+    "price": 45.55,
+    "priceMax": 60.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9766-ballon-de-football-adidas-uefa-champions-league-26-27-white-multco",
@@ -24931,6 +25179,18 @@
     "sizes": [
      "4",
      "5"
+    ],
+    "sizePrices": [
+     {
+      "size": "4",
+      "price": 60.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9766-ballon-de-football-adidas-uefa-champions-league-26-27-white-multco"
+     },
+     {
+      "size": "5",
+      "price": 45.55,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9766-ballon-de-football-adidas-uefa-champions-league-26-27-white-multco"
+     }
     ]
    }
   ],
@@ -25056,6 +25316,17 @@
       "price": 25.43,
       "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkz2981-ballon-de-football-adidas-ucl-white-purbur-globlu"
      }
+    ]
+   },
+   {
+    "store": "AdidasMX",
+    "price": 399.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=45353501044&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffa53a3d6bb2048b988661fce5ec9ecd4_9366%2FBalon_de_Entrenamiento_UEFA_Champions_League_Blanco_KZ2981_01_00_standard.jpg&feedId=95013&k=fb607973bba019f1c7a35de8e967f0d6b5c04f32",
+    "sizes": [
+     "5"
     ]
    }
   ],
@@ -25368,7 +25639,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 15.0,
+    "price": 14.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1363-mini-ballon-de-football-adidas-starlancer-silvmt-green-tu",
@@ -25390,25 +25661,63 @@
    {
     "store": "FootStoreES",
     "price": 15.53,
+    "priceMax": 18.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=46255309956&a=3013769&m=65912",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-jw4011-black-pink-6a444d57e47a9-1.jpg&feedId=89032&k=723ee127d9545c3bc8e122adfb859dad96632e19",
     "sizes": [
+     "Talla 3",
      "Talla 4",
      "Talla 5"
+    ],
+    "sizePrices": [
+     {
+      "size": "Talla 3",
+      "price": 18.0,
+      "url": "https://www.awin1.com/pclick.php?p=46255331261&a=3013769&m=65912"
+     },
+     {
+      "size": "Talla 4",
+      "price": 15.53,
+      "url": "https://www.awin1.com/pclick.php?p=46255309956&a=3013769&m=65912"
+     },
+     {
+      "size": "Talla 5",
+      "price": 15.53,
+      "url": "https://www.awin1.com/pclick.php?p=46163844448&a=3013769&m=65912"
+     }
     ]
    },
    {
     "store": "FootStoreFR",
     "price": 14.79,
+    "priceMax": 18.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4011-ballon-de-football-adidas-epp-club-black-pink",
     "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas-jw4011-black-pink-6a444d57e47a9-1.webp",
     "sizes": [
+     "3",
      "4",
      "5"
+    ],
+    "sizePrices": [
+     {
+      "size": "3",
+      "price": 18.0,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4011-ballon-de-football-adidas-epp-club-black-pink"
+     },
+     {
+      "size": "4",
+      "price": 14.79,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4011-ballon-de-football-adidas-epp-club-black-pink"
+     },
+     {
+      "size": "5",
+      "price": 14.79,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4011-ballon-de-football-adidas-epp-club-black-pink"
+     }
     ]
    },
    {
@@ -25424,6 +25733,7 @@
    }
   ],
   "eans": [
+   "4068815113229",
    "4068815113236",
    "4068815113243"
   ]
@@ -25488,17 +25798,6 @@
     "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas-ke5085-white-royblu-black-6a444bc71c020-3.webp",
     "sizes": [
      "mini"
-    ]
-   },
-   {
-    "store": "AdidasMX",
-    "price": 199.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46206607731&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8237a4f995dd4b869991ea6c4279a329_9366%2FMinibalon_Argentum_Gambeta_Seleccion_Argentina_Blanco_KE5085_01_00_standard.jpg&feedId=95013&k=0aaf059f077d018b46f2b7b2bc2be926fa90fed4",
-    "sizes": [
-     "1"
     ]
    }
   ],
@@ -25916,8 +26215,7 @@
     "url": "https://www.awin1.com/pclick.php?p=45184771349&a=3013769&m=65912",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke7538-ivory-seblbu-iceblu-goldmt-6a444d5f8ae05-1.jpg&feedId=89032&k=2412cccdefb1baf3ec63d6938efdbf9d77c48bc5",
     "sizes": [
-     "Talla 3",
-     "Talla 4"
+     "Talla 3"
     ]
    },
    {
@@ -25928,13 +26226,11 @@
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7538-ballon-de-football-adidas-messi-club-ivory-seblbu-iceblu-goldmt",
     "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas-ke7538-ivory-seblbu-iceblu-goldmt-6a444d5f8ae05-1.webp",
     "sizes": [
-     "3",
-     "4"
+     "3"
     ]
    }
   ],
   "eans": [
-   "4068818069769",
    "4068818069776"
   ]
  },
@@ -26003,17 +26299,6 @@
       "price": 21.82,
       "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9760-ballon-de-football-adidas-uefa-champions-league-club-2026-27-bopink-multco-sollem"
      }
-    ]
-   },
-   {
-    "store": "AdidasMX",
-    "price": 389.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46388183966&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9808be17b0854f42966cf9f82d9d9446_9366%2FBalon_Club_UEFA_Champions_League_26-27_Rosa_KE9760_01_00_standard.jpg&feedId=95013&k=fd8cef00f99ad67b41b28104b2fb8896e81ee9ab",
-    "sizes": [
-     "5"
     ]
    }
   ],
@@ -26092,13 +26377,12 @@
    },
    {
     "store": "AdidasMX",
-    "price": 454.0,
+    "price": 421.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46388183967&a=3013769&m=79918",
+    "url": "https://www.awin1.com/pclick.php?p=46388183968&a=3013769&m=79918",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F4c6dbbc94c0349ac9154e516a61815fb_9366%2FBalon_Club_UEFA_Champions_League_26-27_Verde_KE9761_01_00_standard.jpg&feedId=95013&k=94cadb9024d923b7dbd3088df04cfe4f2788f5d7",
     "sizes": [
-     "4",
      "5"
     ]
    }
@@ -26181,44 +26465,6 @@
    "4069994614842",
    "4069994614859",
    "4069994614866"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balones de Fútbol adidas UEFA Champions League Club 2026/27 - Blanc",
-  "colour": "Blanc",
-  "offers": [
-   {
-    "store": "FootStoreES",
-    "price": 22.56,
-    "shipping": 9.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/pclick.php?p=46163912585&a=3013769&m=65912",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9764-white-multco-silvmt-6a444d73614c5-1.jpg&feedId=89032&k=a8755f29f4fe8cbf7eb461fa81e87ebc547d2f9c",
-    "sizes": [
-     "Talla 3",
-     "Talla 4",
-     "Talla 5"
-    ]
-   },
-   {
-    "store": "FootStoreFR",
-    "price": 21.82,
-    "shipping": 7.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9764-ballon-de-football-adidas-uefa-champions-league-club-2026-27-white-multco-silvmt",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas-ke9764-white-multco-silvmt-6a444d73614c5-1.webp",
-    "sizes": [
-     "3",
-     "4",
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4069994615016",
-   "4069994615023",
-   "4069994615030"
   ]
  },
  {
@@ -26374,6 +26620,7 @@
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-iq0642-100-white-bright-crimson-anthracite-black-6a5a5ae7e580a-1.jpg&feedId=89032&k=23ced3757ea9ca0a32f347d7cda358a4489f525e",
     "sizes": [
      "Talla 3",
+     "Talla 4",
      "Talla 5"
     ],
     "sizePrices": [
@@ -26381,6 +26628,11 @@
       "size": "Talla 3",
       "price": 25.32,
       "url": "https://www.awin1.com/pclick.php?p=45348247861&a=3013769&m=65912"
+     },
+     {
+      "size": "Talla 4",
+      "price": 25.32,
+      "url": "https://www.awin1.com/pclick.php?p=45348247862&a=3013769&m=65912"
      },
      {
       "size": "Talla 5",
@@ -26399,11 +26651,17 @@
     "imageUrl": "https://cdn.blazimg.com/1800/product/n/i/nike-iq0642-100-white-bright-crimson-anthracite-black-6a5a5ae7e580a-1.webp",
     "sizes": [
      "3",
+     "4",
      "5"
     ],
     "sizePrices": [
      {
       "size": "3",
+      "price": 24.5,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0642-100-ballon-de-football-nike-academy-white-bright-crimson-anthracite-black"
+     },
+     {
+      "size": "4",
       "price": 24.5,
       "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0642-100-ballon-de-football-nike-academy-white-bright-crimson-anthracite-black"
      },
@@ -26417,7 +26675,8 @@
   ],
   "eans": [
    "198959334847",
-   "198959440777"
+   "198959440777",
+   "198959468979"
   ]
  },
  {
@@ -27106,6 +27365,70 @@
   ]
  },
  {
+  "brand": "Puma",
+  "model": "Balones de Fútbol Puma Stellar Cup Laliga - Blanc",
+  "colour": "Blanc",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 27.05,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=46797472963&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fu%2Fpuma-085148-01-6ae90b4d3c6f7-1.jpg&feedId=89032&k=51247715a1698e7c01d69a2f44c6f69c5b0c6fc3",
+    "sizes": [
+     "Talla 5"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 26.26,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085148-01-ballon-de-football-puma-stellar-cup-laliga-white",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/p/u/puma-085148-01-6ae90b4d3c6f7-1.webp",
+    "sizes": [
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4070033639450"
+  ]
+ },
+ {
+  "brand": "Puma",
+  "model": "Balones de Fútbol Puma Stellar Cup Laliga Hi-Viz - Jaune",
+  "colour": "Jaune",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 26.28,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=46797472964&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fu%2Fpuma-085149-01-6ae908c30324f-1.jpg&feedId=89032&k=7c516a5d587b3d666b4b866dde8a739ade098714",
+    "sizes": [
+     "Talla 5"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 25.5,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085149-01-ballon-de-football-puma-stellar-cup-laliga-hi-viz-yellow",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/p/u/puma-085149-01-6ae908c30324f-1.webp",
+    "sizes": [
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4070033639481"
+  ]
+ },
+ {
   "brand": "Nike",
   "model": "Balones de Fútbol Nike Heritage Premier - Blanc",
   "colour": "Blanc",
@@ -27389,7 +27712,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 25.0,
+    "price": 26.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=46255331967&a=3013769&m=65912",
@@ -27671,6 +27994,38 @@
   ]
  },
  {
+  "brand": "Adidas",
+  "model": "Balones de Fútbol adidas Tiro Pro - Vert",
+  "colour": "Vert",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 100.0,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=46797473811&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-kc3341-luclem-black-lucred-ironmt-6af724229646f-2.jpg&feedId=89032&k=b620a652949a4fadbd46d44b8dfb727255710870",
+    "sizes": [
+     "Talla 5"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 100.0,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc3341-ballon-de-football-adidas-tiro-pro-luclem-black-lucred-ironmt-taille-5",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas-kc3341-luclem-black-lucred-ironmt-6af724229646f-2.webp",
+    "sizes": [
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4068814756366"
+  ]
+ },
+ {
   "brand": "uhlsport",
   "model": "Balones de Fútbol Uhlsport Reflex - Amarillo",
   "colour": "Amarillo",
@@ -27728,27 +28083,6 @@
   ],
   "eans": [
    "3701323402157"
-  ]
- },
- {
-  "brand": "Kappa",
-  "model": "Ballon de football match Kappa player 20.5e - Bleu",
-  "colour": "Bleu",
-  "offers": [
-   {
-    "store": "FootStoreFR",
-    "price": 28.0,
-    "shipping": 7.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F350176w-a02-ballon-match-kappa-player-20-5e-bleu-azur-blanc-marron-jaune",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/k/a/kappa_350176w-a02_0-nw010624.webp",
-    "sizes": [
-     "4"
-    ]
-   }
-  ],
-  "eans": [
-   "8034019558377"
   ]
  },
  {
@@ -28038,33 +28372,12 @@
  },
  {
   "brand": "Nike",
-  "model": "Ballon de football Nike Mercurial Fade - Blanc",
-  "colour": "Blanc",
-  "offers": [
-   {
-    "store": "FootStoreFR",
-    "price": 27.0,
-    "shipping": 7.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz3036-100-ballon-de-football-nike-mercurial-fade-blanc-blue-fury-blackened-blue",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/n/i/nike_fz3036-100_blanc-blue-fury-blackened-blue_1.webp",
-    "sizes": [
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "197595697767"
-  ]
- },
- {
-  "brand": "Nike",
   "model": "Ballon de football Nike Park 2.0 - Jaune",
   "colour": "Jaune",
   "offers": [
    {
     "store": "FootStoreFR",
-    "price": 22.0,
+    "price": 21.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz7551-765-ballon-de-football-nike-park-2-0-yellow-blue-taille-5",
@@ -28458,23 +28771,44 @@
  },
  {
   "brand": "Adidas",
-  "model": "Ballon de football adidas UEFA Champions League Pro - Blanc",
+  "model": "Ballon de football adidas UEFA Champions League Competition - Blanc",
   "colour": "Blanc",
   "offers": [
    {
     "store": "FootStoreFR",
-    "price": 150.0,
+    "price": 60.0,
     "shipping": 7.99,
     "currency": "EUR",
-    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd0190-ballon-de-football-adidas-uefa-champions-league-pro-white-shopnk-syello-taille-5",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas_jd0190_white-shopnk-syello_2.webp",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1541-ballon-de-football-adidas-uefa-champions-league-competition-white-dkblue-panton-goldmt",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas_jp1541_white-dkblue-panton-goldmt_1.webp",
     "sizes": [
-     "5"
+     "4"
     ]
    }
   ],
   "eans": [
-   "4068811951528"
+   "4068811955328"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Ballon de football adidas UEFA Champions League Foil - Multicolore",
+  "colour": "Multicolore",
+  "offers": [
+   {
+    "store": "FootStoreFR",
+    "price": 36.0,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1549-ballon-de-football-adidas-uefa-champions-league-foil-multco-dkblue-panton-white",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/a/d/adidas_jp1549_multco-dkblue-panton-white_1.webp",
+    "sizes": [
+     "4"
+    ]
+   }
+  ],
+  "eans": [
+   "4068811955441"
   ]
  },
  {
@@ -29549,23 +29883,87 @@
  },
  {
   "brand": "Adidas",
-  "model": "Pelota adidas Trionda Home Club España - Rojo",
-  "colour": "Rojo",
+  "model": "Pelota adidas Club Universidad de Chile - Blanco",
+  "colour": "Blanco",
   "offers": [
    {
     "store": "AdidasCL",
-    "price": 13990.0,
+    "price": 22990.0,
     "shipping": 0,
     "currency": "CLP",
-    "url": "https://www.awin1.com/pclick.php?p=44419090141&a=3013769&m=79922",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F16c3d2d38ef14347bed1f0a2aee48dc8_9366%2FPelota_Trionda_Home_Club_Espana_Rojo_JY0256_01_00_standard.jpg&feedId=95016&k=ea645dcd52bfff03bd97d00c4f9bd221381ba0b6",
+    "url": "https://www.awin1.com/pclick.php?p=45859444736&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F687c6d652f9d46d1a93aa8814cb7ddb3_9366%2FPelota_Club_Universidad_de_Chile_Blanco_KY3243_01_00_standard.jpg&feedId=95016&k=221007e14653ecb71e2407fa24407228158336cc",
     "sizes": [
      "5"
     ]
    }
   ],
   "eans": [
-   "4068818880685"
+   "4069999192420"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Pelota adidas Club Colo-Colo - Blanco",
+  "colour": "Blanco",
+  "offers": [
+   {
+    "store": "AdidasCL",
+    "price": 22990.0,
+    "shipping": 0,
+    "currency": "CLP",
+    "url": "https://www.awin1.com/pclick.php?p=45859444245&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F148c786e2d874317b0f3b767fca9e873_9366%2FPelota_Club_Colo-Colo_Blanco_KY3234_01_00_standard.jpg&feedId=95016&k=af5156749feb5d1a2f6a38702d75048e3cf55cd2",
+    "sizes": [
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4069999023595"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Pelota adidas Copa Mundial de la FIFA 26™ Trionda Finals Pro - Blanco",
+  "colour": "Blanco",
+  "offers": [
+   {
+    "store": "AdidasCL",
+    "price": 149990.0,
+    "shipping": 0,
+    "currency": "CLP",
+    "url": "https://www.awin1.com/pclick.php?p=45237446048&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fccc89847c3bb47d997fd367654133d90_9366%2FPelota_Copa_Mundial_de_la_FIFA_26tm_Trionda_Finals_Pro_Blanco_JY8928_01_00_standard.jpg&feedId=95016&k=eaa614dadd852d8ab200883b37d7bc16ee606a80",
+    "sizes": [
+     "5"
+    ]
+   },
+   {
+    "store": "AdidasMX",
+    "price": 2399.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=45239583092&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fccc89847c3bb47d997fd367654133d90_9366%2FBalon_Trionda_Pro_Finales_Copa_Mundial_de_la_FIFA_26tm_Blanco_JY8928_01_00_standard.jpg&feedId=95013&k=9c00df4b95df2e7e6b2769cf32813eb055516736",
+    "sizes": [
+     "5"
+    ]
+   },
+   {
+    "store": "AdidasCO",
+    "price": 629965.0,
+    "shipping": 0,
+    "currency": "COP",
+    "url": "https://www.awin1.com/pclick.php?p=45239579079&a=3013769&m=79924",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fccc89847c3bb47d997fd367654133d90_9366%2FBalon_Copa_Mundial_de_la_FIFA_26tm_Trionda_Finals_Pro_Blanco_JY8928_01_00_standard.jpg&feedId=95017&k=335c60dba29a49e86e6797c5c9003d2438540595",
+    "sizes": [
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4069989699434"
   ]
  },
  {
@@ -29598,6 +29996,128 @@
   ],
   "eans": [
    "4068818503126"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Pelota adidas Argentum Gambeta League Selección Argentina - Blanco",
+  "colour": "Blanco",
+  "offers": [
+   {
+    "store": "AdidasCL",
+    "price": 34990.0,
+    "shipping": 0,
+    "currency": "CLP",
+    "url": "https://www.awin1.com/pclick.php?p=45164508774&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F943032ef9a8a4128b644f4fa0946fb63_9366%2FPelota_Argentum_Gambeta_League_Seleccion_Argentina_Blanco_KE5087_01_00_standard.jpg&feedId=95016&k=2f7662e14136e61a4e70b582ffd7beb33b9c0bcb",
+    "sizes": [
+     "4",
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4069999008509",
+   "4069999008523"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Pelota de Entrenamiento adidas UEFA Champions League - Blanco",
+  "colour": "Blanco",
+  "offers": [
+   {
+    "store": "AdidasCL",
+    "price": 24990.0,
+    "shipping": 0,
+    "currency": "CLP",
+    "url": "https://www.awin1.com/pclick.php?p=46385835461&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9c40e822e4104611b6b8f441f9393466_9366%2FPelota_de_Entrenamiento_UEFA_Champions_League_Blanco_KE9759_01_00_standard.jpg&feedId=95016&k=a986ed80e598220c8f4c50eac6530c30818beca3",
+    "sizes": [
+     "4",
+     "5"
+    ]
+   },
+   {
+    "store": "AdidasMX",
+    "price": 799.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=46388183964&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9c40e822e4104611b6b8f441f9393466_9366%2FBalon_de_Entrenamiento_UEFA_Champions_League_Blanco_KE9759_01_00_standard.jpg&feedId=95013&k=63ffd2265defdfbc5369c42500b8eb1e45ebf078",
+    "sizes": [
+     "5"
+    ]
+   },
+   {
+    "store": "AdidasCO",
+    "price": 139950.0,
+    "shipping": 0,
+    "currency": "COP",
+    "url": "https://www.awin1.com/pclick.php?p=46343278538&a=3013769&m=79924",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9c40e822e4104611b6b8f441f9393466_9366%2FBalon_de_Entrenamiento_UEFA_Champions_League_Blanco_KE9759_01_00_standard.jpg&feedId=95017&k=63ffd2265defdfbc5369c42500b8eb1e45ebf078",
+    "sizes": [
+     "4",
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4069994612121",
+   "4069994612138"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Minipelota adidas Messi - Blanco",
+  "colour": "Blanco",
+  "offers": [
+   {
+    "store": "AdidasCL",
+    "price": 10990.0,
+    "shipping": 0,
+    "currency": "CLP",
+    "url": "https://www.awin1.com/pclick.php?p=44004390148&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa4f0664aaeed4e6db8cbfc87df055ef5_9366%2FMinipelota_Messi_Blanco_JW1345_01_00_standard.jpg&feedId=95016&k=3137ebb13c253479a570bd41dc57a36fcbed6eb4",
+    "sizes": [
+     "1"
+    ]
+   }
+  ],
+  "eans": [
+   "4068812816246"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Minipelota adidas de Messi - Naranja",
+  "colour": "Naranja",
+  "offers": [
+   {
+    "store": "AdidasCL",
+    "price": 11990.0,
+    "shipping": 0,
+    "currency": "CLP",
+    "url": "https://www.awin1.com/pclick.php?p=44475899300&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbb5cc5bcede744cabbbac61eb4a2d4af_9366%2FMINIPELOTA_DE_MESSI_Naranjo_KA5265_01_00_standard.jpg&feedId=95016&k=efc8665f2272a7eaafafba880b38a8e494ab02df",
+    "sizes": [
+     "1"
+    ]
+   },
+   {
+    "store": "AdidasMX",
+    "price": 319.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=44478159283&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbb5cc5bcede744cabbbac61eb4a2d4af_9366%2FMINIBALON_MESSI_Naranja_KA5265_01_00_standard.jpg&feedId=95013&k=3601e488eae055346e2e3e093f78323543e41ef3",
+    "sizes": [
+     "1"
+    ]
+   }
+  ],
+  "eans": [
+   "4068812816277"
   ]
  },
  {
@@ -29649,498 +30169,44 @@
  },
  {
   "brand": "Adidas",
-  "model": "Pelota de Entrenamiento adidas UEFA Champions League - Blanco",
-  "colour": "Blanco",
+  "model": "Pelota adidas Trionda Home Club España - Rojo",
+  "colour": "Rojo",
   "offers": [
    {
     "store": "AdidasCL",
-    "price": 24990.0,
+    "price": 13990.0,
     "shipping": 0,
     "currency": "CLP",
-    "url": "https://www.awin1.com/pclick.php?p=46385835461&a=3013769&m=79922",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9c40e822e4104611b6b8f441f9393466_9366%2FPelota_de_Entrenamiento_UEFA_Champions_League_Blanco_KE9759_01_00_standard.jpg&feedId=95016&k=a986ed80e598220c8f4c50eac6530c30818beca3",
-    "sizes": [
-     "4",
-     "5"
-    ]
-   },
-   {
-    "store": "AdidasMX",
-    "price": 479.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=45353501044&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffa53a3d6bb2048b988661fce5ec9ecd4_9366%2FBalon_de_Entrenamiento_UEFA_Champions_League_Blanco_KZ2981_01_00_standard.jpg&feedId=95013&k=fb607973bba019f1c7a35de8e967f0d6b5c04f32",
-    "sizes": [
-     "5"
-    ]
-   },
-   {
-    "store": "AdidasCO",
-    "price": 139950.0,
-    "shipping": 0,
-    "currency": "COP",
-    "url": "https://www.awin1.com/pclick.php?p=46343278538&a=3013769&m=79924",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9c40e822e4104611b6b8f441f9393466_9366%2FBalon_de_Entrenamiento_UEFA_Champions_League_Blanco_KE9759_01_00_standard.jpg&feedId=95017&k=63ffd2265defdfbc5369c42500b8eb1e45ebf078",
-    "sizes": [
-     "4",
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4069994612121",
-   "4069994612138",
-   "4069994615054"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Minipelota adidas Messi - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasCL",
-    "price": 10990.0,
-    "shipping": 0,
-    "currency": "CLP",
-    "url": "https://www.awin1.com/pclick.php?p=44004390148&a=3013769&m=79922",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa4f0664aaeed4e6db8cbfc87df055ef5_9366%2FMinipelota_Messi_Blanco_JW1345_01_00_standard.jpg&feedId=95016&k=3137ebb13c253479a570bd41dc57a36fcbed6eb4",
-    "sizes": [
-     "1"
-    ]
-   }
-  ],
-  "eans": [
-   "4068812816246"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Pelota adidas Copa Mundial de la FIFA 26™ Trionda Finals Pro - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasCL",
-    "price": 149990.0,
-    "shipping": 0,
-    "currency": "CLP",
-    "url": "https://www.awin1.com/pclick.php?p=45237446048&a=3013769&m=79922",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fccc89847c3bb47d997fd367654133d90_9366%2FPelota_Copa_Mundial_de_la_FIFA_26tm_Trionda_Finals_Pro_Blanco_JY8928_01_00_standard.jpg&feedId=95016&k=eaa614dadd852d8ab200883b37d7bc16ee606a80",
-    "sizes": [
-     "5"
-    ]
-   },
-   {
-    "store": "AdidasMX",
-    "price": 2799.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=45239583092&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fccc89847c3bb47d997fd367654133d90_9366%2FBalon_Trionda_Pro_Finales_Copa_Mundial_de_la_FIFA_26tm_Blanco_JY8928_01_00_standard.jpg&feedId=95013&k=9c00df4b95df2e7e6b2769cf32813eb055516736",
-    "sizes": [
-     "5"
-    ]
-   },
-   {
-    "store": "AdidasCO",
-    "price": 629965.0,
-    "shipping": 0,
-    "currency": "COP",
-    "url": "https://www.awin1.com/pclick.php?p=45239579079&a=3013769&m=79924",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fccc89847c3bb47d997fd367654133d90_9366%2FBalon_Copa_Mundial_de_la_FIFA_26tm_Trionda_Finals_Pro_Blanco_JY8928_01_00_standard.jpg&feedId=95017&k=335c60dba29a49e86e6797c5c9003d2438540595",
+    "url": "https://www.awin1.com/pclick.php?p=44419090141&a=3013769&m=79922",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F16c3d2d38ef14347bed1f0a2aee48dc8_9366%2FPelota_Trionda_Home_Club_Espana_Rojo_JY0256_01_00_standard.jpg&feedId=95016&k=ea645dcd52bfff03bd97d00c4f9bd221381ba0b6",
     "sizes": [
      "5"
     ]
    }
   ],
   "eans": [
-   "4069989699434"
+   "4068818880685"
   ]
  },
  {
   "brand": "Adidas",
-  "model": "Pelota adidas Argentum Gambeta League Selección Argentina - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasCL",
-    "price": 34990.0,
-    "shipping": 0,
-    "currency": "CLP",
-    "url": "https://www.awin1.com/pclick.php?p=45164508774&a=3013769&m=79922",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F943032ef9a8a4128b644f4fa0946fb63_9366%2FPelota_Argentum_Gambeta_League_Seleccion_Argentina_Blanco_KE5087_01_00_standard.jpg&feedId=95016&k=2f7662e14136e61a4e70b582ffd7beb33b9c0bcb",
-    "sizes": [
-     "4",
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4069999008509",
-   "4069999008523"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Pelota adidas Trionda Competition Copa Mundial de la FIFA 26™ - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasCL",
-    "price": 63990.0,
-    "shipping": 0,
-    "currency": "CLP",
-    "url": "https://www.awin1.com/pclick.php?p=42661645841&a=3013769&m=79922",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3a5965320eeb418bb674cc98e81c7f6a_9366%2FPelota_Trionda_Competition_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8031_01_00_standard.jpg&feedId=95016&k=a3887165d0ce8ac3041cbc58e4a6024cab575224",
-    "sizes": [
-     "4",
-     "5"
-    ]
-   },
-   {
-    "store": "AdidasMX",
-    "price": 899.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46682703277&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3a5965320eeb418bb674cc98e81c7f6a_9366%2FBalon_Trionda_Competition_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8031_01_00_standard.jpg&feedId=95013&k=6906303941cb424c7fae1acd7936c564f5cd1f47",
-    "sizes": [
-     "4",
-     "5"
-    ]
-   },
-   {
-    "store": "AdidasCO",
-    "price": 209970.0,
-    "shipping": 0,
-    "currency": "COP",
-    "url": "https://www.awin1.com/pclick.php?p=42666148118&a=3013769&m=79924",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3a5965320eeb418bb674cc98e81c7f6a_9366%2FBalon_Trionda_Competition_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8031_01_00_standard.jpg&feedId=95017&k=6906303941cb424c7fae1acd7936c564f5cd1f47",
-    "sizes": [
-     "4"
-    ]
-   }
-  ],
-  "eans": [
-   "4068807190429",
-   "4068807190436"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Minipelota adidas de Messi - Naranja",
-  "colour": "Naranja",
-  "offers": [
-   {
-    "store": "AdidasCL",
-    "price": 11990.0,
-    "shipping": 0,
-    "currency": "CLP",
-    "url": "https://www.awin1.com/pclick.php?p=44475899300&a=3013769&m=79922",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbb5cc5bcede744cabbbac61eb4a2d4af_9366%2FMINIPELOTA_DE_MESSI_Naranjo_KA5265_01_00_standard.jpg&feedId=95016&k=efc8665f2272a7eaafafba880b38a8e494ab02df",
-    "sizes": [
-     "1"
-    ]
-   },
-   {
-    "store": "AdidasMX",
-    "price": 319.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=44478159283&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbb5cc5bcede744cabbbac61eb4a2d4af_9366%2FMINIBALON_MESSI_Naranja_KA5265_01_00_standard.jpg&feedId=95013&k=3601e488eae055346e2e3e093f78323543e41ef3",
-    "sizes": [
-     "1"
-    ]
-   }
-  ],
-  "eans": [
-   "4068812816277"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Pelota adidas Club Universidad de Chile - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasCL",
-    "price": 22990.0,
-    "shipping": 0,
-    "currency": "CLP",
-    "url": "https://www.awin1.com/pclick.php?p=45859444736&a=3013769&m=79922",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F687c6d652f9d46d1a93aa8814cb7ddb3_9366%2FPelota_Club_Universidad_de_Chile_Blanco_KY3243_01_00_standard.jpg&feedId=95016&k=221007e14653ecb71e2407fa24407228158336cc",
-    "sizes": [
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4069999192420"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Pelota adidas Club Colo-Colo - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasCL",
-    "price": 22990.0,
-    "shipping": 0,
-    "currency": "CLP",
-    "url": "https://www.awin1.com/pclick.php?p=45859444245&a=3013769&m=79922",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F148c786e2d874317b0f3b767fca9e873_9366%2FPelota_Club_Colo-Colo_Blanco_KY3234_01_00_standard.jpg&feedId=95016&k=af5156749feb5d1a2f6a38702d75048e3cf55cd2",
-    "sizes": [
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4069999023595"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Minibalón adidas Local Club América - Amarillo",
-  "colour": "Amarillo",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 279.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=43470041108&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F29b99818674946efa5fa248cc571183f_9366%2FMINIBALON_LOCAL_CLUB_AMERICA_Amarillo_KS7942_01_00_standard.jpg&feedId=95013&k=2412fce158a7678fd69926f7f488b6877369ac2b",
-    "sizes": [
-     "1"
-    ]
-   }
-  ],
-  "eans": [
-   "4068805015922"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balón adidas Club Local Club América - Amarillo",
-  "colour": "Amarillo",
+  "model": "Balón adidas Home Club Tigres Uanl 26/27 - Azul",
+  "colour": "Azul",
   "offers": [
    {
     "store": "AdidasMX",
     "price": 454.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=43494637881&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F66913e0d31c743f3a94da7f08fb22ad9_9366%2FBALON_CLUB_LOCAL_CLUB_AMERICA_Amarillo_KS7943_01_00_standard.jpg&feedId=95013&k=82dcf68d5357f6ac5e57659062f774064a65af10",
+    "url": "https://www.awin1.com/pclick.php?p=46329780468&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8eae7377672b4d4f99466a33dea29138_9366%2FBalon_Home_Club_Tigres_UANL_26-27_Azul_KY3452_01_00_standard.jpg&feedId=95013&k=01497afc39be53b19eb00d3e1ee2f3827ea3bf43",
     "sizes": [
      "5"
     ]
    }
   ],
   "eans": [
-   "4068805234491"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balón adidas Conext 25 League - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 629.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=41106527071&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6bbffb591a864deeb91ddc8b031cbe5f_9366%2FBalon_Conext_25_League_Blanco_JH1272_01_00_standard.jpg&feedId=95013&k=e9218711c6f453d4ddf36aef524aec86d366e513",
-    "sizes": [
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4068801114131"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Mini Balón adidas Leagues Cup 25 - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 279.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=41907982977&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9bf656cd3b204a60b8a1f419c6cf4e0f_9366%2FMini_Balon_Leagues_Cup_25_Blanco_JN7296_01_00_standard.jpg&feedId=95013&k=f926c0eb07c8c2082e8a5a8ff73d050b7f1d84ba",
-    "sizes": [
-     "1"
-    ]
-   }
-  ],
-  "eans": [
-   "4068806359438"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balón adidas Epp Club - Negro",
-  "colour": "Negro",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 359.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46388181462&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdb5dc9f058db45d2b51e972bb3fac413_9366%2FBalon_EPP_Club_Negro_JN7368_01_00_standard.jpg&feedId=95013&k=6440370388c395c81050f7e0f26e251e2e19eb89",
-    "sizes": [
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4068806359513"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balón adidas Trionda League Finals Copa Mundial de la Fifa 26™ - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 769.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=45239582871&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb1730c5757454a9ebd3779417889a391_9366%2FBalon_Trionda_League_Finals_Copa_Mundial_de_la_FIFA_26tm_Blanco_KE4322_01_00_standard.jpg&feedId=95013&k=b2a22a65fb52fbc24f3a6b569989b7a20b628693",
-    "sizes": [
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4068815110075"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Minibalón adidas Finales Trionda Copa Mundial de la Fifa 26™ - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 239.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46120380293&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8702bfb86f8c4c5b82ceb054a2b70b87_9366%2FMinibalon_Finales_Trionda_Copa_Mundial_de_la_FIFA_26tm_Blanco_KE4328_01_00_standard.jpg&feedId=95013&k=60dba14606bd0f65724b74923cf76e135f54443a",
-    "sizes": [
-     "1"
-    ]
-   },
-   {
-    "store": "AdidasCO",
-    "price": 55965.0,
-    "shipping": 0,
-    "currency": "COP",
-    "url": "https://www.awin1.com/pclick.php?p=45239579131&a=3013769&m=79924",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8702bfb86f8c4c5b82ceb054a2b70b87_9366%2FMinibalon_Copa_Mundial_de_la_FIFA_26tm_Trionda_Finals_Blanco_KE4328_01_00_standard.jpg&feedId=95017&k=3271d78fac745605f2e4a896bc155ef69e349c21",
-    "sizes": [
-     "1"
-    ]
-   }
-  ],
-  "eans": [
-   "4069988837714"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Minibalón adidas Queens League La Caprichosa - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 279.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=43791481051&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9bcf4a46edb24cde976ca4fce3fd724a_9366%2FMinibalon_Queens_League_La_Caprichosa_Blanco_JI8978_01_00_standard.jpg&feedId=95013&k=c5508c8bdac3e5bc29e5c0b32b0ce2748398354d",
-    "sizes": [
-     "1"
-    ]
-   }
-  ],
-  "eans": [
-   "4067905167074"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balón adidas Messi Club - Beige",
-  "colour": "Beige",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 292.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46388179288&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe52763b3dcf5454c96c334588cd9aafa_9366%2FBalon_Messi_Club_Beige_KE7538_01_00_standard.jpg&feedId=95013&k=fb5665a5be055b51b9915ae91d6a6c124ea3c40b",
-    "sizes": [
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4068818069752"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Minibalón adidas Messi - Beige",
-  "colour": "Beige",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 179.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=44941649552&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa9c144b8b5644db88d7fb9855008dbfc_9366%2FMinibalon_Messi_Beige_KE7540_01_00_standard.jpg&feedId=95013&k=4283bee552f0354963710de08a666a0c4fb771ea",
-    "sizes": [
-     "1"
-    ]
-   }
-  ],
-  "eans": [
-   "4068818208588"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balón adidas Kings League Pro - Multicolor",
-  "colour": "Multicolor",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 2799.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=43386114416&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fae3be1538da94bfdad200e2b245799b3_9366%2FBALON_KINGS_LEAGUE_PRO_Multicolor_KE8228_01_00_standard.jpg&feedId=95013&k=d5591bfd929fb292a37dc62e397e9181b3986dde",
-    "sizes": [
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4068818491904"
+   "4069994634550"
   ]
  },
  {
@@ -30187,23 +30253,181 @@
  },
  {
   "brand": "Adidas",
-  "model": "Balón adidas Home Club Tigres Uanl 26/27 - Azul",
-  "colour": "Azul",
+  "model": "Minibalón adidas Queens League La Caprichosa - Blanco",
+  "colour": "Blanco",
   "offers": [
    {
     "store": "AdidasMX",
-    "price": 454.0,
+    "price": 279.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46329780468&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8eae7377672b4d4f99466a33dea29138_9366%2FBalon_Home_Club_Tigres_UANL_26-27_Azul_KY3452_01_00_standard.jpg&feedId=95013&k=01497afc39be53b19eb00d3e1ee2f3827ea3bf43",
+    "url": "https://www.awin1.com/pclick.php?p=43791481051&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9bcf4a46edb24cde976ca4fce3fd724a_9366%2FMinibalon_Queens_League_La_Caprichosa_Blanco_JI8978_01_00_standard.jpg&feedId=95013&k=c5508c8bdac3e5bc29e5c0b32b0ce2748398354d",
+    "sizes": [
+     "1"
+    ]
+   }
+  ],
+  "eans": [
+   "4067905167074"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "adidas WC Hist Set Mex - Blanco",
+  "colour": "Blanco",
+  "offers": [
+   {
+    "store": "AdidasMX",
+    "price": 10499.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=46620166131&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc65518a77bcc4dd8ba87573a377dec3a_9366%2FWC_HIST_SET_MEX_Blanco_KA0007_01_00_standard.jpg&feedId=95013&k=9d945d2120e4f683de897b41109c6909b491b2f8",
     "sizes": [
      "5"
     ]
    }
   ],
   "eans": [
-   "4069994634550"
+   "4068816712902"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Balón adidas League Boxed Uefa Champions League 26/27 - Blanco",
+  "colour": "Blanco",
+  "offers": [
+   {
+    "store": "AdidasMX",
+    "price": 659.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=45353500957&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F10116067c5b54aa4a542d03cc150ed77_9366%2FBalon_League_Boxed_UEFA_Champions_League_26-27_Blanco_KE9771_01_00_standard.jpg&feedId=95013&k=1a6c6430a93fd77b5406b8ed1ec0199ee07554c6",
+    "sizes": [
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4069994613562"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Balón adidas Epp Club - Negro",
+  "colour": "Negro",
+  "offers": [
+   {
+    "store": "AdidasMX",
+    "price": 359.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=46388181462&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdb5dc9f058db45d2b51e972bb3fac413_9366%2FBalon_EPP_Club_Negro_JN7368_01_00_standard.jpg&feedId=95013&k=6440370388c395c81050f7e0f26e251e2e19eb89",
+    "sizes": [
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4068806359513"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Minibalón adidas Local Club América - Amarillo",
+  "colour": "Amarillo",
+  "offers": [
+   {
+    "store": "AdidasMX",
+    "price": 279.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=43470041108&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F29b99818674946efa5fa248cc571183f_9366%2FMINIBALON_LOCAL_CLUB_AMERICA_Amarillo_KS7942_01_00_standard.jpg&feedId=95013&k=2412fce158a7678fd69926f7f488b6877369ac2b",
+    "sizes": [
+     "1"
+    ]
+   }
+  ],
+  "eans": [
+   "4068805015922"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Balón adidas Club Local Club América - Amarillo",
+  "colour": "Amarillo",
+  "offers": [
+   {
+    "store": "AdidasMX",
+    "price": 421.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=43494637881&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F66913e0d31c743f3a94da7f08fb22ad9_9366%2FBALON_CLUB_LOCAL_CLUB_AMERICA_Amarillo_KS7943_01_00_standard.jpg&feedId=95013&k=82dcf68d5357f6ac5e57659062f774064a65af10",
+    "sizes": [
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4068805234491"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Balón adidas Trionda League Finals Copa Mundial de la Fifa 26™ - Blanco",
+  "colour": "Blanco",
+  "offers": [
+   {
+    "store": "AdidasMX",
+    "price": 659.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=45239582871&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb1730c5757454a9ebd3779417889a391_9366%2FBalon_Trionda_League_Finals_Copa_Mundial_de_la_FIFA_26tm_Blanco_KE4322_01_00_standard.jpg&feedId=95013&k=b2a22a65fb52fbc24f3a6b569989b7a20b628693",
+    "sizes": [
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4068815110075"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Minibalón adidas Finales Trionda Copa Mundial de la Fifa 26™ - Blanco",
+  "colour": "Blanco",
+  "offers": [
+   {
+    "store": "AdidasMX",
+    "price": 219.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=46120380293&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8702bfb86f8c4c5b82ceb054a2b70b87_9366%2FMinibalon_Finales_Trionda_Copa_Mundial_de_la_FIFA_26tm_Blanco_KE4328_01_00_standard.jpg&feedId=95013&k=60dba14606bd0f65724b74923cf76e135f54443a",
+    "sizes": [
+     "1"
+    ]
+   },
+   {
+    "store": "AdidasCO",
+    "price": 55965.0,
+    "shipping": 0,
+    "currency": "COP",
+    "url": "https://www.awin1.com/pclick.php?p=45239579131&a=3013769&m=79924",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8702bfb86f8c4c5b82ceb054a2b70b87_9366%2FMinibalon_Copa_Mundial_de_la_FIFA_26tm_Trionda_Finals_Blanco_KE4328_01_00_standard.jpg&feedId=95017&k=3271d78fac745605f2e4a896bc155ef69e349c21",
+    "sizes": [
+     "1"
+    ]
+   }
+  ],
+  "eans": [
+   "4069988837714"
   ]
  },
  {
@@ -30234,7 +30458,7 @@
   "offers": [
    {
     "store": "AdidasMX",
-    "price": 659.0,
+    "price": 549.0,
     "shipping": 0,
     "currency": "MXN",
     "url": "https://www.awin1.com/pclick.php?p=45700809785&a=3013769&m=79918",
@@ -30284,109 +30508,86 @@
  },
  {
   "brand": "Adidas",
-  "model": "Balón de Entrenamiento adidas Uefa Champions League - Blanco",
+  "model": "Minibalón adidas DE LA Final DE LA Uefa Champions League - Violeta",
+  "colour": "Violeta",
+  "offers": [
+   {
+    "store": "AdidasMX",
+    "price": 279.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=43926382424&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F38fb4095a80a47bfb13c0bad5f5e48f8_9366%2FMINIBALON_DE_LA_FINAL_DE_LA_UEFA_CHAMPIONS_LEAGUE_Violeta_JX9099_01_00_standard.jpg&feedId=95013&k=6ca4324e4ed2047bbb1f832cf8c43dd12ca944ae",
+    "sizes": [
+     "1"
+    ]
+   }
+  ],
+  "eans": [
+   "4068815110143"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Balón adidas Trionda Club Visitante Selección Nacional de México - Blanco",
   "colour": "Blanco",
   "offers": [
    {
     "store": "AdidasMX",
-    "price": 799.0,
+    "price": 454.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46388183964&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9c40e822e4104611b6b8f441f9393466_9366%2FBalon_de_Entrenamiento_UEFA_Champions_League_Blanco_KE9759_01_00_standard.jpg&feedId=95013&k=63ffd2265defdfbc5369c42500b8eb1e45ebf078",
+    "url": "https://www.awin1.com/pclick.php?p=44828513706&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F484617879b4e42dcb585b9ec1d5edc74_9366%2FBalon_Trionda_Club_Visitante_Seleccion_Nacional_de_Mexico_Blanco_JY0308_01_00_standard.jpg&feedId=95013&k=ac83300d87b7be7371fcff1180c4923254c41be7",
     "sizes": [
      "5"
     ]
    }
   ],
   "eans": [
-   "4069994612121"
+   "4068815107105"
   ]
  },
  {
   "brand": "Adidas",
-  "model": "Balón adidas League Boxed Uefa Champions League 26/27 - Blanco",
+  "model": "Balón adidas Conext 25 League - Blanco",
   "colour": "Blanco",
   "offers": [
    {
     "store": "AdidasMX",
-    "price": 719.0,
+    "price": 629.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=45353500957&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F10116067c5b54aa4a542d03cc150ed77_9366%2FBalon_League_Boxed_UEFA_Champions_League_26-27_Blanco_KE9771_01_00_standard.jpg&feedId=95013&k=1a6c6430a93fd77b5406b8ed1ec0199ee07554c6",
+    "url": "https://www.awin1.com/pclick.php?p=41106527071&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6bbffb591a864deeb91ddc8b031cbe5f_9366%2FBalon_Conext_25_League_Blanco_JH1272_01_00_standard.jpg&feedId=95013&k=e9218711c6f453d4ddf36aef524aec86d366e513",
     "sizes": [
      "5"
     ]
    }
   ],
   "eans": [
-   "4069994613562"
+   "4068801114131"
   ]
  },
  {
   "brand": "Adidas",
-  "model": "adidas WC Hist Set Mex - Blanco",
+  "model": "Balón adidas Starlancer Club - Blanco",
   "colour": "Blanco",
   "offers": [
    {
     "store": "AdidasMX",
-    "price": 10499.0,
+    "price": 349.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46620166131&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc65518a77bcc4dd8ba87573a377dec3a_9366%2FWC_HIST_SET_MEX_Blanco_KA0007_01_00_standard.jpg&feedId=95013&k=9d945d2120e4f683de897b41109c6909b491b2f8",
+    "url": "https://www.awin1.com/pclick.php?p=41485921882&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe7b29e3afd1e4d40bfa5b95473d2a28c_9366%2FBalon_Starlancer_Club_Blanco_JH3745_01_00_standard.jpg&feedId=95013&k=8086534ba70aca9790dde81d702edb265a78edfc",
     "sizes": [
      "5"
     ]
    }
   ],
   "eans": [
-   "4068816712902"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balón adidas Starlancer Club - Rosa",
-  "colour": "Rosa",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 499.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=38263327191&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F40c56ee073134b0292f8f009b5912abe_9366%2FBalon_Starlancer_Club_Rosa_IP1647_01_standard.jpg&feedId=95013&k=e421cc6bb13c88bbd1bf505a355247911db8a180",
-    "sizes": [
-     "4",
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4067891858567",
-   "4067891858574"
-  ]
- },
- {
-  "brand": "Adidas",
-  "model": "Balón adidas Starlancer Club - Negro",
-  "colour": "Negro",
-  "offers": [
-   {
-    "store": "AdidasMX",
-    "price": 299.0,
-    "shipping": 0,
-    "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46388185120&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fde83974c18ce4c3e86f9e51c5629e9cf_9366%2FBalon_Starlancer_Club_Negro_IP1650_01_standard.jpg&feedId=95013&k=d26269cef9120e065cdef45c40cde9078eb4d405",
-    "sizes": [
-     "5"
-    ]
-   }
-  ],
-  "eans": [
-   "4067889235240"
+   "4067905895441"
   ]
  },
  {
@@ -30437,44 +30638,46 @@
  },
  {
   "brand": "Adidas",
-  "model": "Minibalón adidas DE LA Final DE LA Uefa Champions League - Violeta",
-  "colour": "Violeta",
+  "model": "Balón adidas Starlancer Club - Rosa",
+  "colour": "Rosa",
   "offers": [
    {
     "store": "AdidasMX",
-    "price": 279.0,
+    "price": 499.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=43926382424&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F38fb4095a80a47bfb13c0bad5f5e48f8_9366%2FMINIBALON_DE_LA_FINAL_DE_LA_UEFA_CHAMPIONS_LEAGUE_Violeta_JX9099_01_00_standard.jpg&feedId=95013&k=6ca4324e4ed2047bbb1f832cf8c43dd12ca944ae",
+    "url": "https://www.awin1.com/pclick.php?p=38263327191&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F40c56ee073134b0292f8f009b5912abe_9366%2FBalon_Starlancer_Club_Rosa_IP1647_01_standard.jpg&feedId=95013&k=e421cc6bb13c88bbd1bf505a355247911db8a180",
     "sizes": [
-     "1"
+     "4",
+     "5"
     ]
    }
   ],
   "eans": [
-   "4068815110143"
+   "4067891858567",
+   "4067891858574"
   ]
  },
  {
   "brand": "Adidas",
-  "model": "Balón adidas Trionda Club Visitante Selección Nacional de México - Blanco",
-  "colour": "Blanco",
+  "model": "Balón adidas Starlancer Club - Negro",
+  "colour": "Negro",
   "offers": [
    {
     "store": "AdidasMX",
-    "price": 454.0,
+    "price": 249.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=44828513706&a=3013769&m=79918",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F484617879b4e42dcb585b9ec1d5edc74_9366%2FBalon_Trionda_Club_Visitante_Seleccion_Nacional_de_Mexico_Blanco_JY0308_01_00_standard.jpg&feedId=95013&k=ac83300d87b7be7371fcff1180c4923254c41be7",
+    "url": "https://www.awin1.com/pclick.php?p=46388185120&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fde83974c18ce4c3e86f9e51c5629e9cf_9366%2FBalon_Starlancer_Club_Negro_IP1650_01_standard.jpg&feedId=95013&k=d26269cef9120e065cdef45c40cde9078eb4d405",
     "sizes": [
      "5"
     ]
    }
   ],
   "eans": [
-   "4068815107105"
+   "4067889235240"
   ]
  },
  {
@@ -30533,15 +30736,101 @@
     "price": 494.0,
     "shipping": 0,
     "currency": "MXN",
-    "url": "https://www.awin1.com/pclick.php?p=46682703738&a=3013769&m=79918",
+    "url": "https://www.awin1.com/pclick.php?p=46381355593&a=3013769&m=79918",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F805fd212cb5941f7a9e3d406bcbd0134_9366%2FWC_LGE_MEX_Blanco_JZ5560_01_00_standard.jpg&feedId=95013&k=40e436739018ebb1004ef7d78b70b6da3c9bc20a",
+    "sizes": [
+     "4",
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4068815041256",
+   "4068815041263"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Balón adidas Kings League Pro - Multicolor",
+  "colour": "Multicolor",
+  "offers": [
+   {
+    "store": "AdidasMX",
+    "price": 2799.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=43386114416&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fae3be1538da94bfdad200e2b245799b3_9366%2FBALON_KINGS_LEAGUE_PRO_Multicolor_KE8228_01_00_standard.jpg&feedId=95013&k=d5591bfd929fb292a37dc62e397e9181b3986dde",
     "sizes": [
      "5"
     ]
    }
   ],
   "eans": [
-   "4068815041263"
+   "4068818491904"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Balón adidas Messi Club - Beige",
+  "colour": "Beige",
+  "offers": [
+   {
+    "store": "AdidasMX",
+    "price": 292.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=46388179288&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe52763b3dcf5454c96c334588cd9aafa_9366%2FBalon_Messi_Club_Beige_KE7538_01_00_standard.jpg&feedId=95013&k=fb5665a5be055b51b9915ae91d6a6c124ea3c40b",
+    "sizes": [
+     "5"
+    ]
+   }
+  ],
+  "eans": [
+   "4068818069752"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Minibalón adidas Messi - Beige",
+  "colour": "Beige",
+  "offers": [
+   {
+    "store": "AdidasMX",
+    "price": 179.0,
+    "shipping": 0,
+    "currency": "MXN",
+    "url": "https://www.awin1.com/pclick.php?p=44941649552&a=3013769&m=79918",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa9c144b8b5644db88d7fb9855008dbfc_9366%2FMinibalon_Messi_Beige_KE7540_01_00_standard.jpg&feedId=95013&k=4283bee552f0354963710de08a666a0c4fb771ea",
+    "sizes": [
+     "1"
+    ]
+   }
+  ],
+  "eans": [
+   "4068818208588"
+  ]
+ },
+ {
+  "brand": "Adidas",
+  "model": "Minibalón adidas Local Trionda Colombia - Amarillo",
+  "colour": "Amarillo",
+  "offers": [
+   {
+    "store": "AdidasCO",
+    "price": 79950.0,
+    "shipping": 0,
+    "currency": "COP",
+    "url": "https://www.awin1.com/pclick.php?p=46695218870&a=3013769&m=79924",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1dece62eb23048fd8688384c55679045_9366%2FMinibalon_Local_Trionda_Colombia_Amarillo_KH0298_01_00_standard.jpg&feedId=95017&k=48f4328172c6bfd50d9135770944e834f1f2a105",
+    "sizes": [
+     "1"
+    ]
+   }
+  ],
+  "eans": [
+   "4068814512764"
   ]
  },
  {
@@ -30569,27 +30858,6 @@
  },
  {
   "brand": "Adidas",
-  "model": "Balón adidas Trionda Mini Copa Mundial de la FIFA 26™ - Blanco",
-  "colour": "Blanco",
-  "offers": [
-   {
-    "store": "AdidasCO",
-    "price": 47970.0,
-    "shipping": 0,
-    "currency": "COP",
-    "url": "https://www.awin1.com/pclick.php?p=42666148123&a=3013769&m=79924",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff51412dc4ee44330a1d39fcdbb8613e2_9366%2FBalon_Trionda_Mini_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8034_01_00_standard.jpg&feedId=95017&k=23366292f4e99de4636332d3663dd43e51578c0a",
-    "sizes": [
-     "1"
-    ]
-   }
-  ],
-  "eans": [
-   "4068811947699"
-  ]
- },
- {
-  "brand": "Adidas",
   "model": "Balón adidas Club Local Real Madrid - Blanco",
   "colour": "Blanco",
   "offers": [
@@ -30613,23 +30881,23 @@
  },
  {
   "brand": "Adidas",
-  "model": "Minibalón adidas Local Trionda Colombia - Amarillo",
-  "colour": "Amarillo",
+  "model": "Balón adidas Trionda Mini Copa Mundial de la FIFA 26™ - Blanco",
+  "colour": "Blanco",
   "offers": [
    {
     "store": "AdidasCO",
-    "price": 79950.0,
+    "price": 47970.0,
     "shipping": 0,
     "currency": "COP",
-    "url": "https://www.awin1.com/pclick.php?p=46695218870&a=3013769&m=79924",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1dece62eb23048fd8688384c55679045_9366%2FMinibalon_Local_Trionda_Colombia_Amarillo_KH0298_01_00_standard.jpg&feedId=95017&k=48f4328172c6bfd50d9135770944e834f1f2a105",
+    "url": "https://www.awin1.com/pclick.php?p=42666148123&a=3013769&m=79924",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff51412dc4ee44330a1d39fcdbb8613e2_9366%2FBalon_Trionda_Mini_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8034_01_00_standard.jpg&feedId=95017&k=23366292f4e99de4636332d3663dd43e51578c0a",
     "sizes": [
      "1"
     ]
    }
   ],
   "eans": [
-   "4068814512764"
+   "4068811947699"
   ]
  },
  {
@@ -30768,20 +31036,7 @@
     "url": "https://www.awin1.com/pclick.php?p=42124683556&a=3013769&m=118941",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Asportsafeuk.com%2Fwp-content%2Fuploads%2F2025%2F02%2F5B01790C60Y1_MTbGsr1LwU-scaled-1.jpg&feedId=109102&k=d0b644cefe9ebceca81c7a37565333334fb94581",
     "sizes": [
-     "4",
-     "5"
-    ],
-    "sizePrices": [
-     {
-      "size": "4",
-      "price": 18.49,
-      "url": "https://www.awin1.com/pclick.php?p=42124683556&a=3013769&m=118941"
-     },
-     {
-      "size": "5",
-      "price": 18.49,
-      "url": "https://www.awin1.com/pclick.php?p=42124683554&a=3013769&m=118941"
-     }
+     "4"
     ]
    }
   ],

@@ -2739,7 +2739,7 @@
    {
     "store": "FootStoreFR",
     "price": 8.52,
-    "priceMax": 15.0,
+    "priceMax": 14.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335302-chasuble-uhlsport-training-bib-cyan",
@@ -2756,7 +2756,7 @@
      },
      {
       "size": "XL/2XL",
-      "price": 15.0,
+      "price": 14.0,
       "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100335302-chasuble-uhlsport-training-bib-cyan"
      }
     ]
@@ -4658,6 +4658,37 @@
   ]
  },
  {
+  "brand": "Adidas",
+  "model": "Bomba de balones Adidas - Negro",
+  "colour": "Negro",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 12.81,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=38743170302&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fc%2Fz%2Fcz9556_photo_front_-_2000x2000.jpg&feedId=89032&k=76c54eb631b58deccedce0a68ebe30a293646538",
+    "sizes": []
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 12.2,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcz9556-pompe-a-ballons-adidas-noir-blanc-rouge-solaire-tu",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/c/z/cz9556_photo_front_-_2000x2000.webp",
+    "sizes": [
+     "TU"
+    ]
+   }
+  ],
+  "type": "infladores",
+  "eans": [
+   "4060513762860"
+  ]
+ },
+ {
   "brand": "Errea",
   "model": "Chaleco Errea Bib - Naranja",
   "colour": "Naranja",
@@ -4697,6 +4728,11 @@
      {
       "size": "TU",
       "price": 11.15,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa980000008-chasuble-errea-bib-bleu-royal-tu"
+     },
+     {
+      "size": "TU",
+      "price": 11.15,
       "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa980000331-chasuble-errea-bib-jaune-fluo-tu"
      },
      {
@@ -4730,6 +4766,7 @@
   ],
   "type": "petos",
   "eans": [
+   "8033912090502",
    "8033912090519",
    "8033912090526",
    "8033912090533",
@@ -4867,6 +4904,39 @@
   "type": "escaleras",
   "eans": [
    "4043523937152"
+  ]
+ },
+ {
+  "brand": "Errea",
+  "model": "Casulla de mujer Errea smith - Azul",
+  "colour": "Azul",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 33.0,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=42529023247&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Ab2c.spacefoot.com%2Fmedia%2Fcatalog%2Fproduct%2Ff%2Fm%2Ffm770s15270_1.jpg&feedId=89032&k=adf1398ec0194aa2383905959b770795d472389c",
+    "sizes": [
+     "S"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 33.0,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffm770s15270-chasuble-femme-errea-smith-bleu-blanc",
+    "imageUrl": "https://b2c.spacefoot.com/media/catalog/product/f/m/fm770s15270_1.jpg",
+    "sizes": [
+     "S"
+    ]
+   }
+  ],
+  "type": "petos",
+  "eans": [
+   "8051976307756"
   ]
  },
  {
@@ -5607,7 +5677,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 148.0,
+    "price": 146.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=37923802469&a=3013769&m=65912",
@@ -5904,7 +5974,7 @@
    {
     "store": "FootStoreFR",
     "price": 9.34,
-    "priceMax": 15.0,
+    "priceMax": 14.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-6057-chasuble-hummel-training-fundamental-vert-fluo",
@@ -5921,7 +5991,7 @@
      },
      {
       "size": "XL",
-      "price": 15.0,
+      "price": 14.0,
       "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F005002-6057-chasuble-hummel-training-fundamental-vert-fluo"
      }
     ]
@@ -6629,6 +6699,8 @@
      "S",
      "M",
      "L",
+     "XL",
+     "2XL",
      "3XL",
      "4XL"
     ],
@@ -6647,6 +6719,16 @@
       "size": "L",
       "price": 23.79,
       "url": "https://www.awin1.com/pclick.php?p=44809652133&a=3013769&m=65912"
+     },
+     {
+      "size": "XL",
+      "price": 23.79,
+      "url": "https://www.awin1.com/pclick.php?p=42529143852&a=3013769&m=65912"
+     },
+     {
+      "size": "2XL",
+      "price": 23.79,
+      "url": "https://www.awin1.com/pclick.php?p=46353976860&a=3013769&m=65912"
      },
      {
       "size": "3XL",
@@ -6683,6 +6765,8 @@
      "S",
      "M",
      "L",
+     "XL",
+     "2XL",
      "3XL",
      "4XL"
     ],
@@ -6699,6 +6783,16 @@
      },
      {
       "size": "L",
+      "price": 23.03,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffm910s00020-chasuble-errea-darrell-rouge"
+     },
+     {
+      "size": "XL",
+      "price": 23.03,
+      "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffm910s00020-chasuble-errea-darrell-rouge"
+     },
+     {
+      "size": "2XL",
       "price": 23.03,
       "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffm910s00020-chasuble-errea-darrell-rouge"
      },
@@ -6731,6 +6825,8 @@
    "8051976732305",
    "8051976732312",
    "8051976732329",
+   "8051976732336",
+   "8051976732343",
    "8051976732350",
    "8051976732367"
   ]
@@ -9425,7 +9521,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 30.0,
+    "price": 29.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=41104833091&a=3013769&m=65912",
@@ -9749,7 +9845,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 19.0,
+    "price": 18.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=37923903651&a=3013769&m=65912",
@@ -18204,7 +18300,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 18.0,
+    "price": 17.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100321802-chasuble-reversible-uhlsport-training-orange-vert",
@@ -19023,7 +19119,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 133.0,
+    "price": 134.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=43362467416&a=3013769&m=65912",
@@ -21097,7 +21193,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 19.0,
+    "price": 18.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100123001-materiel-d-entrainement-uhlsport-pole-jaune-fluo-tu",
@@ -21466,6 +21562,39 @@
   "type": "tactica",
   "eans": [
    "8435407155695"
+  ]
+ },
+ {
+  "brand": "Softee",
+  "model": "Cono de entrenamiento con soporte para pértiga + aro de base cuadrada Softee - Rojo",
+  "colour": "Rojo",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 10.72,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=46797465008&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F4%2F24184.003.500.jpg&feedId=89032&k=fc7b878e9380a855c95b5ba29fec9b18f4b79803",
+    "sizes": [
+     "50 cm"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 10.7,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F24184-003-500-cone-d-entrainement-avec-support-pour-piquet-cerceau-base-carree-softee-rojo-50-cm",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/2/4/24184.003.500.webp",
+    "sizes": [
+     "50 cm"
+    ]
+   }
+  ],
+  "type": "conos",
+  "eans": [
+   "8435585032863"
   ]
  },
  {
@@ -27847,6 +27976,37 @@
   "type": "silbatos",
   "eans": [
    "3701323421820"
+  ]
+ },
+ {
+  "brand": "Sporti",
+  "model": "Red de repuesto para portería mini de aluminio Sporti 064013 - Verde",
+  "colour": "Verde",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 29.77,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=42529519842&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fp%2Fsporti_064013f_vert_1.jpg&feedId=89032&k=2bfa627145d8f4f84327f7a7347736a1939fe7b4",
+    "sizes": []
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 28.97,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F064013f-filet-de-rechange-pour-mini-but-auto-leste-aluminium-sporti-064013-vert-tu",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/s/p/sporti_064013f_vert_1.webp",
+    "sizes": [
+     "TU"
+    ]
+   }
+  ],
+  "type": "redes",
+  "eans": [
+   "3701323422094"
   ]
  },
  {
@@ -35302,6 +35462,39 @@
  },
  {
   "brand": "HMS",
+  "model": "Banda de resistencia HMS GU05 - Azul",
+  "colour": "Azul",
+  "offers": [
+   {
+    "store": "FootStoreES",
+    "price": 29.0,
+    "shipping": 9.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/pclick.php?p=42529781875&a=3013769&m=65912",
+    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fm%2Fhms_17-33-025_blue_1.jpg&feedId=89032&k=f8b8b4bc9a6234c9b7bd8381304a485f224f6046",
+    "sizes": [
+     "64x2080x4.5 mm"
+    ]
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 29.0,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-33-025-bande-de-resistance-hms-gu05-blue-64x2080x4-5-mm",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/h/m/hms_17-33-025_blue_1.webp",
+    "sizes": [
+     "64x2080x4.5 mm"
+    ]
+   }
+  ],
+  "type": "elasticos",
+  "eans": [
+   "5907695501216"
+  ]
+ },
+ {
+  "brand": "HMS",
   "model": "Banda de resistencia HMS GU05 - Verde",
   "colour": "Verde",
   "offers": [
@@ -35713,7 +35906,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 43.0,
+    "price": 44.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=42529782000&a=3013769&m=65912",
@@ -35722,7 +35915,7 @@
    },
    {
     "store": "FootStoreFR",
-    "price": 42.0,
+    "price": 43.0,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-562-cerceau-avec-poids-et-compteur-hms-hhw06-black-tu",
@@ -36378,7 +36571,7 @@
   "offers": [
    {
     "store": "FootStoreES",
-    "price": 61.0,
+    "price": 62.0,
     "shipping": 9.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/pclick.php?p=46584832739&a=3013769&m=65912",
@@ -40164,39 +40357,6 @@
   ]
  },
  {
-  "brand": "Blockx",
-  "model": "Conjunto básico de espuma en una cesta de PE Blockx (x20) - Multicolor",
-  "colour": "Multicolor",
-  "offers": [
-   {
-    "store": "FootStoreES",
-    "price": 343.35,
-    "shipping": 9.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/pclick.php?p=44552705111&a=3013769&m=65912",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fb%2Fl%2Fblockx_l3216_multicolore_1.jpg&feedId=89032&k=19aad1da394276786bef69ea0575b28eaece8132",
-    "sizes": [
-     "49x8.2x15 cm"
-    ]
-   },
-   {
-    "store": "FootStoreFR",
-    "price": 340.0,
-    "shipping": 7.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl3216-ensemble-de-base-en-mousse-dans-un-panier-pe-blockx-x20-multicolore-49x8-2x15-cm",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/b/l/blockx_l3216_multicolore_1.webp",
-    "sizes": [
-     "49x8.2x15 cm"
-    ]
-   }
-  ],
-  "type": "material",
-  "eans": [
-   "706398691812"
-  ]
- },
- {
   "brand": "Handmaster Plus",
   "model": "Entrenador manual para manos Handmaster Plus - Rojo",
   "colour": "Rojo",
@@ -42237,39 +42397,6 @@
  },
  {
   "brand": "HMS",
-  "model": "Aro de gimnasia HMS HHW01 - Verde",
-  "colour": "Verde",
-  "offers": [
-   {
-    "store": "FootStoreES",
-    "price": 35.0,
-    "shipping": 9.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/pclick.php?p=46647273717&a=3013769&m=65912",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fm%2Fhms_17-44-518_green_3.jpg&feedId=89032&k=814a05ed3203ec928ca459ee55cf90b95a8943cd",
-    "sizes": [
-     "100 cm"
-    ]
-   },
-   {
-    "store": "FootStoreFR",
-    "price": 35.0,
-    "shipping": 7.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-610-cerceau-de-gymnsatique-hms-hhw01-vert-100-cm",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/h/m/hms_17-44-518_green_3.webp",
-    "sizes": [
-     "100 cm"
-    ]
-   }
-  ],
-  "type": "aros",
-  "eans": [
-   "5907695552782"
-  ]
- },
- {
-  "brand": "HMS",
   "model": "Aro de gimnasia HMS HHW02 - Rosa",
   "colour": "Rosa",
   "offers": [
@@ -43720,37 +43847,6 @@
   ]
  },
  {
-  "brand": "Thera-Band",
-  "model": "Balón de lastre suave accesorio de entrenamiento de musculación Thera-Band - Amarillo",
-  "colour": "Amarillo",
-  "offers": [
-   {
-    "store": "FootStoreES",
-    "price": 30.46,
-    "shipping": 9.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/pclick.php?p=42761970749&a=3013769&m=65912",
-    "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fh%2Fthera-band_g5611_yellow_1.jpg&feedId=89032&k=3b94b7fe981e631f0ed3b8c7e6015f1cfe47c5b9",
-    "sizes": []
-   },
-   {
-    "store": "FootStoreFR",
-    "price": 29.71,
-    "shipping": 7.99,
-    "currency": "EUR",
-    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg5611-materiel-d-entrainement-accessoire-de-musculation-ballon-de-lestage-souple-thera-band-yellow-tu",
-    "imageUrl": "https://cdn.blazimg.com/1800/product/t/h/thera-band_g5611_yellow_1.webp",
-    "sizes": [
-     "TU"
-    ]
-   }
-  ],
-  "type": "material",
-  "eans": [
-   "4260071631107"
-  ]
- },
- {
   "brand": "Kuebler Sport",
   "model": "Accesorio para porterías de fútbol Kuebler Sport - Plateado",
   "colour": "Plateado",
@@ -44484,6 +44580,17 @@
     "url": "https://www.awin1.com/pclick.php?p=43829773168&a=3013769&m=65912",
     "imageUrl": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-n0001484-189-whiblawhi-1.jpg&feedId=89032&k=dc39330ec48f252a5a671043fcfe1d00739eec0d",
     "sizes": []
+   },
+   {
+    "store": "FootStoreFR",
+    "price": 21.0,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fn0001484-189-pompe-a-ballon-nike-essential-international-whiblawhi-tu",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/n/i/nike-n0001484-189-whiblawhi-1.webp",
+    "sizes": [
+     "TU"
+    ]
    }
   ],
   "type": "infladores",
@@ -51788,6 +51895,28 @@
   ]
  },
  {
+  "brand": "HMS",
+  "model": "Cerceau de gymnsatique HMS HHW01 - Vert",
+  "colour": "Vert",
+  "offers": [
+   {
+    "store": "FootStoreFR",
+    "price": 35.0,
+    "shipping": 7.99,
+    "currency": "EUR",
+    "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F17-44-610-cerceau-de-gymnsatique-hms-hhw01-vert-100-cm",
+    "imageUrl": "https://cdn.blazimg.com/1800/product/h/m/hms_17-44-518_green_3.webp",
+    "sizes": [
+     "100 cm"
+    ]
+   }
+  ],
+  "type": "aros",
+  "eans": [
+   "5907695552782"
+  ]
+ },
+ {
   "brand": "Softee",
   "model": "Matériel d'entraînement pompons en silicone Softee (x3) - Multicolore",
   "colour": "Multicolore",
@@ -51882,7 +52011,7 @@
   "offers": [
    {
     "store": "FootStoreFR",
-    "price": 29.95,
+    "price": 28.75,
     "shipping": 7.99,
     "currency": "EUR",
     "url": "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsh-bands-bandes-de-resistance-sportshero-sans-latex-x5-violet-120-cm",

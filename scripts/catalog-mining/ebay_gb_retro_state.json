@@ -2768,6 +2768,7 @@
 "liverpool-retro-200607-third",
 "liverpool-retro-200608-away",
 "liverpool-retro-200608-home",
+"liverpool-retro-200708-away",
 "liverpool-retro-200708-home",
 "liverpool-retro-200910-away",
 "liverpool-retro-200910-third",
@@ -2919,6 +2920,7 @@
 "manutd-retro-201718-away",
 "manutd-retro-201718-third",
 "manutd-retro-201819-home",
+"manutd-retro-201819-third",
 "manutd-retro-201920-away",
 "manutd-retro-201920-home",
 "manutd-retro-201920-third",
@@ -24036,6 +24038,30 @@
 "image": "https://i.ebayimg.com/images/g/eIgAAeSwhEBqXjJE/s-l1600.jpg",
 "sizes": [
 "S"
+],
+"shipping": 2.94
+},
+"liverpool-retro-200708-away": {
+"title": "Liverpool LFC Adidas 2007-08 white away shirt size L",
+"price": 16.15,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/326481981861?_skw=Liverpool+2007+away+shirt&hash=item4c03d7b1a5%3Ag%3AUX4AAOSwGZJn0HIx&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|326481981861|0",
+"image": "https://i.ebayimg.com/images/g/UX4AAOSwGZJn0HIx/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 2.94
+},
+"manutd-retro-201819-third": {
+"title": "2018-19 Manchester United third football shirt - Large",
+"price": 25.66,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/267736435323?_skw=Manchester+United+2018+third+shirt&hash=item3e5655ca7b%3Ag%3Ao3QAAeSwqrFqYfon&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|267736435323|0",
+"image": "https://i.ebayimg.com/images/g/o3QAAeSwqrFqYfon/s-l1600.jpg",
+"sizes": [
+"L"
 ],
 "shipping": 2.94
 }

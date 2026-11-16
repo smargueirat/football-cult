@@ -44,81 +44,6 @@ export interface TicketProduct {
 
 const minedTicketProductsChunk1: TicketProduct[] = [
   {
-    id: "latvia-vs-armenia-2026-11-15",
-    event: "Latvia vs Armenia",
-    venue: "Skonto Stadium",
-    city: "Riga",
-    date: "2026-11-15",
-    time: "16:00:00",
-    competition: "UEFA Nations League",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F804%2Fthumbnail.jpg&feedId=117951&k=a953f33c859b4db0e64b858f333e60fb93608189",
-    offers: [
-      { store: "FootballTicketNetUK", price: 20.86, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46408139716&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 27.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46408138750&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 32.07, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46409562103&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "finland-vs-san-marino-2026-11-15",
-    event: "Finland vs San Marino",
-    venue: "Telia 5G Areena",
-    city: "Helsinki",
-    date: "2026-11-15",
-    time: "19:00:00",
-    competition: "UEFA Nations League",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F225%2Fthumbnail.jpg&feedId=117951&k=cd857d66911e4e54a31292345b4fec1f69e89226",
-    offers: [
-      { store: "FootballTicketNetUK", price: 49.22, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46255146426&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 65.04, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46255146817&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 72.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46258141828&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "belgium-vs-italy-2026-11-15",
-    event: "Belgium vs Italy",
-    venue: "King Baudouin Stadium",
-    city: "Brussels",
-    date: "2026-11-15",
-    time: "20:45:00",
-    competition: "UEFA Nations League",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F243%2Fthumbnail.jpg&feedId=117951&k=591423ae2f5fd2cc549758041d7fad4952c5ae1d",
-    offers: [
-      { store: "FootballTicketNetUK", price: 83.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391755&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 110.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227232&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 77.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592925467&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "france-vs-turkey-2026-11-15",
-    event: "France vs Turkey",
-    venue: "Matmut Atlantique",
-    city: "Bordeaux",
-    date: "2026-11-15",
-    time: "20:45:00",
-    competition: "UEFA Nations League",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F744%2Fthumbnail.jpg&feedId=117951&k=9cc6127954614e153d65a71f4be13fb3b9b765cd",
-    offers: [
-      { store: "FootballTicketNetUK", price: 62.57, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391756&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 82.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227233&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 110.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537646&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "spain-vs-england-2026-11-15",
-    event: "Spain vs England",
-    venue: "Wanda Metropolitano",
-    city: "Madrid",
-    date: "2026-11-15",
-    time: "20:45:00",
-    competition: "UEFA Nations League",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1230%2Fthumbnail.jpg&feedId=117951&k=5bd5ec2fcd7357f9b352ae72fe07c16eeb96d832",
-    offers: [
-      { store: "FootballTicketNetUK", price: 82.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391757&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 109.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227234&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 109.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537660&a=3013769&m=102705" },
-    ],
-  },
-  {
     id: "faroe-islands-vs-moldova-2026-11-16",
     event: "Faroe Islands vs Moldova",
     venue: "Torsvollur",
@@ -128,9 +53,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F694%2Fthumbnail.jpg&feedId=117951&k=52a9a20b940f657bd7a346644bc375a876a960d4",
     offers: [
-      { store: "FootballTicketNetUK", price: 12.51, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46255146427&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 16.54, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46255146818&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 20.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46258141840&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 20.86, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46255146427&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 27.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46255146818&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 32.07, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46258141840&a=3013769&m=102705" },
     ],
   },
   {
@@ -143,9 +68,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F693%2Fthumbnail.jpg&feedId=117951&k=a3722408039f0fcddf493bf926bf0fad59add436",
     offers: [
-      { store: "FootballTicketNetUK", price: 45.89, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46216625719&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 60.63, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46216693498&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 67.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252813616&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 41.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46216625719&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 55.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46216693498&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 61.49, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252813616&a=3013769&m=102705" },
     ],
   },
   {
@@ -204,7 +129,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391759&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227236&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 38.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537666&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 41.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537666&a=3013769&m=102705" },
     ],
   },
   {
@@ -232,9 +157,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F849%2Fthumbnail.jpg&feedId=117951&k=e64cae627ae6372f1b79d108892ccf1b00630609",
     offers: [
-      { store: "FootballTicketNetUK", price: 29.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46556158859&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 38.58, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46556158842&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 43.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46565187980&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 25.03, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46556158859&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 33.07, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46556158842&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 37.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46565187980&a=3013769&m=102705" },
     ],
   },
   {
@@ -246,9 +171,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F324%2Fthumbnail.jpg&feedId=117951&k=03aadf2491c3cac6e1735ea5c1be37a71e01c1d7",
     offers: [
-      { store: "FootballTicketNetUK", price: 50.06, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46343282162&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 66.14, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46343280597&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 24.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46343283135&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 37.58, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46343282162&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 49.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46343280597&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 19.82, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46343283135&a=3013769&m=102705" },
     ],
   },
   {
@@ -261,9 +186,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F4647%2Fthumbnail.jpg&feedId=117951&k=a566d812682e2b136de262c447af917e74ac40e4",
     offers: [
-      { store: "FootballTicketNetUK", price: 21.03, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46134726387&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 27.79, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46134726393&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 25.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46701400004&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 19.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46134726387&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 26.41, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46134726393&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 21.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46701400004&a=3013769&m=102705" },
     ],
   },
   {
@@ -276,8 +201,8 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F241%2Fthumbnail.jpg&feedId=117951&k=c27aa03c2dc15afe33741988a609fe60491e41b3",
     offers: [
-      { store: "FootballTicketNetUK", price: 57.62, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46268063621&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 76.14, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46268063241&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 116.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46268063621&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 154.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46268063241&a=3013769&m=109004" },
     ],
   },
   {
@@ -290,22 +215,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F27%2Fthumbnail.jpg&feedId=117951&k=480c50f1bd694f1db067ae77edf1453d28f6f5bd",
     offers: [
-      { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391760&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227237&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 121.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537671&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "bosnia-and-herzegovina-vs-romania-2026-11-17",
-    event: "Bosnia and Herzegovina vs Romania",
-    venue: "Bilino Polje Stadium",
-    date: "2026-11-17",
-    time: "20:45:00",
-    competition: "UEFA Nations League",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F805%2Fthumbnail.jpg&feedId=117951&k=d4aa9626f96d84cfde1257a10e8422923dd80dda",
-    offers: [
-      { store: "FootballTicketNetUK", price: 83.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46691094565&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 110.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46691094556&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 90.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391760&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 118.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227237&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 110.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537671&a=3013769&m=102705" },
     ],
   },
   {
@@ -318,9 +230,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F761%2Fthumbnail.jpg&feedId=117951&k=1ef8f0bae612f15d5cc99788b58eb06496d32513",
     offers: [
-      { store: "FootballTicketNetUK", price: 46.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46121478793&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 61.89, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46121478818&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 44.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537672&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 50.1, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46121478793&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 66.2, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46121478818&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 48.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537672&a=3013769&m=102705" },
     ],
   },
   {
@@ -333,9 +245,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Nations League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F520%2Fthumbnail.jpg&feedId=117951&k=79f70e1428e52faa32ccf750c3929330c6794f77",
     offers: [
-      { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391761&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227238&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537674&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 33.37, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391761&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 44.09, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227238&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 49.72, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939537674&a=3013769&m=102705" },
     ],
   },
   {
@@ -350,7 +262,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 50.06, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46338276066&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 66.14, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46338252526&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 43.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46343283136&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 41.13, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46343283136&a=3013769&m=102705" },
     ],
   },
   {
@@ -420,9 +332,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "LaLiga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F49%2Fthumbnail.jpg&feedId=117951&k=79f8845fd742c5f78ee97257868e7d89e433a8d9",
     offers: [
-      { store: "FootballTicketNetUK", price: 75.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391823&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 100.07, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227300&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 71.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963673&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 81.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391823&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 108.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227300&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 75.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963673&a=3013769&m=102705" },
     ],
   },
   {
@@ -435,9 +347,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F4%2Fthumbnail.jpg&feedId=117951&k=00694b77108d0b40db161a8715b1c6291b76baa0",
     offers: [
-      { store: "FootballTicketNetUK", price: 39.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391768&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 51.53, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227245&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953693&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 34.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391768&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 44.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227245&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 61.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953693&a=3013769&m=102705" },
     ],
   },
   {
@@ -452,7 +364,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 87.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391776&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 115.93, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227253&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 123.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953371&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 123.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953371&a=3013769&m=102705" },
     ],
   },
   {
@@ -467,7 +379,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 32.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391777&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 43.0, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227254&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 45.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953452&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 45.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953452&a=3013769&m=102705" },
     ],
   },
   {
@@ -482,7 +394,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 116.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391824&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 154.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227301&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 75.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963653&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 75.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963653&a=3013769&m=102705" },
     ],
   },
   {
@@ -497,7 +409,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 58.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391769&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 76.64, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227246&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 76.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952682&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 76.58, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952682&a=3013769&m=102705" },
     ],
   },
   {
@@ -512,7 +424,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391779&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227256&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952739&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952739&a=3013769&m=102705" },
     ],
   },
   {
@@ -527,7 +439,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 85.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391771&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227248&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 119.93, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952732&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 120.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952732&a=3013769&m=102705" },
     ],
   },
   {
@@ -557,7 +469,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 129.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391773&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 171.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227250&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 197.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953615&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 175.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953615&a=3013769&m=102705" },
     ],
   },
   {
@@ -587,7 +499,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 85.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46088805313&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46088805296&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 119.93, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814429&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 120.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814429&a=3013769&m=102705" },
     ],
   },
   {
@@ -601,7 +513,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391789&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.9, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227266&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 129.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956007&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 129.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956007&a=3013769&m=102705" },
     ],
   },
   {
@@ -616,7 +528,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391790&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227267&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 59.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956001&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956001&a=3013769&m=102705" },
     ],
   },
   {
@@ -631,7 +543,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391791&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227268&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568881&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568881&a=3013769&m=102705" },
     ],
   },
   {
@@ -646,7 +558,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528524&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528579&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356386&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356386&a=3013769&m=102705" },
     ],
   },
   {
@@ -676,7 +588,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923439&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 117.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923352&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 125.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814428&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 125.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814428&a=3013769&m=102705" },
     ],
   },
   {
@@ -691,7 +603,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706496&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706523&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814431&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814431&a=3013769&m=102705" },
     ],
   },
   {
@@ -704,9 +616,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1725%2Fthumbnail.jpg&feedId=117951&k=fa115ccd568936a582ff8866e7cb08f6316a618a",
     offers: [
-      { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391775&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227252&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.57, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953683&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 72.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391775&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 95.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227252&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 101.72, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953683&a=3013769&m=102705" },
     ],
   },
   {
@@ -721,7 +633,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 20.6, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391781&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 27.22, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227258&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 29.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953438&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 29.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953438&a=3013769&m=102705" },
     ],
   },
   {
@@ -736,7 +648,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391780&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227257&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953717&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 97.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953717&a=3013769&m=102705" },
     ],
   },
   {
@@ -851,9 +763,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F10%2Fthumbnail.jpg&feedId=117951&k=e9f53f7559707c4172caf2f26e9a5d16a240d514",
     offers: [
-      { store: "FootballTicketNetUK", price: 78.96, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391774&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 104.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227251&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953771&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 78.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391774&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 103.06, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227251&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 105.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953771&a=3013769&m=102705" },
     ],
   },
   {
@@ -908,9 +820,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 98.21, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391787&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 129.77, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227264&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 66.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954736&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 90.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391787&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 120.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227264&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 74.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954736&a=3013769&m=102705" },
     ],
   },
   {
@@ -1085,9 +997,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "LaLiga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F51%2Fthumbnail.jpg&feedId=117951&k=51f4dfc6eafa924060a25a3a66a3e4d6334e82ad",
     offers: [
-      { store: "FootballTicketNetUK", price: 110.13, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391820&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 145.51, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227297&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 158.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963578&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 110.96, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391820&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 146.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227297&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 159.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963578&a=3013769&m=102705" },
     ],
   },
   {
@@ -1102,7 +1014,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 64.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275485&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 84.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275400&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814430&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 90.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814430&a=3013769&m=102705" },
     ],
   },
   {
@@ -1115,8 +1027,8 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "Eredivisie",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F143%2Fthumbnail.jpg&feedId=117951&k=c017c4f092c6695a2b0d6a79324b849578da7425",
     offers: [
-      { store: "FootballTicketNetUK", price: 65.14, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391806&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 86.07, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227283&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 58.46, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391806&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 77.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227283&a=3013769&m=109004" },
     ],
   },
   {
@@ -1174,7 +1086,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 53.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391808&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 70.55, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227285&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 40.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954562&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 40.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954562&a=3013769&m=102705" },
     ],
   },
   {
@@ -1202,8 +1114,8 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F6%2Fthumbnail.jpg&feedId=117951&k=25d295bcc31a9c2d5bebffe79afe8718df462f99",
     offers: [
-      { store: "FootballTicketNetUK", price: 341.5, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391770&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 451.22, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227247&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 350.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391770&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 462.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227247&a=3013769&m=109004" },
     ],
   },
   {
@@ -1221,18 +1133,16 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     ],
   },
   {
-    id: "sv-werder-bremen-vs-hamburger-sv-2026-11-22",
-    event: "SV Werder Bremen vs Hamburger SV",
-    venue: "Weserstadion",
-    city: "Bremen",
+    id: "panathinaikos-vs-ofi-2026-11-22",
+    event: "Panathinaikos vs OFI",
+    venue: "Olympic Stadium Athens",
     date: "2026-11-22",
     time: "17:30:00",
-    competition: "Bundesliga",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F137%2Fthumbnail.jpg&feedId=117951&k=f50e257bc29985159f72ae61b1141701db79e7bc",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F209%2Fthumbnail.jpg&feedId=117951&k=6c63a4747d732184f477b21e104f2613eb179c28",
     offers: [
-      { store: "FootballTicketNetUK", price: 228.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391809&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 301.77, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227286&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 240.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954711&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46803127986&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46803127843&a=3013769&m=109004" },
     ],
   },
   {
@@ -1245,8 +1155,8 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "Serie A",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F101%2Fthumbnail.jpg&feedId=117951&k=7e176c0a3c243654d7947d8787a9e4b159cdf605",
     offers: [
-      { store: "FootballTicketNetUK", price: 15.81, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391819&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 20.89, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227296&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 15.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391819&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 20.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227296&a=3013769&m=109004" },
       { store: "Gigsberg", price: 16.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957807&a=3013769&m=102705" },
     ],
   },
@@ -1274,8 +1184,8 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "LaLiga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F59%2Fthumbnail.jpg&feedId=117951&k=f47b8360e5b62ba6304820a031347d25eb217533",
     offers: [
-      { store: "FootballTicketNetUK", price: 71.12, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391826&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 93.98, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227303&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 68.41, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391826&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 90.39, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227303&a=3013769&m=109004" },
       { store: "Gigsberg", price: 60.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963735&a=3013769&m=102705" },
     ],
   },
@@ -1289,9 +1199,23 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "LaLiga Hypermotion",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F80%2Fthumbnail.jpg&feedId=117951&k=dd4c73484d8a6e90c8f9a19a474b6a149f2d118d",
     offers: [
-      { store: "FootballTicketNetUK", price: 41.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391829&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 55.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227306&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 27.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963921&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 48.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391829&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 63.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227306&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 31.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963921&a=3013769&m=102705" },
+    ],
+  },
+  {
+    id: "olympiacos-vs-iraklis-2026-11-22",
+    event: "Olympiacos vs Iraklis",
+    venue: "Karaiskakis Stadium",
+    city: "Piraeus",
+    date: "2026-11-22",
+    time: "19:00:00",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F208%2Fthumbnail.jpg&feedId=117951&k=b510264b1be995ebdfe3aa735a24fc02cbcc4ab3",
+    offers: [
+      { store: "FootballTicketNetUK", price: 29.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391813&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 38.58, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227290&a=3013769&m=109004" },
     ],
   },
   {
@@ -1347,9 +1271,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F3440%2Fthumbnail.jpg&feedId=117951&k=897331790e6873589d122e2cfa29e708b2396802",
     offers: [
-      { store: "FootballTicketNetUK", price: 76.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391772&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 100.42, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227249&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 107.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952779&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 80.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391772&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 105.7, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227249&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 113.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952779&a=3013769&m=102705" },
     ],
   },
   {
@@ -1409,7 +1333,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391834&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227311&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953423&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 97.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953423&a=3013769&m=102705" },
     ],
   },
   {
@@ -1438,7 +1362,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528544&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528663&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356399&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356399&a=3013769&m=102705" },
     ],
   },
   {
@@ -1453,7 +1377,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 115.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391833&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 151.95, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227310&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 162.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953360&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 162.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953360&a=3013769&m=102705" },
     ],
   },
   {
@@ -1468,7 +1392,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923440&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 117.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923353&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 125.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814842&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 125.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252814842&a=3013769&m=102705" },
     ],
   },
   {
@@ -1483,7 +1407,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 138.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391839&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 183.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227316&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 196.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539129&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 196.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539129&a=3013769&m=102705" },
     ],
   },
   {
@@ -1496,9 +1420,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F4%2Fthumbnail.jpg&feedId=117951&k=00694b77108d0b40db161a8715b1c6291b76baa0",
     offers: [
-      { store: "FootballTicketNetUK", price: 46.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391838&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 60.78, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227315&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 67.71, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539134&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 47.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391838&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 63.41, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227315&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 67.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539134&a=3013769&m=102705" },
     ],
   },
   {
@@ -1513,7 +1437,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391586&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226344&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 85.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46575227383&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 86.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46575227383&a=3013769&m=102705" },
     ],
   },
   {
@@ -1526,9 +1450,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F19%2Fthumbnail.jpg&feedId=117951&k=313fa9bc3f25f5525d2b13d11919dbbb301e7617",
     offers: [
-      { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391835&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227312&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953706&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391835&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227312&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953706&a=3013769&m=102705" },
     ],
   },
   {
@@ -1601,8 +1525,8 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F62%2Fthumbnail.jpg&feedId=117951&k=dc0d05447f50e8f463a3401e3e0dd38fd6c31c13",
     offers: [
-      { store: "FootballTicketNetUK", price: 116.79, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391837&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 154.32, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227314&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 135.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391837&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 179.67, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227314&a=3013769&m=109004" },
       { store: "Gigsberg", price: 194.49, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539131&a=3013769&m=102705" },
     ],
   },
@@ -1662,7 +1586,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391847&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227324&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952744&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952744&a=3013769&m=102705" },
     ],
   },
   {
@@ -1677,7 +1601,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391848&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227325&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 80.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952793&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952793&a=3013769&m=102705" },
     ],
   },
   {
@@ -1692,7 +1616,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 61.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391845&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 80.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227322&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 86.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953585&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 86.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953585&a=3013769&m=102705" },
     ],
   },
   {
@@ -1705,9 +1629,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5%2Fthumbnail.jpg&feedId=117951&k=22447c4cc3d7bf3600765f3acb517a6e0f7f67d6",
     offers: [
-      { store: "FootballTicketNetUK", price: 82.6, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391856&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 109.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227333&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 116.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539150&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391856&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227333&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 104.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539150&a=3013769&m=102705" },
     ],
   },
   {
@@ -1722,7 +1646,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 120.31, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391855&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 158.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227332&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 158.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539147&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 135.96, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539147&a=3013769&m=102705" },
     ],
   },
   {
@@ -1765,8 +1689,8 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F101%2Fthumbnail.jpg&feedId=117951&k=7e176c0a3c243654d7947d8787a9e4b159cdf605",
     offers: [
-      { store: "FootballTicketNetUK", price: 22.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391849&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 29.51, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227326&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 20.86, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391849&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 27.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227326&a=3013769&m=109004" },
       { store: "Gigsberg", price: 19.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539155&a=3013769&m=102705" },
     ],
   },
@@ -1827,7 +1751,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 145.66, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46041286095&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 192.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46041286100&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 205.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806740&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 205.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806740&a=3013769&m=102705" },
     ],
   },
   {
@@ -1871,7 +1795,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 62.57, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46638934879&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 82.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46638934998&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 102.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46638936940&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46638936940&a=3013769&m=102705" },
     ],
   },
   {
@@ -1914,9 +1838,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Europa League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F208%2Fthumbnail.jpg&feedId=117951&k=b510264b1be995ebdfe3aa735a24fc02cbcc4ab3",
     offers: [
-      { store: "FootballTicketNetUK", price: 154.34, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391860&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 203.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227337&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 220.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539169&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 229.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391860&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 303.15, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227337&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 326.32, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539169&a=3013769&m=102705" },
     ],
   },
   {
@@ -1929,9 +1853,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Europa League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F32%2Fthumbnail.jpg&feedId=117951&k=8d5e108f3087f6a6ef0ceb585d455bd478ea423f",
     offers: [
-      { store: "FootballTicketNetUK", price: 55.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391862&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 72.67, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227340&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 77.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539168&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 53.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391862&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 71.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227340&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 67.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539168&a=3013769&m=102705" },
     ],
   },
   {
@@ -1976,7 +1900,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 74.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46013117276&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.08, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227344&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 79.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252815158&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 79.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252815158&a=3013769&m=102705" },
     ],
   },
   {
@@ -1991,7 +1915,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 41.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391859&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 55.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227336&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539167&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939539167&a=3013769&m=102705" },
     ],
   },
   {
@@ -2004,8 +1928,8 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Europa League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F888%2Fthumbnail.jpg&feedId=117951&k=264d517b1c0f1f3d2eb7afd8f2f47b1c8ee8aa85",
     offers: [
-      { store: "FootballTicketNetUK", price: 54.94, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46013117275&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 72.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227338&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 54.95, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46013117275&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 72.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227338&a=3013769&m=109004" },
     ],
   },
   {
@@ -2033,9 +1957,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "UEFA Europa League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F130%2Fthumbnail.jpg&feedId=117951&k=011794540cb63927c20c94f332bffa6c82db74c5",
     offers: [
-      { store: "FootballTicketNetUK", price: 49.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46701366278&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 64.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46701366727&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 40.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46262182288&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 45.89, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46701366278&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 60.63, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46701366727&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 40.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46262182288&a=3013769&m=102705" },
     ],
   },
   {
@@ -2050,7 +1974,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391880&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227359&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45672929765&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45672929765&a=3013769&m=102705" },
     ],
   },
   {
@@ -2153,7 +2077,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222729&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222664&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227603&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227603&a=3013769&m=102705" },
     ],
   },
   {
@@ -2212,7 +2136,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391895&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227374&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568870&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568870&a=3013769&m=102705" },
     ],
   },
   {
@@ -2227,7 +2151,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391886&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227365&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952657&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952657&a=3013769&m=102705" },
     ],
   },
   {
@@ -2242,7 +2166,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391885&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227364&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953328&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953328&a=3013769&m=102705" },
     ],
   },
   {
@@ -2257,7 +2181,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391896&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227375&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307705&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307705&a=3013769&m=102705" },
     ],
   },
   {
@@ -2287,7 +2211,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 125.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391879&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 165.16, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227358&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 164.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953520&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 165.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953520&a=3013769&m=102705" },
     ],
   },
   {
@@ -2302,7 +2226,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.93, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391874&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 100.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227353&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 108.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953758&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 108.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953758&a=3013769&m=102705" },
     ],
   },
   {
@@ -2317,7 +2241,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 63.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391883&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 83.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227362&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 88.86, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953381&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 89.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953381&a=3013769&m=102705" },
     ],
   },
   {
@@ -2330,9 +2254,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F18%2Fthumbnail.jpg&feedId=117951&k=fe09c36cb584ec6e99109e0245a2f8a0a017b618",
     offers: [
-      { store: "FootballTicketNetUK", price: 61.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391887&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 81.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227366&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 87.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953393&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 60.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391887&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 80.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227366&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 88.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953393&a=3013769&m=102705" },
     ],
   },
   {
@@ -2347,7 +2271,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391898&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227377&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 85.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956022&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 86.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956022&a=3013769&m=102705" },
     ],
   },
   {
@@ -2361,7 +2285,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391899&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227378&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 59.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568883&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568883&a=3013769&m=102705" },
     ],
   },
   {
@@ -2376,7 +2300,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528527&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528582&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356417&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356417&a=3013769&m=102705" },
     ],
   },
   {
@@ -2391,7 +2315,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391888&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227367&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953441&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953441&a=3013769&m=102705" },
     ],
   },
   {
@@ -2406,7 +2330,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 56.65, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391884&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 74.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227363&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 74.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953745&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 74.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953745&a=3013769&m=102705" },
     ],
   },
   {
@@ -2509,7 +2433,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 90.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391882&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227361&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 126.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953478&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 127.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953478&a=3013769&m=102705" },
     ],
   },
   {
@@ -2524,7 +2448,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391897&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227376&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307702&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307702&a=3013769&m=102705" },
     ],
   },
   {
@@ -2597,7 +2521,7 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 208.57, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391943&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 275.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227422&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.31, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963734&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963734&a=3013769&m=102705" },
     ],
   },
   {
@@ -2654,9 +2578,9 @@ const minedTicketProductsChunk1: TicketProduct[] = [
     competition: "Serie A",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F101%2Fthumbnail.jpg&feedId=117951&k=7e176c0a3c243654d7947d8787a9e4b159cdf605",
     offers: [
-      { store: "FootballTicketNetUK", price: 18.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391930&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 24.26, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227409&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 24.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957789&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 20.77, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391930&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 27.44, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227409&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 29.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957789&a=3013769&m=102705" },
     ],
   },
   {
@@ -2704,9 +2628,6 @@ const minedTicketProductsChunk1: TicketProduct[] = [
       { store: "Gigsberg", price: 17.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958631&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk2: TicketProduct[] = [
   {
     id: "paris-saint-germain-vs-fc-lorient-2026-11-28",
     event: "Paris Saint-Germain vs FC Lorient",
@@ -2777,9 +2698,12 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 45.61, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391935&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 60.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227414&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 43.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957945&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 53.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957945&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk2: TicketProduct[] = [
   {
     id: "valencia-cf-vs-ca-osasuna-2026-11-29",
     event: "Valencia CF vs CA Osasuna",
@@ -2807,7 +2731,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391876&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227355&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45764069713&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45764069713&a=3013769&m=102705" },
     ],
   },
   {
@@ -2820,9 +2744,9 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F32%2Fthumbnail.jpg&feedId=117951&k=8d5e108f3087f6a6ef0ceb585d455bd478ea423f",
     offers: [
-      { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391881&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227360&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 73.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953662&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 62.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391881&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 81.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227360&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 73.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953662&a=3013769&m=102705" },
     ],
   },
   {
@@ -2835,8 +2759,8 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F9%2Fthumbnail.jpg&feedId=117951&k=93a0eb2faaf9a223a463f3d8b02defc8a218683e",
     offers: [
-      { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391877&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227356&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391877&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227356&a=3013769&m=109004" },
     ],
   },
   {
@@ -2851,7 +2775,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 53.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391875&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 70.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227354&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 74.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954356&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 74.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954356&a=3013769&m=102705" },
     ],
   },
   {
@@ -2921,8 +2845,8 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "LaLiga Hypermotion",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F58%2Fthumbnail.jpg&feedId=117951&k=d28167a33265a4384639f614450eb34f1d938e58",
     offers: [
-      { store: "FootballTicketNetUK", price: 24.6, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46067311026&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 32.51, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46067311029&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 24.61, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46067311026&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 32.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46067311029&a=3013769&m=109004" },
       { store: "Gigsberg", price: 16.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252815577&a=3013769&m=102705" },
     ],
   },
@@ -2995,7 +2919,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 41.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391917&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 55.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227396&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 38.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954773&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 38.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954773&a=3013769&m=102705" },
     ],
   },
   {
@@ -3025,7 +2949,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391925&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 29.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227404&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956325&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 34.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956325&a=3013769&m=102705" },
     ],
   },
   {
@@ -3096,7 +3020,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 50.06, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391916&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 66.14, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227395&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 51.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954575&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 40.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954575&a=3013769&m=102705" },
     ],
   },
   {
@@ -3197,8 +3121,8 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "Liga Portugal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5823%2Fthumbnail.jpg&feedId=117951&k=268df4ee5b4d1b04fbd9c2fc6e2f2260964f09c7",
     offers: [
-      { store: "FootballTicketNetUK", price: 24.94, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391948&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 32.95, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227427&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 24.95, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391948&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 32.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227427&a=3013769&m=109004" },
     ],
   },
   {
@@ -3284,7 +3208,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 90.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46088805276&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46088805256&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 126.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252815651&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 127.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252815651&a=3013769&m=102705" },
     ],
   },
   {
@@ -3297,8 +3221,8 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "DFB-Pokal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F123%2Fthumbnail.jpg&feedId=117951&k=9511ef106ba262f83d0309e992c0dba155299b96",
     offers: [
-      { store: "FootballTicketNetUK", price: 70.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46556158871&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 93.8, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46556158844&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 79.26, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46556158871&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 104.72, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46556158844&a=3013769&m=109004" },
     ],
   },
   {
@@ -3372,6 +3296,20 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     ],
   },
   {
+    id: "olympiacos-vs-panathinaikos-2026-12-02",
+    event: "Olympiacos vs Panathinaikos",
+    venue: "Karaiskakis Stadium",
+    city: "Piraeus",
+    date: "2026-12-02",
+    time: "18:00:00",
+    competition: "Greek Cup",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F208%2Fthumbnail.jpg&feedId=117951&k=b510264b1be995ebdfe3aa735a24fc02cbcc4ab3",
+    offers: [
+      { store: "FootballTicketNetUK", price: 70.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46803127850&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 93.7, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46803127838&a=3013769&m=109004" },
+    ],
+  },
+  {
     id: "real-sociedad-vs-real-madrid-2026-12-02",
     event: "Real Sociedad vs Real Madrid",
     venue: "Anoeta Stadium",
@@ -3398,7 +3336,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 80.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391954&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 105.7, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227433&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 108.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953617&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 108.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953617&a=3013769&m=102705" },
     ],
   },
   {
@@ -3413,7 +3351,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 73.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46500526255&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 96.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46500526235&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 102.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252815652&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 103.13, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252815652&a=3013769&m=102705" },
     ],
   },
   {
@@ -3442,7 +3380,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 50.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391949&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 66.07, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227428&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 73.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953697&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 73.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953697&a=3013769&m=102705" },
     ],
   },
   {
@@ -3456,7 +3394,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391957&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227436&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956006&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956006&a=3013769&m=102705" },
     ],
   },
   {
@@ -3471,7 +3409,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391958&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227437&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 108.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660467&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 108.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660467&a=3013769&m=102705" },
     ],
   },
   {
@@ -3486,7 +3424,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391959&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228823&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568892&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568892&a=3013769&m=102705" },
     ],
   },
   {
@@ -3501,7 +3439,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391960&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228824&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956021&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956021&a=3013769&m=102705" },
     ],
   },
   {
@@ -3516,7 +3454,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391961&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228825&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568879&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568879&a=3013769&m=102705" },
     ],
   },
   {
@@ -3545,7 +3483,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 66.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391950&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 87.21, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227429&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952688&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 92.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952688&a=3013769&m=102705" },
     ],
   },
   {
@@ -3560,7 +3498,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 250.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391953&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 330.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227432&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 352.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952755&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 353.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952755&a=3013769&m=102705" },
     ],
   },
   {
@@ -3575,7 +3513,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 86.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391955&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 114.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227434&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 122.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953773&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 122.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953773&a=3013769&m=102705" },
     ],
   },
   {
@@ -3633,7 +3571,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391956&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227435&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953675&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953675&a=3013769&m=102705" },
     ],
   },
   {
@@ -3733,7 +3671,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 73.42, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391981&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 97.01, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228845&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 106.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954675&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 103.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954675&a=3013769&m=102705" },
     ],
   },
   {
@@ -3775,8 +3713,8 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5%2Fthumbnail.jpg&feedId=117951&k=22447c4cc3d7bf3600765f3acb517a6e0f7f67d6",
     offers: [
-      { store: "FootballTicketNetUK", price: 219.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391969&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 289.37, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228833&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 214.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391969&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 283.01, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228833&a=3013769&m=109004" },
     ],
   },
   {
@@ -3791,7 +3729,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528567&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528676&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356444&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356444&a=3013769&m=102705" },
     ],
   },
   {
@@ -3806,7 +3744,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391975&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228839&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953561&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953561&a=3013769&m=102705" },
     ],
   },
   {
@@ -3850,7 +3788,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391989&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228853&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307682&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307682&a=3013769&m=102705" },
     ],
   },
   {
@@ -3865,7 +3803,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391966&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 93.8, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228830&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952691&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 92.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952691&a=3013769&m=102705" },
     ],
   },
   {
@@ -3880,7 +3818,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 210.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391967&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 277.47, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228831&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 296.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952738&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 296.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952738&a=3013769&m=102705" },
     ],
   },
   {
@@ -3893,9 +3831,9 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "Scottish Premiership",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F174%2Fthumbnail.jpg&feedId=117951&k=ff226e230b906194e807ebfe955d34b9b791b050",
     offers: [
-      { store: "FootballTicketNetUK", price: 100.93, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391990&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 133.36, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228854&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 132.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956016&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 100.31, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391990&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 132.54, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228854&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 132.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956016&a=3013769&m=102705" },
     ],
   },
   {
@@ -3910,7 +3848,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391978&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228842&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953412&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953412&a=3013769&m=102705" },
     ],
   },
   {
@@ -3925,7 +3863,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391991&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228855&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307688&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307688&a=3013769&m=102705" },
     ],
   },
   {
@@ -3940,7 +3878,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 125.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391972&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 165.16, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228836&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 182.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953521&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 183.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953521&a=3013769&m=102705" },
     ],
   },
   {
@@ -3953,9 +3891,9 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2%2Fthumbnail.jpg&feedId=117951&k=2e5228bd7de3b6e2c3d6568a2106bbf6a997c6aa",
     offers: [
-      { store: "FootballTicketNetUK", price: 82.93, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391965&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 109.58, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228829&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 115.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953769&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 84.21, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391965&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 111.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228829&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 115.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953769&a=3013769&m=102705" },
     ],
   },
   {
@@ -3970,7 +3908,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391992&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228856&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307703&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307703&a=3013769&m=102705" },
     ],
   },
   {
@@ -3985,7 +3923,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391977&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228841&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953354&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953354&a=3013769&m=102705" },
     ],
   },
   {
@@ -4000,7 +3938,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391980&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228844&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953698&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953698&a=3013769&m=102705" },
     ],
   },
   {
@@ -4015,22 +3953,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 80.97, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391983&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 106.98, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228847&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 57.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954799&a=3013769&m=102705" },
-    ],
-  },
-  {
-    id: "cd-nacional-vs-sl-benfica-2026-12-05",
-    event: "CD Nacional vs SL Benfica",
-    venue: "Estadio da Madeira",
-    city: "Funchal",
-    date: "2026-12-05",
-    time: "15:30:00",
-    competition: "Liga Portugal",
-    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F286%2Fthumbnail.jpg&feedId=117951&k=72ed54c4af5dcbf088ee70ac557d8b8ffe60d039",
-    offers: [
-      { store: "FootballTicketNetUK", price: 103.45, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275464&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 136.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275386&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46308908021&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 68.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954799&a=3013769&m=102705" },
     ],
   },
   {
@@ -4045,7 +3968,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 53.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391985&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 70.55, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228849&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954567&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.86, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954567&a=3013769&m=102705" },
     ],
   },
   {
@@ -4060,7 +3983,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 61.07, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391982&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 80.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228846&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 38.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954724&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 38.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954724&a=3013769&m=102705" },
     ],
   },
   {
@@ -4105,7 +4028,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391973&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228837&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953797&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953797&a=3013769&m=102705" },
     ],
   },
   {
@@ -4162,7 +4085,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 77.59, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391984&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 102.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228848&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 88.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954630&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 99.09, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954630&a=3013769&m=102705" },
     ],
   },
   {
@@ -4191,7 +4114,21 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 150.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391968&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 198.2, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228832&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 191.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952757&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 191.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952757&a=3013769&m=102705" },
+    ],
+  },
+  {
+    id: "olympiacos-vs-aek-athens-2026-12-05",
+    event: "Olympiacos vs AEK Athens",
+    venue: "Karaiskakis Stadium",
+    city: "Piraeus",
+    date: "2026-12-05",
+    time: "20:00:00",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F208%2Fthumbnail.jpg&feedId=117951&k=b510264b1be995ebdfe3aa735a24fc02cbcc4ab3",
+    offers: [
+      { store: "FootballTicketNetUK", price: 66.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46803127851&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 88.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46803127839&a=3013769&m=109004" },
     ],
   },
   {
@@ -4220,7 +4157,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 41.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392018&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 55.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228882&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 45.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956348&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 45.32, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956348&a=3013769&m=102705" },
     ],
   },
   {
@@ -4325,7 +4262,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 74.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391971&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.08, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228835&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953552&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953552&a=3013769&m=102705" },
     ],
   },
   {
@@ -4340,7 +4277,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 205.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391970&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 270.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228834&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 274.67, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953777&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 259.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953777&a=3013769&m=102705" },
     ],
   },
   {
@@ -4414,7 +4351,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392022&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228886&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956272&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 55.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956272&a=3013769&m=102705" },
     ],
   },
   {
@@ -4427,9 +4364,9 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 165.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391988&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 218.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228852&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 226.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954729&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 157.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391988&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 208.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228852&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 225.09, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954729&a=3013769&m=102705" },
     ],
   },
   {
@@ -4457,7 +4394,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 141.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008391974&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 186.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228838&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 196.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953665&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 196.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953665&a=3013769&m=102705" },
     ],
   },
   {
@@ -4517,7 +4454,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 116.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392040&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 154.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228904&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 60.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963655&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 61.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963655&a=3013769&m=102705" },
     ],
   },
   {
@@ -4594,6 +4531,19 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     ],
   },
   {
+    id: "panathinaikos-vs-aris-fc-2026-12-06",
+    event: "Panathinaikos vs Aris FC",
+    venue: "Olympic Stadium Athens",
+    date: "2026-12-06",
+    time: "17:30:00",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F209%2Fthumbnail.jpg&feedId=117951&k=6c63a4747d732184f477b21e104f2613eb179c28",
+    offers: [
+      { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46803127852&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46803127840&a=3013769&m=109004" },
+    ],
+  },
+  {
     id: "dinamo-zagreb-vs-nk-osijek-2026-12-06",
     event: "Dinamo Zagreb vs NK Osijek",
     venue: "Maksimir Stadium",
@@ -4619,7 +4569,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 16.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392020&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 21.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228884&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 26.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956442&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 25.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956442&a=3013769&m=102705" },
     ],
   },
   {
@@ -4649,7 +4599,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 24.78, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392019&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 32.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228883&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 37.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642013779&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 37.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642013779&a=3013769&m=102705" },
     ],
   },
   {
@@ -4692,9 +4642,9 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "Serie A",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F3446%2Fthumbnail.jpg&feedId=117951&k=dfd3db4c82b68a12b276d45b469659338f4ed3d4",
     offers: [
-      { store: "FootballTicketNetUK", price: 65.89, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392034&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 87.06, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228898&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 95.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957977&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 65.07, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392034&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 85.97, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228898&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 94.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957977&a=3013769&m=102705" },
     ],
   },
   {
@@ -4723,7 +4673,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 28.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392021&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 37.47, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228885&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.67, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592964689&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592964689&a=3013769&m=102705" },
     ],
   },
   {
@@ -4781,7 +4731,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222707&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222659&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227672&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227672&a=3013769&m=102705" },
     ],
   },
   {
@@ -4794,9 +4744,9 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F299%2Fthumbnail.jpg&feedId=117951&k=05070e9c2b43d39f7b94cbb9d8bd6f198f971405",
     offers: [
-      { store: "FootballTicketNetUK", price: 62.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392045&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 83.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228909&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 88.86, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953369&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 62.89, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392045&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 83.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228909&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 88.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953369&a=3013769&m=102705" },
     ],
   },
   {
@@ -4811,7 +4761,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392048&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228912&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953405&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953405&a=3013769&m=102705" },
     ],
   },
   {
@@ -4826,7 +4776,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706507&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706532&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252816524&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252816524&a=3013769&m=102705" },
     ],
   },
   {
@@ -4841,7 +4791,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528568&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528677&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356460&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356460&a=3013769&m=102705" },
     ],
   },
   {
@@ -4856,7 +4806,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 72.1, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392046&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 95.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228910&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 95.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953746&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 95.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953746&a=3013769&m=102705" },
     ],
   },
   {
@@ -4869,9 +4819,9 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "UEFA Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F15%2Fthumbnail.jpg&feedId=117951&k=9af6ed8b5ae8765964bee844a8354e9dd73b1377",
     offers: [
-      { store: "FootballTicketNetUK", price: 132.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392051&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 174.41, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228915&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 203.13, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540723&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 131.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392051&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 174.4, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228915&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 186.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540723&a=3013769&m=102705" },
     ],
   },
   {
@@ -4886,7 +4836,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392047&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228911&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952649&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952649&a=3013769&m=102705" },
     ],
   },
   {
@@ -4899,8 +4849,8 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "UEFA Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2%2Fthumbnail.jpg&feedId=117951&k=2e5228bd7de3b6e2c3d6568a2106bbf6a997c6aa",
     offers: [
-      { store: "FootballTicketNetUK", price: 85.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392055&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 113.29, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228919&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 82.81, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392055&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 109.42, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228919&a=3013769&m=109004" },
       { store: "Gigsberg", price: 102.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540727&a=3013769&m=102705" },
     ],
   },
@@ -4916,7 +4866,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392049&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228913&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953430&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953430&a=3013769&m=102705" },
     ],
   },
   {
@@ -4961,7 +4911,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 245.27, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392050&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 324.08, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228914&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 348.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540726&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 349.86, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540726&a=3013769&m=102705" },
     ],
   },
   {
@@ -5036,7 +4986,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392060&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228924&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953324&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953324&a=3013769&m=102705" },
     ],
   },
   {
@@ -5051,7 +5001,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 389.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392061&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 513.99, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228925&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 548.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540738&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 549.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540738&a=3013769&m=102705" },
     ],
   },
   {
@@ -5066,7 +5016,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392127&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 117.57, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228928&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 129.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540744&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 129.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540744&a=3013769&m=102705" },
     ],
   },
   {
@@ -5081,7 +5031,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 37.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392059&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 49.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228923&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.96, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953483&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 53.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953483&a=3013769&m=102705" },
     ],
   },
   {
@@ -5094,8 +5044,8 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "UEFA Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F124%2Fthumbnail.jpg&feedId=117951&k=8d7bd0a1a8f0862c81c8f81bc848aa2400193c29",
     offers: [
-      { store: "FootballTicketNetUK", price: 70.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392062&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 93.7, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228926&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 69.25, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392062&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 91.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228926&a=3013769&m=109004" },
       { store: "Gigsberg", price: 94.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540741&a=3013769&m=102705" },
     ],
   },
@@ -5198,9 +5148,9 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     competition: "UEFA Conference League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5682%2Fthumbnail.jpg&feedId=117951&k=5466f4abc91cc72e804627eb5cdd0716a22c9f20",
     offers: [
-      { store: "FootballTicketNetUK", price: 50.11, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46235545226&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 66.21, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46235545174&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 66.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806732&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 41.76, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46235545226&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 55.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46235545174&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 55.05, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806732&a=3013769&m=102705" },
     ],
   },
   {
@@ -5230,7 +5180,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 141.18, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46059882649&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 186.54, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46059882653&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 199.17, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806739&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 199.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252806739&a=3013769&m=102705" },
     ],
   },
   {
@@ -5245,7 +5195,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392135&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 48.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228936&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540761&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 54.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540761&a=3013769&m=102705" },
     ],
   },
   {
@@ -5290,7 +5240,7 @@ const minedTicketProductsChunk2: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 125.14, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392134&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 165.35, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228935&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 174.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540759&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 179.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939540759&a=3013769&m=102705" },
     ],
   },
   {
@@ -5352,9 +5302,6 @@ const minedTicketProductsChunk2: TicketProduct[] = [
       { store: "Gigsberg", price: 296.89, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46304313697&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk3: TicketProduct[] = [
   {
     id: "bolton-wanderers-vs-wrexham-fc-2026-12-11",
     event: "Bolton Wanderers vs Wrexham FC",
@@ -5381,7 +5328,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 28.37, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275461&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 37.48, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275383&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46304314606&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46304314606&a=3013769&m=102705" },
     ],
   },
   {
@@ -5399,6 +5346,9 @@ const minedTicketProductsChunk3: TicketProduct[] = [
       { store: "Gigsberg", price: 348.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954673&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk3: TicketProduct[] = [
   {
     id: "krc-genk-vs-oh-leuven-2026-12-11",
     event: "KRC Genk vs OH Leuven",
@@ -5440,7 +5390,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392151&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228952&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953395&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953395&a=3013769&m=102705" },
     ],
   },
   {
@@ -5469,7 +5419,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222776&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222710&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227690&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227690&a=3013769&m=102705" },
     ],
   },
   {
@@ -5499,7 +5449,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392154&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228955&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45765565319&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45765565319&a=3013769&m=102705" },
     ],
   },
   {
@@ -5514,7 +5464,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392166&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228967&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568899&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568899&a=3013769&m=102705" },
     ],
   },
   {
@@ -5528,7 +5478,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392167&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.9, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228968&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 129.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592955996&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 129.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592955996&a=3013769&m=102705" },
     ],
   },
   {
@@ -5543,7 +5493,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392147&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228948&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953635&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 97.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953635&a=3013769&m=102705" },
     ],
   },
   {
@@ -5558,7 +5508,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392150&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 117.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228951&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 125.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953490&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 125.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953490&a=3013769&m=102705" },
     ],
   },
   {
@@ -5573,7 +5523,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392168&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226692&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307697&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307697&a=3013769&m=102705" },
     ],
   },
   {
@@ -5586,8 +5536,8 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F6%2Fthumbnail.jpg&feedId=117951&k=25d295bcc31a9c2d5bebffe79afe8718df462f99",
     offers: [
-      { store: "FootballTicketNetUK", price: 122.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392144&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 161.2, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228945&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 119.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392144&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 157.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228945&a=3013769&m=109004" },
       { store: "Gigsberg", price: 135.67, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953535&a=3013769&m=102705" },
     ],
   },
@@ -5603,7 +5553,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392153&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228954&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953345&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953345&a=3013769&m=102705" },
     ],
   },
   {
@@ -5618,7 +5568,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923436&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 117.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923349&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 125.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252817075&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 125.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252817075&a=3013769&m=102705" },
     ],
   },
   {
@@ -5633,7 +5583,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392156&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228957&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953436&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953436&a=3013769&m=102705" },
     ],
   },
   {
@@ -5648,7 +5598,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392155&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228956&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953695&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953695&a=3013769&m=102705" },
     ],
   },
   {
@@ -5678,7 +5628,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 49.22, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392157&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 65.04, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228958&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 72.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954577&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 71.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954577&a=3013769&m=102705" },
     ],
   },
   {
@@ -5693,7 +5643,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 16.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392196&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 21.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226720&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 26.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956446&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 25.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956446&a=3013769&m=102705" },
     ],
   },
   {
@@ -5736,9 +5686,9 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F4%2Fthumbnail.jpg&feedId=117951&k=00694b77108d0b40db161a8715b1c6291b76baa0",
     offers: [
-      { store: "FootballTicketNetUK", price: 80.69, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392143&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 106.62, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228944&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 113.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953692&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 80.6, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392143&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 106.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228944&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 114.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953692&a=3013769&m=102705" },
     ],
   },
   {
@@ -5753,7 +5703,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.49, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392198&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.18, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226722&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.92, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568902&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 97.86, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568902&a=3013769&m=102705" },
     ],
   },
   {
@@ -5928,8 +5878,8 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1%2Fthumbnail.jpg&feedId=117951&k=c5e6974fdba6eeb0baac3447869a96ccbc302fa8",
     offers: [
-      { store: "FootballTicketNetUK", price: 124.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392142&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 163.84, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228943&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 122.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392142&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 162.51, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228943&a=3013769&m=109004" },
     ],
   },
   {
@@ -5944,7 +5894,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 90.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392146&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228947&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 126.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45672929766&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 127.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45672929766&a=3013769&m=102705" },
     ],
   },
   {
@@ -5959,7 +5909,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 72.09, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392145&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 95.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228946&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954354&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 92.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954354&a=3013769&m=102705" },
     ],
   },
   {
@@ -6045,7 +5995,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 28.34, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392202&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 37.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226726&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 37.96, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957799&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 37.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957799&a=3013769&m=102705" },
     ],
   },
   {
@@ -6090,7 +6040,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 21.66, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392194&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 28.62, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226718&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 28.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956390&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 28.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956390&a=3013769&m=102705" },
     ],
   },
   {
@@ -6105,7 +6055,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 90.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46088805299&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46088805279&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 126.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252817076&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 127.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252817076&a=3013769&m=102705" },
     ],
   },
   {
@@ -6254,7 +6204,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 61.95, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392212&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 81.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226736&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 59.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963795&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963795&a=3013769&m=102705" },
     ],
   },
   {
@@ -6314,7 +6264,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 31.29, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392195&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 41.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226719&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 46.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956457&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 46.78, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956457&a=3013769&m=102705" },
     ],
   },
   {
@@ -6327,9 +6277,9 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F32%2Fthumbnail.jpg&feedId=117951&k=8d5e108f3087f6a6ef0ceb585d455bd478ea423f",
     offers: [
-      { store: "FootballTicketNetUK", price: 91.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392148&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 121.55, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228949&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 132.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953648&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 91.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392148&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 121.53, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228949&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 129.92, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953648&a=3013769&m=102705" },
     ],
   },
   {
@@ -6386,7 +6336,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 32.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392191&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.99, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226715&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.49, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956356&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 47.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956356&a=3013769&m=102705" },
     ],
   },
   {
@@ -6446,7 +6396,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 90.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392149&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228950&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 126.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953502&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 127.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953502&a=3013769&m=102705" },
     ],
   },
   {
@@ -6491,7 +6441,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 19.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46488121396&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 25.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46488121187&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 25.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46637872810&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 25.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46637872810&a=3013769&m=102705" },
     ],
   },
   {
@@ -6520,7 +6470,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 64.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46506630719&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46506630704&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 65.92, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46637872843&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 66.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46637872843&a=3013769&m=102705" },
     ],
   },
   {
@@ -6626,6 +6576,20 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     ],
   },
   {
+    id: "panathinaikos-vs-brighton-hove-albion-2026-12-17",
+    event: "Panathinaikos vs Brighton & Hove Albion",
+    venue: "Olympic Stadium Athens",
+    date: "2026-12-17",
+    time: "22:00:00",
+    competition: "UEFA Conference League",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F209%2Fthumbnail.jpg&feedId=117951&k=6c63a4747d732184f477b21e104f2613eb179c28",
+    offers: [
+      { store: "FootballTicketNetUK", price: 75.09, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46399745496&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 99.21, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46399745502&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 108.57, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46398559839&a=3013769&m=102705" },
+    ],
+  },
+  {
     id: "frosinone-calcio-vs-ss-lazio-2026-12-18",
     event: "Frosinone Calcio vs SS Lazio",
     venue: "Stadio Benito Stirpe",
@@ -6710,7 +6674,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392236&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226760&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952671&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952671&a=3013769&m=102705" },
     ],
   },
   {
@@ -6725,7 +6689,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 137.65, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392228&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 181.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226752&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 138.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952778&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 138.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952778&a=3013769&m=102705" },
     ],
   },
   {
@@ -6738,9 +6702,9 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F299%2Fthumbnail.jpg&feedId=117951&k=05070e9c2b43d39f7b94cbb9d8bd6f198f971405",
     offers: [
-      { store: "FootballTicketNetUK", price: 64.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392232&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 85.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226756&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953375&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 64.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392232&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 84.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226756&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 90.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953375&a=3013769&m=102705" },
     ],
   },
   {
@@ -6755,7 +6719,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706484&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706500&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252817790&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252817790&a=3013769&m=102705" },
     ],
   },
   {
@@ -6770,7 +6734,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392237&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226761&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953592&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953592&a=3013769&m=102705" },
     ],
   },
   {
@@ -6785,7 +6749,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392226&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226750&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952741&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952741&a=3013769&m=102705" },
     ],
   },
   {
@@ -6800,7 +6764,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392238&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226762&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953308&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953308&a=3013769&m=102705" },
     ],
   },
   {
@@ -6815,7 +6779,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392235&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226759&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953336&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953336&a=3013769&m=102705" },
     ],
   },
   {
@@ -6830,7 +6794,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392248&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226772&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568897&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568897&a=3013769&m=102705" },
     ],
   },
   {
@@ -6859,7 +6823,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.95, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392230&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.84, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226754&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 118.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953513&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 118.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953513&a=3013769&m=102705" },
     ],
   },
   {
@@ -6874,7 +6838,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 49.96, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392224&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 66.01, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226748&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 70.53, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953703&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953703&a=3013769&m=102705" },
     ],
   },
   {
@@ -6889,7 +6853,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528556&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528675&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356505&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356505&a=3013769&m=102705" },
     ],
   },
   {
@@ -6904,7 +6868,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392250&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226774&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568888&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568888&a=3013769&m=102705" },
     ],
   },
   {
@@ -6933,7 +6897,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392251&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226775&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 59.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307695&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307695&a=3013769&m=102705" },
     ],
   },
   {
@@ -6948,7 +6912,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 72.1, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392234&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 95.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226758&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 95.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953740&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 95.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953740&a=3013769&m=102705" },
     ],
   },
   {
@@ -7006,8 +6970,8 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F6%2Fthumbnail.jpg&feedId=117951&k=25d295bcc31a9c2d5bebffe79afe8718df462f99",
     offers: [
-      { store: "FootballTicketNetUK", price: 165.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392225&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 219.22, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226749&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 163.65, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392225&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 216.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226749&a=3013769&m=109004" },
     ],
   },
   {
@@ -7049,9 +7013,9 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F539%2Fthumbnail.jpg&feedId=117951&k=06d64add7aa5a767c471b4127baf500f4ceb56ba",
     offers: [
-      { store: "FootballTicketNetUK", price: 124.31, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392240&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 164.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226764&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 176.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954694&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 122.64, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392240&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 162.05, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226764&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 175.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954694&a=3013769&m=102705" },
     ],
   },
   {
@@ -7138,7 +7102,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 90.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46100928428&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46100928353&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 126.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45764069712&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 127.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45764069712&a=3013769&m=102705" },
     ],
   },
   {
@@ -7153,7 +7117,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392231&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226755&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953803&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953803&a=3013769&m=102705" },
     ],
   },
   {
@@ -7168,7 +7132,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 72.09, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392227&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 95.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226751&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954355&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954355&a=3013769&m=102705" },
     ],
   },
   {
@@ -7254,8 +7218,8 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5682%2Fthumbnail.jpg&feedId=117951&k=5466f4abc91cc72e804627eb5cdd0716a22c9f20",
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392245&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226769&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 138.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954663&a=3013769&m=102705" },
+      { store: "FootballTicketNetUS", price: 138.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226769&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 138.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954663&a=3013769&m=102705" },
     ],
   },
   {
@@ -7283,8 +7247,8 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "LaLiga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F49%2Fthumbnail.jpg&feedId=117951&k=79f8845fd742c5f78ee97257868e7d89e433a8d9",
     offers: [
-      { store: "FootballTicketNetUK", price: 92.56, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392289&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 122.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226813&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 92.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392289&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 122.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226813&a=3013769&m=109004" },
       { store: "Gigsberg", price: 86.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963678&a=3013769&m=102705" },
     ],
   },
@@ -7315,7 +7279,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 39.63, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392275&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.36, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226799&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 58.57, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956378&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 58.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956378&a=3013769&m=102705" },
     ],
   },
   {
@@ -7345,7 +7309,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 116.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392290&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 154.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226814&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 60.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963659&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 61.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963659&a=3013769&m=102705" },
     ],
   },
   {
@@ -7375,7 +7339,21 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 80.93, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392286&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 106.93, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226810&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 122.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963591&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 116.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963591&a=3013769&m=102705" },
+    ],
+  },
+  {
+    id: "olympiacos-vs-panetolikos-2026-12-20",
+    event: "Olympiacos vs Panetolikos",
+    venue: "Karaiskakis Stadium",
+    city: "Piraeus",
+    date: "2026-12-20",
+    time: "17:00:00",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F208%2Fthumbnail.jpg&feedId=117951&k=b510264b1be995ebdfe3aa735a24fc02cbcc4ab3",
+    offers: [
+      { store: "FootballTicketNetUK", price: 75.09, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392268&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 99.21, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226792&a=3013769&m=109004" },
     ],
   },
   {
@@ -7422,6 +7400,19 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     ],
   },
   {
+    id: "panathinaikos-vs-iraklis-2026-12-20",
+    event: "Panathinaikos vs Iraklis",
+    venue: "Olympic Stadium Athens",
+    date: "2026-12-20",
+    time: "17:30:00",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F209%2Fthumbnail.jpg&feedId=117951&k=6c63a4747d732184f477b21e104f2613eb179c28",
+    offers: [
+      { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46803127985&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46803127842&a=3013769&m=109004" },
+    ],
+  },
+  {
     id: "arouca-vs-casa-pia-2026-12-20",
     event: "Arouca vs Casa Pia",
     venue: "Estadio Municipal de Arouca",
@@ -7433,7 +7424,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 21.69, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392272&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 28.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226796&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 33.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956303&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 33.24, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956303&a=3013769&m=102705" },
     ],
   },
   {
@@ -7448,7 +7439,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 41.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275514&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 55.11, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275429&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 61.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46316180603&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 61.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46316180603&a=3013769&m=102705" },
     ],
   },
   {
@@ -7463,7 +7454,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 45.89, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392276&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 60.63, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226800&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 67.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956280&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 67.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956280&a=3013769&m=102705" },
     ],
   },
   {
@@ -7478,7 +7469,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 28.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392273&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 37.47, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226797&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956241&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956241&a=3013769&m=102705" },
     ],
   },
   {
@@ -7493,7 +7484,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 98.45, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392271&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 130.08, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226795&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.88, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956282&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.53, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956282&a=3013769&m=102705" },
     ],
   },
   {
@@ -7523,7 +7514,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 66.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392274&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 88.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226798&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 96.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956251&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 96.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956251&a=3013769&m=102705" },
     ],
   },
   {
@@ -7538,7 +7529,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392270&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.75, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226794&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956376&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956376&a=3013769&m=102705" },
     ],
   },
   {
@@ -7553,7 +7544,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 20.86, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392269&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 27.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226793&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 29.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956411&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 27.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956411&a=3013769&m=102705" },
     ],
   },
   {
@@ -7579,9 +7570,9 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 92.87, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392246&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 122.7, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226770&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 122.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954758&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 96.11, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392246&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 126.99, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226770&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 77.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954758&a=3013769&m=102705" },
     ],
   },
   {
@@ -7623,9 +7614,9 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5%2Fthumbnail.jpg&feedId=117951&k=22447c4cc3d7bf3600765f3acb517a6e0f7f67d6",
     offers: [
-      { store: "FootballTicketNetUK", price: 137.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392229&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 181.02, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226753&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 193.28, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953606&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 136.95, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392229&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 180.95, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226753&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 193.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953606&a=3013769&m=102705" },
     ],
   },
   {
@@ -7638,9 +7629,9 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F15%2Fthumbnail.jpg&feedId=117951&k=9af6ed8b5ae8765964bee844a8354e9dd73b1377",
     offers: [
-      { store: "FootballTicketNetUK", price: 68.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392295&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 89.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226820&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952689&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392295&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226820&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 92.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952689&a=3013769&m=102705" },
     ],
   },
   {
@@ -7669,7 +7660,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923435&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923348&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818179&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818179&a=3013769&m=102705" },
     ],
   },
   {
@@ -7698,7 +7689,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222727&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222662&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227740&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227740&a=3013769&m=102705" },
     ],
   },
   {
@@ -7713,7 +7704,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.69, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392309&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 126.44, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227024&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 130.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956014&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 130.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956014&a=3013769&m=102705" },
     ],
   },
   {
@@ -7728,7 +7719,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392305&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227020&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953408&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953408&a=3013769&m=102705" },
     ],
   },
   {
@@ -7743,7 +7734,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392310&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227025&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568874&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568874&a=3013769&m=102705" },
     ],
   },
   {
@@ -7758,7 +7749,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392298&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227013&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 119.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953548&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 120.07, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953548&a=3013769&m=102705" },
     ],
   },
   {
@@ -7772,7 +7763,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392311&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.9, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227026&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 129.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592955998&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 129.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592955998&a=3013769&m=102705" },
     ],
   },
   {
@@ -7787,7 +7778,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.89, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392296&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226821&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 119.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953634&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 119.93, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953634&a=3013769&m=102705" },
     ],
   },
   {
@@ -7802,7 +7793,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392301&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227016&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 134.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953485&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 134.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953485&a=3013769&m=102705" },
     ],
   },
   {
@@ -7817,7 +7808,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392304&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227019&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953350&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953350&a=3013769&m=102705" },
     ],
   },
   {
@@ -7832,7 +7823,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392302&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227017&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 79.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953392&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 79.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953392&a=3013769&m=102705" },
     ],
   },
   {
@@ -7847,7 +7838,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392312&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227027&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568875&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568875&a=3013769&m=102705" },
     ],
   },
   {
@@ -7860,9 +7851,9 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1725%2Fthumbnail.jpg&feedId=117951&k=fa115ccd568936a582ff8866e7cb08f6316a618a",
     offers: [
-      { store: "FootballTicketNetUK", price: 72.34, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392299&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 95.58, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227014&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953670&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392299&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227014&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953670&a=3013769&m=102705" },
     ],
   },
   {
@@ -7877,7 +7868,7 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 50.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392308&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 66.07, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227023&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 70.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953433&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953433&a=3013769&m=102705" },
     ],
   },
   {
@@ -7919,9 +7910,9 @@ const minedTicketProductsChunk3: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F10%2Fthumbnail.jpg&feedId=117951&k=e9f53f7559707c4172caf2f26e9a5d16a240d514",
     offers: [
-      { store: "FootballTicketNetUK", price: 102.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392297&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 134.77, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227012&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 145.31, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953772&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 101.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392297&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 134.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227012&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 145.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953772&a=3013769&m=102705" },
     ],
   },
   {
@@ -8024,7 +8015,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 73.58, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392325&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 97.22, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227040&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 106.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956478&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 106.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956478&a=3013769&m=102705" },
     ],
   },
   {
@@ -8084,7 +8075,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392319&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 29.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227034&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956321&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 34.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956321&a=3013769&m=102705" },
     ],
   },
   {
@@ -8114,7 +8105,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 163.52, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392318&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 216.06, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227033&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 233.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956424&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 233.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956424&a=3013769&m=102705" },
     ],
   },
   {
@@ -8129,7 +8120,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 52.14, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392321&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 68.9, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227036&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 76.24, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956458&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 76.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956458&a=3013769&m=102705" },
     ],
   },
   {
@@ -8170,8 +8161,8 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F32%2Fthumbnail.jpg&feedId=117951&k=8d5e108f3087f6a6ef0ceb585d455bd478ea423f",
     offers: [
-      { store: "FootballTicketNetUK", price: 146.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392315&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 192.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227030&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 147.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392315&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 194.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227030&a=3013769&m=109004" },
     ],
   },
   {
@@ -8186,7 +8177,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 87.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392330&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 115.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227045&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 115.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953747&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 115.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953747&a=3013769&m=102705" },
     ],
   },
   {
@@ -8199,8 +8190,8 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1725%2Fthumbnail.jpg&feedId=117951&k=fa115ccd568936a582ff8866e7cb08f6316a618a",
     offers: [
-      { store: "FootballTicketNetUK", price: 73.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392327&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 96.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227042&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392327&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227042&a=3013769&m=109004" },
     ],
   },
   {
@@ -8215,7 +8206,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392334&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227049&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 80.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953313&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953313&a=3013769&m=102705" },
     ],
   },
   {
@@ -8230,7 +8221,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392331&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227046&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953325&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953325&a=3013769&m=102705" },
     ],
   },
   {
@@ -8245,7 +8236,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528548&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528667&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356513&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356513&a=3013769&m=102705" },
     ],
   },
   {
@@ -8260,7 +8251,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 64.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392328&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 84.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227043&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953374&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 90.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953374&a=3013769&m=102705" },
     ],
   },
   {
@@ -8275,7 +8266,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706485&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706501&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818208&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818208&a=3013769&m=102705" },
     ],
   },
   {
@@ -8290,7 +8281,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392333&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227048&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953601&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953601&a=3013769&m=102705" },
     ],
   },
   {
@@ -8305,7 +8296,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528549&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528668&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356514&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356514&a=3013769&m=102705" },
     ],
   },
   {
@@ -8320,7 +8311,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392332&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227047&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952662&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952662&a=3013769&m=102705" },
     ],
   },
   {
@@ -8364,7 +8355,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 145.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46088805312&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 191.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46088805295&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 204.57, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818219&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 204.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818219&a=3013769&m=102705" },
     ],
   },
   {
@@ -8393,7 +8384,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 169.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392337&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 223.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227052&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 220.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953625&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 220.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953625&a=3013769&m=102705" },
     ],
   },
   {
@@ -8408,7 +8399,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 85.86, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392335&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 113.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227050&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 121.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953754&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 121.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953754&a=3013769&m=102705" },
     ],
   },
   {
@@ -8423,7 +8414,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 94.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392338&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.51, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227053&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 135.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953784&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 135.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953784&a=3013769&m=102705" },
     ],
   },
   {
@@ -8453,7 +8444,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392342&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227057&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 59.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956002&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956002&a=3013769&m=102705" },
     ],
   },
   {
@@ -8468,7 +8459,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392343&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227058&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307700&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307700&a=3013769&m=102705" },
     ],
   },
   {
@@ -8483,7 +8474,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392344&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227059&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 87.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956020&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 87.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956020&a=3013769&m=102705" },
     ],
   },
   {
@@ -8542,7 +8533,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392347&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227062&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953382&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953382&a=3013769&m=102705" },
     ],
   },
   {
@@ -8557,7 +8548,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392351&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227066&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952651&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952651&a=3013769&m=102705" },
     ],
   },
   {
@@ -8572,7 +8563,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392350&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227065&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953332&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953332&a=3013769&m=102705" },
     ],
   },
   {
@@ -8587,7 +8578,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528550&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528669&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356517&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356517&a=3013769&m=102705" },
     ],
   },
   {
@@ -8617,7 +8608,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706483&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706499&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818255&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818255&a=3013769&m=102705" },
     ],
   },
   {
@@ -8632,7 +8623,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392352&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227067&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953574&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953574&a=3013769&m=102705" },
     ],
   },
   {
@@ -8647,7 +8638,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528551&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528670&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356518&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356518&a=3013769&m=102705" },
     ],
   },
   {
@@ -8677,7 +8668,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392353&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227068&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 80.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952796&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952796&a=3013769&m=102705" },
     ],
   },
   {
@@ -8720,7 +8711,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 249.78, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392358&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 330.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227073&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 352.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954364&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 352.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954364&a=3013769&m=102705" },
     ],
   },
   {
@@ -8750,7 +8741,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 133.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392354&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 175.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227069&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 187.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953599&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 187.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953599&a=3013769&m=102705" },
     ],
   },
   {
@@ -8765,7 +8756,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 118.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392359&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 156.97, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227074&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 118.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952782&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 118.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952782&a=3013769&m=102705" },
     ],
   },
   {
@@ -8779,7 +8770,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392361&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.9, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227076&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 129.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956005&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 129.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956005&a=3013769&m=102705" },
     ],
   },
   {
@@ -8809,7 +8800,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 85.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392362&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227077&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 122.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660471&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 122.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660471&a=3013769&m=102705" },
     ],
   },
   {
@@ -8824,7 +8815,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 134.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392355&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 177.05, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227070&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 156.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953540&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 189.32, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953540&a=3013769&m=102705" },
     ],
   },
   {
@@ -8854,7 +8845,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392360&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227075&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953799&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953799&a=3013769&m=102705" },
     ],
   },
   {
@@ -8869,7 +8860,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 83.67, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392357&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 110.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227072&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 81.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954357&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 81.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954357&a=3013769&m=102705" },
     ],
   },
   {
@@ -8913,7 +8904,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 47.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392381&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 62.82, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227096&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 69.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957889&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 69.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957889&a=3013769&m=102705" },
     ],
   },
   {
@@ -9032,7 +9023,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 28.28, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392379&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 37.37, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227094&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 37.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957798&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 37.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957798&a=3013769&m=102705" },
     ],
   },
   {
@@ -9161,9 +9152,9 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "LaLiga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F53%2Fthumbnail.jpg&feedId=117951&k=b5e587f97c4e73d7fc86d9accf8452758825b2b5",
     offers: [
-      { store: "FootballTicketNetUK", price: 130.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392389&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 172.21, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227104&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 171.82, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963594&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 127.72, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392389&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 168.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227104&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 168.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963594&a=3013769&m=102705" },
     ],
   },
   {
@@ -9220,8 +9211,8 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "LaLiga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F63%2Fthumbnail.jpg&feedId=117951&k=b1c77fa36aa6bba37d13a9c88ca9fc987246daa4",
     offers: [
-      { store: "FootballTicketNetUK", price: 60.58, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392388&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 80.04, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227103&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 60.57, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392388&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 80.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227103&a=3013769&m=109004" },
       { store: "Gigsberg", price: 53.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963797&a=3013769&m=102705" },
     ],
   },
@@ -9296,7 +9287,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 66.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392405&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 88.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227120&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 75.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957756&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 75.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957756&a=3013769&m=102705" },
     ],
   },
   {
@@ -9324,8 +9315,8 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1%2Fthumbnail.jpg&feedId=117951&k=c5e6974fdba6eeb0baac3447869a96ccbc302fa8",
     offers: [
-      { store: "FootballTicketNetUK", price: 109.94, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392395&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 145.26, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227110&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 107.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392395&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 141.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227110&a=3013769&m=109004" },
     ],
   },
   {
@@ -9486,7 +9477,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 99.96, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392401&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.08, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227116&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953655&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953655&a=3013769&m=102705" },
     ],
   },
   {
@@ -9501,7 +9492,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392399&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227114&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.13, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953643&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.32, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953643&a=3013769&m=102705" },
     ],
   },
   {
@@ -9516,7 +9507,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392402&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227117&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 134.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953497&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 134.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953497&a=3013769&m=102705" },
     ],
   },
   {
@@ -9531,7 +9522,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 202.95, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392400&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 268.16, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227115&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 286.32, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953504&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 286.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953504&a=3013769&m=102705" },
     ],
   },
   {
@@ -9573,8 +9564,8 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2%2Fthumbnail.jpg&feedId=117951&k=2e5228bd7de3b6e2c3d6568a2106bbf6a997c6aa",
     offers: [
-      { store: "FootballTicketNetUK", price: 77.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392412&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 102.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227127&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 80.93, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392412&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 106.93, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227127&a=3013769&m=109004" },
     ],
   },
   {
@@ -9602,9 +9593,9 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F124%2Fthumbnail.jpg&feedId=117951&k=8d7bd0a1a8f0862c81c8f81bc848aa2400193c29",
     offers: [
-      { store: "FootballTicketNetUK", price: 50.06, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392413&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 66.14, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227128&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 73.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954578&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 49.22, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392413&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 65.04, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227128&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 71.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954578&a=3013769&m=102705" },
     ],
   },
   {
@@ -9634,7 +9625,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 64.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46103665353&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 84.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46103664967&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.93, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818596&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 93.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818596&a=3013769&m=102705" },
     ],
   },
   {
@@ -9649,7 +9640,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 103.27, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392422&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 136.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227137&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 131.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46316732623&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 143.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46316732623&a=3013769&m=102705" },
     ],
   },
   {
@@ -9664,7 +9655,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392423&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227138&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 59.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307687&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307687&a=3013769&m=102705" },
     ],
   },
   {
@@ -9724,7 +9715,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.05, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392415&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227130&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 27.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954788&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 27.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954788&a=3013769&m=102705" },
     ],
   },
   {
@@ -9889,7 +9880,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 116.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392446&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 154.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227161&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 117.57, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963662&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 117.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963662&a=3013769&m=102705" },
     ],
   },
   {
@@ -10008,7 +9999,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275518&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 48.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275433&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 54.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46307570492&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 54.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46307570492&a=3013769&m=102705" },
     ],
   },
   {
@@ -10038,7 +10029,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 53.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275517&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 70.54, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275432&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 78.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46308908113&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 77.96, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46308908113&a=3013769&m=102705" },
     ],
   },
   {
@@ -10053,7 +10044,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 21.69, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392432&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 28.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227147&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 33.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956269&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 33.24, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956269&a=3013769&m=102705" },
     ],
   },
   {
@@ -10068,7 +10059,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 28.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392430&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 37.47, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227145&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.67, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956248&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956248&a=3013769&m=102705" },
     ],
   },
   {
@@ -10083,7 +10074,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 24.78, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392428&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 32.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227143&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 37.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956291&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 37.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956291&a=3013769&m=102705" },
     ],
   },
   {
@@ -10098,7 +10089,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 29.66, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392431&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227146&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 44.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956256&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 44.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956256&a=3013769&m=102705" },
     ],
   },
   {
@@ -10214,9 +10205,9 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F132%2Fthumbnail.jpg&feedId=117951&k=4a77d3fede826239a3d047ec7f29ab767bc004d3",
     offers: [
-      { store: "FootballTicketNetUK", price: 132.65, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392458&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 175.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227173&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 187.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954728&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 130.15, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392458&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 171.97, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227173&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 186.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954728&a=3013769&m=102705" },
     ],
   },
   {
@@ -10244,8 +10235,8 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F133%2Fthumbnail.jpg&feedId=117951&k=d032a1dba8397ee025f4295b21f0b66495323edf",
     offers: [
-      { store: "FootballTicketNetUK", price: 58.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392456&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 76.64, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227171&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 57.73, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392456&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 76.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227171&a=3013769&m=109004" },
       { store: "Gigsberg", price: 42.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954828&a=3013769&m=102705" },
     ],
   },
@@ -10275,7 +10266,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.7, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392187&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 126.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226711&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 137.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956012&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 137.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956012&a=3013769&m=102705" },
     ],
   },
   {
@@ -10317,9 +10308,9 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 35.87, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392460&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 47.4, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227175&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954771&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 29.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392460&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 38.58, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227175&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 38.67, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954771&a=3013769&m=102705" },
     ],
   },
   {
@@ -10348,7 +10339,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392476&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227191&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953435&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953435&a=3013769&m=102705" },
     ],
   },
   {
@@ -10378,7 +10369,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 28.37, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392497&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 37.48, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227465&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 38.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958604&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 38.57, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958604&a=3013769&m=102705" },
     ],
   },
   {
@@ -10391,9 +10382,9 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F18%2Fthumbnail.jpg&feedId=117951&k=fe09c36cb584ec6e99109e0245a2f8a0a017b618",
     offers: [
-      { store: "FootballTicketNetUK", price: 61.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392470&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 81.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227185&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 79.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953390&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 60.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392470&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 80.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227185&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 79.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953390&a=3013769&m=102705" },
     ],
   },
   {
@@ -10408,7 +10399,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392475&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227190&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953721&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953721&a=3013769&m=102705" },
     ],
   },
   {
@@ -10423,7 +10414,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 124.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392462&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 163.84, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227177&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 174.93, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952679&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 175.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952679&a=3013769&m=102705" },
     ],
   },
   {
@@ -10438,7 +10429,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222777&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222711&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227781&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227781&a=3013769&m=102705" },
     ],
   },
   {
@@ -10453,7 +10444,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392474&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227189&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952712&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952712&a=3013769&m=102705" },
     ],
   },
   {
@@ -10468,7 +10459,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 445.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392464&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 587.98, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227179&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 627.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952742&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 628.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952742&a=3013769&m=102705" },
     ],
   },
   {
@@ -10483,7 +10474,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392465&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 110.99, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227180&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 118.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952771&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 118.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952771&a=3013769&m=102705" },
     ],
   },
   {
@@ -10498,7 +10489,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 116.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392466&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 154.57, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227181&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 193.28, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953609&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 193.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953609&a=3013769&m=102705" },
     ],
   },
   {
@@ -10513,7 +10504,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 90.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46088805275&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46088805255&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 126.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818648&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 127.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818648&a=3013769&m=102705" },
     ],
   },
   {
@@ -10528,7 +10519,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 399.95, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392469&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 528.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227184&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 564.31, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953498&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 565.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953498&a=3013769&m=102705" },
     ],
   },
   {
@@ -10558,7 +10549,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 51.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392461&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 68.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227176&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 73.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953699&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 73.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953699&a=3013769&m=102705" },
     ],
   },
   {
@@ -10573,7 +10564,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 87.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392467&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 115.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227182&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 123.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953781&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 123.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953781&a=3013769&m=102705" },
     ],
   },
   {
@@ -10588,7 +10579,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 115.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392472&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 151.95, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227187&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 162.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953344&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 162.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953344&a=3013769&m=102705" },
     ],
   },
   {
@@ -10603,7 +10594,7 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923431&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923344&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818647&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252818647&a=3013769&m=102705" },
     ],
   },
   {
@@ -10616,9 +10607,9 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1725%2Fthumbnail.jpg&feedId=117951&k=fa115ccd568936a582ff8866e7cb08f6316a618a",
     offers: [
-      { store: "FootballTicketNetUK", price: 71.6, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392468&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 94.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227183&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 102.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953678&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 71.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392468&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 95.01, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227183&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 103.13, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953678&a=3013769&m=102705" },
     ],
   },
   {
@@ -10631,9 +10622,9 @@ const minedTicketProductsChunk4: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F124%2Fthumbnail.jpg&feedId=117951&k=8d7bd0a1a8f0862c81c8f81bc848aa2400193c29",
     offers: [
-      { store: "FootballTicketNetUK", price: 52.56, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392477&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 69.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227192&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 75.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954588&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 50.89, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392477&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 67.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227192&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 71.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954588&a=3013769&m=102705" },
     ],
   },
   {
@@ -10696,7 +10687,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.26, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392495&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.72, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227463&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 114.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957991&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 149.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957991&a=3013769&m=102705" },
     ],
   },
   {
@@ -10813,7 +10804,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392473&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227188&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953417&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 97.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953417&a=3013769&m=102705" },
     ],
   },
   {
@@ -11168,7 +11159,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.08, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275521&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275436&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46307570499&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46307570499&a=3013769&m=102705" },
     ],
   },
   {
@@ -11183,7 +11174,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392507&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 29.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227475&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956296&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 34.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956296&a=3013769&m=102705" },
     ],
   },
   {
@@ -11198,7 +11189,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 41.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275520&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 55.11, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275435&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 61.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46316732631&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 61.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46316732631&a=3013769&m=102705" },
     ],
   },
   {
@@ -11228,7 +11219,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 66.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392508&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 88.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227476&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 96.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956235&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 96.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956235&a=3013769&m=102705" },
     ],
   },
   {
@@ -11258,7 +11249,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 29.66, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392509&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227477&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 44.49, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956255&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 44.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956255&a=3013769&m=102705" },
     ],
   },
   {
@@ -11273,7 +11264,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392505&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.75, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227473&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956347&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956347&a=3013769&m=102705" },
     ],
   },
   {
@@ -11330,9 +11321,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "UEFA Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F15%2Fthumbnail.jpg&feedId=117951&k=9af6ed8b5ae8765964bee844a8354e9dd73b1377",
     offers: [
-      { store: "FootballTicketNetUK", price: 141.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392532&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 187.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227500&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 200.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542926&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 142.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392532&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 188.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227500&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 202.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542926&a=3013769&m=102705" },
     ],
   },
   {
@@ -11377,7 +11368,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 72.58, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392529&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 95.9, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227497&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542931&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.3, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542931&a=3013769&m=102705" },
     ],
   },
   {
@@ -11422,7 +11413,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 111.87, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392531&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 147.81, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227499&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 149.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542925&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 147.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542925&a=3013769&m=102705" },
     ],
   },
   {
@@ -11452,7 +11443,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 133.14, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392541&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 175.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227509&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 183.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542943&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 183.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542943&a=3013769&m=102705" },
     ],
   },
   {
@@ -11465,9 +11456,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "UEFA Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F189%2Fthumbnail.jpg&feedId=117951&k=ceac3df9afb1abcec42322e44a68b9544866f5a7",
     offers: [
-      { store: "FootballTicketNetUK", price: 140.87, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392538&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 186.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227506&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 181.28, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542937&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 128.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392538&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 170.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227506&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 158.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542937&a=3013769&m=102705" },
     ],
   },
   {
@@ -11595,9 +11586,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "UEFA Europa League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F208%2Fthumbnail.jpg&feedId=117951&k=b510264b1be995ebdfe3aa735a24fc02cbcc4ab3",
     offers: [
-      { store: "FootballTicketNetUK", price: 292.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392549&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 385.82, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227517&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 414.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542955&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 70.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392549&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 93.7, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227517&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 102.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542955&a=3013769&m=102705" },
     ],
   },
   {
@@ -11612,7 +11603,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 104.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46121478790&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.72, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46121478802&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542952&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542952&a=3013769&m=102705" },
     ],
   },
   {
@@ -11625,9 +11616,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "UEFA Europa League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F32%2Fthumbnail.jpg&feedId=117951&k=8d5e108f3087f6a6ef0ceb585d455bd478ea423f",
     offers: [
-      { store: "FootballTicketNetUK", price: 72.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392550&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 96.43, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227518&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.09, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542954&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 75.87, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392550&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 100.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227518&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 101.24, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939542954&a=3013769&m=102705" },
     ],
   },
   {
@@ -11775,6 +11766,20 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     ],
   },
   {
+    id: "olympiacos-vs-levadiakos-2027-01-23",
+    event: "Olympiacos vs Levadiakos",
+    venue: "Karaiskakis Stadium",
+    city: "Piraeus",
+    date: "2027-01-23",
+    time: "02:00:00",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F208%2Fthumbnail.jpg&feedId=117951&k=b510264b1be995ebdfe3aa735a24fc02cbcc4ab3",
+    offers: [
+      { store: "FootballTicketNetUK", price: 29.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392592&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 38.58, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227560&a=3013769&m=109004" },
+    ],
+  },
+  {
     id: "panathinaikos-vs-atromitos-athens-2027-01-23",
     event: "Panathinaikos vs Atromitos Athens",
     venue: "Apostolos Nikolaidis Stadium",
@@ -11799,7 +11804,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392565&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227533&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952659&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952659&a=3013769&m=102705" },
     ],
   },
   {
@@ -11812,9 +11817,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F18%2Fthumbnail.jpg&feedId=117951&k=fe09c36cb584ec6e99109e0245a2f8a0a017b618",
     offers: [
-      { store: "FootballTicketNetUK", price: 61.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392566&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 81.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227534&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 79.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953385&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 60.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392566&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 80.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227534&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 79.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953385&a=3013769&m=102705" },
     ],
   },
   {
@@ -11829,7 +11834,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528525&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528580&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356558&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356558&a=3013769&m=102705" },
     ],
   },
   {
@@ -11870,9 +11875,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1%2Fthumbnail.jpg&feedId=117951&k=c5e6974fdba6eeb0baac3447869a96ccbc302fa8",
     offers: [
-      { store: "FootballTicketNetUK", price: 139.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392553&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 184.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227521&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 197.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953587&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 132.01, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392553&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 174.43, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227521&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 197.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953587&a=3013769&m=102705" },
     ],
   },
   {
@@ -11887,7 +11892,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222741&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222701&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227787&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227787&a=3013769&m=102705" },
     ],
   },
   {
@@ -11902,7 +11907,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 450.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392556&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 594.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227524&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 634.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954362&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 635.78, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954362&a=3013769&m=102705" },
     ],
   },
   {
@@ -11917,7 +11922,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392569&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227537&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953409&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953409&a=3013769&m=102705" },
     ],
   },
   {
@@ -11932,7 +11937,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 80.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392561&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 106.42, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227529&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 127.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953661&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 128.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953661&a=3013769&m=102705" },
     ],
   },
   {
@@ -11947,7 +11952,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392564&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227532&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953317&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953317&a=3013769&m=102705" },
     ],
   },
   {
@@ -11977,7 +11982,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392558&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227526&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953550&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953550&a=3013769&m=102705" },
     ],
   },
   {
@@ -11992,7 +11997,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392557&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227525&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 109.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953629&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 109.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953629&a=3013769&m=102705" },
     ],
   },
   {
@@ -12007,7 +12012,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46679769005&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46679768880&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 94.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46679026041&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 94.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46679026041&a=3013769&m=102705" },
     ],
   },
   {
@@ -12022,7 +12027,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392562&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227530&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 134.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953496&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 134.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953496&a=3013769&m=102705" },
     ],
   },
   {
@@ -12037,7 +12042,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 230.67, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392559&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 304.78, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227527&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 325.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953512&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 325.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953512&a=3013769&m=102705" },
     ],
   },
   {
@@ -12052,7 +12057,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 220.76, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392554&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 291.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227522&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 271.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953728&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 281.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953728&a=3013769&m=102705" },
     ],
   },
   {
@@ -12096,7 +12101,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392568&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227536&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 134.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953358&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 134.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953358&a=3013769&m=102705" },
     ],
   },
   {
@@ -12111,7 +12116,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 63.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392604&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 83.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227572&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956027&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956027&a=3013769&m=102705" },
     ],
   },
   {
@@ -12126,7 +12131,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 82.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392555&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 108.86, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227523&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 108.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954358&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 108.28, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954358&a=3013769&m=102705" },
     ],
   },
   {
@@ -12141,7 +12146,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392567&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227535&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953566&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953566&a=3013769&m=102705" },
     ],
   },
   {
@@ -12171,7 +12176,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 58.4, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392577&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.16, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227545&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 61.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954592&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 61.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954592&a=3013769&m=102705" },
     ],
   },
   {
@@ -12184,9 +12189,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F135%2Fthumbnail.jpg&feedId=117951&k=045b905eb1f1e355fe9288a268d65a6fb0ff6995",
     offers: [
-      { store: "FootballTicketNetUK", price: 41.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392581&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 55.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227549&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954748&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 33.37, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392581&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 44.09, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227549&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 44.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954748&a=3013769&m=102705" },
     ],
   },
   {
@@ -12216,7 +12221,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 114.3, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392570&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 151.02, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227538&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 163.89, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952673&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 136.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952673&a=3013769&m=102705" },
     ],
   },
   {
@@ -12469,7 +12474,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 29.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392618&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 38.57, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227586&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.28, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957801&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.24, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957801&a=3013769&m=102705" },
     ],
   },
   {
@@ -12559,7 +12564,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 39.63, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392611&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.36, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227579&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 58.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956385&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 58.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956385&a=3013769&m=102705" },
     ],
   },
   {
@@ -12574,7 +12579,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 229.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392666&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 303.15, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227596&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 174.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963665&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 174.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963665&a=3013769&m=102705" },
     ],
   },
   {
@@ -12648,7 +12653,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F63%2Fthumbnail.jpg&feedId=117951&k=b1c77fa36aa6bba37d13a9c88ca9fc987246daa4",
     offers: [
       { store: "FootballTicketNetUK", price: 70.26, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392625&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 92.84, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227593&a=3013769&m=109004" },
+      { store: "FootballTicketNetUS", price: 92.83, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227593&a=3013769&m=109004" },
       { store: "Gigsberg", price: 64.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963799&a=3013769&m=102705" },
     ],
   },
@@ -12709,7 +12714,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 29.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392612&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 38.57, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227580&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 43.92, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956275&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 43.82, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956275&a=3013769&m=102705" },
     ],
   },
   {
@@ -12724,7 +12729,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 58.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392613&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.15, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227581&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 85.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956479&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 85.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956479&a=3013769&m=102705" },
     ],
   },
   {
@@ -12754,7 +12759,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 24.95, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392610&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 32.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227578&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 37.92, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956448&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 37.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956448&a=3013769&m=102705" },
     ],
   },
   {
@@ -12769,7 +12774,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 73.79, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392607&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 97.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227575&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 106.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956316&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 106.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956316&a=3013769&m=102705" },
     ],
   },
   {
@@ -12782,8 +12787,8 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "Liga Portugal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F287%2Fthumbnail.jpg&feedId=117951&k=036c15dfff454210cb2dc0f69bb34ae989a2cb4c",
     offers: [
-      { store: "FootballTicketNetUK", price: 25.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392608&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 34.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227576&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 26.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392608&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 34.35, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227576&a=3013769&m=109004" },
       { store: "Gigsberg", price: 34.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956392&a=3013769&m=102705" },
     ],
   },
@@ -12814,7 +12819,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 66.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392609&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 88.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227577&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956447&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 96.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956447&a=3013769&m=102705" },
     ],
   },
   {
@@ -12873,7 +12878,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392675&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227605&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 80.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953306&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953306&a=3013769&m=102705" },
     ],
   },
   {
@@ -12886,9 +12891,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F299%2Fthumbnail.jpg&feedId=117951&k=05070e9c2b43d39f7b94cbb9d8bd6f198f971405",
     offers: [
-      { store: "FootballTicketNetUK", price: 63.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392671&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 84.55, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227601&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953366&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 62.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392671&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 83.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227601&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 88.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953366&a=3013769&m=102705" },
     ],
   },
   {
@@ -12903,7 +12908,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923422&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923336&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819662&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819662&a=3013769&m=102705" },
     ],
   },
   {
@@ -12947,7 +12952,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528541&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528599&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356560&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356560&a=3013769&m=102705" },
     ],
   },
   {
@@ -12962,7 +12967,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392677&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227607&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953448&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953448&a=3013769&m=102705" },
     ],
   },
   {
@@ -12989,9 +12994,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "UEFA Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1%2Fthumbnail.jpg&feedId=117951&k=c5e6974fdba6eeb0baac3447869a96ccbc302fa8",
     offers: [
-      { store: "FootballTicketNetUK", price: 77.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392685&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 102.0, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227615&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 112.86, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543616&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 79.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392685&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 105.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227615&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 113.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543616&a=3013769&m=102705" },
     ],
   },
   {
@@ -13006,7 +13011,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 87.87, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392684&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227614&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 137.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543632&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 137.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543632&a=3013769&m=102705" },
     ],
   },
   {
@@ -13021,7 +13026,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 48.94, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392679&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 64.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227609&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 67.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543630&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 67.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543630&a=3013769&m=102705" },
     ],
   },
   {
@@ -13036,7 +13041,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 115.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392678&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 151.95, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227608&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 162.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543624&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 162.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543624&a=3013769&m=102705" },
     ],
   },
   {
@@ -13051,7 +13056,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706497&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706524&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819673&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819673&a=3013769&m=102705" },
     ],
   },
   {
@@ -13109,9 +13114,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "UEFA Champions League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F124%2Fthumbnail.jpg&feedId=117951&k=8d7bd0a1a8f0862c81c8f81bc848aa2400193c29",
     offers: [
-      { store: "FootballTicketNetUK", price: 50.06, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392688&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 66.14, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227691&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 73.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543625&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 49.22, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392688&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 65.04, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227691&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 72.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543625&a=3013769&m=102705" },
     ],
   },
   {
@@ -13126,7 +13131,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 206.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392687&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 272.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227690&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 293.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543626&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 293.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543626&a=3013769&m=102705" },
     ],
   },
   {
@@ -13290,7 +13295,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 50.05, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392697&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 66.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227700&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 50.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543640&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 45.32, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543640&a=3013769&m=102705" },
     ],
   },
   {
@@ -13305,7 +13310,7 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392704&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227707&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543638&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543638&a=3013769&m=102705" },
     ],
   },
   {
@@ -13318,8 +13323,8 @@ const minedTicketProductsChunk5: TicketProduct[] = [
     competition: "UEFA Europa League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F101%2Fthumbnail.jpg&feedId=117951&k=7e176c0a3c243654d7947d8787a9e4b159cdf605",
     offers: [
-      { store: "FootballTicketNetUK", price: 20.05, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392699&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 26.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227702&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 20.1, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392699&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 26.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227702&a=3013769&m=109004" },
       { store: "Gigsberg", price: 20.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543635&a=3013769&m=102705" },
     ],
   },
@@ -13337,6 +13342,9 @@ const minedTicketProductsChunk5: TicketProduct[] = [
       { store: "FootballTicketNetUS", price: 110.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46691873553&a=3013769&m=109004" },
     ],
   },
+];
+
+const minedTicketProductsChunk6: TicketProduct[] = [
   {
     id: "fc-red-bull-salzburg-vs-crystal-palace-2027-01-28",
     event: "FC Red Bull Salzburg vs Crystal Palace",
@@ -13352,9 +13360,6 @@ const minedTicketProductsChunk5: TicketProduct[] = [
       { store: "Gigsberg", price: 85.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543639&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk6: TicketProduct[] = [
   {
     id: "juventus-vs-real-sociedad-2027-01-28",
     event: "Juventus vs Real Sociedad",
@@ -13398,6 +13403,21 @@ const minedTicketProductsChunk6: TicketProduct[] = [
       { store: "FootballTicketNetUK", price: 54.23, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392700&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 71.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227703&a=3013769&m=109004" },
       { store: "Gigsberg", price: 79.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45939543641&a=3013769&m=102705" },
+    ],
+  },
+  {
+    id: "tsg-1899-hoffenheim-vs-ferencvarosi-tc-2027-01-28",
+    event: "TSG 1899 Hoffenheim vs Ferencvárosi TC",
+    venue: "Wirsol Rhein Neckar Arena",
+    city: "Sinsheim",
+    date: "2027-01-28",
+    time: "21:00:00",
+    competition: "UEFA Europa League",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F130%2Fthumbnail.jpg&feedId=117951&k=011794540cb63927c20c94f332bffa6c82db74c5",
+    offers: [
+      { store: "FootballTicketNetUK", price: 79.26, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46803127853&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 104.72, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46803127841&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 40.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46262182511&a=3013769&m=102705" },
     ],
   },
   {
@@ -13485,6 +13505,19 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     ],
   },
   {
+    id: "panathinaikos-vs-olympiacos-2027-01-30",
+    event: "Panathinaikos vs Olympiacos",
+    venue: "Apostolos Nikolaidis Stadium",
+    date: "2027-01-30",
+    time: "02:00:00",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F571%2Fthumbnail.jpg&feedId=117951&k=c1a54631926a5cdc3e9966739281c7e32b6f05eb",
+    offers: [
+      { store: "FootballTicketNetUK", price: 70.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46399745492&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 93.7, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46399745499&a=3013769&m=109004" },
+    ],
+  },
+  {
     id: "bolton-wanderers-vs-derby-county-2027-01-30",
     event: "Bolton Wanderers vs Derby County",
     venue: "Toughsheet Community Stadium",
@@ -13496,7 +13529,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392716&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227719&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952717&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952717&a=3013769&m=102705" },
     ],
   },
   {
@@ -13511,7 +13544,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706498&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706525&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819735&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819735&a=3013769&m=102705" },
     ],
   },
   {
@@ -13526,7 +13559,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392718&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227721&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953704&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953704&a=3013769&m=102705" },
     ],
   },
   {
@@ -13541,7 +13574,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46279746531&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46279746528&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46279402300&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46279402300&a=3013769&m=102705" },
     ],
   },
   {
@@ -13556,7 +13589,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392706&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227709&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952695&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 92.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952695&a=3013769&m=102705" },
     ],
   },
   {
@@ -13586,7 +13619,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 309.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392709&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 408.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227712&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 435.92, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952758&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 436.57, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952758&a=3013769&m=102705" },
     ],
   },
   {
@@ -13601,7 +13634,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392717&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227720&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 80.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953314&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953314&a=3013769&m=102705" },
     ],
   },
   {
@@ -13616,7 +13649,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 127.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392710&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 167.81, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227713&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 210.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953616&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 210.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953616&a=3013769&m=102705" },
     ],
   },
   {
@@ -13631,7 +13664,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 90.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46088805298&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46088805278&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 126.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819732&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 127.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819732&a=3013769&m=102705" },
     ],
   },
   {
@@ -13646,7 +13679,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 85.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392750&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228730&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 122.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660474&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 122.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660474&a=3013769&m=102705" },
     ],
   },
   {
@@ -13661,7 +13694,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 125.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46719407095&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 165.16, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46719407428&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 176.35, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819734&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 176.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819734&a=3013769&m=102705" },
     ],
   },
   {
@@ -13691,7 +13724,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 222.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392707&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 293.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227710&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 368.07, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953534&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 368.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953534&a=3013769&m=102705" },
     ],
   },
   {
@@ -13704,9 +13737,9 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F4%2Fthumbnail.jpg&feedId=117951&k=00694b77108d0b40db161a8715b1c6291b76baa0",
     offers: [
-      { store: "FootballTicketNetUK", price: 146.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392705&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 194.22, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227708&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 220.76, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953684&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 145.97, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392705&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 192.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227708&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 221.09, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953684&a=3013769&m=102705" },
     ],
   },
   {
@@ -13721,7 +13754,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528542&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528600&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356602&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356602&a=3013769&m=102705" },
     ],
   },
   {
@@ -13734,9 +13767,9 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F299%2Fthumbnail.jpg&feedId=117951&k=05070e9c2b43d39f7b94cbb9d8bd6f198f971405",
     offers: [
-      { store: "FootballTicketNetUK", price: 64.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392713&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 84.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227716&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.28, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953377&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 63.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392713&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 83.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227716&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 89.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953377&a=3013769&m=102705" },
     ],
   },
   {
@@ -13751,7 +13784,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 87.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392711&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 115.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227714&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 123.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953778&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 123.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953778&a=3013769&m=102705" },
     ],
   },
   {
@@ -13766,7 +13799,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923423&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923337&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819731&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819731&a=3013769&m=102705" },
     ],
   },
   {
@@ -13811,7 +13844,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392712&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227715&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 95.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953671&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 96.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953671&a=3013769&m=102705" },
     ],
   },
   {
@@ -13826,7 +13859,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392719&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227722&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953444&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953444&a=3013769&m=102705" },
     ],
   },
   {
@@ -13869,9 +13902,9 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F124%2Fthumbnail.jpg&feedId=117951&k=8d7bd0a1a8f0862c81c8f81bc848aa2400193c29",
     offers: [
-      { store: "FootballTicketNetUK", price: 56.73, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392721&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 74.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228701&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 76.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954574&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 53.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392721&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 70.55, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228701&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 71.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954574&a=3013769&m=102705" },
     ],
   },
   {
@@ -14078,8 +14111,8 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "Scottish Premiership",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F174%2Fthumbnail.jpg&feedId=117951&k=ff226e230b906194e807ebfe955d34b9b791b050",
     offers: [
-      { store: "FootballTicketNetUK", price: 86.62, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392780&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 114.45, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228760&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 108.45, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392780&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 143.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228760&a=3013769&m=109004" },
     ],
   },
   {
@@ -14332,7 +14365,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 20.86, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392744&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 27.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228724&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 27.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958614&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 27.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958614&a=3013769&m=102705" },
     ],
   },
   {
@@ -14347,7 +14380,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392761&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 48.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228741&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 54.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956247&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 54.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956247&a=3013769&m=102705" },
     ],
   },
   {
@@ -14362,7 +14395,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 71.37, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392757&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 94.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228737&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 103.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956285&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 103.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956285&a=3013769&m=102705" },
     ],
   },
   {
@@ -14392,7 +14425,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 16.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392760&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 21.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228740&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 26.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956315&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 25.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956315&a=3013769&m=102705" },
     ],
   },
   {
@@ -14407,7 +14440,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.07, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392758&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228738&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956237&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956237&a=3013769&m=102705" },
     ],
   },
   {
@@ -14436,7 +14469,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392759&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 29.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228739&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956262&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 34.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956262&a=3013769&m=102705" },
     ],
   },
   {
@@ -14451,7 +14484,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392755&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.75, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228735&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956373&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956373&a=3013769&m=102705" },
     ],
   },
   {
@@ -14495,7 +14528,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 454.69, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392784&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 600.78, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228771&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 611.28, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819783&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 611.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252819783&a=3013769&m=102705" },
     ],
   },
   {
@@ -14540,7 +14573,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392787&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228774&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 136.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660468&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 136.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660468&a=3013769&m=102705" },
     ],
   },
   {
@@ -14555,7 +14588,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 54.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392788&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 71.35, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228775&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 78.82, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956025&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 78.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956025&a=3013769&m=102705" },
     ],
   },
   {
@@ -14569,7 +14602,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392789&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228776&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 59.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307698&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307698&a=3013769&m=102705" },
     ],
   },
   {
@@ -14643,6 +14676,20 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     ],
   },
   {
+    id: "olympiacos-vs-asteras-tripoli-2027-02-06",
+    event: "Olympiacos vs Asteras Tripoli",
+    venue: "Karaiskakis Stadium",
+    city: "Piraeus",
+    date: "2027-02-06",
+    time: "02:00:00",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F208%2Fthumbnail.jpg&feedId=117951&k=b510264b1be995ebdfe3aa735a24fc02cbcc4ab3",
+    offers: [
+      { store: "FootballTicketNetUK", price: 29.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392827&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 38.58, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228814&a=3013769&m=109004" },
+    ],
+  },
+  {
     id: "charlton-athletic-vs-wolverhampton-wanderers-2027-02-06",
     event: "Charlton Athletic vs Wolverhampton Wanderers",
     venue: "The Valley",
@@ -14654,7 +14701,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392806&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228793&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953426&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953426&a=3013769&m=102705" },
     ],
   },
   {
@@ -14669,7 +14716,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392804&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228791&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953570&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953570&a=3013769&m=102705" },
     ],
   },
   {
@@ -14741,7 +14788,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 280.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392791&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 370.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228778&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 411.88, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953577&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 412.49, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953577&a=3013769&m=102705" },
     ],
   },
   {
@@ -14756,7 +14803,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392802&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228789&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952650&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952650&a=3013769&m=102705" },
     ],
   },
   {
@@ -14771,7 +14818,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 110.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46719407094&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 145.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46719407361&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 155.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45764069710&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 155.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45764069710&a=3013769&m=102705" },
     ],
   },
   {
@@ -14786,7 +14833,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 77.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392798&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 101.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228785&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 104.57, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953663&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 104.72, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953663&a=3013769&m=102705" },
     ],
   },
   {
@@ -14801,7 +14848,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392801&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228788&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953318&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953318&a=3013769&m=102705" },
     ],
   },
   {
@@ -14816,7 +14863,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 87.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392795&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 115.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228782&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 122.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953553&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 122.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953553&a=3013769&m=102705" },
     ],
   },
   {
@@ -14844,8 +14891,8 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F9%2Fthumbnail.jpg&feedId=117951&k=93a0eb2faaf9a223a463f3d8b02defc8a218683e",
     offers: [
-      { store: "FootballTicketNetUK", price: 105.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392794&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 139.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228781&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 105.1, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392794&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 138.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228781&a=3013769&m=109004" },
       { store: "Gigsberg", price: 148.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953627&a=3013769&m=102705" },
     ],
   },
@@ -14861,7 +14908,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392799&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228786&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953495&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953495&a=3013769&m=102705" },
     ],
   },
   {
@@ -14891,7 +14938,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 163.35, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392796&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 215.83, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228783&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 230.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953508&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 230.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953508&a=3013769&m=102705" },
     ],
   },
   {
@@ -14904,9 +14951,9 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2%2Fthumbnail.jpg&feedId=117951&k=2e5228bd7de3b6e2c3d6568a2106bbf6a997c6aa",
     offers: [
-      { store: "FootballTicketNetUK", price: 144.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392792&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 190.7, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228779&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 198.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953759&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 142.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392792&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 188.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228779&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 199.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953759&a=3013769&m=102705" },
     ],
   },
   {
@@ -14921,7 +14968,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392797&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228784&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953798&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953798&a=3013769&m=102705" },
     ],
   },
   {
@@ -14951,7 +14998,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392805&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228792&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953355&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953355&a=3013769&m=102705" },
     ],
   },
   {
@@ -14966,7 +15013,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 66.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392803&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 88.51, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228790&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 94.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953384&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 94.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953384&a=3013769&m=102705" },
     ],
   },
   {
@@ -15026,7 +15073,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 72.09, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392793&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 95.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228780&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954344&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954344&a=3013769&m=102705" },
     ],
   },
   {
@@ -15056,7 +15103,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528569&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528678&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356612&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356612&a=3013769&m=102705" },
     ],
   },
   {
@@ -15220,7 +15267,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222778&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222712&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 134.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227815&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 134.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227815&a=3013769&m=102705" },
     ],
   },
   {
@@ -15235,7 +15282,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 49.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392852&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 64.99, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228231&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 71.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957900&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957900&a=3013769&m=102705" },
     ],
   },
   {
@@ -15295,7 +15342,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 31.69, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392849&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 41.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228228&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 45.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957785&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 45.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957785&a=3013769&m=102705" },
     ],
   },
   {
@@ -15370,7 +15417,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 31.29, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392842&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 41.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228221&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 46.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956380&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 46.78, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956380&a=3013769&m=102705" },
     ],
   },
   {
@@ -15385,7 +15432,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 116.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392860&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 154.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228239&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 60.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963668&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 61.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963668&a=3013769&m=102705" },
     ],
   },
   {
@@ -15475,7 +15522,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 31.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392843&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.15, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228222&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.76, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956278&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 47.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956278&a=3013769&m=102705" },
     ],
   },
   {
@@ -15505,7 +15552,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 32.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392836&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.99, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228215&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.3, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956359&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 47.28, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956359&a=3013769&m=102705" },
     ],
   },
   {
@@ -15535,7 +15582,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 21.9, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392838&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 28.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228217&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 33.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956318&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 33.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956318&a=3013769&m=102705" },
     ],
   },
   {
@@ -15550,7 +15597,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 33.11, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392839&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 43.75, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228218&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 43.76, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956400&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 43.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956400&a=3013769&m=102705" },
     ],
   },
   {
@@ -15623,7 +15670,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392867&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.64, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228246&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952681&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952681&a=3013769&m=102705" },
     ],
   },
   {
@@ -15636,9 +15683,9 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F43%2Fthumbnail.jpg&feedId=117951&k=c678fa51ccac804b04a7cc98bac8129e2804cd2c",
     offers: [
-      { store: "FootballTicketNetUK", price: 299.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392873&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 395.07, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228252&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 423.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820250&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 291.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392873&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 384.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228252&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 423.86, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820250&a=3013769&m=102705" },
     ],
   },
   {
@@ -15653,7 +15700,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 71.81, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392871&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 94.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228250&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953654&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953654&a=3013769&m=102705" },
     ],
   },
   {
@@ -15698,7 +15745,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392874&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228253&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592962207&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592962207&a=3013769&m=102705" },
     ],
   },
   {
@@ -15713,7 +15760,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.41, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392866&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 126.07, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228245&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 126.57, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953756&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 126.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953756&a=3013769&m=102705" },
     ],
   },
   {
@@ -15728,7 +15775,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 92.7, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392869&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 122.48, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228248&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 130.78, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953780&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 130.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953780&a=3013769&m=102705" },
     ],
   },
   {
@@ -15743,7 +15790,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 86.94, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392872&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 114.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228251&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 126.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953666&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 127.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953666&a=3013769&m=102705" },
     ],
   },
   {
@@ -15758,7 +15805,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392879&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228258&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952642&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952642&a=3013769&m=102705" },
     ],
   },
   {
@@ -15862,6 +15909,20 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     ],
   },
   {
+    id: "olympiacos-vs-volos-nfc-2027-02-13",
+    event: "Olympiacos vs Volos NFC",
+    venue: "Karaiskakis Stadium",
+    city: "Piraeus",
+    date: "2027-02-13",
+    time: "02:00:00",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F208%2Fthumbnail.jpg&feedId=117951&k=b510264b1be995ebdfe3aa735a24fc02cbcc4ab3",
+    offers: [
+      { store: "FootballTicketNetUK", price: 29.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392906&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 38.58, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228285&a=3013769&m=109004" },
+    ],
+  },
+  {
     id: "panathinaikos-vs-kalamata-fc-2027-02-13",
     event: "Panathinaikos vs Kalamata FC",
     venue: "Apostolos Nikolaidis Stadium",
@@ -15884,9 +15945,9 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F299%2Fthumbnail.jpg&feedId=117951&k=05070e9c2b43d39f7b94cbb9d8bd6f198f971405",
     offers: [
-      { store: "FootballTicketNetUK", price: 63.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392877&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 84.55, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228256&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953376&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 62.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392877&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 83.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228256&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 88.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953376&a=3013769&m=102705" },
     ],
   },
   {
@@ -15901,7 +15962,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392882&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228261&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953352&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953352&a=3013769&m=102705" },
     ],
   },
   {
@@ -15916,7 +15977,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392883&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228262&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 80.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952794&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952794&a=3013769&m=102705" },
     ],
   },
   {
@@ -15949,6 +16010,9 @@ const minedTicketProductsChunk6: TicketProduct[] = [
       { store: "Gigsberg", price: 43.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307690&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk7: TicketProduct[] = [
   {
     id: "fc-lorient-vs-le-havre-ac-2027-02-13",
     event: "FC Lorient vs Le Havre AC",
@@ -15976,7 +16040,7 @@ const minedTicketProductsChunk6: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392917&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228296&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 59.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307686&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45645307686&a=3013769&m=102705" },
     ],
   },
   {
@@ -16024,9 +16088,6 @@ const minedTicketProductsChunk6: TicketProduct[] = [
       { store: "Gigsberg", price: 49.72, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958744&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk7: TicketProduct[] = [
   {
     id: "olympique-lyonnais-vs-rc-lens-2027-02-13",
     event: "Olympique Lyonnais vs RC Lens",
@@ -16082,9 +16143,9 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F18%2Fthumbnail.jpg&feedId=117951&k=fe09c36cb584ec6e99109e0245a2f8a0a017b618",
     offers: [
-      { store: "FootballTicketNetUK", price: 61.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392880&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 81.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228259&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 79.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953400&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 60.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392880&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 80.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228259&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 79.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953400&a=3013769&m=102705" },
     ],
   },
   {
@@ -16098,7 +16159,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392919&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228298&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 59.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568884&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568884&a=3013769&m=102705" },
     ],
   },
   {
@@ -16128,7 +16189,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392884&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228263&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953711&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953711&a=3013769&m=102705" },
     ],
   },
   {
@@ -16277,7 +16338,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 50.04, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392936&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 66.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228315&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 71.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957898&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957898&a=3013769&m=102705" },
     ],
   },
   {
@@ -16290,8 +16351,8 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "Serie A",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F92%2Fthumbnail.jpg&feedId=117951&k=0bdf5f68cdf65b6413df08f997c350f9e5fae2ac",
     offers: [
-      { store: "FootballTicketNetUK", price: 46.1, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392929&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 60.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228308&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 45.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392929&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 60.67, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228308&a=3013769&m=109004" },
       { store: "Gigsberg", price: 42.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957660&a=3013769&m=102705" },
     ],
   },
@@ -16546,7 +16607,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392928&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 48.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228307&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 54.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956238&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 54.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956238&a=3013769&m=102705" },
     ],
   },
   {
@@ -16561,7 +16622,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392925&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 29.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228304&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956297&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 34.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956297&a=3013769&m=102705" },
     ],
   },
   {
@@ -16576,7 +16637,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.11, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275537&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.67, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275448&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 137.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46304314757&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 136.82, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46304314757&a=3013769&m=102705" },
     ],
   },
   {
@@ -16591,7 +16652,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 16.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392927&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 21.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228306&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 26.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956322&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 25.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956322&a=3013769&m=102705" },
     ],
   },
   {
@@ -16621,7 +16682,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 94.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392924&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 124.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228303&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956386&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956386&a=3013769&m=102705" },
     ],
   },
   {
@@ -16636,7 +16697,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392926&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 29.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228305&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956268&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 34.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956268&a=3013769&m=102705" },
     ],
   },
   {
@@ -16651,7 +16712,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 47.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392922&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 63.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228301&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660480&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 33.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660480&a=3013769&m=102705" },
     ],
   },
   {
@@ -16681,7 +16742,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392951&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228330&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953425&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 97.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953425&a=3013769&m=102705" },
     ],
   },
   {
@@ -16696,7 +16757,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392949&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228328&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953327&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953327&a=3013769&m=102705" },
     ],
   },
   {
@@ -16711,7 +16772,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528590&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528716&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356632&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356632&a=3013769&m=102705" },
     ],
   },
   {
@@ -16726,7 +16787,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923429&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923342&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820786&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820786&a=3013769&m=102705" },
     ],
   },
   {
@@ -16741,7 +16802,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528589&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528715&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356631&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356631&a=3013769&m=102705" },
     ],
   },
   {
@@ -16771,7 +16832,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222743&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222703&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227835&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227835&a=3013769&m=102705" },
     ],
   },
   {
@@ -16786,7 +16847,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392954&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228333&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952748&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952748&a=3013769&m=102705" },
     ],
   },
   {
@@ -16816,7 +16877,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706505&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706530&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820792&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820792&a=3013769&m=102705" },
     ],
   },
   {
@@ -16831,7 +16892,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392950&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228329&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953597&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953597&a=3013769&m=102705" },
     ],
   },
   {
@@ -16846,7 +16907,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528591&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528717&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356641&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356641&a=3013769&m=102705" },
     ],
   },
   {
@@ -16861,7 +16922,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 114.3, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392972&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 151.02, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228351&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 163.89, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952665&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 138.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952665&a=3013769&m=102705" },
     ],
   },
   {
@@ -16948,7 +17009,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923430&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923343&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820861&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820861&a=3013769&m=102705" },
     ],
   },
   {
@@ -16963,7 +17024,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392968&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228347&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953569&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953569&a=3013769&m=102705" },
     ],
   },
   {
@@ -17047,9 +17108,9 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1%2Fthumbnail.jpg&feedId=117951&k=c5e6974fdba6eeb0baac3447869a96ccbc302fa8",
     offers: [
-      { store: "FootballTicketNetUK", price: 186.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392956&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 247.07, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228335&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 259.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953586&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 161.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392956&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 214.02, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228335&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 259.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953586&a=3013769&m=102705" },
     ],
   },
   {
@@ -17064,7 +17125,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222744&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222704&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227839&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227839&a=3013769&m=102705" },
     ],
   },
   {
@@ -17079,7 +17140,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392970&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228349&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952719&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952719&a=3013769&m=102705" },
     ],
   },
   {
@@ -17109,7 +17170,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 81.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392962&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 107.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228341&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 114.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952785&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 114.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952785&a=3013769&m=102705" },
     ],
   },
   {
@@ -17124,7 +17185,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 110.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392961&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 145.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228340&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 155.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592961892&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 155.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592961892&a=3013769&m=102705" },
     ],
   },
   {
@@ -17139,7 +17200,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392969&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228348&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953424&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 97.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953424&a=3013769&m=102705" },
     ],
   },
   {
@@ -17152,9 +17213,9 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F5%2Fthumbnail.jpg&feedId=117951&k=22447c4cc3d7bf3600765f3acb517a6e0f7f67d6",
     offers: [
-      { store: "FootballTicketNetUK", price: 123.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392963&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 163.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228342&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 193.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953621&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 123.07, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392963&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 162.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228342&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 194.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953621&a=3013769&m=102705" },
     ],
   },
   {
@@ -17169,7 +17230,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392967&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228346&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953338&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953338&a=3013769&m=102705" },
     ],
   },
   {
@@ -17198,7 +17259,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393002&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.9, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226895&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 129.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592955997&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 129.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592955997&a=3013769&m=102705" },
     ],
   },
   {
@@ -17228,7 +17289,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 178.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392964&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 235.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228343&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 251.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953506&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 251.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953506&a=3013769&m=102705" },
     ],
   },
   {
@@ -17271,9 +17332,9 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F4%2Fthumbnail.jpg&feedId=117951&k=00694b77108d0b40db161a8715b1c6291b76baa0",
     offers: [
-      { store: "FootballTicketNetUK", price: 56.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392957&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 74.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228336&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 81.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953694&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 56.35, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392957&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 74.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228336&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 81.13, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953694&a=3013769&m=102705" },
     ],
   },
   {
@@ -17332,7 +17393,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.07, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392998&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.37, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226891&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 87.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958651&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958651&a=3013769&m=102705" },
     ],
   },
   {
@@ -17377,7 +17438,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 64.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393004&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 84.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226897&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.93, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956028&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 93.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956028&a=3013769&m=102705" },
     ],
   },
   {
@@ -17437,7 +17498,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 72.09, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008392960&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 95.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228339&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954352&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954352&a=3013769&m=102705" },
     ],
   },
   {
@@ -17452,7 +17513,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706506&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706531&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820862&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252820862&a=3013769&m=102705" },
     ],
   },
   {
@@ -17613,8 +17674,8 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "Serie A",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F101%2Fthumbnail.jpg&feedId=117951&k=7e176c0a3c243654d7947d8787a9e4b159cdf605",
     offers: [
-      { store: "FootballTicketNetUK", price: 31.6, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393020&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 41.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226913&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 31.41, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393020&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 41.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226913&a=3013769&m=109004" },
       { store: "Gigsberg", price: 33.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957808&a=3013769&m=102705" },
     ],
   },
@@ -17780,7 +17841,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393012&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226905&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956377&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 55.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956377&a=3013769&m=102705" },
     ],
   },
   {
@@ -17795,7 +17856,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 116.8, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393030&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 154.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226923&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 165.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963670&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 75.95, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963670&a=3013769&m=102705" },
     ],
   },
   {
@@ -17913,7 +17974,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.86, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393013&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 40.78, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226906&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 46.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956276&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 46.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956276&a=3013769&m=102705" },
     ],
   },
   {
@@ -17943,7 +18004,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 28.36, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393011&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 37.47, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226904&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.67, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956245&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956245&a=3013769&m=102705" },
     ],
   },
   {
@@ -17973,7 +18034,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 47.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393010&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 63.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226903&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 70.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956422&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956422&a=3013769&m=102705" },
     ],
   },
   {
@@ -18033,7 +18094,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393047&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226940&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952654&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952654&a=3013769&m=102705" },
     ],
   },
   {
@@ -18150,6 +18211,20 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     ],
   },
   {
+    id: "olympiacos-vs-aris-fc-2027-02-27",
+    event: "Olympiacos vs Aris FC",
+    venue: "Karaiskakis Stadium",
+    city: "Piraeus",
+    date: "2027-02-27",
+    time: "02:00:00",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F208%2Fthumbnail.jpg&feedId=117951&k=b510264b1be995ebdfe3aa735a24fc02cbcc4ab3",
+    offers: [
+      { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393067&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226960&a=3013769&m=109004" },
+    ],
+  },
+  {
     id: "panathinaikos-vs-volos-nfc-2027-02-27",
     event: "Panathinaikos vs Volos NFC",
     venue: "Apostolos Nikolaidis Stadium",
@@ -18174,7 +18249,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 68.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393048&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226941&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 95.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953406&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 96.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953406&a=3013769&m=102705" },
     ],
   },
   {
@@ -18216,9 +18291,9 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F15%2Fthumbnail.jpg&feedId=117951&k=9af6ed8b5ae8765964bee844a8354e9dd73b1377",
     offers: [
-      { store: "FootballTicketNetUK", price: 98.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393038&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 129.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226931&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 162.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952685&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 115.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393038&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 151.95, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226931&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 162.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952685&a=3013769&m=102705" },
     ],
   },
   {
@@ -18233,7 +18308,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393050&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226943&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953307&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953307&a=3013769&m=102705" },
     ],
   },
   {
@@ -18248,7 +18323,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 873.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393076&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 1154.47, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226969&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 1232.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956015&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 1234.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956015&a=3013769&m=102705" },
     ],
   },
   {
@@ -18263,7 +18338,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46088805297&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.64, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46088805277&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252821532&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252821532&a=3013769&m=102705" },
     ],
   },
   {
@@ -18278,7 +18353,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 71.85, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393042&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 94.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226935&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953652&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953652&a=3013769&m=102705" },
     ],
   },
   {
@@ -18308,7 +18383,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 85.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393041&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226934&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 119.93, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953555&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 120.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953555&a=3013769&m=102705" },
     ],
   },
   {
@@ -18338,7 +18413,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 76.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393039&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 101.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226932&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 108.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953640&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 110.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953640&a=3013769&m=102705" },
     ],
   },
   {
@@ -18353,7 +18428,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393078&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226971&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 136.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660469&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 136.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660469&a=3013769&m=102705" },
     ],
   },
   {
@@ -18368,7 +18443,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 500.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46429205510&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 660.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46429205512&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 705.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252821533&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 706.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252821533&a=3013769&m=102705" },
     ],
   },
   {
@@ -18383,7 +18458,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393044&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226937&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 134.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953484&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 134.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953484&a=3013769&m=102705" },
     ],
   },
   {
@@ -18413,7 +18488,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 224.96, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393037&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 297.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226930&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 312.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953723&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 312.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953723&a=3013769&m=102705" },
     ],
   },
   {
@@ -18426,9 +18501,9 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F299%2Fthumbnail.jpg&feedId=117951&k=05070e9c2b43d39f7b94cbb9d8bd6f198f971405",
     offers: [
-      { store: "FootballTicketNetUK", price: 63.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393045&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 84.55, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226938&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953370&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 62.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393045&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 83.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226938&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 88.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953370&a=3013769&m=102705" },
     ],
   },
   {
@@ -18458,7 +18533,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 92.7, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393040&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 122.48, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226933&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 130.78, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953779&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 130.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953779&a=3013769&m=102705" },
     ],
   },
   {
@@ -18517,7 +18592,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393080&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226973&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 59.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568882&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 59.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568882&a=3013769&m=102705" },
     ],
   },
   {
@@ -18532,7 +18607,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 139.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393043&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 183.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226936&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 196.09, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953669&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 196.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953669&a=3013769&m=102705" },
     ],
   },
   {
@@ -18562,7 +18637,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393051&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226944&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953701&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953701&a=3013769&m=102705" },
     ],
   },
   {
@@ -18577,7 +18652,7 @@ const minedTicketProductsChunk7: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 195.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393046&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 257.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226939&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 399.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953733&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 400.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953733&a=3013769&m=102705" },
     ],
   },
   {
@@ -18610,6 +18685,9 @@ const minedTicketProductsChunk7: TicketProduct[] = [
       { store: "Gigsberg", price: 105.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954579&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk8: TicketProduct[] = [
   {
     id: "fc-augsburg-vs-sv-elversberg-2027-02-27",
     event: "FC Augsburg vs SV Elversberg",
@@ -18699,9 +18777,6 @@ const minedTicketProductsChunk7: TicketProduct[] = [
       { store: "FootballTicketNetUS", price: 771.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226975&a=3013769&m=109004" },
     ],
   },
-];
-
-const minedTicketProductsChunk8: TicketProduct[] = [
   {
     id: "ac-monza-vs-juventus-2027-02-28",
     event: "AC Monza vs Juventus",
@@ -18729,7 +18804,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 49.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393099&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 65.01, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226992&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 71.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957902&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957902&a=3013769&m=102705" },
     ],
   },
   {
@@ -18804,7 +18879,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 39.17, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393097&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 51.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226990&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957783&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 51.96, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957783&a=3013769&m=102705" },
     ],
   },
   {
@@ -18939,7 +19014,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 72.38, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393103&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 95.63, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226996&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 71.53, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963804&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 71.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963804&a=3013769&m=102705" },
     ],
   },
   {
@@ -18954,7 +19029,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393091&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 48.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226984&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 54.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956246&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 54.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956246&a=3013769&m=102705" },
     ],
   },
   {
@@ -18969,7 +19044,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 71.37, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393087&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 94.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226980&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 103.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956286&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 103.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956286&a=3013769&m=102705" },
     ],
   },
   {
@@ -18984,7 +19059,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 55.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393090&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 73.78, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226983&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 81.3, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660486&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 81.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660486&a=3013769&m=102705" },
     ],
   },
   {
@@ -19014,7 +19089,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 19.81, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393085&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 26.18, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226978&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 30.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660478&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 30.59, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660478&a=3013769&m=102705" },
     ],
   },
   {
@@ -19027,9 +19102,9 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "Liga Portugal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F287%2Fthumbnail.jpg&feedId=117951&k=036c15dfff454210cb2dc0f69bb34ae989a2cb4c",
     offers: [
-      { store: "FootballTicketNetUK", price: 36.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393086&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 48.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226979&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 48.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956393&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 36.65, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393086&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 48.43, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226979&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 48.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956393&a=3013769&m=102705" },
     ],
   },
   {
@@ -19059,7 +19134,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 66.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393084&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 88.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226977&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 96.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956370&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 96.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956370&a=3013769&m=102705" },
     ],
   },
   {
@@ -19074,7 +19149,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 163.52, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393083&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 216.06, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226976&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 233.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956423&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 233.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956423&a=3013769&m=102705" },
     ],
   },
   {
@@ -19104,7 +19179,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393113&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227006&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952733&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952733&a=3013769&m=102705" },
     ],
   },
   {
@@ -19119,7 +19194,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393114&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227007&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 80.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953312&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953312&a=3013769&m=102705" },
     ],
   },
   {
@@ -19134,7 +19209,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393112&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227005&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953427&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953427&a=3013769&m=102705" },
     ],
   },
   {
@@ -19149,7 +19224,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528539&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528597&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356657&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356657&a=3013769&m=102705" },
     ],
   },
   {
@@ -19164,7 +19239,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393111&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227004&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953564&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953564&a=3013769&m=102705" },
     ],
   },
   {
@@ -19193,7 +19268,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 58.4, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393129&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.16, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226832&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 67.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954794&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954794&a=3013769&m=102705" },
     ],
   },
   {
@@ -19298,7 +19373,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923424&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923338&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252821751&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252821751&a=3013769&m=102705" },
     ],
   },
   {
@@ -19313,7 +19388,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393127&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226830&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953712&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953712&a=3013769&m=102705" },
     ],
   },
   {
@@ -19328,7 +19403,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 154.84, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393115&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 204.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227008&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 218.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953593&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 218.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953593&a=3013769&m=102705" },
     ],
   },
   {
@@ -19358,7 +19433,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 77.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393121&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 101.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226824&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 108.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952786&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 108.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952786&a=3013769&m=102705" },
     ],
   },
   {
@@ -19373,7 +19448,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 110.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393120&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 145.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226823&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 155.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954363&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 155.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954363&a=3013769&m=102705" },
     ],
   },
   {
@@ -19388,7 +19463,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 111.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393122&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 147.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226825&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 166.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953620&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 166.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953620&a=3013769&m=102705" },
     ],
   },
   {
@@ -19403,7 +19478,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 174.69, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393123&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 230.82, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226826&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 246.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953519&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 246.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953519&a=3013769&m=102705" },
     ],
   },
   {
@@ -19418,7 +19493,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 122.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393117&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 161.2, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227010&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 172.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953526&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 172.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953526&a=3013769&m=102705" },
     ],
   },
   {
@@ -19433,7 +19508,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.94, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393116&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.2, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227009&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953696&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953696&a=3013769&m=102705" },
     ],
   },
   {
@@ -19448,7 +19523,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393124&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226827&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953802&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953802&a=3013769&m=102705" },
     ],
   },
   {
@@ -19463,7 +19538,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393126&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226829&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953356&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953356&a=3013769&m=102705" },
     ],
   },
   {
@@ -19478,7 +19553,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 87.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393119&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 114.95, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226822&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 118.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954343&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 118.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954343&a=3013769&m=102705" },
     ],
   },
   {
@@ -19595,7 +19670,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393141&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226844&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952646&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952646&a=3013769&m=102705" },
     ],
   },
   {
@@ -19610,7 +19685,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222725&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222660&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227878&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227878&a=3013769&m=102705" },
     ],
   },
   {
@@ -19625,7 +19700,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393140&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226843&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953331&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953331&a=3013769&m=102705" },
     ],
   },
   {
@@ -19668,9 +19743,9 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F299%2Fthumbnail.jpg&feedId=117951&k=05070e9c2b43d39f7b94cbb9d8bd6f198f971405",
     offers: [
-      { store: "FootballTicketNetUK", price: 63.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393137&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 84.55, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226840&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953368&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 62.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393137&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 83.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226840&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 88.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953368&a=3013769&m=102705" },
     ],
   },
   {
@@ -19698,8 +19773,8 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "Ligue 1",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F168%2Fthumbnail.jpg&feedId=117951&k=2b19646c117518d057ff132011aa1dbf676ff431",
     offers: [
-      { store: "FootballTicketNetUK", price: 82.59, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393162&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 109.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226865&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 77.58, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393162&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 102.51, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226865&a=3013769&m=109004" },
     ],
   },
   {
@@ -19712,9 +19787,9 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F18%2Fthumbnail.jpg&feedId=117951&k=fe09c36cb584ec6e99109e0245a2f8a0a017b618",
     offers: [
-      { store: "FootballTicketNetUK", price: 61.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393142&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 81.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226845&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 79.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953397&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 60.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393142&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 80.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226845&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 79.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953397&a=3013769&m=102705" },
     ],
   },
   {
@@ -19759,7 +19834,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706490&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706512&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252821821&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252821821&a=3013769&m=102705" },
     ],
   },
   {
@@ -19804,7 +19879,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528540&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528598&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356661&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356661&a=3013769&m=102705" },
     ],
   },
   {
@@ -19819,7 +19894,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393143&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226846&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953474&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953474&a=3013769&m=102705" },
     ],
   },
   {
@@ -19834,7 +19909,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 195.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393139&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 257.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226842&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 399.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953753&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 400.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953753&a=3013769&m=102705" },
     ],
   },
   {
@@ -19921,9 +19996,9 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F130%2Fthumbnail.jpg&feedId=117951&k=011794540cb63927c20c94f332bffa6c82db74c5",
     offers: [
-      { store: "FootballTicketNetUK", price: 69.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393149&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 92.39, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226852&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954783&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 62.57, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393149&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 82.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226852&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 90.92, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954783&a=3013769&m=102705" },
     ],
   },
   {
@@ -19965,8 +20040,8 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "Serie A",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F101%2Fthumbnail.jpg&feedId=117951&k=7e176c0a3c243654d7947d8787a9e4b159cdf605",
     offers: [
-      { store: "FootballTicketNetUK", price: 29.52, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393229&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 39.0, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227621&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 29.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393229&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 38.75, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227621&a=3013769&m=109004" },
       { store: "Gigsberg", price: 38.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957804&a=3013769&m=102705" },
     ],
   },
@@ -20117,7 +20192,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 31.7, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393222&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 41.89, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226874&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956383&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 47.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956383&a=3013769&m=102705" },
     ],
   },
   {
@@ -20310,7 +20385,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 32.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393216&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.99, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226868&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.49, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956358&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 47.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956358&a=3013769&m=102705" },
     ],
   },
   {
@@ -20340,7 +20415,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393218&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 29.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226870&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956319&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 34.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956319&a=3013769&m=102705" },
     ],
   },
   {
@@ -20355,7 +20430,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 55.89, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393217&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 73.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014226869&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 78.53, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956405&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 77.3, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956405&a=3013769&m=102705" },
     ],
   },
   {
@@ -20384,7 +20459,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 114.3, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393263&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 151.02, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227655&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 163.89, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952669&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 132.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952669&a=3013769&m=102705" },
     ],
   },
   {
@@ -20458,6 +20533,20 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     ],
   },
   {
+    id: "olympiacos-vs-kifisia-2027-03-13",
+    event: "Olympiacos vs Kifisia",
+    venue: "Karaiskakis Stadium",
+    city: "Piraeus",
+    date: "2027-03-13",
+    time: "02:00:00",
+    competition: "Super League Greece",
+    imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F208%2Fthumbnail.jpg&feedId=117951&k=b510264b1be995ebdfe3aa735a24fc02cbcc4ab3",
+    offers: [
+      { store: "FootballTicketNetUK", price: 29.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393274&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 38.58, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227666&a=3013769&m=109004" },
+    ],
+  },
+  {
     id: "panathinaikos-vs-levadiakos-2027-03-13",
     event: "Panathinaikos vs Levadiakos",
     venue: "Apostolos Nikolaidis Stadium",
@@ -20496,7 +20585,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275477&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275392&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 87.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46307570688&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 87.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46307570688&a=3013769&m=102705" },
     ],
   },
   {
@@ -20526,7 +20615,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393260&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227652&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952721&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952721&a=3013769&m=102705" },
     ],
   },
   {
@@ -20556,7 +20645,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393261&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227653&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952787&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952787&a=3013769&m=102705" },
     ],
   },
   {
@@ -20571,7 +20660,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393259&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227651&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953420&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 97.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953420&a=3013769&m=102705" },
     ],
   },
   {
@@ -20586,7 +20675,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 274.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393251&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 362.04, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227643&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 386.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953603&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 387.13, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953603&a=3013769&m=102705" },
     ],
   },
   {
@@ -20601,7 +20690,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 185.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393255&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 244.44, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227647&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 261.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822132&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 261.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822132&a=3013769&m=102705" },
     ],
   },
   {
@@ -20616,7 +20705,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393253&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.16, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227645&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953656&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953656&a=3013769&m=102705" },
     ],
   },
   {
@@ -20631,7 +20720,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46679769009&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46679768882&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 94.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46679778150&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 94.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46679778150&a=3013769&m=102705" },
     ],
   },
   {
@@ -20691,7 +20780,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 163.35, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393252&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 215.83, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227644&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 230.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953510&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 230.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953510&a=3013769&m=102705" },
     ],
   },
   {
@@ -20704,8 +20793,8 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F6%2Fthumbnail.jpg&feedId=117951&k=25d295bcc31a9c2d5bebffe79afe8718df462f99",
     offers: [
-      { store: "FootballTicketNetUK", price: 149.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393248&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 198.18, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227640&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 147.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393248&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 195.54, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227640&a=3013769&m=109004" },
       { store: "Gigsberg", price: 188.78, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953541&a=3013769&m=102705" },
     ],
   },
@@ -20719,9 +20808,9 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2%2Fthumbnail.jpg&feedId=117951&k=2e5228bd7de3b6e2c3d6568a2106bbf6a997c6aa",
     offers: [
-      { store: "FootballTicketNetUK", price: 115.23, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393246&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 152.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227638&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 156.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953763&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 113.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393246&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 150.47, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227638&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 156.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953763&a=3013769&m=102705" },
     ],
   },
   {
@@ -20766,7 +20855,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 42.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393278&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 56.22, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227670&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 60.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958607&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 60.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958607&a=3013769&m=102705" },
     ],
   },
   {
@@ -20796,7 +20885,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393258&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227650&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953341&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953341&a=3013769&m=102705" },
     ],
   },
   {
@@ -20826,7 +20915,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393284&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 88.53, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227676&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956026&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 97.3, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956026&a=3013769&m=102705" },
     ],
   },
   {
@@ -20841,7 +20930,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923425&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923339&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822131&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822131&a=3013769&m=102705" },
     ],
   },
   {
@@ -20856,7 +20945,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 72.09, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393250&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 95.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227642&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 94.93, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954348&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 95.07, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954348&a=3013769&m=102705" },
     ],
   },
   {
@@ -20871,7 +20960,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 77.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393254&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 101.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227646&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 108.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953679&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 108.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953679&a=3013769&m=102705" },
     ],
   },
   {
@@ -20886,7 +20975,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393256&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227648&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953565&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953565&a=3013769&m=102705" },
     ],
   },
   {
@@ -20901,7 +20990,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393262&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227654&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953719&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953719&a=3013769&m=102705" },
     ],
   },
   {
@@ -21032,8 +21121,8 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "Serie A",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F101%2Fthumbnail.jpg&feedId=117951&k=7e176c0a3c243654d7947d8787a9e4b159cdf605",
     offers: [
-      { store: "FootballTicketNetUK", price: 29.52, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393300&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 39.0, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228365&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 29.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393300&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 38.75, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228365&a=3013769&m=109004" },
       { store: "Gigsberg", price: 38.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957817&a=3013769&m=102705" },
     ],
   },
@@ -21274,9 +21363,12 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.08, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393294&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227686&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956236&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956236&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk9: TicketProduct[] = [
   {
     id: "arouca-vs-fc-alverca-2027-03-14",
     event: "Arouca vs FC Alverca",
@@ -21289,7 +21381,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393291&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227683&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956298&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 55.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956298&a=3013769&m=102705" },
     ],
   },
   {
@@ -21304,7 +21396,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 48.38, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393293&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 63.93, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227685&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 70.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956481&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956481&a=3013769&m=102705" },
     ],
   },
   {
@@ -21334,7 +21426,7 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393289&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 40.35, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227681&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 45.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660477&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 45.72, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660477&a=3013769&m=102705" },
     ],
   },
   {
@@ -21362,8 +21454,8 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     competition: "Liga Portugal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F287%2Fthumbnail.jpg&feedId=117951&k=036c15dfff454210cb2dc0f69bb34ae989a2cb4c",
     offers: [
-      { store: "FootballTicketNetUK", price: 36.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393290&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 48.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227682&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 36.65, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393290&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 48.43, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227682&a=3013769&m=109004" },
       { store: "Gigsberg", price: 48.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956394&a=3013769&m=102705" },
     ],
   },
@@ -21379,12 +21471,9 @@ const minedTicketProductsChunk8: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.33, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393288&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.75, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227680&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.72, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956371&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956371&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk9: TicketProduct[] = [
   {
     id: "sl-benfica-vs-cd-santa-clara-2027-03-14",
     event: "SL Benfica vs CD Santa Clara",
@@ -21412,7 +21501,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393317&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228382&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953319&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953319&a=3013769&m=102705" },
     ],
   },
   {
@@ -21425,9 +21514,9 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F18%2Fthumbnail.jpg&feedId=117951&k=fe09c36cb584ec6e99109e0245a2f8a0a017b618",
     offers: [
-      { store: "FootballTicketNetUK", price: 61.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393318&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 81.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228383&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 79.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953396&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 60.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393318&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 80.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228383&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 79.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953396&a=3013769&m=102705" },
     ],
   },
   {
@@ -21457,7 +21546,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706486&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706502&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822182&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822182&a=3013769&m=102705" },
     ],
   },
   {
@@ -21472,7 +21561,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528552&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528671&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356677&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356677&a=3013769&m=102705" },
     ],
   },
   {
@@ -21487,7 +21576,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 195.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393316&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 257.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228381&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 363.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953734&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 363.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953734&a=3013769&m=102705" },
     ],
   },
   {
@@ -21502,7 +21591,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222706&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222658&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 134.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227908&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 134.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227908&a=3013769&m=102705" },
     ],
   },
   {
@@ -21515,9 +21604,9 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F299%2Fthumbnail.jpg&feedId=117951&k=05070e9c2b43d39f7b94cbb9d8bd6f198f971405",
     offers: [
-      { store: "FootballTicketNetUK", price: 63.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393319&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 84.55, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228384&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953372&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 62.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393319&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 83.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228384&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 88.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953372&a=3013769&m=102705" },
     ],
   },
   {
@@ -21532,7 +21621,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393321&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228386&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953437&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953437&a=3013769&m=102705" },
     ],
   },
   {
@@ -21547,7 +21636,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393320&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228385&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952652&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952652&a=3013769&m=102705" },
     ],
   },
   {
@@ -21647,9 +21736,9 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1%2Fthumbnail.jpg&feedId=117951&k=c5e6974fdba6eeb0baac3447869a96ccbc302fa8",
     offers: [
-      { store: "FootballTicketNetUK", price: 210.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393322&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 278.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228387&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 297.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953580&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 190.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393322&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 252.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228387&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 298.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953580&a=3013769&m=102705" },
     ],
   },
   {
@@ -21693,7 +21782,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 110.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46719407141&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 145.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46719407431&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 155.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45764069711&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 155.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45764069711&a=3013769&m=102705" },
     ],
   },
   {
@@ -21737,7 +21826,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393334&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228399&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953326&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953326&a=3013769&m=102705" },
     ],
   },
   {
@@ -21767,7 +21856,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 92.7, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393327&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 122.48, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228392&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 130.78, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953557&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 130.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953557&a=3013769&m=102705" },
     ],
   },
   {
@@ -21811,7 +21900,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 138.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393325&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 182.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228390&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 192.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953631&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 192.31, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953631&a=3013769&m=102705" },
     ],
   },
   {
@@ -21826,7 +21915,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 395.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393329&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 521.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228394&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 557.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953501&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 558.09, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953501&a=3013769&m=102705" },
     ],
   },
   {
@@ -21841,7 +21930,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393330&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228395&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953494&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953494&a=3013769&m=102705" },
     ],
   },
   {
@@ -21856,7 +21945,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 206.82, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393323&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 273.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228388&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 291.78, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953685&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 292.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953685&a=3013769&m=102705" },
     ],
   },
   {
@@ -21871,7 +21960,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528553&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528672&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356681&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356681&a=3013769&m=102705" },
     ],
   },
   {
@@ -21884,9 +21973,9 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F299%2Fthumbnail.jpg&feedId=117951&k=05070e9c2b43d39f7b94cbb9d8bd6f198f971405",
     offers: [
-      { store: "FootballTicketNetUK", price: 64.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393331&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 84.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228396&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953380&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 63.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393331&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 83.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228396&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 89.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953380&a=3013769&m=102705" },
     ],
   },
   {
@@ -21901,7 +21990,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393326&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228391&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 134.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953783&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 134.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953783&a=3013769&m=102705" },
     ],
   },
   {
@@ -21916,7 +22005,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393328&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228393&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953793&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953793&a=3013769&m=102705" },
     ],
   },
   {
@@ -21931,7 +22020,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.07, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393353&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.37, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228418&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 87.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958663&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958663&a=3013769&m=102705" },
     ],
   },
   {
@@ -22006,7 +22095,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706487&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706503&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822434&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822434&a=3013769&m=102705" },
     ],
   },
   {
@@ -22051,7 +22140,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393336&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228401&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953579&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953579&a=3013769&m=102705" },
     ],
   },
   {
@@ -22066,7 +22155,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528554&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528673&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356682&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356682&a=3013769&m=102705" },
     ],
   },
   {
@@ -22081,7 +22170,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 195.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393333&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 257.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228398&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 363.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953743&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 363.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953743&a=3013769&m=102705" },
     ],
   },
   {
@@ -22109,8 +22198,8 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F133%2Fthumbnail.jpg&feedId=117951&k=d032a1dba8397ee025f4295b21f0b66495323edf",
     offers: [
-      { store: "FootballTicketNetUK", price: 60.44, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393343&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 79.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228408&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 60.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393343&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 79.84, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228408&a=3013769&m=109004" },
       { store: "Gigsberg", price: 53.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954831&a=3013769&m=102705" },
     ],
   },
@@ -22201,7 +22290,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 48.26, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393376&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 63.77, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228441&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 68.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957894&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 68.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957894&a=3013769&m=102705" },
     ],
   },
   {
@@ -22246,7 +22335,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.86, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393372&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 40.78, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228437&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 44.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957788&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 44.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957788&a=3013769&m=102705" },
     ],
   },
   {
@@ -22321,7 +22410,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 31.7, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393367&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 41.89, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228432&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956384&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 47.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956384&a=3013769&m=102705" },
     ],
   },
   {
@@ -22454,7 +22543,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 45.04, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275479&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 59.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275394&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 66.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46304314855&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 66.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46304314855&a=3013769&m=102705" },
     ],
   },
   {
@@ -22469,7 +22558,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 24.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393368&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 32.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228433&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 37.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956265&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 37.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956265&a=3013769&m=102705" },
     ],
   },
   {
@@ -22484,7 +22573,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.07, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393365&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228430&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956239&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956239&a=3013769&m=102705" },
     ],
   },
   {
@@ -22513,7 +22602,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 53.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393364&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 70.93, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228429&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 78.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956387&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 78.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956387&a=3013769&m=102705" },
     ],
   },
   {
@@ -22528,7 +22617,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 24.4, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393366&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 32.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228431&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 37.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956274&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 37.07, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956274&a=3013769&m=102705" },
     ],
   },
   {
@@ -22543,7 +22632,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 23.35, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393361&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 30.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228426&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 33.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956417&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 33.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956417&a=3013769&m=102705" },
     ],
   },
   {
@@ -22558,7 +22647,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 48.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393363&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 63.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228428&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 70.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956453&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956453&a=3013769&m=102705" },
     ],
   },
   {
@@ -22573,7 +22662,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 41.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393369&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 55.12, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228434&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958606&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 55.09, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958606&a=3013769&m=102705" },
     ],
   },
   {
@@ -22686,8 +22775,8 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "Belgian Pro League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F197%2Fthumbnail.jpg&feedId=117951&k=356a2081144a98e2fb07a8ad8bec2c790a2db2bc",
     offers: [
-      { store: "FootballTicketNetUK", price: 73.26, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46586698098&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 96.8, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46586698101&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 73.27, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46586698098&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 96.81, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46586698101&a=3013769&m=109004" },
     ],
   },
   {
@@ -22702,7 +22791,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 85.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393393&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228458&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 119.93, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953407&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 120.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953407&a=3013769&m=102705" },
     ],
   },
   {
@@ -22746,7 +22835,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222775&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222709&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227925&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227925&a=3013769&m=102705" },
     ],
   },
   {
@@ -22776,7 +22865,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390517&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227962&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568891&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568891&a=3013769&m=102705" },
     ],
   },
   {
@@ -22791,7 +22880,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 120.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390516&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 158.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227961&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 171.93, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660473&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 172.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45640660473&a=3013769&m=102705" },
     ],
   },
   {
@@ -22896,7 +22985,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 115.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393392&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 151.95, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228457&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 162.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953339&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 162.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953339&a=3013769&m=102705" },
     ],
   },
   {
@@ -22909,9 +22998,9 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F18%2Fthumbnail.jpg&feedId=117951&k=fe09c36cb584ec6e99109e0245a2f8a0a017b618",
     offers: [
-      { store: "FootballTicketNetUK", price: 61.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393390&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 81.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228455&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 87.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953387&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 60.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393390&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 80.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228455&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 86.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953387&a=3013769&m=102705" },
     ],
   },
   {
@@ -22941,7 +23030,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390514&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227959&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 99.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956024&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 100.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956024&a=3013769&m=102705" },
     ],
   },
   {
@@ -22956,7 +23045,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923433&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923346&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822851&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822851&a=3013769&m=102705" },
     ],
   },
   {
@@ -22971,7 +23060,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008393397&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228462&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953434&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953434&a=3013769&m=102705" },
     ],
   },
   {
@@ -23117,9 +23206,9 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "Serie A",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F101%2Fthumbnail.jpg&feedId=117951&k=7e176c0a3c243654d7947d8787a9e4b159cdf605",
     offers: [
-      { store: "FootballTicketNetUK", price: 30.6, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390532&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 40.43, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227977&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 41.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957813&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 30.41, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390532&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 40.18, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227977&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 40.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957813&a=3013769&m=102705" },
     ],
   },
   {
@@ -23237,8 +23326,8 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "LaLiga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F49%2Fthumbnail.jpg&feedId=117951&k=79f8845fd742c5f78ee97257868e7d89e433a8d9",
     offers: [
-      { store: "FootballTicketNetUK", price: 92.56, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390540&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 122.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227985&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 92.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390540&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 122.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227985&a=3013769&m=109004" },
       { store: "Gigsberg", price: 86.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963695&a=3013769&m=102705" },
     ],
   },
@@ -23374,7 +23463,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390527&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 48.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227972&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 54.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956244&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 54.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956244&a=3013769&m=102705" },
     ],
   },
   {
@@ -23389,7 +23478,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390524&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227969&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.74, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956292&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 55.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956292&a=3013769&m=102705" },
     ],
   },
   {
@@ -23404,7 +23493,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 48.38, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390526&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 63.93, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227971&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 71.06, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956482&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956482&a=3013769&m=102705" },
     ],
   },
   {
@@ -23434,7 +23523,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390519&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 54.02, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227964&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 60.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956351&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 60.31, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956351&a=3013769&m=102705" },
     ],
   },
   {
@@ -23449,7 +23538,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390522&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 29.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227967&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956329&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 34.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956329&a=3013769&m=102705" },
     ],
   },
   {
@@ -23464,7 +23553,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 83.42, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390523&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 110.22, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227968&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 120.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956388&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 120.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956388&a=3013769&m=102705" },
     ],
   },
   {
@@ -23479,7 +23568,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 42.52, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390521&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 56.18, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227966&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 62.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956368&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 62.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956368&a=3013769&m=102705" },
     ],
   },
   {
@@ -23509,7 +23598,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 64.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390550&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 84.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227995&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952790&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 90.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952790&a=3013769&m=102705" },
     ],
   },
   {
@@ -23522,9 +23611,9 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F299%2Fthumbnail.jpg&feedId=117951&k=05070e9c2b43d39f7b94cbb9d8bd6f198f971405",
     offers: [
-      { store: "FootballTicketNetUK", price: 64.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390546&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 85.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227991&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953362&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 62.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390546&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 83.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227991&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 88.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953362&a=3013769&m=102705" },
     ],
   },
   {
@@ -23539,7 +23628,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390549&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227994&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953359&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953359&a=3013769&m=102705" },
     ],
   },
   {
@@ -23552,9 +23641,9 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "EFL Championship",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F18%2Fthumbnail.jpg&feedId=117951&k=fe09c36cb584ec6e99109e0245a2f8a0a017b618",
     offers: [
-      { store: "FootballTicketNetUK", price: 61.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390547&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 81.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227992&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 87.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953398&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 60.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390547&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 80.59, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227992&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 86.16, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953398&a=3013769&m=102705" },
     ],
   },
   {
@@ -23569,7 +23658,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706488&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706510&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822911&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822911&a=3013769&m=102705" },
     ],
   },
   {
@@ -23584,7 +23673,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390551&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227996&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 56.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953446&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 56.52, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953446&a=3013769&m=102705" },
     ],
   },
   {
@@ -23599,7 +23688,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 88.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923434&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923347&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 124.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822921&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 124.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252822921&a=3013769&m=102705" },
     ],
   },
   {
@@ -23614,7 +23703,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528546&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528665&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356714&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356714&a=3013769&m=102705" },
     ],
   },
   {
@@ -23629,7 +23718,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390552&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227997&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952643&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952643&a=3013769&m=102705" },
     ],
   },
   {
@@ -23715,7 +23804,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 35.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390593&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 46.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228038&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 52.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568871&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 52.1, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568871&a=3013769&m=102705" },
     ],
   },
   {
@@ -23730,7 +23819,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390554&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227999&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.72, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952683&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 92.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952683&a=3013769&m=102705" },
     ],
   },
   {
@@ -23745,7 +23834,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222726&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222661&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227927&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227927&a=3013769&m=102705" },
     ],
   },
   {
@@ -23760,7 +23849,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390568&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228013&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952711&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952711&a=3013769&m=102705" },
     ],
   },
   {
@@ -23775,7 +23864,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 500.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390556&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 660.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228001&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 705.39, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952710&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 706.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952710&a=3013769&m=102705" },
     ],
   },
   {
@@ -23790,7 +23879,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 195.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390592&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 258.63, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228037&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 278.78, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956010&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 279.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956010&a=3013769&m=102705" },
     ],
   },
   {
@@ -23805,7 +23894,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390567&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228012&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953418&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 97.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953418&a=3013769&m=102705" },
     ],
   },
   {
@@ -23820,7 +23909,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 168.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390558&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 221.98, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228003&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 237.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953612&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 237.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953612&a=3013769&m=102705" },
     ],
   },
   {
@@ -23835,7 +23924,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 290.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390562&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 383.18, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228007&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 409.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953459&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 409.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953459&a=3013769&m=102705" },
     ],
   },
   {
@@ -23850,7 +23939,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 84.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390560&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 112.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228005&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 112.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953658&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 112.21, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953658&a=3013769&m=102705" },
     ],
   },
   {
@@ -23865,7 +23954,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390565&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228010&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953342&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953342&a=3013769&m=102705" },
     ],
   },
   {
@@ -23924,7 +24013,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 163.35, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390559&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 215.83, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228004&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 230.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953516&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 230.79, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953516&a=3013769&m=102705" },
     ],
   },
   {
@@ -23952,11 +24041,14 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F6%2Fthumbnail.jpg&feedId=117951&k=25d295bcc31a9c2d5bebffe79afe8718df462f99",
     offers: [
-      { store: "FootballTicketNetUK", price: 172.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390555&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 228.57, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228000&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 175.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390555&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 231.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228000&a=3013769&m=109004" },
       { store: "Gigsberg", price: 210.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953533&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk10: TicketProduct[] = [
   {
     id: "manchester-united-vs-hull-city-2027-04-10",
     event: "Manchester United vs Hull City",
@@ -23967,9 +24059,9 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2%2Fthumbnail.jpg&feedId=117951&k=2e5228bd7de3b6e2c3d6568a2106bbf6a997c6aa",
     offers: [
-      { store: "FootballTicketNetUK", price: 112.09, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390553&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 148.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227998&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 149.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953768&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 110.28, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390553&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 145.71, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227998&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 149.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953768&a=3013769&m=102705" },
     ],
   },
   {
@@ -23984,7 +24076,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528547&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528666&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356716&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356716&a=3013769&m=102705" },
     ],
   },
   {
@@ -24029,7 +24121,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.7, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390584&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 48.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228029&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 48.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958600&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 48.49, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958600&a=3013769&m=102705" },
     ],
   },
   {
@@ -24044,7 +24136,7 @@ const minedTicketProductsChunk9: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 62.57, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390587&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 82.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228032&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 90.92, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958652&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958652&a=3013769&m=102705" },
     ],
   },
   {
@@ -24062,9 +24154,6 @@ const minedTicketProductsChunk9: TicketProduct[] = [
       { store: "Gigsberg", price: 58.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953472&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk10: TicketProduct[] = [
   {
     id: "st-johnstone-vs-motherwell-2027-04-10",
     event: "St. Johnstone vs Motherwell",
@@ -24092,7 +24181,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 82.3, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390557&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 108.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228002&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954359&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 92.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954359&a=3013769&m=102705" },
     ],
   },
   {
@@ -24107,7 +24196,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 76.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390561&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 100.42, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228006&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 107.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953673&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 107.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953673&a=3013769&m=102705" },
     ],
   },
   {
@@ -24137,7 +24226,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390566&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228011&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953588&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953588&a=3013769&m=102705" },
     ],
   },
   {
@@ -24152,7 +24241,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390569&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228014&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953709&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953709&a=3013769&m=102705" },
     ],
   },
   {
@@ -24167,7 +24256,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 195.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390564&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 257.65, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228009&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 416.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953736&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 416.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953736&a=3013769&m=102705" },
     ],
   },
   {
@@ -24359,9 +24448,9 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     competition: "Serie A",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F101%2Fthumbnail.jpg&feedId=117951&k=7e176c0a3c243654d7947d8787a9e4b159cdf605",
     offers: [
-      { store: "FootballTicketNetUK", price: 89.62, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390606&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 118.41, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228051&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 107.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957797&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 81.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390606&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 107.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228051&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 107.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957797&a=3013769&m=102705" },
     ],
   },
   {
@@ -24466,7 +24555,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 39.63, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390600&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 52.36, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228045&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 58.57, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956375&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 58.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956375&a=3013769&m=102705" },
     ],
   },
   {
@@ -24599,7 +24688,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 22.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390601&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 29.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228046&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 34.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956267&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 34.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956267&a=3013769&m=102705" },
     ],
   },
   {
@@ -24614,7 +24703,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390598&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 48.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228043&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 54.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956249&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 54.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956249&a=3013769&m=102705" },
     ],
   },
   {
@@ -24629,7 +24718,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 131.23, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390596&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 173.4, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228041&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 187.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956284&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 187.78, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956284&a=3013769&m=102705" },
     ],
   },
   {
@@ -24802,9 +24891,9 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F1%2Fthumbnail.jpg&feedId=117951&k=c5e6974fdba6eeb0baac3447869a96ccbc302fa8",
     offers: [
-      { store: "FootballTicketNetUK", price: 252.94, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390622&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 334.21, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228067&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 347.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953575&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 226.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390622&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 299.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228067&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 348.17, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953575&a=3013769&m=102705" },
     ],
   },
   {
@@ -24819,7 +24908,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390632&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228077&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952641&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952641&a=3013769&m=102705" },
     ],
   },
   {
@@ -24834,7 +24923,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390625&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 117.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228070&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 118.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952780&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 118.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952780&a=3013769&m=102705" },
     ],
   },
   {
@@ -24849,7 +24938,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 395.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390624&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 521.91, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228069&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 557.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954361&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 558.09, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954361&a=3013769&m=102705" },
     ],
   },
   {
@@ -24864,7 +24953,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390636&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228081&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 80.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952792&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952792&a=3013769&m=102705" },
     ],
   },
   {
@@ -24879,7 +24968,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390628&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.64, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228073&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953547&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953547&a=3013769&m=102705" },
     ],
   },
   {
@@ -24894,7 +24983,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 78.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390626&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.36, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228071&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953633&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.58, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953633&a=3013769&m=102705" },
     ],
   },
   {
@@ -24909,7 +24998,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390630&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228075&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953476&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953476&a=3013769&m=102705" },
     ],
   },
   {
@@ -24939,7 +25028,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.93, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390623&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.4, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228068&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.72, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953700&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.86, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953700&a=3013769&m=102705" },
     ],
   },
   {
@@ -24954,7 +25043,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390631&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228076&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953361&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953361&a=3013769&m=102705" },
     ],
   },
   {
@@ -24969,7 +25058,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 96.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390627&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 126.84, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228072&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953786&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953786&a=3013769&m=102705" },
     ],
   },
   {
@@ -24984,7 +25073,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390629&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228074&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953794&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953794&a=3013769&m=102705" },
     ],
   },
   {
@@ -24999,7 +25088,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390652&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 93.7, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228097&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 102.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958655&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 93.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958655&a=3013769&m=102705" },
     ],
   },
   {
@@ -25014,7 +25103,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390635&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228080&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953347&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953347&a=3013769&m=102705" },
     ],
   },
   {
@@ -25029,7 +25118,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 64.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390633&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228078&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953399&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953399&a=3013769&m=102705" },
     ],
   },
   {
@@ -25059,7 +25148,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 99.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923438&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 130.81, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923351&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 139.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823259&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 139.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823259&a=3013769&m=102705" },
     ],
   },
   {
@@ -25089,7 +25178,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46040706489&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46040706511&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823261&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823261&a=3013769&m=102705" },
     ],
   },
   {
@@ -25119,7 +25208,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528545&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528664&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356727&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356727&a=3013769&m=102705" },
     ],
   },
   {
@@ -25134,7 +25223,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 41.2, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390637&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 54.44, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228082&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 58.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953440&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 58.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953440&a=3013769&m=102705" },
     ],
   },
   {
@@ -25494,7 +25583,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275506&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 48.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275425&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 54.46, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46308908256&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 54.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46308908256&a=3013769&m=102705" },
     ],
   },
   {
@@ -25509,7 +25598,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 83.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390659&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 110.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228104&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 120.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956290&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 120.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956290&a=3013769&m=102705" },
     ],
   },
   {
@@ -25524,7 +25613,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 123.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390662&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 163.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228107&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 177.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956476&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 177.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956476&a=3013769&m=102705" },
     ],
   },
   {
@@ -25582,8 +25671,8 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     competition: "Liga Portugal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F287%2Fthumbnail.jpg&feedId=117951&k=036c15dfff454210cb2dc0f69bb34ae989a2cb4c",
     offers: [
-      { store: "FootballTicketNetUK", price: 36.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390658&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 48.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228103&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 36.65, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390658&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 48.43, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228103&a=3013769&m=109004" },
       { store: "Gigsberg", price: 48.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956395&a=3013769&m=102705" },
     ],
   },
@@ -25614,7 +25703,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 48.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390660&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 63.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228105&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 70.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956456&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956456&a=3013769&m=102705" },
     ],
   },
   {
@@ -25629,7 +25718,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390684&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228129&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952728&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952728&a=3013769&m=102705" },
     ],
   },
   {
@@ -25644,7 +25733,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390683&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228128&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953421&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953421&a=3013769&m=102705" },
     ],
   },
   {
@@ -25659,7 +25748,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390682&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228127&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953330&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953330&a=3013769&m=102705" },
     ],
   },
   {
@@ -25674,7 +25763,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528537&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528595&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356730&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356730&a=3013769&m=102705" },
     ],
   },
   {
@@ -25704,7 +25793,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390685&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228130&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953722&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953722&a=3013769&m=102705" },
     ],
   },
   {
@@ -25719,7 +25808,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 295.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390681&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 389.78, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228126&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 416.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953726&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 416.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953726&a=3013769&m=102705" },
     ],
   },
   {
@@ -25853,7 +25942,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222824&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222774&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227947&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227947&a=3013769&m=102705" },
     ],
   },
   {
@@ -25868,7 +25957,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390686&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228131&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953568&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953568&a=3013769&m=102705" },
     ],
   },
   {
@@ -25983,7 +26072,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390696&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228141&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952694&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 92.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952694&a=3013769&m=102705" },
     ],
   },
   {
@@ -25998,7 +26087,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390709&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228154&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952723&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952723&a=3013769&m=102705" },
     ],
   },
   {
@@ -26043,7 +26132,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 99.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390710&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 130.81, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228155&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 139.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952788&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 139.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952788&a=3013769&m=102705" },
     ],
   },
   {
@@ -26058,7 +26147,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390708&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228153&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953410&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 97.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953410&a=3013769&m=102705" },
     ],
   },
   {
@@ -26073,7 +26162,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 290.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390699&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 383.18, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228144&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 409.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953604&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 409.73, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953604&a=3013769&m=102705" },
     ],
   },
   {
@@ -26088,7 +26177,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 87.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390701&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 115.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228146&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 122.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953549&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 122.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953549&a=3013769&m=102705" },
     ],
   },
   {
@@ -26131,9 +26220,9 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F30%2Fthumbnail.jpg&feedId=117951&k=809911d8cb82136b527ac927b975a72de59dc5e6",
     offers: [
-      { store: "FootballTicketNetUK", price: 380.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390702&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 502.09, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228147&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 603.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953507&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 369.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390702&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 487.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228147&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 603.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953507&a=3013769&m=102705" },
     ],
   },
   {
@@ -26163,7 +26252,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 99.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390695&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 130.81, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228140&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 122.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953766&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 122.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953766&a=3013769&m=102705" },
     ],
   },
   {
@@ -26178,7 +26267,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528538&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528596&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356731&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356731&a=3013769&m=102705" },
     ],
   },
   {
@@ -26208,7 +26297,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390703&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228148&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953796&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953796&a=3013769&m=102705" },
     ],
   },
   {
@@ -26253,7 +26342,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 32.53, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390728&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.98, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228173&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958599&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.96, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958599&a=3013769&m=102705" },
     ],
   },
   {
@@ -26283,7 +26372,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390707&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228152&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953349&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953349&a=3013769&m=102705" },
     ],
   },
   {
@@ -26313,7 +26402,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 109.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46177923442&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 144.02, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46177923355&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 153.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823603&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 154.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823603&a=3013769&m=102705" },
     ],
   },
   {
@@ -26328,7 +26417,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 73.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390704&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 96.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228149&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 102.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953681&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 103.13, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953681&a=3013769&m=102705" },
     ],
   },
   {
@@ -26358,7 +26447,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 59.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390705&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 77.96, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228150&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 83.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953567&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 83.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953567&a=3013769&m=102705" },
     ],
   },
   {
@@ -26373,7 +26462,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 125.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390711&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 165.16, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228156&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 176.35, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953713&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 176.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953713&a=3013769&m=102705" },
     ],
   },
   {
@@ -26565,8 +26654,8 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     competition: "Serie A",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F101%2Fthumbnail.jpg&feedId=117951&k=7e176c0a3c243654d7947d8787a9e4b159cdf605",
     offers: [
-      { store: "FootballTicketNetUK", price: 39.11, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390746&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 51.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228191&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 38.92, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390746&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 51.42, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228191&a=3013769&m=109004" },
       { store: "Gigsberg", price: 53.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957784&a=3013769&m=102705" },
     ],
   },
@@ -26645,6 +26734,9 @@ const minedTicketProductsChunk10: TicketProduct[] = [
       { store: "Gigsberg", price: 100.0, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957978&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk11: TicketProduct[] = [
   {
     id: "cd-santa-clara-vs-gd-estoril-praia-2027-04-25",
     event: "CD Santa Clara vs GD Estoril Praia",
@@ -26672,7 +26764,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390738&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228183&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956306&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 55.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956306&a=3013769&m=102705" },
     ],
   },
   {
@@ -26687,7 +26779,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 41.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275486&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 55.11, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275405&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 61.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46316180732&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 61.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46316180732&a=3013769&m=102705" },
     ],
   },
   {
@@ -26702,7 +26794,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 80.93, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390742&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 106.93, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228187&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 116.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956254&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 116.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956254&a=3013769&m=102705" },
     ],
   },
   {
@@ -26717,7 +26809,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.7, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390739&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 48.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228184&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 54.55, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956242&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 54.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956242&a=3013769&m=102705" },
     ],
   },
   {
@@ -26732,7 +26824,7 @@ const minedTicketProductsChunk10: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 44.5, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390737&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 58.8, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228182&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 65.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642013778&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 65.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642013778&a=3013769&m=102705" },
     ],
   },
   {
@@ -26750,9 +26842,6 @@ const minedTicketProductsChunk10: TicketProduct[] = [
       { store: "Gigsberg", price: 47.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956273&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk11: TicketProduct[] = [
   {
     id: "sc-braga-vs-sl-benfica-2027-04-25",
     event: "SC Braga vs SL Benfica",
@@ -26778,9 +26867,9 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Liga Portugal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F189%2Fthumbnail.jpg&feedId=117951&k=ceac3df9afb1abcec42322e44a68b9544866f5a7",
     offers: [
-      { store: "FootballTicketNetUK", price: 59.51, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390735&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 78.63, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228180&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 75.09, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956407&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 55.06, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390735&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 72.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228180&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 64.76, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956407&a=3013769&m=102705" },
     ],
   },
   {
@@ -26795,7 +26884,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 131.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390768&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 174.25, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228213&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 173.87, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952663&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 173.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952663&a=3013769&m=102705" },
     ],
   },
   {
@@ -26853,7 +26942,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 60.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390765&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 79.28, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228210&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 84.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952664&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 84.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952664&a=3013769&m=102705" },
     ],
   },
   {
@@ -26868,7 +26957,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 75.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46649222705&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 99.1, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46649222657&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 105.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227949&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 105.97, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46649227949&a=3013769&m=102705" },
     ],
   },
   {
@@ -26883,7 +26972,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390764&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 104.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228209&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 111.44, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953340&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 111.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953340&a=3013769&m=102705" },
     ],
   },
   {
@@ -26898,7 +26987,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390761&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228206&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953373&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953373&a=3013769&m=102705" },
     ],
   },
   {
@@ -26913,7 +27002,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.49, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390766&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228211&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 95.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953389&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 95.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953389&a=3013769&m=102705" },
     ],
   },
   {
@@ -26928,7 +27017,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 50.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390762&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 66.07, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228207&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 70.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953457&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953457&a=3013769&m=102705" },
     ],
   },
   {
@@ -26943,7 +27032,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 65.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46372478851&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 85.88, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46372478843&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.7, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46372480527&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46372480527&a=3013769&m=102705" },
     ],
   },
   {
@@ -26958,7 +27047,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46381528543&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46381528662&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356739&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46377356739&a=3013769&m=102705" },
     ],
   },
   {
@@ -26973,7 +27062,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 57.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390767&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 75.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228212&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 80.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953442&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 80.54, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953442&a=3013769&m=102705" },
     ],
   },
   {
@@ -26988,7 +27077,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 295.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390763&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 389.78, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228208&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 416.18, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953737&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 416.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953737&a=3013769&m=102705" },
     ],
   },
   {
@@ -27018,7 +27107,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 494.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390753&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 652.72, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228198&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 676.3, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953594&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 677.3, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953594&a=3013769&m=102705" },
     ],
   },
   {
@@ -27033,7 +27122,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 110.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46719407140&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 145.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46719407430&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 155.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45764069715&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 155.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45764069715&a=3013769&m=102705" },
     ],
   },
   {
@@ -27048,7 +27137,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 250.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390759&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 330.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228204&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 352.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823686&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 353.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823686&a=3013769&m=102705" },
     ],
   },
   {
@@ -27063,7 +27152,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 79.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390758&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 105.69, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228203&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 112.71, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953649&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 112.89, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953649&a=3013769&m=102705" },
     ],
   },
   {
@@ -27076,9 +27165,9 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F9%2Fthumbnail.jpg&feedId=117951&k=93a0eb2faaf9a223a463f3d8b02defc8a218683e",
     offers: [
-      { store: "FootballTicketNetUK", price: 69.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390757&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 91.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228202&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 97.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953638&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 68.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390757&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 89.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228202&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 97.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953638&a=3013769&m=102705" },
     ],
   },
   {
@@ -27093,7 +27182,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46134726384&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.64, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46134726390&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823687&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252823687&a=3013769&m=102705" },
     ],
   },
   {
@@ -27108,7 +27197,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390760&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228205&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953492&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953492&a=3013769&m=102705" },
     ],
   },
   {
@@ -27136,9 +27225,9 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F6%2Fthumbnail.jpg&feedId=117951&k=25d295bcc31a9c2d5bebffe79afe8718df462f99",
     offers: [
-      { store: "FootballTicketNetUK", price: 271.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390755&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 359.38, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228200&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 482.11, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953531&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 270.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390755&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 356.75, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228200&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 482.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953531&a=3013769&m=102705" },
     ],
   },
   {
@@ -27153,7 +27242,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390754&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.49, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228199&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953691&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 98.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953691&a=3013769&m=102705" },
     ],
   },
   {
@@ -27168,7 +27257,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.08, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390774&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227836&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958649&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 86.26, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958649&a=3013769&m=102705" },
     ],
   },
   {
@@ -27228,7 +27317,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 249.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390756&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 330.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228201&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 352.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954351&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 353.2, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954351&a=3013769&m=102705" },
     ],
   },
   {
@@ -27303,7 +27392,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.06, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390792&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.21, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227854&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 142.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957897&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 142.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957897&a=3013769&m=102705" },
     ],
   },
   {
@@ -27542,7 +27631,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.08, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275488&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 92.6, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275407&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 101.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46307570971&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 101.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46307570971&a=3013769&m=102705" },
     ],
   },
   {
@@ -27555,9 +27644,9 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Liga Portugal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F277%2Fthumbnail.jpg&feedId=117951&k=5c9cc5ce880e315b39ad75396264f3646919af25",
     offers: [
-      { store: "FootballTicketNetUK", price: 48.26, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390786&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 63.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227848&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 70.75, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568903&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 48.25, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390786&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 63.75, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227848&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 70.71, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45642568903&a=3013769&m=102705" },
     ],
   },
   {
@@ -27602,7 +27691,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 83.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390784&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 110.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227846&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 120.63, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956420&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 120.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956420&a=3013769&m=102705" },
     ],
   },
   {
@@ -27617,7 +27706,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 31.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390781&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 42.17, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227843&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.77, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956326&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 47.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956326&a=3013769&m=102705" },
     ],
   },
   {
@@ -27630,9 +27719,9 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Liga Portugal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F287%2Fthumbnail.jpg&feedId=117951&k=036c15dfff454210cb2dc0f69bb34ae989a2cb4c",
     offers: [
-      { store: "FootballTicketNetUK", price: 36.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390782&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 48.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227844&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 48.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956398&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 36.65, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390782&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 48.43, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227844&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 48.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956398&a=3013769&m=102705" },
     ],
   },
   {
@@ -27662,7 +27751,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 48.39, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390783&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 63.94, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227845&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 71.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956459&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956459&a=3013769&m=102705" },
     ],
   },
   {
@@ -27689,8 +27778,8 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Belgian Pro League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F2401%2Fthumbnail.jpg&feedId=117951&k=d2e8f1f0d20dcc50efa1b1ddb63d47afee52b67e",
     offers: [
-      { store: "FootballTicketNetUK", price: 51.35, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275490&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 67.85, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275409&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 68.77, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275490&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 90.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275409&a=3013769&m=109004" },
     ],
   },
   {
@@ -27792,7 +27881,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 135.35, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390809&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 178.84, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227871&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 190.94, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952760&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 191.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952760&a=3013769&m=102705" },
     ],
   },
   {
@@ -27807,7 +27896,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 110.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46719407242&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 145.34, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46719407464&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 155.19, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592961904&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 155.41, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592961904&a=3013769&m=102705" },
     ],
   },
   {
@@ -27822,7 +27911,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 87.55, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390812&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 115.68, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227874&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 122.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953558&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 122.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953558&a=3013769&m=102705" },
     ],
   },
   {
@@ -27852,7 +27941,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 67.98, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390810&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 89.82, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227872&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 91.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953646&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 91.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953646&a=3013769&m=102705" },
     ],
   },
   {
@@ -27897,7 +27986,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 284.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390807&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 376.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227869&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 402.05, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953687&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 402.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953687&a=3013769&m=102705" },
     ],
   },
   {
@@ -27912,7 +28001,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390811&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.52, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227873&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 131.85, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953788&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 132.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953788&a=3013769&m=102705" },
     ],
   },
   {
@@ -27927,7 +28016,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 105.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390814&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 138.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227876&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 148.14, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953805&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 148.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953805&a=3013769&m=102705" },
     ],
   },
   {
@@ -28002,7 +28091,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 130.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390815&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 171.77, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227877&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 183.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953674&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 183.67, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953674&a=3013769&m=102705" },
     ],
   },
   {
@@ -28060,8 +28149,8 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Bundesliga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F133%2Fthumbnail.jpg&feedId=117951&k=d032a1dba8397ee025f4295b21f0b66495323edf",
     offers: [
-      { store: "FootballTicketNetUK", price: 201.13, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390820&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 265.76, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227882&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 201.11, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390820&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 265.73, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227882&a=3013769&m=109004" },
       { store: "Gigsberg", price: 192.5, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954825&a=3013769&m=102705" },
     ],
   },
@@ -28313,9 +28402,9 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "LaLiga",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F62%2Fthumbnail.jpg&feedId=117951&k=dc0d05447f50e8f463a3401e3e0dd38fd6c31c13",
     offers: [
-      { store: "FootballTicketNetUK", price: 499.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390850&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 660.31, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227912&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 707.66, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963842&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 535.62, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390850&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 707.71, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227912&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 758.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592963842&a=3013769&m=102705" },
     ],
   },
   {
@@ -28360,7 +28449,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 36.71, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275494&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 48.5, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275413&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 54.56, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46304315092&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 54.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46304315092&a=3013769&m=102705" },
     ],
   },
   {
@@ -28375,7 +28464,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 37.54, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390836&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 49.61, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227898&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 55.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956294&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 55.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956294&a=3013769&m=102705" },
     ],
   },
   {
@@ -28390,7 +28479,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 95.1, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46304275493&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 125.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46304275412&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 137.15, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46308908258&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 136.81, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46308908258&a=3013769&m=102705" },
     ],
   },
   {
@@ -28450,7 +28539,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 31.7, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390838&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 41.89, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227900&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.48, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956260&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 47.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956260&a=3013769&m=102705" },
     ],
   },
   {
@@ -28465,7 +28554,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 83.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390834&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 110.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227896&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 120.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592964711&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 120.34, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592964711&a=3013769&m=102705" },
     ],
   },
   {
@@ -28594,7 +28683,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 622.45, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390859&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 822.44, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227921&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 657.28, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953591&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 658.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953591&a=3013769&m=102705" },
     ],
   },
   {
@@ -28609,7 +28698,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 80.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390861&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 105.7, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227923&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952687&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 92.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952687&a=3013769&m=102705" },
     ],
   },
   {
@@ -28624,7 +28713,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 189.93, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390864&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 250.95, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227926&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 310.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953614&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 310.83, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953614&a=3013769&m=102705" },
     ],
   },
   {
@@ -28639,7 +28728,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 250.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390866&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 330.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227928&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 352.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953469&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 353.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953469&a=3013769&m=102705" },
     ],
   },
   {
@@ -28654,7 +28743,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 87.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390865&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 116.26, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227927&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 119.47, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953653&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 119.51, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953653&a=3013769&m=102705" },
     ],
   },
   {
@@ -28669,7 +28758,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390867&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227929&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953475&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953475&a=3013769&m=102705" },
     ],
   },
   {
@@ -28684,7 +28773,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 247.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390862&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 326.36, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227924&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 339.42, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953530&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 340.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953530&a=3013769&m=102705" },
     ],
   },
   {
@@ -28699,7 +28788,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 130.19, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390860&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 172.02, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227922&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 183.65, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953764&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 183.92, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953764&a=3013769&m=102705" },
     ],
   },
   {
@@ -28714,7 +28803,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 30.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390863&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 39.64, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227925&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 42.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954346&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 42.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954346&a=3013769&m=102705" },
     ],
   },
   {
@@ -29014,7 +29103,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 40.88, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390892&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 54.02, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228578&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 53.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958603&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 53.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958603&a=3013769&m=102705" },
     ],
   },
   {
@@ -29029,7 +29118,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 66.74, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390894&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 88.19, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228580&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 96.8, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958660&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 90.84, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958660&a=3013769&m=102705" },
     ],
   },
   {
@@ -29134,7 +29223,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 81.76, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390887&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 108.03, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227949&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 118.05, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956363&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 117.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956363&a=3013769&m=102705" },
     ],
   },
   {
@@ -29268,7 +29357,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 56.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390889&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 73.99, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227951&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 81.68, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45719838113&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 81.64, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45719838113&a=3013769&m=102705" },
     ],
   },
   {
@@ -29312,7 +29401,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 47.91, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390886&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 63.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227948&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 70.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956449&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 70.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956449&a=3013769&m=102705" },
     ],
   },
   {
@@ -29327,9 +29416,12 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 31.7, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390883&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 41.89, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227945&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 47.38, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956331&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 47.37, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956331&a=3013769&m=102705" },
     ],
   },
+];
+
+const minedTicketProductsChunk12: TicketProduct[] = [
   {
     id: "moreirense-fc-vs-rio-ave-2027-05-16",
     event: "Moreirense FC vs Rio Ave",
@@ -29340,9 +29432,9 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     competition: "Liga Portugal",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F287%2Fthumbnail.jpg&feedId=117951&k=036c15dfff454210cb2dc0f69bb34ae989a2cb4c",
     offers: [
-      { store: "FootballTicketNetUK", price: 36.68, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390884&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 48.46, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227946&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 48.33, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956396&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 36.65, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390884&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 48.43, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227946&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 48.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956396&a=3013769&m=102705" },
     ],
   },
   {
@@ -29357,7 +29449,7 @@ const minedTicketProductsChunk11: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 98.45, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390882&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 130.08, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014227944&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956430&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.53, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592956430&a=3013769&m=102705" },
     ],
   },
   {
@@ -29432,9 +29524,6 @@ const minedTicketProductsChunk11: TicketProduct[] = [
       { store: "Gigsberg", price: 55.61, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957981&a=3013769&m=102705" },
     ],
   },
-];
-
-const minedTicketProductsChunk12: TicketProduct[] = [
   {
     id: "fc-lorient-vs-olympique-lyonnais-2027-05-22",
     event: "FC Lorient vs Olympique Lyonnais",
@@ -29729,9 +29818,9 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F25%2Fthumbnail.jpg&feedId=117951&k=4b66024b390745987a17df121f8b730f3b8b6403",
     offers: [
-      { store: "FootballTicketNetUK", price: 467.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390939&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 617.05, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228625&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 950.62, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954366&a=3013769&m=102705" },
+      { store: "FootballTicketNetUK", price: 452.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390939&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 597.23, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228625&a=3013769&m=109004" },
+      { store: "Gigsberg", price: 952.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954366&a=3013769&m=102705" },
     ],
   },
   {
@@ -29744,8 +29833,8 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     competition: "Premier League",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F6228%2Fthumbnail.jpg&feedId=117951&k=dc729b0fc8cf6549f66e14169442fc962ce0fe61",
     offers: [
-      { store: "FootballTicketNetUK", price: 190.64, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390943&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 251.89, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228629&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 190.66, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390943&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 251.92, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228629&a=3013769&m=109004" },
       { store: "Gigsberg", price: 209.03, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953542&a=3013769&m=102705" },
     ],
   },
@@ -29791,7 +29880,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 70.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390941&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 93.8, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228627&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 98.98, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953645&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 99.12, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953645&a=3013769&m=102705" },
     ],
   },
   {
@@ -29836,7 +29925,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 225.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390944&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 297.29, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228630&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 317.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953509&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 317.9, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953509&a=3013769&m=102705" },
     ],
   },
   {
@@ -29851,7 +29940,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 109.97, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390937&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 145.3, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228623&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 145.02, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953686&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 155.36, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953686&a=3013769&m=102705" },
     ],
   },
   {
@@ -29866,7 +29955,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 87.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390942&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 114.95, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228628&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 138.04, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953785&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 138.25, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953785&a=3013769&m=102705" },
     ],
   },
   {
@@ -29910,7 +29999,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 158.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390946&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 208.77, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228632&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 222.91, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953667&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 223.23, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953667&a=3013769&m=102705" },
     ],
   },
   {
@@ -30148,7 +30237,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 83.43, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390976&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 110.24, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228662&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 113.28, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958664&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 93.6, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592958664&a=3013769&m=102705" },
     ],
   },
   {
@@ -30281,8 +30370,8 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     competition: "Serie A",
     imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.footballticketnet.com%2Fimg%2Fvenues%2F106%2Fthumbnail.jpg&feedId=117951&k=757f53cd1c8698a1062518b36cc6afa914b5b75b",
     offers: [
-      { store: "FootballTicketNetUK", price: 55.06, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390991&a=3013769&m=109002" },
-      { store: "FootballTicketNetUS", price: 72.74, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228677&a=3013769&m=109004" },
+      { store: "FootballTicketNetUK", price: 55.07, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390991&a=3013769&m=109002" },
+      { store: "FootballTicketNetUS", price: 72.77, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228677&a=3013769&m=109004" },
       { store: "Gigsberg", price: 51.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592957869&a=3013769&m=102705" },
     ],
   },
@@ -30328,7 +30417,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 674.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390979&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 891.87, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228665&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 949.27, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953582&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 950.67, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953582&a=3013769&m=102705" },
     ],
   },
   {
@@ -30343,7 +30432,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 81.94, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390981&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 108.27, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228667&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 92.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952692&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 92.43, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592952692&a=3013769&m=102705" },
     ],
   },
   {
@@ -30358,7 +30447,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 250.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390984&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 330.33, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228670&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 352.69, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953611&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 353.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953611&a=3013769&m=102705" },
     ],
   },
   {
@@ -30373,7 +30462,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390986&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228672&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252824376&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46252824376&a=3013769&m=102705" },
     ],
   },
   {
@@ -30388,7 +30477,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 89.99, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390985&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 118.9, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228671&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 122.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953659&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 122.4, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953659&a=3013769&m=102705" },
     ],
   },
   {
@@ -30403,7 +30492,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 100.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390987&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 132.13, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228673&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 141.08, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953491&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 141.29, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953491&a=3013769&m=102705" },
     ],
   },
   {
@@ -30433,7 +30522,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 120.0, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390980&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 158.56, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228666&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 158.22, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953761&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 158.45, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592953761&a=3013769&m=102705" },
     ],
   },
   {
@@ -30448,7 +30537,7 @@ const minedTicketProductsChunk12: TicketProduct[] = [
     offers: [
       { store: "FootballTicketNetUK", price: 117.05, currency: "GBP", url: "https://www.awin1.com/pclick.php?p=46008390983&a=3013769&m=109002" },
       { store: "FootballTicketNetUS", price: 154.66, currency: "USD", url: "https://www.awin1.com/pclick.php?p=46014228669&a=3013769&m=109004" },
-      { store: "Gigsberg", price: 169.76, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954342&a=3013769&m=102705" },
+      { store: "Gigsberg", price: 170.01, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=45592954342&a=3013769&m=102705" },
     ],
   },
   {
