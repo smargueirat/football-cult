@@ -374,8 +374,8 @@ def mine_forumsport_category(types, out_list, strip_re=None, exclude_extra=None,
         title = ' '.join(w[:1].upper() + w[1:] for w in title.split())  # el feed viene en minúsculas
         colour = (rep.get('colour') or '').strip()
         model = f"{title} - {colour}" if colour and colour.lower() not in title.lower() else title
-        if prefix:
-            model = f"{prefix} {model}"
+        if prefix:  # el traductor de gearText.ts solo reconoce "<sustantivo> <marca> <resto>"
+            model = f"{prefix} {brand} {model}" if brand else f"{prefix} {model}"
         sz = lambda r: (r.get('Fashion:size') or '').strip()
         # ropa: tallas de niño (alturas 92-176, "12/14", 3XS-5XS) no cuentan; las medias sí traen numeración propia
         kid_sz = lambda r: type_key != 'socks' and bool(re.match(r'^(\d{3}|\d{1,2}/\d{1,2}|[3-5]XS.*)$', sz(r)))
@@ -430,7 +430,9 @@ def mine_adidas_es_gear(gloves, balls):
             name = ' '.join(w.capitalize() for w in name.lower().split())
         rep = min(rows, key=lambda r: parse_price(r.get('search_price')))
         colour = adidas_cl_colour(rep.get('colour'))
-        model = f"{name} - {colour}"
+        model = adidas_cl_model(name, colour, False)
+        if model.startswith('adidas '):  # sin sustantivo conocido: queda el título real, sin "adidas" delante
+            model = f"{name} - {colour}"
         if model in seen:  # mismo nombre y color dominante, otro colorway: se distingue por el estilo, nunca se funden
             model = f"{name} - {colour} ({style})"
         seen[model] = 1
@@ -1348,7 +1350,7 @@ if __name__ == '__main__':
     mine_gigasport_category('GIGASPORT_DE.csv', 'GigasportDE', ('Torwarthandschuhe',), gloves_results)
     mine_gigasport_category('GIGASPORT_CH.csv', 'GigasportCH', ('Torwarthandschuhe',), gloves_results)
     mine_gigasport_category('GIGASPORT_FR.csv', 'GigasportFR', ('Gants de gardien',), gloves_results)
-    mine_forumsport_category({'fútbol > guantes portero'}, gloves_results, re.compile(r'\s*guantes? (de )?portero\s*', re.I))
+    mine_forumsport_category({'fútbol > guantes portero'}, gloves_results, re.compile(r'\s*guantes? (de )?portero\s*', re.I), prefix='Guantes de portero')
 
     mine_adidas_es_gear(gloves_results, balls_results)
     mine_planetfoot_balls(balls_results)
@@ -1362,7 +1364,7 @@ if __name__ == '__main__':
     mine_gigasport_category('GIGASPORT_DE.csv', 'GigasportDE', ('Fußbälle > Matchbälle', 'Fußbälle > Trainingsbälle'), balls_results)
     mine_gigasport_category('GIGASPORT_CH.csv', 'GigasportCH', ('Fußbälle > Matchbälle', 'Fußbälle > Trainingsbälle'), balls_results)
     mine_gigasport_category('GIGASPORT_FR.csv', 'GigasportFR', ('Ballons de football > Ballons de match', 'Ballons de football > Ballons d\'entraînement'), balls_results)
-    mine_forumsport_category({'fútbol > balon fútbol', 'fútbol > balon fútbol sala'}, balls_results, re.compile(r'\s*bal[oó]n( de)? f[uú]tbol( sala)?\s*', re.I))
+    mine_forumsport_category({'fútbol > balon fútbol', 'fútbol > balon fútbol sala'}, balls_results, re.compile(r'\s*bal[oó]n( de)? f[uú]tbol( sala)?\s*', re.I), prefix='Balón')
 
     print('=== ROPA ===')
     mine_apparel_type('shorts', 'Short', apparel_results)

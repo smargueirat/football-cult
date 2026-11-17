@@ -118,75 +118,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "adidas-copa-blanco",
-    brand: "Adidas",
-    model: "Copa - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40347179824&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001054026-00-P-X-20250210171708.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU4N3xpbWFnZS9qcGVnfGFEaGlMMmhrTlM4eE1qY3pORGcwTlRJeU1qazBNaTl0WldScFlYTmZNVEF3TVRBMU5EQXlObDh3TUY5UVgxZ3RNakF5TlRBeU1UQXhOekUzTURndWFuQm58NTM0ZjRhNzBlNWNiY2NhOTUzNDE2YmUwY2EwODlmYWUwODAwZTU1YzAzN2Y2ZWVmYWI1MzJjODMwYjcxNDMxNA&feedId=58083&k=81980bc2b5fbf68d741f69dfb4fa84e268fb07d8",
-        sizes: ["12"],
-      },
-    ],
-  },
-  {
-    id: "adidas-guantes-arquero-adidas-copa-club-negro",
-    brand: "Adidas",
-    model: "Copa Club - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370805&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001054132-00-P-X-20250129154232.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTk0N3xpbWFnZS9qcGVnfGFETmlMMmhrTkM4eE1qY3hNREk0TkRnNE5qQTBOaTl0WldScFlYTmZNVEF3TVRBMU5ERXpNbDh3TUY5UVgxZ3RNakF5TlRBeE1qa3hOVFF5TXpJdWFuQm58OGFiZWI5ZGQ0MDMyZjlkNjI3MzlmNTYyY2RiMDQzNmI3NDIyMjRmNTQwMzFmOTU5Yjk2Yzc5NTkwYzA1ZDJjNQ&feedId=58083&k=3f124d96d700d182fbf5c7ee68091e4f3b331b91",
-        sizes: ["7", "9", "10"],
-      },
-      {
-        store: "AdidasES",
-        price: 23.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46411030076&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9690783d3dc74e0093f965e8921503d8_9366%2FGuantes_portero_Copa_Club_Negro_JY0625_01_00_standard.jpg&feedId=92152&k=a10f55f88c6e913e5c8e96efde5991021fbfe4be",
-        sizes: ["7", "8", "8 1/2", "9", "9 1/2", "10", "11", "12"],
-      },
-      {
-        store: "AdidasCL",
-        price: 24990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=42965566365&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9690783d3dc74e0093f965e8921503d8_9366%2FGuantes_Arquero_Copa_Club_Negro_JY0625_01_00_standard.jpg&feedId=95016&k=759d481dd64c166afb892f8c7b213e3b3fcc7c0e",
-        sizes: ["8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "adidas-copa-club-negro",
-    brand: "Adidas",
-    model: "Copa Club - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376445&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112133-00-S-M-20260408124947.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU2OXxpbWFnZS9qcGVnfGFHUXpMMmd3Tnk4eE16WTROak0xTVRJek16QTFOQzl0WldScFlYTmZNVEF3TVRFeE1qRXpNMTh3TUY5VFgwMHRNakF5TmpBME1EZ3hNalE1TkRjdWFuQm58M2VkZTlhMGM4NWNiMmI3NzdmMmM1MWU4ZjdkOTNiMDRkMWYxZTA5NWExM2ZmZWZlYjY5OTBjNjg1YmNiZjYwMg&feedId=58083&k=71db9af351d3c39ae3557a7a581aab675c4bb139",
-        sizes: ["7"],
-      },
-    ],
-  },
-  {
     id: "adidas-gant-de-portero-trainig-adidas-predator-rose",
     brand: "Adidas",
     model: "Gant de portero Trainig adidas Predator - Rose",
@@ -257,12 +188,21 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
       {
         store: "AdidasMX",
-        price: 314.0,
+        price: 559.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=45301501365&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbdb72d2ffa344089afab6e8c246fd944_9366%2FGuantes_de_Portero_COPA_Club_Blanco_KE9731_21_model.jpg&feedId=95013&k=92bded08ada7c16163e57fdd450d05e1cd8c02bf",
-        sizes: ["8", "9", "10"],
+        url: "https://www.awin1.com/pclick.php?p=40357933197&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa78ddf7d0fe04a1aa97e1f8f67ae45e2_9366%2FGuantes_de_Arquero_Copa_Club_Blanco_JH3789_21_model.jpg&feedId=95013&k=2c3d5e3fc2d22c1ee6243a208897716d7cc24f38",
+        sizes: ["7", "7.5", "8", "9", "9.5", "10"],
+      },
+      {
+        store: "AdidasCO",
+        price: 89970.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=45301496655&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbdb72d2ffa344089afab6e8c246fd944_9366%2FGuantes_de_Arquero_Copa_Club_Blanco_KE9731_21_model.jpg&feedId=95017&k=d721b177e40a1243478313f6dc36e637913b486a",
+        sizes: ["7", "8", "9", "10", "11"],
       },
     ],
   },
@@ -361,28 +301,19 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "adidas-guantes-de-arquero-adidas-copa-club-blanco-2",
+    id: "adidas-gants-de-gardien-adidas-copa-club-blanc",
     brand: "Adidas",
     model: "Guantes de Arquero adidas Copa Club - Blanco",
     colour: "Blanco",
     offers: [
       {
         store: "AdidasMX",
-        price: 559.0,
+        price: 399.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=40357933197&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa78ddf7d0fe04a1aa97e1f8f67ae45e2_9366%2FGuantes_de_Arquero_Copa_Club_Blanco_JH3789_21_model.jpg&feedId=95013&k=2c3d5e3fc2d22c1ee6243a208897716d7cc24f38",
-        sizes: ["7", "7.5", "8", "9", "9.5", "10"],
-      },
-      {
-        store: "AdidasCO",
-        price: 89970.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=45301496655&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbdb72d2ffa344089afab6e8c246fd944_9366%2FGuantes_de_Arquero_Copa_Club_Blanco_KE9731_21_model.jpg&feedId=95017&k=d721b177e40a1243478313f6dc36e637913b486a",
-        sizes: ["7", "8", "9", "10", "11"],
+        url: "https://www.awin1.com/pclick.php?p=44480435588&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcc44a947744d455eab846d12e3761bd0_9366%2FGuantes_de_Arquero_Copa_Club_Blanco_JN5339_21_model.jpg&feedId=95013&k=f66a9ce29e14903562b276d4c58a1bbfa7a982d2",
+        sizes: ["7", "8", "9", "10"],
       },
     ],
   },
@@ -464,6 +395,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-copa-blanco",
+    brand: "Adidas",
+    model: "Guantes de portero Adidas Copa - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40347179824&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001054026-00-P-X-20250210171708.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU4N3xpbWFnZS9qcGVnfGFEaGlMMmhrTlM4eE1qY3pORGcwTlRJeU1qazBNaTl0WldScFlYTmZNVEF3TVRBMU5EQXlObDh3TUY5UVgxZ3RNakF5TlRBeU1UQXhOekUzTURndWFuQm58NTM0ZjRhNzBlNWNiY2NhOTUzNDE2YmUwY2EwODlmYWUwODAwZTU1YzAzN2Y2ZWVmYWI1MzJjODMwYjcxNDMxNA&feedId=58083&k=81980bc2b5fbf68d741f69dfb4fa84e268fb07d8",
+        sizes: ["12"],
+      },
+    ],
+  },
+  {
     id: "adidas-gants-de-gardien-adidas-copa-club-beige",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa Club - Beige",
@@ -499,7 +447,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "adidas-gants-de-gardien-adidas-copa-club-blanc",
+    id: "adidas-guantes-de-portero-adidas-copa-club-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa Club - Blanc",
     colour: "Blanc",
@@ -534,11 +482,46 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-guantes-de-portero-copa-club-blanco",
+    brand: "Adidas",
+    model: "Guantes de portero adidas Copa Club - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "AdidasES",
+        price: 20.0,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43791539053&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcc44a947744d455eab846d12e3761bd0_9366%2FGuantes_de_portero_Copa_Club_Blanco_JN5339_21_model.jpg&feedId=92152&k=fe395906f62ff5d49d0330aa889d92c8683bde45",
+        sizes: ["8", "9", "10", "11"],
+      },
+      {
+        store: "AdidasMX",
+        price: 314.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=45301501365&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbdb72d2ffa344089afab6e8c246fd944_9366%2FGuantes_de_Portero_COPA_Club_Blanco_KE9731_21_model.jpg&feedId=95013&k=92bded08ada7c16163e57fdd450d05e1cd8c02bf",
+        sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
     id: "adidas-guantes-de-portero-adidas-copa-club-negro",
     brand: "Adidas",
-    model: "Guantes de Portero adidas Copa Club - Negro",
+    model: "Guantes de portero Adidas Copa Club - Negro",
     colour: "Negro",
     offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376445&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112133-00-S-M-20260408124947.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU2OXxpbWFnZS9qcGVnfGFHUXpMMmd3Tnk4eE16WTROak0xTVRJek16QTFOQzl0WldScFlYTmZNVEF3TVRFeE1qRXpNMTh3TUY5VFgwMHRNakF5TmpBME1EZ3hNalE1TkRjdWFuQm58M2VkZTlhMGM4NWNiMmI3NzdmMmM1MWU4ZjdkOTNiMDRkMWYxZTA5NWExM2ZmZWZlYjY5OTBjNjg1YmNiZjYwMg&feedId=58083&k=71db9af351d3c39ae3557a7a581aab675c4bb139",
+        sizes: ["7"],
+      },
       {
         store: "AdidasMX",
         price: 559.0,
@@ -585,6 +568,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370805&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001054132-00-P-X-20250129154232.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTk0N3xpbWFnZS9qcGVnfGFETmlMMmhrTkM4eE1qY3hNREk0TkRnNE5qQTBOaTl0WldScFlYTmZNVEF3TVRBMU5ERXpNbDh3TUY5UVgxZ3RNakF5TlRBeE1qa3hOVFF5TXpJdWFuQm58OGFiZWI5ZGQ0MDMyZjlkNjI3MzlmNTYyY2RiMDQzNmI3NDIyMjRmNTQwMzFmOTU5Yjk2Yzc5NTkwYzA1ZDJjNQ&feedId=58083&k=3f124d96d700d182fbf5c7ee68091e4f3b331b91",
+        sizes: ["7", "9", "10"],
+      },
+      {
         store: "AdidasES",
         price: 23.0,
         shipping: 4.99,
@@ -627,6 +619,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529885402&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh3794_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=a25883f7dbab277b4956380736027f558213d4c8",
         sizes: ["Talla 11"],
+      },
+      {
+        store: "AdidasES",
+        price: 65.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45304053046&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F475c59fb96db4d1cb415c737dba755ab_9366%2FGuantes_de_portero_COPA_League_Blanco_KE9737_21_model.jpg&feedId=92152&k=cc9e98aa826c6e09a1fa6377a5bfaae66aac081c",
+        sizes: ["5", "6", "7", "8", "11"],
       },
       {
         store: "FootStoreFR",
@@ -854,6 +855,40 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-guantes-de-portero-copa-pro-fingersave-blanco",
+    brand: "Adidas",
+    model: "Guantes De Portero adidas Copa Pro Fingersave - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "AdidasES",
+        price: 140.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45585790156&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F581fdc1b933442e99302a2afe3a5720e_9366%2FGUANTES_DE_PORTERO_COPA_PRO_FINGERSAVE_Blanco_KA7818_21_model.jpg&feedId=92152&k=461324f04c84872aa1e8e203cd82ef08824a8ab8",
+        sizes: ["7", "8"],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-portero-copa-pro-fingersave-gris",
+    brand: "Adidas",
+    model: "Guantes De Portero adidas Copa Pro Fingersave - Gris",
+    colour: "Gris",
+    offers: [
+      {
+        store: "AdidasES",
+        price: 140.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46720952515&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fda8ce6bab4ab4402b876c102dbeab10c_9366%2FGUANTES_DE_PORTERO_COPA_PRO_FINGERSAVE_Gris_KB3009_21_model.jpg&feedId=92152&k=c529450d466f78be1b584b207cf2613f370eabae",
+        sizes: ["7", "7 1/2", "8", "8 1/2", "9", "9 1/2", "10", "11"],
+      },
+    ],
+  },
+  {
     id: "adidas-guantes-de-portero-adidas-copa-pro-gris",
     brand: "Adidas",
     model: "Guantes de portero adidas Copa Pro - Gris",
@@ -905,6 +940,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46089286998&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jn5335_black-carbon-luclem_1.jpg&feedId=89032&k=cd7129ff9dcefda54970a959dc4c7c00d90ec0b7",
         sizes: ["Talla 10.5", "Talla 8.5"],
+      },
+      {
+        store: "AdidasES",
+        price: 130.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46080621161&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5a1d6c9ef50b497d9562d2f15529907f_9366%2FGUANTES_DE_PORTERO_COPA_PRO_Negro_KA7802_21_model.jpg&feedId=92152&k=ac1194ae5e2da6c1655c4a42c77665e9a54b96f9",
+        sizes: ["7"],
       },
       {
         store: "FootStoreFR",
@@ -967,15 +1011,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "11.5", price: 130.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka7802-gants-de-gardien-adidas-copa-pro-black-lucred-white" },
         ],
       },
-      {
-        store: "AdidasES",
-        price: 130.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46080621161&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5a1d6c9ef50b497d9562d2f15529907f_9366%2FGUANTES_DE_PORTERO_COPA_PRO_Negro_KA7802_21_model.jpg&feedId=92152&k=ac1194ae5e2da6c1655c4a42c77665e9a54b96f9",
-        sizes: ["7"],
-      },
     ],
   },
   {
@@ -1027,6 +1062,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fku7658-gants-de-gardien-adidas-copa-pro-soltur-ivory",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/u/ku7658.webp",
         sizes: ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
+    ],
+  },
+  {
+    id: "adidas-guantes-de-portero-de-corte-hibrido-predator-pro-amarillo",
+    brand: "Adidas",
+    model: "Guantes de portero adidas de corte híbrido Predator Pro - Amarillo",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "AdidasES",
+        price: 140.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45241854232&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F406bccafeb0c42059c82b797b674dde4_9366%2FGuantes_de_portero_de_corte_hibrido_Predator_Pro_Rosa_KE9714_21_model.jpg&feedId=92152&k=7a4e6ea52709d901a0d30f325a1b89fd2d7fc724",
+        sizes: ["7", "8"],
       },
     ],
   },
@@ -1126,7 +1178,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "adidas-guantes-de-portero-adidas-predator-blanco",
+    id: "adidas-guantes-de-portero-adidas-predator-training-blanc",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator - Blanco",
     colour: "Blanco",
@@ -1139,6 +1191,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529885416&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh3806_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=617b245966f8aaf3e8f5009b24b0de47fd6eacfa",
         sizes: ["Talla 10.5", "Talla 7", "Talla 8", "Talla 8.5", "Talla 9.5"],
+      },
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46367227258&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112610-00-P-X-20260331113936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYxNXxpbWFnZS9qcGVnfGFEQXlMMmhsTmk4eE16WTNNVEU1TXpnM01ETTJOaTl0WldScFlYTmZNVEF3TVRFeE1qWXhNRjh3TUY5UVgxZ3RNakF5TmpBek16RXhNVE01TXpZdWFuQm58MTM2YWE1MTMxMjVhYmEzMzk2MWMzZDZhNThjZTkxNTA1MjQ0OWYyZjQ4ZGFhYWQyNTFlNjE2ZWEzMWQ4MTFjYQ&feedId=58083&k=09d3f6c04cab764694aa7831d439d2e1b82e979b",
+        sizes: ["8", "9", "9.5", "10", "10.5", "11"],
       },
       {
         store: "FootStoreFR",
@@ -1156,6 +1217,33 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "9.5", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3806-gants-de-gardien-adidas-predator-white-white-luclem" },
           { size: "10.5", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3806-gants-de-gardien-adidas-predator-white-white-luclem" },
         ],
+      },
+      {
+        store: "AdidasES",
+        price: 35.0,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45928810878&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F065892f221ea490d9c157e41e9eabfa6_9366%2FGUANTES_DE_PORTERO_DE_ENTRENAMIENTO_PREDATOR_Blanco_JY6311_21_model.jpg&feedId=92152&k=9dbdc907aa6804d4f365c45a44d8d6bcfa800fdc",
+        sizes: ["8", "9", "9 1/2", "10", "10 1/2", "11"],
+      },
+      {
+        store: "AdidasCL",
+        price: 23990.0,
+        shipping: 0,
+        currency: "CLP",
+        url: "https://www.awin1.com/pclick.php?p=43947683702&a=3013769&m=79922",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F065892f221ea490d9c157e41e9eabfa6_9366%2FGuantes_de_arquero_Predator_Goalkeeper_Training_Blanco_JY6311_21_model.jpg&feedId=95016&k=a2d044f1ea3c836fe3789af14d50fcc6ffabc1db",
+        sizes: ["7", "8", "9", "10"],
+      },
+      {
+        store: "AdidasCO",
+        price: 89975.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=43947712033&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F065892f221ea490d9c157e41e9eabfa6_9366%2FGUANTES_DE_ENTRENAMIENTO_PARA_PORTERO_PREDATOR_Blanco_JY6311_21_model.jpg&feedId=95017&k=e4d38b60f2501609213748084cae19d592daf43b",
+        sizes: ["7", "8", "9", "10", "11"],
       },
     ],
   },
@@ -1208,6 +1296,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhy4074-gants-de-gardien-adidas-predator-competition-noir-noir-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hy4074_1_hardware_photography_front_center_view_white_xo.webp",
         sizes: ["8.5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-predator-competition-rojo",
+    brand: "Adidas",
+    model: "Guantes de portero Adidas Predator Competition - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 87.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44584459779&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001054042-00-P-X-20250117151228.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk5NXxpbWFnZS9qcGVnfGFEUTVMMmhoWmk4eE1qWTRORGt3TmpjMU9ERTNOQzl0WldScFlYTmZNVEF3TVRBMU5EQTBNbDh3TUY5UVgxZ3RNakF5TlRBeE1UY3hOVEV5TWpndWFuQm58ZmRkZTk5YmQyNzY5N2M5NGJhNjAxMjQzZDM4NGEyYzlmMzVkMmJjYTI0ZmRkYjZiYzlhYzE0NmMyNmU4Y2Y5OA&feedId=58083&k=6fc84c7d8dd712ba433ee9606dd05975a368509e",
+        sizes: ["7.5"],
       },
     ],
   },
@@ -1278,6 +1383,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46000401063&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcb20e186331e4f4f971fa26d4582130e_9366%2FGuantes_de_portero_Predator_Training_Verde_JN5356_21_model.jpg&feedId=92152&k=f6807b4d417d3626904b5f3a6125a01d25951f35",
         sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "adidas-predator-league",
+    brand: "Adidas",
+    model: "Guantes de portero Adidas Predator League",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 48.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38596924973&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978473-00-P-X-20240812163838.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE3MnxpbWFnZS9qcGVnfGFEWTJMMmd4TWk4eE1qTXdPRFl6TlRFeU16YzBNaTl0WldScFlYTmZNVEF3TURrM09EUTNNMTh3TUY5UVgxZ3RNakF5TkRBNE1USXhOak00TXpndWFuQm58MGNlMTlmMjIyNDc4MDg3YjZiMjc0Mjk5YWYxYzk3YzVlNWM0YjNhNGMzN2I4YmIyYjdjNTM2MTRiNGRlM2Q0OA&feedId=58083&k=aaecbd4be7cdb5f692f003ef35fcde1238c97c93",
+        sizes: ["9", "10"],
       },
     ],
   },
@@ -2072,7 +2194,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "adidas-guantes-de-portero-adidas-predator-training-blanc",
+    id: "adidas-guantes-de-portero-adidas-predator-training-blanc-2",
     brand: "Adidas",
     model: "Guantes de portero adidas Predator Training - Blanc",
     colour: "Blanc",
@@ -2085,42 +2207,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43755752982&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jy6311_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=0d1f6ce2453e2b3d3cf23f2a8fa11a3206c99f5b",
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
-      },
-      {
-        store: "ForumSport",
-        price: 29.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46367227258&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112610-00-P-X-20260331113936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYxNXxpbWFnZS9qcGVnfGFEQXlMMmhsTmk4eE16WTNNVEU1TXpnM01ETTJOaTl0WldScFlYTmZNVEF3TVRFeE1qWXhNRjh3TUY5UVgxZ3RNakF5TmpBek16RXhNVE01TXpZdWFuQm58MTM2YWE1MTMxMjVhYmEzMzk2MWMzZDZhNThjZTkxNTA1MjQ0OWYyZjQ4ZGFhYWQyNTFlNjE2ZWEzMWQ4MTFjYQ&feedId=58083&k=09d3f6c04cab764694aa7831d439d2e1b82e979b",
-        sizes: ["8", "9", "9.5", "10", "10.5", "11"],
-      },
-      {
-        store: "AdidasES",
-        price: 35.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45928810878&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F065892f221ea490d9c157e41e9eabfa6_9366%2FGUANTES_DE_PORTERO_DE_ENTRENAMIENTO_PREDATOR_Blanco_JY6311_21_model.jpg&feedId=92152&k=9dbdc907aa6804d4f365c45a44d8d6bcfa800fdc",
-        sizes: ["8", "9", "9 1/2", "10", "10 1/2", "11"],
-      },
-      {
-        store: "AdidasCL",
-        price: 23990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=43947683702&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F065892f221ea490d9c157e41e9eabfa6_9366%2FGuantes_de_arquero_Predator_Goalkeeper_Training_Blanco_JY6311_21_model.jpg&feedId=95016&k=a2d044f1ea3c836fe3789af14d50fcc6ffabc1db",
-        sizes: ["7", "8", "9", "10"],
-      },
-      {
-        store: "AdidasCO",
-        price: 89975.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=43947712033&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F065892f221ea490d9c157e41e9eabfa6_9366%2FGUANTES_DE_ENTRENAMIENTO_PARA_PORTERO_PREDATOR_Blanco_JY6311_21_model.jpg&feedId=95017&k=e4d38b60f2501609213748084cae19d592daf43b",
-        sizes: ["7", "8", "9", "10", "11"],
       },
     ],
   },
@@ -2309,6 +2395,23 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
+    id: "adidas-tiro-negro",
+    brand: "Adidas",
+    model: "Guantes de portero Adidas Tiro - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.75,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378706&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112820-00-P-X-20260331113936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc0MHxpbWFnZS9qcGVnfGFEWXdMMmhsWVM4eE16WTNNVEl3TXpVMk9UWTVOQzl0WldScFlYTmZNVEF3TVRFeE1qZ3lNRjh3TUY5UVgxZ3RNakF5TmpBek16RXhNVE01TXpZdWFuQm58ZjMwZjRkYTM0MGU1Y2RmNGJhNDU4MmI0Nzk3MjIwYTAxMDI3YzVlOTVlMTMyMTljNDdkNTFlOTgyYmJlYjc5ZQ&feedId=58083&k=6e6d51961c3ad9e96fa52f4db16e439fe106beda",
+        sizes: [],
+      },
+    ],
+  },
+  {
     id: "adidas-guantes-de-portero-adidas-tiro-pro-negro",
     brand: "Adidas",
     model: "Guantes de portero adidas Tiro Pro - Negro",
@@ -2334,6 +2437,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 60.89,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36105045266&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000920382-00-P-X-20230606105327.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ4OXxpbWFnZS9qcGVnfGFEUXdMMmhoT0M4eE1UUTFPRE0yTmpNM016a3hPQzl0WldScFlYTmZNVEF3TURreU1ETTRNbDh3TUY5UVgxZ3RNakF5TXpBMk1EWXhNRFV6TWpjdWFuQm58YTZmYWJiZTdmYjUzODBmOTc5ZWRlNGFmOTIzNGIxMDQxYWQyYzdjZTE5NzIyNThjYWZiZGQyYTMzODFmM2QyYw&feedId=58083&k=856e951a59d144587c0ead5fed6b62566cf6a6a4",
+        sizes: ["8", "10"],
+      },
+      {
         store: "FootStoreFR",
         price: 53.0,
         priceMax: 66.0,
@@ -2351,92 +2463,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "10", price: 66.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
           { size: "10.5", price: 66.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhn5611-gants-de-gardien-adidas-tiro-pro-noir-blanc-iron" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 60.89,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36105045266&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000920382-00-P-X-20230606105327.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ4OXxpbWFnZS9qcGVnfGFEUXdMMmhoT0M4eE1UUTFPRE0yTmpNM016a3hPQzl0WldScFlYTmZNVEF3TURreU1ETTRNbDh3TUY5UVgxZ3RNakF5TXpBMk1EWXhNRFV6TWpjdWFuQm58YTZmYWJiZTdmYjUzODBmOTc5ZWRlNGFmOTIzNGIxMDQxYWQyYzdjZTE5NzIyNThjYWZiZGQyYTMzODFmM2QyYw&feedId=58083&k=856e951a59d144587c0ead5fed6b62566cf6a6a4",
-        sizes: ["8", "10"],
-      },
-    ],
-  },
-  {
-    id: "adidas-guantes-de-portero-copa-club-blanco",
-    brand: "Adidas",
-    model: "Guantes de portero Copa Club - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 20.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43791539053&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcc44a947744d455eab846d12e3761bd0_9366%2FGuantes_de_portero_Copa_Club_Blanco_JN5339_21_model.jpg&feedId=92152&k=fe395906f62ff5d49d0330aa889d92c8683bde45",
-        sizes: ["8", "9", "10", "11"],
-      },
-      {
-        store: "AdidasMX",
-        price: 399.0,
-        shipping: 0,
-        currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=44480435588&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcc44a947744d455eab846d12e3761bd0_9366%2FGuantes_de_Arquero_Copa_Club_Blanco_JN5339_21_model.jpg&feedId=95013&k=f66a9ce29e14903562b276d4c58a1bbfa7a982d2",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "adidas-guantes-de-portero-copa-league-azul",
-    brand: "Adidas",
-    model: "Guantes de portero COPA League - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 65.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45304053046&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F475c59fb96db4d1cb415c737dba755ab_9366%2FGuantes_de_portero_COPA_League_Blanco_KE9737_21_model.jpg&feedId=92152&k=cc9e98aa826c6e09a1fa6377a5bfaae66aac081c",
-        sizes: ["5", "6", "7", "8", "11"],
-      },
-    ],
-  },
-  {
-    id: "adidas-guantes-de-portero-copa-pro-fingersave-blanco",
-    brand: "Adidas",
-    model: "Guantes De Portero Copa Pro Fingersave - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 140.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45585790156&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F581fdc1b933442e99302a2afe3a5720e_9366%2FGUANTES_DE_PORTERO_COPA_PRO_FINGERSAVE_Blanco_KA7818_21_model.jpg&feedId=92152&k=461324f04c84872aa1e8e203cd82ef08824a8ab8",
-        sizes: ["7", "8"],
-      },
-    ],
-  },
-  {
-    id: "adidas-guantes-de-portero-copa-pro-fingersave-gris",
-    brand: "Adidas",
-    model: "Guantes De Portero Copa Pro Fingersave - Gris",
-    colour: "Gris",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 140.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46720952515&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fda8ce6bab4ab4402b876c102dbeab10c_9366%2FGUANTES_DE_PORTERO_COPA_PRO_FINGERSAVE_Gris_KB3009_21_model.jpg&feedId=92152&k=c529450d466f78be1b584b207cf2613f370eabae",
-        sizes: ["7", "7 1/2", "8", "8 1/2", "9", "9 1/2", "10", "11"],
       },
     ],
   },
@@ -2490,23 +2516,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "adidas-guantes-de-portero-de-corte-hibrido-predator-pro-amarillo",
-    brand: "Adidas",
-    model: "Guantes de portero de corte híbrido Predator Pro - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 140.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45241854232&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F406bccafeb0c42059c82b797b674dde4_9366%2FGuantes_de_portero_de_corte_hibrido_Predator_Pro_Rosa_KE9714_21_model.jpg&feedId=92152&k=7a4e6ea52709d901a0d30f325a1b89fd2d7fc724",
-        sizes: ["7", "8"],
-      },
-    ],
-  },
-  {
     id: "adidas-guantes-de-portero-de-entrenamiento-adidas-predator-azul",
     brand: "Adidas",
     model: "Guantes de portero de entrenamiento adidas Predator - Azul",
@@ -2540,7 +2549,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "adidas-gants-de-gardien-d-entrainement-adidas-predator-noir",
+    id: "adidas-guantes-de-portero-de-entrenamiento-predator-negro",
     brand: "Adidas",
     model: "Guantes de portero de entrenamiento adidas Predator - Negro",
     colour: "Negro",
@@ -2553,6 +2562,15 @@ const minedGloveProductsChunk1: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42529796824&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fm%2Fjm6827.jpg&feedId=89032&k=49448efa3e3f34cbb6790acdd889bca479565dc6",
         sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 11.5", "Talla 8", "Talla 8.5", "Talla 9.5"],
+      },
+      {
+        store: "AdidasES",
+        price: 30.0,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44701250418&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F78f6f79596424947b9dfb2aaed1275a5_9366%2FGUANTES_DE_PORTERO_DE_ENTRENAMIENTO_PREDATOR_Negro_KA7787_21_model.jpg&feedId=92152&k=b37da049c8dd1c4d2b388aa06a44b7b7921b975b",
+        sizes: ["7", "7 1/2", "8", "8 1/2", "9", "10", "10 1/2", "11", "11 1/2", "12"],
       },
       {
         store: "FootStoreFR",
@@ -2572,32 +2590,6 @@ const minedGloveProductsChunk1: GloveProduct[] = [
           { size: "11", price: 28.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
           { size: "11.5", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm6827-gants-de-gardien-d-entrainement-adidas-predator-black" },
         ],
-      },
-      {
-        store: "AdidasES",
-        price: 30.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43791538442&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdb7ec13e59d446bfb88e8a95e13616d5_9366%2FGuantes_portero_Predator_Training_Negro_JM6827_21_model.jpg&feedId=92152&k=701941dee37dfd4e211dae3b336d239f491d81da",
-        sizes: ["8", "8 1/2", "9", "9 1/2", "10"],
-      },
-    ],
-  },
-  {
-    id: "adidas-guantes-de-portero-de-entrenamiento-predator-negro",
-    brand: "Adidas",
-    model: "Guantes De Portero De Entrenamiento Predator - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 30.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44701250418&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F78f6f79596424947b9dfb2aaed1275a5_9366%2FGUANTES_DE_PORTERO_DE_ENTRENAMIENTO_PREDATOR_Negro_KA7787_21_model.jpg&feedId=92152&k=b37da049c8dd1c4d2b388aa06a44b7b7921b975b",
-        sizes: ["7", "7 1/2", "8", "8 1/2", "9", "10", "10 1/2", "11", "11 1/2", "12"],
       },
     ],
   },
@@ -2880,53 +2872,45 @@ const minedGloveProductsChunk1: GloveProduct[] = [
     ],
   },
   {
-    id: "adidas-predator-competition-rojo",
+    id: "adidas-guantes-arquero-adidas-copa-club-negro",
     brand: "Adidas",
-    model: "Predator Competition - Rojo",
-    colour: "Rojo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 87.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44584459779&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001054042-00-P-X-20250117151228.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk5NXxpbWFnZS9qcGVnfGFEUTVMMmhoWmk4eE1qWTRORGt3TmpjMU9ERTNOQzl0WldScFlYTmZNVEF3TVRBMU5EQTBNbDh3TUY5UVgxZ3RNakF5TlRBeE1UY3hOVEV5TWpndWFuQm58ZmRkZTk5YmQyNzY5N2M5NGJhNjAxMjQzZDM4NGEyYzlmMzVkMmJjYTI0ZmRkYjZiYzlhYzE0NmMyNmU4Y2Y5OA&feedId=58083&k=6fc84c7d8dd712ba433ee9606dd05975a368509e",
-        sizes: ["7.5"],
-      },
-    ],
-  },
-  {
-    id: "adidas-predator-league",
-    brand: "Adidas",
-    model: "Predator League",
-    colour: "N/D",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 48.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38596924973&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978473-00-P-X-20240812163838.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE3MnxpbWFnZS9qcGVnfGFEWTJMMmd4TWk4eE1qTXdPRFl6TlRFeU16YzBNaTl0WldScFlYTmZNVEF3TURrM09EUTNNMTh3TUY5UVgxZ3RNakF5TkRBNE1USXhOak00TXpndWFuQm58MGNlMTlmMjIyNDc4MDg3YjZiMjc0Mjk5YWYxYzk3YzVlNWM0YjNhNGMzN2I4YmIyYjdjNTM2MTRiNGRlM2Q0OA&feedId=58083&k=aaecbd4be7cdb5f692f003ef35fcde1238c97c93",
-        sizes: ["9", "10"],
-      },
-    ],
-  },
-  {
-    id: "adidas-tiro-negro",
-    brand: "Adidas",
-    model: "Tiro - Negro",
+    model: "Guantes portero Copa Club - Negro",
     colour: "Negro",
     offers: [
       {
-        store: "ForumSport",
-        price: 23.75,
-        shipping: 5.99,
+        store: "AdidasES",
+        price: 23.0,
+        shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378706&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112820-00-P-X-20260331113936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc0MHxpbWFnZS9qcGVnfGFEWXdMMmhsWVM4eE16WTNNVEl3TXpVMk9UWTVOQzl0WldScFlYTmZNVEF3TVRFeE1qZ3lNRjh3TUY5UVgxZ3RNakF5TmpBek16RXhNVE01TXpZdWFuQm58ZjMwZjRkYTM0MGU1Y2RmNGJhNDU4MmI0Nzk3MjIwYTAxMDI3YzVlOTVlMTMyMTljNDdkNTFlOTgyYmJlYjc5ZQ&feedId=58083&k=6e6d51961c3ad9e96fa52f4db16e439fe106beda",
-        sizes: [],
+        url: "https://www.awin1.com/pclick.php?p=46411030076&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9690783d3dc74e0093f965e8921503d8_9366%2FGuantes_portero_Copa_Club_Negro_JY0625_01_00_standard.jpg&feedId=92152&k=a10f55f88c6e913e5c8e96efde5991021fbfe4be",
+        sizes: ["7", "8", "8 1/2", "9", "9 1/2", "10", "11", "12"],
+      },
+      {
+        store: "AdidasCL",
+        price: 24990.0,
+        shipping: 0,
+        currency: "CLP",
+        url: "https://www.awin1.com/pclick.php?p=42965566365&a=3013769&m=79922",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9690783d3dc74e0093f965e8921503d8_9366%2FGuantes_Arquero_Copa_Club_Negro_JY0625_01_00_standard.jpg&feedId=95016&k=759d481dd64c166afb892f8c7b213e3b3fcc7c0e",
+        sizes: ["8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "adidas-gants-de-gardien-d-entrainement-adidas-predator-noir",
+    brand: "Adidas",
+    model: "Guantes portero Predator Training - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "AdidasES",
+        price: 30.0,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43791538442&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdb7ec13e59d446bfb88e8a95e13616d5_9366%2FGuantes_portero_Predator_Training_Negro_JM6827_21_model.jpg&feedId=92152&k=701941dee37dfd4e211dae3b336d239f491d81da",
+        sizes: ["8", "8 1/2", "9", "9 1/2", "10"],
       },
     ],
   },
@@ -4602,7 +4586,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-adikt-pro-magnetic-naranja",
     brand: "Ho Soccer",
-    model: "Adikt Pro Magnetic - Naranja",
+    model: "Guantes de portero Ho Soccer Adikt Pro Magnetic - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -4619,7 +4603,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-adikt-pro-magnetic-verde",
     brand: "Ho Soccer",
-    model: "Adikt Pro Magnetic - Verde",
+    model: "Guantes de portero Ho Soccer Adikt Pro Magnetic - Verde",
     colour: "Verde",
     offers: [
       {
@@ -4636,7 +4620,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-adikt-pro-shield-negro",
     brand: "Ho Soccer",
-    model: "Adikt Pro Shield - Negro",
+    model: "Guantes de portero Ho Soccer Adikt Pro Shield - Negro",
     colour: "Negro",
     offers: [
       {
@@ -4653,7 +4637,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-aerial-ii-ng-speed-naranja",
     brand: "Ho Soccer",
-    model: "Aerial Ii Ng Speed - Naranja",
+    model: "Guantes de portero Ho Soccer Aerial Ii Ng Speed - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -4670,7 +4654,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-evolution",
     brand: "Ho Soccer",
-    model: "First Evolution",
+    model: "Guantes de portero Ho Soccer First Evolution",
     colour: "N/D",
     offers: [
       {
@@ -4687,7 +4671,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-superlight-kontrol-team-negro",
     brand: "Ho Soccer",
-    model: "First Superlight Kontrol Team - Negro",
+    model: "Guantes de portero Ho Soccer First Superlight Kontrol Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -4704,7 +4688,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-superlight-negative-spectre",
     brand: "Ho Soccer",
-    model: "First Superlight Negative Spectre",
+    model: "Guantes de portero Ho Soccer First Superlight Negative Spectre",
     colour: "N/D",
     offers: [
       {
@@ -4721,7 +4705,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-superlight-negative-spectre-rojo",
     brand: "Ho Soccer",
-    model: "First Superlight Negative Spectre - Rojo",
+    model: "Guantes de portero Ho Soccer First Superlight Negative Spectre - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -4738,7 +4722,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-superlight-ng-mosaic-azul",
     brand: "Ho Soccer",
-    model: "First Superlight Ng Mosaic - Azul",
+    model: "Guantes de portero Ho Soccer First Superlight Ng Mosaic - Azul",
     colour: "Azul",
     offers: [
       {
@@ -4755,7 +4739,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-superlight-rosa",
     brand: "Ho Soccer",
-    model: "First Superlight - Rosa",
+    model: "Guantes de portero Ho Soccer First Superlight - Rosa",
     colour: "Rosa",
     offers: [
       {
@@ -4772,7 +4756,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-ghotta-evo2-rn-plata",
     brand: "Ho Soccer",
-    model: "Ghotta Evo2 Rn - Plata",
+    model: "Guantes de portero Ho Soccer Ghotta Evo2 Rn - Plata",
     colour: "Plata",
     offers: [
       {
@@ -4789,7 +4773,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-ghotta-original-blanco",
     brand: "Ho Soccer",
-    model: "Ghotta Original - Blanco",
+    model: "Guantes de portero Ho Soccer Ghotta Original - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4806,7 +4790,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-ng-golden-team-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Ng Golden Team - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Ng Golden Team - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4823,7 +4807,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-algeria-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Patriot Algeria - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Patriot Algeria - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4840,7 +4824,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-argentina-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Patriot Argentina - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Patriot Argentina - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4857,7 +4841,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-belgium-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Patriot Belgium - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Patriot Belgium - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4874,7 +4858,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-brazil-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Patriot Brazil - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Patriot Brazil - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4891,7 +4875,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-england-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Patriot England - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Patriot England - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4908,7 +4892,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-france-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Patriot France - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Patriot France - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4925,7 +4909,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-germany-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Patriot Germany - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Patriot Germany - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4942,7 +4926,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-italy-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Patriot Italy - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Patriot Italy - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4959,7 +4943,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-morocco-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Patriot Morocco - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Patriot Morocco - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4976,7 +4960,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-portugal-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Patriot Portugal - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Patriot Portugal - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4993,7 +4977,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-spain-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero One Patriot Spain - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero One Patriot Spain - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5010,7 +4994,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-primary-protek-golden-team-negro",
     brand: "Ho Soccer",
-    model: "Guerrero Primary Protek Golden Team - Negro",
+    model: "Guantes de portero Ho Soccer Guerrero Primary Protek Golden Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5027,7 +5011,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-justice-ng-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Justice Ng - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Justice Ng - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5044,7 +5028,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-justice-rn-negro",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Justice Rn - Negro",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Justice Rn - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5061,7 +5045,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-ng-team-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Ng Team - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Ng Team - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5078,7 +5062,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-algeria-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Patriot Algeria - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Patriot Algeria - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5095,7 +5079,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-argentina-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Patriot Argentina - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Patriot Argentina - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5112,7 +5096,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-belgium-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Patriot Belgium - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Patriot Belgium - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5129,7 +5113,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-brazil-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Patriot Brazil - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Patriot Brazil - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5146,7 +5130,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-england-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Patriot England - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Patriot England - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5163,7 +5147,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-france-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Patriot France - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Patriot France - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5180,7 +5164,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-germany-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Patriot Germany - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Patriot Germany - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5197,7 +5181,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-italy-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Patriot Italy - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Patriot Italy - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5211,13 +5195,10 @@ const minedGloveProductsChunk1: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-morocco-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Patriot Morocco - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Patriot Morocco - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5234,7 +5215,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-portugal-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Patriot Portugal - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Patriot Portugal - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5248,10 +5229,13 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-spain-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Pro Patriot Spain - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Pro Patriot Spain - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5268,7 +5252,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-shield-essential-v2-blanco",
     brand: "Ho Soccer",
-    model: "Guerrero Shield Essential V2 - Blanco",
+    model: "Guantes de portero Ho Soccer Guerrero Shield Essential V2 - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5285,7 +5269,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-uniko-ng-naranja",
     brand: "Ho Soccer",
-    model: "Guerrero Uniko Ng - Naranja",
+    model: "Guantes de portero Ho Soccer Guerrero Uniko Ng - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5302,7 +5286,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-uniko-rf-verde",
     brand: "Ho Soccer",
-    model: "Guerrero Uniko Rf - Verde",
+    model: "Guantes de portero Ho Soccer Guerrero Uniko Rf - Verde",
     colour: "Verde",
     offers: [
       {
@@ -5319,7 +5303,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-initial-arena-ng-azul",
     brand: "Ho Soccer",
-    model: "Initial Arena Ng - Azul",
+    model: "Guantes de portero Ho Soccer Initial Arena Ng - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5336,7 +5320,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-konstriktor-pro-negative-hazard-azul",
     brand: "Ho Soccer",
-    model: "Konstriktor Pro Negative Hazard - Azul",
+    model: "Guantes de portero Ho Soccer Konstriktor Pro Negative Hazard - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5353,7 +5337,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-konstriktor-pro-rosa",
     brand: "Ho Soccer",
-    model: "Konstriktor Pro - Rosa",
+    model: "Guantes de portero Ho Soccer Konstriktor Pro - Rosa",
     colour: "Rosa",
     offers: [
       {
@@ -5370,7 +5354,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-kontrol-alert-orange-team-negro",
     brand: "Ho Soccer",
-    model: "Kontrol Alert Orange Team - Negro",
+    model: "Guantes de portero Ho Soccer Kontrol Alert Orange Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5387,7 +5371,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-kontrol-alert-team-negro",
     brand: "Ho Soccer",
-    model: "Kontrol Alert Team - Negro",
+    model: "Guantes de portero Ho Soccer Kontrol Alert Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5404,7 +5388,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-kontrol-knit-pro-team-negro",
     brand: "Ho Soccer",
-    model: "Kontrol Knit Pro Team - Negro",
+    model: "Guantes de portero Ho Soccer Kontrol Knit Pro Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5421,7 +5405,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-kontrol-knit-rs1-team-naranja",
     brand: "Ho Soccer",
-    model: "Kontrol Knit Rs1 Team - Naranja",
+    model: "Guantes de portero Ho Soccer Kontrol Knit Rs1 Team - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5438,7 +5422,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-kontrol-knit-tech",
     brand: "Ho Soccer",
-    model: "Kontrol Knit Tech",
+    model: "Guantes de portero Ho Soccer Kontrol Knit Tech",
     colour: "N/D",
     offers: [
       {
@@ -5455,7 +5439,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-krotalus-ii-fl-hardground",
     brand: "Ho Soccer",
-    model: "Krotalus Ii Fl Hardground",
+    model: "Guantes de portero Ho Soccer Krotalus Ii Fl Hardground",
     colour: "N/D",
     offers: [
       {
@@ -5472,7 +5456,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-legend-iv-ng-verde",
     brand: "Ho Soccer",
-    model: "Legend Iv Ng - Verde",
+    model: "Guantes de portero Ho Soccer Legend Iv Ng - Verde",
     colour: "Verde",
     offers: [
       {
@@ -5489,7 +5473,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-mgc-dynasty-naranja",
     brand: "Ho Soccer",
-    model: "Mgc Dynasty - Naranja",
+    model: "Guantes de portero Ho Soccer Mgc Dynasty - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5506,7 +5490,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-one",
     brand: "Ho Soccer",
-    model: "One",
+    model: "Guantes de portero Ho Soccer One",
     colour: "N/D",
     offers: [
       {
@@ -5523,7 +5507,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-one-negative-maze-rojo",
     brand: "Ho Soccer",
-    model: "One Negative Maze - Rojo",
+    model: "Guantes de portero Ho Soccer One Negative Maze - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -5540,7 +5524,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-one-rn-ring-naranja",
     brand: "Ho Soccer",
-    model: "One Rn Ring - Naranja",
+    model: "Guantes de portero Ho Soccer One Rn Ring - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5557,7 +5541,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-premier-knit-tech-club-naranja",
     brand: "Ho Soccer",
-    model: "Premier Knit Tech Club - Naranja",
+    model: "Guantes de portero Ho Soccer Premier Knit Tech Club - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5574,7 +5558,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-premier-knit-tech-club-rosa",
     brand: "Ho Soccer",
-    model: "Premier Knit Tech Club - Rosa",
+    model: "Guantes de portero Ho Soccer Premier Knit Tech Club - Rosa",
     colour: "Rosa",
     offers: [
       {
@@ -5591,7 +5575,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-premier-phenomenon-naranja",
     brand: "Ho Soccer",
-    model: "Premier Phenomenon - Naranja",
+    model: "Guantes de portero Ho Soccer Premier Phenomenon - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5608,7 +5592,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-primary-protek-fl-axial-azul",
     brand: "Ho Soccer",
-    model: "Primary Protek Fl Axial - Azul",
+    model: "Guantes de portero Ho Soccer Primary Protek Fl Axial - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5625,7 +5609,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-primary-protek-flat-race",
     brand: "Ho Soccer",
-    model: "Primary Protek Flat Race",
+    model: "Guantes de portero Ho Soccer Primary Protek Flat Race",
     colour: "N/D",
     offers: [
       {
@@ -5642,7 +5626,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-primary-protek-justice-fl-azul",
     brand: "Ho Soccer",
-    model: "Primary Protek Justice Fl - Azul",
+    model: "Guantes de portero Ho Soccer Primary Protek Justice Fl - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5659,7 +5643,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-ng-blanco",
     brand: "Ho Soccer",
-    model: "Pro Evolution Graffiti Ng - Blanco",
+    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Ng - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5676,7 +5660,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-ng-blanco-2",
     brand: "Ho Soccer",
-    model: "Pro Evolution Graffiti Ng - Blanco",
+    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Ng - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5693,7 +5677,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-rn-negro",
     brand: "Ho Soccer",
-    model: "Pro Evolution Graffiti Rn - Negro",
+    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Rn - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5710,7 +5694,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-rn-negro-2",
     brand: "Ho Soccer",
-    model: "Pro Evolution Graffiti Rn - Negro",
+    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Rn - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5727,7 +5711,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-ii-ng-verde",
     brand: "Ho Soccer",
-    model: "Pro Evolution Ii Ng - Verde",
+    model: "Guantes de portero Ho Soccer Pro Evolution Ii Ng - Verde",
     colour: "Verde",
     offers: [
       {
@@ -5744,7 +5728,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-kontrol-team-negro",
     brand: "Ho Soccer",
-    model: "Pro Evolution Kontrol Team - Negro",
+    model: "Guantes de portero Ho Soccer Pro Evolution Kontrol Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5761,7 +5745,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-koncept-team-negro",
     brand: "Ho Soccer",
-    model: "Ssg Koncept Team - Negro",
+    model: "Guantes de portero Ho Soccer Ssg Koncept Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5778,7 +5762,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-kontrol-knit-tech-naranja",
     brand: "Ho Soccer",
-    model: "Ssg Kontrol Knit Tech - Naranja",
+    model: "Guantes de portero Ho Soccer Ssg Kontrol Knit Tech - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5795,7 +5779,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-legend",
     brand: "Ho Soccer",
-    model: "Ssg Legend",
+    model: "Guantes de portero Ho Soccer Ssg Legend",
     colour: "N/D",
     offers: [
       {
@@ -5812,7 +5796,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-legend-azul",
     brand: "Ho Soccer",
-    model: "Ssg Legend - Azul",
+    model: "Guantes de portero Ho Soccer Ssg Legend - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5829,7 +5813,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-legend-ii-negative-hyper-azul",
     brand: "Ho Soccer",
-    model: "Ssg Legend Ii Negative Hyper - Azul",
+    model: "Guantes de portero Ho Soccer Ssg Legend Ii Negative Hyper - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5846,7 +5830,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-legend-iii-ng-verde",
     brand: "Ho Soccer",
-    model: "Ssg Legend Iii Ng - Verde",
+    model: "Guantes de portero Ho Soccer Ssg Legend Iii Ng - Verde",
     colour: "Verde",
     offers: [
       {
@@ -5863,7 +5847,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-storm-azul",
     brand: "Ho Soccer",
-    model: "Storm - Azul",
+    model: "Guantes de portero Ho Soccer Storm - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5880,7 +5864,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-storm-negro",
     brand: "Ho Soccer",
-    model: "Storm - Negro",
+    model: "Guantes de portero Ho Soccer Storm - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5897,7 +5881,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-tuko-pro-koncept-team-negro",
     brand: "Ho Soccer",
-    model: "Tuko Pro Koncept Team - Negro",
+    model: "Guantes de portero Ho Soccer Tuko Pro Koncept Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5914,7 +5898,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-tyro-essential-v2-negro",
     brand: "Ho Soccer",
-    model: "Tyro Essential V2 - Negro",
+    model: "Guantes de portero Ho Soccer Tyro Essential V2 - Negro",
     colour: "Negro",
     offers: [
       {
@@ -8452,23 +8436,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "nike-grip-3",
-    brand: "Nike",
-    model: "Grip 3",
-    colour: "N/D",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 46.89,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265348405&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914683-00-P-X-20230523140747.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYxMnxpbWFnZS9qcGVnfGFHVmhMMmc1Tmk4eE1UUXpOVGcxTWpFek5qUTNPQzl0WldScFlYTmZNVEF3TURreE5EWTRNMTh3TUY5UVgxZ3RNakF5TXpBMU1qTXhOREEzTkRjdWFuQm58MWE1OWIzYjkzZWVlYjM4OTBkNzc5ODIzNGVjOTJlZjczOTJmNWRkMTZhMDUxNWYwOGFiZDAzZmNhZmQxNDE4Nw&feedId=58083&k=aecae77c3c5bbc2646571597d6fb492e439f39d9",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
     id: "nike-gants-de-football-nike-grip3-rouge",
     brand: "Nike",
     model: "Guantes de fútbol Nike Grip4 - Rojo",
@@ -8860,6 +8827,23 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
+    id: "nike-grip-3",
+    brand: "Nike",
+    model: "Guantes de portero Nike Grip 3",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 46.89,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265348405&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914683-00-P-X-20230523140747.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYxMnxpbWFnZS9qcGVnfGFHVmhMMmc1Tmk4eE1UUXpOVGcxTWpFek5qUTNPQzl0WldScFlYTmZNVEF3TURreE5EWTRNMTh3TUY5UVgxZ3RNakF5TXpBMU1qTXhOREEzTkRjdWFuQm58MWE1OWIzYjkzZWVlYjM4OTBkNzc5ODIzNGVjOTJlZjczOTJmNWRkMTZhMDUxNWYwOGFiZDAzZmNhZmQxNDE4Nw&feedId=58083&k=aecae77c3c5bbc2646571597d6fb492e439f39d9",
+        sizes: ["9"],
+      },
+    ],
+  },
+  {
     id: "nike-gants-de-gardien-nike-grip3-bleu",
     brand: "Nike",
     model: "Guantes de portero Nike Grip3 - Azul",
@@ -8909,15 +8893,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-hq0256-100-white-dusty-cactus-dusty-cactus-6acf7d50f29a3-1.webp",
         sizes: ["6", "8", "10"],
       },
-      {
-        store: "ForumSport",
-        price: 49.69,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46230524985&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126983-00-P-X-20261002114555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mzg5MHxpbWFnZS9qcGVnfGFHTm1MMmhpTVM4eE5EQTFNamt4TkRNek1UWTNPQzl0WldScFlYTmZNVEF3TVRFeU5qazRNMTh3TUY5UVgxZ3RNakF5TmpFd01ESXhNVFExTlRVdWFuQm58NjFkOTVkNjIyZWRkNzY3YTNkZTA1Y2JiZGU0Y2JjMjk4NDg2OTM0YzUzM2VlNDMwYjdmMDA5YWQwYTUwM2UxYg&feedId=58083&k=42609d62906f59d93886b89dda3e5c298b9a6b61",
-        sizes: ["6", "8", "10"],
-      },
     ],
   },
   {
@@ -8934,6 +8909,15 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=42441225105&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_cn5651-102_b.jpg&feedId=89032&k=17203c1be96a3f15d188a6e40f6099b4b4e57a75",
         sizes: ["Talla 8"],
+      },
+      {
+        store: "ForumSport",
+        price: 49.69,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46230524985&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126983-00-P-X-20261002114555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mzg5MHxpbWFnZS9qcGVnfGFHTm1MMmhpTVM4eE5EQTFNamt4TkRNek1UWTNPQzl0WldScFlYTmZNVEF3TVRFeU5qazRNMTh3TUY5UVgxZ3RNakF5TmpFd01ESXhNVFExTlRVdWFuQm58NjFkOTVkNjIyZWRkNzY3YTNkZTA1Y2JiZGU0Y2JjMjk4NDg2OTM0YzUzM2VlNDMwYjdmMDA5YWQwYTUwM2UxYg&feedId=58083&k=42609d62906f59d93886b89dda3e5c298b9a6b61",
+        sizes: ["6", "8", "10"],
       },
       {
         store: "FootStoreFR",
@@ -9101,7 +9085,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "nike-guantes-de-portero-nike-match-negro",
+    id: "nike-guantes-de-portero-nike-match-negro-3",
     brand: "Nike",
     model: "Guantes de portero Nike Match - Negro",
     colour: "Negro",
@@ -9121,6 +9105,15 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 24.08,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43782450052&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001055569-00-P-X-20241219111210.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE3MHxpbWFnZS9qcGVnfGFETXhMMmhsTnk4eE1qWXdNakUyTkRJNE1UTTNOQzl0WldScFlYTmZNVEF3TVRBMU5UVTJPVjh3TUY5UVgxZ3RNakF5TkRFeU1Ua3hNVEV5TVRBdWFuQm58MjJiYWEzMmUyZGFlZTNlMTA3YjI4ODFmNWRjZmMyMTA5ZmM4YTIxZWJjMjRjMDUxNGM5NjUxOTQxODk5ZWIyYg&feedId=58083&k=565900f2a432dc146762ce3c0a559c0dc355930e",
+        sizes: ["6", "7", "8", "9", "10", "11"],
+      },
+      {
         store: "FootStoreFR",
         price: 18.72,
         priceMax: 27.0,
@@ -9137,7 +9130,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "nike-guantes-de-portero-nike-match-negro-2",
+    id: "nike-guantes-de-portero-nike-match-negro",
     brand: "Nike",
     model: "Guantes de portero Nike Match - Negro",
     colour: "Negro",
@@ -9163,7 +9156,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "nike-guantes-de-portero-nike-match-negro-3",
+    id: "nike-guantes-de-portero-nike-match-negro-2",
     brand: "Nike",
     model: "Guantes de portero Nike Match - Negro",
     colour: "Negro",
@@ -9184,15 +9177,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq0257-010-gants-de-gardien-nike-match-black-white-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hq0257-010_black-white-white_1.webp",
-        sizes: ["6", "7", "8", "9", "10", "11"],
-      },
-      {
-        store: "ForumSport",
-        price: 24.08,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43782450052&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001055569-00-P-X-20241219111210.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE3MHxpbWFnZS9qcGVnfGFETXhMMmhsTnk4eE1qWXdNakUyTkRJNE1UTTNOQzl0WldScFlYTmZNVEF3TVRBMU5UVTJPVjh3TUY5UVgxZ3RNakF5TkRFeU1Ua3hNVEV5TVRBdWFuQm58MjJiYWEzMmUyZGFlZTNlMTA3YjI4ODFmNWRjZmMyMTA5ZmM4YTIxZWJjMjRjMDUxNGM5NjUxOTQxODk5ZWIyYg&feedId=58083&k=565900f2a432dc146762ce3c0a559c0dc355930e",
         sizes: ["6", "7", "8", "9", "10", "11"],
       },
     ],
@@ -9358,6 +9342,23 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
+    id: "nike-vapor-grip3",
+    brand: "Nike",
+    model: "Guantes de portero Nike Vapor Grip3",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 76.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39794599402&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914684-00-P-X-20230523140747.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjE3NHxpbWFnZS9qcGVnfGFEYzNMMmhoTkM4eE1UUXpOVGcxTWpVeU9UWTVOQzl0WldScFlYTmZNVEF3TURreE5EWTRORjh3TUY5UVgxZ3RNakF5TXpBMU1qTXhOREEzTkRjdWFuQm58OWU4MDVmODYyMDE3ZjNjYjRmNjQ5MDkxNmE4YTIyYTMyMzYwOGFhODllNTY2Y2FmNDQ4OGUxZWExZGY5NzlhNg&feedId=58083&k=8b8fd00cab542934806fae4df5d6f5e2509a0571",
+        sizes: ["8", "9"],
+      },
+    ],
+  },
+  {
     id: "nike-guantes-de-portero-nike-vapor-grip3-amarillo",
     brand: "Nike",
     model: "Guantes de portero Nike Vapor Grip3 - Amarillo",
@@ -9384,7 +9385,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "nike-guantes-de-portero-nike-vapor-grip3-blanco",
+    id: "nike-vapor-grip3-blanco",
     brand: "Nike",
     model: "Guantes de portero Nike Vapor Grip3 - Blanco",
     colour: "Blanco",
@@ -9397,6 +9398,15 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=36485372602&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_cn5650-102_a.jpg&feedId=89032&k=bbdba51da5b2e3c123d7daf32c407c7208965830",
         sizes: ["Talla 7"],
+      },
+      {
+        store: "ForumSport",
+        price: 86.39,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46585431578&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126984-00-P-X-20261103092644.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzIwNnxpbWFnZS9qcGVnfGFESmhMMmcwWlM4eE5ERXlNREV6TnpZeU1UVXpOQzl0WldScFlYTmZNVEF3TVRFeU5qazRORjh3TUY5UVgxZ3RNakF5TmpFeE1ETXdPVEkyTkRRdWFuQm58NzM0Yjk4NzQ2ZWVkZjkxYTViZDFjZTNlZTIzN2NhYTk1MDBmYmFiMzlhYzAwODEzZTEyNTMyN2RiOWNjNWUyZA&feedId=58083&k=0dd46375cdc85e5235caf77a033f9e00eeaf6ca0",
+        sizes: ["7", "8", "9", "10"],
       },
       {
         store: "FootStoreFR",
@@ -9578,40 +9588,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "nike-vapor-grip3",
-    brand: "Nike",
-    model: "Vapor Grip3",
-    colour: "N/D",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 76.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39794599402&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914684-00-P-X-20230523140747.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjE3NHxpbWFnZS9qcGVnfGFEYzNMMmhoTkM4eE1UUXpOVGcxTWpVeU9UWTVOQzl0WldScFlYTmZNVEF3TURreE5EWTRORjh3TUY5UVgxZ3RNakF5TXpBMU1qTXhOREEzTkRjdWFuQm58OWU4MDVmODYyMDE3ZjNjYjRmNjQ5MDkxNmE4YTIyYTMyMzYwOGFhODllNTY2Y2FmNDQ4OGUxZWExZGY5NzlhNg&feedId=58083&k=8b8fd00cab542934806fae4df5d6f5e2509a0571",
-        sizes: ["8", "9"],
-      },
-    ],
-  },
-  {
-    id: "nike-vapor-grip3-blanco",
-    brand: "Nike",
-    model: "Vapor Grip3 - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 86.39,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46585431578&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126984-00-P-X-20261103092644.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzIwNnxpbWFnZS9qcGVnfGFESmhMMmcwWlM4eE5ERXlNREV6TnpZeU1UVXpOQzl0WldScFlYTmZNVEF3TVRFeU5qazRORjh3TUY5UVgxZ3RNakF5TmpFeE1ETXdPVEkyTkRRdWFuQm58NzM0Yjk4NzQ2ZWVkZjkxYTViZDFjZTNlZTIzN2NhYTk1MDBmYmFiMzlhYzAwODEzZTEyNTMyN2RiOWNjNWUyZA&feedId=58083&k=0dd46375cdc85e5235caf77a033f9e00eeaf6ca0",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
     id: "precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-negro-2",
     brand: "Precision",
     model: "Guantes de portero con protección para los dedos Precision Fusion X - Negro",
@@ -9767,9 +9743,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "precision-guantes-de-portero-precision-elite-3-0-grip-bleu",
     brand: "Precision",
@@ -9859,6 +9832,9 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "precision-guantes-de-portero-precision-fusion-x-flat-cut-essential-orange",
     brand: "Precision",
@@ -10106,312 +10082,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "puma-future-match-nc-azul",
-    brand: "Puma",
-    model: "Future Match Nc - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265361084&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000977466-00-S-M-20240724122801.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjUxOXxpbWFnZS9qcGVnfGFHVTNMMmhrWkM4eE1qSTNORFF3T0RFMk1UTXhNQzl0WldScFlYTmZNVEF3TURrM056UTJObDh3TUY5VFgwMHRNakF5TkRBM01qUXhNakk0TURFdWFuQm58ZjUzOTZhNGIxMDMyNDUxMDU3MmRmNjRkYTQwMTI5Y2Q3NDJlMTc5MTYzZmQzODdlZWUyODkxMGQxZGU1NDM0MQ&feedId=58083&k=0e258b4974b07221872c2cf22720fd7d6048c088",
-        sizes: ["9", "10"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-match-nc-azul-2",
-    brand: "Puma",
-    model: "Future Match Nc - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.59,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44198040293&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107963-00-P-X-20260311150058.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMnxpbWFnZS9qcGVnfGFEYzNMMmhqTUM4eE16WXpNVGt6TXpFMU16TXhNQzl0WldScFlYTmZNVEF3TVRFd056azJNMTh3TUY5UVgxZ3RNakF5TmpBek1URXhOVEF3TlRndWFuQm58ODI3OTFkNWY0OGRmOWJhZWU5OThmNjY3NmY2Nzg2OTc1OWNkMGE4ODZjNjI2OTRhYzMzNzY2ZjM2ZGE2NGI4MQ&feedId=58083&k=e09ce44022473ff5d8ab78e8986b54ab58582ef4",
-        sizes: ["5", "6", "7", "8", "10"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-match-nc-blanco",
-    brand: "Puma",
-    model: "Future Match Nc - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 31.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41854061842&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048013-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODEwNnxpbWFnZS9qcGVnfGFEazJMMmc1WXk4eE1qazVOemM0T0RjNU5Ea3hNQzl0WldScFlYTmZNVEF3TVRBME9EQXhNMTh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58YTkyYjYyOWRmMmMyMDVjYWM5ZWRjMTc4YWQxNGM3ZTBiNmM2NTllOWQwOTFjMzM0YmM2YzQwMGNmOWNjNDgwYw&feedId=58083&k=56bc76034edd565b7eeca6e9951b585fdfe79dff",
-        sizes: ["6", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-match-nc-naranja",
-    brand: "Puma",
-    model: "Future Match Nc - Naranja",
-    colour: "Naranja",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 31.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45854596022&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048015-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUzMnxpbWFnZS9qcGVnfGFEVmtMMmcwTnk4eE1qazVOemM0T1RFNE9ERXlOaTl0WldScFlYTmZNVEF3TVRBME9EQXhOVjh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58NTUwYzc4YWI5MzZmYThhMGEyNmQwMDVkZTlkYTA0MDNlYmU2M2IxY2QzOTZhOTVlYTFkYTU1YjQxNjY2YTQ5MA&feedId=58083&k=94aa80abde078cda1a29ace07d974faaeca9ad79",
-        sizes: ["5", "6", "7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-match-nc-rojo",
-    brand: "Puma",
-    model: "Future Match Nc - Rojo",
-    colour: "Rojo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.59,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43797080850&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107962-00-P-X-20260123160115.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODEzNnxpbWFnZS9qcGVnfGFESXhMMmhpT0M4eE16VXhOelkyTkRneE16QTROaTl0WldScFlYTmZNVEF3TVRFd056azJNbDh3TUY5UVgxZ3RNakF5TmpBeE1qTXhOakF4TVRVdWFuQm58ZjlmYmM5Y2EzMWU2NjE3NWY4NWNiZWM4N2UzYjliZjMxMDQwZDI4Mjg5Y2Q3MGQxMjY3Njc0YzBkY2FmMThlNg&feedId=58083&k=153cd1e2985b0cb136c737136d093f2492efcdfe",
-        sizes: ["4"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-pro-hybrid-azul",
-    brand: "Puma",
-    model: "Future Pro Hybrid - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 57.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46355315989&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107960-00-P-X-20260504090704.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjA3OXxpbWFnZS9qcGVnfGFEWTBMMmhpWkM4eE16YzBNVGs0TVRVMk5EazFPQzl0WldScFlYTmZNVEF3TVRFd056azJNRjh3TUY5UVgxZ3RNakF5TmpBMU1EUXdPVEEzTURRdWFuQm58ZmU0M2VhMDRhZTdlY2M0MGE0MTk0Zjc5MzBjNjlhMjZhZGRkMzljMjBlMTMzY2NlZDdiNmNlMmYzNGYyZWU1NA&feedId=58083&k=1e349cb19916322aee221cd5f06bc7d29ad6c81e",
-        sizes: ["9.5", "10"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-pro-hybrid-blanco",
-    brand: "Puma",
-    model: "Future Pro Hybrid - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 69.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39247446602&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923613-00-P-X-20230519150208.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjQxNnxpbWFnZS9qcGVnfGFHSmpMMmczWmk4eE1UUXlPVGcyTVRRNU1EY3hPQzl0WldScFlYTmZNVEF3TURreU16WXhNMTh3TUY5UVgxZ3RNakF5TXpBMU1Ua3hOVEF5TURndWFuQm58NTEwZmJkMmNkY2FkMmJmMjYxODg1ZjhhOGJiZTdiNTExNDUwMWU4ODNhYzk5NTM2OTExODZkNjNjZjNkNDliYw&feedId=58083&k=084125f1c66edfbbd15f0cd16978dee4673b1a44",
-        sizes: ["10", "11"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-pro-hybrid-rojo",
-    brand: "Puma",
-    model: "Future Pro Hybrid - Rojo",
-    colour: "Rojo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 56.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44305901761&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107959-00-P-X-20260122090047.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE1MHxpbWFnZS9qcGVnfGFEWmpMMmd4Tnk4eE16VXhNek13TmpVM01EYzRNaTl0WldScFlYTmZNVEF3TVRFd056azFPVjh3TUY5UVgxZ3RNakF5TmpBeE1qSXdPVEF3TkRjdWFuQm58NjAzODE5YjU5NjhmNGYwMTJiMDBlMzU2ZDc2MjFhZjFmM2NjOGNiZjA4OGU5MTBhY2EwM2MwZGJiZmE2MDhkZg&feedId=58083&k=b99e75a9eec87daf5a78d9664cd7419834527d5e",
-        sizes: ["7", "8", "9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-pro-nc-rojo",
-    brand: "Puma",
-    model: "Future Pro Nc - Rojo",
-    colour: "Rojo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 56.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43791560678&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107967-00-P-X-20260121163439.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODUzM3xpbWFnZS9qcGVnfGFEZGpMMmhtWVM4eE16VXhNakl5TWpRd09EY3pOQzl0WldScFlYTmZNVEF3TVRFd056azJOMTh3TUY5UVgxZ3RNakF5TmpBeE1qRXhOak0wTXprdWFuQm58MzllNTM4MGM4NzEyZTBjODY3ODkzNWE4MjQyYTQxNDI3MGY0YjY0MDcwOWRkYTJlNDIzOWM3OTM5MzhlMDU3Yg&feedId=58083&k=201b93fded760820d72df5d4466c472afe1978ad",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-pro-sgc-azul",
-    brand: "Puma",
-    model: "Future Pro Sgc - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 67.89,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38532306602&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000977465-00-P-X-20240724122801.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM0MXxpbWFnZS9qcGVnfGFEWmlMMmc0Wmk4eE1qSTNORFF3TnprMk5EY3dNaTl0WldScFlYTmZNVEF3TURrM056UTJOVjh3TUY5UVgxZ3RNakF5TkRBM01qUXhNakk0TURFdWFuQm58ZjllYjVkY2U4ZWU5MDFmM2NjOTEzZWViYTUyM2E2ZmFjNjIzN2RhNzQ4ZmZhOWYwMTJmMzAzZGUwZWMzMjc0OA&feedId=58083&k=c502aabf577608c83ce53ca0dc25bcbeb0fcb12b",
-        sizes: ["8.5", "10", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-ultimate-nc-azul",
-    brand: "Puma",
-    model: "Future Ultimate Nc - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 95.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45849130645&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001140381-00-P-X-20260831150118.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ2MXxpbWFnZS9qcGVnfGFETTFMMmc1Wmk4eE16azROVFU1TURFME9URTFNQzl0WldScFlYTmZNVEF3TVRFME1ETTRNVjh3TUY5UVgxZ3RNakF5TmpBNE16RXhOVEF4TVRndWFuQm58MTRiOTc1NTI4ZjUxYzkxODM4NzJhOGVjMWY3NjkzMDc2OTFhZThiZDkyMzc0NTRkM2FiMTY5MWZkMGRhYjIzMw&feedId=58083&k=5c608d3b8f3804bc504fd0e1832f461ea1a2a63d",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-ultimate-nc-azul-2",
-    brand: "Puma",
-    model: "Future Ultimate Nc - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 78.39,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46355316005&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107956-00-P-X-20260311150058.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTkxMHxpbWFnZS9qcGVnfGFEWmpMMmcyTnk4eE16WXpNVGt6TWpZeU9UQXlNaTl0WldScFlYTmZNVEF3TVRFd056azFObDh3TUY5UVgxZ3RNakF5TmpBek1URXhOVEF3TlRndWFuQm58MmJiZDVkOTFjYzUzMWNkMzQ2NTJhY2VmNjZlYjFjNzFjZjQ3NzM1MjFlMjQ5NzkyODQxMDYxMjgzNTllZGI3MA&feedId=58083&k=edeab4f1b861869dbbae9dafc6b91675b4e99a6e",
-        sizes: ["7.5", "9", "9.5", "10", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-ultimate-nc-blanco",
-    brand: "Puma",
-    model: "Future Ultimate Nc - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 83.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45308853839&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001140383-00-P-X-20260715151010.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODgxN3xpbWFnZS9qcGVnfGFHRXlMMmc0WWk4eE16ZzVOVFE1TlRZeE5EUTVOQzl0WldScFlYTmZNVEF3TVRFME1ETTRNMTh3TUY5UVgxZ3RNakF5TmpBM01UVXhOVEV3TVRBdWFuQm58MWZhZDBiM2MyNjhjOGZhMGU5MGRkMWE2NTJhMzYyMDdmZmMwMzU4MzA1ZTAyYWRkM2U1MmE1MmI3NTRmZjQ5MA&feedId=58083&k=23370adb21b5c1cf84dceafc400e29bc5f6cd3bf",
-        sizes: ["8"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-ultimate-nc-naranja",
-    brand: "Puma",
-    model: "Future Ultimate Nc - Naranja",
-    colour: "Naranja",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 97.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37631558005&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000931937-00-P-X-20240415160437.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY1NXxpbWFnZS9qcGVnfGFEVXlMMmhtWXk4eE1qQTRORGN3TWpjM016STNPQzl0WldScFlYTmZNVEF3TURrek1Ua3pOMTh3TUY5UVgxZ3RNakF5TkRBME1UVXhOakEwTXpjdWFuQm58YjNhZDQzNDljZmU1NmMyNzhkZTMzNWUyOTQ1MzNhY2MxNzNhZWUzZjdmZWM4OWZiNWQyMDVhMTZlMDhhZDllZg&feedId=58083&k=7a02f1569af52cdda27a8ab6ba618e52d43d1b3c",
-        sizes: ["9.5", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-ultimate-nc-naranja-2",
-    brand: "Puma",
-    model: "Future Ultimate Nc - Naranja",
-    colour: "Naranja",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 123.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42761671266&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001079382-00-P-X-20250827145011.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc3NXxpbWFnZS9qcGVnfGFETTBMMmhoTmk4eE16RTBNalkxTWpnME5qRXhNQzl0WldScFlYTmZNVEF3TVRBM09UTTRNbDh3TUY5UVgxZ3RNakF5TlRBNE1qY3hORFV3TVRFdWFuQm58ZTZkZjkxOWY0ODBhY2YwYmQ3YTM2OTBjYjNlMDMyNDFjNjc0ZDMzYjMwZjljM2UyMzNhYzMyODlmMGU4YWIyYg&feedId=58083&k=bc627df88a7df47c63629fbac84d9a5fc01f7b43",
-        sizes: ["9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-ultimate-nc-negro",
-    brand: "Puma",
-    model: "Future Ultimate Nc - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 82.59,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43791560809&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107957-00-P-X-20260122090047.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY4NXxpbWFnZS9qcGVnfGFHTmpMMmd3T1M4eE16VXhNek13TmpFM056VTJOaTl0WldScFlYTmZNVEF3TVRFd056azFOMTh3TUY5UVgxZ3RNakF5TmpBeE1qSXdPVEF3TkRjdWFuQm58Zjk2YWMxMDQzYTVhY2JhYTM1MGE4NjEyNDUxOGU4YTI0M2VmZjZhNmEwMTJlYmZjNDliZWU1YWQ3MTI1NzhhOA&feedId=58083&k=eb885b2d41861f773195d232963a8aa4581a35e0",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-ultimate-nc-negro-2",
-    brand: "Puma",
-    model: "Future Ultimate Nc - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 93.79,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45308853947&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001140382-00-P-X-20260715151010.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIyN3xpbWFnZS9qcGVnfGFEUXhMMmc1WXk4eE16ZzVOVFE1TlRFMU5UYzBNaTl0WldScFlYTmZNVEF3TVRFME1ETTRNbDh3TUY5UVgxZ3RNakF5TmpBM01UVXhOVEV3TVRBdWFuQm58NDZlOWRiNWM0N2U3YjJlOWU5OGMzMDUzMThhYjM3YWNkYTQ3ODBmMWY0ZjRhYTFiYjEwMWNhZWFlZmQzZjJlYw&feedId=58083&k=edc6725e252e16484c35e7aebe85af0f371a4d9d",
-        sizes: ["7", "8", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "puma-future-ultimate-nc-rojo",
-    brand: "Puma",
-    model: "Future Ultimate Nc - Rojo",
-    colour: "Rojo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 81.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44305901751&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107955-00-P-X-20260121163439.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA0OHxpbWFnZS9qcGVnfGFETTBMMmc1Wmk4eE16VXhNakl5TVRnNE5EUTBOaTl0WldScFlYTmZNVEF3TVRFd056azFOVjh3TUY5UVgxZ3RNakF5TmpBeE1qRXhOak0wTXprdWFuQm58MzJjM2RmNjg3NjZmOGNmZmQ1MzM5ZTc0ZGNlZTE5YmI4NzNmYTI0NmE0ZDVhYTkzZmQ0ZjAzZmYzZWQzODNhNA&feedId=58083&k=7b1b068c5b0f71a369d1a1fbb913cc9cffd12915",
-        sizes: ["7", "8", "8.5", "9", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
     id: "puma-guantes-de-portero-puma-future-beige",
     brand: "Puma",
     model: "Guantes de portero Puma Future - Beige",
@@ -10447,6 +10117,312 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "puma-future-match-nc-azul",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Match Nc - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265361084&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000977466-00-S-M-20240724122801.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjUxOXxpbWFnZS9qcGVnfGFHVTNMMmhrWkM4eE1qSTNORFF3T0RFMk1UTXhNQzl0WldScFlYTmZNVEF3TURrM056UTJObDh3TUY5VFgwMHRNakF5TkRBM01qUXhNakk0TURFdWFuQm58ZjUzOTZhNGIxMDMyNDUxMDU3MmRmNjRkYTQwMTI5Y2Q3NDJlMTc5MTYzZmQzODdlZWUyODkxMGQxZGU1NDM0MQ&feedId=58083&k=0e258b4974b07221872c2cf22720fd7d6048c088",
+        sizes: ["9", "10"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-match-nc-azul-2",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Match Nc - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.59,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44198040293&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107963-00-P-X-20260311150058.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMnxpbWFnZS9qcGVnfGFEYzNMMmhqTUM4eE16WXpNVGt6TXpFMU16TXhNQzl0WldScFlYTmZNVEF3TVRFd056azJNMTh3TUY5UVgxZ3RNakF5TmpBek1URXhOVEF3TlRndWFuQm58ODI3OTFkNWY0OGRmOWJhZWU5OThmNjY3NmY2Nzg2OTc1OWNkMGE4ODZjNjI2OTRhYzMzNzY2ZjM2ZGE2NGI4MQ&feedId=58083&k=e09ce44022473ff5d8ab78e8986b54ab58582ef4",
+        sizes: ["5", "6", "7", "8", "10"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-match-nc-blanco",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Match Nc - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 31.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41854061842&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048013-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODEwNnxpbWFnZS9qcGVnfGFEazJMMmc1WXk4eE1qazVOemM0T0RjNU5Ea3hNQzl0WldScFlYTmZNVEF3TVRBME9EQXhNMTh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58YTkyYjYyOWRmMmMyMDVjYWM5ZWRjMTc4YWQxNGM3ZTBiNmM2NTllOWQwOTFjMzM0YmM2YzQwMGNmOWNjNDgwYw&feedId=58083&k=56bc76034edd565b7eeca6e9951b585fdfe79dff",
+        sizes: ["6", "8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-match-nc-naranja",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Match Nc - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 31.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45854596022&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048015-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUzMnxpbWFnZS9qcGVnfGFEVmtMMmcwTnk4eE1qazVOemM0T1RFNE9ERXlOaTl0WldScFlYTmZNVEF3TVRBME9EQXhOVjh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58NTUwYzc4YWI5MzZmYThhMGEyNmQwMDVkZTlkYTA0MDNlYmU2M2IxY2QzOTZhOTVlYTFkYTU1YjQxNjY2YTQ5MA&feedId=58083&k=94aa80abde078cda1a29ace07d974faaeca9ad79",
+        sizes: ["5", "6", "7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-match-nc-rojo",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Match Nc - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.59,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43797080850&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107962-00-P-X-20260123160115.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODEzNnxpbWFnZS9qcGVnfGFESXhMMmhpT0M4eE16VXhOelkyTkRneE16QTROaTl0WldScFlYTmZNVEF3TVRFd056azJNbDh3TUY5UVgxZ3RNakF5TmpBeE1qTXhOakF4TVRVdWFuQm58ZjlmYmM5Y2EzMWU2NjE3NWY4NWNiZWM4N2UzYjliZjMxMDQwZDI4Mjg5Y2Q3MGQxMjY3Njc0YzBkY2FmMThlNg&feedId=58083&k=153cd1e2985b0cb136c737136d093f2492efcdfe",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-pro-hybrid-azul",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Pro Hybrid - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 57.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46355315989&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107960-00-P-X-20260504090704.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjA3OXxpbWFnZS9qcGVnfGFEWTBMMmhpWkM4eE16YzBNVGs0TVRVMk5EazFPQzl0WldScFlYTmZNVEF3TVRFd056azJNRjh3TUY5UVgxZ3RNakF5TmpBMU1EUXdPVEEzTURRdWFuQm58ZmU0M2VhMDRhZTdlY2M0MGE0MTk0Zjc5MzBjNjlhMjZhZGRkMzljMjBlMTMzY2NlZDdiNmNlMmYzNGYyZWU1NA&feedId=58083&k=1e349cb19916322aee221cd5f06bc7d29ad6c81e",
+        sizes: ["9.5", "10"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-pro-hybrid-blanco",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Pro Hybrid - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 69.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39247446602&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923613-00-P-X-20230519150208.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjQxNnxpbWFnZS9qcGVnfGFHSmpMMmczWmk4eE1UUXlPVGcyTVRRNU1EY3hPQzl0WldScFlYTmZNVEF3TURreU16WXhNMTh3TUY5UVgxZ3RNakF5TXpBMU1Ua3hOVEF5TURndWFuQm58NTEwZmJkMmNkY2FkMmJmMjYxODg1ZjhhOGJiZTdiNTExNDUwMWU4ODNhYzk5NTM2OTExODZkNjNjZjNkNDliYw&feedId=58083&k=084125f1c66edfbbd15f0cd16978dee4673b1a44",
+        sizes: ["10", "11"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-pro-hybrid-rojo",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Pro Hybrid - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 56.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44305901761&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107959-00-P-X-20260122090047.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE1MHxpbWFnZS9qcGVnfGFEWmpMMmd4Tnk4eE16VXhNek13TmpVM01EYzRNaTl0WldScFlYTmZNVEF3TVRFd056azFPVjh3TUY5UVgxZ3RNakF5TmpBeE1qSXdPVEF3TkRjdWFuQm58NjAzODE5YjU5NjhmNGYwMTJiMDBlMzU2ZDc2MjFhZjFmM2NjOGNiZjA4OGU5MTBhY2EwM2MwZGJiZmE2MDhkZg&feedId=58083&k=b99e75a9eec87daf5a78d9664cd7419834527d5e",
+        sizes: ["7", "8", "9", "9.5", "10", "10.5", "11"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-pro-nc-rojo",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Pro Nc - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 56.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43791560678&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107967-00-P-X-20260121163439.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODUzM3xpbWFnZS9qcGVnfGFEZGpMMmhtWVM4eE16VXhNakl5TWpRd09EY3pOQzl0WldScFlYTmZNVEF3TVRFd056azJOMTh3TUY5UVgxZ3RNakF5TmpBeE1qRXhOak0wTXprdWFuQm58MzllNTM4MGM4NzEyZTBjODY3ODkzNWE4MjQyYTQxNDI3MGY0YjY0MDcwOWRkYTJlNDIzOWM3OTM5MzhlMDU3Yg&feedId=58083&k=201b93fded760820d72df5d4466c472afe1978ad",
+        sizes: ["8"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-pro-sgc-azul",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Pro Sgc - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 67.89,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38532306602&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000977465-00-P-X-20240724122801.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM0MXxpbWFnZS9qcGVnfGFEWmlMMmc0Wmk4eE1qSTNORFF3TnprMk5EY3dNaTl0WldScFlYTmZNVEF3TURrM056UTJOVjh3TUY5UVgxZ3RNakF5TkRBM01qUXhNakk0TURFdWFuQm58ZjllYjVkY2U4ZWU5MDFmM2NjOTEzZWViYTUyM2E2ZmFjNjIzN2RhNzQ4ZmZhOWYwMTJmMzAzZGUwZWMzMjc0OA&feedId=58083&k=c502aabf577608c83ce53ca0dc25bcbeb0fcb12b",
+        sizes: ["8.5", "10", "10.5"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-ultimate-nc-azul",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Ultimate Nc - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 95.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45849130645&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001140381-00-P-X-20260831150118.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ2MXxpbWFnZS9qcGVnfGFETTFMMmc1Wmk4eE16azROVFU1TURFME9URTFNQzl0WldScFlYTmZNVEF3TVRFME1ETTRNVjh3TUY5UVgxZ3RNakF5TmpBNE16RXhOVEF4TVRndWFuQm58MTRiOTc1NTI4ZjUxYzkxODM4NzJhOGVjMWY3NjkzMDc2OTFhZThiZDkyMzc0NTRkM2FiMTY5MWZkMGRhYjIzMw&feedId=58083&k=5c608d3b8f3804bc504fd0e1832f461ea1a2a63d",
+        sizes: ["7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-ultimate-nc-azul-2",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Ultimate Nc - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 78.39,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46355316005&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107956-00-P-X-20260311150058.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTkxMHxpbWFnZS9qcGVnfGFEWmpMMmcyTnk4eE16WXpNVGt6TWpZeU9UQXlNaTl0WldScFlYTmZNVEF3TVRFd056azFObDh3TUY5UVgxZ3RNakF5TmpBek1URXhOVEF3TlRndWFuQm58MmJiZDVkOTFjYzUzMWNkMzQ2NTJhY2VmNjZlYjFjNzFjZjQ3NzM1MjFlMjQ5NzkyODQxMDYxMjgzNTllZGI3MA&feedId=58083&k=edeab4f1b861869dbbae9dafc6b91675b4e99a6e",
+        sizes: ["7.5", "9", "9.5", "10", "10.5"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-ultimate-nc-blanco",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Ultimate Nc - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 83.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45308853839&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001140383-00-P-X-20260715151010.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODgxN3xpbWFnZS9qcGVnfGFHRXlMMmc0WWk4eE16ZzVOVFE1TlRZeE5EUTVOQzl0WldScFlYTmZNVEF3TVRFME1ETTRNMTh3TUY5UVgxZ3RNakF5TmpBM01UVXhOVEV3TVRBdWFuQm58MWZhZDBiM2MyNjhjOGZhMGU5MGRkMWE2NTJhMzYyMDdmZmMwMzU4MzA1ZTAyYWRkM2U1MmE1MmI3NTRmZjQ5MA&feedId=58083&k=23370adb21b5c1cf84dceafc400e29bc5f6cd3bf",
+        sizes: ["8"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-ultimate-nc-naranja",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Ultimate Nc - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 97.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37631558005&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000931937-00-P-X-20240415160437.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY1NXxpbWFnZS9qcGVnfGFEVXlMMmhtWXk4eE1qQTRORGN3TWpjM016STNPQzl0WldScFlYTmZNVEF3TURrek1Ua3pOMTh3TUY5UVgxZ3RNakF5TkRBME1UVXhOakEwTXpjdWFuQm58YjNhZDQzNDljZmU1NmMyNzhkZTMzNWUyOTQ1MzNhY2MxNzNhZWUzZjdmZWM4OWZiNWQyMDVhMTZlMDhhZDllZg&feedId=58083&k=7a02f1569af52cdda27a8ab6ba618e52d43d1b3c",
+        sizes: ["9.5", "10.5"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-ultimate-nc-naranja-2",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Ultimate Nc - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 123.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42761671266&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001079382-00-P-X-20250827145011.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc3NXxpbWFnZS9qcGVnfGFETTBMMmhoTmk4eE16RTBNalkxTWpnME5qRXhNQzl0WldScFlYTmZNVEF3TVRBM09UTTRNbDh3TUY5UVgxZ3RNakF5TlRBNE1qY3hORFV3TVRFdWFuQm58ZTZkZjkxOWY0ODBhY2YwYmQ3YTM2OTBjYjNlMDMyNDFjNjc0ZDMzYjMwZjljM2UyMzNhYzMyODlmMGU4YWIyYg&feedId=58083&k=bc627df88a7df47c63629fbac84d9a5fc01f7b43",
+        sizes: ["9", "9.5", "10", "10.5", "11"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-ultimate-nc-negro",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Ultimate Nc - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 82.59,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43791560809&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107957-00-P-X-20260122090047.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY4NXxpbWFnZS9qcGVnfGFHTmpMMmd3T1M4eE16VXhNek13TmpFM056VTJOaTl0WldScFlYTmZNVEF3TVRFd056azFOMTh3TUY5UVgxZ3RNakF5TmpBeE1qSXdPVEF3TkRjdWFuQm58Zjk2YWMxMDQzYTVhY2JhYTM1MGE4NjEyNDUxOGU4YTI0M2VmZjZhNmEwMTJlYmZjNDliZWU1YWQ3MTI1NzhhOA&feedId=58083&k=eb885b2d41861f773195d232963a8aa4581a35e0",
+        sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-ultimate-nc-negro-2",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Ultimate Nc - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 93.79,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45308853947&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001140382-00-P-X-20260715151010.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIyN3xpbWFnZS9qcGVnfGFEUXhMMmc1WXk4eE16ZzVOVFE1TlRFMU5UYzBNaTl0WldScFlYTmZNVEF3TVRFME1ETTRNbDh3TUY5UVgxZ3RNakF5TmpBM01UVXhOVEV3TVRBdWFuQm58NDZlOWRiNWM0N2U3YjJlOWU5OGMzMDUzMThhYjM3YWNkYTQ3ODBmMWY0ZjRhYTFiYjEwMWNhZWFlZmQzZjJlYw&feedId=58083&k=edc6725e252e16484c35e7aebe85af0f371a4d9d",
+        sizes: ["7", "8", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "puma-future-ultimate-nc-rojo",
+    brand: "Puma",
+    model: "Guantes de portero Puma Future Ultimate Nc - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 81.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44305901751&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107955-00-P-X-20260121163439.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA0OHxpbWFnZS9qcGVnfGFETTBMMmc1Wmk4eE16VXhNakl5TVRnNE5EUTBOaTl0WldScFlYTmZNVEF3TVRFd056azFOVjh3TUY5UVgxZ3RNakF5TmpBeE1qRXhOak0wTXprdWFuQm58MzJjM2RmNjg3NjZmOGNmZmQ1MzM5ZTc0ZGNlZTE5YmI4NzNmYTI0NmE0ZDVhYTkzZmQ0ZjAzZmYzZWQzODNhNA&feedId=58083&k=7b1b068c5b0f71a369d1a1fbb913cc9cffd12915",
+        sizes: ["7", "8", "8.5", "9", "10", "10.5", "11"],
+      },
+    ],
+  },
+  {
     id: "puma-guantes-de-portero-puma-king-play-rc-beige",
     brand: "Puma",
     model: "Guantes de portero Puma King Play RC - Beige",
@@ -10475,7 +10451,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-king-ultimate-hybrid-azul",
     brand: "Puma",
-    model: "King Ultimate Hybrid - Azul",
+    model: "Guantes de portero Puma King Ultimate Hybrid - Azul",
     colour: "Azul",
     offers: [
       {
@@ -10492,7 +10468,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-king-ultimate-hybrid-beige",
     brand: "Puma",
-    model: "King Ultimate Hybrid - Beige",
+    model: "Guantes de portero Puma King Ultimate Hybrid - Beige",
     colour: "Beige",
     offers: [
       {
@@ -10509,7 +10485,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-king-ultimate-hybrid-blanco",
     brand: "Puma",
-    model: "King Ultimate Hybrid - Blanco",
+    model: "Guantes de portero Puma King Ultimate Hybrid - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -10526,7 +10502,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-grip-1-amarillo",
     brand: "Puma",
-    model: "Ultra Grip 1 - Amarillo",
+    model: "Guantes de portero Puma Ultra Grip 1 - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -10543,7 +10519,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-match-azul",
     brand: "Puma",
-    model: "Ultra Match - Azul",
+    model: "Guantes de portero Puma Ultra Match - Azul",
     colour: "Azul",
     offers: [
       {
@@ -10560,7 +10536,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-match-protect-rc-blanco",
     brand: "Puma",
-    model: "Ultra Match Protect Rc - Blanco",
+    model: "Guantes de portero Puma Ultra Match Protect Rc - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -10577,7 +10553,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-play-gris",
     brand: "Puma",
-    model: "Ultra Play - Gris",
+    model: "Guantes de portero Puma Ultra Play - Gris",
     colour: "Gris",
     offers: [
       {
@@ -10594,7 +10570,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-play-rc-blanco",
     brand: "Puma",
-    model: "Ultra Play Rc - Blanco",
+    model: "Guantes de portero Puma Ultra Play Rc - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -10611,7 +10587,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-ultimate-amarillo",
     brand: "Puma",
-    model: "Ultra Ultimate - Amarillo",
+    model: "Guantes de portero Puma Ultra Ultimate - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -10628,7 +10604,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-ultimate-naranja",
     brand: "Puma",
-    model: "Ultra Ultimate - Naranja",
+    model: "Guantes de portero Puma Ultra Ultimate - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -10645,7 +10621,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-ultimate-negro",
     brand: "Puma",
-    model: "Ultra Ultimate - Negro",
+    model: "Guantes de portero Puma Ultra Ultimate - Negro",
     colour: "Negro",
     offers: [
       {
@@ -10662,7 +10638,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-x-hyrox-negro",
     brand: "Puma",
-    model: "X Hyrox - Negro",
+    model: "Guantes de portero Puma X Hyrox - Negro",
     colour: "Negro",
     offers: [
       {
@@ -12878,295 +12854,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "rinat-ares-as-blanco",
-    brand: "Rinat",
-    model: "Ares As - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 24.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276726966&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148561-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ0NnxpbWFnZS9qcGVnfGFEUXhMMmczTXk4eE5EQTJOek00T0RjM05qUTNPQzl0WldScFlYTmZNVEF3TVRFME9EVTJNVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58ZDcxNmYwYzhhMWMwMjFhYzY5YjQ4MGE0YzI3OWZkZmYxOTczMzY4NzBkZmJhYjJkNzczOWZjMGQ0NmYyMzM3NA&feedId=58083&k=97a4f66f70b25df2ade9f959830610549867bb4a",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-ares-pro-blanco",
-    brand: "Rinat",
-    model: "Ares Pro - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 79.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276727002&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148557-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTE5NHxpbWFnZS9qcGVnfGFEZGlMMmd4T0M4eE5EQTJOek00TWpJNE9EUXhOQzl0WldScFlYTmZNVEF3TVRFME9EVTFOMTh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58ZDFkYTcxZTM2NTFjZTkwM2FmMzM3NGFhNTBkZTgzNmExZDRkYTc2YTAwZjRlN2UwODg2YWRjODY5ZWJiMWVkNQ&feedId=58083&k=5e109a4f4b0a21f7f3dafac61fc6c8d05156ebfb",
-        sizes: ["8", "11"],
-      },
-    ],
-  },
-  {
-    id: "rinat-ares-turf-blanco",
-    brand: "Rinat",
-    model: "Ares Turf - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 39.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276727060&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148559-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc0NnxpbWFnZS9qcGVnfGFEWmlMMmhrTVM4eE5EQTJOek00TlRVek1qUTBOaTl0WldScFlYTmZNVEF3TVRFME9EVTFPVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58NjlmMGJmMTFmY2ZmNzkyNjI2NTdlY2EyYjNiM2JmMjM4MWVkYmU1MWVjOGY2NDkxOTNlMzI0ZjQ1YTE0NTVmZg&feedId=58083&k=d52a8f65a7f1bcd03690390ce664c27999734e9c",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-aries-nemesis-prime-verde",
-    brand: "Rinat",
-    model: "Aries Nemesis Prime - Verde",
-    colour: "Verde",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 26.39,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44281365512&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107707-00-P-X-20260114162419.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU2NnxpbWFnZS9qcGVnfGFEZGtMMmcwWkM4eE16UTVOekV6TkRnM05EWTFOQzl0WldScFlYTmZNVEF3TVRFd056Y3dOMTh3TUY5UVgxZ3RNakF5TmpBeE1UUXhOakkwTVRrdWFuQm58YjYxZDU3MGQ0ZTRhODA2MGVlZDRiM2E2N2JmNDcwYWRlOGEyMTUwZmYyOTMxNjNlODhkNzlmMzE3MmJiOTIwZQ&feedId=58083&k=f5bd67109b8083b25b13f42784cc43bc0614a4c3",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-aries-nemesis-semi-negro",
-    brand: "Rinat",
-    model: "Aries Nemesis Semi - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 34.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40123662503&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914772-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE1NnxpbWFnZS9qcGVnfGFHWTFMMmd4TXk4eE1UVTRNakkzTXpnNE1EQTVOQzl0WldScFlYTmZNVEF3TURreE5EYzNNbDh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58ZWI3ZTE5MDYxNTIzZmI0ZmVkOTViYzE3YzQ4N2NlYmQ3MDYzMzc5MjBiMWIyY2QwOTBiMzU1ODUyZTk0MzhiZQ&feedId=58083&k=2358c5d4fdddf199196fd15ceceaf2897443510a",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "rinat-aries-x-prime-azul",
-    brand: "Rinat",
-    model: "Aries X Prime - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 32.39,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42408846184&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068547-00-P-X-20250910170903.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU0N3xpbWFnZS9qcGVnfGFETm1MMmcxT0M4eE16RTNOVEF3T1RBMU1EWTFOQzl0WldScFlYTmZNVEF3TVRBMk9EVTBOMTh3TUY5UVgxZ3RNakF5TlRBNU1UQXhOekE1TURNdWFuQm58OTYzY2M1MjcyODI4MWU1Y2Y4NTZiMzNjMWQ2YTE5YzI3YTRiNGYwYzZjNTBhOGFhYjMyNWVjZWViYzE0NWJmZg&feedId=58083&k=2b106a834e52b4285b2d04cd065883280a743341",
-        sizes: ["8", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-aries-x-prime-negro",
-    brand: "Rinat",
-    model: "Aries X Prime - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 29.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44281365508&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107710-00-P-X-20260114162419.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMzN3xpbWFnZS9qcGVnfGFEZzJMMmhoT1M4eE16UTVOekV6TlRRMk5EUTNPQzl0WldScFlYTmZNVEF3TVRFd056Y3hNRjh3TUY5UVgxZ3RNakF5TmpBeE1UUXhOakkwTVRrdWFuQm58YjZlMTcyMWRjMTQyMmEwZjNiMzMxYWQyMjViZjYxMGQxNTk5OWRlMDIxNTkxNjA4NTM5ZDQ0MWJjY2ViYTUxZg&feedId=58083&k=36050faeabd6b56aa06beb4b7b3a5b920fdfc978",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-asimetrik-aero-premium-hgp-blanco",
-    brand: "Rinat",
-    model: "Asimetrik Aero Premium Hgp - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 47.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276727049&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148545-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk5NXxpbWFnZS9qcGVnfGFEWmxMMmcyTWk4eE5EQTJOek0yTnpVeE1EQTBOaTl0WldScFlYTmZNVEF3TVRFME9EVTBOVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58ZjgwODljNzA2ZGY1NTY4ZTJiNzA3MWVkMDUzY2VmOWFkY2RlYjVjOTE4NDM5YjNjNjJlNTBlNWJiZjA4NmI5MA&feedId=58083&k=d5be4da5f4957e9c9c957aa8a3dedb70a6163fca",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-asimetrik-pro-blanco",
-    brand: "Rinat",
-    model: "Asimetrik Pro - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 73.69,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276726907&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148537-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODkzMHxpbWFnZS9qcGVnfGFERXhMMmcyTUM4eE5EQTJOek0xTkRnMk1UVTVPQzl0WldScFlYTmZNVEF3TVRFME9EVXpOMTh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58ZjY2Y2EzYTMyNTY2OWJlZmJlZmQ5NThjNjBhYjk4YWYyOWZlZDQxYjAxZWYzMjFiZGEyNjRkZGQxZDQyZGU5MA&feedId=58083&k=ae49d4fbe1c6fb695010eb48e4eddba554697ddc",
-        sizes: ["7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "rinat-asimetrik-spine-turf-blanco",
-    brand: "Rinat",
-    model: "Asimetrik Spine Turf - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 43.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276726940&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148539-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE2NnxpbWFnZS9qcGVnfGFERmxMMmd3WVM4eE5EQTJOek0xT0RNek5UQXdOaTl0WldScFlYTmZNVEF3TVRFME9EVXpPVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58MTk5ZjQ4MTg2OWM1M2YzNGJhNjIxM2ZjZTUzMWNmYzI4ZWQwMGZmY2RmZTQyNGNhMDIyYTdmOWU0OGZjYzc0NQ&feedId=58083&k=87ba0fea7647e4d7391974e240d90e694843d95e",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-asimetrik-stellar-as-rojo",
-    brand: "Rinat",
-    model: "Asimetrik Stellar As - Rojo",
-    colour: "Rojo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 14.7,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265342446&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000874457-00-P-X-20221102161654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ1MHxpbWFnZS9qcGVnfGFERmhMMmd5TlM4eE1UQXdOVFkxTVRJNE9EQTVOQzl0WldScFlYTmZNVEF3TURnM05EUTFOMTh3TUY5UVgxZ3RNakF5TWpFeE1ESXhOakUyTlRRdWFuQm58MTk4ZmMxZmQyZTA1OTUzYmUyNGIwODU5YjAxMzQ4M2UxYjIxZDhjMzEwNzI4NjQxZjllNGMyYTg5ZGQxNDEwZA&feedId=58083&k=bf90402f803f85eca073f58de7d89048eeac7a4a",
-        sizes: ["9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-asimetrik-stellar-pro-blanco",
-    brand: "Rinat",
-    model: "Asimetrik Stellar Pro - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.3,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265342437&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000874440-00-P-X-20221102161654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc0MXxpbWFnZS9qcGVnfGFEUmxMMmd4WWk4eE1UQXdOVFl6T1RjMU16YzFPQzl0WldScFlYTmZNVEF3TURnM05EUTBNRjh3TUY5UVgxZ3RNakF5TWpFeE1ESXhOakUyTlRRdWFuQm58YjFiYzhlMjhlNzhiNzc0ZGE5NGZiMjFjMTM0OGU5ZThhNmY2OWZkMjViMjc3OTRlNDRiYzRiNDQxMWY2MWM2ZQ&feedId=58083&k=eaebb80deb1a233f1fd63648ac9d5bf283df2b15",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-asimetrik-stellar-rojo",
-    brand: "Rinat",
-    model: "Asimetrik Stellar - Rojo",
-    colour: "Rojo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.3,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265342455&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000874439-00-P-X-20221102161654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE0OHxpbWFnZS9qcGVnfGFERmtMMmc0Wmk4eE1UQXdOVFl6T0RRM05UZ3dOaTl0WldScFlYTmZNVEF3TURnM05EUXpPVjh3TUY5UVgxZ3RNakF5TWpFeE1ESXhOakUyTlRRdWFuQm58ODUxNjExZjgzZjMyZDJiNzQ1MzU4MzcxMzU1MmJlYTQ3ZmY2MWRiNTkwZTc1ZDRhOGM3MTY5ODY1N2YyYTllNw&feedId=58083&k=f163672c85200244f45caf6ad89ae49333c6cf54",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-asimetrik-turf-blanco",
-    brand: "Rinat",
-    model: "Asimetrik Turf - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 38.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276726894&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148541-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjkxM3xpbWFnZS9qcGVnfGFETTBMMmd3WlM4eE5EQTJOek0yTVRnd09EUXhOQzl0WldScFlYTmZNVEF3TVRFME9EVTBNVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58NmVmZmFhYzE2NGMxNmRhMzkxNGFmYjE2MmViMmNjNmNkZWNhODYyOTkwY2IxNDViYWM5YjZkNjBjYzY1Y2UyOA&feedId=58083&k=18824639756561ece639861e5c8f4bfe8e986f8c",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-condor-turf-amarillo",
-    brand: "Rinat",
-    model: "Condor Turf - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 38.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276727006&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148589-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc1NHxpbWFnZS9qcGVnfGFEZzFMMmhtTnk4eE5EQTJOelF3T0RFd09UVTVPQzl0WldScFlYTmZNVEF3TVRFME9EVTRPVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58ODNhZTc3YmFjNDA2MTdhMzdlZGViYWFiYzNkOGMzZjFjYmI4NWQ2NjllY2UxMGE5ZTYwN2JlNmFhZDQ3YjFiYQ&feedId=58083&k=f90787e2187709e580b9fe58d7b2c747e4a36841",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-egotiko-stellar-alpha-amarillo",
-    brand: "Rinat",
-    model: "Egotiko Stellar Alpha - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 48.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36185114202&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914780-00-P-X-20230804101039.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTIyMnxpbWFnZS9qcGVnfGFEQTJMMmhpWVM4eE1UVTJNekU1TlRNek5EWTROaTl0WldScFlYTmZNVEF3TURreE5EYzRNRjh3TUY5UVgxZ3RNakF5TXpBNE1EUXhNREV3TXprdWFuQm58NmUyOTNiZDdmOWQ3OTg2NjI4YzIzZWRjY2IwZGM4NjJmYWViNjlhYjVlOGNjYWEyZjMxZWJlNGY4NjdkZTZkZQ&feedId=58083&k=2b89ac1aeea5ea674ef8011c8afbda70f12ec80b",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-egotiko-vengador-pro-azul",
-    brand: "Rinat",
-    model: "Egotiko Vengador Pro - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 76.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38871813570&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001015154-00-P-X-20240913144014.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU1MHxpbWFnZS9qcGVnfGFHWXhMMmd3T0M4eE1qTTJPVGMzTWpVME5EQXpNQzl0WldScFlYTmZNVEF3TVRBeE5URTFORjh3TUY5UVgxZ3RNakF5TkRBNU1UTXhORFF3TVRRdWFuQm58NWQyZDk1NWExYWU3NGYzZWExMTliYzQ0ZWNkZTAwYzc3YmI4NWU2NTRjYWM5MDc0YjI2YTFmYjZiYTlkZDM3Zg&feedId=58083&k=2403e102ecce2a808d05d4ecd66467e4b48ab3e9",
-        sizes: ["8", "10"],
-      },
-    ],
-  },
-  {
     id: "rinat-guantes-de-portero-para-entrenar-rinat-fiera-vert",
     brand: "Rinat",
     model: "Guantes de portero para entrenar Rinat Fiera - Vert",
@@ -13244,6 +12931,23 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "rinat-ares-as-blanco",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Ares As - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 24.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276726966&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148561-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ0NnxpbWFnZS9qcGVnfGFEUXhMMmczTXk4eE5EQTJOek00T0RjM05qUTNPQzl0WldScFlYTmZNVEF3TVRFME9EVTJNVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58ZDcxNmYwYzhhMWMwMjFhYzY5YjQ4MGE0YzI3OWZkZmYxOTczMzY4NzBkZmJhYjJkNzczOWZjMGQ0NmYyMzM3NA&feedId=58083&k=97a4f66f70b25df2ade9f959830610549867bb4a",
+        sizes: ["7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
     id: "rinat-guantes-de-portero-rinat-ares-gravity-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Ares Gravity - Blanc",
@@ -13287,6 +12991,40 @@ const minedGloveProductsChunk3: GloveProduct[] = [
           { size: "9", price: 20.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fargi1753-gants-de-gardien-rinat-ares-gravity-white-gold" },
           { size: "10", price: 20.22, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fargi1753-gants-de-gardien-rinat-ares-gravity-white-gold" },
         ],
+      },
+    ],
+  },
+  {
+    id: "rinat-ares-pro-blanco",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Ares Pro - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 79.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276727002&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148557-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTE5NHxpbWFnZS9qcGVnfGFEZGlMMmd4T0M4eE5EQTJOek00TWpJNE9EUXhOQzl0WldScFlYTmZNVEF3TVRFME9EVTFOMTh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58ZDFkYTcxZTM2NTFjZTkwM2FmMzM3NGFhNTBkZTgzNmExZDRkYTc2YTAwZjRlN2UwODg2YWRjODY5ZWJiMWVkNQ&feedId=58083&k=5e109a4f4b0a21f7f3dafac61fc6c8d05156ebfb",
+        sizes: ["8", "11"],
+      },
+    ],
+  },
+  {
+    id: "rinat-ares-turf-blanco",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Ares Turf - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 39.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276727060&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148559-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc0NnxpbWFnZS9qcGVnfGFEWmlMMmhrTVM4eE5EQTJOek00TlRVek1qUTBOaTl0WldScFlYTmZNVEF3TVRFME9EVTFPVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58NjlmMGJmMTFmY2ZmNzkyNjI2NTdlY2EyYjNiM2JmMjM4MWVkYmU1MWVjOGY2NDkxOTNlMzI0ZjQ1YTE0NTVmZg&feedId=58083&k=d52a8f65a7f1bcd03690390ce664c27999734e9c",
+        sizes: ["7", "8", "9", "10"],
       },
     ],
   },
@@ -13426,6 +13164,40 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Farra1920-gants-de-gardien-rinat-aries-nemesis-prime-green-white",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/i/rinat_arri1924_green-white_1.jpg",
         sizes: ["7"],
+      },
+    ],
+  },
+  {
+    id: "rinat-aries-nemesis-prime-verde",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Aries Nemesis Prime - Verde",
+    colour: "Verde",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 26.39,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44281365512&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107707-00-P-X-20260114162419.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU2NnxpbWFnZS9qcGVnfGFEZGtMMmcwWkM4eE16UTVOekV6TkRnM05EWTFOQzl0WldScFlYTmZNVEF3TVRFd056Y3dOMTh3TUY5UVgxZ3RNakF5TmpBeE1UUXhOakkwTVRrdWFuQm58YjYxZDU3MGQ0ZTRhODA2MGVlZDRiM2E2N2JmNDcwYWRlOGEyMTUwZmYyOTMxNjNlODhkNzlmMzE3MmJiOTIwZQ&feedId=58083&k=f5bd67109b8083b25b13f42784cc43bc0614a4c3",
+        sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "rinat-aries-nemesis-semi-negro",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Aries Nemesis Semi - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 34.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40123662503&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914772-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE1NnxpbWFnZS9qcGVnfGFHWTFMMmd4TXk4eE1UVTRNakkzTXpnNE1EQTVOQzl0WldScFlYTmZNVEF3TURreE5EYzNNbDh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58ZWI3ZTE5MDYxNTIzZmI0ZmVkOTViYzE3YzQ4N2NlYmQ3MDYzMzc5MjBiMWIyY2QwOTBiMzU1ODUyZTk0MzhiZQ&feedId=58083&k=2358c5d4fdddf199196fd15ceceaf2897443510a",
+        sizes: ["9"],
       },
     ],
   },
@@ -13607,6 +13379,57 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "rinat-aries-x-prime-azul",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Aries X Prime - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 32.39,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42408846184&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068547-00-P-X-20250910170903.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU0N3xpbWFnZS9qcGVnfGFETm1MMmcxT0M4eE16RTNOVEF3T1RBMU1EWTFOQzl0WldScFlYTmZNVEF3TVRBMk9EVTBOMTh3TUY5UVgxZ3RNakF5TlRBNU1UQXhOekE1TURNdWFuQm58OTYzY2M1MjcyODI4MWU1Y2Y4NTZiMzNjMWQ2YTE5YzI3YTRiNGYwYzZjNTBhOGFhYjMyNWVjZWViYzE0NWJmZg&feedId=58083&k=2b106a834e52b4285b2d04cd065883280a743341",
+        sizes: ["8", "10"],
+      },
+    ],
+  },
+  {
+    id: "rinat-aries-x-prime-negro",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Aries X Prime - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44281365508&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107710-00-P-X-20260114162419.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMzN3xpbWFnZS9qcGVnfGFEZzJMMmhoT1M4eE16UTVOekV6TlRRMk5EUTNPQzl0WldScFlYTmZNVEF3TVRFd056Y3hNRjh3TUY5UVgxZ3RNakF5TmpBeE1UUXhOakkwTVRrdWFuQm58YjZlMTcyMWRjMTQyMmEwZjNiMzMxYWQyMjViZjYxMGQxNTk5OWRlMDIxNTkxNjA4NTM5ZDQ0MWJjY2ViYTUxZg&feedId=58083&k=36050faeabd6b56aa06beb4b7b3a5b920fdfc978",
+        sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "rinat-asimetrik-aero-premium-hgp-blanco",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Asimetrik Aero Premium Hgp - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 47.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276727049&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148545-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk5NXxpbWFnZS9qcGVnfGFEWmxMMmcyTWk4eE5EQTJOek0yTnpVeE1EQTBOaTl0WldScFlYTmZNVEF3TVRFME9EVTBOVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58ZjgwODljNzA2ZGY1NTY4ZTJiNzA3MWVkMDUzY2VmOWFkY2RlYjVjOTE4NDM5YjNjNjJlNTBlNWJiZjA4NmI5MA&feedId=58083&k=d5be4da5f4957e9c9c957aa8a3dedb70a6163fca",
+        sizes: ["7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
     id: "rinat-guantes-de-portero-rinat-asimetrik-aero-pro-blanc",
     brand: "Rinat",
     model: "Guantes de portero Rinat Asimetrik Aero Pro - Blanc",
@@ -13712,6 +13535,40 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "rinat-asimetrik-pro-blanco",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Asimetrik Pro - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 73.69,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276726907&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148537-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODkzMHxpbWFnZS9qcGVnfGFERXhMMmcyTUM4eE5EQTJOek0xTkRnMk1UVTVPQzl0WldScFlYTmZNVEF3TVRFME9EVXpOMTh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58ZjY2Y2EzYTMyNTY2OWJlZmJlZmQ5NThjNjBhYjk4YWYyOWZlZDQxYjAxZWYzMjFiZGEyNjRkZGQxZDQyZGU5MA&feedId=58083&k=ae49d4fbe1c6fb695010eb48e4eddba554697ddc",
+        sizes: ["7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "rinat-asimetrik-spine-turf-blanco",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Asimetrik Spine Turf - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 43.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276726940&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148539-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE2NnxpbWFnZS9qcGVnfGFERmxMMmd3WVM4eE5EQTJOek0xT0RNek5UQXdOaTl0WldScFlYTmZNVEF3TVRFME9EVXpPVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58MTk5ZjQ4MTg2OWM1M2YzNGJhNjIxM2ZjZTUzMWNmYzI4ZWQwMGZmY2RmZTQyNGNhMDIyYTdmOWU0OGZjYzc0NQ&feedId=58083&k=87ba0fea7647e4d7391974e240d90e694843d95e",
+        sizes: ["7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
     id: "rinat-guantes-de-portero-rinat-asimetrik-spine-turf-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Asimetrik Spine Turf - Noir",
@@ -13734,6 +13591,74 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fasna1090-gants-de-gardien-rinat-asimetrik-spine-turf-black",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/i/rinat-asna1090-black-1.jpg",
         sizes: ["7", "8"],
+      },
+    ],
+  },
+  {
+    id: "rinat-asimetrik-stellar-as-rojo",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Asimetrik Stellar As - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 14.7,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265342446&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000874457-00-P-X-20221102161654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ1MHxpbWFnZS9qcGVnfGFERmhMMmd5TlM4eE1UQXdOVFkxTVRJNE9EQTVOQzl0WldScFlYTmZNVEF3TURnM05EUTFOMTh3TUY5UVgxZ3RNakF5TWpFeE1ESXhOakUyTlRRdWFuQm58MTk4ZmMxZmQyZTA1OTUzYmUyNGIwODU5YjAxMzQ4M2UxYjIxZDhjMzEwNzI4NjQxZjllNGMyYTg5ZGQxNDEwZA&feedId=58083&k=bf90402f803f85eca073f58de7d89048eeac7a4a",
+        sizes: ["9", "10"],
+      },
+    ],
+  },
+  {
+    id: "rinat-asimetrik-stellar-pro-blanco",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Asimetrik Stellar Pro - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.3,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265342437&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000874440-00-P-X-20221102161654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc0MXxpbWFnZS9qcGVnfGFEUmxMMmd4WWk4eE1UQXdOVFl6T1RjMU16YzFPQzl0WldScFlYTmZNVEF3TURnM05EUTBNRjh3TUY5UVgxZ3RNakF5TWpFeE1ESXhOakUyTlRRdWFuQm58YjFiYzhlMjhlNzhiNzc0ZGE5NGZiMjFjMTM0OGU5ZThhNmY2OWZkMjViMjc3OTRlNDRiYzRiNDQxMWY2MWM2ZQ&feedId=58083&k=eaebb80deb1a233f1fd63648ac9d5bf283df2b15",
+        sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "rinat-asimetrik-stellar-rojo",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Asimetrik Stellar - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.3,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265342455&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000874439-00-P-X-20221102161654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE0OHxpbWFnZS9qcGVnfGFERmtMMmc0Wmk4eE1UQXdOVFl6T0RRM05UZ3dOaTl0WldScFlYTmZNVEF3TURnM05EUXpPVjh3TUY5UVgxZ3RNakF5TWpFeE1ESXhOakUyTlRRdWFuQm58ODUxNjExZjgzZjMyZDJiNzQ1MzU4MzcxMzU1MmJlYTQ3ZmY2MWRiNTkwZTc1ZDRhOGM3MTY5ODY1N2YyYTllNw&feedId=58083&k=f163672c85200244f45caf6ad89ae49333c6cf54",
+        sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "rinat-asimetrik-turf-blanco",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Asimetrik Turf - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 38.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276726894&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148541-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjkxM3xpbWFnZS9qcGVnfGFETTBMMmd3WlM4eE5EQTJOek0yTVRnd09EUXhOQzl0WldScFlYTmZNVEF3TVRFME9EVTBNVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58NmVmZmFhYzE2NGMxNmRhMzkxNGFmYjE2MmViMmNjNmNkZWNhODYyOTkwY2IxNDViYWM5YjZkNjBjYzY1Y2UyOA&feedId=58083&k=18824639756561ece639861e5c8f4bfe8e986f8c",
+        sizes: ["8", "9", "10"],
       },
     ],
   },
@@ -13808,6 +13733,23 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46276726958&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148565-00-P-X-20261008161447.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgxNHxpbWFnZS9qcGVnfGFEaGhMMmhrTVM4eE5EQTJOakV6TURReE9UYzBNaTl0WldScFlYTmZNVEF3TVRFME9EVTJOVjh3TUY5UVgxZ3RNakF5TmpFd01EZ3hOakUwTkRjdWFuQm58MmU3ZGI4NWExM2RiZjUxMWRhNTkwOGZkNTUwNjE5YWM2NmM4YzU2NWUyMzQ0OGY4YmI3ZTc0MzhkMzBjYWU3Mw&feedId=58083&k=d1b2efd112d7c67493c30b5efebae3b49cd1f736",
+        sizes: ["7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "rinat-condor-turf-amarillo",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Condor Turf - Amarillo",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 38.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276727006&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148589-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc1NHxpbWFnZS9qcGVnfGFEZzFMMmhtTnk4eE5EQTJOelF3T0RFd09UVTVPQzl0WldScFlYTmZNVEF3TVRFME9EVTRPVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58ODNhZTc3YmFjNDA2MTdhMzdlZGViYWFiYzNkOGMzZjFjYmI4NWQ2NjllY2UxMGE5ZTYwN2JlNmFhZDQ3YjFiYQ&feedId=58083&k=f90787e2187709e580b9fe58d7b2c747e4a36841",
         sizes: ["7", "8", "9", "10"],
       },
     ],
@@ -14039,6 +13981,23 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
+    id: "rinat-egotiko-stellar-alpha-amarillo",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Egotiko Stellar Alpha - Amarillo",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 48.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36185114202&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914780-00-P-X-20230804101039.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTIyMnxpbWFnZS9qcGVnfGFEQTJMMmhpWVM4eE1UVTJNekU1TlRNek5EWTROaTl0WldScFlYTmZNVEF3TURreE5EYzRNRjh3TUY5UVgxZ3RNakF5TXpBNE1EUXhNREV3TXprdWFuQm58NmUyOTNiZDdmOWQ3OTg2NjI4YzIzZWRjY2IwZGM4NjJmYWViNjlhYjVlOGNjYWEyZjMxZWJlNGY4NjdkZTZkZQ&feedId=58083&k=2b89ac1aeea5ea674ef8011c8afbda70f12ec80b",
+        sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
     id: "rinat-guantes-de-portero-rinat-egotiko-turf-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Egotiko Turf - Noir",
@@ -14187,6 +14146,15 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 27.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38877658691&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001015153-00-P-X-20240916163012.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTEyMXxpbWFnZS9qcGVnfGFETTVMMmcyTkM4eE1qTTNORGt4T0RjeU5UWTJNaTl0WldScFlYTmZNVEF3TVRBeE5URTFNMTh3TUY5UVgxZ3RNakF5TkRBNU1UWXhOak13TVRJdWFuQm58MDFlMDYwOTE2ZTM5ODZhNGEyNDc1NzBkNTNiNzRmZTU1YTU5NjY0ZmQzNDY2MDljYjYyZjA5NDZjZDExYzQ0Nw&feedId=58083&k=ba134e474ecd86533cbeb907fda95f1e3b463453",
+        sizes: ["8", "9", "10"],
+      },
+      {
         store: "FootStoreFR",
         price: 39.0,
         priceMax: 41.87,
@@ -14200,15 +14168,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
           { size: "8", price: 41.87, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegra1490-gants-de-gardien-rinat-egotiko-vengador-prime-white-navy-blue" },
           { size: "11", price: 39.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegra1490-gants-de-gardien-rinat-egotiko-vengador-prime-white-navy-blue" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 27.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38877658691&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001015153-00-P-X-20240916163012.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTEyMXxpbWFnZS9qcGVnfGFETTVMMmcyTkM4eE1qTTNORGt4T0RjeU5UWTJNaTl0WldScFlYTmZNVEF3TVRBeE5URTFNMTh3TUY5UVgxZ3RNakF5TkRBNU1UWXhOak13TVRJdWFuQm58MDFlMDYwOTE2ZTM5ODZhNGEyNDc1NzBkNTNiNzRmZTU1YTU5NjY0ZmQzNDY2MDljYjYyZjA5NDZjZDExYzQ0Nw&feedId=58083&k=ba134e474ecd86533cbeb907fda95f1e3b463453",
-        sizes: ["8", "9", "10"],
       },
     ],
   },
@@ -14235,6 +14194,15 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 27.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45849116839&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001015152-00-P-X-20240916163012.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk1OHxpbWFnZS9qcGVnfGFHTm1MMmhqWkM4eE1qTTNORGt4TnpjME1qWXlNaTl0WldScFlYTmZNVEF3TVRBeE5URTFNbDh3TUY5UVgxZ3RNakF5TkRBNU1UWXhOak13TVRJdWFuQm58YWExOGE0YWZjNDI4M2FmMGRlZWMwYTI4ZGQ5ODI4NzllYTM2ODFmODJmYjIxNjZjNDA0NGVlNWZlYzczN2I5MA&feedId=58083&k=9d1f294d8ff2ee4c935b23622c9d7b6180ebb2bf",
+        sizes: ["8", "9", "10"],
+      },
+      {
         store: "FootStoreFR",
         price: 39.0,
         priceMax: 41.87,
@@ -14250,14 +14218,22 @@ const minedGloveProductsChunk3: GloveProduct[] = [
           { size: "10", price: 41.87, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fegra1910-gants-de-gardien-rinat-egotiko-vengador-prime-orange-white" },
         ],
       },
+    ],
+  },
+  {
+    id: "rinat-egotiko-vengador-pro-azul",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Egotiko Vengador Pro - Azul",
+    colour: "Azul",
+    offers: [
       {
         store: "ForumSport",
-        price: 27.99,
-        shipping: 5.99,
+        price: 76.99,
+        shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45849116839&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001015152-00-P-X-20240916163012.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk1OHxpbWFnZS9qcGVnfGFHTm1MMmhqWkM4eE1qTTNORGt4TnpjME1qWXlNaTl0WldScFlYTmZNVEF3TVRBeE5URTFNbDh3TUY5UVgxZ3RNakF5TkRBNU1UWXhOak13TVRJdWFuQm58YWExOGE0YWZjNDI4M2FmMGRlZWMwYTI4ZGQ5ODI4NzllYTM2ODFmODJmYjIxNjZjNDA0NGVlNWZlYzczN2I5MA&feedId=58083&k=9d1f294d8ff2ee4c935b23622c9d7b6180ebb2bf",
-        sizes: ["8", "9", "10"],
+        url: "https://www.awin1.com/pclick.php?p=38871813570&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001015154-00-P-X-20240913144014.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU1MHxpbWFnZS9qcGVnfGFHWXhMMmd3T0M4eE1qTTJPVGMzTWpVME5EQXpNQzl0WldScFlYTmZNVEF3TVRBeE5URTFORjh3TUY5UVgxZ3RNakF5TkRBNU1UTXhORFF3TVRRdWFuQm58NWQyZDk1NWExYWU3NGYzZWExMTliYzQ0ZWNkZTAwYzc3YmI4NWU2NTRjYWM5MDc0YjI2YTFmYjZiYTlkZDM3Zg&feedId=58083&k=2403e102ecce2a808d05d4ecd66467e4b48ab3e9",
+        sizes: ["8", "10"],
       },
     ],
   },
@@ -14550,9 +14526,6 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-guantes-de-portero-rinat-kali-as-azul",
     brand: "Rinat",
@@ -14615,6 +14588,26 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
+    id: "rinat-kratos-semi-amarillo",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Kratos Semi - Amarillo",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 32.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39115898992&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914781-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjQ5MnxpbWFnZS9qcGVnfGFEWTRMMmhpT0M4eE1UVTRNakkzTlRZME9UVTJOaTl0WldScFlYTmZNVEF3TURreE5EYzRNVjh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58MTg5Y2M0ZTc0MTNlNDgxYzMzYTdlMWU0Y2VjOGMyOTMxOGZhOTQyMjJjMDViN2YwMDlhMTQzNTI3ZmNkZDg1Mw&feedId=58083&k=7b59ab3681b35ca0f8d04b208bc7e94e6b858b3b",
+        sizes: ["10"],
+      },
+    ],
+  },
+];
+
+const minedGloveProductsChunk4: GloveProduct[] = [
+  {
     id: "rinat-guantes-de-portero-rinat-kratos-semi-negro",
     brand: "Rinat",
     model: "Guantes de portero Rinat kratos Semi - Negro",
@@ -14672,6 +14665,23 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45849116838&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001015147-00-P-X-20241008142641.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY0NHxpbWFnZS9qcGVnfGFHSmtMMmcyTWk4eE1qUXhOemcwTXpZNU1UVTFNQzl0WldScFlYTmZNVEF3TVRBeE5URTBOMTh3TUY5UVgxZ3RNakF5TkRFd01EZ3hOREkyTkRFdWFuQm58MzhhMDUyYmE3MGUyNWIxYzY4ZTcwMDhkYmQ1MGJkNGY5NzExZGVmYjkwYTAxYmM3OWI0MTFhMjBiNzc5M2E0Mg&feedId=58083&k=8c3d550f8eb87d5466163dbf18251e361c931e6f",
         sizes: ["9", "10"],
+      },
+    ],
+  },
+  {
+    id: "rinat-kratos-turf-naranja",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Kratos Turf - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 32.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38595222921&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914784-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzczNHxpbWFnZS9qcGVnfGFETXdMMmhrTnk4eE1UVTRNakkzTmpneU9USXhOQzl0WldScFlYTmZNVEF3TURreE5EYzRORjh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58ZGUzMzY0MTc2YzBkOTNmNmIwZTFmNWJiYjY2ZGM0NmQwYmZkMWY3ZDJhMThmZDNmMDVhOTRhNWZkOTNhNGEzNw&feedId=58083&k=c6f8547bc550f1fb8dac87109df855556c53b607",
+        sizes: ["10"],
       },
     ],
   },
@@ -14785,6 +14795,23 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmasa1240-gants-de-gardien-rinat-meta-tactik-as-2023-24-black-gold",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/i/rinat_masi1243_black-gold_2.jpg",
         sizes: ["10"],
+      },
+    ],
+  },
+  {
+    id: "rinat-meta-tactik-gk-alpha-naranja",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Meta Tactik Gk Alpha - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 48.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44686176193&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914779-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU1NnxpbWFnZS9qcGVnfGFEQmhMMmhoTkM4eE1UVTRNakkzTlRBMU9UYzBNaTl0WldScFlYTmZNVEF3TURreE5EYzNPVjh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58NGRlNDExZjY3NTVhNDU4MzJhZDhlY2M5ZjhmYjA0NGQwODFhMDVlMjUwNDUzN2I4NzczMDA0ZmQ2NjhjMDE5Zg&feedId=58083&k=d8310bd62e17dbbd1eacf420f6ff8ed2b9ff319f",
+        sizes: ["9", "10"],
       },
     ],
   },
@@ -14919,7 +14946,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "rinat-guantes-de-portero-rinat-nkam-prime-blanco",
+    id: "rinat-nkam-prime-blanco",
     brand: "Rinat",
     model: "Guantes de portero Rinat NKAM Prime - Blanco",
     colour: "Blanco",
@@ -14934,6 +14961,15 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizes: ["Talla 7"],
       },
       {
+        store: "ForumSport",
+        price: 28.5,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40915911196&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068548-00-P-X-20250313143035.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzIzOXxpbWFnZS9qcGVnfGFEUTFMMmhqWkM4eE1qYzVPVEkxTXpnd056RXpOQzl0WldScFlYTmZNVEF3TVRBMk9EVTBPRjh3TUY5UVgxZ3RNakF5TlRBek1UTXhORE13TXpVdWFuQm58OWMxMTg5ZmY5ZWZmZWVmMGE0ZDBmM2EwZjBkZGYyNmUzMDk2OWI5MzQ5NTBlN2VlODNlMzI5MWM0ZTRhZGVjNg&feedId=58083&k=f16bb07d226411789b7bf0c0d54ef0db1c12f65b",
+        sizes: ["10"],
+      },
+      {
         store: "FootStoreFR",
         price: 46.69,
         shipping: 7.99,
@@ -14945,7 +14981,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "rinat-guantes-de-portero-rinat-nkam-prime-rojo",
+    id: "rinat-nkam-prime-rojo",
     brand: "Rinat",
     model: "Guantes de portero Rinat Nkam Prime - Rojo",
     colour: "Rojo",
@@ -14965,6 +15001,15 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 27.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39745678345&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001015149-00-P-X-20241205133935.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA4MXxpbWFnZS9qcGVnfGFHRTVMMmhpWXk4eE1qVTFOelV3TVRNek16VXpOQzl0WldScFlYTmZNVEF3TVRBeE5URTBPVjh3TUY5UVgxZ3RNakF5TkRFeU1EVXhNek01TXpVdWFuQm58YmJiMWE4MGU1YzgyMDMzMDBjM2Y3Y2ZmNzYzZmIwYWYzOTY3NmZkYTE5NjhiZWU4M2UyODM0YzAyZDMwYWQ0ZQ&feedId=58083&k=19b9026fa5f245d3d6beab2a3f45a6758c634e34",
+        sizes: ["8", "9", "10"],
+      },
+      {
         store: "FootStoreFR",
         price: 41.87,
         priceMax: 43.84,
@@ -14977,6 +15022,40 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "4", price: 41.87, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fnkri1404-gants-de-gardien-rinat-nkam-prime-red-white" },
           { size: "7", price: 43.84, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fnkri1404-gants-de-gardien-rinat-nkam-prime-red-white" },
         ],
+      },
+    ],
+  },
+  {
+    id: "rinat-nkam-pro-azul",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Nkam Pro - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 83.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36615966109&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000933563-00-P-X-20241023165319.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzcyOHxpbWFnZS9qcGVnfGFEWmxMMmd3TlM4eE1qUTBOemM0TURnNU5qYzVPQzl0WldScFlYTmZNVEF3TURrek16VTJNMTh3TUY5UVgxZ3RNakF5TkRFd01qTXhOalV6TVRrdWFuQm58ZGJkMWQ1NGRlMmU4OTA2M2Y5Yjk1MTUzOWZjNTMyYzcwNjg5MjRlOTMwY2M3NjEyMGRjNmEwYjE1NmRlYTkyMw&feedId=58083&k=3f1bfeea510a365b17cdc5101c62d512aec554b0",
+        sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "rinat-nkam-pro-rojo",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Nkam Pro - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 83.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36715385767&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000933567-00-P-X-20231113155935.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODk1MnxpbWFnZS9qcGVnfGFEVmpMMmc1TXk4eE1UYzBNak0yTlRrM05EVTFPQzl0WldScFlYTmZNVEF3TURrek16VTJOMTh3TUY5UVgxZ3RNakF5TXpFeE1UTXhOVFU1TXpVdWFuQm58ZmIwMDUwM2IyYTE0YTA0NmE1MjIzNGU5MjA3NDVlNjQwM2EyZDZjMmEyMTI0YTFlMDViMDVlMjk2OWU0OGM2Nw&feedId=58083&k=82c122465aa2683d047384af7dcffc3a3437ea93",
+        sizes: ["8", "9", "10"],
       },
     ],
   },
@@ -15031,6 +15110,15 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizes: ["Talla 10", "Talla 7"],
       },
       {
+        store: "ForumSport",
+        price: 37.09,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46330226393&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000933565-00-P-X-20231113155935.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM4NHxpbWFnZS9qcGVnfGFHWmxMMmczWlM4eE1UYzBNak0yTlRNNE5EY3pOQzl0WldScFlYTmZNVEF3TURrek16VTJOVjh3TUY5UVgxZ3RNakF5TXpFeE1UTXhOVFU1TXpVdWFuQm58NjAyMWVkZjk5NDY3MzM4ODg1NTc4MmNjMjc2MzU0OTg4M2UyNzE3OTk5NDhkZWVkOWEyOWU0YmQ4NmJiNmI1OA&feedId=58083&k=ece62027b2ef20ff6740507853531a4add361a7c",
+        sizes: ["9", "10"],
+      },
+      {
         store: "FootStoreFR",
         price: 54.47,
         shipping: 7.99,
@@ -15039,13 +15127,21 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/r/i/rinat_nksa572_0.webp",
         sizes: ["7", "10"],
       },
+    ],
+  },
+  {
+    id: "rinat-nkam-semi-verde",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Nkam Semi - Verde",
+    colour: "Verde",
+    offers: [
       {
         store: "ForumSport",
         price: 37.09,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46330226393&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000933565-00-P-X-20231113155935.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM4NHxpbWFnZS9qcGVnfGFHWmxMMmczWlM4eE1UYzBNak0yTlRNNE5EY3pOQzl0WldScFlYTmZNVEF3TURrek16VTJOVjh3TUY5UVgxZ3RNakF5TXpFeE1UTXhOVFU1TXpVdWFuQm58NjAyMWVkZjk5NDY3MzM4ODg1NTc4MmNjMjc2MzU0OTg4M2UyNzE3OTk5NDhkZWVkOWEyOWU0YmQ4NmJiNmI1OA&feedId=58083&k=ece62027b2ef20ff6740507853531a4add361a7c",
+        url: "https://www.awin1.com/pclick.php?p=36940317989&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000933566-00-P-X-20240109190146.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgwMnxpbWFnZS9qcGVnfGFEQmlMMmd3WWk4eE1UZzVOemt6TkRVM056WTVOQzl0WldScFlYTmZNVEF3TURrek16VTJObDh3TUY5UVgxZ3RNakF5TkRBeE1Ea3hPVEF4TkRZdWFuQm58MWJjM2NlN2JhODJmNDc5OGM3NWUwNmM1ZDBjNmU0ZWU5OTAxODA0MDU2NThkNzkxMjRjNTJlN2QyZmVlZGM5Ng&feedId=58083&k=cb2b21ebb7227740519f025461f8506860f71a02",
         sizes: ["9", "10"],
       },
     ],
@@ -15162,15 +15258,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizes: ["Talla 10", "Talla 7", "Talla 8", "Talla 9"],
       },
       {
-        store: "FootStoreFR",
-        price: 74.24,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsaai1095-gants-de-gardien-rinat-santoloco-alpha-black",
-        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/i/rinat_saaa1090_black_1.jpg",
-        sizes: ["7", "8", "9", "10"],
-      },
-      {
         store: "ForumSport",
         price: 48.99,
         shipping: 3.99,
@@ -15178,6 +15265,15 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45841242454&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001015148-00-P-X-20240916163012.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODEyNXxpbWFnZS9qcGVnfGFERmxMMmcxT0M4eE1qTTNORGt4TlRVM09Ua3pOQzl0WldScFlYTmZNVEF3TVRBeE5URTBPRjh3TUY5UVgxZ3RNakF5TkRBNU1UWXhOak13TVRJdWFuQm58OGU5MjdiNzQ1NDBkNmMyODQ5ZTE5OTcyNTRiYTViNzc5YWRmOWEwMDQ1MmI4NTIyNzYxMDVkMGRiMWQ4ODQ3Zg&feedId=58083&k=2746480212460c31c97a5daebde69fce56f522c7",
         sizes: ["8", "9", "10"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 74.24,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsaai1095-gants-de-gardien-rinat-santoloco-alpha-black",
+        imageUrl: "https://b2c.spacefoot.com/media/catalog/product/r/i/rinat_saaa1090_black_1.jpg",
+        sizes: ["7", "8", "9", "10"],
       },
     ],
   },
@@ -15513,6 +15609,74 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
+    id: "rinat-uno-premier-aero-pro-blanco",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Uno Premier Aero Pro - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 79.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276726954&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148551-00-P-X-20261008161447.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTAwNHxpbWFnZS9qcGVnfGFEQTVMMmcwWXk4eE5EQTJOakV5TkRjNE16WTBOaTl0WldScFlYTmZNVEF3TVRFME9EVTFNVjh3TUY5UVgxZ3RNakF5TmpFd01EZ3hOakUwTkRjdWFuQm58ODE5ZDkyMTQ5Mzk5NWI1Y2Y2Y2E5MDUwYTUxMmE1NGFmN2NkNzhjOTc1Y2MyZmE3NTkwNWQ4ODI5YzUwYzM2Zg&feedId=58083&k=7e8eb911164850d534b1af4789a898518027b1b5",
+        sizes: ["7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "rinat-uno-premier-aero-pro-negro",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Uno Premier Aero Pro - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 81.59,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276727000&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148548-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ0MXxpbWFnZS9qcGVnfGFHVTNMMmhsT0M4eE5EQTJOek0zTWpJeU9EWXpPQzl0WldScFlYTmZNVEF3TVRFME9EVTBPRjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58NGU1MmYyOTA3ZDUzNWRlOWU3NGU0OWU2NzRlYmU0MjZhNWIyYTFjNGM5MDJmZjAwYTllNDI0YmMxZTY5Mzc3Ng&feedId=58083&k=b416c526cd28e7c4be88f767795a6368c72bcd36",
+        sizes: ["7", "8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "rinat-uno-premier-as-blanco",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Uno Premier As - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276727067&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148555-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA4N3xpbWFnZS9qcGVnfGFEQTVMMmd3TXk4eE5EQTJOek0zT1RRM01ETTJOaTl0WldScFlYTmZNVEF3TVRFME9EVTFOVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58MDBjNDhhYzQ1NTJmZTIwYmZkYThhNmI5OWNlYzI1MjE5M2U3ODFjZGQ0ODVmZmFmZjYzNDRiYmY3MmEzMThhMQ&feedId=58083&k=800339d994ac3190a2eb1d19d90a466968502208",
+        sizes: ["7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "rinat-uno-premier-as-negro",
+    brand: "Rinat",
+    model: "Guantes de portero Rinat Uno Premier As - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46276727058&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148550-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYyNXxpbWFnZS9qcGVnfGFHSm1MMmd3WVM4eE5EQTJOek0zTkRVMU5URTJOaTl0WldScFlYTmZNVEF3TVRFME9EVTFNRjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58NWIzZTlkNzU2NWFjYTdmNWQxMmYxNmJmNzI1NTkwM2IzM2MyYjUwY2RmM2IyOWNlNDMzMDE0NDZiNWIzMGIxMA&feedId=58083&k=c9a22a434c61d437ce8a3787906d02e393107744",
+        sizes: ["7", "8", "9", "10"],
+      },
+    ],
+  },
+  {
     id: "rinat-guantes-de-portero-rinat-uno-premier-prime-noir",
     brand: "Rinat",
     model: "Guantes de portero Rinat Uno Premier Prime - Noir",
@@ -15620,213 +15784,9 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "rinat-kratos-semi-amarillo",
-    brand: "Rinat",
-    model: "Kratos Semi - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 32.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39115898992&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914781-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjQ5MnxpbWFnZS9qcGVnfGFEWTRMMmhpT0M4eE1UVTRNakkzTlRZME9UVTJOaTl0WldScFlYTmZNVEF3TURreE5EYzRNVjh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58MTg5Y2M0ZTc0MTNlNDgxYzMzYTdlMWU0Y2VjOGMyOTMxOGZhOTQyMjJjMDViN2YwMDlhMTQzNTI3ZmNkZDg1Mw&feedId=58083&k=7b59ab3681b35ca0f8d04b208bc7e94e6b858b3b",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-kratos-turf-naranja",
-    brand: "Rinat",
-    model: "Kratos Turf - Naranja",
-    colour: "Naranja",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 32.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38595222921&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914784-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzczNHxpbWFnZS9qcGVnfGFETXdMMmhrTnk4eE1UVTRNakkzTmpneU9USXhOQzl0WldScFlYTmZNVEF3TURreE5EYzRORjh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58ZGUzMzY0MTc2YzBkOTNmNmIwZTFmNWJiYjY2ZGM0NmQwYmZkMWY3ZDJhMThmZDNmMDVhOTRhNWZkOTNhNGEzNw&feedId=58083&k=c6f8547bc550f1fb8dac87109df855556c53b607",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-meta-tactik-gk-alpha-naranja",
-    brand: "Rinat",
-    model: "Meta Tactik Gk Alpha - Naranja",
-    colour: "Naranja",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 48.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44686176193&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914779-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU1NnxpbWFnZS9qcGVnfGFEQmhMMmhoTkM4eE1UVTRNakkzTlRBMU9UYzBNaTl0WldScFlYTmZNVEF3TURreE5EYzNPVjh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58NGRlNDExZjY3NTVhNDU4MzJhZDhlY2M5ZjhmYjA0NGQwODFhMDVlMjUwNDUzN2I4NzczMDA0ZmQ2NjhjMDE5Zg&feedId=58083&k=d8310bd62e17dbbd1eacf420f6ff8ed2b9ff319f",
-        sizes: ["9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-nkam-prime-blanco",
-    brand: "Rinat",
-    model: "Nkam Prime - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 28.5,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40915911196&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068548-00-P-X-20250313143035.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzIzOXxpbWFnZS9qcGVnfGFEUTFMMmhqWkM4eE1qYzVPVEkxTXpnd056RXpOQzl0WldScFlYTmZNVEF3TVRBMk9EVTBPRjh3TUY5UVgxZ3RNakF5TlRBek1UTXhORE13TXpVdWFuQm58OWMxMTg5ZmY5ZWZmZWVmMGE0ZDBmM2EwZjBkZGYyNmUzMDk2OWI5MzQ5NTBlN2VlODNlMzI5MWM0ZTRhZGVjNg&feedId=58083&k=f16bb07d226411789b7bf0c0d54ef0db1c12f65b",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-nkam-prime-rojo",
-    brand: "Rinat",
-    model: "Nkam Prime - Rojo",
-    colour: "Rojo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39745678345&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001015149-00-P-X-20241205133935.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA4MXxpbWFnZS9qcGVnfGFHRTVMMmhpWXk4eE1qVTFOelV3TVRNek16VXpOQzl0WldScFlYTmZNVEF3TVRBeE5URTBPVjh3TUY5UVgxZ3RNakF5TkRFeU1EVXhNek01TXpVdWFuQm58YmJiMWE4MGU1YzgyMDMzMDBjM2Y3Y2ZmNzYzZmIwYWYzOTY3NmZkYTE5NjhiZWU4M2UyODM0YzAyZDMwYWQ0ZQ&feedId=58083&k=19b9026fa5f245d3d6beab2a3f45a6758c634e34",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-nkam-pro-azul",
-    brand: "Rinat",
-    model: "Nkam Pro - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 83.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36615966109&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000933563-00-P-X-20241023165319.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzcyOHxpbWFnZS9qcGVnfGFEWmxMMmd3TlM4eE1qUTBOemM0TURnNU5qYzVPQzl0WldScFlYTmZNVEF3TURrek16VTJNMTh3TUY5UVgxZ3RNakF5TkRFd01qTXhOalV6TVRrdWFuQm58ZGJkMWQ1NGRlMmU4OTA2M2Y5Yjk1MTUzOWZjNTMyYzcwNjg5MjRlOTMwY2M3NjEyMGRjNmEwYjE1NmRlYTkyMw&feedId=58083&k=3f1bfeea510a365b17cdc5101c62d512aec554b0",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-nkam-pro-rojo",
-    brand: "Rinat",
-    model: "Nkam Pro - Rojo",
-    colour: "Rojo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 83.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36715385767&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000933567-00-P-X-20231113155935.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODk1MnxpbWFnZS9qcGVnfGFEVmpMMmc1TXk4eE1UYzBNak0yTlRrM05EVTFPQzl0WldScFlYTmZNVEF3TURrek16VTJOMTh3TUY5UVgxZ3RNakF5TXpFeE1UTXhOVFU1TXpVdWFuQm58ZmIwMDUwM2IyYTE0YTA0NmE1MjIzNGU5MjA3NDVlNjQwM2EyZDZjMmEyMTI0YTFlMDViMDVlMjk2OWU0OGM2Nw&feedId=58083&k=82c122465aa2683d047384af7dcffc3a3437ea93",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-nkam-semi-verde",
-    brand: "Rinat",
-    model: "Nkam Semi - Verde",
-    colour: "Verde",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 37.09,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36940317989&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000933566-00-P-X-20240109190146.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgwMnxpbWFnZS9qcGVnfGFEQmlMMmd3WWk4eE1UZzVOemt6TkRVM056WTVOQzl0WldScFlYTmZNVEF3TURrek16VTJObDh3TUY5UVgxZ3RNakF5TkRBeE1Ea3hPVEF4TkRZdWFuQm58MWJjM2NlN2JhODJmNDc5OGM3NWUwNmM1ZDBjNmU0ZWU5OTAxODA0MDU2NThkNzkxMjRjNTJlN2QyZmVlZGM5Ng&feedId=58083&k=cb2b21ebb7227740519f025461f8506860f71a02",
-        sizes: ["9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-uno-premier-aero-pro-blanco",
-    brand: "Rinat",
-    model: "Uno Premier Aero Pro - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 79.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276726954&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148551-00-P-X-20261008161447.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTAwNHxpbWFnZS9qcGVnfGFEQTVMMmcwWXk4eE5EQTJOakV5TkRjNE16WTBOaTl0WldScFlYTmZNVEF3TVRFME9EVTFNVjh3TUY5UVgxZ3RNakF5TmpFd01EZ3hOakUwTkRjdWFuQm58ODE5ZDkyMTQ5Mzk5NWI1Y2Y2Y2E5MDUwYTUxMmE1NGFmN2NkNzhjOTc1Y2MyZmE3NTkwNWQ4ODI5YzUwYzM2Zg&feedId=58083&k=7e8eb911164850d534b1af4789a898518027b1b5",
-        sizes: ["7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "rinat-uno-premier-aero-pro-negro",
-    brand: "Rinat",
-    model: "Uno Premier Aero Pro - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 81.59,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276727000&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148548-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ0MXxpbWFnZS9qcGVnfGFHVTNMMmhsT0M4eE5EQTJOek0zTWpJeU9EWXpPQzl0WldScFlYTmZNVEF3TVRFME9EVTBPRjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58NGU1MmYyOTA3ZDUzNWRlOWU3NGU0OWU2NzRlYmU0MjZhNWIyYTFjNGM5MDJmZjAwYTllNDI0YmMxZTY5Mzc3Ng&feedId=58083&k=b416c526cd28e7c4be88f767795a6368c72bcd36",
-        sizes: ["7", "8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "rinat-uno-premier-as-blanco",
-    brand: "Rinat",
-    model: "Uno Premier As - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276727067&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148555-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA4N3xpbWFnZS9qcGVnfGFEQTVMMmd3TXk4eE5EQTJOek0zT1RRM01ETTJOaTl0WldScFlYTmZNVEF3TVRFME9EVTFOVjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58MDBjNDhhYzQ1NTJmZTIwYmZkYThhNmI5OWNlYzI1MjE5M2U3ODFjZGQ0ODVmZmFmZjYzNDRiYmY3MmEzMThhMQ&feedId=58083&k=800339d994ac3190a2eb1d19d90a466968502208",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "rinat-uno-premier-as-negro",
-    brand: "Rinat",
-    model: "Uno Premier As - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46276727058&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001148550-00-P-X-20261009101936.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYyNXxpbWFnZS9qcGVnfGFHSm1MMmd3WVM4eE5EQTJOek0zTkRVMU5URTJOaTl0WldScFlYTmZNVEF3TVRFME9EVTFNRjh3TUY5UVgxZ3RNakF5TmpFd01Ea3hNREU1TXpZdWFuQm58NWIzZTlkNzU2NWFjYTdmNWQxMmYxNmJmNzI1NTkwM2IzM2MyYjUwY2RmM2IyOWNlNDMzMDE0NDZiNWIzMGIxMA&feedId=58083&k=c9a22a434c61d437ce8a3787906d02e393107744",
-        sizes: ["7", "8", "9", "10"],
-      },
-    ],
-  },
-  {
     id: "rinat-xtreme-guard-dominius-alpha-amarillo",
     brand: "Rinat",
-    model: "Xtreme Guard Dominius Alpha - Amarillo",
+    model: "Guantes de portero Rinat Xtreme Guard Dominius Alpha - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -15843,7 +15803,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-xtreme-guard-dominius-turf-rojo",
     brand: "Rinat",
-    model: "Xtreme Guard Dominius Turf - Rojo",
+    model: "Guantes de portero Rinat Xtreme Guard Dominius Turf - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -15860,7 +15820,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-xtreme-guard-dominus-rojo",
     brand: "Rinat",
-    model: "Xtreme Guard Dominus - Rojo",
+    model: "Guantes de portero Rinat Xtreme Guard Dominus - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -17738,7 +17698,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-advance-blackout-negro",
     brand: "Twofive",
-    model: "Atlanta Advance Blackout - Negro",
+    model: "Guantes de portero Twofive Atlanta Advance Blackout - Negro",
     colour: "Negro",
     offers: [
       {
@@ -17755,7 +17715,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-advance-blanco",
     brand: "Twofive",
-    model: "Atlanta Advance - Blanco",
+    model: "Guantes de portero Twofive Atlanta Advance - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -17772,7 +17732,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-advance-negative-azul",
     brand: "Twofive",
-    model: "Atlanta Advance Negative - Azul",
+    model: "Guantes de portero Twofive Atlanta Advance Negative - Azul",
     colour: "Azul",
     offers: [
       {
@@ -17789,7 +17749,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-advance-roll-azul",
     brand: "Twofive",
-    model: "Atlanta Advance Roll - Azul",
+    model: "Guantes de portero Twofive Atlanta Advance Roll - Azul",
     colour: "Azul",
     offers: [
       {
@@ -17799,108 +17759,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46428424637&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149030-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc5MHxpbWFnZS9qcGVnfGFEVmxMMmhtTlM4eE5EQTROalF3TWpBeE5USTJNaTl0WldScFlYTmZNVEF3TVRFME9UQXpNRjh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58NWI2NTQzYzA4NmY0YTkyYzVhNjZkY2QyNjJjYjU1NjRiOTU5ZmNiNjYxNTE5ZjEyOWRmZjkzNDVhNTkwNTM1NQ&feedId=58083&k=3b0dac53569e79d380c1df3a319f6c3b3a7ef49a",
-        sizes: ["8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "twofive-atlanta-advance-whiteout-blanco",
-    brand: "Twofive",
-    model: "Atlanta Advance Whiteout - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 44.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46428424679&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149042-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE3OHxpbWFnZS9qcGVnfGFHSTFMMmd5Tmk4eE5EQTROalF5TURjeU5UYzVNQzl0WldScFlYTmZNVEF3TVRFME9UQTBNbDh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58ZDEzYjA2ZDVmMmIzOTQ1MzU3ZDY5NjI4MzhiM2Y2MDg2MjhjZGNkNTRkMTYyZTNhZmY3MmZmNWY5MmNiNzRlZg&feedId=58083&k=8444d14bb9d94b58f1b7cb09d37c83bfa09d88dc",
-        sizes: ["8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "twofive-atlanta-basic-blanco",
-    brand: "Twofive",
-    model: "Atlanta Basic - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.05,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44594493952&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122241-00-P-X-20260424125429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ1NnxpbWFnZS9qcGVnfGFHUTFMMmhqWWk4eE16Y3lNRFk0TlRVM05qSXlNaTl0WldScFlYTmZNVEF3TVRFeU1qSTBNVjh3TUY5UVgxZ3RNakF5TmpBME1qUXhNalUwTWprdWFuQm58NjJlYjY5NjlhM2Y3MGZiZjViODc0OTRiNTc3MjQxYWJlZjJiY2EzYmZiZmM1Mjg4ODhmNGU5NGRlNDkzY2FhMg&feedId=58083&k=7ed850914c3bcf6ae89993b1351881be7b76be85",
-        sizes: ["4", "5", "6", "7"],
-      },
-    ],
-  },
-  {
-    id: "twofive-atlanta-basic-flat-azul",
-    brand: "Twofive",
-    model: "Atlanta Basic Flat - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 29.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46428424557&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149034-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU3OHxpbWFnZS9qcGVnfGFEUmlMMmhsWmk4eE5EQTROalF3TnpNeU16WTNPQzl0WldScFlYTmZNVEF3TVRFME9UQXpORjh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58Yzg4NWQxNTRjNDJjNTFlZDg1MDE4NzBkMjY3NzUzODIzZWYyZDMxNzBiYzIzODQwOGZjNDFhZDcxNDZhNDA3OQ&feedId=58083&k=8db43deaf18cecad60f07303a1b99942df6f1397",
-        sizes: ["8", "9", "10"],
-      },
-    ],
-  },
-  {
-    id: "twofive-atlanta-pro-flat-azul",
-    brand: "Twofive",
-    model: "Atlanta Pro Flat - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 54.39,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46428424636&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149024-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgwMXxpbWFnZS9qcGVnfGFHSTNMMmhqT1M4eE5EQTROak01TWpnME1ESXlNaTl0WldScFlYTmZNVEF3TVRFME9UQXlORjh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58ZjY0NGUxYzg3MmFkZTc0YWYzMzBkNDMwODAyYjlkMzE3OGMxMGVmYzQ5ODk2NjAyZTcyNjE1YTE2MTM4YWZiYw&feedId=58083&k=0af73047d3a610721496d2659b7e063c4fe1e4cb",
-        sizes: ["8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "twofive-atlanta-pro-negative-azul",
-    brand: "Twofive",
-    model: "Atlanta Pro Negative - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 54.39,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46428424475&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149028-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODcwN3xpbWFnZS9qcGVnfGFHRmlMMmcwWlM4eE5EQTROak01T0RnMk9UVXpOQzl0WldScFlYTmZNVEF3TVRFME9UQXlPRjh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58ZjliODM4OGRiYTNlZTZlZmFkMjdlNjY3YjJmNjBkYjM0NGMyYTU0ZDRmOTdkYjQ5MDExZDY3ZjQ5NGE1OWQ4NA&feedId=58083&k=c4ba0399bae2c9e86de9b8f7531db4caf6ff2475",
-        sizes: ["8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "twofive-atlanta-pro-roll-azul",
-    brand: "Twofive",
-    model: "Atlanta Pro Roll - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 54.39,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46428424217&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149026-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzM5OXxpbWFnZS9qcGVnfGFEQTVMMmhqTmk4eE5EQTROak01TmpFNE1qVTFPQzl0WldScFlYTmZNVEF3TVRFME9UQXlObDh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58MGI4ODEwMTQ2OTRhMzM2YWE2NGI3MDQ0MmVjNGFmMzA5NTZlN2U0M2JjNTliYTk3N2UyOTQwZTI3M2ExYTFiZg&feedId=58083&k=2ce434bd15f797d5559eae2b6ac8135289f8149f",
         sizes: ["8", "9", "10", "11"],
       },
     ],
@@ -17937,6 +17795,108 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44594493942&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122238-00-P-X-20260424125429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI0MHxpbWFnZS9qcGVnfGFHRTJMMmhrT0M4eE16Y3lNRFkzTmpnNU1qY3dNaTl0WldScFlYTmZNVEF3TVRFeU1qSXpPRjh3TUY5UVgxZ3RNakF5TmpBME1qUXhNalUwTWprdWFuQm58NzQ5YzIwNTQ4ODdiYzRmNTQzODk0ODE2ZDk4OGU4ODI4ODdmNDFmNjc0MzhhMTQwM2EwNmMxN2M2NDk4NjcyNA&feedId=58083&k=8669b7f47a2a1ffd9b9fc520b7654778a4fbbf41",
         sizes: ["11"],
+      },
+    ],
+  },
+  {
+    id: "twofive-atlanta-advance-whiteout-blanco",
+    brand: "Twofive",
+    model: "Guantes de portero Twofive Atlanta Advance Whiteout - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 44.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46428424679&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149042-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE3OHxpbWFnZS9qcGVnfGFHSTFMMmd5Tmk4eE5EQTROalF5TURjeU5UYzVNQzl0WldScFlYTmZNVEF3TVRFME9UQTBNbDh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58ZDEzYjA2ZDVmMmIzOTQ1MzU3ZDY5NjI4MzhiM2Y2MDg2MjhjZGNkNTRkMTYyZTNhZmY3MmZmNWY5MmNiNzRlZg&feedId=58083&k=8444d14bb9d94b58f1b7cb09d37c83bfa09d88dc",
+        sizes: ["8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "twofive-atlanta-basic-blanco",
+    brand: "Twofive",
+    model: "Guantes de portero Twofive Atlanta Basic - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.05,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44594493952&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122241-00-P-X-20260424125429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ1NnxpbWFnZS9qcGVnfGFHUTFMMmhqWWk4eE16Y3lNRFk0TlRVM05qSXlNaTl0WldScFlYTmZNVEF3TVRFeU1qSTBNVjh3TUY5UVgxZ3RNakF5TmpBME1qUXhNalUwTWprdWFuQm58NjJlYjY5NjlhM2Y3MGZiZjViODc0OTRiNTc3MjQxYWJlZjJiY2EzYmZiZmM1Mjg4ODhmNGU5NGRlNDkzY2FhMg&feedId=58083&k=7ed850914c3bcf6ae89993b1351881be7b76be85",
+        sizes: ["4", "5", "6", "7"],
+      },
+    ],
+  },
+  {
+    id: "twofive-atlanta-basic-flat-azul",
+    brand: "Twofive",
+    model: "Guantes de portero Twofive Atlanta Basic Flat - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46428424557&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149034-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU3OHxpbWFnZS9qcGVnfGFEUmlMMmhsWmk4eE5EQTROalF3TnpNeU16WTNPQzl0WldScFlYTmZNVEF3TVRFME9UQXpORjh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58Yzg4NWQxNTRjNDJjNTFlZDg1MDE4NzBkMjY3NzUzODIzZWYyZDMxNzBiYzIzODQwOGZjNDFhZDcxNDZhNDA3OQ&feedId=58083&k=8db43deaf18cecad60f07303a1b99942df6f1397",
+        sizes: ["8", "9", "10"],
+      },
+    ],
+  },
+  {
+    id: "twofive-atlanta-pro-flat-azul",
+    brand: "Twofive",
+    model: "Guantes de portero Twofive Atlanta Pro Flat - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 54.39,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46428424636&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149024-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgwMXxpbWFnZS9qcGVnfGFHSTNMMmhqT1M4eE5EQTROak01TWpnME1ESXlNaTl0WldScFlYTmZNVEF3TVRFME9UQXlORjh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58ZjY0NGUxYzg3MmFkZTc0YWYzMzBkNDMwODAyYjlkMzE3OGMxMGVmYzQ5ODk2NjAyZTcyNjE1YTE2MTM4YWZiYw&feedId=58083&k=0af73047d3a610721496d2659b7e063c4fe1e4cb",
+        sizes: ["8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "twofive-atlanta-pro-negative-azul",
+    brand: "Twofive",
+    model: "Guantes de portero Twofive Atlanta Pro Negative - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 54.39,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46428424475&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149028-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODcwN3xpbWFnZS9qcGVnfGFHRmlMMmcwWlM4eE5EQTROak01T0RnMk9UVXpOQzl0WldScFlYTmZNVEF3TVRFME9UQXlPRjh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58ZjliODM4OGRiYTNlZTZlZmFkMjdlNjY3YjJmNjBkYjM0NGMyYTU0ZDRmOTdkYjQ5MDExZDY3ZjQ5NGE1OWQ4NA&feedId=58083&k=c4ba0399bae2c9e86de9b8f7531db4caf6ff2475",
+        sizes: ["8", "9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "twofive-atlanta-pro-roll-azul",
+    brand: "Twofive",
+    model: "Guantes de portero Twofive Atlanta Pro Roll - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 54.39,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46428424217&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149026-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzM5OXxpbWFnZS9qcGVnfGFEQTVMMmhqTmk4eE5EQTROak01TmpFNE1qVTFPQzl0WldScFlYTmZNVEF3TVRFME9UQXlObDh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58MGI4ODEwMTQ2OTRhMzM2YWE2NGI3MDQ0MmVjNGFmMzA5NTZlN2U0M2JjNTliYTk3N2UyOTQwZTI3M2ExYTFiZg&feedId=58083&k=2ce434bd15f797d5559eae2b6ac8135289f8149f",
+        sizes: ["8", "9", "10", "11"],
       },
     ],
   },
@@ -18073,6 +18033,74 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
+    id: "twofive-los-angeles-advance-amarillo",
+    brand: "Twofive",
+    model: "Guantes de portero Twofive Los Angeles Advance - Amarillo",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 37.34,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44594493976&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122234-00-P-X-20260424125429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTcxOHxpbWFnZS9qcGVnfGFHRmtMMmcyTnk4eE16Y3lNRFkyTnpVeU1UQTFOQzl0WldScFlYTmZNVEF3TVRFeU1qSXpORjh3TUY5UVgxZ3RNakF5TmpBME1qUXhNalUwTWprdWFuQm58YTU5YjI0MDM1M2RiN2JhZjZmOTc3MTU5MDJmMjg4YTU4ZDMwYWZkOTdhMDFlYThkZmNlMWJhNWVkNGQyNmE3Mw&feedId=58083&k=dd4cb4c6057d3d28355af15a2c7f83f13e9ec190",
+        sizes: ["9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "twofive-los-angeles-pro-amarillo",
+    brand: "Twofive",
+    model: "Guantes de portero Twofive Los Angeles Pro - Amarillo",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 63.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44594494038&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122223-00-P-X-20260424125429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjE1MnxpbWFnZS9qcGVnfGFEUm1MMmd5T1M4eE16Y3lNRFkwTURFNU1qVTBNaTl0WldScFlYTmZNVEF3TVRFeU1qSXlNMTh3TUY5UVgxZ3RNakF5TmpBME1qUXhNalUwTWprdWFuQm58N2YyNzZiZTIyNmM2MWIzNTY3MTAyNjYyNGYyNzc0ODA0ZWRkNWMzYzZiNGUzYjRkYWMzZDc3NTlmNzBmNTYwNg&feedId=58083&k=5bdba57aae76fdfbc2f060b3067173e885171ca4",
+        sizes: ["10", "11"],
+      },
+    ],
+  },
+  {
+    id: "twofive-new-york-advance-naranja",
+    brand: "Twofive",
+    model: "Guantes de portero Twofive New York Advance - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 37.34,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44594493903&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122235-00-P-X-20260424125429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI1M3xpbWFnZS9qcGVnfGFEWTFMMmhqTVM4eE16Y3lNRFkyT1RZeE9ESXdOaTl0WldScFlYTmZNVEF3TVRFeU1qSXpOVjh3TUY5UVgxZ3RNakF5TmpBME1qUXhNalUwTWprdWFuQm58MTFiNGZmYTI0NWIzNmU3NTc3ZmIyMGRmM2QxMjMwNGI0ZWZlNTI5ZThjNGQxZWE2NjlkZDI1MjIyOWIxMTNkMg&feedId=58083&k=40600a03ef44078d85a2b0ce721d6d532f20e221",
+        sizes: ["9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "twofive-new-york-pro-naranja",
+    brand: "Twofive",
+    model: "Guantes de portero Twofive New York Pro - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 63.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44594493974&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122225-00-P-X-20260424125429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzI1MnxpbWFnZS9qcGVnfGFESXhMMmczWmk4eE16Y3lNRFkwTkRJMU5UYzNOQzl0WldScFlYTmZNVEF3TVRFeU1qSXlOVjh3TUY5UVgxZ3RNakF5TmpBME1qUXhNalUwTWprdWFuQm58ZjcyNmVmOWVjNmYzNjM3OTdhMGQ1MjJmN2Q4Zjc4YjA4ODNkY2RmZGUyMDhlNzIyNmRiNDgxMDdlNjAwMWU3OQ&feedId=58083&k=3327ee9e2b7276520f5b01617d6dc3bbd84c4ed0",
+        sizes: ["9", "10", "11"],
+      },
+    ],
+  },
+  {
     id: "twofive-guantes-de-portero-twofive-seoul-pro-bleu",
     brand: "Twofive",
     model: "Guantes de portero TwoFive Seoul Pro - Bleu",
@@ -18108,77 +18136,9 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "twofive-los-angeles-advance-amarillo",
-    brand: "Twofive",
-    model: "Los Angeles Advance - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 37.34,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44594493976&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122234-00-P-X-20260424125429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTcxOHxpbWFnZS9qcGVnfGFHRmtMMmcyTnk4eE16Y3lNRFkyTnpVeU1UQTFOQzl0WldScFlYTmZNVEF3TVRFeU1qSXpORjh3TUY5UVgxZ3RNakF5TmpBME1qUXhNalUwTWprdWFuQm58YTU5YjI0MDM1M2RiN2JhZjZmOTc3MTU5MDJmMjg4YTU4ZDMwYWZkOTdhMDFlYThkZmNlMWJhNWVkNGQyNmE3Mw&feedId=58083&k=dd4cb4c6057d3d28355af15a2c7f83f13e9ec190",
-        sizes: ["9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "twofive-los-angeles-pro-amarillo",
-    brand: "Twofive",
-    model: "Los Angeles Pro - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 63.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44594494038&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122223-00-P-X-20260424125429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjE1MnxpbWFnZS9qcGVnfGFEUm1MMmd5T1M4eE16Y3lNRFkwTURFNU1qVTBNaTl0WldScFlYTmZNVEF3TVRFeU1qSXlNMTh3TUY5UVgxZ3RNakF5TmpBME1qUXhNalUwTWprdWFuQm58N2YyNzZiZTIyNmM2MWIzNTY3MTAyNjYyNGYyNzc0ODA0ZWRkNWMzYzZiNGUzYjRkYWMzZDc3NTlmNzBmNTYwNg&feedId=58083&k=5bdba57aae76fdfbc2f060b3067173e885171ca4",
-        sizes: ["10", "11"],
-      },
-    ],
-  },
-  {
-    id: "twofive-new-york-advance-naranja",
-    brand: "Twofive",
-    model: "New York Advance - Naranja",
-    colour: "Naranja",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 37.34,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44594493903&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122235-00-P-X-20260424125429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI1M3xpbWFnZS9qcGVnfGFEWTFMMmhqTVM4eE16Y3lNRFkyT1RZeE9ESXdOaTl0WldScFlYTmZNVEF3TVRFeU1qSXpOVjh3TUY5UVgxZ3RNakF5TmpBME1qUXhNalUwTWprdWFuQm58MTFiNGZmYTI0NWIzNmU3NTc3ZmIyMGRmM2QxMjMwNGI0ZWZlNTI5ZThjNGQxZWE2NjlkZDI1MjIyOWIxMTNkMg&feedId=58083&k=40600a03ef44078d85a2b0ce721d6d532f20e221",
-        sizes: ["9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "twofive-new-york-pro-naranja",
-    brand: "Twofive",
-    model: "New York Pro - Naranja",
-    colour: "Naranja",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 63.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44594493974&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122225-00-P-X-20260424125429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzI1MnxpbWFnZS9qcGVnfGFESXhMMmczWmk4eE16Y3lNRFkwTkRJMU5UYzNOQzl0WldScFlYTmZNVEF3TVRFeU1qSXlOVjh3TUY5UVgxZ3RNakF5TmpBME1qUXhNalUwTWprdWFuQm58ZjcyNmVmOWVjNmYzNjM3OTdhMGQ1MjJmN2Q4Zjc4YjA4ODNkY2RmZGUyMDhlNzIyNmRiNDgxMDdlNjAwMWU3OQ&feedId=58083&k=3327ee9e2b7276520f5b01617d6dc3bbd84c4ed0",
-        sizes: ["9", "10", "11"],
-      },
-    ],
-  },
-  {
     id: "twofive-sydney-advance-roll-naranja",
     brand: "Twofive",
-    model: "Sydney Advance Roll - Naranja",
+    model: "Guantes de portero Twofive Sydney Advance Roll - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -18195,7 +18155,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-sydney-pro-roll-naranja",
     brand: "Twofive",
-    model: "Sydney Pro Roll - Naranja",
+    model: "Guantes de portero Twofive Sydney Pro Roll - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -18212,7 +18172,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-tokyo-advance-negative-negro",
     brand: "Twofive",
-    model: "Tokyo Advance Negative - Negro",
+    model: "Guantes de portero Twofive Tokyo Advance Negative - Negro",
     colour: "Negro",
     offers: [
       {
@@ -18229,7 +18189,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-tokyo-advance-roll-negro",
     brand: "Twofive",
-    model: "Tokyo Advance Roll - Negro",
+    model: "Guantes de portero Twofive Tokyo Advance Roll - Negro",
     colour: "Negro",
     offers: [
       {
@@ -18246,7 +18206,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-tokyo-pro-360-negro",
     brand: "Twofive",
-    model: "Tokyo Pro 360 - Negro",
+    model: "Guantes de portero Twofive Tokyo Pro 360 - Negro",
     colour: "Negro",
     offers: [
       {
@@ -18263,7 +18223,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-tokyo-pro-knit-fusion-negro",
     brand: "Twofive",
-    model: "Tokyo Pro Knit Fusion - Negro",
+    model: "Guantes de portero Twofive Tokyo Pro Knit Fusion - Negro",
     colour: "Negro",
     offers: [
       {
@@ -18280,7 +18240,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-tokyo-pro-roll-negro",
     brand: "Twofive",
-    model: "Tokyo Pro Roll - Negro",
+    model: "Guantes de portero Twofive Tokyo Pro Roll - Negro",
     colour: "Negro",
     offers: [
       {
@@ -18291,108 +18251,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46428424338&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001149040-00-P-X-20261019125034.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODgzNXxpbWFnZS9qcGVnfGFHUXdMMmd6Wmk4eE5EQTROalF4T0RBd05qQTBOaTl0WldScFlYTmZNVEF3TVRFME9UQTBNRjh3TUY5UVgxZ3RNakF5TmpFd01Ua3hNalV3TXpRdWFuQm58MTAzNWE5OGI1YTcwMWE4MmJhMDJjMzU5NmE1NWRkMTljZWY3Yjk3NzcyZGQyZWFjNzUzOWUzNmM4MjNjOTMwNQ&feedId=58083&k=a72490572ecdbee65ff321598048c9262513b6c0",
         sizes: ["8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-absolutgrip-blanco",
-    brand: "uhlsport",
-    model: "Absolutgrip - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 55.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42242613151&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068579-00-P-X-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc1M3xpbWFnZS9qcGVnfGFHUmtMMmhoTVM4eE1qZ3dNak0xT1RVeU5UUXdOaTl0WldScFlYTmZNVEF3TVRBMk9EVTNPVjh3TUY5UVgxZ3RNakF5TlRBek1UUXhOalUxTlRBdWFuQm58YWZlNWYwMjljYTkxZGRkZmZkNWQ4NjgyYWYxYzY5NmY0MmFjMTk1NTA0Y2I5YzQ1ZjYzNGVhZmVmZjRiMWY0ZA&feedId=58083&k=86ed751946d6825a49eb6418698aaf1a305b12cb",
-        sizes: ["8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-classic-soft-advanced-blanco",
-    brand: "uhlsport",
-    model: "Classic Soft Advanced - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 24.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46272938579&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000963728-00-P-X-20240222140646.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM0MXxpbWFnZS9qcGVnfGFEY3dMMmhqTlM4eE1UazRPREk0TkRNM05UQTNNQzl0WldScFlYTmZNVEF3TURrMk16Y3lPRjh3TUY5UVgxZ3RNakF5TkRBeU1qSXhOREEyTkRZdWFuQm58ZmQ2NWQyNDM1NGRkNjE2ZjZkNmVmOWRlNWNmYjQ5MmRlMjQ4MGI1OGMwM2I1MDg5ZWFjNzZjODE3MjYwYWNjNA&feedId=58083&k=246f2106f1ab098efd218164730c89e4e2d14700",
-        sizes: ["8.5", "9", "9.5", "10", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-classic-soft-advanced-negro",
-    brand: "uhlsport",
-    model: "Classic Soft Advanced - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 20.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40154755010&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914755-00-P-X-20230915110439.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwOHxpbWFnZS9qcGVnfGFHTmhMMmhtWlM4eE1UWXpOVE00TVRZd01ESTROaTl0WldScFlYTmZNVEF3TURreE5EYzFOVjh3TUY5UVgxZ3RNakF5TXpBNU1UVXhNVEEwTXprdWFuQm58YTIyMGUzNzhiZmY2Y2MyZDVjYTQ0MTllOWU4MjJiNGExM2I1MTJkY2IzOGFhZTRiNDZkMmM0M2FlOWU2ODRiZg&feedId=58083&k=25bf012a5ed86166908f06341915f358a8173f98",
-        sizes: ["9", "11"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-comfort-absolutgrip-negro",
-    brand: "uhlsport",
-    model: "Comfort Absolutgrip - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 48.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40123662124&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817979-00-P-X-20220221164750.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY5NHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJobVppOW9ZakF2TVRBMk1USXlNemN4TXprNU9UZ3VhbkJufDAyNDQ5MDA0OTU4ZWNiNGM5NDExMDI4MzM2NTVjNTA1MmI2MDRjM2EyMjk1MGVhOGNlNWM4YjY5ZWI0MzZmYzU&feedId=58083&k=82261af0bd67d856055432bddfb73960844f774e",
-        sizes: ["9.5", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-fangmaschine-started-soft-roblam-rojo",
-    brand: "uhlsport",
-    model: "Fangmaschine Started Soft Roblam - Rojo",
-    colour: "Rojo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45237587438&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001116180-00-P-X-20260706140715.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTkyNXxpbWFnZS9qcGVnfGFEQXlMMmd4TVM4eE16ZzNOVEF6TVRNME16RXpOQzl0WldScFlYTmZNVEF3TVRFeE5qRTRNRjh3TUY5UVgxZ3RNakF5TmpBM01EWXhOREEzTVRVdWFuQm58MjY1NDA1ZWUzOWFlMGI0MzcwOWRkZGU5Y2ExZGZkYzRhMWM3NmUwNmExNWNjMjhjNzQxMmViOWE0YzAyOGQxNg&feedId=58083&k=c7804a4e99000e425ab5825c32af10e1303ddef5",
-        sizes: ["8", "9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-foam-cybertec-supersoft-hn-blanco",
-    brand: "uhlsport",
-    model: "Foam Cybertec Supersoft Hn - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 47.59,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42250540391&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068585-00-P-X-20250827104513.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM5N3xpbWFnZS9qcGVnfGFEVXdMMmd3WlM4eE16RTBNakUxT0RFeE5EZzBOaTl0WldScFlYTmZNVEF3TVRBMk9EVTROVjh3TUY5UVgxZ3RNakF5TlRBNE1qY3hNRFExTVRNdWFuQm58ZjE5MjgyODAwMTljZGMwNmVkZTI4YTg1YTAxZTAyNTk0ZGUyNzcxM2JkN2RmNzY5ZTQyMTQ3MjgxMzgxMDNlZQ&feedId=58083&k=e5a5f40b2a3d21ad02021610050266aa09a40c66",
-        sizes: ["8", "9", "11"],
       },
     ],
   },
@@ -18535,7 +18393,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "uhlsport-gants-de-gardien-uhlsport-absolutgrip-blanc",
+    id: "uhlsport-absolutgrip-blanco",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Absolutgrip - Blanco",
     colour: "Blanco",
@@ -18554,6 +18412,15 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "Talla 8", price: 42.33, url: "https://www.awin1.com/pclick.php?p=37488693088&a=3013769&m=65912" },
           { size: "Talla 8.5", price: 57.0, url: "https://www.awin1.com/pclick.php?p=37488693089&a=3013769&m=65912" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 55.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42242613151&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068579-00-P-X-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc1M3xpbWFnZS9qcGVnfGFHUmtMMmhoTVM4eE1qZ3dNak0xT1RVeU5UUXdOaTl0WldScFlYTmZNVEF3TVRBMk9EVTNPVjh3TUY5UVgxZ3RNakF5TlRBek1UUXhOalUxTlRBdWFuQm58YWZlNWYwMjljYTkxZGRkZmZkNWQ4NjgyYWYxYzY5NmY0MmFjMTk1NTA0Y2I5YzQ1ZjYzNGVhZmVmZjRiMWY0ZA&feedId=58083&k=86ed751946d6825a49eb6418698aaf1a305b12cb",
+        sizes: ["8", "9", "10", "11"],
       },
       {
         store: "FootStoreFR",
@@ -18662,6 +18529,15 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 62.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36239315200&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914748-00-P-X-20230817164041.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzI5MnxpbWFnZS9qcGVnfGFEQTRMMmhqTnk4eE1UVTROVEU0TWpBd056TXlOaTl0WldScFlYTmZNVEF3TURreE5EYzBPRjh3TUY5UVgxZ3RNakF5TXpBNE1UY3hOalF3TkRFdWFuQm58NTljYmJjODFiN2ExZDM2YjVmZTEzZTZkYWQ3Mjc4ODQzZmExZmMxZDJkYmM4ZjhmMmExMjEwMWIwNGE0MjAwOQ&feedId=58083&k=a3b9b8285986c80c86a5d505eff0cbfe6d35358f",
+        sizes: ["8", "9", "10"],
+      },
+      {
         store: "FootStoreFR",
         price: 82.0,
         priceMax: 90.0,
@@ -18674,15 +18550,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
           { size: "8", price: 82.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
           { size: "10", price: 90.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101131501-gants-de-gardien-uhlsport-aquasoft-bleu-pacifique-vert-fluo-blanc" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 62.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36239315200&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914748-00-P-X-20230817164041.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzI5MnxpbWFnZS9qcGVnfGFEQTRMMmhqTnk4eE1UVTROVEU0TWpBd056TXlOaTl0WldScFlYTmZNVEF3TURreE5EYzBPRjh3TUY5UVgxZ3RNakF5TXpBNE1UY3hOalF3TkRFdWFuQm58NTljYmJjODFiN2ExZDM2YjVmZTEzZTZkYWQ3Mjc4ODQzZmExZmMxZDJkYmM4ZjhmMmExMjEwMWIwNGE0MjAwOQ&feedId=58083&k=a3b9b8285986c80c86a5d505eff0cbfe6d35358f",
-        sizes: ["8", "9", "10"],
       },
     ],
   },
@@ -18751,6 +18618,40 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134001-gants-de-gardien-uhlsport-aquasoft-hn-bleu-pacifique-vert-fluo-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101134001_bleu-pacifique-vert-fluo-blanc_1.webp",
         sizes: ["7.5", "8", "8.5"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-classic-soft-advanced-blanco",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Classic Soft Advanced - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 24.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46272938579&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000963728-00-P-X-20240222140646.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM0MXxpbWFnZS9qcGVnfGFEY3dMMmhqTlM4eE1UazRPREk0TkRNM05UQTNNQzl0WldScFlYTmZNVEF3TURrMk16Y3lPRjh3TUY5UVgxZ3RNakF5TkRBeU1qSXhOREEyTkRZdWFuQm58ZmQ2NWQyNDM1NGRkNjE2ZjZkNmVmOWRlNWNmYjQ5MmRlMjQ4MGI1OGMwM2I1MDg5ZWFjNzZjODE3MjYwYWNjNA&feedId=58083&k=246f2106f1ab098efd218164730c89e4e2d14700",
+        sizes: ["8.5", "9", "9.5", "10", "10.5"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-classic-soft-advanced-negro",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Classic Soft Advanced - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40154755010&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914755-00-P-X-20230915110439.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwOHxpbWFnZS9qcGVnfGFHTmhMMmhtWlM4eE1UWXpOVE00TVRZd01ESTROaTl0WldScFlYTmZNVEF3TURreE5EYzFOVjh3TUY5UVgxZ3RNakF5TXpBNU1UVXhNVEEwTXprdWFuQm58YTIyMGUzNzhiZmY2Y2MyZDVjYTQ0MTllOWU4MjJiNGExM2I1MTJkY2IzOGFhZTRiNDZkMmM0M2FlOWU2ODRiZg&feedId=58083&k=25bf012a5ed86166908f06341915f358a8173f98",
+        sizes: ["9", "11"],
       },
     ],
   },
@@ -18868,6 +18769,23 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
+    id: "uhlsport-comfort-absolutgrip-negro",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Comfort Absolutgrip - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 48.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40123662124&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817979-00-P-X-20220221164750.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY5NHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJobVppOW9ZakF2TVRBMk1USXlNemN4TXprNU9UZ3VhbkJufDAyNDQ5MDA0OTU4ZWNiNGM5NDExMDI4MzM2NTVjNTA1MmI2MDRjM2EyMjk1MGVhOGNlNWM4YjY5ZWI0MzZmYzU&feedId=58083&k=82261af0bd67d856055432bddfb73960844f774e",
+        sizes: ["9.5", "10.5"],
+      },
+    ],
+  },
+  {
     id: "uhlsport-guantes-de-portero-uhlsport-comfort-absolutgrip-noir",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Comfort Absolutgrip - Noir",
@@ -18890,6 +18808,23 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101143101-gants-de-gardien-uhlsport-comfort-absolutgrip-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-101143101-black-69babd24c44d1-1.webp",
         sizes: ["9"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-fangmaschine-started-soft-roblam-rojo",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Fangmaschine Started Soft Roblam - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45237587438&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001116180-00-P-X-20260706140715.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTkyNXxpbWFnZS9qcGVnfGFEQXlMMmd4TVM4eE16ZzNOVEF6TVRNME16RXpOQzl0WldScFlYTmZNVEF3TVRFeE5qRTRNRjh3TUY5UVgxZ3RNakF5TmpBM01EWXhOREEzTVRVdWFuQm58MjY1NDA1ZWUzOWFlMGI0MzcwOWRkZGU5Y2ExZGZkYzRhMWM3NmUwNmExNWNjMjhjNzQxMmViOWE0YzAyOGQxNg&feedId=58083&k=c7804a4e99000e425ab5825c32af10e1303ddef5",
+        sizes: ["8", "9", "10", "11"],
       },
     ],
   },
@@ -19515,9 +19450,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-fm-uhlsport-aquasoft-hn-azul",
     brand: "uhlsport",
@@ -19824,6 +19756,9 @@ const minedGloveProductsChunk5: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-absolutgrip-hn-rouge",
     brand: "uhlsport",
@@ -20186,6 +20121,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
+    id: "uhlsport-foam-cybertec-supersoft-hn-blanco",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Foam Cybertec Supersoft Hn - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 47.59,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42250540391&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068585-00-P-X-20250827104513.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM5N3xpbWFnZS9qcGVnfGFEVXdMMmd3WlM4eE16RTBNakUxT0RFeE5EZzBOaTl0WldScFlYTmZNVEF3TVRBMk9EVTROVjh3TUY5UVgxZ3RNakF5TlRBNE1qY3hNRFExTVRNdWFuQm58ZjE5MjgyODAwMTljZGMwNmVkZTI4YTg1YTAxZTAyNTk0ZGUyNzcxM2JkN2RmNzY5ZTQyMTQ3MjgxMzgxMDNlZQ&feedId=58083&k=e5a5f40b2a3d21ad02021610050266aa09a40c66",
+        sizes: ["8", "9", "11"],
+      },
+    ],
+  },
+  {
     id: "uhlsport-guantes-de-portero-uhlsport-hn-comp-soft-blanco",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport HN Comp Soft - Blanco",
@@ -20208,6 +20160,40 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101136801-gants-de-gardien-uhlsport-hn-comp-soft-blanc-noir-orange-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101136801_blanc-noir-orange-fluo_1.webp",
         sizes: ["8", "10.5"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-powerline-soft-flex-frame-negro",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Powerline Soft Flex Frame - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 34.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36240860436&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914746-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE2OHxpbWFnZS9qcGVnfGFESXpMMmd5Wmk4eE1UVTRNakkzTXpBNU16WTJNaTl0WldScFlYTmZNVEF3TURreE5EYzBObDh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58Yzg5OTc4NjRjZWUxN2RkMDgxZGNiMGZkZmZhZTE2YzJkNzczNzYzMjM0ZmJmNjUwMzBhZjlmYTZiNmQ2YTc0Nw&feedId=58083&k=8b4a20606f388d5634f838db0b6ea8fb948e1d4e",
+        sizes: ["9.5"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-powerline-supergrip-negro",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Powerline Supergrip - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 125.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36089025675&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914741-00-P-X-20230712123806.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY1NXxpbWFnZS9qcGVnfGFEazNMMmd3WlM4eE1UVXlNak0yTURBNE1qUTJNaTl0WldScFlYTmZNVEF3TURreE5EYzBNVjh3TUY5UVgxZ3RNakF5TXpBM01USXhNak00TURZdWFuQm58Y2FkYzIzNWZiYWU1YjNiMzc5OTMzYzJkYTUyZTE5Mjc5ZjY5OWUzYTJiMTMyYjg0NmRhNDA3YmY5ZTAwMDBmZA&feedId=58083&k=59bfe7f9e69f24da428c33546bcd6b3622dfe724",
+        sizes: ["10"],
       },
     ],
   },
@@ -20245,6 +20231,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         sizes: ["Talla 10"],
       },
       {
+        store: "ForumSport",
+        price: 41.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265348613&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914744-00-P-X-20230712123806.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzgyMHxpbWFnZS9qcGVnfGFHTTJMMmd3TlM4eE1UVXlNak0yTURZM01qSTROaTl0WldScFlYTmZNVEF3TURreE5EYzBORjh3TUY5UVgxZ3RNakF5TXpBM01USXhNak00TURZdWFuQm58OGVlNGE5MTIxMWIxYmJlYWRmNTUxYmZhYWRlMjA3NGYxMjk1YTIxOWNjMDI1OTY2NzMzODA5ZTk0M2IxNjY3Nw&feedId=58083&k=6741bec6d86d7c2065e406c07878c1b07d7e194b",
+        sizes: ["9"],
+      },
+      {
         store: "FootStoreFR",
         price: 37.09,
         priceMax: 60.0,
@@ -20271,15 +20266,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101130901_0.webp",
         sizes: ["10"],
       },
-      {
-        store: "ForumSport",
-        price: 41.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265348613&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914744-00-P-X-20230712123806.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzgyMHxpbWFnZS9qcGVnfGFHTTJMMmd3TlM4eE1UVXlNak0yTURZM01qSTROaTl0WldScFlYTmZNVEF3TURreE5EYzBORjh3TUY5UVgxZ3RNakF5TXpBM01USXhNak00TURZdWFuQm58OGVlNGE5MTIxMWIxYmJlYWRmNTUxYmZhYWRlMjA3NGYxMjk1YTIxOWNjMDI1OTY2NzMzODA5ZTk0M2IxNjY3Nw&feedId=58083&k=6741bec6d86d7c2065e406c07878c1b07d7e194b",
-        sizes: ["9"],
-      },
     ],
   },
   {
@@ -20305,6 +20291,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101133601-gants-de-gardien-uhlsport-prediction-soft-flex-frame-bleu-marine-blanc-jaune-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101133601_bleu-marine-blanc-jaune-fluo_1.webp",
         sizes: ["8.5", "9.5"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-prediction-soft-flex-frame-marino",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Prediction Soft Flex Frame - Marino",
+    colour: "Marino",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 31.18,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38761049490&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001014060-00-P-X-20240902130544.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc3MXxpbWFnZS9qcGVnfGFHTmlMMmc0WVM4eE1qTTBORFF6TnpFME5UWXpNQzl0WldScFlYTmZNVEF3TVRBeE5EQTJNRjh3TUY5UVgxZ3RNakF5TkRBNU1ESXhNekExTkRRdWFuQm58M2ZiOTgyZTdmN2YwYWIwM2MyZWFiYTkxMDRlZTZiZGMxNTBmYmNiMjQxN2Q0MGQ1MzRlMWYwOTZmNTRhMTJlOA&feedId=58083&k=3097b6bbf92c4d4b262ced763f7c7d66d1ef4690",
+        sizes: ["11"],
       },
     ],
   },
@@ -20475,6 +20478,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
+    id: "uhlsport-soft-advanced-azul",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Soft Advanced - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45902798901&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000592234-00-P-X-20200213090442.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTI0MHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnME55OW9OelF2T1RReE5UQXlNRFkzTlRFd01pNXFjR2N8ZjhiY2M2ODE5OGI0ZGZiZjY5MzY4OGNlYTQ3MTYzMzA4M2ZjZDU1NDZhNDI1YTdjNjY3ZmMxNTliMWQ0N2RiMw&feedId=58083&k=c359fc6b0648e32b311be096195818d91ac82d62",
+        sizes: ["10.5"],
+      },
+    ],
+  },
+  {
     id: "uhlsport-guantes-de-portero-uhlsport-soft-advanced-blanco",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Soft Advanced - Blanco",
@@ -20501,7 +20521,41 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "uhlsport-guantes-de-portero-uhlsport-soft-hn-negro",
+    id: "uhlsport-soft-hn-comp-blanco",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Soft Hn Comp - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 31.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42215937766&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068593-00-P-X-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc2OXxpbWFnZS9qcGVnfGFEWmpMMmd4T1M4eE1qZ3dNak0yTVRJMk1qRXhNQzl0WldScFlYTmZNVEF3TVRBMk9EVTVNMTh3TUY5UVgxZ3RNakF5TlRBek1UUXhOalUxTlRBdWFuQm58Mjc4NzA2MDU3ODBiOGVkZWZmZDE3ZTdmOWM3NTVhNDJmYTMxZjE5ZTM2OTg3YTYwYjU3MzY0NWU4Njc4MjJmYg&feedId=58083&k=8fda9e7c1d60c81a459d94ba10fdd75767eca707",
+        sizes: ["9", "10", "11"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-soft-hn-comp-blanco-2",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Soft Hn Comp - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 34.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44281365946&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001116178-00-P-X-20260309121628.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ4OHxpbWFnZS9qcGVnfGFEWXhMMmd6WVM4eE16WXlOalF3TURrMk5EWXpPQzl0WldScFlYTmZNVEF3TVRFeE5qRTNPRjh3TUY5UVgxZ3RNakF5TmpBek1Ea3hNakUyTWpndWFuQm58ZTMyMDcxM2U3ZTM4ZjBkMDkyNjEwYjRlM2E4YTMzZTRlMjcyN2FkNTYxZWU1NTY3MzYxMmNkNjIzODViMDJkMw&feedId=58083&k=bd4d528a28b7b4846f66087bcb85fd272d8abe9c",
+        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-soft-hn-negro",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Soft HN - Negro",
     colour: "Negro",
@@ -20514,6 +20568,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=38925471638&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_101135401_0.jpg&feedId=89032&k=65fc0a87cac06029cf821efe171202a3c49eb9f2",
         sizes: ["Talla 8", "Talla 8.5"],
+      },
+      {
+        store: "ForumSport",
+        price: 31.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41868280201&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001040245-00-P-X-20241016160123.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODEwN3xpbWFnZS9qcGVnfGFEUTJMMmcyWmk4eE1qUXpORFEwT0RBeU16VTRNaTl0WldScFlYTmZNVEF3TVRBME1ESTBOVjh3TUY5UVgxZ3RNakF5TkRFd01UWXhOakF4TWpNdWFuQm58M2ZlZmI0MDI4ZmQwYzVhOGMyMjc1YWE2NjNjYzNiZDk1ZmM1N2NjOTc2MDgxNzQwZWU3Njk4ZTRmZWJlOTBjYw&feedId=58083&k=8ebfc52e003e02b34a6b176e8ee6efd60412e608",
+        sizes: ["9"],
       },
       {
         store: "FootStoreFR",
@@ -20562,15 +20625,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "11", price: 28.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134301-gants-de-gardien-uhlsport-soft-orange-fluo-blanc-noir" },
         ],
       },
-      {
-        store: "ForumSport",
-        price: 28.43,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38649102311&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001014065-00-P-X-20240819163637.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ0MHxpbWFnZS9qcGVnfGFEZ3lMMmd6TVM4eE1qTXhPVGMzTmpBM09Ua3dNaTl0WldScFlYTmZNVEF3TVRBeE5EQTJOVjh3TUY5UVgxZ3RNakF5TkRBNE1Ua3hOak0yTXpjdWFuQm58YWJlZWY4MTYxMGRkMDI4YzMzYTYyNTdlNmEwOTQ0N2Q5YzM4NmZiNzI3MmJlMDFhNmQxNDhiNGUyZjNiMGJhOA&feedId=58083&k=4497567c42ba3a9d2c31d83f088508dbb5543c58",
-        sizes: ["9", "10", "11"],
-      },
     ],
   },
   {
@@ -20589,6 +20643,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         sizes: ["Talla 9", "Talla 9.5"],
       },
       {
+        store: "ForumSport",
+        price: 28.43,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38649102311&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001014065-00-P-X-20240819163637.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ0MHxpbWFnZS9qcGVnfGFEZ3lMMmd6TVM4eE1qTXhPVGMzTmpBM09Ua3dNaTl0WldScFlYTmZNVEF3TVRBeE5EQTJOVjh3TUY5UVgxZ3RNakF5TkRBNE1Ua3hOak0yTXpjdWFuQm58YWJlZWY4MTYxMGRkMDI4YzMzYTYyNTdlNmEwOTQ0N2Q5YzM4NmZiNzI3MmJlMDFhNmQxNDhiNGUyZjNiMGJhOA&feedId=58083&k=4497567c42ba3a9d2c31d83f088508dbb5543c58",
+        sizes: ["9", "10", "11"],
+      },
+      {
         store: "FootStoreFR",
         price: 30.79,
         shipping: 7.99,
@@ -20600,7 +20663,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "uhlsport-guantes-de-portero-uhlsport-soft-resist-naranja",
+    id: "uhlsport-soft-resist-naranja",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Soft Resist - Naranja",
     colour: "Naranja",
@@ -20619,6 +20682,15 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "Talla 8.5", price: 26.31, url: "https://www.awin1.com/pclick.php?p=37923982044&a=3013769&m=65912" },
           { size: "Talla 9.5", price: 26.31, url: "https://www.awin1.com/pclick.php?p=40152187335&a=3013769&m=65912" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 24.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265333078&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000720353-00-P-X-20210414125901.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQyOXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneE5TOW9Zakl2TVRBd09URXlNamc1TlRRMk5UUXVhbkJufDQ4NGU0Yzc0Mzk4NmExZmQxYzhjZjMyMTk1NWQ1ZGEzYzUxODY0ZWNmYTczYTIxMDI5MWYwMDM5YzE4NTVhNjE&feedId=58083&k=a51c834a3e21cd97bb59a3d6ed51b6811a04fd89",
+        sizes: ["9", "9.5", "10.5"],
       },
       {
         store: "FootStoreFR",
@@ -20673,6 +20745,57 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
+    id: "uhlsport-speed-contact-soft-pro-negro",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Speed Contact Soft Pro - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40123662153&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000819684-00-P-X-20230118155205.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njg3NXxpbWFnZS9qcGVnfGFESmxMMmd5WlM4eE1USXhNelF5T0RjNE5URTRNaTl0WldScFlYTmZNVEF3TURneE9UWTRORjh3TUY5UVgxZ3RNakF5TXpBeE1UZ3hOVFV5TURVdWFuQm58MDAzYTRkOGNjNTgzY2NkNTlmYTY1YThiYzBkMmRlNDg0NTlhMDQxOWM1YjY4NGY3OGZlY2Y3Y2M5YmM4NjhlMw&feedId=58083&k=c2e50a8972c782db29bec93772af167387df55c5",
+        sizes: ["9.5", "10"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-speed-contact-supergrip",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Speed Contact Supergrip",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 101.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=33799911655&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817982-00-P-X-20220831155730.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY2NHxpbWFnZS9qcGVnfGFHRTNMMmhsTVM4eE1EZzVOak01TVRBeE1qTTRNaTl0WldScFlYTmZNVEF3TURneE56azRNbDh3TUY5UVgxZ3RNakF5TWpBNE16RXhOVFUzTXpBdWFuQm58OGYyMjRmYmU2NjgxMzg0NDhiNjI0NTczYTRjMTI1ZDMzODJlZTE2NjNiZDIyNzNmMDc5ZWI2ODEzOTlmYzFhMw&feedId=58083&k=4274e076e7f81e2ccc6d2fa0f6593f927db32a72",
+        sizes: ["10.5"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-speed-contact-supersoft-hn",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Speed Contact Supersoft Hn",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 41.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=33906321909&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817985-00-P-X-20220907145404.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzMyOHxpbWFnZS9qcGVnfGFEZGpMMmd4WVM4eE1Ea3dOekF6TmpBeU5EZzJNaTl0WldScFlYTmZNVEF3TURneE56azROVjh3TUY5UVgxZ3RNakF5TWpBNU1EY3hORFUwTURRdWFuQm58NTYwYzVmN2I4NzhmZWNjYjdkYzRhZTA2NjIyNWQ1N2QyZTM4ZTNkMzhlN2JlMzEyMTE0MGFhMmU5NGRkMmUwNQ&feedId=58083&k=f6d840ae2255dac190dab59a274765dd445cc408",
+        sizes: ["8.5", "9", "10.5"],
+      },
+    ],
+  },
+  {
     id: "uhlsport-guantes-de-portero-uhlsport-speed-contact-supersoft-negro",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Speed Contact Supersoft - Negro",
@@ -20717,6 +20840,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
+    id: "uhlsport-starter-resist-naranja",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Starter Resist - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 13.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39955488434&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914751-00-P-X-20230712123806.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYxOXxpbWFnZS9qcGVnfGFESTFMMmhqWmk4eE1UVXlNak0yTWpNM05qSXlNaTl0WldScFlYTmZNVEF3TURreE5EYzFNVjh3TUY5UVgxZ3RNakF5TXpBM01USXhNak00TURZdWFuQm58MWMzYzc4MmIwYTA1NTRlZDBkYjFhZmY3ZmFiMzA4MmI3ZjllMzNlODE0OWJmNjBmYzY3Y2FhZGU1N2QwZGE2Mw&feedId=58083&k=fadc9479cb6e88bcc2c50cb4ae838ed1c35a05d9",
+        sizes: ["11"],
+      },
+    ],
+  },
+  {
     id: "uhlsport-guantes-de-portero-uhlsport-starter-resist-naranja",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Starter Resist+ - Naranja",
@@ -20751,6 +20891,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
           { size: "7.5", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134501-gants-de-gardien-uhlsport-starter-resist-orange-fluo-blanc-noir" },
           { size: "8", price: 14.91, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101134501-gants-de-gardien-uhlsport-starter-resist-orange-fluo-blanc-noir" },
         ],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-super-resist-naranja",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Super Resist - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 55.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265348646&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914749-00-P-X-20230712123806.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzM3NHxpbWFnZS9qcGVnfGFESmpMMmczTmk4eE1UVXlNak0yTVRnMU1Ua3pOQzl0WldScFlYTmZNVEF3TURreE5EYzBPVjh3TUY5UVgxZ3RNakF5TXpBM01USXhNak00TURZdWFuQm58OGY1YWRmNzYzNTJiYTRlOGQzNmMxYThhMzk0ODJhZTg0YTk4NGJlOWYzM2Q0MTQ2OGQ2YWRhYzhiYzg0YTAzNg&feedId=58083&k=ece933fc5ce454f6bfcb13d245ee0a29e0e0cf08",
+        sizes: ["9"],
       },
     ],
   },
@@ -20807,223 +20964,36 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
-    id: "uhlsport-powerline-soft-flex-frame-negro",
+    id: "uhlsport-uhlsport-aquasoft",
     brand: "uhlsport",
-    model: "Powerline Soft Flex Frame - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 34.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36240860436&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914746-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE2OHxpbWFnZS9qcGVnfGFESXpMMmd5Wmk4eE1UVTRNakkzTXpBNU16WTJNaTl0WldScFlYTmZNVEF3TURreE5EYzBObDh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58Yzg5OTc4NjRjZWUxN2RkMDgxZGNiMGZkZmZhZTE2YzJkNzczNzYzMjM0ZmJmNjUwMzBhZjlmYTZiNmQ2YTc0Nw&feedId=58083&k=8b4a20606f388d5634f838db0b6ea8fb948e1d4e",
-        sizes: ["9.5"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-powerline-supergrip-negro",
-    brand: "uhlsport",
-    model: "Powerline Supergrip - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 125.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36089025675&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914741-00-P-X-20230712123806.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY1NXxpbWFnZS9qcGVnfGFEazNMMmd3WlM4eE1UVXlNak0yTURBNE1qUTJNaTl0WldScFlYTmZNVEF3TURreE5EYzBNVjh3TUY5UVgxZ3RNakF5TXpBM01USXhNak00TURZdWFuQm58Y2FkYzIzNWZiYWU1YjNiMzc5OTMzYzJkYTUyZTE5Mjc5ZjY5OWUzYTJiMTMyYjg0NmRhNDA3YmY5ZTAwMDBmZA&feedId=58083&k=59bfe7f9e69f24da428c33546bcd6b3622dfe724",
-        sizes: ["10"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-prediction-soft-flex-frame-marino",
-    brand: "uhlsport",
-    model: "Prediction Soft Flex Frame - Marino",
-    colour: "Marino",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 31.18,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38761049490&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001014060-00-P-X-20240902130544.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc3MXxpbWFnZS9qcGVnfGFHTmlMMmc0WVM4eE1qTTBORFF6TnpFME5UWXpNQzl0WldScFlYTmZNVEF3TVRBeE5EQTJNRjh3TUY5UVgxZ3RNakF5TkRBNU1ESXhNekExTkRRdWFuQm58M2ZiOTgyZTdmN2YwYWIwM2MyZWFiYTkxMDRlZTZiZGMxNTBmYmNiMjQxN2Q0MGQ1MzRlMWYwOTZmNTRhMTJlOA&feedId=58083&k=3097b6bbf92c4d4b262ced763f7c7d66d1ef4690",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-soft-advanced-azul",
-    brand: "uhlsport",
-    model: "Soft Advanced - Azul",
-    colour: "Azul",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45902798901&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000592234-00-P-X-20200213090442.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTI0MHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnME55OW9OelF2T1RReE5UQXlNRFkzTlRFd01pNXFjR2N8ZjhiY2M2ODE5OGI0ZGZiZjY5MzY4OGNlYTQ3MTYzMzA4M2ZjZDU1NDZhNDI1YTdjNjY3ZmMxNTliMWQ0N2RiMw&feedId=58083&k=c359fc6b0648e32b311be096195818d91ac82d62",
-        sizes: ["10.5"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-soft-hn-comp-blanco",
-    brand: "uhlsport",
-    model: "Soft Hn Comp - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 31.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42215937766&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068593-00-P-X-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc2OXxpbWFnZS9qcGVnfGFEWmpMMmd4T1M4eE1qZ3dNak0yTVRJMk1qRXhNQzl0WldScFlYTmZNVEF3TVRBMk9EVTVNMTh3TUY5UVgxZ3RNakF5TlRBek1UUXhOalUxTlRBdWFuQm58Mjc4NzA2MDU3ODBiOGVkZWZmZDE3ZTdmOWM3NTVhNDJmYTMxZjE5ZTM2OTg3YTYwYjU3MzY0NWU4Njc4MjJmYg&feedId=58083&k=8fda9e7c1d60c81a459d94ba10fdd75767eca707",
-        sizes: ["9", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-soft-hn-comp-blanco-2",
-    brand: "uhlsport",
-    model: "Soft Hn Comp - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 34.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44281365946&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001116178-00-P-X-20260309121628.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ4OHxpbWFnZS9qcGVnfGFEWXhMMmd6WVM4eE16WXlOalF3TURrMk5EWXpPQzl0WldScFlYTmZNVEF3TVRFeE5qRTNPRjh3TUY5UVgxZ3RNakF5TmpBek1Ea3hNakUyTWpndWFuQm58ZTMyMDcxM2U3ZTM4ZjBkMDkyNjEwYjRlM2E4YTMzZTRlMjcyN2FkNTYxZWU1NTY3MzYxMmNkNjIzODViMDJkMw&feedId=58083&k=bd4d528a28b7b4846f66087bcb85fd272d8abe9c",
-        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-soft-hn-negro",
-    brand: "uhlsport",
-    model: "Soft Hn - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 31.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41868280201&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001040245-00-P-X-20241016160123.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODEwN3xpbWFnZS9qcGVnfGFEUTJMMmcyWmk4eE1qUXpORFEwT0RBeU16VTRNaTl0WldScFlYTmZNVEF3TVRBME1ESTBOVjh3TUY5UVgxZ3RNakF5TkRFd01UWXhOakF4TWpNdWFuQm58M2ZlZmI0MDI4ZmQwYzVhOGMyMjc1YWE2NjNjYzNiZDk1ZmM1N2NjOTc2MDgxNzQwZWU3Njk4ZTRmZWJlOTBjYw&feedId=58083&k=8ebfc52e003e02b34a6b176e8ee6efd60412e608",
-        sizes: ["9"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-soft-resist-naranja",
-    brand: "uhlsport",
-    model: "Soft Resist - Naranja",
-    colour: "Naranja",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 24.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265333078&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000720353-00-P-X-20210414125901.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQyOXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneE5TOW9Zakl2TVRBd09URXlNamc1TlRRMk5UUXVhbkJufDQ4NGU0Yzc0Mzk4NmExZmQxYzhjZjMyMTk1NWQ1ZGEzYzUxODY0ZWNmYTczYTIxMDI5MWYwMDM5YzE4NTVhNjE&feedId=58083&k=a51c834a3e21cd97bb59a3d6ed51b6811a04fd89",
-        sizes: ["9", "9.5", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-speed-contact-soft-pro-negro",
-    brand: "uhlsport",
-    model: "Speed Contact Soft Pro - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 20.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40123662153&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000819684-00-P-X-20230118155205.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njg3NXxpbWFnZS9qcGVnfGFESmxMMmd5WlM4eE1USXhNelF5T0RjNE5URTRNaTl0WldScFlYTmZNVEF3TURneE9UWTRORjh3TUY5UVgxZ3RNakF5TXpBeE1UZ3hOVFV5TURVdWFuQm58MDAzYTRkOGNjNTgzY2NkNTlmYTY1YThiYzBkMmRlNDg0NTlhMDQxOWM1YjY4NGY3OGZlY2Y3Y2M5YmM4NjhlMw&feedId=58083&k=c2e50a8972c782db29bec93772af167387df55c5",
-        sizes: ["9.5", "10"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-speed-contact-supergrip",
-    brand: "uhlsport",
-    model: "Speed Contact Supergrip",
+    model: "Guantes de portero uhlsport Uhlsport Aquasoft",
     colour: "N/D",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 101.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=33799911655&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817982-00-P-X-20220831155730.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY2NHxpbWFnZS9qcGVnfGFHRTNMMmhsTVM4eE1EZzVOak01TVRBeE1qTTRNaTl0WldScFlYTmZNVEF3TURneE56azRNbDh3TUY5UVgxZ3RNakF5TWpBNE16RXhOVFUzTXpBdWFuQm58OGYyMjRmYmU2NjgxMzg0NDhiNjI0NTczYTRjMTI1ZDMzODJlZTE2NjNiZDIyNzNmMDc5ZWI2ODEzOTlmYzFhMw&feedId=58083&k=4274e076e7f81e2ccc6d2fa0f6593f927db32a72",
-        sizes: ["10.5"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-speed-contact-supersoft-hn",
-    brand: "uhlsport",
-    model: "Speed Contact Supersoft Hn",
-    colour: "N/D",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 41.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=33906321909&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817985-00-P-X-20220907145404.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzMyOHxpbWFnZS9qcGVnfGFEZGpMMmd4WVM4eE1Ea3dOekF6TmpBeU5EZzJNaTl0WldScFlYTmZNVEF3TURneE56azROVjh3TUY5UVgxZ3RNakF5TWpBNU1EY3hORFUwTURRdWFuQm58NTYwYzVmN2I4NzhmZWNjYjdkYzRhZTA2NjIyNWQ1N2QyZTM4ZTNkMzhlN2JlMzEyMTE0MGFhMmU5NGRkMmUwNQ&feedId=58083&k=f6d840ae2255dac190dab59a274765dd445cc408",
-        sizes: ["8.5", "9", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-starter-resist-naranja",
-    brand: "uhlsport",
-    model: "Starter Resist - Naranja",
-    colour: "Naranja",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 13.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39955488434&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914751-00-P-X-20230712123806.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYxOXxpbWFnZS9qcGVnfGFESTFMMmhqWmk4eE1UVXlNak0yTWpNM05qSXlNaTl0WldScFlYTmZNVEF3TURreE5EYzFNVjh3TUY5UVgxZ3RNakF5TXpBM01USXhNak00TURZdWFuQm58MWMzYzc4MmIwYTA1NTRlZDBkYjFhZmY3ZmFiMzA4MmI3ZjllMzNlODE0OWJmNjBmYzY3Y2FhZGU1N2QwZGE2Mw&feedId=58083&k=fadc9479cb6e88bcc2c50cb4ae838ed1c35a05d9",
-        sizes: ["11"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-super-resist-naranja",
-    brand: "uhlsport",
-    model: "Super Resist - Naranja",
-    colour: "Naranja",
     offers: [
       {
         store: "ForumSport",
         price: 55.99,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265348646&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914749-00-P-X-20230712123806.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzM3NHxpbWFnZS9qcGVnfGFESmpMMmczTmk4eE1UVXlNak0yTVRnMU1Ua3pOQzl0WldScFlYTmZNVEF3TURreE5EYzBPVjh3TUY5UVgxZ3RNakF5TXpBM01USXhNak00TURZdWFuQm58OGY1YWRmNzYzNTJiYTRlOGQzNmMxYThhMzk0ODJhZTg0YTk4NGJlOWYzM2Q0MTQ2OGQ2YWRhYzhiYzg0YTAzNg&feedId=58083&k=ece933fc5ce454f6bfcb13d245ee0a29e0e0cf08",
-        sizes: ["9"],
+        url: "https://www.awin1.com/pclick.php?p=39265336481&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817986-00-P-X-20221006163127.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMzM3xpbWFnZS9qcGVnfGFEZzFMMmc1WkM4eE1EazJNak16TURZeE5UZ3pPQzl0WldScFlYTmZNVEF3TURneE56azRObDh3TUY5UVgxZ3RNakF5TWpFd01EWXhOak14TWpjdWFuQm58NWQxNjhiNTVlMzY5OGViY2UxZTE1MTNiOWZhZDNjNjRkMDlmZjZhNzQ5ZDgzNWQwOGJmNzRlMDc1N2Y5M2Q2YQ&feedId=58083&k=ce983b6de4adb07cbe2d195692feb234f7425d53",
+        sizes: ["8.5", "9.5", "10", "10.5"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-uhlsport-super-resist-hn",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Uhlsport Super Resist Hn",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 48.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40123662118&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817987-00-P-X-20221006163127.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU5M3xpbWFnZS9qcGVnfGFHSmxMMmhtTWk4eE1EazJNak16TVRBd09UQTFOQzl0WldScFlYTmZNVEF3TURneE56azROMTh3TUY5UVgxZ3RNakF5TWpFd01EWXhOak14TWpjdWFuQm58YjYzMzZlMmFhMzhmNThkMTFkMWM4ZmI4NzdlNzEwYTQ4ZmU1MTAwZDY0MTBkZmY2Y2RkNDZhZWQ1OWYzNDc5YQ&feedId=58083&k=e654191cfb6eedd95d992db719cc7b9841f1ffb5",
+        sizes: ["8.5", "10"],
       },
     ],
   },
@@ -21059,40 +21029,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43863070694&a=3013769&m=121584",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.fr%2Fuhlsport-1-768_1024_100-7769534_1.jpg&feedId=112013&k=1fd4942eb7214dc72e8523b0a5fed6e03ee0a104",
         sizes: ["7", "10", "11"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-uhlsport-aquasoft",
-    brand: "uhlsport",
-    model: "Uhlsport Aquasoft",
-    colour: "N/D",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 55.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265336481&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817986-00-P-X-20221006163127.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMzM3xpbWFnZS9qcGVnfGFEZzFMMmc1WkM4eE1EazJNak16TURZeE5UZ3pPQzl0WldScFlYTmZNVEF3TURneE56azRObDh3TUY5UVgxZ3RNakF5TWpFd01EWXhOak14TWpjdWFuQm58NWQxNjhiNTVlMzY5OGViY2UxZTE1MTNiOWZhZDNjNjRkMDlmZjZhNzQ5ZDgzNWQwOGJmNzRlMDc1N2Y5M2Q2YQ&feedId=58083&k=ce983b6de4adb07cbe2d195692feb234f7425d53",
-        sizes: ["8.5", "9.5", "10", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-uhlsport-super-resist-hn",
-    brand: "uhlsport",
-    model: "Uhlsport Super Resist Hn",
-    colour: "N/D",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 48.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40123662118&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817987-00-P-X-20221006163127.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU5M3xpbWFnZS9qcGVnfGFHSmxMMmhtTWk4eE1EazJNak16TVRBd09UQTFOQzl0WldScFlYTmZNVEF3TURneE56azROMTh3TUY5UVgxZ3RNakF5TWpFd01EWXhOak14TWpjdWFuQm58YjYzMzZlMmFhMzhmNThkMTFkMWM4ZmI4NzdlNzEwYTQ4ZmU1MTAwZDY0MTBkZmY2Y2RkNDZhZWQ1OWYzNDc5YQ&feedId=58083&k=e654191cfb6eedd95d992db719cc7b9841f1ffb5",
-        sizes: ["8.5", "10"],
       },
     ],
   },

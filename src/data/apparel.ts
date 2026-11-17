@@ -1733,6 +1733,42 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-bolsa-real-madrid-25-26",
+    brand: "Adidas",
+    model: "Bolsa Adidas Real Madrid 25/26",
+    colour: "N/D",
+    type: "bag",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42275252204&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048519-00-P-X-20250513145107.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mjk2OXxpbWFnZS9qcGVnfGFEZGpMMmd3TUM4eE1qa3lPREl6TURjNE5UQTFOQzl0WldScFlYTmZNVEF3TVRBME9EVXhPVjh3TUY5UVgxZ3RNakF5TlRBMU1UTXhORFV4TURjdWFuQm58OGRmMDViZmE1NjM2MmI4ZDU0YjcyOTZkMDljYWZjMjYxMTVkMzU5ZDIxNjBlYjJjYjEzN2I2ZWU5ZWY0OTQ0MQ&feedId=58083&k=3300efd264c807c5d382da4e9bdf102ff9764125",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "adidas-bolsa-tiro-23-league-rojo",
+    brand: "Adidas",
+    model: "Bolsa Adidas Tiro 23 League - Rojo",
+    colour: "Rojo",
+    type: "bag",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 38.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46367199440&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000897721-00-P-X-20230202154711.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTEwMHxpbWFnZS9qcGVnfGFHWTNMMmcxT0M4eE1USTBOalkwTURZeU56YzBNaTl0WldScFlYTmZNVEF3TURnNU56Y3lNVjh3TUY5UVgxZ3RNakF5TXpBeU1ESXhOVFEzTVRFdWFuQm58NTJjM2E5OTk5ZTRlOWEwZWIxZGFlOTQ0ODQwZjc2ZTU4OTA2MjBhNjlkNGM4Njc1NmFjN2I3NTk2MjJhNmE0ZQ&feedId=58083&k=78fac29c23adc3ca4337326ea0a2f445f7ff45f0",
+        sizes: [],
+      },
+    ],
+  },
+  {
     id: "adidas-bolsa-de-deporte-adidas-defender-duffle-noir",
     brand: "Adidas",
     model: "Bolsa de deporte adidas Defender Duffle - Noir",
@@ -2198,42 +2234,6 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fks8130-sac-de-sport-real-madrid-2026-27-aurivy-ivory-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ks8130_1_hardware_photography_front_center_view_white.webp",
         sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "adidas-bolsa-real-madrid-25-26",
-    brand: "Adidas",
-    model: "Bolsa Real Madrid 25/26",
-    colour: "N/D",
-    type: "bag",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42275252204&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048519-00-P-X-20250513145107.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mjk2OXxpbWFnZS9qcGVnfGFEZGpMMmd3TUM4eE1qa3lPREl6TURjNE5UQTFOQzl0WldScFlYTmZNVEF3TVRBME9EVXhPVjh3TUY5UVgxZ3RNakF5TlRBMU1UTXhORFV4TURjdWFuQm58OGRmMDViZmE1NjM2MmI4ZDU0YjcyOTZkMDljYWZjMjYxMTVkMzU5ZDIxNjBlYjJjYjEzN2I2ZWU5ZWY0OTQ0MQ&feedId=58083&k=3300efd264c807c5d382da4e9bdf102ff9764125",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "adidas-bolsa-tiro-23-league-rojo",
-    brand: "Adidas",
-    model: "Bolsa Tiro 23 League - Rojo",
-    colour: "Rojo",
-    type: "bag",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 38.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46367199440&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000897721-00-P-X-20230202154711.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTEwMHxpbWFnZS9qcGVnfGFHWTNMMmcxT0M4eE1USTBOalkwTURZeU56YzBNaTl0WldScFlYTmZNVEF3TURnNU56Y3lNVjh3TUY5UVgxZ3RNakF5TXpBeU1ESXhOVFEzTVRFdWFuQm58NTJjM2E5OTk5ZTRlOWEwZWIxZGFlOTQ0ODQwZjc2ZTU4OTA2MjBhNjlkNGM4Njc1NmFjN2I3NTk2MjJhNmE0ZQ&feedId=58083&k=78fac29c23adc3ca4337326ea0a2f445f7ff45f0",
-        sizes: [],
       },
     ],
   },
@@ -7333,6 +7333,24 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-camiseta-core18-polo-azul",
+    brand: "Adidas",
+    model: "Camiseta Adidas Core18 Polo - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.29,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41164510563&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000486072-00-S-M-20181121082107.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyNjE3NDF8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZ3dZUzlvTkdVdk9EazFOVFl6T0RVeE16WTVOQzVxY0djfGFiZjgwNzUzZWY2OWFjMDYzMGNiNjA1N2U1Mzg2ODYyYWIzNTA4YTliZjA4YjFlOGMxNmI5YzdmY2VkMTg4YTY&feedId=58083&k=5e3da6bcc50f4cb8209aa5980f7d0f7f5cffd795",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
     id: "adidas-camiseta-adidas-de-training-tiro-de-colombia-2026-blanco",
     brand: "Adidas",
     model: "Camiseta adidas de Training Tiro de Colombia 2026 - Blanco",
@@ -7468,6 +7486,24 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-camiseta-entrada-22-marino",
+    brand: "Adidas",
+    model: "Camiseta Adidas Entrada 22 - Marino",
+    colour: "Marino",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 15.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265336223&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000808585-00-S-M-20220202162610.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDg1N3xpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnNU9DOW9NalF2TVRBMU56azFNemcyTURneE5UZ3VhbkJufDFkNTE1YzBhOTRkNGEwYTczM2Y4M2ZkMzNiYjk3ZjM0OGZlODhlOGVmOWVmNTRhMDI1Y2EwYjdkNjhkN2RiNWU&feedId=58083&k=36d664069cba5ce2855d9cd1e233b181da9ae5d7",
+        sizes: ["S", "XL"],
+      },
+    ],
+  },
+  {
     id: "adidas-camiseta-adidas-entrada-22-negro",
     brand: "Adidas",
     model: "Camiseta adidas Entrada 22 - Negro",
@@ -7482,6 +7518,15 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=37923917066&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fc%2Fhc0448_app_photo_front_white_1645106344.jpg&feedId=89032&k=b0eec87349d15638c274b51cc29c7b585011359b",
         sizes: ["S", "M", "2XL"],
+      },
+      {
+        store: "ForumSport",
+        price: 19.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42027483652&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000808694-00-S-M-20220202162610.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI1MHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMU5pOW9Oall2TVRBMU56azFOalkyTWpRM09UZ3VhbkJufDE5YWU0YmY4NmNlZjU3ZjdlODI2NmRlNDdjNGI2YTFjYjY1ZmE3NzUwYzg5NmRjN2U5N2MzODQ2ZjQ0ZmQ5MzA&feedId=58083&k=d01f114ec32b598be2c3da5ee9e82b08cf9d9923",
+        sizes: ["M"],
       },
       {
         store: "FootStoreFR",
@@ -7784,6 +7829,222 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-camiseta-entrada26-azul",
+    brand: "Adidas",
+    model: "Camiseta Adidas Entrada26 - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46664443199&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111918-00-S-M-20260209160833.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgyMnxpbWFnZS9qcGVnfGFERTRMMmhqWXk4eE16VTJOalF4TlRZMk56SXpNQzl0WldScFlYTmZNVEF3TVRFeE1Ua3hPRjh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOakE0TXpNdWFuQm58ZDUxZTZmZWZhZWFlOGI0OTVhOWJmNGVjOTg0NzBkNDg5NDc5YjE2YjgxNjczOWUyMjIzMGZlOTkwNWE4MDMxNg&feedId=58083&k=1c731685cee7287feb663bb347f0c3bba7354a53",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-entrada26-blanco",
+    brand: "Adidas",
+    model: "Camiseta Adidas Entrada26 - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378916&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111919-00-S-M-20260209160833.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk5N3xpbWFnZS9qcGVnfGFHSXlMMmcxWWk4eE16VTJOalF4TmpnME5qZzNPQzl0WldScFlYTmZNVEF3TVRFeE1Ua3hPVjh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOakE0TXpNdWFuQm58NGY0MDYxZDE2NTBiM2IxNDgyZmFmMWI1NDkxMjQ2ODBjZDUyZGM4OThhMmJjNjI2MWRlYzM3Njc4ZDYzYTk4NA&feedId=58083&k=968fe33053884c7fccd7ab46844c7ca5d2b0241c",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-entrada26-blanco-2",
+    brand: "Adidas",
+    model: "Camiseta Adidas Entrada26 - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249382762&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134922-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM5OXxpbWFnZS9qcGVnfGFHWTJMMmd6T1M4eE16Z3pOamMxT1RNek5EazBNaTl0WldScFlYTmZNVEF3TVRFek5Ea3lNbDh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58NmM0MzBkZDgwMzZlYjc4Njk4MDVjNjljNTE2NGUwNzM3MTI0OGIxYjA2ZmQwOGJiODczMjBmNjllZDIxOTNiMA&feedId=58083&k=ea9e488c77e30849664f043e22bf211db79337c3",
+        sizes: ["XS", "S", "M", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-entrada26-marino",
+    brand: "Adidas",
+    model: "Camiseta Adidas Entrada26 - Marino",
+    colour: "Marino",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383391&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135020-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTUyNXxpbWFnZS9qcGVnfGFERXhMMmcwTVM4eE16Z3pOamcwTnpNeE56QXlNaTl0WldScFlYTmZNVEF3TVRFek5UQXlNRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58MWU3M2E3ZTFkM2JkNmI4NGJmMTE5MDU0NjQ1ZTk3M2JhYTNlMzE5NjE2ZGFjZjNmNzdiNmI4Mjc0Y2RlYzlkMw&feedId=58083&k=a3b01a918d8f21519a51f2a8be1c0660b0bb0c77",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-entrada26-marino-2",
+    brand: "Adidas",
+    model: "Camiseta Adidas Entrada26 - Marino",
+    colour: "Marino",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383561&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134921-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODIyN3xpbWFnZS9qcGVnfGFEUTBMMmhoTnk4eE16Z3pOakl5TVRBeU1qSXpPQzl0WldScFlYTmZNVEF3TVRFek5Ea3lNVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MDJhN2FlZjdkYjJlMjkwMzFhMjVmYTljMDJmYzVjYzFlN2E0MTJlMjEzNzM4MmMzZGZhMmZiOWNkYWNhNmVhYg&feedId=58083&k=7fc7a7570ae2dabefa55755ad2c3e5f2a38fca3e",
+        sizes: ["XXS", "XS", "S", "M"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-entrada26-negro",
+    brand: "Adidas",
+    model: "Camiseta Adidas Entrada26 - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378860&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111917-00-S-M-20260209160833.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgxN3xpbWFnZS9qcGVnfGFEWTVMMmhpWmk4eE16VTJOalF4TkRNeU16YzBNaTl0WldScFlYTmZNVEF3TVRFeE1Ua3hOMTh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOakE0TXpNdWFuQm58ODZlNDc2NDYzMDVmZGRjOGU5NWI4YTEwM2JhN2NkODlkNDhiMTdjZTIzM2M5MjA5OTlkNWQ1NzQxN2E3MWRhNA&feedId=58083&k=e15e936d7a7c3f8fb531cec3bfe31db0b7e141d4",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-entrada26-negro-2",
+    brand: "Adidas",
+    model: "Camiseta Adidas Entrada26 - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383291&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134920-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDcyNnxpbWFnZS9qcGVnfGFHWTBMMmhqWmk4eE16Z3pOakl4T1RNeE9ETXdNaTl0WldScFlYTmZNVEF3TVRFek5Ea3lNRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58YTQ2NzQwYzAwODk1MzNmZTM2OTdjZDBhNzc3M2MyMzdkMWUxOGY1YjdlNzNkNGYxYmIxNjYwNWNlYjM2ODYyNg&feedId=58083&k=36cacd464d6c639de630ee38260c26c88aa8a6a4",
+        sizes: ["XS", "S", "M", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-entrada26-rojo",
+    brand: "Adidas",
+    model: "Camiseta Adidas Entrada26 - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378914&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111916-00-S-M-20260209160833.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk3MHxpbWFnZS9qcGVnfGFETTNMMmd3Tmk4eE16VTJOalF4TWpjMU1EZzNPQzl0WldScFlYTmZNVEF3TVRFeE1Ua3hObDh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOakE0TXpNdWFuQm58ODVlNDg5MDk5YTQ5YTFkYTY1ODFmYTEyY2Y5Zjc3YmQ1ZDNlMjZiMDI2ZjQxYmIxODNiZTlmMjRlODcxMzRmNg&feedId=58083&k=d8566a5497c84ec97d563c0a09bb09a16385e7a5",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-entrada26-rojo-2",
+    brand: "Adidas",
+    model: "Camiseta Adidas Entrada26 - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249382828&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134923-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc1NnxpbWFnZS9qcGVnfGFHTTJMMmhoTXk4eE16Z3pOamMyTURZM09EUXpNQzl0WldScFlYTmZNVEF3TVRFek5Ea3lNMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58OTA3ZjAxNDYwNjcwMTkxN2ZlNjRmMzZkMThjZDVjMTkyNzA0YzExMmI5MTk4OGE2N2Y1MTBmY2I3MjkxZTBjNQ&feedId=58083&k=ef92599c431f7a68556ce9dd783a5736d119f75b",
+        sizes: ["XS", "S", "M", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-entrada26-verde",
+    brand: "Adidas",
+    model: "Camiseta Adidas Entrada26 - Verde",
+    colour: "Verde",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378810&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111915-00-S-M-20260209160833.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUxMnxpbWFnZS9qcGVnfGFEVTBMMmc0T0M4eE16VTJOalF4TVRBeE5ERTNOQzl0WldScFlYTmZNVEF3TVRFeE1Ua3hOVjh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOakE0TXpNdWFuQm58YjgxNTQ5NDYzYjgxNzViN2NlYjc2MjhhMjNiZDNjNjdkMTgwZmYyMzMzZmUyYjc3NjYwMmUzNjA4YTNhZWEzMg&feedId=58083&k=be9ee5bb186085db7221dee66e93adaf0b59ceaf",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-espana-mundial-1994-primera-equipacion-retro",
+    brand: "Adidas",
+    model: "Camiseta Adidas Espana Mundial 1994 Primera Equipacion Retro",
+    colour: "N/D",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 75.45,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45183974338&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135272-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY5NHxpbWFnZS9qcGVnfGFESTFMMmd6WkM4eE16Z3pOalV4TXpjM01UVTFNQzl0WldScFlYTmZNVEF3TVRFek5USTNNbDh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MTBkNDYxMzEyYmZjNWZkNTVjY2FlODMwOTNkNjI1OTA3YTc1YjM3Y2VhZWZlNTI4NTNiMDVlNDJhNGRkZWUyNQ&feedId=58083&k=c9daf64b175bb5dee4d1fb249a09fac9463c9712",
+        sizes: ["S", "M", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-estro-19-amarillo",
+    brand: "Adidas",
+    model: "Camiseta Adidas Estro 19 - Amarillo",
+    colour: "Amarillo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 12.94,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265329383&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000545615-00-P-X-20190827170858.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDk1NHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneU5TOW9OelF2T1RFNE5UY3hOVFF5TVRJeE5DNXFjR2N8NzVhNjJiZTU3OTdjZTUyOWVhMmViMjRkMmUwNzYxMDI5ZmE2ODRjMWJiNjEzOTRlNTEwZjc2NmU4ZWVjNWQ5OQ&feedId=58083&k=6e5dd9ecc84883db6a9a3b1bb96a74c9b979a20d",
+        sizes: ["S", "L"],
+      },
+    ],
+  },
+  {
     id: "adidas-camiseta-adidas-f50-graphic-blanco",
     brand: "Adidas",
     model: "Camiseta adidas F50 Graphic - Blanco",
@@ -7846,6 +8107,42 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-camiseta-fortore23-azul",
+    brand: "Adidas",
+    model: "Camiseta Adidas Fortore23 - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 24.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46317552791&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000932161-00-S-M-20240123120654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzcxNXxpbWFnZS9qcGVnfGFHTTBMMmcwWkM4eE1Ua3pNRE01TkRZMU5qYzVPQzl0WldScFlYTmZNVEF3TURrek1qRTJNVjh3TUY5VFgwMHRNakF5TkRBeE1qTXhNakEyTlRRdWFuQm58ZWUwMTg3MDU5Yjc1M2IyZDg4NjMwYzYyNzQ1MWU2ZWNkYTAzM2ExMjAzYzRjNzVhYjVhM2RmZTk5OTY5MzM1Zg&feedId=58083&k=856f294be8e858f411f3e206cb54089fc13ef444",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-fortore23-negro",
+    brand: "Adidas",
+    model: "Camiseta Adidas Fortore23 - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.42,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41845232277&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000980902-00-S-M-20240117155929.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTA3OXxpbWFnZS9qcGVnfGFEWmpMMmhsWlM4eE1Ua3hPRE0yTmprek16QXlNaTl0WldScFlYTmZNVEF3TURrNE1Ea3dNbDh3TUY5VFgwMHRNakF5TkRBeE1UY3hOVFU1TWprdWFuQm58NDc2ZDRhZjAyMzBiNmQ2YjIwMWY5YWUzOWNjOTgzYTlkNjk5MTg3YzVmNWUzOWRmM2MwMmNiZmJkMzM0Zjc2Yw&feedId=58083&k=d626d7ab0ff40b350e1f3b56821be12f74d9b737",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
     id: "adidas-camiseta-adidas-graphic-football-category-blanco",
     brand: "Adidas",
     model: "Camiseta adidas Graphic Football Category - Blanco",
@@ -7896,6 +8193,96 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45517537381&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F07c1e0b1d19e414f8876d1bf486dec14_9366%2FCamiseta_Graphic_Predator_Negro_KS2562_23_model.jpg&feedId=95017&k=9dc5ca08d7171b8e3fa89768dc7655c8d362e0f6",
         sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-hooped26-blanco",
+    brand: "Adidas",
+    model: "Camiseta Adidas Hooped26 - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383250&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135009-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk2NXxpbWFnZS9qcGVnfGFEbGlMMmcyWmk4eE16Z3pOakkyTWprNU9EQTBOaTl0WldScFlYTmZNVEF3TVRFek5UQXdPVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58YzMwOTc1NDc5NDYxZjY1YzRiNDQyZTMyOTNhMzlkMDNjMDBmNmQwNjE4MTAyY2E1MGExOTU5OGVlYWZiYzFjMQ&feedId=58083&k=15e077478c746033e4019ab1c1343d654d771e2f",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-hooped26-blanco-2",
+    brand: "Adidas",
+    model: "Camiseta Adidas Hooped26 - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383580&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135010-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE0MnxpbWFnZS9qcGVnfGFHUmlMMmhrT0M4eE16Z3pOakkyTXprME9ETXhPQzl0WldScFlYTmZNVEF3TVRFek5UQXhNRjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58ZDQ5OWRkNzQwNjVmNGU4MzUzMTA5NzhmNGZhNTViNzc5NzU4NjQzZDAzNTgwYWVmY2NiMjAzZDM5NWE2MGE1Ng&feedId=58083&k=80f5059027856f91e6d99e296e63aad67f55fcb8",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-hooped26-blanco-3",
+    brand: "Adidas",
+    model: "Camiseta Adidas Hooped26 - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383708&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135008-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg4M3xpbWFnZS9qcGVnfGFEZzBMMmd3TVM4eE16Z3pOakkyTVRneE9ETTVPQzl0WldScFlYTmZNVEF3TVRFek5UQXdPRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58OTQzOWJmMWM5ZGE1NGFiY2U5NzNkOGZlYmFhYTlkMDYwZjQ4ODdmMjJkZDhiYjFhNTQ1Mjc5ZTgyZjJhYzY3Yw&feedId=58083&k=e57e0809aa8fd891697d6157f999880e51e39248",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-hooped26-blanco-4",
+    brand: "Adidas",
+    model: "Camiseta Adidas Hooped26 - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249384506&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135218-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjM3NHxpbWFnZS9qcGVnfGFEZzRMMmhoT1M4eE16Z3pOamc0TmprNU9UQTNNQzl0WldScFlYTmZNVEF3TVRFek5USXhPRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58ODI2Mzk2MTBiNzJlNzIxMDk0NzE3ZDk5ZGM5YzA2OGViMWU2YzRjNWIyZTE4YzdjOTM3YzA0MzEwMTRmMmVmOA&feedId=58083&k=7aececd586b77679da9b2cc2777f8801a753279c",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-hooped26-gris",
+    brand: "Adidas",
+    model: "Camiseta Adidas Hooped26 - Gris",
+    colour: "Gris",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383652&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135011-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMyN3xpbWFnZS9qcGVnfGFEVmlMMmhqTnk4eE16Z3pOakkyTkRZMk9USXhOQzl0WldScFlYTmZNVEF3TVRFek5UQXhNVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MDgxOGZmYzEzMmY2YTAwYWRjNGM3YTYwNDg1ZTA1YzhkYjM5ZmMyZjk0NDBlNWNjMWQ3ZDY2MjdmYzJmYTA2Zg&feedId=58083&k=eb51f99d7ca2f87167852be99b4d1c8b8e57454c",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
     ],
   },
@@ -8223,6 +8610,420 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fht5186-t-shirt-adidas-pogba-icon-graphic-blanc",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_ht5186_2_apparel_photography_front_center_view_white.jpg",
         sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-saquadra-25-azul",
+    brand: "Adidas",
+    model: "Camiseta Adidas Saquadra 25 - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46668727215&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052192-00-S-M-20250305155332.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjgyOXxpbWFnZS9qcGVnfGFEVmhMMmd6TWk4eE1qYzRNREEzT1RRME9EQTVOQzl0WldScFlYTmZNVEF3TVRBMU1qRTVNbDh3TUY5VFgwMHRNakF5TlRBek1EVXhOVFV6TXpJdWFuQm58MGFjZTE3MGE0ZGQxMGZiMGFiYzQ3NDMwODQ3NDQyNDhkOTNiNmQ1NWZlNTI3NTI5MGRlYzMzYTU1N2ZiZWJlNw&feedId=58083&k=47fa9cb32c975574cf2b64df1a6de4254a6a0cab",
+        sizes: ["M", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-scuadra25-blanco",
+    brand: "Adidas",
+    model: "Camiseta Adidas Scuadra25 - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46424983329&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052194-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ0NXxpbWFnZS9qcGVnfGFEVXdMMmc1TlM4eE1qZ3lOemN3TXpReE1EY3hPQzl0WldScFlYTmZNVEF3TVRBMU1qRTVORjh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58NTk2YjhlYmM1Y2I0ZDhjNjhjNjYyZjg1NDJkYWQ2YjJjMzZhNzNhNDMzOWVhZTVjNDkyYzFiNjc5YzM3Y2Q3Ng&feedId=58083&k=440764735975bba439ef602b049c92f81688e796",
+        sizes: ["S", "M", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squa25-granate",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squa25 - Granate",
+    colour: "Granate",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370161&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052334-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM5OHxpbWFnZS9qcGVnfGFEQmxMMmczWmk4eE1qZ3lOemM0TkRVME5ESTROaTl0WldScFlYTmZNVEF3TVRBMU1qTXpORjh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58NzExODg4NGVkYjYzNjk0ODAwYTRmMTViYzk3YjNjNzMwYWZiZjI1YmZiMmY2YzBmZDU2YjM1Mzk2NmMyYjJkMA&feedId=58083&k=02eac86515b9f9df4eebd208a58a22ba28ae298d",
+        sizes: ["M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra-25-azul",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra 25 - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46353197855&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053147-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYxNXxpbWFnZS9qcGVnfGFEVXlMMmcxTnk4eE1qZ3lPRFExTmpZeE5UazJOaTl0WldScFlYTmZNVEF3TVRBMU16RTBOMTh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58M2ZmODRiNGU4YWFhZThjY2QyYzNmNTgxMzYzYmM0NWQ1YzQ1NzQwMDc3MGY5ZWQ1ZTdjYTllYzA5ZTFhOGUzZA&feedId=58083&k=b75452846b5bfe86695a17c469206f3792680fe1",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra-25-azul-2",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra 25 - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46527255303&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052206-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTAxNXxpbWFnZS9qcGVnfGFHSTRMMmd5WWk4eE1qZ3lOemMxTVRVME5qa3hNQzl0WldScFlYTmZNVEF3TVRBMU1qSXdObDh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58NmUwZjBkZGNkMWZmMzY5NzFmZjc5NzhhM2JiNjhiMzdmMDBmYjRlYzA4YWY0NzM0ODUzYzY1NjcxZDgyYTAxMA&feedId=58083&k=353f294307dce71d6356ef4881674f264cd0e4e4",
+        sizes: ["XS", "S", "M", "L", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra-25-blanco",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra 25 - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249369986&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052198-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTU5MXxpbWFnZS9qcGVnfGFEQXlMMmd6TWk4eE1qZ3lOemMwTXpJMU5qWXdOaTl0WldScFlYTmZNVEF3TVRBMU1qRTVPRjh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58YjJlNmYzOGUyOWE0ZmM5OGM2OTY4N2FmNGU2OWRlOWI1ZTk2ZDgyMTQzMTg2Y2U2NTI2MGY0MmFiNzYyMWNhZQ&feedId=58083&k=fce1fe1c91827e08189c05be3738491a5b346f48",
+        sizes: ["S", "M", "L", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra-25-gris",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra 25 - Gris",
+    colour: "Gris",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370185&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052210-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTIwNnxpbWFnZS9qcGVnfGFEQXdMMmhtT0M4eE1qZ3lOemMxTkRJNU9UUXlNaTl0WldScFlYTmZNVEF3TVRBMU1qSXhNRjh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58YTVhM2JhMTQ3OWJiYjhmOWJkZWRiMjY4YTgyZWM5OTFlZDYyNWMyZmNmMjJkMzcwYzNlYzYxYjc4YzY2YzIxMw&feedId=58083&k=e36f32aa9c94fd69f7c5ee64ad65ed2078e7c85e",
+        sizes: ["XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra-25-negro",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra 25 - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370096&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052204-00-S-M-20250217203221.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTU1OXxpbWFnZS9qcGVnfGFEQXdMMmhoTnk4eE1qYzBPRGMyTnpreU1ERTFPQzl0WldScFlYTmZNVEF3TVRBMU1qSXdORjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpFdWFuQm58YWYwODE4YmMzNjk1NzBiNDcyNDY0MjcyODk3YTExYzc0YWJiOTE1YmZmZjk3ODY2MjViYmVjZDA0YzA1MWYxYQ&feedId=58083&k=0929fb321197d586138d5d6bb918ee8afc28650c",
+        sizes: ["M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra25-amarillo",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra25 - Amarillo",
+    colour: "Amarillo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370155&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052202-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzM1NHxpbWFnZS9qcGVnfGFESXlMMmcxWkM4eE1qZ3dNakE1TkRjeU56RTVPQzl0WldScFlYTmZNVEF3TVRBMU1qSXdNbDh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58MjMwMDhiM2ZiMzNmMTJkNWJmNzFjOTU0MTNmMGE4NzFhY2I5OGJiYTAyZTY5MWU4MGQ0MWNhM2FmMDgwYzk1MQ&feedId=58083&k=484029d0a16f462f3b5e94e35848df45bc883b0a",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra25-amarillo-2",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra25 - Amarillo",
+    colour: "Amarillo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249372789&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001086385-00-P-X-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjE3MXxpbWFnZS9qcGVnfGFEaGlMMmhoTnk4eE16RXhNamszT0RFME5UTXhNQzl0WldScFlYTmZNVEF3TVRBNE5qTTROVjh3TUY5UVgxZ3RNakF5TlRBNE1URXhNekExTlRVdWFuQm58N2I2NDZjZDg4NzE5Y2NhYmYwYTA2MGRlYzA3MmU5YTk0Mzc2N2JiNGFhMDEwYmYxYzVhMzNjZTE0YTdiMjM2MQ&feedId=58083&k=294c6935473c00e75d28c8db3d4522e8e02c0184",
+        sizes: ["M", "L", "XL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra25-blanco",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra25 - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370097&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052208-00-S-M-20250217203221.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY0NnxpbWFnZS9qcGVnfGFEZG1MMmd4TlM4eE1qYzBPRGMyT1RJNU5qUXhOQzl0WldScFlYTmZNVEF3TVRBMU1qSXdPRjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpFdWFuQm58YmUwYjNhNjgzYmIwNzU0YjUxMzM3MzY5MzZhNzE2ZGJhNDE0ODE3NzcwNzdjNzNiNTI0ZGU5Nzk2ZTNjNWMzZQ&feedId=58083&k=87429d8ce47ae8253ffe4c65fcbe807901daf4a0",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra25-marino",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra25 - Marino",
+    colour: "Marino",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370075&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052200-00-S-M-20250217203221.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTg1NnxpbWFnZS9qcGVnfGFETTRMMmhrTnk4eE1qYzBPRGMyTmpJeE5qSXlNaTl0WldScFlYTmZNVEF3TVRBMU1qSXdNRjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpFdWFuQm58ZTU4MjdmYzc2MDUwZDBlNjVmNGJhMzllZGUxYjUyOWQzMTgyOGQwNDI0ZWEwYWZjYTE5Y2FkMWJkZWE1NGU1OQ&feedId=58083&k=bc2879720ff6413e6f88615944b843713c61c80e",
+        sizes: ["XL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra25-negro",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra25 - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45961893051&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053107-00-S-M-20250213165914.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODYyOXxpbWFnZS9qcGVnfGFEYzFMMmhtWlM4eE1qYzBNVEE1TkRNd09Ua3hPQzl0WldScFlYTmZNVEF3TVRBMU16RXdOMTh3TUY5VFgwMHRNakF5TlRBeU1UTXhOalU1TVRRdWFuQm58NjJjNTM3NWQwNGFlYzRkNGQyNTc5OTBjZjBmZGFiMGI1ZDEwYjNhMzkyYTVjNWM4ODI5ZWE2NGU2ODFkYmY0YQ&feedId=58083&k=22660e78c7c95113613102cb08f90e829ea1dcc5",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra25-rojo",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra25 - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46270781234&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053505-00-S-M-20250217203222.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYyM3xpbWFnZS9qcGVnfGFHSTRMMmcyWWk4eE1qYzBPRGd6TXprNE1EUTBOaTl0WldScFlYTmZNVEF3TVRBMU16VXdOVjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpJdWFuQm58ZDU2Mjg1NDVkODU2ZTBlM2Q2YzMyMWI5MzlhZGIxZDE2MmEzZWNiNzIxZDE5YzNjOTU0ZTU0NWE5OTFiYmIxNg&feedId=58083&k=2daf80559b61fd1a7fe15b5766e7e3de0788ebb4",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra25-rojo-2",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra25 - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 21.16,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46372581847&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053615-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzMyM3xpbWFnZS9qcGVnfGFEQXpMMmhsTVM4eE1qZ3dNak15TVRRME9EazVNQzl0WldScFlYTmZNVEF3TVRBMU16WXhOVjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58NzhiZWM5ZDEwNzU5YmM1ZDcxNjZlYmJjN2E1OTkwZjNhMmNiZjRjMTA4NzZmMWQyYjgyYTI0ZjhhNTg3NTYzNA&feedId=58083&k=3c1f98a7a438a38182d3a8527127c68dfe54565b",
+        sizes: ["XS"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-squadra25-verde",
+    brand: "Adidas",
+    model: "Camiseta Adidas Squadra25 - Verde",
+    colour: "Verde",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46664443028&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053238-00-S-M-20250217203222.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjU3MXxpbWFnZS9qcGVnfGFHSmpMMmcxWXk4eE1qYzBPRGM1TWpNMk5UQTROaTl0WldScFlYTmZNVEF3TVRBMU16SXpPRjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpJdWFuQm58Y2M3OTIxNmJhNWVhMmE4YmQyMTNmZDRlNzQ3ZjhlMjQ5ZmI3OWVhNDZiNjczNjNlYzZlMDFkMmVjMGRkYjE5Yg&feedId=58083&k=cf05674b5a6785d3b9ace6600662792fbe188fdc",
+        sizes: ["S", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-striped-24-rojo",
+    brand: "Adidas",
+    model: "Camiseta Adidas Striped 24 - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41308756683&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001022688-00-S-M-20240619142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI4NHxpbWFnZS9qcGVnfGFEWmxMMmhpTXk4eE1qSXdOalUzTXpBeU56TTFPQzl0WldScFlYTmZNVEF3TVRBeU1qWTRPRjh3TUY5VFgwMHRNakF5TkRBMk1Ua3hOREkwTkRndWFuQm58OTZmMGVlODcxMTk5OThiMzI1ZWZiMDVhZmYzNDhhNDYxNzEyNDlhZjIwM2Q3OTBmZGQxODFiODZmNzVkYTI2Zg&feedId=58083&k=057ee1ab5514304078d25903b02e306a16e6c4a7",
+        sizes: ["M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tabela-23-amarillo",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tabela 23 - Amarillo",
+    colour: "Amarillo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40716801156&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000897657-00-S-M-20230202154711.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIzOHxpbWFnZS9qcGVnfGFHRmlMMmd3T1M4eE1USTBOall5TURFeE5EazNOQzl0WldScFlYTmZNVEF3TURnNU56WTFOMTh3TUY5VFgwMHRNakF5TXpBeU1ESXhOVFEzTVRFdWFuQm58MDhiODIyODM0MTllZmU1NjAxOGQ1YzE0NzY2MWU1MDIwMzI0NzliZWM4YjY4OTRjYTQ4ODEyZWQ5YWFjMjNkNg&feedId=58083&k=2e9d8e8c848c0e0c1a1c4aff44509d0919ba1400",
+        sizes: ["XS"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tabela-23-azul",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tabela 23 - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46330225294&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000897634-00-S-M-20230202154711.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTMyMHxpbWFnZS9qcGVnfGFHRTRMMmcyWWk4eE1USTBOall4TVRJMk56WXhOQzl0WldScFlYTmZNVEF3TURnNU56WXpORjh3TUY5VFgwMHRNakF5TXpBeU1ESXhOVFEzTVRFdWFuQm58YjZhYmEwZjA1MWMzYmMzMTcxMGRjYTViOGJjN2M3NjE4Y2QzMTk2NDAzZjU5MDY3MTcyMzE4M2RhZjM5NGRmMQ&feedId=58083&k=aeb5dac8926937a84209de312d1c4fd9cbe99a4c",
+        sizes: ["L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tabela-23-blanco",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tabela 23 - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39159731911&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000844621-00-S-M-20221129094831.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjQ4MXxpbWFnZS9qcGVnfGFEYzNMMmczTUM4eE1UQTNNakF6TnpBeU56ZzNNQzl0WldScFlYTmZNVEF3TURnME5EWXlNVjh3TUY5VFgwMHRNakF5TWpFeE1qa3dPVFE0TXpFdWFuQm58MzhmMjczZTljZWI2NDI2NDkwNDU1MDgxNjNhOWNiMzUwN2I2MjIzZTRmZjNiYWI1MTQzMDJhMTA3MmU5ODhlZg&feedId=58083&k=35b85cafadeb2451738321c6c963cfb3562b7c2f",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tabela-23-naranja",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tabela 23 - Naranja",
+    colour: "Naranja",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44861874770&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001032498-00-S-M-20240829112828.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ5NnxpbWFnZS9qcGVnfGFEUTRMMmhsTUM4eE1qTXpOek15TkRZeU1UZzFOQzl0WldScFlYTmZNVEF3TVRBek1qUTVPRjh3TUY5VFgwMHRNakF5TkRBNE1qa3hNVEk0TWpndWFuQm58Y2ZiNjMyOTUzMTVkZjNhYzdlZGJkMmNkZjUxNWMzYzVmM2ZhMjA0N2M2YWQwYjhkNjFiNzhiOWE2YzcwYTg3MA&feedId=58083&k=9932b4a4db5dd7985247ec39760b84d31d12fa9c",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tabela-23-negro",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tabela 23 - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 15.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40123662201&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000844623-00-S-M-20221129094831.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU1NHxpbWFnZS9qcGVnfGFHTTJMMmhpTnk4eE1UQTNNakF6T1RFNU1EVTFPQzl0WldScFlYTmZNVEF3TURnME5EWXlNMTh3TUY5VFgwMHRNakF5TWpFeE1qa3dPVFE0TXpFdWFuQm58Yjg3NGI5MjFkZjhhMzM1OTVkNjczOWI2Y2M5NzhkNDY3ZjdlN2NlMTFhYzBjMWViYzdjYzllMGQzZjNjNzM1Mw&feedId=58083&k=d38402a948c6beb7547e16940e812878dc468b12",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tabela-23-rojo",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tabela 23 - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265337681&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000844641-00-S-M-20221129094831.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjMyOXxpbWFnZS9qcGVnfGFEZG1MMmcwTVM4eE1UQTNNakEwT0RZeU56YzBNaTl0WldScFlYTmZNVEF3TURnME5EWTBNVjh3TUY5VFgwMHRNakF5TWpFeE1qa3dPVFE0TXpFdWFuQm58MjZiYTEwZTFmMzc4MWMzMjFmM2I3YWVkMjY0YThhYTAzODEyNjNkM2UzZjI0MzRjY2NlZTdkYmYwMzg1M2FkZA&feedId=58083&k=a84c989068ac25cf24149252c51f54bb3b576586",
+        sizes: ["S", "M", "L", "XL", "XXL"],
       },
     ],
   },
@@ -8722,6 +9523,15 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 27.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249387284&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001139128-00-S-M-20260701100443.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTIwMXxpbWFnZS9qcGVnfGFHRmtMMmcyTUM4eE16ZzJORE13TlRnMU1qUTBOaTl0WldScFlYTmZNVEF3TVRFek9URXlPRjh3TUY5VFgwMHRNakF5TmpBM01ERXhNREEwTkRNdWFuQm58NWI5MmIxNTE4ZTJiZGI5MzQxOTQwNDE5ODc3ZGFmZjY1YWY0NmU1NWE4OTUwNjYwNTg3ZTI4OTY3Nzk1OWUyYw&feedId=58083&k=d2218b8653df279e4deee9b0962bf7e2de54ee1f",
+        sizes: ["XS", "S", "M", "XL"],
+      },
+      {
         store: "FootStoreFR",
         price: 27.67,
         priceMax: 29.55,
@@ -8737,15 +9547,6 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
           { size: "XL", price: 29.55, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7185-t-shirt-adidas-tiro-26-league-tmlggr-white" },
           { size: "2XL", price: 29.55, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy7185-t-shirt-adidas-tiro-26-league-tmlggr-white" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 20.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46411048473&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112687-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODEwOXxpbWFnZS9qcGVnfGFEVm1MMmczT1M4eE16VTJNakkwTnpNNE1UQXlNaTl0WldScFlYTmZNVEF3TVRFeE1qWTROMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58MTdmMWJkZWRjM2IwZjQ2NGVjNjBhZTdhYWVhYTQ2MGQ4NDUxZWEzNTZkY2ZjZTUwMGMyOGNhMzZlNTk3ZDNmNA&feedId=58083&k=6771db2a9bad3477ab6b4cc3eac7040be4f0cb64",
-        sizes: ["XS", "S", "L", "XL", "XXL"],
       },
     ],
   },
@@ -8852,6 +9653,294 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46249375841&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113148-00-S-M-20260209142501.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI0N3xpbWFnZS9qcGVnfGFETm1MMmhrTVM4eE16VTJOVFkxTURnMk1qRXhNQzl0WldScFlYTmZNVEF3TVRFeE16RTBPRjh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOREkxTURFdWFuQm58OWZhY2I1MjliYzJmZTkyNDA3YzdlNGEyZWQwYTk5MTA5MjEzZTNhYTc3NzI5NjhmMTE1YjdlYTlkNWYwMGU3Yw&feedId=58083&k=742e47db3792f6a0d6f7cdff1d64f9f991be5406",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro-travel-azul",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro Travel - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 35.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383378&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134975-00-S-M-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjE1OXxpbWFnZS9qcGVnfGFEVmpMMmd6Wmk4eE16Z3pOekl4TVRBM05EVTVNQzl0WldScFlYTmZNVEF3TVRFek5EazNOVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58ZTc4MGM5NTIyYTQ4ZjE1MmQ1NGVlZjg1ODM0OTk5MWM2YTdjNzYyODA2NDU5MDMxYjZlY2U3ZDc0ODAzOGM1MA&feedId=58083&k=37956d88264ebf336f7633d7968d1c8ba57bc356",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro-travel-marino",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro Travel - Marino",
+    colour: "Marino",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.75,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383640&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134972-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjYyN3xpbWFnZS9qcGVnfGFHRXhMMmhoTWk4eE16Z3pOamM0T1RFMU16Z3lNaTl0WldScFlYTmZNVEF3TVRFek5EazNNbDh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58MTg5OWU0NTNkYjI5YzBlNmVjNTFmMjgwMzkwZDg0ZTMxNDZlYzdiYWRjNTUxMjFhODM3NjIwYjEzYThiZjFmMA&feedId=58083&k=03c53b8fd5ee717bb654d0b2d1df72f062f35ddd",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro-travel-rojo",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro Travel - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.75,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46272938721&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134974-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NjIyNHxpbWFnZS9qcGVnfGFEazBMMmcyTmk4eE16Z3pOakl6TmpVMU5ESTNNQzl0WldScFlYTmZNVEF3TVRFek5EazNORjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58NDVhOTE3ZTkzODBlMzAyZGY2ZjMzZTk3YTg5NGZlOGJlMjY2OGFiZTVlYmQ4ZDdlOGEwZjQ5ZGVjN2FiNWVmNQ&feedId=58083&k=f0a39c9e2cf7238f08f1be2a5396237b09c431bf",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro24-azul",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro24 - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46252981672&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000981064-00-S-M-20240123120654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU1M3xpbWFnZS9qcGVnfGFHRTBMMmhoTXk4eE1Ua3pNRGczTmpJNE1EZzJNaTl0WldScFlYTmZNVEF3TURrNE1UQTJORjh3TUY5VFgwMHRNakF5TkRBeE1qTXhNakEyTlRRdWFuQm58NTk5MDk2ZTIzMDQ1Y2JhYzY1NDNmMjJkNDIwMGM4OTdlZDRlMjU0NzY2ZTI1YjUzYWU1NGRhNmJiMzNhYWMwOA&feedId=58083&k=cdd89740e9eff716835418727ec628d73db46be7",
+        sizes: ["XS", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro24-marino",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro24 - Marino",
+    colour: "Marino",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40883412193&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000981068-00-S-M-20240117155929.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzAzNnxpbWFnZS9qcGVnfGFHRTFMMmd6TlM4eE1Ua3hPRE01T0RBeU9UZzFOQzl0WldScFlYTmZNVEF3TURrNE1UQTJPRjh3TUY5VFgwMHRNakF5TkRBeE1UY3hOVFU1TWprdWFuQm58YzBiYTVhODQ2MGViODQwYTgwYzMxZThkMDVkZWE2NmQwZWY1YjhhNDEzNTI0ZDU1YzcxNDc4MDJiZDgyY2ZhZQ&feedId=58083&k=d04f179683226de3f76b4b91bebbb71570d8b06e",
+        sizes: ["XL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro25-essentials-negro",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro25 Essentials - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46078450681&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052570-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDMwM3xpbWFnZS9qcGVnfGFHWTVMMmhtTXk4eE1qZ3dNakV3TmpBMk5Ea3lOaTl0WldScFlYTmZNVEF3TVRBMU1qVTNNRjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58ZGZiOTFkNzg2OGVjOTQ3ZDA3OWRjMDVmNzFlZjJmMDI1NDIyZmY4YjVjZWI0Y2FjYTlhYzFhYTA0MDdhYjJjMA&feedId=58083&k=21b4a0e93d0abd980090d2250a6e388508796734",
+        sizes: ["L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro26-league-amarillo",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro26 League - Amarillo",
+    colour: "Amarillo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378104&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112344-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjcxNnxpbWFnZS9qcGVnfGFHSmlMMmhpTUM4eE16VTJNemN4TmpJd05qWXlNaTl0WldScFlYTmZNVEF3TVRFeE1qTTBORjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58MjAyM2JlNmM4NjgzOTZhNTUxMTVlOGJhOWEwMGZiNTZiOGQyYWE1ZGYxODNkNmI2OWY0ZjA0YTc3N2ZjMWIyNA&feedId=58083&k=a3cdbf9d6452549c598defb6138e26feaecd928f",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro26-league-azul",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro26 League - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249377890&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112334-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjI4NnxpbWFnZS9qcGVnfGFHVTFMMmhrTnk4eE16VTJNemN4TURNd09ETTRNaTl0WldScFlYTmZNVEF3TVRFeE1qTXpORjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58MjRjMTQ1OTM4ZjY5YjNlNDZmMmMyNWQ1NWEzNmU4N2M4ODFjNDc1NTExMTg3ZGEzMDA4MjFmYjk2MTliZTFkOA&feedId=58083&k=c254cfe8a6301a17a2df891bc3373f41356df555",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro26-league-blanco",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro26 League - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378155&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112332-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODkwMnxpbWFnZS9qcGVnfGFEUTFMMmcwT1M4eE16VTJNemN3T1RBMk16RTVPQzl0WldScFlYTmZNVEF3TVRFeE1qTXpNbDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58YjAyZmFiZGNhOTE1NWM2NzgxOWFmOTc1NjM4ZjE0ZmY4MmFjNWFhZmIzNzY2Y2FjMmJiOTNlNWFjN2IyOGY1Ng&feedId=58083&k=9f99cf974fb61237dae49844ae150051428203bd",
+        sizes: ["XS", "S", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro26-league-gris",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro26 League - Gris",
+    colour: "Gris",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378052&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112330-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE3OHxpbWFnZS9qcGVnfGFHVTRMMmhtWVM4eE16VTJNemN3TnpjMU1qUTNPQzl0WldScFlYTmZNVEF3TVRFeE1qTXpNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58MGVkNGFjYmViNDIzZWU3NWQ2MjQ2MzQxNTI0NjE5NjdjNTg5ZmI1MTEzNmYwNWRiMjgwYzVjNzQxNGI0NjZiMg&feedId=58083&k=0537b15b6bd5e9158f11b36da332b53baeb5d3e3",
+        sizes: ["XS", "S", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-adidas-tiro26-league-gris",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro26 League - Gris",
+    colour: "Gris",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46411048473&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112687-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODEwOXxpbWFnZS9qcGVnfGFEVm1MMmczT1M4eE16VTJNakkwTnpNNE1UQXlNaTl0WldScFlYTmZNVEF3TVRFeE1qWTROMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58MTdmMWJkZWRjM2IwZjQ2NGVjNjBhZTdhYWVhYTQ2MGQ4NDUxZWEzNTZkY2ZjZTUwMGMyOGNhMzZlNTk3ZDNmNA&feedId=58083&k=6771db2a9bad3477ab6b4cc3eac7040be4f0cb64",
+        sizes: ["XS", "S", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro26-league-marino",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro26 League - Marino",
+    colour: "Marino",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378007&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112346-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODAzMHxpbWFnZS9qcGVnfGFHUXpMMmd6WWk4eE16VTJNemN4TnpVNE1qZzNPQzl0WldScFlYTmZNVEF3TVRFeE1qTTBObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58MzFkOTlkZTZlNGEwMzAzZjQ3ZDBkOGZjYjMxNDNjZDRjMzgzZTRjNGFmZWQxNWRkYTY1MjMyNmU5ZDI5NTAxOQ&feedId=58083&k=c108511926276a14ccd0d313e8506388b83d5bcb",
+        sizes: ["XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro26-league-negro",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro26 League - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46119082809&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112341-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ3M3xpbWFnZS9qcGVnfGFERTNMMmczWXk4eE16VTJNemN4TkRJME1EVTBNaTl0WldScFlYTmZNVEF3TVRFeE1qTTBNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58N2VmNjBhODk1OTFlYWQwNTAzYWZiODM1NWFlN2QyMGU0ZDBmYzcyYTk2YjJlYmVkZWRiNmZkNjhkYzE0NDBiMg&feedId=58083&k=95793519b25a19f37bb429e68529dd4bd22fb037",
+        sizes: ["XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro26-league-negro-2",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro26 League - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 18.97,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249377945&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112327-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQxOHxpbWFnZS9qcGVnfGFHWXlMMmczWmk4eE16VTJNemN3TmpJME5URTFNQzl0WldScFlYTmZNVEF3TVRFeE1qTXlOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58NzExMDVmZjUxMTc3NDY3YjNmMGZlNzg1ZTdmMjAxNDRiNzkzNzgzOWMzOGQwNTMyNGYxYjdkNjgxYmM4MGVhMg&feedId=58083&k=170cab28e8c093b6711871196514187b32238a0c",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro26-league-rojo",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro26 League - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378054&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112336-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYyMHxpbWFnZS9qcGVnfGFHWXlMMmhpTmk4eE16VTJNemN4TVRVMU16VTJOaTl0WldScFlYTmZNVEF3TVRFeE1qTXpObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58ZmY5YjM1YzEzODYwMmUzY2ZmMWRiMTYzYjE2YWE1M2VkMTlkOWMwYTRiMjJjNWYzMDllZjgxZTAyNzliYzYzZg&feedId=58083&k=07409fc892d9f1c3f1285601af633da213d42b82",
+        sizes: ["L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-camiseta-tiro26-league-verde",
+    brand: "Adidas",
+    model: "Camiseta Adidas Tiro26 League - Verde",
+    colour: "Verde",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378157&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112340-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjM3NnxpbWFnZS9qcGVnfGFHTmlMMmcwTWk4eE16VTJNemN4TWpnMk5ESTROaTl0WldScFlYTmZNVEF3TVRFeE1qTTBNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58NGUzMGRmYTM5N2YyY2VkNzI2N2I3OTlmMGZjOGEwN2MxYjc0NTc1NWI1OTFkNDAxODUyNTg4M2RhNjdiMjVlNQ&feedId=58083&k=55b9e2be8f9edbda5913ed1d26d748242427dc5c",
+        sizes: ["XS", "S", "XL", "XXL", "XXXL"],
       },
     ],
   },
@@ -9520,6 +10609,9 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk3: ApparelProduct[] = [
   {
     id: "adidas-camiseta-bayern-munich-2026-27-blanc",
     brand: "Adidas",
@@ -10006,24 +11098,6 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
           { size: "XL", price: 44.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg2320-t-shirt-benfica-lisbonne-2026-27-white" },
           { size: "3XL", price: 46.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg2320-t-shirt-benfica-lisbonne-2026-27-white" },
         ],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-core18-polo-azul",
-    brand: "Adidas",
-    model: "Camiseta Core18 Polo - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 20.29,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41164510563&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000486072-00-S-M-20181121082107.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyNjE3NDF8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZ3dZUzlvTkdVdk9EazFOVFl6T0RVeE16WTVOQzVxY0djfGFiZjgwNzUzZWY2OWFjMDYzMGNiNjA1N2U1Mzg2ODYyYWIzNTA4YTliZjA4YjFlOGMxNmI5YzdmY2VkMTg4YTY&feedId=58083&k=5e3da6bcc50f4cb8209aa5980f7d0f7f5cffd795",
-        sizes: ["S"],
       },
     ],
   },
@@ -11608,9 +12682,6 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk3: ApparelProduct[] = [
   {
     id: "adidas-camiseta-de-manga-larga-adidas-techfit-azul",
     brand: "Adidas",
@@ -11738,7 +12809,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-camiseta-de-manga-larga-adidas-techfit-blanco-2",
+    id: "adidas-polera-adidas-techfit-manga-larga-blanco",
     brand: "Adidas",
     model: "Camiseta de manga larga adidas Techfit - Blanco",
     colour: "Blanco",
@@ -11752,6 +12823,15 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46318032611&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fu%2Fgu7334_app_photo_front-center_white.jpg&feedId=89032&k=c8ed325c92109b134d1b0465dd92fa3775f230c6",
         sizes: ["XS", "M", "L", "XL", "2XL"],
+      },
+      {
+        store: "ForumSport",
+        price: 27.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45877077561&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053374-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc5NHxpbWFnZS9qcGVnfGFERTBMMmhpT1M4eE1qZ3dNakk0TmprME5ESTROaTl0WldScFlYTmZNVEF3TVRBMU16TTNORjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58MGEwMjBiMzMxOGU5YzVlZjU5YzZhMjdkYjJiMmJmNzg0Y2Q4MzBlNTRjY2VlNzdiNmFiYmVmYTA4NWZlMDU3YQ&feedId=58083&k=835dfbf479edaf0dabb9fc4627aad7243c936de7",
+        sizes: ["XS"],
       },
       {
         store: "FootStoreFR",
@@ -12003,6 +13083,24 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-camiseta-de-manga-larga-techfit-coldrdy-blanco",
+    brand: "Adidas",
+    model: "Camiseta de manga larga Adidas Techfit Coldrdy - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 37.04,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45877077558&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052906-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ4N3xpbWFnZS9qcGVnfGFHVmlMMmcwWWk4eE1qZ3dNakU0T0RJeE5ETXdNaTl0WldScFlYTmZNVEF3TVRBMU1qa3dObDh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58ZDgzODJiNjllNDk1OTU5OTA4OTY2MjczZmJmZTlmYWM1ZDZjYjk1MjA0MTU0NzRmNmYxMGE2ODU1NTBhNDJiYQ&feedId=58083&k=904eb8d5fd4c574ecb100dcb1eac265cb01edc21",
+        sizes: ["XS", "S"],
+      },
+    ],
+  },
+  {
     id: "adidas-camiseta-de-manga-larga-adidas-techfit-negro",
     brand: "Adidas",
     model: "Camiseta de manga larga adidas Techfit - Negro",
@@ -12017,6 +13115,15 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46318028570&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2F2%2Fh23120_app_photo_front_white.jpg&feedId=89032&k=c23c4ef738b172078862c4dbff6eab98475442f1",
         sizes: ["S", "L", "XL", "2XL"],
+      },
+      {
+        store: "ForumSport",
+        price: 27.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45320310607&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053382-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ3NXxpbWFnZS9qcGVnfGFEZ3lMMmd5TVM4eE1qZ3dNakk0T1RJek9EQTBOaTl0WldScFlYTmZNVEF3TVRBMU16TTRNbDh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58MDY0OGU3ZWIxOGU5OWMwMjM3YzA4ZThmYzZhNGU0ZDRkOGZjNzdiYjljMzJjYzRiOTdhYzgxYzYzOTQ3NmFmNQ&feedId=58083&k=e42daa77c8066e523f537f27b295e82a4c73dc76",
+        sizes: ["M"],
       },
     ],
   },
@@ -12107,24 +13214,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fib7006-t-shirt-manches-longues-mercedes-amg-petronas-formula-one-team-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ib7006_1_apparel_on_model_standard_view_white.webp",
         sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-de-manga-larga-techfit-coldrdy-blanco",
-    brand: "Adidas",
-    model: "Camiseta de manga larga Techfit Coldrdy - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 37.04,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45877077558&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052906-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ4N3xpbWFnZS9qcGVnfGFHVmlMMmcwWWk4eE1qZ3dNakU0T0RJeE5ETXdNaTl0WldScFlYTmZNVEF3TVRBMU1qa3dObDh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58ZDgzODJiNjllNDk1OTU5OTA4OTY2MjczZmJmZTlmYWM1ZDZjYjk1MjA0MTU0NzRmNmYxMGE2ODU1NTBhNDJiYQ&feedId=58083&k=904eb8d5fd4c574ecb100dcb1eac265cb01edc21",
-        sizes: ["XS", "S"],
       },
     ],
   },
@@ -12596,222 +13685,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-camiseta-entrada-22-marino",
-    brand: "Adidas",
-    model: "Camiseta Entrada 22 - Marino",
-    colour: "Marino",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 15.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265336223&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000808585-00-S-M-20220202162610.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDg1N3xpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnNU9DOW9NalF2TVRBMU56azFNemcyTURneE5UZ3VhbkJufDFkNTE1YzBhOTRkNGEwYTczM2Y4M2ZkMzNiYjk3ZjM0OGZlODhlOGVmOWVmNTRhMDI1Y2EwYjdkNjhkN2RiNWU&feedId=58083&k=36d664069cba5ce2855d9cd1e233b181da9ae5d7",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-entrada-22-negro",
-    brand: "Adidas",
-    model: "Camiseta Entrada 22 - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42027483652&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000808694-00-S-M-20220202162610.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI1MHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMU5pOW9Oall2TVRBMU56azFOalkyTWpRM09UZ3VhbkJufDE5YWU0YmY4NmNlZjU3ZjdlODI2NmRlNDdjNGI2YTFjYjY1ZmE3NzUwYzg5NmRjN2U5N2MzODQ2ZjQ0ZmQ5MzA&feedId=58083&k=d01f114ec32b598be2c3da5ee9e82b08cf9d9923",
-        sizes: ["M"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-entrada26-azul",
-    brand: "Adidas",
-    model: "Camiseta Entrada26 - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46664443199&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111918-00-S-M-20260209160833.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgyMnxpbWFnZS9qcGVnfGFERTRMMmhqWXk4eE16VTJOalF4TlRZMk56SXpNQzl0WldScFlYTmZNVEF3TVRFeE1Ua3hPRjh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOakE0TXpNdWFuQm58ZDUxZTZmZWZhZWFlOGI0OTVhOWJmNGVjOTg0NzBkNDg5NDc5YjE2YjgxNjczOWUyMjIzMGZlOTkwNWE4MDMxNg&feedId=58083&k=1c731685cee7287feb663bb347f0c3bba7354a53",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-entrada26-blanco",
-    brand: "Adidas",
-    model: "Camiseta Entrada26 - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378916&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111919-00-S-M-20260209160833.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk5N3xpbWFnZS9qcGVnfGFHSXlMMmcxWWk4eE16VTJOalF4TmpnME5qZzNPQzl0WldScFlYTmZNVEF3TVRFeE1Ua3hPVjh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOakE0TXpNdWFuQm58NGY0MDYxZDE2NTBiM2IxNDgyZmFmMWI1NDkxMjQ2ODBjZDUyZGM4OThhMmJjNjI2MWRlYzM3Njc4ZDYzYTk4NA&feedId=58083&k=968fe33053884c7fccd7ab46844c7ca5d2b0241c",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-entrada26-blanco-2",
-    brand: "Adidas",
-    model: "Camiseta Entrada26 - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249382762&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134922-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM5OXxpbWFnZS9qcGVnfGFHWTJMMmd6T1M4eE16Z3pOamMxT1RNek5EazBNaTl0WldScFlYTmZNVEF3TVRFek5Ea3lNbDh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58NmM0MzBkZDgwMzZlYjc4Njk4MDVjNjljNTE2NGUwNzM3MTI0OGIxYjA2ZmQwOGJiODczMjBmNjllZDIxOTNiMA&feedId=58083&k=ea9e488c77e30849664f043e22bf211db79337c3",
-        sizes: ["XS", "S", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-entrada26-marino",
-    brand: "Adidas",
-    model: "Camiseta Entrada26 - Marino",
-    colour: "Marino",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383391&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135020-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTUyNXxpbWFnZS9qcGVnfGFERXhMMmcwTVM4eE16Z3pOamcwTnpNeE56QXlNaTl0WldScFlYTmZNVEF3TVRFek5UQXlNRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58MWU3M2E3ZTFkM2JkNmI4NGJmMTE5MDU0NjQ1ZTk3M2JhYTNlMzE5NjE2ZGFjZjNmNzdiNmI4Mjc0Y2RlYzlkMw&feedId=58083&k=a3b01a918d8f21519a51f2a8be1c0660b0bb0c77",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-entrada26-marino-2",
-    brand: "Adidas",
-    model: "Camiseta Entrada26 - Marino",
-    colour: "Marino",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383561&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134921-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODIyN3xpbWFnZS9qcGVnfGFEUTBMMmhoTnk4eE16Z3pOakl5TVRBeU1qSXpPQzl0WldScFlYTmZNVEF3TVRFek5Ea3lNVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MDJhN2FlZjdkYjJlMjkwMzFhMjVmYTljMDJmYzVjYzFlN2E0MTJlMjEzNzM4MmMzZGZhMmZiOWNkYWNhNmVhYg&feedId=58083&k=7fc7a7570ae2dabefa55755ad2c3e5f2a38fca3e",
-        sizes: ["XXS", "XS", "S", "M"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-entrada26-negro",
-    brand: "Adidas",
-    model: "Camiseta Entrada26 - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378860&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111917-00-S-M-20260209160833.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgxN3xpbWFnZS9qcGVnfGFEWTVMMmhpWmk4eE16VTJOalF4TkRNeU16YzBNaTl0WldScFlYTmZNVEF3TVRFeE1Ua3hOMTh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOakE0TXpNdWFuQm58ODZlNDc2NDYzMDVmZGRjOGU5NWI4YTEwM2JhN2NkODlkNDhiMTdjZTIzM2M5MjA5OTlkNWQ1NzQxN2E3MWRhNA&feedId=58083&k=e15e936d7a7c3f8fb531cec3bfe31db0b7e141d4",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-entrada26-negro-2",
-    brand: "Adidas",
-    model: "Camiseta Entrada26 - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383291&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134920-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDcyNnxpbWFnZS9qcGVnfGFHWTBMMmhqWmk4eE16Z3pOakl4T1RNeE9ETXdNaTl0WldScFlYTmZNVEF3TVRFek5Ea3lNRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58YTQ2NzQwYzAwODk1MzNmZTM2OTdjZDBhNzc3M2MyMzdkMWUxOGY1YjdlNzNkNGYxYmIxNjYwNWNlYjM2ODYyNg&feedId=58083&k=36cacd464d6c639de630ee38260c26c88aa8a6a4",
-        sizes: ["XS", "S", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-entrada26-rojo",
-    brand: "Adidas",
-    model: "Camiseta Entrada26 - Rojo",
-    colour: "Rojo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378914&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111916-00-S-M-20260209160833.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk3MHxpbWFnZS9qcGVnfGFETTNMMmd3Tmk4eE16VTJOalF4TWpjMU1EZzNPQzl0WldScFlYTmZNVEF3TVRFeE1Ua3hObDh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOakE0TXpNdWFuQm58ODVlNDg5MDk5YTQ5YTFkYTY1ODFmYTEyY2Y5Zjc3YmQ1ZDNlMjZiMDI2ZjQxYmIxODNiZTlmMjRlODcxMzRmNg&feedId=58083&k=d8566a5497c84ec97d563c0a09bb09a16385e7a5",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-entrada26-rojo-2",
-    brand: "Adidas",
-    model: "Camiseta Entrada26 - Rojo",
-    colour: "Rojo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249382828&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134923-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc1NnxpbWFnZS9qcGVnfGFHTTJMMmhoTXk4eE16Z3pOamMyTURZM09EUXpNQzl0WldScFlYTmZNVEF3TVRFek5Ea3lNMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58OTA3ZjAxNDYwNjcwMTkxN2ZlNjRmMzZkMThjZDVjMTkyNzA0YzExMmI5MTk4OGE2N2Y1MTBmY2I3MjkxZTBjNQ&feedId=58083&k=ef92599c431f7a68556ce9dd783a5736d119f75b",
-        sizes: ["XS", "S", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-entrada26-verde",
-    brand: "Adidas",
-    model: "Camiseta Entrada26 - Verde",
-    colour: "Verde",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378810&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111915-00-S-M-20260209160833.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUxMnxpbWFnZS9qcGVnfGFEVTBMMmc0T0M4eE16VTJOalF4TVRBeE5ERTNOQzl0WldScFlYTmZNVEF3TVRFeE1Ua3hOVjh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOakE0TXpNdWFuQm58YjgxNTQ5NDYzYjgxNzViN2NlYjc2MjhhMjNiZDNjNjdkMTgwZmYyMzMzZmUyYjc3NjYwMmUzNjA4YTNhZWEzMg&feedId=58083&k=be9ee5bb186085db7221dee66e93adaf0b59ceaf",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
     id: "adidas-camiseta-espagne-euro-2024-blanco",
     brand: "Adidas",
     model: "Camiseta Espagne Euro 2024 - Blanco",
@@ -12911,24 +13784,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-camiseta-espana-mundial-1994-primera-equipacion-retro",
-    brand: "Adidas",
-    model: "Camiseta Espana Mundial 1994 Primera Equipacion Retro",
-    colour: "N/D",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 75.45,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45183974338&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135272-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY5NHxpbWFnZS9qcGVnfGFESTFMMmd6WkM4eE16Z3pOalV4TXpjM01UVTFNQzl0WldScFlYTmZNVEF3TVRFek5USTNNbDh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MTBkNDYxMzEyYmZjNWZkNTVjY2FlODMwOTNkNjI1OTA3YTc1YjM3Y2VhZWZlNTI4NTNiMDVlNDJhNGRkZWUyNQ&feedId=58083&k=c9daf64b175bb5dee4d1fb249a09fac9463c9712",
-        sizes: ["S", "M", "XL"],
-      },
-    ],
-  },
-  {
     id: "adidas-camiseta-espana-tiro-coupe-du-monde-2026-bleu",
     brand: "Adidas",
     model: "Camiseta España Tiro Coupe du Monde 2026 - Bleu",
@@ -13011,60 +13866,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-camiseta-estro-19-amarillo",
-    brand: "Adidas",
-    model: "Camiseta Estro 19 - Amarillo",
-    colour: "Amarillo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 12.94,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265329383&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000545615-00-P-X-20190827170858.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDk1NHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneU5TOW9OelF2T1RFNE5UY3hOVFF5TVRJeE5DNXFjR2N8NzVhNjJiZTU3OTdjZTUyOWVhMmViMjRkMmUwNzYxMDI5ZmE2ODRjMWJiNjEzOTRlNTEwZjc2NmU4ZWVjNWQ5OQ&feedId=58083&k=6e5dd9ecc84883db6a9a3b1bb96a74c9b979a20d",
-        sizes: ["S", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-fortore23-azul",
-    brand: "Adidas",
-    model: "Camiseta Fortore23 - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 24.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46317552791&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000932161-00-S-M-20240123120654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzcxNXxpbWFnZS9qcGVnfGFHTTBMMmcwWkM4eE1Ua3pNRE01TkRZMU5qYzVPQzl0WldScFlYTmZNVEF3TURrek1qRTJNVjh3TUY5VFgwMHRNakF5TkRBeE1qTXhNakEyTlRRdWFuQm58ZWUwMTg3MDU5Yjc1M2IyZDg4NjMwYzYyNzQ1MWU2ZWNkYTAzM2ExMjAzYzRjNzVhYjVhM2RmZTk5OTY5MzM1Zg&feedId=58083&k=856f294be8e858f411f3e206cb54089fc13ef444",
-        sizes: ["M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-fortore23-negro",
-    brand: "Adidas",
-    model: "Camiseta Fortore23 - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.42,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41845232277&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000980902-00-S-M-20240117155929.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTA3OXxpbWFnZS9qcGVnfGFEWmpMMmhsWlM4eE1Ua3hPRE0yTmprek16QXlNaTl0WldScFlYTmZNVEF3TURrNE1Ea3dNbDh3TUY5VFgwMHRNakF5TkRBeE1UY3hOVFU1TWprdWFuQm58NDc2ZDRhZjAyMzBiNmQ2YjIwMWY5YWUzOWNjOTgzYTlkNjk5MTg3YzVmNWUzOWRmM2MwMmNiZmJkMzM0Zjc2Yw&feedId=58083&k=d626d7ab0ff40b350e1f3b56821be12f74d9b737",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
     id: "adidas-camiseta-grafica-del-real-madrid-2025-26-azul",
     brand: "Adidas",
     model: "Camiseta gráfica del Real Madrid 2025/26 - Azul",
@@ -13088,96 +13889,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjm2125-t-shirt-graphique-real-madrid-2025-26-legink",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jm2125_legink_1.webp",
         sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-hooped26-blanco",
-    brand: "Adidas",
-    model: "Camiseta Hooped26 - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 20.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383250&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135009-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk2NXxpbWFnZS9qcGVnfGFEbGlMMmcyWmk4eE16Z3pOakkyTWprNU9EQTBOaTl0WldScFlYTmZNVEF3TVRFek5UQXdPVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58YzMwOTc1NDc5NDYxZjY1YzRiNDQyZTMyOTNhMzlkMDNjMDBmNmQwNjE4MTAyY2E1MGExOTU5OGVlYWZiYzFjMQ&feedId=58083&k=15e077478c746033e4019ab1c1343d654d771e2f",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-hooped26-blanco-2",
-    brand: "Adidas",
-    model: "Camiseta Hooped26 - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 20.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383580&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135010-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE0MnxpbWFnZS9qcGVnfGFHUmlMMmhrT0M4eE16Z3pOakkyTXprME9ETXhPQzl0WldScFlYTmZNVEF3TVRFek5UQXhNRjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58ZDQ5OWRkNzQwNjVmNGU4MzUzMTA5NzhmNGZhNTViNzc5NzU4NjQzZDAzNTgwYWVmY2NiMjAzZDM5NWE2MGE1Ng&feedId=58083&k=80f5059027856f91e6d99e296e63aad67f55fcb8",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-hooped26-blanco-3",
-    brand: "Adidas",
-    model: "Camiseta Hooped26 - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 20.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383708&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135008-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg4M3xpbWFnZS9qcGVnfGFEZzBMMmd3TVM4eE16Z3pOakkyTVRneE9ETTVPQzl0WldScFlYTmZNVEF3TVRFek5UQXdPRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58OTQzOWJmMWM5ZGE1NGFiY2U5NzNkOGZlYmFhYTlkMDYwZjQ4ODdmMjJkZDhiYjFhNTQ1Mjc5ZTgyZjJhYzY3Yw&feedId=58083&k=e57e0809aa8fd891697d6157f999880e51e39248",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-hooped26-blanco-4",
-    brand: "Adidas",
-    model: "Camiseta Hooped26 - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 20.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249384506&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135218-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjM3NHxpbWFnZS9qcGVnfGFEZzRMMmhoT1M4eE16Z3pOamc0TmprNU9UQTNNQzl0WldScFlYTmZNVEF3TVRFek5USXhPRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58ODI2Mzk2MTBiNzJlNzIxMDk0NzE3ZDk5ZGM5YzA2OGViMWU2YzRjNWIyZTE4YzdjOTM3YzA0MzEwMTRmMmVmOA&feedId=58083&k=7aececd586b77679da9b2cc2777f8801a753279c",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-hooped26-gris",
-    brand: "Adidas",
-    model: "Camiseta Hooped26 - Gris",
-    colour: "Gris",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 29.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383652&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135011-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMyN3xpbWFnZS9qcGVnfGFEVmlMMmhqTnk4eE16Z3pOakkyTkRZMk9USXhOQzl0WldScFlYTmZNVEF3TVRFek5UQXhNVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MDgxOGZmYzEzMmY2YTAwYWRjNGM3YTYwNDg1ZTA1YzhkYjM5ZmMyZjk0NDBlNWNjMWQ3ZDY2MjdmYzJmYTA2Zg&feedId=58083&k=eb51f99d7ca2f87167852be99b4d1c8b8e57454c",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
     ],
   },
@@ -13454,15 +14165,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46343280464&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe489b7fae87741139d50ade3e88cd0a2_9366%2FCamiseta_TECHFIT_Manga_Larga_Negro_JP2944_01_laydown.jpg&feedId=95017&k=eeea10a7156178731853f8efdc1b6a63f136678a",
         sizes: ["XS", "S", "M", "L", "XL"],
-      },
-      {
-        store: "ForumSport",
-        price: 27.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45320310607&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053382-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ3NXxpbWFnZS9qcGVnfGFEZ3lMMmd5TVM4eE1qZ3dNakk0T1RJek9EQTBOaTl0WldScFlYTmZNVEF3TVRBMU16TTRNbDh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58MDY0OGU3ZWIxOGU5OWMwMjM3YzA4ZThmYzZhNGU0ZDRkOGZjNzdiYjljMzJjYzRiOTdhYzgxYzYzOTQ3NmFmNQ&feedId=58083&k=e42daa77c8066e523f537f27b295e82a4c73dc76",
-        sizes: ["M"],
       },
     ],
   },
@@ -14814,690 +15516,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkt9700-t-shirt-regular-femme-adidas-food-graphic-magmau",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kt9700_1_apparel_photography_front_center_view_white.webp",
         sizes: ["XS"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-saquadra-25-azul",
-    brand: "Adidas",
-    model: "Camiseta Saquadra 25 - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46668727215&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052192-00-S-M-20250305155332.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjgyOXxpbWFnZS9qcGVnfGFEVmhMMmd6TWk4eE1qYzRNREEzT1RRME9EQTVOQzl0WldScFlYTmZNVEF3TVRBMU1qRTVNbDh3TUY5VFgwMHRNakF5TlRBek1EVXhOVFV6TXpJdWFuQm58MGFjZTE3MGE0ZGQxMGZiMGFiYzQ3NDMwODQ3NDQyNDhkOTNiNmQ1NWZlNTI3NTI5MGRlYzMzYTU1N2ZiZWJlNw&feedId=58083&k=47fa9cb32c975574cf2b64df1a6de4254a6a0cab",
-        sizes: ["M", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-scuadra25-blanco",
-    brand: "Adidas",
-    model: "Camiseta Scuadra25 - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46424983329&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052194-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ0NXxpbWFnZS9qcGVnfGFEVXdMMmc1TlM4eE1qZ3lOemN3TXpReE1EY3hPQzl0WldScFlYTmZNVEF3TVRBMU1qRTVORjh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58NTk2YjhlYmM1Y2I0ZDhjNjhjNjYyZjg1NDJkYWQ2YjJjMzZhNzNhNDMzOWVhZTVjNDkyYzFiNjc5YzM3Y2Q3Ng&feedId=58083&k=440764735975bba439ef602b049c92f81688e796",
-        sizes: ["S", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squa25-granate",
-    brand: "Adidas",
-    model: "Camiseta Squa25 - Granate",
-    colour: "Granate",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370161&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052334-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM5OHxpbWFnZS9qcGVnfGFEQmxMMmczWmk4eE1qZ3lOemM0TkRVME5ESTROaTl0WldScFlYTmZNVEF3TVRBMU1qTXpORjh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58NzExODg4NGVkYjYzNjk0ODAwYTRmMTViYzk3YjNjNzMwYWZiZjI1YmZiMmY2YzBmZDU2YjM1Mzk2NmMyYjJkMA&feedId=58083&k=02eac86515b9f9df4eebd208a58a22ba28ae298d",
-        sizes: ["M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra-25-azul",
-    brand: "Adidas",
-    model: "Camiseta Squadra 25 - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46353197855&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053147-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYxNXxpbWFnZS9qcGVnfGFEVXlMMmcxTnk4eE1qZ3lPRFExTmpZeE5UazJOaTl0WldScFlYTmZNVEF3TVRBMU16RTBOMTh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58M2ZmODRiNGU4YWFhZThjY2QyYzNmNTgxMzYzYmM0NWQ1YzQ1NzQwMDc3MGY5ZWQ1ZTdjYTllYzA5ZTFhOGUzZA&feedId=58083&k=b75452846b5bfe86695a17c469206f3792680fe1",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra-25-azul-2",
-    brand: "Adidas",
-    model: "Camiseta Squadra 25 - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46527255303&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052206-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTAxNXxpbWFnZS9qcGVnfGFHSTRMMmd5WWk4eE1qZ3lOemMxTVRVME5qa3hNQzl0WldScFlYTmZNVEF3TVRBMU1qSXdObDh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58NmUwZjBkZGNkMWZmMzY5NzFmZjc5NzhhM2JiNjhiMzdmMDBmYjRlYzA4YWY0NzM0ODUzYzY1NjcxZDgyYTAxMA&feedId=58083&k=353f294307dce71d6356ef4881674f264cd0e4e4",
-        sizes: ["XS", "S", "M", "L", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra-25-blanco",
-    brand: "Adidas",
-    model: "Camiseta Squadra 25 - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249369986&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052198-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTU5MXxpbWFnZS9qcGVnfGFEQXlMMmd6TWk4eE1qZ3lOemMwTXpJMU5qWXdOaTl0WldScFlYTmZNVEF3TVRBMU1qRTVPRjh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58YjJlNmYzOGUyOWE0ZmM5OGM2OTY4N2FmNGU2OWRlOWI1ZTk2ZDgyMTQzMTg2Y2U2NTI2MGY0MmFiNzYyMWNhZQ&feedId=58083&k=fce1fe1c91827e08189c05be3738491a5b346f48",
-        sizes: ["S", "M", "L", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra-25-gris",
-    brand: "Adidas",
-    model: "Camiseta Squadra 25 - Gris",
-    colour: "Gris",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370185&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052210-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTIwNnxpbWFnZS9qcGVnfGFEQXdMMmhtT0M4eE1qZ3lOemMxTkRJNU9UUXlNaTl0WldScFlYTmZNVEF3TVRBMU1qSXhNRjh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58YTVhM2JhMTQ3OWJiYjhmOWJkZWRiMjY4YTgyZWM5OTFlZDYyNWMyZmNmMjJkMzcwYzNlYzYxYjc4YzY2YzIxMw&feedId=58083&k=e36f32aa9c94fd69f7c5ee64ad65ed2078e7c85e",
-        sizes: ["XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra-25-negro",
-    brand: "Adidas",
-    model: "Camiseta Squadra 25 - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370096&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052204-00-S-M-20250217203221.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTU1OXxpbWFnZS9qcGVnfGFEQXdMMmhoTnk4eE1qYzBPRGMyTnpreU1ERTFPQzl0WldScFlYTmZNVEF3TVRBMU1qSXdORjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpFdWFuQm58YWYwODE4YmMzNjk1NzBiNDcyNDY0MjcyODk3YTExYzc0YWJiOTE1YmZmZjk3ODY2MjViYmVjZDA0YzA1MWYxYQ&feedId=58083&k=0929fb321197d586138d5d6bb918ee8afc28650c",
-        sizes: ["M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra25-amarillo",
-    brand: "Adidas",
-    model: "Camiseta Squadra25 - Amarillo",
-    colour: "Amarillo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370155&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052202-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzM1NHxpbWFnZS9qcGVnfGFESXlMMmcxWkM4eE1qZ3dNakE1TkRjeU56RTVPQzl0WldScFlYTmZNVEF3TVRBMU1qSXdNbDh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58MjMwMDhiM2ZiMzNmMTJkNWJmNzFjOTU0MTNmMGE4NzFhY2I5OGJiYTAyZTY5MWU4MGQ0MWNhM2FmMDgwYzk1MQ&feedId=58083&k=484029d0a16f462f3b5e94e35848df45bc883b0a",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra25-amarillo-2",
-    brand: "Adidas",
-    model: "Camiseta Squadra25 - Amarillo",
-    colour: "Amarillo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249372789&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001086385-00-P-X-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjE3MXxpbWFnZS9qcGVnfGFEaGlMMmhoTnk4eE16RXhNamszT0RFME5UTXhNQzl0WldScFlYTmZNVEF3TVRBNE5qTTROVjh3TUY5UVgxZ3RNakF5TlRBNE1URXhNekExTlRVdWFuQm58N2I2NDZjZDg4NzE5Y2NhYmYwYTA2MGRlYzA3MmU5YTk0Mzc2N2JiNGFhMDEwYmYxYzVhMzNjZTE0YTdiMjM2MQ&feedId=58083&k=294c6935473c00e75d28c8db3d4522e8e02c0184",
-        sizes: ["M", "L", "XL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra25-blanco",
-    brand: "Adidas",
-    model: "Camiseta Squadra25 - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370097&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052208-00-S-M-20250217203221.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY0NnxpbWFnZS9qcGVnfGFEZG1MMmd4TlM4eE1qYzBPRGMyT1RJNU5qUXhOQzl0WldScFlYTmZNVEF3TVRBMU1qSXdPRjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpFdWFuQm58YmUwYjNhNjgzYmIwNzU0YjUxMzM3MzY5MzZhNzE2ZGJhNDE0ODE3NzcwNzdjNzNiNTI0ZGU5Nzk2ZTNjNWMzZQ&feedId=58083&k=87429d8ce47ae8253ffe4c65fcbe807901daf4a0",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra25-marino",
-    brand: "Adidas",
-    model: "Camiseta Squadra25 - Marino",
-    colour: "Marino",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370075&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052200-00-S-M-20250217203221.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTg1NnxpbWFnZS9qcGVnfGFETTRMMmhrTnk4eE1qYzBPRGMyTmpJeE5qSXlNaTl0WldScFlYTmZNVEF3TVRBMU1qSXdNRjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpFdWFuQm58ZTU4MjdmYzc2MDUwZDBlNjVmNGJhMzllZGUxYjUyOWQzMTgyOGQwNDI0ZWEwYWZjYTE5Y2FkMWJkZWE1NGU1OQ&feedId=58083&k=bc2879720ff6413e6f88615944b843713c61c80e",
-        sizes: ["XL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra25-negro",
-    brand: "Adidas",
-    model: "Camiseta Squadra25 - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45961893051&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053107-00-S-M-20250213165914.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODYyOXxpbWFnZS9qcGVnfGFEYzFMMmhtWlM4eE1qYzBNVEE1TkRNd09Ua3hPQzl0WldScFlYTmZNVEF3TVRBMU16RXdOMTh3TUY5VFgwMHRNakF5TlRBeU1UTXhOalU1TVRRdWFuQm58NjJjNTM3NWQwNGFlYzRkNGQyNTc5OTBjZjBmZGFiMGI1ZDEwYjNhMzkyYTVjNWM4ODI5ZWE2NGU2ODFkYmY0YQ&feedId=58083&k=22660e78c7c95113613102cb08f90e829ea1dcc5",
-        sizes: ["M"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra25-rojo",
-    brand: "Adidas",
-    model: "Camiseta Squadra25 - Rojo",
-    colour: "Rojo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46270781234&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053505-00-S-M-20250217203222.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYyM3xpbWFnZS9qcGVnfGFHSTRMMmcyWWk4eE1qYzBPRGd6TXprNE1EUTBOaTl0WldScFlYTmZNVEF3TVRBMU16VXdOVjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpJdWFuQm58ZDU2Mjg1NDVkODU2ZTBlM2Q2YzMyMWI5MzlhZGIxZDE2MmEzZWNiNzIxZDE5YzNjOTU0ZTU0NWE5OTFiYmIxNg&feedId=58083&k=2daf80559b61fd1a7fe15b5766e7e3de0788ebb4",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra25-rojo-2",
-    brand: "Adidas",
-    model: "Camiseta Squadra25 - Rojo",
-    colour: "Rojo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 21.16,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46372581847&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053615-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzMyM3xpbWFnZS9qcGVnfGFEQXpMMmhsTVM4eE1qZ3dNak15TVRRME9EazVNQzl0WldScFlYTmZNVEF3TVRBMU16WXhOVjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58NzhiZWM5ZDEwNzU5YmM1ZDcxNjZlYmJjN2E1OTkwZjNhMmNiZjRjMTA4NzZmMWQyYjgyYTI0ZjhhNTg3NTYzNA&feedId=58083&k=3c1f98a7a438a38182d3a8527127c68dfe54565b",
-        sizes: ["XS"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-squadra25-verde",
-    brand: "Adidas",
-    model: "Camiseta Squadra25 - Verde",
-    colour: "Verde",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46664443028&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053238-00-S-M-20250217203222.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjU3MXxpbWFnZS9qcGVnfGFHSmpMMmcxWXk4eE1qYzBPRGM1TWpNMk5UQTROaTl0WldScFlYTmZNVEF3TVRBMU16SXpPRjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpJdWFuQm58Y2M3OTIxNmJhNWVhMmE4YmQyMTNmZDRlNzQ3ZjhlMjQ5ZmI3OWVhNDZiNjczNjNlYzZlMDFkMmVjMGRkYjE5Yg&feedId=58083&k=cf05674b5a6785d3b9ace6600662792fbe188fdc",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-striped-24-rojo",
-    brand: "Adidas",
-    model: "Camiseta Striped 24 - Rojo",
-    colour: "Rojo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 20.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41308756683&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001022688-00-S-M-20240619142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI4NHxpbWFnZS9qcGVnfGFEWmxMMmhpTXk4eE1qSXdOalUzTXpBeU56TTFPQzl0WldScFlYTmZNVEF3TVRBeU1qWTRPRjh3TUY5VFgwMHRNakF5TkRBMk1Ua3hOREkwTkRndWFuQm58OTZmMGVlODcxMTk5OThiMzI1ZWZiMDVhZmYzNDhhNDYxNzEyNDlhZjIwM2Q3OTBmZGQxODFiODZmNzVkYTI2Zg&feedId=58083&k=057ee1ab5514304078d25903b02e306a16e6c4a7",
-        sizes: ["M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tabela-23-amarillo",
-    brand: "Adidas",
-    model: "Camiseta Tabela 23 - Amarillo",
-    colour: "Amarillo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40716801156&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000897657-00-S-M-20230202154711.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIzOHxpbWFnZS9qcGVnfGFHRmlMMmd3T1M4eE1USTBOall5TURFeE5EazNOQzl0WldScFlYTmZNVEF3TURnNU56WTFOMTh3TUY5VFgwMHRNakF5TXpBeU1ESXhOVFEzTVRFdWFuQm58MDhiODIyODM0MTllZmU1NjAxOGQ1YzE0NzY2MWU1MDIwMzI0NzliZWM4YjY4OTRjYTQ4ODEyZWQ5YWFjMjNkNg&feedId=58083&k=2e9d8e8c848c0e0c1a1c4aff44509d0919ba1400",
-        sizes: ["XS"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tabela-23-azul",
-    brand: "Adidas",
-    model: "Camiseta Tabela 23 - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46330225294&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000897634-00-S-M-20230202154711.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTMyMHxpbWFnZS9qcGVnfGFHRTRMMmcyWWk4eE1USTBOall4TVRJMk56WXhOQzl0WldScFlYTmZNVEF3TURnNU56WXpORjh3TUY5VFgwMHRNakF5TXpBeU1ESXhOVFEzTVRFdWFuQm58YjZhYmEwZjA1MWMzYmMzMTcxMGRjYTViOGJjN2M3NjE4Y2QzMTk2NDAzZjU5MDY3MTcyMzE4M2RhZjM5NGRmMQ&feedId=58083&k=aeb5dac8926937a84209de312d1c4fd9cbe99a4c",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tabela-23-blanco",
-    brand: "Adidas",
-    model: "Camiseta Tabela 23 - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39159731911&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000844621-00-S-M-20221129094831.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjQ4MXxpbWFnZS9qcGVnfGFEYzNMMmczTUM4eE1UQTNNakF6TnpBeU56ZzNNQzl0WldScFlYTmZNVEF3TURnME5EWXlNVjh3TUY5VFgwMHRNakF5TWpFeE1qa3dPVFE0TXpFdWFuQm58MzhmMjczZTljZWI2NDI2NDkwNDU1MDgxNjNhOWNiMzUwN2I2MjIzZTRmZjNiYWI1MTQzMDJhMTA3MmU5ODhlZg&feedId=58083&k=35b85cafadeb2451738321c6c963cfb3562b7c2f",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tabela-23-naranja",
-    brand: "Adidas",
-    model: "Camiseta Tabela 23 - Naranja",
-    colour: "Naranja",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44861874770&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001032498-00-S-M-20240829112828.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ5NnxpbWFnZS9qcGVnfGFEUTRMMmhsTUM4eE1qTXpOek15TkRZeU1UZzFOQzl0WldScFlYTmZNVEF3TVRBek1qUTVPRjh3TUY5VFgwMHRNakF5TkRBNE1qa3hNVEk0TWpndWFuQm58Y2ZiNjMyOTUzMTVkZjNhYzdlZGJkMmNkZjUxNWMzYzVmM2ZhMjA0N2M2YWQwYjhkNjFiNzhiOWE2YzcwYTg3MA&feedId=58083&k=9932b4a4db5dd7985247ec39760b84d31d12fa9c",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tabela-23-negro",
-    brand: "Adidas",
-    model: "Camiseta Tabela 23 - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 15.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40123662201&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000844623-00-S-M-20221129094831.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU1NHxpbWFnZS9qcGVnfGFHTTJMMmhpTnk4eE1UQTNNakF6T1RFNU1EVTFPQzl0WldScFlYTmZNVEF3TURnME5EWXlNMTh3TUY5VFgwMHRNakF5TWpFeE1qa3dPVFE0TXpFdWFuQm58Yjg3NGI5MjFkZjhhMzM1OTVkNjczOWI2Y2M5NzhkNDY3ZjdlN2NlMTFhYzBjMWViYzdjYzllMGQzZjNjNzM1Mw&feedId=58083&k=d38402a948c6beb7547e16940e812878dc468b12",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tabela-23-rojo",
-    brand: "Adidas",
-    model: "Camiseta Tabela 23 - Rojo",
-    colour: "Rojo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265337681&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000844641-00-S-M-20221129094831.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjMyOXxpbWFnZS9qcGVnfGFEZG1MMmcwTVM4eE1UQTNNakEwT0RZeU56YzBNaTl0WldScFlYTmZNVEF3TURnME5EWTBNVjh3TUY5VFgwMHRNakF5TWpFeE1qa3dPVFE0TXpFdWFuQm58MjZiYTEwZTFmMzc4MWMzMjFmM2I3YWVkMjY0YThhYTAzODEyNjNkM2UzZjI0MzRjY2NlZTdkYmYwMzg1M2FkZA&feedId=58083&k=a84c989068ac25cf24149252c51f54bb3b576586",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro-travel-azul",
-    brand: "Adidas",
-    model: "Camiseta Tiro Travel - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 35.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383378&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134975-00-S-M-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjE1OXxpbWFnZS9qcGVnfGFEVmpMMmd6Wmk4eE16Z3pOekl4TVRBM05EVTVNQzl0WldScFlYTmZNVEF3TVRFek5EazNOVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58ZTc4MGM5NTIyYTQ4ZjE1MmQ1NGVlZjg1ODM0OTk5MWM2YTdjNzYyODA2NDU5MDMxYjZlY2U3ZDc0ODAzOGM1MA&feedId=58083&k=37956d88264ebf336f7633d7968d1c8ba57bc356",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro-travel-marino",
-    brand: "Adidas",
-    model: "Camiseta Tiro Travel - Marino",
-    colour: "Marino",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.75,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383640&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134972-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjYyN3xpbWFnZS9qcGVnfGFHRXhMMmhoTWk4eE16Z3pOamM0T1RFMU16Z3lNaTl0WldScFlYTmZNVEF3TVRFek5EazNNbDh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58MTg5OWU0NTNkYjI5YzBlNmVjNTFmMjgwMzkwZDg0ZTMxNDZlYzdiYWRjNTUxMjFhODM3NjIwYjEzYThiZjFmMA&feedId=58083&k=03c53b8fd5ee717bb654d0b2d1df72f062f35ddd",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro-travel-rojo",
-    brand: "Adidas",
-    model: "Camiseta Tiro Travel - Rojo",
-    colour: "Rojo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.75,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46272938721&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134974-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NjIyNHxpbWFnZS9qcGVnfGFEazBMMmcyTmk4eE16Z3pOakl6TmpVMU5ESTNNQzl0WldScFlYTmZNVEF3TVRFek5EazNORjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58NDVhOTE3ZTkzODBlMzAyZGY2ZjMzZTk3YTg5NGZlOGJlMjY2OGFiZTVlYmQ4ZDdlOGEwZjQ5ZGVjN2FiNWVmNQ&feedId=58083&k=f0a39c9e2cf7238f08f1be2a5396237b09c431bf",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro24-azul",
-    brand: "Adidas",
-    model: "Camiseta Tiro24 - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.41,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46252981672&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000981064-00-S-M-20240123120654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU1M3xpbWFnZS9qcGVnfGFHRTBMMmhoTXk4eE1Ua3pNRGczTmpJNE1EZzJNaTl0WldScFlYTmZNVEF3TURrNE1UQTJORjh3TUY5VFgwMHRNakF5TkRBeE1qTXhNakEyTlRRdWFuQm58NTk5MDk2ZTIzMDQ1Y2JhYzY1NDNmMjJkNDIwMGM4OTdlZDRlMjU0NzY2ZTI1YjUzYWU1NGRhNmJiMzNhYWMwOA&feedId=58083&k=cdd89740e9eff716835418727ec628d73db46be7",
-        sizes: ["XS", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro24-marino",
-    brand: "Adidas",
-    model: "Camiseta Tiro24 - Marino",
-    colour: "Marino",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.41,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40883412193&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000981068-00-S-M-20240117155929.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzAzNnxpbWFnZS9qcGVnfGFHRTFMMmd6TlM4eE1Ua3hPRE01T0RBeU9UZzFOQzl0WldScFlYTmZNVEF3TURrNE1UQTJPRjh3TUY5VFgwMHRNakF5TkRBeE1UY3hOVFU1TWprdWFuQm58YzBiYTVhODQ2MGViODQwYTgwYzMxZThkMDVkZWE2NmQwZWY1YjhhNDEzNTI0ZDU1YzcxNDc4MDJiZDgyY2ZhZQ&feedId=58083&k=d04f179683226de3f76b4b91bebbb71570d8b06e",
-        sizes: ["XL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro25-essentials-negro",
-    brand: "Adidas",
-    model: "Camiseta Tiro25 Essentials - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46078450681&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052570-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDMwM3xpbWFnZS9qcGVnfGFHWTVMMmhtTXk4eE1qZ3dNakV3TmpBMk5Ea3lOaTl0WldScFlYTmZNVEF3TVRBMU1qVTNNRjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58ZGZiOTFkNzg2OGVjOTQ3ZDA3OWRjMDVmNzFlZjJmMDI1NDIyZmY4YjVjZWI0Y2FjYTlhYzFhYTA0MDdhYjJjMA&feedId=58083&k=21b4a0e93d0abd980090d2250a6e388508796734",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro26-league-amarillo",
-    brand: "Adidas",
-    model: "Camiseta Tiro26 League - Amarillo",
-    colour: "Amarillo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.41,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378104&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112344-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjcxNnxpbWFnZS9qcGVnfGFHSmlMMmhpTUM4eE16VTJNemN4TmpJd05qWXlNaTl0WldScFlYTmZNVEF3TVRFeE1qTTBORjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58MjAyM2JlNmM4NjgzOTZhNTUxMTVlOGJhOWEwMGZiNTZiOGQyYWE1ZGYxODNkNmI2OWY0ZjA0YTc3N2ZjMWIyNA&feedId=58083&k=a3cdbf9d6452549c598defb6138e26feaecd928f",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro26-league-azul",
-    brand: "Adidas",
-    model: "Camiseta Tiro26 League - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.41,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249377890&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112334-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjI4NnxpbWFnZS9qcGVnfGFHVTFMMmhrTnk4eE16VTJNemN4TURNd09ETTRNaTl0WldScFlYTmZNVEF3TVRFeE1qTXpORjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58MjRjMTQ1OTM4ZjY5YjNlNDZmMmMyNWQ1NWEzNmU4N2M4ODFjNDc1NTExMTg3ZGEzMDA4MjFmYjk2MTliZTFkOA&feedId=58083&k=c254cfe8a6301a17a2df891bc3373f41356df555",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro26-league-blanco",
-    brand: "Adidas",
-    model: "Camiseta Tiro26 League - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.41,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378155&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112332-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODkwMnxpbWFnZS9qcGVnfGFEUTFMMmcwT1M4eE16VTJNemN3T1RBMk16RTVPQzl0WldScFlYTmZNVEF3TVRFeE1qTXpNbDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58YjAyZmFiZGNhOTE1NWM2NzgxOWFmOTc1NjM4ZjE0ZmY4MmFjNWFhZmIzNzY2Y2FjMmJiOTNlNWFjN2IyOGY1Ng&feedId=58083&k=9f99cf974fb61237dae49844ae150051428203bd",
-        sizes: ["XS", "S", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro26-league-gris",
-    brand: "Adidas",
-    model: "Camiseta Tiro26 League - Gris",
-    colour: "Gris",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.41,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378052&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112330-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE3OHxpbWFnZS9qcGVnfGFHVTRMMmhtWVM4eE16VTJNemN3TnpjMU1qUTNPQzl0WldScFlYTmZNVEF3TVRFeE1qTXpNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58MGVkNGFjYmViNDIzZWU3NWQ2MjQ2MzQxNTI0NjE5NjdjNTg5ZmI1MTEzNmYwNWRiMjgwYzVjNzQxNGI0NjZiMg&feedId=58083&k=0537b15b6bd5e9158f11b36da332b53baeb5d3e3",
-        sizes: ["XS", "S", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro26-league-marino",
-    brand: "Adidas",
-    model: "Camiseta Tiro26 League - Marino",
-    colour: "Marino",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.41,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378007&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112346-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODAzMHxpbWFnZS9qcGVnfGFHUXpMMmd6WWk4eE16VTJNemN4TnpVNE1qZzNPQzl0WldScFlYTmZNVEF3TVRFeE1qTTBObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58MzFkOTlkZTZlNGEwMzAzZjQ3ZDBkOGZjYjMxNDNjZDRjMzgzZTRjNGFmZWQxNWRkYTY1MjMyNmU5ZDI5NTAxOQ&feedId=58083&k=c108511926276a14ccd0d313e8506388b83d5bcb",
-        sizes: ["XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro26-league-negro",
-    brand: "Adidas",
-    model: "Camiseta Tiro26 League - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46119082809&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112341-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ3M3xpbWFnZS9qcGVnfGFERTNMMmczWXk4eE16VTJNemN4TkRJME1EVTBNaTl0WldScFlYTmZNVEF3TVRFeE1qTTBNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58N2VmNjBhODk1OTFlYWQwNTAzYWZiODM1NWFlN2QyMGU0ZDBmYzcyYTk2YjJlYmVkZWRiNmZkNjhkYzE0NDBiMg&feedId=58083&k=95793519b25a19f37bb429e68529dd4bd22fb037",
-        sizes: ["XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro26-league-negro-2",
-    brand: "Adidas",
-    model: "Camiseta Tiro26 League - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 18.97,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249377945&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112327-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQxOHxpbWFnZS9qcGVnfGFHWXlMMmczWmk4eE16VTJNemN3TmpJME5URTFNQzl0WldScFlYTmZNVEF3TVRFeE1qTXlOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58NzExMDVmZjUxMTc3NDY3YjNmMGZlNzg1ZTdmMjAxNDRiNzkzNzgzOWMzOGQwNTMyNGYxYjdkNjgxYmM4MGVhMg&feedId=58083&k=170cab28e8c093b6711871196514187b32238a0c",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro26-league-rojo",
-    brand: "Adidas",
-    model: "Camiseta Tiro26 League - Rojo",
-    colour: "Rojo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.41,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378054&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112336-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYyMHxpbWFnZS9qcGVnfGFHWXlMMmhpTmk4eE16VTJNemN4TVRVMU16VTJOaTl0WldScFlYTmZNVEF3TVRFeE1qTXpObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58ZmY5YjM1YzEzODYwMmUzY2ZmMWRiMTYzYjE2YWE1M2VkMTlkOWMwYTRiMjJjNWYzMDllZjgxZTAyNzliYzYzZg&feedId=58083&k=07409fc892d9f1c3f1285601af633da213d42b82",
-        sizes: ["L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-camiseta-tiro26-league-verde",
-    brand: "Adidas",
-    model: "Camiseta Tiro26 League - Verde",
-    colour: "Verde",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.41,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378157&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112340-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjM3NnxpbWFnZS9qcGVnfGFHTmlMMmcwTWk4eE16VTJNemN4TWpnMk5ESTROaTl0WldScFlYTmZNVEF3TVRFeE1qTTBNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58NGUzMGRmYTM5N2YyY2VkNzI2N2I3OTlmMGZjOGEwN2MxYjc0NTc1NWI1OTFkNDAxODUyNTg4M2RhNjdiMjVlNQ&feedId=58083&k=55b9e2be8f9edbda5913ed1d26d748242427dc5c",
-        sizes: ["XS", "S", "XL", "XXL", "XXXL"],
       },
     ],
   },
@@ -17108,6 +17126,24 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-chandal-juventus-25-26-entrenamiento-blanco",
+    brand: "Adidas",
+    model: "Chándal Adidas Juventus 25/26 Entrenamiento - Blanco",
+    colour: "Blanco",
+    type: "set",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 77.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45877078065&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087335-00-S-M-20250814132136.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIxMXxpbWFnZS9qcGVnfGFHRTVMMmhqT0M4eE16RXhPVFEyTURBNE1UWTVOQzl0WldScFlYTmZNVEF3TVRBNE56TXpOVjh3TUY5VFgwMHRNakF5TlRBNE1UUXhNekl4TXpZdWFuQm58ZWM3NWM4OWRiNTI4YTkwZTU5ZWQyMGYxMWI2YWQ1ZWQ1NjE1NWM1MGJlZjBlZDdkMzNiMGIzMTAzMmJkMzkzNw&feedId=58083&k=60881a8963550b323caa70fdeb3ffab2909f96b1",
+        sizes: ["M", "XL"],
+      },
+    ],
+  },
+  {
     id: "adidas-chandal-bayern-munich-2025-26-naranja",
     brand: "Adidas",
     model: "Chándal Bayern Múnich 2025/26 - Naranja",
@@ -17876,24 +17912,6 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fku6979-veste-de-survetement-manchester-united-tiro-tech-2026-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ku6979-black-6af304a2e81e1-1.webp",
         sizes: ["M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-chandal-juventus-25-26-entrenamiento-blanco",
-    brand: "Adidas",
-    model: "Chándal Juventus 25/26 Entrenamiento - Blanco",
-    colour: "Blanco",
-    type: "set",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 77.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45877078065&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087335-00-S-M-20250814132136.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIxMXxpbWFnZS9qcGVnfGFHRTVMMmhqT0M4eE16RXhPVFEyTURBNE1UWTVOQzl0WldScFlYTmZNVEF3TVRBNE56TXpOVjh3TUY5VFgwMHRNakF5TlRBNE1UUXhNekl4TXpZdWFuQm58ZWM3NWM4OWRiNTI4YTkwZTU5ZWQyMGYxMWI2YWQ1ZWQ1NjE1NWM1MGJlZjBlZDdkMzNiMGIzMTAzMmJkMzkzNw&feedId=58083&k=60881a8963550b323caa70fdeb3ffab2909f96b1",
-        sizes: ["M", "XL"],
       },
     ],
   },
@@ -36904,7 +36922,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
   {
     id: "adidas-chubasquero-de-entrenamiento-real-madrid-24-25-segunda-equipacion-azul",
     brand: "Adidas",
-    model: "Chubasquero de entrenamiento Real Madrid 24/25 Segunda Equipacion - Azul",
+    model: "Chubasquero de entrenamiento Adidas Real Madrid 24/25 Segunda Equipacion - Azul",
     colour: "Azul",
     type: "jacket",
     offers: [
@@ -40281,6 +40299,24 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-espinilleras-f50-competition-negro",
+    brand: "Adidas",
+    model: "Espinilleras Adidas F50 Competition - Negro",
+    colour: "Negro",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 30.35,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249384463&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135249-00-P-X-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk0MnxpbWFnZS9qcGVnfGFERmtMMmc1WWk4eE16Z3pOamc1TkRZMk5qYzRNaTl0WldScFlYTmZNVEF3TVRFek5USTBPVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58YzBjMTMyODUzNTFlOTc1MDA3MjU2NDVkNWVlYzVlZTEwNzMxNDU1YWYwNTNjMTIyZDQ5MmVkYTdhOTkzMjYyYg&feedId=58083&k=5051ab3958703011c068b426566b67534bfe0b7a",
+        sizes: ["XS", "S", "M", "L"],
+      },
+    ],
+  },
+  {
     id: "adidas-espinilleras-adidas-f50-eu-club-violet",
     brand: "Adidas",
     model: "Espinilleras adidas F50 EU Club - Violet",
@@ -40560,6 +40596,24 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-espinilleras-f50-messi-sg-eu-club-azul",
+    brand: "Adidas",
+    model: "Espinilleras Adidas F50 Messi Sg Eu Club - Azul",
+    colour: "Azul",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 18.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44939688664&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102143-00-P-X-20260525112510.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjI0M3xpbWFnZS9qcGVnfGFEWmlMMmc0TUM4eE16YzROamsxTnpVeE1qY3pOQzl0WldScFlYTmZNVEF3TVRFd01qRTBNMTh3TUY5UVgxZ3RNakF5TmpBMU1qVXhNVEkxTVRBdWFuQm58ZWQwMDkwOGVmNjZkMWE3NWJmMTllOTk3NmFhZTY3NDllMjhlODMxNDQ4NGM2N2UzMGEwZGIzOTc3NTk3YTcwMA&feedId=58083&k=01814b53b97f0f924ca493fb661fe3d42403b038",
+        sizes: ["XS", "S", "M", "L"],
+      },
+    ],
+  },
+  {
     id: "adidas-espinilleras-adidas-f50-rose",
     brand: "Adidas",
     model: "Espinilleras adidas F50 - Rose",
@@ -40596,6 +40650,42 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-espinilleras-f50-sg-eu-club-plata",
+    brand: "Adidas",
+    model: "Espinilleras Adidas F50 Sg Eu Club - Plata",
+    colour: "Plata",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 15.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44894572441&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102145-00-P-X-20260525112510.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU3OHxpbWFnZS9qcGVnfGFEUTFMMmd3WXk4eE16YzROamsxT0RneU16UTFOQzl0WldScFlYTmZNVEF3TVRFd01qRTBOVjh3TUY5UVgxZ3RNakF5TmpBMU1qVXhNVEkxTVRBdWFuQm58YjZhMjc2ZThlNjA0MmY4ZDNlY2VmOWY4MjUxZWMyZmFjNTIzN2NiZjQ2NjVmZTQ4ZDA1ZjI3MDRkNzczOTBlMw&feedId=58083&k=acbf7889bb8d4bd3beb5e34c930738dcf70ea02d",
+        sizes: ["XS", "S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-espinilleras-f50-sg-league-plata",
+    brand: "Adidas",
+    model: "Espinilleras Adidas F50 Sg League - Plata",
+    colour: "Plata",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 28.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44894572436&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102144-00-P-X-20260513144218.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI1NHxpbWFnZS9qcGVnfGFHTmtMMmhpWVM4eE16YzJNakEwT0RZMU5UTTVNQzl0WldScFlYTmZNVEF3TVRFd01qRTBORjh3TUY5UVgxZ3RNakF5TmpBMU1UTXhORFF5TVRndWFuQm58OWY4ZTliMjJkZDQ1YmNlMTVlODVkYjE4OWYzYjAwNTZjZTkyZDgwNzM1M2UzMWEyMzE5OWU4NTM4MzkwMmRjMA&feedId=58083&k=d9955acd77f9e27bd7ef77298ae5e9c1e0db4b36",
+        sizes: ["XS", "S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
     id: "adidas-espinilleras-adidas-league-tiro-25-verde",
     brand: "Adidas",
     model: "Espinilleras adidas League Tiro 25 - Verde",
@@ -40625,6 +40715,42 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=41950950013&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048399-00-P-X-20250728160439.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ4NHxpbWFnZS9qcGVnfGFEVTVMMmcyTXk4eE16QTROREU1TURnek5EY3hPQzl0WldScFlYTmZNVEF3TVRBME9ETTVPVjh3TUY5UVgxZ3RNakF5TlRBM01qZ3hOakEwTXprdWFuQm58YjE3NzViY2I0ZWJlYjYyNDJlZmEyZGMxYjIzMTRjMWY2NDk4YzkzNDkwMWNiNDAzZjY0NTQ4MjhhZDI3YjZlOA&feedId=58083&k=bbeab53562bfca7e62e28f8c6404ed14b4421085",
         sizes: ["L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-espinilleras-messi-match-blanco",
+    brand: "Adidas",
+    model: "Espinilleras Adidas Messi Match - Blanco",
+    colour: "Blanco",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 15.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42027484456&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048512-00-P-X-20250611133315.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc5M3xpbWFnZS9qcGVnfGFETm1MMmd6WVM4eE1qazRNamc0TXpjME5UZ3lNaTl0WldScFlYTmZNVEF3TVRBME9EVXhNbDh3TUY5UVgxZ3RNakF5TlRBMk1URXhNek16TVRVdWFuQm58NzUyNzZhM2QwYTUxYTE3ODY3OGIyZmFmODVhMWRiNzI5OTdkZjAxMDBiZWRkYTI3NmUzNzkzYWZmOTc3MGIzNA&feedId=58083&k=193abf160588e465e08aa047a182f9d93c66185b",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-espinilleras-messi-match-negro",
+    brand: "Adidas",
+    model: "Espinilleras Adidas Messi Match - Negro",
+    colour: "Negro",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38388576403&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978466-00-P-X-20240718111332.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODczNnxpbWFnZS9qcGVnfGFETTVMMmhtWVM4eE1qSTJNelV5T1RBNE56QXdOaTl0WldScFlYTmZNVEF3TURrM09EUTJObDh3TUY5UVgxZ3RNakF5TkRBM01UZ3hNVEV6TXpJdWFuQm58MmM2YWZjNDk1ZTg4OWVjZjBiMjBkNjI1MzQ2ZjBjMzAwZWViZGVmNDdlZTdkN2E2ZWZiMDE1YWE2Yjg1OWMyNQ&feedId=58083&k=355df0c36eb9462ea334eaed844be5328352d776",
+        sizes: ["S", "L"],
       },
     ],
   },
@@ -40903,6 +41029,15 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         sizes: ["XL"],
       },
       {
+        store: "ForumSport",
+        price: 18.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39115897916&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978464-00-P-X-20240718111332.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODAxMnxpbWFnZS9qcGVnfGFEYzJMMmcwTkM4eE1qSTJNelV5Tnprd056TTFPQzl0WldScFlYTmZNVEF3TURrM09EUTJORjh3TUY5UVgxZ3RNakF5TkRBM01UZ3hNVEV6TXpJdWFuQm58OGUyMjAzMDZjZjBkZjI1ZWFhNGNmNDAwMzE3MzUyNDU0ZTNhNzk5OTU5ZjI2N2VjMDQ3ZDIxNzZjNjdiN2RlZg&feedId=58083&k=4af1ab3c25e1a37aefe7ca335c94f8c241ac4fb9",
+        sizes: ["L"],
+      },
+      {
         store: "FootStoreFR",
         price: 25.0,
         shipping: 7.99,
@@ -40910,6 +41045,24 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fje3928-protege-tibias-adidas-tiro-league-blufus-lucpnk-luclem",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_je3928_blufus-lucpnk-luclem_1.jpg",
         sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-espinilleras-tiro-league-blanco",
+    brand: "Adidas",
+    model: "Espinilleras Adidas Tiro League - Blanco",
+    colour: "Blanco",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 18.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39115897917&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978465-00-P-X-20240718111332.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzM2NXxpbWFnZS9qcGVnfGFETXdMMmc1WlM4eE1qSTJNelV5T0RRNU56RTRNaTl0WldScFlYTmZNVEF3TURrM09EUTJOVjh3TUY5UVgxZ3RNakF5TkRBM01UZ3hNVEV6TXpJdWFuQm58MzZjNjMzYWVmMDhkNjM2OTQyOGZlNmIxMTYwYzk3ODdmY2RhNmZhODU0MjJiM2IyODU0MTQ3Nzc0ODUyNzZiZA&feedId=58083&k=e72d318a784f6a96843dc6df049b45bf9369ba8a",
+        sizes: ["L"],
       },
     ],
   },
@@ -40928,6 +41081,15 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46391438078&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hn5606_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=5ebda9b108f24232b31e72254e9a1959f054b51c",
         sizes: ["XL"],
+      },
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36737819025&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000929568-00-P-X-20231213163655.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc1N3xpbWFnZS9qcGVnfGFHWTRMMmcxTVM4eE1UZ3lNVGN5TURZek16TTNOQzl0WldScFlYTmZNVEF3TURreU9UVTJPRjh3TUY5UVgxZ3RNakF5TXpFeU1UTXhOak0yTlRVdWFuQm58YjBlMzk2ZDM1ZmI5MTZmMDk0ZjkyYjBkZTU1ZWRkOWVjNTY2NzMxNDE4MjhjNmJmM2U5MWI1MTdjYTdkOGFhMA&feedId=58083&k=6030cdaa00fec751d8a6614c12b2d3996b6eeacb",
+        sizes: ["L"],
       },
       {
         store: "FootStoreFR",
@@ -41029,6 +41191,24 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-espinilleras-tiro-match-negro",
+    brand: "Adidas",
+    model: "Espinilleras Adidas Tiro Match - Negro",
+    colour: "Negro",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 15.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265349853&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000929566-00-P-X-20240108100816.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU2M3xpbWFnZS9qcGVnfGFETTNMMmcwWWk4eE1UZzVNVFk0TWpFME9ETTRNaTl0WldScFlYTmZNVEF3TURreU9UVTJObDh3TUY5UVgxZ3RNakF5TkRBeE1EZ3hNREE0TVRZdWFuQm58ZGVlM2UwM2FjNDRhNWNjY2ViZTIzNmViZGJhNjA5NDgxMmNiMDZmZjNlMGY4MTQwMGFlZTYwYTkxZTIxNWQwNg&feedId=58083&k=3f8769d756c4f17814e38781aeb959eb1e49da3d",
+        sizes: ["S", "L"],
+      },
+    ],
+  },
+  {
     id: "adidas-espinilleras-adidas-tiro-negro",
     brand: "Adidas",
     model: "Espinilleras adidas Tiro - Negro",
@@ -41079,15 +41259,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw3789-protege-tibias-adidas-tiro-solred-lucblu-white",
         imageUrl: "https://b2c.spacefoot.com/media/catalog/product/a/d/adidas_iw3789_1_hardware_photography_front_center_view_white.jpg",
         sizes: ["L", "XL"],
-      },
-      {
-        store: "ForumSport",
-        price: 18.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39115897916&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978464-00-P-X-20240718111332.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODAxMnxpbWFnZS9qcGVnfGFEYzJMMmcwTkM4eE1qSTJNelV5Tnprd056TTFPQzl0WldScFlYTmZNVEF3TURrM09EUTJORjh3TUY5UVgxZ3RNakF5TkRBM01UZ3hNVEV6TXpJdWFuQm58OGUyMjAzMDZjZjBkZjI1ZWFhNGNmNDAwMzE3MzUyNDU0ZTNhNzk5OTU5ZjI2N2VjMDQ3ZDIxNzZjNjdiN2RlZg&feedId=58083&k=4af1ab3c25e1a37aefe7ca335c94f8c241ac4fb9",
-        sizes: ["L"],
       },
     ],
   },
@@ -41143,15 +41314,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ip4000_1_hardware_photography_front_view_white1.webp",
         sizes: ["S", "M", "L", "XL"],
       },
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36737819025&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000929568-00-P-X-20231213163655.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc1N3xpbWFnZS9qcGVnfGFHWTRMMmcxTVM4eE1UZ3lNVGN5TURZek16TTNOQzl0WldScFlYTmZNVEF3TURreU9UVTJPRjh3TUY5UVgxZ3RNakF5TXpFeU1UTXhOak0yTlRVdWFuQm58YjBlMzk2ZDM1ZmI5MTZmMDk0ZjkyYjBkZTU1ZWRkOWVjNTY2NzMxNDE4MjhjNmJmM2U5MWI1MTdjYTdkOGFhMA&feedId=58083&k=6030cdaa00fec751d8a6614c12b2d3996b6eeacb",
-        sizes: ["L"],
-      },
     ],
   },
   {
@@ -41168,6 +41330,15 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41219759975&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jv6750_black-goldmt-white_1.jpg&feedId=89032&k=aa347d7f027af278a24dee94f0b8c27756fc4e47",
+        sizes: ["L"],
+      },
+      {
+        store: "ForumSport",
+        price: 15.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265361067&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978455-00-P-X-20240621160844.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njk0NXxpbWFnZS9qcGVnfGFHUmxMMmd3T1M4eE1qSXhNRFEzT0Rrd056UXlNaTl0WldScFlYTmZNVEF3TURrM09EUTFOVjh3TUY5UVgxZ3RNakF5TkRBMk1qRXhOakE0TkRRdWFuQm58MWYwNDdjNTE5MDdlMzBkM2JmMmUwMTNjY2I1ZmIzOTEwOWU5MjVlMGIzNzM3NWU1NDExMTg3ZmQ5MWJlODlhMg&feedId=58083&k=6599d0dc2e566d4bad0791bff3700e42242eaf49",
         sizes: ["L"],
       },
       {
@@ -41214,6 +41385,60 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=41378532915&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000980959-00-P-X-20231226135735.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ2NXxpbWFnZS9qcGVnfGFEWXhMMmcyTkM4eE1UZzFOekl3TXpJek1qYzVPQzl0WldScFlYTmZNVEF3TURrNE1EazFPVjh3TUY5UVgxZ3RNakF5TXpFeU1qWXhNelUzTXpVdWFuQm58YWM1NGE4ZTUzZDYxZTBmZDdkZjQyM2U5MTc4NWVhNmYwODQyYTJjZjI3MTQyN2VhOWNmOTdmMzM1NmM3MGMzYg&feedId=58083&k=dacabfe0dda9b4813709c9aea38c705881caee74",
         sizes: ["S", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-espinilleras-x-league-azul",
+    brand: "Adidas",
+    model: "Espinilleras Adidas X League - Azul",
+    colour: "Azul",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 18.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46193232718&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000895367-00-P-X-20231016105050.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA4OXxpbWFnZS9qcGVnfGFEUXlMMmhqTXk4eE1UWTROemt3TlRjeU1qTTVPQzl0WldScFlYTmZNVEF3TURnNU5UTTJOMTh3TUY5UVgxZ3RNakF5TXpFd01UWXhNRFV3TlRBdWFuQm58YWFhNjlhZTliMWNkMmZmOWM4NmY3MjUxMmZkYzIxMDdiYWRiYTU1YzRjMDRlMGJkZjhlNWQ2N2M4NThiNzAwOA&feedId=58083&k=c63253e08330ae0d21a08768d88124b43e46bf17",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
+    id: "adidas-espinilleras-x-league-negro",
+    brand: "Adidas",
+    model: "Espinilleras Adidas X League - Negro",
+    colour: "Negro",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46308966990&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000895368-00-P-X-20230526103921.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc0MXxpbWFnZS9qcGVnfGFHRXpMMmhtWVM4eE1UUTBNVEE1TkRVMU56Y3lOaTl0WldScFlYTmZNVEF3TURnNU5UTTJPRjh3TUY5UVgxZ3RNakF5TXpBMU1qWXhNRE01TWpFdWFuQm58MGNhMzNjZjZiMWJjN2IzMWI1ZmZjYTQyZGY0MmJmYTc5YzJhZmQ0YTIwNjAzNzk1N2QyYzA3NjIyNDQxNzQ3ZA&feedId=58083&k=5b0a8a85e2ee5918eb5245b61bd4ac01200f4e5b",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-espinilleras-x-speedportal-league-negro",
+    brand: "Adidas",
+    model: "Espinilleras Adidas X Speedportal League - Negro",
+    colour: "Negro",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 18.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36494575962&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000844629-00-P-X-20221129094831.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY3M3xpbWFnZS9qcGVnfGFEWTJMMmcyTmk4eE1UQTNNakEwTURNM01ESXdOaTl0WldScFlYTmZNVEF3TURnME5EWXlPVjh3TUY5UVgxZ3RNakF5TWpFeE1qa3dPVFE0TXpFdWFuQm58OWEyMTk0OWQ4NjI2MTRjZjdhNWNiOWY5YjcwOGNiYzFhOTk2MmQ3YTFlNTA4MzQ1YTM4NTRhZDExYjI2ZDgyNw&feedId=58083&k=dac251ef2dc44c9df023620c1cf3a4e0a4ee9a01",
+        sizes: ["L"],
       },
     ],
   },
@@ -41429,213 +41654,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
           { size: "L", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip3998-protege-tibias-d-entrainement-adidas-tiro-black-goldmt-white" },
           { size: "XL", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip3998-protege-tibias-d-entrainement-adidas-tiro-black-goldmt-white" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 15.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265361067&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978455-00-P-X-20240621160844.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njk0NXxpbWFnZS9qcGVnfGFHUmxMMmd3T1M4eE1qSXhNRFEzT0Rrd056UXlNaTl0WldScFlYTmZNVEF3TURrM09EUTFOVjh3TUY5UVgxZ3RNakF5TkRBMk1qRXhOakE0TkRRdWFuQm58MWYwNDdjNTE5MDdlMzBkM2JmMmUwMTNjY2I1ZmIzOTEwOWU5MjVlMGIzNzM3NWU1NDExMTg3ZmQ5MWJlODlhMg&feedId=58083&k=6599d0dc2e566d4bad0791bff3700e42242eaf49",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-f50-competition-negro",
-    brand: "Adidas",
-    model: "Espinilleras F50 Competition - Negro",
-    colour: "Negro",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 30.35,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249384463&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135249-00-P-X-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk0MnxpbWFnZS9qcGVnfGFERmtMMmc1WWk4eE16Z3pOamc1TkRZMk5qYzRNaTl0WldScFlYTmZNVEF3TVRFek5USTBPVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58YzBjMTMyODUzNTFlOTc1MDA3MjU2NDVkNWVlYzVlZTEwNzMxNDU1YWYwNTNjMTIyZDQ5MmVkYTdhOTkzMjYyYg&feedId=58083&k=5051ab3958703011c068b426566b67534bfe0b7a",
-        sizes: ["XS", "S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-f50-messi-sg-eu-club-azul",
-    brand: "Adidas",
-    model: "Espinilleras F50 Messi Sg Eu Club - Azul",
-    colour: "Azul",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 18.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44939688664&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102143-00-P-X-20260525112510.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjI0M3xpbWFnZS9qcGVnfGFEWmlMMmc0TUM4eE16YzROamsxTnpVeE1qY3pOQzl0WldScFlYTmZNVEF3TVRFd01qRTBNMTh3TUY5UVgxZ3RNakF5TmpBMU1qVXhNVEkxTVRBdWFuQm58ZWQwMDkwOGVmNjZkMWE3NWJmMTllOTk3NmFhZTY3NDllMjhlODMxNDQ4NGM2N2UzMGEwZGIzOTc3NTk3YTcwMA&feedId=58083&k=01814b53b97f0f924ca493fb661fe3d42403b038",
-        sizes: ["XS", "S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-f50-sg-eu-club-plata",
-    brand: "Adidas",
-    model: "Espinilleras F50 Sg Eu Club - Plata",
-    colour: "Plata",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 15.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44894572441&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102145-00-P-X-20260525112510.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU3OHxpbWFnZS9qcGVnfGFEUTFMMmd3WXk4eE16YzROamsxT0RneU16UTFOQzl0WldScFlYTmZNVEF3TVRFd01qRTBOVjh3TUY5UVgxZ3RNakF5TmpBMU1qVXhNVEkxTVRBdWFuQm58YjZhMjc2ZThlNjA0MmY4ZDNlY2VmOWY4MjUxZWMyZmFjNTIzN2NiZjQ2NjVmZTQ4ZDA1ZjI3MDRkNzczOTBlMw&feedId=58083&k=acbf7889bb8d4bd3beb5e34c930738dcf70ea02d",
-        sizes: ["XS", "S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-f50-sg-league-plata",
-    brand: "Adidas",
-    model: "Espinilleras F50 Sg League - Plata",
-    colour: "Plata",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 28.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44894572436&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102144-00-P-X-20260513144218.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI1NHxpbWFnZS9qcGVnfGFHTmtMMmhpWVM4eE16YzJNakEwT0RZMU5UTTVNQzl0WldScFlYTmZNVEF3TVRFd01qRTBORjh3TUY5UVgxZ3RNakF5TmpBMU1UTXhORFF5TVRndWFuQm58OWY4ZTliMjJkZDQ1YmNlMTVlODVkYjE4OWYzYjAwNTZjZTkyZDgwNzM1M2UzMWEyMzE5OWU4NTM4MzkwMmRjMA&feedId=58083&k=d9955acd77f9e27bd7ef77298ae5e9c1e0db4b36",
-        sizes: ["XS", "S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-messi-match-blanco",
-    brand: "Adidas",
-    model: "Espinilleras Messi Match - Blanco",
-    colour: "Blanco",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 15.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42027484456&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048512-00-P-X-20250611133315.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc5M3xpbWFnZS9qcGVnfGFETm1MMmd6WVM4eE1qazRNamc0TXpjME5UZ3lNaTl0WldScFlYTmZNVEF3TVRBME9EVXhNbDh3TUY5UVgxZ3RNakF5TlRBMk1URXhNek16TVRVdWFuQm58NzUyNzZhM2QwYTUxYTE3ODY3OGIyZmFmODVhMWRiNzI5OTdkZjAxMDBiZWRkYTI3NmUzNzkzYWZmOTc3MGIzNA&feedId=58083&k=193abf160588e465e08aa047a182f9d93c66185b",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-messi-match-negro",
-    brand: "Adidas",
-    model: "Espinilleras Messi Match - Negro",
-    colour: "Negro",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38388576403&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978466-00-P-X-20240718111332.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODczNnxpbWFnZS9qcGVnfGFETTVMMmhtWVM4eE1qSTJNelV5T1RBNE56QXdOaTl0WldScFlYTmZNVEF3TURrM09EUTJObDh3TUY5UVgxZ3RNakF5TkRBM01UZ3hNVEV6TXpJdWFuQm58MmM2YWZjNDk1ZTg4OWVjZjBiMjBkNjI1MzQ2ZjBjMzAwZWViZGVmNDdlZTdkN2E2ZWZiMDE1YWE2Yjg1OWMyNQ&feedId=58083&k=355df0c36eb9462ea334eaed844be5328352d776",
-        sizes: ["S", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-tiro-league-blanco",
-    brand: "Adidas",
-    model: "Espinilleras Tiro League - Blanco",
-    colour: "Blanco",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 18.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39115897917&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978465-00-P-X-20240718111332.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzM2NXxpbWFnZS9qcGVnfGFETXdMMmc1WlM4eE1qSTJNelV5T0RRNU56RTRNaTl0WldScFlYTmZNVEF3TURrM09EUTJOVjh3TUY5UVgxZ3RNakF5TkRBM01UZ3hNVEV6TXpJdWFuQm58MzZjNjMzYWVmMDhkNjM2OTQyOGZlNmIxMTYwYzk3ODdmY2RhNmZhODU0MjJiM2IyODU0MTQ3Nzc0ODUyNzZiZA&feedId=58083&k=e72d318a784f6a96843dc6df049b45bf9369ba8a",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-tiro-match-negro",
-    brand: "Adidas",
-    model: "Espinilleras Tiro Match - Negro",
-    colour: "Negro",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 15.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265349853&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000929566-00-P-X-20240108100816.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU2M3xpbWFnZS9qcGVnfGFETTNMMmcwWWk4eE1UZzVNVFk0TWpFME9ETTRNaTl0WldScFlYTmZNVEF3TURreU9UVTJObDh3TUY5UVgxZ3RNakF5TkRBeE1EZ3hNREE0TVRZdWFuQm58ZGVlM2UwM2FjNDRhNWNjY2ViZTIzNmViZGJhNjA5NDgxMmNiMDZmZjNlMGY4MTQwMGFlZTYwYTkxZTIxNWQwNg&feedId=58083&k=3f8769d756c4f17814e38781aeb959eb1e49da3d",
-        sizes: ["S", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-x-league-azul",
-    brand: "Adidas",
-    model: "Espinilleras X League - Azul",
-    colour: "Azul",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 18.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46193232718&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000895367-00-P-X-20231016105050.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA4OXxpbWFnZS9qcGVnfGFEUXlMMmhqTXk4eE1UWTROemt3TlRjeU1qTTVPQzl0WldScFlYTmZNVEF3TURnNU5UTTJOMTh3TUY5UVgxZ3RNakF5TXpFd01UWXhNRFV3TlRBdWFuQm58YWFhNjlhZTliMWNkMmZmOWM4NmY3MjUxMmZkYzIxMDdiYWRiYTU1YzRjMDRlMGJkZjhlNWQ2N2M4NThiNzAwOA&feedId=58083&k=c63253e08330ae0d21a08768d88124b43e46bf17",
-        sizes: ["M"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-x-league-negro",
-    brand: "Adidas",
-    model: "Espinilleras X League - Negro",
-    colour: "Negro",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46308966990&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000895368-00-P-X-20230526103921.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc0MXxpbWFnZS9qcGVnfGFHRXpMMmhtWVM4eE1UUTBNVEE1TkRVMU56Y3lOaTl0WldScFlYTmZNVEF3TURnNU5UTTJPRjh3TUY5UVgxZ3RNakF5TXpBMU1qWXhNRE01TWpFdWFuQm58MGNhMzNjZjZiMWJjN2IzMWI1ZmZjYTQyZGY0MmJmYTc5YzJhZmQ0YTIwNjAzNzk1N2QyYzA3NjIyNDQxNzQ3ZA&feedId=58083&k=5b0a8a85e2ee5918eb5245b61bd4ac01200f4e5b",
-        sizes: ["M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-espinilleras-x-speedportal-league-negro",
-    brand: "Adidas",
-    model: "Espinilleras X Speedportal League - Negro",
-    colour: "Negro",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 18.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36494575962&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000844629-00-P-X-20221129094831.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY3M3xpbWFnZS9qcGVnfGFEWTJMMmcyTmk4eE1UQTNNakEwTURNM01ESXdOaTl0WldScFlYTmZNVEF3TURnME5EWXlPVjh3TUY5UVgxZ3RNakF5TWpFeE1qa3dPVFE0TXpFdWFuQm58OWEyMTk0OWQ4NjI2MTRjZjdhNWNiOWY5YjcwOGNiYzFhOTk2MmQ3YTFlNTA4MzQ1YTM4NTRhZDExYjI2ZDgyNw&feedId=58083&k=dac251ef2dc44c9df023620c1cf3a4e0a4ee9a01",
-        sizes: ["L"],
       },
     ],
   },
@@ -43323,6 +43341,24 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-medias-performance-fijaciones-para-medias-de-futbol-negro",
+    brand: "Adidas",
+    model: "Medias Adidas Performance Fijaciones Para Medias De Futbol - Negro",
+    colour: "Negro",
+    type: "socks",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 6.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46390643545&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000481009-00-P-X-20180928205347.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyMzgzMjF8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZ3pOQzlvTnpndk9Ea3dPVEV4TVRnMU16QTROaTVxY0djfGNkYTEwYzAyNjhhOWY0ODliMzk1NWExNDZjZDA1MWYzNGFiNGZhZjc1MTUwN2Q5ZTU1ODM1Y2I2YzVlN2MwOWM&feedId=58083&k=07a8813ecd337f86faa80a103c02db9d2a42cfe9",
+        sizes: [],
+      },
+    ],
+  },
+  {
     id: "adidas-medias-adidas-visitantes-seleccion-colombia-26-azul",
     brand: "Adidas",
     model: "Medias adidas Visitantes Selección Colombia 26 - Azul",
@@ -43590,24 +43626,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc6659-chaussettes-fc-copenhague-2026-27-vicblu",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kc6659-vicblu-6a706d8ac07f1-1.webp",
         sizes: ["43/45"],
-      },
-    ],
-  },
-  {
-    id: "adidas-medias-performance-fijaciones-para-medias-de-futbol-negro",
-    brand: "Adidas",
-    model: "Medias Performance Fijaciones Para Medias De Futbol - Negro",
-    colour: "Negro",
-    type: "socks",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 6.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46390643545&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000481009-00-P-X-20180928205347.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyMzgzMjF8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZ3pOQzlvTnpndk9Ea3dPVEV4TVRnMU16QTROaTVxY0djfGNkYTEwYzAyNjhhOWY0ODliMzk1NWExNDZjZDA1MWYzNGFiNGZhZjc1MTUwN2Q5ZTU1ODM1Y2I2YzVlN2MwOWM&feedId=58083&k=07a8813ecd337f86faa80a103c02db9d2a42cfe9",
-        sizes: [],
       },
     ],
   },
@@ -44530,6 +44548,78 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-corto-argelia-mundial-2026-entrenamiento-verde",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Argelia Mundial 2026 Entrenamiento - Verde",
+    colour: "Verde",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 37.51,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376020&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112960-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODk0MHxpbWFnZS9qcGVnfGFEYzRMMmcyWVM4eE16VTJNak0wTkRVd05UTTNOQzl0WldScFlYTmZNVEF3TVRFeE1qazJNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58MWUzZDAyZGExODNkYWU0ZDMwZmI3YWFkNGYyMTE5NjUzMmJiMDEyYWJmNDU1ZmMzZWVmMWFlM2MxMWZhZDU0OQ&feedId=58083&k=d23bc5cde0a84be3baaf301b7418122e124b92fa",
+        sizes: ["S", "M", "L", "XL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-argentina-mundial-2026-entrenamiento-marino",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Argentina Mundial 2026 Entrenamiento - Marino",
+    colour: "Marino",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 39.05,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378339&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112627-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQzMHxpbWFnZS9qcGVnfGFEUXlMMmc0T0M4eE16VTJNakl4T0RrM01URTJOaTl0WldScFlYTmZNVEF3TVRFeE1qWXlOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NTkxNjkzOTM4NTJkMTQ4MzliMTg5ODc3ZDFhZDA3YWNjNGNhZTg3ZTc1Nzg5NTZjNDc4Y2IxOTY4MTkxZTg1Yw&feedId=58083&k=166d2ea134ea1de2d63d4aca56b35e9a5afc4f03",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-arsenal-25-26-segunda-equipacion-azul",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Arsenal 25/26 Segunda Equipacion - Azul",
+    colour: "Azul",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 39.09,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46387516728&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001086478-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIyM3xpbWFnZS9qcGVnfGFHSmxMMmhrWVM4eE16RXhNekk0TVRjM016VTVPQzl0WldScFlYTmZNVEF3TVRBNE5qUTNPRjh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58ZmExMjU5NGY1YWFjZGE0ZGE3MjFhZDcxMGQwYWQ2Y2E0OTExN2Y1YTM2NzRiNGUzOWM3MDA5MGM3ZjhiYTVkNw&feedId=58083&k=d59de791a57629a65b5dbd4662dd10942b123cfc",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-bayern-de-munich-25-26-entrenamiento-negro",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Bayern De Munich 25/26 Entrenamiento - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 45.02,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42480110372&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001090473-00-S-M-20250912113003.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODQ5N3xpbWFnZS9qcGVnfGFEWXhMMmcxT1M4eE16RTNPVFEyTmpnM05Ea3hNQzl0WldScFlYTmZNVEF3TVRBNU1EUTNNMTh3TUY5VFgwMHRNakF5TlRBNU1USXhNVE13TURNdWFuQm58ZGRlZWJmNzEwYzc5MGI4YTYzN2EzZWJlOGYyZjlkN2JkNWQ0MDU1ODU0MTg1MjUzMGVkMzc0OGE4ODZiOWU3Yw&feedId=58083&k=4ec5a2b29acd2eae593a2800d6c2a41581131924",
+        sizes: ["L"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-corto-adidas-condivo-18-azul",
     brand: "Adidas",
     model: "Pantalón corto adidas Condivo 18 - Azul",
@@ -44834,6 +44924,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 15.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40100780975&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000794228-00-P-X-20211129142827.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTExMXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnek1DOW9ZVEF2TVRBME16a3hNak15TXpnNU5ESXVhbkJufDJiNjdkZDk2MGQ5YTQwY2Y4NDc4ZTgzZTZmNmZlMDA3MDhiNzVlOTQ5YjNkN2UxNzg5ZTMzNjlmYWUzNTkyYmQ&feedId=58083&k=7ebc86a0ddd843ae962abb9a3e476ba2a9a3ed30",
+        sizes: ["S", "M", "L", "XL"],
+      },
+      {
         store: "FootStoreFR",
         price: 18.0,
         priceMax: 21.0,
@@ -44847,15 +44946,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
           { size: "L", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg6294-short-adidas-entrada-22-bleu-royal" },
           { size: "2XL", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg6294-short-adidas-entrada-22-bleu-royal" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 15.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40100780975&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000794228-00-P-X-20211129142827.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTExMXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnek1DOW9ZVEF2TVRBME16a3hNak15TXpnNU5ESXVhbkJufDJiNjdkZDk2MGQ5YTQwY2Y4NDc4ZTgzZTZmNmZlMDA3MDhiNzVlOTQ5YjNkN2UxNzg5ZTMzNjlmYWUzNTkyYmQ&feedId=58083&k=7ebc86a0ddd843ae962abb9a3e476ba2a9a3ed30",
-        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -44883,6 +44973,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 14.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46317579201&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000794229-00-S-M-20211129142827.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTczNHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneU5pOW9PR012TVRBME16a3hNemt6TmpBM09UZ3VhbkJufGNmNjZkMTMyYjc4N2IyODM5NjA5ZjUxY2U1MmZlNWIxZWIwYTJjNzVmZGM5YjIzNDIxZjhkYTkzZjBhMjg5ZTc&feedId=58083&k=4aeca3a0fe2c4b8ec63abd330fb41b548ed03481",
+        sizes: ["S", "M", "L", "XL"],
+      },
+      {
         store: "FootStoreFR",
         price: 18.0,
         priceMax: 21.0,
@@ -44897,15 +44996,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
           { size: "XL", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg6295-short-adidas-entrada-22-blanc" },
           { size: "2XL", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhg6295-short-adidas-entrada-22-blanc" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 14.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46317579201&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000794229-00-S-M-20211129142827.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTczNHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneU5pOW9PR012TVRBME16a3hNemt6TmpBM09UZ3VhbkJufGNmNjZkMTMyYjc4N2IyODM5NjA5ZjUxY2U1MmZlNWIxZWIwYTJjNzVmZGM5YjIzNDIxZjhkYTkzZjBhMjg5ZTc&feedId=58083&k=4aeca3a0fe2c4b8ec63abd330fb41b548ed03481",
-        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -44953,15 +45043,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         sizes: ["S", "2XL"],
       },
       {
-        store: "FootStoreFR",
-        price: 18.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh57504-short-adidas-entrada-22-noir",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/5/h57504_app_photo_front-center_white_1645115928.webp",
-        sizes: ["S", "2XL"],
-      },
-      {
         store: "ForumSport",
         price: 15.99,
         shipping: 5.99,
@@ -44969,6 +45050,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46287326250&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000794195-00-S-M-20211129142827.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY1MnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJoa05pOW9ZbUV2TVRBME16a3dOamd6TlRJMU5ESXVhbkJufDlmYTNhMmM4MTIxMDdlMjAwZTEwMDBjY2JkYTQ4ZjMxYjIzZTlmY2E2ZmQ3ZGMwZDU3Yjg5ZTNkNDgxZGMzZTc&feedId=58083&k=d25065dc709c9795afb9dfa86567a09ce608a913",
         sizes: ["S", "L", "XL"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 18.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fh57504-short-adidas-entrada-22-noir",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/5/h57504_app_photo_front-center_white_1645115928.webp",
+        sizes: ["S", "2XL"],
       },
     ],
   },
@@ -45596,6 +45686,78 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-corto-entrada26-negro",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Entrada26 - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376780&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113753-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NjM1MHxpbWFnZS9qcGVnfGFHRTJMMmcwT0M4eE16VTJNekEyTnpVNU5qZ3pNQzl0WldScFlYTmZNVEF3TVRFeE16YzFNMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58ZDRiZWE4YWFiNWRiZGQwNGZjY2YwMWVjYjkwOGU2OTg1NGMzMzJhYWMyNTU5ZDkyZWQwYzE5ZWI1ZTA3MjdlOQ&feedId=58083&k=26ef8c61a1d644ffb46a8b0178199d6df699b814",
+        sizes: ["XS", "S", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-espana-mundial-2026-primera-equipacion",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Espana Mundial 2026 Primera Equipacion",
+    colour: "N/D",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 51.29,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249377414&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113311-00-S-M-20260206145545.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODAyMnxpbWFnZS9qcGVnfGFERTVMMmhpWVM4eE16VTJNall3T1RZMk5EQXpNQzl0WldScFlYTmZNVEF3TVRFeE16TXhNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhORFUxTkRVdWFuQm58YjNiODNiYzUzZTE1OTU5NWM1MDkxOTFmN2M5NjdmMWQ0NDJmMTkwZTdiYjIzMTVmNGM3ODAwZWZmMDBiNDA5MA&feedId=58083&k=ef87cefc138e6b0d958f0e3d1fae5ed0806f9f3e",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-espana-mundial-2026-primera-equipacion-azul",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Espana Mundial 2026 Primera Equipacion - Azul",
+    colour: "Azul",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 39.49,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249375143&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111209-00-S-M-20260206132219.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQzNnxpbWFnZS9qcGVnfGFHTTVMMmd5TlM4eE16VTJNVE0xTmpVMU1ERTNOQzl0WldScFlYTmZNVEF3TVRFeE1USXdPVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhNekl5TVRrdWFuQm58NjVjNTA5ZTk0MmEzZjViYzZlMThlYjdmMTJiNTVmNWI3NzhjN2U2YTczNTIzYzFkMWZjMmNjOTRiMThjYTg3MA&feedId=58083&k=eaa899822d9c88e123efd28d4c377a04a575ac3b",
+        sizes: ["XS", "S", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-espana-mundial-2026-segunda-equipacion-authentic-granate",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Espana Mundial 2026 Segunda Equipacion Authentic - Granate",
+    colour: "Granate",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 39.49,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46287326769&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111210-00-S-M-20260323165351.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTY5N3xpbWFnZS9qcGVnfGFEbGhMMmc0Tnk4eE16WTFOVFU0TmpnMk5URTRNaTl0WldScFlYTmZNVEF3TVRFeE1USXhNRjh3TUY5VFgwMHRNakF5TmpBek1qTXhOalV6TlRFdWFuQm58NWNiOWFiNjJjOWVhYzZjMzI0NzM5YzgwZTk3YWRlOWM4OTQ5MTA2N2ZlODY1MmIzOWQ4NjBjM2RkOTMzNzZmYg&feedId=58083&k=e47e0cc66bd69740a221473615d1c3267bfa40f8",
+        sizes: ["XL", "XXL"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-corto-adidas-essentials-tiro-26-gris",
     brand: "Adidas",
     model: "Pantalón corto adidas Essentials Tiro 26 - Gris",
@@ -45910,6 +46072,132 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-corto-italia-eurocopa-2024-primera-equipacion-blanco",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Italia Eurocopa 2024 Primera Equipacion - Blanco",
+    colour: "Blanco",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 28.97,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37497831831&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000932149-00-S-M-20240311163650.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjE2MHxpbWFnZS9qcGVnfGFEQmhMMmhrT1M4eE1qQXlNalUyTXpjd01EYzJOaTl0WldScFlYTmZNVEF3TURrek1qRTBPVjh3TUY5VFgwMHRNakF5TkRBek1URXhOak0yTlRBdWFuQm58OWEwY2U0ZTliY2Y2ZGMxYzczZjkyMzBhOGM5YThmN2Q0MDAwMmI1ZThhZDFmNDRkNjM0Nzg4MTUyNDZhZDQ3Mg&feedId=58083&k=d48c3acd2de06d016102ca2f506616934597e99b",
+        sizes: ["S", "M"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-italia-mundial-2026-azul",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Italia Mundial 2026 - Azul",
+    colour: "Azul",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 30.35,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249375664&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113031-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYwNnxpbWFnZS9qcGVnfGFEYzVMMmd4WkM4eE16VTJNak01T0RRME1UVXdNaTl0WldScFlYTmZNVEF3TVRFeE16QXpNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58YTg2ZGFmNWI4OGNiYjBiNjhlMDM2MmU3Yzg5NWUzNWQyNGM4MzE2ZmVhZDI1ODQ3N2Q3MTFhYTE3ZjI3Y2UyZA&feedId=58083&k=baa705a5f4462cd3bd62474ddde5af48e51dae95",
+        sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-italia-mundial-2026-azul-2",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Italia Mundial 2026 - Azul",
+    colour: "Azul",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 42.2,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249375920&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113026-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTk2OXxpbWFnZS9qcGVnfGFEVTBMMmhqTXk4eE16VTJNak01TmpBNE1qSXdOaTl0WldScFlYTmZNVEF3TVRFeE16QXlObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58YmEzYTI1MTk4NGRmODc3ZjVjNTI3MzZiODI5MDkxZGRiNTJhMjk5MDVhNDhjZGRjMWUxM2IyM2U5NDcwNWVmYg&feedId=58083&k=2aadc731d19ffa3395cf25d7c61f7aa67b7e7bec",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-italia-mundial-2026-azul-3",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Italia Mundial 2026 - Azul",
+    colour: "Azul",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 39.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376027&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113033-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg2OHxpbWFnZS9qcGVnfGFHVXhMMmc0WkM4eE16VTJNak01T1RZeU1URTFNQzl0WldScFlYTmZNVEF3TVRFeE16QXpNMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58YTBkZGQzNmNiOGQxNzNmNzdhNTU0ZDZkZTkxMzYxZGVlZGI2MDQ5N2IyYjE5MTYwMzc1ZGI3NTM0NmM3YTkzYw&feedId=58083&k=18afd26fbed1cde3200a44ec7a21edbdfac1d492",
+        sizes: ["M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-italia-mundial-2026-blanco",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Italia Mundial 2026 - Blanco",
+    colour: "Blanco",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 66.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376696&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113842-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMnxpbWFnZS9qcGVnfGFEQTRMMmhrTnk4eE16VTJNekl5TnprNU5qRTVNQzl0WldScFlYTmZNVEF3TVRFeE16ZzBNbDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58NjBjNmY0YTBiZWViZmQ3NDAwMDAyNGVjOGFlNDdiMDY3ZTQxMzg0NWQ1YTk3M2I1YzU0MjE3NzI2ZjBmYzM0Yg&feedId=58083&k=475d35ab44e3b1d6c1efd12282288a29cfe1dcb8",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-italia-mundial-2026-entrenamiento-verde",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Italia Mundial 2026 Entrenamiento - Verde",
+    colour: "Verde",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 39.05,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376695&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113840-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ4MHxpbWFnZS9qcGVnfGFEWXpMMmcxWWk4eE16VTJNekl5TmpReU16TXlOaTl0WldScFlYTmZNVEF3TVRFeE16ZzBNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58NDI4OGFkM2JjMWZmNWRiMjg0ZDNhMjc1YzgzMzMwMmU1NzQxMjhlZjdjYzg4NDRiNTZkODdjMzJhNTA5NTdiZQ&feedId=58083&k=9b04fa8cc32fe8824c627128aa5e367d6c9a0767",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-italia-mundial-2026-verde",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Italia Mundial 2026 - Verde",
+    colour: "Verde",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 40.86,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376760&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113844-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc3MXxpbWFnZS9qcGVnfGFEYzFMMmcxT1M4eE16VTJNekl5T1Rnek1URTVPQzl0WldScFlYTmZNVEF3TVRFeE16ZzBORjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58MDY0NjdiOTUwYWY0NDgxMjhlYjEzNzc1YzQwMDkyNzM5ZDk4NzA3YzQ3ZGYxYjRjYmJhOWQxMDFhOWQ4YWUyNg&feedId=58083&k=b8f2f0b496cc9ea07f4bedecf88dedbcfc4a9e1f",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-corto-adidas-league-tiro-26-noir",
     brand: "Adidas",
     model: "Pantalón corto adidas League Tiro 26 - Noir",
@@ -45965,6 +46253,24 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46343281520&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc59cb063d0bd40ca929f08c9af4b5aec_9366%2FShorts_Tiro_26_League_Negro_KS0301_21_model.jpg&feedId=95017&k=7ba4b717c4018ffd275e9959466fc0b749c8ef6f",
         sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-manchester-united-26-27-travel-negro",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Manchester United 26/27 Travel - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 46.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383856&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135107-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI3M3xpbWFnZS9qcGVnfGFEQTFMMmczWmk4eE16Z3pOalF4T1RNd01UUXdOaTl0WldScFlYTmZNVEF3TVRFek5URXdOMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MTRiOTIzYzRiNzIzZjdmNzM2NjE5MGIzNjI2YTAyMTIwMmMxZDUwOTE0NGRiZDA2MWQwNWNhYzhlYjVlMDgwMQ&feedId=58083&k=3bdf69a95b88b745827826e69117763f4238120a",
+        sizes: ["XS"],
       },
     ],
   },
@@ -46055,6 +46361,132 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-corto-mexico-mundial-2026-entrenamiento-negro",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Mexico Mundial 2026 Entrenamiento - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 40.86,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249377967&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112298-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTExOXxpbWFnZS9qcGVnfGFHSmtMMmc1TUM4eE16VTJNelk1TVRFek9URXdNaTl0WldScFlYTmZNVEF3TVRFeE1qSTVPRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58NWI4ZjlhZTZiMTljNTA0YzNlNjkzYmU3ZDkyOTExZTEyNWYyZDVlOTcyYjA0Mjg4MDFmNGI5ZmZkNmQ4MmI1MA&feedId=58083&k=76638fed0a4e14d00b9bb566e5cc6cded76d788d",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-originals-espana-26-granate",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Originals Espana 26 - Granate",
+    colour: "Granate",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 41.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45262390889&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001121249-00-S-M-20260423110559.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY4MnxpbWFnZS9qcGVnfGFHRTVMMmd5TWk4eE16Y3lNREF3TmpJNU5UVTRNaTl0WldScFlYTmZNVEF3TVRFeU1USTBPVjh3TUY5VFgwMHRNakF5TmpBME1qTXhNVEExTlRrdWFuQm58MzU2MjgzZjY5ODVmYmQzMzU1NzdmNWYzMmJiMzYwNWRlNjU3ZjBjNDgwZGU5ZmJhYjVjMjY5MjY0YTgyZDI2Mw&feedId=58083&k=3dbcc4899d185c7b6ab4827c27b92f420bd51cb3",
+        sizes: ["XS", "S", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-originals-italia-marino",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Originals Italia - Marino",
+    colour: "Marino",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 40.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44450198693&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112855-00-S-M-20260330145619.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYwM3xpbWFnZS9qcGVnfGFEWTVMMmhsWlM4eE16WTJPVEV6TURZek16STBOaTl0WldScFlYTmZNVEF3TVRFeE1qZzFOVjh3TUY5VFgwMHRNakF5TmpBek16QXhORFUyTVRrdWFuQm58MDlkNDhmZjE5MjQzZDgxYzQ3YzJjODUxZjFmZWFlMDc4OWY4YzQ4NDg5YzI0ZDA0MjI3MjYxMmRhYTkxNjFiMQ&feedId=58083&k=d1638edea1f0095407a1ff385ac0a6aa6015c772",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-originals-italia-marino-2",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Originals Italia - Marino",
+    colour: "Marino",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 52.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378682&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112853-00-S-M-20260323165351.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk0MnxpbWFnZS9qcGVnfGFHVmlMMmd5WVM4eE16WTFOVFkwT0RVek5EVTFPQzl0WldScFlYTmZNVEF3TVRFeE1qZzFNMTh3TUY5VFgwMHRNakF5TmpBek1qTXhOalV6TlRFdWFuQm58ZWVjNWE3Mzc5N2VjOWY2NmFjN2ZjZDg5Y2Y5MTA1M2FkMzhiOGMxNmNiMmU0NDgyYmU2MzhjNmE5YTZiMGM0NQ&feedId=58083&k=a4c11988d4b875ca36150e08012f517410c82f45",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-originals-juventus-negro",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Originals Juventus - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 52.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46367227290&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112691-00-S-M-20260206170528.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njk3M3xpbWFnZS9qcGVnfGFEa3lMMmc0WXk4eE16VTJOVE14TmpZMk1USTNPQzl0WldScFlYTmZNVEF3TVRFeE1qWTVNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOekExTWpndWFuQm58OTA0ZjJhMzcwMWM1OTMwZWM1NWVmZjI0MTRmZGEzMzJiYjkwZmJmNTVhMTkwYjhmNjkyNTA1ZTdmM2U5YTJlZg&feedId=58083&k=8e27ae375d3299ed5893b31d91ccedb4a210887d",
+        sizes: ["XS", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-originals-juventus-terrace-icons-verde",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Originals Juventus Terrace Icons - Verde",
+    colour: "Verde",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 49.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249377761&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001114241-00-S-M-20260423110559.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMyNHxpbWFnZS9qcGVnfGFERXpMMmd5Tnk4eE16Y3hPRFEyTnpJeE5UTTVNQzl0WldScFlYTmZNVEF3TVRFeE5ESTBNVjh3TUY5VFgwMHRNakF5TmpBME1qTXhNVEExTlRrdWFuQm58Y2FhOWM1NGFjZjhjMGEzNWJjNzU2YTFhNWY2MzAzZTY5ZjIyYjRkYjdjMTc5M2Q2NzYzNmVlN2QwY2M1MTM2NA&feedId=58083&k=ae5b3faff2867d00a7e8eac48f57c4abc38ec5eb",
+        sizes: ["XS", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-originals-real-madrid-azul",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Originals Real Madrid - Azul",
+    colour: "Azul",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 40.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46664443239&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113773-00-S-M-20260219142151.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA2NnxpbWFnZS9qcGVnfGFHVTJMMmd6TUM4eE16VTVNREF3TlRjME16WTBOaTl0WldScFlYTmZNVEF3TVRFeE16YzNNMTh3TUY5VFgwMHRNakF5TmpBeU1Ua3hOREl4TlRFdWFuQm58NTdlYjNkNTU5MWYwOTA1NGFkYzRjMTk0NzIzODRiNzE5ZmUzMTE4OTcyZmVmZDU0MWEyYzQzZWI5Yjg1YWE4ZA&feedId=58083&k=8bcb02f044e4c7cd04b22602d044e821162e9984",
+        sizes: ["M", "XL"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-corto-adidas-parma-16-verde",
     brand: "Adidas",
     model: "Pantalón corto adidas Parma 16 - Verde",
@@ -46116,6 +46548,114 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-corto-real-madrid-25-26-entrenamiento-gris",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Real Madrid 25/26 Entrenamiento - Gris",
+    colour: "Gris",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 40.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46119081303&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087450-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMyN3xpbWFnZS9qcGVnfGFHRmlMMmhrWlM4eE16RXhORGt6TmpRMU9USTVOQzl0WldScFlYTmZNVEF3TVRBNE56UTFNRjh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58ODIwODA0YTg3MzNiZTZiNDYxZDk1M2JhNmY5NGVmMWU2YjAwYzIxZGU4MzE4MTRjZTA2YmVlMTc3Mjc4M2YwYw&feedId=58083&k=6b8a7cf355a0df7d4cccc430d720b4963b4595b0",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-real-madrid-25-26-gris",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Real Madrid 25/26 - Gris",
+    colour: "Gris",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 30.35,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46492291630&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087457-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYxMnxpbWFnZS9qcGVnfGFEWm1MMmcxTnk4eE16RXhORGt6T1RJeE1UZ3dOaTl0WldScFlYTmZNVEF3TVRBNE56UTFOMTh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58MWVmNzM0OGJkODcwZDMxYTU0OTcwMTBiNmYwYjY0NGU4OWY2ZjkxMDVjNzQ2Zjg4Y2JmZTg1YTZhNzM3ODcwYQ&feedId=58083&k=08d78ee11300c80eec34fd26ef5bae8a026b4a82",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-real-madrid-25-26-negro",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Real Madrid 25/26 - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 33.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44118462395&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113413-00-S-M-20260223090216.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzAyOXxpbWFnZS9qcGVnfGFETTBMMmhqWkM4eE16VTVOakk1TlRFMk9EQXpNQzl0WldScFlYTmZNVEF3TVRFeE16UXhNMTh3TUY5VFgwMHRNakF5TmpBeU1qTXdPVEF5TVRZdWFuQm58NTRlYzJhZmE2ZGM3NzkwOWJkZDBkNTExNDE2OWY0ZGMxMzJmNDczODY2Yzk5MmNjNTZlZmFiNmMxMmM2YzlmYw&feedId=58083&k=5ede585f9029ecee6ca571312913ad74a16d54a0",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-real-madrid-25-26-segunda-equipacion-marino",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Real Madrid 25/26 Segunda Equipacion - Marino",
+    colour: "Marino",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 39.09,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46367225238&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001086552-00-S-M-20250822142748.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjUxMnxpbWFnZS9qcGVnfGFEZ3hMMmhqTlM4eE16RXpNemswTWpreE5URXdNaTl0WldScFlYTmZNVEF3TVRBNE5qVTFNbDh3TUY5VFgwMHRNakF5TlRBNE1qSXhOREkzTkRndWFuQm58MmJkNDI5OGYwMjRiMjU5NmFjZjM4N2RjNWZkNDYxNzJjMGYyOGFkNzIwNzNlNTM5YmI1OWY1NWNhYzU2ZDA5NQ&feedId=58083&k=4d6967b6a2d51635dc6db7b23d4b8a76e78c65a6",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-real-madrid-dna-azul",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Real Madrid Dna - Azul",
+    colour: "Azul",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 30.81,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44193950475&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001085992-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjQ1NHxpbWFnZS9qcGVnfGFEQmxMMmczWkM4eE16RXhNalUzTlRReU5qVTVNQzl0WldScFlYTmZNVEF3TVRBNE5UazVNbDh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58ZWUxMjFmZTNmMTg5OWUyMjdhMTg0MTAxZjk5N2RmMzk5ZTI1MWE4ZGRlN2I1OTk1YmVlNGUwYjY2ZmJlZjI1Mw&feedId=58083&k=518a49b36e6f8ce29895e9f7b6bdb9281916986e",
+        sizes: ["M"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-real-madrid-lfstlr-marino",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Real Madrid Lfstlr - Marino",
+    colour: "Marino",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 109.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383535&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135072-00-S-M-20260708143602.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzkwNnxpbWFnZS9qcGVnfGFEYzNMMmc0WVM4eE16ZzRNREl6TURNM09UVTFNQzl0WldScFlYTmZNVEF3TVRFek5UQTNNbDh3TUY5VFgwMHRNakF5TmpBM01EZ3hORE0yTURJdWFuQm58ZWNiZmRhZTFmYjQ1ZjkyNTUzMzhlZWRhMTYxMTdhNTU3NjBkMTY4ZjAyNGUxYTQ4ZWM0YjRjYTA1Mjc1MDc0OA&feedId=58083&k=31455e9d8f34e58ca348cc6d1b67e84657e9383b",
+        sizes: ["XS", "S"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-corto-adidas-regista-18-verde",
     brand: "Adidas",
     model: "Pantalón corto adidas Regista 18 - Verde",
@@ -46139,6 +46679,24 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcf9598-short-adidas-regista-18-vert-fluo-vert-sapin",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_cf9598_2_apparel_photography_front_center_view_white-nw112824.webp",
         sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-adidas-squadra25-rojo",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Saquadra 25 - Rojo",
+    colour: "Rojo",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370676&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053680-00-S-M-20250305155332.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg4NHxpbWFnZS9qcGVnfGFETTJMMmc0WWk4eE1qYzRNREE0T0RBNU9EZzBOaTl0WldScFlYTmZNVEF3TVRBMU16WTRNRjh3TUY5VFgwMHRNakF5TlRBek1EVXhOVFV6TXpJdWFuQm58ZjE5ZDBjODk0OWQ4ZDJlMjY4NGM1YmVlNDAzZThmMmE5NTc2MTExODE4MTViMjg3NWY4NmUwOTllMjdhZTY0OQ&feedId=58083&k=f6594b540de7ab60fe41b298384158b1ec39e610",
+        sizes: ["XS"],
       },
     ],
   },
@@ -46596,6 +47154,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46776760055&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052303-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM5MXxpbWFnZS9qcGVnfGFEWTVMMmc0T0M4eE1qZ3lOemMzTmpFNE9EUTBOaTl0WldScFlYTmZNVEF3TVRBMU1qTXdNMTh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58ZDQxMTdiZGUyMWI1M2M3NWI1M2E4YWZiNDY0ZWIyMzRiOTY5OTdiODMxNjgwYTc4NWFmN2U1OGI2YzJmMTBkNg&feedId=58083&k=6ef284b78b2ad35fe81fe6504e72fc5951da0fd3",
+        sizes: ["XS", "S", "XL", "XXL"],
+      },
+      {
         store: "FootStoreFR",
         price: 21.77,
         priceMax: 23.0,
@@ -46613,15 +47180,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
           { size: "2XL", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3404-short-adidas-squadra-25-white-tepore" },
           { size: "3XL", price: 21.77, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3404-short-adidas-squadra-25-white-tepore" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370132&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052295-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjMyOHxpbWFnZS9qcGVnfGFETmlMMmhsTUM4eE1qZ3dNakE1TmpJek5EVXlOaTl0WldScFlYTmZNVEF3TVRBMU1qSTVOVjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58MDQ3MDViMmVjYmU3NTEyMjI0MGJjOTQ5ZmY4ZDVhYzAyYTVhYTU3NDJmODg1MTg1ZTQ4NTE1MzNlYzk2YzhmYw&feedId=58083&k=1e7f9c9f78e3278b3081d186bc042710c2ceb90b",
-        sizes: ["XS", "S", "L", "XL", "XXL", "XXXL"],
       },
     ],
   },
@@ -46679,15 +47237,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1769b084a774426fbcb394e5587eb6ea_9366%2FShorts_Squadra_25_Blanco_JH3409_01_laydown_hover.jpg&feedId=95017&k=ce5ceb91fec748ab0f3b7245934a5354d718b4e1",
         sizes: ["S", "M", "L"],
       },
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46776760055&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052303-00-S-M-20250326094820.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM5MXxpbWFnZS9qcGVnfGFEWTVMMmc0T0M4eE1qZ3lOemMzTmpFNE9EUTBOaTl0WldScFlYTmZNVEF3TVRBMU1qTXdNMTh3TUY5VFgwMHRNakF5TlRBek1qWXdPVFE0TWpBdWFuQm58ZDQxMTdiZGUyMWI1M2M3NWI1M2E4YWZiNDY0ZWIyMzRiOTY5OTdiODMxNjgwYTc4NWFmN2U1OGI2YzJmMTBkNg&feedId=58083&k=6ef284b78b2ad35fe81fe6504e72fc5951da0fd3",
-        sizes: ["XS", "S", "XL", "XXL"],
-      },
     ],
   },
   {
@@ -46716,6 +47265,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370319&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052336-00-S-M-20250321154327.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODUwOHxpbWFnZS9qcGVnfGFHWTFMMmhoWWk4eE1qZ3hOekF3T0RBNU9UTTFPQzl0WldScFlYTmZNVEF3TVRBMU1qTXpObDh3TUY5VFgwMHRNakF5TlRBek1qRXhOVFF6TWpjdWFuQm58ZTBlOTc3Yzk4ZmYwNDU3MmJkOTU0ZWU1YzNiY2RiMGU3NTVhMWJiOWMzYzdkZDgzY2QyMjUxZmQ2MzBkNWQ5YQ&feedId=58083&k=059212ec87ec6c1a740049410e16397306a1a248",
+        sizes: ["M", "L", "XL", "XXL"],
+      },
+      {
         store: "FootStoreFR",
         price: 21.77,
         priceMax: 23.0,
@@ -46732,15 +47290,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
           { size: "2XL", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjc8676-short-adidas-squadra-25-teaora-white" },
           { size: "3XL", price: 21.77, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjc8676-short-adidas-squadra-25-teaora-white" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370319&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052336-00-S-M-20250321154327.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODUwOHxpbWFnZS9qcGVnfGFHWTFMMmhoWWk4eE1qZ3hOekF3T0RBNU9UTTFPQzl0WldScFlYTmZNVEF3TVRBMU1qTXpObDh3TUY5VFgwMHRNakF5TlRBek1qRXhOVFF6TWpjdWFuQm58ZTBlOTc3Yzk4ZmYwNDU3MmJkOTU0ZWU1YzNiY2RiMGU3NTVhMWJiOWMzYzdkZDgzY2QyMjUxZmQ2MzBkNWQ5YQ&feedId=58083&k=059212ec87ec6c1a740049410e16397306a1a248",
-        sizes: ["M", "L", "XL", "XXL"],
       },
     ],
   },
@@ -46789,15 +47338,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
           { size: "3XL", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7482-short-adidas-squadra-25-teagrn-white" },
         ],
       },
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370659&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053234-00-S-M-20250217203222.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ0NHxpbWFnZS9qcGVnfGFESXpMMmhqWkM4eE1qYzBPRGM1TVRFNE5UUXpPQzl0WldScFlYTmZNVEF3TVRBMU16SXpORjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpJdWFuQm58ZGE0YjRiOWNhM2RmMDc4ZmY3YTczNGRkMGQ4NDc0MDNhYmE5MDAwNGZlNTliZGI3OWYxYzAwYWJiMjUxNzU0Mw&feedId=58083&k=a39d289213f43fdbb0b9d3756a2953f991f822e7",
-        sizes: ["S", "M", "L", "XXXL"],
-      },
     ],
   },
   {
@@ -46828,11 +47368,20 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       {
         store: "ForumSport",
         price: 16.07,
+        priceMax: 17.27,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370134&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052305-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA0NHxpbWFnZS9qcGVnfGFEUmhMMmcxWkM4eE1qZ3dNakE1T1RJME9URTRNaTl0WldScFlYTmZNVEF3TVRBMU1qTXdOVjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58MzZjMGM1NTI3ODE5MDc3YWU3NTA2MDIxOGYxNTc3NDUyMDE4MGM4MmQ1M2YxOTQ5YTM5ZWY5M2I2YjcwNTY4Yw&feedId=58083&k=e8a5a1eb513363b31cd8f837705c522707df05bf",
-        sizes: ["XS", "S", "XL"],
+        url: "https://www.awin1.com/pclick.php?p=46249370406&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052297-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njg1MHxpbWFnZS9qcGVnfGFEQXpMMmcyT1M4eE1qZ3dNakE1TnpZeE1EYzRNaTl0WldScFlYTmZNVEF3TVRBMU1qSTVOMTh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58ZWE1Y2RiZTMwZWVmYTQ3ZThmOGY1ZDQ2ZTM0MzE0NzY4ZDZkZTZmOTU4ZTFiN2I0MWZhNzg2ZGVkMTU4NTY3MA&feedId=58083&k=f84e24670906ef538df73e61405fa445187fb4c6",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+        sizePrices: [
+          { size: "XS", price: 17.27, url: "https://www.awin1.com/pclick.php?p=46249370701&a=3013769&m=23805" },
+          { size: "S", price: 16.07, url: "https://www.awin1.com/pclick.php?p=46249370406&a=3013769&m=23805" },
+          { size: "M", price: 17.27, url: "https://www.awin1.com/pclick.php?p=46249370701&a=3013769&m=23805" },
+          { size: "L", price: 16.07, url: "https://www.awin1.com/pclick.php?p=46423310820&a=3013769&m=23805" },
+          { size: "XL", price: 16.07, url: "https://www.awin1.com/pclick.php?p=46423310820&a=3013769&m=23805" },
+          { size: "XXL", price: 16.07, url: "https://www.awin1.com/pclick.php?p=46423310820&a=3013769&m=23805" },
+        ],
       },
       {
         store: "FootStoreFR",
@@ -46869,6 +47418,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
           { size: "XL", price: 23.0, url: "https://www.awin1.com/pclick.php?p=42529837463&a=3013769&m=65912" },
           { size: "2XL", price: 23.0, url: "https://www.awin1.com/pclick.php?p=42529837454&a=3013769&m=65912" },
         ],
+      },
+      {
+        store: "AdidasMX",
+        price: 499.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=39932151917&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5ddc525282944d219e8b2580e825a5f1_9366%2FShorts_Squadra_25_Azul_JN5468_01_laydown.jpg&feedId=95013&k=1d1273bbd9393d92b6bb65801e95a0b9e9cc95fb",
+        sizes: ["L"],
       },
     ],
   },
@@ -46917,28 +47475,10 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
           { size: "3XL", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5468-short-adidas-squadra25-tenabl-tenabl-white" },
         ],
       },
-      {
-        store: "AdidasMX",
-        price: 499.0,
-        shipping: 0,
-        currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=39932151917&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5ddc525282944d219e8b2580e825a5f1_9366%2FShorts_Squadra_25_Azul_JN5468_01_laydown.jpg&feedId=95013&k=1d1273bbd9393d92b6bb65801e95a0b9e9cc95fb",
-        sizes: ["L"],
-      },
-      {
-        store: "ForumSport",
-        price: 17.27,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370701&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053166-00-S-M-20250304100001.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYzOXxpbWFnZS9qcGVnfGFEQTJMMmhoT0M4eE1qYzNOamMxTlRZMU9EYzRNaTl0WldScFlYTmZNVEF3TVRBMU16RTJObDh3TUY5VFgwMHRNakF5TlRBek1EUXhNREF3TURFdWFuQm58MGRmYmYzMzAzNzQ2NTEyYmIwNTIxMmZhM2I5NDVlNDUzOWI2ZWYzNDE2OWU5OWNhYWFmMTJkZDVmMDY1NDY5ZA&feedId=58083&k=918993c79bd5d7795bb0f9497a4d1d80249274d0",
-        sizes: ["XS", "M", "L", "XL"],
-      },
     ],
   },
   {
-    id: "adidas-pantalon-corto-adidas-squadra25-azul-4",
+    id: "adidas-pantalon-corto-adidas-squadra25-azul-3",
     brand: "Adidas",
     model: "Pantalón corto adidas Squadra25 - Azul",
     colour: "Azul",
@@ -46962,17 +47502,11 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jh3407_1_apparel_photography_front_center_view_white.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
       },
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46423310820&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001086182-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTkwOXxpbWFnZS9qcGVnfGFHUmhMMmcwWXk4eE16RXhNamd6TlRFeE1qazVNQzl0WldScFlYTmZNVEF3TVRBNE5qRTRNbDh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58ODYyZTBlYzRhMGFjZGFiNTFiNTI4OTJiMDIxMTI3Y2NiMjY3ZTMyNTYzOGM0MjI2MDg4MzI2MmU5NWRjYTdiZg&feedId=58083&k=5c60434e69cbd0d4a5abe2d25a26085cde291cb4",
-        sizes: ["S", "L", "XL", "XXL"],
-      },
     ],
   },
+];
+
+const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-pantalon-corto-adidas-squadra25-azul-5",
     brand: "Adidas",
@@ -47045,6 +47579,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370079&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052299-00-S-M-20250203160523.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDA4OXxpbWFnZS9qcGVnfGFEVmpMMmd5T1M4eE1qY3lNREl3TURZM09UUTFOQzl0WldScFlYTmZNVEF3TVRBMU1qSTVPVjh3TUY5VFgwMHRNakF5TlRBeU1ETXhOakExTWpNdWFuQm58ZDkyZmYzOGUwMzM2MDE0OGUyOGE0YmYwZWZlYmQ3MWQzY2M5YmE0YzkxNmIxMWExMGQ0MDJhM2MyZjlkODYwOA&feedId=58083&k=cbd439866640b9a0451b4050dc40ccdca84fbc2e",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+      {
         store: "FootStoreFR",
         price: 21.77,
         priceMax: 23.0,
@@ -47062,15 +47605,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
           { size: "2XL", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3412-short-adidas-squadra25-white-black" },
           { size: "3XL", price: 21.77, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh3412-short-adidas-squadra25-white-black" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370024&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052308-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg1N3xpbWFnZS9qcGVnfGFHUmpMMmhsTWk4eE1qZ3dNakV3TVRBMU1UUXlNaTl0WldScFlYTmZNVEF3TVRBMU1qTXdPRjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58OGY2NTA5NWU2MTVmNjNlNjMyNTNhZDA3YzA0MDFhMzg5Y2M3ZjYyMzAyNGI3N2U3ODY2ZWZkMTJkZmM4Mzg2Mg&feedId=58083&k=b9c799776f1037fa17d0df993b1e66293b3fda14",
-        sizes: ["XS", "M", "L", "XL", "XXL", "XXXL"],
       },
     ],
   },
@@ -47091,6 +47625,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
       {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370024&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052308-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg1N3xpbWFnZS9qcGVnfGFHUmpMMmhsTWk4eE1qZ3dNakV3TVRBMU1UUXlNaTl0WldScFlYTmZNVEF3TVRBMU1qTXdPRjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58OGY2NTA5NWU2MTVmNjNlNjMyNTNhZDA3YzA0MDFhMzg5Y2M3ZjYyMzAyNGI3N2U3ODY2ZWZkMTJkZmM4Mzg2Mg&feedId=58083&k=b9c799776f1037fa17d0df993b1e66293b3fda14",
+        sizes: ["XS", "M", "L", "XL", "XXL", "XXXL"],
+      },
+      {
         store: "FootStoreFR",
         price: 23.0,
         shipping: 7.99,
@@ -47099,14 +47642,23 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jh3406_1_apparel_photography_front_view_white.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
       },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-adidas-squadra25-blanco-2",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Squadra25 - Blanco",
+    colour: "Blanco",
+    type: "shorts",
+    offers: [
       {
         store: "ForumSport",
         price: 16.07,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370079&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052299-00-S-M-20250203160523.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDA4OXxpbWFnZS9qcGVnfGFEVmpMMmd5T1M4eE1qY3lNREl3TURZM09UUTFOQzl0WldScFlYTmZNVEF3TVRBMU1qSTVPVjh3TUY5VFgwMHRNakF5TlRBeU1ETXhOakExTWpNdWFuQm58ZDkyZmYzOGUwMzM2MDE0OGUyOGE0YmYwZWZlYmQ3MWQzY2M5YmE0YzkxNmIxMWExMGQ0MDJhM2MyZjlkODYwOA&feedId=58083&k=cbd439866640b9a0451b4050dc40ccdca84fbc2e",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+        url: "https://www.awin1.com/pclick.php?p=46249370132&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052295-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjMyOHxpbWFnZS9qcGVnfGFETmlMMmhsTUM4eE1qZ3dNakE1TmpJek5EVXlOaTl0WldScFlYTmZNVEF3TVRBMU1qSTVOVjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58MDQ3MDViMmVjYmU3NTEyMjI0MGJjOTQ5ZmY4ZDVhYzAyYTVhYTU3NDJmODg1MTg1ZTQ4NTE1MzNlYzk2YzhmYw&feedId=58083&k=1e7f9c9f78e3278b3081d186bc042710c2ceb90b",
+        sizes: ["XS", "S", "L", "XL", "XXL", "XXXL"],
       },
     ],
   },
@@ -47241,6 +47793,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         sizes: ["XS", "S", "XL", "2XL", "3XL"],
       },
       {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370160&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052310-00-S-M-20250203160523.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU5NnxpbWFnZS9qcGVnfGFHTXlMMmd6WkM4eE1qY3lNREl3TkRJeE9ETTVPQzl0WldScFlYTmZNVEF3TVRBMU1qTXhNRjh3TUY5VFgwMHRNakF5TlRBeU1ETXhOakExTWpNdWFuQm58NWJhMDA1ODIzMzYxZDA0MzA2MGE4ZTU2MGE5NjZhOTc0NDkyOTIxNmI1NDdmNjI0MGU0NWYxNzNkMjllMTFiMw&feedId=58083&k=9ddeacaa98b293f3d6ffc42a425e7edcad557085",
+        sizes: ["XS", "S", "XL", "XXL"],
+      },
+      {
         store: "FootStoreFR",
         price: 23.0,
         shipping: 7.99,
@@ -47249,14 +47810,23 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jh3413_2_apparel_photography_front_view_white.webp",
         sizes: ["XS", "S", "XL", "2XL", "3XL"],
       },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-adidas-squadra25-marino",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Squadra25 - Marino",
+    colour: "Marino",
+    type: "shorts",
+    offers: [
       {
         store: "ForumSport",
         price: 16.07,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370160&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052310-00-S-M-20250203160523.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU5NnxpbWFnZS9qcGVnfGFHTXlMMmd6WkM4eE1qY3lNREl3TkRJeE9ETTVPQzl0WldScFlYTmZNVEF3TVRBMU1qTXhNRjh3TUY5VFgwMHRNakF5TlRBeU1ETXhOakExTWpNdWFuQm58NWJhMDA1ODIzMzYxZDA0MzA2MGE4ZTU2MGE5NjZhOTc0NDkyOTIxNmI1NDdmNjI0MGU0NWYxNzNkMjllMTFiMw&feedId=58083&k=9ddeacaa98b293f3d6ffc42a425e7edcad557085",
-        sizes: ["XS", "S", "XL", "XXL"],
+        url: "https://www.awin1.com/pclick.php?p=46249370134&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052305-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA0NHxpbWFnZS9qcGVnfGFEUmhMMmcxWkM4eE1qZ3dNakE1T1RJME9URTRNaTl0WldScFlYTmZNVEF3TVRBMU1qTXdOVjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58MzZjMGM1NTI3ODE5MDc3YWU3NTA2MDIxOGYxNTc3NDUyMDE4MGM4MmQ1M2YxOTQ5YTM5ZWY5M2I2YjcwNTY4Yw&feedId=58083&k=e8a5a1eb513363b31cd8f837705c522707df05bf",
+        sizes: ["XS", "XL"],
       },
     ],
   },
@@ -47323,6 +47893,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249369988&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052292-00-S-M-20250217203221.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjEzOXxpbWFnZS9qcGVnfGFHWTBMMmd3TWk4eE1qYzBPRGMzTWpFM09UazVPQzl0WldScFlYTmZNVEF3TVRBMU1qSTVNbDh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpFdWFuQm58NmI5MjEzMzYxNDBkOWUwNDg0OWU4YzhhMjU1N2I4NjJkM2E2ZGM3NDQ0YjQ4YzdkYTgxOGJmODg2NWY5NWYxYw&feedId=58083&k=b5e61897e67f1c796e9c4024ba3bb5ff7a3dab23",
+        sizes: ["XS", "S", "M", "XXL", "XXXL"],
+      },
+      {
         store: "FootStoreFR",
         price: 21.44,
         priceMax: 23.0,
@@ -47340,24 +47919,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
           { size: "2XL", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5469-short-adidas-squadra25-black-black-white" },
           { size: "3XL", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5469-short-adidas-squadra25-black-black-white" },
         ],
-      },
-      {
-        store: "AdidasMX",
-        price: 499.0,
-        shipping: 0,
-        currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=44650139758&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd42234452fe44d73b7338c2cda57a52e_9366%2FShorts_Squadra_25_Negro_JN5469_01_laydown.jpg&feedId=95013&k=2af3a67a68ace6a83df2d98b27a36364d3ab8ad6",
-        sizes: ["S", "M", "L", "XL"],
-      },
-      {
-        store: "ForumSport",
-        price: 16.55,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370463&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053169-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTE1NnxpbWFnZS9qcGVnfGFHRTJMMmczT0M4eE1qZ3dNakl4TURJNU9Ua3pOQzl0WldScFlYTmZNVEF3TVRBMU16RTJPVjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58Zjg2NDMyOTRhODFlMzY0MjA0ZDdmMzUyOWRkNzJlMDA2MmFlMTU3MWUwZGNmOThiN2JkZjk0YTA0NDNhMWMzNQ&feedId=58083&k=7a1251a8f0ce8176ecd3a4f0afe32615f31a4ffd",
-        sizes: ["S", "M", "L", "XL", "XXL"],
       },
     ],
   },
@@ -47388,6 +47949,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 16.55,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370463&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053169-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTE1NnxpbWFnZS9qcGVnfGFHRTJMMmczT0M4eE1qZ3dNakl4TURJNU9Ua3pOQzl0WldScFlYTmZNVEF3TVRBMU16RTJPVjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58Zjg2NDMyOTRhODFlMzY0MjA0ZDdmMzUyOWRkNzJlMDA2MmFlMTU3MWUwZGNmOThiN2JkZjk0YTA0NDNhMWMzNQ&feedId=58083&k=7a1251a8f0ce8176ecd3a4f0afe32615f31a4ffd",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+      {
         store: "FootStoreFR",
         price: 21.77,
         priceMax: 23.0,
@@ -47407,13 +47977,13 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         ],
       },
       {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249369988&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052292-00-S-M-20250217203221.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjEzOXxpbWFnZS9qcGVnfGFHWTBMMmd3TWk4eE1qYzBPRGMzTWpFM09UazVPQzl0WldScFlYTmZNVEF3TVRBMU1qSTVNbDh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpFdWFuQm58NmI5MjEzMzYxNDBkOWUwNDg0OWU4YzhhMjU1N2I4NjJkM2E2ZGM3NDQ0YjQ4YzdkYTgxOGJmODg2NWY5NWYxYw&feedId=58083&k=b5e61897e67f1c796e9c4024ba3bb5ff7a3dab23",
-        sizes: ["XS", "S", "M", "XXL", "XXXL"],
+        store: "AdidasMX",
+        price: 499.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=44650139758&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd42234452fe44d73b7338c2cda57a52e_9366%2FShorts_Squadra_25_Negro_JN5469_01_laydown.jpg&feedId=95013&k=2af3a67a68ace6a83df2d98b27a36364d3ab8ad6",
+        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -47442,19 +48012,10 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn5466_tepore-tepore-white_1.webp",
         sizes: ["S", "L", "XL", "2XL", "3XL"],
       },
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370604&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053162-00-S-M-20250224172423.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTcwOHxpbWFnZS9qcGVnfGFHUmlMMmc1TlM4eE1qYzJNRGt4TWpneU1qTXdNaTl0WldScFlYTmZNVEF3TVRBMU16RTJNbDh3TUY5VFgwMHRNakF5TlRBeU1qUXhOekkwTWpNdWFuQm58MjU5MzQ4ZjdhOGZiMTJjYjQ0ZTU3MDAyNzQ0ODgxNDA5ZjkyNGY0MzM3Yjc0ZjdjMzg4MmM5MmNhYTg5YmM0OQ&feedId=58083&k=930a2dac7f589c2df75323a91fff65e2d7d1b0cb",
-        sizes: ["S", "L", "XL", "XXL", "XXXL"],
-      },
     ],
   },
   {
-    id: "adidas-pantalon-corto-adidas-squadra25-rojo",
+    id: "adidas-pantalon-corto-adidas-squadra25-rojo-2",
     brand: "Adidas",
     model: "Pantalón corto adidas Squadra25 - Rojo",
     colour: "Rojo",
@@ -47494,6 +48055,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370604&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053162-00-S-M-20250224172423.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTcwOHxpbWFnZS9qcGVnfGFHUmlMMmc1TlM4eE1qYzJNRGt4TWpneU1qTXdNaTl0WldScFlYTmZNVEF3TVRBMU16RTJNbDh3TUY5VFgwMHRNakF5TlRBeU1qUXhOekkwTWpNdWFuQm58MjU5MzQ4ZjdhOGZiMTJjYjQ0ZTU3MDAyNzQ0ODgxNDA5ZjkyNGY0MzM3Yjc0ZjdjMzg4MmM5MmNhYTg5YmM0OQ&feedId=58083&k=930a2dac7f589c2df75323a91fff65e2d7d1b0cb",
+        sizes: ["S", "L", "XL", "XXL", "XXXL"],
+      },
+      {
         store: "FootStoreFR",
         price: 15.29,
         priceMax: 23.0,
@@ -47525,15 +48095,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
           { size: "S", price: 13.49, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fje7745-short-adidas-squadra25-tepore-white" },
           { size: "M", price: 12.25, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fje7745-short-adidas-squadra25-tepore-white" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 16.07,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370676&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053680-00-S-M-20250305155332.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg4NHxpbWFnZS9qcGVnfGFETTJMMmc0WWk4eE1qYzRNREE0T0RBNU9EZzBOaTl0WldScFlYTmZNVEF3TVRBMU16WTRNRjh3TUY5VFgwMHRNakF5TlRBek1EVXhOVFV6TXpJdWFuQm58ZjE5ZDBjODk0OWQ4ZDJlMjY4NGM1YmVlNDAzZThmMmE5NTc2MTExODE4MTViMjg3NWY4NmUwOTllMjdhZTY0OQ&feedId=58083&k=f6594b540de7ab60fe41b298384158b1ec39e610",
-        sizes: ["XS"],
       },
     ],
   },
@@ -47579,6 +48140,15 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46391411576&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh3411_drkgrn-white_1.jpg&feedId=89032&k=d804aacddc160e8d58f18838d98058d73b434bfd",
         sizes: ["S", "M", "L"],
+      },
+      {
+        store: "ForumSport",
+        price: 16.07,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370659&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053234-00-S-M-20250217203222.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ0NHxpbWFnZS9qcGVnfGFESXpMMmhqWkM4eE1qYzBPRGM1TVRFNE5UUXpPQzl0WldScFlYTmZNVEF3TVRBMU16SXpORjh3TUY5VFgwMHRNakF5TlRBeU1UY3lNRE15TWpJdWFuQm58ZGE0YjRiOWNhM2RmMDc4ZmY3YTczNGRkMGQ4NDc0MDNhYmE5MDAwNGZlNTliZGI3OWYxYzAwYWJiMjUxNzU0Mw&feedId=58083&k=a39d289213f43fdbb0b9d3756a2953f991f822e7",
+        sizes: ["S", "M", "L", "XXXL"],
       },
       {
         store: "FootStoreFR",
@@ -48223,9 +48793,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-short-adidas-tiro-23-league-bleu",
     brand: "Adidas",
@@ -49087,6 +49654,24 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-corto-tiro-26-essentials-azul",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Tiro 26 Essentials - Azul",
+    colour: "Azul",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.42,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383240&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134969-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE2OXxpbWFnZS9qcGVnfGFETTRMMmd6TlM4eE16Z3pOamM0T0RBek9UY3hNQzl0WldScFlYTmZNVEF3TVRFek5EazJPVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58ODhhMzQ5NWZiZjc5OWVmMTRkN2Q4Yjc5ZmY3NDM2NTA5OGNhOTU2ZTZjNDFmZTQzOWNjMmJjODcwZmY4OWQwNw&feedId=58083&k=28d452b79bcb2fc373fd32132d42b9c2a28f44e8",
+        sizes: ["XS", "S", "M", "L"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-corto-adidas-tiro-26-essentials-noir",
     brand: "Adidas",
     model: "Pantalón corto adidas Tiro 26 Essentials - Noir",
@@ -49696,6 +50281,42 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-pantalon-corto-tiro24-gris",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Tiro24 - Gris",
+    colour: "Gris",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 18.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46638920020&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000981224-00-S-M-20240123120654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjEwOXxpbWFnZS9qcGVnfGFEVXpMMmc1Tnk4eE1Ua3pNRGszTlRRek5qZ3pNQzl0WldScFlYTmZNVEF3TURrNE1USXlORjh3TUY5VFgwMHRNakF5TkRBeE1qTXhNakEyTlRRdWFuQm58ZTczNDFjYmMyOGI0M2RkZDcyZWE0NDhlMTM2OTlkMTNjMDY0Y2MxMzk1YzA5Y2U3ZWQ5MmM4OWMxNTJhOGNiMQ&feedId=58083&k=6f811ac7a9930d488f07fa7decc94dfbbf109195",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-tiro24-marino",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Tiro24 - Marino",
+    colour: "Marino",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=37201049620&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000981049-00-S-M-20240123120654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA0NHxpbWFnZS9qcGVnfGFEY3lMMmhoTVM4eE1Ua3pNRGczTXpBd05EQTJNaTl0WldScFlYTmZNVEF3TURrNE1UQTBPVjh3TUY5VFgwMHRNakF5TkRBeE1qTXhNakEyTlRRdWFuQm58NjI2NmY1ZjdkMzRhOTc2ZmNhYjIxOTYzOGZhMmM2ZmRkMDMwMmQ4YTY1ZDY1ODExMmQ4NjkxMzJmYTdhZWRhOA&feedId=58083&k=f79e74a4a9a1f248b1f9cc5c17257052a2b9c71a",
+        sizes: ["XXL"],
+      },
+    ],
+  },
+  {
     id: "adidas-pantalon-corto-adidas-tiro24-naranja",
     brand: "Adidas",
     model: "Pantalón corto adidas Tiro24 - Naranja",
@@ -49773,7 +50394,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-pantalon-corto-adidas-tiro25-essentials-negro-2",
+    id: "adidas-pantalon-corto-tiro25-essentials-negro",
     brand: "Adidas",
     model: "Pantalón corto adidas Tiro25 Essentials - Negro",
     colour: "Negro",
@@ -49787,6 +50408,15 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45270279353&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jw6919_noir-jaune-bleu_1.jpg&feedId=89032&k=3f1208989c337db46d0d4f11e34e3eba75cee9e8",
         sizes: ["S"],
+      },
+      {
+        store: "ForumSport",
+        price: 23.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46206710482&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052555-00-S-M-20250107155128.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzczMXxpbWFnZS9qcGVnfGFHVTRMMmhoWXk4eE1qWTFOVFkyTURrMU56Y3lOaTl0WldScFlYTmZNVEF3TVRBMU1qVTFOVjh3TUY5VFgwMHRNakF5TlRBeE1EY3hOVFV4TWpndWFuQm58NGZiMTQwNGRmMmRhOGQ4Mzc5NDU1NTM0NTMyZTY2ZmJlYzM0MmNlMDFmM2M2NTQ4MDMyMjg0YWNiYWNiOGY0YQ&feedId=58083&k=fe43a7967fa549bdedf0345963d021a5be47160e",
+        sizes: ["XS", "L"],
       },
       {
         store: "FootStoreFR",
@@ -49820,6 +50450,42 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
           { size: "L", price: 28.0, url: "https://www.awin1.com/pclick.php?p=46318032670&a=3013769&m=65912" },
           { size: "XL", price: 27.0, url: "https://www.awin1.com/pclick.php?p=45983287450&a=3013769&m=65912" },
         ],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-tiro26-league-marino",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Tiro26 League - Marino",
+    colour: "Marino",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.75,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249379145&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112026-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzg2NHxpbWFnZS9qcGVnfGFEUmpMMmhtTnk4eE16VTJNelF6TURZMk5qSTNNQzl0WldScFlYTmZNVEF3TVRFeE1qQXlObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58MTc2MDZlN2M0MDhiZWU0Mjc2OGE2YmI2NmU3YjRlZTlmZDE0OTdhNDk2MTRiOWUzZmE0ZThlMDU0NjlmMWE4ZA&feedId=58083&k=b630700a10ace10deb2c46f5e5f7aa91c309b339",
+        sizes: ["XS", "S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pantalon-corto-tiro26-league-negro",
+    brand: "Adidas",
+    model: "Pantalón corto Adidas Tiro26 League - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.75,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376163&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112029-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTY4OHxpbWFnZS9qcGVnfGFHTmhMMmd5Tnk4eE16VTJNelF6TWpVd01USTNPQzl0WldScFlYTmZNVEF3TVRFeE1qQXlPVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58NThlOTgyYWIzOWEyMWNhYzMwYWMzMTlkN2YyNDU1Y2Q0MDFjNTI3NGQyOGRkNjJjOGY1OWViMzI2NDY3NDlhMg&feedId=58083&k=b6b317ad7e03694d485451985b5eb0b2423894f0",
+        sizes: ["XS", "S", "M", "XL", "XXL"],
       },
     ],
   },
@@ -49932,60 +50598,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-pantalon-corto-argelia-mundial-2026-entrenamiento-verde",
-    brand: "Adidas",
-    model: "Pantalón corto Argelia Mundial 2026 Entrenamiento - Verde",
-    colour: "Verde",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 37.51,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376020&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112960-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODk0MHxpbWFnZS9qcGVnfGFEYzRMMmcyWVM4eE16VTJNak0wTkRVd05UTTNOQzl0WldScFlYTmZNVEF3TVRFeE1qazJNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58MWUzZDAyZGExODNkYWU0ZDMwZmI3YWFkNGYyMTE5NjUzMmJiMDEyYWJmNDU1ZmMzZWVmMWFlM2MxMWZhZDU0OQ&feedId=58083&k=d23bc5cde0a84be3baaf301b7418122e124b92fa",
-        sizes: ["S", "M", "L", "XL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-argentina-mundial-2026-entrenamiento-marino",
-    brand: "Adidas",
-    model: "Pantalón corto Argentina Mundial 2026 Entrenamiento - Marino",
-    colour: "Marino",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 39.05,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378339&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112627-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQzMHxpbWFnZS9qcGVnfGFEUXlMMmc0T0M4eE16VTJNakl4T0RrM01URTJOaTl0WldScFlYTmZNVEF3TVRFeE1qWXlOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NTkxNjkzOTM4NTJkMTQ4MzliMTg5ODc3ZDFhZDA3YWNjNGNhZTg3ZTc1Nzg5NTZjNDc4Y2IxOTY4MTkxZTg1Yw&feedId=58083&k=166d2ea134ea1de2d63d4aca56b35e9a5afc4f03",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-arsenal-25-26-segunda-equipacion-azul",
-    brand: "Adidas",
-    model: "Pantalón corto Arsenal 25/26 Segunda Equipacion - Azul",
-    colour: "Azul",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 39.09,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46387516728&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001086478-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIyM3xpbWFnZS9qcGVnfGFHSmxMMmhrWVM4eE16RXhNekk0TVRjM016VTVPQzl0WldScFlYTmZNVEF3TVRBNE5qUTNPRjh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58ZmExMjU5NGY1YWFjZGE0ZGE3MjFhZDcxMGQwYWQ2Y2E0OTExN2Y1YTM2NzRiNGUzOWM3MDA5MGM3ZjhiYTVkNw&feedId=58083&k=d59de791a57629a65b5dbd4662dd10942b123cfc",
-        sizes: ["M"],
-      },
-    ],
-  },
-  {
     id: "adidas-pantalon-corto-arsenal-tiro-2024-25-downtime-azul",
     brand: "Adidas",
     model: "Pantalón corto Arsenal Tiro 2024/25 Downtime - Azul",
@@ -50075,24 +50687,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhz2164-short-arsenal-tiro-downtime-23-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hz2164_black_1.webp",
         sizes: ["XS", "S"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-bayern-de-munich-25-26-entrenamiento-negro",
-    brand: "Adidas",
-    model: "Pantalón corto Bayern De Munich 25/26 Entrenamiento - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 45.02,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42480110372&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001090473-00-S-M-20250912113003.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODQ5N3xpbWFnZS9qcGVnfGFEWXhMMmcxT1M4eE16RTNPVFEyTmpnM05Ea3hNQzl0WldScFlYTmZNVEF3TVRBNU1EUTNNMTh3TUY5VFgwMHRNakF5TlRBNU1USXhNVE13TURNdWFuQm58ZGRlZWJmNzEwYzc5MGI4YTYzN2EzZWJlOGYyZjlkN2JkNWQ0MDU1ODU0MTg1MjUzMGVkMzc0OGE4ODZiOWU3Yw&feedId=58083&k=4ec5a2b29acd2eae593a2800d6c2a41581131924",
-        sizes: ["L"],
       },
     ],
   },
@@ -52785,24 +53379,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-pantalon-corto-entrada26-negro",
-    brand: "Adidas",
-    model: "Pantalón corto Entrada26 - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 20.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376780&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113753-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NjM1MHxpbWFnZS9qcGVnfGFHRTJMMmcwT0M4eE16VTJNekEyTnpVNU5qZ3pNQzl0WldScFlYTmZNVEF3TVRFeE16YzFNMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58ZDRiZWE4YWFiNWRiZGQwNGZjY2YwMWVjYjkwOGU2OTg1NGMzMzJhYWMyNTU5ZDkyZWQwYzE5ZWI1ZTA3MjdlOQ&feedId=58083&k=26ef8c61a1d644ffb46a8b0178199d6df699b814",
-        sizes: ["XS", "S", "XXXL"],
-      },
-    ],
-  },
-  {
     id: "adidas-pantalon-corto-entrenamiento-adidas-tiro-24-negro",
     brand: "Adidas",
     model: "Pantalón corto entrenamiento adidas Tiro 24 - Negro",
@@ -52928,60 +53504,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
           { size: "XS", price: 42.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji5276-short-training-bayern-munich-tiro-2024-25-black" },
           { size: "S", price: 41.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji5276-short-training-bayern-munich-tiro-2024-25-black" },
         ],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-espana-mundial-2026-primera-equipacion",
-    brand: "Adidas",
-    model: "Pantalón corto Espana Mundial 2026 Primera Equipacion",
-    colour: "N/D",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 51.29,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249377414&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113311-00-S-M-20260206145545.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODAyMnxpbWFnZS9qcGVnfGFERTVMMmhpWVM4eE16VTJNall3T1RZMk5EQXpNQzl0WldScFlYTmZNVEF3TVRFeE16TXhNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhORFUxTkRVdWFuQm58YjNiODNiYzUzZTE1OTU5NWM1MDkxOTFmN2M5NjdmMWQ0NDJmMTkwZTdiYjIzMTVmNGM3ODAwZWZmMDBiNDA5MA&feedId=58083&k=ef87cefc138e6b0d958f0e3d1fae5ed0806f9f3e",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-espana-mundial-2026-primera-equipacion-azul",
-    brand: "Adidas",
-    model: "Pantalón corto Espana Mundial 2026 Primera Equipacion - Azul",
-    colour: "Azul",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 39.49,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375143&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111209-00-S-M-20260206132219.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQzNnxpbWFnZS9qcGVnfGFHTTVMMmd5TlM4eE16VTJNVE0xTmpVMU1ERTNOQzl0WldScFlYTmZNVEF3TVRFeE1USXdPVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhNekl5TVRrdWFuQm58NjVjNTA5ZTk0MmEzZjViYzZlMThlYjdmMTJiNTVmNWI3NzhjN2U2YTczNTIzYzFkMWZjMmNjOTRiMThjYTg3MA&feedId=58083&k=eaa899822d9c88e123efd28d4c377a04a575ac3b",
-        sizes: ["XS", "S", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-espana-mundial-2026-segunda-equipacion-authentic-granate",
-    brand: "Adidas",
-    model: "Pantalón corto Espana Mundial 2026 Segunda Equipacion Authentic - Granate",
-    colour: "Granate",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 39.49,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46287326769&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111210-00-S-M-20260323165351.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTY5N3xpbWFnZS9qcGVnfGFEbGhMMmc0Tnk4eE16WTFOVFU0TmpnMk5URTRNaTl0WldScFlYTmZNVEF3TVRFeE1USXhNRjh3TUY5VFgwMHRNakF5TmpBek1qTXhOalV6TlRFdWFuQm58NWNiOWFiNjJjOWVhYzZjMzI0NzM5YzgwZTk3YWRlOWM4OTQ5MTA2N2ZlODY1MmIzOWQ4NjBjM2RkOTMzNzZmYg&feedId=58083&k=e47e0cc66bd69740a221473615d1c3267bfa40f8",
-        sizes: ["XL", "XXL"],
       },
     ],
   },
@@ -53304,132 +53826,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-pantalon-corto-italia-eurocopa-2024-primera-equipacion-blanco",
-    brand: "Adidas",
-    model: "Pantalón corto Italia Eurocopa 2024 Primera Equipacion - Blanco",
-    colour: "Blanco",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 28.97,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37497831831&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000932149-00-S-M-20240311163650.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjE2MHxpbWFnZS9qcGVnfGFEQmhMMmhrT1M4eE1qQXlNalUyTXpjd01EYzJOaTl0WldScFlYTmZNVEF3TURrek1qRTBPVjh3TUY5VFgwMHRNakF5TkRBek1URXhOak0yTlRBdWFuQm58OWEwY2U0ZTliY2Y2ZGMxYzczZjkyMzBhOGM5YThmN2Q0MDAwMmI1ZThhZDFmNDRkNjM0Nzg4MTUyNDZhZDQ3Mg&feedId=58083&k=d48c3acd2de06d016102ca2f506616934597e99b",
-        sizes: ["S", "M"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-italia-mundial-2026-azul",
-    brand: "Adidas",
-    model: "Pantalón corto Italia Mundial 2026 - Azul",
-    colour: "Azul",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 30.35,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375664&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113031-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYwNnxpbWFnZS9qcGVnfGFEYzVMMmd4WkM4eE16VTJNak01T0RRME1UVXdNaTl0WldScFlYTmZNVEF3TVRFeE16QXpNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58YTg2ZGFmNWI4OGNiYjBiNjhlMDM2MmU3Yzg5NWUzNWQyNGM4MzE2ZmVhZDI1ODQ3N2Q3MTFhYTE3ZjI3Y2UyZA&feedId=58083&k=baa705a5f4462cd3bd62474ddde5af48e51dae95",
-        sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-italia-mundial-2026-azul-2",
-    brand: "Adidas",
-    model: "Pantalón corto Italia Mundial 2026 - Azul",
-    colour: "Azul",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 42.2,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375920&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113026-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTk2OXxpbWFnZS9qcGVnfGFEVTBMMmhqTXk4eE16VTJNak01TmpBNE1qSXdOaTl0WldScFlYTmZNVEF3TVRFeE16QXlObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58YmEzYTI1MTk4NGRmODc3ZjVjNTI3MzZiODI5MDkxZGRiNTJhMjk5MDVhNDhjZGRjMWUxM2IyM2U5NDcwNWVmYg&feedId=58083&k=2aadc731d19ffa3395cf25d7c61f7aa67b7e7bec",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-italia-mundial-2026-azul-3",
-    brand: "Adidas",
-    model: "Pantalón corto Italia Mundial 2026 - Azul",
-    colour: "Azul",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 39.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376027&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113033-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg2OHxpbWFnZS9qcGVnfGFHVXhMMmc0WkM4eE16VTJNak01T1RZeU1URTFNQzl0WldScFlYTmZNVEF3TVRFeE16QXpNMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58YTBkZGQzNmNiOGQxNzNmNzdhNTU0ZDZkZTkxMzYxZGVlZGI2MDQ5N2IyYjE5MTYwMzc1ZGI3NTM0NmM3YTkzYw&feedId=58083&k=18afd26fbed1cde3200a44ec7a21edbdfac1d492",
-        sizes: ["M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-italia-mundial-2026-blanco",
-    brand: "Adidas",
-    model: "Pantalón corto Italia Mundial 2026 - Blanco",
-    colour: "Blanco",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 66.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376696&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113842-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMnxpbWFnZS9qcGVnfGFEQTRMMmhrTnk4eE16VTJNekl5TnprNU5qRTVNQzl0WldScFlYTmZNVEF3TVRFeE16ZzBNbDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58NjBjNmY0YTBiZWViZmQ3NDAwMDAyNGVjOGFlNDdiMDY3ZTQxMzg0NWQ1YTk3M2I1YzU0MjE3NzI2ZjBmYzM0Yg&feedId=58083&k=475d35ab44e3b1d6c1efd12282288a29cfe1dcb8",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-italia-mundial-2026-entrenamiento-verde",
-    brand: "Adidas",
-    model: "Pantalón corto Italia Mundial 2026 Entrenamiento - Verde",
-    colour: "Verde",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 39.05,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376695&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113840-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ4MHxpbWFnZS9qcGVnfGFEWXpMMmcxWWk4eE16VTJNekl5TmpReU16TXlOaTl0WldScFlYTmZNVEF3TVRFeE16ZzBNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58NDI4OGFkM2JjMWZmNWRiMjg0ZDNhMjc1YzgzMzMwMmU1NzQxMjhlZjdjYzg4NDRiNTZkODdjMzJhNTA5NTdiZQ&feedId=58083&k=9b04fa8cc32fe8824c627128aa5e367d6c9a0767",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-italia-mundial-2026-verde",
-    brand: "Adidas",
-    model: "Pantalón corto Italia Mundial 2026 - Verde",
-    colour: "Verde",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 40.86,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376760&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113844-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc3MXxpbWFnZS9qcGVnfGFEYzFMMmcxT1M4eE16VTJNekl5T1Rnek1URTVPQzl0WldScFlYTmZNVEF3TVRFeE16ZzBORjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58MDY0NjdiOTUwYWY0NDgxMjhlYjEzNzc1YzQwMDkyNzM5ZDk4NzA3YzQ3ZGYxYjRjYmJhOWQxMDFhOWQ4YWUyNg&feedId=58083&k=b8f2f0b496cc9ea07f4bedecf88dedbcfc4a9e1f",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
     id: "adidas-short-italie-travel-euro-2024-bleu",
     brand: "Adidas",
     model: "Pantalón corto Italia travel Euro 2024 - Azul",
@@ -53655,6 +54051,9 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-short-long-femme-adidas-tiro-23-league-bleu",
     brand: "Adidas",
@@ -53841,24 +54240,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-pantalon-corto-manchester-united-26-27-travel-negro",
-    brand: "Adidas",
-    model: "Pantalón corto Manchester United 26/27 Travel - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 46.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383856&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135107-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI3M3xpbWFnZS9qcGVnfGFEQTFMMmczWmk4eE16Z3pOalF4T1RNd01UUXdOaTl0WldScFlYTmZNVEF3TVRFek5URXdOMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MTRiOTIzYzRiNzIzZjdmNzM2NjE5MGIzNjI2YTAyMTIwMmMxZDUwOTE0NGRiZDA2MWQwNWNhYzhlYjVlMDgwMQ&feedId=58083&k=3bdf69a95b88b745827826e69117763f4238120a",
-        sizes: ["XS"],
-      },
-    ],
-  },
-  {
     id: "adidas-pantalon-corto-manchester-united-tiro-2023-downtime-negro",
     brand: "Adidas",
     model: "Pantalón corto Manchester United Tiro 2023 Downtime - Negro",
@@ -53936,24 +54317,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq4753-short-match-adidas-tiro-24-competition-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/i/q/iq4753.webp",
         sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-mexico-mundial-2026-entrenamiento-negro",
-    brand: "Adidas",
-    model: "Pantalón corto Mexico Mundial 2026 Entrenamiento - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 40.86,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249377967&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112298-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTExOXxpbWFnZS9qcGVnfGFHSmtMMmc1TUM4eE16VTJNelk1TVRFek9URXdNaTl0WldScFlYTmZNVEF3TVRFeE1qSTVPRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58NWI4ZjlhZTZiMTljNTA0YzNlNjkzYmU3ZDkyOTExZTEyNWYyZDVlOTcyYjA0Mjg4MDFmNGI5ZmZkNmQ4MmI1MA&feedId=58083&k=76638fed0a4e14d00b9bb566e5cc6cded76d788d",
-        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -54390,9 +54753,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-pantalon-corto-mujer-adidas-squadra25-azul",
     brand: "Adidas",
@@ -55245,114 +55605,6 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-pantalon-corto-originals-espana-26-granate",
-    brand: "Adidas",
-    model: "Pantalón corto Originals Espana 26 - Granate",
-    colour: "Granate",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 41.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45262390889&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001121249-00-S-M-20260423110559.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY4MnxpbWFnZS9qcGVnfGFHRTVMMmd5TWk4eE16Y3lNREF3TmpJNU5UVTRNaTl0WldScFlYTmZNVEF3TVRFeU1USTBPVjh3TUY5VFgwMHRNakF5TmpBME1qTXhNVEExTlRrdWFuQm58MzU2MjgzZjY5ODVmYmQzMzU1NzdmNWYzMmJiMzYwNWRlNjU3ZjBjNDgwZGU5ZmJhYjVjMjY5MjY0YTgyZDI2Mw&feedId=58083&k=3dbcc4899d185c7b6ab4827c27b92f420bd51cb3",
-        sizes: ["XS", "S", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-originals-italia-marino",
-    brand: "Adidas",
-    model: "Pantalón corto Originals Italia - Marino",
-    colour: "Marino",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 40.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44450198693&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112855-00-S-M-20260330145619.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYwM3xpbWFnZS9qcGVnfGFEWTVMMmhsWlM4eE16WTJPVEV6TURZek16STBOaTl0WldScFlYTmZNVEF3TVRFeE1qZzFOVjh3TUY5VFgwMHRNakF5TmpBek16QXhORFUyTVRrdWFuQm58MDlkNDhmZjE5MjQzZDgxYzQ3YzJjODUxZjFmZWFlMDc4OWY4YzQ4NDg5YzI0ZDA0MjI3MjYxMmRhYTkxNjFiMQ&feedId=58083&k=d1638edea1f0095407a1ff385ac0a6aa6015c772",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-originals-italia-marino-2",
-    brand: "Adidas",
-    model: "Pantalón corto Originals Italia - Marino",
-    colour: "Marino",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 52.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378682&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112853-00-S-M-20260323165351.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk0MnxpbWFnZS9qcGVnfGFHVmlMMmd5WVM4eE16WTFOVFkwT0RVek5EVTFPQzl0WldScFlYTmZNVEF3TVRFeE1qZzFNMTh3TUY5VFgwMHRNakF5TmpBek1qTXhOalV6TlRFdWFuQm58ZWVjNWE3Mzc5N2VjOWY2NmFjN2ZjZDg5Y2Y5MTA1M2FkMzhiOGMxNmNiMmU0NDgyYmU2MzhjNmE5YTZiMGM0NQ&feedId=58083&k=a4c11988d4b875ca36150e08012f517410c82f45",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-originals-juventus-negro",
-    brand: "Adidas",
-    model: "Pantalón corto Originals Juventus - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 52.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46367227290&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112691-00-S-M-20260206170528.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njk3M3xpbWFnZS9qcGVnfGFEa3lMMmc0WXk4eE16VTJOVE14TmpZMk1USTNPQzl0WldScFlYTmZNVEF3TVRFeE1qWTVNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOekExTWpndWFuQm58OTA0ZjJhMzcwMWM1OTMwZWM1NWVmZjI0MTRmZGEzMzJiYjkwZmJmNTVhMTkwYjhmNjkyNTA1ZTdmM2U5YTJlZg&feedId=58083&k=8e27ae375d3299ed5893b31d91ccedb4a210887d",
-        sizes: ["XS", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-originals-juventus-terrace-icons-verde",
-    brand: "Adidas",
-    model: "Pantalón corto Originals Juventus Terrace Icons - Verde",
-    colour: "Verde",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 49.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249377761&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001114241-00-S-M-20260423110559.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMyNHxpbWFnZS9qcGVnfGFERXpMMmd5Tnk4eE16Y3hPRFEyTnpJeE5UTTVNQzl0WldScFlYTmZNVEF3TVRFeE5ESTBNVjh3TUY5VFgwMHRNakF5TmpBME1qTXhNVEExTlRrdWFuQm58Y2FhOWM1NGFjZjhjMGEzNWJjNzU2YTFhNWY2MzAzZTY5ZjIyYjRkYjdjMTc5M2Q2NzYzNmVlN2QwY2M1MTM2NA&feedId=58083&k=ae5b3faff2867d00a7e8eac48f57c4abc38ec5eb",
-        sizes: ["XS", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-originals-real-madrid-azul",
-    brand: "Adidas",
-    model: "Pantalón corto Originals Real Madrid - Azul",
-    colour: "Azul",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 40.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46664443239&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113773-00-S-M-20260219142151.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA2NnxpbWFnZS9qcGVnfGFHVTJMMmd6TUM4eE16VTVNREF3TlRjME16WTBOaTl0WldScFlYTmZNVEF3TVRFeE16YzNNMTh3TUY5VFgwMHRNakF5TmpBeU1Ua3hOREl4TlRFdWFuQm58NTdlYjNkNTU5MWYwOTA1NGFkYzRjMTk0NzIzODRiNzE5ZmUzMTE4OTcyZmVmZDU0MWEyYzQzZWI5Yjg1YWE4ZA&feedId=58083&k=8bcb02f044e4c7cd04b22602d044e821162e9984",
-        sizes: ["M", "XL"],
-      },
-    ],
-  },
-  {
     id: "adidas-pantalon-corto-partido-adidas-tiro-23-competition-negro",
     brand: "Adidas",
     model: "Pantalón corto partido adidas Tiro 23 Competition - Negro",
@@ -55797,114 +56049,6 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fim7468-short-real-madrid-2024-25-dark-grey",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_im7468_1_apparel_photography_front_view_white.webp",
         sizes: ["S", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-real-madrid-25-26-entrenamiento-gris",
-    brand: "Adidas",
-    model: "Pantalón corto Real Madrid 25/26 Entrenamiento - Gris",
-    colour: "Gris",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 40.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46119081303&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087450-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMyN3xpbWFnZS9qcGVnfGFHRmlMMmhrWlM4eE16RXhORGt6TmpRMU9USTVOQzl0WldScFlYTmZNVEF3TVRBNE56UTFNRjh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58ODIwODA0YTg3MzNiZTZiNDYxZDk1M2JhNmY5NGVmMWU2YjAwYzIxZGU4MzE4MTRjZTA2YmVlMTc3Mjc4M2YwYw&feedId=58083&k=6b8a7cf355a0df7d4cccc430d720b4963b4595b0",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-real-madrid-25-26-gris",
-    brand: "Adidas",
-    model: "Pantalón corto Real Madrid 25/26 - Gris",
-    colour: "Gris",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 30.35,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46492291630&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087457-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYxMnxpbWFnZS9qcGVnfGFEWm1MMmcxTnk4eE16RXhORGt6T1RJeE1UZ3dOaTl0WldScFlYTmZNVEF3TVRBNE56UTFOMTh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58MWVmNzM0OGJkODcwZDMxYTU0OTcwMTBiNmYwYjY0NGU4OWY2ZjkxMDVjNzQ2Zjg4Y2JmZTg1YTZhNzM3ODcwYQ&feedId=58083&k=08d78ee11300c80eec34fd26ef5bae8a026b4a82",
-        sizes: ["M"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-real-madrid-25-26-negro",
-    brand: "Adidas",
-    model: "Pantalón corto Real Madrid 25/26 - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 33.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44118462395&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113413-00-S-M-20260223090216.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzAyOXxpbWFnZS9qcGVnfGFETTBMMmhqWkM4eE16VTVOakk1TlRFMk9EQXpNQzl0WldScFlYTmZNVEF3TVRFeE16UXhNMTh3TUY5VFgwMHRNakF5TmpBeU1qTXdPVEF5TVRZdWFuQm58NTRlYzJhZmE2ZGM3NzkwOWJkZDBkNTExNDE2OWY0ZGMxMzJmNDczODY2Yzk5MmNjNTZlZmFiNmMxMmM2YzlmYw&feedId=58083&k=5ede585f9029ecee6ca571312913ad74a16d54a0",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-real-madrid-25-26-segunda-equipacion-marino",
-    brand: "Adidas",
-    model: "Pantalón corto Real Madrid 25/26 Segunda Equipacion - Marino",
-    colour: "Marino",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 39.09,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46367225238&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001086552-00-S-M-20250822142748.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjUxMnxpbWFnZS9qcGVnfGFEZ3hMMmhqTlM4eE16RXpNemswTWpreE5URXdNaTl0WldScFlYTmZNVEF3TVRBNE5qVTFNbDh3TUY5VFgwMHRNakF5TlRBNE1qSXhOREkzTkRndWFuQm58MmJkNDI5OGYwMjRiMjU5NmFjZjM4N2RjNWZkNDYxNzJjMGYyOGFkNzIwNzNlNTM5YmI1OWY1NWNhYzU2ZDA5NQ&feedId=58083&k=4d6967b6a2d51635dc6db7b23d4b8a76e78c65a6",
-        sizes: ["M"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-real-madrid-dna-azul",
-    brand: "Adidas",
-    model: "Pantalón corto Real Madrid Dna - Azul",
-    colour: "Azul",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 30.81,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44193950475&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001085992-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjQ1NHxpbWFnZS9qcGVnfGFEQmxMMmczWkM4eE16RXhNalUzTlRReU5qVTVNQzl0WldScFlYTmZNVEF3TVRBNE5UazVNbDh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58ZWUxMjFmZTNmMTg5OWUyMjdhMTg0MTAxZjk5N2RmMzk5ZTI1MWE4ZGRlN2I1OTk1YmVlNGUwYjY2ZmJlZjI1Mw&feedId=58083&k=518a49b36e6f8ce29895e9f7b6bdb9281916986e",
-        sizes: ["M"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-real-madrid-lfstlr-marino",
-    brand: "Adidas",
-    model: "Pantalón corto Real Madrid Lfstlr - Marino",
-    colour: "Marino",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 109.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383535&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135072-00-S-M-20260708143602.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzkwNnxpbWFnZS9qcGVnfGFEYzNMMmc0WVM4eE16ZzRNREl6TURNM09UVTFNQzl0WldScFlYTmZNVEF3TVRFek5UQTNNbDh3TUY5VFgwMHRNakF5TmpBM01EZ3hORE0yTURJdWFuQm58ZWNiZmRhZTFmYjQ1ZjkyNTUzMzhlZWRhMTYxMTdhNTU3NjBkMTY4ZjAyNGUxYTQ4ZWM0YjRjYTA1Mjc1MDc0OA&feedId=58083&k=31455e9d8f34e58ca348cc6d1b67e84657e9383b",
-        sizes: ["XS", "S"],
       },
     ],
   },
@@ -56566,114 +56710,6 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46249383093&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134912-00-S-M-20260814141506.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzkzNHxpbWFnZS9qcGVnfGFEbGxMMmhpWlM4eE16azFORFUxTmpRNU16ZzFOQzl0WldScFlYTmZNVEF3TVRFek5Ea3hNbDh3TUY5VFgwMHRNakF5TmpBNE1UUXhOREUxTURZdWFuQm58N2MzMzBjNjYxZGExYWI5MTVkYjdkMzc2MmIyODZhYjRlYzAyNTQ5YjE0MTgzZTllYzNhYzU4MzNkOTQxZmM5OA&feedId=58083&k=e747ac25eca3414672b14cef7166583b41c1f165",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-tiro-26-essentials-azul",
-    brand: "Adidas",
-    model: "Pantalón corto Tiro 26 Essentials - Azul",
-    colour: "Azul",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.42,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383240&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134969-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE2OXxpbWFnZS9qcGVnfGFETTRMMmd6TlM4eE16Z3pOamM0T0RBek9UY3hNQzl0WldScFlYTmZNVEF3TVRFek5EazJPVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58ODhhMzQ5NWZiZjc5OWVmMTRkN2Q4Yjc5ZmY3NDM2NTA5OGNhOTU2ZTZjNDFmZTQzOWNjMmJjODcwZmY4OWQwNw&feedId=58083&k=28d452b79bcb2fc373fd32132d42b9c2a28f44e8",
-        sizes: ["XS", "S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-tiro24-gris",
-    brand: "Adidas",
-    model: "Pantalón corto Tiro24 - Gris",
-    colour: "Gris",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 18.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46638920020&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000981224-00-S-M-20240123120654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjEwOXxpbWFnZS9qcGVnfGFEVXpMMmc1Tnk4eE1Ua3pNRGszTlRRek5qZ3pNQzl0WldScFlYTmZNVEF3TURrNE1USXlORjh3TUY5VFgwMHRNakF5TkRBeE1qTXhNakEyTlRRdWFuQm58ZTczNDFjYmMyOGI0M2RkZDcyZWE0NDhlMTM2OTlkMTNjMDY0Y2MxMzk1YzA5Y2U3ZWQ5MmM4OWMxNTJhOGNiMQ&feedId=58083&k=6f811ac7a9930d488f07fa7decc94dfbbf109195",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-tiro24-marino",
-    brand: "Adidas",
-    model: "Pantalón corto Tiro24 - Marino",
-    colour: "Marino",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.41,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37201049620&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000981049-00-S-M-20240123120654.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA0NHxpbWFnZS9qcGVnfGFEY3lMMmhoTVM4eE1Ua3pNRGczTXpBd05EQTJNaTl0WldScFlYTmZNVEF3TURrNE1UQTBPVjh3TUY5VFgwMHRNakF5TkRBeE1qTXhNakEyTlRRdWFuQm58NjI2NmY1ZjdkMzRhOTc2ZmNhYjIxOTYzOGZhMmM2ZmRkMDMwMmQ4YTY1ZDY1ODExMmQ4NjkxMzJmYTdhZWRhOA&feedId=58083&k=f79e74a4a9a1f248b1f9cc5c17257052a2b9c71a",
-        sizes: ["XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-tiro25-essentials-negro",
-    brand: "Adidas",
-    model: "Pantalón corto Tiro25 Essentials - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46206710482&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052555-00-S-M-20250107155128.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzczMXxpbWFnZS9qcGVnfGFHVTRMMmhoWXk4eE1qWTFOVFkyTURrMU56Y3lOaTl0WldScFlYTmZNVEF3TVRBMU1qVTFOVjh3TUY5VFgwMHRNakF5TlRBeE1EY3hOVFV4TWpndWFuQm58NGZiMTQwNGRmMmRhOGQ4Mzc5NDU1NTM0NTMyZTY2ZmJlYzM0MmNlMDFmM2M2NTQ4MDMyMjg0YWNiYWNiOGY0YQ&feedId=58083&k=fe43a7967fa549bdedf0345963d021a5be47160e",
-        sizes: ["XS", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-tiro26-league-marino",
-    brand: "Adidas",
-    model: "Pantalón corto Tiro26 League - Marino",
-    colour: "Marino",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.75,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249379145&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112026-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzg2NHxpbWFnZS9qcGVnfGFEUmpMMmhtTnk4eE16VTJNelF6TURZMk5qSTNNQzl0WldScFlYTmZNVEF3TVRFeE1qQXlObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58MTc2MDZlN2M0MDhiZWU0Mjc2OGE2YmI2NmU3YjRlZTlmZDE0OTdhNDk2MTRiOWUzZmE0ZThlMDU0NjlmMWE4ZA&feedId=58083&k=b630700a10ace10deb2c46f5e5f7aa91c309b339",
-        sizes: ["XS", "S"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-corto-tiro26-league-negro",
-    brand: "Adidas",
-    model: "Pantalón corto Tiro26 League - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.75,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376163&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112029-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTY4OHxpbWFnZS9qcGVnfGFHTmhMMmd5Tnk4eE16VTJNelF6TWpVd01USTNPQzl0WldScFlYTmZNVEF3TVRFeE1qQXlPVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58NThlOTgyYWIzOWEyMWNhYzMwYWMzMTlkN2YyNDU1Y2Q0MDFjNTI3NGQyOGRkNjJjOGY1OWViMzI2NDY3NDlhMg&feedId=58083&k=b6b317ad7e03694d485451985b5eb0b2423894f0",
-        sizes: ["XS", "S", "M", "XL", "XXL"],
       },
     ],
   },
@@ -60302,6 +60338,9 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-adidas-tiro25-negro",
     brand: "Adidas",
@@ -60410,9 +60449,6 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-adidas-tiro26-league-bleu-2",
     brand: "Adidas",
@@ -67338,6 +67374,9 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-entrenamiento-adidas-tiro-26-league-negro",
     brand: "Adidas",
@@ -67374,9 +67413,6 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-entrenamiento-adidas-tiro-seleccion-colombia-26-azul",
     brand: "Adidas",
@@ -69005,7 +69041,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-pantalon-largo-originals-espana-granate",
     brand: "Adidas",
-    model: "Pantalón largo Originals Espana - Granate",
+    model: "Pantalón largo Adidas Originals Espana - Granate",
     colour: "Granate",
     type: "pants",
     offers: [
@@ -69023,7 +69059,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-pantalon-largo-real-madrid-dna-azul",
     brand: "Adidas",
-    model: "Pantalón largo Real Madrid Dna - Azul",
+    model: "Pantalón largo Adidas Real Madrid Dna - Azul",
     colour: "Azul",
     type: "pants",
     offers: [
@@ -72894,6 +72930,9 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-parka-adidas-condivo-22-stadium-azul",
     brand: "Adidas",
@@ -72948,9 +72987,6 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-parka-adidas-entrada-stadium-negro",
     brand: "Adidas",
@@ -74558,7 +74594,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-polera-adidas-techfit-manga-larga-blanco",
+    id: "adidas-polera-adidas-techfit-manga-larga-blanco-2",
     brand: "Adidas",
     model: "Polera adidas TECHFIT Manga Larga - Blanco",
     colour: "Blanco",
@@ -74590,15 +74626,6 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45565446788&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F483ef133846d429ba4e2b1f0d20dac5e_9366%2FCamiseta_TECHFIT_Manga_Larga_Blanco_JP2920_01_laydown.jpg&feedId=95017&k=c7eab2dc48d2dcd2690f7cea2478ebb71c20d73c",
         sizes: ["XS", "S", "M", "L", "XL"],
-      },
-      {
-        store: "ForumSport",
-        price: 27.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45877077561&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053374-00-S-M-20250314165550.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc5NHxpbWFnZS9qcGVnfGFERTBMMmhpT1M4eE1qZ3dNakk0TmprME5ESTROaTl0WldScFlYTmZNVEF3TVRBMU16TTNORjh3TUY5VFgwMHRNakF5TlRBek1UUXhOalUxTlRBdWFuQm58MGEwMjBiMzMxOGU5YzVlZjU5YzZhMjdkYjJiMmJmNzg0Y2Q4MzBlNTRjY2VlNzdiNmFiYmVmYTA4NWZlMDU3YQ&feedId=58083&k=835dfbf479edaf0dabb9fc4627aad7243c936de7",
-        sizes: ["XS"],
       },
     ],
   },
@@ -77324,15 +77351,6 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kf3402_1_apparel_photography_front_center_view_white.webp",
         sizes: ["2XS", "XS", "S", "M", "XL"],
       },
-      {
-        store: "ForumSport",
-        price: 27.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249387284&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001139128-00-S-M-20260701100443.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTIwMXxpbWFnZS9qcGVnfGFHRmtMMmcyTUM4eE16ZzJORE13TlRnMU1qUTBOaTl0WldScFlYTmZNVEF3TVRFek9URXlPRjh3TUY5VFgwMHRNakF5TmpBM01ERXhNREEwTkRNdWFuQm58NWI5MmIxNTE4ZTJiZGI5MzQxOTQwNDE5ODc3ZGFmZjY1YWY0NmU1NWE4OTUwNjYwNTg3ZTI4OTY3Nzk1OWUyYw&feedId=58083&k=d2218b8653df279e4deee9b0962bf7e2de54ee1f",
-        sizes: ["XS", "S", "M", "XL"],
-      },
     ],
   },
   {
@@ -78503,6 +78521,9 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-short-de-entrenamiento-real-madrid-2025-26-gris",
     brand: "Adidas",
@@ -78605,9 +78626,6 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-short-de-portero-exterior-alemania-2026-bleu",
     brand: "Adidas",
@@ -83656,6 +83674,9 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-sudadera-bayern-munich-tiro-25-european-verde",
     brand: "Adidas",
@@ -83732,9 +83753,6 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-sudadera-con-capucha-adidas-azul",
     brand: "Adidas",
@@ -88055,6 +88073,96 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-sudadera-de-entrenamiento-ajax-24-25-entrenamiento-amarillo",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Ajax 24/25 Entrenamiento - Amarillo",
+    colour: "Amarillo",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 61.59,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41890795753&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001050623-00-S-M-20250107155128.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE2NnxpbWFnZS9qcGVnfGFEaGxMMmd6WVM4eE1qWTFORGszTWpFd09EZ3pNQzl0WldScFlYTmZNVEF3TVRBMU1EWXlNMTh3TUY5VFgwMHRNakF5TlRBeE1EY3hOVFV4TWpndWFuQm58ODUwOTBkNDVmOTM5ZmQxZTlkZGNjMGJlNWRhNWEyMzg4MmEyMDE1YzNjYjQzNzc1OTU3ODMwNDcwOWU4NDU1OA&feedId=58083&k=b680f53ccb36c586b9d95d4891f408f54f1e1492",
+        sizes: ["L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-alemania-mundial-2026-entrenamiento-blanco",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Alemania Mundial 2026 Entrenamiento - Blanco",
+    colour: "Blanco",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 44.93,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378667&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112725-00-S-M-20260206170528.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg3MXxpbWFnZS9qcGVnfGFHRTJMMmcwWlM4eE16VTJOVE16TlRFM05URTVPQzl0WldScFlYTmZNVEF3TVRFeE1qY3lOVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOekExTWpndWFuQm58MTQ1ZTA1NzlkYWY1ZjVjYWY0OTFlYTM0MDg4N2VhYzAxMjU5MjgxZmZhMzlhYWVlZTMwMWRkNWIzODQzZGYwZA&feedId=58083&k=7aadf13da48dfb8af5323ad61a098d7a1a8e7675",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-argelia-mundial-2026-entrenamiento-verde",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Argelia Mundial 2026 Entrenamiento - Verde",
+    colour: "Verde",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 43.88,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249375681&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112950-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk5OXxpbWFnZS9qcGVnfGFESXlMMmcxWVM4eE16VTJNak16T1RNNU16VTJOaTl0WldScFlYTmZNVEF3TVRFeE1qazFNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58ZGQ5YWY4MWExODlhMGI5NTEyOGI5Mzk3ZWNjMjc4NWIwYmRkNmU5ODYwOTM1ZjY4MmFhM2Y3ODQ5MjRkYTVkOA&feedId=58083&k=9a5cceab7bf906d119db41e29b1676b443d4a778",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-bayern-de-munich-25-26-entrenamieno-rojo",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Bayern De Munich 25/26 Entrenamieno - Rojo",
+    colour: "Rojo",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 50.12,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43939517349&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113397-00-S-M-20260206145545.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTE0NnxpbWFnZS9qcGVnfGFHSm1MMmcxTUM4eE16VTJNalkyTVRnek1EWTROaTl0WldScFlYTmZNVEF3TVRFeE16TTVOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhORFUxTkRVdWFuQm58YTBkNzU5NzA5Y2JkYmQ3M2M1ZjliMWQwYzRmMzY1ZTIzNjgzZGNhYWMzZDY2ZDYwMjhlNDNhMzU0N2UwMWU1NQ&feedId=58083&k=05b6f6e9e3f89e7faf3e304bcbb687fb5775b1d0",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-bayern-de-munich-25-26-entrenamiento-naranja",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Bayern De Munich 25/26 Entrenamiento - Naranja",
+    colour: "Naranja",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 86.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42815404250&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001090650-00-S-M-20250930120106.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTkzMXxpbWFnZS9qcGVnfGFEYzRMMmczTkM4eE16SXhOVGN3T1RFd01qRXhNQzl0WldScFlYTmZNVEF3TVRBNU1EWTFNRjh3TUY5VFgwMHRNakF5TlRBNU16QXhNakF4TURZdWFuQm58OTZiZWJhMGQ4MzZlOGViY2ZjOWZmYWQ4NGE4YWM1Mzg5MGM0ZTYwNDU3OWI3NjUxYjczZWY5ZWIwYjg5N2MzYg&feedId=58083&k=b70f3b4ee1d6e7cb948860d371c426cb1714e160",
+        sizes: ["L"],
+      },
+    ],
+  },
+  {
     id: "adidas-sudadera-de-entrenamiento-adidas-condivo-20-azul",
     brand: "Adidas",
     model: "Sudadera de entrenamiento adidas Condivo 20 - Azul",
@@ -88082,6 +88190,42 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-sudadera-de-entrenamiento-espana-mundial-2026-primera-equipacion-prematch-azul",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Espana Mundial 2026 Primera Equipacion Prematch - Azul",
+    colour: "Azul",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 51.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249377633&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113983-00-S-M-20260526155306.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTkyMXxpbWFnZS9qcGVnfGFHTTBMMmczTWk4eE16YzVNRGN4TkRneU1qWTROaTl0WldScFlYTmZNVEF3TVRFeE16azRNMTh3TUY5VFgwMHRNakF5TmpBMU1qWXhOVFV6TURZdWFuQm58YzVjNjI5ZWI2NWVhNDllNjIxODY5N2E3NWExNjkyM2Q4NjhiYjIyMzdhMDM1NGVjNDIzNDZiMmJmOTlmOTAyNw&feedId=58083&k=83435f226deb6b2d554dc337ec6c18a0f2015eac",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-espana-mundial-2026-segunda-equipacion-prematch-granate",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Espana Mundial 2026 Segunda Equipacion Prematch - Granate",
+    colour: "Granate",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 49.59,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249377817&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113986-00-S-M-20260310104838.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk1OHxpbWFnZS9qcGVnfGFEazVMMmc1Tnk4eE16WXlPVGs0TWpnd01UazFNQzl0WldScFlYTmZNVEF3TVRFeE16azRObDh3TUY5VFgwMHRNakF5TmpBek1UQXhNRFE0TXpndWFuQm58MjY1NTQxMzY2ZmJhOGVmNmMwZGM3ZjMyMWM4MTY2ZmYwMTFkMzdiYWYzYWEzMTI4YzE3NWVkNjFlNjA1Y2U0Mg&feedId=58083&k=f570fa6ed2b5e700c409f59cb3c8cc984fd60ce5",
+        sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
     id: "adidas-sudadera-de-entrenamiento-adidas-fc-bayern-icons-violeta",
     brand: "Adidas",
     model: "Sudadera de Entrenamiento adidas FC Bayern Icons - Violeta",
@@ -88096,6 +88240,438 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=41978616599&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb7761fdc877c46789d08b259f0b0703d_faec%2FSudadera_de_Entrenamiento_FC_Bayern_Icons_Violeta_JN0110_db21_model.jpg&feedId=95013&k=7146bc3da28692dbffd5cd2a9c8de9a309c2a9f9",
         sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 - Azul",
+    colour: "Azul",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 66.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249375864&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113023-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzI2MnxpbWFnZS9qcGVnfGFHVmxMMmhrTmk4eE16VTJNak0yTWpFek5EVTFPQzl0WldScFlYTmZNVEF3TVRFeE16QXlNMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58ZGUwZDZhMDY2YjBjYWRkMTJiNGVkM2NmMjM2NTEzOWMzMzAwNGM0NDE5NmYwYWNkMWMxMjcyNTU2MjNhMTZmMA&feedId=58083&k=ebc049e9b36f7bae7ce955c5451c8b38f90daa1a",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul-2",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 - Azul",
+    colour: "Azul",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 85.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376499&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113815-00-S-M-20260219142151.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mzg1MnxpbWFnZS9qcGVnfGFERTRMMmhoT1M4eE16VTVNREF3Tnprd05qTXpOQzl0WldScFlYTmZNVEF3TVRFeE16Z3hOVjh3TUY5VFgwMHRNakF5TmpBeU1Ua3hOREl4TlRFdWFuQm58Y2NjMTdhZDQzMzU3NTNhZDdkMDcxMTIyZTM5MzU2ZjI5NjNiNTdjZTVlODU2OGVhYmE0MmNkMDdiYzE1ODY5OQ&feedId=58083&k=10f4e2658c16efdba21dafb5fc77674f73f4b311",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul-3",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 - Azul",
+    colour: "Azul",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 37.79,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378285&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112637-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMxMXxpbWFnZS9qcGVnfGFEY3dMMmhrTnk4eE16VTJNakl5TXpBNU9Ua3pOQzl0WldScFlYTmZNVEF3TVRFeE1qWXpOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NTkwZWE1MjU5MGIwYTkwMWYxZDMwZGFjNzgzNzY1MjZhNTY1ZDJkMTQxMzU1YTNmYTIwYjMzNDI2OGU5NmIzMg&feedId=58083&k=623a606e3ce77a29076817ae909337f7cee12b8b",
+        sizes: ["S", "M"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul-4",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 - Azul",
+    colour: "Azul",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 58.79,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378710&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112857-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDY5MHxpbWFnZS9qcGVnfGFHTTJMMmhpTUM4eE16VTJNak13TXpBeU1UQTROaTl0WldScFlYTmZNVEF3TVRFeE1qZzFOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NmY0MzJkODE0NjE1ZjNkMjczMmVkOWIyYzY0YjRmNGVlNjQwN2E3NGU4YWE0ZDU0OGMyZGE2YzBiOGU4YmEyYQ&feedId=58083&k=4fdcd843b3cc12d08e5ca4b5066ca46fcca69161",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul-5",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 - Azul",
+    colour: "Azul",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 64.98,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378711&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112860-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODkyOXxpbWFnZS9qcGVnfGFESXpMMmhrWlM4eE16VTJNak13TkRJMk5qSTNNQzl0WldScFlYTmZNVEF3TVRFeE1qZzJNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58MjJmNzc4YTg2M2YxZGI4ZGU4YWNlMmZjOGYzN2Y0OWNkOTQwNDE5YTAwYjQzNmQyMDI4YjBhNmIyOTY2ZTE3Zg&feedId=58083&k=7240d256bf6c75252ab84801edaa779ac94a378f",
+        sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-entrenamiento-blanco",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 Entrenamiento - Blanco",
+    colour: "Blanco",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 43.88,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376724&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113846-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMXxpbWFnZS9qcGVnfGFEbGtMMmhtTXk4eE16VTJNekl6TVRBeE1EZzBOaTl0WldScFlYTmZNVEF3TVRFeE16ZzBObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58MTk4MDNkNGZiMmYxYTg5YjdmZjJhMTUwM2I4NTMzMzI2Y2Q3ZmJlNzU2YzJmMzBmNTFhYmIxNDZhMjQ5NGQ5OQ&feedId=58083&k=db67e8a4390f0f61fd810a4661126b9e3d76b320",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-entrenamiento-verde",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 Entrenamiento - Verde",
+    colour: "Verde",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 44.65,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376662&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113848-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYzMnxpbWFnZS9qcGVnfGFHWXdMMmc0TlM4eE16VTJNekl6TWpFMU56Y3lOaTl0WldScFlYTmZNVEF3TVRFeE16ZzBPRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58MjdkYzVkOWRhOTI4OGJmYjRmMmFiNjgxNmI0MDY4N2I0MjViNGRhNjU0NzQ5MmI3MDJhNDA0MDY5NWI2YzI0Ng&feedId=58083&k=48fe68940026832b66bb5b9f65ac23b1d423c8e0",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-primera-equipacion-authentic-azul",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 Primera Equipacion Authentic - Azul",
+    colour: "Azul",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 119.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249379624&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001121233-00-S-M-20260526155306.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU0NXxpbWFnZS9qcGVnfGFEUXdMMmd3TlM4eE16YzVNRGN5TVRnek5UQXpPQzl0WldScFlYTmZNVEF3TVRFeU1USXpNMTh3TUY5VFgwMHRNakF5TmpBMU1qWXhOVFV6TURZdWFuQm58ZjFjNWQyYTQ2NTI3YTkyNmEzMjYwZDZiNzc0MjcwMjkzMTRkMDc3OWQ1NDczNTBmNTkzZGYzZjNhYzU5MGI3MA&feedId=58083&k=66b7b3380aa9d4038db87c0a0b4ffd81f0f368dc",
+        sizes: ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-primera-equipacion-prematch-blanco",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 Primera Equipacion Prematch - Blanco",
+    colour: "Blanco",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 109.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249379609&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001121238-00-S-M-20260526155306.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTgzMXxpbWFnZS9qcGVnfGFETmhMMmhpWkM4eE16YzVNRGN5TkRnME9UWTVOQzl0WldScFlYTmZNVEF3TVRFeU1USXpPRjh3TUY5VFgwMHRNakF5TmpBMU1qWXhOVFV6TURZdWFuQm58YWI3MjU0Mzk0ZTk4NGMwMWE4ZWMwN2VjYzgxNDUxZDJmYmVhMGE4MWMzMjU0NjBjMTg2Y2NlZTgwNTJmZDkyMw&feedId=58083&k=f0a6de5741a82327532e58ecf8fe4cf6baaad919",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-segunda-equipacion-prematch-marino",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 Segunda Equipacion Prematch - Marino",
+    colour: "Marino",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 72.59,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249375706&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112949-00-S-M-20260323165351.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODgxMnxpbWFnZS9qcGVnfGFEVTFMMmcyTkM4eE16WTFOVFkxTURBM05EWTFOQzl0WldScFlYTmZNVEF3TVRFeE1qazBPVjh3TUY5VFgwMHRNakF5TmpBek1qTXhOalV6TlRFdWFuQm58MDE2NmZmYzFjMzI1M2IwYzM2ZjMzMTczMGFhYzcyN2YzNjExNmI5ZjRlNjJmN2IwYzM2YzllNGZhM2ZhY2NkMA&feedId=58083&k=3bb60e3188b90c8bd0aa6c809925a4181b0822bb",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-verde",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 - Verde",
+    colour: "Verde",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249376562&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113819-00-S-M-20260223100033.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM2OXxpbWFnZS9qcGVnfGFEQTJMMmd6WVM4eE16VTVOalkzTURNNU5ETTVPQzl0WldScFlYTmZNVEF3TVRFeE16Z3hPVjh3TUY5VFgwMHRNakF5TmpBeU1qTXhNREF3TXpNdWFuQm58ZTdhMzRiYzk3NzQyZDZlZTk5MjE2MGIyZTViZmNhNTNkNWFkYzEwOWFjY2M4ZmRlMzIzMTEwMTI1NTZiNjc2Yw&feedId=58083&k=bb781a90c7caffbdb5f640dc6702f89f07dad354",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-olympique-lyon-dna-track-blanco",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Olympique Lyon Dna Track - Blanco",
+    colour: "Blanco",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 52.35,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42065767991&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001086005-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYzNHxpbWFnZS9qcGVnfGFEbGhMMmczTWk4eE16RXhNalU0TXpnNE1EY3pOQzl0WldScFlYTmZNVEF3TVRBNE5qQXdOVjh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58MGM3OGZjYzdhMWQ4NWM2ZGRlMjA1ODU5ZjBiNjJhOTA1ODAyNjYyNWNkZWQ5YTg0MDBiMzA5NTVmOGE0NWI1OQ&feedId=58083&k=7d73e8adf3649cf83384d6533fe3845d8a5c2f0f",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-originals-arsenal",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Originals Arsenal",
+    colour: "N/D",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 67.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45365872118&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102077-00-S-M-20260618081626.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDI2N3xpbWFnZS9qcGVnfGFHVmxMMmd5TUM4eE16Z3pOVFV6TXpFeU16WXhOQzl0WldScFlYTmZNVEF3TVRFd01qQTNOMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpZdWFuQm58ZTRhOWU1N2RhZGE3MGJmYjk4Y2E1YjcyM2Q5MTMyMDg2NzQ2NzhiM2Q3MDQ2MDAyYjFmZjI5NGQ4OTU0NThmYw&feedId=58083&k=ec1c50e89662211b074b625c60dd805c0319dfd2",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-originals-juventus-negro",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Originals Juventus - Negro",
+    colour: "Negro",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 47.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46367227306&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112693-00-S-M-20260206170528.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA5MHxpbWFnZS9qcGVnfGFHWTVMMmhtWXk4eE16VTJOVE14TnpnME1Ea3lOaTl0WldScFlYTmZNVEF3TVRFeE1qWTVNMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOekExTWpndWFuQm58NWUyMTExMDg2YTIyYTVkZmQ1MDUyNmY4NDkyNWM4NDRlMDc5M2ZkZjkzYzcyMzEwMmU2YWY2YmNkNDRjMTQ3NQ&feedId=58083&k=662912df3088e16ee2cb2ae7d6f9f01ac32e0b43",
+        sizes: ["XS", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-originals-juventus-negro-2",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Originals Juventus - Negro",
+    colour: "Negro",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 89.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46367227316&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112695-00-S-M-20260219142151.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY4N3xpbWFnZS9qcGVnfGFHUTVMMmhoT0M4eE16VTRPVGd4TnpJeU9UTTBNaTl0WldScFlYTmZNVEF3TVRFeE1qWTVOVjh3TUY5VFgwMHRNakF5TmpBeU1Ua3hOREl4TlRFdWFuQm58YTRjN2Q0NDZhZWJjNjE2ODA5NDNlNzkzOGRhOTQ2YjlkYzMxZjE1OGEzMjc5MGI1MjFjMjUzMzJhMmNhOTNkYQ&feedId=58083&k=6a136137e698007d37dadf97ddf1b53b7814845c",
+        sizes: ["L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-originals-real-madrid",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Originals Real Madrid",
+    colour: "N/D",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 80.09,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46330237070&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102074-00-S-M-20260618081626.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgzN3xpbWFnZS9qcGVnfGFEZzFMMmc0WVM4eE16Z3pOVFV6TWpFME1EVTNOQzl0WldScFlYTmZNVEF3TVRFd01qQTNORjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpZdWFuQm58NTJhZjg4ODgwODBlZmNjNzc5NmU1ZjU2MmI4MTkwOWVlMDAwMTI0ZDhlMzgyMmU2MGMxYWJhNTNjZWRlNTVjNg&feedId=58083&k=05cba681808ac15a5a33d6e3cfd8a0acfd431c69",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-originals-real-madrid-2",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Originals Real Madrid",
+    colour: "N/D",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 71.27,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46695451504&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102075-00-S-M-20260525112510.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjA4NXxpbWFnZS9qcGVnfGFHTmhMMmc0WkM4eE16YzROamsxTWpZek1ETXdNaTl0WldScFlYTmZNVEF3TVRFd01qQTNOVjh3TUY5VFgwMHRNakF5TmpBMU1qVXhNVEkxTVRBdWFuQm58NGEzN2Y2ZjBlOGI0NTRiYWRiZjVhNWJmYWFjODgxY2ZlMTNiNDljM2FjMmQ3YWNjZDY4YmQ3MTRmNmVkZGQ2NA&feedId=58083&k=e8bfbc34881c4c54646f96dfe63b213322de7770",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-originals-real-madrid-azul",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Originals Real Madrid - Azul",
+    colour: "Azul",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 52.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46367228490&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001114005-00-S-M-20260323165351.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzM5N3xpbWFnZS9qcGVnfGFEVXpMMmhpTlM4eE16WTFOVGN4T1RRME5EVXhNQzl0WldScFlYTmZNVEF3TVRFeE5EQXdOVjh3TUY5VFgwMHRNakF5TmpBek1qTXhOalV6TlRFdWFuQm58Y2ExNWZiNDYwYjQ1MjJlNDM0YTgzZmEwN2Y3OTQwY2JkNTEzYzZmZjk3ZDk3ODY2Yzc2ODJhMzU2YjI1MDkwNg&feedId=58083&k=c4420036da87e6a6f083d5aec76e8585882710e1",
+        sizes: ["XS", "S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-presentacion-core-18-azul",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Presentacion Core 18 - Azul",
+    colour: "Azul",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 39.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36183678097&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000486079-00-S-M-20181121082107.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyNzgwNzh8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZ3pPQzlvTWpBdk9EazFOVFkwTXprMU16RTRNaTVxY0djfDdiNzMzODViZDA5M2IzNTI1YzI0NjgwNmQ5OWY3NjZhM2MyNmRjYzBjNzU5YmUyYmQ2NGJhM2JhNDZlYjQ3YWQ&feedId=58083&k=cbbbd535e72cc827ed622b7fe965f50c819443be",
+        sizes: ["XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-real-madrid-24-25-prematch-blanco",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Real Madrid 24/25 Prematch - Blanco",
+    colour: "Blanco",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 87.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41839993419&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052805-00-S-M-20241220184704.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUyM3xpbWFnZS9qcGVnfGFHRmtMMmc0TlM4eE1qWXdOelkxTkRZMU9EQTNPQzl0WldScFlYTmZNVEF3TVRBMU1qZ3dOVjh3TUY5VFgwMHRNakF5TkRFeU1qQXhPRFEzTURRdWFuQm58NjA0YmZmYTg1ZmNjMzkyZDZmNGFkYjZjNmE0MGIyNDYwYzg1NjlkMjVjN2YwZWVlMDFhOTI0M2FiZGVkOTE2Mg&feedId=58083&k=d557a66e656f6adfde3153f440ce60469eb60be4",
+        sizes: ["M", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-real-madrid-25-26-entrenamiento-verde",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Real Madrid 25/26 Entrenamiento - Verde",
+    colour: "Verde",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 46.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45015288537&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087447-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDc5MXxpbWFnZS9qcGVnfGFHVmtMMmhpTUM4eE16RXhORGt6TlRJM09UWTBOaTl0WldScFlYTmZNVEF3TVRBNE56UTBOMTh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58Y2VlNTk2ODAxYWQ4MTZjY2U2ZDVjMTg2ZDdjOGU2MWZlMGE1MWI0ZTIwOThlZTdmZjg4ODU4NDJhZDgxY2Y0YQ&feedId=58083&k=4d246f880bb9e84da9d7f4e5a09650f51acad8a2",
+        sizes: ["L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-real-madrid-25-26-entrenamiento-verde-2",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Real Madrid 25/26 Entrenamiento - Verde",
+    colour: "Verde",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 76.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46244483471&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087461-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjAxM3xpbWFnZS9qcGVnfGFEYzRMMmhpTXk4eE16RXhORGswTXpRek9EZzNPQzl0WldScFlYTmZNVEF3TVRBNE56UTJNVjh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58NGU3NzJlODM4MWJhMjcwNGFkNjBiNWU0N2Y3MjdiNWQ2MjcyZjI5MGE5ZjJlM2E1YmUzZWFlZjQwN2ZjY2NkZA&feedId=58083&k=359581cbfe21b80c7bac073d5597cf8703ce38e0",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-real-madrid-lfstlr-marino",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Real Madrid Lfstlr - Marino",
+    colour: "Marino",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 75.59,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383137&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135074-00-S-M-20260708143602.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njg2NHxpbWFnZS9qcGVnfGFHTmxMMmd5TUM4eE16ZzRNREl6TVRNMk1qVTVNQzl0WldScFlYTmZNVEF3TVRFek5UQTNORjh3TUY5VFgwMHRNakF5TmpBM01EZ3hORE0yTURJdWFuQm58ZmFlZmI5ZTUzMmEyN2UzNzA2YTk1ZjRmOWRiMTM5YWQzYmQ1YmIyMzg4NzUxMmY0MTBhMDQ1Y2M5NDRiNDIwYw&feedId=58083&k=6cb011773a2a24f09ff4d9f3bc064cf1ada336f2",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-squadra-21-negro",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Squadra 21 - Negro",
+    colour: "Negro",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 32.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265332422&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000706435-00-P-X-20210203141838.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjI1N3xpbWFnZS9qcGVnfGFXMWhaMlZ6TDJobE9DOW9NVEF2T1RrNE9EWTNOekF3T1RRek9DNXFjR2N8MTcwZjQ4N2Q5YWVhMjBkNzM2N2VkMDgwOWE4NTg5ODFlMGUwZTA5MzRiNDdiYWU0OGE3YTg1ZjA0NDI1OWJiYQ&feedId=58083&k=55d57b14e1e96035cafd58a8fbc761f2092c3260",
+        sizes: ["XXL"],
       },
     ],
   },
@@ -88181,92 +88757,20 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-sudadera-de-entrenamiento-ajax-24-25-entrenamiento-amarillo",
+    id: "adidas-sudadera-de-entrenamiento-tiro24-winterized-negro",
     brand: "Adidas",
-    model: "Sudadera de entrenamiento Ajax 24/25 Entrenamiento - Amarillo",
-    colour: "Amarillo",
+    model: "Sudadera de entrenamiento Adidas Tiro24 Winterized - Negro",
+    colour: "Negro",
     type: "sweatshirt",
     offers: [
       {
         store: "ForumSport",
-        price: 61.59,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41890795753&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001050623-00-S-M-20250107155128.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE2NnxpbWFnZS9qcGVnfGFEaGxMMmd6WVM4eE1qWTFORGszTWpFd09EZ3pNQzl0WldScFlYTmZNVEF3TVRBMU1EWXlNMTh3TUY5VFgwMHRNakF5TlRBeE1EY3hOVFV4TWpndWFuQm58ODUwOTBkNDVmOTM5ZmQxZTlkZGNjMGJlNWRhNWEyMzg4MmEyMDE1YzNjYjQzNzc1OTU3ODMwNDcwOWU4NDU1OA&feedId=58083&k=b680f53ccb36c586b9d95d4891f408f54f1e1492",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-alemania-mundial-2026-entrenamiento-blanco",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Alemania Mundial 2026 Entrenamiento - Blanco",
-    colour: "Blanco",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 44.93,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378667&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112725-00-S-M-20260206170528.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg3MXxpbWFnZS9qcGVnfGFHRTJMMmcwWlM4eE16VTJOVE16TlRFM05URTVPQzl0WldScFlYTmZNVEF3TVRFeE1qY3lOVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOekExTWpndWFuQm58MTQ1ZTA1NzlkYWY1ZjVjYWY0OTFlYTM0MDg4N2VhYzAxMjU5MjgxZmZhMzlhYWVlZTMwMWRkNWIzODQzZGYwZA&feedId=58083&k=7aadf13da48dfb8af5323ad61a098d7a1a8e7675",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-argelia-mundial-2026-entrenamiento-verde",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Argelia Mundial 2026 Entrenamiento - Verde",
-    colour: "Verde",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 43.88,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375681&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112950-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk5OXxpbWFnZS9qcGVnfGFESXlMMmcxWVM4eE16VTJNak16T1RNNU16VTJOaTl0WldScFlYTmZNVEF3TVRFeE1qazFNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58ZGQ5YWY4MWExODlhMGI5NTEyOGI5Mzk3ZWNjMjc4NWIwYmRkNmU5ODYwOTM1ZjY4MmFhM2Y3ODQ5MjRkYTVkOA&feedId=58083&k=9a5cceab7bf906d119db41e29b1676b443d4a778",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-bayern-de-munich-25-26-entrenamieno-rojo",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Bayern De Munich 25/26 Entrenamieno - Rojo",
-    colour: "Rojo",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 50.12,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43939517349&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113397-00-S-M-20260206145545.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTE0NnxpbWFnZS9qcGVnfGFHSm1MMmcxTUM4eE16VTJNalkyTVRnek1EWTROaTl0WldScFlYTmZNVEF3TVRFeE16TTVOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhORFUxTkRVdWFuQm58YTBkNzU5NzA5Y2JkYmQ3M2M1ZjliMWQwYzRmMzY1ZTIzNjgzZGNhYWMzZDY2ZDYwMjhlNDNhMzU0N2UwMWU1NQ&feedId=58083&k=05b6f6e9e3f89e7faf3e304bcbb687fb5775b1d0",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-bayern-de-munich-25-26-entrenamiento-naranja",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Bayern De Munich 25/26 Entrenamiento - Naranja",
-    colour: "Naranja",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 86.99,
+        price: 49.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42815404250&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001090650-00-S-M-20250930120106.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTkzMXxpbWFnZS9qcGVnfGFEYzRMMmczTkM4eE16SXhOVGN3T1RFd01qRXhNQzl0WldScFlYTmZNVEF3TVRBNU1EWTFNRjh3TUY5VFgwMHRNakF5TlRBNU16QXhNakF4TURZdWFuQm58OTZiZWJhMGQ4MzZlOGViY2ZjOWZmYWQ4NGE4YWM1Mzg5MGM0ZTYwNDU3OWI3NjUxYjczZWY5ZWIwYjg5N2MzYg&feedId=58083&k=b70f3b4ee1d6e7cb948860d371c426cb1714e160",
-        sizes: ["L"],
+        url: "https://www.awin1.com/pclick.php?p=46388249190&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001085970-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU0MHxpbWFnZS9qcGVnfGFHWXlMMmhsTWk4eE16RXhNalUyTVRreU5qRTNOQzl0WldScFlYTmZNVEF3TVRBNE5UazNNRjh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58ZTAwNzQ0OWU5YjNiNDRjZTQ1MmY4NDIyZDg4MGU1ZDEzMTU5MmEwYzhkZjljZjIwNTgwNzViMWYyOWIzM2MzNA&feedId=58083&k=4cddfd580815dc2bd48fbfab4ec2df0bb91a0239",
+        sizes: ["M"],
       },
     ],
   },
@@ -88339,42 +88843,6 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44903085226&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2b791f638526468fa7ee6787da0b8cc8_9366%2FSudadera_de_Entrenamiento_Entrada_26_Azul_JZ6642_21_model.jpg&feedId=95013&k=3fdd805c40086f5425a4d1ff8f482631a49d0211",
         sizes: ["M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-espana-mundial-2026-primera-equipacion-prematch-azul",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Espana Mundial 2026 Primera Equipacion Prematch - Azul",
-    colour: "Azul",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 51.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249377633&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113983-00-S-M-20260526155306.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTkyMXxpbWFnZS9qcGVnfGFHTTBMMmczTWk4eE16YzVNRGN4TkRneU1qWTROaTl0WldScFlYTmZNVEF3TVRFeE16azRNMTh3TUY5VFgwMHRNakF5TmpBMU1qWXhOVFV6TURZdWFuQm58YzVjNjI5ZWI2NWVhNDllNjIxODY5N2E3NWExNjkyM2Q4NjhiYjIyMzdhMDM1NGVjNDIzNDZiMmJmOTlmOTAyNw&feedId=58083&k=83435f226deb6b2d554dc337ec6c18a0f2015eac",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-espana-mundial-2026-segunda-equipacion-prematch-granate",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Espana Mundial 2026 Segunda Equipacion Prematch - Granate",
-    colour: "Granate",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 49.59,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249377817&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113986-00-S-M-20260310104838.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk1OHxpbWFnZS9qcGVnfGFEazVMMmc1Tnk4eE16WXlPVGs0TWpnd01UazFNQzl0WldScFlYTmZNVEF3TVRFeE16azRObDh3TUY5VFgwMHRNakF5TmpBek1UQXhNRFE0TXpndWFuQm58MjY1NTQxMzY2ZmJhOGVmNmMwZGM3ZjMyMWM4MTY2ZmYwMTFkMzdiYWYzYWEzMTI4YzE3NWVkNjFlNjA1Y2U0Mg&feedId=58083&k=f570fa6ed2b5e700c409f59cb3c8cc984fd60ce5",
-        sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
       },
     ],
   },
@@ -88460,204 +88928,6 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Italia Mundial 2026 - Azul",
-    colour: "Azul",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 66.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375864&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113023-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzI2MnxpbWFnZS9qcGVnfGFHVmxMMmhrTmk4eE16VTJNak0yTWpFek5EVTFPQzl0WldScFlYTmZNVEF3TVRFeE16QXlNMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58ZGUwZDZhMDY2YjBjYWRkMTJiNGVkM2NmMjM2NTEzOWMzMzAwNGM0NDE5NmYwYWNkMWMxMjcyNTU2MjNhMTZmMA&feedId=58083&k=ebc049e9b36f7bae7ce955c5451c8b38f90daa1a",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul-2",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Italia Mundial 2026 - Azul",
-    colour: "Azul",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 85.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376499&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113815-00-S-M-20260219142151.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mzg1MnxpbWFnZS9qcGVnfGFERTRMMmhoT1M4eE16VTVNREF3Tnprd05qTXpOQzl0WldScFlYTmZNVEF3TVRFeE16Z3hOVjh3TUY5VFgwMHRNakF5TmpBeU1Ua3hOREl4TlRFdWFuQm58Y2NjMTdhZDQzMzU3NTNhZDdkMDcxMTIyZTM5MzU2ZjI5NjNiNTdjZTVlODU2OGVhYmE0MmNkMDdiYzE1ODY5OQ&feedId=58083&k=10f4e2658c16efdba21dafb5fc77674f73f4b311",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul-3",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Italia Mundial 2026 - Azul",
-    colour: "Azul",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 37.79,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378285&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112637-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMxMXxpbWFnZS9qcGVnfGFEY3dMMmhrTnk4eE16VTJNakl5TXpBNU9Ua3pOQzl0WldScFlYTmZNVEF3TVRFeE1qWXpOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NTkwZWE1MjU5MGIwYTkwMWYxZDMwZGFjNzgzNzY1MjZhNTY1ZDJkMTQxMzU1YTNmYTIwYjMzNDI2OGU5NmIzMg&feedId=58083&k=623a606e3ce77a29076817ae909337f7cee12b8b",
-        sizes: ["S", "M"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul-4",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Italia Mundial 2026 - Azul",
-    colour: "Azul",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 58.79,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378710&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112857-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDY5MHxpbWFnZS9qcGVnfGFHTTJMMmhpTUM4eE16VTJNak13TXpBeU1UQTROaTl0WldScFlYTmZNVEF3TVRFeE1qZzFOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NmY0MzJkODE0NjE1ZjNkMjczMmVkOWIyYzY0YjRmNGVlNjQwN2E3NGU4YWE0ZDU0OGMyZGE2YzBiOGU4YmEyYQ&feedId=58083&k=4fdcd843b3cc12d08e5ca4b5066ca46fcca69161",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul-5",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Italia Mundial 2026 - Azul",
-    colour: "Azul",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 64.98,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378711&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112860-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODkyOXxpbWFnZS9qcGVnfGFESXpMMmhrWlM4eE16VTJNak13TkRJMk5qSTNNQzl0WldScFlYTmZNVEF3TVRFeE1qZzJNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58MjJmNzc4YTg2M2YxZGI4ZGU4YWNlMmZjOGYzN2Y0OWNkOTQwNDE5YTAwYjQzNmQyMDI4YjBhNmIyOTY2ZTE3Zg&feedId=58083&k=7240d256bf6c75252ab84801edaa779ac94a378f",
-        sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-entrenamiento-blanco",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Italia Mundial 2026 Entrenamiento - Blanco",
-    colour: "Blanco",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 43.88,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376724&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113846-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMXxpbWFnZS9qcGVnfGFEbGtMMmhtTXk4eE16VTJNekl6TVRBeE1EZzBOaTl0WldScFlYTmZNVEF3TVRFeE16ZzBObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58MTk4MDNkNGZiMmYxYTg5YjdmZjJhMTUwM2I4NTMzMzI2Y2Q3ZmJlNzU2YzJmMzBmNTFhYmIxNDZhMjQ5NGQ5OQ&feedId=58083&k=db67e8a4390f0f61fd810a4661126b9e3d76b320",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-entrenamiento-verde",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Italia Mundial 2026 Entrenamiento - Verde",
-    colour: "Verde",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 44.65,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376662&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113848-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYzMnxpbWFnZS9qcGVnfGFHWXdMMmc0TlM4eE16VTJNekl6TWpFMU56Y3lOaTl0WldScFlYTmZNVEF3TVRFeE16ZzBPRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58MjdkYzVkOWRhOTI4OGJmYjRmMmFiNjgxNmI0MDY4N2I0MjViNGRhNjU0NzQ5MmI3MDJhNDA0MDY5NWI2YzI0Ng&feedId=58083&k=48fe68940026832b66bb5b9f65ac23b1d423c8e0",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-primera-equipacion-authentic-azul",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Italia Mundial 2026 Primera Equipacion Authentic - Azul",
-    colour: "Azul",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 119.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249379624&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001121233-00-S-M-20260526155306.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU0NXxpbWFnZS9qcGVnfGFEUXdMMmd3TlM4eE16YzVNRGN5TVRnek5UQXpPQzl0WldScFlYTmZNVEF3TVRFeU1USXpNMTh3TUY5VFgwMHRNakF5TmpBMU1qWXhOVFV6TURZdWFuQm58ZjFjNWQyYTQ2NTI3YTkyNmEzMjYwZDZiNzc0MjcwMjkzMTRkMDc3OWQ1NDczNTBmNTkzZGYzZjNhYzU5MGI3MA&feedId=58083&k=66b7b3380aa9d4038db87c0a0b4ffd81f0f368dc",
-        sizes: ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-primera-equipacion-prematch-blanco",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Italia Mundial 2026 Primera Equipacion Prematch - Blanco",
-    colour: "Blanco",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 109.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249379609&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001121238-00-S-M-20260526155306.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTgzMXxpbWFnZS9qcGVnfGFETmhMMmhpWkM4eE16YzVNRGN5TkRnME9UWTVOQzl0WldScFlYTmZNVEF3TVRFeU1USXpPRjh3TUY5VFgwMHRNakF5TmpBMU1qWXhOVFV6TURZdWFuQm58YWI3MjU0Mzk0ZTk4NGMwMWE4ZWMwN2VjYzgxNDUxZDJmYmVhMGE4MWMzMjU0NjBjMTg2Y2NlZTgwNTJmZDkyMw&feedId=58083&k=f0a6de5741a82327532e58ecf8fe4cf6baaad919",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-segunda-equipacion-prematch-marino",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Italia Mundial 2026 Segunda Equipacion Prematch - Marino",
-    colour: "Marino",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 72.59,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375706&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112949-00-S-M-20260323165351.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODgxMnxpbWFnZS9qcGVnfGFEVTFMMmcyTkM4eE16WTFOVFkxTURBM05EWTFOQzl0WldScFlYTmZNVEF3TVRFeE1qazBPVjh3TUY5VFgwMHRNakF5TmpBek1qTXhOalV6TlRFdWFuQm58MDE2NmZmYzFjMzI1M2IwYzM2ZjMzMTczMGFhYzcyN2YzNjExNmI5ZjRlNjJmN2IwYzM2YzllNGZhM2ZhY2NkMA&feedId=58083&k=3bb60e3188b90c8bd0aa6c809925a4181b0822bb",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-verde",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Italia Mundial 2026 - Verde",
-    colour: "Verde",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 99.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376562&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113819-00-S-M-20260223100033.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM2OXxpbWFnZS9qcGVnfGFEQTJMMmd6WVM4eE16VTVOalkzTURNNU5ETTVPQzl0WldScFlYTmZNVEF3TVRFeE16Z3hPVjh3TUY5VFgwMHRNakF5TmpBeU1qTXhNREF3TXpNdWFuQm58ZTdhMzRiYzk3NzQyZDZlZTk5MjE2MGIyZTViZmNhNTNkNWFkYzEwOWFjY2M4ZmRlMzIzMTEwMTI1NTZiNjc2Yw&feedId=58083&k=bb781a90c7caffbdb5f640dc6702f89f07dad354",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
     id: "adidas-sudadera-de-entrenamiento-juventus-turin-2023-24-dorado",
     brand: "Adidas",
     model: "Sudadera de entrenamiento Juventus Turin 2023/24 - Dorado",
@@ -88685,150 +88955,6 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-sudadera-de-entrenamiento-olympique-lyon-dna-track-blanco",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Olympique Lyon Dna Track - Blanco",
-    colour: "Blanco",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 52.35,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42065767991&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001086005-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYzNHxpbWFnZS9qcGVnfGFEbGhMMmczTWk4eE16RXhNalU0TXpnNE1EY3pOQzl0WldScFlYTmZNVEF3TVRBNE5qQXdOVjh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58MGM3OGZjYzdhMWQ4NWM2ZGRlMjA1ODU5ZjBiNjJhOTA1ODAyNjYyNWNkZWQ5YTg0MDBiMzA5NTVmOGE0NWI1OQ&feedId=58083&k=7d73e8adf3649cf83384d6533fe3845d8a5c2f0f",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-originals-arsenal",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Originals Arsenal",
-    colour: "N/D",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 67.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45365872118&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102077-00-S-M-20260618081626.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDI2N3xpbWFnZS9qcGVnfGFHVmxMMmd5TUM4eE16Z3pOVFV6TXpFeU16WXhOQzl0WldScFlYTmZNVEF3TVRFd01qQTNOMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpZdWFuQm58ZTRhOWU1N2RhZGE3MGJmYjk4Y2E1YjcyM2Q5MTMyMDg2NzQ2NzhiM2Q3MDQ2MDAyYjFmZjI5NGQ4OTU0NThmYw&feedId=58083&k=ec1c50e89662211b074b625c60dd805c0319dfd2",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-originals-juventus-negro",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Originals Juventus - Negro",
-    colour: "Negro",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 47.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46367227306&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112693-00-S-M-20260206170528.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA5MHxpbWFnZS9qcGVnfGFHWTVMMmhtWXk4eE16VTJOVE14TnpnME1Ea3lOaTl0WldScFlYTmZNVEF3TVRFeE1qWTVNMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOekExTWpndWFuQm58NWUyMTExMDg2YTIyYTVkZmQ1MDUyNmY4NDkyNWM4NDRlMDc5M2ZkZjkzYzcyMzEwMmU2YWY2YmNkNDRjMTQ3NQ&feedId=58083&k=662912df3088e16ee2cb2ae7d6f9f01ac32e0b43",
-        sizes: ["XS", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-originals-juventus-negro-2",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Originals Juventus - Negro",
-    colour: "Negro",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 89.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46367227316&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112695-00-S-M-20260219142151.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY4N3xpbWFnZS9qcGVnfGFHUTVMMmhoT0M4eE16VTRPVGd4TnpJeU9UTTBNaTl0WldScFlYTmZNVEF3TVRFeE1qWTVOVjh3TUY5VFgwMHRNakF5TmpBeU1Ua3hOREl4TlRFdWFuQm58YTRjN2Q0NDZhZWJjNjE2ODA5NDNlNzkzOGRhOTQ2YjlkYzMxZjE1OGEzMjc5MGI1MjFjMjUzMzJhMmNhOTNkYQ&feedId=58083&k=6a136137e698007d37dadf97ddf1b53b7814845c",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-originals-real-madrid",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Originals Real Madrid",
-    colour: "N/D",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 80.09,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46330237070&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102074-00-S-M-20260618081626.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgzN3xpbWFnZS9qcGVnfGFEZzFMMmc0WVM4eE16Z3pOVFV6TWpFME1EVTNOQzl0WldScFlYTmZNVEF3TVRFd01qQTNORjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpZdWFuQm58NTJhZjg4ODgwODBlZmNjNzc5NmU1ZjU2MmI4MTkwOWVlMDAwMTI0ZDhlMzgyMmU2MGMxYWJhNTNjZWRlNTVjNg&feedId=58083&k=05cba681808ac15a5a33d6e3cfd8a0acfd431c69",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-originals-real-madrid-2",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Originals Real Madrid",
-    colour: "N/D",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 71.27,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46695451504&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102075-00-S-M-20260525112510.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjA4NXxpbWFnZS9qcGVnfGFHTmhMMmc0WkM4eE16YzROamsxTWpZek1ETXdNaTl0WldScFlYTmZNVEF3TVRFd01qQTNOVjh3TUY5VFgwMHRNakF5TmpBMU1qVXhNVEkxTVRBdWFuQm58NGEzN2Y2ZjBlOGI0NTRiYWRiZjVhNWJmYWFjODgxY2ZlMTNiNDljM2FjMmQ3YWNjZDY4YmQ3MTRmNmVkZGQ2NA&feedId=58083&k=e8bfbc34881c4c54646f96dfe63b213322de7770",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-originals-real-madrid-azul",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Originals Real Madrid - Azul",
-    colour: "Azul",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 52.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46367228490&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001114005-00-S-M-20260323165351.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzM5N3xpbWFnZS9qcGVnfGFEVXpMMmhpTlM4eE16WTFOVGN4T1RRME5EVXhNQzl0WldScFlYTmZNVEF3TVRFeE5EQXdOVjh3TUY5VFgwMHRNakF5TmpBek1qTXhOalV6TlRFdWFuQm58Y2ExNWZiNDYwYjQ1MjJlNDM0YTgzZmEwN2Y3OTQwY2JkNTEzYzZmZjk3ZDk3ODY2Yzc2ODJhMzU2YjI1MDkwNg&feedId=58083&k=c4420036da87e6a6f083d5aec76e8585882710e1",
-        sizes: ["XS", "S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-presentacion-core-18-azul",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Presentacion Core 18 - Azul",
-    colour: "Azul",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 39.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36183678097&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000486079-00-S-M-20181121082107.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyNzgwNzh8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZ3pPQzlvTWpBdk9EazFOVFkwTXprMU16RTRNaTVxY0djfDdiNzMzODViZDA5M2IzNTI1YzI0NjgwNmQ5OWY3NjZhM2MyNmRjYzBjNzU5YmUyYmQ2NGJhM2JhNDZlYjQ3YWQ&feedId=58083&k=cbbbd535e72cc827ed622b7fe965f50c819443be",
-        sizes: ["XXL"],
-      },
-    ],
-  },
-  {
     id: "adidas-sudadera-de-entrenamiento-real-madrid-2023-24-naranja",
     brand: "Adidas",
     model: "Sudadera de entrenamiento Real Madrid 2023/24 - Naranja",
@@ -88852,114 +88978,6 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0543-sweatshirt-training-real-madrid-2023-24-spark",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_iq0543_1_apparel_photography_front_view_white-nw032524.webp",
         sizes: ["XS", "S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-real-madrid-24-25-prematch-blanco",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Real Madrid 24/25 Prematch - Blanco",
-    colour: "Blanco",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 87.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41839993419&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001052805-00-S-M-20241220184704.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUyM3xpbWFnZS9qcGVnfGFHRmtMMmc0TlM4eE1qWXdOelkxTkRZMU9EQTNPQzl0WldScFlYTmZNVEF3TVRBMU1qZ3dOVjh3TUY5VFgwMHRNakF5TkRFeU1qQXhPRFEzTURRdWFuQm58NjA0YmZmYTg1ZmNjMzkyZDZmNGFkYjZjNmE0MGIyNDYwYzg1NjlkMjVjN2YwZWVlMDFhOTI0M2FiZGVkOTE2Mg&feedId=58083&k=d557a66e656f6adfde3153f440ce60469eb60be4",
-        sizes: ["M", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-real-madrid-25-26-entrenamiento-verde",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Real Madrid 25/26 Entrenamiento - Verde",
-    colour: "Verde",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 46.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45015288537&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087447-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDc5MXxpbWFnZS9qcGVnfGFHVmtMMmhpTUM4eE16RXhORGt6TlRJM09UWTBOaTl0WldScFlYTmZNVEF3TVRBNE56UTBOMTh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58Y2VlNTk2ODAxYWQ4MTZjY2U2ZDVjMTg2ZDdjOGU2MWZlMGE1MWI0ZTIwOThlZTdmZjg4ODU4NDJhZDgxY2Y0YQ&feedId=58083&k=4d246f880bb9e84da9d7f4e5a09650f51acad8a2",
-        sizes: ["L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-real-madrid-25-26-entrenamiento-verde-2",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Real Madrid 25/26 Entrenamiento - Verde",
-    colour: "Verde",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 76.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46244483471&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087461-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjAxM3xpbWFnZS9qcGVnfGFEYzRMMmhpTXk4eE16RXhORGswTXpRek9EZzNPQzl0WldScFlYTmZNVEF3TVRBNE56UTJNVjh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58NGU3NzJlODM4MWJhMjcwNGFkNjBiNWU0N2Y3MjdiNWQ2MjcyZjI5MGE5ZjJlM2E1YmUzZWFlZjQwN2ZjY2NkZA&feedId=58083&k=359581cbfe21b80c7bac073d5597cf8703ce38e0",
-        sizes: ["M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-real-madrid-lfstlr-marino",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Real Madrid Lfstlr - Marino",
-    colour: "Marino",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 75.59,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383137&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135074-00-S-M-20260708143602.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njg2NHxpbWFnZS9qcGVnfGFHTmxMMmd5TUM4eE16ZzRNREl6TVRNMk1qVTVNQzl0WldScFlYTmZNVEF3TVRFek5UQTNORjh3TUY5VFgwMHRNakF5TmpBM01EZ3hORE0yTURJdWFuQm58ZmFlZmI5ZTUzMmEyN2UzNzA2YTk1ZjRmOWRiMTM5YWQzYmQ1YmIyMzg4NzUxMmY0MTBhMDQ1Y2M5NDRiNDIwYw&feedId=58083&k=6cb011773a2a24f09ff4d9f3bc064cf1ada336f2",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-squadra-21-negro",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Squadra 21 - Negro",
-    colour: "Negro",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 32.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265332422&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000706435-00-P-X-20210203141838.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjI1N3xpbWFnZS9qcGVnfGFXMWhaMlZ6TDJobE9DOW9NVEF2T1RrNE9EWTNOekF3T1RRek9DNXFjR2N8MTcwZjQ4N2Q5YWVhMjBkNzM2N2VkMDgwOWE4NTg5ODFlMGUwZTA5MzRiNDdiYWU0OGE3YTg1ZjA0NDI1OWJiYQ&feedId=58083&k=55d57b14e1e96035cafd58a8fbc761f2092c3260",
-        sizes: ["XXL"],
-      },
-    ],
-  },
-  {
-    id: "adidas-sudadera-de-entrenamiento-tiro24-winterized-negro",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Tiro24 Winterized - Negro",
-    colour: "Negro",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 49.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46388249190&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001085970-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU0MHxpbWFnZS9qcGVnfGFHWXlMMmhsTWk4eE16RXhNalUyTVRreU5qRTNOQzl0WldScFlYTmZNVEF3TVRBNE5UazNNRjh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58ZTAwNzQ0OWU5YjNiNDRjZTQ1MmY4NDIyZDg4MGU1ZDEzMTU5MmEwYzhkZjljZjIwNTgwNzViMWYyOWIzM2MzNA&feedId=58083&k=4cddfd580815dc2bd48fbfab4ec2df0bb91a0239",
-        sizes: ["M"],
       },
     ],
   },
@@ -89288,6 +89306,9 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "adidas-sudadera-paris-fc-og2-blanc",
     brand: "Adidas",
@@ -89370,9 +89391,6 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "adidas-sudadera-prematch-bayern-munich-2023-24-blanco",
     brand: "Adidas",
@@ -92098,7 +92116,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-bolsa-saco-balon",
     brand: "Athletic Club",
-    model: "Bolsa Saco Balon",
+    model: "Bolsa Athletic Club Saco Balon",
     colour: "N/D",
     type: "bag",
     offers: [
@@ -92116,7 +92134,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-bolsa-unique-in-the-world-ng-misc",
     brand: "Athletic Club",
-    model: "Bolsa Unique In The World Ng Misc",
+    model: "Bolsa Athletic Club Unique In The World Ng Misc",
     colour: "N/D",
     type: "bag",
     offers: [
@@ -92134,7 +92152,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-bolsa-unique-in-the-world-rj-misc",
     brand: "Athletic Club",
-    model: "Bolsa Unique In The World Rj Misc",
+    model: "Bolsa Athletic Club Unique In The World Rj Misc",
     colour: "N/D",
     type: "bag",
     offers: [
@@ -92152,7 +92170,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-chubasquero-de-entrenamiento-bf65-escudo-rojo",
     brand: "Athletic Club",
-    model: "Chubasquero de entrenamiento Bf65 Escudo - Rojo",
+    model: "Chubasquero de entrenamiento Athletic Club Bf65 Escudo - Rojo",
     colour: "Rojo",
     type: "jacket",
     offers: [
@@ -92170,7 +92188,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-chubasquero-de-entrenamiento-ran-negro",
     brand: "Athletic Club",
-    model: "Chubasquero de entrenamiento Ran - Negro",
+    model: "Chubasquero de entrenamiento Athletic Club Ran - Negro",
     colour: "Negro",
     type: "jacket",
     offers: [
@@ -92188,7 +92206,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-pantalon-corto-retro",
     brand: "Athletic Club",
-    model: "Pantalón corto Retro",
+    model: "Pantalón corto Athletic Club Retro",
     colour: "N/D",
     type: "shorts",
     offers: [
@@ -92206,7 +92224,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-bandera-ball",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Bandera Ball",
+    model: "Sudadera de entrenamiento Athletic Club Bandera Ball",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -92224,7 +92242,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-bandera-ball-azul",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Bandera Ball - Azul",
+    model: "Sudadera de entrenamiento Athletic Club Bandera Ball - Azul",
     colour: "Azul",
     type: "sweatshirt",
     offers: [
@@ -92242,7 +92260,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-escudo",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Escudo",
+    model: "Sudadera de entrenamiento Athletic Club Escudo",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -92260,7 +92278,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-est-1898",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Est 1898",
+    model: "Sudadera de entrenamiento Athletic Club Est 1898",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -92278,7 +92296,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-est-1898-negro",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Est 1898 - Negro",
+    model: "Sudadera de entrenamiento Athletic Club Est 1898 - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -92296,7 +92314,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-graffiti-gris",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Graffiti - Gris",
+    model: "Sudadera de entrenamiento Athletic Club Graffiti - Gris",
     colour: "Gris",
     type: "sweatshirt",
     offers: [
@@ -92314,7 +92332,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-graffiti-negro",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Graffiti - Negro",
+    model: "Sudadera de entrenamiento Athletic Club Graffiti - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -92332,7 +92350,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-harrobi-escudo",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Harrobi Escudo",
+    model: "Sudadera de entrenamiento Athletic Club Harrobi Escudo",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -92350,7 +92368,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-harrobi-escudo-beige",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Harrobi Escudo - Beige",
+    model: "Sudadera de entrenamiento Athletic Club Harrobi Escudo - Beige",
     colour: "Beige",
     type: "sweatshirt",
     offers: [
@@ -92368,7 +92386,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-leon-bi",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Leon Bi",
+    model: "Sudadera de entrenamiento Athletic Club Leon Bi",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -92386,7 +92404,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-leon-blanco",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Leon - Blanco",
+    model: "Sudadera de entrenamiento Athletic Club Leon - Blanco",
     colour: "Blanco",
     type: "sweatshirt",
     offers: [
@@ -92404,7 +92422,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-leon-solid-gris",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Leon Solid - Gris",
+    model: "Sudadera de entrenamiento Athletic Club Leon Solid - Gris",
     colour: "Gris",
     type: "sweatshirt",
     offers: [
@@ -92422,7 +92440,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-retro-azul",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Retro - Azul",
+    model: "Sudadera de entrenamiento Athletic Club Retro - Azul",
     colour: "Azul",
     type: "sweatshirt",
     offers: [
@@ -92440,7 +92458,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-unique-fant-beige",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Unique Fant - Beige",
+    model: "Sudadera de entrenamiento Athletic Club Unique Fant - Beige",
     colour: "Beige",
     type: "sweatshirt",
     offers: [
@@ -92458,7 +92476,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-unique-in-the-world",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Unique In The World",
+    model: "Sudadera de entrenamiento Athletic Club Unique In The World",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -92476,7 +92494,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-unique-in-the-world-2",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Unique In The World",
+    model: "Sudadera de entrenamiento Athletic Club Unique In The World",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -92494,7 +92512,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-unique-in-the-world-3",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Unique In The World",
+    model: "Sudadera de entrenamiento Athletic Club Unique In The World",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -92512,7 +92530,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-unique-in-the-world-gris",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Unique In The World - Gris",
+    model: "Sudadera de entrenamiento Athletic Club Unique In The World - Gris",
     colour: "Gris",
     type: "sweatshirt",
     offers: [
@@ -92530,7 +92548,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-unique-in-the-world-rojo",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Unique In The World - Rojo",
+    model: "Sudadera de entrenamiento Athletic Club Unique In The World - Rojo",
     colour: "Rojo",
     type: "sweatshirt",
     offers: [
@@ -92548,7 +92566,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-unique-puf",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Unique Puf",
+    model: "Sudadera de entrenamiento Athletic Club Unique Puf",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -92566,7 +92584,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "athletic-club-sudadera-de-entrenamiento-unique-text-negro",
     brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Unique Text - Negro",
+    model: "Sudadera de entrenamiento Athletic Club Unique Text - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -92935,7 +92953,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "castore-pantalon-corto-athletic-club-de-bilbao-24-25-segunda-equipacion-azul",
     brand: "Castore",
-    model: "Pantalón corto Athletic Club De Bilbao 24/25 Segunda Equipacion - Azul",
+    model: "Pantalón corto Castore Athletic Club De Bilbao 24/25 Segunda Equipacion - Azul",
     colour: "Azul",
     type: "shorts",
     offers: [
@@ -92953,7 +92971,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "castore-pantalon-corto-athletic-club-de-bilbao-25-26-primera-equipacion-negro",
     brand: "Castore",
-    model: "Pantalón corto Athletic Club De Bilbao 25/26 Primera Equipacion - Negro",
+    model: "Pantalón corto Castore Athletic Club De Bilbao 25/26 Primera Equipacion - Negro",
     colour: "Negro",
     type: "shorts",
     offers: [
@@ -92971,7 +92989,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "castore-pantalon-corto-athletic-club-de-bilbao-26-27-primera-equipacion-negro",
     brand: "Castore",
-    model: "Pantalón corto Athletic Club De Bilbao 26/27 Primera Equipacion - Negro",
+    model: "Pantalón corto Castore Athletic Club De Bilbao 26/27 Primera Equipacion - Negro",
     colour: "Negro",
     type: "shorts",
     offers: [
@@ -92989,7 +93007,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "castore-pantalon-corto-athletic-club-de-bilbao-26-27-segunda-equipacion-rojo",
     brand: "Castore",
-    model: "Pantalón corto Athletic Club De Bilbao 26/27 Segunda Equipacion - Rojo",
+    model: "Pantalón corto Castore Athletic Club De Bilbao 26/27 Segunda Equipacion - Rojo",
     colour: "Rojo",
     type: "shorts",
     offers: [
@@ -93007,7 +93025,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "castore-pantalon-corto-athletic-de-bilbao-25-26-segunda-equipacion-marino",
     brand: "Castore",
-    model: "Pantalón corto Athletic De Bilbao 25/26 Segunda Equipacion - Marino",
+    model: "Pantalón corto Castore Athletic De Bilbao 25/26 Segunda Equipacion - Marino",
     colour: "Marino",
     type: "shorts",
     offers: [
@@ -93025,7 +93043,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "castore-pantalon-largo-athletic-club-de-bilbao-26-27-entrenamiento-marino",
     brand: "Castore",
-    model: "Pantalón largo Athletic Club De Bilbao 26/27 Entrenamiento - Marino",
+    model: "Pantalón largo Castore Athletic Club De Bilbao 26/27 Entrenamiento - Marino",
     colour: "Marino",
     type: "pants",
     offers: [
@@ -93043,7 +93061,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "castore-sudadera-de-entrenamiento-athletic-club-de-bilbao-25-26-players-scuba-lock-up-verde",
     brand: "Castore",
-    model: "Sudadera de entrenamiento Athletic Club De Bilbao 25/26 Players Scuba Lock Up - Verde",
+    model: "Sudadera de entrenamiento Castore Athletic Club De Bilbao 25/26 Players Scuba Lock Up - Verde",
     colour: "Verde",
     type: "sweatshirt",
     offers: [
@@ -93061,7 +93079,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "castore-sudadera-de-entrenamiento-athletic-club-de-bilbao-26-27-prematch-negro",
     brand: "Castore",
-    model: "Sudadera de entrenamiento Athletic Club De Bilbao 26/27 Prematch - Negro",
+    model: "Sudadera de entrenamiento Castore Athletic Club De Bilbao 26/27 Prematch - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -93850,6 +93868,9 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "copa-football-calcetines-france-2000-gris",
     brand: "Copa Football",
@@ -93904,9 +93925,6 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "copa-football-calcetines-inglaterra-1980-blanco",
     brand: "Copa Football",
@@ -98925,6 +98943,9 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "copa-football-sudadera-con-capucha-as-roma-negro",
     brand: "Copa Football",
@@ -98979,9 +99000,6 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "copa-football-sudadera-con-capucha-borussia-monchengladbach-1995-blanco",
     brand: "Copa Football",
@@ -105070,6 +105088,9 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "erima-red-para-5-balones-erima-negro",
     brand: "Erima",
@@ -105115,9 +105136,6 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "erima-short-slip-erima-rio-2-0-azul",
     brand: "Erima",
@@ -110757,6 +110775,9 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "errea-pantalon-de-chandal-errea-kios-3-0-negro",
     brand: "Errea",
@@ -110845,9 +110866,6 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "errea-pantalon-de-chandal-errea-nevis-3-0-azul",
     brand: "Errea",
@@ -113043,7 +113061,7 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "euskadi-bolsa-federacion-vasca-24-25",
     brand: "Euskadi",
-    model: "Bolsa Federacion Vasca 24-25",
+    model: "Bolsa Euskadi Federacion Vasca 24-25",
     colour: "N/D",
     type: "bag",
     offers: [
@@ -113061,7 +113079,7 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "euskadi-chandal-federacion-vasca-24-25",
     brand: "Euskadi",
-    model: "Chándal Federacion Vasca 24-25",
+    model: "Chándal Euskadi Federacion Vasca 24-25",
     colour: "N/D",
     type: "set",
     offers: [
@@ -116458,7 +116476,7 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "ho-soccer-camiseta-de-manga-larga-protek",
     brand: "Ho Soccer",
-    model: "Camiseta de manga larga Protek",
+    model: "Camiseta de manga larga Ho Soccer Protek",
     colour: "N/D",
     type: "tshirt",
     offers: [
@@ -116476,7 +116494,7 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "ho-soccer-espinilleras-rebel-blanco",
     brand: "Ho Soccer",
-    model: "Espinilleras Rebel - Blanco",
+    model: "Espinilleras Ho Soccer Rebel - Blanco",
     colour: "Blanco",
     type: "shinguards",
     offers: [
@@ -116494,7 +116512,7 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "ho-soccer-espinilleras-titan-ii",
     brand: "Ho Soccer",
-    model: "Espinilleras Titan Ii",
+    model: "Espinilleras Ho Soccer Titan Ii",
     colour: "N/D",
     type: "shinguards",
     offers: [
@@ -116539,7 +116557,7 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "ho-soccer-pantalon-de-calentamiento-protek",
     brand: "Ho Soccer",
-    model: "Pantalón de calentamiento Protek",
+    model: "Pantalón de calentamiento Ho Soccer Protek",
     colour: "N/D",
     type: "pants",
     offers: [
@@ -116581,6 +116599,9 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "huari-brazalete-de-capitan-huari-azul",
     brand: "Huari",
@@ -116635,9 +116656,6 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "huari-calcetines-huari-beates-blanc",
     brand: "Huari",
@@ -122284,6 +122302,9 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk22: ApparelProduct[] = [
   {
     id: "hummel-chaussettes-exterieur-odense-boldklub-2024-25-noir",
     brand: "Hummel",
@@ -122338,9 +122359,6 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk22: ApparelProduct[] = [
   {
     id: "hummel-chaussettes-exterieur-rc-celta-vigo-2024-25-bleu",
     brand: "Hummel",
@@ -127921,6 +127939,9 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "jako-camiseta-jako-comfort-2-0-blanco",
     brand: "Jako",
@@ -127975,9 +127996,6 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "jako-camiseta-jako-fonctionnel-promo-amarillo",
     brand: "Jako",
@@ -133591,6 +133609,9 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "jako-pantalon-de-chandal-jako-polyester-challenge-azul-3",
     brand: "Jako",
@@ -133691,9 +133712,6 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "jako-pantalon-de-chandal-jako-polyester-challenge-negro-2",
     brand: "Jako",
@@ -136239,81 +136257,9 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
     ],
   },
   {
-    id: "joma-camiseta-combi-azul",
-    brand: "Joma",
-    model: "Camiseta Combi - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 11.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265327170&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428587-00-S-M-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyNDYxNzd8aW1hZ2UvanBlZ3xhVzFoWjJWekwyaGhOUzlvT1dNdk9EZzVNekE0TXpReE9EWTFOQzVxY0djfDNlMWY4YjFmNDAxZTZhZDRkYTY2NmRmYTU4ZGMwYTE5NDM5YjMyMjczNDgwM2RmOWE3MzNiNDE0YjMzZTFkMTA&feedId=58083&k=95922f14d49ae343c1298f7a7462ec7ae2d5c92e",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "joma-camiseta-combi-gris",
-    brand: "Joma",
-    model: "Camiseta Combi - Gris",
-    colour: "Gris",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 11.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46219365847&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428580-00-P-X-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyNDkxOTZ8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZ3pNeTlvTWpNdk9EZzVNekEzT1RZeE56VTJOaTVxY0djfDcxYTFjODM5ODVkZjRlNTQ1ZDRhZWU2ZDc0NzQ0OWE4YzQ2MWNmNjhmYzA1MzEzNWVkMGVkMDE4OWEwZmE2ZGI&feedId=58083&k=04cbf942de34791595053897260c9cdb611230e3",
-        sizes: ["S", "M", "L", "XL", "XXL-3XL"],
-      },
-    ],
-  },
-  {
-    id: "joma-camiseta-combi-negro",
-    brand: "Joma",
-    model: "Camiseta Combi - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 11.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265327176&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428577-00-P-X-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wxNDM3MjN8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzFNQzlvWmpBdk9EZzVNekEzT0RRek56a3hPQzVxY0djfDEyMDg2ZTU5NDFiODIzYjEzNTY5YzQ0NWE0YTVlNDk2ZmMzZGI2NjgzNzJlMTVhM2JjYjczMTFjNmIwNjc3ODM&feedId=58083&k=35129e597cee35d95e7d9ad1c186e62fa494f685",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "joma-camiseta-combi-verde",
-    brand: "Joma",
-    model: "Camiseta Combi - Verde",
-    colour: "Verde",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 11.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265327163&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428574-00-P-X-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wxNzQzNDd8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzVOaTlvTmpRdk9EZzVNekEzTnpJMU9ESTNNQzVxY0djfDg4NTIzNDA1NDJiMTA0N2FhMjliMDlkNDYwYzZlM2JjNTllZWZhNDM0NDdjZTEzMjJlYTk4ODMyOWNmZjZiZmI&feedId=58083&k=192f7d918feb60a5c1679789211e01ed6bf6fa91",
-        sizes: ["XXL-3XL"],
-      },
-    ],
-  },
-  {
     id: "joma-camiseta-de-manga-larga-brama-classic-amarillo",
     brand: "Joma",
-    model: "Camiseta de manga larga Brama Classic - Amarillo",
+    model: "Camiseta de manga larga Joma Brama Classic - Amarillo",
     colour: "Amarillo",
     type: "tshirt",
     offers: [
@@ -136331,7 +136277,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "joma-camiseta-de-manga-larga-brama-classic-azul",
     brand: "Joma",
-    model: "Camiseta de manga larga Brama Classic - Azul",
+    model: "Camiseta de manga larga Joma Brama Classic - Azul",
     colour: "Azul",
     type: "tshirt",
     offers: [
@@ -136349,7 +136295,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "joma-camiseta-de-manga-larga-brama-classic-blanco",
     brand: "Joma",
-    model: "Camiseta de manga larga Brama Classic - Blanco",
+    model: "Camiseta de manga larga Joma Brama Classic - Blanco",
     colour: "Blanco",
     type: "tshirt",
     offers: [
@@ -136367,7 +136313,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "joma-camiseta-de-manga-larga-brama-classic-negro",
     brand: "Joma",
-    model: "Camiseta de manga larga Brama Classic - Negro",
+    model: "Camiseta de manga larga Joma Brama Classic - Negro",
     colour: "Negro",
     type: "tshirt",
     offers: [
@@ -136385,7 +136331,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "joma-camiseta-de-manga-larga-brama-classic-rojo",
     brand: "Joma",
-    model: "Camiseta de manga larga Brama Classic - Rojo",
+    model: "Camiseta de manga larga Joma Brama Classic - Rojo",
     colour: "Rojo",
     type: "tshirt",
     offers: [
@@ -136403,7 +136349,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "joma-camiseta-de-manga-larga-brama-classic-verde",
     brand: "Joma",
-    model: "Camiseta de manga larga Brama Classic - Verde",
+    model: "Camiseta de manga larga Joma Brama Classic - Verde",
     colour: "Verde",
     type: "tshirt",
     offers: [
@@ -136419,9 +136365,81 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
     ],
   },
   {
+    id: "joma-camiseta-combi-azul",
+    brand: "Joma",
+    model: "Camiseta Joma Combi - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 11.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265327170&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428587-00-S-M-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyNDYxNzd8aW1hZ2UvanBlZ3xhVzFoWjJWekwyaGhOUzlvT1dNdk9EZzVNekE0TXpReE9EWTFOQzVxY0djfDNlMWY4YjFmNDAxZTZhZDRkYTY2NmRmYTU4ZGMwYTE5NDM5YjMyMjczNDgwM2RmOWE3MzNiNDE0YjMzZTFkMTA&feedId=58083&k=95922f14d49ae343c1298f7a7462ec7ae2d5c92e",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "joma-camiseta-combi-gris",
+    brand: "Joma",
+    model: "Camiseta Joma Combi - Gris",
+    colour: "Gris",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 11.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46219365847&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428580-00-P-X-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyNDkxOTZ8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZ3pNeTlvTWpNdk9EZzVNekEzT1RZeE56VTJOaTVxY0djfDcxYTFjODM5ODVkZjRlNTQ1ZDRhZWU2ZDc0NzQ0OWE4YzQ2MWNmNjhmYzA1MzEzNWVkMGVkMDE4OWEwZmE2ZGI&feedId=58083&k=04cbf942de34791595053897260c9cdb611230e3",
+        sizes: ["S", "M", "L", "XL", "XXL-3XL"],
+      },
+    ],
+  },
+  {
+    id: "joma-camiseta-combi-negro",
+    brand: "Joma",
+    model: "Camiseta Joma Combi - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 11.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265327176&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428577-00-P-X-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wxNDM3MjN8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzFNQzlvWmpBdk9EZzVNekEzT0RRek56a3hPQzVxY0djfDEyMDg2ZTU5NDFiODIzYjEzNTY5YzQ0NWE0YTVlNDk2ZmMzZGI2NjgzNzJlMTVhM2JjYjczMTFjNmIwNjc3ODM&feedId=58083&k=35129e597cee35d95e7d9ad1c186e62fa494f685",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "joma-camiseta-combi-verde",
+    brand: "Joma",
+    model: "Camiseta Joma Combi - Verde",
+    colour: "Verde",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 11.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265327163&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428574-00-P-X-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wxNzQzNDd8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzVOaTlvTmpRdk9EZzVNekEzTnpJMU9ESTNNQzVxY0djfDg4NTIzNDA1NDJiMTA0N2FhMjliMDlkNDYwYzZlM2JjNTllZWZhNDM0NDdjZTEzMjJlYTk4ODMyOWNmZjZiZmI&feedId=58083&k=192f7d918feb60a5c1679789211e01ed6bf6fa91",
+        sizes: ["XXL-3XL"],
+      },
+    ],
+  },
+  {
     id: "joma-camiseta-supernova-rosa",
     brand: "Joma",
-    model: "Camiseta Supernova - Rosa",
+    model: "Camiseta Joma Supernova - Rosa",
     colour: "Rosa",
     type: "tshirt",
     offers: [
@@ -139132,6 +139150,9 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-chaqueta-de-chandal-joma-winner-iii-azul-4",
     brand: "Joma",
@@ -139222,9 +139243,6 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-chaqueta-de-chandal-joma-winner-iii-negro-2",
     brand: "Joma",
@@ -139799,7 +139817,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-chubasquero-de-entrenamiento-chubasquero-iris-negro",
     brand: "Joma",
-    model: "Chubasquero de entrenamiento Chubasquero Iris - Negro",
+    model: "Chubasquero de entrenamiento Joma Chubasquero Iris - Negro",
     colour: "Negro",
     type: "jacket",
     offers: [
@@ -144564,7 +144582,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-medias-anti-slip",
     brand: "Joma",
-    model: "Medias Anti-slip",
+    model: "Medias Joma Anti-slip",
     colour: "N/D",
     type: "socks",
     offers: [
@@ -144582,7 +144600,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-medias-anti-slip-blanco",
     brand: "Joma",
-    model: "Medias Anti-slip - Blanco",
+    model: "Medias Joma Anti-slip - Blanco",
     colour: "Blanco",
     type: "socks",
     offers: [
@@ -144600,7 +144618,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-medias-anti-slip-marino",
     brand: "Joma",
-    model: "Medias Anti-slip - Marino",
+    model: "Medias Joma Anti-slip - Marino",
     colour: "Marino",
     type: "socks",
     offers: [
@@ -144618,7 +144636,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-medias-anti-slip-negro",
     brand: "Joma",
-    model: "Medias Anti-slip - Negro",
+    model: "Medias Joma Anti-slip - Negro",
     colour: "Negro",
     type: "socks",
     offers: [
@@ -144636,7 +144654,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-medias-anti-slip-rojo",
     brand: "Joma",
-    model: "Medias Anti-slip - Rojo",
+    model: "Medias Joma Anti-slip - Rojo",
     colour: "Rojo",
     type: "socks",
     offers: [
@@ -144654,7 +144672,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-medias-anti-slip-verde",
     brand: "Joma",
-    model: "Medias Anti-slip - Verde",
+    model: "Medias Joma Anti-slip - Verde",
     colour: "Verde",
     type: "socks",
     offers: [
@@ -144669,10 +144687,13 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "joma-medias-media-classic-ii-blanco",
     brand: "Joma",
-    model: "Medias Media Classic Ii - Blanco",
+    model: "Medias Joma Media Classic Ii - Blanco",
     colour: "Blanco",
     type: "socks",
     offers: [
@@ -144690,7 +144711,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-medias-media-classic-ii-negro",
     brand: "Joma",
-    model: "Medias Media Classic Ii - Negro",
+    model: "Medias Joma Media Classic Ii - Negro",
     colour: "Negro",
     type: "socks",
     offers: [
@@ -144705,13 +144726,10 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "joma-medias-media-classic-ii-rojo",
     brand: "Joma",
-    model: "Medias Media Classic Ii - Rojo",
+    model: "Medias Joma Media Classic Ii - Rojo",
     colour: "Rojo",
     type: "socks",
     offers: [
@@ -145297,24 +145315,6 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fshort-gardien-joma-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/7/1/711_101_1.webp",
         sizes: ["M", "XL", "2XL"],
-      },
-    ],
-  },
-  {
-    id: "joma-pantalon-corto-glasgow-negro",
-    brand: "Joma",
-    model: "Pantalón corto Glasgow - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 12.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41791735527&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000836432-00-S-M-20230508140430.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDE2MHxpbWFnZS9qcGVnfGFEYzBMMmd5TVM4eE1UUXdPVEEwTURRME1UTTNOQzl0WldScFlYTmZNVEF3TURnek5qUXpNbDh3TUY5VFgwMHRNakF5TXpBMU1EZ3hOREEwTXpBdWFuQm58MDQ1MmVhY2MwODU3MjVmMmJmZDA2ZDVhNTBkODY5YWJjNTA4MDIyMDc5ZWQwMDY5YzU1MmZhOWM3M2MxYzQ2Ng&feedId=58083&k=13342b6d2103b0dbd7e0838a4edbcc2eb16410fb",
-        sizes: ["S", "M", "XL"],
       },
     ],
   },
@@ -146150,6 +146150,15 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
         sizes: ["S", "XL"],
       },
       {
+        store: "ForumSport",
+        price: 12.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41791735527&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000836432-00-S-M-20230508140430.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDE2MHxpbWFnZS9qcGVnfGFEYzBMMmd5TVM4eE1UUXdPVEEwTURRME1UTTNOQzl0WldScFlYTmZNVEF3TURnek5qUXpNbDh3TUY5VFgwMHRNakF5TXpBMU1EZ3hOREEwTXpBdWFuQm58MDQ1MmVhY2MwODU3MjVmMmJmZDA2ZDVhNTBkODY5YWJjNTA4MDIyMDc5ZWQwMDY5YzU1MmZhOWM3M2MxYzQ2Ng&feedId=58083&k=13342b6d2103b0dbd7e0838a4edbcc2eb16410fb",
+        sizes: ["S", "M", "XL"],
+      },
+      {
         store: "FootStoreFR",
         price: 17.0,
         shipping: 7.99,
@@ -146550,6 +146559,42 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
     ],
   },
   {
+    id: "joma-pantalon-corto-maxi-blanco",
+    brand: "Joma",
+    model: "Pantalón corto Joma Maxi - Blanco",
+    colour: "Blanco",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 12.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45126097344&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000727283-00-P-X-20210408165947.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA4N3xpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMk1pOW9aV1F2TVRBd09ESTJOekkzTnpFeE1ESXVhbkJufGI1NDY5MTQ1ZDZiMzk0YjEzYWNjYzM0MjIyOTRiYTgwMDRmMjA2NGQ2NTNiOTA4NGM1ODlmZGU0ZDI1YjE1OTM&feedId=58083&k=f13f07897efe4d8c9698ede87b7aee898a00c888",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "joma-pantalon-corto-maxi-blanco-2",
+    brand: "Joma",
+    model: "Pantalón corto Joma Maxi - Blanco",
+    colour: "Blanco",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 11.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46317554379&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000727285-00-P-X-20210408165947.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODk5NnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMVppOW9aVGN2TVRBd09ESTJOek14TmpRek1UZ3VhbkJufDlmNmJmOGQ0NjRlYzZlYmExNmU1MzQyNDUxYjcwM2ZhZjAzNWZkOWZjMzY5MjQxNzc1NDlhOGQyN2NjZmU1ZGI&feedId=58083&k=d94834d48414aa4c1263c3076bba51e779654281",
+        sizes: ["S", "L", "XL"],
+      },
+    ],
+  },
+  {
     id: "joma-pantalon-corto-joma-maxi-negro",
     brand: "Joma",
     model: "Pantalón corto Joma MAXI - Negro",
@@ -146576,6 +146621,15 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
           { size: "12 ans", price: 15.97, url: "https://www.awin1.com/pclick.php?p=45951221723&a=3013769&m=65912" },
           { size: "14 ans", price: 15.97, url: "https://www.awin1.com/pclick.php?p=42529175394&a=3013769&m=65912" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 12.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45126097348&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000727279-00-P-X-20210329133213.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjY1NXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneE55OW9NR012TVRBd05qZ3hNRGN3TmpjME1qSXVhbkJufDNmYjkxMzkwYzEwNDNkMjFkNjFiZTU3MTA2YzQ5MDg0ZTUxN2YzYTRmN2Y4ZGU0ZDE2MjkxOTE5YWNjM2I0NTU&feedId=58083&k=340e0900e3d3ceb02c8476a9ddfdd083e9903912",
+        sizes: ["S", "M", "L", "XL"],
       },
       {
         store: "FootStoreFR",
@@ -146628,6 +146682,24 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
     ],
   },
   {
+    id: "joma-pantalon-corto-niza-negro",
+    brand: "Joma",
+    model: "Pantalón corto Joma Niza - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 12.24,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44926357049&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000477602-00-P-X-20181120201411.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyMDI4MTJ8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzROUzlvTjJJdk9EazFOREUwTnpnNU56TTNOQzVxY0djfGY2ZTk1NmVjMTU0MmZjYzQ1MDIyODRhZmU5OGQ1NGViZThmZTdhMTIzNDEyNjJlZmNlODdmN2I4ODZhOTY0MDk&feedId=58083&k=88817ac649d353f2771905ee95d6fba4ccff6742",
+        sizes: ["L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
     id: "joma-pantalon-corto-joma-nobel-naranja",
     brand: "Joma",
     model: "Pantalón corto Joma NOBEL - Naranja",
@@ -146651,6 +146723,24 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100053-short-joma-nobel-orange",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100053.880_0.webp",
         sizes: ["S", "M", "L", "2/3 ans", "XL", "2XL/3XL", "4/6 ans", "8/10 ans", "12 ans", "14 ans"],
+      },
+    ],
+  },
+  {
+    id: "joma-pantalon-corto-nobel-rojo",
+    brand: "Joma",
+    model: "Pantalón corto Joma Nobel - Rojo",
+    colour: "Rojo",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 10.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265327165&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428526-00-S-M-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wzMDU2NDh8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzRaaTlvWVRNdk9EZzVNekEyTURFMU16TTNOQzVxY0djfDQ5ZWNkYjg3NGI3OTBjNmY0MWNlOTgzYWM2MWUzOTBlYTBkMDc2NmQwNmY0MDUyZjRkY2ZhNjM4YTMxNzgzZWU&feedId=58083&k=7180960600a375c1e5a09859095da86bd4b03b1c",
+        sizes: ["XXL-3XL"],
       },
     ],
   },
@@ -146732,6 +146822,24 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F105349-100-short-joma-protect-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-105349-100-black-6a91b4483b43c-1.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "joma-pantalon-corto-real-sociedad-26-27-primera-equipacion-blanco",
+    brand: "Joma",
+    model: "Pantalón corto Joma Real Sociedad 26/27 Primera Equipacion - Blanco",
+    colour: "Blanco",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 38.8,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45379426601&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001123173-00-P-X-20260715091349.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTI3N3xpbWFnZS9qcGVnfGFHTmhMMmhoWVM4eE16ZzVORFU0TWpjek1EYzRNaTl0WldScFlYTmZNVEF3TVRFeU16RTNNMTh3TUY5UVgxZ3RNakF5TmpBM01UVXdPVEV6TkRrdWFuQm58ZTBlZTU1NGRjNjA0NTdiYzA4MmZhNmMxOWY0NWJkNWU0MjkwNWVhZTc5ODVkODA1MTc4NmEzMjkzMzA5MmQ1NQ&feedId=58083&k=8ba72b7fdbfc218635a2a3e0e69f0a15871e777e",
+        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -147906,60 +148014,6 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
     ],
   },
   {
-    id: "joma-pantalon-corto-maxi-blanco",
-    brand: "Joma",
-    model: "Pantalón corto Maxi - Blanco",
-    colour: "Blanco",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 12.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45126097344&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000727283-00-P-X-20210408165947.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA4N3xpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMk1pOW9aV1F2TVRBd09ESTJOekkzTnpFeE1ESXVhbkJufGI1NDY5MTQ1ZDZiMzk0YjEzYWNjYzM0MjIyOTRiYTgwMDRmMjA2NGQ2NTNiOTA4NGM1ODlmZGU0ZDI1YjE1OTM&feedId=58083&k=f13f07897efe4d8c9698ede87b7aee898a00c888",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "joma-pantalon-corto-maxi-blanco-2",
-    brand: "Joma",
-    model: "Pantalón corto Maxi - Blanco",
-    colour: "Blanco",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 11.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46317554379&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000727285-00-P-X-20210408165947.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODk5NnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMVppOW9aVGN2TVRBd09ESTJOek14TmpRek1UZ3VhbkJufDlmNmJmOGQ0NjRlYzZlYmExNmU1MzQyNDUxYjcwM2ZhZjAzNWZkOWZjMzY5MjQxNzc1NDlhOGQyN2NjZmU1ZGI&feedId=58083&k=d94834d48414aa4c1263c3076bba51e779654281",
-        sizes: ["S", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "joma-pantalon-corto-maxi-negro",
-    brand: "Joma",
-    model: "Pantalón corto Maxi - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 12.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45126097348&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000727279-00-P-X-20210329133213.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjY1NXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneE55OW9NR012TVRBd05qZ3hNRGN3TmpjME1qSXVhbkJufDNmYjkxMzkwYzEwNDNkMjFkNjFiZTU3MTA2YzQ5MDg0ZTUxN2YzYTRmN2Y4ZGU0ZDE2MjkxOTE5YWNjM2I0NTU&feedId=58083&k=340e0900e3d3ceb02c8476a9ddfdd083e9903912",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
     id: "joma-pantalon-corto-mujer-joma-paris-ii-turquoise",
     brand: "Joma",
     model: "Pantalón corto mujer Joma Paris II - Turquoise",
@@ -149023,42 +149077,6 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
     ],
   },
   {
-    id: "joma-pantalon-corto-niza-negro",
-    brand: "Joma",
-    model: "Pantalón corto Niza - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 12.24,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44926357049&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000477602-00-P-X-20181120201411.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyMDI4MTJ8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzROUzlvTjJJdk9EazFOREUwTnpnNU56TTNOQzVxY0djfGY2ZTk1NmVjMTU0MmZjYzQ1MDIyODRhZmU5OGQ1NGViZThmZTdhMTIzNDEyNjJlZmNlODdmN2I4ODZhOTY0MDk&feedId=58083&k=88817ac649d353f2771905ee95d6fba4ccff6742",
-        sizes: ["L", "XL", "2XL"],
-      },
-    ],
-  },
-  {
-    id: "joma-pantalon-corto-nobel-rojo",
-    brand: "Joma",
-    model: "Pantalón corto Nobel - Rojo",
-    colour: "Rojo",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 10.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265327165&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428526-00-S-M-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wzMDU2NDh8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzRaaTlvWVRNdk9EZzVNekEyTURFMU16TTNOQzVxY0djfDQ5ZWNkYjg3NGI3OTBjNmY0MWNlOTgzYWM2MWUzOTBlYTBkMDc2NmQwNmY0MDUyZjRkY2ZhNjM4YTMxNzgzZWU&feedId=58083&k=7180960600a375c1e5a09859095da86bd4b03b1c",
-        sizes: ["XXL-3XL"],
-      },
-    ],
-  },
-  {
     id: "joma-pantalon-corto-partido-joma-heroic-blanc",
     brand: "Joma",
     model: "Pantalón corto partido Joma Heroic - Blanc",
@@ -149311,27 +149329,9 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
     ],
   },
   {
-    id: "joma-pantalon-corto-real-sociedad-26-27-primera-equipacion-blanco",
-    brand: "Joma",
-    model: "Pantalón corto Real Sociedad 26/27 Primera Equipacion - Blanco",
-    colour: "Blanco",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 38.8,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45379426601&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001123173-00-P-X-20260715091349.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTI3N3xpbWFnZS9qcGVnfGFHTmhMMmhoWVM4eE16ZzVORFU0TWpjek1EYzRNaTl0WldScFlYTmZNVEF3TVRFeU16RTNNMTh3TUY5UVgxZ3RNakF5TmpBM01UVXdPVEV6TkRrdWFuQm58ZTBlZTU1NGRjNjA0NTdiYzA4MmZhNmMxOWY0NWJkNWU0MjkwNWVhZTc5ODVkODA1MTc4NmEzMjkzMzA5MmQ1NQ&feedId=58083&k=8ba72b7fdbfc218635a2a3e0e69f0a15871e777e",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
     id: "joma-pantalon-de-calentamiento-brama-academy-azul",
     brand: "Joma",
-    model: "Pantalón de calentamiento Brama Academy - Azul",
+    model: "Pantalón de calentamiento Joma Brama Academy - Azul",
     colour: "Azul",
     type: "pants",
     offers: [
@@ -149349,7 +149349,7 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "joma-pantalon-de-calentamiento-brama-academy-blanco",
     brand: "Joma",
-    model: "Pantalón de calentamiento Brama Academy - Blanco",
+    model: "Pantalón de calentamiento Joma Brama Academy - Blanco",
     colour: "Blanco",
     type: "pants",
     offers: [
@@ -149367,7 +149367,7 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "joma-pantalon-de-calentamiento-brama-academy-negro",
     brand: "Joma",
-    model: "Pantalón de calentamiento Brama Academy - Negro",
+    model: "Pantalón de calentamiento Joma Brama Academy - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -149385,7 +149385,7 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "joma-pantalon-de-calentamiento-brama-academy-rojo",
     brand: "Joma",
-    model: "Pantalón de calentamiento Brama Academy - Rojo",
+    model: "Pantalón de calentamiento Joma Brama Academy - Rojo",
     colour: "Rojo",
     type: "pants",
     offers: [
@@ -150147,7 +150147,7 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "joma-pantalon-largo-de-portero-pant-largo-portero-negro",
     brand: "Joma",
-    model: "Pantalón largo de portero Pant Largo Portero - Negro",
+    model: "Pantalón largo de portero Joma Pant Largo Portero - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -150165,7 +150165,7 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "joma-pantalon-largo-de-portero-proteccion-portero-negro",
     brand: "Joma",
-    model: "Pantalón largo de portero Proteccion Portero - Negro",
+    model: "Pantalón largo de portero Joma Proteccion Portero - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -151556,7 +151556,7 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "joma-sudadera-de-entrenamiento-real-sociedad-26-27-entrenamiento-azul",
     brand: "Joma",
-    model: "Sudadera de entrenamiento Real Sociedad 26/27 Entrenamiento - Azul",
+    model: "Sudadera de entrenamiento Joma Real Sociedad 26/27 Entrenamiento - Azul",
     colour: "Azul",
     type: "sweatshirt",
     offers: [
@@ -152524,6 +152524,24 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
     ],
   },
   {
+    id: "kappa-bolsa-valladolid-25-26-mochila-negro",
+    brand: "Kappa",
+    model: "Bolsa Kappa Valladolid 25/26 Mochila - Negro",
+    colour: "Negro",
+    type: "bag",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 45.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42250541454&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001088078-00-P-X-20250828171841.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjQzNnxpbWFnZS9qcGVnfGFHWTNMMmcwT1M4eE16RTBOVGMxTnpjM056azFNQzl0WldScFlYTmZNVEF3TVRBNE9EQTNPRjh3TUY5UVgxZ3RNakF5TlRBNE1qZ3hOekU0TkRFdWFuQm58ZmQzM2YxM2ZkMjNjY2U1Njk2OGJiNDNhNGRkYjVjNWRlNDFlN2M3NWMwMmI4YjZiZTc3ZTY3ZmIyNzA0YTM2Mw&feedId=58083&k=0816384ce9fee94a19947b1f0e44a13ec8754958",
+        sizes: [],
+      },
+    ],
+  },
+  {
     id: "kappa-bolsa-para-4-pelotas-kappa-negro",
     brand: "Kappa",
     model: "Bolsa para 4 pelotas Kappa - Negro",
@@ -152547,24 +152565,6 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F3113g2w-a00-sac-pour-4-ballons-kappa-noir-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_3113g2w-a00_0-nw010624.webp",
         sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "kappa-bolsa-valladolid-25-26-mochila-negro",
-    brand: "Kappa",
-    model: "Bolsa Valladolid 25/26 Mochila - Negro",
-    colour: "Negro",
-    type: "bag",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 45.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42250541454&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001088078-00-P-X-20250828171841.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjQzNnxpbWFnZS9qcGVnfGFHWTNMMmcwT1M4eE16RTBOVGMxTnpjM056azFNQzl0WldScFlYTmZNVEF3TVRBNE9EQTNPRjh3TUY5UVgxZ3RNakF5TlRBNE1qZ3hOekU0TkRFdWFuQm58ZmQzM2YxM2ZkMjNjY2U1Njk2OGJiNDNhNGRkYjVjNWRlNDFlN2M3NWMwMmI4YjZiZTc3ZTY3ZmIyNzA0YTM2Mw&feedId=58083&k=0816384ce9fee94a19947b1f0e44a13ec8754958",
-        sizes: [],
       },
     ],
   },
@@ -154196,42 +154196,6 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
     ],
   },
   {
-    id: "kappa-camiseta-bugo-amarillo",
-    brand: "Kappa",
-    model: "Camiseta Bugo - Amarillo",
-    colour: "Amarillo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 28.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39120402211&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923169-00-P-X-20241017141226.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQwN3xpbWFnZS9qcGVnfGFHUmlMMmcwWkM4eE1qUXpOakV3TnpRNU16UXdOaTl0WldScFlYTmZNVEF3TURreU16RTJPVjh3TUY5UVgxZ3RNakF5TkRFd01UY3hOREV5TWpZdWFuQm58NmUxNDMxYTE3ZGZmY2M4ZjZlNGNlYTQxYTI4YTJhMDE2MmNjYjBiMDVhOTBhMGRhZWU5MTc0MGU3MTFmOWY1NA&feedId=58083&k=cde34067b54c26093508cda631fdbe01081373e6",
-        sizes: ["S", "L"],
-      },
-    ],
-  },
-  {
-    id: "kappa-camiseta-bugo-azul",
-    brand: "Kappa",
-    model: "Camiseta Bugo - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 28.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46258194578&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923160-00-P-X-20230331150419.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODgwNHxpbWFnZS9qcGVnfGFHSTBMMmczTnk4eE1UTTBOell4T0RRMk16YzNOQzl0WldScFlYTmZNVEF3TURreU16RTJNRjh3TUY5UVgxZ3RNakF5TXpBek16RXhOVEEwTVRrdWFuQm58ZGZjZjU0ZjZhZDVhODc2MjdjN2E4OWNmMDRmNDhlM2FmZTVmZWFlNmM1ZGFlZDVhNGU3NjA1YWU5YzZiZTgyZg&feedId=58083&k=00a7a4b0432dcb7ac172d1b6747ea80f5d54132c",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
     id: "kappa-camiseta-clermont-foot-63-coena-2026-27-bleu",
     brand: "Kappa",
     model: "Camiseta Clermont Foot 63 Coena 2026/27 - Bleu",
@@ -154255,24 +154219,6 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F332d69w-a05-t-shirt-clermont-foot-63-coena-2026-27-blue-md-cobalt-white-red-dk",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa-332d69w-a05-blue-md-cobalt-white-red-dk-6a9ead5f05bb9-1.webp",
         sizes: ["S", "M", "L", "XL", "2XL"],
-      },
-    ],
-  },
-  {
-    id: "kappa-camiseta-dareto-marino",
-    brand: "Kappa",
-    model: "Camiseta Dareto - Marino",
-    colour: "Marino",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46258194576&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923080-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDE5MXxpbWFnZS9qcGVnfGFHVmpMMmd5Tnk4eE1UTTBOREUyTmpJNE9UUXpPQzl0WldScFlYTmZNVEF3TURreU16QTRNRjh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58MWFhMTQ1M2YyZWI2MGFiMGUwMzZjY2Y5YjQyYjA4ZGE3NGU3YThlOTcwZGQxYzE5ZmVjYjdkM2IxNmEwMzljOQ&feedId=58083&k=4c119c45ce7dced089d083b5810a0a2d92b3d696",
-        sizes: ["S", "M"],
       },
     ],
   },
@@ -154385,92 +154331,38 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
     ],
   },
   {
-    id: "kappa-camiseta-dovo-negro",
+    id: "kappa-camiseta-bugo-amarillo",
     brand: "Kappa",
-    model: "Camiseta Dovo - Negro",
-    colour: "Negro",
+    model: "Camiseta Kappa Bugo - Amarillo",
+    colour: "Amarillo",
     type: "tshirt",
     offers: [
       {
         store: "ForumSport",
-        price: 19.49,
+        price: 28.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46258194584&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923281-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NzU0N3xpbWFnZS9qcGVnfGFHSmhMMmc1TUM4eE1UTTBOREUzTlRNek16UXdOaTl0WldScFlYTmZNVEF3TURreU16STRNVjh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58ZGUzOGFjZWNjMjU5MmI0OTQwZDRkNGUyZDdhNDgwZWI1OWRlNDYyNGEzOWE5MmFiZDYzYTk0Y2VlNjJhNDA0ZQ&feedId=58083&k=0ee7460e8f9e512ac361628e791670f6c894f9e2",
-        sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
+        url: "https://www.awin1.com/pclick.php?p=39120402211&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923169-00-P-X-20241017141226.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQwN3xpbWFnZS9qcGVnfGFHUmlMMmcwWkM4eE1qUXpOakV3TnpRNU16UXdOaTl0WldScFlYTmZNVEF3TURreU16RTJPVjh3TUY5UVgxZ3RNakF5TkRFd01UY3hOREV5TWpZdWFuQm58NmUxNDMxYTE3ZGZmY2M4ZjZlNGNlYTQxYTI4YTJhMDE2MmNjYjBiMDVhOTBhMGRhZWU5MTc0MGU3MTFmOWY1NA&feedId=58083&k=cde34067b54c26093508cda631fdbe01081373e6",
+        sizes: ["S", "L"],
       },
     ],
   },
   {
-    id: "kappa-camiseta-dovol-naranja",
+    id: "kappa-camiseta-bugo-azul",
     brand: "Kappa",
-    model: "Camiseta Dovol - Naranja",
-    colour: "Naranja",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 22.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46258194579&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923451-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjUzM3xpbWFnZS9qcGVnfGFESmlMMmd5WkM4eE1UTTBOREU0TnpFeU9UZzROaTl0WldScFlYTmZNVEF3TURreU16UTFNVjh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58OTk5N2IyNjE5ZjdkZjg2NDI4OGI3MzQyMjgxNzMzYmY4ZDFkMzA0YjY2ZmQ4ZWMwYmEwNzBkYTQwNTg0MjZiNw&feedId=58083&k=c51ff1661c69b6bd42d84d8c6add4f485bc3ee79",
-        sizes: ["S", "L", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "kappa-camiseta-gianto-azul",
-    brand: "Kappa",
-    model: "Camiseta Gianto - Azul",
+    model: "Camiseta Kappa Bugo - Azul",
     colour: "Azul",
     type: "tshirt",
     offers: [
       {
         store: "ForumSport",
-        price: 32.99,
+        price: 28.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46233966241&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923397-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE5M3xpbWFnZS9qcGVnfGFEWTJMMmhtTUM4eE1UTTBOREU0TkRFNE1EYzJOaTl0WldScFlYTmZNVEF3TURreU16TTVOMTh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58OTZjNzBiZDQ0OWYyNmY2ZDkwOTEyOTZlNjUzNTRkYzBjMTQxMDE5NGZlODVmZWYyMGRjMzliNGIzMTE5NTZkNA&feedId=58083&k=135a4639fe627e282e8ce7f6319fc52832dedd6c",
-        sizes: ["S", "M", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "kappa-camiseta-gianto-blanco",
-    brand: "Kappa",
-    model: "Camiseta Gianto - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 32.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46233966246&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923393-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM1NHxpbWFnZS9qcGVnfGFERmhMMmc1WWk4eE1UTTBOREU0TXpjNE56VTFNQzl0WldScFlYTmZNVEF3TURreU16TTVNMTh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58ZGFhMGE2MmNkMzBiMzY4N2ZhODY0ZTE3OWZlMWQwOWU5NjcyMTRiOTI2ODFhMjM4Njc4NjcyN2QyZTMwNGI5NQ&feedId=58083&k=005b04f1afd47c964e96976afecf420024ff03dc",
-        sizes: ["S", "M", "XL"],
-      },
-    ],
-  },
-  {
-    id: "kappa-camiseta-gianto-verde",
-    brand: "Kappa",
-    model: "Camiseta Gianto - Verde",
-    colour: "Verde",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 32.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39028749069&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923401-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzY4MXxpbWFnZS9qcGVnfGFETmlMMmhtWWk4eE1UTTBOREU0TkRjM01EVTVNQzl0WldScFlYTmZNVEF3TURreU16UXdNVjh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58ZDFhN2RkZGVkNzc3OWM0OTM2MWIyY2VmOWExNTc2NGE3YjkxZjVjMmMyOThiOTYzOGM0NzI1NWIwYzdhMjVhMw&feedId=58083&k=2e9c40978292ae49754b4ff36b047c9acafa0276",
-        sizes: ["XXXXL"],
+        url: "https://www.awin1.com/pclick.php?p=46258194578&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923160-00-P-X-20230331150419.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODgwNHxpbWFnZS9qcGVnfGFHSTBMMmczTnk4eE1UTTBOell4T0RRMk16YzNOQzl0WldScFlYTmZNVEF3TURreU16RTJNRjh3TUY5UVgxZ3RNakF5TXpBek16RXhOVEEwTVRrdWFuQm58ZGZjZjU0ZjZhZDVhODc2MjdjN2E4OWNmMDRmNDhlM2FmZTVmZWFlNmM1ZGFlZDVhNGU3NjA1YWU5YzZiZTgyZg&feedId=58083&k=00a7a4b0432dcb7ac172d1b6747ea80f5d54132c",
+        sizes: ["S"],
       },
     ],
   },
@@ -154498,6 +154390,24 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F304pdq0-912-t-shirt-kappa-castolo-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_304pdq0-912_0-nw010624.webp",
         sizes: ["L"],
+      },
+    ],
+  },
+  {
+    id: "kappa-camiseta-dareto-marino",
+    brand: "Kappa",
+    model: "Camiseta Kappa Dareto - Marino",
+    colour: "Marino",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46258194576&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923080-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDE5MXxpbWFnZS9qcGVnfGFHVmpMMmd5Tnk4eE1UTTBOREUyTmpJNE9UUXpPQzl0WldScFlYTmZNVEF3TURreU16QTRNRjh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58MWFhMTQ1M2YyZWI2MGFiMGUwMzZjY2Y5YjQyYjA4ZGE3NGU3YThlOTcwZGQxYzE5ZmVjYjdkM2IxNmEwMzljOQ&feedId=58083&k=4c119c45ce7dced089d083b5810a0a2d92b3d696",
+        sizes: ["S", "M"],
       },
     ],
   },
@@ -154586,6 +154496,96 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F31152pw-a05-t-shirt-kappa-dervio-noir-noir-gris-fonce",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_31152pw-a05_0-nw121724.webp",
         sizes: ["L"],
+      },
+    ],
+  },
+  {
+    id: "kappa-camiseta-dovo-negro",
+    brand: "Kappa",
+    model: "Camiseta Kappa Dovo - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46258194584&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923281-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NzU0N3xpbWFnZS9qcGVnfGFHSmhMMmc1TUM4eE1UTTBOREUzTlRNek16UXdOaTl0WldScFlYTmZNVEF3TURreU16STRNVjh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58ZGUzOGFjZWNjMjU5MmI0OTQwZDRkNGUyZDdhNDgwZWI1OWRlNDYyNGEzOWE5MmFiZDYzYTk0Y2VlNjJhNDA0ZQ&feedId=58083&k=0ee7460e8f9e512ac361628e791670f6c894f9e2",
+        sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "kappa-camiseta-dovol-naranja",
+    brand: "Kappa",
+    model: "Camiseta Kappa Dovol - Naranja",
+    colour: "Naranja",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 22.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46258194579&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923451-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjUzM3xpbWFnZS9qcGVnfGFESmlMMmd5WkM4eE1UTTBOREU0TnpFeU9UZzROaTl0WldScFlYTmZNVEF3TURreU16UTFNVjh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58OTk5N2IyNjE5ZjdkZjg2NDI4OGI3MzQyMjgxNzMzYmY4ZDFkMzA0YjY2ZmQ4ZWMwYmEwNzBkYTQwNTg0MjZiNw&feedId=58083&k=c51ff1661c69b6bd42d84d8c6add4f485bc3ee79",
+        sizes: ["S", "L", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "kappa-camiseta-gianto-azul",
+    brand: "Kappa",
+    model: "Camiseta Kappa Gianto - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 32.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46233966241&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923397-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE5M3xpbWFnZS9qcGVnfGFEWTJMMmhtTUM4eE1UTTBOREU0TkRFNE1EYzJOaTl0WldScFlYTmZNVEF3TURreU16TTVOMTh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58OTZjNzBiZDQ0OWYyNmY2ZDkwOTEyOTZlNjUzNTRkYzBjMTQxMDE5NGZlODVmZWYyMGRjMzliNGIzMTE5NTZkNA&feedId=58083&k=135a4639fe627e282e8ce7f6319fc52832dedd6c",
+        sizes: ["S", "M", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "kappa-camiseta-gianto-blanco",
+    brand: "Kappa",
+    model: "Camiseta Kappa Gianto - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 32.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46233966246&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923393-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODM1NHxpbWFnZS9qcGVnfGFERmhMMmc1WWk4eE1UTTBOREU0TXpjNE56VTFNQzl0WldScFlYTmZNVEF3TURreU16TTVNMTh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58ZGFhMGE2MmNkMzBiMzY4N2ZhODY0ZTE3OWZlMWQwOWU5NjcyMTRiOTI2ODFhMjM4Njc4NjcyN2QyZTMwNGI5NQ&feedId=58083&k=005b04f1afd47c964e96976afecf420024ff03dc",
+        sizes: ["S", "M", "XL"],
+      },
+    ],
+  },
+  {
+    id: "kappa-camiseta-gianto-verde",
+    brand: "Kappa",
+    model: "Camiseta Kappa Gianto - Verde",
+    colour: "Verde",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 32.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39028749069&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923401-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzY4MXxpbWFnZS9qcGVnfGFETmlMMmhtWWk4eE1UTTBOREU0TkRjM01EVTVNQzl0WldScFlYTmZNVEF3TURreU16UXdNVjh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58ZDFhN2RkZGVkNzc3OWM0OTM2MWIyY2VmOWExNTc2NGE3YjkxZjVjMmMyOThiOTYzOGM0NzI1NWIwYzdhMjVhMw&feedId=58083&k=2e9c40978292ae49754b4ff36b047c9acafa0276",
+        sizes: ["XXXXL"],
       },
     ],
   },
@@ -156993,7 +156993,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-medias-kombat-spolf-pro-negro",
     brand: "Kappa",
-    model: "Medias Kombat Spolf Pro - Negro",
+    model: "Medias Kappa Kombat Spolf Pro - Negro",
     colour: "Negro",
     type: "socks",
     offers: [
@@ -157668,24 +157668,6 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
     ],
   },
   {
-    id: "kappa-pantalon-corto-curchet-naranja",
-    brand: "Kappa",
-    model: "Pantalón corto Curchet - Naranja",
-    colour: "Naranja",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46121411389&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000922561-00-P-X-20230331150419.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc2MHxpbWFnZS9qcGVnfGFHTmhMMmc0T0M4eE1UTTBOelU0TnpFd05EYzVPQzl0WldScFlYTmZNVEF3TURreU1qVTJNVjh3TUY5UVgxZ3RNakF5TXpBek16RXhOVEEwTVRrdWFuQm58ZDVlYTE5OGQ0NDlkYWYyNGU3ZjJiZjE1ZWFjYTYzODQ0YWU4YWI3MzE2YTYzMzM4YmU1MDJkNzU2YTA3MzE0Nw&feedId=58083&k=f649ea17b9989b20b7e86fbb589d5a9fa887421a",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
     id: "kappa-pantalon-corto-de-portero-as-monaco-kombat-ryder-2024-25-amarillo",
     brand: "Kappa",
     model: "Pantalón corto de portero AS Monaco Kombat Ryder 2024/25 - Amarillo",
@@ -157875,6 +157857,24 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
     ],
   },
   {
+    id: "kappa-pantalon-corto-curchet-naranja",
+    brand: "Kappa",
+    model: "Pantalón corto Kappa Curchet - Naranja",
+    colour: "Naranja",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46121411389&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000922561-00-P-X-20230331150419.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc2MHxpbWFnZS9qcGVnfGFHTmhMMmc0T0M4eE1UTTBOelU0TnpFd05EYzVPQzl0WldScFlYTmZNVEF3TURreU1qVTJNVjh3TUY5UVgxZ3RNakF5TXpBek16RXhOVEEwTVRrdWFuQm58ZDVlYTE5OGQ0NDlkYWYyNGU3ZjJiZjE1ZWFjYTYzODQ0YWU4YWI3MzE2YTYzMzM4YmU1MDJkNzU2YTA3MzE0Nw&feedId=58083&k=f649ea17b9989b20b7e86fbb589d5a9fa887421a",
+        sizes: ["L"],
+      },
+    ],
+  },
+  {
     id: "kappa-pantalon-corto-kappa-gabbio-azul",
     brand: "Kappa",
     model: "Pantalón corto Kappa Gabbio - Azul",
@@ -157943,6 +157943,15 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43654185361&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fa%2Fkappa_351f5xw-129_0-nw010624.jpg&feedId=89032&k=6e6cfea147da4583f5761da5341680c5eca17e2e",
         sizes: ["S"],
+      },
+      {
+        store: "ForumSport",
+        price: 24.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46151264197&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923417-00-P-X-20230508163717.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg4OXxpbWFnZS9qcGVnfGFHSXhMMmhrWWk4eE1UUXhNREkzTmpnM05qTXhPQzl0WldScFlYTmZNVEF3TURreU16UXhOMTh3TUY5UVgxZ3RNakF5TXpBMU1EZ3hOak0zTVRjdWFuQm58Y2M0MGVjODI4OTBiZmU0ODY0OGYwNmQ3NzM0NzQzM2I2YmQ0OWM3ZjRjNzc1OGZmMzBkYjA2NGRjYWQxZTI0NQ&feedId=58083&k=f45fa1700d9f1263f843af7ba6f40143cfd1384a",
+        sizes: ["S", "M", "XL"],
       },
       {
         store: "FootStoreFR",
@@ -158112,15 +158121,6 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
           { size: "2XL", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F351f5xw-a00-short-kappa-gondo-black-grey-dk" },
           { size: "3XL", price: 23.54, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F351f5xw-a00-short-kappa-gondo-black-grey-dk" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 24.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46151264197&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923417-00-P-X-20230508163717.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg4OXxpbWFnZS9qcGVnfGFHSXhMMmhrWWk4eE1UUXhNREkzTmpnM05qTXhPQzl0WldScFlYTmZNVEF3TURreU16UXhOMTh3TUY5UVgxZ3RNakF5TXpBMU1EZ3hOak0zTVRjdWFuQm58Y2M0MGVjODI4OTBiZmU0ODY0OGYwNmQ3NzM0NzQzM2I2YmQ0OWM3ZjRjNzc1OGZmMzBkYjA2NGRjYWQxZTI0NQ&feedId=58083&k=f45fa1700d9f1263f843af7ba6f40143cfd1384a",
-        sizes: ["S", "M", "XL"],
       },
     ],
   },
@@ -159814,7 +159814,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-pantalon-largo-laschin-marino",
     brand: "Kappa",
-    model: "Pantalón largo Laschin - Marino",
+    model: "Pantalón largo Kappa Laschin - Marino",
     colour: "Marino",
     type: "pants",
     offers: [
@@ -159832,7 +159832,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-pantalon-largo-laschin-negro",
     brand: "Kappa",
-    model: "Pantalón largo Laschin - Negro",
+    model: "Pantalón largo Kappa Laschin - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -159850,7 +159850,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-pantalon-largo-lubiola-marino",
     brand: "Kappa",
-    model: "Pantalón largo Lubiola - Marino",
+    model: "Pantalón largo Kappa Lubiola - Marino",
     colour: "Marino",
     type: "pants",
     offers: [
@@ -159868,7 +159868,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-pantalon-largo-lubiola-negro",
     brand: "Kappa",
-    model: "Pantalón largo Lubiola - Negro",
+    model: "Pantalón largo Kappa Lubiola - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -159886,7 +159886,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-pantalon-largo-lubiolo-marino",
     brand: "Kappa",
-    model: "Pantalón largo Lubiolo - Marino",
+    model: "Pantalón largo Kappa Lubiolo - Marino",
     colour: "Marino",
     type: "pants",
     offers: [
@@ -159904,7 +159904,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-pantalon-largo-lubiolo-negro",
     brand: "Kappa",
-    model: "Pantalón largo Lubiolo - Negro",
+    model: "Pantalón largo Kappa Lubiolo - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -162548,7 +162548,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lenno-azul",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lenno - Azul",
+    model: "Sudadera de entrenamiento Kappa Lenno - Azul",
     colour: "Azul",
     type: "sweatshirt",
     offers: [
@@ -162566,7 +162566,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lenno-azul-2",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lenno - Azul",
+    model: "Sudadera de entrenamiento Kappa Lenno - Azul",
     colour: "Azul",
     type: "sweatshirt",
     offers: [
@@ -162584,7 +162584,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lenno-marino",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lenno - Marino",
+    model: "Sudadera de entrenamiento Kappa Lenno - Marino",
     colour: "Marino",
     type: "sweatshirt",
     offers: [
@@ -162602,7 +162602,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lenno-marino-2",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lenno - Marino",
+    model: "Sudadera de entrenamiento Kappa Lenno - Marino",
     colour: "Marino",
     type: "sweatshirt",
     offers: [
@@ -162620,7 +162620,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lenno-marino-3",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lenno - Marino",
+    model: "Sudadera de entrenamiento Kappa Lenno - Marino",
     colour: "Marino",
     type: "sweatshirt",
     offers: [
@@ -162638,7 +162638,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lenno-negro",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lenno - Negro",
+    model: "Sudadera de entrenamiento Kappa Lenno - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -162656,7 +162656,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lenno-negro-2",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lenno - Negro",
+    model: "Sudadera de entrenamiento Kappa Lenno - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -162674,7 +162674,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lenno-negro-3",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lenno - Negro",
+    model: "Sudadera de entrenamiento Kappa Lenno - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -162692,7 +162692,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lenno-negro-4",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lenno - Negro",
+    model: "Sudadera de entrenamiento Kappa Lenno - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -162710,7 +162710,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lenno-rojo",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lenno - Rojo",
+    model: "Sudadera de entrenamiento Kappa Lenno - Rojo",
     colour: "Rojo",
     type: "sweatshirt",
     offers: [
@@ -162728,7 +162728,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lenno-verde",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lenno - Verde",
+    model: "Sudadera de entrenamiento Kappa Lenno - Verde",
     colour: "Verde",
     type: "sweatshirt",
     offers: [
@@ -162746,7 +162746,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lido-marino",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lido - Marino",
+    model: "Sudadera de entrenamiento Kappa Lido - Marino",
     colour: "Marino",
     type: "sweatshirt",
     offers: [
@@ -162764,7 +162764,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lido-negro",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lido - Negro",
+    model: "Sudadera de entrenamiento Kappa Lido - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -162782,7 +162782,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lido-rojo",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lido - Rojo",
+    model: "Sudadera de entrenamiento Kappa Lido - Rojo",
     colour: "Rojo",
     type: "sweatshirt",
     offers: [
@@ -162800,7 +162800,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lovato-amarillo",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lovato - Amarillo",
+    model: "Sudadera de entrenamiento Kappa Lovato - Amarillo",
     colour: "Amarillo",
     type: "sweatshirt",
     offers: [
@@ -162818,7 +162818,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lovato-azul",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lovato - Azul",
+    model: "Sudadera de entrenamiento Kappa Lovato - Azul",
     colour: "Azul",
     type: "sweatshirt",
     offers: [
@@ -162836,7 +162836,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lovato-lila",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lovato - Lila",
+    model: "Sudadera de entrenamiento Kappa Lovato - Lila",
     colour: "Lila",
     type: "sweatshirt",
     offers: [
@@ -162854,7 +162854,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lovato-marino",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lovato - Marino",
+    model: "Sudadera de entrenamiento Kappa Lovato - Marino",
     colour: "Marino",
     type: "sweatshirt",
     offers: [
@@ -162872,7 +162872,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lovato-naranja",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lovato - Naranja",
+    model: "Sudadera de entrenamiento Kappa Lovato - Naranja",
     colour: "Naranja",
     type: "sweatshirt",
     offers: [
@@ -162890,7 +162890,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lovato-negro",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lovato - Negro",
+    model: "Sudadera de entrenamiento Kappa Lovato - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -162908,7 +162908,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lovato-negro-2",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lovato - Negro",
+    model: "Sudadera de entrenamiento Kappa Lovato - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -162926,7 +162926,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lovato-negro-3",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lovato - Negro",
+    model: "Sudadera de entrenamiento Kappa Lovato - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -162944,7 +162944,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lovato-rojo",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lovato - Rojo",
+    model: "Sudadera de entrenamiento Kappa Lovato - Rojo",
     colour: "Rojo",
     type: "sweatshirt",
     offers: [
@@ -162962,7 +162962,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-sudadera-de-entrenamiento-lovato-rojo-2",
     brand: "Kappa",
-    model: "Sudadera de entrenamiento Lovato - Rojo",
+    model: "Sudadera de entrenamiento Kappa Lovato - Rojo",
     colour: "Rojo",
     type: "sweatshirt",
     offers: [
@@ -163742,7 +163742,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kempa-pantalon-corto-pocket-negro",
     brand: "kempa",
-    model: "Pantalón corto Pocket - Negro",
+    model: "Pantalón corto kempa Pocket - Negro",
     colour: "Negro",
     type: "shorts",
     offers: [
@@ -163760,7 +163760,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kempa-pantalon-corto-referee-shorts-negro",
     brand: "kempa",
-    model: "Pantalón corto Referee Shorts - Negro",
+    model: "Pantalón corto kempa Referee Shorts - Negro",
     colour: "Negro",
     type: "shorts",
     offers: [
@@ -163778,7 +163778,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kempa-sudadera-de-entrenamiento-player-gris",
     brand: "kempa",
-    model: "Sudadera de entrenamiento Player - Gris",
+    model: "Sudadera de entrenamiento kempa Player - Gris",
     colour: "Gris",
     type: "sweatshirt",
     offers: [
@@ -168274,7 +168274,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mcdavid-camiseta-de-manga-larga-hex-negro",
     brand: "McDavid",
-    model: "Camiseta de manga larga Hex - Negro",
+    model: "Camiseta de manga larga McDavid Hex - Negro",
     colour: "Negro",
     type: "tshirt",
     offers: [
@@ -168475,7 +168475,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mcdavid-pantalon-corto-de-portero-hex-goal-keeper-negro",
     brand: "McDavid",
-    model: "Pantalón corto de portero Hex Goal Keeper - Negro",
+    model: "Pantalón corto de portero McDavid Hex Goal Keeper - Negro",
     colour: "Negro",
     type: "shorts",
     offers: [
@@ -168753,7 +168753,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mcdavid-pantalon-de-calentamiento-compression-3-4-tight-with-dual-layer-knee-support",
     brand: "McDavid",
-    model: "Pantalón de calentamiento Compression 3/4 Tight With Dual Layer Knee Support",
+    model: "Pantalón de calentamiento McDavid Compression 3/4 Tight With Dual Layer Knee Support",
     colour: "N/D",
     type: "pants",
     offers: [
@@ -168771,7 +168771,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mcdavid-pantalon-de-calentamiento-compression-3-4-tight-with-dual-layer-knee-support-2",
     brand: "McDavid",
-    model: "Pantalón de calentamiento Compression 3/4 Tight With Dual Layer Knee Support",
+    model: "Pantalón de calentamiento McDavid Compression 3/4 Tight With Dual Layer Knee Support",
     colour: "N/D",
     type: "pants",
     offers: [
@@ -168789,7 +168789,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mcdavid-pantalon-de-calentamiento-hex-sliding-shorts-negro",
     brand: "McDavid",
-    model: "Pantalón de calentamiento Hex Sliding Shorts - Negro",
+    model: "Pantalón de calentamiento McDavid Hex Sliding Shorts - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -168807,7 +168807,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mcdavid-pantalon-de-calentamiento-hex-thudd-5-pad-3-4-tight-blanco",
     brand: "McDavid",
-    model: "Pantalón de calentamiento Hex Thudd 5-pad 3/4 Tight - Blanco",
+    model: "Pantalón de calentamiento McDavid Hex Thudd 5-pad 3/4 Tight - Blanco",
     colour: "Blanco",
     type: "pants",
     offers: [
@@ -168825,7 +168825,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mcdavid-pantalon-de-calentamiento-neoprene-shorts-with-adjustable-drawstring",
     brand: "McDavid",
-    model: "Pantalón de calentamiento Neoprene Shorts With Adjustable Drawstring",
+    model: "Pantalón de calentamiento McDavid Neoprene Shorts With Adjustable Drawstring",
     colour: "N/D",
     type: "pants",
     offers: [
@@ -168843,7 +168843,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mcdavid-pantalon-de-calentamiento-super-cross-compression-short-with-hip-spica",
     brand: "McDavid",
-    model: "Pantalón de calentamiento Super Cross Compression Short With Hip Spica",
+    model: "Pantalón de calentamiento McDavid Super Cross Compression Short With Hip Spica",
     colour: "N/D",
     type: "pants",
     offers: [
@@ -168888,7 +168888,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mcdavid-pantalon-largo-de-portero-hex-negro",
     brand: "McDavid",
-    model: "Pantalón largo de portero Hex - Negro",
+    model: "Pantalón largo de portero McDavid Hex - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -168978,7 +168978,7 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "mercury-brazalete-de-capitan-brazalete-capitan-euskadi",
     brand: "Mercury",
-    model: "Brazalete de capitán Brazalete Capitan Euskadi",
+    model: "Brazalete de capitán Mercury Brazalete Capitan Euskadi",
     colour: "N/D",
     type: "armband",
     offers: [
@@ -175451,24 +175451,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-camiseta-academy-winter-warrior",
-    brand: "Nike",
-    model: "Camiseta Academy Winter Warrior",
-    colour: "N/D",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 46.89,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46390646398&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914686-00-P-X-20230523140747.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTAyMHxpbWFnZS9qcGVnfGFHUmxMMmhtTVM4eE1UUXpOVGcxTXpVeE1qY3pOQzl0WldScFlYTmZNVEF3TURreE5EWTRObDh3TUY5UVgxZ3RNakF5TXpBMU1qTXhOREEzTkRjdWFuQm58ZGY2ZjhiZDAyZjQzNjVjOGI4MDdiYjBiMDkzMGRkZDU3ZDExOTFhODY3ZWVkMzYzNGJiZGQwYTc0MGU5NGFhOQ&feedId=58083&k=224ccfa99166c1b79c20a5b178f07eb604bad18e",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
     id: "nike-camiseta-atletico-de-madrid-2026-27-bleu",
     brand: "Nike",
     model: "Camiseta Atlético de Madrid 2026/27 - Bleu",
@@ -176368,78 +176350,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-camiseta-de-manga-larga-dri-fit-jordan-sport-blanco",
-    brand: "Nike",
-    model: "Camiseta de manga larga Dri-fit Jordan Sport - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 29.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45145419460&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001101209-00-P-X-20260130115004.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTkzNXxpbWFnZS9qcGVnfGFEQXpMMmhqTXk4eE16VXpNalkzTURrMU1UUTFOQzl0WldScFlYTmZNVEF3TVRFd01USXdPVjh3TUY5UVgxZ3RNakF5TmpBeE16QXhNVFV3TURRdWFuQm58YjEwMDg3ZDQ2MzQwYWVkY2I3YmJhOWZmNDIyYTlmYTkwOWMyOGMzMTkyNDFlN2JkY2U0NDY5MDE3YjY1MjM2ZA&feedId=58083&k=ff94fe5c36feac367c7df67c2e87c5b13536cefd",
-        sizes: ["L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-de-manga-larga-dri-fit-pro-blanco",
-    brand: "Nike",
-    model: "Camiseta de manga larga Dri-fit Pro - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 31.67,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45387737451&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000939087-00-P-X-20241118120627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODUyM3xpbWFnZS9qcGVnfGFHVTBMMmhsWWk4eE1qUTVPVFF4TmpjM05qY3pOQzl0WldScFlYTmZNVEF3TURrek9UQTROMTh3TUY5UVgxZ3RNakF5TkRFeE1UZ3hNakEyTWpjdWFuQm58NDc3MWQyNjAyNmY0MjcxMWQzOTU0MmJjZjA3ZTBjMjZmNzIzMzliMzk4YTMyZDlhMjJjNWUwZDg2MzMyOWRmYg&feedId=58083&k=fb3d6a09160a1066ad83ae165838c5fbaae635b2",
-        sizes: ["S", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-de-manga-larga-dri-fit-tight-gris",
-    brand: "Nike",
-    model: "Camiseta de manga larga Dri-fit Tight - Gris",
-    colour: "Gris",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 31.67,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39833044221&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000939086-00-P-X-20240516162304.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg2NnxpbWFnZS9qcGVnfGFEUTFMMmd3T0M4eE1qRTBNelE0T0RZMk16VTRNaTl0WldScFlYTmZNVEF3TURrek9UQTRObDh3TUY5UVgxZ3RNakF5TkRBMU1UWXhOakl6TURRdWFuQm58YTFlN2VmZmM0M2UxOWQyZjIzODllOWEwZDg4NjQ1ZTJlMWFkM2Y5OTgzOWNmNzFhZDgxYWE5ZGRhNGI0NzJjZA&feedId=58083&k=9bfc0bcb05e3ed20113e20e755e801ab35c78e87",
-        sizes: ["M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-de-manga-larga-dri-fit-tight-negro",
-    brand: "Nike",
-    model: "Camiseta de manga larga Dri-fit Tight - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 31.67,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43782448274&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000939083-00-P-X-20240326132920.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU0NXxpbWFnZS9qcGVnfGFEWm1MMmhoTXk4eE1qQTFNREl4T0RjM09EWTFOQzl0WldScFlYTmZNVEF3TURrek9UQTRNMTh3TUY5UVgxZ3RNakF5TkRBek1qWXhNekk1TWpBdWFuQm58YjFlM2Q3OTZiOGRjMGVkMDVlZjFmOGE0M2M4YjkyYWY5YmRiMTI3ZDQwMTMyZGEzYzQ4NzUzMmEwZDNmYTc2Nw&feedId=58083&k=10df8e5d6affcb1d0bed6d4f613e1bedda1f7fc7",
-        sizes: ["S", "M", "XL"],
-      },
-    ],
-  },
-  {
     id: "nike-camiseta-de-manga-larga-inter-milan-swoosh-2026-27-noir",
     brand: "Nike",
     model: "Camiseta de manga larga Inter Milan Swoosh 2026/27 - Noir",
@@ -176467,9 +176377,81 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-camiseta-de-manga-larga-dri-fit-jordan-sport-blanco",
+    brand: "Nike",
+    model: "Camiseta de manga larga Nike Dri-fit Jordan Sport - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45145419460&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001101209-00-P-X-20260130115004.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTkzNXxpbWFnZS9qcGVnfGFEQXpMMmhqTXk4eE16VXpNalkzTURrMU1UUTFOQzl0WldScFlYTmZNVEF3TVRFd01USXdPVjh3TUY5UVgxZ3RNakF5TmpBeE16QXhNVFV3TURRdWFuQm58YjEwMDg3ZDQ2MzQwYWVkY2I3YmJhOWZmNDIyYTlmYTkwOWMyOGMzMTkyNDFlN2JkY2U0NDY5MDE3YjY1MjM2ZA&feedId=58083&k=ff94fe5c36feac367c7df67c2e87c5b13536cefd",
+        sizes: ["L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-de-manga-larga-dri-fit-pro-blanco",
+    brand: "Nike",
+    model: "Camiseta de manga larga Nike Dri-fit Pro - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 31.67,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45387737451&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000939087-00-P-X-20241118120627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODUyM3xpbWFnZS9qcGVnfGFHVTBMMmhsWWk4eE1qUTVPVFF4TmpjM05qY3pOQzl0WldScFlYTmZNVEF3TURrek9UQTROMTh3TUY5UVgxZ3RNakF5TkRFeE1UZ3hNakEyTWpjdWFuQm58NDc3MWQyNjAyNmY0MjcxMWQzOTU0MmJjZjA3ZTBjMjZmNzIzMzliMzk4YTMyZDlhMjJjNWUwZDg2MzMyOWRmYg&feedId=58083&k=fb3d6a09160a1066ad83ae165838c5fbaae635b2",
+        sizes: ["S", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-de-manga-larga-dri-fit-tight-gris",
+    brand: "Nike",
+    model: "Camiseta de manga larga Nike Dri-fit Tight - Gris",
+    colour: "Gris",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 31.67,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39833044221&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000939086-00-P-X-20240516162304.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg2NnxpbWFnZS9qcGVnfGFEUTFMMmd3T0M4eE1qRTBNelE0T0RZMk16VTRNaTl0WldScFlYTmZNVEF3TURrek9UQTRObDh3TUY5UVgxZ3RNakF5TkRBMU1UWXhOakl6TURRdWFuQm58YTFlN2VmZmM0M2UxOWQyZjIzODllOWEwZDg4NjQ1ZTJlMWFkM2Y5OTgzOWNmNzFhZDgxYWE5ZGRhNGI0NzJjZA&feedId=58083&k=9bfc0bcb05e3ed20113e20e755e801ab35c78e87",
+        sizes: ["M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-de-manga-larga-dri-fit-tight-negro",
+    brand: "Nike",
+    model: "Camiseta de manga larga Nike Dri-fit Tight - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 31.67,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43782448274&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000939083-00-P-X-20240326132920.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU0NXxpbWFnZS9qcGVnfGFEWm1MMmhoTXk4eE1qQTFNREl4T0RjM09EWTFOQzl0WldScFlYTmZNVEF3TURrek9UQTRNMTh3TUY5UVgxZ3RNakF5TkRBek1qWXhNekk1TWpBdWFuQm58YjFlM2Q3OTZiOGRjMGVkMDVlZjFmOGE0M2M4YjkyYWY5YmRiMTI3ZDQwMTMyZGEzYzQ4NzUzMmEwZDNmYTc2Nw&feedId=58083&k=10df8e5d6affcb1d0bed6d4f613e1bedda1f7fc7",
+        sizes: ["S", "M", "XL"],
+      },
+    ],
+  },
+  {
     id: "nike-camiseta-de-manga-larga-pro-warm-negro",
     brand: "Nike",
-    model: "Camiseta de manga larga Pro Warm - Negro",
+    model: "Camiseta de manga larga Nike Pro Warm - Negro",
     colour: "Negro",
     type: "tshirt",
     offers: [
@@ -177252,420 +177234,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-camiseta-dri-fit-academy",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Academy",
-    colour: "N/D",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.11,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45380735394&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103734-00-P-X-20260724091845.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU5NHxpbWFnZS9qcGVnfGFHTmhMMmd4TVM4eE16a3hNVGc1TWpNMk1USTBOaTl0WldScFlYTmZNVEF3TVRFd016Y3pORjh3TUY5UVgxZ3RNakF5TmpBM01qUXdPVEU0TkRVdWFuQm58MGVlZTA1MTVmYmQzM2U3MDZlMjVjMzJhZGFlZmI0YjQxYzRmNzk1ZDBmNjUwYTM1NjUyNmJkYThlMTY5YjI5NQ&feedId=58083&k=e425fa9e31025336926f0f6e8c03ce70464e1ac6",
-        sizes: ["M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-academy-2",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Academy",
-    colour: "N/D",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.11,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45611207260&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103733-00-P-X-20260813155718.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUzN3xpbWFnZS9qcGVnfGFHWmlMMmd5TWk4eE16azFNall6T0RreE1EUTVOQzl0WldScFlYTmZNVEF3TVRFd016Y3pNMTh3TUY5UVgxZ3RNakF5TmpBNE1UTXhOVFUzTVRndWFuQm58YzFlYzVhMzc4ZGE0ZjNkNzk5ZDg4MGVhMWQ5MmU3MGQ2YTVlODQzYjE5N2Q4ZjFlMTQyMDQ1YWI1MjAzYWYwMg&feedId=58083&k=70128575dac44283fe0d03d53ed3ade82096eb8d",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-academy-25-blanco",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Academy 25 - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 22.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40162773932&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021093-00-P-X-20250116162527.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NzgzMHxpbWFnZS9qcGVnfGFESTNMMmd5Tmk4eE1qWTRNRGd4T0RZNE9EQXpNQzl0WldScFlYTmZNVEF3TVRBeU1UQTVNMTh3TUY5UVgxZ3RNakF5TlRBeE1UWXhOakkxTWpjdWFuQm58MjdjZTQwOWIzZDQ4YzhjMjUxMTA5ZTdjYjVhZGQ1MDRhZDE5NjE2ZWM1NzQxMzc3ODI3Y2FiOTI4ZmEwNGY0Mw&feedId=58083&k=95cc39e16a78011eb0e94080376d0a3c0930d00c",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-academy-25-rojo",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Academy 25 - Rojo",
-    colour: "Rojo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 22.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40115545766&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021095-00-P-X-20250109155244.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjQxN3xpbWFnZS9qcGVnfGFETXpMMmhpTkM4eE1qWTJNVGcwTmpNeE1EazBNaTl0WldScFlYTmZNVEF3TVRBeU1UQTVOVjh3TUY5UVgxZ3RNakF5TlRBeE1Ea3hOVFV5TkRRdWFuQm58MGVjMTVmNDNiYzJjNzZlNWRkYzM5OGRiNjk1NWUxMWMyNTg3OGQ3MWQ5ZWViMTBmNzA0Y2IzNjZjZGFkY2FlMQ&feedId=58083&k=d4f56bf273844555a008dc0af9d3ef9e413fa4fc",
-        sizes: ["XS", "S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-academy-azul",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Academy - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 22.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41104340518&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053765-00-P-X-20250108150333.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjgxNXxpbWFnZS9qcGVnfGFETTRMMmd6WlM4eE1qWTFOelF5TnpRNE1EWXdOaTl0WldScFlYTmZNVEF3TVRBMU16YzJOVjh3TUY5UVgxZ3RNakF5TlRBeE1EZ3hOVEF6TXpNdWFuQm58MTk4YWRhMDQyNDg3ZmY0ZmVmZDI1MGQ2NmJiZTNjMDhlNTNiNmFlMWU0OTIwYjk4MTAxZWIzNmU2M2ExYjg3NQ&feedId=58083&k=beb854d1b899ee8eb6469da7023666744c6c0e18",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-academy-blanco",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Academy - Blanco",
-    colour: "Blanco",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45944624849&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103646-00-P-X-20260727160640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA0NXxpbWFnZS9qcGVnfGFEVmhMMmcxTVM4eE16a3hOekl6TnpjM01qTXhPQzl0WldScFlYTmZNVEF3TVRFd016WTBObDh3TUY5UVgxZ3RNakF5TmpBM01qY3hOakEyTkRBdWFuQm58MDI2YjU3Y2Y5OGY3ZGRlZTRmNjNjMTI3ZjFkMmRjNWY1NGM2OTg4NWY5NmNhNzBlYzE4MWJiNTllZGMzYzA0ZQ&feedId=58083&k=aadd24621740adae55a67422473198b273c4d4ef",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-academy-gris",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Academy - Gris",
-    colour: "Gris",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 21.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46246042517&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001037201-00-P-X-20250414135935.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTg2NnxpbWFnZS9qcGVnfGFEVm1MMmcwWWk4eE1qZzJORFkxTmpnMk56TTFPQzl0WldScFlYTmZNVEF3TVRBek56SXdNVjh3TUY5UVgxZ3RNakF5TlRBME1UUXhNelU1TXpVdWFuQm58NTgzOTZmOGEwZTUxNDUxOTA2YzM2NmQ0NmYyZTQ3NmVkMDkxMjliZThjNmRmNjdiMDJkNDdlN2IzZmIyNWQyMg&feedId=58083&k=8d58255354ae9216044e6da33e2acf603239a92d",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-academy-negro",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Academy - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40146841876&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021092-00-P-X-20250113155655.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODczOHxpbWFnZS9qcGVnfGFEWm1MMmd5TVM4eE1qWTNNakUzTkRNMU9EVTFPQzl0WldScFlYTmZNVEF3TVRBeU1UQTVNbDh3TUY5UVgxZ3RNakF5TlRBeE1UTXhOVFUyTlRVdWFuQm58Mzc5NmM5MGU2NTY4NGRlMjRjNDc4ODEwYmRkNWQ3NjRkNDE5OGFkZTE5ZjAxMDhiNGMxNGNkZmI3NTRkNzcyMQ&feedId=58083&k=aaa086abb2f2be4c7eaaeb8db27a0ab3b65715a7",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-academy-negro-2",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Academy - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 22.79,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44786073368&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126250-00-P-X-20260518124900.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTA3MXxpbWFnZS9qcGVnfGFEZzNMMmhqTVM4eE16YzNNVGsxTWpjNE16TTVNQzl0WldScFlYTmZNVEF3TVRFeU5qSTFNRjh3TUY5UVgxZ3RNakF5TmpBMU1UZ3hNalE1TURBdWFuQm58NTMxZTM4OTAyZjUwYWExYzQ4ZDAwZTliZjVjYmU5NmM2MDNlZDE2NGM0YjU4M2Q0YzMyYWE2YWU2YWI3ZDJjNA&feedId=58083&k=0fe99c8eeff2857b67c0cb31502b494b0c81f188",
-        sizes: ["S", "L"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-academy-rojo",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Academy - Rojo",
-    colour: "Rojo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46280010035&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001079009-00-P-X-20251230103658.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzUxNnxpbWFnZS9qcGVnfGFETmxMMmc1TVM4eE16UTFORE0zTWpFM05Ua3dNaTl0WldScFlYTmZNVEF3TVRBM09UQXdPVjh3TUY5UVgxZ3RNakF5TlRFeU16QXhNRE0yTlRndWFuQm58NjJkODRiNTkzOTM4NTM0M2U4MmNlMzZhODg0YzRlZTJmM2FmYjI0MzVlZTZmNzAwMWUzNWM2YzI4MWIwYzA4ZA&feedId=58083&k=3a034f8fad0ee0c0c65958583728430116169e70",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-academy-verde",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Academy - Verde",
-    colour: "Verde",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46196973010&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091607-00-P-X-20260407135258.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTUwOXxpbWFnZS9qcGVnfGFESm1MMmc1WVM4eE16WTRNamt3T1RjM016ZzFOQzl0WldScFlYTmZNVEF3TVRBNU1UWXdOMTh3TUY5UVgxZ3RNakF5TmpBME1EY3hNelV5TlRndWFuQm58MWEwM2IyZTIzNjYzOTQ5YjI1OTM5OWVlZWFiNTU4NjYzMzQyMzVhMGE2N2IyMmZhOTgwNjhmNDkxZTA3ZjQxOQ&feedId=58083&k=138e74d7187574cbc52cd4291d015465fa68d0a4",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-premier-marino",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Premier - Marino",
-    colour: "Marino",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 56.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46473250626&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001124700-00-P-X-20261027101051.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA3MHxpbWFnZS9qcGVnfGFEWTRMMmhtTWk4eE5ERXdOVGc0TWpFNU9EQTBOaTl0WldScFlYTmZNVEF3TVRFeU5EY3dNRjh3TUY5UVgxZ3RNakF5TmpFd01qY3hNREV3TlRFdWFuQm58OGJmZDliNzIyYjdmOTVhZGUzZmMwMWYxMDVkNzE3Mjc3NjdlY2JlYWMzODhlZTlmMTRhN2MyMDRiNzU1YjE2NQ&feedId=58083&k=6fb6e928ff310bf5e020c3784076b48fd0113b10",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-strike",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Strike",
-    colour: "N/D",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 33.2,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45944624777&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103682-00-P-X-20260727160640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjgyN3xpbWFnZS9qcGVnfGFEa3hMMmd3WkM4eE16a3hOekkwTmpVMU5ERTBNaTl0WldScFlYTmZNVEF3TVRFd016WTRNbDh3TUY5UVgxZ3RNakF5TmpBM01qY3hOakEyTkRBdWFuQm58ZjdiY2M4ZDg3OWIzYjA5OTNmM2VjNWYxYWIyZWQ1OGQ4OWQ2MmZkNWY2YTY4N2M1YWU4Y2I5YzIyYmUwMDdmOQ&feedId=58083&k=b41ebb995e50ef6ae720bd74b0d67723d8370786",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-strike-2",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Strike",
-    colour: "N/D",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 41.3,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45944631209&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068863-00-P-X-20251023154012.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTM1NHxpbWFnZS9qcGVnfGFEbGxMMmhpTmk4eE16STJOakExT1RZeU5EUTNPQzl0WldScFlYTmZNVEF3TVRBMk9EZzJNMTh3TUY5UVgxZ3RNakF5TlRFd01qTXhOVFF3TVRJdWFuQm58NTQ0MWRmNTU3ZWQ4ZGNmNTNkZWU0ZmE4NzU2NWNjZTZjZTA2YmNlMGM1NTIxZTBhODE4NWY3MWYyNTA0MjMyOQ&feedId=58083&k=da7f1e94f29539b7d7031efbedfe7e51807f0afb",
-        sizes: ["L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-strike-azul",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Strike - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.39,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265334347&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000770617-00-S-M-20211229170617.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTcyMHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJoa055OW9ZV1l2TVRBMU1UQXhNamcxTVRNd05UUXVhbkJufGU1NDAwYzg0YThhYjc0ZWE0N2YyNDliOWI1ODA2OGQzMTNkNzZmMDQ5NjhhMzA1NzRhOTA4N2NlOWIyMjFiOTM&feedId=58083&k=07c2f06fe8d93ea4c542a0676244615256fd8a0a",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-strike-azul-2",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Strike - Azul",
-    colour: "Azul",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43503022584&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000855707-00-S-M-20221227113124.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ3NHxpbWFnZS9qcGVnfGFHVTFMMmhsTkM4eE1URTFNelk0TWpZNU5ERTNOQzl0WldScFlYTmZNVEF3TURnMU5UY3dOMTh3TUY5VFgwMHRNakF5TWpFeU1qY3hNVE14TWpRdWFuQm58OTViYmVmNGZkYzQzOWQ5MzgzYTNiOWM3YmQ1NzYzN2Y1OWNhYzlmMDg5N2UwYWRmYzg4MWYyMTM4NjhmOTdiZQ&feedId=58083&k=6bdce15c622e94cd647c0082b69eab01295e0983",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-strike-gris",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Strike - Gris",
-    colour: "Gris",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 31.95,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45944624410&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001037191-00-P-X-20250414135935.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDcxNnxpbWFnZS9qcGVnfGFEWTBMMmhqWmk4eE1qZzJORFkxTkRNeE1UUTFOQzl0WldScFlYTmZNVEF3TVRBek56RTVNVjh3TUY5UVgxZ3RNakF5TlRBME1UUXhNelU1TXpVdWFuQm58ZTBkY2Q0NGY4NzJmY2QyMjMzNGNhNDE3ZmQ0Yjg5NmMwNWUwY2RhMDRjMGNjMzY2NmFlOWMxZmZhMGIxOTYwMQ&feedId=58083&k=a7ae454d3347455c589c0d9d8c0b9ff6d5124cf8",
-        sizes: ["L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-strike-negro",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Strike - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38282538171&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000983825-00-P-X-20240701143948.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDE3NnxpbWFnZS9qcGVnfGFESTBMMmhsWWk4eE1qSXlPVEE0T1RVMU9EVTFPQzl0WldScFlYTmZNVEF3TURrNE16Z3lOVjh3TUY5UVgxZ3RNakF5TkRBM01ERXhORE01TkRndWFuQm58NzY5YjEyMWQyZDNmODI0OTI5ZDE4NzU4ODE3NGZhZDMwMzZjZGNkN2UxOWU1YmM0NGVkZmIzN2E3NmRjNDM2NQ&feedId=58083&k=c1c7ca6a1c3184570ee638d885558d9fa8c2df8d",
-        sizes: ["M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-strike-negro-2",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Strike - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.59,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43854048233&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001079015-00-P-X-20260130123429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDU0NHxpbWFnZS9qcGVnfGFETTNMMmcyTlM4eE16VXpNamN6TmpjNE1qTTJOaTl0WldScFlYTmZNVEF3TVRBM09UQXhOVjh3TUY5UVgxZ3RNakF5TmpBeE16QXhNak0wTWprdWFuQm58ZjI5MThiNTZkNWE1NmI3MmY1NzIyMDlkODhhYTY0NTM3ZWJiNTllMTQ2MTM5MzRhNzA3NzAzYTM4NDNjNGM4MQ&feedId=58083&k=b72744035ca9e8d79b9b4aebc9883e83c1123e48",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-strike-oro",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Strike - Oro",
-    colour: "Oro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43503028709&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001037707-00-P-X-20250513163354.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY2M3xpbWFnZS9qcGVnfGFEbGpMMmhqTUM4eE1qa3lNVGsyTlRjM01qZ3pNQzl0WldScFlYTmZNVEF3TVRBek56Y3dOMTh3TUY5UVgxZ3RNakF5TlRBMU1UTXhOak16TlRRdWFuQm58NjYyZDVhNjE1MWIyMWVmMjI4M2FjYTA5YTg5NTMwMDhlMzU2MzNkNTE2ZmQzMjY4Y2Y5M2NmOTA1M2RlODBjZA&feedId=58083&k=6b6e9522e6a694621cc5f32be27e08007956d29a",
-        sizes: ["M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-strike-rojo",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Strike - Rojo",
-    colour: "Rojo",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 38.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44538941867&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091635-00-P-X-20260420130559.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc5OHxpbWFnZS9qcGVnfGFHVTBMMmhqT0M4eE16Y3dPVFl3T1RVNU9UQXdOaTl0WldScFlYTmZNVEF3TVRBNU1UWXpOVjh3TUY5UVgxZ3RNakF5TmpBME1qQXhNekExTlRrdWFuQm58YTVjYmNjNjk4MWFhNGFiODIxMGYyZGFkMzAxZWNmZWE1MzY1MTY3ODczNjUzOTY4OTYwMzhlMTMzZDg2OGU2Ng&feedId=58083&k=e534178f3e48c3bdb87198238dddbd85db561b72",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-strike-rosa",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Strike - Rosa",
-    colour: "Rosa",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.87,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45944628927&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000962888-00-P-X-20240520155247.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE5M3xpbWFnZS9qcGVnfGFEVTRMMmd6TVM4eE1qRTFNRFE0TlRnM05qYzJOaTl0WldScFlYTmZNVEF3TURrMk1qZzRPRjh3TUY5UVgxZ3RNakF5TkRBMU1qQXhOVFV5TkRjdWFuQm58ODgwZTg5YTg2ZjA2MmFkOWM0YjU5NDEyOTZkYTcyOGM1MGQ0ZDg5ODY5OWY3YjAxZmEzY2IzNGRhMjk4MWZiMg&feedId=58083&k=21a5fc794e411e29b07f795f39aa7f40aabc2744",
-        sizes: ["L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-dri-fit-strike-verde",
-    brand: "Nike",
-    model: "Camiseta Dri-fit Strike - Verde",
-    colour: "Verde",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.39,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265337116&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000829894-00-S-M-20220429092309.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjEzMnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnNFpDOW9ORGN2TVRBM01EVXlNRFUxT1RJd09UUXVhbkJufDI2MjZlNjc3ZmNjZjVkZDllNzI3MzdmZTQ3YjRhN2MxMTg3NGIyOGEwOTk4ZWM4OWJiODJkYWRkOWE3NGMzNjE&feedId=58083&k=4bffe07d554543a03a20aa83294f7de2d32b931c",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
     id: "nike-camiseta-francia-coupe-du-monde-2026-blanc",
     brand: "Nike",
     model: "Camiseta Francia Coupe du Monde 2026 - Blanc",
@@ -178331,6 +177899,150 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-camiseta-academy-winter-warrior",
+    brand: "Nike",
+    model: "Camiseta Nike Academy Winter Warrior",
+    colour: "N/D",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 46.89,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46390646398&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914686-00-P-X-20230523140747.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTAyMHxpbWFnZS9qcGVnfGFHUmxMMmhtTVM4eE1UUXpOVGcxTXpVeE1qY3pOQzl0WldScFlYTmZNVEF3TURreE5EWTRObDh3TUY5UVgxZ3RNakF5TXpBMU1qTXhOREEzTkRjdWFuQm58ZGY2ZjhiZDAyZjQzNjVjOGI4MDdiYjBiMDkzMGRkZDU3ZDExOTFhODY3ZWVkMzYzNGJiZGQwYTc0MGU5NGFhOQ&feedId=58083&k=224ccfa99166c1b79c20a5b178f07eb604bad18e",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-academy",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Academy",
+    colour: "N/D",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.11,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45380735394&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103734-00-P-X-20260724091845.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU5NHxpbWFnZS9qcGVnfGFHTmhMMmd4TVM4eE16a3hNVGc1TWpNMk1USTBOaTl0WldScFlYTmZNVEF3TVRFd016Y3pORjh3TUY5UVgxZ3RNakF5TmpBM01qUXdPVEU0TkRVdWFuQm58MGVlZTA1MTVmYmQzM2U3MDZlMjVjMzJhZGFlZmI0YjQxYzRmNzk1ZDBmNjUwYTM1NjUyNmJkYThlMTY5YjI5NQ&feedId=58083&k=e425fa9e31025336926f0f6e8c03ce70464e1ac6",
+        sizes: ["M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-academy-2",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Academy",
+    colour: "N/D",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.11,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45611207260&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103733-00-P-X-20260813155718.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUzN3xpbWFnZS9qcGVnfGFHWmlMMmd5TWk4eE16azFNall6T0RreE1EUTVOQzl0WldScFlYTmZNVEF3TVRFd016Y3pNMTh3TUY5UVgxZ3RNakF5TmpBNE1UTXhOVFUzTVRndWFuQm58YzFlYzVhMzc4ZGE0ZjNkNzk5ZDg4MGVhMWQ5MmU3MGQ2YTVlODQzYjE5N2Q4ZjFlMTQyMDQ1YWI1MjAzYWYwMg&feedId=58083&k=70128575dac44283fe0d03d53ed3ade82096eb8d",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-academy-25-blanco",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Academy 25 - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 22.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40162773932&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021093-00-P-X-20250116162527.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NzgzMHxpbWFnZS9qcGVnfGFESTNMMmd5Tmk4eE1qWTRNRGd4T0RZNE9EQXpNQzl0WldScFlYTmZNVEF3TVRBeU1UQTVNMTh3TUY5UVgxZ3RNakF5TlRBeE1UWXhOakkxTWpjdWFuQm58MjdjZTQwOWIzZDQ4YzhjMjUxMTA5ZTdjYjVhZGQ1MDRhZDE5NjE2ZWM1NzQxMzc3ODI3Y2FiOTI4ZmEwNGY0Mw&feedId=58083&k=95cc39e16a78011eb0e94080376d0a3c0930d00c",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-academy-25-rojo",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Academy 25 - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 22.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40115545766&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021095-00-P-X-20250109155244.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjQxN3xpbWFnZS9qcGVnfGFETXpMMmhpTkM4eE1qWTJNVGcwTmpNeE1EazBNaTl0WldScFlYTmZNVEF3TVRBeU1UQTVOVjh3TUY5UVgxZ3RNakF5TlRBeE1Ea3hOVFV5TkRRdWFuQm58MGVjMTVmNDNiYzJjNzZlNWRkYzM5OGRiNjk1NWUxMWMyNTg3OGQ3MWQ5ZWViMTBmNzA0Y2IzNjZjZGFkY2FlMQ&feedId=58083&k=d4f56bf273844555a008dc0af9d3ef9e413fa4fc",
+        sizes: ["XS", "S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-academy-azul",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Academy - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 22.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41104340518&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053765-00-P-X-20250108150333.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjgxNXxpbWFnZS9qcGVnfGFETTRMMmd6WlM4eE1qWTFOelF5TnpRNE1EWXdOaTl0WldScFlYTmZNVEF3TVRBMU16YzJOVjh3TUY5UVgxZ3RNakF5TlRBeE1EZ3hOVEF6TXpNdWFuQm58MTk4YWRhMDQyNDg3ZmY0ZmVmZDI1MGQ2NmJiZTNjMDhlNTNiNmFlMWU0OTIwYjk4MTAxZWIzNmU2M2ExYjg3NQ&feedId=58083&k=beb854d1b899ee8eb6469da7023666744c6c0e18",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-academy-blanco",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Academy - Blanco",
+    colour: "Blanco",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45944624849&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103646-00-P-X-20260727160640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA0NXxpbWFnZS9qcGVnfGFEVmhMMmcxTVM4eE16a3hOekl6TnpjM01qTXhPQzl0WldScFlYTmZNVEF3TVRFd016WTBObDh3TUY5UVgxZ3RNakF5TmpBM01qY3hOakEyTkRBdWFuQm58MDI2YjU3Y2Y5OGY3ZGRlZTRmNjNjMTI3ZjFkMmRjNWY1NGM2OTg4NWY5NmNhNzBlYzE4MWJiNTllZGMzYzA0ZQ&feedId=58083&k=aadd24621740adae55a67422473198b273c4d4ef",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-academy-gris",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Academy - Gris",
+    colour: "Gris",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 21.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46246042517&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001037201-00-P-X-20250414135935.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTg2NnxpbWFnZS9qcGVnfGFEVm1MMmcwWWk4eE1qZzJORFkxTmpnMk56TTFPQzl0WldScFlYTmZNVEF3TVRBek56SXdNVjh3TUY5UVgxZ3RNakF5TlRBME1UUXhNelU1TXpVdWFuQm58NTgzOTZmOGEwZTUxNDUxOTA2YzM2NmQ0NmYyZTQ3NmVkMDkxMjliZThjNmRmNjdiMDJkNDdlN2IzZmIyNWQyMg&feedId=58083&k=8d58255354ae9216044e6da33e2acf603239a92d",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
     id: "nike-camiseta-nike-dri-fit-academy-negro",
     brand: "Nike",
     model: "Camiseta Nike Dri-Fit Academy - Negro",
@@ -178358,6 +178070,78 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-camiseta-dri-fit-academy-negro",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Academy - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40146841876&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021092-00-P-X-20250113155655.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODczOHxpbWFnZS9qcGVnfGFEWm1MMmd5TVM4eE1qWTNNakUzTkRNMU9EVTFPQzl0WldScFlYTmZNVEF3TVRBeU1UQTVNbDh3TUY5UVgxZ3RNakF5TlRBeE1UTXhOVFUyTlRVdWFuQm58Mzc5NmM5MGU2NTY4NGRlMjRjNDc4ODEwYmRkNWQ3NjRkNDE5OGFkZTE5ZjAxMDhiNGMxNGNkZmI3NTRkNzcyMQ&feedId=58083&k=aaa086abb2f2be4c7eaaeb8db27a0ab3b65715a7",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-academy-negro-2",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Academy - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 22.79,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44786073368&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126250-00-P-X-20260518124900.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTA3MXxpbWFnZS9qcGVnfGFEZzNMMmhqTVM4eE16YzNNVGsxTWpjNE16TTVNQzl0WldScFlYTmZNVEF3TVRFeU5qSTFNRjh3TUY5UVgxZ3RNakF5TmpBMU1UZ3hNalE1TURBdWFuQm58NTMxZTM4OTAyZjUwYWExYzQ4ZDAwZTliZjVjYmU5NmM2MDNlZDE2NGM0YjU4M2Q0YzMyYWE2YWU2YWI3ZDJjNA&feedId=58083&k=0fe99c8eeff2857b67c0cb31502b494b0c81f188",
+        sizes: ["S", "L"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-academy-rojo",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Academy - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46280010035&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001079009-00-P-X-20251230103658.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzUxNnxpbWFnZS9qcGVnfGFETmxMMmc1TVM4eE16UTFORE0zTWpFM05Ua3dNaTl0WldScFlYTmZNVEF3TVRBM09UQXdPVjh3TUY5UVgxZ3RNakF5TlRFeU16QXhNRE0yTlRndWFuQm58NjJkODRiNTkzOTM4NTM0M2U4MmNlMzZhODg0YzRlZTJmM2FmYjI0MzVlZTZmNzAwMWUzNWM2YzI4MWIwYzA4ZA&feedId=58083&k=3a034f8fad0ee0c0c65958583728430116169e70",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-academy-verde",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Academy - Verde",
+    colour: "Verde",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46196973010&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091607-00-P-X-20260407135258.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTUwOXxpbWFnZS9qcGVnfGFESm1MMmc1WVM4eE16WTRNamt3T1RjM016ZzFOQzl0WldScFlYTmZNVEF3TVRBNU1UWXdOMTh3TUY5UVgxZ3RNakF5TmpBME1EY3hNelV5TlRndWFuQm58MWEwM2IyZTIzNjYzOTQ5YjI1OTM5OWVlZWFiNTU4NjYzMzQyMzVhMGE2N2IyMmZhOTgwNjhmNDkxZTA3ZjQxOQ&feedId=58083&k=138e74d7187574cbc52cd4291d015465fa68d0a4",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
     id: "nike-camiseta-nike-dri-fit-fc-gris",
     brand: "Nike",
     model: "Camiseta Nike Dri-FIT FC - Gris",
@@ -178381,6 +178165,222 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdr7735-060-t-shirt-nike-dri-fit-fc-anthracite",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dr7735-060_a.webp",
         sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-premier-marino",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Premier - Marino",
+    colour: "Marino",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 56.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46473250626&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001124700-00-P-X-20261027101051.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA3MHxpbWFnZS9qcGVnfGFEWTRMMmhtTWk4eE5ERXdOVGc0TWpFNU9EQTBOaTl0WldScFlYTmZNVEF3TVRFeU5EY3dNRjh3TUY5UVgxZ3RNakF5TmpFd01qY3hNREV3TlRFdWFuQm58OGJmZDliNzIyYjdmOTVhZGUzZmMwMWYxMDVkNzE3Mjc3NjdlY2JlYWMzODhlZTlmMTRhN2MyMDRiNzU1YjE2NQ&feedId=58083&k=6fb6e928ff310bf5e020c3784076b48fd0113b10",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-strike",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Strike",
+    colour: "N/D",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 33.2,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45944624777&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103682-00-P-X-20260727160640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjgyN3xpbWFnZS9qcGVnfGFEa3hMMmd3WkM4eE16a3hOekkwTmpVMU5ERTBNaTl0WldScFlYTmZNVEF3TVRFd016WTRNbDh3TUY5UVgxZ3RNakF5TmpBM01qY3hOakEyTkRBdWFuQm58ZjdiY2M4ZDg3OWIzYjA5OTNmM2VjNWYxYWIyZWQ1OGQ4OWQ2MmZkNWY2YTY4N2M1YWU4Y2I5YzIyYmUwMDdmOQ&feedId=58083&k=b41ebb995e50ef6ae720bd74b0d67723d8370786",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-strike-2",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Strike",
+    colour: "N/D",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 41.3,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45944631209&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068863-00-P-X-20251023154012.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTM1NHxpbWFnZS9qcGVnfGFEbGxMMmhpTmk4eE16STJOakExT1RZeU5EUTNPQzl0WldScFlYTmZNVEF3TVRBMk9EZzJNMTh3TUY5UVgxZ3RNakF5TlRFd01qTXhOVFF3TVRJdWFuQm58NTQ0MWRmNTU3ZWQ4ZGNmNTNkZWU0ZmE4NzU2NWNjZTZjZTA2YmNlMGM1NTIxZTBhODE4NWY3MWYyNTA0MjMyOQ&feedId=58083&k=da7f1e94f29539b7d7031efbedfe7e51807f0afb",
+        sizes: ["L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-strike-azul",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Strike - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.39,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265334347&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000770617-00-S-M-20211229170617.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTcyMHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJoa055OW9ZV1l2TVRBMU1UQXhNamcxTVRNd05UUXVhbkJufGU1NDAwYzg0YThhYjc0ZWE0N2YyNDliOWI1ODA2OGQzMTNkNzZmMDQ5NjhhMzA1NzRhOTA4N2NlOWIyMjFiOTM&feedId=58083&k=07c2f06fe8d93ea4c542a0676244615256fd8a0a",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-strike-azul-2",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Strike - Azul",
+    colour: "Azul",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43503022584&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000855707-00-S-M-20221227113124.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ3NHxpbWFnZS9qcGVnfGFHVTFMMmhsTkM4eE1URTFNelk0TWpZNU5ERTNOQzl0WldScFlYTmZNVEF3TURnMU5UY3dOMTh3TUY5VFgwMHRNakF5TWpFeU1qY3hNVE14TWpRdWFuQm58OTViYmVmNGZkYzQzOWQ5MzgzYTNiOWM3YmQ1NzYzN2Y1OWNhYzlmMDg5N2UwYWRmYzg4MWYyMTM4NjhmOTdiZQ&feedId=58083&k=6bdce15c622e94cd647c0082b69eab01295e0983",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-strike-gris",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Strike - Gris",
+    colour: "Gris",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 31.95,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45944624410&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001037191-00-P-X-20250414135935.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDcxNnxpbWFnZS9qcGVnfGFEWTBMMmhqWmk4eE1qZzJORFkxTkRNeE1UUTFOQzl0WldScFlYTmZNVEF3TVRBek56RTVNVjh3TUY5UVgxZ3RNakF5TlRBME1UUXhNelU1TXpVdWFuQm58ZTBkY2Q0NGY4NzJmY2QyMjMzNGNhNDE3ZmQ0Yjg5NmMwNWUwY2RhMDRjMGNjMzY2NmFlOWMxZmZhMGIxOTYwMQ&feedId=58083&k=a7ae454d3347455c589c0d9d8c0b9ff6d5124cf8",
+        sizes: ["L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-strike-negro",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Strike - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38282538171&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000983825-00-P-X-20240701143948.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDE3NnxpbWFnZS9qcGVnfGFESTBMMmhsWWk4eE1qSXlPVEE0T1RVMU9EVTFPQzl0WldScFlYTmZNVEF3TURrNE16Z3lOVjh3TUY5UVgxZ3RNakF5TkRBM01ERXhORE01TkRndWFuQm58NzY5YjEyMWQyZDNmODI0OTI5ZDE4NzU4ODE3NGZhZDMwMzZjZGNkN2UxOWU1YmM0NGVkZmIzN2E3NmRjNDM2NQ&feedId=58083&k=c1c7ca6a1c3184570ee638d885558d9fa8c2df8d",
+        sizes: ["M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-strike-negro-2",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Strike - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.59,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43854048233&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001079015-00-P-X-20260130123429.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDU0NHxpbWFnZS9qcGVnfGFETTNMMmcyTlM4eE16VXpNamN6TmpjNE1qTTJOaTl0WldScFlYTmZNVEF3TVRBM09UQXhOVjh3TUY5UVgxZ3RNakF5TmpBeE16QXhNak0wTWprdWFuQm58ZjI5MThiNTZkNWE1NmI3MmY1NzIyMDlkODhhYTY0NTM3ZWJiNTllMTQ2MTM5MzRhNzA3NzAzYTM4NDNjNGM4MQ&feedId=58083&k=b72744035ca9e8d79b9b4aebc9883e83c1123e48",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-strike-oro",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Strike - Oro",
+    colour: "Oro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43503028709&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001037707-00-P-X-20250513163354.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY2M3xpbWFnZS9qcGVnfGFEbGpMMmhqTUM4eE1qa3lNVGsyTlRjM01qZ3pNQzl0WldScFlYTmZNVEF3TVRBek56Y3dOMTh3TUY5UVgxZ3RNakF5TlRBMU1UTXhOak16TlRRdWFuQm58NjYyZDVhNjE1MWIyMWVmMjI4M2FjYTA5YTg5NTMwMDhlMzU2MzNkNTE2ZmQzMjY4Y2Y5M2NmOTA1M2RlODBjZA&feedId=58083&k=6b6e9522e6a694621cc5f32be27e08007956d29a",
+        sizes: ["M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-strike-rojo",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Strike - Rojo",
+    colour: "Rojo",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 38.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44538941867&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091635-00-P-X-20260420130559.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc5OHxpbWFnZS9qcGVnfGFHVTBMMmhqT0M4eE16Y3dPVFl3T1RVNU9UQXdOaTl0WldScFlYTmZNVEF3TVRBNU1UWXpOVjh3TUY5UVgxZ3RNakF5TmpBME1qQXhNekExTlRrdWFuQm58YTVjYmNjNjk4MWFhNGFiODIxMGYyZGFkMzAxZWNmZWE1MzY1MTY3ODczNjUzOTY4OTYwMzhlMTMzZDg2OGU2Ng&feedId=58083&k=e534178f3e48c3bdb87198238dddbd85db561b72",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-strike-rosa",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Strike - Rosa",
+    colour: "Rosa",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.87,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45944628927&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000962888-00-P-X-20240520155247.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE5M3xpbWFnZS9qcGVnfGFEVTRMMmd6TVM4eE1qRTFNRFE0TlRnM05qYzJOaTl0WldScFlYTmZNVEF3TURrMk1qZzRPRjh3TUY5UVgxZ3RNakF5TkRBMU1qQXhOVFV5TkRjdWFuQm58ODgwZTg5YTg2ZjA2MmFkOWM0YjU5NDEyOTZkYTcyOGM1MGQ0ZDg5ODY5OWY3YjAxZmEzY2IzNGRhMjk4MWZiMg&feedId=58083&k=21a5fc794e411e29b07f795f39aa7f40aabc2744",
+        sizes: ["L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-dri-fit-strike-verde",
+    brand: "Nike",
+    model: "Camiseta Nike Dri-fit Strike - Verde",
+    colour: "Verde",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.39,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265337116&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000829894-00-S-M-20220429092309.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjEzMnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnNFpDOW9ORGN2TVRBM01EVXlNRFUxT1RJd09UUXVhbkJufDI2MjZlNjc3ZmNjZjVkZDllNzI3MzdmZTQ3YjRhN2MxMTg3NGIyOGEwOTk4ZWM4OWJiODJkYWRkOWE3NGMzNjE&feedId=58083&k=4bffe07d554543a03a20aa83294f7de2d32b931c",
+        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -178936,6 +178936,24 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-camiseta-strike-negro",
+    brand: "Nike",
+    model: "Camiseta Nike Strike - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 44.15,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46258196599&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118844-00-P-X-20261006132749.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzE0MXxpbWFnZS9qcGVnfGFEQTVMMmhrWlM4eE5EQTJNVEV4TXpJME5UY3lOaTl0WldScFlYTmZNVEF3TVRFeE9EZzBORjh3TUY5UVgxZ3RNakF5TmpFd01EWXhNekkzTkRrdWFuQm58NTYwMDU3MGIzZGM1Y2RiNjFjNjM1NTgxYWZhMDBmNDUzYTdhM2I3M2JjOGNjZTVhYWU4Y2VkN2U2MTNjZDY2OA&feedId=58083&k=96d9e4f02b63aed73b295e5cb4efc26569447f22",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
     id: "nike-camiseta-nike-swoosh-negro",
     brand: "Nike",
     model: "Camiseta Nike Swoosh - Negro",
@@ -178959,6 +178977,24 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdh3890-010-t-shirt-nike-swoosh-noir-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dh3890-010-phsfm001_new.webp",
         sizes: ["M"],
+      },
+    ],
+  },
+  {
+    id: "nike-camiseta-therma-fit-strike-verde",
+    brand: "Nike",
+    model: "Camiseta Nike Therma-fit Strike - Verde",
+    colour: "Verde",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 55.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39409902061&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001014844-00-P-X-20241115123025.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjMzOXxpbWFnZS9qcGVnfGFHSXlMMmhtWmk4eE1qUTVORE0xTlRNNU9EWTROaTl0WldScFlYTmZNVEF3TVRBeE5EZzBORjh3TUY5UVgxZ3RNakF5TkRFeE1UVXhNak13TWpVdWFuQm58YWVlNWExM2RkYTE0ZjI0ZGRhNWYzOTc3NTM0ZjliMGVhNjUxOTM1MzliNDcyMDQwMzRlNzBjNjllYzZkZDkwYw&feedId=58083&k=dc46ff51fdc66f629d0ab82f9e005bfd659e77e5",
+        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -179952,42 +179988,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-camiseta-strike-negro",
-    brand: "Nike",
-    model: "Camiseta Strike - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 44.15,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46258196599&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118844-00-P-X-20261006132749.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzE0MXxpbWFnZS9qcGVnfGFEQTVMMmhrWlM4eE5EQTJNVEV4TXpJME5UY3lOaTl0WldScFlYTmZNVEF3TVRFeE9EZzBORjh3TUY5UVgxZ3RNakF5TmpFd01EWXhNekkzTkRrdWFuQm58NTYwMDU3MGIzZGM1Y2RiNjFjNjM1NTgxYWZhMDBmNDUzYTdhM2I3M2JjOGNjZTVhYWU4Y2VkN2U2MTNjZDY2OA&feedId=58083&k=96d9e4f02b63aed73b295e5cb4efc26569447f22",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-camiseta-therma-fit-strike-verde",
-    brand: "Nike",
-    model: "Camiseta Therma-fit Strike - Verde",
-    colour: "Verde",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 55.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39409902061&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001014844-00-P-X-20241115123025.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjMzOXxpbWFnZS9qcGVnfGFHSXlMMmhtWmk4eE1qUTVORE0xTlRNNU9EWTROaTl0WldScFlYTmZNVEF3TVRBeE5EZzBORjh3TUY5UVgxZ3RNakF5TkRFeE1UVXhNak13TWpVdWFuQm58YWVlNWExM2RkYTE0ZjI0ZGRhNWYzOTc3NTM0ZjliMGVhNjUxOTM1MzliNDcyMDQwMzRlNzBjNjllYzZkZDkwYw&feedId=58083&k=dc46ff51fdc66f629d0ab82f9e005bfd659e77e5",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
     id: "nike-chaleco-3a-equipacion-tottenham-2024-25-marron",
     brand: "Nike",
     model: "Chaleco 3ª Equipación Tottenham 2024/25 - Marrón",
@@ -180069,27 +180069,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-chandal-barcelona-24-25-entrenamiento",
-    brand: "Nike",
-    model: "Chándal Barcelona 24/25 Entrenamiento",
-    colour: "N/D",
-    type: "set",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 97.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46103488885&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000984178-00-P-X-20240726145343.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc2NXxpbWFnZS9qcGVnfGFHSm1MMmhsT1M4eE1qSTNPREl4T0RneE56VTJOaTl0WldScFlYTmZNVEF3TURrNE5ERTNPRjh3TUY5UVgxZ3RNakF5TkRBM01qWXhORFV6TkRNdWFuQm58ZTI4NzM5MGM3Y2Y5ZDZkMGVkZmE3YzU5NjAyNWU5ZmIyNWQ3NDJlYTFiMTlkNjA2NzRjMWIyYmQxYzg5OTE4ZA&feedId=58083&k=971587da79accc690114773acfa73b380a14eafd",
-        sizes: ["S"],
-      },
-    ],
-  },
-];
-
-const minedApparelProductsChunk33: ApparelProduct[] = [
-  {
     id: "nike-chandal-de-la-copa-mundial-2022-france-gfa-bb-azul",
     brand: "Nike",
     model: "Chándal de la Copa Mundial 2022 France GFA BB - Azul",
@@ -180116,6 +180095,9 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk33: ApparelProduct[] = [
   {
     id: "nike-chandal-de-tercera-equipacion-liverpool-fc-2024-25-strike-gris",
     brand: "Nike",
@@ -180179,6 +180161,24 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhf1835-360-veste-de-survetement-third-tottenham-2024-25-faded-spruce-enamel-green",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hf1835-360-vpsrh001.webp",
         sizes: ["M"],
+      },
+    ],
+  },
+  {
+    id: "nike-chandal-barcelona-24-25-entrenamiento",
+    brand: "Nike",
+    model: "Chándal Nike Barcelona 24/25 Entrenamiento",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 97.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46103488885&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000984178-00-P-X-20240726145343.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc2NXxpbWFnZS9qcGVnfGFHSm1MMmhsT1M4eE1qSTNPREl4T0RneE56VTJOaTl0WldScFlYTmZNVEF3TURrNE5ERTNPRjh3TUY5UVgxZ3RNakF5TkRBM01qWXhORFV6TkRNdWFuQm58ZTI4NzM5MGM3Y2Y5ZDZkMGVkZmE3YzU5NjAyNWU5ZmIyNWQ3NDJlYTFiMTlkNjA2NzRjMWIyYmQxYzg5OTE4ZA&feedId=58083&k=971587da79accc690114773acfa73b380a14eafd",
+        sizes: ["S"],
       },
     ],
   },
@@ -185788,7 +185788,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
   {
     id: "nike-chubasquero-de-entrenamiento-atletico-de-madrid-25-26-prematch-rojo",
     brand: "Nike",
-    model: "Chubasquero de entrenamiento Atletico De Madrid 25/26 Prematch - Rojo",
+    model: "Chubasquero de entrenamiento Nike Atletico De Madrid 25/26 Prematch - Rojo",
     colour: "Rojo",
     type: "jacket",
     offers: [
@@ -186529,42 +186529,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-espinilleras-charge",
-    brand: "Nike",
-    model: "Espinilleras Charge",
-    colour: "N/D",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 28.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45147210855&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103637-00-P-X-20260625085135.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODAxOHxpbWFnZS9qcGVnfGFEQmxMMmcyT0M4eE16ZzFNVEkyTlRVNU56UTNNQzl0WldScFlYTmZNVEF3TVRFd016WXpOMTh3TUY5UVgxZ3RNakF5TmpBMk1qVXdPRFV4TXpVdWFuQm58YzQzZDk2NzgwYTUyMjI5NGM0YjBmNDMwZjM2NjQ2YTNiMWYzMDk3Yjk4ZTM1MDljODU4Y2U5YTY3NTQ1MzRiNQ&feedId=58083&k=dc8361025a8b1738b588752c91d26089a81ccff4",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "nike-espinilleras-charge-rojo",
-    brand: "Nike",
-    model: "Espinilleras Charge - Rojo",
-    colour: "Rojo",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 16.79,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41865902933&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053759-00-P-X-20250717135511.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU3N3xpbWFnZS9qcGVnfGFEY3dMMmhqWlM4eE16QTJNREkwT0RZd01EWXdOaTl0WldScFlYTmZNVEF3TVRBMU16YzFPVjh3TUY5UVgxZ3RNakF5TlRBM01UY3hNelUxTVRFdWFuQm58NGZjNzkyOTEwZmVkYzQ2NDg1NWFjYzAxOTU1NGIyNmU2NDkyMTQ3MjA1ODI3NjE5ZDY1NTc4MjNhMWQ3NTlhZA&feedId=58083&k=436921a63a449f858f884a591ce9588163a355dd",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
     id: "nike-espinilleras-de-futbol-nike-cr7-mercurial-lite-rojo",
     brand: "Nike",
     model: "Espinilleras de fútbol Nike CR7 Mercurial Lite - Rojo",
@@ -186619,186 +186583,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-espinilleras-guard-stay-ii-blanco",
-    brand: "Nike",
-    model: "Espinilleras Guard Stay-ii - Blanco",
-    colour: "Blanco",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 10.79,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40512853574&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000967041-00-P-X-20250123161922.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w3NTc3M3xpbWFnZS9qcGVnfGFEWmlMMmcwTnk4eE1qWTVOekF5TWpVeU9UVTJOaTl0WldScFlYTmZNVEF3TURrMk56QTBNVjh3TUY5UVgxZ3RNakF5TlRBeE1qTXhOakU1TWpJdWFuQm58ZWU3YzQ2NTM2NmM5NDIzN2Q5NjA1YTc1YmMxYzFiMWViMmM1YTk4YmIxMGRmNDU4MjExMDIyYTA1ZTI4N2Q0Yg&feedId=58083&k=bf36347f5cab66a42e1892c08ed788edffa03001",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "nike-espinilleras-guard-stay-ii-negro",
-    brand: "Nike",
-    model: "Espinilleras Guard Stay-ii - Negro",
-    colour: "Negro",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 10.79,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40512853573&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000967040-00-P-X-20250123161922.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE0NnxpbWFnZS9qcGVnfGFEYzFMMmhoTXk4eE1qWTVOekF5TVRrek9UYzBNaTl0WldScFlYTmZNVEF3TURrMk56QTBNRjh3TUY5UVgxZ3RNakF5TlRBeE1qTXhOakU1TWpJdWFuQm58Njk5N2ZjMDU0MTgwNjE5MzM2MTRiN2U3NmRiMWJkNjViMTNhZjAzYzUzNWFiYjM1YmMzZjJiOTllNzdlZTRlYQ&feedId=58083&k=5c2dc10fa60dce70553a45934b76ce16383da4a5",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "nike-espinilleras-mercurial-flylite-superlock",
-    brand: "Nike",
-    model: "Espinilleras Mercurial Flylite Superlock",
-    colour: "N/D",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 59.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45147210849&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103633-00-P-X-20260625085135.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ2NHxpbWFnZS9qcGVnfGFHTXhMMmcxTmk4eE16ZzFNVEkyTlRBM016RTRNaTl0WldScFlYTmZNVEF3TVRFd016WXpNMTh3TUY5UVgxZ3RNakF5TmpBMk1qVXdPRFV4TXpVdWFuQm58MTI2NDEyY2RkNjI5NDJiOWM0YTdlNWYwODRmOGY3ZTY1NGMzMDI5MzU3YWQwODU0YTJkMzJiODBhZDA0MjhlMA&feedId=58083&k=14138da97ae7619e02354477eed8e0b24f5166be",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "nike-espinilleras-mercurial-flylite-superlock-rojo",
-    brand: "Nike",
-    model: "Espinilleras Mercurial Flylite Superlock - Rojo",
-    colour: "Rojo",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 41.3,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45854596664&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053755-00-P-X-20250718103913.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY0NXxpbWFnZS9qcGVnfGFEZ3pMMmczTlM4eE16QTJNalEyTXpNMU5qazFPQzl0WldScFlYTmZNVEF3TVRBMU16YzFOVjh3TUY5UVgxZ3RNakF5TlRBM01UZ3hNRE01TVRNdWFuQm58OTUzMDVjM2JmNjZkNWVjMzg2ZjQyNmRlODM4NmI4NzEyZDdiMzkwYTM3N2YyNjNkZDhkZDBiZmE3NDE5MzhjYQ&feedId=58083&k=ef38ca8ebb8baba428d7d2684c46df872a76d63b",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "nike-espinilleras-mercurial-hardshell",
-    brand: "Nike",
-    model: "Espinilleras Mercurial Hardshell",
-    colour: "N/D",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 29.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45237586948&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103636-00-P-X-20260706140715.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU2NHxpbWFnZS9qcGVnfGFEbG1MMmcyWkM4eE16ZzNOVEF5T1RNME5ESTROaTl0WldScFlYTmZNVEF3TVRFd016WXpObDh3TUY5UVgxZ3RNakF5TmpBM01EWXhOREEzTVRVdWFuQm58YzE5ZjcyZTA4YzRjNTFmMGI2NjMwNWJjMjU4ZjMzNjkxNTdkMDM1ZGY3MGIzNjA4ZDgxOGY2NzUwNGM4NWQxNg&feedId=58083&k=9cced1206ff49c08558e6fef8c8914dbbd95c2b1",
-        sizes: ["XS", "S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "nike-espinilleras-mercurial-hardshell-rojo",
-    brand: "Nike",
-    model: "Espinilleras Mercurial Hardshell - Rojo",
-    colour: "Rojo",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265346420&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000896590-00-P-X-20230203090732.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA3MXxpbWFnZS9qcGVnfGFHUmxMMmhoWXk4eE1USTBPREU0TVRVME1qazBNaTl0WldScFlYTmZNVEF3TURnNU5qVTVNRjh3TUY5UVgxZ3RNakF5TXpBeU1ETXdPVEEzTXpJdWFuQm58N2I2MjBmNWEyMDAyNmU4MDNjZjMzMTBiMDA1Yzg2MmU5Y2FmNWRlM2VmNzI2MDllYTUxZjQ3OWUwNmMyNGMzNQ&feedId=58083&k=c594863d092d65fff7d742fdee93210e2a54cfae",
-        sizes: ["M", "L"],
-      },
-    ],
-  },
-  {
-    id: "nike-espinilleras-mercurial-hardshell-rojo-2",
-    brand: "Nike",
-    model: "Espinilleras Mercurial Hardshell - Rojo",
-    colour: "Rojo",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 24.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45854596677&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053758-00-P-X-20250703160045.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk2OXxpbWFnZS9qcGVnfGFEZzJMMmhpTlM4eE16QXpNVEUyTnpjeU1UVXdNaTl0WldScFlYTmZNVEF3TVRBMU16YzFPRjh3TUY5UVgxZ3RNakF5TlRBM01ETXhOakF3TkRVdWFuQm58MzZkM2E5OTM3MTU0OTMyMWIzMGE0OTAwYWEyNGM4ZmE1M2IxNGQ1MGI1YWM5MzU4NTg0ZjE2YTM2MTBkNGJlMQ&feedId=58083&k=a75d56c8e89403d37d6bfd95ef2ff0bca2ab1f21",
-        sizes: ["XS", "S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "nike-espinilleras-mercurial-lite-negro",
-    brand: "Nike",
-    model: "Espinilleras Mercurial Lite - Negro",
-    colour: "Negro",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 26.23,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45220142851&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103635-00-P-X-20260702112701.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc0NnxpbWFnZS9qcGVnfGFERTFMMmd3Wmk4eE16ZzJOamcxTWpBeU5ETTFNQzl0WldScFlYTmZNVEF3TVRFd016WXpOVjh3TUY5UVgxZ3RNakF5TmpBM01ESXhNVEkzTURFdWFuQm58YThiOTI5NDBlZTA5ZmY4YTM1NGE0NjdhNzhjNzhmZWYyNzQ4OTY1MDhlNDQ3NmEwZDU3ZTRiMjVkYjlkZmI3NQ&feedId=58083&k=f4030e38a541039d70148e4653aa55c19f60aeb1",
-        sizes: ["XS", "S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "nike-espinilleras-mercurial-lite-superlock-rojo",
-    brand: "Nike",
-    model: "Espinilleras Mercurial Lite Superlock - Rojo",
-    colour: "Rojo",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 29.47,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41865902910&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053756-00-P-X-20250718123444.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTkyOXxpbWFnZS9qcGVnfGFEYzBMMmhpWWk4eE16QTJNamMyTlRFeE56UTNNQzl0WldScFlYTmZNVEF3TVRBMU16YzFObDh3TUY5UVgxZ3RNakF5TlRBM01UZ3hNak0wTkRRdWFuQm58YTA2YjgyY2I4ZjQ0Njk3ZDQzNDkyMGJkMmVlZmExNGE1MjYzODFmNWUzYzY0YzNkN2Q5NDU4ZmI2NmYzMDVmNA&feedId=58083&k=6a3d41cce911e65ad075143ee674479c29c0f56d",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "nike-espinilleras-mercurial-superlock",
-    brand: "Nike",
-    model: "Espinilleras Mercurial Superlock",
-    colour: "N/D",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 29.91,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45220142845&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103634-00-P-X-20260625085135.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA1OXxpbWFnZS9qcGVnfGFEZGxMMmcxWkM4eE16ZzFNVEkyTlRJMk9UYzVNQzl0WldScFlYTmZNVEF3TVRFd016WXpORjh3TUY5UVgxZ3RNakF5TmpBMk1qVXdPRFV4TXpVdWFuQm58ZGUzOTc3NzRlNzU3NjZiYWU5YzNhOTU5ZjQ4ZGY0OTdhNGI0ZDJlNmFkYTZjY2MwNGRmZTU1YzliMWI4Y2IyYw&feedId=58083&k=53635ac278e28268ead3c4a7663db4b26b5d6605",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
     id: "nike-espinilleras-nike-beige",
     brand: "Nike",
     model: "Espinilleras Nike - Beige",
@@ -186828,6 +186612,24 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fsp2164-113-protege-tibias-de-charge-nike-beige-rouge-cramoisi",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_sp2164-113-phcfz001-ss25.webp",
         sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-espinilleras-charge",
+    brand: "Nike",
+    model: "Espinilleras Nike Charge",
+    colour: "N/D",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 28.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45147210855&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103637-00-P-X-20260625085135.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODAxOHxpbWFnZS9qcGVnfGFEQmxMMmcyT0M4eE16ZzFNVEkyTlRVNU56UTNNQzl0WldScFlYTmZNVEF3TVRFd016WXpOMTh3TUY5UVgxZ3RNakF5TmpBMk1qVXdPRFV4TXpVdWFuQm58YzQzZDk2NzgwYTUyMjI5NGM0YjBmNDMwZjM2NjQ2YTNiMWYzMDk3Yjk4ZTM1MDljODU4Y2U5YTY3NTQ1MzRiNQ&feedId=58083&k=dc8361025a8b1738b588752c91d26089a81ccff4",
+        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -187006,15 +186808,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
           { size: "L", price: 27.99, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdx4608-010-protege-tibias-nike-charge-noir-noir-blanc" },
         ],
       },
-      {
-        store: "ForumSport",
-        price: 21.24,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43787072884&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000940087-00-P-X-20241030132030.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDQ2NHxpbWFnZS9qcGVnfGFESXpMMmczTWk4eE1qUTJNVEF4Tmprd056Z3dOaTl0WldScFlYTmZNVEF3TURrME1EQTROMTh3TUY5UVgxZ3RNakF5TkRFd016QXhNekl3TXpBdWFuQm58MjFhYmZmOWM4OWYxMjlhNWJhZGViNDRkYzgyZjcyYjYzZjJmOGYxNDgzN2E2MDYxMzU4NjIxMGFlZGY1MDc3MA&feedId=58083&k=e2082bcec09b6d6b64ab2bb56493a47da92f21d1",
-        sizes: ["S", "M", "L"],
-      },
     ],
   },
   {
@@ -187040,6 +186833,15 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 21.24,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43787072884&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000940087-00-P-X-20241030132030.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDQ2NHxpbWFnZS9qcGVnfGFESXpMMmczTWk4eE1qUTJNVEF4Tmprd056Z3dOaTl0WldScFlYTmZNVEF3TURrME1EQTROMTh3TUY5UVgxZ3RNakF5TkRFd016QXhNekl3TXpBdWFuQm58MjFhYmZmOWM4OWYxMjlhNWJhZGViNDRkYzgyZjcyYjYzZjJmOGYxNDgzN2E2MDYxMzU4NjIxMGFlZGY1MDc3MA&feedId=58083&k=e2082bcec09b6d6b64ab2bb56493a47da92f21d1",
+        sizes: ["S", "M", "L"],
+      },
+      {
         store: "FootStoreFR",
         price: 19.0,
         shipping: 7.99,
@@ -187051,7 +186853,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-espinilleras-nike-charge-rojo",
+    id: "nike-espinilleras-charge-rojo",
     brand: "Nike",
     model: "Espinilleras Nike Charge - Rojo",
     colour: "Rojo",
@@ -187067,6 +186869,15 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         sizes: ["XL"],
       },
       {
+        store: "ForumSport",
+        price: 16.79,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41865902933&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053759-00-P-X-20250717135511.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU3N3xpbWFnZS9qcGVnfGFEY3dMMmhqWlM4eE16QTJNREkwT0RZd01EWXdOaTl0WldScFlYTmZNVEF3TVRBMU16YzFPVjh3TUY5UVgxZ3RNakF5TlRBM01UY3hNelUxTVRFdWFuQm58NGZjNzkyOTEwZmVkYzQ2NDg1NWFjYzAxOTU1NGIyNmU2NDkyMTQ3MjA1ODI3NjE5ZDY1NTc4MjNhMWQ3NTlhZA&feedId=58083&k=436921a63a449f858f884a591ce9588163a355dd",
+        sizes: ["S", "M", "L"],
+      },
+      {
         store: "FootStoreFR",
         price: 23.0,
         shipping: 7.99,
@@ -187074,6 +186885,42 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdx4608-635-protege-tibias-nike-charge-rouge-cramoisi-noir-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dx4608-635-phsfh001-nw112724.webp",
         sizes: ["XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-espinilleras-guard-stay-ii-blanco",
+    brand: "Nike",
+    model: "Espinilleras Nike Guard Stay-ii - Blanco",
+    colour: "Blanco",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 10.79,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40512853574&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000967041-00-P-X-20250123161922.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w3NTc3M3xpbWFnZS9qcGVnfGFEWmlMMmcwTnk4eE1qWTVOekF5TWpVeU9UVTJOaTl0WldScFlYTmZNVEF3TURrMk56QTBNVjh3TUY5UVgxZ3RNakF5TlRBeE1qTXhOakU1TWpJdWFuQm58ZWU3YzQ2NTM2NmM5NDIzN2Q5NjA1YTc1YmMxYzFiMWViMmM1YTk4YmIxMGRmNDU4MjExMDIyYTA1ZTI4N2Q0Yg&feedId=58083&k=bf36347f5cab66a42e1892c08ed788edffa03001",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "nike-espinilleras-guard-stay-ii-negro",
+    brand: "Nike",
+    model: "Espinilleras Nike Guard Stay-ii - Negro",
+    colour: "Negro",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 10.79,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40512853573&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000967040-00-P-X-20250123161922.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODE0NnxpbWFnZS9qcGVnfGFEYzFMMmhoTXk4eE1qWTVOekF5TVRrek9UYzBNaTl0WldScFlYTmZNVEF3TURrMk56QTBNRjh3TUY5UVgxZ3RNakF5TlRBeE1qTXhOakU1TWpJdWFuQm58Njk5N2ZjMDU0MTgwNjE5MzM2MTRiN2U3NmRiMWJkNjViMTNhZjAzYzUzNWFiYjM1YmMzZjJiOTllNzdlZTRlYQ&feedId=58083&k=5c2dc10fa60dce70553a45934b76ce16383da4a5",
+        sizes: [],
       },
     ],
   },
@@ -187150,6 +186997,24 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-espinilleras-nike-mercurial-lite-negro-2",
+    brand: "Nike",
+    model: "Espinilleras Nike Merc Lite - Negro",
+    colour: "Negro",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 26.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39115898759&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000829886-00-P-X-20220429092309.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTQxMXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJoa05TOW9Nell2TVRBM01EVXlNRFF4TlRBek1ESXVhbkJufDhjZjJhMDEyNDUxYTIzMjdjZTNlMzZiMmFhNzRiZWVlNzExZWYyOWYxNjMzMWNhNTE1NzNhOGFmZjY5NjI5MWU&feedId=58083&k=f08741f7b20daf47ac438159380e3a38d46f1c6a",
+        sizes: ["XS", "S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
     id: "nike-espinilleras-nike-mercurial-azul",
     brand: "Nike",
     model: "Espinilleras Nike Mercurial - Azul",
@@ -187165,14 +187030,23 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_dn3614-420-phcfz001-nw112724.jpg&feedId=89032&k=d106e29f59e528dc54110be4b2fe22be4aba12f5",
         sizes: ["XS", "S", "M", "L", "XL"],
       },
+    ],
+  },
+  {
+    id: "nike-espinilleras-mercurial-flylite-superlock",
+    brand: "Nike",
+    model: "Espinilleras Nike Mercurial Flylite Superlock",
+    colour: "N/D",
+    type: "shinguards",
+    offers: [
       {
         store: "ForumSport",
-        price: 24.99,
-        shipping: 5.99,
+        price: 59.99,
+        shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265362069&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000984137-00-P-X-20240801171220.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzAyNXxpbWFnZS9qcGVnfGFEazJMMmc1Tmk4eE1qSTRPREk0TURVNU1qUXhOQzl0WldScFlYTmZNVEF3TURrNE5ERXpOMTh3TUY5UVgxZ3RNakF5TkRBNE1ERXhOekV5TWpBdWFuQm58M2Y5YWFhMmMwMzEyMzRlNzM3YzllMTk2YzA4MGE1NDJjOGU0M2ExY2MzMTIxMmU4YzJiZDE3MWE5OTQzZmIzMw&feedId=58083&k=525b9706e4e69cda25011464f47cf297fe01bc66",
-        sizes: ["M", "L"],
+        url: "https://www.awin1.com/pclick.php?p=45147210849&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103633-00-P-X-20260625085135.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ2NHxpbWFnZS9qcGVnfGFHTXhMMmcxTmk4eE16ZzFNVEkyTlRBM016RTRNaTl0WldScFlYTmZNVEF3TVRFd016WXpNMTh3TUY5UVgxZ3RNakF5TmpBMk1qVXdPRFV4TXpVdWFuQm58MTI2NDEyY2RkNjI5NDJiOWM0YTdlNWYwODRmOGY3ZTY1NGMzMDI5MzU3YWQwODU0YTJkMzJiODBhZDA0MjhlMA&feedId=58083&k=14138da97ae7619e02354477eed8e0b24f5166be",
+        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -187195,7 +187069,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-espinilleras-nike-mercurial-flylite-superlock-rojo",
+    id: "nike-espinilleras-mercurial-flylite-superlock-rojo",
     brand: "Nike",
     model: "Espinilleras Nike Mercurial FlyLite SuperLock - Rojo",
     colour: "Rojo",
@@ -187209,6 +187083,15 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46277680725&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_dn3608-850_ember-glow-aurora-green-aurora-green_1.jpg&feedId=89032&k=6edbc1332cea80a988b69178bda81e3f511c752f",
         sizes: ["M"],
+      },
+      {
+        store: "ForumSport",
+        price: 41.3,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45854596664&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053755-00-P-X-20250718103913.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY0NXxpbWFnZS9qcGVnfGFEZ3pMMmczTlM4eE16QTJNalEyTXpNMU5qazFPQzl0WldScFlYTmZNVEF3TVRBMU16YzFOVjh3TUY5UVgxZ3RNakF5TlRBM01UZ3hNRE01TVRNdWFuQm58OTUzMDVjM2JmNjZkNWVjMzg2ZjQyNmRlODM4NmI4NzEyZDdiMzkwYTM3N2YyNjNkZDhkZDBiZmE3NDE5MzhjYQ&feedId=58083&k=ef38ca8ebb8baba428d7d2684c46df872a76d63b",
+        sizes: ["S", "M", "L"],
       },
       {
         store: "FootStoreFR",
@@ -187249,6 +187132,24 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-espinilleras-mercurial-hardshell",
+    brand: "Nike",
+    model: "Espinilleras Nike Mercurial Hardshell",
+    colour: "N/D",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45237586948&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103636-00-P-X-20260706140715.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU2NHxpbWFnZS9qcGVnfGFEbG1MMmcyWkM4eE16ZzNOVEF5T1RNME5ESTROaTl0WldScFlYTmZNVEF3TVRFd016WXpObDh3TUY5UVgxZ3RNakF5TmpBM01EWXhOREEzTVRVdWFuQm58YzE5ZjcyZTA4YzRjNTFmMGI2NjMwNWJjMjU4ZjMzNjkxNTdkMDM1ZGY3MGIzNjA4ZDgxOGY2NzUwNGM4NWQxNg&feedId=58083&k=9cced1206ff49c08558e6fef8c8914dbbd95c2b1",
+        sizes: ["XS", "S", "M", "L"],
+      },
+    ],
+  },
+  {
     id: "nike-espinilleras-nike-mercurial-hardshell-azul",
     brand: "Nike",
     model: "Espinilleras Nike Mercurial Hardshell - Azul",
@@ -187263,6 +187164,51 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46779485654&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_dn3614-416-phcfz001-nw112724.jpg&feedId=89032&k=025e44e300e7f98532b78f871590dd03ca70e5b5",
         sizes: ["XL"],
+      },
+      {
+        store: "ForumSport",
+        price: 24.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265362069&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000984137-00-P-X-20240801171220.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzAyNXxpbWFnZS9qcGVnfGFEazJMMmc1Tmk4eE1qSTRPREk0TURVNU1qUXhOQzl0WldScFlYTmZNVEF3TURrNE5ERXpOMTh3TUY5UVgxZ3RNakF5TkRBNE1ERXhOekV5TWpBdWFuQm58M2Y5YWFhMmMwMzEyMzRlNzM3YzllMTk2YzA4MGE1NDJjOGU0M2ExY2MzMTIxMmU4YzJiZDE3MWE5OTQzZmIzMw&feedId=58083&k=525b9706e4e69cda25011464f47cf297fe01bc66",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
+    id: "nike-espinilleras-mercurial-hardshell-rojo",
+    brand: "Nike",
+    model: "Espinilleras Nike Mercurial Hardshell - Rojo",
+    colour: "Rojo",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265346420&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000896590-00-P-X-20230203090732.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA3MXxpbWFnZS9qcGVnfGFHUmxMMmhoWXk4eE1USTBPREU0TVRVME1qazBNaTl0WldScFlYTmZNVEF3TURnNU5qVTVNRjh3TUY5UVgxZ3RNakF5TXpBeU1ETXdPVEEzTXpJdWFuQm58N2I2MjBmNWEyMDAyNmU4MDNjZjMzMTBiMDA1Yzg2MmU5Y2FmNWRlM2VmNzI2MDllYTUxZjQ3OWUwNmMyNGMzNQ&feedId=58083&k=c594863d092d65fff7d742fdee93210e2a54cfae",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
+    id: "nike-espinilleras-mercurial-hardshell-rojo-2",
+    brand: "Nike",
+    model: "Espinilleras Nike Mercurial Hardshell - Rojo",
+    colour: "Rojo",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 24.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45854596677&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053758-00-P-X-20250703160045.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk2OXxpbWFnZS9qcGVnfGFEZzJMMmhpTlM4eE16QXpNVEUyTnpjeU1UVXdNaTl0WldScFlYTmZNVEF3TVRBMU16YzFPRjh3TUY5UVgxZ3RNakF5TlRBM01ETXhOakF3TkRVdWFuQm58MzZkM2E5OTM3MTU0OTMyMWIzMGE0OTAwYWEyNGM4ZmE1M2IxNGQ1MGI1YWM5MzU4NTg0ZjE2YTM2MTBkNGJlMQ&feedId=58083&k=a75d56c8e89403d37d6bfd95ef2ff0bca2ab1f21",
+        sizes: ["XS", "S", "M", "L"],
       },
     ],
   },
@@ -187318,6 +187264,15 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 26.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41884340711&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000859690-00-P-X-20221201163239.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTgzMXxpbWFnZS9qcGVnfGFEUTRMMmhtWmk4eE1UQTRNREF5TnpJM05USTVOQzl0WldScFlYTmZNVEF3TURnMU9UWTVNRjh3TUY5UVgxZ3RNakF5TWpFeU1ERXhOak15TXprdWFuQm58NDcwNWMyNzQ1ZjVkNjFkN2YzOGM5NzRiY2U1Y2RjMWFkMzgzZGYwNjE2YjhhYzllOWFhNjUxMmFiMDQxODYwMw&feedId=58083&k=4155a3e282ba79d96a426e5ae736e741f4ba7551",
+        sizes: ["XS", "S", "M", "L", "XL"],
+      },
+      {
         store: "FootStoreFR",
         price: 25.45,
         priceMax: 34.27,
@@ -187333,15 +187288,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
           { size: "L", price: 25.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3611-100-protege-tibias-nike-mercurial-lite-blanc-noir" },
           { size: "XL", price: 34.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3611-100-protege-tibias-nike-mercurial-lite-blanc-noir" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 26.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41884340711&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000859690-00-P-X-20221201163239.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTgzMXxpbWFnZS9qcGVnfGFEUTRMMmhtWmk4eE1UQTRNREF5TnpJM05USTVOQzl0WldScFlYTmZNVEF3TURnMU9UWTVNRjh3TUY5UVgxZ3RNakF5TWpFeU1ERXhOak15TXprdWFuQm58NDcwNWMyNzQ1ZjVkNjFkN2YzOGM5NzRiY2U1Y2RjMWFkMzgzZGYwNjE2YjhhYzllOWFhNjUxMmFiMDQxODYwMw&feedId=58083&k=4155a3e282ba79d96a426e5ae736e741f4ba7551",
-        sizes: ["XS", "S", "M", "L", "XL"],
       },
     ],
   },
@@ -187504,7 +187450,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-espinilleras-nike-mercurial-lite-negro-2",
+    id: "nike-espinilleras-mercurial-lite-negro",
     brand: "Nike",
     model: "Espinilleras Nike Mercurial Lite - Negro",
     colour: "Negro",
@@ -187528,6 +187474,15 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 26.23,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45220142851&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103635-00-P-X-20260702112701.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc0NnxpbWFnZS9qcGVnfGFERTFMMmd3Wmk4eE16ZzJOamcxTWpBeU5ETTFNQzl0WldScFlYTmZNVEF3TVRFd016WXpOVjh3TUY5UVgxZ3RNakF5TmpBM01ESXhNVEkzTURFdWFuQm58YThiOTI5NDBlZTA5ZmY4YTM1NGE0NjdhNzhjNzhmZWYyNzQ4OTY1MDhlNDQ3NmEwZDU3ZTRiMjVkYjlkZmI3NQ&feedId=58083&k=f4030e38a541039d70148e4653aa55c19f60aeb1",
+        sizes: ["XS", "S", "M", "L"],
+      },
+      {
         store: "FootStoreFR",
         price: 25.45,
         priceMax: 34.27,
@@ -187543,15 +187498,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
           { size: "L", price: 25.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3611-010-protege-tibias-nike-mercurial-lite-noir-blanc" },
           { size: "XL", price: 34.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3611-010-protege-tibias-nike-mercurial-lite-noir-blanc" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 26.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39115898759&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000829886-00-P-X-20220429092309.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTQxMXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJoa05TOW9Nell2TVRBM01EVXlNRFF4TlRBek1ESXVhbkJufDhjZjJhMDEyNDUxYTIzMjdjZTNlMzZiMmFhNzRiZWVlNzExZWYyOWYxNjMzMWNhNTE1NzNhOGFmZjY5NjI5MWU&feedId=58083&k=f08741f7b20daf47ac438159380e3a38d46f1c6a",
-        sizes: ["XS", "S", "M", "L", "XL"],
       },
     ],
   },
@@ -187637,6 +187583,24 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-espinilleras-mercurial-lite-superlock-rojo",
+    brand: "Nike",
+    model: "Espinilleras Nike Mercurial Lite Superlock - Rojo",
+    colour: "Rojo",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.47,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41865902910&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053756-00-P-X-20250718123444.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTkyOXxpbWFnZS9qcGVnfGFEYzBMMmhpWWk4eE16QTJNamMyTlRFeE56UTNNQzl0WldScFlYTmZNVEF3TVRBMU16YzFObDh3TUY5UVgxZ3RNakF5TlRBM01UZ3hNak0wTkRRdWFuQm58YTA2YjgyY2I4ZjQ0Njk3ZDQzNDkyMGJkMmVlZmExNGE1MjYzODFmNWUzYzY0YzNkN2Q5NDU4ZmI2NmYzMDVmNA&feedId=58083&k=6a3d41cce911e65ad075143ee674479c29c0f56d",
+        sizes: ["L"],
+      },
+    ],
+  },
+  {
     id: "nike-espinilleras-nike-mercurial-lite-violeta",
     brand: "Nike",
     model: "Espinilleras Nike Mercurial Lite - Violeta",
@@ -187669,6 +187633,24 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=41865902914&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053757-00-P-X-20250717135511.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY5NXxpbWFnZS9qcGVnfGFEazNMMmcyWWk4eE16QTJNREkwTnpneE5ERTNOQzl0WldScFlYTmZNVEF3TVRBMU16YzFOMTh3TUY5UVgxZ3RNakF5TlRBM01UY3hNelUxTVRFdWFuQm58MzIwZTk0MDM3Mjc0NjI1NjYwMzcwMDYyYWM3YjZiMzZmNTQ4ZTkwYzZmNzM2YTAwMTc1ZDkyOWJmNDM4ZDIyMg&feedId=58083&k=53c41d820e291abc602839a6bdcccfa531be461f",
         sizes: ["L"],
+      },
+    ],
+  },
+  {
+    id: "nike-espinilleras-mercurial-superlock",
+    brand: "Nike",
+    model: "Espinilleras Nike Mercurial Superlock",
+    colour: "N/D",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.91,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45220142845&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103634-00-P-X-20260625085135.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA1OXxpbWFnZS9qcGVnfGFEZGxMMmcxWkM4eE16ZzFNVEkyTlRJMk9UYzVNQzl0WldScFlYTmZNVEF3TVRFd016WXpORjh3TUY5UVgxZ3RNakF5TmpBMk1qVXdPRFV4TXpVdWFuQm58ZGUzOTc3NzRlNzU3NjZiYWU5YzNhOTU5ZjQ4ZGY0OTdhNGI0ZDJlNmFkYTZjY2MwNGRmZTU1YzliMWI4Y2IyYw&feedId=58083&k=53635ac278e28268ead3c4a7663db4b26b5d6605",
+        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -188917,42 +188899,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-pantalon-corto-barcelona-25-26-primera-equipacion",
-    brand: "Nike",
-    model: "Pantalón corto Barcelona 25/26 Primera Equipacion",
-    colour: "N/D",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 34.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45894814202&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053801-00-P-X-20250717135511.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTA3OHxpbWFnZS9qcGVnfGFHSmlMMmhpWXk4eE16QTJNREkwT1RrM05qZzJNaTl0WldScFlYTmZNVEF3TVRBMU16Z3dNVjh3TUY5UVgxZ3RNakF5TlRBM01UY3hNelUxTVRFdWFuQm58NzVkODhlYTYxNDU3NWU4MzkyN2JjOTlmYmJjNWNlY2VlNGE5NmVkZGM4NmM2ODU0MzgyOWEzODZiNWEzZDE4NA&feedId=58083&k=1cadcf70b472088bfb4a8039170d8df74066c9a2",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "nike-pantalon-corto-brasil-mundial-2026-entrenamiento-negro",
-    brand: "Nike",
-    model: "Pantalón corto Brasil Mundial 2026 Entrenamiento - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 50.04,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45212896143&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001100294-00-P-X-20260311094103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODUwNHxpbWFnZS9qcGVnfGFHRmlMMmhrWVM4eE16WXpNVGcxTnpBd01EUTNPQzl0WldScFlYTmZNVEF3TVRFd01ESTVORjh3TUY5UVgxZ3RNakF5TmpBek1URXdPVFF4TURNdWFuQm58NDcwZDdhYTk2OWE5MDAxZWUwOTBjNzY5NDY1Mzg4YjU0ZDgyYWZkODRjNjA2MGJjNWZiNjU5NGZkM2NjYWUwMw&feedId=58083&k=642310c23cc785643725bf2db51b0c3c133950e7",
-        sizes: ["M", "L", "XL"],
-      },
-    ],
-  },
-  {
     id: "nike-pantalon-corto-chelsea-strike-2023-24-azul",
     brand: "Nike",
     model: "Pantalón corto Chelsea Strike 2023/24 - Azul",
@@ -189519,132 +189465,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn2806-010-short-chelsea-2022-23-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dn2806-010-phsfm001_new.webp",
         sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "nike-pantalon-corto-dri-fit-academy-blanco",
-    brand: "Nike",
-    model: "Pantalón corto Dri-fit Academy - Blanco",
-    colour: "Blanco",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46548430163&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118843-00-P-X-20260313132302.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ2MnxpbWFnZS9qcGVnfGFHTmtMMmd5Tmk4eE16WXpOekEzTlRFd056ZzNNQzl0WldScFlYTmZNVEF3TVRFeE9EZzBNMTh3TUY5UVgxZ3RNakF5TmpBek1UTXhNekl6TURJdWFuQm58YWQ4NDg1NzNkOWJmNjAzNGEwZmM0OGI4Mzc3NzY2ZWFmM2IzNTQ2ZjczNDZmOGJjOTdlYzlhN2U2ZTExMjEzZA&feedId=58083&k=5ce5859d9392269412d229bc357e6b5a5b5f427c",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-pantalon-corto-dri-fit-academy-gris",
-    brand: "Nike",
-    model: "Pantalón corto Dri-fit Academy - Gris",
-    colour: "Gris",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 22.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46679669318&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053766-00-P-X-20250718123444.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYyMXxpbWFnZS9qcGVnfGFHRXhMMmhrTmk4eE16QTJNamMyTlRrd016a3dNaTl0WldScFlYTmZNVEF3TVRBMU16YzJObDh3TUY5UVgxZ3RNakF5TlRBM01UZ3hNak0wTkRRdWFuQm58NjE1OTYyZDgzODRhMWVjYWFjN2NlOGI0NDI2ZDMxMmU2ZTgxNmU2NGUyODM4ZDA3YzhmNmE0YjEwNzBjOWQyMQ&feedId=58083&k=fb055340cdd3d1ee51dda1d18dfe521a23906a1e",
-        sizes: ["S", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-pantalon-corto-dri-fit-academy-negro",
-    brand: "Nike",
-    model: "Pantalón corto Dri-fit Academy - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40162773929&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021096-00-P-X-20250116162527.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDk3MHxpbWFnZS9qcGVnfGFHUXhMMmc0Wmk4eE1qWTRNRGd4T1RZM01UQTNNQzl0WldScFlYTmZNVEF3TVRBeU1UQTVObDh3TUY5UVgxZ3RNakF5TlRBeE1UWXhOakkxTWpjdWFuQm58ODBiNGM2Y2E1NGFlYTAxYWRlMDgwYWVlNDQ3MDlhMjI3MzQ4MzM1OWIxMzIxZDliZGJiNDNmY2VkNDZlMjllNQ&feedId=58083&k=9395e9e24c7056a5e6a0e2b50e9997a6bc30ebda",
-        sizes: ["L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-pantalon-corto-dri-fit-academy-negro-2",
-    brand: "Nike",
-    model: "Pantalón corto Dri-fit Academy - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 33.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45611209767&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103735-00-P-X-20260818144456.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY4M3xpbWFnZS9qcGVnfGFETTBMMmcwWmk4eE16azJNVE00T0RnNE16azVPQzl0WldScFlYTmZNVEF3TVRFd016Y3pOVjh3TUY5UVgxZ3RNakF5TmpBNE1UZ3hORFEwTlRZdWFuQm58ZDVhYmUzYTVjMDQ0ODg0ODhiNmQ5MDEyMGE4ZmNkNmQ3OTc5MjRlMTVjYzllMDhhODFhMjgzMTgzMWI5ZmYwYg&feedId=58083&k=a1737a17c4ab64d97cf336ea4fefd7ae3b7a8a99",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-pantalon-corto-dri-fit-academy25-blanco",
-    brand: "Nike",
-    model: "Pantalón corto Dri-fit Academy25 - Blanco",
-    colour: "Blanco",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 22.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40201773363&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021098-00-P-X-20250120123443.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU0MHxpbWFnZS9qcGVnfGFHTTNMMmc0TVM4eE1qWTRNekl5TlRjeU56QXdOaTl0WldScFlYTmZNVEF3TVRBeU1UQTVPRjh3TUY5UVgxZ3RNakF5TlRBeE1qQXhNak0wTkRNdWFuQm58NTJhMGU4Y2E4Zjc0NjA1YTIwYWU2MzRkYjA4YWQ0MTFkMWZmYTA5ZTQwNzlkMGFiMjYzMWI0YTBiNDUxODBmOQ&feedId=58083&k=a47a27eb8a8d8df9add8bb87eb3048641c2e633b",
-        sizes: ["S", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-pantalon-corto-dri-fit-strike",
-    brand: "Nike",
-    model: "Pantalón corto Dri-fit Strike",
-    colour: "N/D",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46390645585&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000881743-00-P-X-20221227113124.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzcwOXxpbWFnZS9qcGVnfGFEZzJMMmd5WlM4eE1URTFNemszTXpZM05EQXhOQzl0WldScFlYTmZNVEF3TURnNE1UYzBNMTh3TUY5UVgxZ3RNakF5TWpFeU1qY3hNVE14TWpRdWFuQm58MjZhM2YyZjQ5MmI1ZjNlMDExMzU5YjAzOTk5NjYyNzJjOWRhNmM1NGU2YmRmNjAwMzNkYjIzOTYzMzQ3MmIwYg&feedId=58083&k=02f30dfc0b78c69a3acc3db4a7c356c8a4a6c6c4",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "nike-pantalon-corto-dri-fit-strike-azul",
-    brand: "Nike",
-    model: "Pantalón corto Dri-fit Strike - Azul",
-    colour: "Azul",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.39,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265334359&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000770624-00-S-M-20211213105623.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUyOHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJoaVlpOW9ZbU12TVRBME5qZzNOekk1TURRNU9UQXVhbkJufDM0ZDE0NTYzYjRhZWU3MzU0ZDRlNzM0MjM5M2JiMWU5YjNiM2VmY2U0ODlmYWIwZTNkYWUzNDM2YjY5OWZkNDI&feedId=58083&k=cad4638cdab787d3a02578ece23fc7507d59be04",
-        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -190412,6 +190232,42 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-pantalon-corto-barcelona-25-26-primera-equipacion",
+    brand: "Nike",
+    model: "Pantalón corto Nike Barcelona 25/26 Primera Equipacion",
+    colour: "N/D",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 34.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45894814202&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053801-00-P-X-20250717135511.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTA3OHxpbWFnZS9qcGVnfGFHSmlMMmhpWXk4eE16QTJNREkwT1RrM05qZzJNaTl0WldScFlYTmZNVEF3TVRBMU16Z3dNVjh3TUY5UVgxZ3RNakF5TlRBM01UY3hNelUxTVRFdWFuQm58NzVkODhlYTYxNDU3NWU4MzkyN2JjOTlmYmJjNWNlY2VlNGE5NmVkZGM4NmM2ODU0MzgyOWEzODZiNWEzZDE4NA&feedId=58083&k=1cadcf70b472088bfb4a8039170d8df74066c9a2",
+        sizes: ["L"],
+      },
+    ],
+  },
+  {
+    id: "nike-pantalon-corto-brasil-mundial-2026-entrenamiento-negro",
+    brand: "Nike",
+    model: "Pantalón corto Nike Brasil Mundial 2026 Entrenamiento - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 50.04,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45212896143&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001100294-00-P-X-20260311094103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODUwNHxpbWFnZS9qcGVnfGFHRmlMMmhrWVM4eE16WXpNVGcxTnpBd01EUTNPQzl0WldScFlYTmZNVEF3TVRFd01ESTVORjh3TUY5UVgxZ3RNakF5TmpBek1URXdPVFF4TURNdWFuQm58NDcwZDdhYTk2OWE5MDAxZWUwOTBjNzY5NDY1Mzg4YjU0ZDgyYWZkODRjNjA2MGJjNWZiNjU5NGZkM2NjYWUwMw&feedId=58083&k=642310c23cc785643725bf2db51b0c3c133950e7",
+        sizes: ["M", "L", "XL"],
+      },
+    ],
+  },
+  {
     id: "nike-pantalon-corto-nike-dri-fit-academy-2023-br-blanco",
     brand: "Nike",
     model: "Pantalón corto Nike Dri-FIT Academy 2023 BR - Blanco",
@@ -190649,9 +190505,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "nike-pantalon-corto-nike-dri-fit-academy-azul",
     brand: "Nike",
@@ -190707,7 +190560,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-pantalon-corto-nike-dri-fit-academy-blanco",
+    id: "nike-pantalon-corto-dri-fit-academy-blanco",
     brand: "Nike",
     model: "Pantalón corto Nike Dri-FIT Academy - Blanco",
     colour: "Blanco",
@@ -190722,10 +190575,19 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_cw6107-100-phsfm001_new.jpg&feedId=89032&k=6e51680556e678091ee45e3a0b564101edb8627c",
         sizes: ["M"],
       },
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46548430163&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118843-00-P-X-20260313132302.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ2MnxpbWFnZS9qcGVnfGFHTmtMMmd5Tmk4eE16WXpOekEzTlRFd056ZzNNQzl0WldScFlYTmZNVEF3TVRFeE9EZzBNMTh3TUY5UVgxZ3RNakF5TmpBek1UTXhNekl6TURJdWFuQm58YWQ4NDg1NzNkOWJmNjAzNGEwZmM0OGI4Mzc3NzY2ZWFmM2IzNTQ2ZjczNDZmOGJjOTdlYzlhN2U2ZTExMjEzZA&feedId=58083&k=5ce5859d9392269412d229bc357e6b5a5b5f427c",
+        sizes: ["S", "M", "L", "XL"],
+      },
     ],
   },
   {
-    id: "nike-pantalon-corto-nike-dri-fit-academy-gris",
+    id: "nike-pantalon-corto-dri-fit-academy-gris",
     brand: "Nike",
     model: "Pantalón corto Nike Dri-FIT Academy - Gris",
     colour: "Gris",
@@ -190741,12 +190603,57 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         sizes: ["S", "M", "L", "XL"],
       },
       {
+        store: "ForumSport",
+        price: 22.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46679669318&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053766-00-P-X-20250718123444.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYyMXxpbWFnZS9qcGVnfGFHRXhMMmhrTmk4eE16QTJNamMyTlRrd016a3dNaTl0WldScFlYTmZNVEF3TVRBMU16YzJObDh3TUY5UVgxZ3RNakF5TlRBM01UZ3hNak0wTkRRdWFuQm58NjE1OTYyZDgzODRhMWVjYWFjN2NlOGI0NDI2ZDMxMmU2ZTgxNmU2NGUyODM4ZDA3YzhmNmE0YjEwNzBjOWQyMQ&feedId=58083&k=fb055340cdd3d1ee51dda1d18dfe521a23906a1e",
+        sizes: ["S", "L", "XL"],
+      },
+      {
         store: "FootStoreFR",
         price: 24.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdv9742-068-short-nike-dri-fit-academy-iron-grey-dragon-red-dragon-red",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dv9742-068-vpsrh001_082824.webp",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-pantalon-corto-dri-fit-academy-negro",
+    brand: "Nike",
+    model: "Pantalón corto Nike Dri-fit Academy - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40162773929&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021096-00-P-X-20250116162527.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDk3MHxpbWFnZS9qcGVnfGFHUXhMMmc0Wmk4eE1qWTRNRGd4T1RZM01UQTNNQzl0WldScFlYTmZNVEF3TVRBeU1UQTVObDh3TUY5UVgxZ3RNakF5TlRBeE1UWXhOakkxTWpjdWFuQm58ODBiNGM2Y2E1NGFlYTAxYWRlMDgwYWVlNDQ3MDlhMjI3MzQ4MzM1OWIxMzIxZDliZGJiNDNmY2VkNDZlMjllNQ&feedId=58083&k=9395e9e24c7056a5e6a0e2b50e9997a6bc30ebda",
+        sizes: ["L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "nike-pantalon-corto-dri-fit-academy-negro-2",
+    brand: "Nike",
+    model: "Pantalón corto Nike Dri-fit Academy - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 33.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45611209767&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103735-00-P-X-20260818144456.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY4M3xpbWFnZS9qcGVnfGFETTBMMmcwWmk4eE16azJNVE00T0RnNE16azVPQzl0WldScFlYTmZNVEF3TVRFd016Y3pOVjh3TUY5UVgxZ3RNakF5TmpBNE1UZ3hORFEwTlRZdWFuQm58ZDVhYmUzYTVjMDQ0ODg0ODhiNmQ5MDEyMGE4ZmNkNmQ3OTc5MjRlMTVjYzllMDhhODFhMjgzMTgzMWI5ZmYwYg&feedId=58083&k=a1737a17c4ab64d97cf336ea4fefd7ae3b7a8a99",
         sizes: ["S", "M", "L", "XL"],
       },
     ],
@@ -190832,6 +190739,9 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "nike-pantalon-corto-nike-dri-fit-academy-verde",
     brand: "Nike",
@@ -190856,6 +190766,24 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb6371-338-short-nike-dri-fit-academy-vintage-green-black-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fb6371-338_vintage-green-black-white_2.webp",
         sizes: ["XS", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "nike-pantalon-corto-dri-fit-academy25-blanco",
+    brand: "Nike",
+    model: "Pantalón corto Nike Dri-fit Academy25 - Blanco",
+    colour: "Blanco",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 22.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40201773363&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021098-00-P-X-20250120123443.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU0MHxpbWFnZS9qcGVnfGFHTTNMMmc0TVM4eE1qWTRNekl5TlRjeU56QXdOaTl0WldScFlYTmZNVEF3TVRBeU1UQTVPRjh3TUY5UVgxZ3RNakF5TlRBeE1qQXhNak0wTkRNdWFuQm58NTJhMGU4Y2E4Zjc0NjA1YTIwYWU2MzRkYjA4YWQ0MTFkMWZmYTA5ZTQwNzlkMGFiMjYzMWI0YTBiNDUxODBmOQ&feedId=58083&k=a47a27eb8a8d8df9add8bb87eb3048641c2e633b",
+        sizes: ["S", "L", "XL"],
       },
     ],
   },
@@ -191746,6 +191674,24 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
     ],
   },
   {
+    id: "nike-pantalon-corto-dri-fit-strike",
+    brand: "Nike",
+    model: "Pantalón corto Nike Dri-fit Strike",
+    colour: "N/D",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46390645585&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000881743-00-P-X-20221227113124.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzcwOXxpbWFnZS9qcGVnfGFEZzJMMmd5WlM4eE1URTFNemszTXpZM05EQXhOQzl0WldScFlYTmZNVEF3TURnNE1UYzBNMTh3TUY5UVgxZ3RNakF5TWpFeU1qY3hNVE14TWpRdWFuQm58MjZhM2YyZjQ5MmI1ZjNlMDExMzU5YjAzOTk5NjYyNzJjOWRhNmM1NGU2YmRmNjAwMzNkYjIzOTYzMzQ3MmIwYg&feedId=58083&k=02f30dfc0b78c69a3acc3db4a7c356c8a4a6c6c4",
+        sizes: ["XL"],
+      },
+    ],
+  },
+  {
     id: "nike-pantalon-corto-nike-dri-fit-strike-amarillo",
     brand: "Nike",
     model: "Pantalón corto Nike Dri-FIT Strike - Amarillo",
@@ -191897,7 +191843,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-pantalon-corto-nike-dri-fit-strike-azul-3",
+    id: "nike-pantalon-corto-dri-fit-strike-azul",
     brand: "Nike",
     model: "Pantalón corto Nike Dri-FIT Strike - Azul",
     colour: "Azul",
@@ -191917,6 +191863,15 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
           { size: "L", price: 29.0, url: "https://www.awin1.com/pclick.php?p=46157580062&a=3013769&m=65912" },
           { size: "2XL", price: 29.0, url: "https://www.awin1.com/pclick.php?p=46183214401&a=3013769&m=65912" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 23.39,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265334359&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000770624-00-S-M-20211213105623.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUyOHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJoaVlpOW9ZbU12TVRBME5qZzNOekk1TURRNU9UQXVhbkJufDM0ZDE0NTYzYjRhZWU3MzU0ZDRlNzM0MjM5M2JiMWU5YjNiM2VmY2U0ODlmYWIwZTNkYWUzNDM2YjY5OWZkNDI&feedId=58083&k=cad4638cdab787d3a02578ece23fc7507d59be04",
+        sizes: ["S", "M", "L", "XL"],
       },
       {
         store: "FootStoreFR",
@@ -192701,7 +192656,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-pantalon-corto-nike-strike-negro",
+    id: "nike-pantalon-corto-strike-negro",
     brand: "Nike",
     model: "Pantalón corto Nike Strike - Negro",
     colour: "Negro",
@@ -192715,6 +192670,15 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=41044160569&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fn2401-017-phsfm001-ss25.jpg&feedId=89032&k=d387b2720938790a318dae9c066c20e3b7e34cb8",
         sizes: ["XS", "S", "M", "XL"],
+      },
+      {
+        store: "ForumSport",
+        price: 39.19,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46527257186&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118845-00-P-X-20261015075221.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI1N3xpbWFnZS9qcGVnfGFEZ3pMMmhtTXk4eE5EQTNOelF5TmpVMk5URTFNQzl0WldScFlYTmZNVEF3TVRFeE9EZzBOVjh3TUY5UVgxZ3RNakF5TmpFd01UVXdOelV5TWpFdWFuQm58ZGZlODViODdiMWM5ZWU5ODI2NGMxZGNjNGFiNWVkMzhkZDIxMDc4YzlkMzgyZDMwMDEwOGZhM2IzMzIxMjJlMg&feedId=58083&k=1aef84c6da1bee27b4fd46e90f68c8b2fd904e94",
+        sizes: ["S", "M", "L", "XL"],
       },
       {
         store: "FootStoreFR",
@@ -193107,24 +193071,6 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
     ],
   },
   {
-    id: "nike-pantalon-corto-strike-negro",
-    brand: "Nike",
-    model: "Pantalón corto Strike - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 39.19,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46527257186&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118845-00-P-X-20261015075221.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI1N3xpbWFnZS9qcGVnfGFEZ3pMMmhtTXk4eE5EQTNOelF5TmpVMk5URTFNQzl0WldScFlYTmZNVEF3TVRFeE9EZzBOVjh3TUY5UVgxZ3RNakF5TmpFd01UVXdOelV5TWpFdWFuQm58ZGZlODViODdiMWM5ZWU5ODI2NGMxZGNjNGFiNWVkMzhkZDIxMDc4YzlkMzgyZDMwMDEwOGZhM2IzMzIxMjJlMg&feedId=58083&k=1aef84c6da1bee27b4fd46e90f68c8b2fd904e94",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
     id: "nike-pantalon-corto-tercera-equipacion-atletico-de-madrid-total-90-2025-26-azul",
     brand: "Nike",
     model: "Pantalón corto tercera equipación Atlético de Madrid Total 90 2025/26 - Azul",
@@ -193461,7 +193407,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-calentamiento-dri-fit-jordan-sport-blanco",
     brand: "Nike",
-    model: "Pantalón de calentamiento Dri-fit Jordan Sport - Blanco",
+    model: "Pantalón de calentamiento Nike Dri-fit Jordan Sport - Blanco",
     colour: "Blanco",
     type: "pants",
     offers: [
@@ -193479,7 +193425,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-calentamiento-dri-fit-jordan-sport-negro",
     brand: "Nike",
-    model: "Pantalón de calentamiento Dri-fit Jordan Sport - Negro",
+    model: "Pantalón de calentamiento Nike Dri-fit Jordan Sport - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -196058,9 +196004,6 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-chandal-nike-dri-fit-fc-libero-kpz-azul",
     brand: "Nike",
@@ -196228,6 +196171,9 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-survetement-nike-dri-fit-strike-22-noir",
     brand: "Nike",
@@ -198753,7 +198699,7 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-pantalon-largo-barcelona-26-27-entrenamiento",
     brand: "Nike",
-    model: "Pantalón largo Barcelona 26/27 Entrenamiento",
+    model: "Pantalón largo Nike Barcelona 26/27 Entrenamiento",
     colour: "N/D",
     type: "pants",
     offers: [
@@ -198771,7 +198717,7 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-pantalon-largo-barcelona-26-27-segunda-equipacion-entrenamiento",
     brand: "Nike",
-    model: "Pantalón largo Barcelona 26/27 Segunda Equipacion Entrenamiento",
+    model: "Pantalón largo Nike Barcelona 26/27 Segunda Equipacion Entrenamiento",
     colour: "N/D",
     type: "pants",
     offers: [
@@ -198789,7 +198735,7 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-pantalon-largo-dri-fit-strike-marino",
     brand: "Nike",
-    model: "Pantalón largo Dri-fit Strike - Marino",
+    model: "Pantalón largo Nike Dri-fit Strike - Marino",
     colour: "Marino",
     type: "pants",
     offers: [
@@ -198807,7 +198753,7 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-pantalon-largo-francia-mujer-azul",
     brand: "Nike",
-    model: "Pantalón largo Francia Mujer - Azul",
+    model: "Pantalón largo Nike Francia Mujer - Azul",
     colour: "Azul",
     type: "pants",
     offers: [
@@ -201290,9 +201236,6 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "nike-polainas-3-4-nike-dri-fit-academy-25-negro",
     brand: "Nike",
@@ -201469,6 +201412,9 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "nike-polo-chelsea-fc-skate-2022-23-azul",
     brand: "Nike",
@@ -206640,9 +206586,6 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "nike-sudadera-con-capucha-y-cremallera-psg-2022-23-verde",
     brand: "Nike",
@@ -206805,10 +206748,13 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "nike-sudadera-de-entrenamiento-barcelona-25-26-entrenamiento",
     brand: "Nike",
-    model: "Sudadera de entrenamiento Barcelona 25/26 Entrenamiento",
+    model: "Sudadera de entrenamiento Nike Barcelona 25/26 Entrenamiento",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -206826,7 +206772,7 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "nike-sudadera-de-entrenamiento-barcelona-25-26-himno",
     brand: "Nike",
-    model: "Sudadera de entrenamiento Barcelona 25/26 Himno",
+    model: "Sudadera de entrenamiento Nike Barcelona 25/26 Himno",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -206844,7 +206790,7 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "nike-sudadera-de-entrenamiento-barcelona-26-27-segunda-equipacion-kobe-bryant-mamba",
     brand: "Nike",
-    model: "Sudadera de entrenamiento Barcelona 26/27 Segunda Equipacion Kobe Bryant Mamba",
+    model: "Sudadera de entrenamiento Nike Barcelona 26/27 Segunda Equipacion Kobe Bryant Mamba",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -206862,7 +206808,7 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "nike-sudadera-de-entrenamiento-francia-mujer-azul",
     brand: "Nike",
-    model: "Sudadera de entrenamiento Francia Mujer - Azul",
+    model: "Sudadera de entrenamiento Nike Francia Mujer - Azul",
     colour: "Azul",
     type: "sweatshirt",
     offers: [
@@ -206880,7 +206826,7 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "nike-sudadera-de-entrenamiento-liverpool-24-repel-academy-negro",
     brand: "Nike",
-    model: "Sudadera de entrenamiento Liverpool 24 Repel Academy - Negro",
+    model: "Sudadera de entrenamiento Nike Liverpool 24 Repel Academy - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -206898,7 +206844,7 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "nike-sudadera-de-entrenamiento-liverpool-academy-pro",
     brand: "Nike",
-    model: "Sudadera de entrenamiento Liverpool Academy Pro",
+    model: "Sudadera de entrenamiento Nike Liverpool Academy Pro",
     colour: "N/D",
     type: "sweatshirt",
     offers: [
@@ -211280,9 +211226,6 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "precision-calcetines-precision-plain-pro-azul-3",
     brand: "Precision",
@@ -211445,6 +211388,9 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "precision-camiseta-interior-acolchada-de-portero-precision-negro",
     brand: "Precision",
@@ -216115,42 +216061,6 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
     ],
   },
   {
-    id: "puma-camiseta-individual-liga-naranja",
-    brand: "Puma",
-    model: "Camiseta Individual Liga - Naranja",
-    colour: "Naranja",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41889391704&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048145-00-S-M-20250902140228.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc3MnxpbWFnZS9qcGVnfGFETmxMMmd6Tmk4eE16RTFOVFl6TURnd09URXhPQzl0WldScFlYTmZNVEF3TVRBME9ERTBOVjh3TUY5VFgwMHRNakF5TlRBNU1ESXhOREF5TWpndWFuQm58MjliMTI2OGMzNmI2Zjc3NzBkZjk0Zjc0ZmYzNTQ2NWM0OThlM2QwOTQ0MjUwMjRiMjk3YzQ1Y2U5ZjUxMjUzOQ&feedId=58083&k=42ed0bc0d69dd460ed3210865ff7d046e64f5a0c",
-        sizes: ["M", "L"],
-      },
-    ],
-  },
-  {
-    id: "puma-camiseta-individual-liga-negro",
-    brand: "Puma",
-    model: "Camiseta Individual Liga - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41962876823&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048143-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjYwOXxpbWFnZS9qcGVnfGFESmpMMmczTkM4eE1qazVOemd3TWpVMU56UTNNQzl0WldScFlYTmZNVEF3TVRBME9ERTBNMTh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58ZGExNDM1NGYzYjU3NDYzZDBmN2U1OTIyMDUyY2M0NWQyOGM0YzRlOTFhZjZmMzg1YzA0NGE1OWNkYTg2OTQyYw&feedId=58083&k=55faf52da654e98874fea15b345374e00db07172",
-        sizes: ["M", "L"],
-      },
-    ],
-  },
-  {
     id: "puma-camiseta-interior-de-manga-larga-puma-rojo",
     brand: "Puma",
     model: "Camiseta interior de manga larga Puma - Rojo",
@@ -216743,9 +216653,6 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-camiseta-om-culture-aop-2026-27-blanc",
     brand: "Puma",
@@ -217069,6 +216976,45 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F657251-40-t-shirt-puma-bib-orange-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/6/5/657251-40_0_puma__pum-657251-40__imagefront.webp",
         sizes: ["L"],
+      },
+    ],
+  },
+];
+
+const minedApparelProductsChunk40: ApparelProduct[] = [
+  {
+    id: "puma-camiseta-individual-liga-naranja",
+    brand: "Puma",
+    model: "Camiseta Puma Individual Liga - Naranja",
+    colour: "Naranja",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41889391704&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048145-00-S-M-20250902140228.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc3MnxpbWFnZS9qcGVnfGFETmxMMmd6Tmk4eE16RTFOVFl6TURnd09URXhPQzl0WldScFlYTmZNVEF3TVRBME9ERTBOVjh3TUY5VFgwMHRNakF5TlRBNU1ESXhOREF5TWpndWFuQm58MjliMTI2OGMzNmI2Zjc3NzBkZjk0Zjc0ZmYzNTQ2NWM0OThlM2QwOTQ0MjUwMjRiMjk3YzQ1Y2U5ZjUxMjUzOQ&feedId=58083&k=42ed0bc0d69dd460ed3210865ff7d046e64f5a0c",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
+    id: "puma-camiseta-individual-liga-negro",
+    brand: "Puma",
+    model: "Camiseta Puma Individual Liga - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41962876823&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048143-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjYwOXxpbWFnZS9qcGVnfGFESmpMMmczTkM4eE1qazVOemd3TWpVMU56UTNNQzl0WldScFlYTmZNVEF3TVRBME9ERTBNMTh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58ZGExNDM1NGYzYjU3NDYzZDBmN2U1OTIyMDUyY2M0NWQyOGM0YzRlOTFhZjZmMzg1YzA0NGE1OWNkYTg2OTQyYw&feedId=58083&k=55faf52da654e98874fea15b345374e00db07172",
+        sizes: ["M", "L"],
       },
     ],
   },
@@ -221606,6 +221552,24 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
     ],
   },
   {
+    id: "puma-espinilleras-ultra-flex-negro",
+    brand: "Puma",
+    model: "Espinilleras Puma Ultra Flex - Negro",
+    colour: "Negro",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41774400284&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048010-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTQ3MnxpbWFnZS9qcGVnfGFHSXpMMmhpTkM4eE1qazVOemM0T0RBM05EQXhOQzl0WldScFlYTmZNVEF3TVRBME9EQXhNRjh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58MmVhNTZkYTA3MGU4NTQwNTYyMGYxNmE2YTM5YTBlMmQyODVjMzM4NDNhOGI3Y2Y4Y2FhMDRlODllZTM0MWIzOA&feedId=58083&k=c787e9ec20a525c5d600725a19dddd182033ee02",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
     id: "puma-espinilleras-puma-ultra-light-blanc",
     brand: "Puma",
     model: "Espinilleras Puma Ultra Light - Blanc",
@@ -221629,6 +221593,42 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F030992-11-protege-tibias-puma-ultra-light-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/0/3/030992-11.webp",
         sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "puma-espinilleras-ultra-light-naranja",
+    brand: "Puma",
+    model: "Espinilleras Puma Ultra Light - Naranja",
+    colour: "Naranja",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 14.79,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42748074694&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048012-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU2NHxpbWFnZS9qcGVnfGFHVXpMMmhoWkM4eE1qazVOemM0T0RJM01EWXlNaTl0WldScFlYTmZNVEF3TVRBME9EQXhNbDh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58NThkN2JlOWVjMTBkY2I0Mjg4ZjdjZjVlMzIxMzMyZGY4NmY0ODQ4YmE2N2M2ODZhMGFiMmNmZjY2MjUxNGJmZg&feedId=58083&k=69855df1df2f28575a4a72461c7007077a2bed59",
+        sizes: ["L"],
+      },
+    ],
+  },
+  {
+    id: "puma-espinilleras-ultra-light-negro",
+    brand: "Puma",
+    model: "Espinilleras Puma Ultra Light - Negro",
+    colour: "Negro",
+    type: "shinguards",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 18.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46644687370&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048011-00-P-X-20250313143035.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzczNXxpbWFnZS9qcGVnfGFEazFMMmhoTlM4eE1qYzVPVEkwTURBM056TTBNaTl0WldScFlYTmZNVEF3TVRBME9EQXhNVjh3TUY5UVgxZ3RNakF5TlRBek1UTXhORE13TXpVdWFuQm58ZmEyOGU2ZDFhOGM1MzlmN2QxNjUxYjk3ZjY0NjQ4ZjAzYjA0NzFmMDRkNzkwOTM3MGE2NWIxMzIxMWFlMGQzMg&feedId=58083&k=5c8d6c5ff090492e84b6ca9697521c091844a0e4",
+        sizes: ["XS", "M", "L"],
       },
     ],
   },
@@ -221660,63 +221660,9 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
     ],
   },
   {
-    id: "puma-espinilleras-ultra-flex-negro",
-    brand: "Puma",
-    model: "Espinilleras Ultra Flex - Negro",
-    colour: "Negro",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41774400284&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048010-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTQ3MnxpbWFnZS9qcGVnfGFHSXpMMmhpTkM4eE1qazVOemM0T0RBM05EQXhOQzl0WldScFlYTmZNVEF3TVRBME9EQXhNRjh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58MmVhNTZkYTA3MGU4NTQwNTYyMGYxNmE2YTM5YTBlMmQyODVjMzM4NDNhOGI3Y2Y4Y2FhMDRlODllZTM0MWIzOA&feedId=58083&k=c787e9ec20a525c5d600725a19dddd182033ee02",
-        sizes: ["M", "L"],
-      },
-    ],
-  },
-  {
-    id: "puma-espinilleras-ultra-light-naranja",
-    brand: "Puma",
-    model: "Espinilleras Ultra Light - Naranja",
-    colour: "Naranja",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 14.79,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42748074694&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048012-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU2NHxpbWFnZS9qcGVnfGFHVXpMMmhoWkM4eE1qazVOemM0T0RJM01EWXlNaTl0WldScFlYTmZNVEF3TVRBME9EQXhNbDh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58NThkN2JlOWVjMTBkY2I0Mjg4ZjdjZjVlMzIxMzMyZGY4NmY0ODQ4YmE2N2M2ODZhMGFiMmNmZjY2MjUxNGJmZg&feedId=58083&k=69855df1df2f28575a4a72461c7007077a2bed59",
-        sizes: ["L"],
-      },
-    ],
-  },
-  {
-    id: "puma-espinilleras-ultra-light-negro",
-    brand: "Puma",
-    model: "Espinilleras Ultra Light - Negro",
-    colour: "Negro",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 18.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46644687370&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048011-00-P-X-20250313143035.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzczNXxpbWFnZS9qcGVnfGFEazFMMmhoTlM4eE1qYzVPVEkwTURBM056TTBNaTl0WldScFlYTmZNVEF3TVRBME9EQXhNVjh3TUY5UVgxZ3RNakF5TlRBek1UTXhORE13TXpVdWFuQm58ZmEyOGU2ZDFhOGM1MzlmN2QxNjUxYjk3ZjY0NjQ4ZjAzYjA0NzFmMDRkNzkwOTM3MGE2NWIxMzIxMWFlMGQzMg&feedId=58083&k=5c8d6c5ff090492e84b6ca9697521c091844a0e4",
-        sizes: ["XS", "M", "L"],
-      },
-    ],
-  },
-  {
     id: "puma-espinilleras-ultra-twist-negro",
     brand: "Puma",
-    model: "Espinilleras Ultra Twist - Negro",
+    model: "Espinilleras Puma Ultra Twist - Negro",
     colour: "Negro",
     type: "shinguards",
     offers: [
@@ -221950,7 +221896,7 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-medias-team-liga-amarillo",
     brand: "Puma",
-    model: "Medias Team Liga - Amarillo",
+    model: "Medias Puma Team Liga - Amarillo",
     colour: "Amarillo",
     type: "socks",
     offers: [
@@ -221968,7 +221914,7 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-medias-team-liga-amarillo-2",
     brand: "Puma",
-    model: "Medias Team Liga - Amarillo",
+    model: "Medias Puma Team Liga - Amarillo",
     colour: "Amarillo",
     type: "socks",
     offers: [
@@ -221986,7 +221932,7 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-medias-team-liga-blanco",
     brand: "Puma",
-    model: "Medias Team Liga - Blanco",
+    model: "Medias Puma Team Liga - Blanco",
     colour: "Blanco",
     type: "socks",
     offers: [
@@ -222004,7 +221950,7 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-medias-team-liga-blanco-2",
     brand: "Puma",
-    model: "Medias Team Liga - Blanco",
+    model: "Medias Puma Team Liga - Blanco",
     colour: "Blanco",
     type: "socks",
     offers: [
@@ -222022,7 +221968,7 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-medias-team-liga-gris",
     brand: "Puma",
-    model: "Medias Team Liga - Gris",
+    model: "Medias Puma Team Liga - Gris",
     colour: "Gris",
     type: "socks",
     offers: [
@@ -222040,7 +221986,7 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-medias-team-liga-lila",
     brand: "Puma",
-    model: "Medias Team Liga - Lila",
+    model: "Medias Puma Team Liga - Lila",
     colour: "Lila",
     type: "socks",
     offers: [
@@ -222058,7 +222004,7 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-medias-team-liga-verde",
     brand: "Puma",
-    model: "Medias Team Liga - Verde",
+    model: "Medias Puma Team Liga - Verde",
     colour: "Verde",
     type: "socks",
     offers: [
@@ -222169,42 +222115,6 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F090458-01-sac-a-dos-puma-teamgoal-premium-black-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_090458-01_1.webp",
         sizes: ["TU"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-alaves-24-25-primera-equipacion",
-    brand: "Puma",
-    model: "Pantalón corto Alaves 24/25 Primera Equipacion",
-    colour: "N/D",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40239040484&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000994946-00-P-X-20250123101624.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODUwMXxpbWFnZS9qcGVnfGFHVmhMMmc1TkM4eE1qWTVOak16T0RVNU5UZzNNQzl0WldScFlYTmZNVEF3TURrNU5EazBObDh3TUY5UVgxZ3RNakF5TlRBeE1qTXhNREUyTWpRdWFuQm58MTU2NTk5NjA0MGM3YWE4MDgxYWQ4ZjI4NzFlYjIxMDJiNGZiZDM3ZDllZTEwNTc1ZGFmMTZjZDhkYjIxNjZiMw&feedId=58083&k=b3d852a0be89e116d9655d158df3e3f87e9a1320",
-        sizes: ["XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-borussia-dortmund-26-27-primera-equipacion-negro",
-    brand: "Puma",
-    model: "Pantalón corto Borussia Dortmund 26/27 Primera Equipacion - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.44,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45295250626&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141384-00-S-M-20260714082042.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ0MXxpbWFnZS9qcGVnfGFEZ3pMMmhrWXk4eE16ZzVNakE0TnpnME1EYzVPQzl0WldScFlYTmZNVEF3TVRFME1UTTRORjh3TUY5VFgwMHRNakF5TmpBM01UUXdPREl3TkRJdWFuQm58NmI5MmNmOWUzYTVlZGIzM2U5ZjgwZDk5Njk4M2E0NzRkN2Y4MmRmNDlmYzE5M2JlYTI2MjdhYWQ0NjhhZDJiNg&feedId=58083&k=780681f024d3c6d5d259068019cfc1e08d2704b4",
-        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -222358,132 +222268,6 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F785633-71-short-gardien-puma-green",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-785633-71-green-6ada0d6a9f447-1.webp",
         sizes: ["L", "XL", "2XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-girona-26-27-primera-equipacion-azul",
-    brand: "Puma",
-    model: "Pantalón corto Girona 26/27 Primera Equipacion - Azul",
-    colour: "Azul",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 24.39,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45295250836&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141431-00-S-M-20260713105314.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mjg1N3xpbWFnZS9qcGVnfGFEZzVMMmc0T0M4eE16ZzRPVFUxTkRrM01qY3dNaTl0WldScFlYTmZNVEF3TVRFME1UUXpNVjh3TUY5VFgwMHRNakF5TmpBM01UTXhNRFV6TVRRdWFuQm58N2NkYTBmN2U1ZDhmMTk2MTNhMDFiZjU0M2ViYjg3YmE3YzU1YjZjMzgyM2I0MGI0ZTM0ZTU3NDhiYzg5ODI0Yw&feedId=58083&k=c6823ba164473dbd3254892923d39b8c1b36c9b7",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-girona-26-27-primera-equipacion-verde",
-    brand: "Puma",
-    model: "Pantalón corto Girona 26/27 Primera Equipacion - Verde",
-    colour: "Verde",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45494296717&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141433-00-S-M-20260805135047.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc1NnxpbWFnZS9qcGVnfGFEQmxMMmhtTnk4eE16a3pOelF4TXpZMU1qVXhNQzl0WldScFlYTmZNVEF3TVRFME1UUXpNMTh3TUY5VFgwMHRNakF5TmpBNE1EVXhNelV3TkRjdWFuQm58ODlkYTkzZjlkMzk0YTY4ZmQ4Y2JhZmUyYjA5ZTBjOTU2ZGNhNmFjNDlmYjNkNTllODIxNmJlMWI4ZDQ4NzYyMw&feedId=58083&k=50be9ed1c9688b0142721d7dd940a58e322b4064",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-girona-26-27-segunda-equipacion-negro",
-    brand: "Puma",
-    model: "Pantalón corto Girona 26/27 Segunda Equipacion - Negro",
-    colour: "Negro",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 25.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45318480720&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141435-00-S-M-20260714082042.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjU3M3xpbWFnZS9qcGVnfGFEZGlMMmhtWkM4eE16ZzVNakE1TURNek1URTJOaTl0WldScFlYTmZNVEF3TVRFME1UUXpOVjh3TUY5VFgwMHRNakF5TmpBM01UUXdPREl3TkRJdWFuQm58MDkyZmVjYjQyYWIyNThlYmNkMWEwMGQyZWM5Mzk2M2QzYTk0NDhhZTM1NzYwMGRlY2FjOTYzNjNkNTI4NDBhOQ&feedId=58083&k=622a98e2f152f4c2bd8603104e7df5f669d057ea",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-individualliga-training-gris",
-    brand: "Puma",
-    model: "Pantalón corto Individualliga Training - Gris",
-    colour: "Gris",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 24.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41731718335&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048141-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTkzMnxpbWFnZS9qcGVnfGFETTJMMmhrTUM4eE1qazVOemd3TVRrMk56WTBOaTl0WldScFlYTmZNVEF3TVRBME9ERTBNVjh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58ZGJhNjU0YmNmMTQ3Y2MzMjdkZjkyNDBmNjQ4ZDQ3ZjRjMDc4ZTI3ZjBmODlhZTcwYWQ2NGU2MGNhYmQ4MmJlNA&feedId=58083&k=da5d280ec4894a30b1c00d728806f872f728be1e",
-        sizes: ["S", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-individualrise-marino",
-    brand: "Puma",
-    model: "Pantalón corto Individualrise - Marino",
-    colour: "Marino",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45228984895&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001006926-00-P-X-20241030170023.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDY2N3xpbWFnZS9qcGVnfGFHUTBMMmd5TWk4eE1qUTJNVFF5T1RFNU5EYzRNaTl0WldScFlYTmZNVEF3TVRBd05qa3lObDh3TUY5UVgxZ3RNakF5TkRFd016QXhOekF3TWpNdWFuQm58ZWM1YTcyODhjNTAwYmY0OWM3YTY4NGE3OWNhYmZmZDEyOTE2ZTc1N2RkMjQ5NTkxNmVmOGYwOGE3NzYxZmMyZQ&feedId=58083&k=c6720216cddc7e35246b13c61644b2729f7dae23",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-manchester-city-king-anthem-gris",
-    brand: "Puma",
-    model: "Pantalón corto Manchester City King Anthem - Gris",
-    colour: "Gris",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 42.74,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43797080369&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109391-00-P-X-20260122154640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDIwMXxpbWFnZS9qcGVnfGFEYzJMMmc0TVM4eE16VXhORGc1TWprek5URTVPQzl0WldScFlYTmZNVEF3TVRFd09UTTVNVjh3TUY5UVgxZ3RNakF5TmpBeE1qSXhOVFEyTkRBdWFuQm58ZDI2ODhiZjgzNGRjNGExNmY4OWY3NDMyNjE3MzI3NzhiMmMxMGM5YmQzODU0MTg0NTIwZTRjZjgxNGUxNTAyNA&feedId=58083&k=53d3462110bc42045fc3031e357148c08ca21c15",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-manchester-city-king-anthem-verde",
-    brand: "Puma",
-    model: "Pantalón corto Manchester City King Anthem - Verde",
-    colour: "Verde",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 42.74,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43797080439&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109392-00-P-X-20260122154640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk3N3xpbWFnZS9qcGVnfGFEWmpMMmd5TlM4eE16VXhORGc1TXpVeU5UQXlNaTl0WldScFlYTmZNVEF3TVRFd09UTTVNbDh3TUY5UVgxZ3RNakF5TmpBeE1qSXhOVFEyTkRBdWFuQm58YTVmZTE1ZGM1ZTUzNDcwNWM3Mjc4OGJjZGU4M2YzODA4ZDM3OGM2NmEzOTc5MWQzMDZhNjY5MjlmMGE5NWEwZQ&feedId=58083&k=9b871c6017a8e6df7e7434ece42e70c98a7a95c6",
-        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -222694,9 +222478,6 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "puma-pantalon-corto-mujer-puma-teamgoal-amarillo",
     brand: "Puma",
@@ -222923,24 +222704,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     ],
   },
   {
-    id: "puma-pantalon-corto-olympic-de-marsella-king-anthem-azul",
-    brand: "Puma",
-    model: "Pantalón corto Olympic De Marsella King Anthem - Azul",
-    colour: "Azul",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 42.74,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45461833254&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109382-00-P-X-20260122164456.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY5N3xpbWFnZS9qcGVnfGFERXlMMmhtWXk4eE16VXhOVE13TkRBM05USTVOQzl0WldScFlYTmZNVEF3TVRFd09UTTRNbDh3TUY5UVgxZ3RNakF5TmpBeE1qSXhOalEwTlRZdWFuQm58Njg2MGFmNDBiYzU1Y2MyODNmN2RhNDBkNTg4M2IyNjY4OGUzNDJkYmMwYWNkNDY0ZWFhYjBkYzg0OGZlNTU1Yg&feedId=58083&k=b143e166178b8b327842b41d10d3ee9988dae79d",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
     id: "puma-pantalon-corto-om-casual-2024-25-azul",
     brand: "Puma",
     model: "Pantalón corto OM Casual 2024/25 - Azul",
@@ -223085,38 +222848,20 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     ],
   },
   {
-    id: "puma-pantalon-corto-portugal-25-entrenamiento-azul",
+    id: "puma-pantalon-corto-alaves-24-25-primera-equipacion",
     brand: "Puma",
-    model: "Pantalón corto Portugal 25 Entrenamiento - Azul",
-    colour: "Azul",
+    model: "Pantalón corto Puma Alaves 24/25 Primera Equipacion",
+    colour: "N/D",
     type: "shorts",
     offers: [
       {
         store: "ForumSport",
-        price: 46.79,
-        shipping: 3.99,
+        price: 23.99,
+        shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41722074647&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001062456-00-S-M-20250410124238.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk3M3xpbWFnZS9qcGVnfGFHUmhMMmd4WWk4eE1qZzFOamt4TURnM01qWXdOaTl0WldScFlYTmZNVEF3TVRBMk1qUTFObDh3TUY5VFgwMHRNakF5TlRBME1UQXhNalF5TXpndWFuQm58NWJlZWJhMzEwNWU5ZDY1ZDQxNTc4NWJlZjZjYzZiYmEyN2FlMzc4OGQxMGQyODczODg1ZTJkNzQ5MDQwZDQ2OA&feedId=58083&k=517c12e779d8136f5c90927fee74eb644ee1e72a",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-portugal-mundial-2026-king-himno-granate",
-    brand: "Puma",
-    model: "Pantalón corto Portugal Mundial 2026 King Himno - Granate",
-    colour: "Granate",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 42.74,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44326235646&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109515-00-S-M-20260326084724.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY3NXxpbWFnZS9qcGVnfGFHTXlMMmhoTmk4eE16WTJNVE14TnpNMk5UYzVNQzl0WldScFlYTmZNVEF3TVRFd09UVXhOVjh3TUY5VFgwMHRNakF5TmpBek1qWXdPRFEzTWpRdWFuQm58MWVmMWQwNTUzZWUzYzA1NzU4YzVmMjc1MTliMzJhYTJiN2MwM2JiYjcxMjFiNGVlZWNkMzM3NDY5ZTkzYjFkOA&feedId=58083&k=ba56be25e3f9cba09074513776665c4a4e676f60",
-        sizes: ["S", "M", "L"],
+        url: "https://www.awin1.com/pclick.php?p=40239040484&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000994946-00-P-X-20250123101624.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODUwMXxpbWFnZS9qcGVnfGFHVmhMMmc1TkM4eE1qWTVOak16T0RVNU5UZzNNQzl0WldScFlYTmZNVEF3TURrNU5EazBObDh3TUY5UVgxZ3RNakF5TlRBeE1qTXhNREUyTWpRdWFuQm58MTU2NTk5NjA0MGM3YWE4MDgxYWQ4ZjI4NzFlYjIxMDJiNGZiZDM3ZDllZTEwNTc1ZGFmMTZjZDhkYjIxNjZiMw&feedId=58083&k=b3d852a0be89e116d9655d158df3e3f87e9a1320",
+        sizes: ["XL"],
       },
     ],
   },
@@ -223148,6 +222893,24 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     ],
   },
   {
+    id: "puma-pantalon-corto-borussia-dortmund-26-27-primera-equipacion-negro",
+    brand: "Puma",
+    model: "Pantalón corto Puma Borussia Dortmund 26/27 Primera Equipacion - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.44,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45295250626&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141384-00-S-M-20260714082042.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ0MXxpbWFnZS9qcGVnfGFEZ3pMMmhrWXk4eE16ZzVNakE0TnpnME1EYzVPQzl0WldScFlYTmZNVEF3TVRFME1UTTRORjh3TUY5VFgwMHRNakF5TmpBM01UUXdPREl3TkRJdWFuQm58NmI5MmNmOWUzYTVlZGIzM2U5ZjgwZDk5Njk4M2E0NzRkN2Y4MmRmNDlmYzE5M2JlYTI2MjdhYWQ0NjhhZDJiNg&feedId=58083&k=780681f024d3c6d5d259068019cfc1e08d2704b4",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
     id: "puma-pantalon-corto-puma-final-2026-bleu",
     brand: "Puma",
     model: "Pantalón corto Puma Final 2026 - Bleu",
@@ -223171,6 +222934,99 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F659685-06-short-puma-final-2026-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-659685-06-blue-69c3b56e2d440-1.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+];
+
+const minedApparelProductsChunk41: ApparelProduct[] = [
+  {
+    id: "puma-pantalon-corto-girona-26-27-primera-equipacion-azul",
+    brand: "Puma",
+    model: "Pantalón corto Puma Girona 26/27 Primera Equipacion - Azul",
+    colour: "Azul",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 24.39,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45295250836&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141431-00-S-M-20260713105314.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mjg1N3xpbWFnZS9qcGVnfGFEZzVMMmc0T0M4eE16ZzRPVFUxTkRrM01qY3dNaTl0WldScFlYTmZNVEF3TVRFME1UUXpNVjh3TUY5VFgwMHRNakF5TmpBM01UTXhNRFV6TVRRdWFuQm58N2NkYTBmN2U1ZDhmMTk2MTNhMDFiZjU0M2ViYjg3YmE3YzU1YjZjMzgyM2I0MGI0ZTM0ZTU3NDhiYzg5ODI0Yw&feedId=58083&k=c6823ba164473dbd3254892923d39b8c1b36c9b7",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "puma-pantalon-corto-girona-26-27-primera-equipacion-verde",
+    brand: "Puma",
+    model: "Pantalón corto Puma Girona 26/27 Primera Equipacion - Verde",
+    colour: "Verde",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45494296717&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141433-00-S-M-20260805135047.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc1NnxpbWFnZS9qcGVnfGFEQmxMMmhtTnk4eE16a3pOelF4TXpZMU1qVXhNQzl0WldScFlYTmZNVEF3TVRFME1UUXpNMTh3TUY5VFgwMHRNakF5TmpBNE1EVXhNelV3TkRjdWFuQm58ODlkYTkzZjlkMzk0YTY4ZmQ4Y2JhZmUyYjA5ZTBjOTU2ZGNhNmFjNDlmYjNkNTllODIxNmJlMWI4ZDQ4NzYyMw&feedId=58083&k=50be9ed1c9688b0142721d7dd940a58e322b4064",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "puma-pantalon-corto-girona-26-27-segunda-equipacion-negro",
+    brand: "Puma",
+    model: "Pantalón corto Puma Girona 26/27 Segunda Equipacion - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45318480720&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141435-00-S-M-20260714082042.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjU3M3xpbWFnZS9qcGVnfGFEZGlMMmhtWkM4eE16ZzVNakE1TURNek1URTJOaTl0WldScFlYTmZNVEF3TVRFME1UUXpOVjh3TUY5VFgwMHRNakF5TmpBM01UUXdPREl3TkRJdWFuQm58MDkyZmVjYjQyYWIyNThlYmNkMWEwMGQyZWM5Mzk2M2QzYTk0NDhhZTM1NzYwMGRlY2FjOTYzNjNkNTI4NDBhOQ&feedId=58083&k=622a98e2f152f4c2bd8603104e7df5f669d057ea",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "puma-pantalon-corto-individualliga-training-gris",
+    brand: "Puma",
+    model: "Pantalón corto Puma Individualliga Training - Gris",
+    colour: "Gris",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 24.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41731718335&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048141-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTkzMnxpbWFnZS9qcGVnfGFETTJMMmhrTUM4eE1qazVOemd3TVRrMk56WTBOaTl0WldScFlYTmZNVEF3TVRBME9ERTBNVjh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58ZGJhNjU0YmNmMTQ3Y2MzMjdkZjkyNDBmNjQ4ZDQ3ZjRjMDc4ZTI3ZjBmODlhZTcwYWQ2NGU2MGNhYmQ4MmJlNA&feedId=58083&k=da5d280ec4894a30b1c00d728806f872f728be1e",
+        sizes: ["S", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "puma-pantalon-corto-individualrise-marino",
+    brand: "Puma",
+    model: "Pantalón corto Puma Individualrise - Marino",
+    colour: "Marino",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 17.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45228984895&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001006926-00-P-X-20241030170023.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDY2N3xpbWFnZS9qcGVnfGFHUTBMMmd5TWk4eE1qUTJNVFF5T1RFNU5EYzRNaTl0WldScFlYTmZNVEF3TVRBd05qa3lObDh3TUY5UVgxZ3RNakF5TkRFd016QXhOekF3TWpNdWFuQm58ZWM1YTcyODhjNTAwYmY0OWM3YTY4NGE3OWNhYmZmZDEyOTE2ZTc1N2RkMjQ5NTkxNmVmOGYwOGE3NzYxZmMyZQ&feedId=58083&k=c6720216cddc7e35246b13c61644b2729f7dae23",
+        sizes: ["S", "M", "L", "XL", "XXL"],
       },
     ],
   },
@@ -223760,6 +223616,42 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     ],
   },
   {
+    id: "puma-pantalon-corto-manchester-city-king-anthem-gris",
+    brand: "Puma",
+    model: "Pantalón corto Puma Manchester City King Anthem - Gris",
+    colour: "Gris",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 42.74,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43797080369&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109391-00-P-X-20260122154640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDIwMXxpbWFnZS9qcGVnfGFEYzJMMmc0TVM4eE16VXhORGc1TWprek5URTVPQzl0WldScFlYTmZNVEF3TVRFd09UTTVNVjh3TUY5UVgxZ3RNakF5TmpBeE1qSXhOVFEyTkRBdWFuQm58ZDI2ODhiZjgzNGRjNGExNmY4OWY3NDMyNjE3MzI3NzhiMmMxMGM5YmQzODU0MTg0NTIwZTRjZjgxNGUxNTAyNA&feedId=58083&k=53d3462110bc42045fc3031e357148c08ca21c15",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "puma-pantalon-corto-manchester-city-king-anthem-verde",
+    brand: "Puma",
+    model: "Pantalón corto Puma Manchester City King Anthem - Verde",
+    colour: "Verde",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 42.74,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43797080439&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109392-00-P-X-20260122154640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk3N3xpbWFnZS9qcGVnfGFEWmpMMmd5TlM4eE16VXhORGc1TXpVeU5UQXlNaTl0WldScFlYTmZNVEF3TVRFd09UTTVNbDh3TUY5UVgxZ3RNakF5TmpBeE1qSXhOVFEyTkRBdWFuQm58YTVmZTE1ZGM1ZTUzNDcwNWM3Mjc4OGJjZGU4M2YzODA4ZDM3OGM2NmEzOTc5MWQzMDZhNjY5MjlmMGE5NWEwZQ&feedId=58083&k=9b871c6017a8e6df7e7434ece42e70c98a7a95c6",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
     id: "puma-pantalon-corto-puma-noir",
     brand: "Puma",
     model: "Pantalón corto Puma - Noir",
@@ -223783,6 +223675,60 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F659685-03-short-puma-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/6/5/659685-03.webp",
         sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "puma-pantalon-corto-olympic-de-marsella-king-anthem-azul",
+    brand: "Puma",
+    model: "Pantalón corto Puma Olympic De Marsella King Anthem - Azul",
+    colour: "Azul",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 42.74,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45461833254&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109382-00-P-X-20260122164456.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY5N3xpbWFnZS9qcGVnfGFERXlMMmhtWXk4eE16VXhOVE13TkRBM05USTVOQzl0WldScFlYTmZNVEF3TVRFd09UTTRNbDh3TUY5UVgxZ3RNakF5TmpBeE1qSXhOalEwTlRZdWFuQm58Njg2MGFmNDBiYzU1Y2MyODNmN2RhNDBkNTg4M2IyNjY4OGUzNDJkYmMwYWNkNDY0ZWFhYjBkYzg0OGZlNTU1Yg&feedId=58083&k=b143e166178b8b327842b41d10d3ee9988dae79d",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "puma-pantalon-corto-portugal-25-entrenamiento-azul",
+    brand: "Puma",
+    model: "Pantalón corto Puma Portugal 25 Entrenamiento - Azul",
+    colour: "Azul",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 46.79,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41722074647&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001062456-00-S-M-20250410124238.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk3M3xpbWFnZS9qcGVnfGFHUmhMMmd4WWk4eE1qZzFOamt4TURnM01qWXdOaTl0WldScFlYTmZNVEF3TVRBMk1qUTFObDh3TUY5VFgwMHRNakF5TlRBME1UQXhNalF5TXpndWFuQm58NWJlZWJhMzEwNWU5ZDY1ZDQxNTc4NWJlZjZjYzZiYmEyN2FlMzc4OGQxMGQyODczODg1ZTJkNzQ5MDQwZDQ2OA&feedId=58083&k=517c12e779d8136f5c90927fee74eb644ee1e72a",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
+    id: "puma-pantalon-corto-portugal-mundial-2026-king-himno-granate",
+    brand: "Puma",
+    model: "Pantalón corto Puma Portugal Mundial 2026 King Himno - Granate",
+    colour: "Granate",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 42.74,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44326235646&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109515-00-S-M-20260326084724.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY3NXxpbWFnZS9qcGVnfGFHTXlMMmhoTmk4eE16WTJNVE14TnpNMk5UYzVNQzl0WldScFlYTmZNVEF3TVRFd09UVXhOVjh3TUY5VFgwMHRNakF5TmpBek1qWXdPRFEzTWpRdWFuQm58MWVmMWQwNTUzZWUzYzA1NzU4YzVmMjc1MTliMzJhYTJiN2MwM2JiYjcxMjFiNGVlZWNkMzM3NDY5ZTkzYjFkOA&feedId=58083&k=ba56be25e3f9cba09074513776665c4a4e676f60",
+        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -223837,6 +223783,42 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F660931-06-short-puma-sideline-liga-26-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-660931-06-6a8e119d13431-1.webp",
         sizes: ["XS", "S", "M", "XL", "2XL"],
+      },
+    ],
+  },
+  {
+    id: "puma-pantalon-corto-sporting-de-gijon-25-26-primera-equipacion",
+    brand: "Puma",
+    model: "Pantalón corto Puma Sporting De Gijon 25/26 Primera Equipacion",
+    colour: "N/D",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 39.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43926447578&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001081760-00-P-X-20260205155057.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTk4OXxpbWFnZS9qcGVnfGFEQXhMMmhrWVM4eE16VTFNREEzTlRnM01USTJNaTl0WldScFlYTmZNVEF3TVRBNE1UYzJNRjh3TUY5UVgxZ3RNakF5TmpBeU1EVXhOVFV3TlRjdWFuQm58MDM4OTEyNDMyYmU4ZTA2YWU5MzY1MTNkYmZlY2UzZWVlNjIxNzlmODZjNGZkZWFlODg5YWU1ZmUwNGU0ODczYg&feedId=58083&k=6d02759768fcb9c78804b0ed00137cc7a1b7f7b4",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "puma-pantalon-corto-sporting-gijon-24",
+    brand: "Puma",
+    model: "Pantalón corto Puma Sporting Gijon 24",
+    colour: "N/D",
+    type: "shorts",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 27.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265351745&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000932386-00-P-X-20230920154454.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4MzgwOXxpbWFnZS9qcGVnfGFHUXlMMmc1TlM4eE1UWTBORFV6T0RZNE16UXlNaTl0WldScFlYTmZNVEF3TURrek1qTTRObDh3TUY5UVgxZ3RNakF5TXpBNU1qQXhOVFEwTlRRdWFuQm58NGYzMmY5MDgwYzE2N2ZmZTcyN2I3NTAyMzc5NDkzMTIwZTdmMjNlNTU3Mjc0ZWE2Y2ZkYjgzYjQzYjU2M2MzOA&feedId=58083&k=7efbfdb122a64f89b2614e9ec3b998d23975b275",
+        sizes: ["S", "XL"],
       },
     ],
   },
@@ -224856,42 +224838,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F704942-05-short-puma-teamrise-vert-sapin-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma_704942-05_1-nw082525.webp",
         sizes: ["XS", "S", "L", "XL", "2XL", "3XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-sporting-de-gijon-25-26-primera-equipacion",
-    brand: "Puma",
-    model: "Pantalón corto Sporting De Gijon 25/26 Primera Equipacion",
-    colour: "N/D",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 39.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43926447578&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001081760-00-P-X-20260205155057.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTk4OXxpbWFnZS9qcGVnfGFEQXhMMmhrWVM4eE16VTFNREEzTlRnM01USTJNaTl0WldScFlYTmZNVEF3TVRBNE1UYzJNRjh3TUY5UVgxZ3RNakF5TmpBeU1EVXhOVFV3TlRjdWFuQm58MDM4OTEyNDMyYmU4ZTA2YWU5MzY1MTNkYmZlY2UzZWVlNjIxNzlmODZjNGZkZWFlODg5YWU1ZmUwNGU0ODczYg&feedId=58083&k=6d02759768fcb9c78804b0ed00137cc7a1b7f7b4",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
-    id: "puma-pantalon-corto-sporting-gijon-24",
-    brand: "Puma",
-    model: "Pantalón corto Sporting Gijon 24",
-    colour: "N/D",
-    type: "shorts",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 27.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265351745&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000932386-00-P-X-20230920154454.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4MzgwOXxpbWFnZS9qcGVnfGFHUXlMMmc1TlM4eE1UWTBORFV6T0RZNE16UXlNaTl0WldScFlYTmZNVEF3TURrek1qTTRObDh3TUY5UVgxZ3RNakF5TXpBNU1qQXhOVFEwTlRRdWFuQm58NGYzMmY5MDgwYzE2N2ZmZTcyN2I3NTAyMzc5NDkzMTIwZTdmMjNlNTU3Mjc0ZWE2Y2ZkYjgzYjQzYjU2M2MzOA&feedId=58083&k=7efbfdb122a64f89b2614e9ec3b998d23975b275",
-        sizes: ["S", "XL"],
       },
     ],
   },
@@ -226944,27 +226890,9 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     ],
   },
   {
-    id: "puma-pantalon-largo-borussia-dortmund-king-anthem-beige",
-    brand: "Puma",
-    model: "Pantalón largo Borussia Dortmund King Anthem - Beige",
-    colour: "Beige",
-    type: "pants",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 42.74,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44292387468&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109458-00-S-M-20260324162439.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTE3OHxpbWFnZS9qcGVnfGFHSmtMMmd5T0M4eE16WTFOemd5TmpRNU1qUTBOaTl0WldScFlYTmZNVEF3TVRFd09UUTFPRjh3TUY5VFgwMHRNakF5TmpBek1qUXhOakkwTXprdWFuQm58N2QyNmQ1N2FjNjYxMjg0NzEwODI0Yzk2YWE2MzUyMTM1YTFhNmE5NmRjNmUwYzcwODI1MDdiZjU3YWE2NTFiYg&feedId=58083&k=6867198d50226a7ef935c9763a8a10d66b54992f",
-        sizes: ["S"],
-      },
-    ],
-  },
-  {
     id: "puma-pantalon-largo-de-portero-goalkeeper-pants-negro",
     brand: "Puma",
-    model: "Pantalón largo de portero Goalkeeper Pants - Negro",
+    model: "Pantalón largo de portero Puma Goalkeeper Pants - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -226980,9 +226908,27 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     ],
   },
   {
+    id: "puma-pantalon-largo-borussia-dortmund-king-anthem-beige",
+    brand: "Puma",
+    model: "Pantalón largo Puma Borussia Dortmund King Anthem - Beige",
+    colour: "Beige",
+    type: "pants",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 42.74,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44292387468&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109458-00-S-M-20260324162439.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTE3OHxpbWFnZS9qcGVnfGFHSmtMMmd5T0M4eE16WTFOemd5TmpRNU1qUTBOaTl0WldScFlYTmZNVEF3TVRFd09UUTFPRjh3TUY5VFgwMHRNakF5TmpBek1qUXhOakkwTXprdWFuQm58N2QyNmQ1N2FjNjYxMjg0NzEwODI0Yzk2YWE2MzUyMTM1YTFhNmE5NmRjNmUwYzcwODI1MDdiZjU3YWE2NTFiYg&feedId=58083&k=6867198d50226a7ef935c9763a8a10d66b54992f",
+        sizes: ["S"],
+      },
+    ],
+  },
+  {
     id: "puma-pantalon-largo-egipto-25-prematch-negro",
     brand: "Puma",
-    model: "Pantalón largo Egipto 25 Prematch - Negro",
+    model: "Pantalón largo Puma Egipto 25 Prematch - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -227000,7 +226946,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "puma-pantalon-largo-portugal-mundial-2026-pumatech-azul",
     brand: "Puma",
-    model: "Pantalón largo Portugal Mundial 2026 Pumatech - Azul",
+    model: "Pantalón largo Puma Portugal Mundial 2026 Pumatech - Azul",
     colour: "Azul",
     type: "pants",
     offers: [
@@ -229044,9 +228990,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-1-4-cremallera-puma-teamliga-amarillo",
     brand: "Puma",
@@ -229277,6 +229220,9 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-con-capucha-con-cremallera-om-2026-27-bleu",
     brand: "Puma",
@@ -229901,7 +229847,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-de-entrenamiento-borussia-dortmund-ftblculture-negro",
     brand: "Puma",
-    model: "Sudadera de entrenamiento Borussia Dortmund Ftblculture - Negro",
+    model: "Sudadera de entrenamiento Puma Borussia Dortmund Ftblculture - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -229919,7 +229865,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-de-entrenamiento-costa-de-margil-king-himno-marron",
     brand: "Puma",
-    model: "Sudadera de entrenamiento Costa De Margil King Himno - Marron",
+    model: "Sudadera de entrenamiento Puma Costa De Margil King Himno - Marron",
     colour: "Marron",
     type: "sweatshirt",
     offers: [
@@ -229937,7 +229883,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-de-entrenamiento-manchester-city-ftblculture-verde",
     brand: "Puma",
-    model: "Sudadera de entrenamiento Manchester City Ftblculture - Verde",
+    model: "Sudadera de entrenamiento Puma Manchester City Ftblculture - Verde",
     colour: "Verde",
     type: "sweatshirt",
     offers: [
@@ -229955,7 +229901,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-de-entrenamiento-manchester-city-king-verde",
     brand: "Puma",
-    model: "Sudadera de entrenamiento Manchester City King - Verde",
+    model: "Sudadera de entrenamiento Puma Manchester City King - Verde",
     colour: "Verde",
     type: "sweatshirt",
     offers: [
@@ -229973,7 +229919,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-de-entrenamiento-milan-25-26-rojo",
     brand: "Puma",
-    model: "Sudadera de entrenamiento Milan 25/26 - Rojo",
+    model: "Sudadera de entrenamiento Puma Milan 25/26 - Rojo",
     colour: "Rojo",
     type: "sweatshirt",
     offers: [
@@ -229991,7 +229937,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-de-entrenamiento-portugal-25-entrenamiento-marron",
     brand: "Puma",
-    model: "Sudadera de entrenamiento Portugal 25 Entrenamiento - Marron",
+    model: "Sudadera de entrenamiento Puma Portugal 25 Entrenamiento - Marron",
     colour: "Marron",
     type: "sweatshirt",
     offers: [
@@ -230009,7 +229955,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-de-entrenamiento-portugal-mundial-2026-entrenamiento-gris",
     brand: "Puma",
-    model: "Sudadera de entrenamiento Portugal Mundial 2026 Entrenamiento - Gris",
+    model: "Sudadera de entrenamiento Puma Portugal Mundial 2026 Entrenamiento - Gris",
     colour: "Gris",
     type: "sweatshirt",
     offers: [
@@ -230027,7 +229973,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-de-entrenamiento-portugal-mundial-2026-king-granate",
     brand: "Puma",
-    model: "Sudadera de entrenamiento Portugal Mundial 2026 King - Granate",
+    model: "Sudadera de entrenamiento Puma Portugal Mundial 2026 King - Granate",
     colour: "Granate",
     type: "sweatshirt",
     offers: [
@@ -230045,7 +229991,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-de-entrenamiento-portugal-mundial-2026-pumatech-granate",
     brand: "Puma",
-    model: "Sudadera de entrenamiento Portugal Mundial 2026 Pumatech - Granate",
+    model: "Sudadera de entrenamiento Puma Portugal Mundial 2026 Pumatech - Granate",
     colour: "Granate",
     type: "sweatshirt",
     offers: [
@@ -230063,7 +230009,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-de-entrenamiento-senegal-king-himno-verde",
     brand: "Puma",
-    model: "Sudadera de entrenamiento Senegal King Himno - Verde",
+    model: "Sudadera de entrenamiento Puma Senegal King Himno - Verde",
     colour: "Verde",
     type: "sweatshirt",
     offers: [
@@ -230081,7 +230027,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-sudadera-de-entrenamiento-teamliga-training-negro",
     brand: "Puma",
-    model: "Sudadera de entrenamiento Teamliga Training - Negro",
+    model: "Sudadera de entrenamiento Puma Teamliga Training - Negro",
     colour: "Negro",
     type: "sweatshirt",
     offers: [
@@ -232934,7 +232880,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "rinat-medias-cohesive-tape-marron",
     brand: "Rinat",
-    model: "Medias Cohesive Tape - Marron",
+    model: "Medias Rinat Cohesive Tape - Marron",
     colour: "Marron",
     type: "socks",
     offers: [
@@ -233897,7 +233843,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "siroko-pantalon-corto-sporting-de-gijon-26-27-primera-equipacion-blanco",
     brand: "Siroko",
-    model: "Pantalón corto Sporting De Gijon 26/27 Primera Equipacion - Blanco",
+    model: "Pantalón corto Siroko Sporting De Gijon 26/27 Primera Equipacion - Blanco",
     colour: "Blanco",
     type: "shorts",
     offers: [
@@ -234131,7 +234077,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "softee-pantalon-corto-de-portero-peto-reversible-unisex",
     brand: "Softee",
-    model: "Pantalón corto de portero Peto Reversible Unisex",
+    model: "Pantalón corto de portero Softee Peto Reversible Unisex",
     colour: "N/D",
     type: "shorts",
     offers: [
@@ -234282,9 +234228,6 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "sol-s-camiseta-sol-s-imperial-azul-2",
     brand: "Sol's",
@@ -234369,7 +234312,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "spalding-camiseta-move-shooting-azul",
     brand: "Spalding",
-    model: "Camiseta Move Shooting - Azul",
+    model: "Camiseta Spalding Move Shooting - Azul",
     colour: "Azul",
     type: "tshirt",
     offers: [
@@ -234438,6 +234381,9 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "sporti-brazalete-de-velcro-de-capitan-sporti-amarillo",
     brand: "Sporti",
@@ -234630,7 +234576,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "spyro-espinilleras-shin-guard-negro",
     brand: "Spyro",
-    model: "Espinilleras Shin Guard - Negro",
+    model: "Espinilleras Spyro Shin Guard - Negro",
     colour: "Negro",
     type: "shinguards",
     offers: [
@@ -234648,7 +234594,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "spyro-medias-cgmf-blanco",
     brand: "Spyro",
-    model: "Medias Cgmf - Blanco",
+    model: "Medias Spyro Cgmf - Blanco",
     colour: "Blanco",
     type: "socks",
     offers: [
@@ -234666,7 +234612,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "spyro-medias-cgmf-negro",
     brand: "Spyro",
-    model: "Medias Cgmf - Negro",
+    model: "Medias Spyro Cgmf - Negro",
     colour: "Negro",
     type: "socks",
     offers: [
@@ -234684,7 +234630,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "spyro-medias-foot-blanco",
     brand: "Spyro",
-    model: "Medias Foot - Blanco",
+    model: "Medias Spyro Foot - Blanco",
     colour: "Blanco",
     type: "socks",
     offers: [
@@ -234702,7 +234648,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "spyro-medias-foot-negro",
     brand: "Spyro",
-    model: "Medias Foot - Negro",
+    model: "Medias Spyro Foot - Negro",
     colour: "Negro",
     type: "socks",
     offers: [
@@ -237769,7 +237715,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "tapedesign-espinilleras-lex-mini-negro",
     brand: "TapeDesign",
-    model: "Espinilleras Lex Mini - Negro",
+    model: "Espinilleras TapeDesign Lex Mini - Negro",
     colour: "Negro",
     type: "shinguards",
     offers: [
@@ -237787,7 +237733,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "tapedesign-espinilleras-shinguards-20-mini-negro",
     brand: "TapeDesign",
-    model: "Espinilleras Shinguards 20 Mini - Negro",
+    model: "Espinilleras TapeDesign Shinguards 20 Mini - Negro",
     colour: "Negro",
     type: "shinguards",
     offers: [
@@ -237805,7 +237751,7 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "tapedesign-medias-antideslizante-superlight-blanco",
     brand: "TapeDesign",
-    model: "Medias Antideslizante Superlight - Blanco",
+    model: "Medias TapeDesign Antideslizante Superlight - Blanco",
     colour: "Blanco",
     type: "socks",
     offers: [
@@ -239366,9 +239312,6 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "uhlsport-calcetines-uhlsport-team-performance-negro",
     brand: "uhlsport",
@@ -239531,6 +239474,9 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "uhlsport-calcetines-uhlsport-team-pro-essential-blanco",
     brand: "uhlsport",
@@ -241094,7 +241040,7 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "uhlsport-camiseta-de-manga-larga-goal-25-1-4-zip-gris",
     brand: "uhlsport",
-    model: "Camiseta de manga larga Goal 25 1/4 Zip - Gris",
+    model: "Camiseta de manga larga uhlsport Goal 25 1/4 Zip - Gris",
     colour: "Gris",
     type: "tshirt",
     offers: [
@@ -241482,24 +241428,6 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmaillot-manches-longues-gardien-uhlsport-tower-blanc-noir-jaune-paille",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100561210_0.webp",
         sizes: ["8 ans"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-camiseta-offense-23-negro",
-    brand: "uhlsport",
-    model: "Camiseta Offense 23 - Negro",
-    colour: "Negro",
-    type: "tshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 24.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=36155617909&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000734341-00-P-X-20210429150633.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU2MnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJobE1pOW9ZbU12TVRBeE1UVTROREF5TkRVM09UQXVhbkJufGYzNjhlYzBmMjBlNmM3MWVkNjNjNDNlNTc5ZmJjZTY3ZTk4ZTA1YWMzYTVlMTliYzY4NjE4ZjJhYmI4NDA3YTk&feedId=58083&k=0a9566dda6d428a71acdd95f58ea73b2494aae00",
-        sizes: ["XL"],
       },
     ],
   },
@@ -242284,6 +242212,24 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100214104-t-shirt-uhlsport-goal-rouge-bordeaux",
         imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100214104.webp",
         sizes: ["3XL"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-camiseta-offense-23-negro",
+    brand: "uhlsport",
+    model: "Camiseta uhlsport Offense 23 - Negro",
+    colour: "Negro",
+    type: "tshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 24.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=36155617909&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000734341-00-P-X-20210429150633.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU2MnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJobE1pOW9ZbU12TVRBeE1UVTROREF5TkRVM09UQXVhbkJufGYzNjhlYzBmMjBlNmM3MWVkNjNjNDNlNTc5ZmJjZTY3ZTk4ZTA1YWMzYTVlMTliYzY4NjE4ZjJhYmI4NDA3YTk&feedId=58083&k=0a9566dda6d428a71acdd95f58ea73b2494aae00",
+        sizes: ["XL"],
       },
     ],
   },
@@ -245762,9 +245708,6 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-chaqueta-uhlsport-score-classic-azul",
     brand: "uhlsport",
@@ -245953,6 +245896,9 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-chaqueta-uhlsport-score-classic-negro-4",
     brand: "uhlsport",
@@ -247517,7 +247463,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-espinilleras-bionikshield",
     brand: "uhlsport",
-    model: "Espinilleras Bionikshield",
+    model: "Espinilleras uhlsport Bionikshield",
     colour: "N/D",
     type: "shinguards",
     offers: [
@@ -247529,24 +247475,6 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45304175348&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000562192-00-P-X-20190710100511.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjczMXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneU1pOW9PRFl2T1RFME9ETXlOekEyTnpZM09DNXFjR2N8ZGI0MzMxMTM3YTc3NjhhNGY1MTc2YTU5NmVmNzk2NWQ2M2YyNGNhYjY5NjdlMTgwZTZlODYyNmZjM2UyZTBmNA&feedId=58083&k=309da4ea6dbb98741100f5c9cc526ea067837b79",
         sizes: ["M", "L"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-espinilleras-cybershield-negro",
-    brand: "uhlsport",
-    model: "Espinilleras Cybershield - Negro",
-    colour: "Negro",
-    type: "shinguards",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 23.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45841248672&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068578-00-P-X-20250827104513.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NjAwMXxpbWFnZS9qcGVnfGFEQTJMMmhrTUM4eE16RTBNakUxTlRrMU1qRTFPQzl0WldScFlYTmZNVEF3TVRBMk9EVTNPRjh3TUY5UVgxZ3RNakF5TlRBNE1qY3hNRFExTVRNdWFuQm58NWNiZmE1YzdkNDdjNDhiMWFjODdkZTBiNTNjMGFkZjAzMzYyZDAyODFkNjdlMTU1Yzc1OTQ3ODM3ZjAzNjMyZA&feedId=58083&k=16adf3deddac54e5ed1cf279fb53367ebd637945",
-        sizes: ["XS", "S", "M", "L", "XL"],
       },
     ],
   },
@@ -247567,21 +247495,21 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         sizes: ["XS", "S", "M", "L"],
       },
       {
-        store: "FootStoreFR",
-        price: 27.47,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprotege-tibias-uhlsport-carbonflex-evo-noir",
-        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100680101_0.webp",
-        sizes: ["XS", "S", "M", "L"],
-      },
-      {
         store: "ForumSport",
         price: 23.24,
         shipping: 5.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39115899282&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000620445-00-P-X-20200325162216.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDc4N3xpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMFlpOW9Zakl2T1RRMk5EY3pPVEF3TkRRME5pNXFjR2N8MzM2NWMwZmNjYWVhMzIzMjAyNmMzZDk0ODYwNTIzNTUyM2QyZWZkNGM5M2U3ZjI0OTFiNGMyZWU5MGZhYzIzMg&feedId=58083&k=5915450e16986a68ebd4e9dd3147fe639b68afdc",
+        sizes: ["XS", "S", "M", "L"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 27.47,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprotege-tibias-uhlsport-carbonflex-evo-noir",
+        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100680101_0.webp",
         sizes: ["XS", "S", "M", "L"],
       },
     ],
@@ -247603,6 +247531,15 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         sizes: ["S", "M", "L"],
       },
       {
+        store: "ForumSport",
+        price: 33.94,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45849115726&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914740-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzMwMXxpbWFnZS9qcGVnfGFEWmhMMmc1Tmk4eE1UVTRNakkzTWpFeE1EWXlNaTl0WldScFlYTmZNVEF3TURreE5EYzBNRjh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58Mjk0NWZmZjJjN2QyYzZmYzY0ZDlmYWJiOTI3Nzg1Mjc0MmQ0OTgyMDljNWNjMzJkMWUxM2YzOGIzZjcwZjQ0NQ&feedId=58083&k=d080d4fa5c72e26bc75efbf5a9dcfbcf95591754",
+        sizes: ["S", "M", "L"],
+      },
+      {
         store: "FootStoreFR",
         price: 37.41,
         shipping: 7.99,
@@ -247611,14 +247548,23 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_100680701_0.webp",
         sizes: ["S", "M", "L"],
       },
+    ],
+  },
+  {
+    id: "uhlsport-espinilleras-cybershield-negro",
+    brand: "uhlsport",
+    model: "Espinilleras uhlsport Cybershield - Negro",
+    colour: "Negro",
+    type: "shinguards",
+    offers: [
       {
         store: "ForumSport",
-        price: 33.94,
+        price: 23.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45849115726&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000914740-00-P-X-20230816141640.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzMwMXxpbWFnZS9qcGVnfGFEWmhMMmc1Tmk4eE1UVTRNakkzTWpFeE1EWXlNaTl0WldScFlYTmZNVEF3TURreE5EYzBNRjh3TUY5UVgxZ3RNakF5TXpBNE1UWXhOREUyTkRBdWFuQm58Mjk0NWZmZjJjN2QyYzZmYzY0ZDlmYWJiOTI3Nzg1Mjc0MmQ0OTgyMDljNWNjMzJkMWUxM2YzOGIzZjcwZjQ0NQ&feedId=58083&k=d080d4fa5c72e26bc75efbf5a9dcfbcf95591754",
-        sizes: ["S", "M", "L"],
+        url: "https://www.awin1.com/pclick.php?p=45841248672&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068578-00-P-X-20250827104513.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NjAwMXxpbWFnZS9qcGVnfGFEQTJMMmhrTUM4eE16RTBNakUxTlRrMU1qRTFPQzl0WldScFlYTmZNVEF3TVRBMk9EVTNPRjh3TUY5UVgxZ3RNakF5TlRBNE1qY3hNRFExTVRNdWFuQm58NWNiZmE1YzdkNDdjNDhiMWFjODdkZTBiNTNjMGFkZjAzMzYyZDAyODFkNjdlMTU1Yzc1OTQ3ODM3ZjAzNjMyZA&feedId=58083&k=16adf3deddac54e5ed1cf279fb53367ebd637945",
+        sizes: ["XS", "S", "M", "L", "XL"],
       },
     ],
   },
@@ -249018,7 +248964,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-medias-stutzen-azul",
     brand: "uhlsport",
-    model: "Medias Stutzen - Azul",
+    model: "Medias uhlsport Stutzen - Azul",
     colour: "Azul",
     type: "socks",
     offers: [
@@ -249036,7 +248982,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-medias-stutzen-blanco",
     brand: "uhlsport",
-    model: "Medias Stutzen - Blanco",
+    model: "Medias uhlsport Stutzen - Blanco",
     colour: "Blanco",
     type: "socks",
     offers: [
@@ -249054,7 +249000,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-medias-stutzen-verde",
     brand: "uhlsport",
-    model: "Medias Stutzen - Verde",
+    model: "Medias uhlsport Stutzen - Verde",
     colour: "Verde",
     type: "socks",
     offers: [
@@ -249234,7 +249180,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-corto-de-portero-anatomic-goalkeeper-negro",
     brand: "uhlsport",
-    model: "Pantalón corto de portero Anatomic Goalkeeper - Negro",
+    model: "Pantalón corto de portero uhlsport Anatomic Goalkeeper - Negro",
     colour: "Negro",
     type: "shorts",
     offers: [
@@ -250581,6 +250527,15 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 22.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42215932213&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000735249-00-P-X-20210429164942.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMlppOW9Zekl2TVRBeE1UWXlOalUwTVRBMU9UQXVhbkJufDBkODUwNDYyOGE2ODFjMjAyNWEzOTg2YWJiNmIzYmM5ZTRmOWJhODI4Y2FiYjhmMjk1MzE1NGIzOGJjMDIyNDE&feedId=58083&k=df38c9b1d8b885974393b2a88f379cfdcf1a9316",
+        sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+      {
         store: "FootStoreFR",
         price: 13.29,
         priceMax: 18.52,
@@ -250616,15 +250571,6 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
           { size: "L", price: 12.22, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F100380601-short-uhlsport-club-noir-blanc" },
           { size: "XL", price: 10.85, url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F100380601-short-uhlsport-club-noir-blanc" },
         ],
-      },
-      {
-        store: "ForumSport",
-        price: 22.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42215932213&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000735249-00-P-X-20210429164942.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMlppOW9Zekl2TVRBeE1UWXlOalUwTVRBMU9UQXVhbkJufDBkODUwNDYyOGE2ODFjMjAyNWEzOTg2YWJiNmIzYmM5ZTRmOWJhODI4Y2FiYjhmMjk1MzE1NGIzOGJjMDIyNDE&feedId=58083&k=df38c9b1d8b885974393b2a88f379cfdcf1a9316",
-        sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
       },
     ],
   },
@@ -251289,7 +251235,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-de-calentamiento-distinction-colors-amarillo",
     brand: "uhlsport",
-    model: "Pantalón de calentamiento Distinction Colors - Amarillo",
+    model: "Pantalón de calentamiento uhlsport Distinction Colors - Amarillo",
     colour: "Amarillo",
     type: "pants",
     offers: [
@@ -251307,7 +251253,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-de-calentamiento-distinction-colors-azul",
     brand: "uhlsport",
-    model: "Pantalón de calentamiento Distinction Colors - Azul",
+    model: "Pantalón de calentamiento uhlsport Distinction Colors - Azul",
     colour: "Azul",
     type: "pants",
     offers: [
@@ -251325,7 +251271,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-de-calentamiento-distinction-colors-azul-2",
     brand: "uhlsport",
-    model: "Pantalón de calentamiento Distinction Colors - Azul",
+    model: "Pantalón de calentamiento uhlsport Distinction Colors - Azul",
     colour: "Azul",
     type: "pants",
     offers: [
@@ -251343,7 +251289,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-de-calentamiento-distinction-colors-negro",
     brand: "uhlsport",
-    model: "Pantalón de calentamiento Distinction Colors - Negro",
+    model: "Pantalón de calentamiento uhlsport Distinction Colors - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -252044,9 +251990,6 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-de-chandal-uhlsport-stream-azul",
     brand: "uhlsport",
@@ -252210,7 +252153,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-largo-de-portero-essential-goalkeeper",
     brand: "uhlsport",
-    model: "Pantalón largo de portero Essential Goalkeeper",
+    model: "Pantalón largo de portero uhlsport Essential Goalkeeper",
     colour: "N/D",
     type: "pants",
     offers: [
@@ -252228,7 +252171,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-largo-de-portero-standard-goalkeeper-negro",
     brand: "uhlsport",
-    model: "Pantalón largo de portero Standard Goalkeeper - Negro",
+    model: "Pantalón largo de portero uhlsport Standard Goalkeeper - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -252243,10 +252186,13 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-largo-evo-woven-negro",
     brand: "uhlsport",
-    model: "Pantalón largo Evo Woven - Negro",
+    model: "Pantalón largo uhlsport Evo Woven - Negro",
     colour: "Negro",
     type: "pants",
     offers: [
@@ -255342,7 +255288,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "uhlsport-sudadera-de-entrenamiento-goal-25-poly-azul",
     brand: "uhlsport",
-    model: "Sudadera de entrenamiento Goal 25 Poly - Azul",
+    model: "Sudadera de entrenamiento uhlsport Goal 25 Poly - Azul",
     colour: "Azul",
     type: "sweatshirt",
     offers: [
@@ -255360,7 +255306,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "uhlsport-sudadera-de-entrenamiento-goal-25-poly-gris",
     brand: "uhlsport",
-    model: "Sudadera de entrenamiento Goal 25 Poly - Gris",
+    model: "Sudadera de entrenamiento uhlsport Goal 25 Poly - Gris",
     colour: "Gris",
     type: "sweatshirt",
     offers: [
@@ -257944,9 +257890,6 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk47: ApparelProduct[] = [
   {
     id: "under-armour-pantalon-de-chandal-elastico-under-armour-challenger-negro",
     brand: "Under Armour",
@@ -258109,6 +258052,9 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk47: ApparelProduct[] = [
   {
     id: "under-armour-pantalon-de-chandal-under-armour-challenger-negro-2",
     brand: "Under Armour",
