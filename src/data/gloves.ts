@@ -18483,6 +18483,23 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
+    id: "uhlsport-uhlsport-aquasoft",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Aquasoft",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 55.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265336481&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817986-00-P-X-20221006163127.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMzM3xpbWFnZS9qcGVnfGFEZzFMMmc1WkM4eE1EazJNak16TURZeE5UZ3pPQzl0WldScFlYTmZNVEF3TURneE56azRObDh3TUY5UVgxZ3RNakF5TWpFd01EWXhOak14TWpjdWFuQm58NWQxNjhiNTVlMzY5OGViY2UxZTE1MTNiOWZhZDNjNjRkMDlmZjZhNzQ5ZDgzNWQwOGJmNzRlMDc1N2Y5M2Q2YQ&feedId=58083&k=ce983b6de4adb07cbe2d195692feb234f7425d53",
+        sizes: ["8.5", "9.5", "10", "10.5"],
+      },
+    ],
+  },
+  {
     id: "uhlsport-guantes-de-portero-uhlsport-aquasoft-azul",
     brand: "uhlsport",
     model: "Guantes de portero Uhlsport Aquasoft - Azul",
@@ -19730,6 +19747,9 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-absolutgrip-hn-fit-rouge",
     brand: "uhlsport",
@@ -19756,9 +19776,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-absolutgrip-hn-rouge",
     brand: "uhlsport",
@@ -20895,6 +20912,23 @@ const minedGloveProductsChunk5: GloveProduct[] = [
     ],
   },
   {
+    id: "uhlsport-uhlsport-super-resist-hn",
+    brand: "uhlsport",
+    model: "Guantes de portero uhlsport Super Resist Hn",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 48.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40123662118&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817987-00-P-X-20221006163127.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU5M3xpbWFnZS9qcGVnfGFHSmxMMmhtTWk4eE1EazJNak16TVRBd09UQTFOQzl0WldScFlYTmZNVEF3TURneE56azROMTh3TUY5UVgxZ3RNakF5TWpFd01EWXhOak14TWpjdWFuQm58YjYzMzZlMmFhMzhmNThkMTFkMWM4ZmI4NzdlNzEwYTQ4ZmU1MTAwZDY0MTBkZmY2Y2RkNDZhZWQ1OWYzNDc5YQ&feedId=58083&k=e654191cfb6eedd95d992db719cc7b9841f1ffb5",
+        sizes: ["8.5", "10"],
+      },
+    ],
+  },
+  {
     id: "uhlsport-super-resist-naranja",
     brand: "uhlsport",
     model: "Guantes de portero uhlsport Super Resist - Naranja",
@@ -20960,40 +20994,6 @@ const minedGloveProductsChunk5: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F101135201-gants-de-gardien-uhlsport-supersoft-hn-flex-frame-noir-blanc-vert",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_101135201_0.webp",
         sizes: ["7.5", "8"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-uhlsport-aquasoft",
-    brand: "uhlsport",
-    model: "Guantes de portero uhlsport Uhlsport Aquasoft",
-    colour: "N/D",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 55.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265336481&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817986-00-P-X-20221006163127.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMzM3xpbWFnZS9qcGVnfGFEZzFMMmc1WkM4eE1EazJNak16TURZeE5UZ3pPQzl0WldScFlYTmZNVEF3TURneE56azRObDh3TUY5UVgxZ3RNakF5TWpFd01EWXhOak14TWpjdWFuQm58NWQxNjhiNTVlMzY5OGViY2UxZTE1MTNiOWZhZDNjNjRkMDlmZjZhNzQ5ZDgzNWQwOGJmNzRlMDc1N2Y5M2Q2YQ&feedId=58083&k=ce983b6de4adb07cbe2d195692feb234f7425d53",
-        sizes: ["8.5", "9.5", "10", "10.5"],
-      },
-    ],
-  },
-  {
-    id: "uhlsport-uhlsport-super-resist-hn",
-    brand: "uhlsport",
-    model: "Guantes de portero uhlsport Uhlsport Super Resist Hn",
-    colour: "N/D",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 48.99,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40123662118&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817987-00-P-X-20221006163127.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU5M3xpbWFnZS9qcGVnfGFHSmxMMmhtTWk4eE1EazJNak16TVRBd09UQTFOQzl0WldScFlYTmZNVEF3TURneE56azROMTh3TUY5UVgxZ3RNakF5TWpFd01EWXhOak14TWpjdWFuQm58YjYzMzZlMmFhMzhmNThkMTFkMWM4ZmI4NzdlNzEwYTQ4ZmU1MTAwZDY0MTBkZmY2Y2RkNDZhZWQ1OWYzNDc5YQ&feedId=58083&k=e654191cfb6eedd95d992db719cc7b9841f1ffb5",
-        sizes: ["8.5", "10"],
       },
     ],
   },

@@ -368,7 +368,7 @@ def mine_forumsport_category(types, out_list, strip_re=None, exclude_extra=None,
         brand = (rep.get('brand_name') or '').strip()
         title = norm_title(rep.get('product_name') or '')
         if brand:
-            title = re.sub(r'^' + re.escape(brand) + r'\s+', '', title, flags=re.I)
+            title = re.sub(r'^(?:' + re.escape(brand) + r'\s+)+', '', title, flags=re.I)
         if strip_re:
             title = strip_re.sub('', title).strip(' -')
         title = ' '.join(w[:1].upper() + w[1:] for w in title.split())  # el feed viene en minúsculas
@@ -430,11 +430,12 @@ def mine_adidas_es_gear(gloves, balls):
             name = ' '.join(w.capitalize() for w in name.lower().split())
         rep = min(rows, key=lambda r: parse_price(r.get('search_price')))
         colour = adidas_cl_colour(rep.get('colour'))
-        model = adidas_cl_model(name, colour, False)
-        if model.startswith('adidas '):  # sin sustantivo conocido: queda el título real, sin "adidas" delante
-            model = f"{name} - {colour}"
+        def build(lbl):
+            m = adidas_cl_model(name, lbl, False)
+            return f"{name} - {lbl}" if m.startswith('adidas ') else m  # sin sustantivo conocido: título real, sin "adidas" delante
+        model = build(colour)
         if model in seen:  # mismo nombre y color dominante, otro colorway: se distingue por el estilo, nunca se funden
-            model = f"{name} - {colour} ({style})"
+            model = build(f"{colour} ({style})")
         seen[model] = 1
         price = parse_price(rep.get('search_price'))
         price_max = max(parse_price(r.get('search_price')) for r in rows)
