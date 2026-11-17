@@ -448,6 +448,81 @@ def mine_adidas_es_gear(gloves, balls):
     print('AdidasES gear:', n)
 
 
+PLANETFOOT_BALL_SKIP_RE = re.compile(r'\b(pack|box|kit|coffret|badge|volley\w*|junior|plaid|sac|casquette)\b', re.I)
+
+
+def mine_planetfoot_balls(out_list):
+    """PlanetFoot (Awin 123918, Shopify, formato Google Shopping, titulos en francés).
+    product_type viene vacío; los balones son google_product_category 'Soccer Balls' más 4 minibalones
+    mal categorizados (título 'Ballon ...'). Una fila = un balón. El feed no trae envío (como en camisetas: 0);
+    la tienda dice gratis desde 30 EUR en punto Mondial Relay, el domicilio se ve en el checkout."""
+    path = f"{FEEDS}/PLANETFOOT.csv"
+    if not os.path.exists(path):
+        print('PlanetFoot: feed not found, skipped')
+        return
+    n = 0
+    with open(path, newline='', encoding='utf-8-sig', errors='replace') as f:
+        for r in csv.DictReader(f):
+            title = (r.get('title') or '').strip()
+            if not (r.get('google_product_category', '').endswith('Soccer Balls') or re.match(r'(mini )?ballon\b', title, re.I)):
+                continue
+            price = parse_price((r.get('sale_price') or r.get('price') or '').replace(' EUR', ''))
+            if r.get('availability') != 'in_stock' or not price or not r.get('image_link') or PLANETFOOT_BALL_SKIP_RE.search(title):
+                continue
+            if AMERICAN_FOOTBALL_RE.search(title) or not re.search(r'ballon', title, re.I):
+                continue
+            maker = re.search(r'\b(adidas|puma|nike|weeplay|roger\'?s)\b', title, re.I)
+            brand = maker.group(1) if maker else (r.get('brand') or 'N/D').strip().title()
+            out_list.append({
+                'store': 'PlanetFoot', 'brand': brand, 'model': norm_title(title), 'colour': (r.get('color') or '').strip() or 'N/D',
+                'price': price, 'shipping': 0, 'currency': 'EUR', 'url': r.get('aw_deep_link'), 'imageUrl': r.get('image_link'),
+                'sizes': [], 'eans': _eans([r], 'gtin'),
+            })
+            n += 1
+    print('PlanetFoot balls:', n)
+
+
+PLANETFOOT_SET_SKIP_RE = re.compile(r'enfant|junior|b[ée]b[ée]|fille|gar[çc]on|\bans\b|mois|cadeau|coffret|\bpack\b|bonnet|ballon', re.I)
+
+
+def mine_planetfoot_sets(out_list):
+    """PlanetFoot: chándales y conjuntos camiseta+short de club para adulto (google_product_category 'Outfit Sets').
+    Una fila por talla, la talla va al final del título (" - S" o " - S / M" arriba/abajo): se agrupa por título sin ella."""
+    path = f"{FEEDS}/PLANETFOOT.csv"
+    if not os.path.exists(path):
+        return
+    groups = {}
+    with open(path, newline='', encoding='utf-8-sig', errors='replace') as f:
+        for r in csv.DictReader(f):
+            title = (r.get('title') or '').strip()
+            if 'Outfit Sets' not in (r.get('google_product_category') or '') or r.get('availability') != 'in_stock':
+                continue
+            if PLANETFOOT_SET_SKIP_RE.search(title) or AMERICAN_FOOTBALL_RE.search(title) or not r.get('image_link') or not parse_price((r.get('sale_price') or r.get('price') or '').replace(' EUR', '')):
+                continue
+            m = re.match(r'^(.*?) - ((?:XXS|XS|S|M|L|XL|XXL|3XL|4XL)(?: / (?:XXS|XS|S|M|L|XL|XXL|3XL|4XL))?)$', title)
+            base, size = (m.group(1), m.group(2)) if m else (title, '')
+            groups.setdefault(base, []).append((size, r))
+    n = 0
+    for base, items in groups.items():
+        rows = [r for _, r in items]
+        pr = lambda r: parse_price((r.get('sale_price') or r.get('price') or '').replace(' EUR', ''))
+        rep = min(rows, key=pr)
+        base = re.sub(r'^(Puma|Adidas|Nike) - ', '', base)
+        maker = re.search(r'\b(adidas|puma|nike|kappa|macron|joma|umbro)\b', rep.get('title') or '', re.I)
+        sizes = sorted({sz for sz, _ in items if sz}, key=size_sort_key)
+        entry = {
+            'store': 'PlanetFoot', 'brand': maker.group(1).title() if maker else (rep.get('brand') or 'N/D').strip().title(), 'model': base, 'colour': (rep.get('color') or '').strip() or 'N/D',
+            'price': pr(rep), 'shipping': 0, 'currency': 'EUR', 'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('image_link'),
+            'sizes': sizes, 'eans': _eans(rows, 'gtin'), 'type': 'set',
+        }
+        if max(pr(r) for r in rows) > pr(rep):
+            entry['priceMax'] = max(pr(r) for r in rows)
+            entry['sizePrices'] = [{'size': sz, 'price': pr(r), 'url': r.get('aw_deep_link')} for sz, r in items if sz]
+        out_list.append(entry)
+        n += 1
+    print('PlanetFoot sets:', n)
+
+
 # (product_type de ForumSport, type de apparel.ts, sustantivo castellano). La palabra
 # "pantalones" sin "largos" es el short en castellano de fútbol (Real Madrid, Entrada26...).
 FORUMSPORT_APPAREL = [
@@ -1270,6 +1345,7 @@ if __name__ == '__main__':
     mine_forumsport_category({'fútbol > guantes portero'}, gloves_results, re.compile(r'\s*guantes? (de )?portero\s*', re.I))
 
     mine_adidas_es_gear(gloves_results, balls_results)
+    mine_planetfoot_balls(balls_results)
 
     print('=== PELOTAS ===')
     mine_blaz_category('FOOTSTORE_ES.csv', 'FootStoreES', 'Ballon de football', balls_results)
@@ -1307,6 +1383,7 @@ if __name__ == '__main__':
         mine_apparel_type('baselayer', kw, apparel_results)
     for feed in REEBOK_FEEDS:
         mine_reebok(apparel_results, *feed)
+    mine_planetfoot_sets(apparel_results)
     for store in ADIDAS_LATAM:
         mine_adidas_latam(*store, gloves_results, balls_results, apparel_results)
 

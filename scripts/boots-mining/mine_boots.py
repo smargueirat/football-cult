@@ -48,7 +48,10 @@ GROUND_PATTERNS = [
     (r'césped natural seco', 'FG'),
     (r'césped natural h[uú]medo', 'SG'),
     (r'césped artificial', 'AG'),
-    (r'multitaco|multisuperficie|multi-ground|multi\s+surface', 'MG'),
+    (r'multitaco|multisuperficie|multi[- ]ground|multi\s+surface', 'MG'),
+    (r'relva (artificial|sint[ée]tica)', 'AG'),  # adidas.pt
+    (r'piso firme', 'FG'),
+    (r'piso mole', 'SG'),
     # "moqueta" (real horma española de tapón corto para 7-a-side) va en
     # TF/Turf según la propia guía del usuario ("TF/TT | Turf / Moqueta"),
     # NO en indoor. "\bindoor\b" no entra acá porque esas filas se
@@ -235,7 +238,7 @@ def eu_size_from_futbolemotion(v):
 # Otro deporte: siempre fuera.
 SPORT_EXCLUDE = re.compile(
     r'\brugby\b|\bhockey\b|\bb[ée]isbol\b|\bkakari\b'
-    r'|f[uú]tbol\s+american[oa]\b|\bamerican\s+football\b|football\s+am[ée]ricain\b'
+    r'|f[uú]tbol\s+american[oa]\b|futebol\s+americano\b|\bamerican\s+football\b|football\s+am[ée]ricain\b'
     # "adidas Predator Crib" (tallas 16-19): patucos de bebé de la categoría
     # "Baby" de Foot-Store, no una bota.
     r'|\bcrib\b',
@@ -280,14 +283,15 @@ def tag(entry, kids, indoor):
 
 results = []
 
-def mine_adidas_es():
-    if not os.path.exists(f"{FEEDS}/ADIDAS_ES.csv"):
-        print('AdidasES: feed not found, skipped')
+def mine_adidas_es(store='AdidasES', fname='ADIDAS_ES.csv'):
+    # AdidasPT: mismo feed y mismos códigos de estilo (433 de 434 coinciden), categoría "Botas de Futebol"
+    if not os.path.exists(f"{FEEDS}/{fname}"):
+        print(f'{store}: feed not found, skipped')
         return
     style_groups = {}
-    with open(f"{FEEDS}/ADIDAS_ES.csv", newline='', encoding='utf-8', errors='replace') as f:
+    with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8', errors='replace') as f:
         for row in csv.DictReader(f):
-            if 'tbol' not in (row.get('merchant_category') or ''):
+            if not re.search(r'tbol|Futebol', row.get('merchant_category') or ''):
                 continue
             # custom_1: "Adult" / "Kids" (las de niño entran desde 2026-10-09)
             if row.get('custom_1') not in ('Adult', 'Kids'):
@@ -318,7 +322,7 @@ def mine_adidas_es():
         model = rep.get('product_name', '').strip()
         ground = infer_ground(model, rep.get('description', ''))
         results.append(tag({
-            'store': 'AdidasES', 'brand': brand, 'model': model, 'groundType': ground,
+            'store': store, 'brand': brand, 'model': model, 'groundType': ground,
             'price': parse_price(rep.get('search_price')), 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
@@ -326,7 +330,7 @@ def mine_adidas_es():
             'style': style,
         }, *classify(model, kids=rep.get('custom_1') == 'Kids')))
         n += 1
-    print('AdidasES:', n)
+    print(f'{store}:', n)
 
 def mine_blaz_awin(fname, store_label):
     if not os.path.exists(f"{FEEDS}/{fname}"):
@@ -1257,6 +1261,7 @@ def legacy_model_names_from_boots_ts():
 
 if __name__ == '__main__':
     mine_adidas_es()
+    mine_adidas_es('AdidasPT', 'ADIDAS_PT.csv')
     mine_blaz_awin('SPORTISGOOD_ES.csv', 'SportIsGoodES')
     mine_blaz_awin('FOOTSTORE_ES.csv', 'FootStoreES')
     mine_decathlon()

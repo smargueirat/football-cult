@@ -21,7 +21,7 @@
 // Gigasport quedan afuera de esta primera carga (sin categoría de ropa
 // confiable verificada todavía).
 export interface ApparelOffer {
-  store: "FootStoreES" | "SportIsGoodES" | "FootStoreFR" | "SportIsGoodFR" | "Reebok DE" | "Reebok UK" | "AdidasCL" | "AdidasMX" | "AdidasCO" | "ForumSport";
+  store: "FootStoreES" | "SportIsGoodES" | "FootStoreFR" | "SportIsGoodFR" | "Reebok DE" | "Reebok UK" | "AdidasCL" | "AdidasMX" | "AdidasCO" | "ForumSport" | "PlanetFoot";
   price: number;
   priceMax?: number;
   shipping: number;
@@ -17898,24 +17898,6 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-chandal-real-madrid-26-27-entrenamiento",
-    brand: "Adidas",
-    model: "Chándal Real Madrid 26/27 Entrenamiento",
-    colour: "N/D",
-    type: "set",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 101.78,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44905215807&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102141-00-S-M-20260513144218.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMXxpbWFnZS9qcGVnfGFHUTRMMmd6WXk4eE16YzJNakEwTnpBNE1qVXlOaTl0WldScFlYTmZNVEF3TVRFd01qRTBNVjh3TUY5VFgwMHRNakF5TmpBMU1UTXhORFF5TVRndWFuQm58YjAxYjExYTU5YTRlOWEyYWM1MjcwNjIzZTI3MWVjMDU5MzE5OTVjNGI3ZDY2YjVhYmU5ZTFkYTFjMjVmZmIxMQ&feedId=58083&k=70edfab11d3377d4be9701021bfd5f2466d80411",
-        sizes: ["S", "M", "L", "XL"],
-      },
-    ],
-  },
-  {
     id: "adidas-chaqueta-1-2-cremallera-real-madrid-2024-25-azul",
     brand: "Adidas",
     model: "Chaqueta 1/2 cremallera Real Madrid 2024/25 - Azul",
@@ -22494,9 +22476,6 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk5: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-chandal-adidas-tiro-23-league-amarillo",
     brand: "Adidas",
@@ -22524,6 +22503,9 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk5: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-chandal-adidas-tiro-23-league-azul",
     brand: "Adidas",
@@ -29428,9 +29410,6 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk6: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-chandal-new-york-red-bulls-2022-23-rojo",
     brand: "Adidas",
@@ -29458,6 +29437,9 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk6: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-chandal-ol-dna-2024-25-blanco",
     brand: "Adidas",
@@ -35711,9 +35693,6 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk7: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-reversible-la-galaxy-anthem-2025-26-blanco",
     brand: "Adidas",
@@ -35759,6 +35738,9 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk7: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-tiro-all-weather-adidas-de-universidad-chile-26-violeta",
     brand: "Adidas",
@@ -40040,6 +40022,177 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-chandal-real-madrid-26-27-entrenamiento",
+    brand: "Adidas",
+    model: "Ensemble Complet Tiro26 Competition Real Madrid Homme 2026/27 Vert Rose",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 116.86,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-tiro26-competition-real-madrid-homme-2026-27-vert-rose-ks4643%3Fvariant%3D54464908558677",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/ensemble-tiro26-competition-real-madrid-homme-2026-27-vert-rose-ks4643-1.avif?v=1789995844",
+        sizes: ["S", "XL"],
+      },
+      {
+        store: "ForumSport",
+        price: 101.78,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44905215807&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102141-00-S-M-20260513144218.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMXxpbWFnZS9qcGVnfGFHUTRMMmd6WXk4eE16YzJNakEwTnpBNE1qVXlOaTl0WldScFlYTmZNVEF3TVRFd01qRTBNVjh3TUY5VFgwMHRNakF5TmpBMU1UTXhORFF5TVRndWFuQm58YjAxYjExYTU5YTRlOWEyYWM1MjcwNjIzZTI3MWVjMDU5MzE5OTVjNGI3ZDY2YjVhYmU5ZTFkYTFjMjVmZmIxMQ&feedId=58083&k=70edfab11d3377d4be9701021bfd5f2466d80411",
+        sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-ensemble-maillot-short-arsenal-fc-entrainement-homme-2026-27-noir-orange",
+    brand: "Adidas",
+    model: "Ensemble Maillot Short Arsenal FC Entraînement Homme 2026/27 Noir Orange",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 90.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-arsenal-fc-entrainement-homme-2026-27-noir-orange%3Fvariant%3D55348465074517",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/dec97884-43d5-4316-a891-0c6fac2cebe6.png?v=1792140606",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-ensemble-maillot-short-arsenal-fc-entrainement-homme-2026-27-orange-noir",
+    brand: "Adidas",
+    model: "Ensemble Maillot Short Arsenal FC Entraînement Homme 2026/27 Orange Noir",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 90.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-arsenal-fc-entrainement-homme-2026-27-orange-noir%3Fvariant%3D55348463698261",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/1a59d090-df79-4013-8a66-59be0825a299.png?v=1792140599",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-ensemble-maillot-short-bayern-munich-entrainement-homme-2026-27-bleu-marine",
+    brand: "Adidas",
+    model: "Ensemble Maillot Short Bayern Munich Entraînement Homme 2026/27 Bleu Marine",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 90.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-bayern-munich-entrainement-homme-2026-27-bleu-marine%3Fvariant%3D55348464255317",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/8caa6d8c-9fa8-49b4-9ca0-d6ec5292d84c.png?v=1792140602",
+        sizes: ["L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-ensemble-maillot-short-juventus-entrainement-homme-2026-27-blanc-bleu",
+    brand: "Adidas",
+    model: "Ensemble Maillot Short Juventus Entraînement Homme 2026/27 Blanc Bleu",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 90.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-juventus-entrainement-homme-2026-27-blanc-bleu%3Fvariant%3D55348464714069",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/6eefda8e-5aa4-43d5-8322-0d843b01616f.png?v=1792140604",
+        sizes: ["M / S", "M / XL", "L / S", "L / XL", "XL / S", "XL / XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-ensemble-maillot-short-juventus-entrainement-homme-2026-27-bleu-blanc",
+    brand: "Adidas",
+    model: "Ensemble Maillot Short Juventus Entraînement Homme 2026/27 Bleu Blanc",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 90.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-juventus-entrainement-homme-2026-27-bleu-blanc%3Fvariant%3D55348368245077",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/b4f7fe0e-dd22-47db-95f1-f94c128a081b.png?v=1792100475",
+        sizes: ["S / S", "S / XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-ensemble-maillot-short-liverpool-fc-entrainement-homme-2026-27-gris-noir",
+    brand: "Adidas",
+    model: "Ensemble Maillot Short Liverpool FC Entraînement Homme 2026/27 Gris Noir",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 90.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-liverpool-fc-entrainement-homme-2026-27-gris-noir%3Fvariant%3D55351187767637",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/18ebced2-4808-4d70-92e4-cfd90b052398.png?v=1792141796",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-ensemble-maillot-short-liverpool-fc-entrainement-homme-2026-27-noir",
+    brand: "Adidas",
+    model: "Ensemble Maillot Short Liverpool FC Entraînement Homme 2026/27 Noir",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 90.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-liverpool-fc-entrainement-homme-2026-27-noir%3Fvariant%3D55348367720789",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/bc19eccc-8383-4162-8bc8-b1e6a322ee66.png?v=1792100471",
+        sizes: ["S / L", "S / M", "S / S", "L / L", "L / M", "L / S", "XL / L", "XL / M", "XL / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-ensemble-maillot-short-mexique-third-homme-2026-27-noir",
+    brand: "Adidas",
+    model: "Ensemble Maillot Short Mexique Third Homme 2026/27 Noir",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 126.9,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-mexique-third-homme-2026-27-noir%3Fvariant%3D55353187664213",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/ensemble-maillot-short-mexique-third-homme-2026-27-noir-pack-1600.png?v=1792155423",
+        sizes: ["XS / L", "XS / M", "XS / S", "S / L", "S / M", "S / S"],
+      },
+    ],
+  },
+  {
     id: "adidas-entrenamiento-de-los-mejores-jugadores-del-condivo-18-rojo",
     brand: "Adidas",
     model: "Entrenamiento de los mejores jugadores del condivo 18 - Rojo",
@@ -41817,6 +41970,9 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk8: ApparelProduct[] = [
   {
     id: "adidas-leggings-mujer-alemania-coupe-du-monde-2026-noir",
     brand: "Adidas",
@@ -42006,9 +42162,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk8: ApparelProduct[] = [
   {
     id: "adidas-maleta-deportiva-adidas-tiro-pequena-con-compartimento-inferior-azul",
     brand: "Adidas",
@@ -48070,6 +48223,9 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-short-adidas-tiro-23-league-bleu",
     brand: "Adidas",
@@ -48307,9 +48463,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-pantalon-corto-adidas-tiro-24-negro-2",
     brand: "Adidas",
@@ -54237,6 +54390,9 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-pantalon-corto-mujer-adidas-squadra25-azul",
     brand: "Adidas",
@@ -54514,9 +54670,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-pantalon-corto-mujer-adidas-tiro-21-sweat-negro",
     brand: "Adidas",
@@ -60257,6 +60410,9 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-adidas-tiro26-league-bleu-2",
     brand: "Adidas",
@@ -60523,9 +60679,6 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-ajax-amsterdam-originals-noir",
     brand: "Adidas",
@@ -67221,6 +67374,9 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-entrenamiento-adidas-tiro-seleccion-colombia-26-azul",
     brand: "Adidas",
@@ -67445,9 +67601,6 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-entrenamiento-colombia-copa-america-2024-negro",
     brand: "Adidas",
@@ -72795,6 +72948,9 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-parka-adidas-entrada-stadium-negro",
     brand: "Adidas",
@@ -73125,9 +73281,6 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-parka-juventus-turin-condivo-stadium-2022-23-rosa",
     brand: "Adidas",
@@ -78452,6 +78605,9 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-short-de-portero-exterior-alemania-2026-bleu",
     brand: "Adidas",
@@ -78748,9 +78904,6 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-short-domicilio-autentico-manchester-united-2026-27-noir",
     brand: "Adidas",
@@ -83579,6 +83732,9 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-sudadera-con-capucha-adidas-azul",
     brand: "Adidas",
@@ -83822,9 +83978,6 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-sudadera-con-capucha-adidas-entrada-22-negro",
     brand: "Adidas",
@@ -89217,6 +89370,9 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "adidas-sudadera-prematch-bayern-munich-2023-24-blanco",
     brand: "Adidas",
@@ -89498,9 +89654,492 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk16: ApparelProduct[] = [
+  {
+    id: "adidas-survetement-arsenal-fc-homme-2026-27-noir-veste-deperlante-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Arsenal FC Homme 2026/27 Noir – Veste Déperlante + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 148.31,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-arsenal-fc-homme-2026-27-noir-veste-deperlante-pantalon%3Fvariant%3D55771380482389",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-n10-haut-pantalon-1600x1600.jpg?v=1794512723",
+        sizes: ["S / L", "S / S", "M / L", "M / S", "L / L", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-arsenal-fc-tiro-winterized-homme-2026-27-noir-haut-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Arsenal FC Tiro Winterized Homme 2026/27 Noir – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 148.41,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-arsenal-fc-tiro-winterized-homme-2026-27-noir-haut-pantalon%3Fvariant%3D55771359838549",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a12-haut-pantalon-1600x1600.jpg?v=1794512686",
+        sizes: ["S / L", "S / S", "M / L", "M / S", "L / L", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-bayern-munich-tiro26-winterized-homme-2026-27-bleu-haut-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Bayern Munich Tiro26 Winterized Homme 2026/27 Bleu – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 122.41,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-bayern-munich-tiro26-winterized-homme-2026-27-bleu-haut-pantalon%3Fvariant%3D55771383005525",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-n11-haut-pantalon-1600x1600.jpg?v=1794512729",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-ajax-amsterdam-entrainement-homme-2026-27-bleu-marine",
+    brand: "Adidas",
+    model: "Survêtement Complet Ajax Amsterdam Entraînement Homme 2026/27 Bleu Marine",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 126.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-ajax-amsterdam-entrainement-homme-2026-27-bleu-marine%3Fvariant%3D55348293828949",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/7b558eaf-a633-4bc1-8bdc-7d6df2de39fb.png?v=1792099477",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-algerie-homme-2026-27-vert",
+    brand: "Adidas",
+    model: "Survêtement Complet Algérie Homme 2026/27 Vert",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 108.9,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-algerie-homme-2026-27-vert%3Fvariant%3D55353186713941",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/survetement-complet-algerie-homme-2026-27-vert-pack-1600.png?v=1792155319",
+        sizes: ["S / L", "S / M", "S / XL", "S / XS", "M / L", "M / M", "M / XL", "M / XS", "L / L", "L / M", "L / XL", "L / XS", "XL / L", "XL / M", "XL / XL", "XL / XS"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-argentine-homme-2026-27-blanc-bleu",
+    brand: "Adidas",
+    model: "Survêtement Complet Argentine Homme 2026/27 Blanc Bleu",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 113.4,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-argentine-homme-2026-27-blanc-bleu%3Fvariant%3D55353189925205",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/survetement-complet-argentine-homme-2026-27-blanc-bleu-pack-1600.png?v=1792155433",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-arsenal-fc-entrainement-homme-2026-27-noir-orange",
+    brand: "Adidas",
+    model: "Survêtement Complet Arsenal FC Entraînement Homme 2026/27 Noir Orange",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 126.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-arsenal-fc-entrainement-homme-2026-27-noir-orange%3Fvariant%3D55347805552981",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-pack-22-photomontage-1600_6dcf98f0-cd12-4d28-ada0-b0fd033d2593.png?v=1792097970",
+        sizes: ["S / L", "S / S", "L / L", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-arsenal-fc-entrainement-homme-2026-27-orange-noir",
+    brand: "Adidas",
+    model: "Survêtement Complet Arsenal FC Entraînement Homme 2026/27 Orange Noir",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 126.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-arsenal-fc-entrainement-homme-2026-27-orange-noir%3Fvariant%3D55351186981205",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/bb8bcd63-d54a-40b7-bc9e-759ca49fe049.png?v=1792141791",
+        sizes: ["S / L", "S / S", "M / L", "M / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-bayern-munich-entrainement-homme-2026-27-bleu",
+    brand: "Adidas",
+    model: "Survêtement Complet Bayern Munich Entraînement Homme 2026/27 Bleu",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 126.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-bayern-munich-entrainement-homme-2026-27-bleu%3Fvariant%3D55347804045653",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-pack-17-photomontage-1600_41e90b50-96a9-478c-b865-f14f4949328e.png?v=1792097897",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-italie-travel-homme-2026-27-bleu",
+    brand: "Adidas",
+    model: "Survêtement Complet Italie Travel Homme 2026/27 Bleu",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 142.2,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-italie-travel-homme-2026-27-bleu%3Fvariant%3D55353190875477",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/survetement-complet-italie-travel-homme-2026-27-bleu-pack-1600.png?v=1792155438",
+        sizes: ["S", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-juventus-entrainement-homme-2026-27-bleu-blanc",
+    brand: "Adidas",
+    model: "Survêtement Complet Juventus Entraînement Homme 2026/27 Bleu Blanc",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 126.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-juventus-entrainement-homme-2026-27-bleu-blanc%3Fvariant%3D55347802931541",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-pack-15-photomontage-1600_023a3620-7038-402d-ae30-6c4c1b1407fd.png?v=1792097893",
+        sizes: ["S / L", "S / M", "M / L", "M / M", "L / L", "L / M"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-liverpool-fc-entrainement-homme-2026-27-noir",
+    brand: "Adidas",
+    model: "Survêtement Complet Liverpool FC Entraînement Homme 2026/27 Noir",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 126.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-liverpool-fc-entrainement-homme-2026-27-noir%3Fvariant%3D55347804930389",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-pack-20-photomontage-1600_390994d3-8601-44e7-b798-b9788925ab40.png?v=1792097966",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-manchester-united-entrainement-homme-2026-27-noir",
+    brand: "Adidas",
+    model: "Survêtement Complet Manchester United Entraînement Homme 2026/27 Noir",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 126.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-manchester-united-entrainement-homme-2026-27-noir%3Fvariant%3D55347805192533",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-pack-21-photomontage-1600_6d719e80-7428-42bb-88da-cb74e3054101.png?v=1792097969",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-manchester-united-entrainement-homme-2026-27-rouge-noir",
+    brand: "Adidas",
+    model: "Survêtement Complet Manchester United Entraînement Homme 2026/27 Rouge Noir",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 126.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-manchester-united-entrainement-homme-2026-27-rouge-noir%3Fvariant%3D55351187210581",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/23dd52fc-dd75-49ad-b278-751c49cd616d.png?v=1792141794",
+        sizes: ["M / L", "M / M", "M / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-olympique-lyonnais-entrainement-homme-2026-27-bleu-marine-rouge",
+    brand: "Adidas",
+    model: "Survêtement Complet Olympique Lyonnais Entraînement Homme 2026/27 Bleu Marine Rouge",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 126.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-olympique-lyonnais-entrainement-homme-2026-27-bleu-marine-rouge%3Fvariant%3D55351135535445",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/2ae73233-d944-459f-bef2-20f7cc6554bf.png?v=1792141015",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-complet-real-madrid-homme-2026-27-vert-rose",
+    brand: "Adidas",
+    model: "Survêtement Complet Real Madrid Homme 2026/27 Vert Rose",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 126.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-real-madrid-homme-2026-27-vert-rose%3Fvariant%3D55353173803349",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/survetement-complet-real-madrid-homme-2026-27-vert-rose-pack-1600.png?v=1792155459",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-entrainement-allemagne-tiro-homme-2026-rouge-noir-haut-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Entraînement Allemagne Tiro Homme 2026 Rouge Noir – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 119.4,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-entrainement-allemagne-tiro-homme-2026-rouge-noir-haut-pantalon%3Fvariant%3D55771318288725",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a7-haut-pantalon-1600x1600.jpg?v=1794512644",
+        sizes: ["S", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-entrainement-arsenal-fc-tiro-cup-homme-2026-27-bleu-marine-haut-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Entraînement Arsenal FC Tiro Cup Homme 2026/27 Bleu Marine – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 125.83,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-entrainement-arsenal-fc-tiro-cup-homme-2026-27-bleu-marine-haut-pantalon%3Fvariant%3D55771297808725",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a1-haut-pantalon-1600x1600.jpg?v=1794512607",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-entrainement-liverpool-fc-homme-2026-27-gris-noir-haut-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Entraînement Liverpool FC Homme 2026/27 Gris Noir – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 125.83,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-entrainement-liverpool-fc-homme-2026-27-gris-noir-haut-pantalon%3Fvariant%3D55788666290517",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a11-haut-pantalon-1600x1600.jpg?v=1794512679",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-entrainement-manchester-united-tiro-cup-homme-2026-27-bleu-royal-haut-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Entraînement Manchester United Tiro Cup Homme 2026/27 Bleu Royal – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 125.9,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-entrainement-manchester-united-tiro-cup-homme-2026-27-bleu-royal-haut-pantalon%3Fvariant%3D55771304788309",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a2-haut-pantalon-1600x1600.jpg?v=1794512616",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-entrainement-mexique-tiro-homme-2026-noir-haut-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Entraînement Mexique Tiro Homme 2026 Noir – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 119.48,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-entrainement-mexique-tiro-homme-2026-noir-haut-pantalon%3Fvariant%3D55788666585429",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a5-haut-pantalon-1600x1600.jpg?v=1794512638",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-entrainement-real-madrid-homme-2026-27-blanc-rose-vert-haut-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Entraînement Real Madrid Homme 2026/27 Blanc Rose Vert – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 133.41,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-entrainement-real-madrid-homme-2026-27-blanc-rose-vert-haut-pantalon%3Fvariant%3D55788666356053",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a10-haut-pantalon-1600x1600.jpg?v=1794512670",
+        sizes: ["M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-italie-adidas-homme-2026-bleu-veste-anthem-pantalon-travel",
+    brand: "Adidas",
+    model: "Survêtement Italie adidas Homme 2026 Bleu – Veste Anthem + Pantalon Travel",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 163.4,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-italie-adidas-homme-2026-bleu-veste-anthem-pantalon-travel%3Fvariant%3D55771366555989",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-n8-haut-pantalon-1600x1600.jpg?v=1794512701",
+        sizes: ["S", "M"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-jamaique-adidas-bob-marley-homme-2026-vert-noir-veste-anthem-pantalon-travel",
+    brand: "Adidas",
+    model: "Survêtement Jamaïque adidas Bob Marley Homme 2026 Vert Noir – Veste Anthem + Pantalon Travel",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 155.98,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-jamaique-adidas-bob-marley-homme-2026-vert-noir-veste-anthem-pantalon-travel%3Fvariant%3D55788666093909",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-n2-haut-pantalon-1600x1600.jpg?v=1794512693",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-juventus-tiro26-european-competition-homme-2026-27-noir-haut-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Juventus Tiro26 European Competition Homme 2026/27 Noir – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 133.41,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-juventus-tiro26-european-competition-homme-2026-27-noir-haut-pantalon%3Fvariant%3D55788666913109",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a3-haut-pantalon-1600x1600.jpg?v=1794512623",
+        sizes: ["M / L", "M / M", "M / S", "M / XL", "L / L", "L / M", "L / S", "L / XL", "XL / L", "XL / M", "XL / S", "XL / XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-liverpool-fc-tiro-cup-homme-2026-27-blanc-gris-haut-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Liverpool FC Tiro Cup Homme 2026/27 Blanc Gris – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 125.83,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-liverpool-fc-tiro-cup-homme-2026-27-blanc-gris-haut-pantalon%3Fvariant%3D55771311407445",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a4-haut-pantalon-1600x1600.jpg?v=1794512629",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "adidas-survetement-real-madrid-x-marvel-homme-2026-noir-veste-pantalon",
+    brand: "Adidas",
+    model: "Survêtement Real Madrid x Marvel Homme 2026 Noir – Veste + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 139.98,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-real-madrid-x-marvel-homme-2026-noir-veste-pantalon%3Fvariant%3D55788665274709",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-n9-haut-pantalon-1600x1600.jpg?v=1794512708",
+        sizes: ["M / M", "M / XS", "L / M", "L / XS"],
+      },
+    ],
+  },
   {
     id: "adidas-sudadera-con-capucha-bayern-munich-2025-26-rouge",
     brand: "Adidas",
@@ -93265,6 +93904,9 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "copa-football-calcetines-inglaterra-1980-blanco",
     brand: "Copa Football",
@@ -94210,9 +94852,6 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "copa-football-camiseta-copa-brasil-world-cup-poster-2014-azul",
     brand: "Copa Football",
@@ -98340,6 +98979,9 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "copa-football-sudadera-con-capucha-borussia-monchengladbach-1995-blanco",
     brand: "Copa Football",
@@ -99391,9 +100033,6 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "erima-bolsa-para-18-pelotas-erima-negro",
     brand: "Erima",
@@ -104476,6 +105115,9 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "erima-short-slip-erima-rio-2-0-azul",
     brand: "Erima",
@@ -105574,9 +106216,6 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "errea-calzoncillos-tecnicos-errea-active-tense-lite-negro",
     brand: "Errea",
@@ -110206,6 +110845,9 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "errea-pantalon-de-chandal-errea-nevis-3-0-azul",
     brand: "Errea",
@@ -111355,9 +111997,6 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "errea-ropa-interior-errea-active-tense-lite-blanco",
     brand: "Errea",
@@ -115996,6 +116635,9 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "huari-calcetines-huari-beates-blanc",
     brand: "Huari",
@@ -116955,9 +117597,6 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "hummel-calcetines-de-futbol-hummel-core-blanco",
     brand: "Hummel",
@@ -121699,6 +122338,9 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk22: ApparelProduct[] = [
   {
     id: "hummel-chaussettes-exterieur-rc-celta-vigo-2024-25-bleu",
     brand: "Hummel",
@@ -122924,9 +123566,6 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk22: ApparelProduct[] = [
   {
     id: "hummel-pantalon-corto-werder-de-breme-2024-25-verde",
     brand: "Hummel",
@@ -127336,6 +127975,9 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "jako-camiseta-jako-fonctionnel-promo-amarillo",
     brand: "Jako",
@@ -128617,9 +129259,6 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "jako-bas-jako-sans-pied-glasgow-2-0-rouge",
     brand: "Jako",
@@ -133052,6 +133691,9 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "jako-pantalon-de-chandal-jako-polyester-challenge-negro-2",
     brand: "Jako",
@@ -134151,9 +134793,6 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "jako-pantalones-cortos-jako-basic-2-0-amarillo",
     brand: "Jako",
@@ -138583,6 +139222,9 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-chaqueta-de-chandal-joma-winner-iii-negro-2",
     brand: "Joma",
@@ -139635,9 +140277,6 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-conjunto-de-camisa-y-pantalon-corto-joma-phoenix-ii-azul-3",
     brand: "Joma",
@@ -144066,6 +144705,9 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "joma-medias-media-classic-ii-rojo",
     brand: "Joma",
@@ -145056,9 +145698,6 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "joma-pantalon-corto-joma-eurocopa-iii-verde",
     brand: "Joma",
@@ -149259,6 +149898,9 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "joma-pantalon-de-chandal-joma-record-iii-bleu-2",
     brand: "Joma",
@@ -150297,9 +150939,6 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "joma-shorts-arbitro-joma-respect-negro",
     brand: "Joma",
@@ -154528,6 +155167,9 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-chaqueta-de-chandal-con-1-2-cremallera-kappa-dolvole-azul",
     brand: "Kappa",
@@ -155646,9 +156288,6 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-chaqueta-de-chandal-kappa-grevolo-verde",
     brand: "Kappa",
@@ -160197,6 +160836,9 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-polo-red-star-fc-minditti-2025-26-noir",
     brand: "Kappa",
@@ -161187,9 +161829,6 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-short-tercero-sm-caen-ryder-2024-25-blanco",
     brand: "Kappa",
@@ -164693,6 +165332,9 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "macron-short-club-atletico-osasuna-travel-staff-2024-bleu",
     brand: "Macron",
@@ -165332,9 +165974,6 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "macron-short-macron-algol-rouge",
     brand: "Macron",
@@ -168672,6 +169311,9 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk31: ApparelProduct[] = [
   {
     id: "mizuno-calcetines-de-entrenamiento-mizuno-team-x6-negro",
     brand: "Mizuno",
@@ -169846,9 +170488,6 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk31: ApparelProduct[] = [
   {
     id: "mizuno-pack-de-6-calcetines-de-futbol-mizuno-team-trad-azul",
     brand: "Mizuno",
@@ -174344,6 +174983,9 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk32: ApparelProduct[] = [
   {
     id: "nike-calcetines-primera-equipacion-pays-bas-strike-euro-2024-naranja",
     brand: "Nike",
@@ -175412,9 +176054,6 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk32: ApparelProduct[] = [
   {
     id: "nike-camiseta-corta-psg-2026-27-bleu",
     brand: "Nike",
@@ -179447,6 +180086,9 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk33: ApparelProduct[] = [
   {
     id: "nike-chandal-barcelona-24-25-entrenamiento",
     brand: "Nike",
@@ -180487,9 +181129,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk33: ApparelProduct[] = [
   {
     id: "nike-chaqueta-de-chandal-con-capucha-nike-premier-repel-vert",
     brand: "Nike",
@@ -184802,6 +185441,9 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk34: ApparelProduct[] = [
   {
     id: "nike-chaussettes-domicile-pays-bas-coupe-du-monde-2026-rouge",
     brand: "Nike",
@@ -185849,9 +186491,6 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk34: ApparelProduct[] = [
   {
     id: "nike-domicilio-corto-tottenham-2026-27-bleu",
     brand: "Nike",
@@ -189983,6 +190622,9 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "nike-pantalon-corto-nike-dri-fit-academy-25-negro",
     brand: "Nike",
@@ -191014,9 +191656,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "nike-pantalon-corto-nike-dri-fit-park-iii-rojo-3",
     brand: "Nike",
@@ -195410,6 +196049,9 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-chandal-nike-dri-fit-fc-libero-azul",
     brand: "Nike",
@@ -196403,9 +197045,6 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-chandal-nike-x-cr7-negro",
     brand: "Nike",
@@ -200642,6 +201281,9 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "nike-polainas-3-4-nike-dri-fit-academy-25-azul",
     brand: "Nike",
@@ -201599,9 +202241,6 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "nike-polo-nike-dri-fit-academy-pro-bleu-2",
     brand: "Nike",
@@ -205992,6 +206631,9 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "nike-sudadera-con-capucha-y-cremallera-para-mujer-psg-2022-23-verde",
     brand: "Nike",
@@ -206918,9 +207560,6 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "nike-sudadera-third-chelsea-negro",
     brand: "Nike",
@@ -206955,6 +207594,42 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
           { size: "M", price: 68.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq9776-010-sweatshirt-third-chelsea-black-field-silver-field-silver" },
           { size: "L", price: 99.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhq9776-010-sweatshirt-third-chelsea-black-field-silver-field-silver" },
         ],
+      },
+    ],
+  },
+  {
+    id: "nike-survetement-nike-form-toulouse-fc-homme-2026-27-iridescent-noir-veste-pantalon",
+    brand: "Nike",
+    model: "Survêtement Nike Form Toulouse FC Homme 2026/27 Iridescent Noir – Veste + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 152.48,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-nike-form-toulouse-fc-homme-2026-27-iridescent-noir-veste-pantalon%3Fvariant%3D55788666388821",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a9-haut-pantalon-1600x1600.jpg?v=1794512663",
+        sizes: ["S", "M", "L"],
+      },
+    ],
+  },
+  {
+    id: "nike-survetement-toulouse-fc-nike-homme-2026-27-gris-noir-veste-protocolaire-pantalon",
+    brand: "Nike",
+    model: "Survêtement Toulouse FC Nike Homme 2026/27 Gris Noir – Veste Protocolaire + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 162.48,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-toulouse-fc-nike-homme-2026-27-gris-noir-veste-protocolaire-pantalon%3Fvariant%3D55771387494741",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-n13-haut-pantalon-1600x1600.jpg?v=1794512737",
+        sizes: [],
       },
     ],
   },
@@ -208044,6 +208719,24 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiv3274-010-veste-pays-bas-tech-woven-coupe-du-monde-2026-black-hyper-crimson",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iv3274-010-black-hyper-crimson-6a042d748cb41-1.webp",
         sizes: ["S", "M"],
+      },
+    ],
+  },
+  {
+    id: "om-survetement-entier-fan-om-homme-2026-noir-bleu-roi",
+    brand: "Om",
+    model: "Survêtement Entier Fan OM Homme 2026 Noir Bleu Roi",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 84.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-fan-om-homme-2026-noir-bleu-roi-m26013%3Fvariant%3D55199226724693",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/survetement-fan-om-homme-2026-noir-bleu-roi-m26013-1.jpg?v=1791985127",
+        sizes: ["S", "L", "XL", "XXL"],
       },
     ],
   },
@@ -210587,6 +211280,9 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "precision-calcetines-precision-plain-pro-azul-2",
     brand: "Precision",
@@ -211675,9 +212371,6 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "precision-pantalon-corto-precision-madrid-azul-2",
     brand: "Precision",
@@ -212230,6 +212923,24 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
           { size: "S", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg055s-legging-3-4-de-gardien-rembourre-precision-black-s" },
           { size: "M", price: 29.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprg055m-legging-3-4-de-gardien-rembourre-precision-noir-noir-m" },
         ],
+      },
+    ],
+  },
+  {
+    id: "psg-survetement-entier-paris-saint-germain-homme-2026-bleu-marine",
+    brand: "Psg",
+    model: "Survêtement Entier Paris Saint-Germain Homme 2026 Bleu Marine",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 84.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-paris-saint-germain-homme-2026-bleu-marine-p26066%3Fvariant%3D55199224824149",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/survetement-paris-saint-germain-homme-2026-bleu-marine-p26066-1.jpg?v=1791130433",
+        sizes: ["S", "M", "L", "XL", "XXL"],
       },
     ],
   },
@@ -216005,6 +216716,9 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-camiseta-om-culture-2026-27-noir",
     brand: "Puma",
@@ -217464,9 +218178,6 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-chaqueta-de-chandal-om-2026-27-bleu",
     brand: "Puma",
@@ -220622,6 +221333,150 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
     ],
   },
   {
+    id: "puma-ensemble-maillot-short-ac-milan-entrainement-homme-2026-27-gris-fonce",
+    brand: "Puma",
+    model: "Ensemble Maillot Short AC Milan Entraînement Homme 2026/27 Gris Foncé",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 85.5,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-ac-milan-entrainement-homme-2026-27-gris-fonce%3Fvariant%3D55348292354389",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/bb6ac2f2-2a18-4a21-b6dd-dc9e94883118.png?v=1792099470",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "puma-ensemble-maillot-short-ac-milan-entrainement-homme-2026-27-or-gris-fonce",
+    brand: "Puma",
+    model: "Ensemble Maillot Short AC Milan Entraînement Homme 2026/27 Or Gris Foncé",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 85.5,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-ac-milan-entrainement-homme-2026-27-or-gris-fonce%3Fvariant%3D55353185960277",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/ensemble-maillot-short-ac-milan-entrainement-homme-2026-27-or-gris-fonce-pack-1600.png?v=1792155468",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "puma-ensemble-maillot-short-manchester-city-entrainement-homme-2026-27-bleu",
+    brand: "Puma",
+    model: "Ensemble Maillot Short Manchester City Entraînement Homme 2026/27 Bleu",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 85.5,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-manchester-city-entrainement-homme-2026-27-bleu%3Fvariant%3D55348293468501",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/f8f8339e-c881-4222-ae43-05734fec0615.png?v=1792099473",
+        sizes: ["S / M", "S / S", "XL / M", "XL / S"],
+      },
+    ],
+  },
+  {
+    id: "puma-ensemble-maillot-short-manchester-city-entrainement-homme-2026-27-gris-fonce-noir",
+    brand: "Puma",
+    model: "Ensemble Maillot Short Manchester City Entraînement Homme 2026/27 Gris Foncé Noir",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 82.8,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-manchester-city-entrainement-homme-2026-27-gris-fonce-noir%3Fvariant%3D55351185768789",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/e30fa7f4-a8e5-4eb3-95f8-94b2d460ca6a.png?v=1792141786",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S", "XL / L", "XL / M", "XL / S"],
+      },
+    ],
+  },
+  {
+    id: "puma-ensemble-maillot-short-olympique-de-marseille-entrainement-homme-2026-27-blanc-bleu-marine",
+    brand: "Puma",
+    model: "Ensemble Maillot Short Olympique de Marseille Entraînement Homme 2026/27 Blanc Bleu Marine",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 85.5,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-olympique-de-marseille-entrainement-homme-2026-27-blanc-bleu-marine%3Fvariant%3D55351181705557",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/e2ca3751-1a53-42c5-bcaa-56cc30db269a.png?v=1792141753",
+        sizes: ["L / L", "L / M", "L / S", "L / XL", "XL / L", "XL / M", "XL / S", "XL / XL"],
+      },
+    ],
+  },
+  {
+    id: "puma-ensemble-maillot-short-olympique-de-marseille-entrainement-homme-2026-27-bleu-royal-bleu-marine",
+    brand: "Puma",
+    model: "Ensemble Maillot Short Olympique de Marseille Entraînement Homme 2026/27 Bleu Royal Bleu Marine",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 85.5,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-olympique-de-marseille-entrainement-homme-2026-27-bleu-royal-bleu-marine%3Fvariant%3D55351182098773",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/51711812-2dfc-47f0-a709-adb928cb8d94.png?v=1792141756",
+        sizes: ["S / L", "S / M", "S / S", "S / XL", "M / L", "M / M", "M / S", "M / XL", "L / L", "L / M", "L / S", "L / XL", "XL / L", "XL / M", "XL / S", "XL / XL", "XXL / L", "XXL / M", "XXL / S", "XXL / XL"],
+      },
+    ],
+  },
+  {
+    id: "puma-ensemble-maillot-short-om-entrainement-homme-2026-27-bleu-lavande",
+    brand: "Puma",
+    model: "Ensemble Maillot Short OM Entraînement Homme 2026/27 Bleu Lavande",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 85.5,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-maillot-short-om-entrainement-homme-2026-27-bleu-lavande%3Fvariant%3D55348457865557",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/b86db873-8ae2-4fbb-b94f-6db51a7f5043.png?v=1792140582",
+        sizes: ["S / M", "S / S", "S / XL", "S / XXL", "M / M", "M / S", "M / XL", "M / XXL", "L / M", "L / S", "L / XL", "L / XXL", "XL / M", "XL / S", "XL / XL", "XL / XXL", "XXL / M", "XXL / S", "XXL / XL", "XXL / XXL"],
+      },
+    ],
+  },
+  {
+    id: "puma-ensemble-om-x-africa-homme-2026-pumatech-noir-2026",
+    brand: "Puma",
+    model: "Ensemble OM x Africa Homme 2026 PUMATECH - Noir - 2026",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 99.95,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fensemble-survetement-om-africa-2026-pumatech-noir%3Fvariant%3D53814130770261",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/ensemble-survetement-om-africa-2026-pumatech-noir4.jpg?v=1777825841",
+        sizes: ["XS / L", "XS / M", "XS / S", "XS / XS", "S / L", "S / M", "S / S", "S / XS", "M / L", "M / M", "M / S", "M / XS", "L / L", "L / M", "L / S", "L / XS", "XXL / L", "XXL / M", "XXL / S", "XXL / XS"],
+      },
+    ],
+  },
+  {
     id: "puma-entrenamiento-corto-borussia-dortmund-2025-26-negro",
     brand: "Puma",
     model: "Entrenamiento Corto Borussia Dortmund 2025/26 - Negro",
@@ -221830,6 +222685,9 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "puma-pantalon-corto-mujer-puma-teamgloal-rojo",
     brand: "Puma",
@@ -223259,9 +224117,6 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "puma-pantalon-corto-puma-team-rise-violeta",
     brand: "Puma",
@@ -228180,6 +229035,9 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-short-tejido-descontracturado-om-2026-27-noir",
     brand: "Puma",
@@ -229437,6 +230295,132 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
     ],
   },
   {
+    id: "puma-survetement-complet-ac-milan-entrainement-homme-2026-27-gris-fonce",
+    brand: "Puma",
+    model: "Survêtement Complet AC Milan Entraînement Homme 2026/27 Gris Foncé",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 135.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-ac-milan-entrainement-homme-2026-27-gris-fonce%3Fvariant%3D55347805880661",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-pack-23-photomontage-1600_daf9ebd5-03ef-41e6-a8ee-06c851f3c1df.png?v=1792097972",
+        sizes: ["S / M", "S / S", "M / M", "M / S"],
+      },
+    ],
+  },
+  {
+    id: "puma-survetement-complet-ac-milan-homme-2026-27-marron-dore-gris-fonce",
+    brand: "Puma",
+    model: "Survêtement Complet AC Milan Homme 2026/27 Marron Doré Gris Foncé",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 135.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-ac-milan-homme-2026-27-marron-dore-gris-fonce%3Fvariant%3D55353185206613",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/survetement-complet-ac-milan-homme-2026-27-marron-dore-gris-fonce-pack-1600.png?v=1792155463",
+        sizes: ["S / M", "S / S", "M / M", "M / S", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "puma-survetement-complet-manchester-city-entrainement-homme-2026-27-bleu-clair",
+    brand: "Puma",
+    model: "Survêtement Complet Manchester City Entraînement Homme 2026/27 Bleu Clair",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 135.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-manchester-city-entrainement-homme-2026-27-bleu-clair%3Fvariant%3D55348368933205",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/46c7659b-83f7-401b-a60b-25f847e9ec0b.png?v=1792100479",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "puma-survetement-complet-manchester-city-entrainement-homme-2026-27-gris-jaune-noir",
+    brand: "Puma",
+    model: "Survêtement Complet Manchester City Entraînement Homme 2026/27 Gris Jaune Noir",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 135.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-manchester-city-entrainement-homme-2026-27-gris-jaune-noir%3Fvariant%3D55351136092501",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/be386294-e8b3-4625-a692-5217f6831c3b.png?v=1792141020",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "puma-survetement-complet-om-entrainement-homme-2026-27-bleu-lavande",
+    brand: "Puma",
+    model: "Survêtement Complet OM Entraînement Homme 2026/27 Bleu Lavande",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 135.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-om-entrainement-homme-2026-27-bleu-lavande%3Fvariant%3D55348370342229",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/347a5f75-ed61-4d72-a2e7-797daa919af3.png?v=1792100484",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "puma-survetement-entrainement-manchester-city-homme-2026-rose-bleu-noir-haut-pantalon",
+    brand: "Puma",
+    model: "Survêtement Entraînement Manchester City Homme 2026 Rose Bleu Noir – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 112.36,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-entrainement-manchester-city-homme-2026-rose-bleu-noir-haut-pantalon%3Fvariant%3D55771398799701",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-n17-haut-pantalon-1600x1600.jpg?v=1794512751",
+        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+      },
+    ],
+  },
+  {
+    id: "puma-survetement-entrainement-portugal-puma-homme-2026-blanc-bleu-haut-pantalon",
+    brand: "Puma",
+    model: "Survêtement Entraînement Portugal PUMA Homme 2026 Blanc Bleu – Haut + Pantalon",
+    colour: "N/D",
+    type: "set",
+    offers: [
+      {
+        store: "PlanetFoot",
+        price: 134.98,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-entrainement-portugal-puma-homme-2026-blanc-bleu-haut-pantalon%3Fvariant%3D55788666454357",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a8-haut-pantalon-1600x1600.jpg?v=1794512650",
+        sizes: ["S", "L"],
+      },
+    ],
+  },
+  {
     id: "puma-t-shirt-de-entrenamiento-manchester-city-power-train-2026-27-bleu",
     brand: "Puma",
     model: "T-shirt de Entrenamiento Manchester City Power Train 2026/27 - Bleu",
@@ -229490,9 +230474,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-t-shirt-puma-essentials-t7-vert",
     brand: "Puma",
@@ -233282,6 +234263,9 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "sol-s-camiseta-sol-s-imperial-azul",
     brand: "Sol's",
@@ -234802,9 +235786,6 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "stanno-calcetines-stanno-uni-pro-azul-2",
     brand: "Stanno",
@@ -238376,6 +239357,9 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "uhlsport-calcetines-uhlsport-team-performance-gris",
     brand: "uhlsport",
@@ -240125,9 +241109,6 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "uhlsport-camiseta-de-manga-larga-goal-25-1-4-zip-gris",
     brand: "uhlsport",
@@ -244744,6 +245725,9 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-chaqueta-uhlsport-score-1-4-zip-negro",
     brand: "uhlsport",
@@ -246548,9 +247532,6 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-espinilleras-bionikshield",
     brand: "uhlsport",
@@ -251026,6 +252007,9 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-de-chandal-uhlsport-score-track-negro",
     brand: "uhlsport",
@@ -253035,9 +254019,6 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "uhlsport-polo-uhlsport-score-26-poly-blanco",
     brand: "uhlsport",
@@ -256888,6 +257869,9 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk47: ApparelProduct[] = [
   {
     id: "under-armour-pantalon-corto-under-armour-challenger-train-blanc",
     brand: "Under Armour",
@@ -257921,4 +258905,5 @@ export const apparelProducts: ApparelProduct[] = [
   ...minedApparelProductsChunk44,
   ...minedApparelProductsChunk45,
   ...minedApparelProductsChunk46,
+  ...minedApparelProductsChunk47,
 ];
