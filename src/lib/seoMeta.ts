@@ -405,7 +405,9 @@ function gearBase(section: GearSection, item: GearLike, locale: HubLocale): stri
   // el texto del feed no la trae.
   let t = localizeGearModel(item.model, item.brand, locale);
   const cut = t.lastIndexOf(" - ");
-  const colour = cut > 0 ? ` ${t.slice(cut + 3).toLowerCase()}` : "";
+  // El código de fabricante que desempata colorways ("Negro (IM9968)") no se baja a minúsculas.
+  const [, col = "", code = ""] = cut > 0 ? (t.slice(cut + 3).match(/^(.*?)( \([^()]+\))?$/) ?? []) : [];
+  const colour = cut > 0 ? ` ${col.toLowerCase()}${code}` : "";
   if (cut > 0) t = t.slice(0, cut);
   if (brand && !t.toLowerCase().includes(brand.toLowerCase())) t = `${t} ${brand}`;
   return t + colour;
