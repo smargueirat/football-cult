@@ -332,6 +332,63 @@ def mine_gigasport_category(fname, store_label, cats, out_list):
     print(f'{store_label}:', n)
 
 
+# ---------- FORUM SPORT (2026-11-17, pedido del dueño: "buscar en todos los catálogos lo que no agregamos") ----------
+# El docstring de arriba lo dio por "volumen bajo o nulo", pero el feed actual trae
+# 242 guantes de portero adultos y ~84 balones (medido el 17-11). Su taxonomía
+# fiable es `product_type` ("fútbol > guantes portero" = adulto; "... infantil"
+# aparte); parent_product_id agrupa el colorway y `Fashion:size` trae la talla.
+def mine_forumsport_category(types, out_list, strip_re=None, exclude_extra=None):
+    path = f"{FEEDS}/FORUMSPORT.csv"
+    if not os.path.exists(path):
+        print('ForumSport: feed not found, skipped')
+        return
+    groups = {}
+    with open(path, newline='', encoding='utf-8', errors='replace') as f:
+        for row in csv.DictReader(f):
+            if (row.get('product_type') or '').strip().lower() not in types:
+                continue
+            if (row.get('stock_status') or 'in_stock') != 'in_stock' or not parse_price(row.get('search_price')):
+                continue
+            if row.get('Fashion:suitable_for') == 'INFANTIL':
+                continue
+            title = row.get('product_name') or ''
+            if EXCLUDE_KEYWORDS.search(title) or AMERICAN_FOOTBALL_RE.search(title) or KIDS_RE.search(title):
+                continue
+            if exclude_extra and exclude_extra.search(title):
+                continue
+            groups.setdefault(row.get('parent_product_id') or row.get('merchant_product_id') or title, []).append(row)
+    n = 0
+    for rows in groups.values():
+        rep = min(rows, key=lambda r: parse_price(r.get('search_price')))
+        brand = (rep.get('brand_name') or '').strip()
+        title = norm_title(rep.get('product_name') or '')
+        if brand:
+            title = re.sub(r'^' + re.escape(brand) + r'\s+', '', title, flags=re.I)
+        if strip_re:
+            title = strip_re.sub('', title).strip(' -')
+        colour = (rep.get('colour') or '').strip()
+        model = f"{title} - {colour}" if colour and colour.lower() not in title.lower() else title
+        sz = lambda r: (r.get('Fashion:size') or '').strip()
+        sizes = sorted({dot_size(sz(r)) for r in rows if re.match(r'^\d', sz(r))}, key=size_sort_key)
+        price = parse_price(rep.get('search_price'))
+        price_max = max(parse_price(r.get('search_price')) or 0 for r in rows)
+        entry = {
+            'store': 'ForumSport', 'brand': brand or 'N/D', 'model': model, 'colour': colour or 'N/D',
+            'price': price, 'shipping': parse_price(rep.get('delivery_cost')) or 0, 'currency': 'EUR',
+            'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
+            'eans': _eans(rows, 'product_GTIN'),
+        }
+        if price_max > price:
+            entry['priceMax'] = price_max
+            entry['sizePrices'] = sorted(
+                ({'size': dot_size(sz(r)), 'price': parse_price(r.get('search_price')), 'url': r.get('aw_deep_link')}
+                 for r in rows if re.match(r'^\d', sz(r))),
+                key=lambda sp: size_sort_key(sp['size']))
+        out_list.append(entry)
+        n += 1
+    print('ForumSport:', n)
+
+
 # Encontrado 2026-09-18 (reporte real del usuario, capturas de pantalla
 # de guantes repetidos): Foot-Store y Sport is Good (ES y FR) son
 # storefronts espejo del mismo backend -- mismo product_name/title,
@@ -1129,6 +1186,7 @@ if __name__ == '__main__':
     mine_gigasport_category('GIGASPORT_DE.csv', 'GigasportDE', ('Torwarthandschuhe',), gloves_results)
     mine_gigasport_category('GIGASPORT_CH.csv', 'GigasportCH', ('Torwarthandschuhe',), gloves_results)
     mine_gigasport_category('GIGASPORT_FR.csv', 'GigasportFR', ('Gants de gardien',), gloves_results)
+    mine_forumsport_category({'fútbol > guantes portero'}, gloves_results, re.compile(r'\s*guantes? (de )?portero\s*', re.I))
 
     print('=== PELOTAS ===')
     mine_blaz_category('FOOTSTORE_ES.csv', 'FootStoreES', 'Ballon de football', balls_results)
@@ -1139,6 +1197,7 @@ if __name__ == '__main__':
     mine_gigasport_category('GIGASPORT_DE.csv', 'GigasportDE', ('Fußbälle > Matchbälle', 'Fußbälle > Trainingsbälle'), balls_results)
     mine_gigasport_category('GIGASPORT_CH.csv', 'GigasportCH', ('Fußbälle > Matchbälle', 'Fußbälle > Trainingsbälle'), balls_results)
     mine_gigasport_category('GIGASPORT_FR.csv', 'GigasportFR', ('Ballons de football > Ballons de match', 'Ballons de football > Ballons d\'entraînement'), balls_results)
+    mine_forumsport_category({'fútbol > balon fútbol', 'fútbol > balon fútbol sala'}, balls_results, re.compile(r'\s*bal[oó]n( de)? f[uú]tbol( sala)?\s*', re.I))
 
     print('=== ROPA ===')
     mine_apparel_type('shorts', 'Short', apparel_results)

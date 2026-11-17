@@ -36,6 +36,7 @@ export interface BallOffer {
     | "AdidasCL"
     | "AdidasMX"
     | "AdidasCO"
+    | "ForumSport"
     | "Sportsafe UK";
   price: number;
   priceMax?: number;
@@ -375,6 +376,15 @@ const minedBallProductsChunk1: BallProduct[] = [
           { size: "4", price: 23.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkx5863-ballon-de-football-adidas-club-uefa-champions-league-2026-27-white-globlu-sgreen-iceblu" },
           { size: "5", price: 21.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkx5863-ballon-de-football-adidas-club-uefa-champions-league-2026-27-white-globlu-sgreen-iceblu" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249384754&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135257-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMxOHxpbWFnZS9qcGVnfGFHVXhMMmc1TlM4eE16Z3pOalV3TmpFek5qWXdOaTl0WldScFlYTmZNVEF3TVRFek5USTFOMTh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58ZWRjMzczODc4OTA3MWEwZmNlMDU3NTg1MmJmYjY2NzAyMjM0Y2Q2MGZlZDdhNzU3MzQzNDI0ZWNhNGI1MTE4YQ&feedId=58083&k=05350bfc78479263a64d3ac1b4044d6669e6547b",
+        sizes: ["4", "5"],
       },
       {
         store: "AdidasCL",
@@ -830,23 +840,6 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-balon-adidas-messi-club-blanco",
-    brand: "Adidas",
-    model: "Balón adidas Messi Club - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "AdidasMX",
-        price: 519.0,
-        shipping: 0,
-        currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=44004457691&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb8f3207bd418440d8a4529d40a9124a1_9366%2FBALON_MESSI_CLUB_Blanco_KA5267_01_00_standard.jpg&feedId=95013&k=c1c5ff424e00712d3ddf13d537ac26d1472c0d9a",
-        sizes: ["4", "5"],
-      },
-    ],
-  },
-  {
     id: "adidas-balon-adidas-messi-club-naranja",
     brand: "Adidas",
     model: "Balón adidas Messi Club - Naranja",
@@ -983,23 +976,6 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-mini-balon-de-futbol-adidas-wc-2026-blanco",
-    brand: "Adidas",
-    model: "Balón adidas Trionda Mini Copa Mundial de la FIFA 26™ - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "AdidasCO",
-        price: 47970.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=42666148123&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff51412dc4ee44330a1d39fcdbb8613e2_9366%2FBalon_Trionda_Mini_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8034_01_00_standard.jpg&feedId=95017&k=23366292f4e99de4636332d3663dd43e51578c0a",
-        sizes: ["1"],
-      },
-    ],
-  },
-  {
     id: "adidas-adidas-balon-ucl-pro-25-26-league-stage-blanco",
     brand: "Adidas",
     model: "Balón adidas UCL Pro 25/26 League Stage - Blanco",
@@ -1094,6 +1070,15 @@ const minedBallProductsChunk1: BallProduct[] = [
           { size: "4", price: 20.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5088-ballon-de-football-argentine-coupe-du-monde-2026-bleglo-argmet-blanc" },
           { size: "5", price: 22.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5088-ballon-de-football-argentine-coupe-du-monde-2026-bleglo-argmet-blanc" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 23.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249387501&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001143808-00-P-X-20260916091956.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ1MnxpbWFnZS9qcGVnfGFHTTVMMmcwWWk4eE5EQXlNRGs1TnpFeU1EQXpNQzl0WldScFlYTmZNVEF3TVRFME16Z3dPRjh3TUY5UVgxZ3RNakF5TmpBNU1UWXdPVEU1TlRZdWFuQm58YjlkZTdlZGI1NTNlMWNjMzEyMTI0NjUzZmIxN2M4ZWE0Yzk2MGQwODAyZGEwNmM1ZDE5NDA5ZGQ3YzQzZDFjNQ&feedId=58083&k=fa126d4fde79e6ebd22d2afddca1b25930c8476d",
+        sizes: ["3", "5"],
       },
       {
         store: "AdidasCL",
@@ -1481,6 +1466,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["5"],
       },
       {
+        store: "ForumSport",
+        price: 14.87,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249382845&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134984-00-P-X-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzEwNXxpbWFnZS9qcGVnfGFETmhMMmd5WVM4eE16Z3pOekl4TWpBMU56WXpNQzl0WldScFlYTmZNVEF3TVRFek5EazRORjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58NWQyNWU4YzFiOGRjNzY3Mzk1NmUyNjJiZDBiZTQ0ZmE0YzFhYjU3Y2IxYzA2MDA1OGY3NjZkZDk1NDNiZWI4Ng&feedId=58083&k=ef7686dc7636f68ee7fef2fed19f86caa0241dff",
+        sizes: ["5"],
+      },
+      {
         store: "AdidasCL",
         price: 19990.0,
         shipping: 0,
@@ -1549,6 +1543,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5081-ballon-de-football-espagne-2026-white-royblu-actred-bolred",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke5081-white-royblu-actred-bolred-6a444da2129c6-2.webp",
         sizes: ["4"],
+      },
+      {
+        store: "ForumSport",
+        price: 43.79,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249387640&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001143807-00-P-X-20260916091956.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODExNXxpbWFnZS9qcGVnfGFHSTBMMmhpTVM4eE5EQXlNRGs1TmpJMk9EQTJNaTl0WldScFlYTmZNVEF3TVRFME16Z3dOMTh3TUY5UVgxZ3RNakF5TmpBNU1UWXdPVEU1TlRZdWFuQm58MDUyZmJlYjQ0MmUwMjY4ZWE0MmNiYjE3OWZiNjdlNWJjNGQ2ZTc5YTkwMzQzYWJmODAyYTZjZmRiNWQ4MGE0Mw&feedId=58083&k=3bafe1f84063023b441c18745cb4057b6cbe5247",
+        sizes: ["4", "5"],
       },
     ],
   },
@@ -1802,6 +1805,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jy0248_1_hardware_photography_front_center_view_white.webp",
         sizes: ["5"],
       },
+      {
+        store: "ForumSport",
+        price: 18.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43401488504&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075285-00-P-X-20251204103630.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU1M3xpbWFnZS9qcGVnfGFEZ3pMMmhoTXk4eE16TTNOREEyTkRBNU9UTTFPQzl0WldScFlYTmZNVEF3TVRBM05USTROVjh3TUY5UVgxZ3RNakF5TlRFeU1EUXhNRE0yTXpBdWFuQm58OGNlNDE0ZDFiNTc5Nzc0YmQ5NDg0ZjYyOWY0NzM5MWQ0YjNiNjVhMGRkMDdkODUzYTg3OTM5MGI0NjY3OTRmYg&feedId=58083&k=bb491e81c103e1f674379daac63ce50dc79d94ec",
+        sizes: ["5"],
+      },
     ],
   },
   {
@@ -1853,6 +1865,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1326-ballon-de-football-ligue-des-champions-feminine-white-scarle",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jw1326-white-scarle-1.webp",
         sizes: ["4", "5"],
+      },
+      {
+        store: "ForumSport",
+        price: 25.91,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43885179472&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075278-00-P-X-20260115153122.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI0M3xpbWFnZS9qcGVnfGFHVTBMMmhqWWk4eE16UTVPVFF4Tmpnek9ERTNOQzl0WldScFlYTmZNVEF3TVRBM05USTNPRjh3TUY5UVgxZ3RNakF5TmpBeE1UVXhOVE14TWpJdWFuQm58MjQ2ZDc1OTg1MTU1ZGRjMTg4YTg5ZDBkODdhZTY1MmE4ZmMzMTY5ZjIyN2EyMWY5Y2ZjNGU1MmM4Y2NmYzJjNQ&feedId=58083&k=6d2e09fa398c0e89aff5efb283c867d5cd60b82a",
+        sizes: ["5"],
       },
     ],
   },
@@ -2149,6 +2170,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jx9089_1_hardware_photography_front_center_view_white.webp",
         sizes: ["4", "5"],
       },
+      {
+        store: "ForumSport",
+        price: 20.63,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43884295162&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075280-00-P-X-20260121161537.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ2M3xpbWFnZS9qcGVnfGFHUXlMMmcyTXk4eE16VXhNakUxTnprMU5EQTNPQzl0WldScFlYTmZNVEF3TVRBM05USTRNRjh3TUY5UVgxZ3RNakF5TmpBeE1qRXhOakUxTXpjdWFuQm58NTU2NDFlOTk5ZjdhN2M5YmExNmM1YzkwMjQ5N2ZhMWNlZDMwMTU4ODI4YWU5MzFjMzliYTI3NmM2NjI5ZWQwOQ&feedId=58083&k=5a2fef2ff4037a50f0be42fb25a09e5d93758b9a",
+        sizes: ["5"],
+      },
     ],
   },
   {
@@ -2350,6 +2380,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["5"],
       },
       {
+        store: "ForumSport",
+        price: 19.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43375245314&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075283-00-P-X-20251202113542.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzg4N3xpbWFnZS9qcGVnfGFESmxMMmhsWlM4eE16TTJPREF5TURBME1UYzFPQzl0WldScFlYTmZNVEF3TVRBM05USTRNMTh3TUY5UVgxZ3RNakF5TlRFeU1ESXhNVE0xTkRJdWFuQm58MTU5ZmUxYTU4MmJjZDhlYTNiZmVlODY3NmE1NjIyNmMzNWY3YTg5MzE3MmM5NTg3MjYzNjY3MzJkM2RiYjMwMQ&feedId=58083&k=428a4a7e95bcd4ab6ae9ae1376a7f7e12a0083a4",
+        sizes: ["5"],
+      },
+      {
         store: "AdidasCL",
         price: 13990.0,
         shipping: 0,
@@ -2488,6 +2527,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke5118-mufred-white-6a444d94bfe54-2.webp",
         sizes: ["5"],
       },
+      {
+        store: "ForumSport",
+        price: 14.87,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249382774&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134983-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY2NHxpbWFnZS9qcGVnfGFHSXdMMmcyTmk4eE16Z3pOakkwTkRZNE1EY3pOQzl0WldScFlYTmZNVEF3TVRFek5EazRNMTh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58NWI4YTYyZmE1OWYwOGUwMjZjZGFlNjZhZTU3NjRmNmUxMDM4YmQyZjE2ZWY2YjMxZjg5NjIxZDA2MmEyYjk5Zg&feedId=58083&k=e95d4a79ee8f980f17dc381360e058e5a70591e6",
+        sizes: ["5"],
+      },
     ],
   },
   {
@@ -2549,6 +2597,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke5142-white-luta-black-6a444db46d2d3-1.webp",
         sizes: ["4", "5"],
       },
+      {
+        store: "ForumSport",
+        price: 28.34,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45352681984&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102057-00-P-X-20260618081626.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY0NXxpbWFnZS9qcGVnfGFEZGhMMmhrWmk4eE16Z3pOVFV5T0RFME1qZzNPQzl0WldScFlYTmZNVEF3TVRFd01qQTFOMTh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpZdWFuQm58NzQ4M2IzYjEwYmQzZTcwMzVmNzI0NGFjYTU5MWY2YmY4MzE2NTc5MThhZGQzZWFlOWRiNjc4Mzc0YjVlY2Y0MA&feedId=58083&k=ead26c9a72bd8c4a9e9d94d7d3f8b2cc2dadd5ff",
+        sizes: ["5"],
+      },
     ],
   },
   {
@@ -2599,6 +2656,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5109-ballon-de-football-real-madrid-ucl-2026-27-white-wilpnk-duamag-ivory",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke5109-white-wilpnk-duamag-ivory-6a8bffcf8881d-1.webp",
+        sizes: ["5"],
+      },
+      {
+        store: "ForumSport",
+        price: 23.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45376031069&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102056-00-P-X-20260727111258.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTg4OHxpbWFnZS9qcGVnfGFEZzFMMmhsTWk4eE16a3hOalUxTnpnMk9UQTROaTl0WldScFlYTmZNVEF3TVRFd01qQTFObDh3TUY5UVgxZ3RNakF5TmpBM01qY3hNVEV5TlRndWFuQm58ZDhiNzYyOTYyZmNlNDRiN2MzODk2NTc4MmMwMjFjZjkzMTIxM2RmYTljOGZkM2I0ZDgxMzVhYTUzMzUxMmFjZA&feedId=58083&k=1994f87efd654d10e7a2370f1cdebbaddffed6bd",
         sizes: ["5"],
       },
     ],
@@ -2805,6 +2871,15 @@ const minedBallProductsChunk1: BallProduct[] = [
           { size: "5", price: 21.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6044-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-ironmt-black" },
         ],
       },
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249382797&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135086-00-P-X-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA1NHxpbWFnZS9qcGVnfGFHSmpMMmhoTkM4eE16Z3pOamcyTnpJek9UazJOaTl0WldScFlYTmZNVEF3TVRFek5UQTRObDh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58NGUzMzBmYjk1MmEzYTQ1ZGM2N2YyODJjOWVmNzg2ZTZlYjU3NTcxNDE3ZTIwM2M5Y2RmMzZkNjk0MWRhZGU0YQ&feedId=58083&k=e3796071ba40379026d5e10d8e77473001a9cddc",
+        sizes: ["5"],
+      },
     ],
   },
   {
@@ -2868,6 +2943,15 @@ const minedBallProductsChunk1: BallProduct[] = [
           { size: "4", price: 21.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv4045-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-black-green-silvmt" },
           { size: "5", price: 21.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv4045-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-black-green-silvmt" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249384585&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135239-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzE3OHxpbWFnZS9qcGVnfGFHTTVMMmhpWmk4eE16Z3pOalEyTWpreE5UWXhOQzl0WldScFlYTmZNVEF3TVRFek5USXpPVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58Mjc5ZmJkNjJlZDQ2YjViMDU3MjFlYzI3ZTY0MDc3YWNkYjhiZGFkZmRkMjFjMWJlMmI0ZWQ0YWVlZjc5ZGM0NQ&feedId=58083&k=8eae82eba4b6f742c6102753cdc19f584cd92253",
+        sizes: ["4", "5"],
       },
     ],
   },
@@ -3330,6 +3414,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 27.51,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42538362741&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048402-00-P-X-20260528160027.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTAzNXxpbWFnZS9qcGVnfGFEY3lMMmcxTUM4eE16YzVORGM0TkRJNE1EWXdOaTl0WldScFlYTmZNVEF3TVRBME9EUXdNbDh3TUY5UVgxZ3RNakF5TmpBMU1qZ3hOakF3TWpjdWFuQm58NDkxZTYwZGQxNDM1NTBmYTI5MWQwZTEyY2E2YTUzNTEzMTAzNzVhMDMzNmM1MjllMGE3YTE5MTEzYzVmNjczMw&feedId=58083&k=0fb47fdd489c0297003fe1ed74044b156457dcff",
+        sizes: ["5"],
+      },
+      {
         store: "AdidasCL",
         price: 30990.0,
         shipping: 0,
@@ -3380,6 +3473,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8021-ballon-de-football-adidas-coupe-du-monde-2026-trionda-pro-white-solblu-hirere-flalim-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jd8021_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["5"],
+      },
+      {
+        store: "ForumSport",
+        price: 95.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249372941&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001090377-00-P-X-20250930112633.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzg1M3xpbWFnZS9qcGVnfGFHWTFMMmd3Tmk4eE16SXhOVFk0TWpReU9EazFPQzl0WldScFlYTmZNVEF3TVRBNU1ETTNOMTh3TUY5UVgxZ3RNakF5TlRBNU16QXhNVEkyTXpNdWFuQm58MGNmMWZkM2YwZTZhMjY0NzcxNDU4NDkyMmI5NDQxOTRjN2FlYjM4ZWE1YTUzNDJmYjA4OWYzZmIzMjM4NzI4Mw&feedId=58083&k=f1e9a07ddb89c6973618f7f9d9b50c992c4c6379",
         sizes: ["5"],
       },
       {
@@ -3444,6 +3546,15 @@ const minedBallProductsChunk1: BallProduct[] = [
           { size: "3", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8032-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-white-royblu-solblu-powred" },
           { size: "5", price: 22.85, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8032-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-white-royblu-solblu-powred" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 26.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46783618408&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048400-00-P-X-20250919143926.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg5NXxpbWFnZS9qcGVnfGFETTVMMmd4TWk4eE16RTVOREUwTmpBNE5qazBNaTl0WldScFlYTmZNVEF3TVRBME9EUXdNRjh3TUY5UVgxZ3RNakF5TlRBNU1Ua3hORE01TWpZdWFuQm58Y2IyZmRhOWJiNjdjMjZmMWIxMTgzNDNjMzRlMWZiYzQ1Mjk1MTVjZmExMzRlNjc1YTM0NjM0ZDUyZDg5M2RjNQ&feedId=58083&k=51de442cf8efb64f5065fe01045867b580cbe110",
+        sizes: ["3", "5"],
       },
       {
         store: "AdidasCL",
@@ -3725,6 +3836,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9077-ballon-de-football-adidas-euro-2025-26-dark-purple-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jx9077-dark-purple-69bd56fe5dd9f-1.webp",
+        sizes: ["5"],
+      },
+      {
+        store: "ForumSport",
+        price: 104.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46679669656&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001121217-00-P-X-20260505160309.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc1MnxpbWFnZS9qcGVnfGFHRXdMMmhrTXk4eE16YzBORE0yTWpVNE5qRTBNaTl0WldScFlYTmZNVEF3TVRFeU1USXhOMTh3TUY5UVgxZ3RNakF5TmpBMU1EVXhOakF6TURrdWFuQm58MzViNDI2Njg1YTlmZDk3ODAyNjcxYjA4OWMyZGNjNjhkNzc4ZmUyNzFlZDQ0ZmZmNTM5NTY3NGE2ZmFlMDlkZA&feedId=58083&k=1d679bcd19c1562a777e26b653bbc9a61ec4fbfa",
         sizes: ["5"],
       },
     ],
@@ -4665,6 +4785,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["5"],
       },
       {
+        store: "ForumSport",
+        price: 18.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39958732972&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053862-00-P-X-20241216112744.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjY3N3xpbWFnZS9qcGVnfGFEVXlMMmd4Tnk4eE1qVTRPRE16TlRNNU9EazBNaTl0WldScFlYTmZNVEF3TVRBMU16ZzJNbDh3TUY5UVgxZ3RNakF5TkRFeU1UWXhNVEkzTkRRdWFuQm58MDE4NjNiMDMzYTg5MDdiOGNmODFmN2E0MzdlYTNjZGZiNGQyMTJlYjNmZmI2OWUyN2RiZGY4MzgwMDZiMThmMg&feedId=58083&k=cc87d2326c0647a9f1f48282fb5e1ff3266934a1",
+        sizes: ["5"],
+      },
+      {
         store: "AdidasMX",
         price: 499.0,
         shipping: 0,
@@ -4735,6 +4864,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["4", "5"],
       },
       {
+        store: "ForumSport",
+        price: 18.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249370828&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053893-00-P-X-20241216112744.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzYzMnxpbWFnZS9qcGVnfGFHRXdMMmczTnk4eE1qVTRPRE16T1RFek5EUTVOQzl0WldScFlYTmZNVEF3TVRBMU16ZzVNMTh3TUY5UVgxZ3RNakF5TkRFeU1UWXhNVEkzTkRRdWFuQm58NzEwMTNkZWQ3YzYyNDc5MzUwODZlMTZlZTIyZWU5ZDBhNDQ4MzY3ZDRiYWMzNjdmMWI4ZjQyZDA1MWJiOTE0ZA&feedId=58083&k=8b11e22a280c072d5bbce7bfbe8ca3e5572b3d52",
+        sizes: ["4", "5"],
+      },
+      {
         store: "AdidasMX",
         price: 499.0,
         shipping: 0,
@@ -4785,6 +4923,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249369206&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001035006-00-P-X-20241031174553.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTcxNHxpbWFnZS9qcGVnfGFERTJMMmcyTkM4eE1qUTJNelE0TVRnNE1EWXdOaTl0WldScFlYTmZNVEF3TVRBek5UQXdObDh3TUY5UVgxZ3RNakF5TkRFd016RXhOelExTlRNdWFuQm58NmI0M2M0ZmEzZGJlNTAzNTk0ZDMxNDY4N2MzYzM1YWU4NWM4MmQwYjdiMjYwYmIxYjcxNmJhZjYyMjIwZWU0Ng&feedId=58083&k=876b04380a4056c8a22beb67a058fabe39abf36b",
+        sizes: ["3"],
+      },
+      {
         store: "AdidasCO",
         price: 76965.0,
         shipping: 0,
@@ -4830,6 +4977,15 @@ const minedBallProductsChunk1: BallProduct[] = [
           { size: "4", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F656927-ballon-de-football-adidas-tango-rosario-blanc" },
           { size: "5", price: 23.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F656927-ballon-de-football-adidas-tango-rosario-blanc" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249366622&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000481008-00-P-X-20180928205347.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyMzA3NTJ8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzFPUzlvTkdJdk9Ea3dPVEV4TVRBMk5qWTFOQzVxY0djfDQ2OWY3MmJiODQ1NjFjM2E1NzI4NDg2YzU3YjZmOTJjZGM2YWJlYzRkZjgzZWRiNzVlNjg5ODgwYzAzZWUwNDM&feedId=58083&k=aa6d8a27dac9f622ee5289854e3fa3b051860f60",
+        sizes: ["5"],
       },
       {
         store: "AdidasMX",
@@ -5002,9 +5158,6 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-tiro-club-bleu",
     brand: "Adidas",
@@ -5105,6 +5258,9 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-tiro-competition-blanc",
     brand: "Adidas",
@@ -5470,6 +5626,15 @@ const minedBallProductsChunk2: BallProduct[] = [
         ],
       },
       {
+        store: "ForumSport",
+        price: 30.44,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45352681981&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102065-00-P-X-20260525112510.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU0MHxpbWFnZS9qcGVnfGFHVTBMMmhsWXk4eE16YzROamsxTVRrM05EazBNaTl0WldScFlYTmZNVEF3TVRFd01qQTJOVjh3TUY5UVgxZ3RNakF5TmpBMU1qVXhNVEkxTVRBdWFuQm58OTdhNGY5OGUyYmRlOGYxMjZlNzUyYzdkMGE3OGFhYTY5NDI4ZDNlOGM1Y2MwNjkyN2NiODA0MWYxZTVkNWU5MA&feedId=58083&k=864c267627162855beb1f4ef1e3cc357f0889f44",
+        sizes: ["5"],
+      },
+      {
         store: "AdidasCL",
         price: 34990.0,
         shipping: 0,
@@ -5758,6 +5923,15 @@ const minedBallProductsChunk2: BallProduct[] = [
           { size: "5", price: 27.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9774-ballon-de-football-adidas-uefa-champions-league-2026-27-multco" },
         ],
       },
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383515&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135001-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM5N3xpbWFnZS9qcGVnfGFEWTBMMmcyTnk4eE16Z3pOakkxTnpJMk16WTBOaTl0WldScFlYTmZNVEF3TVRFek5UQXdNVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58OGMxNzAzYzQxYzc0ZWEyYTUzZTFjMmJkOTNhYjA1ZDc3NTdjNGYyZDBmZTgxOTU4MmYwMjdiOGZkZDRmNmU5MQ&feedId=58083&k=2d83736551bd2072078aefe88add6529cc061a9b",
+        sizes: ["5"],
+      },
     ],
   },
   {
@@ -5822,6 +5996,15 @@ const minedBallProductsChunk2: BallProduct[] = [
           { size: "5", price: 23.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9762-ballon-de-football-adidas-uefa-champions-league-club-2026-27-black-ironmt-orange" },
         ],
       },
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383178&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134997-00-P-X-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM3NnxpbWFnZS9qcGVnfGFEaG1MMmd4WVM4eE16Z3pOekl4TmpZeE1qTTRNaTl0WldScFlYTmZNVEF3TVRFek5EazVOMTh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58MmUxYWVkOWUyNmI0OWE5YzExY2Y5M2I0MmZlMmQwNWY5NmVhY2VkOGE0MmY5NThhNTM4OTdlOGI0ZDE3ZTViNA&feedId=58083&k=36ca6d438d0afeb5b2c785c60d602f319f87d81a",
+        sizes: ["4", "5"],
+      },
     ],
   },
   {
@@ -5859,6 +6042,15 @@ const minedBallProductsChunk2: BallProduct[] = [
           { size: "4", price: 23.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9760-ballon-de-football-adidas-uefa-champions-league-club-2026-27-bopink-multco-sollem" },
           { size: "5", price: 23.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9760-ballon-de-football-adidas-uefa-champions-league-club-2026-27-bopink-multco-sollem" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249383043&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134996-00-P-X-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTg3MHxpbWFnZS9qcGVnfGFEYzRMMmc0TXk4eE16Z3pOekl4TlRZNU5EZzNPQzl0WldScFlYTmZNVEF3TVRFek5EazVObDh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58Mzk0NGYxZTRhZTMyNGU4NjQyMjlkNDljYzBlMTA3MTRmNWQ3YjU2NDU3ZGRlMDMyZTM2NzNmZTA2OWNkNjE2NA&feedId=58083&k=e4d6310125dd853a1fd8c92c1ab64c2c5d87bbaf",
+        sizes: ["4", "5"],
       },
       {
         store: "AdidasMX",
@@ -6109,6 +6301,15 @@ const minedBallProductsChunk2: BallProduct[] = [
           { size: "4", price: 25.3, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7536-ballon-de-football-adidas-uefa-nations-league-2026-27-white-legink-sollem-silvmt" },
           { size: "5", price: 22.88, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7536-ballon-de-football-adidas-uefa-nations-league-2026-27-white-legink-sollem-silvmt" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249386123&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001139364-00-P-X-20260701100444.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY0MXxpbWFnZS9qcGVnfGFEQXhMMmc0TXk4eE16ZzJORGcwTURJd01ESXlNaTl0WldScFlYTmZNVEF3TVRFek9UTTJORjh3TUY5UVgxZ3RNakF5TmpBM01ERXhNREEwTkRRdWFuQm58OTdlMGYwYTRmYTM3NDg2M2E4ZTg3YmVmZTYzODEyZjcwMDViYjNmMjc4MTk0NGIzMjg3NWNkN2JhZWUyYTRlZQ&feedId=58083&k=3605c70aee98e53ab9b0e1eeb619d8edc4c7c2a5",
+        sizes: ["4"],
       },
     ],
   },
@@ -6445,6 +6646,49 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-espana-mundial-2026-pro-blanco",
+    brand: "Adidas",
+    model: "espana mundial 2026 pro - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 149.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249379743&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001121161-00-P-X-20260408121617.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTg0N3xpbWFnZS9qcGVnfGFEUTFMMmd4Tnk4eE16WTROVFF5T1RJek9UZ3pPQzl0WldScFlYTmZNVEF3TVRFeU1URTJNVjh3TUY5UVgxZ3RNakF5TmpBME1EZ3hNakUyTVRjdWFuQm58YTIzMjJjMzA5Nzc2MGE0NzQ3MDc0MTg3ZDM0NjhjM2QzMTdlMmVlZjNmODdlY2I2NjA2ZGIyYjU3OTU3ZGFjOA&feedId=58083&k=d3211eba75f8b013278517cf696fed3d24902112",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-pelota-adidas-trionda-home-club-espana-rojo",
+    brand: "Adidas",
+    model: "espana mundial 2026 trionda club primera equipacion",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249371721&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075287-00-P-X-20251203134607.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ1NnxpbWFnZS9qcGVnfGFHUTJMMmhrT0M4eE16TTNNakF3T1RnM016UXpPQzl0WldScFlYTmZNVEF3TVRBM05USTROMTh3TUY5UVgxZ3RNakF5TlRFeU1ETXhNelEyTURjdWFuQm58MTI4NjZlOWRhYzgyZDFhZmJlYjg1OTc0MGUzNDRkNTQ1YjBlNDBkZWZmOWQwNzllZGM1ZDc4YzRlYWQ2ZTczOA&feedId=58083&k=afc39841f0713d434a3d73c2e4a319f0153dab9d",
+        sizes: ["5"],
+      },
+      {
+        store: "AdidasCL",
+        price: 13990.0,
+        shipping: 0,
+        currency: "CLP",
+        url: "https://www.awin1.com/pclick.php?p=44419090141&a=3013769&m=79922",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F16c3d2d38ef14347bed1f0a2aee48dc8_9366%2FPelota_Trionda_Home_Club_Espana_Rojo_JY0256_01_00_standard.jpg&feedId=95016&k=ea645dcd52bfff03bd97d00c4f9bd221381ba0b6",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "adidas-futbol-formativo-adidas-ekstraklasa-2026-27-blanc",
     brand: "Adidas",
     model: "Fútbol formativo adidas Ekstraklasa 2026/27 - Blanc",
@@ -6562,6 +6806,32 @@ const minedBallProductsChunk2: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1331-ballon-de-football-d-entrainement-adidas-predator-lucred-silvmt-black-white-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jh1331_lucred-silvmt-black-white_2.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balon-adidas-messi-club-blanco",
+    brand: "Adidas",
+    model: "messi club - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.27,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249377757&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001114116-00-P-X-20260220125933.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY5N3xpbWFnZS9qcGVnfGFHSmlMMmhsTVM4eE16VTVNVGMzT1RRd09UazFNQzl0WldScFlYTmZNVEF3TVRFeE5ERXhObDh3TUY5UVgxZ3RNakF5TmpBeU1qQXhNalU1TXpNdWFuQm58OTlkMzFjMWVjOWZhNWYyYzFhYzA5MDcxOWViMzY1MGY5NWRhMTdiZTk3MjRiZWJmMjQ3NjIwODE5YmUzNjk4MQ&feedId=58083&k=5b0f085685f8e4c9ef1e3cd5a8c735a9dc0bbcdf",
+        sizes: ["5"],
+      },
+      {
+        store: "AdidasMX",
+        price: 519.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=44004457691&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb8f3207bd418440d8a4529d40a9124a1_9366%2FBALON_MESSI_CLUB_Blanco_KA5267_01_00_standard.jpg&feedId=95013&k=c1c5ff424e00712d3ddf13d537ac26d1472c0d9a",
+        sizes: ["4", "5"],
       },
     ],
   },
@@ -7074,6 +7344,15 @@ const minedBallProductsChunk2: BallProduct[] = [
         sizes: ["1"],
       },
       {
+        store: "ForumSport",
+        price: 15.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45352681983&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102066-00-P-X-20260428093108.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc2MXxpbWFnZS9qcGVnfGFETXdMMmcyWlM4eE16Y3pNakEyTlRJME56STJNaTl0WldScFlYTmZNVEF3TVRFd01qQTJObDh3TUY5UVgxZ3RNakF5TmpBME1qZ3dPVE14TURndWFuQm58NjBiZTM4NmI3NDEzNWYyZGYwNmQzY2I0MjA4YTk2ZmZhMDAyNTQyZjY0NjkwMDAwMDFlMzVlM2U2MDc4NDFhMQ&feedId=58083&k=270366170925f17e90eac73b6c8b31ed3ee6f892",
+        sizes: ["1"],
+      },
+      {
         store: "AdidasCL",
         price: 14990.0,
         shipping: 0,
@@ -7150,6 +7429,32 @@ const minedBallProductsChunk2: BallProduct[] = [
         currency: "MXN",
         url: "https://www.awin1.com/pclick.php?p=46682703681&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa4f0664aaeed4e6db8cbfc87df055ef5_9366%2FMINIBALON_MESSI_Blanco_JW1345_01_00_standard.jpg&feedId=95013&k=020773f2e4178ace06e3ebd665c36649508471b0",
+        sizes: ["1"],
+      },
+    ],
+  },
+  {
+    id: "adidas-mini-balon-de-futbol-adidas-wc-2026-blanco",
+    brand: "Adidas",
+    model: "mundial 2026 trionda mini",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 15.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42645855158&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048401-00-P-X-20260528160027.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc4NHxpbWFnZS9qcGVnfGFHSmxMMmhoTlM4eE16YzVORGM0TXpnNE56TTVNQzl0WldScFlYTmZNVEF3TVRBME9EUXdNVjh3TUY5UVgxZ3RNakF5TmpBMU1qZ3hOakF3TWpjdWFuQm58Y2YyZGY4ZWIzZGQ2NWJmMzA5MzIzY2Q4ZDk2NDA5MjhmY2JhNmY3ODUyMzhmODZmNzIzZjhmOWUzZWE0NGI4NA&feedId=58083&k=afd03eba5173c906cf0baeceef63affdedfa6683",
+        sizes: ["1"],
+      },
+      {
+        store: "AdidasCO",
+        price: 47970.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=42666148123&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff51412dc4ee44330a1d39fcdbb8613e2_9366%2FBalon_Trionda_Mini_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8034_01_00_standard.jpg&feedId=95017&k=23366292f4e99de4636332d3663dd43e51578c0a",
         sizes: ["1"],
       },
     ],
@@ -7302,23 +7607,6 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-pelota-adidas-trionda-home-club-espana-rojo",
-    brand: "Adidas",
-    model: "Pelota adidas Trionda Home Club España - Rojo",
-    colour: "Rojo",
-    offers: [
-      {
-        store: "AdidasCL",
-        price: 13990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=44419090141&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F16c3d2d38ef14347bed1f0a2aee48dc8_9366%2FPelota_Trionda_Home_Club_Espana_Rojo_JY0256_01_00_standard.jpg&feedId=95016&k=ea645dcd52bfff03bd97d00c4f9bd221381ba0b6",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
     id: "adidas-pelota-de-entrenamiento-adidas-uefa-champions-league-blanco",
     brand: "Adidas",
     model: "Pelota de Entrenamiento adidas UEFA Champions League - Blanco",
@@ -7354,6 +7642,40 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-tiro-training-verde",
+    brand: "Adidas",
+    model: "tiro training - Verde",
+    colour: "Verde",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249387760&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001143853-00-P-X-20260916091956.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQxNHxpbWFnZS9qcGVnfGFEWXpMMmd5WlM4eE5EQXlNVEF3TWpFMk5qTXdNaTl0WldScFlYTmZNVEF3TVRFME16ZzFNMTh3TUY5UVgxZ3RNakF5TmpBNU1UWXdPVEU1TlRZdWFuQm58ZTI3YTdiYzhkMDNkZGRhN2VkZDQ4NmM2OGYyYmI2NjM1M2E1YzAxZjNkNTNmZTI5N2FlNWUwMWZlMzRiNmNlOA&feedId=58083&k=bc69bf661040dc473b7b59c796267d03fbc553b8",
+        sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-uefa-champions-league-26-27-entrenamiento",
+    brand: "Adidas",
+    model: "uefa champions league 26/27 entrenamiento",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45352682009&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102146-00-P-X-20260618081626.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTg5OXxpbWFnZS9qcGVnfGFEVTNMMmhsTUM4eE16Z3pOVFV6TmpJd016Z3dOaTl0WldScFlYTmZNVEF3TVRFd01qRTBObDh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpZdWFuQm58YmM3MGQwMTE1ZGUxZWJkZGQ3OWUyZDdjODQ3NmJhMmUyZTZhZWYwMmQwYjYxODUzZThhMGNiMjE0MmQ2OGYyNA&feedId=58083&k=d5d4a9aecc49a65e8a441c1869c6620e2f5a5a56",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "ark-therapeutics-balon-de-futbol-sensoriomotor-ark-therapeutics-blanco",
     brand: "Ark Therapeutics",
     model: "Ballon de football sensori-moteur Ark Therapeutics - Blanc",
@@ -7367,6 +7689,108 @@ const minedBallProductsChunk2: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm592551-ballon-de-football-sensori-moteur-ark-therapeutics-blanc-noir-21-6-cm",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/r/ark-therapeutics_m592551_blanc-noir_1.webp",
         sizes: ["21.6 cm"],
+      },
+    ],
+  },
+  {
+    id: "athletic-club-escudo-unique-in-the-world-rojo",
+    brand: "Athletic Club",
+    model: "escudo unique in the world - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 24.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44212218946&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118570-00-P-X-20260311150058.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA5MHxpbWFnZS9qcGVnfGFEYzRMMmcwWmk4eE16WXpNakExTkRReU56WTNPQzl0WldScFlYTmZNVEF3TVRFeE9EVTNNRjh3TUY5UVgxZ3RNakF5TmpBek1URXhOVEF3TlRndWFuQm58NzAxMTMwZWE3NWNkYWI2NjFhM2JmMjRmZjlkMTBmZGEzOWQ0MzMwN2MzNjViZDU2ZjA3M2M3M2U2OTM1MTcwMg&feedId=58083&k=4cfbfc051100c554adc3ce2435ee8a4f833efc92",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "athletic-club-escudo-unique-mini-blanco",
+    brand: "Athletic Club",
+    model: "escudo unique mini - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44928807783&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001130289-00-P-X-20260602120128.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg0MHxpbWFnZS9qcGVnfGFHVmlMMmc1WWk4eE16Z3dOREl3TlRFME5qRTBNaTl0WldScFlYTmZNVEF3TVRFek1ESTRPVjh3TUY5UVgxZ3RNakF5TmpBMk1ESXhNakF4TWpndWFuQm58OTU4MTRjMzM5NTA0MzZhZTUyNDU1NGRmMmFlZGQwMWYyZGY1MDIzOTM0ZDg5YmZjOTk4ZTY1NDA4YTJjZjFlNw&feedId=58083&k=242eaec8700195c6df9ac23664adb142749ca471",
+        sizes: ["1"],
+      },
+    ],
+  },
+  {
+    id: "athletic-club-firmas-25-26-blanco",
+    brand: "Athletic Club",
+    model: "firmas 25/26 - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 31.34,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43960702210&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001110789-00-P-X-20260205155057.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI4NXxpbWFnZS9qcGVnfGFEWTNMMmd6Tnk4eE16VTFNRE15TlRRNU56ZzROaTl0WldScFlYTmZNVEF3TVRFeE1EYzRPVjh3TUY5UVgxZ3RNakF5TmpBeU1EVXhOVFV3TlRjdWFuQm58ODM1ZWJmZTVhM2IxYmFhOTQzMGMyZmY0NzY3ZDQ5YjZmOGJhZjZhZWE5Mjg0MjM3NTBmMmI1ZTYyZWM3ZjcyYw&feedId=58083&k=31f0f61f87f1e2dc698ae96810a308427a002cd5",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "athletic-club-unique-in-the-world-5-blanco",
+    brand: "Athletic Club",
+    model: "unique in the world 5 - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 24.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42943329805&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095728-00-P-X-20251021153719.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzkxNXxpbWFnZS9qcGVnfGFETmxMMmhpTVM4eE16STJNVFF5TmpVNE9UY3lOaTl0WldScFlYTmZNVEF3TVRBNU5UY3lPRjh3TUY5UVgxZ3RNakF5TlRFd01qRXhOVE0zTVRrdWFuQm58ZTRjYmQ4ZWUzOWNkZDNiYTdjZTk3MDgzZDJhY2MxMzdlMmFlMmM2OWRhODgwMzAzMjBiZWE0Njc4ZjE1NWYzMg&feedId=58083&k=14409b5222da532488b83dfd2b8aaefc21b8ae3c",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "athletic-club-unique-in-the-world-5-negro",
+    brand: "Athletic Club",
+    model: "unique in the world 5 - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 28.2,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42943329799&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095727-00-P-X-20251021153719.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU3OHxpbWFnZS9qcGVnfGFHSXdMMmhoTXk4eE16STJNVFF5TmpFNU5qVXhNQzl0WldScFlYTmZNVEF3TVRBNU5UY3lOMTh3TUY5UVgxZ3RNakF5TlRFd01qRXhOVE0zTVRrdWFuQm58ODAxNTQxZDU2ZDAwODFhYWFkNWQ4MzQ1MDJjYWVkYWFlOGE0YmE5YTBmYWJiZDZmZjBiYWYyYzljYTJmN2M5Yw&feedId=58083&k=cced934901e06ff2894da6f85f70f05b3eab01e0",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "athletic-club-unique-in-the-world-mini-rojo",
+    brand: "Athletic Club",
+    model: "unique in the world mini - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 16.0,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42943329813&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095730-00-P-X-20260528165858.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODUyNnxpbWFnZS9qcGVnfGFEUTBMMmhrTlM4eE16YzVORGsxTnpRMU9UUTROaTl0WldScFlYTmZNVEF3TVRBNU5UY3pNRjh3TUY5UVgxZ3RNakF5TmpBMU1qZ3hOalU0TlRndWFuQm58ZDM1N2NjZmYyYWE4ZWM4MTQ5NzJkNjU5NTBlODEwZjc5MDkwMjhmZGI3MzBjMGNmMWEyNDJmZThmZGMwZGQ2ZA&feedId=58083&k=f259ebc03b4f64da8574c897b9646e1a3f9e1a52",
+        sizes: ["1"],
       },
     ],
   },
@@ -9784,6 +10208,9 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "errea-balones-de-futbol-errea-stream-hybrid-heritage-blanc",
     brand: "Errea",
@@ -10056,9 +10483,6 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "get-go-balon-de-futbol-get-go-circuit-strike-blanc",
     brand: "Get & Go®",
@@ -13420,6 +13844,57 @@ const minedBallProductsChunk3: BallProduct[] = [
     ],
   },
   {
+    id: "kempa-buteo-naranja",
+    brand: "kempa",
+    model: "buteo - Naranja",
+    colour: "Naranja",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 38.39,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42273448917&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069765-00-P-X-20250829115507.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzkwOHxpbWFnZS9qcGVnfGFHWmhMMmczT1M4eE16RTBOekF5TWprNE16RTVPQzl0WldScFlYTmZNVEF3TVRBMk9UYzJOVjh3TUY5UVgxZ3RNakF5TlRBNE1qa3hNVFUxTURjdWFuQm58OGE2MzMxMzk3MGNiMjRhZjhiMDZkMWVlZjM4MmFlZTE5MmYyZGEzNWQyZTliOThmMjIyYmExMTYzNTFkOWM4NQ&feedId=58083&k=de38cd37c3892f7417e708ff2382dfb3be44bced",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "kempa-gecko-rojo",
+    brand: "kempa",
+    model: "gecko - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 25.59,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42273448916&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069767-00-P-X-20250829115507.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI0MXxpbWFnZS9qcGVnfGFHTXhMMmd5TkM4eE16RTBOekF5TXpNM05qUXhOQzl0WldScFlYTmZNVEF3TVRBMk9UYzJOMTh3TUY5UVgxZ3RNakF5TlRBNE1qa3hNVFUxTURjdWFuQm58NWFlZDBmOGVlYzZmODkxNjA2YTdhZTczODFlN2M0M2IzYjQ4YjQ0YWZmYTRiNWFjYzI1YTZmMzdlMzRmYTFhMA&feedId=58083&k=55a8772ab5670cf21dc4cfe85bb36b435145da77",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "kempa-spectrum-synergy-primo-negro",
+    brand: "kempa",
+    model: "spectrum synergy primo - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 31.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42273448909&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069766-00-P-X-20250829115507.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA0OHxpbWFnZS9qcGVnfGFEa3lMMmd5WWk4eE16RTBOekF5TXpFM09UZ3dOaTl0WldScFlYTmZNVEF3TVRBMk9UYzJObDh3TUY5UVgxZ3RNakF5TlRBNE1qa3hNVFUxTURjdWFuQm58ZTllNzE5ZDIwM2EzNWJkMzZhMjhjZGY1N2I3NTgyZGNmYTljMWY3ZTU1OWUzMjYwNjk4NzVlNzJlYmQyMzY2Mg&feedId=58083&k=e4b6e17d49620a756d93272bf13dc6b06bbab766",
+        sizes: [],
+      },
+    ],
+  },
+  {
     id: "kuebler-sport-balon-de-futbol-inflable-kuebler-sport-turquesa",
     brand: "Kuebler Sport",
     model: "Ballon de football à bulle Kuebler Sport - Turquoise",
@@ -14287,6 +14762,9 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "megaform-balones-de-futbol-megaform-street-star-blanco",
     brand: "Megaform",
@@ -14617,9 +15095,6 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "mitre-balon-de-futbol-mitre-calcio-yellow-black-grey",
     brand: "Mitre",
@@ -16682,6 +17157,15 @@ const minedBallProductsChunk4: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq0640-100-blanc-bright-crimson-anthracite-noir-6ac7c58ca8495-1.webp",
         sizes: ["5"],
       },
+      {
+        store: "ForumSport",
+        price: 29.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46511836070&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126048-00-P-X-20260828163158.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc2NnxpbWFnZS9qcGVnfGFHWmxMMmhrWWk4eE16azRNRGM1TnpnNU5EWTROaTl0WldScFlYTmZNVEF3TVRFeU5qQTBPRjh3TUY5UVgxZ3RNakF5TmpBNE1qZ3hOak14TlRndWFuQm58MTAxODQwY2FiMjZkNjhhZjgyNGUxZjllM2NiNGQ2OTBlMjM0Zjg3ZWNmZjUzMGRmZTZkNGU1M2I3MTBmYjU3ZA&feedId=58083&k=bbed0a7f6580d566cf63c9855de176e38f42b041",
+        sizes: ["5"],
+      },
     ],
   },
   {
@@ -16874,6 +17358,15 @@ const minedBallProductsChunk4: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0618-100-ballon-de-football-nike-control-blanc-bright-crimson-anthracite-noir-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq0618-100-blanc-bright-crimson-anthracite-noir-6aa0153c08f52-1.webp",
+        sizes: ["5"],
+      },
+      {
+        store: "ForumSport",
+        price: 107.79,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45656103092&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126045-00-P-X-20260817150620.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODkwOXxpbWFnZS9qcGVnfGFETTNMMmcxTkM4eE16azFPVEUwTWpJME5ETTRNaTl0WldScFlYTmZNVEF3TVRFeU5qQTBOVjh3TUY5UVgxZ3RNakF5TmpBNE1UY3hOVEEyTWpBdWFuQm58ZDc2YjUxYjYxM2M0OGM0OTliZTEwYjE5MWMyMTA0YThjZGU3OWVlZGQ0OTAzMmU3MDllYTdjNTZmY2FkMmJmNA&feedId=58083&k=ac802b1487e2256304dd694ed32fa4c7e064a3c8",
         sizes: ["5"],
       },
     ],
@@ -17709,6 +18202,15 @@ const minedBallProductsChunk4: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv6341-702-ballon-de-football-d-entrainement-nike-pitch-fa25-volt-black-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hv6341-702_volt-black-black_1.webp",
+        sizes: ["5"],
+      },
+      {
+        store: "ForumSport",
+        price: 23.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46073881978&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001104338-00-P-X-20260921112101.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzE5OHxpbWFnZS9qcGVnfGFEWTVMMmhtWkM4eE5EQXpNRFEyTXpFM01qWXpPQzl0WldScFlYTmZNVEF3TVRFd05ETXpPRjh3TUY5UVgxZ3RNakF5TmpBNU1qRXhNVEl4TURFdWFuQm58NTIxZDU0MWRjNDY1MjYyMTFkZTdmMDJjZjEwM2Q0MTNjYjc4ZDM1YWIzZDQ5ODk2ZDE0YzMzMzQ4NGM1ODZiYg&feedId=58083&k=8546d515450d764f306597852e9458c7d353b9b9",
         sizes: ["5"],
       },
     ],
@@ -18562,6 +19064,15 @@ const minedBallProductsChunk4: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/0/8/084633-02.webp",
         sizes: ["5"],
       },
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43078765104&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048022-00-P-X-20251103100014.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjgxOHxpbWFnZS9qcGVnfGFEWTBMMmd3Wmk4eE16STROek14TURnNE5EZzVOQzl0WldScFlYTmZNVEF3TVRBME9EQXlNbDh3TUY5UVgxZ3RNakF5TlRFeE1ETXhNREF3TVRRdWFuQm58YTcyNWNkZmUwNTIyYzc5MjM3YmIxZjAyZTdjMmZiZTFmNmY2NWE2NWZhY2YyYTVjNGZiZTk5MzFiMDZiMTExNA&feedId=58083&k=717cabfb032498e2d0cf1201f9ac1703d31909a8",
+        sizes: ["5"],
+      },
     ],
   },
   {
@@ -18718,6 +19229,15 @@ const minedBallProductsChunk4: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-085148-01-6ae90b4d3c6f7-1.webp",
         sizes: ["5"],
       },
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45253181428&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001101803-00-P-X-20260526112834.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYyOHxpbWFnZS9qcGVnfGFEVmxMMmhqWkM4eE16YzRPVGN3T0RBMU9EWTFOQzl0WldScFlYTmZNVEF3TVRFd01UZ3dNMTh3TUY5UVgxZ3RNakF5TmpBMU1qWXhNVEk0TXpRdWFuQm58NzUxZTNjMjQ4NDVkNTYyZTY3NDNiOWFjNzZiMWVhM2YwYmZjYmU3NWY4N2MzZTBjYjVlMTE4ZTdkNmVkODFhZg&feedId=58083&k=611a54292eea28b30c7cafc9a347d60b946dd915",
+        sizes: ["3", "5"],
+      },
     ],
   },
   {
@@ -18742,6 +19262,15 @@ const minedBallProductsChunk4: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085149-01-ballon-de-football-puma-stellar-cup-laliga-hi-viz-yellow",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-085149-01-6ae908c30324f-1.webp",
+        sizes: ["5"],
+      },
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46765528471&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102155-00-P-X-20261027120701.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc4NHxpbWFnZS9qcGVnfGFEZGxMMmc0TlM4eE5ERXdOakV4TXpFM09UWTNPQzl0WldScFlYTmZNVEF3TVRFd01qRTFOVjh3TUY5UVgxZ3RNakF5TmpFd01qY3hNakEzTURFdWFuQm58YWRlMzdhNWI2ZWZiZjg1MmMwNTllMTkwZGM4ZTBhZTJmNzgyMDExZjUwMjZlOGI1YmI3NzQ1ZTE4OTJmYmE2Mw&feedId=58083&k=a7040b3842ade778e98262d81a70218303d64944",
         sizes: ["5"],
       },
     ],
@@ -18786,6 +19315,15 @@ const minedBallProductsChunk4: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F085113-01-ballon-de-football-puma-stellar-cup-pl-reactivity-puma-white-multicolor-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-085113-01-puma-white-multicolor-6a428fa1b5b28-1.webp",
+        sizes: ["5"],
+      },
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45595710280&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102154-00-P-X-20260812114412.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY3OHxpbWFnZS9qcGVnfGFEUmxMMmhrTXk4eE16azFNRFE1TURBMU1EVTVNQzl0WldScFlYTmZNVEF3TVRFd01qRTFORjh3TUY5UVgxZ3RNakF5TmpBNE1USXhNVFEwTVRJdWFuQm58MTlhNDcyODg1YjA1YWY4MWIyOTI3NzJlZjI3Mjk2NTkwY2NmNTY1YjliNTAxNmVmNWYxNDlhNWY5Y2Y4NTUxOA&feedId=58083&k=2fad203cc79ff434d5b6b5d1f02cd3a369f3c79e",
         sizes: ["5"],
       },
     ],
@@ -18856,6 +19394,332 @@ const minedBallProductsChunk4: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F085126-01-ballon-de-football-puma-stellar-nitro-ultimate-pl-reactivity-fifa-pro-puma-white-multicolor-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-085126-01-puma-white-multicolor-6a428fa2d193a-1.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-borussia-dortmund-culture-negro",
+    brand: "Puma",
+    model: "borussia dortmund culture - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45295252810&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001140387-00-P-X-20260714082042.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk5NXxpbWFnZS9qcGVnfGFESm1MMmhsTnk4eE16ZzVNVGs0TVRJM09USTJNaTl0WldScFlYTmZNVEF3TVRFME1ETTROMTh3TUY5UVgxZ3RNakF5TmpBM01UUXdPREl3TkRJdWFuQm58YTJmMTkxNGE5MGUxYzZiMDQ4ZDJjZGI0MmQwNTIzMDcyOTM1N2ZkMjcyNzVkOWEyZmU5ZDg0NTM5ZTc0YTNjOQ&feedId=58083&k=a00c1c70633959111a65411906e84d212c10669f",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-borussia-dortmund-stellar-blanco",
+    brand: "Puma",
+    model: "borussia dortmund stellar - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 18.59,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45295252812&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001140389-00-P-X-20260713105313.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA4MnxpbWFnZS9qcGVnfGFERTBMMmc1WkM4eE16ZzRPVFEwTnpBd01qRTBNaTl0WldScFlYTmZNVEF3TVRFME1ETTRPVjh3TUY5UVgxZ3RNakF5TmpBM01UTXhNRFV6TVRNdWFuQm58YTMyNmZlYzJjMDBlODc2MDc2ZWRlZWFiNjBiMzZmNWY1ZmFkZjg0MGMxZmFhOTBjMDQ5NTJiMDBlY2ViM2U4OQ&feedId=58083&k=ab3d02d5d18cf3457870258758edf4b3a635967e",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-laliga-26-blanco",
+    brand: "Puma",
+    model: "laliga 26 - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45692355777&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048020-00-P-X-20250528113814.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA0NHxpbWFnZS9qcGVnfGFHUTFMMmcyTmk4eE1qazFNekV4T0RJME5EZzVOQzl0WldScFlYTmZNVEF3TVRBME9EQXlNRjh3TUY5UVgxZ3RNakF5TlRBMU1qZ3hNVE00TVRRdWFuQm58MjAxZDA5ZDMzYzk3ZTAwNmMxZTA4YWNjNjk3MDM4YWU1ZGI2MWY4Y2VmZjBkZWJiNzYyNGI2N2E2MzBjM2FlMA&feedId=58083&k=6fa00d612ec12b91e22cc7abfdca1c250c636ec6",
+        sizes: ["3", "5"],
+      },
+    ],
+  },
+];
+
+const minedBallProductsChunk5: BallProduct[] = [
+  {
+    id: "puma-laliga-26-mini-blanco",
+    brand: "Puma",
+    model: "laliga 26 mini - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 12.39,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41502772129&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048023-00-P-X-20260528160027.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjY0NHxpbWFnZS9qcGVnfGFEUmlMMmhpTXk4eE16YzVORGM0TXpRNU5ERTNOQzl0WldScFlYTmZNVEF3TVRBME9EQXlNMTh3TUY5UVgxZ3RNakF5TmpBMU1qZ3hOakF3TWpjdWFuQm58N2IxMDRhODU0M2IwZDQwZDI4YTY2YmI0NWFkY2QzNDUxOGRiMTdmYzMyODllODgzOTRlMTA2ZGIwMDA5YWUzYQ&feedId=58083&k=45d2773197cd3969be9a7d54eeae9c122120e79d",
+        sizes: ["1"],
+      },
+    ],
+  },
+  {
+    id: "puma-laliga-f-25-26-amarillo",
+    brand: "Puma",
+    model: "laliga f 25/26 - Amarillo",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.39,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43135969614&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048026-00-P-X-20251110114501.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM5MXxpbWFnZS9qcGVnfGFEUTRMMmd3TXk4eE16TXdNVGcwTVRjeU16UXlNaTl0WldScFlYTmZNVEF3TVRBME9EQXlObDh3TUY5UVgxZ3RNakF5TlRFeE1UQXhNVFExTURFdWFuQm58ZmEzNDQ0YzgyYjhlYjdkZTM2ZTcyMjU1NjAwZTExYjZmMTExN2FlMDViZTRhMTZmZTNjNWNlYzc4MmRlOTg1NQ&feedId=58083&k=a56eb67f9a864a7112e84f9e3c62cc2d6f58be5e",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-laliga-femenina-25-26-blanco",
+    brand: "Puma",
+    model: "laliga femenina 25/26 - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41701688029&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048025-00-P-X-20250625154219.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI3NHxpbWFnZS9qcGVnfGFEVmlMMmd6WkM4eE16QXhNalkxT0RVeU1EQTVOQzl0WldScFlYTmZNVEF3TVRBME9EQXlOVjh3TUY5UVgxZ3RNakF5TlRBMk1qVXhOVFF5TVRrdWFuQm58ODhmM2ExYWQ2YzZhY2RkYWU1YzU3NzgzOTJjOGE4MjVkNmM5MWMzMDA3NzMyNzVjNzEwM2ViMWFjNDYzNTNiZQ&feedId=58083&k=23da6c2a97a82282e0945ea9244b8d27bbc4a28c",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-manchester-city-26-27-culture-ball-negro",
+    brand: "Puma",
+    model: "manchester city 26/27 culture ball - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 15.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45295252811&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001140388-00-P-X-20260714082042.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU3MnxpbWFnZS9qcGVnfGFEZG1MMmhrTXk4eE16ZzVNVGs0TVRnd016VTFNQzl0WldScFlYTmZNVEF3TVRFME1ETTRPRjh3TUY5UVgxZ3RNakF5TmpBM01UUXdPREl3TkRJdWFuQm58ZTA0NDM1ZDQxYmZmYzllMmJkNGIyZmIyZDFhNzg5ODBkNWU3YTA5NWM1NTBjOWQ4Njc5MTBhZjRkNDRlNWY5Yg&feedId=58083&k=e310bdac3103dbf2b4af49b153590674e3c5f819",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-manchester-city-26-27-stellar-cup-blanco",
+    brand: "Puma",
+    model: "manchester city 26/27 stellar cup - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 18.59,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45295252813&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001140390-00-P-X-20260714082042.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMzN3xpbWFnZS9qcGVnfGFEZzNMMmczWVM4eE16ZzVNVGs0TWpNeU56Z3pPQzl0WldScFlYTmZNVEF3TVRFME1ETTVNRjh3TUY5UVgxZ3RNakF5TmpBM01UUXdPREl3TkRJdWFuQm58YTY2YTI1NTkwZjI5Yzc2YmI0ZTNjOGZhNzkxYWFhYTI3NjFlNTYxOTI3ZTc0MzJjZTlmZDRmZTc5NjJjNmE5NA&feedId=58083&k=dedb148d23324551b454f739bb8458c78403b605",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-orbita-5-fusion-blanco",
+    brand: "Puma",
+    model: "orbita 5 fusion - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 18.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38968854359&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001017855-00-P-X-20240904144205.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA4NnxpbWFnZS9qcGVnfGFHUmpMMmcwTXk4eE1qTTFNRE0xT1RBME5ERXlOaTl0WldScFlYTmZNVEF3TVRBeE56ZzFOVjh3TUY5UVgxZ3RNakF5TkRBNU1EUXhORFF5TURVdWFuQm58NmYzNzQ1M2UzMDdkODRlNjM3ODhlMjQ4MmZkOWM0NTJlZWY5MjI3NzgwMzRjZmRiYTUwOWM2MWI5YmQwMWNkNw&feedId=58083&k=0ee95c40ccff3eb6f09128dfc21dbea082d1bdc0",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-orbita-cup-premier-league",
+    brand: "Puma",
+    model: "orbita cup premier league",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 19.43,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41609484029&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048027-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTg2OXxpbWFnZS9qcGVnfGFHVmxMMmd5Wmk4eE1qazVOemM0T1RnME16UTROaTl0WldScFlYTmZNVEF3TVRBME9EQXlOMTh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58MjhjMWU2ZWQzNWQ0YzNmYjU2MzdhMmI4N2VlYmM3MGU0YmIwM2QyNmMwMWZmNTNmYjM2M2U0NjdkMjUyNzExOA&feedId=58083&k=af442f7f7846827a1a86316d86201c1710632f73",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-orbita-cup-premier-league-blanco",
+    brand: "Puma",
+    model: "orbita cup premier league - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 20.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46456637382&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107996-00-P-X-20260220152323.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc3NHxpbWFnZS9qcGVnfGFESmlMMmhrWWk4eE16VTVNakV3TmpNek5qSTROaTl0WldScFlYTmZNVEF3TVRFd056azVObDh3TUY5UVgxZ3RNakF5TmpBeU1qQXhOVEl6TWpNdWFuQm58NTI3MGY5YWYzNzIxYzU0NDI5OWExZjRmM2ZlODM5ZjdjMjkwMWViYjJlNGNjM2JlM2IwNWUyNTVmM2IzYmExNA&feedId=58083&k=ad19efc673bc9b34465a3aae0172caceb1dc7fae",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "puma-orbita-la-liga-1-25-26-mini-amarillo",
+    brand: "Puma",
+    model: "orbita la liga 1 25/26 mini - Amarillo",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 12.39,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43069258579&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048024-00-P-X-20260528160027.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc0OHxpbWFnZS9qcGVnfGFEZGlMMmhoWXk4eE16YzVORGM0TXpZNU1EYzRNaTl0WldScFlYTmZNVEF3TVRBME9EQXlORjh3TUY5UVgxZ3RNakF5TmpBMU1qZ3hOakF3TWpjdWFuQm58NDk3NjQ4ZTUzYzIzMzM2YjU1OGVjOGZjYTU3NzlkNWU0ZmJhZGM4MTIzYjVkMjhiYmE0OGFlYWY5MWI0ZjlhOQ&feedId=58083&k=b25c64f23a4522ffd2b9a536aed35573beb6bc0c",
+        sizes: ["1"],
+      },
+    ],
+  },
+  {
+    id: "puma-orbita-la-liga-1-fifa-quality-pro",
+    brand: "Puma",
+    model: "orbita la liga 1 fifa quality pro",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 97.99,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44341425336&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001007473-00-P-X-20240116161328.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIzMHxpbWFnZS9qcGVnfGFERXpMMmcyTUM4eE1Ua3hOVFk1T1RBNU16VXpOQzl0WldScFlYTmZNVEF3TVRBd056UTNNMTh3TUY5UVgxZ3RNakF5TkRBeE1UWXhOakV6TWpndWFuQm58Y2Q1ZDdkYzBmNTc4NWI3YTNhODU3M2E5NWMzNThlNDJkZWVmMWMzZjU3NzMxNDNjNzAyYmE1ZDY4ZjkxZWY0NQ&feedId=58083&k=95d4652ef572a391fe9f7d10baedbc6d2f165038",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-orbita-laliga-26-blanco",
+    brand: "Puma",
+    model: "orbita laliga 26 - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 26.54,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43791560810&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001108000-00-P-X-20260122090047.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ4MHxpbWFnZS9qcGVnfGFEUTBMMmczWkM4eE16VXhNek13TnpReU1qYzFNQzl0WldScFlYTmZNVEF3TVRFd09EQXdNRjh3TUY5UVgxZ3RNakF5TmpBeE1qSXdPVEF3TkRjdWFuQm58NTkxMzA3MjYyZDZmYzg0ZGFiZmRiZDFmOWZkYTBhZmJjMDgzMjNhMDZhMjI4YmE1YTVlODZiYmFmY2IyNmIzZg&feedId=58083&k=a83d42a0683dd0e0eaaffb721491184347cd6cca",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-orbita-match-premier-league-26-plata",
+    brand: "Puma",
+    model: "orbita match premier league 26 - Plata",
+    colour: "Plata",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43791560757&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107993-00-P-X-20260122090047.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzg1N3xpbWFnZS9qcGVnfGFHRTBMMmcyWmk4eE16VXhNek13TnpBeU9UVXpOQzl0WldScFlYTmZNVEF3TVRFd056azVNMTh3TUY5UVgxZ3RNakF5TmpBeE1qSXdPVEF3TkRjdWFuQm58MjIyYjdhNjI5NDg3YWFmYTBiNWZhMGZhOGVlNzEwNDM1MzU0ZDFlNDM0ZWQ3MGU2MmI2ZjQ4ZDQzYTc0NTcyZg&feedId=58083&k=746a2ed19e8bbec1ed0bab23fb8eaf718ffdf1a2",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-orbita-match-premier-league-plata",
+    brand: "Puma",
+    model: "orbita match premier league - Plata",
+    colour: "Plata",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.19,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44036501275&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107994-00-P-X-20260220152323.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM5OXxpbWFnZS9qcGVnfGFEbGlMMmhqWmk4eE16VTVNakV3TlRrME16QTNNQzl0WldScFlYTmZNVEF3TVRFd056azVORjh3TUY5UVgxZ3RNakF5TmpBeU1qQXhOVEl6TWpNdWFuQm58ZjRhZGE3NDJkMjg3OTYwMjQ3ZGUyZGJkNWUwY2IyOTY5NzBjMmIwNjFjMjlmY2E2MmViNWJiOTE1ZjQ4ODRmMg&feedId=58083&k=6fdcd1f52b44d3c8453f9921b14eb1cd927f2823",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-orbita-serie-a-blanco",
+    brand: "Puma",
+    model: "orbita serie a - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 23.09,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41944453452&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001007477-00-P-X-20240116161328.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMyOHxpbWFnZS9qcGVnfGFEY3hMMmczTkM4eE1Ua3hOVFk1T1RZNE16TTFPQzl0WldScFlYTmZNVEF3TVRBd056UTNOMTh3TUY5UVgxZ3RNakF5TkRBeE1UWXhOakV6TWpndWFuQm58Yzc5NTg3ZjJiNzg2NDg2NzNlNzA4MDFjZTRiMWNlZGQxNDgxZWRiZTdlZjAyYmYyNzkyMjU1MGNiMmQ1NTVlMA&feedId=58083&k=74148899c0077139018a19052b09d40bbe07572c",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-orbita-ultimate-amarillo",
+    brand: "Puma",
+    model: "orbita ultimate - Amarillo",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 78.39,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43972894308&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107998-00-P-X-20260213143711.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc2OHxpbWFnZS9qcGVnfGFETTFMMmhqWkM4eE16VTNOek0yTlRneE5UTXlOaTl0WldScFlYTmZNVEF3TVRFd056azVPRjh3TUY5UVgxZ3RNakF5TmpBeU1UTXhORE0zTVRFdWFuQm58MmQxNjk4ZDkyZTk3YmY3OGY1MGE4ODhlYmNmMWZjNmRmOTgxZjQ0ZDY4NjhmMWNiMjE3NTg0Yjg4MTU2MDE5YQ&feedId=58083&k=b04c697fbd4732512ee0184005517fe922378aa2",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-orbita-ultimate-premier-league-blanco",
+    brand: "Puma",
+    model: "orbita ultimate premier league - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 81.75,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45841261646&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107999-00-P-X-20260220152323.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzYxMXxpbWFnZS9qcGVnfGFEWXlMMmczWWk4eE16VTVNakV3TnpBMU56RTRNaTl0WldScFlYTmZNVEF3TVRFd056azVPVjh3TUY5UVgxZ3RNakF5TmpBeU1qQXhOVEl6TWpNdWFuQm58MTZiNzVjODZiYjY0YmQ3ZjQyMDQwNDQ3NWJkM2M4ZjA0MTE1ZjZiYjg0NzY0ZWY1MjZmZGU2YjM0MDc0MWMyMA&feedId=58083&k=dec52e9a85209325279eb901902bd56e06b4c4f8",
         sizes: ["5"],
       },
     ],
@@ -18942,6 +19806,83 @@ const minedBallProductsChunk4: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46016564010&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F91%2F03%2F41%2F084287-01-1_600x600.jpg&feedId=99907&k=b0ab53ededa450be80073270193fcdec633503d5",
         sizes: [],
+      },
+      {
+        store: "ForumSport",
+        price: 19.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44133874096&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978304-00-P-X-20240606110358.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMyOXxpbWFnZS9qcGVnfGFHVmpMMmc1T0M4eE1qRTRNamMzT0RnM01UZ3pPQzl0WldScFlYTmZNVEF3TURrM09ETXdORjh3TUY5UVgxZ3RNakF5TkRBMk1EWXhNVEF6TlRndWFuQm58Y2RlMmYzMjNiOTQwMWY5NDFiYjI2YzRkNzU4ODhkZWRmYjdmOGY5MWRiOTk3OWIyYjBjOWI0N2UxNjZkNWJkYQ&feedId=58083&k=0327c5410417bbaa48d3d5b321298e30b4e262d8",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-stellar-cup-laliga-27-mini",
+    brand: "Puma",
+    model: "stellar cup laliga 27 mini",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 15.49,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44865631623&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001101804-00-P-X-20260528160027.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI0N3xpbWFnZS9qcGVnfGFHSXlMMmd5Tmk4eE16YzVORGM0TlRZMU5qZzJNaTl0WldScFlYTmZNVEF3TVRFd01UZ3dORjh3TUY5UVgxZ3RNakF5TmpBMU1qZ3hOakF3TWpjdWFuQm58YTM4ODdiYmQ0NjI3NDMzOTEwMGQ2ODMxZTFiODM2ZjEwYzc2NzRiZDQ3NTZmNGZiMjcyYzI4ZTU1NDU4ZjAwYg&feedId=58083&k=1128f5e11ce1f0f4cb2dee674706fabb55674ef0",
+        sizes: ["1"],
+      },
+    ],
+  },
+  {
+    id: "puma-stellar-cup-liga-f-26-27",
+    brand: "Puma",
+    model: "stellar cup liga f 26/27",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45074624892&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102158-00-P-X-20260604114749.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc5NHxpbWFnZS9qcGVnfGFHRTBMMmd3Tmk4eE16Z3dPVEU0T1RreE1qWXdOaTl0WldScFlYTmZNVEF3TVRFd01qRTFPRjh3TUY5UVgxZ3RNakF5TmpBMk1EUXhNVFEzTkRrdWFuQm58OTIwZTJkZDVhZDNlM2U2YTM2MmU2YmRkNGE5OGRhNDRiYjQwMTJlNzg2MTdjNzdiODUyOWFhNjY5ODdiNGZhMA&feedId=58083&k=0d227ba09d9a5c28159a49c74a717a8851ebb277",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-stellar-cup-liga-f-hi-viz",
+    brand: "Puma",
+    model: "stellar cup liga f hi-viz",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46548429858&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102159-00-P-X-20260701115202.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjkwNnxpbWFnZS9qcGVnfGFERTNMMmd4TUM4eE16ZzJORGt4TWpJeU5ESTROaTl0WldScFlYTmZNVEF3TVRFd01qRTFPVjh3TUY5UVgxZ3RNakF5TmpBM01ERXhNVFV5TURJdWFuQm58MmM1YzMyYzQ3ZjE1OWVmNzlhNGFjYmQ0MzA2MDU4ZDFhODQ5MDFhYzcyMDgwNGIzOGRkZDViM2MxOWI5YjU3OA&feedId=58083&k=678d17c6a652bd669bb0d2ee6c91c0cbfa7af77d",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "puma-stellar-cup-serie-a",
+    brand: "Puma",
+    model: "stellar cup serie a",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45374506114&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102157-00-P-X-20260528114120.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY2OXxpbWFnZS9qcGVnfGFHSXhMMmd3Tmk4eE16YzVOREk0T1RNNE5UVXdNaTl0WldScFlYTmZNVEF3TVRFd01qRTFOMTh3TUY5UVgxZ3RNakF5TmpBMU1qZ3hNVFF4TWpBdWFuQm58MmZiNmRlYTNkODYzZTc1ZmY0MWJkOTU0ZjEwYmRhYzFmNjg5ZTRmN2Y0MWZlMTI5NThmOWJlNTBmOTdjNjdkZg&feedId=58083&k=eb694c4647b55e5fa0270d0731266266379dc881",
+        sizes: ["5"],
       },
     ],
   },
@@ -19232,9 +20173,6 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "rinat-balones-de-futbol-rinat-nebus-hybrid-blanc-2",
     brand: "Rinat",
@@ -21662,6 +22600,91 @@ const minedBallProductsChunk5: BallProduct[] = [
     ],
   },
   {
+    id: "spyro-cg-stadium-12-blanco",
+    brand: "Spyro",
+    model: "cg stadium 12 - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 8.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46125470376&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122208-00-P-X-20260916154641.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUyNXxpbWFnZS9qcGVnfGFEQXlMMmd4TlM4eE5EQXlNVGc1TVRrME9EVTNOQzl0WldScFlYTmZNVEF3TVRFeU1qSXdPRjh3TUY5UVgxZ3RNakF5TmpBNU1UWXhOVFEyTkRFdWFuQm58MWM2MWJlNjMzZjgzZDkzODk2Zjc4YWQ1NzczNmMwMzg3MDdkNzU2N2YzZGMwYjJmZjE1YzllOGUzZmUyMmNlYw&feedId=58083&k=2670004c25ae80068ae4178560ec7a6f137ed1f3",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "spyro-cg-stadium-12-negro",
+    brand: "Spyro",
+    model: "cg stadium 12 - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 8.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46125470377&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001122209-00-P-X-20260916154641.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY3NHxpbWFnZS9qcGVnfGFEUmxMMmcyWVM4eE5EQXlNVGc1TWpNME1UYzVNQzl0WldScFlYTmZNVEF3TVRFeU1qSXdPVjh3TUY5UVgxZ3RNakF5TmpBNU1UWXhOVFEyTkRFdWFuQm58YzhhYWJiYmI2YzhhOGYwNzY1ZDA5ZjdlZTVkNjE3ZTZmMDgyOWI4OTcwOGQyYmE2YWU5ZTA0YTNkMWE0NWEwNQ&feedId=58083&k=1ae683ed49d302865c7175ff61186310a498d9e7",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "spyro-stadium-11",
+    brand: "Spyro",
+    model: "stadium 11",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 8.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265360837&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000979130-00-P-X-20240826085949.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ1M3xpbWFnZS9qcGVnfGFEVXdMMmczWXk4eE1qTXpNREkzT1RZNU9EUTJNaTl0WldScFlYTmZNVEF3TURrM09URXpNRjh3TUY5UVgxZ3RNakF5TkRBNE1qWXdPRFU1TkRrdWFuQm58OTZhYmE2ZWEyYzk1ZGY4YzBlOWVlODdkMTk0MTc3ZjcxYjU3Mjk0MmJkZjAzZDZlZDcxODE1ZWQwMTQzYTFjMQ&feedId=58083&k=059b221f6ae06f2a87bcc110e2cffed62447542e",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "spyro-stadium-negro",
+    brand: "Spyro",
+    model: "stadium - Negro",
+    colour: "Negro",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 8.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265360561&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000979132-00-P-X-20240826085949.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMnxpbWFnZS9qcGVnfGFESXhMMmc0TXk4eE1qTXpNREkzT1RnNU5UQTNNQzl0WldScFlYTmZNVEF3TURrM09URXpNbDh3TUY5UVgxZ3RNakF5TkRBNE1qWXdPRFU1TkRrdWFuQm58MTI2YjEyNjBlOWY3NGIyODM1OTg0MDcwNWYwNmZmMTdlMjhlNmRhYTU5ZGUzMzZjNjI0YjIyMmU0MTdkMmE5Mw&feedId=58083&k=9b21f337dbce7305702b36c7d814dd930629120a",
+        sizes: [],
+      },
+    ],
+  },
+  {
+    id: "spyro-trainer-11",
+    brand: "Spyro",
+    model: "trainer 11",
+    colour: "N/D",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 11.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=39265360846&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000979131-00-P-X-20240712135400.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg3NHxpbWFnZS9qcGVnfGFHSmlMMmc1WVM4eE1qSTFNamt5T1RVMU5qVXhNQzl0WldScFlYTmZNVEF3TURrM09URXpNVjh3TUY5UVgxZ3RNakF5TkRBM01USXhNelUwTURBdWFuQm58ZGI3MzZlZjE3YjE4YWJjZTQyZDhmZTA4NGRmMjVjMGU4N2YxZTRmMWQ4ODZjMWE0YjRkMTdkNjM3MTBiYTdhZg&feedId=58083&k=fd0ffa46dce7534dd62481e62aab8d4539e82f63",
+        sizes: [],
+      },
+    ],
+  },
+  {
     id: "tanga-sports-balones-de-futbol-tanga-sports-high-bounce-soft-pu-azul",
     brand: "Tanga sports",
     model: "Balones de Fútbol Tanga sports High Bounce Soft-PU - Azul",
@@ -22682,6 +23705,9 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "uhlsport-balones-de-futbol-uhlsport-attack-addglue-blanco",
     brand: "uhlsport",
@@ -23776,9 +24802,6 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "zeus-zeus-pallone-hybrid-balon-de-futbol-blanco-azul",
     brand: "Zeus",
