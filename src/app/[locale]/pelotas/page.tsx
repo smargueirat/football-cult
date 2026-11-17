@@ -7,9 +7,9 @@ import { HUB } from "@/lib/hubStrings";
 import { JsonLd } from "@/components/hubs/HubParts";
 import PelotasPageClient from "./PelotasPageClient";
 import { ballProducts } from "@/data/balls";
-import { slimGear } from "@/lib/gearList";
+import { gearListProps, slimGear } from "@/lib/gearList";
 
-const ITEMS = slimGear(ballProducts);
+const LIST = gearListProps(slimGear(ballProducts), "pelotas");
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
@@ -68,7 +68,7 @@ export default async function PelotasPage({ params }: { params: Promise<{ locale
           "/pelotas",
         )}
       />
-      <PelotasPageClient items={ITEMS} />
+      <PelotasPageClient list={LIST} />
       <GearHubLinks section="pelotas" locale={asLocale(locale)} />
     </>
   );

@@ -1,15 +1,18 @@
 "use client";
 
-import type { SlimGearItem } from "@/lib/gearList";
+import type { GearListProps } from "@/lib/gearList";
+import { useGearList } from "@/lib/useGearList";
 import ApparelListClient from "@/components/ApparelListClient";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { TRAINING_TYPES } from "@/lib/trainingTypes";
 
-export default function EntrenamientoPageClient({ items }: { items: SlimGearItem[] }) {
+export default function EntrenamientoPageClient({ list }: { list: GearListProps }) {
+  const items = useGearList(list);
   const { t } = useLanguage();
   return (
     <ApparelListClient
       items={items}
+      total={list.total}
       pageTitle={t.entrenamiento.pageTitle}
       pageSubtitle={t.entrenamiento.pageSubtitle}
       types={TRAINING_TYPES}

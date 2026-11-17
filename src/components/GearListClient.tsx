@@ -51,11 +51,13 @@ export default function GearListClient({
   basePath,
   pageTitle,
   pageSubtitle,
+  total,
 }: {
   items: GearProductLike[];
   basePath: "guantes" | "pelotas";
   pageTitle: string;
   pageSubtitle: string;
+  total?: number;
 }) {
   const { t, locale } = useLanguage();
   const { countryCode } = useCountry();
@@ -116,7 +118,7 @@ export default function GearListClient({
     <div className="mx-auto w-full max-w-[1800px] px-4 py-6 sm:px-8">
       <BackToCatalogLink />
       <h1 className="font-vintage text-2xl text-[#1B3B2B] sm:text-3xl">{pageTitle}</h1>
-      <p className="mt-1 text-sm text-[#675c44]">{pageSubtitle.replace("{n}", String(items.length))}</p>
+      <p className="mt-1 text-sm text-[#675c44]">{pageSubtitle.replace("{n}", String(total ?? items.length))}</p>
 
       <div className="vintage-card mt-5 flex flex-col gap-4 rounded-3xl p-5 sm:p-6">
         <div className="flex flex-col gap-2">

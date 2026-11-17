@@ -7,9 +7,9 @@ import { HUB } from "@/lib/hubStrings";
 import { JsonLd } from "@/components/hubs/HubParts";
 import GuantesPageClient from "./GuantesPageClient";
 import { gloveProducts } from "@/data/gloves";
-import { slimGear } from "@/lib/gearList";
+import { gearListProps, slimGear } from "@/lib/gearList";
 
-const ITEMS = slimGear(gloveProducts);
+const LIST = gearListProps(slimGear(gloveProducts), "guantes");
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
@@ -68,7 +68,7 @@ export default async function GuantesPage({ params }: { params: Promise<{ locale
           "/guantes",
         )}
       />
-      <GuantesPageClient items={ITEMS} />
+      <GuantesPageClient list={LIST} />
       <GearHubLinks section="guantes" locale={asLocale(locale)} />
     </>
   );

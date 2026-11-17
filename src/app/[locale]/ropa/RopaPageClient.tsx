@@ -1,14 +1,17 @@
 "use client";
 
-import type { SlimGearItem } from "@/lib/gearList";
+import type { GearListProps } from "@/lib/gearList";
+import { useGearList } from "@/lib/useGearList";
 import ApparelListClient, { APPAREL_TYPES } from "@/components/ApparelListClient";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
-export default function RopaPageClient({ items }: { items: SlimGearItem[] }) {
+export default function RopaPageClient({ list }: { list: GearListProps }) {
+  const items = useGearList(list);
   const { t } = useLanguage();
   return (
     <ApparelListClient
       items={items}
+      total={list.total}
       pageTitle={t.ropa.pageTitle}
       pageSubtitle={t.ropa.pageSubtitle}
       types={APPAREL_TYPES}
