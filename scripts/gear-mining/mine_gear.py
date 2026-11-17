@@ -396,6 +396,58 @@ def mine_forumsport_category(types, out_list, strip_re=None, exclude_extra=None,
     print('ForumSport:', n)
 
 
+def mine_adidas_es_gear(gloves, balls):
+    """adidas ES (Awin, EUR): guantes de portero y balones de fútbol adultos.
+    Feed con UNA fila por talla; custom_1 Adult/Kids, custom_2 deporte; estilo = merchant_product_id sin sufijo."""
+    path = f"{FEEDS}/ADIDAS_ES.csv"
+    if not os.path.exists(path):
+        print('AdidasES gear: feed not found, skipped')
+        return
+    dest = {'Accesorios,Guantes': gloves, 'Accesorios,Balones': balls}
+    groups = {}
+    with open(path, newline='', encoding='utf-8', errors='replace') as f:
+        for row in csv.DictReader(f):
+            out = dest.get(row.get('merchant_category'))
+            if out is None or row.get('custom_1') != 'Adult' or row.get('custom_2') != 'Fútbol' or not parse_price(row.get('search_price')):
+                continue
+            name = (row.get('product_name') or '').strip()
+            if AMERICAN_FOOTBALL_RE.search(name) or KIDS_RE.search(name):
+                continue
+            # "Guantes Real Madrid" (S-XL) son de abrigo de hincha; conjuntos de minibalones no son un balón
+            if (out is gloves and not re.search(r'portero', name, re.I)) or (out is balls and re.search(r'\bconjunto\b', name, re.I)):
+                continue
+            style = (row.get('merchant_product_id') or '').rsplit('-', 1)[0]
+            groups.setdefault(style, (out, name, []))[2].append(row)
+    seen, n = {}, {'gloves': 0, 'balls': 0}
+    for style, (out, name, rows) in groups.items():
+        if name.isupper():
+            name = ' '.join(w.capitalize() for w in name.lower().split())
+        rep = min(rows, key=lambda r: parse_price(r.get('search_price')))
+        colour = adidas_cl_colour(rep.get('colour'))
+        model = f"{name} - {colour}"
+        if model in seen:  # mismo nombre y color dominante, otro colorway: se distingue por el estilo, nunca se funden
+            model = f"{name} - {colour} ({style})"
+        seen[model] = 1
+        price = parse_price(rep.get('search_price'))
+        price_max = max(parse_price(r.get('search_price')) for r in rows)
+        sz = lambda r: (r.get('Fashion:size') or '').strip()
+        ok = lambda r: bool(re.match(r'^\d', sz(r))) or sz(r) in ('XS', 'S', 'M', 'L', 'XL', 'XXL')
+        entry = {
+            'store': 'AdidasES', 'brand': 'Adidas', 'model': model, 'colour': colour,
+            'price': price, 'shipping': parse_price(rep.get('delivery_cost')) or 0, 'currency': 'EUR',
+            'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'),
+            'sizes': sorted({dot_size(sz(r)) for r in rows if ok(r)}, key=size_sort_key),
+            'eans': _eans(rows, 'ean'),
+        }
+        if price_max > price:
+            entry['priceMax'] = price_max
+            entry['sizePrices'] = sorted(({'size': dot_size(sz(r)), 'price': parse_price(r.get('search_price')), 'url': r.get('aw_deep_link')}
+                                          for r in rows if ok(r)), key=lambda sp: size_sort_key(sp['size']))
+        out.append(entry)
+        n['gloves' if out is gloves else 'balls'] += 1
+    print('AdidasES gear:', n)
+
+
 # (product_type de ForumSport, type de apparel.ts, sustantivo castellano). La palabra
 # "pantalones" sin "largos" es el short en castellano de fútbol (Real Madrid, Entrada26...).
 FORUMSPORT_APPAREL = [
@@ -1216,6 +1268,8 @@ if __name__ == '__main__':
     mine_gigasport_category('GIGASPORT_CH.csv', 'GigasportCH', ('Torwarthandschuhe',), gloves_results)
     mine_gigasport_category('GIGASPORT_FR.csv', 'GigasportFR', ('Gants de gardien',), gloves_results)
     mine_forumsport_category({'fútbol > guantes portero'}, gloves_results, re.compile(r'\s*guantes? (de )?portero\s*', re.I))
+
+    mine_adidas_es_gear(gloves_results, balls_results)
 
     print('=== PELOTAS ===')
     mine_blaz_category('FOOTSTORE_ES.csv', 'FootStoreES', 'Ballon de football', balls_results)

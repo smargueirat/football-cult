@@ -386,7 +386,7 @@ STORE_FEED = {
     "Reebok DE": "REEBOK_DE.csv", "Reebok UK": "REEBOK_UK.csv", "AdidasCL": "ADIDAS_CL.csv",
     "AdidasMX": "ADIDAS_MX.csv", "AdidasCO": "ADIDAS_CO.csv",
     "Sportsafe UK": "SPORTSAFE_UK.csv",
-    "ForumSport": "FORUMSPORT.csv",
+    "ForumSport": "FORUMSPORT.csv", "AdidasES": "ADIDAS_ES.csv",
 }
 
 
