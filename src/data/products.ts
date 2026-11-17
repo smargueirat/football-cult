@@ -40062,6 +40062,7 @@ const productsData = [
       { store: "FootStoreES", price: 49.0, shipping: 9.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=44755570581&a=3013769&m=65912", title: "Camisa Prematch Arsenal 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kc0011_1_apparel_photography_front_center_view_white.jpg&feedId=89032&k=7ed8af9148bea469af537676e7d458a2b528ba01" },
       { store: "Futbol Emotion", price: 58.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Farsenal-fc-pre-match-home-2026-2027-utility-green", title: "Camiseta adidas Arsenal Fc Pre-Match Home 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/327036/750/camiseta-adidas-arsenal-fc-pre-match-home-2026-2027-utility-green-1.jpg" },
       { store: "FootStoreFR", price: 49.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc0011-maillot-prematch-arsenal-2026-27-veruti", title: "Maillot Prematch Arsenal 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kc0011_1_apparel_photography_front_center_view_white.webp" },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fgunners-pre-match-home-alternative-warm-up-jersey-2026-27%3Fvariant%3D68088731730025", title: "Gunners Pre-Match Home Alternative Warm-Up Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/ArsenalPre-MatchHomeAlternativeWarm-UpJersey202627_4.webp?v=1794814380" },
     ],
   },
 {
@@ -57861,6 +57862,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 88.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fmacron%2Fca-osasuna-primera-equipacion-2026-2027-rojo", title: "Camiseta Macron CA Osasuna Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/338861/750/camiseta-macron-ca-osasuna-primera-equipacion-2026-2027-rojo-1.jpg" },
       { store: "SportIsGoodFR", price: 71.62, shipping: 6.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F400126170001-maillot-domicile-club-atletico-osasuna-2026-27-rouge", title: "Maillot Domicile Club Atlético Osasuna 2026/27", inStock: true, sizes: ["M"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron-400126170001-rouge-6a82ebbb8c656-1.webp" },
       { store: "FootStoreFR", price: 75.77, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400126170001-maillot-domicile-club-atletico-osasuna-2026-27-rouge", title: "Maillot Domicile Club Atlético Osasuna 2026/27", inStock: true, sizes: ["M"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron-400126170001-rouge-6a82ebbb8c656-1.webp" },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fca-osasuna-home-soccer-jersey-2026-27%3Fvariant%3D68088571592809", title: "CA Osasuna Home Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/CAOsasunahomejersey202627_1.webp?v=1794813878" },
     ],
   },
 {
@@ -73170,6 +73172,7 @@ const productsData = [
       { store: "FootStoreES", price: 70.0, shipping: 9.99, currency: "EUR", url: "https://www.awin1.com/pclick.php?p=46305669744&a=3013769&m=65912", title: "Camisa Prematch Real Madrid 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kr2856_1_apparel_photography_front_center_view_white.jpg&feedId=89032&k=71e01585c4e2d0583a37c5a36bc9b3a0a5040886" },
       { store: "AdidasCO", price: 319950.0, shipping: 0.0, currency: "COP", url: "https://www.awin1.com/pclick.php?p=46325380088&a=3013769&m=79924", title: "Camiseta Prepartido Real Madrid 26/27", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F32a4199bf0d34a2aa7c546fdeabede69_9366%2FCamiseta_Prepartido_Real_Madrid_26-27_Blanco_KB6367_21_model.jpg&feedId=95017&k=0b8fa7ef429fea170579fd47f3fba6104f7397cc" },
       { store: "FootStoreFR", price: 70.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkr2856-maillot-prematch-real-madrid-2026-27-veraur-ecsemv", title: "Maillot Prematch Real Madrid 2026/27", inStock: true, sizes: ["XS", "S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kr2856_1_apparel_photography_front_center_view_white.webp" },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Flos-blancos-farm-pre-match-soccer-jersey-2026-27%3Fvariant%3D68086820241513", title: "Los Blancos Farm Pre-Match Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/RealMadrid26_27FarmPre-MatchJersey_1.webp?v=1794810708" },
     ],
   },
 {
@@ -77365,6 +77368,7 @@ const productsData = [
     brand: "macron",
     offers: [
       { store: "Futbol Emotion", price: 89.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fmacron%2Fca-osasuna-segunda-equipacion-2026-2027-white", title: "Camiseta Macron CA Osasuna Segunda Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/338865/750/camiseta-macron-ca-osasuna-segunda-equipacion-2026-2027-white-1.jpg" },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fca-osasuna-away-soccer-jersey-2026-27%3Fvariant%3D68088611962985", title: "CA Osasuna Away Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/CAOsasunaawayjersey202627_2.webp?v=1794814002" },
     ],
   },
 {
@@ -83969,6 +83973,7 @@ const productsData = [
     brand: "adidas",
     offers: [
       { store: "Futbol Emotion", price: 94.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fsevilla-fc-segunda-equipacion-2026-2027-red", title: "Camiseta adidas Sevilla Fc Segunda Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/401785/750/camiseta-adidas-sevilla-fc-segunda-equipacion-2026-2027-red-1.jpg" },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsevilla-away-soccer-jersey-2026-27%3Fvariant%3D68086322954345", title: "Sevilla Away Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/SevillaAwayJersey202627_2.webp?v=1794809270" },
     ],
   },
 {
@@ -83996,6 +84001,7 @@ const productsData = [
     brand: "adidas",
     offers: [
       { store: "Futbol Emotion", price: 94.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fadidas%2Fsevilla-fc-primera-equipacion-2026-2027-white", title: "Camiseta adidas Sevilla Fc Primera Equipación 2026-2027", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/401783/750/camiseta-adidas-sevilla-fc-primera-equipacion-2026-2027-white-1.jpg" },
+      { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fsevilla-home-soccer-jersey-2026-27%3Fvariant%3D68086139486313", title: "Sevilla Home Soccer Jersey 2026/27", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/SevillahomeJersey202627_2.webp?v=1794809110" },
     ],
   },
 {
