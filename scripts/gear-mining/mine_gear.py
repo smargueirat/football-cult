@@ -360,6 +360,10 @@ def mine_forumsport_category(types, out_list, strip_re=None, exclude_extra=None,
             groups.setdefault(row.get('parent_product_id') or row.get('merchant_product_id') or title, []).append(row)
     n = 0
     for rows in groups.values():
+        if type_key:
+            rows = [r for r in rows if not (type_key != 'socks' and re.match(r'^(\d{3}|\d{1,2}/\d{1,2}|[3-5]XS.*)$', (r.get('Fashion:size') or '').strip()))]
+            if not rows:
+                continue
         rep = min(rows, key=lambda r: parse_price(r.get('search_price')))
         brand = (rep.get('brand_name') or '').strip()
         title = norm_title(rep.get('product_name') or '')
@@ -373,7 +377,9 @@ def mine_forumsport_category(types, out_list, strip_re=None, exclude_extra=None,
         if prefix:
             model = f"{prefix} {model}"
         sz = lambda r: (r.get('Fashion:size') or '').strip()
-        ok = lambda r: bool(re.match(r'^\d', sz(r))) or (bool(type_key) and sz(r).upper() not in ('', 'UNICA', 'U'))
+        # ropa: tallas de niño (alturas 92-176, "12/14", 3XS-5XS) no cuentan; las medias sí traen numeración propia
+        kid_sz = lambda r: type_key != 'socks' and bool(re.match(r'^(\d{3}|\d{1,2}/\d{1,2}|[3-5]XS.*)$', sz(r)))
+        ok = lambda r: not kid_sz(r) and (bool(re.match(r'^\d', sz(r))) or (bool(type_key) and sz(r).upper() not in ('', 'UNICA', 'U')))
         sizes = sorted({dot_size(sz(r)) for r in rows if ok(r)}, key=size_sort_key)
         price = parse_price(rep.get('search_price'))
         price_max = max(parse_price(r.get('search_price')) or 0 for r in rows)
