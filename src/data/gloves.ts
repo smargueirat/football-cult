@@ -119,7 +119,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-copa-blanco",
     brand: "Adidas",
-    model: "copa - Blanco",
+    model: "Copa - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -136,7 +136,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-guantes-arquero-adidas-copa-club-negro",
     brand: "Adidas",
-    model: "copa club - Negro",
+    model: "Copa Club - Negro",
     colour: "Negro",
     offers: [
       {
@@ -162,7 +162,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-copa-club-negro",
     brand: "Adidas",
-    model: "copa club - Negro",
+    model: "Copa Club - Negro",
     colour: "Negro",
     offers: [
       {
@@ -2608,7 +2608,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-predator-competition-rojo",
     brand: "Adidas",
-    model: "predator competition - Rojo",
+    model: "Predator Competition - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -2625,7 +2625,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-predator-league",
     brand: "Adidas",
-    model: "predator league",
+    model: "Predator League",
     colour: "N/D",
     offers: [
       {
@@ -2642,7 +2642,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-tiro-negro",
     brand: "Adidas",
-    model: "tiro - Negro",
+    model: "Tiro - Negro",
     colour: "Negro",
     offers: [
       {
@@ -4328,7 +4328,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-adikt-pro-magnetic-naranja",
     brand: "Ho Soccer",
-    model: "adikt pro magnetic - Naranja",
+    model: "Adikt Pro Magnetic - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -4345,7 +4345,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-adikt-pro-magnetic-verde",
     brand: "Ho Soccer",
-    model: "adikt pro magnetic - Verde",
+    model: "Adikt Pro Magnetic - Verde",
     colour: "Verde",
     offers: [
       {
@@ -4362,7 +4362,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-adikt-pro-shield-negro",
     brand: "Ho Soccer",
-    model: "adikt pro shield - Negro",
+    model: "Adikt Pro Shield - Negro",
     colour: "Negro",
     offers: [
       {
@@ -4379,7 +4379,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-aerial-ii-ng-speed-naranja",
     brand: "Ho Soccer",
-    model: "aerial ii ng speed - Naranja",
+    model: "Aerial Ii Ng Speed - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -4396,7 +4396,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-evolution",
     brand: "Ho Soccer",
-    model: "first evolution",
+    model: "First Evolution",
     colour: "N/D",
     offers: [
       {
@@ -4413,7 +4413,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-superlight-kontrol-team-negro",
     brand: "Ho Soccer",
-    model: "first superlight kontrol team - Negro",
+    model: "First Superlight Kontrol Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -4430,7 +4430,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-superlight-negative-spectre",
     brand: "Ho Soccer",
-    model: "first superlight negative spectre",
+    model: "First Superlight Negative Spectre",
     colour: "N/D",
     offers: [
       {
@@ -4447,7 +4447,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-superlight-negative-spectre-rojo",
     brand: "Ho Soccer",
-    model: "first superlight negative spectre - Rojo",
+    model: "First Superlight Negative Spectre - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -4464,7 +4464,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-superlight-ng-mosaic-azul",
     brand: "Ho Soccer",
-    model: "first superlight ng mosaic - Azul",
+    model: "First Superlight Ng Mosaic - Azul",
     colour: "Azul",
     offers: [
       {
@@ -4481,7 +4481,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-first-superlight-rosa",
     brand: "Ho Soccer",
-    model: "first superlight - Rosa",
+    model: "First Superlight - Rosa",
     colour: "Rosa",
     offers: [
       {
@@ -4498,7 +4498,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-ghotta-evo2-rn-plata",
     brand: "Ho Soccer",
-    model: "ghotta evo2 rn - Plata",
+    model: "Ghotta Evo2 Rn - Plata",
     colour: "Plata",
     offers: [
       {
@@ -4515,7 +4515,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-ghotta-original-blanco",
     brand: "Ho Soccer",
-    model: "ghotta original - Blanco",
+    model: "Ghotta Original - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4532,7 +4532,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-ng-golden-team-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one ng golden team - Blanco",
+    model: "Guerrero One Ng Golden Team - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4549,7 +4549,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-algeria-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one patriot algeria - Blanco",
+    model: "Guerrero One Patriot Algeria - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4566,7 +4566,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-argentina-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one patriot argentina - Blanco",
+    model: "Guerrero One Patriot Argentina - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4583,7 +4583,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-belgium-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one patriot belgium - Blanco",
+    model: "Guerrero One Patriot Belgium - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4600,7 +4600,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-brazil-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one patriot brazil - Blanco",
+    model: "Guerrero One Patriot Brazil - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4617,7 +4617,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-england-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one patriot england - Blanco",
+    model: "Guerrero One Patriot England - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4634,7 +4634,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-france-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one patriot france - Blanco",
+    model: "Guerrero One Patriot France - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4651,7 +4651,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-germany-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one patriot germany - Blanco",
+    model: "Guerrero One Patriot Germany - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4668,7 +4668,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-italy-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one patriot italy - Blanco",
+    model: "Guerrero One Patriot Italy - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4685,7 +4685,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-morocco-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one patriot morocco - Blanco",
+    model: "Guerrero One Patriot Morocco - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4702,7 +4702,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-portugal-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one patriot portugal - Blanco",
+    model: "Guerrero One Patriot Portugal - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4719,7 +4719,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-one-patriot-spain-blanco",
     brand: "Ho Soccer",
-    model: "guerrero one patriot spain - Blanco",
+    model: "Guerrero One Patriot Spain - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4736,7 +4736,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-primary-protek-golden-team-negro",
     brand: "Ho Soccer",
-    model: "guerrero primary protek golden team - Negro",
+    model: "Guerrero Primary Protek Golden Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -4753,7 +4753,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-justice-ng-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro justice ng - Blanco",
+    model: "Guerrero Pro Justice Ng - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4770,7 +4770,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-justice-rn-negro",
     brand: "Ho Soccer",
-    model: "guerrero pro justice rn - Negro",
+    model: "Guerrero Pro Justice Rn - Negro",
     colour: "Negro",
     offers: [
       {
@@ -4787,7 +4787,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-ng-team-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro ng team - Blanco",
+    model: "Guerrero Pro Ng Team - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4804,7 +4804,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-algeria-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro patriot algeria - Blanco",
+    model: "Guerrero Pro Patriot Algeria - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4821,7 +4821,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-argentina-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro patriot argentina - Blanco",
+    model: "Guerrero Pro Patriot Argentina - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4838,7 +4838,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-belgium-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro patriot belgium - Blanco",
+    model: "Guerrero Pro Patriot Belgium - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4855,7 +4855,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-brazil-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro patriot brazil - Blanco",
+    model: "Guerrero Pro Patriot Brazil - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4872,7 +4872,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-england-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro patriot england - Blanco",
+    model: "Guerrero Pro Patriot England - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4889,7 +4889,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-france-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro patriot france - Blanco",
+    model: "Guerrero Pro Patriot France - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4906,7 +4906,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-germany-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro patriot germany - Blanco",
+    model: "Guerrero Pro Patriot Germany - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4923,7 +4923,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-italy-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro patriot italy - Blanco",
+    model: "Guerrero Pro Patriot Italy - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4940,7 +4940,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-morocco-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro patriot morocco - Blanco",
+    model: "Guerrero Pro Patriot Morocco - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4957,7 +4957,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-portugal-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro patriot portugal - Blanco",
+    model: "Guerrero Pro Patriot Portugal - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4974,7 +4974,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-pro-patriot-spain-blanco",
     brand: "Ho Soccer",
-    model: "guerrero pro patriot spain - Blanco",
+    model: "Guerrero Pro Patriot Spain - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4991,7 +4991,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-shield-essential-v2-blanco",
     brand: "Ho Soccer",
-    model: "guerrero shield essential v2 - Blanco",
+    model: "Guerrero Shield Essential V2 - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5008,7 +5008,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-uniko-ng-naranja",
     brand: "Ho Soccer",
-    model: "guerrero uniko ng - Naranja",
+    model: "Guerrero Uniko Ng - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5025,7 +5025,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "ho-soccer-guerrero-uniko-rf-verde",
     brand: "Ho Soccer",
-    model: "guerrero uniko rf - Verde",
+    model: "Guerrero Uniko Rf - Verde",
     colour: "Verde",
     offers: [
       {
@@ -5045,7 +5045,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-initial-arena-ng-azul",
     brand: "Ho Soccer",
-    model: "initial arena ng - Azul",
+    model: "Initial Arena Ng - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5062,7 +5062,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-konstriktor-pro-negative-hazard-azul",
     brand: "Ho Soccer",
-    model: "konstriktor pro negative hazard - Azul",
+    model: "Konstriktor Pro Negative Hazard - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5079,7 +5079,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-konstriktor-pro-rosa",
     brand: "Ho Soccer",
-    model: "konstriktor pro - Rosa",
+    model: "Konstriktor Pro - Rosa",
     colour: "Rosa",
     offers: [
       {
@@ -5096,7 +5096,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-kontrol-alert-orange-team-negro",
     brand: "Ho Soccer",
-    model: "kontrol alert orange team - Negro",
+    model: "Kontrol Alert Orange Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5113,7 +5113,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-kontrol-alert-team-negro",
     brand: "Ho Soccer",
-    model: "kontrol alert team - Negro",
+    model: "Kontrol Alert Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5130,7 +5130,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-kontrol-knit-pro-team-negro",
     brand: "Ho Soccer",
-    model: "kontrol knit pro team - Negro",
+    model: "Kontrol Knit Pro Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5147,7 +5147,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-kontrol-knit-rs1-team-naranja",
     brand: "Ho Soccer",
-    model: "kontrol knit rs1 team - Naranja",
+    model: "Kontrol Knit Rs1 Team - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5164,7 +5164,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-kontrol-knit-tech",
     brand: "Ho Soccer",
-    model: "kontrol knit tech",
+    model: "Kontrol Knit Tech",
     colour: "N/D",
     offers: [
       {
@@ -5181,7 +5181,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-krotalus-ii-fl-hardground",
     brand: "Ho Soccer",
-    model: "krotalus ii fl hardground",
+    model: "Krotalus Ii Fl Hardground",
     colour: "N/D",
     offers: [
       {
@@ -5198,7 +5198,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-legend-iv-ng-verde",
     brand: "Ho Soccer",
-    model: "legend iv ng - Verde",
+    model: "Legend Iv Ng - Verde",
     colour: "Verde",
     offers: [
       {
@@ -5215,7 +5215,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-mgc-dynasty-naranja",
     brand: "Ho Soccer",
-    model: "mgc dynasty - Naranja",
+    model: "Mgc Dynasty - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5232,7 +5232,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-one",
     brand: "Ho Soccer",
-    model: "one",
+    model: "One",
     colour: "N/D",
     offers: [
       {
@@ -5249,7 +5249,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-one-negative-maze-rojo",
     brand: "Ho Soccer",
-    model: "one negative maze - Rojo",
+    model: "One Negative Maze - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -5266,7 +5266,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-one-rn-ring-naranja",
     brand: "Ho Soccer",
-    model: "one rn ring - Naranja",
+    model: "One Rn Ring - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5283,7 +5283,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-premier-knit-tech-club-naranja",
     brand: "Ho Soccer",
-    model: "premier knit tech club - Naranja",
+    model: "Premier Knit Tech Club - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5300,7 +5300,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-premier-knit-tech-club-rosa",
     brand: "Ho Soccer",
-    model: "premier knit tech club - Rosa",
+    model: "Premier Knit Tech Club - Rosa",
     colour: "Rosa",
     offers: [
       {
@@ -5317,7 +5317,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-premier-phenomenon-naranja",
     brand: "Ho Soccer",
-    model: "premier phenomenon - Naranja",
+    model: "Premier Phenomenon - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5334,7 +5334,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-primary-protek-fl-axial-azul",
     brand: "Ho Soccer",
-    model: "primary protek fl axial - Azul",
+    model: "Primary Protek Fl Axial - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5351,7 +5351,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-primary-protek-flat-race",
     brand: "Ho Soccer",
-    model: "primary protek flat race",
+    model: "Primary Protek Flat Race",
     colour: "N/D",
     offers: [
       {
@@ -5368,7 +5368,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-primary-protek-justice-fl-azul",
     brand: "Ho Soccer",
-    model: "primary protek justice fl - Azul",
+    model: "Primary Protek Justice Fl - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5385,7 +5385,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-ng-blanco",
     brand: "Ho Soccer",
-    model: "pro evolution graffiti ng - Blanco",
+    model: "Pro Evolution Graffiti Ng - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5402,7 +5402,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-ng-blanco-2",
     brand: "Ho Soccer",
-    model: "pro evolution graffiti ng - Blanco",
+    model: "Pro Evolution Graffiti Ng - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -5419,7 +5419,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-rn-negro",
     brand: "Ho Soccer",
-    model: "pro evolution graffiti rn - Negro",
+    model: "Pro Evolution Graffiti Rn - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5436,7 +5436,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-rn-negro-2",
     brand: "Ho Soccer",
-    model: "pro evolution graffiti rn - Negro",
+    model: "Pro Evolution Graffiti Rn - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5453,7 +5453,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-ii-ng-verde",
     brand: "Ho Soccer",
-    model: "pro evolution ii ng - Verde",
+    model: "Pro Evolution Ii Ng - Verde",
     colour: "Verde",
     offers: [
       {
@@ -5470,7 +5470,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-kontrol-team-negro",
     brand: "Ho Soccer",
-    model: "pro evolution kontrol team - Negro",
+    model: "Pro Evolution Kontrol Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5487,7 +5487,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-koncept-team-negro",
     brand: "Ho Soccer",
-    model: "ssg koncept team - Negro",
+    model: "Ssg Koncept Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5504,7 +5504,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-kontrol-knit-tech-naranja",
     brand: "Ho Soccer",
-    model: "ssg kontrol knit tech - Naranja",
+    model: "Ssg Kontrol Knit Tech - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -5521,7 +5521,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-legend",
     brand: "Ho Soccer",
-    model: "ssg legend",
+    model: "Ssg Legend",
     colour: "N/D",
     offers: [
       {
@@ -5538,7 +5538,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-legend-azul",
     brand: "Ho Soccer",
-    model: "ssg legend - Azul",
+    model: "Ssg Legend - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5555,7 +5555,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-legend-ii-negative-hyper-azul",
     brand: "Ho Soccer",
-    model: "ssg legend ii negative hyper - Azul",
+    model: "Ssg Legend Ii Negative Hyper - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5572,7 +5572,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-ssg-legend-iii-ng-verde",
     brand: "Ho Soccer",
-    model: "ssg legend iii ng - Verde",
+    model: "Ssg Legend Iii Ng - Verde",
     colour: "Verde",
     offers: [
       {
@@ -5589,7 +5589,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-storm-azul",
     brand: "Ho Soccer",
-    model: "storm - Azul",
+    model: "Storm - Azul",
     colour: "Azul",
     offers: [
       {
@@ -5606,7 +5606,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-storm-negro",
     brand: "Ho Soccer",
-    model: "storm - Negro",
+    model: "Storm - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5623,7 +5623,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-tuko-pro-koncept-team-negro",
     brand: "Ho Soccer",
-    model: "tuko pro koncept team - Negro",
+    model: "Tuko Pro Koncept Team - Negro",
     colour: "Negro",
     offers: [
       {
@@ -5640,7 +5640,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-tyro-essential-v2-negro",
     brand: "Ho Soccer",
-    model: "tyro essential v2 - Negro",
+    model: "Tyro Essential V2 - Negro",
     colour: "Negro",
     offers: [
       {
@@ -8180,7 +8180,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-grip-3",
     brand: "Nike",
-    model: "grip 3",
+    model: "Grip 3",
     colour: "N/D",
     offers: [
       {
@@ -9306,7 +9306,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-vapor-grip3",
     brand: "Nike",
-    model: "vapor grip3",
+    model: "Vapor Grip3",
     colour: "N/D",
     offers: [
       {
@@ -9323,7 +9323,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-vapor-grip3-blanco",
     brand: "Nike",
-    model: "vapor grip3 - Blanco",
+    model: "Vapor Grip3 - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -9834,7 +9834,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-match-nc-azul",
     brand: "Puma",
-    model: "future match nc - Azul",
+    model: "Future Match Nc - Azul",
     colour: "Azul",
     offers: [
       {
@@ -9851,7 +9851,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-match-nc-azul-2",
     brand: "Puma",
-    model: "future match nc - Azul",
+    model: "Future Match Nc - Azul",
     colour: "Azul",
     offers: [
       {
@@ -9868,7 +9868,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-match-nc-blanco",
     brand: "Puma",
-    model: "future match nc - Blanco",
+    model: "Future Match Nc - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -9885,7 +9885,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-match-nc-naranja",
     brand: "Puma",
-    model: "future match nc - Naranja",
+    model: "Future Match Nc - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -9902,7 +9902,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-match-nc-rojo",
     brand: "Puma",
-    model: "future match nc - Rojo",
+    model: "Future Match Nc - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -9919,7 +9919,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-pro-hybrid-azul",
     brand: "Puma",
-    model: "future pro hybrid - Azul",
+    model: "Future Pro Hybrid - Azul",
     colour: "Azul",
     offers: [
       {
@@ -9936,7 +9936,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-pro-hybrid-blanco",
     brand: "Puma",
-    model: "future pro hybrid - Blanco",
+    model: "Future Pro Hybrid - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -9953,7 +9953,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-pro-hybrid-rojo",
     brand: "Puma",
-    model: "future pro hybrid - Rojo",
+    model: "Future Pro Hybrid - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -9970,7 +9970,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-pro-nc-rojo",
     brand: "Puma",
-    model: "future pro nc - Rojo",
+    model: "Future Pro Nc - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -9987,7 +9987,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-pro-sgc-azul",
     brand: "Puma",
-    model: "future pro sgc - Azul",
+    model: "Future Pro Sgc - Azul",
     colour: "Azul",
     offers: [
       {
@@ -10004,7 +10004,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-ultimate-nc-azul",
     brand: "Puma",
-    model: "future ultimate nc - Azul",
+    model: "Future Ultimate Nc - Azul",
     colour: "Azul",
     offers: [
       {
@@ -10021,7 +10021,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-ultimate-nc-azul-2",
     brand: "Puma",
-    model: "future ultimate nc - Azul",
+    model: "Future Ultimate Nc - Azul",
     colour: "Azul",
     offers: [
       {
@@ -10038,7 +10038,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-ultimate-nc-blanco",
     brand: "Puma",
-    model: "future ultimate nc - Blanco",
+    model: "Future Ultimate Nc - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -10055,7 +10055,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-ultimate-nc-naranja",
     brand: "Puma",
-    model: "future ultimate nc - Naranja",
+    model: "Future Ultimate Nc - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -10072,7 +10072,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-ultimate-nc-naranja-2",
     brand: "Puma",
-    model: "future ultimate nc - Naranja",
+    model: "Future Ultimate Nc - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -10089,7 +10089,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-ultimate-nc-negro",
     brand: "Puma",
-    model: "future ultimate nc - Negro",
+    model: "Future Ultimate Nc - Negro",
     colour: "Negro",
     offers: [
       {
@@ -10106,7 +10106,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-ultimate-nc-negro-2",
     brand: "Puma",
-    model: "future ultimate nc - Negro",
+    model: "Future Ultimate Nc - Negro",
     colour: "Negro",
     offers: [
       {
@@ -10123,7 +10123,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-ultimate-nc-rojo",
     brand: "Puma",
-    model: "future ultimate nc - Rojo",
+    model: "Future Ultimate Nc - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -10201,7 +10201,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-king-ultimate-hybrid-azul",
     brand: "Puma",
-    model: "king ultimate hybrid - Azul",
+    model: "King Ultimate Hybrid - Azul",
     colour: "Azul",
     offers: [
       {
@@ -10218,7 +10218,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-king-ultimate-hybrid-beige",
     brand: "Puma",
-    model: "king ultimate hybrid - Beige",
+    model: "King Ultimate Hybrid - Beige",
     colour: "Beige",
     offers: [
       {
@@ -10235,7 +10235,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-king-ultimate-hybrid-blanco",
     brand: "Puma",
-    model: "king ultimate hybrid - Blanco",
+    model: "King Ultimate Hybrid - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -10252,7 +10252,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-grip-1-amarillo",
     brand: "Puma",
-    model: "ultra grip 1 - Amarillo",
+    model: "Ultra Grip 1 - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -10269,7 +10269,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-match-azul",
     brand: "Puma",
-    model: "ultra match - Azul",
+    model: "Ultra Match - Azul",
     colour: "Azul",
     offers: [
       {
@@ -10286,7 +10286,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-match-protect-rc-blanco",
     brand: "Puma",
-    model: "ultra match protect rc - Blanco",
+    model: "Ultra Match Protect Rc - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -10303,7 +10303,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-play-gris",
     brand: "Puma",
-    model: "ultra play - Gris",
+    model: "Ultra Play - Gris",
     colour: "Gris",
     offers: [
       {
@@ -10320,7 +10320,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-play-rc-blanco",
     brand: "Puma",
-    model: "ultra play rc - Blanco",
+    model: "Ultra Play Rc - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -10337,7 +10337,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-ultimate-amarillo",
     brand: "Puma",
-    model: "ultra ultimate - Amarillo",
+    model: "Ultra Ultimate - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -10354,7 +10354,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-ultimate-naranja",
     brand: "Puma",
-    model: "ultra ultimate - Naranja",
+    model: "Ultra Ultimate - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -10371,7 +10371,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-ultra-ultimate-negro",
     brand: "Puma",
-    model: "ultra ultimate - Negro",
+    model: "Ultra Ultimate - Negro",
     colour: "Negro",
     offers: [
       {
@@ -10388,7 +10388,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-x-hyrox-negro",
     brand: "Puma",
-    model: "x hyrox - Negro",
+    model: "X Hyrox - Negro",
     colour: "Negro",
     offers: [
       {
@@ -12606,7 +12606,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-ares-as-blanco",
     brand: "Rinat",
-    model: "ares as - Blanco",
+    model: "Ares As - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -12623,7 +12623,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-ares-pro-blanco",
     brand: "Rinat",
-    model: "ares pro - Blanco",
+    model: "Ares Pro - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -12640,7 +12640,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-ares-turf-blanco",
     brand: "Rinat",
-    model: "ares turf - Blanco",
+    model: "Ares Turf - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -12657,7 +12657,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-aries-nemesis-prime-verde",
     brand: "Rinat",
-    model: "aries nemesis prime - Verde",
+    model: "Aries Nemesis Prime - Verde",
     colour: "Verde",
     offers: [
       {
@@ -12674,7 +12674,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-aries-nemesis-semi-negro",
     brand: "Rinat",
-    model: "aries nemesis semi - Negro",
+    model: "Aries Nemesis Semi - Negro",
     colour: "Negro",
     offers: [
       {
@@ -12691,7 +12691,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-aries-x-prime-azul",
     brand: "Rinat",
-    model: "aries x prime - Azul",
+    model: "Aries X Prime - Azul",
     colour: "Azul",
     offers: [
       {
@@ -12708,7 +12708,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-aries-x-prime-negro",
     brand: "Rinat",
-    model: "aries x prime - Negro",
+    model: "Aries X Prime - Negro",
     colour: "Negro",
     offers: [
       {
@@ -12725,7 +12725,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-asimetrik-aero-premium-hgp-blanco",
     brand: "Rinat",
-    model: "asimetrik aero premium hgp - Blanco",
+    model: "Asimetrik Aero Premium Hgp - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -12742,7 +12742,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-asimetrik-pro-blanco",
     brand: "Rinat",
-    model: "asimetrik pro - Blanco",
+    model: "Asimetrik Pro - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -12759,7 +12759,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-asimetrik-spine-turf-blanco",
     brand: "Rinat",
-    model: "asimetrik spine turf - Blanco",
+    model: "Asimetrik Spine Turf - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -12776,7 +12776,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-asimetrik-stellar-as-rojo",
     brand: "Rinat",
-    model: "asimetrik stellar as - Rojo",
+    model: "Asimetrik Stellar As - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -12793,7 +12793,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-asimetrik-stellar-pro-blanco",
     brand: "Rinat",
-    model: "asimetrik stellar pro - Blanco",
+    model: "Asimetrik Stellar Pro - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -12810,7 +12810,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-asimetrik-stellar-rojo",
     brand: "Rinat",
-    model: "asimetrik stellar - Rojo",
+    model: "Asimetrik Stellar - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -12827,7 +12827,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-asimetrik-turf-blanco",
     brand: "Rinat",
-    model: "asimetrik turf - Blanco",
+    model: "Asimetrik Turf - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -12844,7 +12844,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-condor-turf-amarillo",
     brand: "Rinat",
-    model: "condor turf - Amarillo",
+    model: "Condor Turf - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -12861,7 +12861,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-egotiko-stellar-alpha-amarillo",
     brand: "Rinat",
-    model: "egotiko stellar alpha - Amarillo",
+    model: "Egotiko Stellar Alpha - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -12878,7 +12878,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "rinat-egotiko-vengador-pro-azul",
     brand: "Rinat",
-    model: "egotiko vengador pro - Azul",
+    model: "Egotiko Vengador Pro - Azul",
     colour: "Azul",
     offers: [
       {
@@ -15348,7 +15348,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-kratos-semi-amarillo",
     brand: "Rinat",
-    model: "kratos semi - Amarillo",
+    model: "Kratos Semi - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -15365,7 +15365,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-kratos-turf-naranja",
     brand: "Rinat",
-    model: "kratos turf - Naranja",
+    model: "Kratos Turf - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -15382,7 +15382,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-meta-tactik-gk-alpha-naranja",
     brand: "Rinat",
-    model: "meta tactik gk alpha - Naranja",
+    model: "Meta Tactik Gk Alpha - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -15399,7 +15399,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-nkam-prime-blanco",
     brand: "Rinat",
-    model: "nkam prime - Blanco",
+    model: "Nkam Prime - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -15416,7 +15416,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-nkam-prime-rojo",
     brand: "Rinat",
-    model: "nkam prime - Rojo",
+    model: "Nkam Prime - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -15433,7 +15433,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-nkam-pro-azul",
     brand: "Rinat",
-    model: "nkam pro - Azul",
+    model: "Nkam Pro - Azul",
     colour: "Azul",
     offers: [
       {
@@ -15450,7 +15450,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-nkam-pro-rojo",
     brand: "Rinat",
-    model: "nkam pro - Rojo",
+    model: "Nkam Pro - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -15467,7 +15467,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-nkam-semi-verde",
     brand: "Rinat",
-    model: "nkam semi - Verde",
+    model: "Nkam Semi - Verde",
     colour: "Verde",
     offers: [
       {
@@ -15484,7 +15484,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-uno-premier-aero-pro-blanco",
     brand: "Rinat",
-    model: "uno premier aero pro - Blanco",
+    model: "Uno Premier Aero Pro - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -15501,7 +15501,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-uno-premier-aero-pro-negro",
     brand: "Rinat",
-    model: "uno premier aero pro - Negro",
+    model: "Uno Premier Aero Pro - Negro",
     colour: "Negro",
     offers: [
       {
@@ -15518,7 +15518,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-uno-premier-as-blanco",
     brand: "Rinat",
-    model: "uno premier as - Blanco",
+    model: "Uno Premier As - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -15535,7 +15535,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-uno-premier-as-negro",
     brand: "Rinat",
-    model: "uno premier as - Negro",
+    model: "Uno Premier As - Negro",
     colour: "Negro",
     offers: [
       {
@@ -15552,7 +15552,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-xtreme-guard-dominius-alpha-amarillo",
     brand: "Rinat",
-    model: "xtreme guard dominius alpha - Amarillo",
+    model: "Xtreme Guard Dominius Alpha - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -15569,7 +15569,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-xtreme-guard-dominius-turf-rojo",
     brand: "Rinat",
-    model: "xtreme guard dominius turf - Rojo",
+    model: "Xtreme Guard Dominius Turf - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -15586,7 +15586,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-xtreme-guard-dominus-rojo",
     brand: "Rinat",
-    model: "xtreme guard dominus - Rojo",
+    model: "Xtreme Guard Dominus - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -17464,7 +17464,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-advance-blackout-negro",
     brand: "Twofive",
-    model: "atlanta advance blackout - Negro",
+    model: "Atlanta Advance Blackout - Negro",
     colour: "Negro",
     offers: [
       {
@@ -17481,7 +17481,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-advance-blanco",
     brand: "Twofive",
-    model: "atlanta advance - Blanco",
+    model: "Atlanta Advance - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -17498,7 +17498,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-advance-negative-azul",
     brand: "Twofive",
-    model: "atlanta advance negative - Azul",
+    model: "Atlanta Advance Negative - Azul",
     colour: "Azul",
     offers: [
       {
@@ -17515,7 +17515,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-advance-roll-azul",
     brand: "Twofive",
-    model: "atlanta advance roll - Azul",
+    model: "Atlanta Advance Roll - Azul",
     colour: "Azul",
     offers: [
       {
@@ -17532,7 +17532,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-advance-whiteout-blanco",
     brand: "Twofive",
-    model: "atlanta advance whiteout - Blanco",
+    model: "Atlanta Advance Whiteout - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -17549,7 +17549,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-basic-blanco",
     brand: "Twofive",
-    model: "atlanta basic - Blanco",
+    model: "Atlanta Basic - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -17566,7 +17566,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-basic-flat-azul",
     brand: "Twofive",
-    model: "atlanta basic flat - Azul",
+    model: "Atlanta Basic Flat - Azul",
     colour: "Azul",
     offers: [
       {
@@ -17583,7 +17583,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-pro-flat-azul",
     brand: "Twofive",
-    model: "atlanta pro flat - Azul",
+    model: "Atlanta Pro Flat - Azul",
     colour: "Azul",
     offers: [
       {
@@ -17600,7 +17600,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-pro-negative-azul",
     brand: "Twofive",
-    model: "atlanta pro negative - Azul",
+    model: "Atlanta Pro Negative - Azul",
     colour: "Azul",
     offers: [
       {
@@ -17617,7 +17617,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-atlanta-pro-roll-azul",
     brand: "Twofive",
-    model: "atlanta pro roll - Azul",
+    model: "Atlanta Pro Roll - Azul",
     colour: "Azul",
     offers: [
       {
@@ -17836,7 +17836,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-los-angeles-advance-amarillo",
     brand: "Twofive",
-    model: "los angeles advance - Amarillo",
+    model: "Los Angeles Advance - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -17853,7 +17853,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-los-angeles-pro-amarillo",
     brand: "Twofive",
-    model: "los angeles pro - Amarillo",
+    model: "Los Angeles Pro - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -17870,7 +17870,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-new-york-advance-naranja",
     brand: "Twofive",
-    model: "new york advance - Naranja",
+    model: "New York Advance - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -17887,7 +17887,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-new-york-pro-naranja",
     brand: "Twofive",
-    model: "new york pro - Naranja",
+    model: "New York Pro - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -17904,7 +17904,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-sydney-advance-roll-naranja",
     brand: "Twofive",
-    model: "sydney advance roll - Naranja",
+    model: "Sydney Advance Roll - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -17921,7 +17921,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-sydney-pro-roll-naranja",
     brand: "Twofive",
-    model: "sydney pro roll - Naranja",
+    model: "Sydney Pro Roll - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -17938,7 +17938,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-tokyo-advance-negative-negro",
     brand: "Twofive",
-    model: "tokyo advance negative - Negro",
+    model: "Tokyo Advance Negative - Negro",
     colour: "Negro",
     offers: [
       {
@@ -17955,7 +17955,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-tokyo-advance-roll-negro",
     brand: "Twofive",
-    model: "tokyo advance roll - Negro",
+    model: "Tokyo Advance Roll - Negro",
     colour: "Negro",
     offers: [
       {
@@ -17972,7 +17972,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-tokyo-pro-360-negro",
     brand: "Twofive",
-    model: "tokyo pro 360 - Negro",
+    model: "Tokyo Pro 360 - Negro",
     colour: "Negro",
     offers: [
       {
@@ -17989,7 +17989,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-tokyo-pro-knit-fusion-negro",
     brand: "Twofive",
-    model: "tokyo pro knit fusion - Negro",
+    model: "Tokyo Pro Knit Fusion - Negro",
     colour: "Negro",
     offers: [
       {
@@ -18006,7 +18006,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "twofive-tokyo-pro-roll-negro",
     brand: "Twofive",
-    model: "tokyo pro roll - Negro",
+    model: "Tokyo Pro Roll - Negro",
     colour: "Negro",
     offers: [
       {
@@ -18023,7 +18023,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-absolutgrip-blanco",
     brand: "uhlsport",
-    model: "absolutgrip - Blanco",
+    model: "Absolutgrip - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -18040,7 +18040,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-classic-soft-advanced-blanco",
     brand: "uhlsport",
-    model: "classic soft advanced - Blanco",
+    model: "Classic Soft Advanced - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -18057,7 +18057,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-classic-soft-advanced-negro",
     brand: "uhlsport",
-    model: "classic soft advanced - Negro",
+    model: "Classic Soft Advanced - Negro",
     colour: "Negro",
     offers: [
       {
@@ -18074,7 +18074,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-comfort-absolutgrip-negro",
     brand: "uhlsport",
-    model: "comfort absolutgrip - Negro",
+    model: "Comfort Absolutgrip - Negro",
     colour: "Negro",
     offers: [
       {
@@ -18091,7 +18091,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-fangmaschine-started-soft-roblam-rojo",
     brand: "uhlsport",
-    model: "fangmaschine started soft roblam - Rojo",
+    model: "Fangmaschine Started Soft Roblam - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -18108,7 +18108,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-foam-cybertec-supersoft-hn-blanco",
     brand: "uhlsport",
-    model: "foam cybertec supersoft hn - Blanco",
+    model: "Foam Cybertec Supersoft Hn - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -20535,7 +20535,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-powerline-soft-flex-frame-negro",
     brand: "uhlsport",
-    model: "powerline soft flex frame - Negro",
+    model: "Powerline Soft Flex Frame - Negro",
     colour: "Negro",
     offers: [
       {
@@ -20552,7 +20552,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-powerline-supergrip-negro",
     brand: "uhlsport",
-    model: "powerline supergrip - Negro",
+    model: "Powerline Supergrip - Negro",
     colour: "Negro",
     offers: [
       {
@@ -20569,7 +20569,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-prediction-soft-flex-frame-marino",
     brand: "uhlsport",
-    model: "prediction soft flex frame - Marino",
+    model: "Prediction Soft Flex Frame - Marino",
     colour: "Marino",
     offers: [
       {
@@ -20586,7 +20586,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-soft-advanced-azul",
     brand: "uhlsport",
-    model: "soft advanced - Azul",
+    model: "Soft Advanced - Azul",
     colour: "Azul",
     offers: [
       {
@@ -20603,7 +20603,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-soft-hn-comp-blanco",
     brand: "uhlsport",
-    model: "soft hn comp - Blanco",
+    model: "Soft Hn Comp - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -20620,7 +20620,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-soft-hn-comp-blanco-2",
     brand: "uhlsport",
-    model: "soft hn comp - Blanco",
+    model: "Soft Hn Comp - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -20637,7 +20637,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-soft-hn-negro",
     brand: "uhlsport",
-    model: "soft hn - Negro",
+    model: "Soft Hn - Negro",
     colour: "Negro",
     offers: [
       {
@@ -20654,7 +20654,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-soft-resist-naranja",
     brand: "uhlsport",
-    model: "soft resist - Naranja",
+    model: "Soft Resist - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -20671,7 +20671,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-speed-contact-soft-pro-negro",
     brand: "uhlsport",
-    model: "speed contact soft pro - Negro",
+    model: "Speed Contact Soft Pro - Negro",
     colour: "Negro",
     offers: [
       {
@@ -20688,7 +20688,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-speed-contact-supergrip",
     brand: "uhlsport",
-    model: "speed contact supergrip",
+    model: "Speed Contact Supergrip",
     colour: "N/D",
     offers: [
       {
@@ -20705,7 +20705,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-speed-contact-supersoft-hn",
     brand: "uhlsport",
-    model: "speed contact supersoft hn",
+    model: "Speed Contact Supersoft Hn",
     colour: "N/D",
     offers: [
       {
@@ -20722,7 +20722,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-starter-resist-naranja",
     brand: "uhlsport",
-    model: "starter resist - Naranja",
+    model: "Starter Resist - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -20739,7 +20739,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-super-resist-naranja",
     brand: "uhlsport",
-    model: "super resist - Naranja",
+    model: "Super Resist - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -20791,7 +20791,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-uhlsport-aquasoft",
     brand: "uhlsport",
-    model: "uhlsport aquasoft",
+    model: "Uhlsport Aquasoft",
     colour: "N/D",
     offers: [
       {
@@ -20808,7 +20808,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-uhlsport-super-resist-hn",
     brand: "uhlsport",
-    model: "uhlsport super resist hn",
+    model: "Uhlsport Super Resist Hn",
     colour: "N/D",
     offers: [
       {

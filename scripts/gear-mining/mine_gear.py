@@ -337,7 +337,8 @@ def mine_gigasport_category(fname, store_label, cats, out_list):
 # 242 guantes de portero adultos y ~84 balones (medido el 17-11). Su taxonomía
 # fiable es `product_type` ("fútbol > guantes portero" = adulto; "... infantil"
 # aparte); parent_product_id agrupa el colorway y `Fashion:size` trae la talla.
-def mine_forumsport_category(types, out_list, strip_re=None, exclude_extra=None):
+def mine_forumsport_category(types, out_list, strip_re=None, exclude_extra=None, type_key=None, prefix=None):
+    # type_key/prefix: ropa -- 'type' de apparel.ts y sustantivo castellano delante del modelo.
     path = f"{FEEDS}/FORUMSPORT.csv"
     if not os.path.exists(path):
         print('ForumSport: feed not found, skipped')
@@ -366,10 +367,14 @@ def mine_forumsport_category(types, out_list, strip_re=None, exclude_extra=None)
             title = re.sub(r'^' + re.escape(brand) + r'\s+', '', title, flags=re.I)
         if strip_re:
             title = strip_re.sub('', title).strip(' -')
+        title = ' '.join(w[:1].upper() + w[1:] for w in title.split())  # el feed viene en minúsculas
         colour = (rep.get('colour') or '').strip()
         model = f"{title} - {colour}" if colour and colour.lower() not in title.lower() else title
+        if prefix:
+            model = f"{prefix} {model}"
         sz = lambda r: (r.get('Fashion:size') or '').strip()
-        sizes = sorted({dot_size(sz(r)) for r in rows if re.match(r'^\d', sz(r))}, key=size_sort_key)
+        ok = lambda r: bool(re.match(r'^\d', sz(r))) or (bool(type_key) and sz(r).upper() not in ('', 'UNICA', 'U'))
+        sizes = sorted({dot_size(sz(r)) for r in rows if ok(r)}, key=size_sort_key)
         price = parse_price(rep.get('search_price'))
         price_max = max(parse_price(r.get('search_price')) or 0 for r in rows)
         entry = {
@@ -382,11 +387,35 @@ def mine_forumsport_category(types, out_list, strip_re=None, exclude_extra=None)
             entry['priceMax'] = price_max
             entry['sizePrices'] = sorted(
                 ({'size': dot_size(sz(r)), 'price': parse_price(r.get('search_price')), 'url': r.get('aw_deep_link')}
-                 for r in rows if re.match(r'^\d', sz(r))),
+                 for r in rows if ok(r)),
                 key=lambda sp: size_sort_key(sp['size']))
+        if type_key:
+            entry['type'] = type_key
         out_list.append(entry)
         n += 1
     print('ForumSport:', n)
+
+
+# (product_type de ForumSport, type de apparel.ts, sustantivo castellano). La palabra
+# "pantalones" sin "largos" es el short en castellano de fútbol (Real Madrid, Entrada26...).
+FORUMSPORT_APPAREL = [
+    ('fútbol > pantalones cortos futbol', 'shorts', 'Pantalón corto'),
+    ('fútbol > pantalones fútbol oficiales', 'shorts', 'Pantalón corto'),
+    ('fútbol > pantalones futbol', 'shorts', 'Pantalón corto'),
+    ('fútbol > pantalón corto portero', 'shorts', 'Pantalón corto de portero'),
+    ('fútbol > pantalones largos futbol', 'pants', 'Pantalón largo'),
+    ('fútbol > pantalón futbol calentador', 'pants', 'Pantalón de calentamiento'),
+    ('fútbol > pantalón largo portero', 'pants', 'Pantalón largo de portero'),
+    ('fútbol > medias fútbol', 'socks', 'Medias'),
+    ('fútbol > espinilleras', 'shinguards', 'Espinilleras'),
+    ('fútbol > sudadera entrenamiento fútbol', 'sweatshirt', 'Sudadera de entrenamiento'),
+    ('fútbol > chubasqueros y chaquetones entrenamiento fútbol', 'jacket', 'Chubasquero de entrenamiento'),
+    ('fútbol > chandal fútbol de equipos oficiales', 'set', 'Chándal'),
+    ('fútbol > camisetas fútbol manga corta', 'tshirt', 'Camiseta'),
+    ('fútbol > camisetas fútbol manga larga', 'tshirt', 'Camiseta de manga larga'),
+    ('fútbol > bolsas de deporte', 'bag', 'Bolsa'),
+    ('fútbol > brazalete capitán', 'armband', 'Brazalete de capitán'),
+]
 
 
 # Encontrado 2026-09-18 (reporte real del usuario, capturas de pantalla
@@ -1226,6 +1255,10 @@ if __name__ == '__main__':
         mine_reebok(apparel_results, *feed)
     for store in ADIDAS_LATAM:
         mine_adidas_latam(*store, gloves_results, balls_results, apparel_results)
+
+    # ForumSport (Awin, es): ropa por product_type. Adultos solamente (los '... niño' no se piden).
+    for t, key, pre in FORUMSPORT_APPAREL:
+        mine_forumsport_category({t}, apparel_results, re.compile(r'\s*' + re.escape(t.split('> ', 1)[1]) + r'\s*$', re.I), type_key=key, prefix=pre)
 
     print('=== ENTRENAMIENTO ===')
     mine_training(training_results)

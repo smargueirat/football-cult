@@ -6648,7 +6648,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-espana-mundial-2026-pro-blanco",
     brand: "Adidas",
-    model: "espana mundial 2026 pro - Blanco",
+    model: "Espana Mundial 2026 Pro - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -6665,7 +6665,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-pelota-adidas-trionda-home-club-espana-rojo",
     brand: "Adidas",
-    model: "espana mundial 2026 trionda club primera equipacion",
+    model: "Espana Mundial 2026 Trionda Club Primera Equipacion",
     colour: "N/D",
     offers: [
       {
@@ -6812,7 +6812,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balon-adidas-messi-club-blanco",
     brand: "Adidas",
-    model: "messi club - Blanco",
+    model: "Messi Club - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -7436,7 +7436,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-mini-balon-de-futbol-adidas-wc-2026-blanco",
     brand: "Adidas",
-    model: "mundial 2026 trionda mini",
+    model: "Mundial 2026 Trionda Mini",
     colour: "N/D",
     offers: [
       {
@@ -7644,7 +7644,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-tiro-training-verde",
     brand: "Adidas",
-    model: "tiro training - Verde",
+    model: "Tiro Training - Verde",
     colour: "Verde",
     offers: [
       {
@@ -7661,7 +7661,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-uefa-champions-league-26-27-entrenamiento",
     brand: "Adidas",
-    model: "uefa champions league 26/27 entrenamiento",
+    model: "Uefa Champions League 26/27 Entrenamiento",
     colour: "N/D",
     offers: [
       {
@@ -7695,7 +7695,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "athletic-club-escudo-unique-in-the-world-rojo",
     brand: "Athletic Club",
-    model: "escudo unique in the world - Rojo",
+    model: "Escudo Unique In The World - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -7712,7 +7712,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "athletic-club-escudo-unique-mini-blanco",
     brand: "Athletic Club",
-    model: "escudo unique mini - Blanco",
+    model: "Escudo Unique Mini - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -7729,7 +7729,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "athletic-club-firmas-25-26-blanco",
     brand: "Athletic Club",
-    model: "firmas 25/26 - Blanco",
+    model: "Firmas 25/26 - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -7746,7 +7746,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "athletic-club-unique-in-the-world-5-blanco",
     brand: "Athletic Club",
-    model: "unique in the world 5 - Blanco",
+    model: "Unique In The World 5 - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -7763,7 +7763,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "athletic-club-unique-in-the-world-5-negro",
     brand: "Athletic Club",
-    model: "unique in the world 5 - Negro",
+    model: "Unique In The World 5 - Negro",
     colour: "Negro",
     offers: [
       {
@@ -7780,7 +7780,7 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "athletic-club-unique-in-the-world-mini-rojo",
     brand: "Athletic Club",
-    model: "unique in the world mini - Rojo",
+    model: "Unique In The World Mini - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -13846,7 +13846,7 @@ const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "kempa-buteo-naranja",
     brand: "kempa",
-    model: "buteo - Naranja",
+    model: "Buteo - Naranja",
     colour: "Naranja",
     offers: [
       {
@@ -13863,7 +13863,7 @@ const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "kempa-gecko-rojo",
     brand: "kempa",
-    model: "gecko - Rojo",
+    model: "Gecko - Rojo",
     colour: "Rojo",
     offers: [
       {
@@ -13880,7 +13880,7 @@ const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "kempa-spectrum-synergy-primo-negro",
     brand: "kempa",
-    model: "spectrum synergy primo - Negro",
+    model: "Spectrum Synergy Primo - Negro",
     colour: "Negro",
     offers: [
       {
@@ -19401,7 +19401,7 @@ const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "puma-borussia-dortmund-culture-negro",
     brand: "Puma",
-    model: "borussia dortmund culture - Negro",
+    model: "Borussia Dortmund Culture - Negro",
     colour: "Negro",
     offers: [
       {
@@ -19418,7 +19418,7 @@ const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "puma-borussia-dortmund-stellar-blanco",
     brand: "Puma",
-    model: "borussia dortmund stellar - Blanco",
+    model: "Borussia Dortmund Stellar - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -19435,7 +19435,7 @@ const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "puma-laliga-26-blanco",
     brand: "Puma",
-    model: "laliga 26 - Blanco",
+    model: "Laliga 26 - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -19455,7 +19455,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-laliga-26-mini-blanco",
     brand: "Puma",
-    model: "laliga 26 mini - Blanco",
+    model: "Laliga 26 Mini - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -19472,7 +19472,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-laliga-f-25-26-amarillo",
     brand: "Puma",
-    model: "laliga f 25/26 - Amarillo",
+    model: "Laliga F 25/26 - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -19489,7 +19489,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-laliga-femenina-25-26-blanco",
     brand: "Puma",
-    model: "laliga femenina 25/26 - Blanco",
+    model: "Laliga Femenina 25/26 - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -19506,7 +19506,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-manchester-city-26-27-culture-ball-negro",
     brand: "Puma",
-    model: "manchester city 26/27 culture ball - Negro",
+    model: "Manchester City 26/27 Culture Ball - Negro",
     colour: "Negro",
     offers: [
       {
@@ -19523,7 +19523,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-manchester-city-26-27-stellar-cup-blanco",
     brand: "Puma",
-    model: "manchester city 26/27 stellar cup - Blanco",
+    model: "Manchester City 26/27 Stellar Cup - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -19540,7 +19540,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-orbita-5-fusion-blanco",
     brand: "Puma",
-    model: "orbita 5 fusion - Blanco",
+    model: "Orbita 5 Fusion - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -19557,7 +19557,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-orbita-cup-premier-league",
     brand: "Puma",
-    model: "orbita cup premier league",
+    model: "Orbita Cup Premier League",
     colour: "N/D",
     offers: [
       {
@@ -19574,7 +19574,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-orbita-cup-premier-league-blanco",
     brand: "Puma",
-    model: "orbita cup premier league - Blanco",
+    model: "Orbita Cup Premier League - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -19591,7 +19591,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-orbita-la-liga-1-25-26-mini-amarillo",
     brand: "Puma",
-    model: "orbita la liga 1 25/26 mini - Amarillo",
+    model: "Orbita La Liga 1 25/26 Mini - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -19608,7 +19608,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-orbita-la-liga-1-fifa-quality-pro",
     brand: "Puma",
-    model: "orbita la liga 1 fifa quality pro",
+    model: "Orbita La Liga 1 Fifa Quality Pro",
     colour: "N/D",
     offers: [
       {
@@ -19625,7 +19625,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-orbita-laliga-26-blanco",
     brand: "Puma",
-    model: "orbita laliga 26 - Blanco",
+    model: "Orbita Laliga 26 - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -19642,7 +19642,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-orbita-match-premier-league-26-plata",
     brand: "Puma",
-    model: "orbita match premier league 26 - Plata",
+    model: "Orbita Match Premier League 26 - Plata",
     colour: "Plata",
     offers: [
       {
@@ -19659,7 +19659,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-orbita-match-premier-league-plata",
     brand: "Puma",
-    model: "orbita match premier league - Plata",
+    model: "Orbita Match Premier League - Plata",
     colour: "Plata",
     offers: [
       {
@@ -19676,7 +19676,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-orbita-serie-a-blanco",
     brand: "Puma",
-    model: "orbita serie a - Blanco",
+    model: "Orbita Serie A - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -19693,7 +19693,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-orbita-ultimate-amarillo",
     brand: "Puma",
-    model: "orbita ultimate - Amarillo",
+    model: "Orbita Ultimate - Amarillo",
     colour: "Amarillo",
     offers: [
       {
@@ -19710,7 +19710,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-orbita-ultimate-premier-league-blanco",
     brand: "Puma",
-    model: "orbita ultimate premier league - Blanco",
+    model: "Orbita Ultimate Premier League - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -19821,7 +19821,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-stellar-cup-laliga-27-mini",
     brand: "Puma",
-    model: "stellar cup laliga 27 mini",
+    model: "Stellar Cup Laliga 27 Mini",
     colour: "N/D",
     offers: [
       {
@@ -19838,7 +19838,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-stellar-cup-liga-f-26-27",
     brand: "Puma",
-    model: "stellar cup liga f 26/27",
+    model: "Stellar Cup Liga F 26/27",
     colour: "N/D",
     offers: [
       {
@@ -19855,7 +19855,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-stellar-cup-liga-f-hi-viz",
     brand: "Puma",
-    model: "stellar cup liga f hi-viz",
+    model: "Stellar Cup Liga F Hi-viz",
     colour: "N/D",
     offers: [
       {
@@ -19872,7 +19872,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "puma-stellar-cup-serie-a",
     brand: "Puma",
-    model: "stellar cup serie a",
+    model: "Stellar Cup Serie A",
     colour: "N/D",
     offers: [
       {
@@ -22602,7 +22602,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "spyro-cg-stadium-12-blanco",
     brand: "Spyro",
-    model: "cg stadium 12 - Blanco",
+    model: "Cg Stadium 12 - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -22619,7 +22619,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "spyro-cg-stadium-12-negro",
     brand: "Spyro",
-    model: "cg stadium 12 - Negro",
+    model: "Cg Stadium 12 - Negro",
     colour: "Negro",
     offers: [
       {
@@ -22636,7 +22636,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "spyro-stadium-11",
     brand: "Spyro",
-    model: "stadium 11",
+    model: "Stadium 11",
     colour: "N/D",
     offers: [
       {
@@ -22653,7 +22653,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "spyro-stadium-negro",
     brand: "Spyro",
-    model: "stadium - Negro",
+    model: "Stadium - Negro",
     colour: "Negro",
     offers: [
       {
@@ -22670,7 +22670,7 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "spyro-trainer-11",
     brand: "Spyro",
-    model: "trainer 11",
+    model: "Trainer 11",
     colour: "N/D",
     offers: [
       {
