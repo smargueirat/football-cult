@@ -97,7 +97,8 @@ PRODIRECT = {"Pro:Direct ES", "Pro:Direct Soccer"}
 # Envío real medido en la tienda cuando el delivery_cost del feed es falso:
 # reebok.eu cobra 5,99 por debajo de 50 y nada desde 50 (EUR en la UE, GBP en
 # Reino Unido), pero su feed DE dice siempre 0 y el UK siempre 5.99.
-FREE_FROM = {"Reebok DE": (50, 5.99), "Reebok UK": (50, 5.99)}
+# PlanetFoot (Francia): Mondial Relay gratis desde 30; debajo, domicilio 5,95 (carrito, 2026-11-17).
+FREE_FROM = {"Reebok DE": (50, 5.99), "Reebok UK": (50, 5.99), "PlanetFoot": (30, 5.95)}
 
 LINE_RE = re.compile(
     r'^(      \{ store: "(?P<store>[^"]+)", price: )(?P<price>[\d.]+)(, shipping: )(?P<ship>[\d.]+)'

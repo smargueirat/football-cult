@@ -286,7 +286,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-guantes-de-arquero-adidas-copa-club-blanco",
     brand: "Adidas",
-    model: "Guantes de Arquero adidas Copa Club - Blanco",
+    model: "Guantes de Arquero adidas Copa Club - Blanco (JTJ50)",
     colour: "Blanco",
     offers: [
       {
@@ -303,7 +303,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-gants-de-gardien-adidas-copa-club-blanc",
     brand: "Adidas",
-    model: "Guantes de Arquero adidas Copa Club - Blanco",
+    model: "Guantes de Arquero adidas Copa Club - Blanco (KSZ21)",
     colour: "Blanco",
     offers: [
       {
@@ -780,7 +780,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-guantes-de-portero-adidas-copa-pro-blanc",
     brand: "Adidas",
-    model: "Guantes de portero adidas Copa Pro - Blanc",
+    model: "Guantes de portero adidas Copa Pro - Blanc (KA7801)",
     colour: "Blanc",
     offers: [
       {
@@ -822,7 +822,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-guantes-de-portero-adidas-copa-pro-blanc-2",
     brand: "Adidas",
-    model: "Guantes de portero adidas Copa Pro - Blanc",
+    model: "Guantes de portero adidas Copa Pro - Blanc (KE9744)",
     colour: "Blanc",
     offers: [
       {
@@ -1406,7 +1406,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-gants-de-gardien-adidas-predator-league-blanc",
     brand: "Adidas",
-    model: "Guantes de portero adidas Predator League - Blanco",
+    model: "Guantes de portero adidas Predator League - Blanco (JH3820)",
     colour: "Blanco",
     offers: [
       {
@@ -1437,7 +1437,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-guantes-de-portero-adidas-predator-league-blanco",
     brand: "Adidas",
-    model: "Guantes de portero adidas Predator League - Blanco",
+    model: "Guantes de portero adidas Predator League - Blanco (IA0879)",
     colour: "Blanco",
     offers: [
       {
@@ -1509,7 +1509,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-guantes-de-portero-adidas-predator-match-blanc",
     brand: "Adidas",
-    model: "Guantes de portero adidas Predator Match - Blanc",
+    model: "Guantes de portero adidas Predator Match - Blanc (KA7783)",
     colour: "Blanc",
     offers: [
       {
@@ -1535,7 +1535,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-guantes-de-portero-adidas-predator-match-blanc-2",
     brand: "Adidas",
-    model: "Guantes de portero adidas Predator Match - Blanc",
+    model: "Guantes de portero adidas Predator Match - Blanc (HY062)",
     colour: "Blanc",
     offers: [
       {
@@ -1570,7 +1570,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-guantes-de-portero-adidas-predator-match-blanc-3",
     brand: "Adidas",
-    model: "Guantes de portero adidas Predator Match - Blanc",
+    model: "Guantes de portero adidas Predator Match - Blanc (KE9700)",
     colour: "Blanc",
     offers: [
       {
@@ -1899,7 +1899,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-guantes-de-portero-adidas-predator-pro-noir",
     brand: "Adidas",
-    model: "Guantes de portero adidas Predator Pro - Noir",
+    model: "Guantes de portero adidas Predator Pro - Noir (KE9697)",
     colour: "Noir",
     offers: [
       {
@@ -1925,7 +1925,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "adidas-guantes-de-portero-adidas-predator-pro-noir-2",
     brand: "Adidas",
-    model: "Guantes de portero adidas Predator Pro - Noir",
+    model: "Guantes de portero adidas Predator Pro - Noir (K7899)",
     colour: "Noir",
     offers: [
       {
@@ -3039,7 +3039,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "derbystar-guantes-de-portero-derbystar-optimus-negro",
     brand: "Derbystar",
-    model: "Guantes de portero Derbystar Optimus - Negro",
+    model: "Guantes de portero Derbystar Optimus - Negro (F20390)",
     colour: "Negro",
     offers: [
       {
@@ -3077,7 +3077,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "derbystar-guantes-de-portero-derbystar-optimus-negro-2",
     brand: "Derbystar",
-    model: "Guantes de portero Derbystar Optimus - Negro",
+    model: "Guantes de portero Derbystar Optimus - Negro (F20360)",
     colour: "Negro",
     offers: [
       {
@@ -3338,7 +3338,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-blanco",
     brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo revolution - Blanco",
+    model: "Guantes de portero Elite Sport Neo revolution - Blanco (EL4003600)",
     colour: "Blanco",
     offers: [
       {
@@ -3364,7 +3364,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-blanco-2",
     brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo revolution - Blanco",
+    model: "Guantes de portero Elite Sport Neo revolution - Blanco (EL4003720)",
     colour: "Blanco",
     offers: [
       {
@@ -3390,7 +3390,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-negro",
     brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo revolution - Negro",
+    model: "Guantes de portero Elite Sport Neo revolution - Negro (EL4003660)",
     colour: "Negro",
     offers: [
       {
@@ -3470,7 +3470,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-negro-2",
     brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo revolution - Negro",
+    model: "Guantes de portero Elite Sport Neo revolution - Negro (EL4003840)",
     colour: "Negro",
     offers: [
       {
@@ -3496,7 +3496,7 @@ const minedGloveProductsChunk1: GloveProduct[] = [
   {
     id: "elite-sport-guantes-de-portero-elite-sport-neo-revolution-negro-3",
     brand: "Elite Sport",
-    model: "Guantes de portero Elite Sport Neo revolution - Negro",
+    model: "Guantes de portero Elite Sport Neo revolution - Negro (EL4003780)",
     colour: "Negro",
     offers: [
       {
@@ -5643,7 +5643,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-ng-blanco",
     brand: "Ho Soccer",
-    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Ng - Blanco",
+    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Ng - Blanco (052.0538)",
     colour: "Blanco",
     offers: [
       {
@@ -5660,7 +5660,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-ng-blanco-2",
     brand: "Ho Soccer",
-    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Ng - Blanco",
+    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Ng - Blanco (052.0539)",
     colour: "Blanco",
     offers: [
       {
@@ -5677,7 +5677,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-rn-negro",
     brand: "Ho Soccer",
-    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Rn - Negro",
+    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Rn - Negro (052.0536)",
     colour: "Negro",
     offers: [
       {
@@ -5694,7 +5694,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "ho-soccer-pro-evolution-graffiti-rn-negro-2",
     brand: "Ho Soccer",
-    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Rn - Negro",
+    model: "Guantes de portero Ho Soccer Pro Evolution Graffiti Rn - Negro (052.0537)",
     colour: "Negro",
     offers: [
       {
@@ -6547,7 +6547,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-gants-de-gardien-joma-area-360-noir",
     brand: "Joma",
-    model: "Guantes de portero Joma Area 360 - Negro",
+    model: "Guantes de portero Joma Area 360 - Negro (401181.121)",
     colour: "Negro",
     offers: [
       {
@@ -6591,7 +6591,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-area-360-negro",
     brand: "Joma",
-    model: "Guantes de portero Joma Area 360 - Negro",
+    model: "Guantes de portero Joma Area 360 - Negro (400911.105)",
     colour: "Negro",
     offers: [
       {
@@ -6695,7 +6695,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-area-noir",
     brand: "Joma",
-    model: "Guantes de portero Joma Area - Noir",
+    model: "Guantes de portero Joma Area - Noir (401713.119)",
     colour: "Noir",
     offers: [
       {
@@ -6721,7 +6721,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-area-noir-2",
     brand: "Joma",
-    model: "Guantes de portero Joma Area - Noir",
+    model: "Guantes de portero Joma Area - Noir (401712.106)",
     colour: "Noir",
     offers: [
       {
@@ -6747,7 +6747,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-area-noir-3",
     brand: "Joma",
-    model: "Guantes de portero Joma Area - Noir",
+    model: "Guantes de portero Joma Area - Noir (401711.117)",
     colour: "Noir",
     offers: [
       {
@@ -7031,7 +7031,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-gants-de-gardien-joma-brave-noir",
     brand: "Joma",
-    model: "Guantes de portero Joma Brave - Negro",
+    model: "Guantes de portero Joma Brave - Negro (401183.121)",
     colour: "Negro",
     offers: [
       {
@@ -7057,7 +7057,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-brave-negro",
     brand: "Joma",
-    model: "Guantes de portero Joma Brave - Negro",
+    model: "Guantes de portero Joma Brave - Negro (401366.105)",
     colour: "Negro",
     offers: [
       {
@@ -7083,7 +7083,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-brave-noir",
     brand: "Joma",
-    model: "Guantes de portero Joma Brave - Noir",
+    model: "Guantes de portero Joma Brave - Noir (401947.118)",
     colour: "Noir",
     offers: [
       {
@@ -7109,7 +7109,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-brave-noir-2",
     brand: "Joma",
-    model: "Guantes de portero Joma Brave - Noir",
+    model: "Guantes de portero Joma Brave - Noir (401947.111)",
     colour: "Noir",
     offers: [
       {
@@ -7135,7 +7135,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-brave-noir-3",
     brand: "Joma",
-    model: "Guantes de portero Joma Brave - Noir",
+    model: "Guantes de portero Joma Brave - Noir (401947.117)",
     colour: "Noir",
     offers: [
       {
@@ -7239,7 +7239,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-calcio-bleu",
     brand: "Joma",
-    model: "Guantes de portero Joma Calcio - Bleu",
+    model: "Guantes de portero Joma Calcio - Bleu (401950.701)",
     colour: "Bleu",
     offers: [
       {
@@ -7265,7 +7265,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-calcio-bleu-2",
     brand: "Joma",
-    model: "Guantes de portero Joma Calcio - Bleu",
+    model: "Guantes de portero Joma Calcio - Bleu (401707.717)",
     colour: "Bleu",
     offers: [
       {
@@ -7317,7 +7317,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-calcio-rouge",
     brand: "Joma",
-    model: "Guantes de portero Joma Calcio - Rouge",
+    model: "Guantes de portero Joma Calcio - Rouge (401707.607)",
     colour: "Rouge",
     offers: [
       {
@@ -7343,7 +7343,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-calcio-rouge-2",
     brand: "Joma",
-    model: "Guantes de portero Joma Calcio - Rouge",
+    model: "Guantes de portero Joma Calcio - Rouge (401950.601)",
     colour: "Rouge",
     offers: [
       {
@@ -7395,7 +7395,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-gk-panther-azul",
     brand: "Joma",
-    model: "Guantes de portero Joma GK Panther - Azul",
+    model: "Guantes de portero Joma GK Panther - Azul (401182.308)",
     colour: "Azul",
     offers: [
       {
@@ -7435,7 +7435,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-gk-panther-azul-2",
     brand: "Joma",
-    model: "Guantes de portero Joma GK Panther - Azul",
+    model: "Guantes de portero Joma GK Panther - Azul (401182.317)",
     colour: "Azul",
     offers: [
       {
@@ -7571,7 +7571,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-gk-pro-noir",
     brand: "Joma",
-    model: "Guantes de portero Joma Gk Pro - Noir",
+    model: "Guantes de portero Joma Gk Pro - Noir (401945.122)",
     colour: "Noir",
     offers: [
       {
@@ -7597,7 +7597,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-gk-pro-noir-2",
     brand: "Joma",
-    model: "Guantes de portero Joma Gk Pro - Noir",
+    model: "Guantes de portero Joma Gk Pro - Noir (401945.106)",
     colour: "Noir",
     offers: [
       {
@@ -7701,7 +7701,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-hunter-orange-2",
     brand: "Joma",
-    model: "Guantes de portero Joma Hunter - Orange",
+    model: "Guantes de portero Joma Hunter - Orange (401949.809)",
     colour: "Orange",
     offers: [
       {
@@ -7727,7 +7727,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-hunter-orange-3",
     brand: "Joma",
-    model: "Guantes de portero Joma Hunter - Orange",
+    model: "Guantes de portero Joma Hunter - Orange (401708.880)",
     colour: "Orange",
     offers: [
       {
@@ -7770,7 +7770,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-hunter-verde",
     brand: "Joma",
-    model: "Guantes de portero Joma Hunter - Verde",
+    model: "Guantes de portero Joma Hunter - Verde (400909.417)",
     colour: "Verde",
     offers: [
       {
@@ -7787,7 +7787,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-gants-de-gardien-joma-hunter-vert",
     brand: "Joma",
-    model: "Guantes de portero Joma Hunter - Verde",
+    model: "Guantes de portero Joma Hunter - Verde (401477.021)",
     colour: "Verde",
     offers: [
       {
@@ -7818,7 +7818,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-panther-blanc",
     brand: "Joma",
-    model: "Guantes de portero Joma Panther - Blanc",
+    model: "Guantes de portero Joma Panther - Blanc (401714.204)",
     colour: "Blanc",
     offers: [
       {
@@ -7844,7 +7844,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-panther-blanc-2",
     brand: "Joma",
-    model: "Guantes de portero Joma Panther - Blanc",
+    model: "Guantes de portero Joma Panther - Blanc (401714.203)",
     colour: "Blanc",
     offers: [
       {
@@ -7922,7 +7922,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-panther-noir",
     brand: "Joma",
-    model: "Guantes de portero Joma Panther - Noir",
+    model: "Guantes de portero Joma Panther - Noir (401946.116)",
     colour: "Noir",
     offers: [
       {
@@ -7948,7 +7948,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-panther-noir-2",
     brand: "Joma",
-    model: "Guantes de portero Joma Panther - Noir",
+    model: "Guantes de portero Joma Panther - Noir (401946.114)",
     colour: "Noir",
     offers: [
       {
@@ -7974,7 +7974,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-panther-noir-3",
     brand: "Joma",
-    model: "Guantes de portero Joma Panther - Noir",
+    model: "Guantes de portero Joma Panther - Noir (401946.117)",
     colour: "Noir",
     offers: [
       {
@@ -8120,7 +8120,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-premier-negro",
     brand: "Joma",
-    model: "Guantes de portero Joma Premier - Negro",
+    model: "Guantes de portero Joma Premier - Negro (401364.170)",
     colour: "Negro",
     offers: [
       {
@@ -8146,7 +8146,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "joma-guantes-de-portero-joma-premier-negro-2",
     brand: "Joma",
-    model: "Guantes de portero Joma Premier - Negro",
+    model: "Guantes de portero Joma Premier - Negro (401364.119)",
     colour: "Negro",
     offers: [
       {
@@ -8506,7 +8506,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-gants-de-gardien-nike-academy-noir",
     brand: "Nike",
-    model: "Guantes de portero Nike Academy - Negro",
+    model: "Guantes de portero Nike Academy - Negro (HF0546-013)",
     colour: "Negro",
     offers: [
       {
@@ -8532,7 +8532,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-academy-negro",
     brand: "Nike",
-    model: "Guantes de portero Nike Academy - Negro",
+    model: "Guantes de portero Nike Academy - Negro (HF0546-011)",
     colour: "Negro",
     offers: [
       {
@@ -8572,7 +8572,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-academy-negro-2",
     brand: "Nike",
-    model: "Guantes de portero Nike Academy - Negro",
+    model: "Guantes de portero Nike Academy - Negro (HF0546)",
     colour: "Negro",
     offers: [
       {
@@ -8607,7 +8607,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-academy-noir",
     brand: "Nike",
-    model: "Guantes de portero Nike Academy - Noir",
+    model: "Guantes de portero Nike Academy - Noir (IQ0662-013)",
     colour: "Noir",
     offers: [
       {
@@ -8633,7 +8633,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-academy-noir-2",
     brand: "Nike",
-    model: "Guantes de portero Nike Academy - Noir",
+    model: "Guantes de portero Nike Academy - Noir (IQ0662-011)",
     colour: "Noir",
     offers: [
       {
@@ -8659,7 +8659,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-academy-noir-3",
     brand: "Nike",
-    model: "Guantes de portero Nike Academy - Noir",
+    model: "Guantes de portero Nike Academy - Noir (HV6409-010)",
     colour: "Noir",
     offers: [
       {
@@ -8685,7 +8685,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-azul",
     brand: "Nike",
-    model: "Guantes de portero Nike - Azul",
+    model: "Guantes de portero Nike - Azul (FJ4862-420)",
     colour: "Azul",
     offers: [
       {
@@ -8725,7 +8725,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-azul-2",
     brand: "Nike",
-    model: "Guantes de portero Nike - Azul",
+    model: "Guantes de portero Nike - Azul (FZ4558-420)",
     colour: "Azul",
     offers: [
       {
@@ -9087,7 +9087,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-match-negro-3",
     brand: "Nike",
-    model: "Guantes de portero Nike Match - Negro",
+    model: "Guantes de portero Nike Match - Negro (FJ4862-010)",
     colour: "Negro",
     offers: [
       {
@@ -9132,7 +9132,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-match-negro",
     brand: "Nike",
-    model: "Guantes de portero Nike Match - Negro",
+    model: "Guantes de portero Nike Match - Negro (FJ4862-014)",
     colour: "Negro",
     offers: [
       {
@@ -9158,7 +9158,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-match-negro-2",
     brand: "Nike",
-    model: "Guantes de portero Nike Match - Negro",
+    model: "Guantes de portero Nike Match - Negro (HQ0257-010)",
     colour: "Negro",
     offers: [
       {
@@ -9184,7 +9184,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-match-rojo",
     brand: "Nike",
-    model: "Guantes de portero Nike Match - Rojo",
+    model: "Guantes de portero Nike Match - Rojo (CQ7799-637)",
     colour: "Rojo",
     offers: [
       {
@@ -9225,7 +9225,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-match-rojo-2",
     brand: "Nike",
-    model: "Guantes de portero Nike Match - Rojo",
+    model: "Guantes de portero Nike Match - Rojo (HQ0257-635)",
     colour: "Rojo",
     offers: [
       {
@@ -9422,7 +9422,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-vapor-grip3-negro",
     brand: "Nike",
-    model: "Guantes de portero Nike Vapor Grip3 - Negro",
+    model: "Guantes de portero Nike Vapor Grip3 - Negro (FB2999-010)",
     colour: "Negro",
     offers: [
       {
@@ -9448,7 +9448,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-vapor-grip3-negro-2",
     brand: "Nike",
-    model: "Guantes de portero Nike Vapor Grip3 - Negro",
+    model: "Guantes de portero Nike Vapor Grip3 - Negro (FD5766-011)",
     colour: "Negro",
     offers: [
       {
@@ -9486,7 +9486,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-vapor-grip3-negro-3",
     brand: "Nike",
-    model: "Guantes de portero Nike Vapor Grip3 - Negro",
+    model: "Guantes de portero Nike Vapor Grip3 - Negro (FB2999-011)",
     colour: "Negro",
     offers: [
       {
@@ -9512,7 +9512,7 @@ const minedGloveProductsChunk2: GloveProduct[] = [
   {
     id: "nike-guantes-de-portero-nike-vapor-grip3-negro-4",
     brand: "Nike",
-    model: "Guantes de portero Nike Vapor Grip3 - Negro",
+    model: "Guantes de portero Nike Vapor Grip3 - Negro (FB2999-013)",
     colour: "Negro",
     offers: [
       {
@@ -9588,11 +9588,37 @@ const minedGloveProductsChunk2: GloveProduct[] = [
     ],
   },
   {
-    id: "precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-negro-2",
+    id: "precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-negro",
     brand: "Precision",
-    model: "Guantes de portero con protección para los dedos Precision Fusion X - Negro",
+    model: "Guantes de portero con protección para los dedos Precision Fusion X - Negro (PRG15811)",
     colour: "Negro",
     offers: [
+      {
+        store: "FootStoreES",
+        price: 24.82,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529643601&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15811_black-fluo-yellow_1.jpg&feedId=89032&k=8f515926d6f7f26b7fe22c65a761f52ffd422619",
+        sizes: ["Talla 11"],
+      },
+    ],
+  },
+  {
+    id: "precision-guantes-de-portero-con-proteccion-para-los-dedos-precision-fusion-x-negro-2",
+    brand: "Precision",
+    model: "Guantes de portero con protección para los dedos Precision Fusion X - Negro (PRG15810)",
+    colour: "Negro",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 24.82,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529643602&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15811_black-fluo-yellow_1.jpg&feedId=89032&k=8f515926d6f7f26b7fe22c65a761f52ffd422619",
+        sizes: ["Talla 10"],
+      },
       {
         store: "FootStoreFR",
         price: 24.11,
@@ -9602,23 +9628,40 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg15811_black-fluo-yellow_1.webp",
         sizes: ["10", "11"],
       },
+    ],
+  },
+  {
+    id: "precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-amarillo",
+    brand: "Precision",
+    model: "Guantes de portero de corte plano Precision Fusion X Essential - Amarillo (PRG16009)",
+    colour: "Amarillo",
+    offers: [
       {
         store: "FootStoreES",
-        price: 24.82,
+        price: 18.05,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529643601&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15811_black-fluo-yellow_1.jpg&feedId=89032&k=8f515926d6f7f26b7fe22c65a761f52ffd422619",
-        sizes: ["Talla 10", "Talla 11"],
+        url: "https://www.awin1.com/pclick.php?p=42529646161&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg16011_fluo-yellow-black_1.jpg&feedId=89032&k=2f41aed0826d849f591fd4b64872b443c59a5f85",
+        sizes: ["Talla 9"],
       },
     ],
   },
   {
     id: "precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-amarillo-2",
     brand: "Precision",
-    model: "Guantes de portero de corte plano Precision Fusion X Essential - Amarillo",
+    model: "Guantes de portero de corte plano Precision Fusion X Essential - Amarillo (PRG16008)",
     colour: "Amarillo",
     offers: [
+      {
+        store: "FootStoreES",
+        price: 18.05,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44552703290&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg16011_fluo-yellow-black_1.jpg&feedId=89032&k=2f41aed0826d849f591fd4b64872b443c59a5f85",
+        sizes: ["Talla 8"],
+      },
       {
         store: "FootStoreFR",
         price: 17.4,
@@ -9628,14 +9671,39 @@ const minedGloveProductsChunk2: GloveProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prg16011_fluo-yellow-black_1.webp",
         sizes: ["8", "9", "10", "11"],
       },
+    ],
+  },
+  {
+    id: "precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-amarillo-3",
+    brand: "Precision",
+    model: "Guantes de portero de corte plano Precision Fusion X Essential - Amarillo (PRG16011)",
+    colour: "Amarillo",
+    offers: [
       {
         store: "FootStoreES",
         price: 18.05,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529646161&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45145688512&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg16011_fluo-yellow-black_1.jpg&feedId=89032&k=2f41aed0826d849f591fd4b64872b443c59a5f85",
-        sizes: ["Talla 10", "Talla 11", "Talla 8", "Talla 9"],
+        sizes: ["Talla 11"],
+      },
+    ],
+  },
+  {
+    id: "precision-guantes-de-portero-de-corte-plano-precision-fusion-x-essential-amarillo-4",
+    brand: "Precision",
+    model: "Guantes de portero de corte plano Precision Fusion X Essential - Amarillo (PRG16010)",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 18.05,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45145688513&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg16011_fluo-yellow-black_1.jpg&feedId=89032&k=2f41aed0826d849f591fd4b64872b443c59a5f85",
+        sizes: ["Talla 10"],
       },
     ],
   },
@@ -9717,6 +9785,9 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "precision-guantes-de-portero-precision-elite-3-0-giga-blanc",
     brand: "Precision",
@@ -9832,9 +9903,6 @@ const minedGloveProductsChunk2: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "precision-guantes-de-portero-precision-fusion-x-flat-cut-essential-orange",
     brand: "Precision",
@@ -9978,9 +10046,9 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanco-5",
+    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanco",
     brand: "Precision",
-    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanco",
+    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanco (PRG16210H)",
     colour: "Blanco",
     offers: [
       {
@@ -9990,7 +10058,75 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529646209&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.jpg&feedId=89032&k=4d30de4cf7b43cf6276ec92bd0735d6708731aee",
-        sizes: ["Talla 10", "Talla 10.5", "Talla 8.5", "Talla 9", "Talla 9.5"],
+        sizes: ["Talla 10.5"],
+      },
+    ],
+  },
+  {
+    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanco-2",
+    brand: "Precision",
+    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanco (PRG16209H)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 46.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529646210&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.jpg&feedId=89032&k=4d30de4cf7b43cf6276ec92bd0735d6708731aee",
+        sizes: ["Talla 9.5"],
+      },
+    ],
+  },
+  {
+    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanco-3",
+    brand: "Precision",
+    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanco (PRG16210)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 46.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529646211&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.jpg&feedId=89032&k=4d30de4cf7b43cf6276ec92bd0735d6708731aee",
+        sizes: ["Talla 10"],
+      },
+    ],
+  },
+  {
+    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanco-4",
+    brand: "Precision",
+    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanco (PRG16209)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 46.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529646212&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.jpg&feedId=89032&k=4d30de4cf7b43cf6276ec92bd0735d6708731aee",
+        sizes: ["Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "precision-guantes-de-portero-precision-fusion-x-pro-lite-giga-blanco-5",
+    brand: "Precision",
+    model: "Guantes de portero Precision Fusion X Pro Lite Giga - Blanco (PRG16208H)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 46.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46508625982&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prg15208_black-white_1.jpg&feedId=89032&k=4d30de4cf7b43cf6276ec92bd0735d6708731aee",
+        sizes: ["Talla 8.5"],
       },
       {
         store: "FootStoreFR",
@@ -10119,7 +10255,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-match-nc-azul",
     brand: "Puma",
-    model: "Guantes de portero Puma Future Match Nc - Azul",
+    model: "Guantes de portero Puma Future Match Nc - Azul (041926-04)",
     colour: "Azul",
     offers: [
       {
@@ -10136,7 +10272,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-match-nc-azul-2",
     brand: "Puma",
-    model: "Guantes de portero Puma Future Match Nc - Azul",
+    model: "Guantes de portero Puma Future Match Nc - Azul (042124)",
     colour: "Azul",
     offers: [
       {
@@ -10340,7 +10476,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-ultimate-nc-naranja",
     brand: "Puma",
-    model: "Guantes de portero Puma Future Ultimate Nc - Naranja",
+    model: "Guantes de portero Puma Future Ultimate Nc - Naranja (041923-02)",
     colour: "Naranja",
     offers: [
       {
@@ -10357,7 +10493,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "puma-future-ultimate-nc-naranja-2",
     brand: "Puma",
-    model: "Guantes de portero Puma Future Ultimate Nc - Naranja",
+    model: "Guantes de portero Puma Future Ultimate Nc - Naranja (042064)",
     colour: "Naranja",
     offers: [
       {
@@ -12332,7 +12468,42 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "reusch-guantes-de-portero-reusch-attrakt-solid-bleu",
     brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Bleu",
+    model: "Guantes de portero Reusch Attrakt Solid - Bleu (5670515-4126)",
+    colour: "Bleu",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 20.16,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43468487711&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670515-4126-sharpblu-wht-shock-orng-1.jpg&feedId=89032&k=023bb32fc2dddc79552905a807a39aaeda825ba1",
+        sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44033931567&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670515-4129-blu-shock-orang-1.jpg&feedId=89044&k=a6415beb39b969894c0d584a670586e368745f42",
+        sizes: ["Talla 11", "Talla 8", "Talla 9", "Talla 9.5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670515-4126-gants-de-gardien-reusch-attrakt-solid-sharpblu-wht-shock-orng",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-4126-sharpblu-wht-shock-orng-1.webp",
+        sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
+    ],
+  },
+  {
+    id: "reusch-guantes-de-portero-reusch-attrakt-solid-bleu-2",
+    brand: "Reusch",
+    model: "Guantes de portero Reusch Attrakt Solid - Bleu (5670515-4129)",
     colour: "Bleu",
     offers: [
       {
@@ -12359,18 +12530,9 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         price: 20.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670515-4126-gants-de-gardien-reusch-attrakt-solid-sharpblu-wht-shock-orng",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-4126-sharpblu-wht-shock-orng-1.webp",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5670515-4129-gants-de-gardien-reusch-attrakt-solid-blu-shock-orang",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-4129-blu-shock-orang-1.webp",
         sizes: ["8", "8.5", "9", "9.5", "10", "10.5", "11"],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 20.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44033931567&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch-5670515-4129-blu-shock-orang-1.jpg&feedId=89044&k=a6415beb39b969894c0d584a670586e368745f42",
-        sizes: ["Talla 11", "Talla 8", "Talla 9", "Talla 9.5"],
       },
     ],
   },
@@ -12401,11 +12563,20 @@ const minedGloveProductsChunk3: GloveProduct[] = [
     ],
   },
   {
-    id: "reusch-guantes-de-portero-reusch-attrakt-solid-negro",
+    id: "reusch-gants-de-gardien-reusch-attrakt-solid-noir",
     brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Negro",
+    model: "Guantes de portero Reusch Attrakt Solid - Negro (5570515-2290)",
     colour: "Negro",
     offers: [
+      {
+        store: "FootStoreES",
+        price: 20.16,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43413518613&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5570515-2290_black_1.jpg&feedId=89032&k=28beb95e0bfa2505535481307c8dfe0756460878",
+        sizes: ["Talla 10", "Talla 11", "Talla 7.5", "Talla 8.5", "Talla 9", "Talla 9.5"],
+      },
       {
         store: "FootStoreFR",
         price: 20.0,
@@ -12413,7 +12584,33 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5570515-2290-gants-de-gardien-reusch-attrakt-solid-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-2290_black_1.webp",
-        sizes: ["7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
+        sizes: ["7.5", "8.5", "9", "9.5", "10", "11"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 20.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5570515-7752-gants-de-gardien-reusch-attrakt-solid-black-safety-yellow",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-7752_black-safety-yellow_1.webp",
+        sizes: ["8"],
+      },
+    ],
+  },
+  {
+    id: "reusch-guantes-de-portero-reusch-attrakt-solid-negro",
+    brand: "Reusch",
+    model: "Guantes de portero Reusch Attrakt Solid - Negro (5570515-7752)",
+    colour: "Negro",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 20.16,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45010072913&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5570515-7752_black-safety-yellow_1.jpg&feedId=89032&k=1e2bb50d0ac942964fa6c1d640ecc76ee50e97de",
+        sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
       },
       {
         store: "SportIsGoodES",
@@ -12425,29 +12622,29 @@ const minedGloveProductsChunk3: GloveProduct[] = [
         sizes: ["Talla 8"],
       },
       {
+        store: "FootStoreFR",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5570515-7752-gants-de-gardien-reusch-attrakt-solid-black-safety-yellow",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-7752_black-safety-yellow_1.webp",
+        sizes: ["7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11"],
+      },
+      {
         store: "SportIsGoodFR",
         price: 20.0,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5570515-7752-gants-de-gardien-reusch-attrakt-solid-black-safety-yellow",
-        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch_5570515-7752_black-safety-yellow_1.webp",
-        sizes: ["8", "9.5", "10.5"],
-      },
-      {
-        store: "FootStoreES",
-        price: 20.16,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43413518613&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fr%2Fe%2Freusch_5570515-2290_black_1.jpg&feedId=89032&k=28beb95e0bfa2505535481307c8dfe0756460878",
-        sizes: ["Talla 10", "Talla 10.5", "Talla 11", "Talla 7.5", "Talla 8", "Talla 8.5", "Talla 9", "Talla 9.5"],
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F5670515-7090-gants-de-gardien-reusch-attrakt-solid-blck-aquablu-shock-orng",
+        imageUrl: "https://cdn.blazimg.com/1800/product/r/e/reusch-5670515-7090-blck-aquablu-shock-orng-1.webp",
+        sizes: ["9.5", "10.5"],
       },
     ],
   },
   {
     id: "reusch-guantes-de-portero-reusch-attrakt-solid-negro-2",
     brand: "Reusch",
-    model: "Guantes de portero Reusch Attrakt Solid - Negro",
+    model: "Guantes de portero Reusch Attrakt Solid - Negro (5570515-4467)",
     colour: "Negro",
     offers: [
       {
@@ -12786,7 +12983,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "reusch-guantes-de-portero-reusch-venomous-gold-x-negro",
     brand: "Reusch",
-    model: "Guantes de portero Reusch Venomous Gold X - Negro",
+    model: "Guantes de portero Reusch Venomous Gold X - Negro (5370956-5010)",
     colour: "Negro",
     offers: [
       {
@@ -12830,7 +13027,7 @@ const minedGloveProductsChunk3: GloveProduct[] = [
   {
     id: "reusch-guantes-de-portero-reusch-venomous-gold-x-negro-2",
     brand: "Reusch",
-    model: "Guantes de portero Reusch Venomous Gold X - Negro",
+    model: "Guantes de portero Reusch Venomous Gold X - Negro (5470956-7730)",
     colour: "Negro",
     offers: [
       {
@@ -14298,6 +14495,9 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-guantes-de-portero-rinat-egotiko-x-training-bleu",
     brand: "Rinat",
@@ -14604,13 +14804,10 @@ const minedGloveProductsChunk3: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-guantes-de-portero-rinat-kratos-semi-negro",
     brand: "Rinat",
-    model: "Guantes de portero Rinat kratos Semi - Negro",
+    model: "Guantes de portero Rinat kratos Semi - Negro (KRTFA1090)",
     colour: "Negro",
     offers: [
       {
@@ -14636,7 +14833,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rinat-guantes-de-portero-rinat-kratos-semi-negro-2",
     brand: "Rinat",
-    model: "Guantes de portero Rinat kratos Semi - Negro",
+    model: "Guantes de portero Rinat kratos Semi - Negro (KRTFA1099)",
     colour: "Negro",
     offers: [
       {
@@ -15915,7 +16112,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rwlk-guantes-de-portero-rwlk-metro-comfort-blanco",
     brand: "RWLK",
-    model: "Guantes de portero RWLK Metro Comfort - Blanco",
+    model: "Guantes de portero RWLK Metro Comfort - Blanco (RW2001250)",
     colour: "Blanco",
     offers: [
       {
@@ -15941,7 +16138,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rwlk-guantes-de-portero-rwlk-metro-comfort-blanco-2",
     brand: "RWLK",
-    model: "Guantes de portero RWLK Metro Comfort - Blanco",
+    model: "Guantes de portero RWLK Metro Comfort - Blanco (RW2001310)",
     colour: "Blanco",
     offers: [
       {
@@ -16123,7 +16320,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rwlk-guantes-de-portero-rwlk-picasso-line-p-blanco",
     brand: "RWLK",
-    model: "Guantes de portero RWLK Picasso Line P - Blanco",
+    model: "Guantes de portero RWLK Picasso Line P - Blanco (RW2000700)",
     colour: "Blanco",
     offers: [
       {
@@ -16149,7 +16346,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rwlk-guantes-de-portero-rwlk-picasso-line-p-blanco-2",
     brand: "RWLK",
-    model: "Guantes de portero RWLK Picasso Line P - Blanco",
+    model: "Guantes de portero RWLK Picasso Line P - Blanco (RW2000750)",
     colour: "Blanco",
     offers: [
       {
@@ -16175,7 +16372,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rwlk-guantes-de-portero-rwlk-picasso-line-s-n-blanco",
     brand: "RWLK",
-    model: "Guantes de portero RWLK Picasso Line S/N - Blanco",
+    model: "Guantes de portero RWLK Picasso Line S/N - Blanco (RW2000600)",
     colour: "Blanco",
     offers: [
       {
@@ -16201,7 +16398,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rwlk-guantes-de-portero-rwlk-picasso-line-s-n-blanco-2",
     brand: "RWLK",
-    model: "Guantes de portero RWLK Picasso Line S/N - Blanco",
+    model: "Guantes de portero RWLK Picasso Line S/N - Blanco (RW2000660)",
     colour: "Blanco",
     offers: [
       {
@@ -16227,7 +16424,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rwlk-guantes-de-portero-rwlk-pro-line-slim-hybrid-fit-blanco",
     brand: "RWLK",
-    model: "Guantes de portero RWLK Pro Line, Slim Hybrid Fit. - Blanco",
+    model: "Guantes de portero RWLK Pro Line, Slim Hybrid Fit. - Blanco (RW2000250)",
     colour: "Blanco",
     offers: [
       {
@@ -16253,7 +16450,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "rwlk-guantes-de-portero-rwlk-pro-line-slim-hybrid-fit-blanco-2",
     brand: "RWLK",
-    model: "Guantes de portero RWLK Pro Line, Slim Hybrid Fit. - Blanco",
+    model: "Guantes de portero RWLK Pro Line, Slim Hybrid Fit. - Blanco (RW2000200)",
     colour: "Blanco",
     offers: [
       {
@@ -16461,7 +16658,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "softee-guantes-de-portero-softee-america-amarillo",
     brand: "Softee",
-    model: "Guantes de portero Softee América - Amarillo",
+    model: "Guantes de portero Softee América - Amarillo (35052.019.17)",
     colour: "Amarillo",
     offers: [
       {
@@ -16471,7 +16668,24 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39277402210&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35052.019.11_amarillo-fluor-jaune_4.jpg&feedId=89032&k=b1c3b6ab8bf48ada09736027bf2e2e7519b6d4d9",
-        sizes: ["Talla 8", "Talla 9"],
+        sizes: ["Talla 9"],
+      },
+    ],
+  },
+  {
+    id: "softee-guantes-de-portero-softee-america-amarillo-2",
+    brand: "Softee",
+    model: "Guantes de portero Softee América - Amarillo (35052.019.15)",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 11.8,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529515544&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35052.019.11_amarillo-fluor-jaune_4.jpg&feedId=89032&k=b1c3b6ab8bf48ada09736027bf2e2e7519b6d4d9",
+        sizes: ["Talla 8"],
       },
     ],
   },
@@ -16528,19 +16742,36 @@ const minedGloveProductsChunk4: GloveProduct[] = [
     ],
   },
   {
-    id: "softee-guantes-de-portero-softee-europa-blanco-2",
+    id: "softee-guantes-de-portero-softee-europa-blanco",
     brand: "Softee",
-    model: "Guantes de portero Softee Europa - Blanco",
+    model: "Guantes de portero Softee Europa - Blanco (35053.775.15)",
     colour: "Blanco",
     offers: [
       {
-        store: "SportIsGoodFR",
-        price: 7.53,
-        shipping: 6.99,
+        store: "FootStoreES",
+        price: 11.5,
+        shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F35053-775-15-paire-de-gants-de-gardien-softee-europa-blanco-taille-8",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_35053.775.11_blanco-negro-rosa_2.webp",
-        sizes: ["8"],
+        url: "https://www.awin1.com/pclick.php?p=37923993880&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_2.jpg&feedId=89032&k=96c79e5c15c37b9ce89a11b687dce78068787bb2",
+        sizes: ["Talla 8"],
+      },
+    ],
+  },
+  {
+    id: "softee-guantes-de-portero-softee-europa-blanco-2",
+    brand: "Softee",
+    model: "Guantes de portero Softee Europa - Blanco (35053.775.13)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 11.8,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529515545&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_1.jpg&feedId=89032&k=fa9ae23f85d1653e56122a04ed05cf67339f0c3e",
+        sizes: ["Talla 7"],
       },
       {
         store: "SportIsGoodES",
@@ -16552,21 +16783,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         sizes: ["Talla 8"],
       },
       {
-        store: "FootStoreES",
-        price: 11.5,
-        priceMax: 11.8,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923993880&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_2.jpg&feedId=89032&k=96c79e5c15c37b9ce89a11b687dce78068787bb2",
-        sizes: ["Talla 7", "Talla 8", "Talla 9"],
-        sizePrices: [
-          { size: "Talla 7", price: 11.8, url: "https://www.awin1.com/pclick.php?p=42529515545&a=3013769&m=65912" },
-          { size: "Talla 8", price: 11.5, url: "https://www.awin1.com/pclick.php?p=37923993880&a=3013769&m=65912" },
-          { size: "Talla 9", price: 11.8, url: "https://www.awin1.com/pclick.php?p=42529515546&a=3013769&m=65912" },
-        ],
-      },
-      {
         store: "FootStoreFR",
         price: 11.5,
         shipping: 7.99,
@@ -16574,6 +16790,32 @@ const minedGloveProductsChunk4: GloveProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F35053-775-13-paire-de-gants-de-gardien-softee-europa-blanc-taille-7",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_35053.775.11_blanco-negro-rosa_1.webp",
         sizes: ["7", "8", "9"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 7.53,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F35053-775-15-paire-de-gants-de-gardien-softee-europa-blanco-taille-8",
+        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_35053.775.11_blanco-negro-rosa_2.webp",
+        sizes: ["8"],
+      },
+    ],
+  },
+  {
+    id: "softee-guantes-de-portero-softee-europa-blanco-3",
+    brand: "Softee",
+    model: "Guantes de portero Softee Europa - Blanco (35053.775.17)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 11.8,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529515546&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_35053.775.11_blanco-negro-rosa_1.jpg&feedId=89032&k=fa9ae23f85d1653e56122a04ed05cf67339f0c3e",
+        sizes: ["Talla 9"],
       },
     ],
   },
@@ -18502,7 +18744,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-aquasoft-azul",
     brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Aquasoft - Azul",
+    model: "Guantes de portero Uhlsport Aquasoft - Azul (101134101)",
     colour: "Azul",
     offers: [
       {
@@ -18528,7 +18770,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-aquasoft-azul-2",
     brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Aquasoft - Azul",
+    model: "Guantes de portero Uhlsport Aquasoft - Azul (101131501)",
     colour: "Azul",
     offers: [
       {
@@ -18573,7 +18815,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-aquasoft-hn-azul",
     brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Aquasoft HN - Azul",
+    model: "Guantes de portero Uhlsport Aquasoft HN - Azul (101131401)",
     colour: "Azul",
     offers: [
       {
@@ -18609,7 +18851,7 @@ const minedGloveProductsChunk4: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-aquasoft-hn-azul-2",
     brand: "uhlsport",
-    model: "Guantes de portero Uhlsport Aquasoft HN - Azul",
+    model: "Guantes de portero Uhlsport Aquasoft HN - Azul (101134001)",
     colour: "Azul",
     offers: [
       {
@@ -19183,6 +19425,9 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       },
     ],
   },
+];
+
+const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-fm-cybertec-supergrip-hn-blanco",
     brand: "uhlsport",
@@ -19747,9 +19992,6 @@ const minedGloveProductsChunk4: GloveProduct[] = [
       },
     ],
   },
-];
-
-const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-guantes-de-portero-uhlsport-fm-zne-absolutgrip-hn-fit-rouge",
     brand: "uhlsport",
@@ -20540,7 +20782,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-soft-hn-comp-blanco",
     brand: "uhlsport",
-    model: "Guantes de portero uhlsport Soft Hn Comp - Blanco",
+    model: "Guantes de portero uhlsport Soft Hn Comp - Blanco (101136801)",
     colour: "Blanco",
     offers: [
       {
@@ -20557,7 +20799,7 @@ const minedGloveProductsChunk5: GloveProduct[] = [
   {
     id: "uhlsport-soft-hn-comp-blanco-2",
     brand: "uhlsport",
-    model: "Guantes de portero uhlsport Soft Hn Comp - Blanco",
+    model: "Guantes de portero uhlsport Soft Hn Comp - Blanco (101140301)",
     colour: "Blanco",
     offers: [
       {

@@ -6,6 +6,10 @@ import { asLocale, breadcrumbLd } from "@/lib/hubPages";
 import { HUB } from "@/lib/hubStrings";
 import { JsonLd } from "@/components/hubs/HubParts";
 import RopaPageClient from "./RopaPageClient";
+import { apparelProducts } from "@/data/apparel";
+import { slimGear } from "@/lib/gearList";
+
+const ITEMS = slimGear(apparelProducts);
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
@@ -64,7 +68,7 @@ export default async function RopaPage({ params }: { params: Promise<{ locale: s
           "/ropa",
         )}
       />
-      <RopaPageClient />
+      <RopaPageClient items={ITEMS} />
       <GearHubLinks section="ropa" locale={asLocale(locale)} />
     </>
   );

@@ -58,6 +58,8 @@ NOT_A_BALL_RE = re.compile(r"conjunto de f[uú]tbol|\d+ piezas|\bkit pumero\b|es
 # del MISMO feed: a veces "9" pelado, a veces "Taille 9" -- confirmado
 # real con Joma Area 19 (3 tallas, las 3 con el prefijo), rompía el
 # orden porque size_sort_key espera el número al principio.
+KID_AGE_SIZE = re.compile(r'\d\s*(ans|años|mois|meses)\b(?!\s*\+)', re.I)  # '15 ans +' es adulto
+
 def clean_size(v):
     v = (v or '').strip()
     v = re.sub(r'^taille\s+', '', v, flags=re.I)
@@ -108,6 +110,9 @@ def mine_blaz_category(fname, store_label, category_kw, out_list, exclude_extra=
             price = parse_price(row.get('search_price'))
             if not price:
                 continue
+            # Talla de niño ("6 ans", "12 ans") dentro de una categoría Adulte.
+            if KID_AGE_SIZE.search(row.get('custom_1') or ''):
+                continue
             key = row.get('parent_product_id') or row.get('merchant_product_id') or title
             groups.setdefault(key, []).append(row)
     n = 0
@@ -135,7 +140,7 @@ def mine_blaz_category(fname, store_label, category_kw, out_list, exclude_extra=
             'price': price, 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
-            'eans': _eans(rows, 'ean'),
+            'eans': _eans(rows, 'ean'), 'mpns': _eans(rows, 'mpn'),
         }
         if price_max > price:
             entry['priceMax'] = price_max
@@ -175,6 +180,8 @@ def mine_google_shopping_category(fname, store_label, category_kw, out_list, exc
                 continue
             price = parse_price((row.get('sale_price') or row.get('price') or '').replace(' EUR', ''))
             if not price:
+                continue
+            if KID_AGE_SIZE.search(row.get('size') or ''):
                 continue
             # item_group_id viene vacío en TODAS las filas de este feed
             # (confirmado real 2026-09-18, ej. Softee América) -- caer a
@@ -217,7 +224,7 @@ def mine_google_shopping_category(fname, store_label, category_kw, out_list, exc
             'price': price, 'shipping': shipping,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('image_link'), 'sizes': sizes,
-            'eans': _eans(rows, 'gtin'),
+            'eans': _eans(rows, 'gtin'), 'mpns': _eans(rows, 'mpn'),
         }
         if price_max > price:
             entry['priceMax'] = price_max
@@ -274,7 +281,7 @@ def mine_deporte_outlet_category(title_keywords, store_label, out_list, check_ki
             'price': parse_price(rep.get('search_price')), 'shipping': parse_price(rep.get('delivery_cost')) or 0,
             'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
-            'eans': _eans(rows, 'ean'),
+            'eans': _eans(rows, 'ean'), 'mpns': _eans(rows, 'mpn'),
         })
         n += 1
     print(f'{store_label}:', n)
@@ -387,7 +394,7 @@ def mine_forumsport_category(types, out_list, strip_re=None, exclude_extra=None,
             'store': 'ForumSport', 'brand': brand or 'N/D', 'model': model, 'colour': colour or 'N/D',
             'price': price, 'shipping': parse_price(rep.get('delivery_cost')) or 0, 'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'), 'sizes': sizes,
-            'eans': _eans(rows, 'product_GTIN'),
+            'eans': _eans(rows, 'product_GTIN'), 'mpns': _eans(rows, 'mpn'),
         }
         if price_max > price:
             entry['priceMax'] = price_max
@@ -446,7 +453,7 @@ def mine_adidas_es_gear(gloves, balls):
             'price': price, 'shipping': parse_price(rep.get('delivery_cost')) or 0, 'currency': 'EUR',
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'),
             'sizes': sorted({dot_size(sz(r)) for r in rows if ok(r)}, key=size_sort_key),
-            'eans': _eans(rows, 'ean'),
+            'eans': _eans(rows, 'ean'), 'mpns': _eans(rows, 'mpn'),
         }
         if price_max > price:
             entry['priceMax'] = price_max
@@ -458,6 +465,14 @@ def mine_adidas_es_gear(gloves, balls):
 
 
 PLANETFOOT_BALL_SKIP_RE = re.compile(r'\b(pack|box|kit|coffret|badge|volley\w*|junior|plaid|sac|casquette)\b', re.I)
+
+
+def planetfoot_shipping(price):
+    """Envío a Francia (único país donde el sitio lo da por medido, ver
+    SHIPPING_KNOWN_FOR): Mondial Relay gratis desde 30 EUR; por debajo, la
+    entrega a domicilio cuesta 5,95 (carrito de planetfoot.com, 2026-11-17).
+    El feed no trae el dato."""
+    return 0 if price >= 30 else 5.95
 
 
 def mine_planetfoot_balls(out_list):
@@ -484,7 +499,7 @@ def mine_planetfoot_balls(out_list):
             brand = maker.group(1) if maker else (r.get('brand') or 'N/D').strip().title()
             out_list.append({
                 'store': 'PlanetFoot', 'brand': brand, 'model': norm_title(title), 'colour': (r.get('color') or '').strip() or 'N/D',
-                'price': price, 'shipping': 0, 'currency': 'EUR', 'url': r.get('aw_deep_link'), 'imageUrl': r.get('image_link'),
+                'price': price, 'shipping': planetfoot_shipping(price), 'currency': 'EUR', 'url': r.get('aw_deep_link'), 'imageUrl': r.get('image_link'),
                 'sizes': [], 'eans': _eans([r], 'gtin'),
             })
             n += 1
@@ -521,7 +536,7 @@ def mine_planetfoot_sets(out_list):
         sizes = sorted({sz for sz, _ in items if sz}, key=size_sort_key)
         entry = {
             'store': 'PlanetFoot', 'brand': maker.group(1).title() if maker else (rep.get('brand') or 'N/D').strip().title(), 'model': base, 'colour': (rep.get('color') or '').strip() or 'N/D',
-            'price': pr(rep), 'shipping': 0, 'currency': 'EUR', 'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('image_link'),
+            'price': pr(rep), 'shipping': planetfoot_shipping(pr(rep)), 'currency': 'EUR', 'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('image_link'),
             'sizes': sizes, 'eans': _eans(rows, 'gtin'), 'type': 'set',
         }
         if max(pr(r) for r in rows) > pr(rep):
@@ -640,6 +655,7 @@ def merge_by_model(results):
         if 'type' in rep:
             merged_entry['type'] = rep['type']
         merged_entry['eans'] = sorted({e for r in rows for e in r.get('eans', ())})
+        merged_entry['mpns'] = sorted({e for r in rows for e in r.get('mpns', ())})
         merged.append(merged_entry)
     return merged
 
@@ -789,6 +805,7 @@ def merge_mirror_locales(merged):
                     offers.append(o)
             rep['offers'] = offers
             rep['eans'] = sorted({e for r in rows for e in r.get('eans', ())})
+            rep['mpns'] = sorted({e for r in rows for e in r.get('mpns', ())})
         out.append(rep)
     return out
 
@@ -817,10 +834,45 @@ def merge_by_ean(products):
             tgt = by_idx
         else:
             out[tgt] = dict(out[tgt], offers=out[tgt]['offers'] + p['offers'],
-                            eans=sorted(set(out[tgt].get('eans', ())) | set(p.get('eans', ()))))
+                            eans=sorted(set(out[tgt].get('eans', ())) | set(p.get('eans', ()))),
+                            mpns=sorted(set(out[tgt].get('mpns', ())) | set(p.get('mpns', ()))))
         for e in p.get('eans', ()):
             by_ean.setdefault(e, tgt)
     return out
+
+def _sku_code(p):
+    """Código de fabricante de una ficha: el mpn del feed o, si no hay, el
+    primer token con dígitos del nombre de la foto (que en Blaz es el SKU)."""
+    if p.get('mpns'):
+        return p['mpns'][0].upper()
+    for o in p['offers']:
+        for t in re.split(r'[_\-\s]+', _img_key(o.get('imageUrl')) or ''):
+            if re.search(r'\d', t) and len(t) >= 4:
+                return t.upper()
+    return None
+
+
+def disambiguate_models(products):
+    """Colorways distintos con el mismo nombre+color ("Pantalón corto adidas
+    Tiro 24 - Negro" x6: negro/blanco, negro/rojo...) salían como tarjetas
+    idénticas. Solo cambia el texto visible: al final va el código del
+    fabricante entre paréntesis, que localizeGearModel conserva. Si algún
+    producto del grupo no tiene código o se repite, el grupo queda igual."""
+    groups = {}
+    for p in products:
+        groups.setdefault(p['model'].strip().lower(), []).append(p)
+    n = 0
+    for g in groups.values():
+        if len(g) < 2:
+            continue
+        codes = [_sku_code(p) for p in g]
+        if all(codes) and len(set(codes)) == len(codes):
+            for p, c in zip(g, codes):
+                if c.lower() not in p['model'].lower():
+                    p['model'] = f"{p['model']} ({c})"
+                    n += 1
+    return n
+
 
 # ---------- ROPA DE FÚTBOL (shorts, chaquetas, pantalones, medias) ----------
 # Agregado 2026-09-18 (pedido explícito del usuario: "no hay nada de
@@ -1017,7 +1069,7 @@ def mine_reebok(out_list, fname, store, currency):
             'currency': currency,
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'),
             'sizes': sorted({r['Fashion:size'].strip() for r in rows if (r.get('Fashion:size') or '').strip()}, key=size_sort_key),
-            'eans': _eans(rows, 'product_GTIN'),
+            'eans': _eans(rows, 'product_GTIN'), 'mpns': _eans(rows, 'mpn'),
         }
         if price_max > price:
             entry['priceMax'] = price_max
@@ -1195,7 +1247,7 @@ def mine_adidas_latam(store, fname, currency, gloves, balls, apparel):
             'price': price, 'shipping': 0, 'currency': currency,
             'url': rep.get('aw_deep_link'), 'imageUrl': rep.get('aw_image_url'),
             'sizes': list(sort(sz)),
-            'eans': _eans(rows, 'product_GTIN'),
+            'eans': _eans(rows, 'product_GTIN'), 'mpns': _eans(rows, 'mpn'),
         }
         if price_max > price:
             entry['priceMax'] = price_max
@@ -1424,6 +1476,8 @@ if __name__ == '__main__':
     balls_merged = merge_by_ean(merge_mirror_locales(merge_by_model(balls_results)))
     apparel_merged = merge_by_ean(merge_mirror_locales(merge_by_model(apparel_results)))
     training_merged = merge_by_ean(merge_mirror_locales(merge_by_model(training_results)))
+    for _lbl, _m in (('guantes', gloves_merged), ('pelotas', balls_merged), ('ropa', apparel_merged), ('entrenamiento', training_merged)):
+        print(f'{_lbl}: {disambiguate_models(_m)} nombres repetidos con código de fabricante')
     print('TOTAL guantes:', len(gloves_results), '->', len(gloves_merged), 'productos tras fundir por tienda')
     print('TOTAL pelotas:', len(balls_results), '->', len(balls_merged), 'productos tras fundir por tienda')
     print('TOTAL ropa:', len(apparel_results), '->', len(apparel_merged), 'productos tras fundir por tienda')

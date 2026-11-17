@@ -6,6 +6,10 @@ import { asLocale, breadcrumbLd } from "@/lib/hubPages";
 import { HUB } from "@/lib/hubStrings";
 import { JsonLd } from "@/components/hubs/HubParts";
 import EntrenamientoPageClient from "./EntrenamientoPageClient";
+import { trainingProducts } from "@/data/training";
+import { slimGear } from "@/lib/gearList";
+
+const ITEMS = slimGear(trainingProducts);
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {
@@ -64,7 +68,7 @@ export default async function EntrenamientoPage({ params }: { params: Promise<{ 
           "/entrenamiento",
         )}
       />
-      <EntrenamientoPageClient />
+      <EntrenamientoPageClient items={ITEMS} />
       <GearHubLinks section="entrenamiento" locale={asLocale(locale)} />
     </>
   );

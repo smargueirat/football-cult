@@ -26,7 +26,8 @@ const cases: [string, string, "es" | "en" | "pt" | "fr" | "it", string][] = [
   ["Seto antilesión Sporti Soft - Rouge", "Sporti", "en", "Soft training hurdle Sporti Soft - Red"],
   ["escala rítmica Sporti Agility - Bleu", "Sporti", "it", "Scala per agilità Sporti Agility - Blu"],
   // prefijo desconocido -> texto original intacto, nunca traducido a medias
-  ["Cacharro rarísimo Xyz Modelo - Bleu", "Xyz", "en", "Cacharro rarísimo Xyz Modelo - Blue"],
+  ["Cacharro rarísimo Xyz Modelo - Bleu", "Xyz", "en", "Cacharro rarísimo Xyz Modelo - Blue"],  // código de fabricante que distingue colorways con el mismo nombre
+  ["Pantalón corto adidas Tiro 24 - Negro (IM9968)", "adidas", "en", "Shorts adidas Tiro 24 - Black (IM9968)"],
 ];
 
 for (const [model, brand, locale, want] of cases) {

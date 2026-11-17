@@ -26,15 +26,17 @@ import { markCatalogVisited } from "@/lib/search/catalogVisit";
 // compartidos para no duplicar ese formato a mano en cada sección.
 interface GearOffer {
   store: string;
-  url: string;
+  url?: string;
+  h?: string;
   price: number;
   shipping: number;
   currency: "EUR" | "GBP" | "CLP" | "MXN" | "COP";
-  imageUrl: string;
+  imageUrl?: string;
   sizes: string[];
 }
 interface GearProductLike {
   id: string;
+  img?: string;
   brand: string;
   model: string;
   colour: string;

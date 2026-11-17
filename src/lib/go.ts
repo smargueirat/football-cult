@@ -40,6 +40,8 @@ export function goHref(p: {
   kind: GoKind;
   productId: string;
   url: string;
+  /** offerHash(url) ya calculado en el servidor (listados livianos). */
+  h?: string;
   locale: string;
   /** Dónde está el botón: ficha | comparar | home (módulo de ofertas) |
    *  listado (tarjeta) | alt (alternativas de una ficha) | bajadas (tabla). */
@@ -50,7 +52,7 @@ export function goHref(p: {
   const q = new URLSearchParams({ k: p.kind, p: p.productId, l: p.locale, o: p.origin });
   if (p.position != null) q.set("n", String(p.position));
   if (p.isBest) q.set("b", "1");
-  return `/go/${offerHash(p.url)}?${q}`;
+  return `/go/${p.h ?? offerHash(p.url)}?${q}`;
 }
 
 // Marca `j=1` en el /go/ que la persona toca (puntero: ratón, dedo, botón

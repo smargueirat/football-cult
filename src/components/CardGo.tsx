@@ -16,18 +16,19 @@ export default function CardGo({
 }: {
   kind: GoKind;
   productId: string;
-  offer: { store: string; url: string; currency: string };
+  offer: { store: string; url?: string; h?: string; currency: string };
   total: number;
 }) {
   const { locale } = useLanguage();
+  const href = goHref({ kind, productId, url: offer.url ?? "", h: offer.h, locale, origin: "listado", position: 1, isBest: true });
   return (
     <a
-      href={goHref({ kind, productId, url: offer.url, locale, origin: "listado", position: 1, isBest: true })}
+      href={href}
       target="_blank"
       rel="noopener noreferrer nofollow sponsored"
       data-testid="card-go"
       onClick={() =>
-        trackOfferClick({ productId, position: 1, isBest: true, store: offer.store, url: offer.url, price: total, currency: offer.currency, surface: "listado" })
+        trackOfferClick({ productId, position: 1, isBest: true, store: offer.store, url: offer.url ?? href, price: total, currency: offer.currency, surface: "listado" })
       }
       className="mt-1.5 flex min-h-11 items-center justify-center truncate rounded-full border border-[#1B3B2B]/25 bg-[#1B3B2B] px-2 text-center text-[11px] font-medium text-[#F3E9C9] transition-colors hover:bg-[#15301f] sm:text-sm"
     >

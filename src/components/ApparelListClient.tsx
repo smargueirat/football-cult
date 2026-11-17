@@ -46,15 +46,18 @@ function sizeSortKey(s: string): number {
 
 interface ApparelOffer {
   store: string;
-  url: string;
+  url?: string;
+  h?: string;
   price: number;
+  priceMax?: number;
   shipping: number;
   currency: "EUR" | "GBP" | "CLP" | "MXN" | "COP";
-  imageUrl: string;
+  imageUrl?: string;
   sizes: string[];
 }
 interface ApparelProductLike {
   id: string;
+  img?: string;
   brand: string;
   model: string;
   colour: string;

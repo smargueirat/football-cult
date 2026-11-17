@@ -1,14 +1,14 @@
 "use client";
 
-import { ballProducts } from "@/data/balls";
+import type { SlimGearItem } from "@/lib/gearList";
 import GearListClient from "@/components/GearListClient";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
-export default function PelotasPageClient() {
+export default function PelotasPageClient({ items }: { items: SlimGearItem[] }) {
   const { t } = useLanguage();
   return (
     <GearListClient
-      items={ballProducts}
+      items={items}
       basePath="pelotas"
       pageTitle={t.pelotas.pageTitle}
       pageSubtitle={t.pelotas.pageSubtitle}

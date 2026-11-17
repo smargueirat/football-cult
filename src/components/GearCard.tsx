@@ -24,16 +24,19 @@ import { retailerCountText } from "@/lib/retailerFamily";
 // pelota no son lo mismo, cada página pasa el suyo).
 interface GearOffer {
   store: string;
-  url: string;
+  /** Listados: en vez de url llega h (hash de /go/) e item.img (src/lib/gearList.ts). */
+  url?: string;
+  h?: string;
   price: number;
   priceMax?: number;
   shipping: number;
   currency: "EUR" | "GBP" | "CLP" | "MXN" | "COP";
-  imageUrl: string;
+  imageUrl?: string;
   sizes: string[];
 }
 interface GearProductLike {
   id: string;
+  img?: string;
   brand: string;
   model: string;
   offers: GearOffer[];
@@ -59,7 +62,7 @@ export default function GearCard({
   const cheapest = rankOffers(offersForCountry(item.offers, countryCode), offerTotalInEUR, undefined, (o) => !shippingNotMeasured(o, countryCode))[0];
   const sizes = [...new Set(item.offers.flatMap((o) => o.sizes))];
   const sizeRange = sizes.length > 0 ? (sizes.length === 1 ? sizes[0] : `${sizes[0]}–${sizes[sizes.length - 1]}`) : "";
-  const photo = cheapest.imageUrl;
+  const photo = cheapest.imageUrl ?? item.img ?? "";
   const [imageLoaded, setImageLoaded] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
   useEffect(() => {

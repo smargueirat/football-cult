@@ -1,15 +1,15 @@
 "use client";
 
-import { trainingProducts } from "@/data/training";
+import type { SlimGearItem } from "@/lib/gearList";
 import ApparelListClient from "@/components/ApparelListClient";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { TRAINING_TYPES } from "@/lib/trainingTypes";
 
-export default function EntrenamientoPageClient() {
+export default function EntrenamientoPageClient({ items }: { items: SlimGearItem[] }) {
   const { t } = useLanguage();
   return (
     <ApparelListClient
-      items={trainingProducts}
+      items={items}
       pageTitle={t.entrenamiento.pageTitle}
       pageSubtitle={t.entrenamiento.pageSubtitle}
       types={TRAINING_TYPES}

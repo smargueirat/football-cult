@@ -174,7 +174,11 @@ def build_entries(mined, used_ids, known=None):
     # Mismo motivo que refresh_boots.py: el orden del feed no es estable
     # entre dias, asi que sin esto el .ts se reescribe entero cada scan y
     # el sufijo "-2" de desempate se reparte distinto cada vez.
-    mined = sorted(mined, key=lambda d: (slugify(f"{d['brand']}-{d['model']}"), d['offers'][0]['url']))
+    # Sin el código de fabricante que mine_gear.disambiguate_models agrega al
+    # final ("- Negro (IM9968)"): con él cambiaba el orden y los colorways que
+    # comparten foto se intercambiaban el id (866 URLs movidas, 2026-11-17).
+    bare = lambda m: re.sub(r" \([^()]+\)$", "", m)
+    mined = sorted(mined, key=lambda d: (slugify(f"{d['brand']}-{bare(d['model'])}"), d['offers'][0]['url']))
     known = {} if known is None else known
     for d in mined:
         keys = photo_keys(d)
@@ -184,7 +188,7 @@ def build_entries(mined, used_ids, known=None):
         sid = next((known[k] for k in sorted(keys)
                     if k in known and known[k] not in seen_ids), None)
         if sid is None:
-            base = slugify(f"{d['brand']}-{d['model']}")
+            base = slugify(f"{d['brand']}-{bare(d['model'])}")
             sid = base
             i = 2
             while sid in seen_ids:

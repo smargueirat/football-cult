@@ -449,11 +449,12 @@ export function localizeGearModel(
   let tail = "";
   const cut = model.lastIndexOf(" - ");
   if (cut > 0) {
-    const colour = model.slice(cut + 3);
+    // "Negro (IM9968)": código de fabricante que distingue colorways (mine_gear.disambiguate_models).
+    const [, colour, code = ""] = model.slice(cut + 3).match(/^(.*?)( \([^()]+\))?$/) ?? [];
     const t = COLOURS[norm(colour)]?.[locale];
     if (t) {
       rest = model.slice(0, cut);
-      tail = ` - ${t}`;
+      tail = ` - ${t}${code}`;
     }
   }
   const at = norm(rest).indexOf(norm(brand));
