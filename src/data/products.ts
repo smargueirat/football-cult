@@ -87466,6 +87466,19 @@ const productsData = [
       { store: "eBay ES", price: 163.56, shipping: 21.15, currency: "EUR", url: "https://www.ebay.es/itm/227576132624?_skw=Paris+Saint-Germain+third+soccer+jersey&hash=item34fc983410%3Ag%3AhKQAAeSwld9q19ze&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva de fútbol Nike PSG Paris Saint Germain 2014/15 tercer jugador auténtico mediana", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/hKQAAeSwld9q19ze/s-l1600.jpg" },
     ],
   },
+{
+    id: "redstarbelgrade-away-202627",
+    teamKey: "redstarbelgrade",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#1B2A5C",
+    colorHexSecondary: "#C8102E",
+    jerseyPattern: "solid",
+    brand: "macron",
+    offers: [
+      { store: "FootStoreFR", price: 81.8, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F600175640001-maillot-exterieur-etoile-rouge-de-belgrade-2026-27-bleu", title: "Maillot Extérieur Étoile rouge de Belgrade 2026/27", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.blazimg.com/1800/product/m/a/macron-600175640001-bleu-6a7b4d91d5e90-1.webp" },
+    ],
+  },
 ];
 
 // El array de arriba (sin anotación de tipo explícita) evita TS2590
