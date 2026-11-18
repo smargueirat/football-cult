@@ -104,6 +104,8 @@ const RATES: Record<string, number> = {
   "Reebok DE": 0.08,
   // Awin aid 121516, aprobado 2026-10-25: 8,23% publicado.
   "Reebok UK": 0.08,
+  // Umbro UK (impact.com, programa 60189): "Online Sale 8%" en el marketplace, 2026-11-18.
+  "Umbro UK": 0.08,
   // Sportsafe UK (Awin 118941, aprobado 2026-10-27): PROVISIONAL, sin tarifa
   // publicada ni EPC medido todavía; la de por defecto. Revisar en Awin.
   "Sportsafe UK": 0.03,

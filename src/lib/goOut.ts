@@ -67,7 +67,7 @@ export function soicosLink(url: string): string {
 
 /**
  * La misma tienda sin nuestro tracking, para los clics de robot: el destino
- * real va dentro del enlace (Awin `ued`, TradeTracker `u`, Rakuten `murl`,
+ * real va dentro del enlace (Awin `ued`, TradeTracker `u`, Rakuten `murl`, impact `u`,
  * Soicos `dl`) o basta con quitar los parámetros de la red (eBay, Amazon).
  * null si no se puede saber (Awin pclick.php: el destino lo resuelve Awin).
  */
@@ -84,6 +84,7 @@ export function untracked(url: string): string | null {
     "click.linksynergy.com": "murl",
     "ad.soicos.com": "dl",
     "go.skimresources.com": "url",
+    "umbro.onepath.io": "u", // impact.com (Umbro UK)
   } as Record<string, string>)[u.hostname];
   if (inner) {
     const dest = u.searchParams.get(inner);

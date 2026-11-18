@@ -21665,6 +21665,7 @@ const productsData = [
       { store: "eBay", price: 60.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/327285846352?_skw=Rangers+FC+home+soccer+jersey&hash=item4c33c1b150%3Ag%3ADlQAAeSwROhqapIZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Rangers FC 2025/26 Authentic Replica Home Jersey Sz L Scottish Premiership", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/DlQAAeSwROhqapIZ/s-l1600.jpg" },
       { store: "Futbol Emotion", price: 37.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fumbro%2Fglasgow-rangers-primera-equipacion-2025-2026-lapsis-blue", title: "Camiseta Umbro Glasgow Rangers Primera Equipación 2025-2026", inStock: true, sizes: ["S", "M", "L"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/262731/750/camiseta-umbro-glasgow-rangers-primera-equipacion-2025-2026-lapsis-blue-1.jpg" },
       { store: "Pro:Direct Soccer", price: 40.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/umbro-rangers-25-26-ss-home-shirt-lapis-blue-mens-replica-1029328", title: "Umbro Rangers 25/26 SS Home Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1029328_list.jpg?v=1785510823" },
+      { store: "Umbro UK", price: 35.0, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s73004&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12696%2Fsports%2Frangers-fc-2526-home-short-sleeve-shirt-lapis-blue.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Rangers Fc 25/26 Home Short Sleeve Shirt - Lapis Blue", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_rangersfc2526homeshortsleeveshirt_1757505488TM10993.jpg" },
     ],
   },
 {
@@ -30816,6 +30817,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fafc-bournemouth-away-soccer-jersey-2025-26%3Fvariant%3D42671743074409", title: "AFC Bournemouth Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/AFC_Bournemouth_away_Soccer_Jersey_202526.png?v=1762753928" },
       { store: "eBay GB", price: 36.99, shipping: 0.0, currency: "GBP", url: "https://www.ebay.co.uk/itm/327427857455?_skw=Bournemouth+away+soccer+jersey&hash=item4c3c389c2f%3Ag%3AX8cAAeSwtkVq4iXf&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "AFC Bournemouth Mens Away Football Shirt 2025/26  Medium Adli 21 New", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/X8cAAeSwtkVq4iXf/s-l1600.jpg" },
+      { store: "Umbro UK", price: 42.25, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s74736&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12935%2Fukfootball%2Fafc-bournemouth-2526-away-shirt-lapis-blue--caviar.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Afc Bournemouth 25/26 Away Shirt - Lapis Blue / Caviar", inStock: true, sizes: ["XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_afcbournemouth2526awayshirt_1756826650TM12572_032_1.jpg" },
     ],
   },
 {
@@ -30828,6 +30830,7 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 19.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/880042614812?_skw=Bournemouth+home+soccer+jersey&hash=itemcce6a0a01c%3Ag%3Arl0AAeSwVxNq2tx4&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "AFC Bournemouth 2025/26 home shirt jersey kit decorative hanger Premier League", inStock: true, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/rl0AAeSwVxNq2tx4/s-l1600.jpg" },
+      { store: "Umbro UK", price: 42.25, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s74732&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12934%2Fukfootball%2Fafc-bournemouth-2526-home-shirt-high-risk-red--caviar.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Afc Bournemouth 25/26 Home Shirt - High Risk Red / Caviar", inStock: true, sizes: ["4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_afcbournemouth2526homeshirt_1756826611TM12562_072_1.jpg" },
     ],
   },
 {
@@ -31616,6 +31619,7 @@ const productsData = [
       { store: "Futbol Emotion", price: 28.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fumbro%2Fglasgow-rangers-segunda-equipacion-2025-2026-white-lapsis-blue", title: "Camiseta Umbro Glasgow Rangers Segunda Equipación 2025-2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/262734/750/camiseta-umbro-glasgow-rangers-segunda-equipacion-2025-2026-white-lapsis-blue-1.jpg" },
       { store: "eBay ES", price: 54.23, shipping: 21.7, currency: "EUR", url: "https://www.ebay.es/itm/358686433471?_skw=Rangers+FC+away+soccer+jersey&hash=item538360a0bf%3Ag%3AHDUAAeSwmqxqMSrE&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva Umbro adulto Rangers club de fútbol visitante 25/26 talla S", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/HDUAAeSwmqxqMSrE/s-l1600.jpg" },
       { store: "eBay GB", price: 16.14, shipping: 3.38, currency: "GBP", url: "https://www.ebay.co.uk/itm/366563455254?_skw=Rangers+FC+away+soccer+jersey&hash=item5558e27116%3Ag%3AoiMAAeSwhfppYT8W&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mj8JJFWmHHHYtAKFFllRghwJzdQHmsfFOwIukz0RfM3RxmL1AGc1sqqzayH%2BPygMs65BmOPeXQjEAMWNpJapMNRtdxPnRNmQCmHXLxKJWMphmS5GMfBjoVH8mMvfzu2duRtz74QXDic640C0Tdf%2F3GpsTYpeUweyGzI%2FKXmj8a6R9VXVU0HQlAm133Gv6qp6m47ObojRdV%2FhNmdk6NcvURnq3NMSSiNOe8IFIuoTFsD%2FfOLgGSif3sMYsiwtygzshnwOd%2BkRiPBHpezcEDBfI5HM2t%2F%2Bx7JCym0XKGBFJlVVt1vNgixDuMe4%2Bi4hkCm2U%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Umbro Rangers FC Men's Away Pro Jersey Size Small Season 2025/26", inStock: true, sizes: ["S"], imageUrl: "https://i.ebayimg.com/images/g/oiMAAeSwhfppYT8W/s-l1600.jpg" },
+      { store: "Umbro UK", price: 35.0, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s74153&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12865%2Fsports%2Frangers-fc-2526-away-short-sleeve-shirt-brilliant-white--lapis-blue--flame-scarlet.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Rangers Fc 25/26 Away Short Sleeve Shirt - Brilliant White / Lapis Blue / Flame Scarlet", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_rangersfc2526awayshortsleeveshirt_1749132150TM11003003BRILLIANTWHITELAPISBLUEFLAMESCARLET01.jpg" },
     ],
   },
 {
@@ -32274,6 +32278,7 @@ const productsData = [
     offers: [
       { store: "eBay", price: 35.0, shipping: 10.0, currency: "USD", url: "https://www.ebay.com/itm/137428891901?_skw=Rangers+FC+third+soccer+jersey+2025+2026&hash=item1fff6678fd%3Ag%3AxVAAAeSw9gVqM77I&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYn9dC8vqOA2O88iOCC9T0hW6BdXZ6Xcclczi%2Be8IVqkQrbcTqdJ%2Bt805R7pZLhajvQjTYg2Q%2Ba9Fx2NU%2F9rPvjqHMqTuv2oI53zxKI1YhlMVdI8f06pRvbCYChnKEyea162KyVrSSsLNrUq7ydDVYNyyYzsBiuRezNcEsCr4s%2Br20VWLk8TCXUIwQa%2BflX3PJ13XUlQG4lI2PEAvPb4DCMis%2FXoKy2yy9dwJwG5dS%2BFmFPpWWf1AUHat36qnK3jKkLLmJh9DRJCSdCU9sDeSv1WxbcSesqbUEc6U6Gbxg%2BJlfk%2BWUg1qUI952XrY%2FeVF0%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Glasgow Rangers 2025 2026 Third Jersey Football Shirt Soccer Umbro Kit", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/xVAAAeSw9gVqM77I/s-l1600.jpg" },
       { store: "Pro:Direct Soccer", price: 40.0, shipping: 4.99, currency: "GBP", url: "https://www.prodirectsport.com/products/umbro-rangers-25-26-ss-third-shirt-mood-indigo-caviar-mens-replica-1029330", title: "Umbro Rangers 25/26 SS Third Shirt", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0695/5689/5834/files/1029330_main.jpg?v=1785511218" },
+      { store: "Umbro UK", price: 32.0, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s74387&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12875%2Frangersfc-buy2itemsandgetafurther20off%2Frangers-fc-2526-3rd-short-sleeve-shirt-mood-indigo--caviar.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Rangers Fc 25/26 3rd Short Sleeve Shirt - Mood Indigo / Caviar", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_rangersfc25263rdshortsleeveshirt_1750849759TM11013_002_mens.jpg" },
     ],
   },
 {
@@ -40088,6 +40093,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fipswich-town-away-soccer-jersey-2025-26%3Fvariant%3D42557149085801", title: "Ipswich Town Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/92be97b75ca5d679b267aa6efc17e9eb.png?v=1758073784" },
       { store: "eBay ES", price: 83.09, shipping: 29.43, currency: "EUR", url: "https://www.ebay.es/itm/900016184705?_skw=Ipswich+Town+away+soccer+jersey&hash=itemd18d251d81%3Ag%3AFSMAAeSw2aZqqekm&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol visitante Ipswich Town FC 25/26 Umbro nueva con etiquetas Inglaterra UE 3XL", inStock: true, sizes: ["3XL"], imageUrl: "https://i.ebayimg.com/images/g/FSMAAeSw2aZqqekm/s-l1600.jpg" },
       { store: "eBay IT", price: 77.0, shipping: 30.71, currency: "EUR", url: "https://www.ebay.it/itm/900077813771?_skw=Ipswich+Town+away+soccer+jersey&hash=itemd190d1800b%3Ag%3AFSMAAeSw2aZqqekm&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia calcio away Ipswich Town FC 25/26 Umbro nuova con etichetta Inghilterra 2XL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/FSMAAeSw2aZqqekm/s-l1600.jpg" },
+      { store: "Umbro UK", price: 39.0, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s74597&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12917%2Fipswichtownfc%2Fipswich-town-fc-2526-away-shirt-racing-red--surf-the-web.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Ipswich Town Fc 25/26 Away Shirt - Racing Red / Surf The Web", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_ipswichtownfc2526awayshirt_1753259238TM12729_073_1.jpg" },
     ],
   },
 {
@@ -40105,6 +40111,7 @@ const productsData = [
       { store: "eBay ES", price: 83.09, shipping: 29.43, currency: "EUR", url: "https://www.ebay.es/itm/900019939603?_skw=Ipswich+Town+home+soccer+jersey&hash=itemd18d5e6913%3Ag%3AFH4AAeSwc8FqnbUT&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7nSxchOOYIy%2BdYUPZe2jFTZ01aFLQwhjE71rWEdVeb%2B9tm4pSTspNAnReQLKjPx%2BmcNiBbRx52pcJ8ForsBf%2BvKcNvxDPFCdA4Poj0vTji22KBGXTbzpCidPiFWskHEEl9M3SLqvfZjcV5xdhBGOf7OWCqoWmVbII42o%2FwCgh6QENxMQw4h4t5hc83FPsczbHWmeF1jFhDITaDL1Hr5P%2FuLay3vQNgtGkJ%2BQBwW6pIRpD5U6XgXZp3%2BwgCBrrFXUJscLDslnKsRS0XZmvJ2Yd45ePjL%2Fd3gPYbnx1SKZfs8dIyHuUHC4cxAlGHagqSGb7U%3D&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta deportiva de fútbol local Ipswich Town FC 25/26 Umbro nueva con etiquetas Inglaterra 2XL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/FH4AAeSwc8FqnbUT/s-l1600.jpg" },
       { store: "eBay GB", price: 29.19, shipping: 3.38, currency: "GBP", url: "https://www.ebay.co.uk/itm/147670519091?_skw=Ipswich+Town+home+soccer+jersey&hash=item2261d94d33%3Ag%3AaukAAeSw1ppq7y3L&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Ipswich Town Home Shirt 2025/26 Adult Medium", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/aukAAeSw1ppq7y3L/s-l1600.jpg" },
       { store: "eBay IT", price: 77.0, shipping: 30.71, currency: "EUR", url: "https://www.ebay.it/itm/900078526831?_skw=Ipswich+Town+home+soccer+jersey&hash=itemd190dc616f%3Ag%3AFH4AAeSwc8FqnbUT&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia calcio Ipswich Town FC 25/26 Home Umbro nuova con etichetta Inghilterra 2XL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/FH4AAeSwc8FqnbUT/s-l1600.jpg" },
+      { store: "Umbro UK", price: 39.0, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s74566&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12910%2Fipswichtownfc%2Fipswich-town-fc-2526-home-shirt-surf-the-wave.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Ipswich Town Fc 25/26 Home Shirt - Surf The Wave", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_ipswichtownfc2526homeshirt_1753259140TM12719_030_1.jpg" },
     ],
   },
 {
@@ -56928,6 +56935,7 @@ const productsData = [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fwest-ham-united-away-soccer-jersey-2025-26%3Fvariant%3D42557136928873", title: "West Ham United Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/451d933dfc91d2e500193edcf7b63c7b.png?v=1758073702" },
       { store: "Futbol Emotion", price: 47.99, shipping: 0.0, currency: "EUR", url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fcamiseta%2Fumbro%2Fwest-ham-segunda-equipacion-2025-2026-ecru", title: "Camiseta Umbro West Ham Segunda Equipación 2025-2026", inStock: true, sizes: ["S", "M", "L", "XL"], imageUrl: "https://www.futbolemotion.com/imagesarticulos/262727/750/camiseta-umbro-west-ham-segunda-equipacion-2025-2026-ecru-1.jpg" },
       { store: "eBay GB", price: 31.9, shipping: 2.94, currency: "GBP", url: "https://www.ebay.co.uk/itm/800843997545?_skw=West+Ham+United+away+soccer+jersey&hash=itemba7605a169%3Ag%3AHA8AAeSwRRpq4IWF&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kngP%2BHPxVK2LdDkk7H%2BvHGwAdUlm6EqGRsheZDJY4RZSc7S3D4ZKcmMhn%2BZTQcNNuCu4i4QvPI803k2HcVudC7v2o%2FqhC6D8U7WHX49tHCGjnsiIne%2BN2gqvEW1c5yYhXenJjTuk9C0G4g%2BgvVZaxnet60iRCD39YnbJQcY1XwbtxANJ%2Ba4vWb5InLA9A8xmcqSspdRwMs%2BQDOaYjw5zUZiVU9o4xpB%2BYRrc0ieVVqGZ%2BW%2Fb7s04pxTIUrx5rteGe%2FtPcPGMQju5%2F9%2FpXEM0IwowSYuYC3AXzH9qaplfddrCU6rGAD2RB4ZAYkuzaKu4w%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "West Ham Utd Away Shirt 25/26 Season Umbro Size Men’s XL Brand New With Tags", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/HA8AAeSwRRpq4IWF/s-l1600.jpg" },
+      { store: "Umbro UK", price: 52.5, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s74920&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12978%2Ffootball%2Fwest-ham-united-2526-away-shirt-ecru.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro West Ham United 25/26 Away Shirt - Ecru", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_westhamunited2526awayshirt_1756733612TM12498_140_1.jpg" },
     ],
   },
 {
@@ -56946,6 +56954,7 @@ const productsData = [
       { store: "eBay GB", price: 31.9, shipping: 2.94, currency: "GBP", url: "https://www.ebay.co.uk/itm/800843973424?_skw=West+Ham+United+home+soccer+jersey&hash=itemba76054330%3Ag%3AGz4AAeSwf%7EVq4IQS&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7k2iwDAEhmiWvPQaCR%2F8MgS93kEc3azlj%2F2ppt3UttCnUg6M5HR2Dki4%2Ft3nycKyonqyW8WLYfy7VXnjjNrij1sQWzv6auwBjI%2BPqcUASt3BXKnXECCZihKVrJwtocwUZJTMXLNmtOFSyhqe6RnOFW0ysLZP2Rd1yGe%2FvpAKIwAHrRnFudfdYsBqu00tQjFHefYLs211UwuyS2B9hDoDKz%2BvijC6SP%2FNLFY5M6tnLH0hdBiPYJ6xGlCqJEGjIfdzQt0U92DkDvqufzE6Y77R4Bd%2Baqg7T5VzU0N1RSFO06IPO2Pudx5UOPuf7EYtsm%2BoOk%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "West Ham Utd Home Shirt 25/26 Season Size Men’s Large Umbro Brand New With Tags", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/Gz4AAeSwf~Vq4IQS/s-l1600.jpg" },
       { store: "FootStoreFR", price: 85.0, shipping: 7.99, currency: "EUR", url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F1237120-60-0-maillot-domicile-west-ham-2025-26-violet-bleu", title: "Maillot Domicile West Ham 2025/26", inStock: false, sizes: ["L"], imageUrl: "https://cdn.blazimg.com/1800/product/1/2/1237120-60-0.webp" },
       { store: "eBay IT", price: 66.42, shipping: 25.8, currency: "EUR", url: "https://www.ebay.it/itm/257827490995?_skw=West+Ham+United+home+soccer+jersey&hash=item3c07b74cb3%3Ag%3AVBcAAeSwbu9qQTe5&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Maglia calcio West Ham 25/26 Home uomo L Claret Umbro maglia calcio Lamadrid", inStock: true, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/VBcAAeSwbu9qQTe5/s-l1600.jpg" },
+      { store: "Umbro UK", price: 52.2, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s74527&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12901%2Ffootball%2Fwest-ham-united-2526-home-shirt-new-claret.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro West Ham United 25/26 Home Shirt - New Claret", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_westhamunited2526homeshirt_1756733554TM12490_060_1.jpg" },
     ],
   },
 {
@@ -57171,6 +57180,7 @@ const productsData = [
     offers: [
       { store: "FansJerseyHub", price: 29.99, shipping: 0.0, currency: "USD", url: "https://www.awin1.com/cread.php?awinmid=126139&awinaffid=3013769&ued=https%3A%2F%2Ffansjerseyhub1.com%2Fproducts%2Fwest-ham-united-third-away-soccer-jersey-2025-26%3Fvariant%3D42689550254185", title: "West Ham United Third Away Soccer Jersey 2025/26", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://cdn.shopify.com/s/files/1/0650/0725/5657/files/West_Ham_United_Third_Away_Soccer_Jersey_202526_1.png?v=1763358427" },
       { store: "eBay GB", price: 30.85, shipping: 2.94, currency: "GBP", url: "https://www.ebay.co.uk/itm/880066076241?_skw=West+Ham+United+third+soccer+jersey&hash=itemcce8069e51%3Ag%3A%7ExcAAeSwcVRq5QFJ&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "West Ham Third Shirt Season 25-26 Adult Medium New ", inStock: true, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/~xcAAeSwcVRq5QFJ/s-l1600.jpg" },
+      { store: "Umbro UK", price: 52.5, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s74933&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12980%2Ffootball%2Fwest-ham-united-2526-third-shirt-sky-captain--orche.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro West Ham United 25/26 Third Shirt - Sky Captain / Orche", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_westhamunited2526thirdshirt_1756733698TM12506_029_1.jpg" },
     ],
   },
 {
@@ -60706,6 +60716,7 @@ const productsData = [
     offers: [
       { store: "eBay", price: 69.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/366644728239?_skw=Santos+FC+away+soccer+jersey&hash=item555dba91af%3Ag%3AurMAAeSwLcVqmFhs&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGak%2FjCr3Ttja5GfA7xa7YPff3aE90hE9FFoNsifFNqw9mIFriUUc9JSkJmRFZaf3Vpwv1Iai4krFaUAxH6g7ipTKMKoKWL219d179uGf%2BlPZu4tAiylhrlu60FTH5Wsxi5G8P9bZM4de1Aj15lGYLqydrZZq979MULF1KI7cKaLab87b1UlNT987eVvHktZ5rX--2QQaQNpMmK2zEF51qjMFuhqGykDkCRaIuROKJkU21%2FdvEU7zylriHC1C%2FFJ%2B%2BEdMzmtJ1Vh%2FUyHvi47kGMCOfNInjyludf%2B3rAnsOcoCHjBH%2FiMxcabhWLs%2BDwe1RQ%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "26-27 Santos FC Away Soccer Jersey", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/urMAAeSwLcVqmFhs/s-l1600.jpg" },
       { store: "SantosStore", price: 265.99, shipping: 0.0, currency: "BRL", url: "https://click.linksynergy.com/link?id=aG1VysDxsgw&offerid=2024748.5419615114965191399863822&type=15&murl=https%3A%2F%2Fwww.santosstore.com.br%2FSID-011L-028", title: "Camisa Santos Away 26/27 s/n Torcedor Umbro Masculina - Branco+Preto", inStock: true, sizes: ["M"], imageUrl: "http://static.santosstore.com.br/produtos/camisa-santos-ii-2627-sn-torcedor-umbro-masculina/28/SID-011L-028/SID-011L-028_zoom1.jpg?ts=1783998484" },
+      { store: "Umbro UK", price: 85.0, shipping: 0.0, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s79353&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F13714%2Finternationalclubs%2Fsantos-2627-away-jersey-black--white.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Santos 26/27 Away Jersey - Black / White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_santos2627awayjersey_1792766813U31S04236_121_1.jpg" },
     ],
   },
 {
@@ -87129,6 +87140,102 @@ const productsData = [
     brand: "adidas",
     offers: [
       { store: "eBay GB", price: 70.0, shipping: 2.95, currency: "GBP", url: "https://www.ebay.co.uk/itm/327324369898?_skw=Leeds+United+goalkeeper+soccer+jersey&hash=item4c360d83ea%3Ag%3AjF8AAeSwcndq%7ETVY&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Leeds United Football Shirt adidas Goalkeeper 2026-27 Orange Mens Premier League", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/jF8AAeSwcndq~TVY/s-l1600.jpg" },
+    ],
+  },
+{
+    id: "athleticoparanaense-home-202526",
+    teamKey: "athleticoparanaense",
+    season: "2025/26",
+    typeKey: "home",
+    colorHex: "#DA020E",
+    colorHexSecondary: "#000000",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "Umbro UK", price: 29.75, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s75132&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F13018%2Fsale%2Fathletico-paranaense-2025-home-jersey-redblack.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Athletico Paranaense 2025 Home Jersey - Red/black", inStock: true, sizes: ["S", "L", "XXL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_athleticoparanaense2025homejersey_1758897704U31C03553_414_1.jpg" },
+    ],
+  },
+{
+    id: "blackburn-away-202627",
+    teamKey: "blackburn",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#009EE0",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "Umbro UK", price: 65.0, shipping: 0.0, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s77825&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F13493%2Fblackburnroversfc%2Fblackburn-rovers-2627-away-replica-shirt-brilliant-whitefrench-blueracing-red.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Blackburn Rovers 26/27 Away Replica Shirt - Brilliant White/french Blue/racing Red", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_blackburnrovers2627awayreplicashirt_1786444969PSM00921BBR_B088_1.jpg" },
+    ],
+  },
+{
+    id: "blackburn-home-202627",
+    teamKey: "blackburn",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#009EE0",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "Umbro UK", price: 65.0, shipping: 0.0, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s77800&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F13487%2Fblackburnroversfc%2Fblackburn-rovers-2627-home-replica-shirt-french-bluebrilliant-white.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Blackburn Rovers 26/27 Home Replica Shirt - French Blue/brilliant White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_blackburnrovers2627homereplicashirt_1784211380HomeShirt1.jpg" },
+    ],
+  },
+{
+    id: "blackburn-third-202627",
+    teamKey: "blackburn",
+    season: "2026/27",
+    typeKey: "third",
+    colorHex: "#009EE0",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "Umbro UK", price: 65.0, shipping: 0.0, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s77850&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F13499%2Fblackburnroversfc%2Fblackburn-rovers-2627-third-replica-shirt-racing-redfrench-blue.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Blackburn Rovers 26/27 Third Replica Shirt - Racing Red/french Blue", inStock: true, sizes: ["S", "M", "L", "XL", "XXL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_blackburnrovers2627thirdreplicashirt_1787739660PSM00912BBR_G071_1.jpg" },
+    ],
+  },
+{
+    id: "ipswichtown-third-202526",
+    teamKey: "ipswichtown",
+    season: "2025/26",
+    typeKey: "third",
+    colorHex: "#0044A9",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "Umbro UK", price: 39.0, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s75061&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F13007%2Fukfootball%2Fipswich-town-fc-2526-third-shirt-volcanic-ash.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Ipswich Town Fc 25/26 Third Shirt - Volcanic Ash", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_ipswichtown2526thirdshortsleeveshirt_1758547905TM12739_120_1.jpg" },
+    ],
+  },
+{
+    id: "rangers-away-202627",
+    teamKey: "rangers",
+    season: "2026/27",
+    typeKey: "away",
+    colorHex: "#1D3E7C",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "Umbro UK", price: 51.0, shipping: 3.99, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s77033&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F13355%2Frangersfc-buy2itemsandgetafurther20off%2Frangers-fc-2627-away-replica-shirt-whisper-white.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Rangers Fc 26/27 Away Replica Shirt - Whisper White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_rangersfc2627awayreplicashirt_1780512327_0017_PSM00269RFC_O026_1.jpg" },
+    ],
+  },
+{
+    id: "rangers-home-202627",
+    teamKey: "rangers",
+    season: "2026/27",
+    typeKey: "home",
+    colorHex: "#1D3E7C",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "Umbro UK", price: 85.0, shipping: 0.0, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s77018&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F13352%2Frangersfc-buy2itemsandgetafurther20off%2Frangers-fc-2627-home-replica-shirt-lapis-blue-white.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Rangers Fc 26/27 Home Replica Shirt - Blue_lapis Blue/castore White", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_rangersfc2627homereplicashirt_1782229212_0017_PSM00263RFCNS_D043_01.jpg" },
+    ],
+  },
+{
+    id: "rangers-third-202627",
+    teamKey: "rangers",
+    season: "2026/27",
+    typeKey: "third",
+    colorHex: "#1D3E7C",
+    colorHexSecondary: "#FFFFFF",
+    jerseyPattern: "solid",
+    offers: [
+      { store: "Umbro UK", price: 85.0, shipping: 0.0, currency: "GBP", url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s77048&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F13358%2Frangersfc-buy2itemsandgetafurther20off%2Frangers-fc-2627-third-replica-shirt-blackflame-scarlet.html%3Fref%3DPPC&intsrc=CATF_39004", title: "Umbro Rangers Fc 26/27 Third Replica Shirt - Black_castore Black/flame Scarlet", inStock: true, sizes: ["S", "M", "L", "XL", "XXL", "3XL", "4XL"], imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_rangersfc2627thirdreplicashirt_1783606518PSM00273RFC_A027_1.jpg" },
     ],
   },
 ];

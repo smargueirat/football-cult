@@ -163,6 +163,8 @@ export const SHIPPING_KNOWN_FOR: Record<string, readonly string[] | "all"> = {
   "Reebok DE": ["DE", "AT", "BE", "BG", "DK", "ES", "FI", "FR", "GR", "HR", "HU", "IE", "IT", "NL", "NO", "PL", "PT", "RO", "SE", "SK"],
   // reebok.eu/en-gb (feed Awin "Reebok UK"): 5,99 GBP / gratis desde 50 GBP.
   "Reebok UK": ["GB"],
+  // umbro.co.uk (impact.com, catálogo 39004): Evri 3,99 GBP / gratis desde 60 GBP, medido 2026-11-18.
+  "Umbro UK": ["GB"],
   // Sportsafe UK: unas fichas "FREE mainland UK delivery", otras 3,95 GBP por
   // debajo de 40 GBP sin IVA, y el feed no dice cuál (ver mine_gear.py).
   "Sportsafe UK": [],

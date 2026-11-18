@@ -43,6 +43,13 @@ GOOGLE_COLS = ["advertiser_id", "advertiser_name", "id", "title", "description",
 # ADIDAS_MX / ADIDAS_CO (Awin 79918 / 79924, aprobados 2026-10-28): esquema distinto al de adidas CL; se
 # traducen al de CL al bajarlos para que toda la minería los lea con el mismo código (adidas_latam_feed.py).
 ADIDAS_LATAM = {"ADIDAS_MX", "ADIDAS_CO"}
+# impact.com (FTP de catálogos, usuario creado 2026-11-18): Umbro UK, programa 60189,
+# catálogo 39004 en formato Google Merchant TXT (tabulado). Se traduce al esquema Google
+# de GOOGLE_COLS. Su availability viene vacía en todas las filas: el feed solo lista lo
+# que se vende, así que estar en el feed = en stock. sale_price va siempre lleno (precio
+# cobrado), porque pick.py lee una sola columna de precio. Envío medido en umbro.co.uk
+# (customer-care/delivery-information, 2026-11-18): Evri 3,99 GBP, gratis desde 60 GBP.
+IMPACT = {"UMBRO_UK": "Umbro/impact-Google-Shopping_GOOGLE_TXT.txt.gz"}
 TT = "https://pf.tradetracker.net/?aid=514692&encoding=utf-8&type=csv&fid={}&categoryType=2&additionalType=2&csvDelimiter=%3B&csvEnclosure=%22&filter_extended=1"
 TRADETRACKER = {"FUTBOLFACTORY": TT.format(2551751), "SHOPREALBETIS": TT.format(2291247),
                 "futbolemotion_feed": TT.format(2066871)}
@@ -53,6 +60,11 @@ def feeds():
     out = {m.group(1): m.group(2).strip().strip('"')
            for m in re.finditer(r"^AWIN_FEED_URL_([A-Z0-9_]+)=(.+)$", env, re.M) if m.group(1) not in SKIP}
     out.update(TRADETRACKER)
+    ftp = {k: m.group(1).strip().strip("'\"") for k in ("HOST", "USER", "PASSWORD")
+           if (m := re.search(rf"^IMPACT_FTP_{k}=(.+)$", env, re.M))}
+    if len(ftp) == 3:
+        q = lambda x: urllib.parse.quote(x, safe="")
+        out.update({n: f"ftp://{q(ftp['USER'])}:{q(ftp['PASSWORD'])}@{ftp['HOST']}/{p}" for n, p in IMPACT.items()})
     return out
 
 
@@ -104,6 +116,26 @@ def to_google(src, dst):
                 f"FR:::{r['delivery_cost']} {cur}" if r["delivery_cost"] else ""])
 
 
+def impact_to_google(src, dst):
+    """Google Merchant TXT de impact.com (tabulado) -> esquema Google de GOOGLE_COLS."""
+    with open(src, newline="", encoding="utf-8-sig") as f, open(dst, "w", newline="", encoding="utf-8-sig") as g:
+        w = csv.writer(g)
+        w.writerow(GOOGLE_COLS)
+        for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE):
+            aff = r["link"]  # ya es el enlace con seguimiento (umbro.onepath.io/c/...)
+            link = urllib.parse.parse_qs(urllib.parse.urlparse(aff).query).get("u", [aff])[0].split("?")[0]
+            was, now = r["price"], r["sale_price"] or r["price"]
+            try:
+                charged = float(now.split()[0])
+            except (ValueError, IndexError):
+                continue
+            cur = now.split()[-1]
+            w.writerow(["impact", "Umbro UK", r["id"], r["title"], r["description"], link, r["image_link"],
+                        aff, r["product_type"], r["gtin"], r["mpn"], r["brand"], "in_stock",
+                        was, now, r["condition"] or "new", r["color"], r["gender"],
+                        r["size"], r["item_group_id"], f"GB:::{0 if charged >= 60 else 3.99} {cur}"])
+
+
 def download(name, url):
     dst = os.path.join(FEED_DIR, f"{name}.csv")
     tmp = dst + ".tmp"
@@ -122,6 +154,10 @@ def download(name, url):
         head = open(tmp, encoding="utf-8", errors="replace").readline()
         if name in GOOGLE and "aw_product_id" in head:
             to_google(tmp, tmp + ".raw")
+            os.replace(tmp + ".raw", tmp)
+            head = open(tmp, encoding="utf-8", errors="replace").readline()
+        if name in IMPACT and head.startswith("id\t"):
+            impact_to_google(tmp, tmp + ".raw")
             os.replace(tmp + ".raw", tmp)
             head = open(tmp, encoding="utf-8", errors="replace").readline()
         if name in ADIDAS_LATAM and "custom_1" in head:

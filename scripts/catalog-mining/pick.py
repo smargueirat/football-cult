@@ -10,6 +10,9 @@ PENALTY_RE = [
     (re.compile(r"academy|dri-?fit|stadium|strike", re.I), 3),
     (re.compile(r"ronaldo|messi|jordan|mbapp|neymar", re.I), 3),
     (re.compile(r"protección|hex|mcdavid", re.I), 6),
+    # Ediciones especiales con el mismo team+type que la camiseta estándar
+    # (Rangers 26/27 "Poppy Home Jersey" ganaba a la "Home Replica Shirt" por título corto, 2026-11-18).
+    (re.compile(r"\bpoppy\b", re.I), 3),
     (re.compile(r"\bpro\b|match\b", re.I), 1),
     # sufijos numéricos de 2 dígitos sueltos (ej. "Manchester United 90",
     # "Liverpool FC 95") suelen ser ediciones especiales/heritage, no la

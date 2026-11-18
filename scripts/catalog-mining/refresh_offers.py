@@ -73,6 +73,7 @@ FEEDS = {
     "BSTNUK": ("BSTN_UK", "awin"),
     "Reebok DE": ("REEBOK_DE", "awin"),
     "Reebok UK": ("REEBOK_UK", "awin"),
+    "Umbro UK": ("UMBRO_UK", "google"),
     "DecathlonIE": ("DECATHLONIE", "awin"),
     "FootStoreFR": ("FOOTSTORE_FR", "google"),
     "SportIsGoodFR": ("SPORTISGOOD_FR", "google"),
@@ -98,7 +99,8 @@ PRODIRECT = {"Pro:Direct ES", "Pro:Direct Soccer"}
 # reebok.eu cobra 5,99 por debajo de 50 y nada desde 50 (EUR en la UE, GBP en
 # Reino Unido), pero su feed DE dice siempre 0 y el UK siempre 5.99.
 # PlanetFoot (Francia): Mondial Relay gratis desde 30; debajo, domicilio 5,95 (carrito, 2026-11-17).
-FREE_FROM = {"Reebok DE": (50, 5.99), "Reebok UK": (50, 5.99), "PlanetFoot": (30, 5.95)}
+# Umbro UK: Evri 3,99 GBP, gratis desde 60 (umbro.co.uk, 2026-11-18).
+FREE_FROM = {"Reebok DE": (50, 5.99), "Reebok UK": (50, 5.99), "PlanetFoot": (30, 5.95), "Umbro UK": (60, 3.99)}
 
 LINE_RE = re.compile(
     r'^(      \{ store: "(?P<store>[^"]+)", price: )(?P<price>[\d.]+)(, shipping: )(?P<ship>[\d.]+)'
@@ -256,7 +258,9 @@ def locate(fmt, idx, url, title):
         rows = idx["link"].get(url)
         if rows:
             return rows[0], idx["group"][rows[0]["group"]]
-        k = ued_key(url)
+        # Awin lleva la URL de la tienda en `ued`; impact (Umbro UK) en `u`, con un
+        # enlace por talla: si esa talla sale del feed, se busca el producto por ahí.
+        k = ued_key(url) or tt_key(url)
         if not k:
             return "unkeyed", None
         return None, idx["group"].get(k)

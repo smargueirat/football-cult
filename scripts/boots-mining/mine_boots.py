@@ -89,7 +89,7 @@ def slugify(s):
 def parse_price(s):
     if not s:
         return None
-    s = s.replace(' EUR', '').replace(' USD', '').replace(',', '.').strip()
+    s = s.replace(' EUR', '').replace(' USD', '').replace(' GBP', '').replace(',', '.').strip()
     try:
         return round(float(s), 2)
     except ValueError:
@@ -1086,6 +1086,58 @@ def mine_reebok(fname, store, currency, boot_word):
         n += 1
     print(f'{store}:', n)
 
+# ---------- UMBRO UK (impact.com, catálogo 39004, 2026-11-18) ----------
+# Esquema Google (download_feeds.py lo traduce del TXT de impact). Botas =
+# product_type "Boots" o título de bota (UMBRO_BOOT_RE); en "Boots" también cae alguna zapatilla
+# de calle ("Speciali Tr Suede Flap Trainer"), fuera por "Trainer". Talla
+# "8.5 (EU 43)": se usa la EU. Niño: "Kids" en el título o tallas 11C/1Y.
+# sale_price siempre lleno (precio cobrado). Envío umbro.co.uk: 3,99 GBP,
+# gratis desde 60.
+# Además de "Boots", ~60 botas viven en "Sale"/"Boot Sale"/"Pertemba Clearance"/
+# "Footwear"/"Tocco"... (revisión 2026-11-18): se toman también por el título.
+UMBRO_BOOT_RE = re.compile(r'\b(fg|sg|ag|tf|ic|firm ground|soft ground|artificial grass|astro|football boots?|indoor court)\b', re.I)
+UMBRO_EU_RE = re.compile(r'\(EU\s*([\d.]+)\)')
+
+def mine_umbro():
+    fname, store = 'UMBRO_UK.csv', 'Umbro UK'
+    if not os.path.exists(f"{FEEDS}/{fname}"):
+        print(f'{store}: feed not found, skipped')
+        return
+    groups = {}
+    with open(f"{FEEDS}/{fname}", newline='', encoding='utf-8-sig', errors='replace') as f:
+        for row in csv.DictReader(f):
+            title = row.get('title') or ''
+            if not (row.get('product_type') == 'Boots' or UMBRO_BOOT_RE.search(title)) or re.search(r'\btrainer\b', title, re.I):
+                continue
+            if not classify(title) or not gs_price(row):
+                continue
+            groups.setdefault(row.get('item_group_id') or row.get('id'), []).append(row)
+    n = 0
+    for rows in groups.values():
+        rep = min(rows, key=gs_price)
+        prices = [gs_price(r) for r in rows]
+        eu = lambda r: (UMBRO_EU_RE.search(r.get('size') or '') or [None, ''])[1]
+        kids = any(re.match(r'\d+[CY]\b', r.get('size') or '') for r in rows)
+        # "Football Boot"/"Astro Boot" sobran en el nombre; el terreno ya va en groundType.
+        model = re.sub(r'\s+(Astro|(Football\s+)?(Court\s+)?Boots?)\b', '', re.sub(r'^Umbro\s+', '', rep['title'])).strip()
+        ground = 'AG' if re.search(r'artificial grass|\bastro\b|\b3g\b|\bag\b', rep['title'], re.I) else infer_ground(model)
+        entry = {
+            'store': store, 'brand': 'Umbro', 'model': model, 'groundType': ground,
+            'price': min(prices), 'shipping': 0 if min(prices) >= 60 else 3.99, 'currency': 'GBP',
+            'url': rep['aw_deep_link'], 'imageUrl': rep['image_link'],
+            'sizes': sorted({eu(r) for r in rows} - {''}, key=size_sort_key),
+            'eans': sorted({(r.get('gtin') or '').strip() for r in rows} - {''}),
+            'style': (rep.get('mpn') or '').strip(),
+        }
+        if max(prices) > min(prices):
+            entry['priceMax'] = max(prices)
+            entry['sizePrices'] = sorted(({'size': eu(r), 'price': p, 'url': r['aw_deep_link']}
+                                          for r, p in zip(rows, prices) if eu(r)), key=lambda sp: size_sort_key(sp['size']))
+        indoor = bool(re.search(r'\b(ic|indoor|court)\b', rep['title'], re.I))  # "Team Ic" = sala
+        results.append(tag(entry, *classify(rep['title'], kids=kids, indoor=indoor)))
+        n += 1
+    print(f'{store}:', n)
+
 # ---------- adidas Chile (Awin 79922, aprobado 2026-10-07) ----------
 # Feed en pesos chilenos (CLP), una fila por talla. Botas = categoría
 # "Zapatos de Fútbol/..." con custom_1 == "Adult" (las de niño son "Kids").
@@ -1285,6 +1337,7 @@ if __name__ == '__main__':
     # adidas CL / MX / CO: sus botas comparten código de estilo con adidas ES/PT.
     for store in ADIDAS_LATAM:
         mine_adidas_latam(*store)
+    mine_umbro()
 
     # Guardia real, un solo punto para las 13 tiendas de arriba (mismo
     # espíritu que EXCLUDE_KEYWORDS): sin foto la card sale como caja

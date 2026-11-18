@@ -495,6 +495,9 @@ export const storeShipping: Record<string, CountryCode[] | "all"> = {
   ],
   // Mismo reebok.eu en su tienda de Reino Unido (/en-gb, GBP, Awin 121516).
   "Reebok UK": ["GB"],
+  // umbro.co.uk (impact.com, programa 60189). Envía al resto del mundo, pero con aduana
+  // y 10-20 días hábiles que la oferta no refleja: solo Reino Unido.
+  "Umbro UK": ["GB"],
   // Sportsafe UK (Awin 118941): proveedor de colegios y clubes, solo Reino Unido.
   "Sportsafe UK": ["GB"],
   FootStoreES: [
