@@ -74,6 +74,10 @@ export default function GearListClient({
   }, []);
 
   const activeFilterCount = [brandFilter, sizeFilter, colourFilter].filter(Boolean).length;
+
+  // Hasta que llega el listado completo (useGearList) hay solo las primeras fichas.
+
+  const pending = total != null && items.length < total;
   function clearAllFilters() {
     setBrandFilter("");
     setSizeFilter("");
@@ -174,7 +178,7 @@ export default function GearListClient({
         </div>
       </div>
 
-      <p className="mt-4 text-xs text-[#675c44]">{t.search.resultsCountAll.replace("{n}", String(filtered.length))}</p>
+      <p className="mt-4 text-xs text-[#675c44]">{t.search.resultsCountAll.replace("{n}", String(pending && !query.trim() && !activeFilterCount ? total : filtered.length))}</p>
 
       <div className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4 xl:grid-cols-5">
         {filtered.slice(0, visible).map((item, i) => (
@@ -182,7 +186,7 @@ export default function GearListClient({
         ))}
       </div>
 
-      {visible < filtered.length && (
+      {(visible < filtered.length || pending) && (
         <div className="mt-6 flex justify-center">
           <button
             onClick={() => setVisible((v) => v + PAGE_SIZE)}
