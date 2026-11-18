@@ -445,6 +445,7 @@ TEAM_PATTERNS = {
     "coventry": r"\bcoventry\b",
     "portsmouth": r"\bportsmouth\b",
     "wrexham": r"\bwrexham\b",
+    "hearts": r"\bheart of midlothian\b|\bhearts\b(?! of oak)",
     "lorient": r"\blorient\b",
     "bastia": r"\bbastia\b",
     "dynamokyiv": r"d[iy]namo (de )?(kiev|kyiv|kiew)",

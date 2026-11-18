@@ -469,6 +469,7 @@ export type TeamKey =
   | "coventry"
   | "portsmouth"
   | "wrexham"
+  | "hearts"
   | "lorient"
   | "bastia"
   | "dynamokyiv"
