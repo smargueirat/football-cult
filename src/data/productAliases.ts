@@ -10,6 +10,14 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-18: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "fiorentina-retro-2019-away": "fiorentina-retro-201920-away",
+  "lazio-retro-2002-away": "lazio-retro-200203-away",
+  "atleticomadrid-retro-2019-away": "atleticomadrid-retro-201920-away",
+  "torino-retro-1997-home": "torino-retro-199798-home",
+  "intermilan-retro-2003-home": "intermilan-retro-200304-home",
+  "acmilan-retro-2023-home": "acmilan-retro-202223-home",
   // 2026-11-17: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "grecia-retro-2014-away": "grecia-retro-201415-away",
@@ -518,7 +526,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "frankfurt-retro-199596-home": "frankfurt-retro-1998-home",
   "suiza-retro-2008-home": "suiza-retro-200810-home",
   "georgia-retro-2022-home": "georgia-retro-202324-home",
-  "torino-retro-199899-home": "torino-retro-1997-home",
+  "torino-retro-199899-home": "torino-retro-199798-home",
   "munich1860-retro-200001-home": "munich1860-retro-1995-home",
   "manutd-retro-201516-third": "manutd-third-kids",
   "gremio-retro-2017-home": "gremio-retro-202021-home",

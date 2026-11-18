@@ -33,6 +33,7 @@
 "acmilan-retro-201415-home",
 "acmilan-retro-201516-away",
 "acmilan-retro-201516-home",
+"acmilan-retro-201617-home",
 "acmilan-retro-201718-away",
 "acmilan-retro-201718-home",
 "acmilan-retro-2018-away",
@@ -48,10 +49,12 @@
 "acmilan-retro-2022-home",
 "acmilan-retro-202223-home",
 "acmilan-retro-202223-third",
+"acmilan-retro-2023-home",
 "acmilan-retro-2023-third",
 "acmilan-retro-202324-away-mens",
 "acmilan-retro-202324-third",
 "acmilan-retro-2024-away",
+"acmilan-retro-2024-home",
 "acmilan-retro-2024-third",
 "acmilan-retro-202425-home",
 "aekathens-retro-199394-home",
@@ -338,6 +341,7 @@
 "atleticomadrid-retro-2019-away",
 "atleticomadrid-retro-2019-home",
 "atleticomadrid-retro-2019-third",
+"atleticomadrid-retro-201920-away",
 "atleticomadrid-retro-201920-third",
 "atleticomadrid-retro-2020-third",
 "atleticomadrid-retro-202021-away",
@@ -653,6 +657,7 @@
 "bologna-retro-2020-home",
 "bologna-retro-202021-away",
 "bologna-retro-2024-away",
+"bologna-retro-202425-home",
 "bologna-retro-202425-third",
 "bosnia-retro-2014-away",
 "bosnia-retro-2016-home",
@@ -668,6 +673,7 @@
 "bournemouth-retro-201617-home",
 "bournemouth-retro-201617-third",
 "bournemouth-retro-201718-home",
+"bournemouth-retro-201920-away",
 "bournemouth-retro-202021-home",
 "bournemouth-retro-202021-third",
 "bournemouth-retro-202122-away",
@@ -1279,6 +1285,7 @@
 "crystalpalace-retro-199192-away",
 "crystalpalace-retro-2000-home",
 "crystalpalace-retro-201314-away",
+"crystalpalace-retro-2016-home",
 "crystalpalace-retro-201617-home",
 "crystalpalace-retro-201718-away",
 "crystalpalace-retro-2018-home",
@@ -1549,6 +1556,7 @@
 "everton-retro-200910-away",
 "everton-retro-200910-home",
 "everton-retro-2010-away",
+"everton-retro-201011-away",
 "everton-retro-201112-away",
 "everton-retro-201112-third",
 "everton-retro-2012-home",
@@ -1663,6 +1671,7 @@
 "fiorentina-retro-201516-third",
 "fiorentina-retro-201617-third",
 "fiorentina-retro-2019-away",
+"fiorentina-retro-201920-away",
 "fiorentina-retro-202021-home",
 "fiorentina-retro-202021-third",
 "fiorentina-retro-202122-home",
@@ -2198,6 +2207,7 @@
 "intermilan-retro-200203-away",
 "intermilan-retro-2003-away",
 "intermilan-retro-2003-home",
+"intermilan-retro-200304-home",
 "intermilan-retro-200405-away",
 "intermilan-retro-200405-third",
 "intermilan-retro-200506-away",
@@ -2644,8 +2654,10 @@
 "leeds-retro-201112-home",
 "leeds-retro-2012-away",
 "leeds-retro-201213-home",
+"leeds-retro-2013-away",
 "leeds-retro-2013-third",
 "leeds-retro-201314-away",
+"leeds-retro-201314-home",
 "leeds-retro-201415-away",
 "leeds-retro-201415-home",
 "leeds-retro-201516-home",
@@ -2770,6 +2782,7 @@
 "liverpool-retro-200608-home",
 "liverpool-retro-200708-away",
 "liverpool-retro-200708-home",
+"liverpool-retro-200809-away",
 "liverpool-retro-200910-away",
 "liverpool-retro-200910-third",
 "liverpool-retro-2010-home",
@@ -2777,6 +2790,7 @@
 "liverpool-retro-201011-home",
 "liverpool-retro-201112-away",
 "liverpool-retro-201314-home",
+"liverpool-retro-201415-home",
 "liverpool-retro-2016-away",
 "liverpool-retro-201617-home",
 "liverpool-retro-201718-home",
@@ -2899,6 +2913,7 @@
 "manutd-retro-200001-away",
 "manutd-retro-200002-home",
 "manutd-retro-200204-home",
+"manutd-retro-2003-third",
 "manutd-retro-200506-home",
 "manutd-retro-200607-away",
 "manutd-retro-200607-home",
@@ -3261,6 +3276,7 @@
 "nottinghamforest-retro-2023-third",
 "nottinghamforest-retro-202324-home",
 "nottinghamforest-retro-202324-third",
+"nottinghamforest-retro-202425-home",
 "nuevazelanda-retro-2003-home",
 "nuevazelanda-retro-2014-away",
 "nuevazelanda-retro-2018-home",
@@ -3627,6 +3643,7 @@
 "psg-retro-201213-home",
 "psg-retro-2014-away",
 "psg-retro-201415-home",
+"psg-retro-201415-third",
 "psg-retro-2015-home",
 "psg-retro-201516-away",
 "psg-retro-201617-home",
@@ -4146,6 +4163,7 @@
 "sevilla-retro-201920-home",
 "sevilla-retro-201920-third",
 "sevilla-retro-2021-home",
+"sevilla-retro-202122-away",
 "sevilla-retro-202122-home",
 "sevilla-retro-2022-home",
 "sevilla-retro-202223-away",
@@ -4383,6 +4401,7 @@
 "sunderland-retro-201617-home",
 "sunderland-retro-201718-away",
 "sunderland-retro-201718-home",
+"sunderland-retro-201920-away",
 "sunderland-retro-2020-away",
 "sunderland-retro-202021-away",
 "sunderland-retro-2024-away",
@@ -4453,6 +4472,7 @@
 "torino-retro-199394-home",
 "torino-retro-199697-home",
 "torino-retro-1997-home",
+"torino-retro-199798-home",
 "torino-retro-199899-home",
 "torino-retro-200506-home",
 "torino-retro-2017-third",
@@ -4469,6 +4489,7 @@
 "tottenham-retro-199899-away",
 "tottenham-retro-1999-home",
 "tottenham-retro-200203-home",
+"tottenham-retro-200203-third",
 "tottenham-retro-200506-home",
 "tottenham-retro-2006-away",
 "tottenham-retro-201415-away",
@@ -4491,11 +4512,14 @@
 "tottenham-retro-2020-home",
 "tottenham-retro-202021-home",
 "tottenham-retro-202021-third",
+"tottenham-retro-2021-third",
+"tottenham-retro-202122-away",
 "tottenham-retro-202122-home",
 "tottenham-retro-202122-third",
 "tottenham-retro-202223-home",
 "tottenham-retro-2023-away",
 "tottenham-retro-2024-home",
+"tottenham-retro-202425-third",
 "tottenham-retro-202425-third-mens",
 "toulouse-retro-2012-away",
 "toulouse-retro-201213-away",
@@ -4607,6 +4631,7 @@
 "valencia-retro-199900-home",
 "valencia-retro-200001-home",
 "valencia-retro-2001-away",
+"valencia-retro-200203-away",
 "valencia-retro-200405-home",
 "valencia-retro-2005-away",
 "valencia-retro-2010-third",
@@ -4803,6 +4828,7 @@
 "westham-retro-202324-home",
 "westham-retro-202324-third",
 "westham-retro-202425-away",
+"westham-retro-202425-home",
 "westham-retro-202425-third",
 "wolfsburg-retro-199798-home",
 "wolfsburg-retro-1998-home",
@@ -24064,6 +24090,177 @@
 "L"
 ],
 "shipping": 2.94
+},
+"bournemouth-retro-201920-away": {
+"title": "AFC Bournemouth 2019/20 Away Shirt, Small, New with tags",
+"price": 57.9,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/146848357953?_skw=Bournemouth+2019+away+shirt&hash=item2230d81e41%3Ag%3AAYUAAeSw%7Ez1oyv2p&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|146848357953|0",
+"image": "https://i.ebayimg.com/images/g/AYUAAeSw~z1oyv2p/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 2.94
+},
+"liverpool-retro-200809-away": {
+"title": "Liverpool European Away Grey Shirt 2008/09 23  Carragher M BNWT ADIDAS",
+"price": 104.7,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/198559078128?_skw=Liverpool+2008+away+shirt&hash=item2e3b0b16f0%3Ag%3AnLgAAeSwk8ZqZOWf&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|198559078128|0",
+"image": "https://i.ebayimg.com/images/g/nLgAAeSwk8ZqZOWf/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 3.89
+},
+"liverpool-retro-201415-home": {
+"title": "Liverpool Home Shirt 2014-15 (M) very  good condition ",
+"price": 16.61,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/335087889043?_skw=Liverpool+2014+home+shirt&hash=item4e04cb6a93%3Ag%3AggwAAOSwmoplORpN&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|335087889043|0",
+"image": "https://i.ebayimg.com/images/g/ggwAAOSwmoplORpN/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 3.38
+},
+"acmilan-retro-2023-home": {
+"title": "AC Milan 2023 24 Home Football Shirt XL BNWT Puma 770383 01 Soccer Jersey",
+"price": 34.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/278360560871?_skw=AC+Milan+2023+home+shirt&hash=item40cf9514e7%3Ag%3AzykAAeSwsx9qm8ds&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|278360560871|0",
+"image": "https://i.ebayimg.com/images/g/zykAAeSwsx9qm8ds/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 3.49
+},
+"intermilan-retro-200304-home": {
+"title": "BNWT Original Nike Inter Milan 2003/2004 Home Shirt Mens Extra Large XL",
+"price": 235.0,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/920103832798?_skw=Inter+Milan+2003+home+shirt&hash=itemd63a764cde%3Ag%3AuK4AAeSwP9hpmPRz&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|920103832798|0",
+"image": "https://i.ebayimg.com/images/g/uK4AAeSwP9hpmPRz/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 3.99
+},
+"atleticomadrid-retro-201920-away": {
+"title": "Nike Atletico Madrid Away 3rd Shirt Blue 2019/20 Brand New With Tags BNWT Large ",
+"price": 63.1,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/226663054294?_skw=Atl%C3%A9tico+Madrid+2019+away+shirt&hash=item34c62bbbd6%3Ag%3AzEkAAeSwWSJn4Yrt&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|226663054294|0",
+"image": "https://i.ebayimg.com/images/g/zEkAAeSwWSJn4Yrt/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 3.38
+},
+"everton-retro-201011-away": {
+"title": "EVERTON FC rare NEW, TAGS GENUINE 2010/11 Away Shirt, XXXL adults",
+"price": 63.09,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/366627895718?_skw=Everton+2010+away+shirt&hash=item555cb9b9a6%3Ag%3ApbwAAeSwzbZqjZeg&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|366627895718|0",
+"image": "https://i.ebayimg.com/images/g/pbwAAeSwzbZqjZeg/s-l1600.jpg",
+"sizes": [
+"3XL"
+],
+"shipping": 2.94
+},
+"leeds-retro-201314-home": {
+"title": "Leeds United FC 2013/14 Home Football Shirt - Macron White LUFC - Size M - BNWT",
+"price": 57.9,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/226442433814?_skw=Leeds+United+2013+home+shirt&hash=item34b9055516%3Ag%3AtCkAAOSwhP5nMON3&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|226442433814|0",
+"image": "https://i.ebayimg.com/images/g/tCkAAOSwhP5nMON3/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 3.38
+},
+"nottinghamforest-retro-202425-home": {
+"title": "Nottingham Forest 2024/25 Home Shirt – XXL",
+"price": 17.22,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/237151175438?_skw=Nottingham+Forest+2024+home+shirt&hash=item37374fc30e%3Ag%3AMq4AAeSwbUdqrTfx&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7l5hDUpmxuQrS%2FD6SlzngGxJ4Cl06PhT3DNdB5HS7fYVNry1%2BVsxcnIIk1KdNbo1jfO6QsiM8eDAXWlAugviIbJ9U985jU4EaReuYW0Er%2By8MhImjmWQ4QbuBzkWvqLY2b1Jq%2B0QvRxrEvZqQabXLpcSWOMmpkIW5faC5aRXxCAuVaTRFKTlQQefy6ZFCDXh7q6pKiSEUDcqR8IeubGSQ8mE0JLvoH3pBoMsoO2AO4Et99WP7dZe4k%2BNq2FlSGWd1w8MnGT5NvbTBkuhTs2lbyQPUinuX2qimuvfaMv6CW%2BaGcKQbwy5FE6Ahuc4DHM350%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|237151175438|0",
+"image": "https://i.ebayimg.com/images/g/Mq4AAeSwbUdqrTfx/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 2.94
+},
+"sunderland-retro-201920-away": {
+"title": "Sunderland AFC 2019/20 Adidas Away Shirt, 2XL  BNWT",
+"price": 21.5,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/168256856073?_skw=Sunderland+2019+away+shirt&hash=item272ce3e009%3Ag%3A4g0AAeSwy6ZpwYd0&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|168256856073|0",
+"image": "https://i.ebayimg.com/images/g/4g0AAeSwy6ZpwYd0/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 2.94
+},
+"tottenham-retro-202122-away": {
+"title": "Nike Tottenham Hotspur Away 2021/22 Shirt - UK Large - Brand new with tags ",
+"price": 97.41,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/188852591182?_skw=Tottenham+Hotspur+2021+away+shirt&hash=item2bf87dda4e%3Ag%3AcJ8AAeSwjU9qkV5F&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|188852591182|0",
+"image": "https://i.ebayimg.com/images/g/cJ8AAeSwjU9qkV5F/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 3.38
+},
+"tottenham-retro-2021-third": {
+"title": "Nike Tottenham Hotspur’s Spurs 2021 Away Third Player Issue Spec Shirt Bnwt L",
+"price": 129.0,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/397758861897?_skw=Tottenham+Hotspur+2021+third+shirt&hash=item5c9c469249%3Ag%3AjYsAAeSwA4Fpw8Bu&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|397758861897|0",
+"image": "https://i.ebayimg.com/images/g/jYsAAeSwA4Fpw8Bu/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 3.92
+},
+"tottenham-retro-202425-third": {
+"title": "Tottenham Hotspur Spurs Nike 2024/2025 Third 3rd Shirt Jersey XXL - New",
+"price": 104.69,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/307048788823?_skw=Tottenham+Hotspur+2024+third+shirt&hash=item477d88b357%3Ag%3APSEAAeSwDq9qTaU4&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|307048788823|0",
+"image": "https://i.ebayimg.com/images/g/PSEAAeSwDq9qTaU4/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 3.89
+},
+"westham-retro-202425-home": {
+"title": "West Ham United Home Shirt 2024/2025 Umbro Claret Blue Football Jersey Mens L",
+"price": 27.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/178508586506?_skw=West+Ham+United+2024+home+shirt&hash=item298ff0de0a%3Ag%3AftcAAeSw3TxqrblU&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7lJWW7%2FqEL9PjuSglpM0y5tXhvgbGP6OsJ91Px5%2FGCzIZFz306xE1kaKApWEFtOgvRPM3%2BfDZclSTkSvZ9E9N7tYkRyYA1APre6lnNW59h3L%2FJfKLO9kh1Q3BL%2FcKB%2Bo93SwW2uZGCbTFgc4geYPVLjTpDur6sQNx69EGCxwVig7yHuFD8m8j4wttpYJ8Qsq2nb0Mv29i6C1RfuKAR0JtfbNgK4Jculm%2F1IKLsxGgJuuoWVF0NFXxB%2B%2B0Yk486VomUZFJhXCT5ieeF4ev4cg4B03coPZ4HM3Oj90bCzticE0GUrU%2FTBE5185ZOjCkEw8sQ%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|178508586506|0",
+"image": "https://i.ebayimg.com/images/g/ftcAAeSw3TxqrblU/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 3.95
 }
 }
 }
