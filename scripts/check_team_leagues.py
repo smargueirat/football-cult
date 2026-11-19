@@ -26,6 +26,10 @@ KNOWN_WITHOUT_LEAGUE = {
     # catálogo, así que crear "liga-rusia" dejaría un /pais/rusia vacío:
     # no compensa por un producto (2026-09-24).
     'rubinkazan',
+    # Club de Ghana: no hay liga ghanesa en LEAGUES y crearla dejaría un
+    # /pais/ghana con un solo club. Antes figuraba mal en la liga escocesa
+    # (corregido 2026-11-18).
+    'heartsofoak',
 }
 
 
