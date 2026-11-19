@@ -9,7 +9,7 @@ import RopaPageClient from "./RopaPageClient";
 import { apparelProducts } from "@/data/apparel";
 import { gearListProps, slimGear } from "@/lib/gearList";
 
-const LIST = gearListProps(slimGear(apparelProducts), "ropa");
+const LIST = gearListProps(slimGear(apparelProducts, "ropa"), "ropa");
 
 const META: Record<Locale, { title: string; description: string }> = {
   es: {

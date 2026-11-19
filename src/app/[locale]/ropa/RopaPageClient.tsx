@@ -18,6 +18,7 @@ export default function RopaPageClient({ list }: { list: GearListProps }) {
       typeLabel={(ty) => t.ropa.types[ty as keyof typeof t.ropa.types] ?? ty}
       typeFilterLabel={t.ropa.typeLabel}
       basePath="ropa"
+      relevance
     />
   );
 }
