@@ -65,7 +65,7 @@ const COLOR_ORDER = [
 
 function classify(h, s, l) {
   if (l > 0.92) return "white";
-  if (l < 0.13) return "black";
+  if (l < 0.13 || (l < 0.3 && s < 0.2)) return "black"; // cuero negro con luz de estudio no baja de 0.13
   if (s < 0.15) return "gray";
   if (h >= 185 && h < 255) return l < 0.32 ? "navy" : "blue";
   if (h < 15 || h >= 345) return "red";
@@ -128,6 +128,7 @@ async function dominantColorForImage(url) {
   let sumL = 0;
   let sumS = 0;
   let fgN = 0;
+  const tone = [0, 0, 0]; // píxeles oscuros / medios / claros
 
   const BG_DIST = 55;
   for (let i = 0; i < data.length; i += info.channels) {
@@ -151,16 +152,20 @@ async function dominantColorForImage(url) {
     }
     sumL += l;
     sumS += s;
+    tone[l < 0.35 ? 0 : l > 0.65 ? 2 : 1]++;
     fgN++;
     counts[classify(hh, s, l)]++;
   }
 
   if (fgN > 0) {
-    const avgL = sumL / fgN;
     const avgS = sumS / fgN;
     if (avgS < 0.18) {
-      const achromatic = avgL > 0.68 ? "white" : avgL < 0.22 ? "black" : "gray";
-      return { color: achromatic, achromaticOverride: true };
+      // Mayoría de tono, no promedio: una bota negra con swoosh blanco
+      // promediaba a "gray" (el 43 % del catálogo salía gris, 2026-11-19).
+      // Con >= 25 % de oscuro es negra: las fotos de dos vistas (adidas)
+      // suman la suela clara y daban "white" a botas negras.
+      const top = tone[0] >= 0.25 * fgN ? 0 : tone.indexOf(Math.max(...tone));
+      return { color: ["black", "gray", "white"][top], achromaticOverride: true, tone: tone.map((t) => (t / fgN).toFixed(2)).join("/") };
     }
   }
 
@@ -211,7 +216,12 @@ async function mapWithConcurrency(items, limit, fn) {
 async function main() {
   const pairs = JSON.parse(fs.readFileSync(PAIRS_PATH, "utf8"));
   const existing = fs.existsSync(OUT_PATH) ? JSON.parse(fs.readFileSync(OUT_PATH, "utf8")) : {};
-  const missing = pairs.filter((p) => !(p.id in existing));
+  // --recheck gray: reclasifica los ids que hoy tienen ese color. --dry: no escribe. --limit N.
+  const arg = (k) => { const i = process.argv.indexOf(k); return i > 0 ? process.argv[i + 1] : undefined; };
+  const recheck = arg("--recheck");
+  const dry = process.argv.includes("--dry");
+  let missing = pairs.filter((p) => (recheck ? existing[p.id] === recheck : !(p.id in existing)));
+  if (arg("--limit")) missing = missing.slice(0, Number(arg("--limit")));
   console.error(`boots with an image: ${pairs.length}, already classified: ${pairs.length - missing.length}, new to fetch: ${missing.length}`);
 
   if (missing.length === 0) {
@@ -233,9 +243,11 @@ async function main() {
       errors++;
       continue;
     }
+    if (dry) console.log(`${r.id}\t${existing[r.id] ?? "-"}\t${r.color}\t${r.tone ?? ""}`);
     existing[r.id] = r.color;
   }
   console.error(`ok: ${missing.length - errors}, errors: ${errors}`);
+  if (dry) return;
   fs.writeFileSync(OUT_PATH, JSON.stringify(existing, null, 0));
   console.error(`wrote ${OUT_PATH}`);
 }
