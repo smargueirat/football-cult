@@ -12,6 +12,81 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    "/itm/198559078128",  # 2026-11-19 removed: ebay_gb_retro review: player print / player-issue / used
+    "/itm/397758861897",  # 2026-11-19 removed: ebay_gb_retro review: player print / player-issue / used
+    "/itm/287392185143",  # 2026-11-19 removed: ebay_gb_retro review: player print / player-issue / used
+    "/itm/396846020951",  # 2026-11-19 removed: ebay_gb_retro review: player print / player-issue / used
+    "/itm/236039684091",  # 2026-11-19 removed: eBay IT retro review: back print / long sleeve
+    "/itm/318902027125",  # 2026-11-19 removed: eBay IT retro review: back print / long sleeve
+    "/itm/187656864791",  # 2026-11-19 removed: eBay IT retro review: back print / long sleeve
+    "/itm/146452305759",  # 2026-11-19 removed: eBay IT retro review: back print / long sleeve
+    "/itm/820358411178",  # 2026-11-19 removed: eBay IT current: player print #9 / 289 EUR outlier
+    "/itm/366778640742",  # 2026-11-19 removed: eBay IT current: player print #9 / 289 EUR outlier
+    "/itm/267839969010",  # 2026-11-19 removed: eBay US current: $28.98 template / player print
+    "/itm/840094410417",  # 2026-11-19 removed: eBay retro offer review: back print / long sleeve / render / implausible price
+    "/itm/960071637253",  # 2026-11-19 removed: eBay retro offer review: back print / long sleeve / render / implausible price
+    "/itm/267288780789",  # 2026-11-19 removed: eBay retro offer review: back print / long sleeve / render / implausible price
+    "/itm/860117423502",  # 2026-11-19 removed: eBay retro offer review: back print / long sleeve / render / implausible price
+    "/itm/147377532161",  # 2026-11-19 removed: eBay retro offer review: back print / long sleeve / render / implausible price
+    "/itm/276533090439",  # 2026-11-19 removed: eBay retro offer review: back print / long sleeve / render / implausible price
+    "/itm/277441090153",  # 2026-11-19 removed: eBay retro offer review: back print / long sleeve / render / implausible price
+    "/itm/168799735101",  # 2026-11-19 removed: eBay retro offer review: back print / long sleeve / render / implausible price
+    "/itm/800400499116",  # 2026-11-19 removed: eBay retro offer review: back print / long sleeve / render / implausible price
+    "/itm/137580014525",  # 2026-11-19 removed: eBay US current: $28.98 template / player print
+    "/itm/168821544643",  # 2026-11-19 removed: eBay US current: $28.98 template / player print
+    "/itm/188714500821",  # 2026-11-19 removed: eBay ES kids: Roma away 2025/26 filed on 26/27 kids
+    # --- Daily pass 2026-11-19 ---
+    "/itm/236024992735",  # 2026-11-19 removed: eBay retro title review (koln|home|2023/24: outlier/template/player/used)
+    "/itm/316620071597",  # 2026-11-19 removed: eBay retro title review (koln|home|1995/96: outlier/template/player/used)
+    "/itm/227578683002",  # 2026-11-19 removed: eBay retro title review (hamburg|away|2024/25: outlier/template/player/used)
+    "/itm/318378290379",  # 2026-11-19 removed: eBay retro title review (fiorentina|away|1992/93: outlier/template/player/used)
+    "/itm/377378119575",  # 2026-11-19 removed: eBay retro title review (torino|home|1998/99: outlier/template/player/used)
+    "/itm/147686484940",  # 2026-11-19 removed: eBay retro title review (rbleipzig|home|2019/20: outlier/template/player/used)
+    "/itm/174417300088",  # 2026-11-19 removed: eBay retro title review (leverkusen|home|2020/21: outlier/template/player/used)
+    "/itm/175343210412",  # 2026-11-19 removed: eBay retro title review (leverkusen|home|2004/05: outlier/template/player/used)
+    "/itm/185490932794",  # 2026-11-19 removed: eBay retro title review (leverkusen|home|2006/07: outlier/template/player/used)
+    "/itm/184098555091",  # 2026-11-19 removed: eBay retro title review (leverkusen|away|2019/20: outlier/template/player/used)
+    "/itm/175343225832",  # 2026-11-19 removed: eBay retro title review (leverkusen|away|2007/08: outlier/template/player/used)
+    "/itm/176508463350",  # 2026-11-19 removed: eBay retro title review (frankfurt|home|2021/22: outlier/template/player/used)
+    "/itm/174774311025",  # 2026-11-19 removed: eBay retro title review (frankfurt|home|2020/21: outlier/template/player/used)
+    "/itm/198712568879",  # 2026-11-19 removed: eBay retro title review (gladbach|home|1998/99: outlier/template/player/used)
+    "/itm/185490899172",  # 2026-11-19 removed: eBay retro title review (gladbach|away|2011/12: outlier/template/player/used)
+    "/itm/175343201443",  # 2026-11-19 removed: eBay retro title review (gladbach|away|2007/08: outlier/template/player/used)
+    "/itm/185490908996",  # 2026-11-19 removed: eBay retro title review (gladbach|away|2009/10: outlier/template/player/used)
+    "/itm/184702117059",  # 2026-11-19 removed: eBay retro title review (wolfsburg|home|2010/11: outlier/template/player/used)
+    "/itm/317016583505",  # 2026-11-19 removed: eBay retro title review (marseille|home|2009: outlier/template/player/used)
+    "/itm/137187684537",  # 2026-11-19 removed: eBay retro photo/title review (realoviedo|home|2022/23)
+    "/itm/800937043379",  # 2026-11-19 removed: eBay retro photo/title review (intermilan|home|2016/27)
+    "/itm/820127901651",  # 2026-11-19 removed: eBay retro photo/title review (intermilan|away|2003)
+    "/itm/117465149739",  # 2026-11-19 removed: eBay retro photo/title review (acmilan|away|2002/03)
+    "/itm/168655514585",  # 2026-11-19 removed: eBay retro photo/title review (acmilan|away|1996/97)
+    "/itm/137874476494",  # 2026-11-19 removed: eBay retro photo/title review (napoli|away|1991/92)
+    "/itm/137764291899",  # 2026-11-19 removed: eBay retro photo/title review (napoli|away|1995/96)
+    "/itm/315849509819",  # 2026-11-19 removed: eBay retro photo/title review (roma|third|2003/04)
+    "/itm/363293026934",  # 2026-11-19 removed: eBay retro photo/title review (lazio|home|2016)
+    "/itm/274706854609",  # 2026-11-19 removed: eBay retro photo/title review (lazio|home|2014)
+    "/itm/274706921496",  # 2026-11-19 removed: eBay retro photo/title review (lazio|third|2013)
+    "/itm/236095005074",  # 2026-11-19 removed: eBay retro photo/title review (udinese|third|2006/07)
+    "/itm/188099319522",  # 2026-11-19 removed: eBay retro photo/title review (dortmund|third|2015/16)
+    "/itm/287332330576",  # 2026-11-19 removed: eBay retro photo/title review (dortmund|third|2023/34)
+    "/itm/377627744943",  # 2026-11-19 removed: eBay retro photo/title review (leverkusen|home|2000)
+    "/itm/298711693020",  # 2026-11-19 removed: eBay retro photo/title review (gladbach|home|2022/23)
+    "/itm/405688710960",  # 2026-11-19 removed: eBay retro photo/title review (werderbremen|home|2019)
+    "/itm/127121746465",  # 2026-11-19 removed: eBay retro photo/title review (werderbremen|third|2014/15)
+    "/itm/820246322270",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/318715128791",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/900090645913",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/267419200704",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/168867368083",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/820282538634",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/377598072716",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/366776661975",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/377598072765",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/800706653214",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/336860467128",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/820282538630",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/377598072764",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
+    "/itm/366798483883",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
     # --- Daily pass 2026-11-16 ---
     "chivas-womens-third-away-soccer-jersey-2026-27",  # 2026-11-16 FansJerseyHub women chivas|third: AI-generated render
     "womens-monterrey-home-soccer-jersey-2026-27",  # 2026-11-16 FansJerseyHub women monterrey|home: AI-generated render

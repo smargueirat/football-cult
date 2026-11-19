@@ -11,6 +11,7 @@
 "acmilan-retro-199899-third",
 "acmilan-retro-199900-away",
 "acmilan-retro-199900-third",
+"acmilan-retro-200001-third",
 "acmilan-retro-200203-home",
 "acmilan-retro-2003-third",
 "acmilan-retro-200304-home",
@@ -654,6 +655,7 @@
 "bologna-retro-200001-home",
 "bologna-retro-2013-away",
 "bologna-retro-201314-away",
+"bologna-retro-2015-third",
 "bologna-retro-2020-home",
 "bologna-retro-202021-away",
 "bologna-retro-2024-away",
@@ -1656,6 +1658,7 @@
 "finlandia-retro-202022-away",
 "finlandia-retro-202223-home",
 "fiorentina-retro-198990-home",
+"fiorentina-retro-199192-away",
 "fiorentina-retro-1992-away",
 "fiorentina-retro-199293-away",
 "fiorentina-retro-199293-home",
@@ -1878,6 +1881,7 @@
 "georgia-retro-202425-home",
 "getafe-retro-200809-third",
 "getafe-retro-2024-away",
+"getafe-retro-202425-away",
 "ghana-retro-200809-home",
 "ghana-retro-2010-home",
 "ghana-retro-2012-home",
@@ -1909,6 +1913,7 @@
 "gladbach-retro-2010-away",
 "gladbach-retro-201213-away",
 "gladbach-retro-201213-home",
+"gladbach-retro-201516-away",
 "gladbach-retro-201516-home",
 "gladbach-retro-201617-home",
 "gladbach-retro-2017-home",
@@ -2248,6 +2253,7 @@
 "intermilan-retro-202122-third",
 "intermilan-retro-2022-home",
 "intermilan-retro-202223-away",
+"intermilan-retro-2023-home",
 "intermilan-retro-202323-away",
 "intermilan-retro-202323-third",
 "internacional-retro-202021-third",
@@ -2518,6 +2524,7 @@
 "koln-retro-1978-home",
 "koln-retro-1982-home",
 "koln-retro-198283-home",
+"koln-retro-198586-home",
 "koln-retro-1990-home",
 "koln-retro-1992-away",
 "koln-retro-1995-away",
@@ -2526,6 +2533,7 @@
 "koln-retro-2005-home",
 "koln-retro-2015-home",
 "koln-retro-2016-home",
+"koln-retro-201617-home",
 "koln-retro-201819-home",
 "koln-retro-202021-third",
 "koln-retro-2023-home",
@@ -2611,6 +2619,7 @@
 "lazio-retro-2008-away",
 "lazio-retro-200809-home",
 "lazio-retro-200910-home",
+"lazio-retro-2010-third",
 "lazio-retro-201314-away",
 "lazio-retro-201314-third",
 "lazio-retro-201415-away",
@@ -2626,6 +2635,7 @@
 "lazio-retro-201920-home",
 "lazio-retro-202021-away",
 "lazio-retro-202021-home",
+"lazio-retro-2021-away",
 "lazio-retro-202122-third",
 "lazio-retro-202223-away",
 "lazio-retro-202324-home",
@@ -2742,6 +2752,7 @@
 "leverkusen-retro-2016-third",
 "leverkusen-retro-201617-away",
 "leverkusen-retro-201617-home",
+"leverkusen-retro-201617-third",
 "leverkusen-retro-202122-home",
 "leverkusen-retro-2022-home",
 "leverkusen-retro-2022-third",
@@ -2817,9 +2828,11 @@
 "lyon-retro-200809-third",
 "lyon-retro-201617-home",
 "lyon-retro-2019-home",
+"lyon-retro-201920-home",
 "lyon-retro-202021-away",
 "lyon-retro-202021-home",
 "lyon-retro-202223-home",
+"lyon-retro-2023-away",
 "lyon-retro-202324-away",
 "lyon-retro-202324-home",
 "lyon-retro-202425-away",
@@ -2977,6 +2990,7 @@
 "marseille-retro-201112-third",
 "marseille-retro-2013-third",
 "marseille-retro-201314-home",
+"marseille-retro-201314-third",
 "marseille-retro-201516-away",
 "marseille-retro-201516-home",
 "marseille-retro-2016-away",
@@ -2985,7 +2999,10 @@
 "marseille-retro-2018-third",
 "marseille-retro-201819-away",
 "marseille-retro-201819-home",
+"marseille-retro-201819-third",
 "marseille-retro-2019-third",
+"marseille-retro-201920-third",
+"marseille-retro-2020-away",
 "marseille-retro-202021-away",
 "marseille-retro-202021-home",
 "marseille-retro-202021-third",
@@ -3113,6 +3130,8 @@
 "napoli-retro-199091-home",
 "napoli-retro-1991-away",
 "napoli-retro-1991-third",
+"napoli-retro-199192-third",
+"napoli-retro-199495-third",
 "napoli-retro-199596-away",
 "napoli-retro-199596-home",
 "napoli-retro-1996-away",
@@ -3131,11 +3150,13 @@
 "napoli-retro-200910-away",
 "napoli-retro-201011-home",
 "napoli-retro-2011-home",
+"napoli-retro-201112-away",
 "napoli-retro-201314-away",
 "napoli-retro-201415-away",
 "napoli-retro-201415-home",
 "napoli-retro-201415-third",
 "napoli-retro-201516-third",
+"napoli-retro-201617-third",
 "napoli-retro-201920-away",
 "napoli-retro-201920-home",
 "napoli-retro-202021-home",
@@ -3829,6 +3850,7 @@
 "realbetis-retro-202324-away",
 "realbetis-retro-202324-third",
 "realbetis-retro-202425-away",
+"realbetis-retro-202425-home",
 "realbetis-retro-202425-third",
 "realmadrid-retro-1970-third",
 "realmadrid-retro-1994-home",
@@ -3954,6 +3976,7 @@
 "roma-retro-1993-home",
 "roma-retro-199798-home",
 "roma-retro-200001-home",
+"roma-retro-200001-third",
 "roma-retro-2001-home",
 "roma-retro-200102-third",
 "roma-retro-200304-away",
@@ -3964,6 +3987,7 @@
 "roma-retro-2011-away",
 "roma-retro-201112-home",
 "roma-retro-201112-third",
+"roma-retro-201213-home",
 "roma-retro-201314-home",
 "roma-retro-2014-third",
 "roma-retro-201415-away",
@@ -4479,6 +4503,7 @@
 "torino-retro-202021-away",
 "torino-retro-202021-home",
 "torino-retro-202122-away",
+"torino-retro-202324-third",
 "tottenham-retro-1980-away",
 "tottenham-retro-1986-third",
 "tottenham-retro-198891-away",
@@ -4599,6 +4624,7 @@
 "udinese-retro-202021-away",
 "udinese-retro-202021-third",
 "udinese-retro-202223-home",
+"udinese-retro-202324-away",
 "udinese-retro-202324-third",
 "udinese-retro-2024-away",
 "udinese-retro-202425-away",
@@ -4606,6 +4632,7 @@
 "unionberlin-retro-2010-third",
 "unionberlin-retro-202021-home",
 "unionberlin-retro-202122-home",
+"unionberlin-retro-2023-home",
 "unionberlin-retro-202324-home",
 "unionberlin-retro-202425-away",
 "unionberlin-retro-202425-home",
@@ -4733,6 +4760,7 @@
 "werderbremen-retro-2004-away",
 "werderbremen-retro-200405-home",
 "werderbremen-retro-2007-away",
+"werderbremen-retro-200708-away",
 "werderbremen-retro-200708-home",
 "werderbremen-retro-200709-home",
 "werderbremen-retro-2009-away",
@@ -4845,6 +4873,7 @@
 "wolfsburg-retro-201920-away",
 "wolfsburg-retro-202223-away",
 "wolfsburg-retro-202223-home",
+"wolfsburg-retro-202324-home",
 "wolves-retro-1991-third",
 "wolves-retro-199192-third",
 "wolves-retro-1994-away",
@@ -24261,6 +24290,139 @@
 "L"
 ],
 "shipping": 3.95
+},
+"realbetis-retro-202425-home": {
+"title": "Real Betis Home Shirt 2024/25 XXL",
+"price": 51.66,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/236637557857?_skw=Real+Betis+2024+home+shirt&hash=item3718b29461%3Ag%3AaicAAeSwtNppkeOC&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7kBA9QWnl3MI6%2BnASEkq%2FPCLy35Wt8zJSKjKBaF4NjMeXHgZwJu13zwAhh6uPPAt%2BQ14vT4mW0MUEj7fk%2F9jWukQJzymMCdmmp%2FmUkLaPCWVzpsBInWhynRINppEbc4Ilpwj6anlxtO6Wk39qkMMfv3y9lp2w9ubV54NPJDcy3%2BPvBN4gWDnKcpjtKtpR%2FNPuGGD%2FClBlosDIOJ9qarKGaK%2FwH8e88OkQvLTMqbqUJQkzFC2MZoSw4Go%2Brz4YXS%2B5td%2Fk1%2BoGlgvRaizJ9OtNRyVdbFw07vjUSW2%2BvsK0BmgOuCL6C122acya%2Fs6%2BB8Kdw%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|236637557857|0",
+"image": "https://i.ebayimg.com/images/g/aicAAeSwtNppkeOC/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 2.94
+},
+"bologna-retro-2015-third": {
+"title": "A176 Macron Jersey Bologna BFC Match Third 2015 Official T-Shirt 58073024",
+"price": 145.22,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/366803640102?_skw=Bologna+2015+third+shirt&hash=item5567335f26%3Ag%3A4MoAAOSwuLBoLH6r&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|366803640102|636433891035",
+"image": "https://i.ebayimg.com/images/g/4MoAAOSwuLBoLH6r/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 13.9
+},
+"lazio-retro-2021-away": {
+"title": "A 148 MACRON 2021 LAZIO OFFICIAL AWAY MATCH SHIRT 58116279",
+"price": 87.38,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/940100611142?_skw=Lazio+2021+away+shirt&hash=itemdae25cec46%3Ag%3AGywAAOSwa5Zfagdh&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|940100611142|2561070253331",
+"image": "https://i.ebayimg.com/images/g/GywAAOSwa5Zfagdh/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 13.85
+},
+"lyon-retro-201920-home": {
+"title": "OLYMPIQUE LYONNAIS HOME FOOTBALL SHIRT 2019 2020 SOCCER JERSEY ADIDAS MENS XL",
+"price": 42.9,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/167942711990?_skw=Olympique+Lyonnais+2019+home+shirt&hash=item271a2a6ab6%3Ag%3Ap28AAeSwdLRpHk2G&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|167942711990|0",
+"image": "https://i.ebayimg.com/images/g/p28AAeSwdLRpHk2G/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 24.52
+},
+"marseille-retro-2020-away": {
+"title": "PUMA Olympique de Marseille 2020–2021 Away Jersey",
+"price": 36.5,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/237102631788?_skw=Olympique+de+Marseille+2020+away+shirt&hash=item37346b0b6c%3Ag%3AnLIAAeSwlUBqwBgf&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|237102631788|0",
+"image": "https://i.ebayimg.com/images/g/nLIAAeSwlUBqwBgf/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 16.98
+},
+"marseille-retro-201819-third": {
+"title": "Genuine Rare BNWT Marseille 2018-19 Third Shirt Size Small",
+"price": 24.0,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/146537055611?_skw=Olympique+de+Marseille+2018+third+shirt&hash=item221e4a057b%3Ag%3Aoo4AAeSwH7xoBjVc&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|146537055611|0",
+"image": "https://i.ebayimg.com/images/g/oo4AAeSwH7xoBjVc/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 5.15
+},
+"marseille-retro-201920-third": {
+"title": "MARSEILLE 2019/2020 '10 PAYET' THIRD AWAY FOOTBALL SHIRT JERSEY XL PUMA BNWT",
+"price": 68.3,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/287392185143?_skw=Olympique+de+Marseille+2019+third+shirt&hash=item42e9e8bb37%3Ag%3AeYIAAeSwh05qLSAz&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|287392185143|0",
+"image": "https://i.ebayimg.com/images/g/eYIAAeSwh05qLSAz/s-l1600.jpg",
+"sizes": [
+"XL"
+],
+"shipping": 2.94
+},
+"roma-retro-200001-third": {
+"title": "2000-01 Roma Third Shirt - 9/10 - (M)",
+"price": 115.1,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/396846020951?_skw=AS+Roma+2000+third+shirt&hash=item5c65ddb957%3Ag%3Aw6sAAeSwByhocB-B&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|396846020951|0",
+"image": "https://i.ebayimg.com/images/g/w6sAAeSwByhocB-B/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 0.0
+},
+"unionberlin-retro-2023-home": {
+"title": "1. FC Union Berlin Jersey Home football shirt 2023 Adidas Men Size S",
+"price": 71.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/306360869979?_skw=Union+Berlin+2023+home+shirt&hash=item475487e45b%3Ag%3AbjYAAOSwrdhoVTXV&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|306360869979|0",
+"image": "https://i.ebayimg.com/images/g/bjYAAOSwrdhoVTXV/s-l1600.jpg",
+"sizes": [
+"S"
+],
+"shipping": 9.6
+},
+"koln-retro-201617-home": {
+"title": "1.FC Cologne original Erima home shirt 2016/17 \"Rewe\" size XXL (3XL) new",
+"price": 85.13,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/168654818523?_skw=1.+FC+K%C3%B6ln+2016+home+shirt&hash=item27449c4cdb%3Ag%3AO8wAAOSwwZtaeZYe&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|168654818523|0",
+"image": "https://i.ebayimg.com/images/g/O8wAAOSwwZtaeZYe/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 12.02
+},
+"lyon-retro-2023-away": {
+"title": "Lyon Away Shirt 2023 Size Medium",
+"price": 31.9,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/366513189561?_skw=Olympique+Lyonnais+2023+away+shirt&hash=item5555e372b9%3Ag%3AV0AAAeSwlelqQ93H&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|366513189561|0",
+"image": "https://i.ebayimg.com/images/g/V0AAAeSwlelqQ93H/s-l1600.jpg",
+"sizes": [
+"M"
+],
+"shipping": 2.94
 }
 }
 }

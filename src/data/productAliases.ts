@@ -10,6 +10,20 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-19: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "koln-retro-2016-home": "koln-retro-201617-home",
+  "lyon-retro-2019-home": "lyon-retro-201920-home",
+  "marseille-retro-2013-third": "marseille-retro-201314-third",
+  "marseille-retro-2018-third": "marseille-retro-201819-third",
+  "werderbremen-retro-2007-away": "werderbremen-retro-200708-away",
+  "wolfsburg-retro-2011-home": "wolfsburg-retro-201112-home",
+  "napoli-retro-1991-third": "napoli-retro-199192-third",
+  "wolfsburg-retro-1999-home": "wolfsburg-retro-199900-home",
+  "leverkusen-retro-2016-third": "leverkusen-retro-201617-third",
+  "werderbremen-retro-2011-away": "werderbremen-retro-201112-away",
+  "marseille-retro-2019-third": "marseille-retro-201920-third",
+  "lazio-retro-2021-away": "lazio-retro-202021-away",
   // 2026-11-18: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "liverpool-retro-200305-away": "liverpool-retro-200506-away",
@@ -208,7 +222,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "polonia-retro-201617-home": "polonia-retro-2018-home",
   "realbetis-retro-200304-home": "realbetis-retro-199899-home",
   "clubtijuana-retro-201819-home": "clubtijuana-retro-201920-home",
-  "lyon-retro-202021-home": "lyon-retro-2019-home",
+  "lyon-retro-202021-home": "lyon-retro-201920-home",
   "freiburg-retro-199495-away": "freiburg-retro-202324-away",
   "intermilan-retro-200607-away": "intermilan-retro-200506-away",
   "ipswichtown-retro-2024-away": "ipswichtown-away-202526",
@@ -352,7 +366,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "boca-retro-200102-away": "boca-retro-200405-away",
   "chelsea-retro-202425-third": "che-third-202526",
   "juventus-retro-202122-training": "juventus-retro-202324-training",
-  "lyon-retro-201617-home": "lyon-retro-2019-home",
+  "lyon-retro-201617-home": "lyon-retro-201920-home",
   "tottenham-retro-202122-training": "tottenham-retro-202425-training",
   "portugal-retro-2016-away": "portugal-retro-2015-away",
   "canada-retro-2024-away": "canada-away-2026",
