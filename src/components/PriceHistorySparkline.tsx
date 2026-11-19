@@ -26,6 +26,8 @@ export default function PriceHistorySparkline({
   const prices = history.map((h) => h.price);
   const min = Math.min(...prices);
   const max = Math.max(...prices);
+  // Precio que nunca cambió: una línea plana no dice nada.
+  if (min === max) return null;
   const span = max - min || 1;
   const points = history
     .map((h, i) => {

@@ -16,6 +16,7 @@ export default function BestOfferBox({
   total,
   approx,
   store,
+  badge,
   proof,
   goLabel,
   href,
@@ -26,6 +27,8 @@ export default function BestOfferBox({
   total: string;
   approx?: string | null;
   store: string;
+  /** Chapa junto a la tienda ("Réplica (no oficial)"). */
+  badge?: string;
   /** "Comparando 5 tiendas · Precio más bajo en 30 días" (solo lo que es verdad). */
   proof?: string;
   goLabel: string;
@@ -45,7 +48,14 @@ export default function BestOfferBox({
           {total}
           {approx && <span className="ml-2 text-sm font-normal text-[#675c44]">{approx}</span>}
         </p>
-        <p className="truncate text-sm text-[#675c44]">{store}</p>
+        <p className="truncate text-sm text-[#675c44]">
+          {store}
+          {badge && (
+            <span className="ml-2 rounded-full bg-[#B45309]/15 px-2 py-0.5 align-middle text-[10px] font-semibold uppercase tracking-wide text-[#B45309]">
+              {badge}
+            </span>
+          )}
+        </p>
         {proof && <p className="mt-0.5 text-xs font-medium text-[#1B3B2B]">{proof}</p>}
       </div>
       <a
