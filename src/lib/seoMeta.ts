@@ -9,7 +9,7 @@ import type { TicketProduct } from "@/data/tickets";
 import { findCountry, type CountryCode } from "@/data/countries";
 import type { HubLocale } from "@/data/teamMeta";
 import { brandNames, isClassicKit, isVintageRetro, kitOf, offerShipsTo, typeNames } from "@/lib/productMeta";
-import { formatOfferMoney, type OfferCurrencyCode } from "@/lib/offerMoney";
+import { formatOfferMoney, offerTotalInEUR, type OfferCurrencyCode } from "@/lib/offerMoney";
 import { countDistinctRetailers } from "@/lib/retailerFamily";
 import { localizeGearModel, localizeGearColour } from "@/lib/gearText";
 import { productCode, productMpn } from "@/lib/offerGtin";
@@ -28,9 +28,9 @@ import type { GearSection } from "@/lib/gearHubs";
 // {partido} {fecha}"); es único en todo el catálogo por idioma (los
 // duplicados se desambiguan con datos reales: color, código del fabricante,
 // formato de temporada…); "| Football Cult" solo si cabe en 60 caracteres; y
-// la descripción lleva el precio mínimo y el nº de tiendas reales. El precio
-// se da solo en EUR y solo de ofertas que envían al mercado del idioma: un
-// "desde USD 25" en /es es una réplica o una tienda que no envía a España.
+// la descripción lleva el precio mínimo y el nº de tiendas reales. Ambos salen
+// de las ofertas que envían al mercado del idioma (cheapestBuyable), con el
+// precio convertido a EUR: lo mismo que ve el comprador en la ficha.
 // Comprobación ejecutable: scripts/check_seo_titles.mts.
 
 export const SITE_URL = "https://football-cult.com";
@@ -55,17 +55,21 @@ interface MoneyOffer {
 
 const live = <T extends MoneyOffer>(offers: readonly T[]) => offers.filter((o) => o.price > 0 && o.inStock !== false);
 
-/** "29,99 €": total más barato (precio + envío) entre las ofertas en EUR que
- *  envían al mercado del idioma. undefined si no hay ninguna. */
-export function fromPrice(offers: readonly MoneyOffer[], locale: HubLocale): string | undefined {
-  const country = MARKET[locale];
-  let min = Infinity;
-  for (const o of live(offers)) {
-    if (o.currency !== "EUR" || !offerShipsTo(o.store, country)) continue;
-    min = Math.min(min, o.price + (o.shipping ?? 0));
-  }
-  return min < Infinity ? eurText(min, locale) : undefined;
+/** Lo que ve el comprador del mercado del idioma: ofertas con precio, en stock
+ *  y que envían ahí, de cualquier moneda. Es la MISMA definición que usa la ficha
+ *  (tiendas comparadas y mejor precio), la meta description y las FAQ; tiendas
+ *  y precio salen siempre de acá para que no se contradigan (2026-11-19: la
+ *  meta decía 7 tiendas desde 59,69 € y la ficha 6 tiendas desde 29,99 USD). */
+export function cheapestBuyable<T extends MoneyOffer>(offers: readonly T[], locale: HubLocale) {
+  const pool = live(offers).filter((o) => offerShipsTo(o.store, MARKET[locale]));
+  const total = (o: T) => offerTotalInEUR({ price: o.price, shipping: o.shipping ?? 0, currency: o.currency as OfferCurrencyCode });
+  const best = pool.reduce<T | undefined>((m, o) => (!m || total(o) < total(m) ? o : m), undefined);
+  return { best, stores: countDistinctRetailers(pool), price: best ? eurText(total(best), locale) : undefined };
 }
+
+/** "29,99 €": total más barato (precio + envío, en EUR) entre las ofertas que
+ *  envían al mercado del idioma. undefined si no hay ninguna. */
+export const fromPrice = (offers: readonly MoneyOffer[], locale: HubLocale) => cheapestBuyable(offers, locale).price;
 
 /** "29,99 €" / "€29.99" según el idioma (sin decimales desde 100). */
 export const eurText = (amount: number, locale: HubLocale) => formatOfferMoney(amount, "EUR", locale);
@@ -87,9 +91,6 @@ export function gearHubModified(section: GearSection, ids: readonly string[]) {
   return modifiedLd(SECTION_ITEMS[section].filter((i) => want.has(i.id)).flatMap((i) => i.offers));
 }
 
-/** Tiendas distintas con precio vigente (FootStoreES + FootStoreFR = una). */
-export const liveStores = (offers: readonly MoneyOffer[]) => countDistinctRetailers(live(offers));
-
 const DESC: Record<
   HubLocale,
   (o: { subject: string; n: number; price?: string; country: string }) => string
@@ -109,10 +110,11 @@ const DESC: Record<
 const CODE_LABEL: Record<HubLocale, string> = { es: "Código del fabricante:", en: "Manufacturer code:", pt: "Código do fabricante:", fr: "Référence fabricant :", it: "Codice produttore:" };
 
 export function describe(subject: string, offers: readonly MoneyOffer[], locale: HubLocale, code?: string): string {
+  const { stores, price } = cheapestBuyable(offers, locale);
   const d = DESC[locale]({
     subject,
-    n: Math.max(1, liveStores(offers)),
-    price: fromPrice(offers, locale),
+    n: Math.max(1, stores),
+    price,
     country: findCountry(MARKET[locale]).name[locale],
   });
   return code ? `${d} ${CODE_LABEL[locale]} ${code}.` : d;

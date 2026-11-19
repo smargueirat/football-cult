@@ -1,15 +1,14 @@
 import Link from "next/link";
 import type { Product } from "@/data/products";
-import { bestOffer, kitTypeName, teamNames } from "@/data/products";
-import { formatOfferMoney } from "@/lib/offerMoney";
+import { kitTypeName, teamNames } from "@/data/products";
+import { cheapestBuyable } from "@/lib/seoMeta";
 import type { HubLocale } from "@/data/teamMeta";
 import { FAQ_LINKS, FAQ_TITLE, buildFaq } from "@/lib/jerseyFaq";
 import { JsonLd } from "@/components/hubs/HubParts";
 
-import { countDistinctRetailers } from "@/lib/retailerFamily";
 // Bloque de servidor (HTML plano, cero JS de cliente) al pie de la ficha.
 export default function JerseyFaq({ product, locale }: { product: Product; locale: HubLocale }) {
-  const best = bestOffer(product);
+  const { best, price, stores } = cheapestBuyable(product.offers, locale);
   const SIZE_ORDER = ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"];
   const sizes = Array.from(new Set(product.offers.filter((o) => o.inStock).flatMap((o) => o.sizes)))
     .sort((a, b) => (SIZE_ORDER.indexOf(a) + 1 || 99) - (SIZE_ORDER.indexOf(b) + 1 || 99) || a.localeCompare(b))
@@ -19,9 +18,9 @@ export default function JerseyFaq({ product, locale }: { product: Product; local
     team,
     type: kitTypeName(product, locale).toLowerCase(),
     season: product.season,
-    price: best ? formatOfferMoney(best.price + best.shipping, best.currency, locale) : "",
+    price: price ?? "",
     store: best?.store ?? "",
-    stores: countDistinctRetailers(product.offers.filter((o) => o.inStock)),
+    stores,
     sizes,
     showVersionQ: ["home", "away", "third", "goalkeeper"].includes(product.typeKey),
   });

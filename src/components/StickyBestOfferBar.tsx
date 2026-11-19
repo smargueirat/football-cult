@@ -15,6 +15,7 @@ import { useEffect, useState } from "react";
 // no dispara layout) para no quedar encima de los links legales.
 export default function StickyBestOfferBar({
   store,
+  badge,
   total,
   fromLabel,
   goLabel,
@@ -25,6 +26,8 @@ export default function StickyBestOfferBar({
   proof,
 }: {
   store: string;
+  /** Chapa junto a la tienda ("Réplica (no oficial)"). */
+  badge?: string;
   total: string;
   fromLabel: string;
   /** Texto ya armado del botón, p. ej. "Ir a FootStoreES". */
@@ -63,6 +66,7 @@ export default function StickyBestOfferBar({
           <p className="truncate text-lg font-semibold leading-tight text-[#B45309]">{total}</p>
           <p className="truncate text-[11px] leading-tight text-[#675c44]">
             {store}
+            {badge ? ` · ${badge}` : ""}
             {approx ? ` · ${approx}` : ""}
           </p>
           {proof && <p className="truncate text-[10px] leading-tight font-medium text-[#1B3B2B]">{proof}</p>}

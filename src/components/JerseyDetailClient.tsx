@@ -24,7 +24,7 @@ import ApproxPrice from "./ApproxPrice";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { translateTitleVocabulary } from "@/lib/i18n/titleGlossary";
 import { offerVersion, splitByVersion, variantKey } from "@/lib/jerseyVersion";
-import { isComparableStore, isMarketplace, photoOrder, pickOfficial } from "@/lib/officialStores";
+import { isComparableStore, isMarketplace, isReplica, photoOrder, pickOfficial } from "@/lib/officialStores";
 import { useCountry } from "@/lib/country/CountryContext";
 import { useCompare } from "@/lib/compare/CompareContext";
 import { useFavorites } from "@/lib/favorites/FavoritesContext";
@@ -380,6 +380,7 @@ export default function JerseyDetailClient({
           approx: approxPriceLabel(total, ctaOffer.currency, country.currency, locale),
           label: liveTotal == null && shippingUnknown(ctaOffer, countryCode) ? t.detail.from : CONV[locale].totalWithShipping,
           storeLabel: selectedSize ? `${ctaOffer.store} · ${selectedSize}` : ctaOffer.store,
+          badge: isReplica(ctaOffer.store) ? t.detail.replicaBadge : undefined,
           goLabel: CONV[locale].goStore.replace("{store}", ctaOffer.store),
           proof: proofLine(storesLabel, archiveStats[ctaOffer.url], ctaOffer.price, CONV[locale].lowestInDays),
           href: goHref({
@@ -507,7 +508,7 @@ export default function JerseyDetailClient({
                     {t.detail.bestOfficialBadge}
                   </span>
                 )}
-                {offer.store === "FansJerseyHub" && (
+                {isReplica(offer.store) && (
                   <span className="rounded-full bg-[#B45309]/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-[#B45309]">
                     {t.detail.replicaBadge}
                   </span>
@@ -760,26 +761,18 @@ export default function JerseyDetailClient({
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
             <div className="min-w-0">
-              {/* Los títulos reales de tienda pueden ser largos (marca +
-                  equipo + temporada + variante) -- un tamaño más contenido
-                  con buen interlineado evita que se vean gigantes/cortados
-                  en varias líneas, sin acortar ni inventar el texto real. */}
+              {/* H1 = nombre limpio generado (el mismo del <title>): el título
+                  crudo del proveedor ("Atletico Madrid ... Soccer Camiseta")
+                  tenía sin acentos y jerga. El título real de cada tienda
+                  sigue como título de su oferta en la lista de abajo. */}
               <h1 className="font-card-title text-lg leading-snug text-balance text-[#1a1a1a] sm:text-xl lg:text-2xl">
-                {displayName}
+                {canonicalName ?? displayName}
               </h1>
-              {/* Subtítulo (2026-10-16): lo que se busca ("{equipo} {año}
-                  {equipación}") y el código del fabricante ("893873 euros",
-                  posición 6,8 en Search Console) pegados al H1, que sigue
-                  siendo el nombre real de la tienda. */}
-              {(canonicalName || manufacturerCode) && (
+              {/* Código del fabricante ("893873 euros", posición 6,8 en
+                  Search Console) pegado al H1. */}
+              {manufacturerCode && (
                 <p className="mt-1 text-sm font-medium text-[#3f3a2f]">
-                  {canonicalName && canonicalName.toLowerCase() !== displayName.toLowerCase() ? canonicalName : null}
-                  {canonicalName && canonicalName.toLowerCase() !== displayName.toLowerCase() && manufacturerCode ? " · " : null}
-                  {manufacturerCode && (
-                    <>
-                      {t.detail.manufacturerCode}: <span className="font-mono">{manufacturerCode}</span>
-                    </>
-                  )}
+                  {t.detail.manufacturerCode}: <span className="font-mono">{manufacturerCode}</span>
                 </p>
               )}
               <p className="mt-1 flex items-center gap-1.5 text-sm text-[#675c44]">
@@ -835,6 +828,7 @@ export default function JerseyDetailClient({
               total={bestCta.totalText}
               approx={bestCta.approx}
               store={bestCta.storeLabel}
+              badge={bestCta.badge}
               proof={bestCta.proof}
               goLabel={bestCta.goLabel}
               href={bestCta.href}
@@ -999,6 +993,7 @@ export default function JerseyDetailClient({
         <StickyBestOfferBar
           hideFrom="lg"
           store={bestCta.storeLabel}
+          badge={bestCta.badge}
           total={bestCta.totalText}
           approx={bestCta.approx}
           fromLabel={bestCta.label}

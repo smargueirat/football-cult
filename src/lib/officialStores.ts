@@ -24,6 +24,9 @@ export const NON_COMPARABLE_STORES = new Set([
   "FansJerseyHub",
 ]);
 
+/** Tienda de réplicas (no oficial): lleva la chapa "Réplica (no oficial)". */
+export const isReplica = (store: string) => store === "FansJerseyHub";
+
 export function isComparableStore(store: string): boolean {
   return !NON_COMPARABLE_STORES.has(store);
 }
@@ -69,6 +72,6 @@ export function mainPhoto<T extends PhotoOffer>(preferred: T | undefined, offers
 
 /** Si la más barata (`best`) es una réplica (FansJerseyHub; eBay y Amazon no: venden oficiales y decir "Mejor oficial" al lado las pintaría de falsas): la oficial más barata de `pool` (ya ordenado por precio final, mismo criterio que la ficha) y adónde va la barra fija -- a la oficial si cuesta menos de un 15 % más, si no a la más barata. FansJerseyHub sigue listada y con su chapa; solo no se la empuja en el botón principal por unos pocos euros. */
 export function pickOfficial<T extends { store: string }>(best: T | undefined, pool: T[], total: (o: T) => number) {
-  const official = best?.store === "FansJerseyHub" ? pool.find((o) => isComparableStore(o.store)) : undefined;
+  const official = best && isReplica(best.store) ? pool.find((o) => isComparableStore(o.store)) : undefined;
   return { official, cta: best && official && total(official) < total(best) * 1.15 ? official : best };
 }
