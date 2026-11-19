@@ -163,6 +163,7 @@ export default function GearDetailClient({
                     <button
                       key={sizeOpt.size}
                       type="button"
+                      aria-pressed={isSizeSelected}
                       onClick={() =>
                         setSelectedSize((prev) => ({ ...prev, [offer.store]: sizeOpt.size }))
                       }
