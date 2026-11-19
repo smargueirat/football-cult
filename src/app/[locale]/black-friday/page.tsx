@@ -5,6 +5,7 @@ import { asLocale, breadcrumbLd, hubMetadata } from "@/lib/hubPages";
 import { withBrand } from "@/lib/seoMeta";
 import { archiveDates, dealHref, dealImage, dealName, itemImage, itemName } from "@/lib/dealsData";
 import { DEALS, longDate } from "@/lib/dealsStrings";
+import { DEALS_NAV } from "@/lib/dealsNav";
 import { BF_GROUPS, bfBands, bfDrops, bfGroupOf, bfLows, bfReference, type RefRow } from "@/lib/seasonalData";
 import { SEASONAL } from "@/lib/seasonalStrings";
 import { currentBlackFriday, todayIso } from "@/lib/seasonal";
@@ -20,9 +21,12 @@ import DealCard from "@/components/hubs/DealCard";
 // tabla "hoy vs mínimo registrado" que da valor a la página antes del evento.
 export const revalidate = 3600;
 
-const PER_GROUP = 20;
+// La página pesaba 765 KB (HTML + payload RSC): 150 filas de tabla con foto,
+// ~5 KB cada una. Las de más allá de estas viven completas en /bajadas-de-precio
+// y /minimos-historicos, enlazadas bajo cada tabla.
+const PER_GROUP = 10;
 const PER_BAND = 8;
-const REF_ROWS = 15;
+const REF_ROWS = 10;
 const TOP_CARDS = 8;
 const PATH = "/black-friday";
 const GRID = "grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4";
@@ -33,6 +37,19 @@ export async function generateMetadata({ params }: P): Promise<Metadata> {
   const locale = asLocale((await params).locale);
   const s = SEASONAL[locale].bf;
   return { ...hubMetadata(locale, PATH, s.title, s.meta), title: { absolute: withBrand(s.title) } };
+}
+
+/** "Las N mayores de M." + enlace a la lista completa (solo si hay más de las que se muestran). */
+function MoreLink({ text, href, label }: { text: string; href: string; label: string }) {
+  if (!text) return null;
+  return (
+    <p className="mt-2 text-xs text-[#675c44]">
+      {text}{" "}
+      <Link className="font-medium text-[#1B3B2B] underline decoration-[#C9A24B]/60 underline-offset-2" href={href}>
+        {label} →
+      </Link>
+    </p>
+  );
 }
 
 function RefTable({ rows, locale }: { rows: RefRow[]; locale: HubLocale }) {
@@ -156,7 +173,7 @@ export default async function BlackFridayPage({ params }: P) {
           {rows.length ? (
             <>
               <DealTable rows={rows.slice(0, PER_GROUP)} locale={locale} mode="drop" />
-              <p className="mt-2 text-xs text-[#675c44]">{d.topOf(Math.min(PER_GROUP, rows.length), rows.length)}</p>
+              <MoreLink text={d.topOf(Math.min(PER_GROUP, rows.length), rows.length)} href={`/${locale}/bajadas-de-precio`} label={DEALS_NAV[locale].drops} />
             </>
           ) : (
             <p className="text-sm text-[#675c44]">{s.dropsEmpty}</p>
@@ -195,7 +212,7 @@ export default async function BlackFridayPage({ params }: P) {
           {rows.length ? (
             <>
               <DealTable rows={rows.slice(0, PER_GROUP)} locale={locale} mode="low" />
-              <p className="mt-2 text-xs text-[#675c44]">{d.topOf(Math.min(PER_GROUP, rows.length), rows.length)}</p>
+              <MoreLink text={d.topOf(Math.min(PER_GROUP, rows.length), rows.length)} href={`/${locale}/minimos-historicos`} label={DEALS_NAV[locale].lows} />
             </>
           ) : (
             <p className="text-sm text-[#675c44]">{s.lowsEmpty}</p>
