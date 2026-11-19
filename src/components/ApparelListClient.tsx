@@ -190,7 +190,7 @@ export default function ApparelListClient({
                 setQuery(e.target.value);
                 resetPage();
               }}
-              placeholder={t.search.placeholder}
+              placeholder={t.search.placeholderGear}
               className="w-full rounded-2xl border border-[#C9A24B]/30 bg-[#FFFDF8] py-4 pl-12 pr-11 text-base text-[#1a1a1a] placeholder-[#a8926a] outline-none transition focus:border-[#1B3B2B]/40 focus:bg-white focus:ring-2 focus:ring-[#1B3B2B]/10"
             />
           </div>

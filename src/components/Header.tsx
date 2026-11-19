@@ -48,7 +48,8 @@ export default function Header() {
                 achica solo, se sigue estirando por más ancho de lo que
                 el header le puede dar. */}
             <span className="flex min-w-0 flex-col leading-none">
-              <span className="font-vintage truncate text-base leading-none text-[#1B3B2B] sm:text-2xl lg:text-3xl">
+              {/* line-clamp-2 en mobile: a 390px quedaba "Football C…"; en dos líneas entra entero. */}
+              <span className="font-vintage line-clamp-2 text-base leading-none text-[#1B3B2B] sm:truncate sm:text-2xl lg:text-3xl">
                 {t.brand}
               </span>
               <span className="font-tagline hidden text-[10px] leading-none text-[#B8933F] sm:mt-1.5 sm:block sm:text-xs lg:text-sm">
