@@ -65,7 +65,7 @@ interface ApparelProductLike {
   offers: ApparelOffer[];
 }
 
-type SortKey = "priceAsc" | "priceDesc";
+type SortKey = "relevance" | "priceAsc" | "priceDesc";
 const PAGE_SIZE = 24;
 
 export default function ApparelListClient({
@@ -77,6 +77,7 @@ export default function ApparelListClient({
   typeFilterLabel,
   basePath = "ropa",
   total,
+  relevance = false,
 }: {
   items: ApparelProductLike[];
   pageTitle: string;
@@ -87,13 +88,15 @@ export default function ApparelListClient({
   basePath?: "ropa" | "entrenamiento";
   /** Total real mientras llega el listado completo (useGearList). */
   total?: number;
+  /** El listado ya llega ordenado por relevancia (src/lib/gearList.ts): es el orden por defecto. */
+  relevance?: boolean;
 }) {
   const { t, locale } = useLanguage();
   const { countryCode } = useCountry();
   const [query, setQuery] = useState("");
   const [visible, setVisible] = useState(PAGE_SIZE);
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const [sortBy, setSortBy] = useState<SortKey>("priceAsc");
+  const [sortBy, setSortBy] = useState<SortKey>(relevance ? "relevance" : "priceAsc");
   const [typeFilter, setTypeFilter] = useState<string>("");
   const [brandFilter, setBrandFilter] = useState("");
   const [sizeFilter, setSizeFilter] = useState("");
@@ -151,6 +154,7 @@ export default function ApparelListClient({
       return true;
     });
     const total = (p: ApparelProductLike) => Math.min(...offersForCountry(p.offers, countryCode).map(offerTotalInEUR));
+    if (sortBy === "relevance") return base; // el orden del array ya es el de relevancia
     return [...base].sort((a, b) => (sortBy === "priceAsc" ? total(a) - total(b) : total(b) - total(a)));
   }, [items, query, typeFilter, brandFilter, sizeFilter, colourFilter, sortBy, countryCode]);
 
@@ -211,6 +215,7 @@ export default function ApparelListClient({
             value={sortBy}
             onChange={setSortBy}
             options={[
+              ...(relevance ? [{ key: "relevance" as const, label: t.search.sortRelevance }] : []),
               { key: "priceAsc", label: t.search.sortPriceAsc },
               { key: "priceDesc", label: t.search.sortPriceDesc },
             ]}

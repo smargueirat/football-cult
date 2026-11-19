@@ -18,7 +18,7 @@ export function generateStaticParams() {
 
 export async function GET(_request: Request, { params }: { params: Promise<{ section: string }> }) {
   const { section } = await params;
-  return Response.json(slimGear(DATA[section as GearListSection]), {
+  return Response.json(slimGear(DATA[section as GearListSection], section as GearListSection), {
     headers: { "Cache-Control": "public, max-age=31536000, immutable" },
   });
 }
