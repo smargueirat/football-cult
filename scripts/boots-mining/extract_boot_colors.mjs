@@ -66,7 +66,7 @@ const COLOR_ORDER = [
 function classify(h, s, l) {
   if (l > 0.92) return "white";
   if (l < 0.13 || (l < 0.3 && s < 0.2)) return "black"; // cuero negro con luz de estudio no baja de 0.13
-  if (s < 0.15) return "gray";
+  if (s < 0.15) return l > 0.65 ? "white" : "gray"; // sombra clara sobre bota blanca
   if (h >= 185 && h < 255) return l < 0.32 ? "navy" : "blue";
   if (h < 15 || h >= 345) return "red";
   if (h < 45) return "orange";
