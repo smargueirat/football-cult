@@ -10,6 +10,10 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-20: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "polonia-retro-2012-home": "polonia-retro-201213-home",
+  "escocia-retro-1997-away": "escocia-retro-199798-away",
   // 2026-11-19: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "australia-retro-202021-home": "australia-retro-2022-home",
