@@ -118,7 +118,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const suggestions = heroSuggestions(locale);
   const trust = trustStats();
   const heroSub = t.hero.h1Sub
-    .replace("{n}", groupThousands(trust.comparedProducts, locale))
+    .replace("{n}", groupThousands(trust.products, locale))
     .replace("{s}", String(trust.stores));
   const { dropProducts, dropIdsByCountry } = computePriceDrops();
   const faq = siteFaq(locale);

@@ -73,7 +73,7 @@ function parseItem(ebayUrl: string): { itemId: string; marketplace: string } | n
 }
 
 // TOPE: 1.500 llamadas a eBay por día (de las 5.000 de la cuota Browse, que se
-// reinicia 07:00 UTC; el resto queda para la minería nocturna) y 30 por IP por minuto.
+// reinicia a medianoche del Pacífico: 08:00 UTC en invierno, 07:00 en verano; el resto queda para la minería nocturna) y 30 por IP por minuto.
 const DAILY_CAP = 1500;
 const IP_LIMIT = 30;
 const OK_TTL = 24 * 3600_000;

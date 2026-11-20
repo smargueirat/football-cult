@@ -77,8 +77,8 @@ def remaining_quota(client):
     for rl in data.get("rateLimits", []):
         for r in rl.get("resources", []):
             if r.get("name") == "buy.browse":
-                return r["rates"][0]["remaining"]
-    return None
+                return r["rates"][0]["remaining"], r["rates"][0].get("reset")
+    return None, None
 
 
 def check(client, item_id, marketplace):
@@ -132,7 +132,18 @@ def main():
         client = EbayClient()
         client._ensure_token()
         try:
-            rem = remaining_quota(client)
+            rem, reset = remaining_quota(client)
+            # La minería de la noche puede agotar la cuota antes del reinicio
+            # (08:00 UTC en invierno, 07:00 en verano: medianoche del Pacífico).
+            # Pasó el 11-17 y el 11-20: el chequeo no revisaba nada. Si el
+            # reinicio está a < 90 min, se espera y se vuelve a pedir.
+            if rem is not None and rem <= reserve and reset:
+                wait = datetime.datetime.fromisoformat(reset.replace("Z", "+00:00")).timestamp() - time.time() + 120
+                if 0 < wait < 90 * 60:
+                    print(f"buy.browse remaining {rem}: waiting {wait / 60:.0f} min for the quota reset at {reset}")
+                    time.sleep(wait)
+                    client._ensure_token()
+                    rem, reset = remaining_quota(client)
         except Exception as e:
             rem = None
             print(f"rate_limit API failed ({e}), using a conservative 500-call budget")

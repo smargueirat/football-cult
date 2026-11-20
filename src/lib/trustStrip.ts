@@ -18,6 +18,9 @@ import { getRetailerFamily } from "@/lib/retailerFamily";
 // Con los números reales el mensaje funciona igual, y además no hay que
 // volver a tocarlo nunca: se recalcula con el scan nocturno.
 export interface TrustStats {
+  /** Productos con al menos una oferta en stock (lo que se puede comprar hoy). */
+  products: number;
+  /** De esos, los que tienen 2+ tiendas con stock. */
   comparedProducts: number;
   stores: number;
 }
@@ -28,6 +31,7 @@ export function trustStats(): TrustStats {
   if (cached) return cached;
   const stores = new Set<string>();
   let compared = 0;
+  let inStock = 0;
   const all = [
     products,
     bootProducts,
@@ -42,10 +46,11 @@ export function trustStats(): TrustStats {
         p.offers.filter((o) => o.inStock !== false).map((o) => getRetailerFamily(o.store)),
       );
       for (const s of own) stores.add(s);
+      if (own.size >= 1) inStock += 1;
       if (own.size >= 2) compared += 1;
     }
   }
-  cached = { comparedProducts: compared, stores: stores.size };
+  cached = { products: inStock, comparedProducts: compared, stores: stores.size };
   return cached;
 }
 

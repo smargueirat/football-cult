@@ -99,7 +99,7 @@ const HOME_META: Record<HubLocale, { title: string; description: (n: string, s: 
 
 export function homeMeta(locale: HubLocale): { title: string; description: string } {
   const t = trustStats();
-  return { title: HOME_META[locale].title, description: HOME_META[locale].description(groupThousands(t.comparedProducts, locale), t.stores) };
+  return { title: HOME_META[locale].title, description: HOME_META[locale].description(groupThousands(t.products, locale), t.stores) };
 }
 
 export function siteFaq(locale: HubLocale): { h2: string; qa: QA[] } {
@@ -107,7 +107,7 @@ export function siteFaq(locale: HubLocale): { h2: string; qa: QA[] } {
   return {
     h2: TEXT[locale].h2,
     qa: TEXT[locale].qa({
-      n: groupThousands(t.comparedProducts, locale),
+      n: groupThousands(t.products, locale),
       s: t.stores,
       date: longDate(archiveDates().last, locale),
       drops: verifiedDropRows().length,
