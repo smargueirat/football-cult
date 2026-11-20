@@ -88,6 +88,7 @@ MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
     "/itm/377598072764",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
     "/itm/366798483883",  # 2026-11-19 removed: eBay ES current: player print / $31.95 template / outlier / not-same-type
     # --- Daily pass 2026-11-16 ---
+    "womens-atletico-madrid-home-soccer-jersey-2026-27",  # 2026-11-20 FansJerseyHub women atleticomadrid|home: AI-generated render
     "chivas-womens-third-away-soccer-jersey-2026-27",  # 2026-11-16 FansJerseyHub women chivas|third: AI-generated render
     "womens-monterrey-home-soccer-jersey-2026-27",  # 2026-11-16 FansJerseyHub women monterrey|home: AI-generated render
     "womens-monterrey-away-soccer-jersey-2026-27",  # 2026-11-16 FansJerseyHub women monterrey|away: AI-generated render
