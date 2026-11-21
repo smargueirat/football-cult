@@ -10,6 +10,17 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-21: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "argentina-retro-2015-home": "argentina-retro-2014-home",
+  "rayovallecano-retro-202425-home": "rayovallecano-retro-199596-home",
+  "senegal-retro-200607-home": "senegal-retro-201415-home",
+  "arsenal-training-verde-202526-kids": "arsenal-training-202627-kids",
+  "portugal-retro-201415-home": "portugal-retro-201213-home",
+  "arsenal-training-kids": "arsenal-training-202627-kids",
+  "guatemala-retro-200506-away": "guatemala-retro-201718-away",
+  "clubamerica-retro-201718-third": "clubamerica-retro-202021-third",
+  "caboverde-retro-202425-home": "caboverde-retro-202324-home",
   // 2026-11-21: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
   // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
   "palmeiras-retro-2020-away": "palmeiras-retro-202021-away",
@@ -1251,7 +1262,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "fenerbahce-retro-201920-away": "fenerbahce-retro-202021-away",
   "monterrey-retro-199900-away": "monterrey-retro-201920-away",
   "atleticomineiro-third-2025": "atleticomineiro-retro-2024-third",
-  "sunderland-retro-201617-away": "sunderland-retro-201718-away",
+  "sunderland-retro-201617-away": "sunderland-retro-201516-away",
   "lazio-retro-201718-home": "lazio-retro-201819-home",
   "peru-retro-1978-away": "peru-retro-200506-away",
   "costarica-retro-2022-home": "costarica-retro-2019-home",
