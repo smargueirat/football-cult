@@ -10,10 +10,21 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-21: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "palmeiras-retro-2020-away": "palmeiras-retro-202021-away",
+  "saopaulo-retro-2024-away": "saopaulo-retro-202324-away",
+  "psveindhoven-retro-2000-away": "psveindhoven-retro-200001-away",
+  "psveindhoven-retro-1996-home": "psveindhoven-retro-199697-home",
+  "psveindhoven-retro-2000-home": "psveindhoven-retro-200001-home",
+  "ucrania-retro-200204-home": "ucrania-retro-2002-home",
+  "ajax-retro-2014-home": "ajax-retro-201415-home",
+  "fiorentina-third-2026": "fiorentina-third-202627",
+  "frankfurt-retro-2016-away": "frankfurt-retro-201516-away",
   // 2026-11-20: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "ajax-training-202526": "ajax-training-jacket-202526",
-  "ajax-retro-201617-home": "ajax-retro-2014-home",
+  "ajax-retro-201617-home": "ajax-retro-201415-home",
   "kashimaantlers-home-202627": "kashimaantlers-retro-2018-home",
   "peru-retro-202021-away": "peru-retro-202022-away",
   "tottenham-retro-201819-home": "tottenham-retro-201920-home",
@@ -239,7 +250,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "atleticonacional-away-2026": "atleticonacional-away-202627",
   "sanlorenzo-retro-2024-home": "sanlorenzo-retro-2008-home",
   "paisesbajos-retro-2018-away": "paisesbajos-retro-201819-away",
-  "psveindhoven-retro-200002-home": "psveindhoven-retro-2000-home",
+  "psveindhoven-retro-200002-home": "psveindhoven-retro-200001-home",
   "tigresuanl-retro-199596-home": "tigresuanl-retro-200304-home",
   "clubamerica-retro-202021-home": "clubamerica-retro-202122-home",
   "palmeiras-retro-1997-away": "palmeiras-retro-200102-away",
@@ -297,7 +308,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "tunez-home-202627": "tunez-home-202526",
   "bayern-retro-200709-home": "bayern-retro-200708-home",
   "pumasunam-retro-200809-home": "pumasunam-retro-200001-home",
-  "psveindhoven-retro-199798-home": "psveindhoven-retro-1996-home",
+  "psveindhoven-retro-199798-home": "psveindhoven-retro-199697-home",
   "vascodagama-retro-2022-third": "vascodagama-retro-202223-third",
   "tottenham-retro-201617-away": "tottenham-retro-201718-away",
   "tunez-away-202627": "tunez-away-202526",
@@ -819,7 +830,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "honduras-retro-201920-home": "honduras-retro-2023-home",
   "realmadrid-retro-202425-prematch": "realmadrid-prematch-202526",
   "portlandtimbers-retro-2012-home": "portlandtimbers-retro-201213-home",
-  "saopaulo-retro-2021-away": "saopaulo-retro-2024-away",
+  "saopaulo-retro-2021-away": "saopaulo-retro-202324-away",
   "marseille-retro-202021-away": "marseille-retro-201617-away",
   "valencia-retro-199697-away": "valencia-retro-200102-away",
   "minnesotaunited-retro-202223-away": "minnesotaunited-retro-2024-away",
