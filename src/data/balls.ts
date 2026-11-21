@@ -71,16 +71,16 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 84.16,
+        price: 80.66,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46530351211&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37173737542&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fc%2Facerbis_0023199.464_0023199_464a.jpg&feedId=89032&k=02dd4fd6fd8c89b02e9a12b6b81a7c511978378d",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 82.89,
+        price: 79.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0023199-464-ballons-de-football-acerbis-joy-290-x5-noir-rouge-jaune-fluo",
@@ -97,7 +97,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.48,
+        price: 49.86,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923823014&a=3013769&m=65912",
@@ -106,7 +106,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 51.47,
+        price: 49.39,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0910163-473-ballon-de-football-acerbis-vortex-blanc-jaune-fluo-argente-taille-5",
@@ -123,16 +123,16 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 108.58,
+        price: 104.39,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529067043&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38696323920&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F0%2F0%2F0022846.063_1.jpg&feedId=89032&k=06d81511e9fdec8767a3c46bcf83566f14c0860b",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 107.1,
+        price: 103.47,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0022846-063-lot-de-5-ballons-de-football-acerbis-ace-jaune-fluo",
@@ -149,16 +149,16 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 108.58,
+        price: 104.39,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38725242687&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=39824462886&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fc%2Facerbis_0022846.551_0022846_551a.jpg&feedId=89032&k=fc20ddd4d8d69545bc17397706049c8f32d0e00e",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 107.1,
+        price: 103.47,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0022846-551-lot-de-5-ballons-de-football-acerbis-ace-bleu-intense",
@@ -175,16 +175,16 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 108.58,
+        price: 104.39,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923823109&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529067042&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fc%2Facerbis_0022846.020_0022846_020a.jpg&feedId=89032&k=1b5a10282780f6a3710a8f85f0ccc0fced39022a",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 107.1,
+        price: 103.47,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0022846-020-lot-de-5-ballons-de-football-acerbis-ace-argente",
@@ -201,7 +201,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 108.58,
+        price: 104.39,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529067044&a=3013769&m=65912",
@@ -210,7 +210,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 107.1,
+        price: 103.47,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0022846-090-lot-de-5-ballons-de-football-acerbis-ace-noir",
@@ -227,16 +227,16 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 108.58,
+        price: 104.39,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38725242686&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529067046&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fc%2Facerbis_0022846.142_1.jpg&feedId=89032&k=22461d85a9df170c8789a23e95cf32231c1f4875",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 107.1,
+        price: 103.47,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0022846-142-lot-de-5-ballons-de-football-acerbis-ace-fuchsia-fluo",
@@ -253,16 +253,16 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 108.58,
+        price: 104.39,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529067047&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529067048&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fc%2Facerbis_0022846.521_0022846_521a.jpg&feedId=89032&k=a33f8a36c8cdcf8e84e27867581da9c15a43270b",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 107.1,
+        price: 103.47,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0022846-521-lot-de-5-ballons-de-football-acerbis-ace-corail-fluo",
@@ -279,30 +279,30 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 82.28,
-        priceMax: 84.16,
+        price: 78.83,
+        priceMax: 80.66,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38933491966&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fc%2Facerbis_0023032.460_0023032_460a_3.jpg&feedId=89032&k=9826c2a70771c98f8e0cabedb7f63bb861bfaf3d",
         sizes: ["Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 4", price: 82.28, url: "https://www.awin1.com/pclick.php?p=38933491966&a=3013769&m=65912" },
-          { size: "Talla 5", price: 84.16, url: "https://www.awin1.com/pclick.php?p=37923823111&a=3013769&m=65912" },
+          { size: "Talla 4", price: 78.83, url: "https://www.awin1.com/pclick.php?p=38933491966&a=3013769&m=65912" },
+          { size: "Talla 5", price: 80.66, url: "https://www.awin1.com/pclick.php?p=37923823111&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 80.97,
-        priceMax: 82.89,
+        price: 78.07,
+        priceMax: 79.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0023032-460-lot-de-5-ballons-de-football-acerbis-joy-noir-gris-vert-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/c/acerbis_0023032.460_0023032_460a_3.webp",
         sizes: ["4", "5"],
         sizePrices: [
-          { size: "4", price: 80.97, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0023032-460-lot-de-5-ballons-de-football-acerbis-joy-noir-gris-vert-fluo" },
-          { size: "5", price: 82.89, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0023032-460-lot-de-5-ballons-de-football-acerbis-joy-noir-gris-vert-fluo" },
+          { size: "4", price: 78.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0023032-460-lot-de-5-ballons-de-football-acerbis-joy-noir-gris-vert-fluo" },
+          { size: "5", price: 79.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0023032-460-lot-de-5-ballons-de-football-acerbis-joy-noir-gris-vert-fluo" },
         ],
       },
     ],
@@ -338,6 +338,23 @@ const minedBallProductsChunk1: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43791481202&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F035cb644cf014caa84cae02dfe00376c_9366%2FKings_League_La_Caprichosa_Minibalon_Blanco_JI8975_01_00_standard.jpg&feedId=95013&k=a34243fe04148df73892944d537adf4d9e722334",
         sizes: ["1"],
+      },
+    ],
+  },
+  {
+    id: "adidas-adidas-predator-training-balon-de-futbol-ip1655-negro",
+    brand: "Adidas",
+    model: "adidas PREDATOR Training Balón de fútbol IP1655 - negro",
+    colour: "negro",
+    offers: [
+      {
+        store: "DeporteOutlet",
+        price: 11.99,
+        shipping: 8.0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45840879387&a=3013769&m=19598",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fa2%2Fcc%2F18%2FIP1655-1_600x600.jpg&feedId=99907&k=6f773bffa9dfa756b302e6c1227ba1d41334ea64",
+        sizes: [],
       },
     ],
   },
@@ -409,37 +426,11 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
+        price: 17.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fky8599-ballon-de-football-domicile-rc-lens-2026-27-eqtyel-panton-actred-black-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ky8599-eqtyel-panton-actred-black-6ae33b9e22b9c-1.webp",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "adidas-balones-de-futbol-adidas-ucl-2026-27-blanc",
-    brand: "Adidas",
-    model: "Ballon adidas UEFA Champions League League 2026/27 Blanc Multicolore – Boîte Incluse",
-    colour: "N/D",
-    offers: [
-      {
-        store: "PlanetFoot",
-        price: 40.49,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fballon-adidas-uefa-champions-league-league-2026-27-blanc-multicolore-ke9771%3Fvariant%3D55267330916693",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/ballon-adidas-uefa-champions-league-league-2026-27-blanc-multicolore-boite-ke9771-1.avif?v=1793379808",
-        sizes: [],
-      },
-      {
-        store: "AdidasMX",
-        price: 1199.0,
-        shipping: 0,
-        currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=45353500957&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F10116067c5b54aa4a542d03cc150ed77_9366%2FBalon_League_Boxed_UEFA_Champions_League_26-27_Blanco_KE9771_01_00_standard.jpg&feedId=95013&k=1a6c6430a93fd77b5406b8ed1ec0199ee07554c6",
         sizes: ["5"],
       },
     ],
@@ -452,7 +443,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 19.78,
+        price: 18.58,
         priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
@@ -461,9 +452,27 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["3", "4", "5"],
         sizePrices: [
           { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkx5863-ballon-de-football-adidas-club-uefa-champions-league-2026-27-white-globlu-sgreen-iceblu" },
-          { size: "4", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkx5863-ballon-de-football-adidas-club-uefa-champions-league-2026-27-white-globlu-sgreen-iceblu" },
-          { size: "5", price: 19.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkx5863-ballon-de-football-adidas-club-uefa-champions-league-2026-27-white-globlu-sgreen-iceblu" },
+          { size: "4", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkx5863-ballon-de-football-adidas-club-uefa-champions-league-2026-27-white-globlu-sgreen-iceblu" },
+          { size: "5", price: 18.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkx5863-ballon-de-football-adidas-club-uefa-champions-league-2026-27-white-globlu-sgreen-iceblu" },
         ],
+      },
+      {
+        store: "ForumSport",
+        price: 17.41,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249384754&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135257-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMxOHxpbWFnZS9qcGVnfGFHVXhMMmc1TlM4eE16Z3pOalV3TmpFek5qWXdOaTl0WldScFlYTmZNVEF3TVRFek5USTFOMTh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58ZWRjMzczODc4OTA3MWEwZmNlMDU3NTg1MmJmYjY2NzAyMjM0Y2Q2MGZlZDdhNzU3MzQzNDI0ZWNhNGI1MTE4YQ&feedId=58083&k=05350bfc78479263a64d3ac1b4044d6669e6547b",
+        sizes: ["4", "5"],
+      },
+      {
+        store: "AdidasCL",
+        price: 19990.0,
+        shipping: 0,
+        currency: "CLP",
+        url: "https://www.awin1.com/pclick.php?p=46385828032&a=3013769&m=79922",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2197e5b038374032ae2d6e3473a8532e_9366%2FPelota_Club_UEFA_Champions_League_26-27_Blanco_KX5863_01_00_standard.jpg&feedId=95016&k=62b3ea2aded8c1fdbdb5fe228a1a616c1970912e",
+        sizes: ["4", "5"],
       },
     ],
   },
@@ -519,6 +528,29 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-tiro-club-blanc",
+    brand: "Adidas",
+    model: "Ballon de football adidas Tiro Club - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 16.67,
+        priceMax: 23.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf8846-ballon-de-football-adidas-tiro-club-white-poblue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kf8846_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf8846-ballon-de-football-adidas-tiro-club-white-poblue" },
+          { size: "4", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf8846-ballon-de-football-adidas-tiro-club-white-poblue" },
+          { size: "5", price: 16.67, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf8846-ballon-de-football-adidas-tiro-club-white-poblue" },
+        ],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-uefa-champions-league-blanco",
     brand: "Adidas",
     model: "Ballon de football adidas UEFA Champions League - Blanc",
@@ -531,6 +563,23 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fix4060-ballon-de-football-adidas-uefa-champions-league-white-black-plamet-tmsoye",
         imageUrl: "https://cdn.blazimg.com/1800/product/i/x/ix4060.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balon-de-futbol-de-club-adidas-euro-2024-blanco",
+    brand: "Adidas",
+    model: "Ballon de football de club adidas Euro 2024 - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fin9372-ballon-de-football-de-club-adidas-euro-2024-white-solred-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_in9372_2_hardware_photography_back_center_view_white.webp",
         sizes: ["5"],
       },
     ],
@@ -849,32 +898,6 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-mini-ballon-de-football-adidas-ucl-rm-vert",
-    brand: "Adidas",
-    model: "Ballon Real Madrid UCL Mini 2025/26 Vert ( Ligue des Champions )",
-    colour: "N/D",
-    offers: [
-      {
-        store: "PlanetFoot",
-        price: 9.99,
-        shipping: 5.95,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fballon-real-madrid-ucl-mini-2025-26-vert-ligue-des-champions%3Fvariant%3D51159090889045",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/mini-ballon-real-madrid-ucl-25-26-adidas-planetfoot1.webp?v=1755943447",
-        sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 16.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7306-mini-ballon-de-football-adidas-ucl-rm-almlim-silvmt-nobink-taille-1",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn7306_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["1"],
-      },
-    ],
-  },
-  {
     id: "adidas-balon-de-futbol-liga-de-campeones-final-club-rose",
     brand: "Adidas",
     model: "Ballon UCL Club Adidas 2026 ( Ligue des champions ) Finale Budapest 26",
@@ -973,7 +996,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 40.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43935158415&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43935158416&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-jw1326-white-scarle-1.jpg&feedId=89032&k=812e8298b0d98d6cb3c783540db9a3efdea9a838",
         sizes: ["Talla 4", "Talla 5"],
       },
@@ -985,15 +1008,6 @@ const minedBallProductsChunk1: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1326-ballon-de-football-ligue-des-champions-feminine-white-scarle",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jw1326-white-scarle-1.webp",
         sizes: ["4", "5"],
-      },
-      {
-        store: "ForumSport",
-        price: 25.91,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43885179472&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075278-00-P-X-20260115153122.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI0M3xpbWFnZS9qcGVnfGFHVTBMMmhqWWk4eE16UTVPVFF4Tmpnek9ERTNOQzl0WldScFlYTmZNVEF3TVRBM05USTNPRjh3TUY5UVgxZ3RNakF5TmpBeE1UVXhOVE14TWpJdWFuQm58MjQ2ZDc1OTg1MTU1ZGRjMTg4YTg5ZDBkODdhZTY1MmE4ZmMzMTY5ZjIyN2EyMWY5Y2ZjNGU1MmM4Y2NmYzJjNQ&feedId=58083&k=6d2e09fa398c0e89aff5efb283c867d5cd60b82a",
-        sizes: ["5"],
       },
       {
         store: "AdidasMX",
@@ -1023,7 +1037,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.16,
+        price: 17.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45621361324&a=3013769&m=65912",
@@ -1032,7 +1046,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
+        price: 17.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5106-ballon-de-football-domicile-arsenal-club-betsca-tecobu-taille-5",
@@ -1067,7 +1081,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.16,
+        price: 17.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45130837245&a=3013769&m=65912",
@@ -1076,7 +1090,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
+        price: 17.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5132-ballon-de-football-liverpool-fc-ucl-2026-27-boract-blanc-taille-5",
@@ -1163,32 +1177,32 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.16,
-        priceMax: 21.05,
+        price: 17.46,
+        priceMax: 19.3,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163948009&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163866154&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fe%2Fke5088.jpg&feedId=89032&k=002d7365515bb08e95797c48d0528ad7d9c93ae2",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 19.16, url: "https://www.awin1.com/pclick.php?p=46163948009&a=3013769&m=65912" },
-          { size: "Talla 4", price: 19.16, url: "https://www.awin1.com/pclick.php?p=46163866154&a=3013769&m=65912" },
-          { size: "Talla 5", price: 21.05, url: "https://www.awin1.com/pclick.php?p=46339519055&a=3013769&m=65912" },
+          { size: "Talla 3", price: 17.46, url: "https://www.awin1.com/pclick.php?p=46163948009&a=3013769&m=65912" },
+          { size: "Talla 4", price: 17.46, url: "https://www.awin1.com/pclick.php?p=46163866154&a=3013769&m=65912" },
+          { size: "Talla 5", price: 19.3, url: "https://www.awin1.com/pclick.php?p=46339519055&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
-        priceMax: 20.3,
+        price: 17.21,
+        priceMax: 19.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5088-ballon-de-football-argentine-coupe-du-monde-2026-bleglo-argmet-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/e/ke5088.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 18.38, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5088-ballon-de-football-argentine-coupe-du-monde-2026-bleglo-argmet-blanc" },
-          { size: "4", price: 18.38, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5088-ballon-de-football-argentine-coupe-du-monde-2026-bleglo-argmet-blanc" },
-          { size: "5", price: 20.3, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5088-ballon-de-football-argentine-coupe-du-monde-2026-bleglo-argmet-blanc" },
+          { size: "3", price: 17.21, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5088-ballon-de-football-argentine-coupe-du-monde-2026-bleglo-argmet-blanc" },
+          { size: "4", price: 17.21, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5088-ballon-de-football-argentine-coupe-du-monde-2026-bleglo-argmet-blanc" },
+          { size: "5", price: 19.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5088-ballon-de-football-argentine-coupe-du-monde-2026-bleglo-argmet-blanc" },
         ],
       },
       {
@@ -1196,7 +1210,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 23.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249387501&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46323387439&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001143808-00-P-X-20260916091956.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ1MnxpbWFnZS9qcGVnfGFHTTVMMmcwWWk4eE5EQXlNRGs1TnpFeU1EQXpNQzl0WldScFlYTmZNVEF3TVRFME16Z3dPRjh3TUY5UVgxZ3RNakF5TmpBNU1UWXdPVEU1TlRZdWFuQm58YjlkZTdlZGI1NTNlMWNjMzEyMTI0NjUzZmIxN2M4ZWE0Yzk2MGQwODAyZGEwNmM1ZDE5NDA5ZGQ3YzQzZDFjNQ&feedId=58083&k=fa126d4fde79e6ebd22d2afddca1b25930c8476d",
         sizes: ["3", "5"],
       },
@@ -1254,7 +1268,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 31.76,
+        price: 29.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44914986393&a=3013769&m=65912",
@@ -1263,7 +1277,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.87,
+        price: 29.36,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6038-ballon-de-football-adidas-bundesliga-torfabrik-league-2026-27-white-black-solred",
@@ -1289,7 +1303,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 114.18,
+        price: 109.84,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163806972&a=3013769&m=65912",
@@ -1298,7 +1312,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 112.61,
+        price: 108.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6037-ballon-de-football-adidas-bundesliga-torfabrik-pro-2026-27-white-black-solred-taille-5",
@@ -1401,7 +1415,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.16,
+        price: 17.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45145695438&a=3013769&m=65912",
@@ -1410,7 +1424,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
+        price: 17.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5125-ballon-de-football-domicile-real-madrid-club-2026-27-white-aurivy-taille-5",
@@ -1460,6 +1474,41 @@ const minedBallProductsChunk1: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46679548443&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F23634ff96d8f4039a43e17932f5efa9a_9366%2FBalon_Club_UEFA_Champions_League_26-27_Amarillo_LF0594_01_00_standard.jpg&feedId=92152&k=da3cccf047a177011aa440eb3cbca3e9f08c9537",
         sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balones-de-futbol-adidas-ucl-2026-27-blanc",
+    brand: "Adidas",
+    model: "Balón adidas con caja UEFA Champions League 26/27 League - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "AdidasES",
+        price: 40.0,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45355986026&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F10116067c5b54aa4a542d03cc150ed77_9366%2FBalon_con_caja_UEFA_Champions_League_26-27_League_Blanco_KE9771_01_00_standard.jpg&feedId=92152&k=a345ca8ad7509cf53c230cbc57bd25d0e9d3b105",
+        sizes: ["5"],
+      },
+      {
+        store: "PlanetFoot",
+        price: 40.49,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fballon-adidas-uefa-champions-league-league-2026-27-blanc-multicolore-ke9771%3Fvariant%3D55267330916693",
+        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/ballon-adidas-uefa-champions-league-league-2026-27-blanc-multicolore-boite-ke9771-1.avif?v=1793379808",
+        sizes: [],
+      },
+      {
+        store: "AdidasMX",
+        price: 1199.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=45353500957&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F10116067c5b54aa4a542d03cc150ed77_9366%2FBalon_League_Boxed_UEFA_Champions_League_26-27_Blanco_KE9771_01_00_standard.jpg&feedId=95013&k=1a6c6430a93fd77b5406b8ed1ec0199ee07554c6",
+        sizes: ["5"],
       },
     ],
   },
@@ -1517,7 +1566,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-coupe-du-monde-2026-trionda-club-blanco",
     brand: "Adidas",
-    model: "Balón adidas Copa Mundial de la FIFA 26™ Trionda Club - Blanco (JD8028)",
+    model: "Balón adidas Copa Mundial de la FIFA 26™ Trionda Club - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -1531,32 +1580,32 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.88,
-        priceMax: 22.46,
+        price: 17.5,
+        priceMax: 20.67,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42663844304&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jd8028_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=220060c75c2c0e5ee09dc578f8fc80382d79a973",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 20.58, url: "https://www.awin1.com/pclick.php?p=42663844302&a=3013769&m=65912" },
-          { size: "Talla 4", price: 22.46, url: "https://www.awin1.com/pclick.php?p=42663844303&a=3013769&m=65912" },
-          { size: "Talla 5", price: 19.88, url: "https://www.awin1.com/pclick.php?p=42663844304&a=3013769&m=65912" },
+          { size: "Talla 3", price: 18.84, url: "https://www.awin1.com/pclick.php?p=42663844302&a=3013769&m=65912" },
+          { size: "Talla 4", price: 20.67, url: "https://www.awin1.com/pclick.php?p=42663844303&a=3013769&m=65912" },
+          { size: "Talla 5", price: 17.5, url: "https://www.awin1.com/pclick.php?p=42663844304&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 19.23,
-        priceMax: 21.7,
+        price: 17.5,
+        priceMax: 20.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8028-ballon-de-football-adidas-coupe-du-monde-2026-trionda-club-white-vivred-globlu-green",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd8028_1_hardware_photography_front_center_view_white.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 19.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8028-ballon-de-football-adidas-coupe-du-monde-2026-trionda-club-white-vivred-globlu-green" },
-          { size: "4", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8028-ballon-de-football-adidas-coupe-du-monde-2026-trionda-club-white-vivred-globlu-green" },
-          { size: "5", price: 19.23, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8028-ballon-de-football-adidas-coupe-du-monde-2026-trionda-club-white-vivred-globlu-green" },
+          { size: "3", price: 18.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8028-ballon-de-football-adidas-coupe-du-monde-2026-trionda-club-white-vivred-globlu-green" },
+          { size: "4", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8028-ballon-de-football-adidas-coupe-du-monde-2026-trionda-club-white-vivred-globlu-green" },
+          { size: "5", price: 17.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8028-ballon-de-football-adidas-coupe-du-monde-2026-trionda-club-white-vivred-globlu-green" },
         ],
       },
       {
@@ -1591,7 +1640,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   {
     id: "adidas-balon-de-futbol-copa-del-mundo-adidas-trionda-26-blanco",
     brand: "Adidas",
-    model: "Balón adidas Copa Mundial de la FIFA 26™ Trionda Club - Blanco",
+    model: "Balón adidas Copa Mundial de la FIFA 26™ Trionda Club - Blanco (JD8054)",
     colour: "Blanco",
     offers: [
       {
@@ -1605,21 +1654,31 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 22.46,
+        price: 20.67,
+        priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42663844301&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jd8054_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=0c229d8326f76f32db8ccaf3fc540d8ea1a90141",
-        sizes: ["Talla 5"],
+        sizes: ["Talla 3", "Talla 5"],
+        sizePrices: [
+          { size: "Talla 3", price: 25.0, url: "https://www.awin1.com/pclick.php?p=42663844299&a=3013769&m=65912" },
+          { size: "Talla 5", price: 20.67, url: "https://www.awin1.com/pclick.php?p=42663844301&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 21.7,
+        price: 20.45,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8054-ballon-de-football-coupe-du-monde-adidas-trionda-26-white-flaaqu-shopnk",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd8054_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["5"],
+        sizes: ["3", "5"],
+        sizePrices: [
+          { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8054-ballon-de-football-coupe-du-monde-adidas-trionda-26-white-flaaqu-shopnk" },
+          { size: "5", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8054-ballon-de-football-coupe-du-monde-adidas-trionda-26-white-flaaqu-shopnk" },
+        ],
       },
     ],
   },
@@ -1640,21 +1699,31 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.49,
+        price: 17.81,
+        priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163943674&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jd8053_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=ab3f4398ddf5bf4f0f66d2c02f22245ce9283c4b",
-        sizes: ["Talla 4"],
+        sizes: ["Talla 3", "Talla 4"],
+        sizePrices: [
+          { size: "Talla 3", price: 25.0, url: "https://www.awin1.com/pclick.php?p=46163922998&a=3013769&m=65912" },
+          { size: "Talla 4", price: 17.81, url: "https://www.awin1.com/pclick.php?p=46163943674&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 18.41,
+        price: 17.28,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8053-ballon-de-football-coupe-du-monde-adidas-trionda-26-black-luclem-lucpnk",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd8053_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["4"],
+        sizes: ["3", "4"],
+        sizePrices: [
+          { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8053-ballon-de-football-coupe-du-monde-adidas-trionda-26-black-luclem-lucpnk" },
+          { size: "4", price: 17.28, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8053-ballon-de-football-coupe-du-monde-adidas-trionda-26-black-luclem-lucpnk" },
+        ],
       },
     ],
   },
@@ -1675,17 +1744,17 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 20.58,
-        priceMax: 22.46,
+        price: 18.84,
+        priceMax: 20.67,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163816065&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jd8029_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=58174c9204c09da974454a3e181cd07715161d18",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 20.58, url: "https://www.awin1.com/pclick.php?p=46163816065&a=3013769&m=65912" },
-          { size: "Talla 4", price: 22.46, url: "https://www.awin1.com/pclick.php?p=42663844288&a=3013769&m=65912" },
-          { size: "Talla 5", price: 22.46, url: "https://www.awin1.com/pclick.php?p=42663844289&a=3013769&m=65912" },
+          { size: "Talla 3", price: 18.84, url: "https://www.awin1.com/pclick.php?p=46163816065&a=3013769&m=65912" },
+          { size: "Talla 4", price: 20.67, url: "https://www.awin1.com/pclick.php?p=42663844288&a=3013769&m=65912" },
+          { size: "Talla 5", price: 20.67, url: "https://www.awin1.com/pclick.php?p=42663844289&a=3013769&m=65912" },
         ],
       },
       {
@@ -1699,17 +1768,17 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.78,
-        priceMax: 21.7,
+        price: 18.58,
+        priceMax: 20.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8029-ballon-de-football-coupe-du-monde-adidas-trionda-26-beampk-nobred-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd8029_1_hardware_photography_front_center_view_white.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 19.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8029-ballon-de-football-coupe-du-monde-adidas-trionda-26-beampk-nobred-blue" },
-          { size: "4", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8029-ballon-de-football-coupe-du-monde-adidas-trionda-26-beampk-nobred-blue" },
-          { size: "5", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8029-ballon-de-football-coupe-du-monde-adidas-trionda-26-beampk-nobred-blue" },
+          { size: "3", price: 18.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8029-ballon-de-football-coupe-du-monde-adidas-trionda-26-beampk-nobred-blue" },
+          { size: "4", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8029-ballon-de-football-coupe-du-monde-adidas-trionda-26-beampk-nobred-blue" },
+          { size: "5", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8029-ballon-de-football-coupe-du-monde-adidas-trionda-26-beampk-nobred-blue" },
         ],
       },
       {
@@ -1736,6 +1805,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46234848242&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcb102e4ad73f47dd848b20f34caa5652_9366%2FBalon_Copa_Mundial_de_la_FIFA_26tm_Trionda_Club_Azul_JD8027_01_00_standard.jpg&feedId=92152&k=3517bb820cbf7cb976c6ad1ec61b224846769a3c",
+        sizes: ["4", "5"],
+      },
+      {
+        store: "AdidasCL",
+        price: 11990.0,
+        shipping: 0,
+        currency: "CLP",
+        url: "https://www.awin1.com/pclick.php?p=46893053723&a=3013769&m=79922",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcb102e4ad73f47dd848b20f34caa5652_9366%2FPelota_Trionda_Club_Copa_Mundial_de_la_FIFA_26tm_Azul_JD8027_01_00_standard.jpg&feedId=95016&k=6132d7d86f32e7b3f7d272032877c7614bacae0c",
         sizes: ["4", "5"],
       },
     ],
@@ -1774,15 +1852,6 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["5"],
       },
       {
-        store: "AdidasCL",
-        price: 24990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=42661645843&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F003fe4f765104f48944e88b35da0047b_9366%2FPelota_Trionda_League_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8030_01_00_standard.jpg&feedId=95016&k=165f5d6e92594ce391b22bcd13f26af081999c0a",
-        sizes: ["4", "5"],
-      },
-      {
         store: "AdidasMX",
         price: 999.0,
         shipping: 0,
@@ -1819,7 +1888,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 114.18,
+        price: 109.84,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163823652&a=3013769&m=65912",
@@ -1828,7 +1897,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 112.61,
+        price: 108.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8021-ballon-de-football-adidas-coupe-du-monde-2026-trionda-pro-white-solblu-hirere-flalim-taille-5",
@@ -1846,7 +1915,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "AdidasCL",
-        price: 119990.0,
+        price: 80990.0,
         shipping: 0,
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=42661645837&a=3013769&m=79922",
@@ -1890,7 +1959,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 48.67,
+        price: 46.15,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45184771361&a=3013769&m=65912",
@@ -1899,7 +1968,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 47.69,
+        price: 45.71,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6045-ballon-de-football-torfabrik-adidas-bundesliga-2026-27-white-black-solred-panton-taille-5",
@@ -1951,7 +2020,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 28.0,
+        price: 27.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1331-ballon-de-football-d-entrainement-adidas-predator-lucred-silvmt-black-white-taille-5",
@@ -1977,21 +2046,31 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 17.21,
+        price: 15.56,
+        priceMax: 18.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43348644126&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jw4010_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=ac3fc79b7cd4e3831db02dc5f281850b7d7161e5",
-        sizes: ["Talla 5"],
+        sizes: ["Talla 4", "Talla 5"],
+        sizePrices: [
+          { size: "Talla 4", price: 18.0, url: "https://www.awin1.com/pclick.php?p=43348644125&a=3013769&m=65912" },
+          { size: "Talla 5", price: 15.56, url: "https://www.awin1.com/pclick.php?p=43348644126&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 16.49,
+        price: 15.38,
+        priceMax: 20.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4010-ballon-de-football-adidas-epp-tagome-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jw4010_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["5"],
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4010-ballon-de-football-adidas-epp-tagome-white" },
+          { size: "5", price: 15.38, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4010-ballon-de-football-adidas-epp-tagome-white" },
+        ],
       },
     ],
   },
@@ -2038,7 +2117,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 15.33,
+        price: 13.73,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46255331261&a=3013769&m=65912",
@@ -2047,7 +2126,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.57,
+        price: 13.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw4011-ballon-de-football-adidas-epp-club-black-pink",
@@ -2090,7 +2169,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "AdidasCL",
-        price: 13990.0,
+        price: 12990.0,
         shipping: 0,
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=44419090141&a=3013769&m=79922",
@@ -2102,7 +2181,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   {
     id: "adidas-balon-euro-femenina-2025-club-blanco",
     brand: "Adidas",
-    model: "Balón adidas EURO Femenina 2025 Club - Blanco (JH1267)",
+    model: "Balón adidas EURO Femenina 2025 Club - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -2119,7 +2198,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   {
     id: "adidas-ballon-de-football-adidas-women-euro-2025-club-blanc",
     brand: "Adidas",
-    model: "Balón adidas EURO Femenina 2025 Club - Blanco",
+    model: "Balón adidas EURO Femenina 2025 Club - Blanco (JH1270)",
     colour: "Blanco",
     offers: [
       {
@@ -2200,6 +2279,24 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F60176563188f46759d7b611ae6db7cc5_9366%2FBALON_KINGS_LEAGUE_Blanco_KE8229_01_00_standard.jpg&feedId=92152&k=f48fde2b482710a2e191e2d2db54b591f72e4b6b",
         sizes: ["5"],
       },
+      {
+        store: "FootStoreES",
+        price: 40.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45338295358&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fe%2Fke8229.jpg&feedId=89032&k=18e16b3b26e66cfa97e53b74bc6384a609d0131d",
+        sizes: ["Talla 4", "Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 40.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke8229-ballon-de-football-adidas-allon-kings-league-white-black-panton",
+        imageUrl: "https://cdn.blazimg.com/1800/product/k/e/ke8229.webp",
+        sizes: ["4", "5"],
+      },
     ],
   },
   {
@@ -2262,7 +2359,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.16,
+        price: 17.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46157587909&a=3013769&m=65912",
@@ -2271,11 +2368,28 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
+        price: 17.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5131-ballon-de-football-liverpool-fc-2026-27-blanc-strred-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ke5131_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balon-adidas-local-trionda-club-mexico-verde",
+    brand: "Adidas",
+    model: "Balón adidas Local Trionda Club México - Verde",
+    colour: "Verde",
+    offers: [
+      {
+        store: "AdidasMX",
+        price: 649.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=46453436100&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe5ba3fa04f6b4995ba1cf9a795cfef8b_9366%2FBalon_Local_Trionda_Club_Mexico_Verde_JY0307_01_00_standard.jpg&feedId=95013&k=d990e2cec9599047cf840310a43899fb665ca6b0",
         sizes: ["5"],
       },
     ],
@@ -2349,21 +2463,31 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 20.58,
+        price: 18.84,
+        priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45184771349&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke7538-ivory-seblbu-iceblu-goldmt-6a444d5f8ae05-1.jpg&feedId=89032&k=2412cccdefb1baf3ec63d6938efdbf9d77c48bc5",
-        sizes: ["Talla 3"],
+        sizes: ["Talla 3", "Talla 5"],
+        sizePrices: [
+          { size: "Talla 3", price: 18.84, url: "https://www.awin1.com/pclick.php?p=45184771349&a=3013769&m=65912" },
+          { size: "Talla 5", price: 25.0, url: "https://www.awin1.com/pclick.php?p=45195675722&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 19.78,
+        price: 18.58,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7538-ballon-de-football-adidas-messi-club-ivory-seblbu-iceblu-goldmt",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke7538-ivory-seblbu-iceblu-goldmt-6a444d5f8ae05-1.webp",
-        sizes: ["3"],
+        sizes: ["3", "5"],
+        sizePrices: [
+          { size: "3", price: 18.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7538-ballon-de-football-adidas-messi-club-ivory-seblbu-iceblu-goldmt" },
+          { size: "5", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7538-ballon-de-football-adidas-messi-club-ivory-seblbu-iceblu-goldmt" },
+        ],
       },
     ],
   },
@@ -2461,7 +2585,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.16,
+        price: 17.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163836834&a=3013769&m=65912",
@@ -2470,7 +2594,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
+        price: 17.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5126-ballon-de-football-domicile-ajax-amsterdam-club-white-bolred-taille-5",
@@ -2505,7 +2629,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.16,
+        price: 17.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45184771353&a=3013769&m=65912",
@@ -2514,7 +2638,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
+        price: 17.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5111-ballon-de-football-domicile-bayern-munich-club-betsca-white-taille-5",
@@ -2549,7 +2673,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.16,
+        price: 17.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45184771355&a=3013769&m=65912",
@@ -2558,7 +2682,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
+        price: 17.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5118-ballon-de-football-domicile-manchester-united-club-mufred-white-taille-5",
@@ -2607,15 +2731,6 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy0248-ballon-de-football-italie-coupe-du-monde-2026-hi-res-blue-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_11_12_adidas_jy0248_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["5"],
-      },
-      {
-        store: "ForumSport",
-        price: 18.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43401488504&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075285-00-P-X-20251204103630.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU1M3xpbWFnZS9qcGVnfGFEZ3pMMmhoTXk4eE16TTNOREEyTkRBNU9UTTFPQzl0WldScFlYTmZNVEF3TVRBM05USTROVjh3TUY5UVgxZ3RNakF5TlRFeU1EUXhNRE0yTXpBdWFuQm58OGNlNDE0ZDFiNTc5Nzc0YmQ5NDg0ZjYyOWY0NzM5MWQ0YjNiNjVhMGRkMDdkODUzYTg3OTM5MGI0NjY3OTRmYg&feedId=58083&k=bb491e81c103e1f674379daac63ce50dc79d94ec",
         sizes: ["5"],
       },
     ],
@@ -2707,7 +2822,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.16,
+        price: 17.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163899366&a=3013769&m=65912",
@@ -2716,7 +2831,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
+        price: 17.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5105-ballon-de-football-exterieur-arsenal-club-conavy-eqtyel-taille-5",
@@ -2742,7 +2857,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 19.16,
+        price: 17.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163958044&a=3013769&m=65912",
@@ -2751,7 +2866,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
+        price: 17.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5119-ballon-de-football-exterieur-manchester-united-2026-27-mufred-royblu-taille-5",
@@ -2830,12 +2945,17 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 17.21,
+        price: 15.56,
+        priceMax: 18.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39158357367&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_it6382_luclem-black_1.jpg&feedId=89032&k=68978d65fd022e4f2550db3cb231bd817c15c936",
-        sizes: ["Talla 5"],
+        sizes: ["Talla 4", "Talla 5"],
+        sizePrices: [
+          { size: "Talla 4", price: 18.0, url: "https://www.awin1.com/pclick.php?p=39158357366&a=3013769&m=65912" },
+          { size: "Talla 5", price: 15.56, url: "https://www.awin1.com/pclick.php?p=39158357367&a=3013769&m=65912" },
+        ],
       },
       {
         store: "SportIsGoodES",
@@ -2848,12 +2968,17 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.49,
+        price: 15.38,
+        priceMax: 18.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit6382-ballon-de-football-adidas-starlancer-club-luclem-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_it6382_luclem-black_1.webp",
-        sizes: ["5"],
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 18.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit6382-ballon-de-football-adidas-starlancer-club-luclem-black" },
+          { size: "5", price: 15.38, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit6382-ballon-de-football-adidas-starlancer-club-luclem-black" },
+        ],
       },
       {
         store: "SportIsGoodFR",
@@ -2902,23 +3027,6 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-balon-adidas-starlancer-club-negro",
-    brand: "Adidas",
-    model: "Balón adidas Starlancer Club - Negro",
-    colour: "Negro",
-    offers: [
-      {
-        store: "AdidasMX",
-        price: 399.0,
-        shipping: 0,
-        currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=46388185120&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fde83974c18ce4c3e86f9e51c5629e9cf_9366%2FBalon_Starlancer_Club_Negro_IP1650_01_standard.jpg&feedId=95013&k=d26269cef9120e065cdef45c40cde9078eb4d405",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
     id: "adidas-balon-adidas-starlancer-club-rosa",
     brand: "Adidas",
     model: "Balón adidas Starlancer Club - Rosa",
@@ -2931,23 +3039,6 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "MXN",
         url: "https://www.awin1.com/pclick.php?p=38263327191&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F40c56ee073134b0292f8f009b5912abe_9366%2FBalon_Starlancer_Club_Rosa_IP1647_01_standard.jpg&feedId=95013&k=e421cc6bb13c88bbd1bf505a355247911db8a180",
-        sizes: ["4", "5"],
-      },
-    ],
-  },
-  {
-    id: "adidas-balon-adidas-starlancer-club-verde",
-    brand: "Adidas",
-    model: "Balón adidas Starlancer Club - Verde",
-    colour: "Verde",
-    offers: [
-      {
-        store: "AdidasMX",
-        price: 499.0,
-        shipping: 0,
-        currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=38996069603&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3d5537e83de94eb8aaa202cf40e6d09e_9366%2FBalon_Starlancer_Club_Verde_IT6383_01_00_standard.jpg&feedId=95013&k=96ea093dbbe91a09d2caeaf9ead159877cb9e873",
         sizes: ["4", "5"],
       },
     ],
@@ -2978,31 +3069,42 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 18.7,
+        price: 17.01,
         priceMax: 20.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42124886206&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2F1%2Fs12241_hdw_photo_back-center_white.jpg&feedId=89032&k=7f4f7eb8de1f7a113a2b7deca8b10dbe68c2bf35",
-        sizes: ["Talla 3", "Talla 5"],
+        sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 18.7, url: "https://www.awin1.com/pclick.php?p=42124886206&a=3013769&m=65912" },
+          { size: "Talla 3", price: 17.01, url: "https://www.awin1.com/pclick.php?p=42124886206&a=3013769&m=65912" },
+          { size: "Talla 4", price: 20.0, url: "https://www.awin1.com/pclick.php?p=42000310563&a=3013769&m=65912" },
           { size: "Talla 5", price: 20.0, url: "https://www.awin1.com/pclick.php?p=41968031459&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 17.96,
+        price: 16.81,
         priceMax: 20.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12241-ballon-de-football-adidas-tango-glider-blanc-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/1/s12241_hdw_photo_back-center_white.webp",
-        sizes: ["3", "5"],
+        sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 17.96, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12241-ballon-de-football-adidas-tango-glider-blanc-noir" },
+          { size: "3", price: 16.81, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12241-ballon-de-football-adidas-tango-glider-blanc-noir" },
+          { size: "4", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12241-ballon-de-football-adidas-tango-glider-blanc-noir" },
           { size: "5", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fs12241-ballon-de-football-adidas-tango-glider-blanc-noir" },
         ],
+      },
+      {
+        store: "AdidasCL",
+        price: 19990.0,
+        shipping: 0,
+        currency: "CLP",
+        url: "https://www.awin1.com/pclick.php?p=46888951140&a=3013769&m=79922",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd30ada86204a48ef912ca7f500d2d487_9366%2FBalon_de_Futbol_Tango_Glider_Blanco_S12241_01_standard.jpg&feedId=95016&k=88f908a6e8fe417a6cef7ec3d6d713993831e611",
+        sizes: ["4", "5"],
       },
       {
         store: "AdidasMX",
@@ -3050,7 +3152,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 22.46,
+        price: 20.67,
         priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
@@ -3058,14 +3160,14 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_656927_1_hardware_photography_front_center_view_white_xo.jpg&feedId=89032&k=9db5333530417ee085b5b2d190c66deac47f35ff",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 22.46, url: "https://www.awin1.com/pclick.php?p=39633513654&a=3013769&m=65912" },
+          { size: "Talla 3", price: 20.67, url: "https://www.awin1.com/pclick.php?p=39633513654&a=3013769&m=65912" },
           { size: "Talla 4", price: 25.0, url: "https://www.awin1.com/pclick.php?p=41949204864&a=3013769&m=65912" },
-          { size: "Talla 5", price: 22.46, url: "https://www.awin1.com/pclick.php?p=37188495375&a=3013769&m=65912" },
+          { size: "Talla 5", price: 20.67, url: "https://www.awin1.com/pclick.php?p=37188495375&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 21.7,
+        price: 20.45,
         priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
@@ -3073,9 +3175,9 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_656927_1_hardware_photography_front_center_view_white_xo.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F656927-ballon-de-football-adidas-tango-rosario-blanc" },
+          { size: "3", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F656927-ballon-de-football-adidas-tango-rosario-blanc" },
           { size: "4", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F656927-ballon-de-football-adidas-tango-rosario-blanc" },
-          { size: "5", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F656927-ballon-de-football-adidas-tango-rosario-blanc" },
+          { size: "5", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F656927-ballon-de-football-adidas-tango-rosario-blanc" },
         ],
       },
       {
@@ -3106,17 +3208,17 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 16.09,
-        priceMax: 20.0,
+        price: 15.09,
+        priceMax: 18.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46114042410&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jw1532_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=cc29e750a2a263cb10023750ba9c3e3a4518cc8b",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 20.0, url: "https://www.awin1.com/pclick.php?p=46163804946&a=3013769&m=65912" },
-          { size: "Talla 4", price: 20.0, url: "https://www.awin1.com/pclick.php?p=46163881838&a=3013769&m=65912" },
-          { size: "Talla 5", price: 16.09, url: "https://www.awin1.com/pclick.php?p=46114042410&a=3013769&m=65912" },
+          { size: "Talla 3", price: 18.46, url: "https://www.awin1.com/pclick.php?p=46163804946&a=3013769&m=65912" },
+          { size: "Talla 4", price: 18.46, url: "https://www.awin1.com/pclick.php?p=46163881838&a=3013769&m=65912" },
+          { size: "Talla 5", price: 15.09, url: "https://www.awin1.com/pclick.php?p=46114042410&a=3013769&m=65912" },
         ],
       },
       {
@@ -3130,17 +3232,17 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.42,
-        priceMax: 19.44,
+        price: 14.92,
+        priceMax: 18.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1532-ballon-de-football-adidas-tiro-club-luclem-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jw1532_1_hardware_photography_front_center_view_white.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 19.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1532-ballon-de-football-adidas-tiro-club-luclem-black" },
-          { size: "4", price: 19.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1532-ballon-de-football-adidas-tiro-club-luclem-black" },
-          { size: "5", price: 15.42, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1532-ballon-de-football-adidas-tiro-club-luclem-black" },
+          { size: "3", price: 18.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1532-ballon-de-football-adidas-tiro-club-luclem-black" },
+          { size: "4", price: 18.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1532-ballon-de-football-adidas-tiro-club-luclem-black" },
+          { size: "5", price: 14.92, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1532-ballon-de-football-adidas-tiro-club-luclem-black" },
         ],
       },
       {
@@ -3185,11 +3287,11 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "MXN",
         url: "https://www.awin1.com/pclick.php?p=46329781482&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8af495ca0c8841e6843506117b045a98_9366%2FBalon_Tiro_Club_Azul_JW1529_01_00_standard.jpg&feedId=95013&k=99611000dc81fb13573a8090da670f845b048e0f",
-        sizes: ["4"],
+        sizes: ["4", "5"],
       },
       {
         store: "FootStoreES",
-        price: 20.0,
+        price: 18.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163891252&a=3013769&m=65912",
@@ -3198,7 +3300,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.44,
+        price: 18.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1529-ballon-de-football-adidas-tiro-club-poblue-white",
@@ -3208,7 +3310,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-balones-de-futbol-adidas-tiro-club-blanc",
+    id: "adidas-balon-adidas-tiro-club-blanco",
     brand: "Adidas",
     model: "Balón adidas Tiro Club - Blanco (JW1530)",
     colour: "Blanco",
@@ -3218,18 +3320,86 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 20.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43254204885&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=43254204884&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcd9c6f9fe68d477fa06a11459dca8943_9366%2FBALON_TIRO_CLUB_Blanco_JW1530_01_00_standard.jpg&feedId=92152&k=831a23b38d207bb70913bee7ced30905c7c8040b",
         sizes: ["3", "4", "5"],
       },
       {
         store: "FootStoreES",
-        price: 20.0,
+        price: 18.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45443801479&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jw1530_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=d9e2d7d1a1c8455980ce30b26e7aa3b0bd1b5cb3",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
+      },
+      {
+        store: "SportIsGoodES",
+        price: 17.55,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46118369146&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kf8846_1_hardware_photography_front_center_view_white.jpg&feedId=89044&k=68a178a822ae3bd16b3ecac4614410706b70a6a9",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 18.25,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1530-ballon-de-football-adidas-tiro-club-white-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jw1530_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["3", "4", "5"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 18.23,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjw1531-ballon-de-football-adidas-tiro-club-white-lucred",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jw1531_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balones-de-futbol-adidas-tiro-club-blanc-2",
+    brand: "Adidas",
+    model: "Balón adidas Tiro Club - Blanco (JW1531)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "AdidasES",
+        price: 20.0,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44905088044&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6b79c5bb242f41039bf31d8e870274d8_9366%2FBALON_TIRO_CLUB_Blanco_JW1531_01_00_standard.jpg&feedId=92152&k=3967a207d681cb7ee9b21a84aefb8eadf1a0baf0",
+        sizes: ["3", "4", "5"],
+      },
+      {
+        store: "AdidasMX",
+        price: 499.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=46888953130&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcd9c6f9fe68d477fa06a11459dca8943_9366%2FBALON_TIRO_CLUB_Blanco_JW1530_01_00_standard.jpg&feedId=95013&k=831a23b38d207bb70913bee7ced30905c7c8040b",
+        sizes: ["4", "5"],
+      },
+      {
+        store: "FootStoreES",
+        price: 16.8,
+        priceMax: 22.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46114042573&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kf8846_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=68a178a822ae3bd16b3ecac4614410706b70a6a9",
+        sizes: ["Talla 3", "Talla 4", "Talla 5"],
+        sizePrices: [
+          { size: "Talla 3", price: 22.0, url: "https://www.awin1.com/pclick.php?p=46238109269&a=3013769&m=65912" },
+          { size: "Talla 4", price: 22.0, url: "https://www.awin1.com/pclick.php?p=46163872816&a=3013769&m=65912" },
+          { size: "Talla 5", price: 16.8, url: "https://www.awin1.com/pclick.php?p=46114042573&a=3013769&m=65912" },
+        ],
       },
       {
         store: "SportIsGoodES",
@@ -3242,12 +3412,18 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.44,
+        price: 14.92,
+        priceMax: 18.25,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1530-ballon-de-football-adidas-tiro-club-white-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jw1530_1_hardware_photography_front_center_view_white.webp",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1531-ballon-de-football-adidas-tiro-club-white-lucred",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jw1531_1_hardware_photography_front_center_view_white.webp",
         sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 18.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1531-ballon-de-football-adidas-tiro-club-white-lucred" },
+          { size: "4", price: 18.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1531-ballon-de-football-adidas-tiro-club-white-lucred" },
+          { size: "5", price: 14.92, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1531-ballon-de-football-adidas-tiro-club-white-lucred" },
+        ],
       },
       {
         store: "SportIsGoodFR",
@@ -3270,26 +3446,9 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-balon-adidas-tiro-club-blanco",
-    brand: "Adidas",
-    model: "Balón adidas Tiro Club - Blanco (JW1531)",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 20.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44905088044&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6b79c5bb242f41039bf31d8e870274d8_9366%2FBALON_TIRO_CLUB_Blanco_JW1531_01_00_standard.jpg&feedId=92152&k=3967a207d681cb7ee9b21a84aefb8eadf1a0baf0",
-        sizes: ["3", "5"],
-      },
-    ],
-  },
-  {
     id: "adidas-balon-tiro-club-blanco",
     brand: "Adidas",
-    model: "Balón adidas Tiro Club - Blanco",
+    model: "Balón adidas Tiro Club - Blanco (HZ6913)",
     colour: "Blanco",
     offers: [
       {
@@ -3301,6 +3460,14 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3b17ebffd2f148c4a0fdaf2b00bf4741_9366%2FBalon_Tiro_Club_Blanco_HZ6913_01_00_standard.jpg&feedId=92152&k=7cfd7868c755c40874e53b593bf1390efbadea40",
         sizes: ["3"],
       },
+    ],
+  },
+  {
+    id: "adidas-balon-adidas-tiro-club-blanco-2",
+    brand: "Adidas",
+    model: "Balón adidas Tiro Club - Blanco (VB565)",
+    colour: "Blanco",
+    offers: [
       {
         store: "AdidasMX",
         price: 499.0,
@@ -3309,54 +3476,6 @@ const minedBallProductsChunk1: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46307575321&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6b79c5bb242f41039bf31d8e870274d8_9366%2FBalon_Tiro_Club_Blanco_JW1531_01_00_standard.jpg&feedId=95013&k=1c27f25de911339ff06775c09d71c982d4ff2534",
         sizes: ["4", "5"],
-      },
-      {
-        store: "FootStoreES",
-        price: 16.09,
-        priceMax: 20.0,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46114042572&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jw1531_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=13cff6ce2119185d1e4a10636e8d8f1894a421c3",
-        sizes: ["Talla 3", "Talla 4", "Talla 5"],
-        sizePrices: [
-          { size: "Talla 3", price: 20.0, url: "https://www.awin1.com/pclick.php?p=46163956562&a=3013769&m=65912" },
-          { size: "Talla 4", price: 20.0, url: "https://www.awin1.com/pclick.php?p=46163926300&a=3013769&m=65912" },
-          { size: "Talla 5", price: 16.09, url: "https://www.awin1.com/pclick.php?p=46114042572&a=3013769&m=65912" },
-        ],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 17.55,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46118369146&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kf8846_1_hardware_photography_front_center_view_white.jpg&feedId=89044&k=68a178a822ae3bd16b3ecac4614410706b70a6a9",
-        sizes: ["Talla 5"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 15.42,
-        priceMax: 19.44,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1531-ballon-de-football-adidas-tiro-club-white-lucred",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jw1531_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["3", "4", "5"],
-        sizePrices: [
-          { size: "3", price: 19.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1531-ballon-de-football-adidas-tiro-club-white-lucred" },
-          { size: "4", price: 19.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1531-ballon-de-football-adidas-tiro-club-white-lucred" },
-          { size: "5", price: 15.42, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1531-ballon-de-football-adidas-tiro-club-white-lucred" },
-        ],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 18.23,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fjw1531-ballon-de-football-adidas-tiro-club-white-lucred",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jw1531_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["5"],
       },
     ],
   },
@@ -3378,7 +3497,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-balones-de-futbol-adidas-tiro-competition-blanc",
+    id: "adidas-balones-de-futbol-adidas-tiro-competition-blanc-2",
     brand: "Adidas",
     model: "Balón adidas Tiro Competition - Blanco",
     colour: "Blanco",
@@ -3394,21 +3513,21 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 53.06,
+        price: 40.66,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44719157524&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-f99641-blanc-69fdf0f3e0994-1.jpg&feedId=89032&k=ca6e45cc71d9716e656c7b15bca349e50e7843d1",
-        sizes: ["Talla 5"],
+        url: "https://www.awin1.com/pclick.php?p=46163899709&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jw1534_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=ae0f7a32f8c6dacb16f02d7ae47079b8f170da70",
+        sizes: ["Talla 4"],
       },
       {
         store: "FootStoreFR",
-        price: 52.09,
+        price: 40.21,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff99641-ballon-de-football-adidas-tiro-competition-blanc-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-f99641-blanc-69fdf0f3e0994-1.webp",
-        sizes: ["5"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1534-ballon-de-football-adidas-tiro-competition-white-black-lucred",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jw1534_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["4"],
       },
     ],
   },
@@ -3429,16 +3548,16 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 32.54,
+        price: 30.47,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163857575&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163897898&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ka5260_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=1b3d764f9bcaa57aafe70e28d730ca0ace1998a8",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 31.7,
+        price: 30.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka5260-ballon-de-football-adidas-tiro-league-luclem-black-lucred-ironmt",
@@ -3464,16 +3583,16 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 32.54,
+        price: 30.47,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163830575&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163835545&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ka5261-royblu-black-white-1.jpg&feedId=89032&k=f0fd5f16dfda4b5af03c9eb8bf501f4644815ce0",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 31.7,
+        price: 30.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka5261-ballon-de-football-adidas-tiro-league-royblu-black-white",
@@ -3499,16 +3618,16 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 32.54,
+        price: 30.47,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163828638&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163911458&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ka5263-white-black-lucred-3.jpg&feedId=89032&k=941d09c442d6822fe184984356ff23f249bac3e0",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 31.7,
+        price: 30.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka5263-ballon-de-football-adidas-tiro-league-white-black-lucred",
@@ -3534,16 +3653,16 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 32.54,
+        price: 30.47,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163813332&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163850322&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ka5262-white-conavy-brblue-green-2.jpg&feedId=89032&k=c8e4205c7ec625c9790577eae45a1442f51c4654",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 31.7,
+        price: 30.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fka5262-ballon-de-football-adidas-tiro-league-white-conavy-brblue-green",
@@ -3637,7 +3756,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 84.16,
+        price: 80.65,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44914987780&a=3013769&m=65912",
@@ -3646,7 +3765,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 82.83,
+        price: 79.88,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1533-ballon-de-football-adidas-tiro-pro-white-black-brired-taille-5",
@@ -3666,14 +3785,14 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 25.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249387717&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249387760&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001143853-00-P-X-20260916091956.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQxNHxpbWFnZS9qcGVnfGFEWXpMMmd5WlM4eE5EQXlNVEF3TWpFMk5qTXdNaTl0WldScFlYTmZNVEF3TVRFME16ZzFNMTh3TUY5UVgxZ3RNakF5TmpBNU1UWXdPVEU1TlRZdWFuQm58ZTI3YTdiYzhkMDNkZGRhN2VkZDQ4NmM2OGYyYmI2NjM1M2E1YzAxZjNkNTNmZTI5N2FlNWUwMWZlMzRiNmNlOA&feedId=58083&k=bc69bf661040dc473b7b59c796267d03fbc553b8",
         sizes: ["3", "4", "5"],
       },
     ],
   },
   {
-    id: "adidas-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-blanc",
+    id: "adidas-balones-de-futbol-adidas-bundesliga-torfabrik-club-2026-27-blanc",
     brand: "Adidas",
     model: "Balón adidas Torfabrik club Bundesliga 26/27 - Blanco",
     colour: "Blanco",
@@ -3698,26 +3817,32 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 25.0,
+        price: 18.84,
+        priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45195673150&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kg6043_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=f24dd1b625b3a894cd1cde9d6a7a2c67ee1d5c04",
+        url: "https://www.awin1.com/pclick.php?p=44914986391&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kg6044_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=5da1099ea5e8a180956efef94c7d42823216fd79",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
+        sizePrices: [
+          { size: "Talla 3", price: 25.0, url: "https://www.awin1.com/pclick.php?p=45819220615&a=3013769&m=65912" },
+          { size: "Talla 4", price: 18.84, url: "https://www.awin1.com/pclick.php?p=44914986391&a=3013769&m=65912" },
+          { size: "Talla 5", price: 18.84, url: "https://www.awin1.com/pclick.php?p=44914986392&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 25.0,
-        priceMax: 26.0,
+        price: 18.58,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6043-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-black-solred",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kg6043_1_hardware_photography_front_center_view_white.webp",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6044-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-ironmt-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kg6044_1_hardware_photography_front_center_view_white.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6043-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-black-solred" },
-          { size: "4", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6043-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-black-solred" },
-          { size: "5", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6043-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-black-solred" },
+          { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6044-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-ironmt-black" },
+          { size: "4", price: 18.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6044-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-ironmt-black" },
+          { size: "5", price: 18.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6044-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-ironmt-black" },
         ],
       },
     ],
@@ -3809,23 +3934,6 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-adidas-balon-ucl-pro-25-26-league-stage-blanco",
-    brand: "Adidas",
-    model: "Balón adidas UCL Pro 25/26 League Stage - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "AdidasCL",
-        price: 59990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=41895016826&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F29c2687e5a044ec4a0f8248c4a3e033c_faec%2FBalon_UCL_Pro_25-26_League_Stage_Blanco_JD0188_db01_00_standard.tiff.jpg&feedId=95016&k=0d755f5b82a8ceec9b566d875fa1120704f1e142",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
     id: "adidas-balones-de-futbol-adidas-uefa-champions-league-club-2026-27-blanc",
     brand: "Adidas",
     model: "Balón adidas UEFA Champions League 26/27 Club - Blanco",
@@ -3845,28 +3953,28 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 17.41,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249384754&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135257-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMxOHxpbWFnZS9qcGVnfGFHVXhMMmc1TlM4eE16Z3pOalV3TmpFek5qWXdOaTl0WldScFlYTmZNVEF3TVRFek5USTFOMTh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58ZWRjMzczODc4OTA3MWEwZmNlMDU3NTg1MmJmYjY2NzAyMjM0Y2Q2MGZlZDdhNzU3MzQzNDI0ZWNhNGI1MTE4YQ&feedId=58083&k=05350bfc78479263a64d3ac1b4044d6669e6547b",
-        sizes: ["4", "5"],
+        url: "https://www.awin1.com/pclick.php?p=46249383249&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134998-00-P-X-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk5M3xpbWFnZS9qcGVnfGFEazNMMmcxT1M4eE16Z3pOekl4TnpreU16RXdNaTl0WldScFlYTmZNVEF3TVRFek5EazVPRjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58ZjViMWQxN2UwODk4MDM4MWEyM2I0MGI0MjYzYTFmMTQ1YTIzOGVlYzQ1MzYxZDU5YTc2NTNmMWY0MjQ1NjZiYg&feedId=58083&k=1cff87da33279a1fcab80a2e731510b3cb74a2f6",
+        sizes: ["3", "5"],
       },
       {
         store: "FootStoreES",
-        price: 22.46,
+        price: 20.67,
         priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163912585&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46163899353&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9764-white-multco-silvmt-6a444d73614c5-1.jpg&feedId=89032&k=a8755f29f4fe8cbf7eb461fa81e87ebc547d2f9c",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 22.46, url: "https://www.awin1.com/pclick.php?p=46163912585&a=3013769&m=65912" },
+          { size: "Talla 3", price: 20.67, url: "https://www.awin1.com/pclick.php?p=46163912585&a=3013769&m=65912" },
           { size: "Talla 4", price: 25.0, url: "https://www.awin1.com/pclick.php?p=46163825293&a=3013769&m=65912" },
-          { size: "Talla 5", price: 22.46, url: "https://www.awin1.com/pclick.php?p=46163899353&a=3013769&m=65912" },
+          { size: "Talla 5", price: 20.67, url: "https://www.awin1.com/pclick.php?p=46163899353&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 21.7,
+        price: 20.45,
         priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
@@ -3874,36 +3982,10 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke9764-white-multco-silvmt-6a444d73614c5-1.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9764-ballon-de-football-adidas-uefa-champions-league-club-2026-27-white-multco-silvmt" },
+          { size: "3", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9764-ballon-de-football-adidas-uefa-champions-league-club-2026-27-white-multco-silvmt" },
           { size: "4", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9764-ballon-de-football-adidas-uefa-champions-league-club-2026-27-white-multco-silvmt" },
-          { size: "5", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9764-ballon-de-football-adidas-uefa-champions-league-club-2026-27-white-multco-silvmt" },
+          { size: "5", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9764-ballon-de-football-adidas-uefa-champions-league-club-2026-27-white-multco-silvmt" },
         ],
-      },
-      {
-        store: "AdidasCL",
-        price: 19990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46385828032&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2197e5b038374032ae2d6e3473a8532e_9366%2FPelota_Club_UEFA_Champions_League_26-27_Blanco_KX5863_01_00_standard.jpg&feedId=95016&k=62b3ea2aded8c1fdbdb5fe228a1a616c1970912e",
-        sizes: ["4", "5"],
-      },
-    ],
-  },
-  {
-    id: "adidas-balon-adidas-uefa-champions-league-26-27-club-blanco",
-    brand: "Adidas",
-    model: "Balón Adidas Uefa Champions League 26/27 Club - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 17.41,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383249&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134998-00-P-X-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk5M3xpbWFnZS9qcGVnfGFEazNMMmcxT1M4eE16Z3pOekl4TnpreU16RXdNaTl0WldScFlYTmZNVEF3TVRFek5EazVPRjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58ZjViMWQxN2UwODk4MDM4MWEyM2I0MGI0MjYzYTFmMTQ1YTIzOGVlYzQ1MzYxZDU5YTc2NTNmMWY0MjQ1NjZiYg&feedId=58083&k=1cff87da33279a1fcab80a2e731510b3cb74a2f6",
-        sizes: ["3", "5"],
       },
     ],
   },
@@ -3924,35 +4006,35 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 34.3,
-        priceMax: 36.6,
+        price: 29.37,
+        priceMax: 34.42,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348247452&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ke9765_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=7412d1c27955a2ba9455dcbccb6d08841c03a0a9",
         sizes: ["Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 4", price: 36.6, url: "https://www.awin1.com/pclick.php?p=45348247451&a=3013769&m=65912" },
-          { size: "Talla 5", price: 34.3, url: "https://www.awin1.com/pclick.php?p=45348247452&a=3013769&m=65912" },
+          { size: "Talla 4", price: 34.42, url: "https://www.awin1.com/pclick.php?p=45348247451&a=3013769&m=65912" },
+          { size: "Talla 5", price: 29.37, url: "https://www.awin1.com/pclick.php?p=45348247452&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 33.5,
-        priceMax: 35.72,
+        price: 29.19,
+        priceMax: 34.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9765-ballon-de-football-adidas-ucl-2026-27-white-multco",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ke9765_1_hardware_photography_front_center_view_white.webp",
         sizes: ["4", "5"],
         sizePrices: [
-          { size: "4", price: 35.72, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9765-ballon-de-football-adidas-ucl-2026-27-white-multco" },
-          { size: "5", price: 33.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9765-ballon-de-football-adidas-ucl-2026-27-white-multco" },
+          { size: "4", price: 34.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9765-ballon-de-football-adidas-ucl-2026-27-white-multco" },
+          { size: "5", price: 29.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9765-ballon-de-football-adidas-ucl-2026-27-white-multco" },
         ],
       },
       {
         store: "ForumSport",
-        price: 30.44,
+        price: 30.09,
         shipping: 5.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45352681981&a=3013769&m=23805",
@@ -4005,7 +4087,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 116.07,
+        price: 111.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45348247383&a=3013769&m=65912",
@@ -4014,7 +4096,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 114.53,
+        price: 110.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9757-ballon-de-football-adidas-ucl-pro-2026-27-blanc-multco-taille-5",
@@ -4040,7 +4122,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 116.07,
+        price: 111.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45361915654&a=3013769&m=65912",
@@ -4049,7 +4131,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 114.53,
+        price: 110.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9769-ballon-de-football-adidas-ucl-2026-27-luclem-purbur-taille-5",
@@ -4075,7 +4157,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 116.07,
+        price: 111.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45526330017&a=3013769&m=65912",
@@ -4084,7 +4166,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 114.53,
+        price: 110.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5141-ballon-de-football-femme-adidas-uefa-ligue-des-champions-2026-27-white-luta-black-taille-5",
@@ -4110,16 +4192,16 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 24.33,
+        price: 22.49,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163884372&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46226025147&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jw1528_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=26b321d00e25e44ccb228240dcbc39089f930e38",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 23.55,
+        price: 22.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1528-ballon-de-football-adidas-tiro-white-poblue",
@@ -4165,7 +4247,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 40.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163900349&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46654819740&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-jx9101-dark-purple-6abb908b0d38e-1.jpg&feedId=89032&k=f82455348d1f21c11a1d20ff678f4e95cda91532",
         sizes: ["Talla 4", "Talla 5"],
       },
@@ -4188,7 +4270,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.0,
+        price: 25.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104845063&a=3013769&m=65912",
@@ -4249,7 +4331,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.0,
+        price: 24.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fin9375-ballon-de-football-de-club-adidas-euro-2024-solred-black-silvmt",
@@ -4275,12 +4357,43 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.0,
+        price: 29.0,
+        priceMax: 30.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3826-ballon-de-football-d-entrainement-coupe-du-monde-adidas-2024-25-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd3826_4_hardware_photography_back_center_view_white.webp",
         sizes: ["3", "5"],
+        sizePrices: [
+          { size: "3", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3826-ballon-de-football-d-entrainement-coupe-du-monde-adidas-2024-25-white" },
+          { size: "5", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3826-ballon-de-football-d-entrainement-coupe-du-monde-adidas-2024-25-white" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "adidas-balon-de-futbol-de-entrenamiento-liga-de-campeones-blanco",
+    brand: "Adidas",
+    model: "Balón de fútbol de entrenamiento Liga de Campeones - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 31.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889802819&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ix4062_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=0da83cce375b95b54621a85114e3310a7cb9d083",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 32.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fix4062-ballon-de-football-d-entrainement-ligue-des-champions-white-black-plamet-tmsoye",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ix4062_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["5"],
       },
     ],
   },
@@ -4344,7 +4457,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 51.23,
+        price: 48.64,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163965663&a=3013769&m=65912",
@@ -4353,7 +4466,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 50.18,
+        price: 48.13,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5081-ballon-de-football-espagne-2026-white-royblu-actred-bolred",
@@ -4365,7 +4478,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 43.79,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249387492&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249387640&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001143807-00-P-X-20260916091956.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODExNXxpbWFnZS9qcGVnfGFHSTBMMmhpTVM4eE5EQXlNRGs1TmpJMk9EQTJNaTl0WldScFlYTmZNVEF3TVRFME16Z3dOMTh3TUY5UVgxZ3RNakF5TmpBNU1UWXdPVEU1TlRZdWFuQm58MDUyZmJlYjQ0MmUwMjY4ZWE0MmNiYjE3OWZiNjdlNWJjNGQ2ZTc5YTkwMzQzYWJmODAyYTZjZmRiNWQ4MGE0Mw&feedId=58083&k=3bafe1f84063023b441c18745cb4057b6cbe5247",
         sizes: ["4", "5"],
       },
@@ -4379,7 +4492,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 60.0,
+        price: 59.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44695074834&a=3013769&m=65912",
@@ -4388,7 +4501,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 60.0,
+        price: 59.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fix1725-ballon-de-football-espagne-amberes-compeition-euro-2024-white-black-panton-beamye",
@@ -4414,7 +4527,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 148.0,
+        price: 150.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fix1724-ballon-de-football-espagne-amberes-pro-2024-white-black-panton-beamye-taille-5",
@@ -4436,7 +4549,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45160609472&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jp1539_silvmt-dpurpl-turbo_1.jpg&feedId=89032&k=ca8d37f71565772223a0fd3260458838dd5ab01c",
-        sizes: ["Talla 4"],
+        sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
@@ -4445,7 +4558,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1539-ballon-de-football-phase-de-groupe-adidas-uefa-champions-league-club-2025-26-silvmt-dpurpl-turbo",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp1539_silvmt-dpurpl-turbo_1.webp",
-        sizes: ["4"],
+        sizes: ["4", "5"],
       },
     ],
   },
@@ -4553,12 +4666,18 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.0,
+        price: 24.0,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1379-ballon-de-football-ligue-des-champions-feminine-final-club-2025-26-silvmt-red-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/w/jw1379.webp",
         sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1379-ballon-de-football-ligue-des-champions-feminine-final-club-2025-26-silvmt-red-white" },
+          { size: "4", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1379-ballon-de-football-ligue-des-champions-feminine-final-club-2025-26-silvmt-red-white" },
+          { size: "5", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1379-ballon-de-football-ligue-des-champions-feminine-final-club-2025-26-silvmt-red-white" },
+        ],
       },
     ],
   },
@@ -4570,7 +4689,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 149.0,
+        price: 145.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232013&a=3013769&m=65912",
@@ -4579,7 +4698,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 130.0,
+        price: 127.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1325-ballon-de-football-ligue-des-champions-feminine-final-pro-2025-26-white-red-taille-5",
@@ -4599,18 +4718,24 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 25.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44269894975&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44617973293&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fx%2Fjx9093.jpg&feedId=89032&k=30fef42ca8458a4839b24f0c31826bf013d6249a",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 25.0,
+        price: 24.0,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9093-ballon-de-football-ligue-des-champions-final-club-2025-26-white-shopur",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/x/jx9093.webp",
         sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9093-ballon-de-football-ligue-des-champions-final-club-2025-26-white-shopur" },
+          { size: "4", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9093-ballon-de-football-ligue-des-champions-final-club-2025-26-white-shopur" },
+          { size: "5", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9093-ballon-de-football-ligue-des-champions-final-club-2025-26-white-shopur" },
+        ],
       },
     ],
   },
@@ -4647,6 +4772,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2a52ff91ab5f40878fcca3125db8f8c4_9366%2FBalon_Final_Club_UEFA_Champions_League_Verde_JX9090_01_00_standard.jpg&feedId=95013&k=9800199d8e6e8ad5b213f3ef6c6c1c10d440791d",
         sizes: ["5"],
       },
+      {
+        store: "AdidasCO",
+        price: 65970.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=46888951042&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2a52ff91ab5f40878fcca3125db8f8c4_9366%2FBalon_Final_Club_UEFA_Champions_League_Verde_JX9090_01_00_standard.jpg&feedId=95017&k=9800199d8e6e8ad5b213f3ef6c6c1c10d440791d",
+        sizes: ["3", "4", "5"],
+      },
     ],
   },
   {
@@ -4658,15 +4792,16 @@ const minedBallProductsChunk1: BallProduct[] = [
       {
         store: "FootStoreES",
         price: 25.0,
-        priceMax: 28.0,
+        priceMax: 27.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43935158421&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43935158420&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-jx9092-black-syello-1.jpg&feedId=89032&k=79b879b1004042722726f7c2875676e7339251f3",
-        sizes: ["Talla 4", "Talla 5"],
+        sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
+          { size: "Talla 3", price: 25.0, url: "https://www.awin1.com/pclick.php?p=43935158420&a=3013769&m=65912" },
           { size: "Talla 4", price: 25.0, url: "https://www.awin1.com/pclick.php?p=43935158421&a=3013769&m=65912" },
-          { size: "Talla 5", price: 28.0, url: "https://www.awin1.com/pclick.php?p=43935158422&a=3013769&m=65912" },
+          { size: "Talla 5", price: 27.0, url: "https://www.awin1.com/pclick.php?p=43935158422&a=3013769&m=65912" },
         ],
       },
       {
@@ -4677,8 +4812,9 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9092-ballon-de-football-ligue-des-champions-final-club-2025-26-black-syello",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jx9092-black-syello-1.webp",
-        sizes: ["4", "5"],
+        sizes: ["3", "4", "5"],
         sizePrices: [
+          { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9092-ballon-de-football-ligue-des-champions-final-club-2025-26-black-syello" },
           { size: "4", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9092-ballon-de-football-ligue-des-champions-final-club-2025-26-black-syello" },
           { size: "5", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9092-ballon-de-football-ligue-des-champions-final-club-2025-26-black-syello" },
         ],
@@ -4696,7 +4832,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 25.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44729494424&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46391417386&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-kt0658-dpurpl-white-1.jpg&feedId=89032&k=bda9226d04a0f1fcbc89d651da9e084dbcc44d58",
         sizes: ["Talla 4", "Talla 5"],
       },
@@ -4748,7 +4884,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 60.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45526324878&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45526324879&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-jx9096-dpurpl-white-syello-69babda1a4b73-1.jpg&feedId=89032&k=898fdff0f40216710a609e5e90af71a7b1e6142b",
         sizes: ["Talla 4", "Talla 5"],
       },
@@ -4774,7 +4910,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 35.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43935158426&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43935158427&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-jx9104-multco-dpurpl-1.jpg&feedId=89032&k=152c3bdba95fb154c08b4fa9f92a67898f8e6acc",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
@@ -4813,15 +4949,6 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jx9089_1_hardware_photography_front_center_view_white.webp",
         sizes: ["4", "5"],
       },
-      {
-        store: "ForumSport",
-        price: 20.63,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43884295162&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075280-00-P-X-20260121161537.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ2M3xpbWFnZS9qcGVnfGFHUXlMMmcyTXk4eE16VXhNakUxTnprMU5EQTNPQzl0WldScFlYTmZNVEF3TVRBM05USTRNRjh3TUY5UVgxZ3RNakF5TmpBeE1qRXhOakUxTXpjdWFuQm58NTU2NDFlOTk5ZjdhN2M5YmExNmM1YzkwMjQ5N2ZhMWNlZDMwMTU4ODI4YWU5MzFjMzliYTI3NmM2NjI5ZWQwOQ&feedId=58083&k=5a2fef2ff4037a50f0be42fb25a09e5d93758b9a",
-        sizes: ["5"],
-      },
     ],
   },
   {
@@ -4832,7 +4959,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 114.0,
+        price: 111.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44797447266&a=3013769&m=65912",
@@ -4841,7 +4968,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 101.0,
+        price: 98.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1298-ballon-de-football-ligue-des-champions-pro-white-orange-ngtsky-panton-taille-5",
@@ -4887,7 +5014,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 35.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44645290679&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529842886&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh1280_multco-shagrn-sslime_1.jpg&feedId=89032&k=992069282c00dcbc5636ed9a019ca277ed853a4d",
         sizes: ["Talla 4", "Talla 5"],
       },
@@ -4910,7 +5037,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.0,
+        price: 27.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45515707932&a=3013769&m=65912",
@@ -4918,17 +5045,8 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["Talla 5"],
       },
       {
-        store: "ForumSport",
-        price: 19.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43375245314&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075283-00-P-X-20251202113542.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzg4N3xpbWFnZS9qcGVnfGFESmxMMmhsWlM4eE16TTJPREF5TURBME1UYzFPQzl0WldScFlYTmZNVEF3TVRBM05USTRNMTh3TUY5UVgxZ3RNakF5TlRFeU1ESXhNVE0xTkRJdWFuQm58MTU5ZmUxYTU4MmJjZDhlYTNiZmVlODY3NmE1NjIyNmMzNWY3YTg5MzE3MmM5NTg3MjYzNjY3MzJkM2RiYjMwMQ&feedId=58083&k=428a4a7e95bcd4ab6ae9ae1376a7f7e12a0083a4",
-        sizes: ["5"],
-      },
-      {
         store: "AdidasCL",
-        price: 13990.0,
+        price: 12990.0,
         shipping: 0,
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=44419090254&a=3013769&m=79922",
@@ -4971,7 +5089,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.16,
+        price: 17.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46508624811&a=3013769&m=65912",
@@ -4980,7 +5098,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.38,
+        price: 17.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkx5206-ballon-de-football-domicile-benfica-lisbonne-benred-vivred-white-taille-5",
@@ -5023,7 +5141,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 114.0,
+        price: 110.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529806144&a=3013769&m=65912",
@@ -5032,7 +5150,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 100.0,
+        price: 97.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1261-ballon-de-football-femme-adidas-euro-25-pro-white-panton-panton-luclem-taille-5",
@@ -5058,16 +5176,16 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.65,
+        price: 31.55,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45348247708&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45348247709&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke5142-white-luta-black-6a444db46d2d3-1.jpg&feedId=89032&k=49022297962c31a45b67c3177f1280eb6a2deb83",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 32.79,
+        price: 31.23,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5142-ballon-de-football-femme-adidas-uefa-champions-league-2026-27-white-luta-black",
@@ -5076,7 +5194,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "ForumSport",
-        price: 28.34,
+        price: 27.99,
         shipping: 5.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45352681984&a=3013769&m=23805",
@@ -5098,16 +5216,21 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529727429&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh1304_white-green-globlu-solblu_1.jpg&feedId=89032&k=f869f291bd8f5676a26b3cc54b7141816b4664b4",
-        sizes: ["Talla 3"],
+        sizes: ["Talla 3", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 28.0,
+        price: 27.0,
+        priceMax: 30.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1304-ballon-de-football-training-adidas-major-league-2025-white-green-globlu-solblu",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jh1304_white-green-globlu-solblu_1.webp",
-        sizes: ["3"],
+        sizes: ["3", "5"],
+        sizePrices: [
+          { size: "3", price: 27.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1304-ballon-de-football-training-adidas-major-league-2025-white-green-globlu-solblu" },
+          { size: "5", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1304-ballon-de-football-training-adidas-major-league-2025-white-green-globlu-solblu" },
+        ],
       },
     ],
   },
@@ -5128,7 +5251,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 37.0,
+        price: 36.0,
         priceMax: 40.0,
         shipping: 7.99,
         currency: "EUR",
@@ -5137,7 +5260,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["4", "5"],
         sizePrices: [
           { size: "4", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1299-ballon-de-football-uwcl-adidas-2024-25-white" },
-          { size: "5", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1299-ballon-de-football-uwcl-adidas-2024-25-white" },
+          { size: "5", price: 36.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1299-ballon-de-football-uwcl-adidas-2024-25-white" },
         ],
       },
     ],
@@ -5159,12 +5282,18 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.0,
+        price: 24.0,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1308-ballon-de-football-adidas-2025-major-league-club-white-green-globlu",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jh1308_white-green-globlu_1.webp",
         sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1308-ballon-de-football-adidas-2025-major-league-club-white-green-globlu" },
+          { size: "4", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1308-ballon-de-football-adidas-2025-major-league-club-white-green-globlu" },
+          { size: "5", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1308-ballon-de-football-adidas-2025-major-league-club-white-green-globlu" },
+        ],
       },
     ],
   },
@@ -5179,55 +5308,55 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 25.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529775577&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529775578&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh1306_green-globlu-solblu_1.jpg&feedId=89032&k=687b00a68fceb7041e4d337c7c23bc7d558dd6c8",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 25.0,
+        price: 24.0,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1306-ballon-de-football-adidas-2025-major-league-club-green-globlu-solblu",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jh1306_green-globlu-solblu_1.webp",
         sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1306-ballon-de-football-adidas-2025-major-league-club-green-globlu-solblu" },
+          { size: "4", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1306-ballon-de-football-adidas-2025-major-league-club-green-globlu-solblu" },
+          { size: "5", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1306-ballon-de-football-adidas-2025-major-league-club-green-globlu-solblu" },
+        ],
       },
     ],
   },
   {
-    id: "adidas-balones-de-futbol-adidas-bundesliga-torfabrik-club-2026-27-blanc",
+    id: "adidas-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-blanc",
     brand: "Adidas",
     model: "Balones de Fútbol adidas Bundesliga Torfabrik Club 2026/27 - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 20.58,
-        priceMax: 25.0,
+        price: 25.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44914986391&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kg6044_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=5da1099ea5e8a180956efef94c7d42823216fd79",
+        url: "https://www.awin1.com/pclick.php?p=45195673150&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kg6043_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=f24dd1b625b3a894cd1cde9d6a7a2c67ee1d5c04",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
-        sizePrices: [
-          { size: "Talla 3", price: 25.0, url: "https://www.awin1.com/pclick.php?p=45819220615&a=3013769&m=65912" },
-          { size: "Talla 4", price: 20.58, url: "https://www.awin1.com/pclick.php?p=44914986391&a=3013769&m=65912" },
-          { size: "Talla 5", price: 20.58, url: "https://www.awin1.com/pclick.php?p=44914986392&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreFR",
-        price: 19.78,
-        priceMax: 25.0,
+        price: 25.0,
+        priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6044-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-ironmt-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kg6044_1_hardware_photography_front_center_view_white.webp",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6043-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-black-solred",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kg6043_1_hardware_photography_front_center_view_white.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6044-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-ironmt-black" },
-          { size: "4", price: 19.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6044-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-ironmt-black" },
-          { size: "5", price: 19.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6044-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-ironmt-black" },
+          { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6043-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-black-solred" },
+          { size: "4", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6043-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-black-solred" },
+          { size: "5", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6043-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-white-black-solred" },
         ],
       },
     ],
@@ -5240,7 +5369,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.58,
+        price: 18.84,
         priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
@@ -5249,13 +5378,13 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
           { size: "Talla 3", price: 25.0, url: "https://www.awin1.com/pclick.php?p=45819220614&a=3013769&m=65912" },
-          { size: "Talla 4", price: 20.58, url: "https://www.awin1.com/pclick.php?p=44914986387&a=3013769&m=65912" },
-          { size: "Talla 5", price: 20.58, url: "https://www.awin1.com/pclick.php?p=44914986388&a=3013769&m=65912" },
+          { size: "Talla 4", price: 18.84, url: "https://www.awin1.com/pclick.php?p=44914986387&a=3013769&m=65912" },
+          { size: "Talla 5", price: 18.84, url: "https://www.awin1.com/pclick.php?p=44914986388&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 19.78,
+        price: 18.58,
         priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
@@ -5264,8 +5393,8 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["3", "4", "5"],
         sizePrices: [
           { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv4045-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-black-green-silvmt" },
-          { size: "4", price: 19.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv4045-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-black-green-silvmt" },
-          { size: "5", price: 19.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv4045-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-black-green-silvmt" },
+          { size: "4", price: 18.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv4045-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-black-green-silvmt" },
+          { size: "5", price: 18.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkv4045-ballon-de-football-adidas-bundesliga-torfabrik-club-2026-27-black-green-silvmt" },
         ],
       },
       {
@@ -5273,7 +5402,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 17.41,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249384609&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249384585&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135239-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzE3OHxpbWFnZS9qcGVnfGFHTTVMMmhpWmk4eE16Z3pOalEyTWpreE5UWXhOQzl0WldScFlYTmZNVEF3TVRFek5USXpPVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58Mjc5ZmJkNjJlZDQ2YjViMDU3MjFlYzI3ZTY0MDc3YWNkYjhiZGFkZmRkMjFjMWJlMmI0ZWQ0YWVlZjc5ZGM0NQ&feedId=58083&k=8eae82eba4b6f742c6102753cdc19f584cd92253",
         sizes: ["4", "5"],
       },
@@ -5287,7 +5416,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.76,
+        price: 29.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44914986395&a=3013769&m=65912",
@@ -5296,7 +5425,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.87,
+        price: 29.36,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhy5057-ballon-de-football-adidas-bundesliga-torfabrik-league-boxed-2026-27-white-black-solred",
@@ -5313,16 +5442,16 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.28,
+        price: 22.44,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45018629122&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45018629123&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fg%2Fkg6040.jpg&feedId=89032&k=96f2166b3ddd685939a4396739b52decd5d80822",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 23.45,
+        price: 22.15,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6040-ballon-de-football-adidas-bundesliga-torfabrik-training-2026-27-white-black-solred",
@@ -5365,7 +5494,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.58,
+        price: 18.84,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163873782&a=3013769&m=65912",
@@ -5374,7 +5503,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.78,
+        price: 18.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkz1606-ballon-de-football-adidas-club-womens-ucl-2026-27-white-luta",
@@ -5391,21 +5520,33 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.58,
+        price: 18.84,
+        priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46508604733&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke5148-white-luta-black-6ae33b94acce0-1.jpg&feedId=89032&k=80dc950995cbd66c94477703614228cf19a83142",
-        sizes: ["Talla 5"],
+        sizes: ["Talla 3", "Talla 4", "Talla 5"],
+        sizePrices: [
+          { size: "Talla 3", price: 25.0, url: "https://www.awin1.com/pclick.php?p=46508621222&a=3013769&m=65912" },
+          { size: "Talla 4", price: 25.0, url: "https://www.awin1.com/pclick.php?p=46508621657&a=3013769&m=65912" },
+          { size: "Talla 5", price: 18.84, url: "https://www.awin1.com/pclick.php?p=46508604733&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 19.78,
+        price: 18.58,
+        priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5148-ballon-de-football-adidas-club-womens-ucl-2026-27-white-luta-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke5148-white-luta-black-6ae33b94acce0-1.webp",
-        sizes: ["5"],
+        sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5148-ballon-de-football-adidas-club-womens-ucl-2026-27-white-luta-black" },
+          { size: "4", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5148-ballon-de-football-adidas-club-womens-ucl-2026-27-white-luta-black" },
+          { size: "5", price: 18.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5148-ballon-de-football-adidas-club-womens-ucl-2026-27-white-luta-black" },
+        ],
       },
     ],
   },
@@ -5417,7 +5558,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.76,
+        price: 30.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163911452&a=3013769&m=65912",
@@ -5426,7 +5567,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.87,
+        price: 30.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5865-ballon-de-football-adidas-conext-26-league-white-black-silvmt",
@@ -5495,7 +5636,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 150.0,
+        price: 147.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44896720481&a=3013769&m=65912",
@@ -5504,7 +5645,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 150.0,
+        price: 146.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5866-ballon-de-football-adidas-conext26-pro-white-black-silvmt-taille-5",
@@ -5521,7 +5662,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.65,
+        price: 31.55,
         priceMax: 40.0,
         shipping: 9.99,
         currency: "EUR",
@@ -5530,12 +5671,12 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["Talla 4", "Talla 5"],
         sizePrices: [
           { size: "Talla 4", price: 40.0, url: "https://www.awin1.com/pclick.php?p=42721414112&a=3013769&m=65912" },
-          { size: "Talla 5", price: 33.65, url: "https://www.awin1.com/pclick.php?p=42694572328&a=3013769&m=65912" },
+          { size: "Talla 5", price: 31.55, url: "https://www.awin1.com/pclick.php?p=42694572328&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 32.79,
+        price: 31.23,
         priceMax: 40.0,
         shipping: 7.99,
         currency: "EUR",
@@ -5544,12 +5685,12 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["4", "5"],
         sizePrices: [
           { size: "4", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8045-ballon-de-football-adidas-coupe-du-monde-2026-trionda-league-box-white-royblu-solblu-powred" },
-          { size: "5", price: 32.79, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8045-ballon-de-football-adidas-coupe-du-monde-2026-trionda-league-box-white-royblu-solblu-powred" },
+          { size: "5", price: 31.23, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8045-ballon-de-football-adidas-coupe-du-monde-2026-trionda-league-box-white-royblu-solblu-powred" },
         ],
       },
       {
         store: "ForumSport",
-        price: 27.83,
+        price: 26.87,
         shipping: 5.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42538362741&a=3013769&m=23805",
@@ -5558,7 +5699,7 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
       {
         store: "AdidasCL",
-        price: 30990.0,
+        price: 20990.0,
         shipping: 0,
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=42661646186&a=3013769&m=79922",
@@ -5585,6 +5726,9 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-coupe-du-monde-2026-trionda-training-blanco",
     brand: "Adidas",
@@ -5593,21 +5737,31 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.24,
+        price: 21.0,
+        priceMax: 31.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42663840712&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jd8032_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=653c1e317b171332b9d4df98d2d890ae8670d17c",
-        sizes: ["Talla 5"],
+        sizes: ["Talla 3", "Talla 5"],
+        sizePrices: [
+          { size: "Talla 3", price: 31.0, url: "https://www.awin1.com/pclick.php?p=42663840714&a=3013769&m=65912" },
+          { size: "Talla 5", price: 21.0, url: "https://www.awin1.com/pclick.php?p=42663840712&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 22.56,
+        price: 21.0,
+        priceMax: 32.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8032-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-white-royblu-solblu-powred",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd8032_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["5"],
+        sizes: ["3", "5"],
+        sizePrices: [
+          { size: "3", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8032-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-white-royblu-solblu-powred" },
+          { size: "5", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8032-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-white-royblu-solblu-powred" },
+        ],
       },
       {
         store: "ForumSport",
@@ -5647,9 +5801,6 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-coupe-du-monde-2026-trionda-training-foil-multicolor",
     brand: "Adidas",
@@ -5658,7 +5809,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.28,
+        price: 22.44,
         priceMax: 30.0,
         shipping: 9.99,
         currency: "EUR",
@@ -5666,13 +5817,13 @@ const minedBallProductsChunk2: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jd8046_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=3980b54bbcf74b157a613a452e81e3de1721d628",
         sizes: ["Talla 3", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 24.28, url: "https://www.awin1.com/pclick.php?p=46255302566&a=3013769&m=65912" },
+          { size: "Talla 3", price: 22.44, url: "https://www.awin1.com/pclick.php?p=46255302566&a=3013769&m=65912" },
           { size: "Talla 5", price: 30.0, url: "https://www.awin1.com/pclick.php?p=46255292573&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 23.45,
+        price: 22.15,
         priceMax: 30.0,
         shipping: 7.99,
         currency: "EUR",
@@ -5680,7 +5831,7 @@ const minedBallProductsChunk2: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd8046_1_hardware_photography_front_center_view_white.webp",
         sizes: ["3", "5"],
         sizePrices: [
-          { size: "3", price: 23.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8046-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-foil-multco-white-royblu-solblu" },
+          { size: "3", price: 22.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8046-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-foil-multco-white-royblu-solblu" },
           { size: "5", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8046-ballon-de-football-adidas-coupe-du-monde-2026-trionda-training-foil-multco-white-royblu-solblu" },
         ],
       },
@@ -5694,7 +5845,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 146.0,
+        price: 141.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44406809659&a=3013769&m=65912",
@@ -5703,7 +5854,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 145.0,
+        price: 141.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7371-ballon-de-football-adidas-coupe-du-monde-des-clubs-de-la-fifa-white-masblu-goldmt-dkblue-taille-5",
@@ -5755,7 +5906,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 143.0,
+        price: 139.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44480981276&a=3013769&m=65912",
@@ -5764,7 +5915,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 130.0,
+        price: 127.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy1297-ballon-de-football-adidas-ekstraklasa-pro-white-taille-5",
@@ -5790,7 +5941,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.0,
+        price: 20.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7370-ballon-de-football-adidas-epp-club-white-green",
@@ -5810,13 +5961,13 @@ const minedBallProductsChunk2: BallProduct[] = [
         price: 30.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45270277178&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44797439254&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_in9366_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=bca066dcd914498729091eb544fedf32d76102e0",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 28.0,
+        price: 27.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fin9366-ballon-de-football-adidas-euro-2024-trn-white-black-globlu",
@@ -5833,7 +5984,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 149.0,
+        price: 145.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44269890782&a=3013769&m=65912",
@@ -5842,7 +5993,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 137.0,
+        price: 127.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9077-ballon-de-football-adidas-euro-2025-26-dark-purple-taille-5",
@@ -5861,6 +6012,63 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-euro-25-lge-final-blanco",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Euro 25 LGE Final - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 40.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45277989128&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jn5398_white-silvmt-luclem_1.jpg&feedId=89032&k=85d6a3ab0b7f536fd70ddbc009919d9871c506f1",
+        sizes: ["Talla 4", "Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 37.0,
+        priceMax: 40.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5398-ballon-de-football-adidas-euro-25-lge-final-white-silvmt-luclem",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn5398_white-silvmt-luclem_1.webp",
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5398-ballon-de-football-adidas-euro-25-lge-final-white-silvmt-luclem" },
+          { size: "5", price: 40.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5398-ballon-de-football-adidas-euro-25-lge-final-white-silvmt-luclem" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "adidas-balones-de-futbol-adidas-euro-25-pro-final-blanco",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Euro 25 Pro Final - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 137.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42530161776&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F0%2F2025_09_adidas_jn5397_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=ab5bb7ce16a0a193fd77640904c5ebf82509b71b",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 120.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn5397-ballon-de-football-adidas-euro-25-pro-final-white-silvmt-luclem-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/2025_09_adidas_jn5397_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-euro-pro-2024-blanco",
     brand: "Adidas",
     model: "Balones de Fútbol adidas Euro Pro 2024 - Blanco",
@@ -5868,7 +6076,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 150.0,
+        price: 147.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44380171546&a=3013769&m=65912",
@@ -5877,7 +6085,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 149.0,
+        price: 145.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq3682-ballon-de-football-adidas-euro-pro-2024-white-black-globlu-taille-5",
@@ -5920,7 +6128,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 114.0,
+        price: 111.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43654197396&a=3013769&m=65912",
@@ -5929,7 +6137,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 101.0,
+        price: 98.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis7439-ballon-de-football-adidas-ile-de-foot-24-pro-white-solar-red-clear-sky-royal-blue-taille-5",
@@ -5949,7 +6157,7 @@ const minedBallProductsChunk2: BallProduct[] = [
         price: 40.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46114039222&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46114039223&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ji8974_white-black-silvmt_1.jpg&feedId=89032&k=bcbb7775ef55a5bd8df2b465bbaeeff0885e2ad3",
         sizes: ["Talla 4", "Talla 5"],
       },
@@ -6064,7 +6272,7 @@ const minedBallProductsChunk2: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44936964422&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ke7541_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=7cd6d2fd9d9365e0ce6a444625527380c7a23c0e",
-        sizes: ["Talla 5"],
+        sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
@@ -6073,7 +6281,7 @@ const minedBallProductsChunk2: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7541-ballon-de-football-adidas-messi-league-ivory-seblbu-iceblu-goldmt",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ke7541_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["5"],
+        sizes: ["4", "5"],
       },
     ],
   },
@@ -6090,16 +6298,22 @@ const minedBallProductsChunk2: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529797166&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh1307_silvmt-green_1.jpg&feedId=89032&k=17cb77925faaa4fa9b76d5f918dbf0661d223fea",
-        sizes: ["Talla 3", "Talla 4"],
+        sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 25.0,
+        price: 24.0,
+        priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1307-ballon-de-football-adidas-mls-25-club-silvmt-green",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jh1307_silvmt-green_1.webp",
-        sizes: ["3", "4"],
+        sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1307-ballon-de-football-adidas-mls-25-club-silvmt-green" },
+          { size: "4", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1307-ballon-de-football-adidas-mls-25-club-silvmt-green" },
+          { size: "5", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1307-ballon-de-football-adidas-mls-25-club-silvmt-green" },
+        ],
       },
     ],
   },
@@ -6172,7 +6386,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 37.0,
+        price: 36.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd3824-ballon-de-football-adidas-mundial-clubes-fifa-25-league-white-poblue-lucred-silvmt",
@@ -6189,7 +6403,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.0,
+        price: 26.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46183220490&a=3013769&m=65912",
@@ -6241,7 +6455,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.0,
+        price: 29.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41104847872&a=3013769&m=65912",
@@ -6326,6 +6540,32 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-queens-league-pro-blanco",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Queens League Pro - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 147.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45254166763&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ji8976_white-panton-silvmt_2.jpg&feedId=89032&k=fd6f3e33d2178b7533a216bd3bf383ef0327cb6d",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 130.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fji8976-ballon-de-football-adidas-queens-league-pro-white-panton-silvmt-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ji8976_white-panton-silvmt_2.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-starlancer-argente",
     brand: "Adidas",
     model: "Balones de Fútbol adidas Starlancer - Argenté",
@@ -6342,7 +6582,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.0,
+        price: 21.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1358-ballon-de-football-adidas-starlancer-silvmt-drkgrn",
@@ -6376,7 +6616,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.54,
+        price: 9.54,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39262210499&a=3013769&m=65912",
@@ -6394,7 +6634,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.52,
+        price: 9.02,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip1649-ballon-de-football-adidas-starlancer-club-blue-white",
@@ -6429,12 +6669,12 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.0,
+        price: 18.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46572061236&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jm1800_white-powred_1.jpg&feedId=89032&k=c99c2a9b9c3ab9a2184ed80ed67411d7c36af337",
-        sizes: ["Talla 5"],
+        url: "https://www.awin1.com/pclick.php?p=38434580332&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ip1646_white-sopink_1.jpg&feedId=89032&k=cb4d34c13d73d8c9bd69ca441145616fdf461d2e",
+        sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "SportIsGoodES",
@@ -6444,6 +6684,15 @@ const minedBallProductsChunk2: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=44487547072&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ip1648_white-black_1.jpg&feedId=89044&k=4cf6caca646158e88938c8964f162a12458509d6",
         sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 18.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fip1646-ballon-de-football-adidas-starlancer-club-white-sopink",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ip1646_white-sopink_1.webp",
+        sizes: ["3", "4", "5"],
       },
       {
         store: "SportIsGoodFR",
@@ -6475,6 +6724,41 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-starlancer-club-verde-2",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Starlancer Club - Verde",
+    colour: "Verde",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 18.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529553925&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_it6383_1_hardware_photography_front_center_view_white-nw112824.jpg&feedId=89032&k=fa549c550c3f04a210f3b2878a4b22c5107ac11e",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 18.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fit6383-ballon-de-football-adidas-starlancer-club-luclem-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_it6383_1_hardware_photography_front_center_view_white-nw112824.webp",
+        sizes: ["5"],
+      },
+      {
+        store: "AdidasMX",
+        price: 499.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=38996069603&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3d5537e83de94eb8aaa202cf40e6d09e_9366%2FBalon_Starlancer_Club_Verde_IT6383_01_00_standard.jpg&feedId=95013&k=96ea093dbbe91a09d2caeaf9ead159877cb9e873",
+        sizes: ["4", "5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-tiro-blanco",
     brand: "Adidas",
     model: "Balones de Fútbol adidas Tiro - Blanco (HZ4168)",
@@ -6482,7 +6766,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.0,
+        price: 20.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46089283998&a=3013769&m=65912",
@@ -6527,83 +6811,68 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-balones-de-futbol-adidas-tiro-club-blanc-2",
+    id: "adidas-balones-de-futbol-adidas-tiro-blanco-3",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Tiro - Blanco (HT2430)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 23.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46309355972&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ht2430_2_hardware_photography_back_center_view_white.jpg&feedId=89032&k=625f08f91c93a85a7a8b5add7a165d8f09f888c7",
+        sizes: ["Talla 5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balones-de-futbol-adidas-tiro-club-blanc-3",
     brand: "Adidas",
     model: "Balones de Fútbol adidas Tiro Club - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 17.8,
-        priceMax: 22.0,
+        price: 15.09,
+        priceMax: 18.46,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46114042573&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_kf8846_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=68a178a822ae3bd16b3ecac4614410706b70a6a9",
+        url: "https://www.awin1.com/pclick.php?p=46114042572&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jw1531_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=13cff6ce2119185d1e4a10636e8d8f1894a421c3",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 22.0, url: "https://www.awin1.com/pclick.php?p=46238109269&a=3013769&m=65912" },
-          { size: "Talla 4", price: 22.0, url: "https://www.awin1.com/pclick.php?p=46163872816&a=3013769&m=65912" },
-          { size: "Talla 5", price: 17.8, url: "https://www.awin1.com/pclick.php?p=46114042573&a=3013769&m=65912" },
-        ],
-      },
-      {
-        store: "FootStoreFR",
-        price: 17.17,
-        priceMax: 23.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf8846-ballon-de-football-adidas-tiro-club-white-poblue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kf8846_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["3", "4", "5"],
-        sizePrices: [
-          { size: "3", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf8846-ballon-de-football-adidas-tiro-club-white-poblue" },
-          { size: "4", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf8846-ballon-de-football-adidas-tiro-club-white-poblue" },
-          { size: "5", price: 17.17, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkf8846-ballon-de-football-adidas-tiro-club-white-poblue" },
+          { size: "Talla 3", price: 18.46, url: "https://www.awin1.com/pclick.php?p=46163956562&a=3013769&m=65912" },
+          { size: "Talla 4", price: 18.46, url: "https://www.awin1.com/pclick.php?p=46163926300&a=3013769&m=65912" },
+          { size: "Talla 5", price: 15.09, url: "https://www.awin1.com/pclick.php?p=46114042572&a=3013769&m=65912" },
         ],
       },
     ],
   },
   {
-    id: "adidas-balones-de-futbol-adidas-tiro-competition-blanc-2",
+    id: "adidas-balones-de-futbol-adidas-tiro-competition-blanc",
     brand: "Adidas",
-    model: "Balones de Fútbol adidas Tiro Competition - Blanc",
+    model: "Balones de Fútbol adidas Tiro Compétition - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 43.02,
+        price: 52.06,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46163899709&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jw1534_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=ae0f7a32f8c6dacb16f02d7ae47079b8f170da70",
-        sizes: ["Talla 4"],
+        url: "https://www.awin1.com/pclick.php?p=44719157524&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-f99641-blanc-69fdf0f3e0994-1.jpg&feedId=89032&k=ca6e45cc71d9716e656c7b15bca349e50e7843d1",
+        sizes: ["Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 42.03,
+        price: 51.59,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1534-ballon-de-football-adidas-tiro-competition-white-black-lucred",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jw1534_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["4"],
-      },
-    ],
-  },
-  {
-    id: "adidas-ballon-de-football-adidas-tiro-league-thermal-bonded-jaune",
-    brand: "Adidas",
-    model: "Balones de Fútbol adidas Tiro League Thermal Bonded - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 32.0,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46856990643&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_hz1295_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=8e0afa62c67b0189726f736770785fe1583aeb71",
-        sizes: ["Talla 4"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff99641-ballon-de-football-adidas-tiro-competition-blanc-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-f99641-blanc-69fdf0f3e0994-1.webp",
+        sizes: ["5"],
       },
     ],
   },
@@ -6694,7 +6963,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 100.0,
+        price: 99.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc3341-ballon-de-football-adidas-tiro-pro-luclem-black-lucred-ironmt-taille-5",
@@ -6711,7 +6980,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 84.0,
+        price: 81.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44093081192&a=3013769&m=65912",
@@ -6720,7 +6989,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 82.0,
+        price: 79.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib2241-ballon-de-football-adidas-tiro-pro-winter-sorang-black-ironmt-tmsoye-taille-5",
@@ -6798,7 +7067,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.16,
+        price: 24.27,
         priceMax: 30.0,
         shipping: 9.99,
         currency: "EUR",
@@ -6807,12 +7076,12 @@ const minedBallProductsChunk2: BallProduct[] = [
         sizes: ["Talla 4", "Talla 5"],
         sizePrices: [
           { size: "Talla 4", price: 30.0, url: "https://www.awin1.com/pclick.php?p=45597128185&a=3013769&m=65912" },
-          { size: "Talla 5", price: 26.16, url: "https://www.awin1.com/pclick.php?p=45348247450&a=3013769&m=65912" },
+          { size: "Talla 5", price: 24.27, url: "https://www.awin1.com/pclick.php?p=45348247450&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 25.37,
+        price: 24.01,
         priceMax: 30.0,
         shipping: 7.99,
         currency: "EUR",
@@ -6821,7 +7090,7 @@ const minedBallProductsChunk2: BallProduct[] = [
         sizes: ["4", "5"],
         sizePrices: [
           { size: "4", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkz2981-ballon-de-football-adidas-ucl-white-purbur-globlu" },
-          { size: "5", price: 25.37, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkz2981-ballon-de-football-adidas-ucl-white-purbur-globlu" },
+          { size: "5", price: 24.01, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkz2981-ballon-de-football-adidas-ucl-white-purbur-globlu" },
         ],
       },
       {
@@ -6843,7 +7112,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.0,
+        price: 24.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46381765137&a=3013769&m=65912",
@@ -6852,7 +7121,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.0,
+        price: 24.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fix4066-ballon-de-football-adidas-ucl-club-24-25-claqua-lucblu-turbo",
@@ -6869,7 +7138,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.0,
+        price: 24.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46381753424&a=3013769&m=65912",
@@ -6878,7 +7147,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.0,
+        price: 24.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fix4064-ballon-de-football-adidas-ucl-club-24-25-turbo-black-silvmt",
@@ -6947,21 +7216,33 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.16,
+        price: 24.27,
+        priceMax: 30.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46157594518&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9774-multco-6a444d66e2e16-1.jpg&feedId=89032&k=3624b9a5f5c4ca87d4bb22cd64d8d103dba0b352",
-        sizes: ["Talla 5"],
+        sizes: ["Talla 3", "Talla 4", "Talla 5"],
+        sizePrices: [
+          { size: "Talla 3", price: 30.0, url: "https://www.awin1.com/pclick.php?p=46157593912&a=3013769&m=65912" },
+          { size: "Talla 4", price: 30.0, url: "https://www.awin1.com/pclick.php?p=46157585183&a=3013769&m=65912" },
+          { size: "Talla 5", price: 24.27, url: "https://www.awin1.com/pclick.php?p=46157594518&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 25.37,
+        price: 24.01,
+        priceMax: 30.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9774-ballon-de-football-adidas-uefa-champions-league-2026-27-multco",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke9774-multco-6a444d66e2e16-1.webp",
-        sizes: ["5"],
+        sizes: ["3", "4", "5"],
+        sizePrices: [
+          { size: "3", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9774-ballon-de-football-adidas-uefa-champions-league-2026-27-multco" },
+          { size: "4", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9774-ballon-de-football-adidas-uefa-champions-league-2026-27-multco" },
+          { size: "5", price: 24.01, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9774-ballon-de-football-adidas-uefa-champions-league-2026-27-multco" },
+        ],
       },
     ],
   },
@@ -6976,7 +7257,7 @@ const minedBallProductsChunk2: BallProduct[] = [
         price: 60.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45348247453&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45348247454&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ke9766_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=6ca80550c04604b67d7f98fad60fd5a224e4d5a0",
         sizes: ["Talla 4", "Talla 5"],
       },
@@ -6999,22 +7280,22 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.46,
+        price: 20.67,
         priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45348247702&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45348247703&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9762-black-ironmt-orange-6a444d6ab543b-1.jpg&feedId=89032&k=524844272439afeb48ea993793c93e0d5cab6f6a",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
           { size: "Talla 3", price: 25.0, url: "https://www.awin1.com/pclick.php?p=46037740875&a=3013769&m=65912" },
-          { size: "Talla 4", price: 22.46, url: "https://www.awin1.com/pclick.php?p=45348247702&a=3013769&m=65912" },
-          { size: "Talla 5", price: 22.46, url: "https://www.awin1.com/pclick.php?p=45348247703&a=3013769&m=65912" },
+          { size: "Talla 4", price: 20.67, url: "https://www.awin1.com/pclick.php?p=45348247702&a=3013769&m=65912" },
+          { size: "Talla 5", price: 20.67, url: "https://www.awin1.com/pclick.php?p=45348247703&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 21.7,
+        price: 20.45,
         priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
@@ -7023,8 +7304,8 @@ const minedBallProductsChunk2: BallProduct[] = [
         sizes: ["3", "4", "5"],
         sizePrices: [
           { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9762-ballon-de-football-adidas-uefa-champions-league-club-2026-27-black-ironmt-orange" },
-          { size: "4", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9762-ballon-de-football-adidas-uefa-champions-league-club-2026-27-black-ironmt-orange" },
-          { size: "5", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9762-ballon-de-football-adidas-uefa-champions-league-club-2026-27-black-ironmt-orange" },
+          { size: "4", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9762-ballon-de-football-adidas-uefa-champions-league-club-2026-27-black-ironmt-orange" },
+          { size: "5", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9762-ballon-de-football-adidas-uefa-champions-league-club-2026-27-black-ironmt-orange" },
         ],
       },
       {
@@ -7032,7 +7313,7 @@ const minedBallProductsChunk2: BallProduct[] = [
         price: 17.41,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383178&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383248&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134997-00-P-X-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM3NnxpbWFnZS9qcGVnfGFEaG1MMmd4WVM4eE16Z3pOekl4TmpZeE1qTTRNaTl0WldScFlYTmZNVEF3TVRFek5EazVOMTh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58MmUxYWVkOWUyNmI0OWE5YzExY2Y5M2I0MmZlMmQwNWY5NmVhY2VkOGE0MmY5NThhNTM4OTdlOGI0ZDE3ZTViNA&feedId=58083&k=36ca6d438d0afeb5b2c785c60d602f319f87d81a",
         sizes: ["4", "5"],
       },
@@ -7046,22 +7327,22 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.46,
+        price: 20.67,
         priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45348247704&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45348247705&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9760-bopink-multco-sollem-6a444d6da42b5-1.jpg&feedId=89032&k=21c85ec4fe5210f9e077a528b8708acfe69b7af8",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
           { size: "Talla 3", price: 25.0, url: "https://www.awin1.com/pclick.php?p=46277681472&a=3013769&m=65912" },
-          { size: "Talla 4", price: 22.46, url: "https://www.awin1.com/pclick.php?p=45348247704&a=3013769&m=65912" },
-          { size: "Talla 5", price: 22.46, url: "https://www.awin1.com/pclick.php?p=45348247705&a=3013769&m=65912" },
+          { size: "Talla 4", price: 20.67, url: "https://www.awin1.com/pclick.php?p=45348247704&a=3013769&m=65912" },
+          { size: "Talla 5", price: 20.67, url: "https://www.awin1.com/pclick.php?p=45348247705&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 21.7,
+        price: 20.45,
         priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
@@ -7070,8 +7351,8 @@ const minedBallProductsChunk2: BallProduct[] = [
         sizes: ["3", "4", "5"],
         sizePrices: [
           { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9760-ballon-de-football-adidas-uefa-champions-league-club-2026-27-bopink-multco-sollem" },
-          { size: "4", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9760-ballon-de-football-adidas-uefa-champions-league-club-2026-27-bopink-multco-sollem" },
-          { size: "5", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9760-ballon-de-football-adidas-uefa-champions-league-club-2026-27-bopink-multco-sollem" },
+          { size: "4", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9760-ballon-de-football-adidas-uefa-champions-league-club-2026-27-bopink-multco-sollem" },
+          { size: "5", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9760-ballon-de-football-adidas-uefa-champions-league-club-2026-27-bopink-multco-sollem" },
         ],
       },
       {
@@ -7079,7 +7360,7 @@ const minedBallProductsChunk2: BallProduct[] = [
         price: 17.41,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383117&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383043&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134996-00-P-X-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTg3MHxpbWFnZS9qcGVnfGFEYzRMMmc0TXk4eE16Z3pOekl4TlRZNU5EZzNPQzl0WldScFlYTmZNVEF3TVRFek5EazVObDh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58Mzk0NGYxZTRhZTMyNGU4NjQyMjlkNDljYzBlMTA3MTRmNWQ3YjU2NDU3ZGRlMDMyZTM2NzNmZTA2OWNkNjE2NA&feedId=58083&k=e4d6310125dd853a1fd8c92c1ab64c2c5d87bbaf",
         sizes: ["4", "5"],
       },
@@ -7093,22 +7374,22 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.46,
+        price: 20.67,
         priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46127471536&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46127473818&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke9761-sgreen-multco-goldmt-6a444d7004569-1.jpg&feedId=89032&k=917d698c465e176c9e79fafad30eb3b27fd815d4",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
           { size: "Talla 3", price: 25.0, url: "https://www.awin1.com/pclick.php?p=46127473436&a=3013769&m=65912" },
-          { size: "Talla 4", price: 22.46, url: "https://www.awin1.com/pclick.php?p=46127471536&a=3013769&m=65912" },
-          { size: "Talla 5", price: 22.46, url: "https://www.awin1.com/pclick.php?p=46127473818&a=3013769&m=65912" },
+          { size: "Talla 4", price: 20.67, url: "https://www.awin1.com/pclick.php?p=46127471536&a=3013769&m=65912" },
+          { size: "Talla 5", price: 20.67, url: "https://www.awin1.com/pclick.php?p=46127473818&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 21.7,
+        price: 20.45,
         priceMax: 25.0,
         shipping: 7.99,
         currency: "EUR",
@@ -7117,8 +7398,8 @@ const minedBallProductsChunk2: BallProduct[] = [
         sizes: ["3", "4", "5"],
         sizePrices: [
           { size: "3", price: 25.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9761-ballon-de-football-adidas-uefa-champions-league-club-2026-27-sgreen-multco-goldmt" },
-          { size: "4", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9761-ballon-de-football-adidas-uefa-champions-league-club-2026-27-sgreen-multco-goldmt" },
-          { size: "5", price: 21.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9761-ballon-de-football-adidas-uefa-champions-league-club-2026-27-sgreen-multco-goldmt" },
+          { size: "4", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9761-ballon-de-football-adidas-uefa-champions-league-club-2026-27-sgreen-multco-goldmt" },
+          { size: "5", price: 20.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9761-ballon-de-football-adidas-uefa-champions-league-club-2026-27-sgreen-multco-goldmt" },
         ],
       },
       {
@@ -7195,7 +7476,7 @@ const minedBallProductsChunk2: BallProduct[] = [
         price: 60.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44686647188&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44686647189&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jp1541_white-dkblue-panton-goldmt_1.jpg&feedId=89032&k=ab37f5b35f890ca7ed5878f70c27f8af2834bdcc",
         sizes: ["Talla 4", "Talla 5"],
       },
@@ -7247,7 +7528,7 @@ const minedBallProductsChunk2: BallProduct[] = [
         price: 40.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46391407160&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46226020026&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jp1540_white-dkblue-panton-goldmt_1.jpg&feedId=89032&k=26669c741e43722a179bbf6ab3a325045bab91e6",
         sizes: ["Talla 4", "Talla 5"],
       },
@@ -7256,7 +7537,7 @@ const minedBallProductsChunk2: BallProduct[] = [
         price: 40.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1540-ballon-de-football-adidas-uefa-champions-league-league-white-dkblue-panton-goldmt",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1540-ballon-adidas-uefa-champions-league-league-white-dkblue-panton-goldmt",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp1540_white-dkblue-panton-goldmt_1.webp",
         sizes: ["4", "5"],
       },
@@ -7289,6 +7570,32 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balones-de-futbol-adidas-uefa-champions-league-pro-winter-amarillo",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Uefa Champions League Pro Winter - Amarillo",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 144.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889812153&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jp1545_syello-black-goldmt-silvmt_6.jpg&feedId=89032&k=703aa9e7cf839deecdb3e1c9c6167421869bfe48",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 142.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjp1545-ballon-de-football-adidas-uefa-champions-league-pro-winter-syello-black-goldmt-silvmt-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jp1545_syello-black-goldmt-silvmt_6.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balones-de-futbol-adidas-uefa-nations-league-2026-27-blanc",
     brand: "Adidas",
     model: "Balones de Fútbol adidas UEFA Nations League 2026/27 - Blanc",
@@ -7296,30 +7603,30 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.04,
-        priceMax: 24.28,
+        price: 21.26,
+        priceMax: 22.44,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163928064&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-ke7536-white-legink-sollem-silvmt-6a444d82aab3b-1.jpg&feedId=89032&k=99dd22956635452c8d4cc5520690c5f434289cc2",
         sizes: ["Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 4", price: 24.28, url: "https://www.awin1.com/pclick.php?p=46163900771&a=3013769&m=65912" },
-          { size: "Talla 5", price: 23.04, url: "https://www.awin1.com/pclick.php?p=46163928064&a=3013769&m=65912" },
+          { size: "Talla 4", price: 22.44, url: "https://www.awin1.com/pclick.php?p=46163900771&a=3013769&m=65912" },
+          { size: "Talla 5", price: 21.26, url: "https://www.awin1.com/pclick.php?p=46163928064&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 21.88,
-        priceMax: 23.45,
+        price: 20.66,
+        priceMax: 22.15,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7536-ballon-de-football-adidas-uefa-nations-league-2026-27-white-legink-sollem-silvmt",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke7536-white-legink-sollem-silvmt-6a444d82aab3b-1.webp",
         sizes: ["4", "5"],
         sizePrices: [
-          { size: "4", price: 23.45, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7536-ballon-de-football-adidas-uefa-nations-league-2026-27-white-legink-sollem-silvmt" },
-          { size: "5", price: 21.88, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7536-ballon-de-football-adidas-uefa-nations-league-2026-27-white-legink-sollem-silvmt" },
+          { size: "4", price: 22.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7536-ballon-de-football-adidas-uefa-nations-league-2026-27-white-legink-sollem-silvmt" },
+          { size: "5", price: 20.66, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7536-ballon-de-football-adidas-uefa-nations-league-2026-27-white-legink-sollem-silvmt" },
         ],
       },
     ],
@@ -7332,7 +7639,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 114.0,
+        price: 110.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44695074833&a=3013769&m=65912",
@@ -7341,7 +7648,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 101.0,
+        price: 98.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fis7437-ballon-de-football-adidas-uefa-womens-champions-league-pro-white-aurbla-turbo-silvmt-taille-5",
@@ -7358,7 +7665,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.0,
+        price: 11.88,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41773059320&a=3013769&m=65912",
@@ -7367,7 +7674,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.74,
+        price: 11.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiw3729-ballon-de-football-adidas-univers-white-black-taille-5",
@@ -7411,7 +7718,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.54,
+        price: 10.05,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163832371&a=3013769&m=65912",
@@ -7420,7 +7727,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.82,
+        price: 9.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb9775-ballon-de-football-adidas-universadi-blanc-bleu-royal-taille-5",
@@ -7455,7 +7762,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.54,
+        price: 10.05,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529991603&a=3013769&m=65912",
@@ -7464,11 +7771,20 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.82,
+        price: 9.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb9777-ballon-de-football-adidas-universadi-sorang-black-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kb9777_sorang-black_7.webp",
+        sizes: ["5"],
+      },
+      {
+        store: "AdidasMX",
+        price: 349.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=46888953412&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F508d12f351c94ba198c34875e7ba1b47_9366%2FBalon_Universadi_Naranja_KB9777_01_00_standard.jpg&feedId=95013&k=0d5571f77fd1df90525c51914cf9fca72c63f8ad",
         sizes: ["5"],
       },
     ],
@@ -7481,7 +7797,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.54,
+        price: 10.05,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163881157&a=3013769&m=65912",
@@ -7490,11 +7806,29 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.82,
+        price: 9.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkb9776-ballon-de-football-adidas-universadi-noir-blanc-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_kb9776_noir-blanc_1.webp",
+        sizes: ["5"],
+      },
+      {
+        store: "AdidasMX",
+        price: 349.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=44882921865&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F35476687dd114177ab5c938787b55b2c_9366%2FBalon_Universadi_Negro_KB9776_01_00_standard.jpg&feedId=95013&k=69165d4a10ff5ce057e3f4b7142f33f39e20edad",
+        sizes: ["5"],
+      },
+      {
+        store: "AdidasCO",
+        price: 48965.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=44912012162&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F35476687dd114177ab5c938787b55b2c_9366%2FBalon_Universadi_Negro_KB9776_01_00_standard.jpg&feedId=95017&k=69165d4a10ff5ce057e3f4b7142f33f39e20edad",
         sizes: ["5"],
       },
     ],
@@ -7533,7 +7867,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 114.0,
+        price: 111.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44797436563&a=3013769&m=65912",
@@ -7542,12 +7876,38 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 101.0,
+        price: 98.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhm4183-ballon-de-football-adidas-uwcl-pro-void-2022-23-argent-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hm4183_1_hardware_photography_front_center_view_white.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balones-de-futbol-adidas-women-euro-2025-club-rojo",
+    brand: "Adidas",
+    model: "Balones de Fútbol adidas Women Euro 2025 Club - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529775583&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh1268_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=ee75b64f062003f6fe72c262400c1b22695170f0",
+        sizes: ["Talla 3"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 20.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1268-ballon-de-football-adidas-women-euro-2025-club-panton-panton-silvmt",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jh1268_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["3"],
       },
     ],
   },
@@ -7562,23 +7922,18 @@ const minedBallProductsChunk2: BallProduct[] = [
         price: 40.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43961538573&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40737132608&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jh1262_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=516d54e92ea029f5fa021ab49e4b1c825b20678e",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 37.0,
-        priceMax: 38.0,
+        price: 36.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1262-ballon-de-football-adidas-women-euro-2025-lge-white-panton-panton-luclem",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jh1262_1_hardware_photography_front_center_view_white.webp",
         sizes: ["4", "5"],
-        sizePrices: [
-          { size: "4", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1262-ballon-de-football-adidas-women-euro-2025-lge-white-panton-panton-luclem" },
-          { size: "5", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjh1262-ballon-de-football-adidas-women-euro-2025-lge-white-panton-panton-luclem" },
-        ],
       },
     ],
   },
@@ -7590,7 +7945,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 148.0,
+        price: 144.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42671911541&a=3013769&m=65912",
@@ -7599,7 +7954,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 148.0,
+        price: 144.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjd8023-ballon-de-football-adidas-world-cup-26-trionda-pro-winter-luclem-black-silvmt-taille-5",
@@ -7619,13 +7974,13 @@ const minedBallProductsChunk2: BallProduct[] = [
         price: 30.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44444988553&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44651307914&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-jy1298-white-luclem-1.jpg&feedId=89032&k=a1c77351597f24bfd49e7d4ef99f5be821cea729",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 29.0,
+        price: 28.0,
         priceMax: 30.0,
         shipping: 7.99,
         currency: "EUR",
@@ -7633,9 +7988,9 @@ const minedBallProductsChunk2: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jy1298-white-luclem-1.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy1298-ballon-de-football-d-entrainement-adidas-ekstraklasa-white-luclem" },
+          { size: "3", price: 28.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy1298-ballon-de-football-d-entrainement-adidas-ekstraklasa-white-luclem" },
           { size: "4", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy1298-ballon-de-football-d-entrainement-adidas-ekstraklasa-white-luclem" },
-          { size: "5", price: 29.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy1298-ballon-de-football-d-entrainement-adidas-ekstraklasa-white-luclem" },
+          { size: "5", price: 28.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjy1298-ballon-de-football-d-entrainement-adidas-ekstraklasa-white-luclem" },
         ],
       },
     ],
@@ -7700,7 +8055,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 13.11,
+        price: 11.58,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163966272&a=3013769&m=65912",
@@ -7709,7 +8064,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.38,
+        price: 11.38,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkc9700-mini-ballon-de-football-real-madrid-ucl-2026-27-veraur-ivoire-taille-1",
@@ -7735,7 +8090,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 13.11,
+        price: 11.58,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163820894&a=3013769&m=65912",
@@ -7744,7 +8099,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.38,
+        price: 11.38,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5104-mini-ballon-de-football-arsenal-2026-27-meipou-blanc-taille-1",
@@ -7770,7 +8125,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 13.11,
+        price: 11.58,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163928437&a=3013769&m=65912",
@@ -7779,12 +8134,29 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.38,
+        price: 11.38,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5110-mini-ballon-de-football-domicile-bayern-munich-betsca-white-taille-mini",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke5110-betsca-white-6a444bcce8ade-2.webp",
         sizes: ["mini"],
+      },
+    ],
+  },
+  {
+    id: "adidas-mini-ballon-de-football-adidas-ucl-rm-vert",
+    brand: "Adidas",
+    model: "Mini Ballon de football adidas UCL RM - Vert",
+    colour: "Vert",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 15.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjn7306-mini-ballon-de-football-adidas-ucl-rm-almlim-silvmt-nobink-taille-1",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jn7306_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["1"],
       },
     ],
   },
@@ -7805,7 +8177,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 13.11,
+        price: 11.58,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163831737&a=3013769&m=65912",
@@ -7814,7 +8186,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.38,
+        price: 11.38,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5134-mini-ballon-de-football-exterieur-liverpool-fc-white-strred-taille-mini",
@@ -7874,7 +8246,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.04,
+        price: 11.51,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163899417&a=3013769&m=65912",
@@ -7883,7 +8255,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.31,
+        price: 11.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5143-mini-ballon-de-football-femme-adidas-uefa-champions-league-2026-27-white-luta-black-taille-mini",
@@ -7909,7 +8281,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 15.0,
+        price: 13.41,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46339481938&a=3013769&m=65912",
@@ -7918,7 +8290,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.3,
+        price: 13.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5085-mini-ballon-de-football-argentine-gambeta-white-royblu-black-taille-mini",
@@ -7953,7 +8325,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 15.0,
+        price: 11.51,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45184773494&a=3013769&m=65912",
@@ -7962,7 +8334,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.0,
+        price: 11.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fkg6039-mini-ballon-de-football-adidas-torfabrik-bundesliga-2026-27-white-black-solred-taille-mini",
@@ -8067,23 +8439,6 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-minibalon-de-la-primera-equipacion-del-liverpool-fc-blanco",
-    brand: "Adidas",
-    model: "Minibalón adidas de la primera equipación del Liverpool FC - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 15.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46720951460&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F50d6261f6a824290b7e30a7cf1e075d6_9366%2FMinibalon_de_la_primera_equipacion_del_Liverpool_FC_Rojo_JY6165_01_00_standard.jpg&feedId=92152&k=0d726ebf5a36dd2bc50db8ead682d06ed767813a",
-        sizes: ["1"],
-      },
-    ],
-  },
-  {
     id: "adidas-minibalon-de-futbol-adidas-ucl-2026-27-blanc",
     brand: "Adidas",
     model: "Minibalón adidas de la UEFA Champions League 26/27 - Blanco",
@@ -8100,7 +8455,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 13.04,
+        price: 11.51,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163939866&a=3013769&m=65912",
@@ -8109,7 +8464,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.31,
+        price: 11.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke9770-mini-ballon-de-football-adidas-ucl-2026-27-blanc-multco-taille-1",
@@ -8214,7 +8569,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "AdidasCL",
-        price: 10990.0,
+        price: 8990.0,
         shipping: 0,
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=44004390148&a=3013769&m=79922",
@@ -8256,17 +8611,8 @@ const minedBallProductsChunk2: BallProduct[] = [
         sizes: ["1"],
       },
       {
-        store: "PlanetFoot",
-        price: 14.99,
-        shipping: 5.95,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmini-ballon-liverpool-fc-domicile-2026-27-bordeaux-blanc-ke5133%3Fvariant%3D54410924360021",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/mini-ballon-liverpool-fc-domicile-2026-27-bordeaux-blanc-ke5133-1.avif?v=1789730637",
-        sizes: [],
-      },
-      {
         store: "FootStoreES",
-        price: 13.11,
+        price: 11.58,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163948233&a=3013769&m=65912",
@@ -8275,7 +8621,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.38,
+        price: 11.38,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5133-mini-ballon-de-football-liverpool-fc-ucl-2026-27-boract-blanc-taille-1",
@@ -8328,7 +8674,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 15.0,
+        price: 13.41,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46163928038&a=3013769&m=65912",
@@ -8337,20 +8683,11 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.3,
+        price: 13.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5124-mini-ballon-de-football-real-madrid-ucl-2026-27-blanc-veraur-taille-1",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ke5124_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["1"],
-      },
-      {
-        store: "AdidasCL",
-        price: 14990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=44928563821&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd02b4b40e94e47b7adf048c41ff2ae51_9366%2FMinipelota_Local_Real_Madrid_Blanco_KE5124_01_00_standard.jpg&feedId=95016&k=60049bd388b0a16d224fa9620c6e706222d8cfb2",
         sizes: ["1"],
       },
       {
@@ -8425,6 +8762,32 @@ const minedBallProductsChunk2: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-minibalon-de-futbol-adidas-starlancer-argente",
+    brand: "Adidas",
+    model: "Minibalón de fútbol adidas Starlancer - Argenté",
+    colour: "Argenté",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 14.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46246413005&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas-jw1363-silvmt-green-6a444bbc48416-1.jpg&feedId=89032&k=23836421f3fe4062b7bdf24ce8e6dbc2e08a9ab8",
+        sizes: [],
+      },
+      {
+        store: "FootStoreFR",
+        price: 14.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjw1363-mini-ballon-de-football-adidas-starlancer-silvmt-green-tu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jw1363-silvmt-green-6a444bbc48416-1.webp",
+        sizes: ["TU"],
+      },
+    ],
+  },
+  {
     id: "adidas-minipelota-adidas-de-messi-naranja",
     brand: "Adidas",
     model: "Minipelota adidas de Messi - Naranja",
@@ -8432,7 +8795,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "AdidasCL",
-        price: 11990.0,
+        price: 8990.0,
         shipping: 0,
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=44475899300&a=3013769&m=79922",
@@ -8605,7 +8968,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "AdidasCL",
-        price: 63990.0,
+        price: 43990.0,
         shipping: 0,
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=42661645841&a=3013769&m=79922",
@@ -8649,16 +9012,16 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 26.16,
+        price: 24.27,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46501535510&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46391428457&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_ke5152_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=11b0006e35222ec41e8a3bd7e54ba8606d6b0f1e",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 25.37,
+        price: 24.01,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke5152-ballon-de-football-d-entrainement-adidas-ekstraklasa-2026-27-white-silvmt-blue",
@@ -8727,7 +9090,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 33.19,
+        price: 32.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm592551-ballon-de-football-sensori-moteur-ark-therapeutics-blanc-noir-21-6-cm",
@@ -8767,40 +9130,6 @@ const minedBallProductsChunk2: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43960702210&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001110789-00-P-X-20260205155057.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI4NXxpbWFnZS9qcGVnfGFEWTNMMmd6Tnk4eE16VTFNRE15TlRRNU56ZzROaTl0WldScFlYTmZNVEF3TVRFeE1EYzRPVjh3TUY5UVgxZ3RNakF5TmpBeU1EVXhOVFV3TlRjdWFuQm58ODM1ZWJmZTVhM2IxYmFhOTQzMGMyZmY0NzY3ZDQ5YjZmOGJhZjZhZWE5Mjg0MjM3NTBmMmI1ZTYyZWM3ZjcyYw&feedId=58083&k=31f0f61f87f1e2dc698ae96810a308427a002cd5",
         sizes: [],
-      },
-    ],
-  },
-  {
-    id: "athletic-club-balon-athletic-club-retro-historico-marron",
-    brand: "Athletic Club",
-    model: "Balón Athletic Club Retro Historico - Marron",
-    colour: "Marron",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 36.55,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45692355186&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095699-00-P-X-20251021155025.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTUwNXxpbWFnZS9qcGVnfGFETmxMMmd6TUM4eE16STJNVFF5TkRFMk5EZzVOQzl0WldScFlYTmZNVEF3TVRBNU5UWTVPVjh3TUY5UVgxZ3RNakF5TlRFd01qRXhOVFV3TWpVdWFuQm58MjBiMjIzYTA5ZTkwZTcyNWE4YTZjMWM5YjY5NzA0YzhmYWUzZDE0NGE5ZmQzNzBlODM0NmUwMDM1YTNhYWI2MQ&feedId=58083&k=21ed943d36b4a7d6d27c185e1fa86f833234c2b6",
-        sizes: [],
-      },
-    ],
-  },
-  {
-    id: "athletic-club-unique-in-the-world-5-blanco",
-    brand: "Athletic Club",
-    model: "Balón Athletic Club Unique In The World 5 - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 24.0,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42943329805&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095728-00-P-X-20251021153719.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzkxNXxpbWFnZS9qcGVnfGFETmxMMmhpTVM4eE16STJNVFF5TmpVNE9UY3lOaTl0WldScFlYTmZNVEF3TVRBNU5UY3lPRjh3TUY5UVgxZ3RNakF5TlRFd01qRXhOVE0zTVRrdWFuQm58ZTRjYmQ4ZWUzOWNkZDNiYTdjZTk3MDgzZDJhY2MxMzdlMmFlMmM2OWRhODgwMzAzMjBiZWE0Njc4ZjE1NWYzMg&feedId=58083&k=14409b5222da532488b83dfd2b8aaefc21b8ae3c",
-        sizes: ["5"],
       },
     ],
   },
@@ -8846,7 +9175,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.95,
+        price: 9.48,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729799&a=3013769&m=65912",
@@ -8855,7 +9184,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.23,
+        price: 9.29,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6104-rgz-ballon-de-football-avento-belgium-red-yellow-taille-5",
@@ -8872,7 +9201,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.0,
+        price: 6.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729800&a=3013769&m=65912",
@@ -8881,7 +9210,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.3,
+        price: 6.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16sq-wiz-ballon-de-football-avento-el-classico-white-black-taille-5",
@@ -8898,7 +9227,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.95,
+        price: 9.48,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729801&a=3013769&m=65912",
@@ -8907,7 +9236,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.23,
+        price: 9.29,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xn-orw-ballon-de-football-avento-euro-triumph-orange-red-taille-5",
@@ -8924,7 +9253,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.95,
+        price: 9.48,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729802&a=3013769&m=65912",
@@ -8933,7 +9262,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.23,
+        price: 9.29,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xn-rgz-ballon-de-football-avento-euro-triumph-red-yellow-taille-5",
@@ -8950,7 +9279,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.11,
+        price: 9.63,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729803&a=3013769&m=65912",
@@ -8959,7 +9288,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.39,
+        price: 9.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45xh-whi-ballon-de-football-avento-grid-mark-white-black-taille-5",
@@ -8976,7 +9305,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.0,
+        price: 6.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729805&a=3013769&m=65912",
@@ -8985,7 +9314,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.3,
+        price: 6.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16st-wig-ballon-de-football-avento-holland-white-gold-taille-5",
@@ -9002,7 +9331,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.0,
+        price: 6.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729804&a=3013769&m=65912",
@@ -9011,11 +9340,54 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.3,
+        price: 6.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16st-orw-ballon-de-football-avento-holland-orange-red-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-16st-orw-orange-red-69e0911195322-1.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "avento-balones-de-futbol-avento-lion-force-blanc",
+    brand: "Avento",
+    model: "Balones de Fútbol Avento Lion Force - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 13.73,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889808863&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fv%2Favento-45xm-rog-white-red-6afdb55e6d950-1.jpg&feedId=89032&k=82ebc961c466974de4c3f90bcae265a83c0941cd",
+        sizes: ["Talla 5"],
+      },
+    ],
+  },
+  {
+    id: "avento-balones-de-futbol-avento-lion-force-blanc-2",
+    brand: "Avento",
+    model: "Balones de Fútbol Avento Lion Force - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 13.73,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889821475&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fv%2Favento-45xm-wio-white-orange-6afdb55d44c93-1.jpg&feedId=89032&k=b02c3bca78cdfaa270908987624a8f2e5ef8de31",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 13.56,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45xm-wio-ballon-de-football-avento-lion-force-white-orange-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-45xm-wio-white-orange-6afdb55d44c93-1.webp",
         sizes: ["5"],
       },
     ],
@@ -9028,7 +9400,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.0,
+        price: 6.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729806&a=3013769&m=65912",
@@ -9037,7 +9409,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.3,
+        price: 6.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16sr-zwg-ballon-de-football-avento-panna-black-white-taille-5",
@@ -9054,7 +9426,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.0,
+        price: 6.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729808&a=3013769&m=65912",
@@ -9063,12 +9435,38 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.3,
+        price: 6.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16sr-rbz-ballon-de-football-avento-panna-red-blue-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-16sr-rbz-red-blue-69e09117e359c-1.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "avento-balones-de-futbol-avento-power-strike-jaune",
+    brand: "Avento",
+    model: "Balones de Fútbol Avento Power Strike - Jaune",
+    colour: "Jaune",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 8.84,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889819235&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fv%2Favento-16xj-gez-yellow-black-6afdb56480696-1.jpg&feedId=89032&k=07c24c3261f7b30f7759938351e38ec4267182ff",
+        sizes: ["Talla 3"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 8.71,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xj-gez-ballon-de-football-avento-power-strike-yellow-black-taille-3",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-16xj-gez-yellow-black-6afdb56480696-1.webp",
+        sizes: ["3"],
       },
     ],
   },
@@ -9080,7 +9478,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.66,
+        price: 11.15,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729809&a=3013769&m=65912",
@@ -9089,7 +9487,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.93,
+        price: 10.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45xi-whi-ballon-de-football-avento-pro-filer-white-blue-taille-5",
@@ -9101,12 +9499,12 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "avento-balones-de-futbol-avento-star-blazer-blanc",
     brand: "Avento",
-    model: "Balones de Fútbol Avento Star-Blazer - Blanc",
+    model: "Balones de Fútbol Avento Star-Blazer - Blanc (45XL-WBR)",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 13.44,
+        price: 11.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729810&a=3013769&m=65912",
@@ -9115,12 +9513,34 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.7,
+        price: 11.7,
+        priceMax: 13.56,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45xl-wbr-ballon-de-football-avento-star-blazer-white-blue-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-45xl-wbr-white-blue-69e08ebf1a9cf-1.webp",
         sizes: ["5"],
+        sizePrices: [
+          { size: "5", price: 11.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45xl-wbr-ballon-de-football-avento-star-blazer-white-blue-taille-5" },
+          { size: "5", price: 13.56, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45xl-wpg-ballon-de-football-avento-star-blazer-white-purple-taille-5" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "avento-balones-de-futbol-avento-star-blazer-blanc-2",
+    brand: "Avento",
+    model: "Balones de Fútbol Avento Star-Blazer - Blanc (45XL-WPG)",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 13.73,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889807390&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fv%2Favento-45xl-wpg-white-purple-6afdb5653632a-1.jpg&feedId=89032&k=289bd34601c07c75eb55b3a8145ba7e779129c6e",
+        sizes: ["Talla 5"],
       },
     ],
   },
@@ -9132,7 +9552,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.44,
+        price: 11.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729811&a=3013769&m=65912",
@@ -9149,7 +9569,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.44,
+        price: 11.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729812&a=3013769&m=65912",
@@ -9158,11 +9578,63 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.7,
+        price: 11.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45xk-wbo-ballon-de-football-avento-star-wizard-white-emerald-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-45xk-wbo-white-emerald-69e0913120934-1.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "avento-balones-de-futbol-avento-sunset-striker-blanc",
+    brand: "Avento",
+    model: "Balones de Fútbol Avento Sunset Striker - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 11.46,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889821476&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fv%2Favento-45xb-wbo-white-dark-blue-6afdb5677d16a-1.jpg&feedId=89032&k=8ea804da31c2d081da87949cfd5b86c5c7b22ea8",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 11.31,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45xb-wbo-ballon-de-football-avento-sunset-striker-white-dark-blue-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-45xb-wbo-white-dark-blue-6afdb5677d16a-1.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "avento-balones-de-futbol-avento-tic-tactic-noir",
+    brand: "Avento",
+    model: "Balones de Fútbol Avento Tic Tactic - Noir",
+    colour: "Noir",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 13.73,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889808862&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fv%2Favento-45xg-blk-black-white-6afdb56841e55-1.jpg&feedId=89032&k=dd2bee550d57f976aa20eb8e1746ba64e266c17e",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 13.56,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45xg-blk-ballon-de-football-avento-tic-tactic-black-white-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-45xg-blk-black-white-6afdb56841e55-1.webp",
         sizes: ["5"],
       },
     ],
@@ -9175,7 +9647,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.89,
+        price: 10.39,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729813&a=3013769&m=65912",
@@ -9192,7 +9664,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.89,
+        price: 10.39,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729814&a=3013769&m=65912",
@@ -9201,7 +9673,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.16,
+        price: 10.2,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F45xj-wgp-ballon-de-football-avento-urbanizer-white-purple-taille-5",
@@ -9218,7 +9690,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.12,
+        price: 8.67,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729816&a=3013769&m=65912",
@@ -9227,7 +9699,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.41,
+        price: 8.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xo-fra-ballon-de-football-avento-world-soccer-cobalt-blue-red-taille-5",
@@ -9244,7 +9716,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.12,
+        price: 8.67,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729815&a=3013769&m=65912",
@@ -9253,7 +9725,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.41,
+        price: 8.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xo-bel-ballon-de-football-avento-world-soccer-black-yellow-taille-5",
@@ -9270,7 +9742,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.12,
+        price: 8.67,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729817&a=3013769&m=65912",
@@ -9279,7 +9751,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.41,
+        price: 8.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xo-spa-ballon-de-football-avento-world-soccer-red-yellow-taille-5",
@@ -9296,7 +9768,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.0,
+        price: 6.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729819&a=3013769&m=65912",
@@ -9305,7 +9777,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.3,
+        price: 6.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16ya-fra-ballon-de-football-avento-worldcup-blue-red-taille-5",
@@ -9322,7 +9794,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.0,
+        price: 6.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729822&a=3013769&m=65912",
@@ -9331,7 +9803,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.3,
+        price: 6.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16ya-bra-ballon-de-football-avento-worldcup-yellow-green-taille-5",
@@ -9348,7 +9820,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.0,
+        price: 6.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729818&a=3013769&m=65912",
@@ -9357,7 +9829,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.3,
+        price: 6.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16ya-bel-ballon-de-football-avento-worldcup-black-red-taille-5",
@@ -9369,43 +9841,43 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "avento-ballon-de-football-avento-worldcup-rouge",
     brand: "Avento",
-    model: "Balones de Fútbol Avento Worldcup - Rouge (16YA-POL)",
+    model: "Balones de Fútbol Avento Worldcup - Rouge",
     colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
-        price: 8.0,
+        price: 6.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729820&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fv%2Favento-16ya-pol-red-white-69e0914f9aad1-1.jpg&feedId=89032&k=c5c6dd69d30033d1e77ba82e353b21c5097b255d",
         sizes: ["Talla 5"],
       },
-      {
-        store: "FootStoreFR",
-        price: 7.3,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16ya-pol-ballon-de-football-avento-worldcup-red-white-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-16ya-pol-red-white-69e0914f9aad1-1.webp",
-        sizes: ["5"],
-      },
     ],
   },
   {
     id: "avento-balones-de-futbol-avento-worldcup-rouge",
     brand: "Avento",
-    model: "Balones de Fútbol Avento Worldcup - Rouge (16YA-SPA)",
+    model: "Balones de Fútbol Avento Worldcup - Rouge",
     colour: "Rouge",
     offers: [
       {
         store: "FootStoreES",
-        price: 8.0,
+        price: 6.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729821&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fv%2Favento-16ya-spa-red-yellow-69e09153ebd22-1.jpg&feedId=89032&k=f10c4d2f8772b37520cdaf04ec19f5d1d7d96de0",
         sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 6.45,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16ya-spa-ballon-de-football-avento-worldcup-red-yellow-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/v/avento-16ya-spa-red-yellow-69e09153ebd22-1.webp",
+        sizes: ["5"],
       },
     ],
   },
@@ -9417,7 +9889,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 57.32,
+        price: 54.65,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38320523519&a=3013769&m=65912",
@@ -9426,7 +9898,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 56.32,
+        price: 54.2,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8004-019-ballon-de-football-copa-football-en-peau-de-vache-multicolore-taille-5",
@@ -9443,7 +9915,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.95,
+        price: 58.08,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40174223659&a=3013769&m=65912",
@@ -9452,7 +9924,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 59.86,
+        price: 57.54,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8006-020-ballon-copa-football-laboratories-match-blanc-noir-taille-5",
@@ -9469,7 +9941,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.95,
+        price: 58.08,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40174223658&a=3013769&m=65912",
@@ -9478,7 +9950,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 59.86,
+        price: 57.54,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8001-023-ballon-de-football-copa-football-retro-1950-s-marron-taille-5",
@@ -9495,7 +9967,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.95,
+        price: 58.08,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923791776&a=3013769&m=65912",
@@ -9504,12 +9976,38 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 59.86,
+        price: 57.54,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F8005-004-ballon-de-football-copa-football-retro-1950-s-noir-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/8/0/8005_-_image1_-_8005-1-907.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "derbystar-balones-de-futbol-derbystar-aps-blanc",
+    brand: "Derbystar",
+    model: "Balones de Fútbol Derbystar APS - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 149.95,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889823566&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fd%2Fe%2Fderbystar-f17683-blanc-noir-6afc5da1aa573-1.jpg&feedId=89032&k=efdb0aee7c33fea27b1c253d11b374879cd7d2f3",
+        sizes: ["Taillle 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 149.95,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17683-ballon-de-football-derbystar-aps-blanc-noir-taillle-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/d/e/derbystar-f17683-blanc-noir-6afc5da1aa573-1.webp",
+        sizes: ["Taillle 5"],
       },
     ],
   },
@@ -9547,7 +10045,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.06,
+        price: 35.06,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157526&a=3013769&m=65912",
@@ -9556,7 +10054,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 35.23,
+        price: 34.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17714-01-ballon-de-football-derbystar-apus-tt-db-blue-taille-5",
@@ -9573,7 +10071,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.06,
+        price: 35.06,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157528&a=3013769&m=65912",
@@ -9582,7 +10080,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 35.23,
+        price: 34.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17714-03-ballon-de-football-derbystar-apus-tt-db-jaune-taille-5",
@@ -9599,7 +10097,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.06,
+        price: 35.06,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157525&a=3013769&m=65912",
@@ -9608,7 +10106,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 35.23,
+        price: 34.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17714-04-ballon-de-football-derbystar-apus-tt-db-black-taille-5",
@@ -9625,7 +10123,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.06,
+        price: 35.06,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157529&a=3013769&m=65912",
@@ -9634,7 +10132,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 35.23,
+        price: 34.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17714-02-ballon-de-football-derbystar-apus-tt-db-red-taille-5",
@@ -9651,7 +10149,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.06,
+        price: 35.06,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157527&a=3013769&m=65912",
@@ -9660,7 +10158,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 35.23,
+        price: 34.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17714-07-ballon-de-football-derbystar-apus-tt-db-green-taille-5",
@@ -9677,7 +10175,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.03,
+        price: 45.03,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856322&a=3013769&m=65912",
@@ -9686,7 +10184,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.16,
+        price: 44.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff16740-ballon-de-football-derbystar-beta-yellow-purple-taille-5",
@@ -9703,7 +10201,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 43.38,
+        price: 42.38,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856325&a=3013769&m=65912",
@@ -9712,7 +10210,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 42.54,
+        price: 42.04,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1546-ballon-de-football-derbystar-brillant-tt-classic-white-taille-5",
@@ -9729,7 +10227,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 112.0,
+        price: 108.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42785604733&a=3013769&m=65912",
@@ -9738,7 +10236,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 110.0,
+        price: 107.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17654-ballon-de-football-derbystar-bundesliga-aps-blanc-rouge-bleu-taille-5",
@@ -9764,7 +10262,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 157.0,
+        price: 152.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17653-ballon-de-football-derbystar-bundesliga-aps-season-2024-25-blue-taille-5",
@@ -9781,16 +10279,16 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.0,
-        priceMax: 26.0,
+        price: 21.8,
+        priceMax: 25.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157532&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fd%2Fe%2Fderbystar-f17768-white-69fdf0f7504e6-1.jpg&feedId=89032&k=9eaa39fe548450b8d8a26a507d54ceec7bceaafd",
         sizes: ["Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 4", price: 26.0, url: "https://www.awin1.com/pclick.php?p=44719157531&a=3013769&m=65912" },
-          { size: "Talla 5", price: 22.0, url: "https://www.awin1.com/pclick.php?p=44719157532&a=3013769&m=65912" },
+          { size: "Talla 4", price: 25.0, url: "https://www.awin1.com/pclick.php?p=44719157531&a=3013769&m=65912" },
+          { size: "Talla 5", price: 21.8, url: "https://www.awin1.com/pclick.php?p=44719157532&a=3013769&m=65912" },
         ],
       },
       {
@@ -9805,14 +10303,14 @@ const minedBallProductsChunk2: BallProduct[] = [
       {
         store: "FootStoreFR",
         price: 21.62,
-        priceMax: 25.25,
+        priceMax: 24.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17768-ballon-de-football-derbystar-light-350-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/d/e/derbystar-f17768-white-69fdf0f7504e6-1.webp",
         sizes: ["4", "5"],
         sizePrices: [
-          { size: "4", price: 25.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17768-ballon-de-football-derbystar-light-350-white" },
+          { size: "4", price: 24.95, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17768-ballon-de-football-derbystar-light-350-white" },
           { size: "5", price: 21.62, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17768-ballon-de-football-derbystar-light-350-white" },
         ],
       },
@@ -9861,7 +10359,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.96,
+        price: 34.96,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856329&a=3013769&m=65912",
@@ -9870,7 +10368,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 35.18,
+        price: 34.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17440-ballon-de-football-derbystar-stratos-light-yellow-white-blue-taille-4",
@@ -9882,25 +10380,16 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "derbystar-ballon-de-football-derbystar-stratos-s-light-jaune",
     brand: "Derbystar",
-    model: "Balones de Fútbol Derbystar Stratos S-Light - Amarillo (F17441)",
+    model: "Balones de Fútbol Derbystar Stratos S-Light - Amarillo",
     colour: "Amarillo",
     offers: [
       {
         store: "FootStoreES",
-        price: 35.96,
+        price: 34.96,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856331&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fd%2Fe%2Fderbystar_f17441_jaune-blanc-rouge_1.jpg&feedId=89032&k=c6d386ea2b93f54d00769d03f0eeec194606c319",
-        sizes: ["20 cm"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 35.18,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17441-ballon-de-football-derbystar-stratos-s-light-jaune-blanc-rouge-20-cm",
-        imageUrl: "https://cdn.blazimg.com/1800/product/d/e/derbystar_f17441_jaune-blanc-rouge_1.webp",
         sizes: ["20 cm"],
       },
     ],
@@ -9908,42 +10397,25 @@ const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "derbystar-balones-de-futbol-derbystar-stratos-s-light-amarillo",
     brand: "Derbystar",
-    model: "Balones de Fútbol Derbystar Stratos S-Light - Amarillo (F17442)",
+    model: "Balones de Fútbol Derbystar Stratos S-Light - Amarillo",
     colour: "Amarillo",
     offers: [
       {
         store: "FootStoreES",
-        price: 35.96,
+        price: 34.96,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856332&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fd%2Fe%2Fderbystar_f17442_yellow-white-red_1.jpg&feedId=89032&k=2e74ef8ff6f4c6cda525f600229ff5d1c0380ff0",
         sizes: ["20 cm"],
       },
-    ],
-  },
-  {
-    id: "derbystar-balones-de-futbol-derbystar-stratos-tt-amarillo",
-    brand: "Derbystar",
-    model: "Balones de Fútbol Derbystar Stratos TT - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 32.99,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529856335&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fd%2Fe%2Fderbystar_f17443_yellow-green-white_1.jpg&feedId=89032&k=773e4395b8b97256c5ce882790c9709e47b82f67",
-        sizes: ["20 cm"],
-      },
       {
         store: "FootStoreFR",
-        price: 32.23,
+        price: 34.68,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17443-ballon-de-football-derbystar-stratos-tt-yellow-green-white-20-cm",
-        imageUrl: "https://cdn.blazimg.com/1800/product/d/e/derbystar_f17443_yellow-green-white_1.webp",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17442-ballon-de-football-derbystar-stratos-s-light-yellow-white-red-20-cm",
+        imageUrl: "https://cdn.blazimg.com/1800/product/d/e/derbystar_f17442_yellow-white-red_1.webp",
         sizes: ["20 cm"],
       },
     ],
@@ -9965,7 +10437,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 39.0,
+        price: 38.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17704-ballon-de-football-derbystar-tt-ag-white-yellow-taille-5",
@@ -9982,7 +10454,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.13,
+        price: 45.13,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157533&a=3013769&m=65912",
@@ -9991,7 +10463,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.21,
+        price: 44.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17694-ballon-de-football-derbystar-tt-db-blanc-vert-taille-5",
@@ -10039,7 +10511,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 13.23,
+        price: 12.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa006121-007-11-ballon-de-football-eqsi-striker-orange-taille-5",
@@ -10056,7 +10528,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.12,
+        price: 11.99,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44572519157&a=3013769&m=65912",
@@ -10108,7 +10580,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.59,
+        price: 23.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39699800080&a=3013769&m=65912",
@@ -10117,7 +10589,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.8,
+        price: 23.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192410-ballon-de-football-erima-hybrid-new-navy-jaune-taille-4",
@@ -10134,7 +10606,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.76,
+        price: 29.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529570177&a=3013769&m=65912",
@@ -10143,7 +10615,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.92,
+        price: 29.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192317-ballon-de-football-erima-hybrid-eco-argent-navy-taille-5",
@@ -10186,10 +10658,10 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.62,
+        price: 29.95,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44719157535&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44719157536&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferima-f17599-blue-lime-69fdf0f94629b-1.jpg&feedId=89032&k=63ac37feb3a3608b1929ca297a5358d6f7d63b05",
         sizes: ["Talla 4", "Talla 5"],
       },
@@ -10212,7 +10684,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.35,
+        price: 21.53,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45092218605&a=3013769&m=65912",
@@ -10221,7 +10693,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.58,
+        price: 21.3,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192608-ballon-de-football-erima-hybrid-lite-290-fiery-coral-lime-taille-3",
@@ -10238,7 +10710,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.35,
+        price: 21.53,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45115125517&a=3013769&m=65912",
@@ -10247,7 +10719,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.58,
+        price: 21.3,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192605-ballon-de-football-erima-hybrid-lite-350-yellow-curacao-taille-4",
@@ -10264,7 +10736,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.62,
+        price: 29.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157538&a=3013769&m=65912",
@@ -10290,7 +10762,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.85,
+        price: 57.02,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46696887281&a=3013769&m=65912",
@@ -10299,7 +10771,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 58.78,
+        price: 56.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192401-ballon-de-football-erima-hybrid-match-argent-fiery-coral-taille-5",
@@ -10316,7 +10788,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.59,
+        price: 23.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40318621668&a=3013769&m=65912",
@@ -10325,7 +10797,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.8,
+        price: 23.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192411-ballon-de-football-erima-hybrid-rouge-jaune-taille-4",
@@ -10334,6 +10806,9 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "erima-balones-de-futbol-erima-hybrid-training-2-0-bleu",
     brand: "erima",
@@ -10342,7 +10817,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.22,
+        price: 22.22,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45698860961&a=3013769&m=65912",
@@ -10360,7 +10835,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.55,
+        price: 22.05,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192601-ballon-de-football-erima-hybrid-training-2-0-metallic-blue-silver-lime-taille-5",
@@ -10386,7 +10861,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.26,
+        price: 22.42,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44737977472&a=3013769&m=65912",
@@ -10395,7 +10870,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 23.43,
+        price: 22.13,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192602-ballon-de-football-erima-hybrid-training-2-0-metallic-red-silver-lime-taille-4",
@@ -10430,7 +10905,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.24,
+        price: 22.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192508-ballon-de-football-erima-hybrid-training-blanc-or-taille-5",
@@ -10439,7 +10914,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 25.02,
+        price: 23.16,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485364760&a=3013769&m=65912",
@@ -10456,7 +10931,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.59,
+        price: 23.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529570175&a=3013769&m=65912",
@@ -10465,7 +10940,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.8,
+        price: 23.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192412-ballon-de-football-erima-hybrid-green-jaune-taille-4",
@@ -10482,7 +10957,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.38,
+        price: 26.38,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970698&a=3013769&m=65912",
@@ -10491,7 +10966,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.67,
+        price: 26.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17603-ballon-de-football-erima-senzor-star-lite-290-jaune-taille-5",
@@ -10534,7 +11009,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 71.09,
+        price: 67.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41211984925&a=3013769&m=65912",
@@ -10543,7 +11018,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 69.92,
+        price: 67.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192302-ballon-de-football-erima-senzor-star-match-fiery-coral-noir-taille-5",
@@ -10560,7 +11035,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 71.09,
+        price: 67.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41168515146&a=3013769&m=65912",
@@ -10569,7 +11044,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 69.92,
+        price: 67.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192301-ballon-de-football-erima-senzor-star-match-noir-gris-taille-5",
@@ -10586,7 +11061,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.57,
+        price: 14.57,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42810865785&a=3013769&m=65912",
@@ -10604,7 +11079,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.96,
+        price: 14.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192507-ballon-de-football-erima-senzor-star-divers-taille-5",
@@ -10630,7 +11105,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.73,
+        price: 16.07,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44981389568&a=3013769&m=65912",
@@ -10648,7 +11123,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.0,
+        price: 15.88,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192501-ballon-de-football-erima-senzor-star-noir-gris-taille-5",
@@ -10674,7 +11149,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 37.38,
+        price: 35.18,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41465044488&a=3013769&m=65912",
@@ -10683,7 +11158,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 36.5,
+        price: 34.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192303-ballon-de-football-erima-senzor-star-pro-fern-green-smaragd-silver-grey-taille-5",
@@ -10700,7 +11175,7 @@ const minedBallProductsChunk2: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.38,
+        price: 26.38,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970696&a=3013769&m=65912",
@@ -10709,7 +11184,7 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.67,
+        price: 26.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17495-ballon-de-football-erima-senzor-star-rouge-blanc-taille-3",
@@ -10718,9 +11193,6 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "erima-balones-de-futbol-erima-senzor-star-verde",
     brand: "erima",
@@ -10729,7 +11201,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.73,
+        price: 16.07,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44981389567&a=3013769&m=65912",
@@ -10738,12 +11210,29 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.0,
+        price: 15.88,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F7192502-ballon-de-football-erima-senzor-star-green-taille-4",
         imageUrl: "https://cdn.blazimg.com/1800/product/e/r/erima-7192502-green-1.webp",
         sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "errea-balones-de-futbol-errea-stream-hybrid-heritage-blanc",
+    brand: "Errea",
+    model: "Ballon de football Errea Stream Hybrid Heritage - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 23.15,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z18110-ballon-errea-stream-hybrid-heritage-blanc-noir-arg",
+        imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea-ha0d0z18110-blanc-noir-arg-1.webp",
+        sizes: ["4", "5"],
       },
     ],
   },
@@ -10755,7 +11244,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.14,
+        price: 21.33,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45725040729&a=3013769&m=65912",
@@ -10764,7 +11253,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.37,
+        price: 21.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ft0074000281-ballon-de-football-reflexe-gardien-errea-trick-orange-noir-tu",
@@ -10781,7 +11270,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.07,
+        price: 8.62,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41297912636&a=3013769&m=65912",
@@ -10790,7 +11279,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.36,
+        price: 8.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fga1h0z45550-ballon-de-football-errea-college-id-blanc-noir-argente",
@@ -10807,7 +11296,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.07,
+        price: 8.62,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41984765342&a=3013769&m=65912",
@@ -10816,7 +11305,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.36,
+        price: 8.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fga1h0z77840-ballon-de-football-errea-college-id-blanc-marine",
@@ -10833,7 +11322,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.07,
+        price: 8.62,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529464293&a=3013769&m=65912",
@@ -10842,7 +11331,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.36,
+        price: 8.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fga1h0z00410-ballon-de-football-errea-college-id-blanc-marine-rouge",
@@ -10859,7 +11348,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.95,
+        price: 10.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46363340859&a=3013769&m=65912",
@@ -10868,7 +11357,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.28,
+        price: 10.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fga1h0z77830-ballon-de-football-errea-college-id-blanc-noir-blanc-bleu-marine-gris",
@@ -10885,7 +11374,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.95,
+        price: 10.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46391408844&a=3013769&m=65912",
@@ -10894,7 +11383,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.28,
+        price: 10.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fga1h0z77820-ballon-de-football-errea-college-id-blanc-marine-rose",
@@ -10911,32 +11400,32 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.35,
-        priceMax: 19.23,
+        price: 15.7,
+        priceMax: 17.53,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43101823174&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea-ha0g0z33790-blanc-marine-cyan-1.jpg&feedId=89032&k=952996d1298bd964a30c497ecb3d7fb57e05e248",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 19.23, url: "https://www.awin1.com/pclick.php?p=43101823172&a=3013769&m=65912" },
-          { size: "Talla 4", price: 19.23, url: "https://www.awin1.com/pclick.php?p=43101823173&a=3013769&m=65912" },
-          { size: "Talla 5", price: 17.35, url: "https://www.awin1.com/pclick.php?p=43101823174&a=3013769&m=65912" },
+          { size: "Talla 3", price: 17.53, url: "https://www.awin1.com/pclick.php?p=43101823172&a=3013769&m=65912" },
+          { size: "Talla 4", price: 17.53, url: "https://www.awin1.com/pclick.php?p=43101823173&a=3013769&m=65912" },
+          { size: "Talla 5", price: 15.7, url: "https://www.awin1.com/pclick.php?p=43101823174&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 16.57,
-        priceMax: 18.5,
+        price: 15.46,
+        priceMax: 17.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z33790-ballon-de-football-errea-mercurio-blanc-marine-cyan",
         imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea-ha0g0z33790-blanc-marine-cyan-1.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 18.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z33790-ballon-de-football-errea-mercurio-blanc-marine-cyan" },
-          { size: "4", price: 18.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z33790-ballon-de-football-errea-mercurio-blanc-marine-cyan" },
-          { size: "5", price: 16.57, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z33790-ballon-de-football-errea-mercurio-blanc-marine-cyan" },
+          { size: "3", price: 17.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z33790-ballon-de-football-errea-mercurio-blanc-marine-cyan" },
+          { size: "4", price: 17.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z33790-ballon-de-football-errea-mercurio-blanc-marine-cyan" },
+          { size: "5", price: 15.46, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z33790-ballon-de-football-errea-mercurio-blanc-marine-cyan" },
         ],
       },
     ],
@@ -10949,16 +11438,16 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.23,
+        price: 17.53,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43101823175&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43101823176&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea-ha0g0z00410-blanc-marine-rouge-1.jpg&feedId=89032&k=cd4cc814e35e3ea8e5e54b582fc0b50a53bdc8db",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 18.5,
+        price: 17.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z00410-ballon-de-football-errea-mercurio-blanc-marine-rouge",
@@ -10975,30 +11464,30 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.35,
-        priceMax: 19.23,
+        price: 15.7,
+        priceMax: 17.53,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46204529802&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea-ha0g0z37090-blanc-noir-vert-fluo-1.jpg&feedId=89032&k=7ac20b547a5bed4e6b8a6bdaeb199715b26e7231",
         sizes: ["Talla 3", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 19.23, url: "https://www.awin1.com/pclick.php?p=45725051524&a=3013769&m=65912" },
-          { size: "Talla 5", price: 17.35, url: "https://www.awin1.com/pclick.php?p=46204529802&a=3013769&m=65912" },
+          { size: "Talla 3", price: 17.53, url: "https://www.awin1.com/pclick.php?p=45725051524&a=3013769&m=65912" },
+          { size: "Talla 5", price: 15.7, url: "https://www.awin1.com/pclick.php?p=46204529802&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 16.57,
-        priceMax: 18.5,
+        price: 15.46,
+        priceMax: 17.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z37090-ballon-errea-mercurio-blanc-noir-vert-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea-ha0g0z37090-blanc-noir-vert-fluo-1.webp",
         sizes: ["3", "5"],
         sizePrices: [
-          { size: "3", price: 18.5, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z37090-ballon-de-football-errea-mercurio-blanc-noir-vert-fluo" },
-          { size: "5", price: 16.57, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z37090-ballon-errea-mercurio-blanc-noir-vert-fluo" },
+          { size: "3", price: 17.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z37090-ballon-de-football-errea-mercurio-blanc-noir-vert-fluo" },
+          { size: "5", price: 15.46, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z37090-ballon-errea-mercurio-blanc-noir-vert-fluo" },
         ],
       },
     ],
@@ -11011,7 +11500,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.23,
+        price: 17.53,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43108907577&a=3013769&m=65912",
@@ -11020,7 +11509,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.5,
+        price: 17.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0g0z96980-ballon-de-football-errea-mercurio-jaune-marine-fuchsia",
@@ -11037,7 +11526,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.66,
+        price: 28.66,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43717962740&a=3013769&m=65912",
@@ -11055,7 +11544,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 29.05,
+        price: 28.55,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0a0z96960-ballon-de-football-errea-new-gara-elite-blanc-marine-cyan-taille-5",
@@ -11076,38 +11565,12 @@ const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "errea-balones-de-futbol-errea-new-team-bleu",
     brand: "Errea",
-    model: "Balones de Fútbol Errea New Team - Bleu (HA0Y0ZB0200)",
-    colour: "Bleu",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 17.11,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45220450993&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea-ha0y0zb0200-blu-rosso-blu281c-1.jpg&feedId=89032&k=e25c23d87a88ae37301009f4b1b4a8c4f6839787",
-        sizes: ["Talla 3", "Talla 4", "Talla 5"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 16.39,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0y0zb0200-ballon-de-football-errea-new-team-blu-rosso-blu281c",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea-ha0y0zb0200-blu-rosso-blu281c-1.webp",
-        sizes: ["3", "4", "5"],
-      },
-    ],
-  },
-  {
-    id: "errea-balones-de-futbol-errea-new-team-bleu-2",
-    brand: "Errea",
     model: "Balones de Fútbol Errea New Team - Bleu (HA0Y0ZB0230)",
     colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
-        price: 17.11,
+        price: 15.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45888244661&a=3013769&m=65912",
@@ -11116,7 +11579,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.39,
+        price: 15.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0y0zb0230-ballon-de-football-errea-new-team-royal-arancio-blu",
@@ -11126,14 +11589,14 @@ const minedBallProductsChunk3: BallProduct[] = [
     ],
   },
   {
-    id: "errea-balones-de-futbol-errea-new-team-bleu-3",
+    id: "errea-balones-de-futbol-errea-new-team-bleu-2",
     brand: "Errea",
     model: "Balones de Fútbol Errea New Team - Bleu (HA0Y0ZB0210)",
     colour: "Bleu",
     offers: [
       {
         store: "FootStoreES",
-        price: 17.11,
+        price: 15.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45931746104&a=3013769&m=65912",
@@ -11142,11 +11605,37 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.39,
+        price: 15.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0y0zb0210-ballon-de-football-errea-new-team-blu-giallo-fluo-azz-3005c",
         imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea-ha0y0zb0210-blu-giallo-fluo-azz-3005c-6a9ecb97079f7-1.webp",
+        sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
+    id: "errea-balones-de-futbol-errea-new-team-bleu-3",
+    brand: "Errea",
+    model: "Balones de Fútbol Errea New Team - Bleu (HA0Y0ZB0200)",
+    colour: "Bleu",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 15.46,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46356658805&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea-ha0y0zb0200-blu-rosso-blu281c-1.jpg&feedId=89032&k=e25c23d87a88ae37301009f4b1b4a8c4f6839787",
+        sizes: ["Talla 3", "Talla 4", "Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 15.28,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0y0zb0200-ballon-de-football-errea-new-team-blu-rosso-blu281c",
+        imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea-ha0y0zb0200-blu-rosso-blu281c-1.webp",
         sizes: ["3", "4", "5"],
       },
     ],
@@ -11159,7 +11648,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.46,
+        price: 18.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46391427602&a=3013769&m=65912",
@@ -11168,7 +11657,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.71,
+        price: 18.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha1a0z79570-ballon-de-football-errea-new-team-light-bianco-blu-turchese-taille-5",
@@ -11185,7 +11674,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.11,
+        price: 15.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45860434296&a=3013769&m=65912",
@@ -11194,7 +11683,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.39,
+        price: 15.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0y0z43870-ballon-de-football-errea-new-team-nero-grigio-antracite",
@@ -11211,7 +11700,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.46,
+        price: 18.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46356658802&a=3013769&m=65912",
@@ -11220,7 +11709,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.71,
+        price: 18.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0z0zb0190-ballon-errea-new-team-superlight-bianco-royal-cyan-blu-taille-4",
@@ -11237,7 +11726,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 77.21,
+        price: 73.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46309370949&a=3013769&m=65912",
@@ -11246,7 +11735,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 75.99,
+        price: 73.23,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0x0z05150-ballon-de-football-errea-pro-match-legacy-pallone-bia-gia-ner-taille-5",
@@ -11263,7 +11752,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.14,
+        price: 16.47,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43101823181&a=3013769&m=65912",
@@ -11272,7 +11761,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.41,
+        price: 16.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0i0z97000-ballon-de-football-errea-ra-heritage-marine-cyan",
@@ -11289,7 +11778,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.14,
+        price: 16.47,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43101823184&a=3013769&m=65912",
@@ -11298,7 +11787,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.41,
+        price: 16.28,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0i0z96990-ballon-de-football-errea-ra-heritage-rouge-cyan-ambre-noir",
@@ -11308,59 +11797,37 @@ const minedBallProductsChunk3: BallProduct[] = [
     ],
   },
   {
-    id: "errea-balones-de-futbol-errea-stream-hybrid-heritage-blanc",
+    id: "errea-balones-de-futbol-errea-stream-hybrid-heritage-blanc-4",
     brand: "Errea",
-    model: "Balones de Fútbol Errea Stream Hybrid Heritage - Blanc (HA0D0Z14530)",
+    model: "Balones de Fútbol Errea Stream Hybrid Heritage - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 23.38,
-        priceMax: 25.26,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43101823189&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea-ha0d0z14530-blanc-bleu-cyan-1.jpg&feedId=89032&k=f335e98934fef22f4fd71e30c936f2c717db9627",
-        sizes: ["Talla 4", "Talla 5"],
-        sizePrices: [
-          { size: "Talla 4", price: 25.26, url: "https://www.awin1.com/pclick.php?p=43101823188&a=3013769&m=65912" },
-          { size: "Talla 5", price: 23.38, url: "https://www.awin1.com/pclick.php?p=43101823189&a=3013769&m=65912" },
-        ],
-      },
-      {
-        store: "FootStoreFR",
-        price: 22.56,
-        priceMax: 24.48,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z14530-ballon-errea-stream-hybrid-heritage-blanc-bleu-cyan",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea-ha0d0z14530-blanc-bleu-cyan-1.webp",
-        sizes: ["4", "5"],
-        sizePrices: [
-          { size: "4", price: 24.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z14530-ballon-de-football-errea-stream-hybrid-heritage-blanc-bleu-cyan" },
-          { size: "5", price: 22.56, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z14530-ballon-errea-stream-hybrid-heritage-blanc-bleu-cyan" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "errea-balones-de-futbol-errea-stream-hybrid-heritage-blanc-2",
-    brand: "Errea",
-    model: "Balones de Fútbol Errea Stream Hybrid Heritage - Blanc (HA0D0Z00410)",
-    colour: "Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.56,
-        priceMax: 25.26,
+        price: 15.58,
+        priceMax: 23.4,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43101823191&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea-ha0d0z00410-blanc-marine-rouge-1.jpg&feedId=89032&k=acc360ede388ea91ea50897d906947531945d082",
         sizes: ["Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 4", price: 25.26, url: "https://www.awin1.com/pclick.php?p=44552707699&a=3013769&m=65912" },
-          { size: "Talla 5", price: 16.56, url: "https://www.awin1.com/pclick.php?p=43101823191&a=3013769&m=65912" },
+          { size: "Talla 4", price: 23.4, url: "https://www.awin1.com/pclick.php?p=44552707699&a=3013769&m=65912" },
+          { size: "Talla 5", price: 15.58, url: "https://www.awin1.com/pclick.php?p=43101823191&a=3013769&m=65912" },
+        ],
+      },
+      {
+        store: "FootStoreFR",
+        price: 15.63,
+        priceMax: 23.15,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z00410-ballon-de-football-errea-stream-hybrid-heritage-blanc-marine-rouge",
+        imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea-ha0d0z00410-blanc-marine-rouge-1.webp",
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 23.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z00410-ballon-de-football-errea-stream-hybrid-heritage-blanc-marine-rouge" },
+          { size: "5", price: 15.63, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z00410-ballon-de-football-errea-stream-hybrid-heritage-blanc-marine-rouge" },
         ],
       },
       {
@@ -11371,20 +11838,6 @@ const minedBallProductsChunk3: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=43475546338&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea-ha0d0z00410-blanc-marine-rouge-1.jpg&feedId=89044&k=acc360ede388ea91ea50897d906947531945d082",
         sizes: ["Talla 5"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 16.13,
-        priceMax: 24.48,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z00410-ballon-de-football-errea-stream-hybrid-heritage-blanc-marine-rouge",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea-ha0d0z00410-blanc-marine-rouge-1.webp",
-        sizes: ["4", "5"],
-        sizePrices: [
-          { size: "4", price: 24.48, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z00410-ballon-de-football-errea-stream-hybrid-heritage-blanc-marine-rouge" },
-          { size: "5", price: 16.13, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z00410-ballon-de-football-errea-stream-hybrid-heritage-blanc-marine-rouge" },
-        ],
       },
       {
         store: "SportIsGoodFR",
@@ -11398,32 +11851,6 @@ const minedBallProductsChunk3: BallProduct[] = [
     ],
   },
   {
-    id: "errea-balones-de-futbol-errea-stream-hybrid-heritage-blanc-3",
-    brand: "Errea",
-    model: "Balones de Fútbol Errea Stream Hybrid Heritage - Blanc (HA0D0Z18110)",
-    colour: "Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 25.26,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43101823192&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fe%2Fr%2Ferrea-ha0d0z18110-blanc-noir-arg-1.jpg&feedId=89032&k=2b4c97dfa76a6316ed9eb831d9c81ba33f212530",
-        sizes: ["Talla 4", "Talla 5"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 24.48,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z18110-ballon-de-football-errea-stream-hybrid-heritage-blanc-noir-arg",
-        imageUrl: "https://cdn.blazimg.com/1800/product/e/r/errea-ha0d0z18110-blanc-noir-arg-1.webp",
-        sizes: ["4", "5"],
-      },
-    ],
-  },
-  {
     id: "errea-balones-de-futbol-errea-stream-hybrid-heritage-jaune",
     brand: "Errea",
     model: "Balones de Fútbol Errea Stream Hybrid Heritage - Jaune",
@@ -11431,7 +11858,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.26,
+        price: 23.4,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43724611608&a=3013769&m=65912",
@@ -11440,7 +11867,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.48,
+        price: 23.15,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0d0z30960-ballon-de-football-errea-stream-hybrid-heritage-jaune-marine-cyan",
@@ -11457,7 +11884,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.46,
+        price: 24.56,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43101823194&a=3013769&m=65912",
@@ -11466,7 +11893,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.61,
+        price: 24.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0c0z05270-ballon-de-football-errea-super-evo-blanc-gris-noir",
@@ -11483,7 +11910,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.46,
+        price: 24.56,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43101823197&a=3013769&m=65912",
@@ -11492,7 +11919,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.61,
+        price: 24.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fha0c0z42180-ballon-de-football-errea-super-evo-blanc-plusieurs-coloris",
@@ -11638,23 +12065,6 @@ const minedBallProductsChunk3: BallProduct[] = [
     ],
   },
   {
-    id: "fc-barcelone-mini-ballon-domicile-fc-barcelona-2026-27-bleu-marine-grenat",
-    brand: "Fc Barcelone",
-    model: "Mini Ballon Domicile FC Barcelona 2026/27 Bleu Marine Grenat",
-    colour: "N/D",
-    offers: [
-      {
-        store: "PlanetFoot",
-        price: 14.99,
-        shipping: 5.95,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fmini-ballon-domicile-fc-barcelona-2026-27-bleu-marine-grenat%3Fvariant%3D55108741431637",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/mini-ballon-domicile-fc-barcelona-2026-27-bleu-marine-grenat-1.webp?v=1791115229",
-        sizes: [],
-      },
-    ],
-  },
-  {
     id: "fc-barcelone-mini-ballon-exterieur-fc-barcelona-2026-noir-bleu-rouge",
     brand: "Fc Barcelone",
     model: "Mini Ballon Extérieur FC Barcelona 2026 Noir Bleu Rouge",
@@ -11713,7 +12123,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.09,
+        price: 7.67,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729823&a=3013769&m=65912",
@@ -11722,12 +12132,64 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.38,
+        price: 7.49,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xa-wbo-ballon-de-football-d-entrainement-get-go-r-counter-strike-white-blue-taille-1",
         imageUrl: "https://cdn.blazimg.com/1800/product/g/e/get-go-16xa-wbo-white-blue-69e0915a1ce95-1.webp",
         sizes: ["1"],
+      },
+    ],
+  },
+  {
+    id: "get-go-balon-de-futbol-de-tpe-get-go-torque-thrill-jaune",
+    brand: "Get & Go®",
+    model: "Balón de fútbol de TPE Get & Go® Torque Thrill - Jaune",
+    colour: "Jaune",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 11.46,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889796062&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xm-geb-yellow-blue-6afdb56a3d784-1.jpg&feedId=89032&k=ba378ae60875e66f29e1ed3fcc51317765e2f95f",
+        sizes: ["Talla 4"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 11.31,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xm-geb-ballon-de-football-en-tpe-get-go-r-torque-thrill-yellow-blue-taille-4",
+        imageUrl: "https://cdn.blazimg.com/1800/product/g/e/get-go-16xm-geb-yellow-blue-6afdb56a3d784-1.webp",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "get-go-balon-de-futbol-de-tpe-get-go-torque-thrill-orange",
+    brand: "Get & Go®",
+    model: "Balón de fútbol de TPE Get & Go® Torque Thrill - Orange",
+    colour: "Orange",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 11.46,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889816614&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xm-orw-orange-white-6afdb56948ee0-1.jpg&feedId=89032&k=bdbd1643eece5bf2fada6ea52f913e3e35af90bc",
+        sizes: ["Talla 4"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 11.31,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xm-orw-ballon-de-football-en-tpe-get-go-r-torque-thrill-orange-white-taille-4",
+        imageUrl: "https://cdn.blazimg.com/1800/product/g/e/get-go-16xm-orw-orange-white-6afdb56948ee0-1.webp",
+        sizes: ["4"],
       },
     ],
   },
@@ -11739,7 +12201,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.5,
+        price: 9.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729825&a=3013769&m=65912",
@@ -11748,7 +12210,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.79,
+        price: 8.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xx-wog-ballon-de-football-get-go-r-white-orange-taille-3",
@@ -11765,7 +12227,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.5,
+        price: 9.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729824&a=3013769&m=65912",
@@ -11774,7 +12236,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.79,
+        price: 8.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xx-bzz-ballon-de-football-get-go-r-blue-black-taille-3",
@@ -11786,12 +12248,12 @@ const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "get-go-balon-de-futbol-get-go-circuit-strike-blanc",
     brand: "Get & Go®",
-    model: "Balón de fútbol Get & Go® Circuit Strike - Blanc (16XK-WZO)",
+    model: "Balón de fútbol Get & Go® Circuit Strike - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 9.24,
+        price: 7.82,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729826&a=3013769&m=65912",
@@ -11803,86 +12265,112 @@ const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "get-go-ballon-de-football-get-go-circuit-strike-blanc",
     brand: "Get & Go®",
-    model: "Balón de fútbol Get & Go® Circuit Strike - Blanc (16XK-WGR)",
+    model: "Balón de fútbol Get & Go® Circuit Strike - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 9.24,
+        price: 7.82,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729827&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xk-wgr-white-green-69e091754dab7-1.jpg&feedId=89032&k=82cd2a9399ad3eb102ceb48b692f30f11f0d2a12",
         sizes: ["Talla 5"],
       },
-      {
-        store: "FootStoreFR",
-        price: 8.53,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xk-wgr-ballon-de-football-get-go-r-circuit-strike-white-green-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/g/e/get-go-16xk-wgr-white-green-69e091754dab7-1.webp",
-        sizes: ["5"],
-      },
     ],
   },
   {
     id: "get-go-balon-de-futbol-get-go-circuit-strike-blanc-2",
     brand: "Get & Go®",
-    model: "Balón de fútbol Get & Go® Circuit Strike - Blanc (16XK-WPG)",
+    model: "Balón de fútbol Get & Go® Circuit Strike - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 9.24,
+        price: 7.82,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729828&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xk-wpg-white-purple-69e0917789614-1.jpg&feedId=89032&k=fdfbc6924c1dae1f85c12cce9508f4f2c335bab3",
         sizes: ["Talla 5"],
       },
+      {
+        store: "FootStoreFR",
+        price: 7.65,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xk-wpg-ballon-de-football-get-go-r-circuit-strike-white-purple-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/g/e/get-go-16xk-wpg-white-purple-69e0917789614-1.webp",
+        sizes: ["5"],
+      },
     ],
   },
   {
     id: "get-go-ballon-de-football-get-go-gold-line-jaune",
     brand: "Get & Go®",
-    model: "Balón de fútbol Get & Go® Gold Line - Jaune (16XL-GOA)",
+    model: "Balón de fútbol Get & Go® Gold Line - Jaune",
     colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
-        price: 9.55,
+        price: 8.12,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729829&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xl-goa-gold-anthracite-69e09179db439-1.jpg&feedId=89032&k=41c69ef126f55a3ea6ee0425b67063b5492afde7",
         sizes: ["Talla 5"],
       },
-      {
-        store: "FootStoreFR",
-        price: 8.84,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xl-goa-ballon-de-football-get-go-r-gold-line-gold-anthracite-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/g/e/get-go-16xl-goa-gold-anthracite-69e09179db439-1.webp",
-        sizes: ["5"],
-      },
     ],
   },
   {
     id: "get-go-balon-de-futbol-get-go-gold-line-jaune",
     brand: "Get & Go®",
-    model: "Balón de fútbol Get & Go® Gold Line - Jaune (16XL-GOZ)",
+    model: "Balón de fútbol Get & Go® Gold Line - Jaune",
     colour: "Jaune",
     offers: [
       {
         store: "FootStoreES",
-        price: 9.55,
+        price: 8.12,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729830&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xl-goz-gold-black-69e0917f4711e-1.jpg&feedId=89032&k=c1f70e32d8dca64737f4109f032c6c5e8c197066",
         sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 7.95,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xl-goz-ballon-de-football-get-go-r-gold-line-gold-black-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/g/e/get-go-16xl-goz-gold-black-69e0917f4711e-1.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "get-go-balon-de-futbol-get-go-threat-orange",
+    brand: "Get & Go®",
+    model: "Balón de fútbol Get & Go® Threat - Orange",
+    colour: "Orange",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 9.65,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889807288&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xi-owb-orange-white-6afdb56ad2e42-1.jpg&feedId=89032&k=b2978561aa3e216924c30b419460bfd16c2a808f",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 9.51,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xi-owb-ballon-de-football-get-go-r-threat-orange-white-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/g/e/get-go-16xi-owb-orange-white-6afdb56ad2e42-1.webp",
+        sizes: ["5"],
       },
     ],
   },
@@ -11894,7 +12382,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.97,
+        price: 8.52,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729834&a=3013769&m=65912",
@@ -11903,7 +12391,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.26,
+        price: 8.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xg-bzw-ballon-de-football-get-go-r-triangle-speed-navy-blue-black-taille-5",
@@ -11920,7 +12408,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.97,
+        price: 8.52,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729833&a=3013769&m=65912",
@@ -11929,7 +12417,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.26,
+        price: 8.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xg-grz-ballon-de-football-get-go-r-triangle-speed-grey-red-taille-5",
@@ -11946,7 +12434,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.97,
+        price: 8.52,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729832&a=3013769&m=65912",
@@ -11955,7 +12443,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.26,
+        price: 8.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xg-gzr-ballon-de-football-get-go-r-triangle-speed-fluorescent-yellow-black-taille-5",
@@ -11972,7 +12460,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.97,
+        price: 8.52,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729831&a=3013769&m=65912",
@@ -11981,7 +12469,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.26,
+        price: 8.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xg-zws-ballon-de-football-get-go-r-triangle-speed-black-emerald-taille-5",
@@ -11998,7 +12486,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.97,
+        price: 8.52,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729835&a=3013769&m=65912",
@@ -12007,7 +12495,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.26,
+        price: 8.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xg-rzw-ballon-de-football-get-go-r-triangle-speed-red-black-taille-5",
@@ -12019,41 +12507,36 @@ const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "get-go-ballon-de-football-get-go-warp-speeder-blanc",
     brand: "Get & Go®",
-    model: "Balón de fútbol Get & Go® Warp Speeder - Blanc (16XW-WIT)",
+    model: "Balón de fútbol Get & Go® Warp Speeder - Blanc",
     colour: "Blanc",
     offers: [
       {
-        store: "FootStoreES",
-        price: 8.61,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507729837&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xw-wit-white-69e0918a07257-1.jpg&feedId=89032&k=94986c26866140f104ad00cb4f830dd2dd5c084d",
-        sizes: ["Talla 5"],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 10.1,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45959619618&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xw-wit-white-69e0918a07257-1.jpg&feedId=89044&k=94986c26866140f104ad00cb4f830dd2dd5c084d",
-        sizes: ["Talla 5"],
-      },
-      {
         store: "FootStoreFR",
-        price: 7.96,
-        priceMax: 8.53,
+        price: 7.1,
+        priceMax: 7.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xw-wit-ballon-de-football-get-go-r-warp-speeder-white-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/g/e/get-go-16xw-wit-white-69e0918a07257-1.webp",
         sizes: ["5"],
         sizePrices: [
-          { size: "5", price: 7.96, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xw-wit-ballon-de-football-get-go-r-warp-speeder-white-taille-5" },
-          { size: "5", price: 8.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xw-wkz-ballon-de-football-get-go-r-warp-speeder-white-cobalt-blue-taille-5" },
-          { size: "5", price: 8.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xw-wrz-ballon-de-football-get-go-r-warp-speeder-white-red-taille-5" },
-          { size: "5", price: 8.53, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xw-wzz-ballon-de-football-get-go-r-warp-speeder-white-silver-taille-5" },
+          { size: "5", price: 7.1, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xw-wit-ballon-de-football-get-go-r-warp-speeder-white-taille-5" },
+          { size: "5", price: 7.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xw-wzz-ballon-de-football-get-go-r-warp-speeder-white-silver-taille-5" },
+          { size: "5", price: 7.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xw-wrz-ballon-de-football-get-go-r-warp-speeder-white-red-taille-5" },
+          { size: "5", price: 7.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xw-wkz-ballon-de-football-get-go-r-warp-speeder-white-cobalt-blue-taille-5" },
+        ],
+      },
+      {
+        store: "FootStoreES",
+        price: 7.22,
+        priceMax: 7.82,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44507729837&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xw-wit-white-69e0918a07257-1.jpg&feedId=89032&k=94986c26866140f104ad00cb4f830dd2dd5c084d",
+        sizes: ["Talla 5"],
+        sizePrices: [
+          { size: "Talla 5", price: 7.22, url: "https://www.awin1.com/pclick.php?p=44507729837&a=3013769&m=65912" },
         ],
       },
       {
@@ -12065,17 +12548,26 @@ const minedBallProductsChunk3: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/g/e/get-go-16xw-wit-white-69e0918a07257-1.webp",
         sizes: ["5"],
       },
+      {
+        store: "SportIsGoodES",
+        price: 10.1,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45959619618&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xw-wit-white-69e0918a07257-1.jpg&feedId=89044&k=94986c26866140f104ad00cb4f830dd2dd5c084d",
+        sizes: ["Talla 5"],
+      },
     ],
   },
   {
     id: "get-go-balon-de-futbol-get-go-warp-speeder-blanc",
     brand: "Get & Go®",
-    model: "Balón de fútbol Get & Go® Warp Speeder - Blanc (16XW-WKZ)",
+    model: "Balón de fútbol Get & Go® Warp Speeder - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 9.24,
+        price: 7.82,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729838&a=3013769&m=65912",
@@ -12085,31 +12577,14 @@ const minedBallProductsChunk3: BallProduct[] = [
     ],
   },
   {
-    id: "get-go-balon-de-futbol-get-go-warp-speeder-blanc-2",
-    brand: "Get & Go®",
-    model: "Balón de fútbol Get & Go® Warp Speeder - Blanc (16XW-WRZ)",
-    colour: "Blanc",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 9.24,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507729839&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fe%2Fget-go-16xw-wrz-white-red-69e0918cf1bce-1.jpg&feedId=89032&k=3d00bc501df21600b9386c4f1c1b5e41eb7f0258",
-        sizes: ["Talla 5"],
-      },
-    ],
-  },
-  {
     id: "get-go-balon-de-futbol-get-go-warp-speeder-blanc-3",
     brand: "Get & Go®",
-    model: "Balón de fútbol Get & Go® Warp Speeder - Blanc (16XW-WZZ)",
+    model: "Balón de fútbol Get & Go® Warp Speeder - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 9.24,
+        price: 7.82,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729840&a=3013769&m=65912",
@@ -12126,7 +12601,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.61,
+        price: 7.22,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44507729836&a=3013769&m=65912",
@@ -12135,12 +12610,34 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.96,
+        price: 7.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F16xw-ora-ballon-de-football-get-go-r-warp-speeder-orange-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/g/e/get-go-16xw-ora-orange-69e0918940fa7-1.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "gioco-balones-de-futbol-gioco-blanco",
+    brand: "Gioco",
+    model: "Balones de Fútbol Gioco - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 14.0,
+        priceMax: 17.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46255316901&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgioco_ggb0052.jpg&feedId=89032&k=888abc5e9d3071c4af8ceab5df349fba289ab187",
+        sizes: ["Talla 2", "Talla 3"],
+        sizePrices: [
+          { size: "Talla 2", price: 14.0, url: "https://www.awin1.com/pclick.php?p=46255316901&a=3013769&m=65912" },
+          { size: "Talla 3", price: 17.0, url: "https://www.awin1.com/pclick.php?p=46255331898&a=3013769&m=65912" },
+        ],
       },
     ],
   },
@@ -12152,7 +12649,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.27,
+        price: 12.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45145686806&a=3013769&m=65912",
@@ -12178,7 +12675,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.27,
+        price: 12.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529620656&a=3013769&m=65912",
@@ -12204,7 +12701,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.27,
+        price: 12.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529620657&a=3013769&m=65912",
@@ -12223,6 +12720,58 @@ const minedBallProductsChunk3: BallProduct[] = [
     ],
   },
   {
+    id: "givova-balones-de-futbol-givova-new-maya-azul",
+    brand: "Givova",
+    model: "Balones de Fútbol Givova New Maya - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 27.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46255332740&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgivova_pal025-0204_azzurro-bleu_1.jpg&feedId=89032&k=11ffa02f45183820fd7f5acd37ccb141c93d47b2",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 28.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpal025-0204-ballon-givova-new-maya-azzurro-bleu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/g/i/givova_pal025-0204_azzurro-bleu_1.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "givova-ballon-de-football-givova-new-maya-rouge",
+    brand: "Givova",
+    model: "Balones de Fútbol Givova New Maya - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 26.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45586521349&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fg%2Fi%2Fgivova_pal025-1210_rosso-nero_1.jpg&feedId=89032&k=b5b23427b868433a9dba521ba644aea722f6fef9",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 28.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fpal025-1210-ballon-de-football-givova-new-maya-rosso-nero",
+        imageUrl: "https://cdn.blazimg.com/1800/product/g/i/givova_pal025-1210_rosso-nero_1.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "huari-balon-de-futbol-copa-del-mundo-polonia-blanc",
     brand: "Huari",
     model: "Balón de fútbol Copa del Mundo Polonia - Blanc",
@@ -12230,7 +12779,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.97,
+        price: 12.41,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45137700412&a=3013769&m=65912",
@@ -12239,7 +12788,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.22,
+        price: 12.2,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F6709-white-fieryred-ballon-de-football-coupe-du-monde-pologne-white-fiery-red-taille-5",
@@ -12282,7 +12831,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.18,
+        price: 17.48,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027509158&a=3013769&m=65912",
@@ -12291,7 +12840,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.4,
+        price: 17.23,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000282036-ballon-de-football-tpu-et-eva-huari-parada-tm-white-taille-5",
@@ -12308,7 +12857,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.99,
+        price: 18.47,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44645300537&a=3013769&m=65912",
@@ -12317,7 +12866,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.53,
+        price: 16.39,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000253967-ballon-de-football-huari-blaka-black-tu",
@@ -12334,7 +12883,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.99,
+        price: 19.32,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027509152&a=3013769&m=65912",
@@ -12343,7 +12892,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.99,
+        price: 19.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000292563-ballon-de-football-huari-carlos-black-taille-5",
@@ -12360,7 +12909,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.99,
+        price: 22.7,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45145695615&a=3013769&m=65912",
@@ -12369,7 +12918,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 23.77,
+        price: 22.45,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000271830-ballon-de-football-huari-hator-orange-blue-taille-4",
@@ -12386,7 +12935,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.28,
+        price: 11.99,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42995719698&a=3013769&m=65912",
@@ -12412,7 +12961,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.28,
+        price: 11.99,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42995719699&a=3013769&m=65912",
@@ -12438,7 +12987,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.99,
+        price: 15.93,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45145695616&a=3013769&m=65912",
@@ -12447,7 +12996,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.99,
+        price: 15.74,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000253958-ballon-de-football-huari-nazare-white-red-tu",
@@ -12464,7 +13013,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.99,
+        price: 9.03,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027509153&a=3013769&m=65912",
@@ -12473,7 +13022,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.77,
+        price: 8.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F23617-wht-blu-blk-ballon-de-football-huari-nazare-mini-white-taille-2",
@@ -12490,7 +13039,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.71,
+        price: 14.1,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027509154&a=3013769&m=65912",
@@ -12499,7 +13048,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.95,
+        price: 13.88,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000271828-ballon-de-football-huari-osiris-white-taille-4",
@@ -12516,7 +13065,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.18,
+        price: 17.48,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027509155&a=3013769&m=65912",
@@ -12525,7 +13074,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.4,
+        price: 17.23,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000140129-ballon-de-football-huari-parada-white-taille-5",
@@ -12542,7 +13091,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.18,
+        price: 17.48,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027509156&a=3013769&m=65912",
@@ -12551,7 +13100,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.4,
+        price: 17.23,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000284727-ballon-de-football-huari-parada-tm-white-taille-4",
@@ -12594,7 +13143,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.14,
+        price: 24.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45145695617&a=3013769&m=65912",
@@ -12603,7 +13152,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.3,
+        price: 23.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000272388-ballon-de-football-huari-siff-multi-taille-5",
@@ -12620,7 +13169,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.48,
+        price: 7.48,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360622&a=3013769&m=65912",
@@ -12629,7 +13178,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.92,
+        price: 7.42,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000253963-ballon-de-football-huari-tacao-bleu-taille-5",
@@ -12646,7 +13195,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.48,
+        price: 7.48,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360623&a=3013769&m=65912",
@@ -12655,7 +13204,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.92,
+        price: 7.42,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000253962-ballon-de-football-huari-tacao-vert-taille-5",
@@ -12672,7 +13221,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.99,
+        price: 24.39,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45526322954&a=3013769&m=65912",
@@ -12681,16 +13230,16 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.49,
-        priceMax: 27.02,
+        price: 24.13,
+        priceMax: 25.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000140130-ballon-de-football-huari-tahuchi-white-turquoise-yellow-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/huari-m000140130-white-turquoise-yellow-1.webp",
         sizes: ["5"],
         sizePrices: [
-          { size: "5", price: 25.49, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000140130-ballon-de-football-huari-tahuchi-white-turquoise-yellow-taille-5" },
-          { size: "5", price: 27.02, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000282037-ballon-de-football-huari-tahuchi-white-taille-5" },
+          { size: "5", price: 25.62, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000282037-ballon-de-football-huari-tahuchi-white-taille-5" },
+          { size: "5", price: 24.13, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000140130-ballon-de-football-huari-tahuchi-white-turquoise-yellow-taille-5" },
         ],
       },
     ],
@@ -12703,7 +13252,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.88,
+        price: 25.94,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027509157&a=3013769&m=65912",
@@ -12720,7 +13269,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.49,
+        price: 28.48,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45145695618&a=3013769&m=65912",
@@ -12729,7 +13278,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 29.61,
+        price: 28.13,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000271831-ballon-de-football-huari-tot-white-blue-green-taille-4",
@@ -12746,7 +13295,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.66,
+        price: 20.87,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45137700414&a=3013769&m=65912",
@@ -12755,7 +13304,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.85,
+        price: 20.59,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000272395-ballon-de-football-huari-walli-multi-taille-4",
@@ -12772,7 +13321,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.66,
+        price: 20.87,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46014584015&a=3013769&m=65912",
@@ -12781,7 +13330,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.85,
+        price: 20.59,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000272384-ballon-de-football-huari-war-multi-taille-5",
@@ -12798,7 +13347,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.88,
+        price: 25.94,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46027509149&a=3013769&m=65912",
@@ -12807,7 +13356,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.02,
+        price: 25.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm000284766-ballon-de-football-d-entrainement-huari-tahuchi-white-taille-4",
@@ -12824,7 +13373,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.82,
+        price: 18.13,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45597128720&a=3013769&m=65912",
@@ -12842,7 +13391,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.12,
+        price: 17.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F238547-9208-ballon-de-football-asse-2026-27-white-green",
@@ -12894,7 +13443,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 57.78,
+        price: 56.78,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232456&a=3013769&m=65912",
@@ -12911,7 +13460,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.96,
+        price: 37.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232457&a=3013769&m=65912",
@@ -12920,16 +13469,16 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 39.05,
-        priceMax: 56.82,
+        price: 37.31,
+        priceMax: 56.32,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234022-3873-ballon-de-football-de-match-hummel-inspire-maroon-white-gold-taille-4",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234022-3873-maroon-white-gold-1.webp",
         sizes: ["4", "5"],
         sizePrices: [
-          { size: "4", price: 39.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234022-3873-ballon-de-football-de-match-hummel-inspire-maroon-white-gold-taille-4" },
-          { size: "5", price: 56.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234024-3876-ballon-de-football-de-match-hummel-inspire-maroon-champagne-black-taille-5" },
+          { size: "4", price: 37.31, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234022-3873-ballon-de-football-de-match-hummel-inspire-maroon-white-gold-taille-4" },
+          { size: "5", price: 56.32, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234024-3876-ballon-de-football-de-match-hummel-inspire-maroon-champagne-black-taille-5" },
         ],
       },
     ],
@@ -12942,7 +13491,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 82.31,
+        price: 78.85,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232458&a=3013769&m=65912",
@@ -12951,7 +13500,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 81.05,
+        price: 78.15,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234497-7899-ballon-de-football-de-match-hummel-legacy-blue-green-black-taille-5",
@@ -12968,7 +13517,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.21,
+        price: 17.51,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42630359648&a=3013769&m=65912",
@@ -12977,7 +13526,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.48,
+        price: 17.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F224986-9302-ballon-de-football-training-hummel-aerofly-white-blanc-taille-5",
@@ -12994,7 +13543,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.03,
+        price: 12.47,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945445278&a=3013769&m=65912",
@@ -13003,12 +13552,38 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.34,
+        price: 12.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F224984-9128-ballon-de-football-training-hummel-aerofly-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_224984-9128_1.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "hummel-balon-de-futbol-training-hummel-precision-blanco",
+    brand: "Hummel",
+    model: "Balón de fútbol Training Hummel Precision - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 24.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529486815&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_224983-9301_0.jpg&feedId=89032&k=ddb7fa850a8d301c37e86e7743b0a5ef7d2093c4",
+        sizes: ["Talla 4"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 24.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F224983-9301-ballon-de-football-training-hummel-precision-white-blanc",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_224983-9301_0.webp",
+        sizes: ["4"],
       },
     ],
   },
@@ -13020,7 +13595,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.49,
+        price: 15.83,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529486816&a=3013769&m=65912",
@@ -13029,7 +13604,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.76,
+        price: 15.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F224985-9300-ballon-de-football-training-hummel-precision-pro-white",
@@ -13046,7 +13621,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.03,
+        price: 12.47,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945445273&a=3013769&m=65912",
@@ -13055,7 +13630,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.34,
+        price: 12.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F224980-9109-ballon-de-football-hummel-aerofly-light-290-blanc-blanc",
@@ -13072,7 +13647,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.03,
+        price: 12.47,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945445274&a=3013769&m=65912",
@@ -13081,7 +13656,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.34,
+        price: 12.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F224980-9065-ballon-de-football-hummel-aerofly-light-290-white",
@@ -13098,7 +13673,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.16,
+        price: 11.63,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45195671293&a=3013769&m=65912",
@@ -13107,7 +13682,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.48,
+        price: 11.48,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234521-9107-ballon-de-football-hummel-blaze-2-0-white-marine",
@@ -13124,7 +13699,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.16,
+        price: 11.63,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45195671291&a=3013769&m=65912",
@@ -13133,7 +13708,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.48,
+        price: 11.48,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234521-2784-ballon-de-football-hummel-blaze-2-0-black-pool-blue",
@@ -13150,16 +13725,16 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.79,
+        price: 20.02,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45204867376&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45204867377&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-236347-6517-asian-pear-white-1.jpg&feedId=89032&k=9c16bce532593cc50018f3bedecef01569e78806",
         sizes: ["Talla 3", "Talla 4"],
       },
       {
         store: "FootStoreFR",
-        price: 21.03,
+        price: 19.8,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F236347-6517-ballon-de-football-hummel-blaze-26-asian-pear-white",
@@ -13176,32 +13751,32 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.45,
-        priceMax: 18.33,
+        price: 14.83,
+        priceMax: 16.66,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46246416382&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-236809-9254-white-blue-pink-6a76cd760fe2f-1.jpg&feedId=89032&k=30b5e17f56c3e9f82ab3a0cec5c666baa167a7c5",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 16.45, url: "https://www.awin1.com/pclick.php?p=46246416382&a=3013769&m=65912" },
-          { size: "Talla 4", price: 16.45, url: "https://www.awin1.com/pclick.php?p=46246416381&a=3013769&m=65912" },
-          { size: "Talla 5", price: 18.33, url: "https://www.awin1.com/pclick.php?p=45562786698&a=3013769&m=65912" },
+          { size: "Talla 3", price: 14.83, url: "https://www.awin1.com/pclick.php?p=46246416382&a=3013769&m=65912" },
+          { size: "Talla 4", price: 14.83, url: "https://www.awin1.com/pclick.php?p=46246416381&a=3013769&m=65912" },
+          { size: "Talla 5", price: 16.66, url: "https://www.awin1.com/pclick.php?p=45562786698&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 15.68,
-        priceMax: 17.6,
+        price: 14.6,
+        priceMax: 16.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F236809-9254-ballon-de-football-hummel-blaze-white-blue-pink",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-236809-9254-white-blue-pink-6a76cd760fe2f-1.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 15.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F236809-9254-ballon-de-football-hummel-blaze-white-blue-pink" },
-          { size: "4", price: 15.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F236809-9254-ballon-de-football-hummel-blaze-white-blue-pink" },
-          { size: "5", price: 17.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F236809-9254-ballon-de-football-hummel-blaze-white-blue-pink" },
+          { size: "3", price: 14.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F236809-9254-ballon-de-football-hummel-blaze-white-blue-pink" },
+          { size: "4", price: 14.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F236809-9254-ballon-de-football-hummel-blaze-white-blue-pink" },
+          { size: "5", price: 16.46, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F236809-9254-ballon-de-football-hummel-blaze-white-blue-pink" },
         ],
       },
     ],
@@ -13214,7 +13789,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.39,
+        price: 28.34,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41305678081&a=3013769&m=65912",
@@ -13251,6 +13826,32 @@ const minedBallProductsChunk3: BallProduct[] = [
     ],
   },
   {
+    id: "hummel-balones-de-futbol-hummel-elite-match-blanco",
+    brand: "Hummel",
+    model: "Balones de Fútbol Hummel Elite match - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 31.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41104827326&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F0%2F207515-9031_2.jpg&feedId=89032&k=fa807a0696b0af0b8adb8183db808ae180ace4bb",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 33.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F207515-9031-ballon-de-football-hummel-elite-match-blanc-noir-rouge",
+        imageUrl: "https://cdn.blazimg.com/1800/product/2/0/207515-9031_2.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "hummel-balones-de-futbol-hummel-inspire-blanc",
     brand: "Hummel",
     model: "Balones de Fútbol Hummel Inspire - Blanc",
@@ -13258,7 +13859,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.86,
+        price: 25.92,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232464&a=3013769&m=65912",
@@ -13267,7 +13868,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.05,
+        price: 25.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234023-7860-ballon-de-football-hummel-inspire-blue-white-grey-taille-3",
@@ -13284,7 +13885,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.81,
+        price: 20.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232466&a=3013769&m=65912",
@@ -13293,12 +13894,38 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.05,
+        price: 19.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234028-7863-ballon-de-football-hummel-inspire-ice-blue-white-grey-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234028-7863-ice-blue-white-grey-2.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "hummel-balones-de-futbol-hummel-inspire-club-bleu",
+    brand: "Hummel",
+    model: "Balones de Fútbol Hummel Inspire Club - Bleu",
+    colour: "Bleu",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 17.09,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889810382&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-234020-7854-light-blue-white-blue-3.jpg&feedId=89032&k=258019c52425ae5440fea3a68166b550e0da656a",
+        sizes: ["Talla 4"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 16.89,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234020-7854-ballon-de-football-hummel-inspire-club-light-blue-white-blue-taille-4",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234020-7854-light-blue-white-blue-3.webp",
+        sizes: ["4"],
       },
     ],
   },
@@ -13310,7 +13937,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.78,
+        price: 17.09,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232472&a=3013769&m=65912",
@@ -13319,7 +13946,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.05,
+        price: 16.89,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234018-1312-ballon-de-football-hummel-inspire-club-lite-290-grey-white-neon-green-taille-3",
@@ -13336,7 +13963,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.53,
+        price: 15.53,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232473&a=3013769&m=65912",
@@ -13354,7 +13981,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.91,
+        price: 15.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234018-7833-ballon-de-football-hummel-inspire-club-lite-290-light-blue-white-neon-green-taille-5",
@@ -13380,7 +14007,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.78,
+        price: 17.09,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232474&a=3013769&m=65912",
@@ -13389,7 +14016,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.05,
+        price: 16.89,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234018-3869-ballon-de-football-hummel-inspire-club-lite-290-red-white-neon-green-taille-4",
@@ -13406,7 +14033,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.78,
+        price: 17.09,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232475&a=3013769&m=65912",
@@ -13415,7 +14042,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.05,
+        price: 16.89,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234019-7849-ballon-de-football-hummel-inspire-club-lite-350-blue-white-neon-green-taille-5",
@@ -13432,7 +14059,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.78,
+        price: 17.09,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232476&a=3013769&m=65912",
@@ -13441,7 +14068,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.05,
+        price: 16.89,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234019-6479-ballon-de-football-hummel-inspire-club-lite-350-green-white-neon-green-taille-4",
@@ -13458,7 +14085,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.78,
+        price: 17.09,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232471&a=3013769&m=65912",
@@ -13467,7 +14094,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.05,
+        price: 16.89,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234020-3870-ballon-de-football-hummel-inspire-club-red-white-red-taille-5",
@@ -13484,7 +14111,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.78,
+        price: 17.09,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46414619390&a=3013769&m=65912",
@@ -13493,7 +14120,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.05,
+        price: 16.89,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234020-6480-ballon-de-football-hummel-inspire-club-neon-green-white-green-taille-3",
@@ -13510,7 +14137,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.86,
+        price: 25.92,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44086764990&a=3013769&m=65912",
@@ -13519,7 +14146,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.05,
+        price: 25.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F235750-7939-ballon-de-football-hummel-inspire-elegant-turquoise-white-purple-taille-4",
@@ -13536,7 +14163,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.0,
+        price: 25.92,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44086764989&a=3013769&m=65912",
@@ -13545,7 +14172,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 39.0,
+        price: 25.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F235750-4429-ballon-de-football-hummel-inspire-elegant-orange-white-violet-taille-5",
@@ -13557,43 +14184,43 @@ const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "hummel-balones-de-futbol-hummel-inspire-elite-blanc",
     brand: "Hummel",
-    model: "Balones de Fútbol Hummel Inspire Elite - Blanc (234021-7855)",
+    model: "Balones de Fútbol Hummel Inspire Elite - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 33.91,
+        price: 31.8,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232477&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-234021-7855-light-blue-white-grey-1.jpg&feedId=89032&k=4594e13c9ff44e36b2f8f18707ff967130da0967",
         sizes: ["Talla 5"],
       },
+      {
+        store: "FootStoreFR",
+        price: 31.48,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234021-7855-ballon-de-football-hummel-inspire-elite-light-blue-white-grey-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234021-7855-light-blue-white-grey-1.webp",
+        sizes: ["4", "5"],
+      },
     ],
   },
   {
     id: "hummel-ballon-de-football-hummel-inspire-elite-blanc",
     brand: "Hummel",
-    model: "Balones de Fútbol Hummel Inspire Elite - Blanc (234021-6481)",
+    model: "Balones de Fútbol Hummel Inspire Elite - Blanc",
     colour: "Blanc",
     offers: [
       {
         store: "FootStoreES",
-        price: 33.91,
+        price: 31.8,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232478&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-234021-6481-lime-green-white-grey-3.jpg&feedId=89032&k=f349fc22702d1563199ddf6151c0b2e42a3ba656",
         sizes: ["Talla 4"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 33.05,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234021-6481-ballon-de-football-hummel-inspire-elite-lime-green-white-grey-taille-4",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234021-6481-lime-green-white-grey-3.webp",
-        sizes: ["4", "5"],
       },
     ],
   },
@@ -13605,7 +14232,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.81,
+        price: 20.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232479&a=3013769&m=65912",
@@ -13614,7 +14241,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.05,
+        price: 19.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234026-7849-ballon-de-football-hummel-inspire-lite-290-blue-white-neon-green-taille-3",
@@ -13631,7 +14258,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.81,
+        price: 20.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232480&a=3013769&m=65912",
@@ -13648,7 +14275,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.81,
+        price: 20.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232481&a=3013769&m=65912",
@@ -13657,7 +14284,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.05,
+        price: 19.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234026-6482-ballon-de-football-hummel-inspire-lite-290-green-white-orange-taille-4",
@@ -13674,7 +14301,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.81,
+        price: 20.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232483&a=3013769&m=65912",
@@ -13683,7 +14310,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.05,
+        price: 19.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234027-1313-ballon-de-football-hummel-inspire-lite-350-grey-white-lime-taille-4",
@@ -13700,7 +14327,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.81,
+        price: 20.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232482&a=3013769&m=65912",
@@ -13709,7 +14336,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.05,
+        price: 19.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234027-7891-ballon-de-football-hummel-inspire-lite-350-blue-red-black-taille-5",
@@ -13726,7 +14353,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.86,
+        price: 25.92,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232467&a=3013769&m=65912",
@@ -13743,7 +14370,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.68,
+        price: 23.8,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232468&a=3013769&m=65912",
@@ -13752,16 +14379,16 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.89,
-        priceMax: 27.05,
+        price: 23.55,
+        priceMax: 25.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234028-3903-ballon-de-football-hummel-inspire-red-white-teal-taille-4",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234028-3903-red-white-teal-1.webp",
         sizes: ["4"],
         sizePrices: [
-          { size: "4", price: 27.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234023-3875-ballon-de-football-hummel-inspire-maroon-white-grey-taille-4" },
-          { size: "4", price: 24.89, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234028-3903-ballon-de-football-hummel-inspire-red-white-teal-taille-4" },
+          { size: "4", price: 25.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234023-3875-ballon-de-football-hummel-inspire-maroon-white-grey-taille-4" },
+          { size: "4", price: 23.55, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234028-3903-ballon-de-football-hummel-inspire-red-white-teal-taille-4" },
         ],
       },
     ],
@@ -13774,7 +14401,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.76,
+        price: 14.15,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232486&a=3013769&m=65912",
@@ -13783,7 +14410,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.05,
+        price: 13.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234025-3901-ballon-de-football-hummel-inspire-starter-red-blue-black-taille-5",
@@ -13800,7 +14427,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.76,
+        price: 14.15,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46127473952&a=3013769&m=65912",
@@ -13809,7 +14436,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.05,
+        price: 13.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234025-3899-ballon-de-football-hummel-inspire-starter-purple-green-black-taille-3",
@@ -13826,7 +14453,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.81,
+        price: 20.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232465&a=3013769&m=65912",
@@ -13835,7 +14462,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.05,
+        price: 19.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234028-6484-ballon-de-football-hummel-inspire-green-white-gold-taille-3",
@@ -13852,7 +14479,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.88,
+        price: 28.86,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232487&a=3013769&m=65912",
@@ -13861,7 +14488,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.05,
+        price: 28.56,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234495-7898-ballon-de-football-hummel-legacy-blue-teal-dark-teal-taille-5",
@@ -13878,7 +14505,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 52.06,
+        price: 49.44,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43994232488&a=3013769&m=65912",
@@ -13887,11 +14514,37 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 51.05,
+        price: 48.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234496-3906-ballon-de-football-hummel-legacy-elite-pink-orange-black-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234496-3906-pink-orange-black-1.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "hummel-balones-de-futbol-hummel-precision-classic-blanco",
+    brand: "Hummel",
+    model: "Balones de Fútbol Hummel Precision Classic - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 34.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529486812&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_226311-9327_0.jpg&feedId=89032&k=53df9e931b5b7eb452f9a9ee32b3552849b0c1e3",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 34.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F226311-9327-ballon-de-football-hummel-precision-classic-white-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_226311-9327_0.webp",
         sizes: ["5"],
       },
     ],
@@ -13904,7 +14557,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.3,
+        price: 10.79,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43945445275&a=3013769&m=65912",
@@ -13913,7 +14566,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.62,
+        price: 10.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F224979-9301-ballon-de-football-hummel-precision-light-290-white",
@@ -13930,7 +14583,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.3,
+        price: 10.79,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46339515912&a=3013769&m=65912",
@@ -13939,11 +14592,37 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.62,
+        price: 10.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F224981-9128-ballon-de-football-hummel-precision-light-350-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_224981-9128_0.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "hummel-balones-de-futbol-hummel-precision-match-blanco",
+    brand: "Hummel",
+    model: "Balones de Fútbol Hummel Precision Match - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 67.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41104843132&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel_224987-9152_0.jpg&feedId=89032&k=68f8fefbd7475014c2f618cdee819ba5c4668bda",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 69.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F224987-9152-ballon-de-football-hummel-precision-match-white-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel_224987-9152_0.webp",
         sizes: ["5"],
       },
     ],
@@ -13956,7 +14635,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.96,
+        price: 37.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45204867378&a=3013769&m=65912",
@@ -13965,7 +14644,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 39.05,
+        price: 37.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F236598-8757-ballon-de-football-hummel-root-exclusive-leather-brown-taille-5",
@@ -13982,7 +14661,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.6,
+        price: 18.86,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45204866472&a=3013769&m=65912",
@@ -13991,7 +14670,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.85,
+        price: 18.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F235069-2114-ballon-de-football-hummel-shimmer-black-white",
@@ -14025,7 +14704,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.31,
+        price: 16.64,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529091175&a=3013769&m=65912",
@@ -14034,7 +14713,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.59,
+        price: 16.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2380-u-0-ballon-de-football-jako-glaze-light-blanc",
@@ -14051,7 +14730,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.99,
+        price: 38.02,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529542691&a=3013769&m=65912",
@@ -14060,7 +14739,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 39.39,
+        price: 37.64,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F2313-u-797-ballon-de-football-d-entrainement-jako-animal-blanc-rose-noir",
@@ -14077,7 +14756,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.53,
+        price: 14.43,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41162677417&a=3013769&m=65912",
@@ -14274,7 +14953,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.5,
+        price: 34.32,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44510944192&a=3013769&m=65912",
@@ -14283,7 +14962,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 35.62,
+        price: 33.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401244-206-ballon-de-football-lumineuse-joma-blanco-rojo-taille-5",
@@ -14300,7 +14979,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.0,
+        price: 27.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44212468247&a=3013769&m=65912",
@@ -14317,7 +14996,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.22,
+        price: 20.22,
         priceMax: 32.0,
         shipping: 9.99,
         currency: "EUR",
@@ -14325,9 +15004,9 @@ const minedBallProductsChunk3: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_400649.061_0.jpg&feedId=89032&k=084ef1990b912308b9e77b86c53195c3ac7b8eef",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 28.22, url: "https://www.awin1.com/pclick.php?p=44510944303&a=3013769&m=65912" },
+          { size: "Talla 3", price: 26.27, url: "https://www.awin1.com/pclick.php?p=44510944303&a=3013769&m=65912" },
           { size: "Talla 4", price: 32.0, url: "https://www.awin1.com/pclick.php?p=43961536300&a=3013769&m=65912" },
-          { size: "Talla 5", price: 21.22, url: "https://www.awin1.com/pclick.php?p=44510944304&a=3013769&m=65912" },
+          { size: "Talla 5", price: 20.22, url: "https://www.awin1.com/pclick.php?p=44510944304&a=3013769&m=65912" },
         ],
       },
       {
@@ -14341,7 +15020,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.68,
+        price: 20.18,
         priceMax: 32.0,
         shipping: 7.99,
         currency: "EUR",
@@ -14349,9 +15028,9 @@ const minedBallProductsChunk3: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400649.061_0.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 27.41, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-061-ballon-de-football-joma-dali-ii-amarillo-fluor" },
+          { size: "3", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-061-ballon-de-football-joma-dali-ii-amarillo-fluor" },
           { size: "4", price: 32.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-061-ballon-de-football-joma-dali-ii-amarillo-fluor" },
-          { size: "5", price: 20.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-061-ballon-de-football-joma-dali-ii-amarillo-fluor" },
+          { size: "5", price: 20.18, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-061-ballon-de-football-joma-dali-ii-amarillo-fluor" },
         ],
       },
       {
@@ -14373,7 +15052,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.22,
+        price: 26.27,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44510944182&a=3013769&m=65912",
@@ -14382,7 +15061,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.41,
+        price: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-216-ballon-de-football-joma-dali-ii-blanc-bleu-jaune",
@@ -14399,7 +15078,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.22,
+        price: 26.27,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44510944185&a=3013769&m=65912",
@@ -14408,7 +15087,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.41,
+        price: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-214-ballon-de-football-joma-dali-ii-blanc-orange",
@@ -14425,16 +15104,16 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.22,
-        priceMax: 28.22,
+        price: 20.22,
+        priceMax: 26.27,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44510944309&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_400649.211_0.jpg&feedId=89032&k=d91bca77c6a7779491ae98b9680a265ba5a0278d",
         sizes: ["Talla 3", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 28.22, url: "https://www.awin1.com/pclick.php?p=44510944308&a=3013769&m=65912" },
-          { size: "Talla 5", price: 21.22, url: "https://www.awin1.com/pclick.php?p=44510944309&a=3013769&m=65912" },
+          { size: "Talla 3", price: 26.27, url: "https://www.awin1.com/pclick.php?p=44510944308&a=3013769&m=65912" },
+          { size: "Talla 5", price: 20.22, url: "https://www.awin1.com/pclick.php?p=44510944309&a=3013769&m=65912" },
         ],
       },
       {
@@ -14448,16 +15127,16 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.6,
-        priceMax: 27.41,
+        price: 21.1,
+        priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-211-ballon-de-football-joma-dali-ii-gris-verde-azul",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400649.211_0.webp",
         sizes: ["3", "5"],
         sizePrices: [
-          { size: "3", price: 27.41, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-211-ballon-de-football-joma-dali-ii-gris-verde-azul" },
-          { size: "5", price: 21.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-211-ballon-de-football-joma-dali-ii-gris-verde-azul" },
+          { size: "3", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-211-ballon-de-football-joma-dali-ii-gris-verde-azul" },
+          { size: "5", price: 21.1, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-211-ballon-de-football-joma-dali-ii-gris-verde-azul" },
         ],
       },
       {
@@ -14479,7 +15158,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.22,
+        price: 26.27,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44510944305&a=3013769&m=65912",
@@ -14497,21 +15176,12 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.41,
+        price: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-203-ballon-de-football-joma-dali-ii-fuscia-rojo-amarillo-fuor",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400649.203_0.webp",
         sizes: ["3", "5"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 19.14,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F400649-497-ballon-de-football-joma-dali-ii-fuscia-turquesa",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400649.497_0.webp",
-        sizes: ["5"],
       },
     ],
   },
@@ -14523,31 +15193,40 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.22,
-        priceMax: 28.22,
+        price: 20.22,
+        priceMax: 26.27,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44510944307&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma_400649.497_0.jpg&feedId=89032&k=b01c4dc3d46812ac7d543b4018bf1cb46e161153",
         sizes: ["Talla 3", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 28.22, url: "https://www.awin1.com/pclick.php?p=44510944306&a=3013769&m=65912" },
-          { size: "Talla 5", price: 21.22, url: "https://www.awin1.com/pclick.php?p=44510944307&a=3013769&m=65912" },
+          { size: "Talla 3", price: 26.27, url: "https://www.awin1.com/pclick.php?p=44510944306&a=3013769&m=65912" },
+          { size: "Talla 5", price: 20.22, url: "https://www.awin1.com/pclick.php?p=44510944307&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 20.68,
-        priceMax: 27.41,
+        price: 20.18,
+        priceMax: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-497-ballon-de-football-joma-dali-ii-fuscia-turquesa",
         imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400649.497_0.webp",
         sizes: ["3", "5"],
         sizePrices: [
-          { size: "3", price: 27.41, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-497-ballon-de-football-joma-dali-ii-fuscia-turquesa" },
-          { size: "5", price: 20.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-497-ballon-de-football-joma-dali-ii-fuscia-turquesa" },
+          { size: "3", price: 26.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-497-ballon-de-football-joma-dali-ii-fuscia-turquesa" },
+          { size: "5", price: 20.18, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400649-497-ballon-de-football-joma-dali-ii-fuscia-turquesa" },
         ],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 19.14,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F400649-497-ballon-de-football-joma-dali-ii-fuscia-turquesa",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma_400649.497_0.webp",
+        sizes: ["5"],
       },
     ],
   },
@@ -14613,7 +15292,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 34.0,
+        price: 33.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45906303249&a=3013769&m=65912",
@@ -14639,7 +15318,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 40.41,
+        price: 38.12,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44510944188&a=3013769&m=65912",
@@ -14648,7 +15327,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 39.5,
+        price: 37.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401240-061-ballon-de-football-joma-evolution-iii-amarillo-negro-azul-taille-5",
@@ -14665,7 +15344,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 76.0,
+        price: 73.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529497205&a=3013769&m=65912",
@@ -14674,7 +15353,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 65.0,
+        price: 63.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400855-220-ballon-de-football-joma-flame-iii-blanco-naranja-taille-5",
@@ -14717,7 +15396,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 38.0,
+        price: 37.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529497208&a=3013769&m=65912",
@@ -14726,7 +15405,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 39.0,
+        price: 37.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F400906-206-ballon-de-football-joma-neptune-ii-blanco-rojo-taille-5",
@@ -14743,7 +15422,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.5,
+        price: 34.32,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44510944190&a=3013769&m=65912",
@@ -14752,7 +15431,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 35.62,
+        price: 33.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F401243-207-ballon-de-football-joma-u-light-blanc-bleu-taille-5",
@@ -14769,7 +15448,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 270.1,
+        price: 269.1,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43780404761&a=3013769&m=65912",
@@ -14778,7 +15457,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 267.38,
+        price: 266.88,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17091-ballon-ju-sports-x12-blanc-bleu-taille-3",
@@ -14795,7 +15474,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.0,
+        price: 26.17,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45931748091&a=3013769&m=65912",
@@ -14804,7 +15483,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.31,
+        price: 25.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F372c4qw-a02-ballon-de-football-fc-metz-2026-27-red-granata-black-white-taille-5",
@@ -14821,7 +15500,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.27,
+        price: 24.42,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45931748092&a=3013769&m=65912",
@@ -14830,7 +15509,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.53,
+        price: 24.22,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F36291mw-a04-ballon-de-football-ogc-nice-2026-27-black-red-taille-5",
@@ -14847,16 +15526,16 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.32,
-        priceMax: 27.68,
+        price: 21.32,
+        priceMax: 25.79,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43183969986&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fa%2Fkappa_381t3pw-a01_yellow-fluo-orange-black_1.jpg&feedId=89032&k=cab91d3e0a2643ad238ebeb447a401e9a1b1bea9",
         sizes: ["Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 4", price: 27.68, url: "https://www.awin1.com/pclick.php?p=45395569307&a=3013769&m=65912" },
-          { size: "Talla 5", price: 22.32, url: "https://www.awin1.com/pclick.php?p=43183969986&a=3013769&m=65912" },
+          { size: "Talla 4", price: 25.79, url: "https://www.awin1.com/pclick.php?p=45395569307&a=3013769&m=65912" },
+          { size: "Talla 5", price: 21.32, url: "https://www.awin1.com/pclick.php?p=43183969986&a=3013769&m=65912" },
         ],
       },
       {
@@ -14870,16 +15549,16 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.77,
-        priceMax: 26.93,
+        price: 21.27,
+        priceMax: 25.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381t3pw-a01-ballon-de-football-kappa-blasty-yellow-fluo-orange-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_381t3pw-a01_yellow-fluo-orange-black_1.webp",
         sizes: ["4", "5"],
         sizePrices: [
-          { size: "4", price: 26.93, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381t3pw-a01-ballon-de-football-kappa-blasty-yellow-fluo-orange-black" },
-          { size: "5", price: 21.77, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381t3pw-a01-ballon-de-football-kappa-blasty-yellow-fluo-orange-black" },
+          { size: "4", price: 25.57, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381t3pw-a01-ballon-de-football-kappa-blasty-yellow-fluo-orange-black" },
+          { size: "5", price: 21.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381t3pw-a01-ballon-de-football-kappa-blasty-yellow-fluo-orange-black" },
         ],
       },
       {
@@ -14893,6 +15572,9 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "kappa-balones-de-futbol-kappa-blasty-blanco",
     brand: "Kappa",
@@ -14901,16 +15583,16 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.32,
-        priceMax: 29.6,
+        price: 21.32,
+        priceMax: 27.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41554274023&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fa%2Fkappa_381t3pw-a00_white-orange-black_1.jpg&feedId=89032&k=7b83dd666ce9adc9f2852e03408769d5682e9e6b",
         sizes: ["Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 4", price: 29.6, url: "https://www.awin1.com/pclick.php?p=42250716774&a=3013769&m=65912" },
-          { size: "Talla 5", price: 22.32, url: "https://www.awin1.com/pclick.php?p=41554274023&a=3013769&m=65912" },
+          { size: "Talla 4", price: 27.61, url: "https://www.awin1.com/pclick.php?p=42250716774&a=3013769&m=65912" },
+          { size: "Talla 5", price: 21.32, url: "https://www.awin1.com/pclick.php?p=41554274023&a=3013769&m=65912" },
         ],
       },
       {
@@ -14924,16 +15606,16 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.77,
-        priceMax: 28.78,
+        price: 21.27,
+        priceMax: 27.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381t3pw-a00-ballon-de-football-kappa-blasty-white-orange-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/k/a/kappa_381t3pw-a00_white-orange-black_1.webp",
         sizes: ["4", "5"],
         sizePrices: [
-          { size: "4", price: 28.78, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381t3pw-a00-ballon-de-football-kappa-blasty-white-orange-black" },
-          { size: "5", price: 21.77, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381t3pw-a00-ballon-de-football-kappa-blasty-white-orange-black" },
+          { size: "4", price: 27.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381t3pw-a00-ballon-de-football-kappa-blasty-white-orange-black" },
+          { size: "5", price: 21.27, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381t3pw-a00-ballon-de-football-kappa-blasty-white-orange-black" },
         ],
       },
       {
@@ -14955,7 +15637,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.69,
+        price: 18.71,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529540891&a=3013769&m=65912",
@@ -14973,7 +15655,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.24,
+        price: 18.74,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F381t3pw-a02-ballon-de-football-kappa-blasty-grey-lt-blue-black",
@@ -15002,7 +15684,7 @@ const minedBallProductsChunk3: BallProduct[] = [
         price: 38.39,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42273448917&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=42273448915&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069765-00-P-X-20250829115507.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzkwOHxpbWFnZS9qcGVnfGFHWmhMMmczT1M4eE16RTBOekF5TWprNE16RTVPQzl0WldScFlYTmZNVEF3TVRBMk9UYzJOVjh3TUY5UVgxZ3RNakF5TlRBNE1qa3hNVFUxTURjdWFuQm58OGE2MzMxMzk3MGNiMjRhZjhiMDZkMWVlZjM4MmFlZTE5MmYyZGEzNWQyZTliOThmMjIyYmExMTYzNTFkOWM4NQ&feedId=58083&k=de38cd37c3892f7417e708ff2382dfb3be44bced",
         sizes: [],
       },
@@ -15050,7 +15732,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 424.36,
+        price: 423.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fu4711-ballon-de-football-a-bulle-kuebler-sport-light-blue-1-5-m",
@@ -15067,7 +15749,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.53,
+        price: 28.53,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42036506577&a=3013769&m=65912",
@@ -15084,7 +15766,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.53,
+        price: 28.53,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856340&a=3013769&m=65912",
@@ -15101,7 +15783,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.01,
+        price: 30.01,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856357&a=3013769&m=65912",
@@ -15110,7 +15792,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.27,
+        price: 29.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff3752-ballon-de-football-pendule-kuebler-sport-white-black-taille-5",
@@ -15127,7 +15809,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.71,
+        price: 26.71,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42928192024&a=3013769&m=65912",
@@ -15136,7 +15818,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.0,
+        price: 26.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1388-ballon-de-football-kuebler-sport-duro-white-taille-5",
@@ -15153,7 +15835,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 238.76,
+        price: 230.96,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930485&a=3013769&m=65912",
@@ -15162,7 +15844,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 236.21,
+        price: 229.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1399-ballon-de-football-kuebler-sport-duro-x14-white-taille-5",
@@ -15174,43 +15856,43 @@ const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "kuebler-sport-balones-de-futbol-kuebler-sport-extra-amarillo",
     brand: "Kuebler Sport",
-    model: "Balones de Fútbol Kuebler Sport Extra - Amarillo (F1391)",
+    model: "Balones de Fútbol Kuebler Sport Extra - Amarillo",
     colour: "Amarillo",
     offers: [
       {
         store: "FootStoreES",
-        price: 31.18,
+        price: 30.18,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856341&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fu%2Fkuebler-sport_f1391_jaune_1.jpg&feedId=89032&k=a994747e8278ee2db5da46b303f8546b3d24b865",
         sizes: ["Talla 4"],
       },
+      {
+        store: "FootStoreFR",
+        price: 29.95,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1391-ballon-de-football-kuebler-sport-extra-jaune-taille-4",
+        imageUrl: "https://cdn.blazimg.com/1800/product/k/u/kuebler-sport_f1391_jaune_1.webp",
+        sizes: ["4", "5"],
+      },
     ],
   },
   {
     id: "kuebler-sport-ballon-de-football-kuebler-sport-extra-jaune",
     brand: "Kuebler Sport",
-    model: "Balones de Fútbol Kuebler Sport Extra - Amarillo (F1390)",
+    model: "Balones de Fútbol Kuebler Sport Extra - Amarillo",
     colour: "Amarillo",
     offers: [
       {
         store: "FootStoreES",
-        price: 31.18,
+        price: 30.18,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856342&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fk%2Fu%2Fkuebler-sport_f1390_yellow_1.jpg&feedId=89032&k=d3a94ced47ea051276b7ab21e4a23e19ec89d8b1",
         sizes: ["Talla 5"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 30.43,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff1390-ballon-de-football-kuebler-sport-extra-yellow-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/k/u/kuebler-sport_f1390_yellow_1.webp",
-        sizes: ["4", "5"],
       },
     ],
   },
@@ -15222,7 +15904,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 138.1,
+        price: 137.1,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157539&a=3013769&m=65912",
@@ -15231,7 +15913,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 136.47,
+        price: 135.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff28080-ballon-de-football-kuebler-sport-fairtrade-x5-jaune-taille-5",
@@ -15248,7 +15930,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 270.1,
+        price: 269.1,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43780404762&a=3013769&m=65912",
@@ -15257,7 +15939,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 267.38,
+        price: 266.88,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff17101-ballon-kuebler-sport-light-x12-blanc-rouge-taille-3",
@@ -15274,7 +15956,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.93,
+        price: 21.93,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856345&a=3013769&m=65912",
@@ -15283,7 +15965,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.25,
+        price: 21.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg1160-ballon-de-football-kuebler-sport-prosoft-blue-22-cm",
@@ -15300,7 +15982,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.72,
+        price: 25.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856347&a=3013769&m=65912",
@@ -15309,7 +15991,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.01,
+        price: 25.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff2130-ballon-de-football-kuebler-sport-rio-light-blanc-bleu-taille-4",
@@ -15326,7 +16008,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.73,
+        price: 24.73,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45242362933&a=3013769&m=65912",
@@ -15335,7 +16017,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.03,
+        price: 24.53,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff2129-ballon-de-football-kuebler-sport-rio-official-blanc-bleu-20-cm",
@@ -15352,7 +16034,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.25,
+        price: 23.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45242384557&a=3013769&m=65912",
@@ -15361,7 +16043,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 23.56,
+        price: 23.06,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff13690-ballon-de-football-kuebler-sport-school-blanc-noir-taille-5",
@@ -15378,7 +16060,7 @@ const minedBallProductsChunk3: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 217.3,
+        price: 216.3,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45324746632&a=3013769&m=65912",
@@ -15387,7 +16069,7 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 215.01,
+        price: 214.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff13691-ballon-de-football-kuebler-sport-school-x12-blanc-taille-5",
@@ -15396,9 +16078,6 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "legea-balon-de-futbol-de-entrenamiento-legea-roboro-jaune",
     brand: "Legea",
@@ -15407,7 +16086,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.15,
+        price: 18.15,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46255333915&a=3013769&m=65912",
@@ -15416,7 +16095,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.46,
+        price: 17.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2770713-3-ballon-de-football-entrainement-legea-roboro-yellow-taille-3",
@@ -15433,7 +16112,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.94,
+        price: 29.94,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46255331967&a=3013769&m=65912",
@@ -15442,7 +16121,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.15,
+        price: 29.65,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2560320-4-ballon-de-football-legea-perfetto-white-taille-4",
@@ -15459,7 +16138,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.35,
+        price: 16.76,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46255333916&a=3013769&m=65912",
@@ -15485,16 +16164,16 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.08,
+        price: 17.91,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46255331970&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46255335141&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fl%2Fe%2Flegea-p3570003-3-white-6abf7a548289f-1.jpg&feedId=89032&k=7df8f569c5641fdfd380fc18561b110ef586283a",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 18.29,
+        price: 17.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp3570003-3-ballon-de-football-legea-superior-adventure-white",
@@ -15511,16 +16190,16 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.08,
+        price: 17.91,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46255307918&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46255335142&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fl%2Fe%2Flegea-p3570007-3-yellow-6abf7a5540148-1.jpg&feedId=89032&k=f31e2d522f8640d15feb2eb174fce8c00a105aa9",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 18.29,
+        price: 17.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp3570007-3-ballon-de-football-legea-superior-adventure-yellow",
@@ -15537,7 +16216,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.72,
+        price: 19.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46255331968&a=3013769&m=65912",
@@ -15546,7 +16225,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.02,
+        price: 19.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp3484002-uni-ballon-de-football-legea-fluo-yellow-tu",
@@ -15563,7 +16242,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 70.22,
+        price: 67.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5827210-ballon-de-football-macron-earthquake-xi-n-5-blanc-jaune-tu",
@@ -15580,7 +16259,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 33.07,
+        price: 31.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F800003440001-ballon-de-football-macron-lancer-n-3-blanc-orange-tu",
@@ -15597,7 +16276,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 33.07,
+        price: 31.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F800003430001-ballon-de-football-macron-lancer-n-4-blanc-orange-tu",
@@ -15614,7 +16293,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 33.07,
+        price: 31.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F800003420001-ballon-de-football-macron-lancer-n-5-blanc-orange-tu",
@@ -15631,7 +16310,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 29.72,
+        price: 28.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5910374-ballon-de-football-macron-oasis-xg-n-3-blanc-bleu-noir-taille-3",
@@ -15674,7 +16353,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 42.5,
+        price: 40.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5827213-ballon-de-football-macron-solstice-xi-n-4-blanc-tu",
@@ -15717,7 +16396,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 26.55,
+        price: 25.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5827192-ballon-de-football-macron-taiga-xh-n-3-blanc-orange-taille-3",
@@ -15734,7 +16413,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 26.55,
+        price: 25.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F800003550100-ballon-de-football-macron-taiga-xi-light-n-4-blanc-tu",
@@ -15751,7 +16430,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 26.55,
+        price: 25.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F800003540100-ballon-de-football-macron-taiga-xi-light-n-5-blanc-tu",
@@ -15768,7 +16447,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 26.55,
+        price: 25.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F800003570100-ballon-de-football-macron-taiga-xi-sight-n-3-blanc-tu",
@@ -15785,7 +16464,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 26.55,
+        price: 25.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F800003560100-ballon-de-football-macron-taiga-xi-sight-n-4-blanc-tu",
@@ -15802,7 +16481,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 34.95,
+        price: 33.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5827225-ballon-de-football-macron-tropical-xi-n-4-blanc-tu",
@@ -15819,7 +16498,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 99.41,
+        price: 96.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5827119-ballon-de-football-macron-tsunami-xi-blanc-bleu-tu",
@@ -15836,7 +16515,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 21.68,
+        price: 21.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5827107-ballon-de-football-macron-tule-xh-n-5-blanc-bleu-noir-tu",
@@ -15862,7 +16541,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 207.5,
+        price: 201.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5827190-ballon-de-football-macron-xh-n-3-x12-black-tu",
@@ -15879,7 +16558,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 348.67,
+        price: 338.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5827199-ballon-de-football-macron-xh-n-4-x12-white-tu",
@@ -15947,7 +16626,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.79,
+        price: 11.79,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471600&a=3013769&m=65912",
@@ -15956,7 +16635,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.2,
+        price: 11.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm40128-ballon-de-football-en-caoutchouc-megaform-eco-noir-orange",
@@ -15973,7 +16652,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.69,
+        price: 26.69,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529552216&a=3013769&m=65912",
@@ -15982,7 +16661,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.98,
+        price: 26.48,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm401179-ballon-de-football-football-megaform-rcycle-4-new-2023-blanc-vert-tu",
@@ -15999,7 +16678,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.3,
+        price: 25.3,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471603&a=3013769&m=65912",
@@ -16008,7 +16687,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.6,
+        price: 25.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm401201-ballon-de-football-megaform-gold-blanc-bleu-taille-5",
@@ -16025,7 +16704,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.69,
+        price: 26.69,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529670006&a=3013769&m=65912",
@@ -16034,7 +16713,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.98,
+        price: 26.48,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm401180-ballon-de-football-megaform-rcycle-silver-blanc-vert-taille-5",
@@ -16051,7 +16730,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.94,
+        price: 21.94,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529907599&a=3013769&m=65912",
@@ -16060,7 +16739,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.26,
+        price: 21.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm401040-ballon-de-football-megaform-silver-2-0-blanc-bleu",
@@ -16077,7 +16756,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.87,
+        price: 20.87,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923981465&a=3013769&m=65912",
@@ -16086,7 +16765,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.21,
+        price: 20.71,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm401014-ballon-de-football-megaform-street-star-blanc-bleu-vert-taille-5",
@@ -16103,7 +16782,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.43,
+        price: 28.43,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923981466&a=3013769&m=65912",
@@ -16112,16 +16791,16 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 28.7,
-        priceMax: 30.18,
+        price: 28.2,
+        priceMax: 29.68,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm401245-ballon-de-football-megaform-torball-blanc-bleu-taille-3",
         imageUrl: "https://cdn.blazimg.com/1800/product/m/e/megaform_m401245.webp",
         sizes: ["3", "5"],
         sizePrices: [
-          { size: "3", price: 28.7, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm401245-ballon-de-football-megaform-torball-blanc-bleu-taille-3" },
-          { size: "5", price: 30.18, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm401246-ballon-de-football-megaform-torball-blanc-taille-5" },
+          { size: "3", price: 28.2, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm401245-ballon-de-football-megaform-torball-blanc-bleu-taille-3" },
+          { size: "5", price: 29.68, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm401246-ballon-de-football-megaform-torball-blanc-taille-5" },
         ],
       },
     ],
@@ -16134,7 +16813,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.92,
+        price: 29.92,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529471605&a=3013769&m=65912",
@@ -16151,16 +16830,16 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.55,
+        price: 14.55,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529907602&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529907604&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fe%2Fmegaform_m401030_blanc-turquoise_1.jpg&feedId=89032&k=f6ee86e46414783d5debcf6675597dffea8713af",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 14.94,
+        price: 14.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fm401030-ballon-de-football-megaform-trainer-2-0-blanc-turquoise",
@@ -16177,7 +16856,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 55.16,
+        price: 53.06,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fft-5r-fq-ballon-de-football-en-cuir-synthetique-mikasa-fifa-blanc-taille-5",
@@ -16203,7 +16882,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.95,
+        price: 14.2,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761966154&a=3013769&m=65912",
@@ -16212,7 +16891,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.95,
+        price: 13.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fd2-bl-ballon-de-football-mikasa-d2-bl-bleu-tu",
@@ -16229,7 +16908,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.95,
+        price: 14.2,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761966155&a=3013769&m=65912",
@@ -16238,7 +16917,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.95,
+        price: 13.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fd2-g-ballon-de-football-mikasa-d2-g-bleu-tu",
@@ -16255,7 +16934,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.95,
+        price: 14.2,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761966156&a=3013769&m=65912",
@@ -16264,7 +16943,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.95,
+        price: 13.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fd2-r-ballon-de-football-mikasa-d2-r-rouge-tu",
@@ -16281,7 +16960,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.95,
+        price: 14.2,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761966157&a=3013769&m=65912",
@@ -16290,7 +16969,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.95,
+        price: 13.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fd2-y-ballon-de-football-mikasa-d2-y-jaune-tu",
@@ -16307,7 +16986,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.3,
+        price: 18.6,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761966158&a=3013769&m=65912",
@@ -16316,7 +16995,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.21,
+        price: 18.06,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff5-wbk-ballon-de-football-mikasa-f5-wbk-blanc-noir-taille-5",
@@ -16351,7 +17030,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.95,
+        price: 24.89,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fft558b-yp-ballon-de-football-mikasa-ft558b-yp-blanc-jaune-taille-5",
@@ -16751,7 +17430,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 42.65,
+        price: 42.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642798&a=3013769&m=65912",
@@ -16778,16 +17457,11 @@ const minedBallProductsChunk4: BallProduct[] = [
       {
         store: "FootStoreES",
         price: 42.0,
-        priceMax: 42.65,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42565877106&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529642797&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmitre_5-b01787c21-4_white-black-blue_1.jpg&feedId=89032&k=3f99a2ab81fca55ae4bf038cd1257f369262ec1e",
         sizes: ["Talla 4", "Talla 5"],
-        sizePrices: [
-          { size: "Talla 4", price: 42.65, url: "https://www.awin1.com/pclick.php?p=42529642797&a=3013769&m=65912" },
-          { size: "Talla 5", price: 42.0, url: "https://www.awin1.com/pclick.php?p=42565877106&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreFR",
@@ -16808,7 +17482,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.31,
+        price: 22.31,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44078833767&a=3013769&m=65912",
@@ -16817,7 +17491,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.63,
+        price: 22.13,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01932wea-4-ballon-de-football-mitre-fa-2025-26-white-blue-red",
@@ -16834,16 +17508,16 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.31,
+        price: 22.31,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529930549&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529930550&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmitre_5-b01872a20-4_white-silver-red_1.jpg&feedId=89032&k=1035da1414a0ca42085650156064c5802135b52b",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 22.63,
+        price: 22.13,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01872a20-4-ballon-de-football-mitre-fa-24-25-white-silver-red",
@@ -16860,17 +17534,17 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.62,
-        priceMax: 22.14,
+        price: 17.62,
+        priceMax: 21.14,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642800&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmitre_5-b01790c60-3_yellow-black-grey_1.jpg&feedId=89032&k=eb8c26c967a103b5bbb675b2be6da9eef2c876e5",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 3", price: 22.14, url: "https://www.awin1.com/pclick.php?p=42529642799&a=3013769&m=65912" },
-          { size: "Talla 4", price: 18.62, url: "https://www.awin1.com/pclick.php?p=42529642800&a=3013769&m=65912" },
-          { size: "Talla 5", price: 22.14, url: "https://www.awin1.com/pclick.php?p=42529642801&a=3013769&m=65912" },
+          { size: "Talla 3", price: 21.14, url: "https://www.awin1.com/pclick.php?p=42529642799&a=3013769&m=65912" },
+          { size: "Talla 4", price: 17.62, url: "https://www.awin1.com/pclick.php?p=42529642800&a=3013769&m=65912" },
+          { size: "Talla 5", price: 21.14, url: "https://www.awin1.com/pclick.php?p=42529642801&a=3013769&m=65912" },
         ],
       },
       {
@@ -16884,17 +17558,17 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.1,
-        priceMax: 21.47,
+        price: 17.6,
+        priceMax: 21.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01790c60-3-ballon-de-football-mitre-impel-evo-yellow-black-grey",
         imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mitre_5-b01790c60-3_yellow-black-grey_1.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 21.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01790c60-3-ballon-de-football-mitre-impel-evo-yellow-black-grey" },
-          { size: "4", price: 18.1, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01790c60-3-ballon-de-football-mitre-impel-evo-yellow-black-grey" },
-          { size: "5", price: 21.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01790c60-3-ballon-de-football-mitre-impel-evo-yellow-black-grey" },
+          { size: "3", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01790c60-3-ballon-de-football-mitre-impel-evo-yellow-black-grey" },
+          { size: "4", price: 17.6, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01790c60-3-ballon-de-football-mitre-impel-evo-yellow-black-grey" },
+          { size: "5", price: 21.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01790c60-3-ballon-de-football-mitre-impel-evo-yellow-black-grey" },
         ],
       },
       {
@@ -16916,16 +17590,16 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 22.14,
+        price: 21.14,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38193766216&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38193766217&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmitre_5-b01790c29-3_white-black-red_1.jpg&feedId=89032&k=c957e66a3e6b28de779a8060b69f100f964ad5cf",
         sizes: ["Talla 3", "Talla 4"],
       },
       {
         store: "FootStoreFR",
-        price: 21.47,
+        price: 21.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01790c29-3-ballon-de-football-mitre-impel-evo-white-black-red",
@@ -16942,7 +17616,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.47,
+        price: 15.47,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642811&a=3013769&m=65912",
@@ -16951,7 +17625,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.85,
+        price: 15.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01791c36-3-ballon-de-football-mitre-impel-one-yellow-black-red",
@@ -16963,38 +17637,12 @@ const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "mitre-balones-de-futbol-mitre-impel-one-blanco",
     brand: "Mitre",
-    model: "Balones de Fútbol Mitre Impel One - Blanco (5-B01791C39-3)",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 16.47,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41841344835&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmitre_5-b01791c39-3_white-black-teal_1.jpg&feedId=89032&k=878317276b54e196fdd4b55f0bff5840abf8030c",
-        sizes: ["Talla 3", "Talla 4"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 15.85,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01791c39-3-ballon-de-football-mitre-impel-one-white-black-teal",
-        imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mitre_5-b01791c39-3_white-black-teal_1.webp",
-        sizes: ["3", "4"],
-      },
-    ],
-  },
-  {
-    id: "mitre-balones-de-futbol-mitre-impel-one-blanco-2",
-    brand: "Mitre",
     model: "Balones de Fútbol Mitre Impel One - Blanco (5-B01791C37-4)",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 16.47,
+        price: 15.47,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642803&a=3013769&m=65912",
@@ -17003,7 +17651,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.85,
+        price: 15.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01791c37-3-ballon-de-football-mitre-impel-one-pink-white-teal",
@@ -17013,23 +17661,23 @@ const minedBallProductsChunk4: BallProduct[] = [
     ],
   },
   {
-    id: "mitre-balones-de-futbol-mitre-impel-one-blanco-3",
+    id: "mitre-balones-de-futbol-mitre-impel-one-blanco-2",
     brand: "Mitre",
     model: "Balones de Fútbol Mitre Impel One - Blanco (5-B01791C30-3)",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 16.47,
+        price: 15.47,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529642805&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529642806&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmitre_5-b01791c30-3_white-black-grey_1.jpg&feedId=89032&k=96552a947cb701be01ab7b9b9f7fe665125cb6c7",
         sizes: ["Talla 3", "Talla 4"],
       },
       {
         store: "FootStoreFR",
-        price: 15.85,
+        price: 15.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01791c30-3-ballon-de-football-mitre-impel-one-white-black-grey",
@@ -17039,27 +17687,53 @@ const minedBallProductsChunk4: BallProduct[] = [
     ],
   },
   {
-    id: "mitre-balones-de-futbol-mitre-impel-one-blanco-4",
+    id: "mitre-balones-de-futbol-mitre-impel-one-blanco-3",
     brand: "Mitre",
     model: "Balones de Fútbol Mitre Impel One - Blanco (5-B01791C31-3)",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 16.47,
+        price: 15.47,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529642808&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529642809&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmitre_5-b01791c31-3_white-black-sage_1.jpg&feedId=89032&k=1a5371b696d0d2281d6c9aef84eefd7d1d8d335c",
         sizes: ["Talla 3", "Talla 4"],
       },
       {
         store: "FootStoreFR",
-        price: 15.85,
+        price: 15.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01791c31-3-ballon-de-football-mitre-impel-one-white-black-sage",
         imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mitre_5-b01791c31-3_white-black-sage_1.webp",
+        sizes: ["3", "4"],
+      },
+    ],
+  },
+  {
+    id: "mitre-balones-de-futbol-mitre-impel-one-blanco-4",
+    brand: "Mitre",
+    model: "Balones de Fútbol Mitre Impel One - Blanco (5-B01791C39-3)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 15.47,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43654213010&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmitre_5-b01791c39-3_white-black-teal_1.jpg&feedId=89032&k=878317276b54e196fdd4b55f0bff5840abf8030c",
+        sizes: ["Talla 3", "Talla 4"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 15.35,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01791c39-3-ballon-de-football-mitre-impel-one-white-black-teal",
+        imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mitre_5-b01791c39-3_white-black-teal_1.webp",
         sizes: ["3", "4"],
       },
     ],
@@ -17072,7 +17746,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.21,
+        price: 30.21,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43839293725&a=3013769&m=65912",
@@ -17081,7 +17755,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.47,
+        price: 30.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01819c74-4-ballon-de-football-mitre-ultimatch-white-black-silver-taille-4",
@@ -17098,16 +17772,16 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.98,
+        price: 36.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529642813&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529642814&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmitre_5-b01788c24-3_fluo-yellow-yellow-gold_1.jpg&feedId=89032&k=88b979d2e07dd0a53b3e9c9a06f728590738417d",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 36.19,
+        price: 36.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01788c24-3-ballon-de-football-mitre-ultimatch-evo-fluo-yellow-yellow-gold",
@@ -17124,7 +17798,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 36.98,
+        price: 36.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529642816&a=3013769&m=65912",
@@ -17133,7 +17807,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 36.19,
+        price: 36.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01788c23-3-ballon-de-football-mitre-ultimatch-evo-white-off-white-silver",
@@ -17151,30 +17825,25 @@ const minedBallProductsChunk4: BallProduct[] = [
       {
         store: "FootStoreES",
         price: 30.0,
-        priceMax: 31.21,
+        priceMax: 30.21,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46226033106&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmitre_5-b01789c60-4_yellow-black-grey_1.jpg&feedId=89032&k=1e9af3cce8ff2e1fe3a222681463d19cb2a1b0e3",
         sizes: ["Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 4", price: 31.21, url: "https://www.awin1.com/pclick.php?p=42529642818&a=3013769&m=65912" },
+          { size: "Talla 4", price: 30.21, url: "https://www.awin1.com/pclick.php?p=42529642818&a=3013769&m=65912" },
           { size: "Talla 5", price: 30.0, url: "https://www.awin1.com/pclick.php?p=46226033106&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
         price: 30.0,
-        priceMax: 30.47,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01789c60-4-ballon-de-football-mitre-ultimatch-one-yellow-black-grey",
         imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mitre_5-b01789c60-4_yellow-black-grey_1.webp",
         sizes: ["4", "5"],
-        sizePrices: [
-          { size: "4", price: 30.47, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01789c60-4-ballon-de-football-mitre-ultimatch-one-yellow-black-grey" },
-          { size: "5", price: 30.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01789c60-4-ballon-de-football-mitre-ultimatch-one-yellow-black-grey" },
-        ],
       },
     ],
   },
@@ -17186,7 +17855,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.21,
+        price: 30.21,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38573395954&a=3013769&m=65912",
@@ -17195,7 +17864,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.47,
+        price: 30.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F5-b01789c29-3-ballon-de-football-mitre-ultimatch-one-white-black-red",
@@ -17212,16 +17881,16 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 192.44,
+        price: 185.92,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43961541815&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43961541816&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmizuno_p3eyc50342_yellow-fluo-royal_1.jpg&feedId=89032&k=5181aed98b738e4cecb9bf0aac58100166c45a0a",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 190.27,
+        price: 184.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp3eyc50342-ballon-de-football-mizuno-team-rb-x12-yellow-fluo-royal",
@@ -17233,25 +17902,25 @@ const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "mizuno-balones-de-futbol-mizuno-team-rb-x12-blanco",
     brand: "Mizuno",
-    model: "Balones de Fútbol Mizuno Team RB (x12) - Blanco (P3EYC50409)",
+    model: "Balones de Fútbol Mizuno Team RB (x12) - Blanco (P3EYC50462)",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 192.44,
+        price: 185.92,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529953415&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmizuno_p3eyc50409_white-black_1.jpg&feedId=89032&k=03880767fbf62e3aee5cf530cd6c10cd80e51238",
+        url: "https://www.awin1.com/pclick.php?p=42529953418&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmizuno_p3eyc50462_white-red_1.jpg&feedId=89032&k=7601f43078627d98ab609972f0c7cf86fcdd7841",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 190.27,
+        price: 184.33,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp3eyc50409-ballon-de-football-mizuno-team-rb-x12-white-black",
-        imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mizuno_p3eyc50409_white-black_1.webp",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp3eyc50462-ballon-de-football-mizuno-team-rb-x12-white-red",
+        imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mizuno_p3eyc50462_white-red_1.webp",
         sizes: ["4", "5"],
       },
     ],
@@ -17259,25 +17928,25 @@ const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "mizuno-balones-de-futbol-mizuno-team-rb-x12-blanco-2",
     brand: "Mizuno",
-    model: "Balones de Fútbol Mizuno Team RB (x12) - Blanco (P3EYC50462)",
+    model: "Balones de Fútbol Mizuno Team RB (x12) - Blanco (P3EYC50409)",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 192.44,
+        price: 185.92,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529953417&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmizuno_p3eyc50462_white-red_1.jpg&feedId=89032&k=7601f43078627d98ab609972f0c7cf86fcdd7841",
+        url: "https://www.awin1.com/pclick.php?p=43961541812&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmizuno_p3eyc50409_white-black_1.jpg&feedId=89032&k=03880767fbf62e3aee5cf530cd6c10cd80e51238",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 190.27,
+        price: 184.33,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp3eyc50462-ballon-de-football-mizuno-team-rb-x12-white-red",
-        imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mizuno_p3eyc50462_white-red_1.webp",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp3eyc50409-ballon-de-football-mizuno-team-rb-x12-white-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/m/i/mizuno_p3eyc50409_white-black_1.webp",
         sizes: ["4", "5"],
       },
     ],
@@ -17290,16 +17959,16 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 192.44,
+        price: 185.92,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43961541813&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43961541814&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fi%2Fmizuno_p3eyc50322_white-royal_1.jpg&feedId=89032&k=550078beb9ae656afba69b6ba2001ea1fbce4c24",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 190.27,
+        price: 184.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp3eyc50322-ballon-de-football-mizuno-team-rb-x12-white-royal",
@@ -17316,7 +17985,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 124.66,
+        price: 120.03,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46669757386&a=3013769&m=65912",
@@ -17333,7 +18002,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 67.89,
+        price: 64.84,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38316964813&a=3013769&m=65912",
@@ -17342,16 +18011,16 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 66.75,
-        priceMax: 123.05,
+        price: 64.25,
+        priceMax: 118.98,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmfc-fu5000-5-g0-ballon-de-football-molten-blanc-noir-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/m/f/mfc-fu5000-5-g0_1.webp",
         sizes: ["TU", "5"],
         sizePrices: [
-          { size: "TU", price: 66.75, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmfc-fu5000-5-g0-ballon-de-football-molten-blanc-noir-tu" },
-          { size: "5", price: 123.05, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff5n5000-ballon-de-football-molten-weiss-blau-taille-5" },
+          { size: "TU", price: 64.25, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmfc-fu5000-5-g0-ballon-de-football-molten-blanc-noir-tu" },
+          { size: "5", price: 118.98, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff5n5000-ballon-de-football-molten-weiss-blau-taille-5" },
         ],
       },
     ],
@@ -17364,7 +18033,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 40.72,
+        price: 38.42,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38879724033&a=3013769&m=65912",
@@ -17373,7 +18042,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 39.8,
+        price: 38.04,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmfc-f5a4800-24-ballon-de-football-molten-compet-2023-bleu-gris-taille-5",
@@ -17390,7 +18059,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.43,
+        price: 21.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39846973797&a=3013769&m=65912",
@@ -17399,7 +18068,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.66,
+        price: 21.38,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmfe-f5a3400-g-ballon-de-football-molten-entr-2023-white-tu",
@@ -17416,7 +18085,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.49,
+        price: 16.81,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41680557223&a=3013769&m=65912",
@@ -17425,7 +18094,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.76,
+        price: 16.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmfe-f3u1710-24-ballon-de-football-molten-entrainement-jaune-taille-3",
@@ -17442,7 +18111,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.49,
+        price: 16.81,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41701519659&a=3013769&m=65912",
@@ -17451,7 +18120,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.76,
+        price: 16.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmfe-f5a1710-24-ballon-de-football-molten-entrainement-blanc-orange-gris-taille-5",
@@ -17468,7 +18137,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.49,
+        price: 16.81,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41680557224&a=3013769&m=65912",
@@ -17477,7 +18146,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.76,
+        price: 16.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmfe-f4u1710-24-ballon-de-football-molten-entrainement-orange-taille-4",
@@ -17494,16 +18163,16 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.09,
+        price: 22.09,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46501527689&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529856355&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fm%2Fo%2Fmolten_f99590_blue-white-orange_1.jpg&feedId=89032&k=9ede93566d496bccf18e7a32964a0f2da6a24946",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 22.41,
+        price: 21.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff99590-ballon-de-football-molten-f5n1710-blue-white-orange",
@@ -17520,7 +18189,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 53.62,
+        price: 52.62,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930487&a=3013769&m=65912",
@@ -17529,7 +18198,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 52.69,
+        price: 52.19,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff99540-ballon-de-football-molten-f5n3555-k-white-tu",
@@ -17546,7 +18215,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 70.15,
+        price: 69.15,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41044160042&a=3013769&m=65912",
@@ -17564,7 +18233,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 69.08,
+        price: 68.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmfc-f5u5000-24-ballon-de-football-molten-fu5000-t5-uefa-2023-blanc-orange-tu",
@@ -17590,7 +18259,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.32,
+        price: 32.32,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970701&a=3013769&m=65912",
@@ -17599,7 +18268,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.56,
+        price: 32.06,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff99560-ballon-de-football-molten-fxn3400-g-blanc-vert-taille-3",
@@ -17616,7 +18285,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.32,
+        price: 32.32,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44291084103&a=3013769&m=65912",
@@ -17625,7 +18294,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.56,
+        price: 32.06,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff99570-ballon-de-football-molten-lightball-f5n3135-y-white-yellow-tu",
@@ -17642,7 +18311,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.61,
+        price: 30.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719157540&a=3013769&m=65912",
@@ -17651,7 +18320,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.81,
+        price: 30.31,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff99552-ballon-de-football-molten-lightball-fxn3129-o-white-orange",
@@ -17668,7 +18337,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.13,
+        price: 18.13,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856356&a=3013769&m=65912",
@@ -17677,7 +18346,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.49,
+        price: 17.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff9907-ballon-de-football-molten-pf-540-white-taille-4",
@@ -17694,7 +18363,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.32,
+        price: 32.32,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930473&a=3013769&m=65912",
@@ -17703,7 +18372,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.56,
+        price: 32.06,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff99551-ballon-de-football-d-entrainement-molten-fxn3400-g-white-light-green-taille-4",
@@ -17730,6 +18399,40 @@ const minedBallProductsChunk4: BallProduct[] = [
     ],
   },
   {
+    id: "nike-balones-de-futbol-nike-park-2-0-amarillo",
+    brand: "Nike",
+    model: "Ballon de football Nike Park 2.0 - Jaune",
+    colour: "Jaune",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 21.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz7551-765-ballon-de-football-nike-park-2-0-yellow-blue-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fz7551-765-phsfz001-ss25.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "nike-balones-de-futbol-nike-park-2-0-naranja",
+    brand: "Nike",
+    model: "Ballon de football Nike Park 2.0 - Orange",
+    colour: "Orange",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 21.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz7551-803-ballon-de-football-nike-park-2-0-total-orange-white-thunder-blue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fz7551-803-phsfz001-ss25.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "nike-balon-de-futbol-copa-del-mundo-femenina-2023-francia-academy-azul",
     brand: "Nike",
     model: "Balón de fútbol Copa del Mundo Femenina 2023 Francia Academy - Azul",
@@ -17737,7 +18440,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.9,
+        price: 14.8,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37648544822&a=3013769&m=65912",
@@ -17763,7 +18466,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.72,
+        price: 25.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45783113082&a=3013769&m=65912",
@@ -17781,7 +18484,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 28.0,
+        price: 25.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiu3921-100-ballon-de-football-exterieur-psg-academy-2026-27-white",
@@ -17824,7 +18527,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.0,
+        price: 19.7,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395601293&a=3013769&m=65912",
@@ -17842,7 +18545,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.87,
+        price: 19.6,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fir5092-100-ballon-de-football-fc-barcelone-2026-27-white-cardinal-red",
@@ -17868,7 +18571,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.72,
+        price: 25.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395601294&a=3013769&m=65912",
@@ -17886,7 +18589,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 28.0,
+        price: 25.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fir5155-480-ballon-de-football-fc-barcelone-academy-2026-27-game-royal-cardinal-red",
@@ -17964,7 +18667,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.72,
+        price: 25.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395601295&a=3013769&m=65912",
@@ -17982,7 +18685,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 28.0,
+        price: 25.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fir5158-417-ballon-de-football-domicile-psg-academy-2026-27-old-royal-university-red",
@@ -18060,7 +18763,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.81,
+        price: 15.81,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42270681613&a=3013769&m=65912",
@@ -18078,7 +18781,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.37,
+        price: 15.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib9397-100-ballon-de-football-psg-pitch-2025-26-white-taille-5",
@@ -18104,7 +18807,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.0,
+        price: 10.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42270681614&a=3013769&m=65912",
@@ -18174,7 +18877,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.72,
+        price: 25.61,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46277684534&a=3013769&m=65912",
@@ -18183,7 +18886,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 28.0,
+        price: 25.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiu3922-451-ballon-de-football-tottenham-academy-2026-27-obsidian",
@@ -18193,24 +18896,43 @@ const minedBallProductsChunk4: BallProduct[] = [
     ],
   },
   {
-    id: "nike-futbol-formativo-nike-pitch-fa25-amarillo",
+    id: "nike-ballon-de-football-nike-academy-blanc",
     brand: "Nike",
-    model: "Balón Nike Pitch 25 Train - Azul",
-    colour: "Azul",
+    model: "Balones de Fútbol Nike Academy - Blanc",
+    colour: "Blanc",
     offers: [
       {
-        store: "ForumSport",
-        price: 23.99,
-        shipping: 5.99,
+        store: "FootStoreES",
+        price: 23.4,
+        priceMax: 25.23,
+        shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46869212175&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001104338-00-P-X-20260921112101.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzE5OHxpbWFnZS9qcGVnfGFEWTVMMmhtWkM4eE5EQXpNRFEyTXpFM01qWXpPQzl0WldScFlYTmZNVEF3TVRFd05ETXpPRjh3TUY5UVgxZ3RNakF5TmpBNU1qRXhNVEl4TURFdWFuQm58NTIxZDU0MWRjNDY1MjYyMTFkZTdmMDJjZjEwM2Q0MTNjYjc4ZDM1YWIzZDQ5ODk2ZDE0YzMzMzQ4NGM1ODZiYg&feedId=58083&k=8546d515450d764f306597852e9458c7d353b9b9",
-        sizes: ["4"],
+        url: "https://www.awin1.com/pclick.php?p=45348247862&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-iq0642-100-white-bright-crimson-anthracite-black-6a5a5ae7e580a-1.jpg&feedId=89032&k=23ced3757ea9ca0a32f347d7cda358a4489f525e",
+        sizes: ["Talla 4", "Talla 5"],
+        sizePrices: [
+          { size: "Talla 4", price: 23.4, url: "https://www.awin1.com/pclick.php?p=45348247862&a=3013769&m=65912" },
+          { size: "Talla 5", price: 25.23, url: "https://www.awin1.com/pclick.php?p=45348247863&a=3013769&m=65912" },
+        ],
+      },
+      {
+        store: "FootStoreFR",
+        price: 23.1,
+        priceMax: 24.96,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0642-100-ballon-de-football-nike-academy-white-bright-crimson-anthracite-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq0642-100-white-bright-crimson-anthracite-black-6a5a5ae7e580a-1.webp",
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 23.1, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0642-100-ballon-de-football-nike-academy-white-bright-crimson-anthracite-black" },
+          { size: "5", price: 24.96, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0642-100-ballon-de-football-nike-academy-white-bright-crimson-anthracite-black" },
+        ],
       },
     ],
   },
   {
-    id: "nike-ballon-de-football-nike-academy-blanc",
+    id: "nike-balones-de-futbol-nike-academy-blanco",
     brand: "Nike",
     model: "Balones de Fútbol Nike Academy - Blanco (HV4386-100)",
     colour: "Blanco",
@@ -18232,6 +18954,23 @@ const minedBallProductsChunk4: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv4386-100-ballon-de-football-nike-academy-white-black-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hv4386-100_white-black-black_1.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "nike-balones-de-futbol-nike-academy-blanco-2",
+    brand: "Nike",
+    model: "Balones de Fútbol Nike Academy - Blanco (FZ2966-100)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44890840002&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fz2966-100-phsfz001.jpg&feedId=89032&k=0289ad1fdffba72615ab0bc9749f1e5a87714ed2",
+        sizes: ["Talla 3"],
       },
     ],
   },
@@ -18277,7 +19016,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.64,
+        price: 22.79,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46680367272&a=3013769&m=65912",
@@ -18286,7 +19025,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 23.86,
+        price: 22.55,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv4386-450-ballon-de-football-nike-academy-blue-glow-black-pink-blast",
@@ -18312,7 +19051,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.0,
+        price: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv4386-710-ballon-de-football-nike-academy-yellow-purple-hyper-pink",
@@ -18339,16 +19078,11 @@ const minedBallProductsChunk4: BallProduct[] = [
       {
         store: "FootStoreFR",
         price: 37.0,
-        priceMax: 38.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv4392-710-ballon-de-football-nike-academy-pl-yellow-purple-hyper-pink",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/v/hv4392-710.webp",
-        sizes: ["4", "5"],
-        sizePrices: [
-          { size: "4", price: 38.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv4392-710-ballon-de-football-nike-academy-pl-yellow-purple-hyper-pink" },
-          { size: "5", price: 37.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv4392-710-ballon-de-football-nike-academy-pl-yellow-purple-hyper-pink" },
-        ],
+        sizes: ["5"],
       },
     ],
   },
@@ -18360,7 +19094,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 35.33,
+        price: 33.18,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46508624705&a=3013769&m=65912",
@@ -18369,7 +19103,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 34.4,
+        price: 32.79,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0640-100-ballon-de-football-nike-academy-plus-blanc-bright-crimson-anthracite-noir",
@@ -18396,17 +19130,11 @@ const minedBallProductsChunk4: BallProduct[] = [
       {
         store: "FootStoreES",
         price: 30.0,
-        priceMax: 30.58,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44078833769&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44078833771&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-hv4387-101-3-white-lt-blue-fury-black-1.jpg&feedId=89032&k=3b7abfc3ca34c8069093547e5d83596c2052343f",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
-        sizePrices: [
-          { size: "Talla 3", price: 30.0, url: "https://www.awin1.com/pclick.php?p=44078833769&a=3013769&m=65912" },
-          { size: "Talla 4", price: 30.58, url: "https://www.awin1.com/pclick.php?p=44078833770&a=3013769&m=65912" },
-          { size: "Talla 5", price: 30.58, url: "https://www.awin1.com/pclick.php?p=44078833771&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreFR",
@@ -18427,10 +19155,10 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.58,
+        price: 30.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44078833772&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=44078833773&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-hv4387-102-3-white-total-orange-black-1.jpg&feedId=89032&k=76f334e479c09614e4b879238797bf0ddef0b5f0",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
@@ -18453,7 +19181,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.58,
+        price: 30.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44078833775&a=3013769&m=65912",
@@ -18505,7 +19233,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 121.05,
+        price: 116.52,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45940204313&a=3013769&m=65912",
@@ -18514,7 +19242,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 119.47,
+        price: 115.5,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiq0618-100-ballon-de-football-nike-control-blanc-bright-crimson-anthracite-noir-taille-5",
@@ -18523,7 +19251,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "ForumSport",
-        price: 107.79,
+        price: 96.59,
         shipping: 3.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45656103092&a=3013769&m=23805",
@@ -18540,7 +19268,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 149.0,
+        price: 147.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43745916089&a=3013769&m=65912",
@@ -18549,12 +19277,29 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 149.0,
+        price: 144.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv4395-100-ballon-de-football-nike-control-fa25-white-black-black-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hv4395-100_white-black-black_1.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "nike-balones-de-futbol-nike-fa25-rojo",
+    brand: "Nike",
+    model: "Balones de Fútbol Nike FA25 - Rojo",
+    colour: "Rojo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 26.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46427072873&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F0%2F2025_08_nike_hv6249-635-phsfz001.jpg&feedId=89032&k=b5c6cfd688d316fdfe5ffd28a023048b0febcb03",
+        sizes: ["Talla 4", "Talla 5"],
       },
     ],
   },
@@ -18580,6 +19325,32 @@ const minedBallProductsChunk4: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb2901-100-ballon-de-football-nike-flight-blanc-noir-rouge-cramoisi-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fb2901-100-phsbz001.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "nike-balones-de-futbol-nike-heritage-premier-blanc",
+    brand: "Nike",
+    model: "Balones de Fútbol Nike Heritage Premier - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 23.4,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46014605087&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-iv7520-100-blanc-off-white-noir-6aa5616ea4282-1.jpg&feedId=89032&k=2669fded951fdd768d8ea9a25ef850ac6bf1901e",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 23.1,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fiv7520-100-ballon-de-football-nike-heritage-premier-blanc-off-white-noir",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iv7520-100-blanc-off-white-noir-6aa5616ea4282-1.webp",
         sizes: ["5"],
       },
     ],
@@ -18618,7 +19389,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.45,
+        price: 16.35,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40910744889&a=3013769&m=65912",
@@ -18633,6 +19404,23 @@ const minedBallProductsChunk4: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffj5547-110-ballon-de-football-nike-maestro-pale-ivory-magic-ember-washed-coral",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fj5547-110_pale-ivory-magic-ember-washed-coral_1.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "nike-balones-de-futbol-nike-maestro-marron",
+    brand: "Nike",
+    model: "Balones de Fútbol Nike Maestro - Marron",
+    colour: "Marron",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 34.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46819437561&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-hv5100-902-gum-dark-brown-deep-royal-blue-6af7259bea988-1.jpg&feedId=89032&k=def69d78800a1485e63fea89d0485ebb7dda59f5",
+        sizes: [],
       },
     ],
   },
@@ -18670,7 +19458,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.12,
+        price: 14.12,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36490404564&a=3013769&m=65912",
@@ -18679,7 +19467,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.7,
+        price: 14.2,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb2983-101-ballon-de-football-nike-mercurial-fade-white-hyper-turq-fuchsia-dream",
@@ -18696,7 +19484,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.81,
+        price: 15.81,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37129855861&a=3013769&m=65912",
@@ -18705,7 +19493,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.37,
+        price: 15.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffb2983-102-ballon-de-football-nike-mercurial-fade-white-gold-black",
@@ -18732,6 +19520,23 @@ const minedBallProductsChunk4: BallProduct[] = [
     ],
   },
   {
+    id: "nike-balones-de-futbol-nike-mercurial-fade-blanco-3",
+    brand: "Nike",
+    model: "Balones de Fútbol Nike Mercurial Fade - Blanco (FZ3036-102)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 28.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889809177&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fz3036-102_white-ocean-cube-pink-blast_1.jpg&feedId=89032&k=b9088a04ce9e13f11a556b5333f788460fed4efb",
+        sizes: ["Talla 5"],
+      },
+    ],
+  },
+  {
     id: "nike-balones-de-futbol-nike-mercurial-fade-jaune",
     brand: "Nike",
     model: "Balones de Fútbol Nike Mercurial Fade - Jaune",
@@ -18748,63 +19553,11 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.0,
+        price: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv6330-702-ballon-de-football-nike-mercurial-fade-volt-hyper-crimson-white",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-hv6330-702-volt-hyper-crimson-white-1.webp",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "nike-balones-de-futbol-nike-park-2-0-amarillo",
-    brand: "Nike",
-    model: "Balones de Fútbol Nike Park 2.0 - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 22.0,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45819212210&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fz7551-765-phsfz001-ss25.jpg&feedId=89032&k=6e41e5336f1bd1869ee5d50bb1d1f8671041a263",
-        sizes: ["Talla 5"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 21.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz7551-765-ballon-de-football-nike-park-2-0-yellow-blue-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fz7551-765-phsfz001-ss25.webp",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "nike-balones-de-futbol-nike-park-2-0-naranja",
-    brand: "Nike",
-    model: "Balones de Fútbol Nike Park 2.0 - Naranja",
-    colour: "Naranja",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 23.0,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45304827173&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fz7551-803-phsfz001-ss25.jpg&feedId=89032&k=8c7a40d4e21cd24b64b35d248e397288f3899e79",
-        sizes: ["Talla 5"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 21.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz7551-803-ballon-de-football-nike-park-2-0-total-orange-white-thunder-blue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fz7551-803-phsfz001-ss25.webp",
         sizes: ["5"],
       },
     ],
@@ -18817,31 +19570,47 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.55,
-        priceMax: 24.0,
+        price: 14.55,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485369483&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_dn3607-100_a.jpg&feedId=89032&k=77457379e43352718ec12a16914d6a79f624f1ea",
-        sizes: ["Talla 3", "Talla 5"],
-        sizePrices: [
-          { size: "Talla 3", price: 24.0, url: "https://www.awin1.com/pclick.php?p=46391428339&a=3013769&m=65912" },
-          { size: "Talla 5", price: 15.55, url: "https://www.awin1.com/pclick.php?p=36485369483&a=3013769&m=65912" },
-        ],
+        sizes: ["Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 15.12,
-        priceMax: 24.0,
+        price: 14.62,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3607-100-ballon-de-football-nike-park-blanc-rouge-cramoisi-noir",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_dn3607-100_a.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "nike-balones-de-futbol-nike-phantom-blanc",
+    brand: "Nike",
+    model: "Balones de Fútbol Nike Phantom - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.23,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46318092317&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-hv6335-106-white-smokey-blue-off-white-dusty-cactus-6acf78b2e9b98-1.jpg&feedId=89032&k=460a720330a0fb0068fd3b70b0041dd061f0ddc8",
+        sizes: ["Talla 3", "Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 24.96,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv6335-106-ballon-de-football-nike-phantom-white-smokey-blue-off-white-dusty-cactus",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-hv6335-106-white-smokey-blue-off-white-dusty-cactus-6acf78b2e9b98-1.webp",
         sizes: ["3", "5"],
-        sizePrices: [
-          { size: "3", price: 24.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3607-100-ballon-de-football-nike-park-blanc-rouge-cramoisi-noir" },
-          { size: "5", price: 15.12, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fdn3607-100-ballon-de-football-nike-park-blanc-rouge-cramoisi-noir" },
-        ],
       },
     ],
   },
@@ -18915,9 +19684,35 @@ const minedBallProductsChunk4: BallProduct[] = [
     ],
   },
   {
+    id: "nike-balones-de-futbol-nike-pitch-blanco",
+    brand: "Nike",
+    model: "Balones de Fútbol Nike Pitch - Blanco (FZ7553-100)",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 20.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44086759064&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_fz7553-100-phsfz001-nw112724.jpg&feedId=89032&k=4ef725d24f0a57afb0c227a8c34e7f129161ab01",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 21.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz7553-100-ballon-de-football-nike-pitch-white-black",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_fz7553-100-phsfz001-nw112724.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
     id: "nike-balones-de-futbol-nike-pitch-blanco-3",
     brand: "Nike",
-    model: "Balones de Fútbol Nike Pitch - Blanco",
+    model: "Balones de Fútbol Nike Pitch - Blanco (FZ2636-104)",
     colour: "Blanco",
     offers: [
       {
@@ -18954,6 +19749,40 @@ const minedBallProductsChunk4: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45081945059&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-hv6249-450-blue-glow-black-pink-blast-1.jpg&feedId=89032&k=a1c341b334bd0c461f4519d8482b12fdb8cd3f8a",
         sizes: ["Talla 5"],
+      },
+    ],
+  },
+  {
+    id: "nike-balones-de-futbol-nike-pitch-fa-25-blanc",
+    brand: "Nike",
+    model: "Balones de Fútbol Nike Pitch FA 25 - Blanc",
+    colour: "Blanc",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 26.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46427072852&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-hv6249-102-white-volt-hyper-crimson-1.jpg&feedId=89032&k=3aa6e495409ba50eaa798cb03389231b56e6598e",
+        sizes: ["Talla 5"],
+      },
+    ],
+  },
+  {
+    id: "nike-balones-de-futbol-nike-pitch-fa-25-jaune",
+    brand: "Nike",
+    model: "Balones de Fútbol Nike Pitch FA 25 - Jaune",
+    colour: "Jaune",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 26.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46391408424&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F2%2F0%2F2025_12_nike_hv6249-710_0.jpg&feedId=89032&k=5a5d848dcb2264371be936f4b02c7c98b7458537",
+        sizes: ["Talla 4", "Talla 5"],
       },
     ],
   },
@@ -19043,7 +19872,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.04,
+        price: 7.93,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36490404565&a=3013769&m=65912",
@@ -19069,7 +19898,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.23,
+        price: 9.23,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38898090770&a=3013769&m=65912",
@@ -19078,7 +19907,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.85,
+        price: 9.35,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffz3046-100-ballon-de-football-nike-skills-fa24-white-bold-berry-volt-black-taille-1",
@@ -19121,7 +19950,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.06,
+        price: 11.06,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42767384870&a=3013769&m=65912",
@@ -19130,7 +19959,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.66,
+        price: 11.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fih7533-101-ballon-de-football-nike-skills-t90-fa25-white-game-royal-metallic-gold-taille-1",
@@ -19147,7 +19976,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 28.0,
+        price: 27.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45062603986&a=3013769&m=65912",
@@ -19156,29 +19985,67 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk5: BallProduct[] = [
   {
-    id: "nike-futbol-formativo-nike-pitch-fa25-amarillo-2",
+    id: "nike-futbol-formativo-nike-pitch-fa25-amarillo",
     brand: "Nike",
-    model: "Fútbol formativo Nike Pitch FA25 - Amarillo",
+    model: "Fútbol formativo Nike Pitch FA25 - Amarillo (HV6341-710)",
     colour: "Amarillo",
     offers: [
       {
         store: "FootStoreES",
-        price: 22.97,
+        price: 21.16,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46037729777&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_hv6341-702_volt-black-black_1.jpg&feedId=89032&k=448408afe67976cf51d8c88776d3518b3e53f2e1",
-        sizes: ["Talla 5"],
+        url: "https://www.awin1.com/pclick.php?p=46660174408&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_hv6341-710_yellow-fierce-purple-fierce-purple_1.jpg&feedId=89032&k=1bdf4f048b213fc4ee371ee973c39e0a3c1aab71",
+        sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 22.2,
+        price: 20.93,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv6341-710-ballon-de-football-d-entrainement-nike-pitch-fa25-yellow-fierce-purple-fierce-purple",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hv6341-710_yellow-fierce-purple-fierce-purple_1.webp",
+        sizes: ["3", "4", "5"],
+      },
+    ],
+  },
+  {
+    id: "nike-futbol-formativo-nike-pitch-fa25-amarillo-2",
+    brand: "Nike",
+    model: "Fútbol formativo Nike Pitch FA25 - Amarillo (HV6341)",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 21.16,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46889808525&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_hv6341-702_volt-black-black_1.jpg&feedId=89032&k=448408afe67976cf51d8c88776d3518b3e53f2e1",
+        sizes: ["Talla 4"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 20.93,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhv6341-702-ballon-de-football-d-entrainement-nike-pitch-fa25-volt-black-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike_hv6341-702_volt-black-black_1.webp",
-        sizes: ["5"],
+        sizes: ["4"],
+      },
+      {
+        store: "ForumSport",
+        price: 23.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46869212175&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001104338-00-P-X-20260921112101.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzE5OHxpbWFnZS9qcGVnfGFEWTVMMmhtWkM4eE5EQXpNRFEyTXpFM01qWXpPQzl0WldScFlYTmZNVEF3TVRFd05ETXpPRjh3TUY5UVgxZ3RNakF5TmpBNU1qRXhNVEl4TURFdWFuQm58NTIxZDU0MWRjNDY1MjYyMTFkZTdmMDJjZjEwM2Q0MTNjYjc4ZDM1YWIzZDQ5ODk2ZDE0YzMzMzQ4NGM1ODZiYg&feedId=58083&k=8546d515450d764f306597852e9458c7d353b9b9",
+        sizes: ["4", "5"],
       },
     ],
   },
@@ -19191,16 +20058,11 @@ const minedBallProductsChunk4: BallProduct[] = [
       {
         store: "FootStoreES",
         price: 23.0,
-        priceMax: 24.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45184753497&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike_hv6341-100_white-black-black_1.jpg&feedId=89032&k=7d56d28c9a683dff5e6cee4a4b8cba5995b95bf1",
         sizes: ["Talla 4", "Talla 5"],
-        sizePrices: [
-          { size: "Talla 4", price: 23.0, url: "https://www.awin1.com/pclick.php?p=45184753497&a=3013769&m=65912" },
-          { size: "Talla 5", price: 24.0, url: "https://www.awin1.com/pclick.php?p=46226026086&a=3013769&m=65912" },
-        ],
       },
       {
         store: "FootStoreFR",
@@ -19221,7 +20083,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.28,
+        price: 8.17,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37161840650&a=3013769&m=65912",
@@ -19604,7 +20466,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.7,
+        price: 12.7,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530052854&a=3013769&m=65912",
@@ -19613,7 +20475,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.1,
+        price: 12.6,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2200866-ballon-de-football-cousu-out2play-t5-jaune-22x22x22-cm",
@@ -19630,7 +20492,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.95,
+        price: 9.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530052855&a=3013769&m=65912",
@@ -19639,7 +20501,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.37,
+        price: 9.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2401179-ballon-de-football-cousu-out2play-t5-noir-22x22x22-cm",
@@ -19656,7 +20518,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 8.5,
+        price: 7.5,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530052856&a=3013769&m=65912",
@@ -19665,7 +20527,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 7.94,
+        price: 7.44,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2401236-ballon-de-football-etoile-out2play-blanc-15x15x15-cm",
@@ -19682,7 +20544,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.13,
+        price: 9.13,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530052864&a=3013769&m=65912",
@@ -19691,7 +20553,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.56,
+        price: 9.06,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa1900934-ballon-de-football-usa-cousu-out2play-noir-23x12x12-cm",
@@ -19708,7 +20570,7 @@ const minedBallProductsChunk4: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.95,
+        price: 9.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529484947&a=3013769&m=65912",
@@ -19717,7 +20579,7 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.37,
+        price: 9.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa1800638-ballon-de-football-out2play-o2p-blanc-bleu-jaune-taille-5",
@@ -19726,9 +20588,6 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "out2play-balones-de-futbol-out2play-o2p-rosa",
     brand: "Out2Play",
@@ -19737,7 +20596,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.95,
+        price: 9.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529484949&a=3013769&m=65912",
@@ -19746,7 +20605,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.37,
+        price: 9.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2300208-ballon-de-football-out2play-o2p-rose-blanc-taille-5",
@@ -19763,7 +20622,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.32,
+        price: 8.32,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530052860&a=3013769&m=65912",
@@ -19772,7 +20631,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.75,
+        price: 8.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2501059-ballon-de-football-out2play-t3-blanc-rouge-40x40x50-cm",
@@ -19789,7 +20648,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.95,
+        price: 9.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44536073247&a=3013769&m=65912",
@@ -19798,7 +20657,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.37,
+        price: 9.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2401174-ballon-de-football-out2play-t5-orange-22x22x22-cm",
@@ -19815,7 +20674,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 6.0,
+        price: 5.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529294952&a=3013769&m=65912",
@@ -19824,7 +20683,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 5.47,
+        price: 5.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffa305-ballon-de-football-en-pvc-powershot-jaune-tu",
@@ -19841,7 +20700,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.96,
+        price: 16.29,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923906590&a=3013769&m=65912",
@@ -19850,7 +20709,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.23,
+        price: 16.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffa097-ballon-de-football-powershot-jaune-noir-taille-5",
@@ -19867,7 +20726,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.96,
+        price: 16.29,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923906589&a=3013769&m=65912",
@@ -19876,7 +20735,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.23,
+        price: 16.1,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffa100-ballon-de-football-powershot-rose-bleu-taille-5",
@@ -19893,7 +20752,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.26,
+        price: 12.26,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713805&a=3013769&m=65912",
@@ -19902,7 +20761,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.67,
+        price: 12.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fedb045-ballon-de-football-en-mousse-non-enduit-pre-sport-blue-black-20-cm",
@@ -19948,43 +20807,43 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "precision-ballon-de-football-precision-fusion-lite-blanc",
     brand: "Precision",
-    model: "Balones de Fútbol Precision Fusion Lite - Blanco (PRF2305)",
+    model: "Balones de Fútbol Precision Fusion Lite - Blanco",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 15.79,
+        price: 15.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713810&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prf2305_blanc-jaune_1.jpg&feedId=89032&k=18f8c15177754a8c43041a508dd5fc06f594123f",
         sizes: ["Talla 5"],
       },
-      {
-        store: "FootStoreFR",
-        price: 15.17,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprf2305-ballon-de-football-precision-fusion-lite-blanc-jaune-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prf2305_blanc-jaune_1.webp",
-        sizes: ["5"],
-      },
     ],
   },
   {
     id: "precision-balones-de-futbol-precision-fusion-lite-blanco",
     brand: "Precision",
-    model: "Balones de Fútbol Precision Fusion Lite - Blanco (PRF2405)",
+    model: "Balones de Fútbol Precision Fusion Lite - Blanco",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 15.79,
+        price: 15.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713811&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prf2405_blanc-noir_1.jpg&feedId=89032&k=e1da5fc481f12d68f49fc86d0fcec8e599eccd00",
         sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 15.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprf2405-ballon-de-football-precision-fusion-lite-blanc-noir-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/p/r/precision_prf2405_blanc-noir_1.webp",
+        sizes: ["5"],
       },
     ],
   },
@@ -19996,16 +20855,16 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.45,
+        price: 39.14,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529713814&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529713815&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prf15704_yellow-blue-silver-white_1.jpg&feedId=89032&k=436b824b809c8d6b2d2e348a8167c55fb2a755fb",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 40.53,
+        price: 38.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprf15704-ballon-de-football-precision-nueno-fifa-quality-pro-match-2024-yellow-blue-silver-white",
@@ -20022,16 +20881,16 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.45,
+        price: 39.14,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529713812&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529713813&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_prf15604_white-fluo-orange-blue-silver_1.jpg&feedId=89032&k=82e79e72228affe0e22b028427d2b21a05f424ec",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 40.53,
+        price: 38.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprf15604-ballon-de-football-precision-nueno-fifa-quality-pro-match-2024-white-fluo-orange-blue-silver",
@@ -20048,10 +20907,10 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.27,
+        price: 12.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43097660817&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46318094163&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_ppf000203_white-fluo-blue-black_1.jpg&feedId=89032&k=f05f060687ae963a12e0be2cbe5821365eb357eb",
         sizes: ["Talla 3", "Talla 4"],
       },
@@ -20074,7 +20933,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 39.0,
+        price: 38.97,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713820&a=3013769&m=65912",
@@ -20083,7 +20942,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 39.0,
+        price: 38.59,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fppf001005-ballon-de-football-precision-play-force-led-light-up-football-fluo-orange-fluo-blue-black-taille-5",
@@ -20109,7 +20968,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 28.0,
+        price: 27.78,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fprf15803-ballon-de-football-precision-rotario-fifa-quality-match-2024-white-cyan-black-silver",
@@ -20126,16 +20985,16 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.62,
+        price: 16.62,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39783214217&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=38276330718&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fr%2Fprecision_tr440_fluo-yellow_1.jpg&feedId=89032&k=06b03eb3fedf7ef2628ab31a81c9b883f233dba4",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 16.99,
+        price: 16.49,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftr4404-ballon-de-football-precision-street-mania-fluo-yellow",
@@ -20271,7 +21130,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 100.01,
+        price: 96.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085057-01-ballon-de-football-puma-nitro-foam-white-taille-5",
@@ -20322,16 +21181,16 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 28.52,
-        priceMax: 31.35,
+        price: 27.08,
+        priceMax: 29.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085064-05-ballon-de-football-puma-stellar-goal-white-black-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/p/u/puma-085064-05-6afb2840c8fc6-1.webp",
         sizes: ["5"],
         sizePrices: [
-          { size: "5", price: 31.35, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085064-01-ballon-de-football-puma-stellar-goal-white-black-lime-taille-5" },
-          { size: "5", price: 28.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085064-05-ballon-de-football-puma-stellar-goal-white-black-taille-5" },
+          { size: "5", price: 27.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085064-05-ballon-de-football-puma-stellar-goal-white-black-taille-5" },
+          { size: "5", price: 29.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085064-01-ballon-de-football-puma-stellar-goal-white-black-lime-taille-5" },
         ],
       },
     ],
@@ -20404,7 +21263,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 22.48,
+        price: 20.69,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46530314635&a=3013769&m=65912",
@@ -20413,7 +21272,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.72,
+        price: 20.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085252-01-ballon-de-football-om-ligue-1-2026-27-blue-taille-5",
@@ -20542,40 +21401,6 @@ const minedBallProductsChunk5: BallProduct[] = [
     ],
   },
   {
-    id: "puma-laliga-f-25-26-amarillo",
-    brand: "Puma",
-    model: "Balón Puma Laliga F 25/26 - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 20.39,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43135969614&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048026-00-P-X-20251110114501.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM5MXxpbWFnZS9qcGVnfGFEUTRMMmd3TXk4eE16TXdNVGcwTVRjeU16UXlNaTl0WldScFlYTmZNVEF3TVRBME9EQXlObDh3TUY5UVgxZ3RNakF5TlRFeE1UQXhNVFExTURFdWFuQm58ZmEzNDQ0YzgyYjhlYjdkZTM2ZTcyMjU1NjAwZTExYjZmMTExN2FlMDViZTRhMTZmZTNjNWNlYzc4MmRlOTg1NQ&feedId=58083&k=a56eb67f9a864a7112e84f9e3c62cc2d6f58be5e",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "puma-laliga-femenina-25-26-blanco",
-    brand: "Puma",
-    model: "Balón Puma Laliga Femenina 25/26 - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41701688029&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048025-00-P-X-20250625154219.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI3NHxpbWFnZS9qcGVnfGFEVmlMMmd6WkM4eE16QXhNalkxT0RVeU1EQTVOQzl0WldScFlYTmZNVEF3TVRBME9EQXlOVjh3TUY5UVgxZ3RNakF5TlRBMk1qVXhOVFF5TVRrdWFuQm58ODhmM2ExYWQ2YzZhY2RkYWU1YzU3NzgzOTJjOGE4MjVkNmM5MWMzMDA3NzMyNzVjNzEwM2ViMWFjNDYzNTNiZQ&feedId=58083&k=23da6c2a97a82282e0945ea9244b8d27bbc4a28c",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
     id: "puma-manchester-city-26-27-culture-ball-negro",
     brand: "Puma",
     model: "Balón Puma Manchester City 26/27 Culture Ball - Negro",
@@ -20617,28 +21442,11 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "ForumSport",
-        price: 18.41,
+        price: 17.44,
         shipping: 5.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38968854359&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001017855-00-P-X-20240904144205.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA4NnxpbWFnZS9qcGVnfGFHUmpMMmcwTXk4eE1qTTFNRE0xT1RBME5ERXlOaTl0WldScFlYTmZNVEF3TVRBeE56ZzFOVjh3TUY5UVgxZ3RNakF5TkRBNU1EUXhORFF5TURVdWFuQm58NmYzNzQ1M2UzMDdkODRlNjM3ODhlMjQ4MmZkOWM0NTJlZWY5MjI3NzgwMzRjZmRiYTUwOWM2MWI5YmQwMWNkNw&feedId=58083&k=0ee95c40ccff3eb6f09128dfc21dbea082d1bdc0",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "puma-orbita-cup-premier-league",
-    brand: "Puma",
-    model: "Balón Puma Orbita Cup Premier League",
-    colour: "N/D",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 19.43,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41609484029&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048027-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTg2OXxpbWFnZS9qcGVnfGFHVmxMMmd5Wmk4eE1qazVOemM0T1RnME16UTROaTl0WldScFlYTmZNVEF3TVRBME9EQXlOMTh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58MjhjMWU2ZWQzNWQ0YzNmYjU2MzdhMmI4N2VlYmM3MGU0YmIwM2QyNmMwMWZmNTNmYjM2M2U0NjdkMjUyNzExOA&feedId=58083&k=af442f7f7846827a1a86316d86201c1710632f73",
         sizes: ["5"],
       },
     ],
@@ -20678,57 +21486,6 @@ const minedBallProductsChunk5: BallProduct[] = [
     ],
   },
   {
-    id: "puma-orbita-laliga-26-blanco",
-    brand: "Puma",
-    model: "Balón Puma Orbita Laliga 26 - Blanco",
-    colour: "Blanco",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 26.54,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43791560810&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001108000-00-P-X-20260122090047.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ4MHxpbWFnZS9qcGVnfGFEUTBMMmczWkM4eE16VXhNek13TnpReU1qYzFNQzl0WldScFlYTmZNVEF3TVRFd09EQXdNRjh3TUY5UVgxZ3RNakF5TmpBeE1qSXdPVEF3TkRjdWFuQm58NTkxMzA3MjYyZDZmYzg0ZGFiZmRiZDFmOWZkYTBhZmJjMDgzMjNhMDZhMjI4YmE1YTVlODZiYmFmY2IyNmIzZg&feedId=58083&k=a83d42a0683dd0e0eaaffb721491184347cd6cca",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "puma-orbita-match-premier-league-26-plata",
-    brand: "Puma",
-    model: "Balón Puma Orbita Match Premier League 26 - Plata",
-    colour: "Plata",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 29.49,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43791560757&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107993-00-P-X-20260122090047.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzg1N3xpbWFnZS9qcGVnfGFHRTBMMmcyWmk4eE16VXhNek13TnpBeU9UVXpOQzl0WldScFlYTmZNVEF3TVRFd056azVNMTh3TUY5UVgxZ3RNakF5TmpBeE1qSXdPVEF3TkRjdWFuQm58MjIyYjdhNjI5NDg3YWFmYTBiNWZhMGZhOGVlNzEwNDM1MzU0ZDFlNDM0ZWQ3MGU2MmI2ZjQ4ZDQzYTc0NTcyZg&feedId=58083&k=746a2ed19e8bbec1ed0bab23fb8eaf718ffdf1a2",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "puma-orbita-match-premier-league-plata",
-    brand: "Puma",
-    model: "Balón Puma Orbita Match Premier League - Plata",
-    colour: "Plata",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 29.19,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44036501275&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107994-00-P-X-20260220152323.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM5OXxpbWFnZS9qcGVnfGFEbGlMMmhqWmk4eE16VTVNakV3TlRrME16QTNNQzl0WldScFlYTmZNVEF3TVRFd056azVORjh3TUY5UVgxZ3RNakF5TmpBeU1qQXhOVEl6TWpNdWFuQm58ZjRhZGE3NDJkMjg3OTYwMjQ3ZGUyZGJkNWUwY2IyOTY5NzBjMmIwNjFjMjlmY2E2MmViNWJiOTE1ZjQ4ODRmMg&feedId=58083&k=6fdcd1f52b44d3c8453f9921b14eb1cd927f2823",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
     id: "puma-orbita-serie-a-blanco",
     brand: "Puma",
     model: "Balón Puma Orbita Serie A - Blanco",
@@ -20746,23 +21503,6 @@ const minedBallProductsChunk5: BallProduct[] = [
     ],
   },
   {
-    id: "puma-orbita-ultimate-amarillo",
-    brand: "Puma",
-    model: "Balón Puma Orbita Ultimate - Amarillo",
-    colour: "Amarillo",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 78.39,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43972894308&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001107998-00-P-X-20260213143711.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc2OHxpbWFnZS9qcGVnfGFETTFMMmhqWkM4eE16VTNOek0yTlRneE5UTXlOaTl0WldScFlYTmZNVEF3TVRFd056azVPRjh3TUY5UVgxZ3RNakF5TmpBeU1UTXhORE0zTVRFdWFuQm58MmQxNjk4ZDkyZTk3YmY3OGY1MGE4ODhlYmNmMWZjNmRmOTgxZjQ0ZDY4NjhmMWNiMjE3NTg0Yjg4MTU2MDE5YQ&feedId=58083&k=b04c697fbd4732512ee0184005517fe922378aa2",
-        sizes: ["5"],
-      },
-    ],
-  },
-  {
     id: "puma-orbita-ultimate-premier-league-blanco",
     brand: "Puma",
     model: "Balón Puma Orbita Ultimate Premier League - Blanco",
@@ -20770,7 +21510,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "ForumSport",
-        price: 80.63,
+        price: 79.51,
         shipping: 3.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45841261646&a=3013769&m=23805",
@@ -20855,7 +21595,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.0,
+        price: 23.41,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46530329369&a=3013769&m=65912",
@@ -20864,7 +21604,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.5,
+        price: 23.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085086-01-ballon-de-football-puma-white",
@@ -20907,7 +21647,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.69,
+        price: 18.71,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=36485369174&a=3013769&m=65912",
@@ -20925,7 +21665,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.24,
+        price: 18.74,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F083786-01-ballon-de-football-puma-orbita-5-hs-blanc-rose-jaune",
@@ -20951,7 +21691,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.16,
+        price: 15.16,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42209880113&a=3013769&m=65912",
@@ -20960,7 +21700,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.54,
+        price: 15.04,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp084475023-ballon-de-football-puma-orbita-7-ms-black-white",
@@ -20977,7 +21717,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.83,
+        price: 20.05,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46660183362&a=3013769&m=65912",
@@ -20986,7 +21726,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.07,
+        price: 19.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F084633-02-ballon-puma-orbita-laliga-yellow",
@@ -21012,7 +21752,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.0,
+        price: 14.51,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45395577223&a=3013769&m=65912",
@@ -21021,7 +21761,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.41,
+        price: 14.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F084585-01-ballon-puma-prestige-white",
@@ -21038,7 +21778,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.36,
+        price: 11.82,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46660177747&a=3013769&m=65912",
@@ -21047,7 +21787,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.67,
+        price: 11.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F083992-01-ballon-puma-prestige-blanc-noir",
@@ -21064,7 +21804,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.79,
+        price: 19.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45663295356&a=3013769&m=65912",
@@ -21073,7 +21813,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.04,
+        price: 18.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085069-04-ballon-de-football-puma-stellar-club-blanc",
@@ -21090,7 +21830,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.79,
+        price: 19.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45663295359&a=3013769&m=65912",
@@ -21099,7 +21839,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.04,
+        price: 18.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085069-01-ballon-de-football-puma-stellar-club-white",
@@ -21116,16 +21856,16 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.79,
+        price: 19.04,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46584848840&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45698877025&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fp%2Fu%2Fpuma-085069-02-yellow-6a842108be629-1.jpg&feedId=89032&k=e5007a8e3d790556c71a6b757b0c9f23c0239f68",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 20.04,
+        price: 18.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085069-02-ballon-de-football-puma-stellar-club-yellow",
@@ -21142,7 +21882,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.01,
+        price: 25.09,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46797472963&a=3013769&m=65912",
@@ -21151,7 +21891,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.21,
+        price: 24.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085148-01-ballon-de-football-puma-stellar-cup-laliga-white",
@@ -21177,7 +21917,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.23,
+        price: 24.34,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46797472964&a=3013769&m=65912",
@@ -21186,7 +21926,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.44,
+        price: 24.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085149-01-ballon-de-football-puma-stellar-cup-laliga-hi-viz-yellow",
@@ -21265,7 +22005,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.87,
+        price: 29.82,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46246416440&a=3013769&m=65912",
@@ -21274,7 +22014,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.98,
+        price: 29.46,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085063-01-ballon-de-football-puma-stellar-match-white",
@@ -21344,7 +22084,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.07,
+        price: 11.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F085253-01-ballon-de-football-om-culture-2026-27-blue-taille-mini",
@@ -21470,15 +22210,6 @@ const minedBallProductsChunk5: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F91%2F03%2F41%2F084287-01-1_600x600.jpg&feedId=99907&k=b0ab53ededa450be80073270193fcdec633503d5",
         sizes: [],
       },
-      {
-        store: "ForumSport",
-        price: 19.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44133874096&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000978304-00-P-X-20240606110358.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMyOXxpbWFnZS9qcGVnfGFHVmpMMmc1T0M4eE1qRTRNamMzT0RnM01UZ3pPQzl0WldScFlYTmZNVEF3TURrM09ETXdORjh3TUY5UVgxZ3RNakF5TkRBMk1EWXhNVEF6TlRndWFuQm58Y2RlMmYzMjNiOTQwMWY5NDFiYjI2YzRkNzU4ODhkZWRmYjdmOGY5MWRiOTk3OWIyYjBjOWI0N2UxNjZkNWJkYQ&feedId=58083&k=0327c5410417bbaa48d3d5b321298e30b4e262d8",
-        sizes: ["5"],
-      },
     ],
   },
   {
@@ -21489,7 +22220,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.99,
+        price: 32.35,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923903594&a=3013769&m=65912",
@@ -21498,7 +22229,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.99,
+        price: 32.03,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fp2i150060-ballon-de-football-d-entrainement-pure2improve-blanc-noir-rouge-tu",
@@ -21566,7 +22297,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.19,
+        price: 32.19,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530034953&a=3013769&m=65912",
@@ -21584,7 +22315,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 32.23,
+        price: 31.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff-5-pu-tr-dmb-ballon-de-football-rebond-denis-meyer-bleu-tu",
@@ -21636,7 +22367,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 51.93,
+        price: 51.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515362&a=3013769&m=65912",
@@ -21645,7 +22376,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 51.02,
+        price: 51.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmood-foot-ballon-de-football-rebond-mood-blanc-bleu-taille-5",
@@ -21662,7 +22393,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.9,
+        price: 27.79,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530034957&a=3013769&m=65912",
@@ -21767,11 +22498,37 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 215.0,
+        price: 213.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fvintage-football-mif-ballon-de-football-rebond-vintage-made-in-france-orange-noir-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/r/e/rebond_vintage_football_mif_1.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "rinat-balones-de-futbol-rinat-aries-multicolor",
+    brand: "Rinat",
+    model: "Balones de Fútbol Rinat Aries - Multicolor",
+    colour: "Multicolor",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 22.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45130825120&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2FB%2FN%2FBNA2766.jpg&feedId=89032&k=241bca1c9818129da6ed4ee8056bda996d177f58",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 23.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fbna2766-ballon-de-football-rinat-aries-multicolore-blanc-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/B/N/BNA2766.webp",
         sizes: ["5"],
       },
     ],
@@ -21784,7 +22541,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.89,
+        price: 24.89,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46530332035&a=3013769&m=65912",
@@ -21801,7 +22558,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.89,
+        price: 24.89,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46530355331&a=3013769&m=65912",
@@ -21810,7 +22567,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 25.19,
+        price: 24.69,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fbnhy1316-ballon-de-football-rinat-nebus-hybrid-white-red-taille-5",
@@ -21882,16 +22639,16 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 32.49,
+        price: 31.49,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529856358&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529856359&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fa%2Fsamba_f2800_blanc-bleu_1.jpg&feedId=89032&k=9de2384b89749f1e3d602cafea2871435d914deb",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 31.74,
+        price: 31.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff2800-ballon-de-football-samba-fairtrade-impact-blanc-bleu",
@@ -21908,7 +22665,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 314.64,
+        price: 313.64,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930491&a=3013769&m=65912",
@@ -21917,7 +22674,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 311.56,
+        price: 311.06,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff28000-ballon-de-football-samba-fairtrade-impact-x12-blue",
@@ -21934,7 +22691,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 235.45,
+        price: 234.45,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45783105721&a=3013769&m=65912",
@@ -21943,7 +22700,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 233.01,
+        price: 232.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff28020-ballon-de-football-samba-fairtrade-light-thunder-x12-black",
@@ -21960,16 +22717,16 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.57,
+        price: 24.57,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529856360&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529856361&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fa%2Fsamba_f2802_blanc-noir_1.jpg&feedId=89032&k=5b51f31705acd4619c7801ed7d29fcd479657afa",
         sizes: ["Talla 3", "Talla 4"],
       },
       {
         store: "FootStoreFR",
-        price: 24.87,
+        price: 24.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff2802-ballon-de-football-samba-fairtrade-thunder-blanc-noir",
@@ -21986,7 +22743,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.38,
+        price: 26.38,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856362&a=3013769&m=65912",
@@ -21995,7 +22752,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.67,
+        price: 26.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff2806-ballon-de-football-samba-fairtrade-winter-orange-noir-taille-5",
@@ -22012,7 +22769,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.38,
+        price: 26.38,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856364&a=3013769&m=65912",
@@ -22021,7 +22778,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.67,
+        price: 26.17,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff2805-ballon-de-football-samba-schoolyard-freestyle-bleu-beige-taille-5",
@@ -22038,7 +22795,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 48.17,
+        price: 47.17,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856365&a=3013769&m=65912",
@@ -22047,7 +22804,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 47.29,
+        price: 46.79,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff2807-ballon-de-football-samba-super-nova-blanc-noir-bleu-taille-5",
@@ -22090,7 +22847,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 30.21,
+        price: 28.2,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923989585&a=3013769&m=65912",
@@ -22099,7 +22856,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 29.38,
+        price: 27.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl120067-190-ballon-de-football-select-atlanta-db-v23-white-taille-5",
@@ -22116,7 +22873,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.43,
+        price: 12.86,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923902919&a=3013769&m=65912",
@@ -22134,7 +22891,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.73,
+        price: 12.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl160053-160-ballon-de-football-select-brillant-replica-v21-blanc",
@@ -22160,7 +22917,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.27,
+        price: 13.27,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923943536&a=3013769&m=65912",
@@ -22169,7 +22926,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.66,
+        price: 13.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl121159-130-ballon-de-football-select-clava-white-red",
@@ -22212,7 +22969,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 29.0,
+        price: 27.08,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923989586&a=3013769&m=65912",
@@ -22230,7 +22987,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 28.24,
+        price: 26.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl120063-140-ballon-de-football-select-db-v23-white-taille-5",
@@ -22256,7 +23013,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 43.48,
+        price: 41.11,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46277684504&a=3013769&m=65912",
@@ -22265,12 +23022,29 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 42.55,
+        price: 40.71,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl310020-170-ballon-de-football-select-master-v26-28-white-orange-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/e/select-l310020-170-white-orange-6a32c1694ce69-1.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "select-balones-de-futbol-select-mbliga-po-012-003-blanco",
+    brand: "Select",
+    model: "Balones de Fútbol Select Mbliga Po 012/003 - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 14.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46255294827&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fe%2Fselect_a002301.707.01_blanco-rojo-negro_1.jpg&feedId=89032&k=cc95c9a818bb86b3962863ac3f37cc492f5bbbcc",
+        sizes: ["Talla 1"],
       },
     ],
   },
@@ -22282,7 +23056,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.6,
+        price: 39.28,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46508621266&a=3013769&m=65912",
@@ -22291,7 +23065,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 40.63,
+        price: 38.85,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl110054-160-ballon-de-football-select-numero-10-v26-28-white-blue-taille-5",
@@ -22334,7 +23108,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 59.73,
+        price: 56.91,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923989588&a=3013769&m=65912",
@@ -22343,7 +23117,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 58.66,
+        price: 56.38,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl110044-112-ballon-de-football-select-super-v23-white-taille-5",
@@ -22360,7 +23134,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.83,
+        price: 19.12,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923989590&a=3013769&m=65912",
@@ -22369,7 +23143,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.13,
+        price: 18.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl120064-160-ballon-de-football-select-team-v23-white",
@@ -22386,7 +23160,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.93,
+        price: 19.18,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44719156420&a=3013769&m=65912",
@@ -22395,7 +23169,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.18,
+        price: 18.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl160074-140-ballon-de-football-select-v25-26-white-green",
@@ -22412,7 +23186,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.36,
+        price: 22.56,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41165030665&a=3013769&m=65912",
@@ -22421,7 +23195,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 23.64,
+        price: 22.37,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl120065-560-ballon-de-football-select-x-turf-v23-yellow",
@@ -22438,21 +23212,31 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.54,
+        price: 27.66,
+        priceMax: 29.5,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46114043879&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=46889813540&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fe%2Fselect-l120081-599-yellow-purple-6a32c1698533f-1.jpg&feedId=89032&k=6302d7e3d4ca88ed3c25d4c56e699daf3c04fa04",
-        sizes: ["Talla 5"],
+        sizes: ["Talla 4", "Talla 5"],
+        sizePrices: [
+          { size: "Talla 4", price: 27.66, url: "https://www.awin1.com/pclick.php?p=46889813540&a=3013769&m=65912" },
+          { size: "Talla 5", price: 29.5, url: "https://www.awin1.com/pclick.php?p=46114043879&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 30.7,
+        price: 27.33,
+        priceMax: 29.2,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl120081-599-ballon-de-football-select-x-turf-v26-28-yellow-purple",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/e/select-l120081-599-yellow-purple-6a32c1698533f-1.webp",
-        sizes: ["5"],
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 27.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl120081-599-ballon-de-football-select-x-turf-v26-28-yellow-purple" },
+          { size: "5", price: 29.2, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fl120081-599-ballon-de-football-select-x-turf-v26-28-yellow-purple" },
+        ],
       },
     ],
   },
@@ -22464,7 +23248,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.51,
+        price: 39.19,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43910090931&a=3013769&m=65912",
@@ -22473,7 +23257,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 40.59,
+        price: 38.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Febsb004-ballon-de-football-senseball-blanc-bleu-taille-3",
@@ -22507,7 +23291,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.12,
+        price: 23.12,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515388&a=3013769&m=65912",
@@ -22524,7 +23308,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.12,
+        price: 23.12,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515389&a=3013769&m=65912",
@@ -22541,7 +23325,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.25,
+        price: 20.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529515390&a=3013769&m=65912",
@@ -22550,17 +23334,17 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.58,
-        priceMax: 23.44,
+        price: 20.08,
+        priceMax: 23.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b27-11-ballon-de-football-hybride-softee-max-blanco-oro-tu",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_80674.b27.11_blanco-oro_1.webp",
         sizes: ["TU"],
         sizePrices: [
-          { size: "TU", price: 23.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-a37-62-ballon-de-football-hybride-softee-max-blanco-tu" },
-          { size: "TU", price: 20.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b27-11-ballon-de-football-hybride-softee-max-blanco-oro-tu" },
-          { size: "TU", price: 23.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b27-62-ballon-de-football-hybride-softee-max-blanc-tu" },
+          { size: "TU", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-a37-62-ballon-de-football-hybride-softee-max-blanco-tu" },
+          { size: "TU", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b27-62-ballon-de-football-hybride-softee-max-blanc-tu" },
+          { size: "TU", price: 20.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b27-11-ballon-de-football-hybride-softee-max-blanco-oro-tu" },
         ],
       },
     ],
@@ -22573,7 +23357,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.12,
+        price: 11.99,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44572519156&a=3013769&m=65912",
@@ -22608,7 +23392,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 23.9,
+        price: 23.86,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F99290-707-11-ballon-de-football-hybride-liverpool-fc-blanco-rojo-negro-tu",
@@ -22625,7 +23409,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.27,
+        price: 8.27,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38193766097&a=3013769&m=65912",
@@ -22634,7 +23418,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.71,
+        price: 8.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80675-769-11-ballon-de-football-inter-milan-blanco-azul-negro-tu",
@@ -22651,7 +23435,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 5.18,
+        price: 5.08,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529921577&a=3013769&m=65912",
@@ -22721,16 +23505,16 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.81,
+        price: 25.9,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529348982&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529348983&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_80692.b28.4_amarillo-azul_1.jpg&feedId=89032&k=d90af17a54fd7081ff61b2341fc724aba8a88e58",
         sizes: ["56 cm", "58 cm"],
       },
       {
         store: "FootStoreFR",
-        price: 26.1,
+        price: 25.9,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80692-b28-ballon-de-football-softee-addicted-amarillo-azul",
@@ -22747,7 +23531,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.9,
+        price: 11.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284422&a=3013769&m=65912",
@@ -22756,7 +23540,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.31,
+        price: 11.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80673-019-7-ballon-de-football-softee-bronco-futbol-7-jaune-fluor-taille-4",
@@ -22773,7 +23557,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.9,
+        price: 11.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284421&a=3013769&m=65912",
@@ -22782,7 +23566,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.31,
+        price: 11.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80673-015-7-ballon-de-football-softee-bronco-futbol-7-or-taille-4",
@@ -22799,7 +23583,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.9,
+        price: 11.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284423&a=3013769&m=65912",
@@ -22808,7 +23592,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.31,
+        price: 11.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80673-032-7-ballon-de-football-softee-bronco-futbol-7-gris-taille-4",
@@ -22825,7 +23609,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.9,
+        price: 11.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46797464396&a=3013769&m=65912",
@@ -22834,7 +23618,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.31,
+        price: 11.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80673-003-7-ballon-de-football-softee-bronco-futbol-7-rouge-taille-4",
@@ -22851,7 +23635,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.9,
+        price: 11.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921403&a=3013769&m=65912",
@@ -22860,7 +23644,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.31,
+        price: 11.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80673-019-11-ballon-de-football-softee-bronco-futbol11-jaune-fluor-taille-5",
@@ -22877,7 +23661,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.9,
+        price: 11.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284426&a=3013769&m=65912",
@@ -22886,7 +23670,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.31,
+        price: 11.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80673-015-11-ballon-de-football-softee-bronco-futbol11-or-taille-5",
@@ -22903,7 +23687,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.9,
+        price: 11.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284427&a=3013769&m=65912",
@@ -22912,7 +23696,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.31,
+        price: 11.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80673-032-11-ballon-de-football-softee-bronco-futbol11-gris-taille-5",
@@ -22929,7 +23713,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.72,
+        price: 11.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284430&a=3013769&m=65912",
@@ -22938,7 +23722,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.13,
+        price: 11.63,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80673-015-4-ballon-de-football-softee-bronco-querubin-or-taille-enfant",
@@ -22955,7 +23739,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.54,
+        price: 16.54,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360402&a=3013769&m=65912",
@@ -22981,7 +23765,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.54,
+        price: 16.54,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360403&a=3013769&m=65912",
@@ -23007,7 +23791,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.54,
+        price: 16.54,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360404&a=3013769&m=65912",
@@ -23033,7 +23817,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.54,
+        price: 16.54,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360405&a=3013769&m=65912",
@@ -23059,7 +23843,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.54,
+        price: 16.54,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360406&a=3013769&m=65912",
@@ -23085,7 +23869,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.54,
+        price: 16.54,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120381&a=3013769&m=65912",
@@ -23102,7 +23886,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.54,
+        price: 16.54,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120382&a=3013769&m=65912",
@@ -23111,7 +23895,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.91,
+        price: 16.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005336-009-11-ballon-de-football-softee-centrum-marino-taille-5",
@@ -23128,7 +23912,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.54,
+        price: 16.54,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120380&a=3013769&m=65912",
@@ -23137,7 +23921,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.91,
+        price: 16.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005336-002-11-ballon-de-football-softee-centrum-blanco-taille-5",
@@ -23154,7 +23938,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.54,
+        price: 16.54,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120383&a=3013769&m=65912",
@@ -23163,7 +23947,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.91,
+        price: 16.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005336-004-11-ballon-de-football-softee-centrum-verde-taille-5",
@@ -23180,7 +23964,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.56,
+        price: 17.56,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120384&a=3013769&m=65912",
@@ -23189,7 +23973,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.92,
+        price: 17.42,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005303-bd-11-ballon-de-football-softee-champion-blanco-dorado-taille-5",
@@ -23206,21 +23990,47 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.15,
+        price: 20.15,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43166896812&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=43166896813&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_a000541_blanco-azul_1.jpg&feedId=89032&k=161f2637df46ab3813398ad51588426197c5c808",
         sizes: ["Talla 11", "Talla 7"],
       },
       {
         store: "FootStoreFR",
-        price: 20.49,
+        price: 19.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa000541-ballon-de-football-softee-diamond-blanco-azul",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_a000541_blanco-azul_1.webp",
         sizes: ["7", "11"],
+      },
+    ],
+  },
+  {
+    id: "softee-balones-de-futbol-softee-egon-blanco",
+    brand: "Softee",
+    model: "Balones de Fútbol Softee Egon - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 14.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43839289928&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_25472.b06.7_blanco-azul_1.jpg&feedId=89032&k=d8ff0f91264ceabe84d1df289c1c5de87864ce96",
+        sizes: ["Talla 7"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 14.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F25472-b06-7-ballon-de-football-softee-egon-blanco-azul-taille-7",
+        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_25472.b06.7_blanco-azul_1.webp",
+        sizes: ["7"],
       },
     ],
   },
@@ -23232,16 +24042,23 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.24,
+        price: 15.24,
+        priceMax: 18.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529348987&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42529348989&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F8%2F0%2F80491.B71..jpg&feedId=89032&k=ff29406de95aa8d4da2175c0e8c8234ad353d126",
-        sizes: ["52 cm.", "56 cm", "58 cm"],
+        sizes: ["48 cm", "52 cm.", "56 cm", "58 cm"],
+        sizePrices: [
+          { size: "48 cm", price: 18.0, url: "https://www.awin1.com/pclick.php?p=42529348986&a=3013769&m=65912" },
+          { size: "52 cm.", price: 15.24, url: "https://www.awin1.com/pclick.php?p=42529348987&a=3013769&m=65912" },
+          { size: "56 cm", price: 15.24, url: "https://www.awin1.com/pclick.php?p=42529348988&a=3013769&m=65912" },
+          { size: "58 cm", price: 15.24, url: "https://www.awin1.com/pclick.php?p=42529348989&a=3013769&m=65912" },
+        ],
       },
       {
         store: "FootStoreFR",
-        price: 15.62,
+        price: 15.12,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80491-b71-ballon-de-football-softee-flash-elite-amarillo-blanco",
@@ -23258,7 +24075,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43406655626&a=3013769&m=65912",
@@ -23267,7 +24084,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.07,
+        price: 14.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80694-a10-ballon-de-football-softee-flash-rojo-blanco",
@@ -23284,7 +24101,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.54,
+        price: 16.54,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46305668489&a=3013769&m=65912",
@@ -23293,7 +24110,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.91,
+        price: 16.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F505-ballon-de-football-softee-galaxy-r11-bleu-orange-blanc-tu",
@@ -23310,7 +24127,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120385&a=3013769&m=65912",
@@ -23319,7 +24136,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.07,
+        price: 14.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005338-b06-11-ballon-de-football-softee-grain-blanco-azul-taille-5",
@@ -23336,7 +24153,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.25,
+        price: 20.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923950036&a=3013769&m=65912",
@@ -23345,7 +24162,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.58,
+        price: 20.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80478-749-ballon-de-football-softee-heros-rojo-blanco-azul",
@@ -23362,7 +24179,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.27,
+        price: 8.27,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529662417&a=3013769&m=65912",
@@ -23371,7 +24188,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.71,
+        price: 8.21,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80675-769-7-ballon-de-football-softee-inter-7-blanc-bleu-noir-tu",
@@ -23388,7 +24205,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.77,
+        price: 12.22,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120386&a=3013769&m=65912",
@@ -23397,7 +24214,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.08,
+        price: 12.06,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005633-008-11-ballon-de-football-softee-kaska-violeta-taille-5",
@@ -23406,6 +24223,9 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "softee-balones-de-futbol-softee-king-blanc",
     brand: "Softee",
@@ -23466,7 +24286,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120387&a=3013769&m=65912",
@@ -23475,7 +24295,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.07,
+        price: 14.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005337-a75-11-ballon-de-football-softee-koncept-blanco-amarillo-fluor-taille-5",
@@ -23492,7 +24312,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120388&a=3013769&m=65912",
@@ -23504,43 +24324,43 @@ const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "softee-balones-de-futbol-softee-max-7-blanco",
     brand: "Softee",
-    model: "Balones de Fútbol Softee Max 7 - Blanco (80674.B27.7)",
+    model: "Balones de Fútbol Softee Max 7 - Blanco",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 21.25,
+        price: 20.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529662418&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_80674.b27.7_blanc-or_1.jpg&feedId=89032&k=8a780c6bc38e11e4d2c01bc5da948614056f5f22",
         sizes: [],
       },
+      {
+        store: "FootStoreFR",
+        price: 20.08,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b27-7-ballon-de-football-softee-max-7-blanc-or-tu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_80674.b27.7_blanc-or_1.webp",
+        sizes: ["TU"],
+      },
     ],
   },
   {
     id: "softee-ballon-de-football-softee-max-7-blanc",
     brand: "Softee",
-    model: "Balones de Fútbol Softee Max 7 - Blanco (80674.A37.7)",
+    model: "Balones de Fútbol Softee Max 7 - Blanco",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 21.25,
+        price: 20.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529662419&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_80674.a37.7_blanc-rouge_1.jpg&feedId=89032&k=d24ad9828a5c63f946698bc6d0c59236b564da80",
         sizes: [],
-      },
-      {
-        store: "FootStoreFR",
-        price: 20.58,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-a37-7-ballon-de-football-softee-max-7-blanc-rouge-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_80674.a37.7_blanc-rouge_1.webp",
-        sizes: ["TU"],
       },
     ],
   },
@@ -23552,7 +24372,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.12,
+        price: 23.12,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284442&a=3013769&m=65912",
@@ -23569,31 +24389,12 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.25,
+        price: 20.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284443&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_80674.a76.11.jpg&feedId=89032&k=bec3b9eaaaf4d97e9a099d45da214908f69771a9",
         sizes: ["Talla 5"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 20.58,
-        priceMax: 23.44,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-a76-11-ballon-de-football-softee-max-blanc-vert-fluor-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_80674.a76.11.webp",
-        sizes: ["4", "5"],
-        sizePrices: [
-          { size: "4", price: 23.44, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b06-62-ballon-de-football-softee-max-blanc-bleu-ciel-taille-4" },
-          { size: "4", price: 20.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b06-7-ballon-de-football-softee-max-blanc-bleu-marine-taille-4" },
-          { size: "5", price: 20.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-a76-11-ballon-de-football-softee-max-blanc-vert-fluor-taille-5" },
-          { size: "5", price: 20.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-a37-11-ballon-de-football-softee-max-blanc-rouge-taille-5" },
-          { size: "5", price: 20.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-a75-11-ballon-de-football-softee-max-blanc-jaune-fluor-taille-5" },
-          { size: "5", price: 20.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b63-11-ballon-de-football-softee-max-blanc-corail-fluor-taille-5" },
-          { size: "5", price: 20.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b06-11-ballon-de-football-softee-max-blanc-bleu-taille-5" },
-        ],
       },
     ],
   },
@@ -23605,7 +24406,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.25,
+        price: 20.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284444&a=3013769&m=65912",
@@ -23622,7 +24423,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.25,
+        price: 20.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284445&a=3013769&m=65912",
@@ -23639,12 +24440,31 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.25,
+        price: 20.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284446&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fs%2Fo%2Fsoftee_80674.b63.11.jpg&feedId=89032&k=e8888eb87f07940bfbb1b9eaabc52b5f9d3e2d09",
         sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 20.08,
+        priceMax: 23.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b63-11-ballon-de-football-softee-max-blanc-corail-fluor-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee_80674.b63.11.webp",
+        sizes: ["4", "5"],
+        sizePrices: [
+          { size: "4", price: 23.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b06-62-ballon-de-football-softee-max-blanc-bleu-ciel-taille-4" },
+          { size: "4", price: 20.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b06-7-ballon-de-football-softee-max-blanc-bleu-marine-taille-4" },
+          { size: "5", price: 20.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b63-11-ballon-de-football-softee-max-blanc-corail-fluor-taille-5" },
+          { size: "5", price: 20.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-a75-11-ballon-de-football-softee-max-blanc-jaune-fluor-taille-5" },
+          { size: "5", price: 20.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-a76-11-ballon-de-football-softee-max-blanc-vert-fluor-taille-5" },
+          { size: "5", price: 20.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-a37-11-ballon-de-football-softee-max-blanc-rouge-taille-5" },
+          { size: "5", price: 20.08, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80674-b06-11-ballon-de-football-softee-max-blanc-bleu-taille-5" },
+        ],
       },
     ],
   },
@@ -23656,7 +24476,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.25,
+        price: 20.25,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284447&a=3013769&m=65912",
@@ -23673,7 +24493,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120390&a=3013769&m=65912",
@@ -23690,7 +24510,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120389&a=3013769&m=65912",
@@ -23699,7 +24519,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.07,
+        price: 14.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005340-002-11-ballon-de-football-softee-prisma-blanco-taille-5",
@@ -23716,7 +24536,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360407&a=3013769&m=65912",
@@ -23725,16 +24545,16 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.32,
-        priceMax: 15.07,
+        price: 12.82,
+        priceMax: 14.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005340-028-11-ballon-de-football-softee-prisma-blue-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/s/o/softee-a005340-028-11-blue-1.webp",
         sizes: ["5"],
         sizePrices: [
-          { size: "5", price: 15.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005340-009-11-ballon-de-football-softee-prisma-marino-taille-5" },
-          { size: "5", price: 13.32, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005340-028-11-ballon-de-football-softee-prisma-blue-taille-5" },
+          { size: "5", price: 14.57, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005340-009-11-ballon-de-football-softee-prisma-marino-taille-5" },
+          { size: "5", price: 12.82, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005340-028-11-ballon-de-football-softee-prisma-blue-taille-5" },
         ],
       },
     ],
@@ -23747,7 +24567,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360409&a=3013769&m=65912",
@@ -23756,7 +24576,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.32,
+        price: 12.82,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005340-011-11-ballon-de-football-softee-prisma-gray-taille-5",
@@ -23773,7 +24593,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360410&a=3013769&m=65912",
@@ -23782,7 +24602,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.32,
+        price: 12.82,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005340-005-11-ballon-de-football-softee-prisma-yellow-taille-5",
@@ -23799,7 +24619,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120391&a=3013769&m=65912",
@@ -23808,7 +24628,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.07,
+        price: 14.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005340-003-11-ballon-de-football-softee-prisma-rojo-taille-5",
@@ -23825,7 +24645,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44112360408&a=3013769&m=65912",
@@ -23834,7 +24654,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.32,
+        price: 12.82,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005340-014-11-ballon-de-football-softee-prisma-fucshia-taille-5",
@@ -23851,7 +24671,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.68,
+        price: 14.68,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120392&a=3013769&m=65912",
@@ -23860,7 +24680,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.07,
+        price: 14.57,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005340-004-11-ballon-de-football-softee-prisma-verde-taille-5",
@@ -23877,7 +24697,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.83,
+        price: 12.83,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529284449&a=3013769&m=65912",
@@ -23886,7 +24706,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.23,
+        price: 12.73,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F80474-b06-54-ballon-de-football-softee-spider-blanc-bleu-54-cm",
@@ -23903,7 +24723,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.39,
+        price: 18.39,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42572120393&a=3013769&m=65912",
@@ -23912,7 +24732,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.75,
+        price: 18.25,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa005628-028-11-ballon-de-football-softee-stingo-azul-taille-5",
@@ -23929,7 +24749,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.03,
+        price: 14.03,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529662420&a=3013769&m=65912",
@@ -23938,7 +24758,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.42,
+        price: 13.92,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa000476-a08-11-ballon-de-football-softee-thunder-blanc-noir-tu",
@@ -23955,7 +24775,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.03,
+        price: 14.03,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529662421&a=3013769&m=65912",
@@ -23972,7 +24792,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.97,
+        price: 10.97,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530052913&a=3013769&m=65912",
@@ -23981,7 +24801,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 11.39,
+        price: 10.89,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa003396-ballon-de-football-softee-tire-black-tu",
@@ -23998,7 +24818,7 @@ const minedBallProductsChunk5: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 26.9,
+        price: 26.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923921406&a=3013769&m=65912",
@@ -24007,7 +24827,7 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 26.19,
+        price: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F0000148-ballon-de-football-softee-vintage-marron-noir-tu",
@@ -24016,9 +24836,6 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "spordas-balon-de-futbol-spordas-supersafe",
     brand: "Spordas",
@@ -24044,7 +24861,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 9.18,
+        price: 8.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F702100601-ballon-de-football-sport-one-axen-multicolore-tu",
@@ -24061,7 +24878,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 9.18,
+        price: 8.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F702100611-ballon-de-football-sport-one-legacy-multicolore-tu",
@@ -24078,7 +24895,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 7.57,
+        price: 7.07,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F702200291-ballon-de-football-sport-one-multicolore-tu",
@@ -24095,7 +24912,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 16.9,
+        price: 16.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F702100491-ballon-de-football-sport-one-pro-multicolore-tu",
@@ -24112,7 +24929,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreFR",
-        price: 9.18,
+        price: 8.99,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F702100606-ballon-de-football-sport-one-shot-multicolore-tu",
@@ -24265,7 +25082,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 14.67,
+        price: 13.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42761970702&a=3013769&m=65912",
@@ -24274,7 +25091,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.07,
+        price: 13.95,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fg49290-ballon-de-football-tanga-sports-high-bounce-soft-pu-blue-black-15-cm",
@@ -24291,7 +25108,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.43,
+        price: 20.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41576607497&a=3013769&m=65912",
@@ -24317,7 +25134,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.43,
+        price: 20.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529643544&a=3013769&m=65912",
@@ -24343,7 +25160,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.43,
+        price: 20.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529643542&a=3013769&m=65912",
@@ -24368,17 +25185,8 @@ const minedBallProductsChunk6: BallProduct[] = [
     colour: "Gris",
     offers: [
       {
-        store: "SportIsGoodFR",
-        price: 17.04,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fmc08901-ballon-de-football-32-panel-camo-signature-team-merchandise-man-city-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/e/team-merchandise_mc08901_man-city_1.webp",
-        sizes: ["5"],
-      },
-      {
         store: "FootStoreFR",
-        price: 17.4,
+        price: 16.9,
         priceMax: 20.0,
         shipping: 7.99,
         currency: "EUR",
@@ -24386,12 +25194,34 @@ const minedBallProductsChunk6: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/t/e/team-merchandise_mc08901_man-city_1.webp",
         sizes: ["5"],
         sizePrices: [
-          { size: "5", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fch08899-ballon-de-football-32-panel-camo-signature-team-merchandise-chelsea-taille-5" },
-          { size: "5", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fli08900-ballon-de-football-32-panel-camo-signature-team-merchandise-liverpool-taille-5" },
-          { size: "5", price: 17.4, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmc08901-ballon-de-football-32-panel-camo-signature-team-merchandise-man-city-taille-5" },
+          { size: "5", price: 16.9, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmc08901-ballon-de-football-32-panel-camo-signature-team-merchandise-man-city-taille-5" },
           { size: "5", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fss08902-ballon-de-football-32-panel-camo-signature-team-merchandise-tottenham-hotspur-taille-5" },
+          { size: "5", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fli08900-ballon-de-football-32-panel-camo-signature-team-merchandise-liverpool-taille-5" },
+          { size: "5", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fch08899-ballon-de-football-32-panel-camo-signature-team-merchandise-chelsea-taille-5" },
           { size: "5", price: 20.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fwh08903-ballon-de-football-32-panel-camo-signature-team-merchandise-west-ham-taille-5" },
         ],
+      },
+      {
+        store: "FootStoreES",
+        price: 16.94,
+        priceMax: 20.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38134357249&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_mc08901_man-city_1.jpg&feedId=89032&k=66386de9d73a692ba9a3f95ad1c4b2b402b49468",
+        sizes: ["Talla 5"],
+        sizePrices: [
+          { size: "Talla 5", price: 16.94, url: "https://www.awin1.com/pclick.php?p=38134357249&a=3013769&m=65912" },
+        ],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 17.04,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fmc08901-ballon-de-football-32-panel-camo-signature-team-merchandise-man-city-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/e/team-merchandise_mc08901_man-city_1.webp",
+        sizes: ["5"],
       },
       {
         store: "SportIsGoodES",
@@ -24402,18 +25232,22 @@ const minedBallProductsChunk6: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_mc08901_man-city_1.jpg&feedId=89044&k=66386de9d73a692ba9a3f95ad1c4b2b402b49468",
         sizes: ["Talla 5"],
       },
+    ],
+  },
+  {
+    id: "team-merchandise-balon-de-futbol-32-panel-camo-signature-team-merchandise-gris",
+    brand: "Team Merchandise",
+    model: "Balón de fútbol 32 Panel Camo Signature Team Merchandise - Gris",
+    colour: "Gris",
+    offers: [
       {
         store: "FootStoreES",
-        price: 17.94,
-        priceMax: 20.43,
+        price: 20.0,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=38134357249&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_mc08901_man-city_1.jpg&feedId=89032&k=66386de9d73a692ba9a3f95ad1c4b2b402b49468",
+        url: "https://www.awin1.com/pclick.php?p=42529643547&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_ch08899_chelsea_1.jpg&feedId=89032&k=1638b7bed5c39cb8795328b19ad1daf464d83aac",
         sizes: ["Talla 5"],
-        sizePrices: [
-          { size: "Talla 5", price: 17.94, url: "https://www.awin1.com/pclick.php?p=38134357249&a=3013769&m=65912" },
-        ],
       },
     ],
   },
@@ -24425,28 +25259,11 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.43,
+        price: 20.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529643548&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_li08900_liverpool_1.jpg&feedId=89032&k=fc9e9e6f7cfe995f962a4d874a5d457bb726a618",
-        sizes: ["Talla 5"],
-      },
-    ],
-  },
-  {
-    id: "team-merchandise-balon-de-futbol-32-panel-camo-signature-team-merchandise-gris-3",
-    brand: "Team Merchandise",
-    model: "Balón de fútbol 32 Panel Camo Signature Team Merchandise - Gris",
-    colour: "Gris",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 20.43,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529643549&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_ss08902_tottenham-hotspur_1.jpg&feedId=89032&k=b03f995f7c69bd1398df7302f4cd6da8f03586dd",
         sizes: ["Talla 5"],
       },
     ],
@@ -24459,7 +25276,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.43,
+        price: 20.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529643550&a=3013769&m=65912",
@@ -24476,7 +25293,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.72,
+        price: 14.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40338714322&a=3013769&m=65912",
@@ -24493,7 +25310,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.72,
+        price: 14.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40791235745&a=3013769&m=65912",
@@ -24502,7 +25319,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.11,
+        price: 14.61,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Far07780-ballon-de-football-avec-cordon-elastique-et-support-pour-main-team-merchandise-skills-trainer-arsenal-taille-2",
@@ -24514,38 +25331,29 @@ const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "team-merchandise-ballon-de-football-a-colorier-team-merchandise-blanc",
     brand: "Team Merchandise",
-    model: "Balón de fútbol para colorear Team Merchandise - Blanco (AR09800)",
+    model: "Balón de fútbol para colorear Team Merchandise - Blanco",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 18.07,
+        price: 18.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930542&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_ar09800_arsenal_1.jpg&feedId=89032&k=1f8f30d73cdb24e18ff2959be074e3719c94de93",
         sizes: [],
       },
-      {
-        store: "FootStoreFR",
-        price: 18.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Far09800-ballon-de-football-a-colorier-team-merchandise-arsenal-tu",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/e/team-merchandise_ar09800_arsenal_1.webp",
-        sizes: ["TU"],
-      },
     ],
   },
   {
     id: "team-merchandise-balon-de-futbol-para-colorear-team-merchandise-blanco",
     brand: "Team Merchandise",
-    model: "Balón de fútbol para colorear Team Merchandise - Blanco (LI09804)",
+    model: "Balón de fútbol para colorear Team Merchandise - Blanco",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 18.07,
+        price: 18.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930543&a=3013769&m=65912",
@@ -24557,17 +25365,26 @@ const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "team-merchandise-balon-de-futbol-para-colorear-team-merchandise-blanco-2",
     brand: "Team Merchandise",
-    model: "Balón de fútbol para colorear Team Merchandise - Blanco (MC09805)",
+    model: "Balón de fútbol para colorear Team Merchandise - Blanco",
     colour: "Blanco",
     offers: [
       {
         store: "FootStoreES",
-        price: 18.07,
+        price: 18.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930544&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_mc09805_man-city_1.jpg&feedId=89032&k=d1c3962a993bd1ad90bac1b5ac3ee5ce4377c1d1",
         sizes: [],
+      },
+      {
+        store: "FootStoreFR",
+        price: 18.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmc09805-ballon-de-football-a-colorier-team-merchandise-man-city-tu",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/e/team-merchandise_mc09805_man-city_1.webp",
+        sizes: ["TU"],
       },
     ],
   },
@@ -24579,7 +25396,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.78,
+        price: 19.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529713825&a=3013769&m=65912",
@@ -24588,7 +25405,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 19.14,
+        price: 19.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fcl09473-ballon-de-football-team-merchandise-champions-league-orange-tu",
@@ -24605,7 +25422,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 16.3,
+        price: 15.3,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42044315611&a=3013769&m=65912",
@@ -24623,7 +25440,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 15.77,
+        price: 15.27,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmc09881-ballon-de-football-team-merchandise-graffiti-man-city-taille-5",
@@ -24649,7 +25466,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.62,
+        price: 18.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930558&a=3013769&m=65912",
@@ -24666,7 +25483,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.62,
+        price: 18.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44790773203&a=3013769&m=65912",
@@ -24692,7 +25509,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.62,
+        price: 18.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930556&a=3013769&m=65912",
@@ -24713,12 +25530,12 @@ const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "team-merchandise-balones-de-futbol-team-merchandise-phantom-signature-negro",
     brand: "Team Merchandise",
-    model: "Balones de Fútbol Team Merchandise Phantom Signature - Negro (LI08131)",
+    model: "Balones de Fútbol Team Merchandise Phantom Signature - Negro",
     colour: "Negro",
     offers: [
       {
         store: "FootStoreES",
-        price: 19.24,
+        price: 18.24,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38765831737&a=3013769&m=65912",
@@ -24730,12 +25547,12 @@ const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "team-merchandise-balones-de-futbol-team-merchandise-phantom-signature-negro-2",
     brand: "Team Merchandise",
-    model: "Balones de Fútbol Team Merchandise Phantom Signature - Negro (MC08139)",
+    model: "Balones de Fútbol Team Merchandise Phantom Signature - Negro",
     colour: "Negro",
     offers: [
       {
         store: "FootStoreES",
-        price: 19.24,
+        price: 18.24,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39019069198&a=3013769&m=65912",
@@ -24747,59 +25564,76 @@ const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "team-merchandise-ballon-de-football-team-merchandise-phantom-signature-noir",
     brand: "Team Merchandise",
-    model: "Balones de Fútbol Team Merchandise Phantom Signature - Negro (CE09024)",
+    model: "Balones de Fútbol Team Merchandise Phantom Signature - Negro",
     colour: "Negro",
     offers: [
       {
         store: "FootStoreES",
-        price: 19.24,
+        price: 18.24,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529643554&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_ce09024_celtic_1.jpg&feedId=89032&k=6068c07e512ba9e0564386c61a9cf7f523894ccf",
         sizes: ["Talla 5"],
       },
-      {
-        store: "FootStoreFR",
-        price: 18.6,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fce09024-ballon-de-football-team-merchandise-phantom-signature-celtic-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/e/team-merchandise_ce09024_celtic_1.webp",
-        sizes: ["5"],
-      },
     ],
   },
   {
     id: "team-merchandise-balones-de-futbol-team-merchandise-phantom-signature-negro-3",
     brand: "Team Merchandise",
-    model: "Balones de Fútbol Team Merchandise Phantom Signature - Negro (NC09693)",
+    model: "Balones de Fútbol Team Merchandise Phantom Signature - Negro",
     colour: "Negro",
     offers: [
       {
         store: "FootStoreES",
-        price: 19.24,
+        price: 18.24,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530061626&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_nc09693_newcastle_1.jpg&feedId=89032&k=03e3d2c126ace2691942989912195565d3f3a6ca",
         sizes: ["Talla 5"],
       },
+      {
+        store: "FootStoreFR",
+        price: 18.1,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fnc09693-ballon-de-football-team-merchandise-phantom-signature-newcastle-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/e/team-merchandise_nc09693_newcastle_1.webp",
+        sizes: ["5"],
+      },
     ],
   },
   {
     id: "team-merchandise-ballon-de-football-team-merchandise-turbine-bleu",
     brand: "Team Merchandise",
-    model: "Balones de Fútbol Team Merchandise Turbine - Azul (MC09868)",
+    model: "Balones de Fútbol Team Merchandise Turbine - Azul",
     colour: "Azul",
     offers: [
       {
         store: "FootStoreES",
-        price: 18.62,
+        price: 18.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930565&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_mc09868_man-city_1.jpg&feedId=89032&k=4c3ea1544cb3778a55fa3619e377644a1ad9910b",
+        sizes: ["Talla 5"],
+      },
+    ],
+  },
+  {
+    id: "team-merchandise-balones-de-futbol-team-merchandise-turbine-azul",
+    brand: "Team Merchandise",
+    model: "Balones de Fútbol Team Merchandise Turbine - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 18.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529930568&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_ss09870_tottenham-hotspur_1.jpg&feedId=89032&k=d295440cb3b980490110e982914e30584d4b25ff",
         sizes: ["Talla 5"],
       },
       {
@@ -24807,26 +25641,9 @@ const minedBallProductsChunk6: BallProduct[] = [
         price: 18.0,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fmc09868-ballon-de-football-team-merchandise-turbine-man-city-taille-5",
-        imageUrl: "https://cdn.blazimg.com/1800/product/t/e/team-merchandise_mc09868_man-city_1.webp",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fss09870-ballon-de-football-team-merchandise-turbine-tottenham-hotspur-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/t/e/team-merchandise_ss09870_tottenham-hotspur_1.webp",
         sizes: ["5"],
-      },
-    ],
-  },
-  {
-    id: "team-merchandise-balones-de-futbol-team-merchandise-turbine-azul",
-    brand: "Team Merchandise",
-    model: "Balones de Fútbol Team Merchandise Turbine - Azul (SS09870)",
-    colour: "Azul",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 18.62,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42529930568&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ft%2Fe%2Fteam-merchandise_ss09870_tottenham-hotspur_1.jpg&feedId=89032&k=d295440cb3b980490110e982914e30584d4b25ff",
-        sizes: ["Talla 5"],
       },
     ],
   },
@@ -24838,7 +25655,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.62,
+        price: 18.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930566&a=3013769&m=65912",
@@ -24864,7 +25681,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.62,
+        price: 18.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529930561&a=3013769&m=65912",
@@ -24890,7 +25707,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.85,
+        price: 11.85,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795272&a=3013769&m=65912",
@@ -24899,7 +25716,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.26,
+        price: 11.76,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff600-ballon-de-football-tremblay-trianing-foot-blanc",
@@ -24916,7 +25733,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.4,
+        price: 17.2,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38713844914&a=3013769&m=65912",
@@ -24925,7 +25742,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 17.4,
+        price: 17.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ffsta5-ballon-de-football-tremblay-stabilise-blanc-taille-5",
@@ -24942,7 +25759,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 17.33,
+        price: 16.4,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795275&a=3013769&m=65912",
@@ -24951,7 +25768,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 16.7,
+        price: 16.4,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff538-ballon-de-football-tremblay-jeu-de-tete-blanc-noir-taille-5",
@@ -24968,7 +25785,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.0,
+        price: 8.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=37923795264&a=3013769&m=65912",
@@ -24977,7 +25794,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 8.44,
+        price: 7.94,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff41-f35-ballon-de-football-tremblay-resist-foot-blanc",
@@ -24994,16 +25811,16 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.02,
+        price: 9.02,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=37923795270&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=37923795271&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Ff%2F4%2Ff4004.jpg&feedId=89032&k=127f8fa4c5eb1947707377971ed9cd7e484292f1",
         sizes: ["Talla 3", "Talla 4"],
       },
       {
         store: "FootStoreFR",
-        price: 9.46,
+        price: 8.96,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff400-ballon-de-football-tremblay-top-prix-blanc",
@@ -25020,7 +25837,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.42,
+        price: 22.42,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856318&a=3013769&m=65912",
@@ -25029,7 +25846,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.74,
+        price: 22.24,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff6013-ballon-de-football-de-rue-trial-dore-22-cm",
@@ -25046,7 +25863,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 25.07,
+        price: 24.07,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856368&a=3013769&m=65912",
@@ -25055,7 +25872,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 24.38,
+        price: 23.88,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff6010-ballon-de-football-trial-supersoft-jaune-rouge-bleu-22-cm",
@@ -25072,7 +25889,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 23.26,
+        price: 22.26,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529856317&a=3013769&m=65912",
@@ -25081,7 +25898,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 22.58,
+        price: 22.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff6009-ballon-de-football-trial-ultima-soft-jaune-taille-4",
@@ -25098,7 +25915,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 20.72,
+        price: 19.72,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42565884591&a=3013769&m=65912",
@@ -25107,7 +25924,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 20.01,
+        price: 19.51,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ff6008-ballon-de-football-trial-ultima-soft-rouge-taille-3",
@@ -25124,7 +25941,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.88,
+        price: 25.93,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45597127523&a=3013769&m=65912",
@@ -25133,7 +25950,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.07,
+        price: 25.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100178801-ballon-de-football-uhlsport-350-lite-match-addglue-white-royal-fluo-orange",
@@ -25150,7 +25967,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.9,
+        price: 20.9,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40944592331&a=3013769&m=65912",
@@ -25168,7 +25985,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 21.32,
+        price: 20.82,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176901-ballon-de-football-uhlsport-350-lite-match-addglue-blanc-bleu-roi-jaune-fluo",
@@ -25194,7 +26011,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.29,
+        price: 18.29,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40944592332&a=3013769&m=65912",
@@ -25203,17 +26020,17 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.65,
-        priceMax: 21.07,
+        price: 18.15,
+        priceMax: 19.83,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176701-ballon-de-football-uhlsport-addglue-blanc-noir-jaune-fluo-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_100176701_blanc-noir-jaune-fluo_1.webp",
         sizes: ["3", "4", "5"],
         sizePrices: [
-          { size: "3", price: 21.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176703-ballon-de-football-uhlsport-addglue-blanc-noir-vert-fluo-taille-3" },
-          { size: "4", price: 21.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176702-ballon-de-football-uhlsport-addglue-blanc-noir-rouge-fluo-taille-4" },
-          { size: "5", price: 18.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176701-ballon-de-football-uhlsport-addglue-blanc-noir-jaune-fluo-taille-5" },
+          { size: "3", price: 19.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176703-ballon-de-football-uhlsport-addglue-blanc-noir-vert-fluo-taille-3" },
+          { size: "4", price: 19.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176702-ballon-de-football-uhlsport-addglue-blanc-noir-rouge-fluo-taille-4" },
+          { size: "5", price: 18.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176701-ballon-de-football-uhlsport-addglue-blanc-noir-jaune-fluo-taille-5" },
         ],
       },
     ],
@@ -25226,7 +26043,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.83,
+        price: 20.05,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529842892&a=3013769&m=65912",
@@ -25243,7 +26060,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 21.83,
+        price: 20.05,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529842893&a=3013769&m=65912",
@@ -25266,15 +26083,6 @@ const minedBallProductsChunk6: BallProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=41446541893&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_100176001_0.jpg&feedId=89032&k=e8195051c1aa37010170859179acaf8a2b25c287",
         sizes: ["Talla 4"],
-      },
-      {
-        store: "SportIsGoodES",
-        price: 24.18,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45667416643&a=3013769&m=65906",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_100176503_blanc-rouge-argent_1.jpg&feedId=89044&k=178673a29e2b34f30f1218a1224010c466424b31",
-        sizes: ["Talla 5"],
       },
       {
         store: "FootStoreFR",
@@ -25304,7 +26112,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.88,
+        price: 25.93,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41639839232&a=3013769&m=65912",
@@ -25313,7 +26121,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.07,
+        price: 25.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176501-ballon-de-football-uhlsport-attack-addglue-blanc-bleu-roi-bleu",
@@ -25330,16 +26138,25 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.88,
+        price: 25.93,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41773059570&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=42496762318&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_100176503_blanc-rouge-argent_1.jpg&feedId=89032&k=178673a29e2b34f30f1218a1224010c466424b31",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
+        store: "SportIsGoodES",
+        price: 24.18,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45667416643&a=3013769&m=65906",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_100176503_blanc-rouge-argent_1.jpg&feedId=89044&k=178673a29e2b34f30f1218a1224010c466424b31",
+        sizes: ["Talla 5"],
+      },
+      {
         store: "FootStoreFR",
-        price: 27.07,
+        price: 25.66,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176503-ballon-de-football-uhlsport-attack-addglue-blanc-rouge-argent",
@@ -25356,30 +26173,30 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 27.54,
-        priceMax: 30.9,
+        price: 26.54,
+        priceMax: 28.87,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40944592334&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_100176401_blanc-bleu-marine-jaune-fluo_1.jpg&feedId=89032&k=ce01756cecb52ac2ca83ed7d6bb344c60c18ef99",
         sizes: ["Talla 4", "Talla 5"],
         sizePrices: [
-          { size: "Talla 4", price: 30.9, url: "https://www.awin1.com/pclick.php?p=40944592333&a=3013769&m=65912" },
-          { size: "Talla 5", price: 27.54, url: "https://www.awin1.com/pclick.php?p=40944592334&a=3013769&m=65912" },
+          { size: "Talla 4", price: 28.87, url: "https://www.awin1.com/pclick.php?p=40944592333&a=3013769&m=65912" },
+          { size: "Talla 5", price: 26.54, url: "https://www.awin1.com/pclick.php?p=40944592334&a=3013769&m=65912" },
         ],
       },
       {
         store: "FootStoreFR",
-        price: 26.83,
-        priceMax: 30.07,
+        price: 26.33,
+        priceMax: 28.58,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176401-ballon-de-football-uhlsport-attack-addglue-for-the-planet-blanc-bleu-marine-jaune-fluo",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_100176401_blanc-bleu-marine-jaune-fluo_1.webp",
         sizes: ["4", "5"],
         sizePrices: [
-          { size: "4", price: 30.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176401-ballon-de-football-uhlsport-attack-addglue-for-the-planet-blanc-bleu-marine-jaune-fluo" },
-          { size: "5", price: 26.83, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176401-ballon-de-football-uhlsport-attack-addglue-for-the-planet-blanc-bleu-marine-jaune-fluo" },
+          { size: "4", price: 28.58, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176401-ballon-de-football-uhlsport-attack-addglue-for-the-planet-blanc-bleu-marine-jaune-fluo" },
+          { size: "5", price: 26.33, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176401-ballon-de-football-uhlsport-attack-addglue-for-the-planet-blanc-bleu-marine-jaune-fluo" },
         ],
       },
     ],
@@ -25392,7 +26209,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 46.03,
+        price: 43.58,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41543181906&a=3013769&m=65912",
@@ -25401,7 +26218,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 45.07,
+        price: 43.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176301-ballon-de-football-uhlsport-match-addglue-blanc-bleu-marine-rouge-fluo-taille-5",
@@ -25418,7 +26235,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 41.3,
+        price: 40.29,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41996330441&a=3013769&m=65912",
@@ -25427,7 +26244,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 40.47,
+        price: 39.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176302-ballon-de-football-uhlsport-match-addglue-rouge-fluo-bleu-marine-argent-taille-5",
@@ -25444,7 +26261,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.75,
+        price: 11.23,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42060697367&a=3013769&m=65912",
@@ -25453,11 +26270,37 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.07,
+        price: 11.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177602-ballon-de-football-uhlsport-player-jaune-fluo-bleu-marine-cyan-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_100177602_jaune-fluo-bleu-marine-cyan_1.webp",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-balones-de-futbol-uhlsport-player-azul",
+    brand: "uhlsport",
+    model: "Balones de Fútbol Uhlsport Player - Azul",
+    colour: "Azul",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 15.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42529842894&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_100177603_bleu-ciel-clair-bleu-marine-jaune-fluo_1.jpg&feedId=89032&k=7963cd5f4da5957fcb4c41172ad9b16035ac0f4f",
+        sizes: ["Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 16.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177603-ballon-de-football-uhlsport-player-bleu-ciel-clair-bleu-marine-jaune-fluo-taille-5",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_100177603_bleu-ciel-clair-bleu-marine-jaune-fluo_1.webp",
         sizes: ["5"],
       },
     ],
@@ -25470,7 +26313,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.75,
+        price: 11.23,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44972136291&a=3013769&m=65912",
@@ -25479,7 +26322,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.07,
+        price: 11.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177605-ballon-de-football-uhlsport-player-black-fluo-red-fluo-yellow-taille-5",
@@ -25496,7 +26339,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 11.05,
+        price: 10.04,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42060697368&a=3013769&m=65912",
@@ -25514,7 +26357,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.47,
+        price: 9.97,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177601-ballon-de-football-uhlsport-player-rouge-fluo-argent-cyan-taille-5",
@@ -25540,7 +26383,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.75,
+        price: 11.23,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43493194477&a=3013769&m=65912",
@@ -25549,7 +26392,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.07,
+        price: 11.08,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177604-ballon-de-football-uhlsport-player-vert-noir-jaune-fluo-taille-5",
@@ -25592,21 +26435,47 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 18.8,
+        price: 17.11,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45018628196&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45018628197&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport-100178701-white-fluo-orange-black-69bac27251b08-1.jpg&feedId=89032&k=a1a7e594bd75ba305d43170db9f03b75b666464e",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 18.07,
+        price: 16.91,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100178701-ballon-de-football-uhlsport-resist-addglue-white-fluo-orange-black",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport-100178701-white-fluo-orange-black-69bac27251b08-1.webp",
         sizes: ["4", "5"],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-balones-de-futbol-uhlsport-resist-synergy-blanco",
+    brand: "uhlsport",
+    model: "Balones de Fútbol Uhlsport Resist Synergy - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 25.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=40944592335&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_100176801_blanc-noir-orange-fluo_1.jpg&feedId=89032&k=45e17dc0105938a5b542a432ad7e2fd614e420ea",
+        sizes: ["Talla 4"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 25.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176801-ballon-de-football-uhlsport-resist-synergy-blanc-noir-orange-fluo",
+        imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_100176801_blanc-noir-orange-fluo_1.webp",
+        sizes: ["4"],
       },
     ],
   },
@@ -25618,7 +26487,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 68.8,
+        price: 67.8,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=39599634689&a=3013769&m=65912",
@@ -25636,16 +26505,16 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 67.74,
-        priceMax: 87.07,
+        price: 67.24,
+        priceMax: 84.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100171502-ballon-de-football-uhlsport-revolution-thermobonded-jaune-fluo-orange-fluo-noir-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_100171502_jaune-fluo-orange-fluo-noir_1.webp",
         sizes: ["5"],
         sizePrices: [
-          { size: "5", price: 67.74, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100171502-ballon-de-football-uhlsport-revolution-thermobonded-jaune-fluo-orange-fluo-noir-taille-5" },
-          { size: "5", price: 87.07, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176202-ballon-de-football-uhlsport-revolution-thermobonded-jaune-fluo-rouge-fluo-noir-taille-5" },
+          { size: "5", price: 67.24, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100171502-ballon-de-football-uhlsport-revolution-thermobonded-jaune-fluo-orange-fluo-noir-taille-5" },
+          { size: "5", price: 84.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176202-ballon-de-football-uhlsport-revolution-thermobonded-jaune-fluo-rouge-fluo-noir-taille-5" },
         ],
       },
       {
@@ -25667,7 +26536,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 88.38,
+        price: 84.75,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41323543490&a=3013769&m=65912",
@@ -25684,7 +26553,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 79.8,
+        price: 78.8,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42130832189&a=3013769&m=65912",
@@ -25693,7 +26562,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 78.65,
+        price: 78.15,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176201-ballon-de-football-uhlsport-revolution-thermobonded-blanc-noir-or-taille-5",
@@ -25710,7 +26579,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.17,
+        price: 13.58,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42529842895&a=3013769&m=65912",
@@ -25719,7 +26588,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 14.47,
+        price: 13.41,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177506-ballon-de-football-uhlsport-team-bleu-ciel-clair-bleu-marine-blanc-taille-3",
@@ -25754,31 +26623,57 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.65,
-        priceMax: 12.92,
+        price: 12.15,
+        priceMax: 12.42,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177505-ballon-de-football-uhlsport-team-blanc-bleu-marine-bleu-ciel-clair-taille-3",
         imageUrl: "https://cdn.blazimg.com/1800/product/u/h/uhlsport_100177505_blanc-bleu-marine-bleu-ciel-clair_1.webp",
         sizes: ["3", "4"],
         sizePrices: [
-          { size: "3", price: 12.65, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177505-ballon-de-football-uhlsport-team-blanc-bleu-marine-bleu-ciel-clair-taille-3" },
-          { size: "4", price: 12.92, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177503-ballon-de-football-uhlsport-team-blanc-bleu-marine-jaune-fluo-taille-4" },
+          { size: "3", price: 12.15, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177505-ballon-de-football-uhlsport-team-blanc-bleu-marine-bleu-ciel-clair-taille-3" },
+          { size: "4", price: 12.42, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177503-ballon-de-football-uhlsport-team-blanc-bleu-marine-jaune-fluo-taille-4" },
         ],
       },
       {
         store: "FootStoreES",
-        price: 13.24,
-        priceMax: 13.51,
+        price: 12.24,
+        priceMax: 12.51,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=40944592337&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_100177505_blanc-bleu-marine-bleu-ciel-clair_1.jpg&feedId=89032&k=14e76cd86db01e3c60f4828844463038897809e0",
         sizes: ["Talla 3", "Talla 4"],
         sizePrices: [
-          { size: "Talla 3", price: 13.24, url: "https://www.awin1.com/pclick.php?p=40944592337&a=3013769&m=65912" },
-          { size: "Talla 4", price: 13.51, url: "https://www.awin1.com/pclick.php?p=41058974332&a=3013769&m=65912" },
+          { size: "Talla 3", price: 12.24, url: "https://www.awin1.com/pclick.php?p=40944592337&a=3013769&m=65912" },
+          { size: "Talla 4", price: 12.51, url: "https://www.awin1.com/pclick.php?p=41058974332&a=3013769&m=65912" },
         ],
+      },
+    ],
+  },
+  {
+    id: "uhlsport-balones-de-futbol-uhlsport-team-classic-blanco",
+    brand: "uhlsport",
+    model: "Balones de Fútbol Uhlsport Team Classic - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 18.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38914635728&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2F1%2F0%2F100172505_0.jpg&feedId=89032&k=dc3e76e45e66c10220ac744b80542276ee1abf0a",
+        sizes: ["Talla 3"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 19.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100172505-ballon-de-football-uhlsport-team-classic-blanc-bleu-marine-bleu-ciel-taille-3",
+        imageUrl: "https://cdn.blazimg.com/1800/product/1/0/100172505_0.webp",
+        sizes: ["3"],
       },
     ],
   },
@@ -25790,7 +26685,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.42,
+        price: 22.57,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=38256659194&a=3013769&m=65912",
@@ -25799,7 +26694,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 23.64,
+        price: 22.33,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F1001727040001-ballon-de-football-uhlsport-team-mini-4x1-colour-orange-fluo-bleu-marine-blanc-tu",
@@ -25816,7 +26711,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 13.79,
+        price: 12.79,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41401930234&a=3013769&m=65912",
@@ -25825,7 +26720,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 13.2,
+        price: 12.7,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100177502-ballon-de-football-uhlsport-team-orange-fluo-bleu-marine-blanc-taille-5",
@@ -25842,16 +26737,16 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 24.85,
+        price: 22.99,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40944592327&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=40944592328&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fu%2Fh%2Fuhlsport_100176601_blanc-noir-bleu-fluo_1.jpg&feedId=89032&k=0a4a38b9953f9c0005c789d135b1d74d4d07fe9c",
         sizes: ["Talla 3", "Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 24.07,
+        price: 22.75,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F100176601-ballon-de-football-d-entrainement-uhlsport-fairtrade-top-addglue-blanc-noir-bleu-fluo",
@@ -25868,7 +26763,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 40.0,
+        price: 39.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46647265583&a=3013769&m=65912",
@@ -25877,7 +26772,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 35.0,
+        price: 34.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F912360-70-3-ballon-de-football-umbro-neo-eco-t5-blanc-noir-limonade-taille-5",
@@ -25894,7 +26789,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 33.0,
+        price: 32.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46647271259&a=3013769&m=65912",
@@ -25903,7 +26798,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 29.0,
+        price: 28.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F811081-70-33-ballon-de-football-umbro-neo-fus-lg-ball-t5-blanc-taille-5",
@@ -25920,7 +26815,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 31.0,
+        price: 30.0,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44338939289&a=3013769&m=65912",
@@ -25929,7 +26824,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 27.0,
+        price: 26.0,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F895831-70-33-ballon-de-football-umbro-neo-swerv-match-t5-blanc-noir-alex-andean-taille-5",
@@ -25946,7 +26841,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 12.89,
+        price: 11.36,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44944610093&a=3013769&m=65912",
@@ -25955,12 +26850,38 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 12.15,
+        price: 11.16,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fvf06128-ballon-de-football-virtufit-wit-taille-5",
         imageUrl: "https://cdn.blazimg.com/1800/product/v/i/virtufit-vf06128-wit-6a22de2a7c6e5-1.webp",
         sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "wdk-partner-ballon-de-futbol-consu-inglaterra-t5-blanco",
+    brand: "WDK Partner",
+    model: "Ballón de fútbol consu Inglaterra t5 - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "FootStoreES",
+        price: 8.87,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=42530052851&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fw%2Fd%2Fwdk-partner_a2400215_blanc-rouge_1.jpg&feedId=89032&k=03c2613f28dc52cff08e516740afbd630936b9e2",
+        sizes: ["22x22x22 cm"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 8.81,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2400215-ballon-de-football-consu-angleterre-t5-blanc-rouge-22x22x22-cm",
+        imageUrl: "https://cdn.blazimg.com/1800/product/w/d/wdk-partner_a2400215_blanc-rouge_1.webp",
+        sizes: ["22x22x22 cm"],
       },
     ],
   },
@@ -25972,7 +26893,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.95,
+        price: 9.95,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530052850&a=3013769&m=65912",
@@ -25981,7 +26902,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 10.37,
+        price: 9.87,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2401177-ballon-de-football-brill-wdk-partner-t5-bleu-vert-18x18x18-cm",
@@ -25998,7 +26919,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.87,
+        price: 8.87,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530052852&a=3013769&m=65912",
@@ -26007,7 +26928,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.31,
+        price: 8.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2400214-ballon-de-football-consu-argentine-t5-bleu-22x22x22-cm",
@@ -26024,7 +26945,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 10.46,
+        price: 9.46,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42607742732&a=3013769&m=65912",
@@ -26033,7 +26954,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.89,
+        price: 9.39,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2300286-ballon-de-football-wdk-partner-bleu-orange-taille-5",
@@ -26050,7 +26971,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.87,
+        price: 8.87,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=42530052865&a=3013769&m=65912",
@@ -26059,7 +26980,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.31,
+        price: 8.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2401147-ballon-de-football-wdk-partner-t5-espagne-jaune-22x22x22-cm",
@@ -26076,7 +26997,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 9.87,
+        price: 8.87,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44552706287&a=3013769&m=65912",
@@ -26085,7 +27006,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 9.31,
+        price: 8.81,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fa2401172-ballon-de-football-wdk-partner-t5-fra-bleu-rouge-gris-22x22x22-cm",
@@ -26136,7 +27057,7 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 19.04,
+        price: 17.34,
         shipping: 9.99,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45130832387&a=3013769&m=65912",
@@ -26145,7 +27066,7 @@ const minedBallProductsChunk6: BallProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 18.3,
+        price: 17.14,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fws3004005xb-ballon-de-football-ncaa-vantage-sb-white-gold",
@@ -26188,16 +27109,16 @@ const minedBallProductsChunk6: BallProduct[] = [
     offers: [
       {
         store: "FootStoreES",
-        price: 15.97,
+        price: 14.36,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45130823919&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45130823920&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2FW%2FT%2FWTE8527XB.jpg&feedId=89032&k=03c6264a8936cfcda8045166dd678655121a7a46",
         sizes: ["Talla 4", "Talla 5"],
       },
       {
         store: "FootStoreFR",
-        price: 15.26,
+        price: 14.18,
         shipping: 7.99,
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fwte8527xb-ballon-de-football-wilson-pentagon-blanc-noir",
