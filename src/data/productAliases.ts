@@ -10,6 +10,14 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-22: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "colocolo-third-2026": "colocolo-retro-2015-third",
+  "argelia-retro-202425-away": "argelia-away-2026",
+  "penarol-retro-202223-away": "penarol-away-2026",
+  "mancity-retro-201920-home": "mancity-retro-202021-home",
+  "realvalladolid-retro-200305-home": "realvalladolid-retro-201920-home",
+  "acmilan-retro-201718-away": "acmilan-retro-201819-away",
   // 2026-11-21: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "argentina-retro-2015-home": "argentina-retro-2014-home",
@@ -1186,7 +1194,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "mexico-retro-202223-away": "mexico-retro-2022-away",
   "koln-retro-1978-home": "koln-retro-2005-home",
   "ucrania-retro-200607-home": "ucrania-retro-200506-home",
-  "penarol-retro-2021-away": "penarol-retro-2024-away",
+  "penarol-retro-2021-away": "penarol-away-2026",
   "como-retro-202324-goalkeeper": "como-goalkeeper-home-202526",
   "lazio-retro-1996-away": "lazio-retro-199899-away",
   "flamengo-retro-2002-away": "flamengo-retro-201415-away",
