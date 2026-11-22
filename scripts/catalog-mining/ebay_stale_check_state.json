@@ -1,11 +1,11 @@
 {
- "last_id": "317245182088",
+ "last_id": "840113270877",
  "cycle": 16,
  "cycle_started": "2026-11-19",
  "last_run": {
-  "date": "2026-11-21",
-  "checked": 410,
-  "dead": 9,
-  "live_ids": 6515
+  "date": "2026-11-22",
+  "checked": 2020,
+  "dead": 68,
+  "live_ids": 6564
  }
 }
