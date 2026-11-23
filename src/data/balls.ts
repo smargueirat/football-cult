@@ -315,7 +315,7 @@ const minedBallProductsChunk1: BallProduct[] = [
     offers: [
       {
         store: "DeporteOutlet",
-        price: 9.99,
+        price: 7.99,
         shipping: 8.0,
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45840879386&a=3013769&m=19598",
@@ -461,7 +461,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 17.41,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249384776&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249384754&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135257-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMxOHxpbWFnZS9qcGVnfGFHVXhMMmc1TlM4eE16Z3pOalV3TmpFek5qWXdOaTl0WldScFlYTmZNVEF3TVRFek5USTFOMTh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58ZWRjMzczODc4OTA3MWEwZmNlMDU3NTg1MmJmYjY2NzAyMjM0Y2Q2MGZlZDdhNzU3MzQzNDI0ZWNhNGI1MTE4YQ&feedId=58083&k=05350bfc78479263a64d3ac1b4044d6669e6547b",
         sizes: ["4", "5"],
       },
@@ -988,6 +988,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         sizes: ["4", "5"],
       },
       {
+        store: "ForumSport",
+        price: 25.27,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43885179472&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001075278-00-P-X-20260115153122.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI0M3xpbWFnZS9qcGVnfGFHVTBMMmhqWWk4eE16UTVPVFF4Tmpnek9ERTNOQzl0WldScFlYTmZNVEF3TVRBM05USTNPRjh3TUY5UVgxZ3RNakF5TmpBeE1UVXhOVE14TWpJdWFuQm58MjQ2ZDc1OTg1MTU1ZGRjMTg4YTg5ZDBkODdhZTY1MmE4ZmMzMTY5ZjIyN2EyMWY5Y2ZjNGU1MmM4Y2NmYzJjNQ&feedId=58083&k=6d2e09fa398c0e89aff5efb283c867d5cd60b82a",
+        sizes: ["5"],
+      },
+      {
         store: "AdidasMX",
         price: 1099.0,
         shipping: 0,
@@ -1188,9 +1197,9 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 23.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249387501&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249387510&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001143808-00-P-X-20260916091956.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODQ1MnxpbWFnZS9qcGVnfGFHTTVMMmcwWWk4eE5EQXlNRGs1TnpFeU1EQXpNQzl0WldScFlYTmZNVEF3TVRFME16Z3dPRjh3TUY5UVgxZ3RNakF5TmpBNU1UWXdPVEU1TlRZdWFuQm58YjlkZTdlZGI1NTNlMWNjMzEyMTI0NjUzZmIxN2M4ZWE0Yzk2MGQwODAyZGEwNmM1ZDE5NDA5ZGQ3YzQzZDFjNQ&feedId=58083&k=fa126d4fde79e6ebd22d2afddca1b25930c8476d",
-        sizes: ["3", "5"],
+        sizes: ["3", "4", "5"],
       },
       {
         store: "AdidasCL",
@@ -1610,6 +1619,15 @@ const minedBallProductsChunk1: BallProduct[] = [
         ],
       },
       {
+        store: "AdidasCL",
+        price: 16990.0,
+        shipping: 0,
+        currency: "CLP",
+        url: "https://www.awin1.com/pclick.php?p=42661646003&a=3013769&m=79922",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F37c0e856f35a442b82dd00d60bc90276_9366%2FPelota_Trionda_Club_Copa_Mundial_de_la_FIFA_26tm_Blanco_JD8028_01_00_standard.jpg&feedId=95016&k=ae7177a4eccf0b8774e882a7d2985b99ebebb710",
+        sizes: ["3", "4", "5"],
+      },
+      {
         store: "AdidasMX",
         price: 649.0,
         shipping: 0,
@@ -1799,15 +1817,6 @@ const minedBallProductsChunk1: BallProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcb102e4ad73f47dd848b20f34caa5652_9366%2FBalon_Copa_Mundial_de_la_FIFA_26tm_Trionda_Club_Azul_JD8027_01_00_standard.jpg&feedId=92152&k=3517bb820cbf7cb976c6ad1ec61b224846769a3c",
         sizes: ["4", "5"],
       },
-      {
-        store: "AdidasCL",
-        price: 11990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46893053723&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcb102e4ad73f47dd848b20f34caa5652_9366%2FPelota_Trionda_Club_Copa_Mundial_de_la_FIFA_26tm_Azul_JD8027_01_00_standard.jpg&feedId=95016&k=6132d7d86f32e7b3f7d272032877c7614bacae0c",
-        sizes: ["4", "5"],
-      },
     ],
   },
   {
@@ -1821,9 +1830,9 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 40.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42672216684&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=42672216685&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F003fe4f765104f48944e88b35da0047b_9366%2FBalon_Copa_Mundial_de_la_FIFA_26tm_Trionda_League_Blanco_JD8030_01_00_standard.jpg&feedId=92152&k=a114ab2c01fdde473c1ff5166736391e44524f03",
-        sizes: ["4", "5"],
+        sizes: ["5"],
       },
       {
         store: "FootStoreES",
@@ -1980,9 +1989,9 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 879.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=45700809785&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=45700809786&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F59ed3ff2226a46da8254c310a38c4bd3_9366%2FBalon_de_Liga_Leagues_Cup_26_Blanco_KE5156_01_00_standard.jpg&feedId=95013&k=bffbd75ffd9aff95b37dd8e8da8d30d9f060fb7b",
-        sizes: ["4", "5"],
+        sizes: ["5"],
       },
     ],
   },
@@ -2240,6 +2249,41 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
+    id: "adidas-balon-de-futbol-liga-de-campeones-final-training-2025-26-multicolore",
+    brand: "Adidas",
+    model: "Balón adidas Final De La Uefa Champions League Training - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "AdidasES",
+        price: 30.0,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46535982218&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2abccf9bf30b47fe88d0f72bc9b8b61b_9366%2FBALON_FINAL_DE_LA_UEFA_CHAMPIONS_LEAGUE_TRAINING_Blanco_JX9089_01_00_standard.jpg&feedId=92152&k=b89aa5f953ed5627c070333ce2cf42ef6aacc197",
+        sizes: ["5"],
+      },
+      {
+        store: "FootStoreES",
+        price: 30.0,
+        shipping: 8.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44033378826&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jx9089_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=c74056113c9537fa74775c012526e53f193c9a75",
+        sizes: ["Talla 4", "Talla 5"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 30.0,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9089-ballon-de-football-ligue-des-champions-final-training-2025-26-panton-white",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jx9089_1_hardware_photography_front_center_view_white.webp",
+        sizes: ["4", "5"],
+      },
+    ],
+  },
+  {
     id: "adidas-balon-adidas-home-club-tigres-uanl-26-27-azul",
     brand: "Adidas",
     model: "Balón adidas Home Club Tigres Uanl 26/27 - Azul",
@@ -2382,6 +2426,23 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "MXN",
         url: "https://www.awin1.com/pclick.php?p=46453436100&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe5ba3fa04f6b4995ba1cf9a795cfef8b_9366%2FBalon_Local_Trionda_Club_Mexico_Verde_JY0307_01_00_standard.jpg&feedId=95013&k=d990e2cec9599047cf840310a43899fb665ca6b0",
+        sizes: ["5"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balon-adidas-local-trionda-home-club-colombia-amarillo",
+    brand: "Adidas",
+    model: "Balón adidas Local Trionda Home Club Colombia - Amarillo",
+    colour: "Amarillo",
+    offers: [
+      {
+        store: "AdidasCO",
+        price: 109950.0,
+        shipping: 0,
+        currency: "COP",
+        url: "https://www.awin1.com/pclick.php?p=46873841899&a=3013769&m=79924",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd673708c1c994f85bdf8d83404a598a4_9366%2FBalon_Local_Trionda_Home_Club_Colombia_Amarillo_KH0296_01_00_standard.jpg&feedId=95017&k=2a3d95b5f158337b88ae41281bd5b078c7e8acd1",
         sizes: ["5"],
       },
     ],
@@ -2942,7 +3003,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 18.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249370835&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249370828&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001053893-00-P-X-20241216112744.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzYzMnxpbWFnZS9qcGVnfGFHRXdMMmczTnk4eE1qVTRPRE16T1RFek5EUTVOQzl0WldScFlYTmZNVEF3TVRBMU16ZzVNMTh3TUY5UVgxZ3RNakF5TkRFeU1UWXhNVEkzTkRRdWFuQm58NzEwMTNkZWQ3YzYyNDc5MzUwODZlMTZlZTIyZWU5ZDBhNDQ4MzY3ZDRiYWMzNjdmMWI4ZjQyZDA1MWJiOTE0ZA&feedId=58083&k=8b11e22a280c072d5bbce7bfbe8ca3e5572b3d52",
         sizes: ["4", "5"],
       },
@@ -3446,9 +3507,26 @@ const minedBallProductsChunk1: BallProduct[] = [
     ],
   },
   {
-    id: "adidas-balones-de-futbol-adidas-tiro-competition-blanc",
+    id: "adidas-balon-adidas-tiro-competition-blanco",
     brand: "Adidas",
     model: "Balón adidas Tiro Competition - Blanco",
+    colour: "Blanco",
+    offers: [
+      {
+        store: "AdidasES",
+        price: 50.0,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=38982617319&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7e96ba3852c0455dbac6ab8400fd44cd_9366%2FBalon_Tiro_Competition_Blanco_FS0392_01_standard.jpg&feedId=92152&k=47b42df58a2d6d9be1dc3d71072de1a936858bdc",
+        sizes: ["4"],
+      },
+    ],
+  },
+  {
+    id: "adidas-balones-de-futbol-adidas-tiro-competition-blanc",
+    brand: "Adidas",
+    model: "Balón adidas Tiro Competition - Blanco (JW1534)",
     colour: "Blanco",
     offers: [
       {
@@ -3598,7 +3676,7 @@ const minedBallProductsChunk1: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44905097001&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8ad9a5f67b6f49d781aed8757001a848_9366%2FBALON_TIRO_LEAGUE_Blanco_KA5262_01_00_standard.jpg&feedId=92152&k=02b0b321bf5d10a67249aeb4ede7467130cb32f0",
-        sizes: ["4", "5"],
+        sizes: ["4"],
       },
       {
         store: "FootStoreES",
@@ -3640,7 +3718,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   {
     id: "adidas-balon-adidas-tiro-league-thermally-bonded-blanco",
     brand: "Adidas",
-    model: "Balón adidas Tiro League Thermally Bonded - Blanco",
+    model: "Balón adidas Tiro League Thermally Bonded - Blanco (HT2429)",
     colour: "Blanco",
     offers: [
       {
@@ -3657,7 +3735,7 @@ const minedBallProductsChunk1: BallProduct[] = [
   {
     id: "adidas-balon-tiro-league-thermally-bonded-blanco",
     brand: "Adidas",
-    model: "Balón adidas Tiro League Thermally Bonded - Blanco (HZ1294)",
+    model: "Balón adidas Tiro League Thermally Bonded - Blanco",
     colour: "Blanco",
     offers: [
       {
@@ -4415,9 +4493,9 @@ const minedBallProductsChunk1: BallProduct[] = [
         price: 40.79,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249387492&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249387640&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001143807-00-P-X-20260916091956.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODExNXxpbWFnZS9qcGVnfGFHSTBMMmhpTVM4eE5EQXlNRGs1TmpJMk9EQTJNaTl0WldScFlYTmZNVEF3TVRFME16Z3dOMTh3TUY5UVgxZ3RNakF5TmpBNU1UWXdPVEU1TlRZdWFuQm58MDUyZmJlYjQ0MmUwMjY4ZWE0MmNiYjE3OWZiNjdlNWJjNGQ2ZTc5YTkwMzQzYWJmODAyYTZjZmRiNWQ4MGE0Mw&feedId=58083&k=3bafe1f84063023b441c18745cb4057b6cbe5247",
-        sizes: ["4", "5"],
+        sizes: ["4"],
       },
     ],
   },
@@ -4841,32 +4919,6 @@ const minedBallProductsChunk1: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9104-ballon-de-football-ligue-des-champions-final-foil-training-multco-dpurpl",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-jx9104-multco-dpurpl-1.webp",
         sizes: ["3", "4", "5"],
-      },
-    ],
-  },
-  {
-    id: "adidas-balon-de-futbol-liga-de-campeones-final-training-2025-26-multicolore",
-    brand: "Adidas",
-    model: "Balón de fútbol Liga de Campeones Final Training 2025/26 - Multicolore",
-    colour: "Multicolore",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 30.0,
-        shipping: 8.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44033378826&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_jx9089_1_hardware_photography_front_center_view_white.jpg&feedId=89032&k=c74056113c9537fa74775c012526e53f193c9a75",
-        sizes: ["Talla 4", "Talla 5"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 30.0,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjx9089-ballon-de-football-ligue-des-champions-final-training-2025-26-panton-white",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jx9089_1_hardware_photography_front_center_view_white.webp",
-        sizes: ["4", "5"],
       },
     ],
   },
@@ -5711,6 +5763,9 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-coupe-du-monde-2026-trionda-training-foil-multicolor",
     brand: "Adidas",
@@ -5772,9 +5827,6 @@ const minedBallProductsChunk1: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk2: BallProduct[] = [
   {
     id: "adidas-balones-de-futbol-adidas-ekstraklasa-blanc",
     brand: "Adidas",
@@ -7525,15 +7577,6 @@ const minedBallProductsChunk2: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_jd0190_white-shopnk-syello_2.webp",
         sizes: ["5"],
       },
-      {
-        store: "AdidasMX",
-        price: 2359.0,
-        shipping: 0,
-        currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=42056889308&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Faff881b8848149c9be2b0b245f02516d_faec%2FBalon_Pro_de_la_fase_de_liga_de_la_UWCL_25-26_Blanco_JD0190_db01_00_standard.tiff.jpg&feedId=95013&k=483455fbfec7bc9b36b1a3b5c914dcade93b9722",
-        sizes: ["5"],
-      },
     ],
   },
   {
@@ -7585,6 +7628,15 @@ const minedBallProductsChunk2: BallProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fke7536-ballon-de-football-adidas-uefa-nations-league-2026-27-white-legink-sollem-silvmt",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-ke7536-white-legink-sollem-silvmt-6a444d82aab3b-1.webp",
         sizes: ["4", "5"],
+      },
+      {
+        store: "ForumSport",
+        price: 29.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249385726&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001139364-00-P-X-20260701100444.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY0MXxpbWFnZS9qcGVnfGFEQXhMMmc0TXk4eE16ZzJORGcwTURJd01ESXlNaTl0WldScFlYTmZNVEF3TVRFek9UTTJORjh3TUY5UVgxZ3RNakF5TmpBM01ERXhNREEwTkRRdWFuQm58OTdlMGYwYTRmYTM3NDg2M2E4ZTg3YmVmZTYzODEyZjcwMDViYjNmMjc4MTk0NGIzMjg3NWNkN2JhZWUyYTRlZQ&feedId=58083&k=3605c70aee98e53ab9b0e1eeb619d8edc4c7c2a5",
+        sizes: ["5"],
       },
     ],
   },
@@ -8315,15 +8367,6 @@ const minedBallProductsChunk2: BallProduct[] = [
     model: "Minibalón adidas Copa Mundial de la FIFA 26™ Trionda Finals - Blanco",
     colour: "Blanco",
     offers: [
-      {
-        store: "AdidasES",
-        price: 15.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45232943738&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8702bfb86f8c4c5b82ceb054a2b70b87_9366%2FMinibalon_Copa_Mundial_de_la_FIFA_26tm_Trionda_Finals_Blanco_KE4328_01_00_standard.jpg&feedId=92152&k=3271d78fac745605f2e4a896bc155ef69e349c21",
-        sizes: ["1"],
-      },
       {
         store: "AdidasCO",
         price: 55965.0,
@@ -10719,6 +10762,9 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "erima-balones-de-futbol-erima-hybrid-training-2-0-bleu",
     brand: "erima",
@@ -10789,9 +10835,6 @@ const minedBallProductsChunk2: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk3: BallProduct[] = [
   {
     id: "erima-balones-de-futbol-erima-hybrid-training-blanco",
     brand: "erima",
@@ -15455,6 +15498,9 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "kappa-balon-de-futbol-fc-metz-2026-27-rouge",
     brand: "Kappa",
@@ -15507,9 +15553,6 @@ const minedBallProductsChunk3: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk4: BallProduct[] = [
   {
     id: "kappa-balones-de-futbol-kappa-blasty-amarillo",
     brand: "Kappa",
@@ -15690,7 +15733,7 @@ const minedBallProductsChunk4: BallProduct[] = [
         price: 25.59,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42273448916&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=42273448918&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069767-00-P-X-20250829115507.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI0MXxpbWFnZS9qcGVnfGFHTXhMMmd5TkM4eE16RTBOekF5TXpNM05qUXhOQzl0WldScFlYTmZNVEF3TVRBMk9UYzJOMTh3TUY5UVgxZ3RNakF5TlRBNE1qa3hNVFUxTURjdWFuQm58NWFlZDBmOGVlYzZmODkxNjA2YTdhZTczODFlN2M0M2IzYjQ4YjQ0YWZmYTRiNWFjYzI1YTZmMzdlMzRmYTFhMA&feedId=58083&k=55a8772ab5670cf21dc4cfe85bb36b435145da77",
         sizes: [],
       },
@@ -19258,15 +19301,6 @@ const minedBallProductsChunk4: BallProduct[] = [
         imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-iq0618-100-blanc-bright-crimson-anthracite-noir-6aa0153c08f52-1.webp",
         sizes: ["5"],
       },
-      {
-        store: "ForumSport",
-        price: 96.59,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45656103092&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126045-00-P-X-20260817150620.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODkwOXxpbWFnZS9qcGVnfGFETTNMMmcxTkM4eE16azFPVEUwTWpJME5ETTRNaTl0WldScFlYTmZNVEF3TVRFeU5qQTBOVjh3TUY5UVgxZ3RNakF5TmpBNE1UY3hOVEEyTWpBdWFuQm58ZDc2YjUxYjYxM2M0OGM0OTliZTEwYjE5MWMyMTA0YThjZGU3OWVlZGQ0OTAzMmU3MDllYTdjNTZmY2FkMmJmNA&feedId=58083&k=ac802b1487e2256304dd694ed32fa4c7e064a3c8",
-        sizes: ["5"],
-      },
     ],
   },
   {
@@ -19934,6 +19968,9 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "nike-balones-de-futbol-nike-skills-fa24-blanco",
     brand: "Nike",
@@ -19986,9 +20023,6 @@ const minedBallProductsChunk4: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk5: BallProduct[] = [
   {
     id: "nike-balones-de-futbol-nike-skills-t90-fa25-blanco",
     brand: "Nike",
@@ -20089,7 +20123,7 @@ const minedBallProductsChunk5: BallProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46869212175&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001104338-00-P-X-20260921112101.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzE5OHxpbWFnZS9qcGVnfGFEWTVMMmhtWkM4eE5EQXpNRFEyTXpFM01qWXpPQzl0WldScFlYTmZNVEF3TVRFd05ETXpPRjh3TUY5UVgxZ3RNakF5TmpBNU1qRXhNVEl4TURFdWFuQm58NTIxZDU0MWRjNDY1MjYyMTFkZTdmMDJjZjEwM2Q0MTNjYjc4ZDM1YWIzZDQ5ODk2ZDE0YzMzMzQ4NGM1ODZiYg&feedId=58083&k=8546d515450d764f306597852e9458c7d353b9b9",
-        sizes: ["4", "5"],
+        sizes: ["4"],
       },
     ],
   },
@@ -24132,6 +24166,9 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
+];
+
+const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "softee-balones-de-futbol-softee-flash-elite-amarillo",
     brand: "Softee",
@@ -24191,9 +24228,6 @@ const minedBallProductsChunk5: BallProduct[] = [
       },
     ],
   },
-];
-
-const minedBallProductsChunk6: BallProduct[] = [
   {
     id: "softee-balones-de-futbol-softee-galaxy-r11-azul",
     brand: "Softee",
