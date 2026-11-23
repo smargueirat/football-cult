@@ -10,6 +10,14 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-23: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "ajax-retro-2008-away": "ajax-retro-200809-away",
+  "chivas-retro-200405-home": "chivas-retro-2005-home",
+  "egipto-retro-2012-home": "egipto-retro-201213-home",
+  "irlanda-retro-2011-home": "irlanda-retro-201112-home",
+  "ajax-retro-2009-away": "ajax-retro-200809-away",
+  "clubamerica-retro-1995-home": "clubamerica-retro-199495-home",
   // 2026-11-22: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "colocolo-third-2026": "colocolo-retro-2015-third",
@@ -1134,13 +1142,13 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "bayern-retro-2000-away": "bayern-retro-1999-away",
   "independiente-away-2025": "independiente-retro-202425-away",
   "croacia-retro-2016-home": "croacia-retro-201415-home",
-  "clubamerica-retro-1996-home": "clubamerica-retro-1995-home",
+  "clubamerica-retro-1996-home": "clubamerica-retro-199495-home",
   "brescia-retro-199495-home": "brescia-retro-2001-home",
   "brentford-retro-202223-home": "brentford-home-202526",
   "brentford-retro-202425-home": "brentford-home-202526",
   "marruecos-retro-199495-home": "marruecos-retro-1998-home",
   "austria-retro-2008-home": "austria-retro-200607-home",
-  "clubamerica-retro-1994-home": "clubamerica-retro-1995-home",
+  "clubamerica-retro-1994-home": "clubamerica-retro-199495-home",
   "panama-retro-200506-home": "panama-retro-200405-home",
   "mexico-retro-1997-away": "mexico-retro-1998-away",
   "chivas-retro-199091-home": "chivas-retro-199192-home",
@@ -1290,7 +1298,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "marseille-retro-201516-away": "marseille-retro-201617-away",
   "cruzeiro-retro-2023-home": "cruzeiro-retro-202324-home",
   "uruguay-retro-2010-away": "uruguay-retro-202223-away",
-  "clubamerica-retro-1988-home": "clubamerica-retro-1995-home",
+  "clubamerica-retro-1988-home": "clubamerica-retro-199495-home",
   "riverplate-retro-2021-home": "riverplate-retro-2022-home",
   "japon-retro-1994-home": "japon-retro-1993-home",
   "napoli-retro-199798-away": "napoli-retro-199697-away",
