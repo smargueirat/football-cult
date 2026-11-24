@@ -5,6 +5,11 @@
   "qid": "Q291590"
  },
  "AIL Arena (Lugano Arena)": null,
+ "Abe Lenstra Stadion": {
+  "city": "Heerenveen",
+  "desc": "football stadium in Heerenveen, the Netherlands",
+  "qid": "Q318125"
+ },
  "Academy Stadium": {
   "city": "Manchester",
   "desc": "football stadium in Manchester, UK",
@@ -338,6 +343,11 @@
   "desc": "stadium in Manchester, England",
   "qid": "Q48159"
  },
+ "Euroborg": {
+  "city": "Groningen",
+  "desc": "football stadium in Groningen, Netherlands",
+  "qid": "Q1374804"
+ },
  "Europa Sports Park": null,
  "Europa-Park Stadion": null,
  "Ewood Park": {
@@ -359,6 +369,11 @@
   "city": "North Lanarkshire",
   "desc": "football stadium in North Lanarkshire, Scotland, UK",
   "qid": "Q252696"
+ },
+ "Fortuna Sittard Stadion": {
+  "city": "Sittard",
+  "desc": "football stadium in Sittard, Netherlands",
+  "qid": "Q1569222"
  },
  "Fratton Park": {
   "city": "Portsmouth",
@@ -480,6 +495,11 @@
   "qid": "Q20421103"
  },
  "Kingdom Arena": null,
+ "Koning Willem II Stadion": {
+  "city": "Tilburg",
+  "desc": "football stadium in Tilburg, the Netherlands",
+  "qid": "Q1408176"
+ },
  "Kosicka futbalova arena": {
   "city": "Košice",
   "desc": "football stadium in Košice",
@@ -885,6 +905,11 @@
  },
  "Stadion An der Alten Foersterei": null,
  "Stadion Celje": null,
+ "Stadion Galgenwaard": {
+  "city": "Utrecht",
+  "desc": "football stadium in Utrecht",
+  "qid": "Q1675996"
+ },
  "Stadion Maksimir": {
   "city": "Maksimir",
   "desc": "stadium in Maksimir, Croatia",
@@ -942,6 +967,7 @@
   "desc": "stadium in Lucerne",
   "qid": "Q692534"
  },
+ "TBA": null,
  "Ta Qali National Stadium": null,
  "Tammelan Stadion": {
   "city": "Tampere",

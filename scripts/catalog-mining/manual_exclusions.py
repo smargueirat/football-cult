@@ -12,6 +12,118 @@ change between mining runs.
 """
 
 MANUAL_EXCLUDE_LINK_SUBSTRINGS = [
+    "/itm/287582404657",  # 2026-11-24 removed: ebay_gb_retro: player print
+    "/itm/168619161627",  # 2026-11-24 removed: eBay US retro review: other team/print/sleeveless/size range/render/ad
+    "/itm/126714555022",  # 2026-11-24 removed: eBay US retro review: other team/print/sleeveless/size range/render/ad
+    "/itm/388913697059",  # 2026-11-24 removed: eBay US retro review: other team/print/sleeveless/size range/render/ad
+    "/itm/327332512802",  # 2026-11-24 removed: eBay US retro review: other team/print/sleeveless/size range/render/ad
+    "/itm/318896216829",  # 2026-11-24 removed: eBay US retro review: other team/print/sleeveless/size range/render/ad
+    "/itm/307285303060",  # 2026-11-24 removed: eBay US retro review: other team/print/sleeveless/size range/render/ad
+    "/itm/820368357379",  # 2026-11-24 removed: eBay US retro review: other team/print/sleeveless/size range/render/ad
+    "/itm/307240883195",  # 2026-11-24 removed: eBay US retro review: other team/print/sleeveless/size range/render/ad
+    "/itm/294167039886",  # 2026-11-24 removed: eBay US retro review: other team/print/sleeveless/size range/render/ad
+    "/itm/227624324965",  # 2026-11-24 removed: eBay US kids: used/print/old maker/size range/implausible price
+    "/itm/366592764829",  # 2026-11-24 removed: eBay US kids: used/print/old maker/size range/implausible price
+    "/itm/168356261925",  # 2026-11-24 removed: eBay US kids: used/print/old maker/size range/implausible price
+    "/itm/327358070065",  # 2026-11-24 removed: eBay US kids: used/print/old maker/size range/implausible price
+    "/itm/127925627465",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/117117031483",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/206316052841",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/206316051581",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/377527350327",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/298287850180",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/389934444203",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/257626719845",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/227494940187",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/357110714381",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/227494940114",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/205999437526",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/137584571773",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/377474854072",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/840098627999",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/287256293556",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/800017182377",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/267730874766",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/800558949247",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/168792325318",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/336642384064",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/298287850184",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/298287850193",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/287423942568",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/287423942565",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/287438133298",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/257626761786",  # 2026-11-24 removed: eBay US current: template/outlier/print/unverifiable type or club
+    "/itm/188295496062",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/326668169000",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/188030616458",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/188343410970",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/188343517712",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/178100488468",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/178100549203",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/128105028428",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/287596608533",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/188441684769",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/178176247159",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/188441701792",  # 2026-11-24 removed: eBay GB current: size-range/template/signed/LS/render
+    "/itm/405729312735",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/920024636010",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/336602637777",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/336136040846",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/287708719956",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/366775739915",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/366782949911",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/225525934114",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/407204581012",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/168012870295",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/168386896873",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/206544134238",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/389203922836",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/236896107174",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/257863519216",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/168788831912",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/206697147287",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/940112679350",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/327454785073",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/860166975854",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/176397810488",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/860027748332",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/176364982879",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/267225191447",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/155832741950",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/860166143790",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/327460947221",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/900032793965",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/285524829297",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/187000210041",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/820040584939",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/405279508117",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/800904744983",  # 2026-11-24 removed: eBay IT/ES retro review: template/print/LS/render/signed
+    "/itm/287705872846",  # 2026-11-24 removed: eBay ES kids: print/set/old maker
+    "/itm/287705882536",  # 2026-11-24 removed: eBay ES kids: print/set/old maker
+    "/itm/880009205727",  # 2026-11-24 removed: eBay ES kids: print/set/old maker
+    "/itm/920177760729",  # 2026-11-24 removed: eBay ES kids: print/set/old maker
+    "/itm/197957052060",  # 2026-11-24 removed: eBay ES kids: print/set/old maker
+    "/itm/406637957266",  # 2026-11-24 removed: eBay ES kids: print/set/old maker
+    "/itm/407180636789",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/336903147294",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/800797029957",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/800764926020",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/287660242625",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/407091697946",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/336721692766",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/127829724320",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/800813054177",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/307246735430",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/168878511623",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/257865353865",  # 2026-11-24 removed: eBay ES current: template/personalised/player print/outlier
+    "/itm/206641241634",  # 2026-11-24 removed: eBay IT current: template/outlier/personalised/ambiguous
+    "/itm/800785147911",  # 2026-11-24 removed: eBay IT current: template/outlier/personalised/ambiguous
+    "/itm/227250776760",  # 2026-11-24 removed: eBay IT current: template/outlier/personalised/ambiguous
+    "/itm/147507805334",  # 2026-11-24 removed: eBay IT current: template/outlier/personalised/ambiguous
+    "/itm/366783227347",  # 2026-11-24 removed: eBay IT current: template/outlier/personalised/ambiguous
+    "/itm/800904744987",  # 2026-11-24 removed: eBay IT current: template/outlier/personalised/ambiguous
+    "SID-02BC-028",  # 2026-11-23 Santos shirt with Everton name print, filed under everton
+    "england-contact-training-jersey-ls-o2",  # 2026-11-23 England RUGBY (O2) top via Umbro UK
     "/itm/198559078128",  # 2026-11-19 removed: ebay_gb_retro review: player print / player-issue / used
     "/itm/397758861897",  # 2026-11-19 removed: ebay_gb_retro review: player print / player-issue / used
     "/itm/287392185143",  # 2026-11-19 removed: ebay_gb_retro review: player print / player-issue / used
