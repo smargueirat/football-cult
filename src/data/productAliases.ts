@@ -10,6 +10,14 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-24: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "argelia-retro-2019-home": "argelia-retro-201920-home",
+  "barcelona-retro-2023-third": "barcelona-retro-202223-third",
+  "chivas-retro-2022-home": "chivas-retro-202122-home",
+  "clubamerica-retro-2020-third": "clubamerica-retro-202021-third",
+  "cruzazul-retro-2023-away": "cruzazul-retro-202223-away",
+  "tigresuanl-retro-2020-home": "tigresuanl-retro-202021-home",
   // 2026-11-23: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "millwall-retro-202223-away": "millwall-retro-201920-away",
@@ -18,7 +26,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "westbrom-retro-202425-home": "westbrom-home-202526",
   "corinthians-retro-201112-away": "corinthians-retro-2012-away",
   "girona-retro-202425-away": "girona-away-202526",
-  "barcelona-retro-202324-third": "barcelona-retro-2023-third",
+  "barcelona-retro-202324-third": "barcelona-retro-202223-third",
   "intermilan-retro-201213-away": "intermilan-retro-201112-away",
   "paisesbajos-retro-201314-away": "paisesbajos-retro-2013-away",
   "fiorentina-retro-202425-home": "fiorentina-home-202526",
