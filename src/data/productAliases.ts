@@ -10,6 +10,20 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-24: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "sevilla-away-202526": "sevilla-away-202627",
+  "athleticbilbao-home-kids": "athleticbilbao-home-202627-kids",
+  "benfica-home-kids": "benfica-home-202627-kids",
+  "werderbremen-retro-202425-away": "werderbremen-away-202526",
+  "unionberlin-retro-202425-home": "unionberlin-retro-202324-home",
+  "columbuscrew-retro-202223-home": "columbuscrew-retro-202425-home",
+  "doradossinaloa-away-2026": "doradossinaloa-retro-202324-away",
+  "nacional-retro-2024-away": "nacional-retro-2022-away",
+  "liverpool-retro-201011-home": "liverpool-retro-201112-home",
+  "westham-retro-201920-third": "westham-retro-202324-third",
+  "jefunited-home-202627": "jefunited-retro-1993-home",
+  "shimizuspulse-home-202627": "shimizuspulse-retro-2024-home",
   // 2026-11-24: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
   // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
   "argelia-retro-2019-home": "argelia-retro-201920-home",
@@ -1334,7 +1348,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "werderbremen-retro-200910-home": "werderbremen-retro-200708-home",
   "asse-home-202526": "asse-home-202627",
   "fluminense-retro-202425-home": "fluminense-retro-2024-home",
-  "atleticomineiro-retro-202223-away": "atleticomineiro-away-202627",
+  "atleticomineiro-retro-202223-away": "atleticomineiro-retro-2024-away",
   "werderbremen-retro-198889-away": "werderbremen-retro-2004-away",
   "irlanda-retro-1991-home": "irlanda-retro-199294-home",
   "venezuela-retro-1995-home": "venezuela-retro-201113-home",
@@ -1417,7 +1431,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "juventus-retro-2010-away": "juventus-retro-201011-away",
   "juventus-retro-2012-home": "juventus-retro-201213-home",
   "lazio-retro-2003-home": "lazio-retro-200304-home",
-  "liverpool-retro-2010-home": "liverpool-retro-201011-home",
+  "liverpool-retro-2010-home": "liverpool-retro-201112-home",
   "mancity-retro-2012-away": "mancity-retro-201213-away",
   "mancity-retro-2015-home": "mancity-retro-201516-home",
   "marseille-retro-2010-away": "marseille-retro-201011-away",
