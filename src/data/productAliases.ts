@@ -10,6 +10,10 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-25: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
+  // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
+  "ghana-retro-2010-home": "ghana-retro-201011-home",
+  "genoa-retro-2019-home": "genoa-retro-201920-home",
   // 2026-11-24: agotadas 14+ días y sin clics, retiradas por
   // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
   "sevilla-away-202526": "sevilla-away-202627",
@@ -432,7 +436,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "jamaica-retro-202122-away": "jamaica-retro-202324-away",
   "portugal-retro-2024-home": "portugal-retro-202425-home",
   "riverplate-retro-200506-away": "riverplate-retro-2004-away",
-  "ghana-retro-200809-home": "ghana-retro-2010-home",
+  "ghana-retro-200809-home": "ghana-retro-201011-home",
   "psg-retro-2017-home": "psg-retro-201718-home",
   "juventus-retro-2016-third": "juventus-retro-201516-third",
   "brasil-retro-2011-home": "brasil-retro-201213-home",
@@ -747,7 +751,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "panama-retro-201920-home": "panama-retro-2021-home",
   "chivas-retro-201920-third": "chivas-retro-201819-third",
   "leon-retro-201516-away": "leon-retro-201718-away",
-  "genoa-retro-199900-home": "genoa-retro-2019-home",
+  "genoa-retro-199900-home": "genoa-retro-201920-home",
   "honduras-retro-202324-away": "honduras-retro-202425-away",
   "venezia-retro-199293-home": "venezia-retro-199900-home",
   "ecuador-retro-201415-home": "ecuador-retro-200910-home",
