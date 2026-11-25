@@ -5209,3 +5209,11 @@ eBay rotation IT, ES, US, then GB (day-of-year 328 mod 3 = 1), all four 20 teams
 - eBay kids: US 3 new (`qatar-home-kids`, `nuevazelanda-home-kids`, `panama-away-kids`) + 3 offers, ES 2, IT 1.
 - eBay retro: 48 new fichas IT/ES + 16 US after a 3-sheet photo review (dropped: back prints, long sleeves, signed, a 1998 Iran ad collage, a sleeveless NZ shirt, Cruzeiro/Strasbourg/England mis-filed); 133 offers merged into existing ids. `ebay_gb_retro.py`: 61 "inserted", 54 were item ids already in HEAD (removed), 6 kept (Jamaica 1998 "Earle #16" print dropped).
 - Tickets 23 new / 5 dropped of 2164. GTIN 23039 of 36802. Colours 31 new, 0 errors. Price drops 989; Telegram posted 10.
+
+## Daily pass (2026-11-25)
+
+eBay rotation ES, US, IT, then GB (day-of-year 329 mod 3 = 2), all four 20 teams, no 429s (ES 340/412, IT 359/412, US 380/412 cycle 6, GB 40/50 cycle 13), run as one chained background script with a status file. Umbro MID 41001 not on the Rakuten FTP; the 5 BR feeds `gzip -t` OK. Pro:Direct skipped (Nov 15 files). Soicos skipped (no claude-in-chrome). Boots / gear not re-run (no FAIL).
+
+- CSV feeds (all stores via the `mine_women.py` column table, plus Rakuten BR, Futbol Factory, Shop Real Betis): 3 new fichas verified by photo (`psg-third-202627` Jordan black, `flamengo-third-202627` red Betano, `estunis-home-202627` Kappa) + 8 offers. Dropped: FJH-only 26/27 fichas, Colo-Colo third (older one), Partizan 3XL-only, Korea prematch L-only, ForumSport Germany "2026 tercera" (lands on 25/26), ForumSport Barca home 46.61 (mixed-variant price). Swaps reverted with `/tmp/guard.py` logic (keep HEAD's block, append only offers of stores the block lacked).
+- eBay current: 1 new (`besiktas-home-202526`), GB 2 new (`burnley-home-202526`, `brighton-home-202526`). Dropped: Fluminense $31.98 templates, Monterrey/Racing outliers, ASSE "2025-26" that is a 2023/24 Kelyps shirt, Brighton away "26/27" that is a 24/25 shirt, Leeds 19 GBP, Taremi/Ellborg prints.
+- eBay retro: 21 new fichas after contact-sheet review (dropped mock collages, McBride name sets, Eto'o sleeveless, a Fenerbahce title on an Ajax-crest photo). `ebay_gb_retro.py`: 66 "inserted", 59 were item ids already on file, 2 kept.
