@@ -5055,18 +5055,6 @@ const productsData = [
     ],
   },
 {
-    id: "chelsea-retro-2008-away",
-    teamKey: "chelsea",
-    season: "2008",
-    typeKey: "retro",
-    colorHex: "#034694",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 299.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/206479223000?_skw=Chelsea+away+soccer+jersey&hash=item30131ee8d8%3Ag%3AdqgAAeSwls1qeU%7EN&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "2008-09 Chelsea Didier Drogba Away Adidas Long Sleeve Football Jersey BNWT XL", inStock: false, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/dqgAAeSwls1qeU~N/s-l1600.jpg" },
-    ],
-  },
-{
     id: "chelsea-retro-201011-away",
     teamKey: "chelsea",
     season: "2010/11",
@@ -28093,22 +28081,6 @@ const productsData = [
     ],
   },
 {
-    id: "manutd-retro-202324-home",
-    teamKey: "manutd",
-    season: "2023/24",
-    typeKey: "retro",
-    colorHex: "#DA020E",
-    colorHexSecondary: "#F5D142",
-    jerseyPattern: "solid",
-    ageGroup: "women",
-    brand: "adidas",
-    offers: [
-      { store: "eBay", price: 59.99, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/127905225849?_skw=Manchester+United+home+soccer+jersey&hash=item1dc7bedc79%3Ag%3AoQYAAeSwT55qIufl&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbwW8qe1bkDO6R%2BwxUumyHqHQLDagqHG64782Tv77pgK10tTMOOwLSWQKG8dVIJKyhCGlc%2BfK9tBbq4A%2BeSs6DE2u5pcO2MaDPhMwcZiM%2BS5F3fC8IEPXWb24cPN0WVxbtlykYGuoWQq8QSsf6DMuHvi7kjaLRDOTFlXmtZgAyQQG8vHcVh6YmRbHpzeus3EgQT2OEBsFIhYZ7inYfOraZ%2FdWvl19019ISSU7j2H88OnHiktCyigJXtMyfk0peeHcd04Iwpe569j%2FIFO%2FIABrn2zAK4zkEP116tiRIJ08PBsGZGqAPPYLBaStCt8yulUJA%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Manchester United 2023/24 Home Jersey NWT TeamViewer IP1726 Authentic", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/oQYAAeSwT55qIufl/s-l1600.jpg" },
-      { store: "eBay IT", price: 53.59, shipping: 26.73, currency: "EUR", url: "https://www.ebay.it/itm/267409033067?_skw=Manchester+United+home+soccer+jersey&hash=item3e42d2076b%3Ag%3AnTsAAeSwRJBozXtU&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbH8bLTKx0G2PIBp%2BhzgmMWtMECyQU%2B61G5VR4uGbIgLEVxQ8v23Xi6m%2FKYDNmOLpRhaS7vbMddYJ3QCN2PduohwwYNTaFFXzig9buQ82QpHvsl%2FZjT5HATVp34F8Jw5U6vV1jL9vIB4%2Brr2INo0xsZ5HtppONoONIJvSR9ydkslybIixdqXUkhDUZoIEaSNgppS95MLCcDGPoj2THgLO9axJwEZrpCKNAyTiojy%2B9T%2BZIXJLvNCWzltNCPz7x289O8WBX4AfTT7PFbMsDYvNhoo6ugcsZwNgQM8ufyOwopI7Tx6tmFYsXpwRSxYsMFnjA%3D&mkevt=1&mkcid=1&mkrid=724-53478-19255-0&campid=5339184386&customid=&toolid=10049", title: "Adidas Manchester United Home Strip maglia calcio grande 23/24 nuova senza etichetta", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/nTsAAeSwRJBozXtU/s-l1600.jpg" },
-      { store: "eBay ES", price: 159.61, shipping: 74.91, currency: "EUR", url: "https://www.ebay.es/itm/387946439780?_skw=Manchester+United+home+soccer+jersey&hash=item5a5368e464%3Ag%3AnFsAAOSwMptnr%7EXj&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol auténtica Adidas Manchester United local para hombre 23/24", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/nFsAAOSwMptnr~Xj/s-l1600.jpg" },
-    ],
-  },
-{
     id: "manutd-retro-202324-home-mens",
     teamKey: "manutd",
     season: "2023/24",
@@ -48212,18 +48184,6 @@ const productsData = [
     ],
   },
 {
-    id: "nottinghamforest-retro-201819-home",
-    teamKey: "nottinghamforest",
-    season: "2018/19",
-    typeKey: "retro",
-    colorHex: "#DD0000",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 63.97, shipping: 25.83, currency: "EUR", url: "https://www.ebay.es/itm/198693337343?_skw=Nottingham+Forest+home+soccer+jersey&hash=item2e430bb8ff%3Ag%3APmUAAeSwnBlqxRSi&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "CAMISETA DE FÚTBOL LOCAL NOTTINGHAM FOREST 2018-19 NUEVA CON ETIQUETAS CAMISETA DE FÚTBOL MACRON 4XL ¡NUEVA!", inStock: false, sizes: ["4XL"], imageUrl: "https://i.ebayimg.com/images/g/PmUAAeSwnBlqxRSi/s-l1600.jpg" },
-    ],
-  },
-{
     id: "nottinghamforest-retro-202324-home",
     teamKey: "nottinghamforest",
     season: "2023/24",
@@ -61200,18 +61160,6 @@ const productsData = [
     ],
   },
 {
-    id: "fulham-retro-201516-home",
-    teamKey: "fulham",
-    season: "2015/16",
-    typeKey: "retro",
-    colorHex: "#FFFFFF",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 70.25, shipping: 20.71, currency: "EUR", url: "https://www.ebay.es/itm/278316144427?_skw=Fulham+home+soccer+jersey&hash=item40ccef572b%3Ag%3A3NAAAeSw-qlqj%7EbO&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "Camiseta de fútbol local Fulham 2015/2016 Adidas talla L", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/3NAAAeSw-qlqj~bO/s-l1600.jpg" },
-    ],
-  },
-{
     id: "gales-retro-200203-away",
     teamKey: "gales",
     season: "2002/03",
@@ -69113,18 +69061,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay", price: 159.0, shipping: 20.0, currency: "USD", url: "https://www.ebay.com/itm/366682467287?_skw=Inter+Milan+third+soccer+jersey&hash=item555ffa6bd7%3Ag%3ABh4AAeSwSaNqsR%7Eh&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbMonVirvioNED1rmjr15tA7YgjqOp3fAd7Ruz5wB7Yhr3A0Yu%2FWl0yxA%2FUM9Y2gl37ZJDQL1uKuimoQxCgdUYDx9WaEu%2F0DqtjjBPOizuGRtWC1E0DoMus23xEH5gaQSGbOAKD94eQMKoidgpnwK31z3xAox06mebdQP2nsGVMQBxHAr2Pphz096jVha5E6DrDlj4KobA1Fh3b3EvGizvjcgjhr%2BDPTbv8I%2BpQwLUql4o5URWcEgkrIdy5F35FxZmrUGgiVFXnXZdirV4oTmhqWshq4br7KvwzlmOkeOp1wioFvWRo%2FJ2XU%2B5pOqRMgRk%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "Inter Milan Jersey 2018/19 Third Authentic Size XXL", inStock: true, sizes: ["XXL"], imageUrl: "https://i.ebayimg.com/images/g/Bh4AAeSwSaNqsR~h/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "lazio-retro-199900-away",
-    teamKey: "lazio",
-    season: "1999/00",
-    typeKey: "retro",
-    colorHex: "#87D8F7",
-    colorHexSecondary: "#FFFFFF",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 58.0, shipping: 0.0, currency: "USD", url: "https://www.ebay.com/itm/237092154226?_skw=Lazio+away+soccer+jersey&hash=item3733cb2b72%3Ag%3AxFkAAeSwXNxqtw1f&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "NWT SS Lazio 1999/2000 Centenary Away Replica Soccer Jersey Men's size L", inStock: false, sizes: ["L"], imageUrl: "https://i.ebayimg.com/images/g/xFkAAeSwXNxqtw1f/s-l1600.jpg" },
     ],
   },
 {
@@ -82905,18 +82841,6 @@ const productsData = [
     ],
   },
 {
-    id: "china-retro-201617-away",
-    teamKey: "china",
-    season: "2016/17",
-    typeKey: "retro",
-    colorHex: "#DE2910",
-    colorHexSecondary: "#FFDE00",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 124.69, shipping: 24.73, currency: "EUR", url: "https://www.ebay.es/itm/188352294921?_skw=China+away+soccer+jersey&hash=item2bdaabf009%3Ag%3AuboAAeSwaENp-mTM&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "NUEVA Camiseta de Fútbol Nike China Visitante 2016 2017 Clasificatorios Zheng Zh. M", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/uboAAeSwaENp-mTM/s-l1600.jpg" },
-    ],
-  },
-{
     id: "dynamokyiv-retro-201517-away",
     teamKey: "dynamokyiv",
     season: "2015/17",
@@ -83997,18 +83921,6 @@ const productsData = [
     ],
   },
 {
-    id: "sportingkc-away-202627",
-    teamKey: "sportingkc",
-    season: "2026/27",
-    typeKey: "away",
-    colorHex: "#6CACE4",
-    colorHexSecondary: "#000000",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay", price: 135.99, shipping: 9.03, currency: "USD", url: "https://www.ebay.com/itm/227586346250?_skw=Sporting+Kansas+City+away+soccer+jersey&hash=item34fd340d0a%3Ag%3AC38AAeSw2P1q4UHp&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339184386&customid=&toolid=10049", title: "adidas 2026-27 Sporting Kansas City Men's Stadium Away Soccer Jersey ProSoccer", inStock: false, sizes: ["M", "L"], imageUrl: "https://i.ebayimg.com/images/g/C38AAeSw2P1q4UHp/s-l1600.jpg" },
-    ],
-  },
-{
     id: "cambodia-retro-201819-away",
     teamKey: "cambodia",
     season: "2018/19",
@@ -84104,18 +84016,6 @@ const productsData = [
     jerseyPattern: "solid",
     offers: [
       { store: "eBay GB", price: 59.99, shipping: 0.0, currency: "GBP", url: "https://www.ebay.co.uk/itm/880064811553?_skw=Ipswich+Town+2024+third+shirt&hash=itemcce7f35221%3Ag%3AMVgAAeSwAp9q5Iu-&amdata=enc%3AAQALAAABAOf5zIIojhOf%2BkQK%2Bxzjn7mZVD0WMQvqcHikGX2jrQ22qdbLJiLRe9kfvXHErz1BSbvsgjopfa03jBLi4Vn8HV9NAugloxfrYGiaABh8CmDKJDs%2BgtgB5Smf1o6JATUvVbKv2sCGllk9cWygrAUKlTOEYbAb%2FAjIG381mzXO21gddI6IdhtxC8bcd2Mex49nfCqQnxh68ztkdr0VWyvLP%2FfGXdNUu%2ByQ6mmghvz3PC4Wp7V0%2Bt3%2BcJ9SMYfQM2UBgAorFq4OZ3BRjeGMtysHGEXvyNY8DV2y0JSYhJ5KzoLR4nPhjvPJI%2Fog9S1xUmrvcHedRZ7k6Ut8qSAQpW2R29w%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049", title: "Ipswich Town Football Shirt 2024 2025 Umbro Third Mens XL BNWT Genuine", inStock: true, sizes: ["XL"], imageUrl: "https://i.ebayimg.com/images/g/MVgAAeSwAp9q5Iu-/s-l1600.jpg" },
-    ],
-  },
-{
-    id: "pumasunam-retro-201718-away",
-    teamKey: "pumasunam",
-    season: "2017/18",
-    typeKey: "retro",
-    colorHex: "#003DA5",
-    colorHexSecondary: "#FFD700",
-    jerseyPattern: "solid",
-    offers: [
-      { store: "eBay ES", price: 76.37, shipping: 19.64, currency: "EUR", url: "https://www.ebay.es/itm/227353558135?_skw=Pumas+UNAM+away+soccer+jersey&hash=item34ef53fc77%3Ag%3A6WQAAeSwkXBqD7rk&mkevt=1&mkcid=1&mkrid=1185-53479-19255-0&campid=5339184386&customid=&toolid=10049", title: "CAMISETA OFICIAL NIKE PUMAS UNAM VISITANTE MEXICO 2017-2018 PLAYERA 100% ORIGINAL", inStock: false, sizes: ["M"], imageUrl: "https://i.ebayimg.com/images/g/6WQAAeSwkXBqD7rk/s-l1600.jpg" },
     ],
   },
 {
