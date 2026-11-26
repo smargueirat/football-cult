@@ -3164,7 +3164,7 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=46385825589&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1a2c475934bd45518773c1addb29bedc_9366%2FCalcetines_Adi_26_Azul_KB7157_01_01_00_standard.jpg&feedId=95016&k=218b5e3271ce9c4662e3938630bae5e3802f677b",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L"],
       },
       {
         store: "AdidasCO",
@@ -5117,7 +5117,7 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
         price: 7990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46194188736&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=46194188733&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F660968b958674740a0fc4d915e3a01e0_9366%2FCalcetines_Santos_25_Blanco_JJ3609_01_04_standard.jpg&feedId=95016&k=0388983bf763c629af508dd585e4b2fd0482c638",
         sizes: ["M", "L"],
       },
@@ -5279,7 +5279,7 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
         price: 12.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40454825733&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249370823&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001054067-00-P-X-20250217203222.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODcyNXxpbWFnZS9qcGVnfGFERXpMMmcxTmk4eE1qYzBPRGcwTVRReE9EYzRNaTl0WldScFlYTmZNVEF3TVRBMU5EQTJOMTh3TUY5UVgxZ3RNakF5TlRBeU1UY3lNRE15TWpJdWFuQm58MGEyZWQ4ZDQxMDUyODJjOTBjNGIwYTViNmI3YmQ1MGQxMDU5M2Y2NWI2NDU1NDM2NGQ1NmEwMTFiY2Y1YjcwZA&feedId=58083&k=b0298e7969aff201a5ad93dda0fc3de734d73862",
         sizes: ["34-36", "40-42", "46-48"],
       },
@@ -5315,7 +5315,7 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
         price: 12.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40454825730&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43770515534&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001054065-00-P-X-20250217203222.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTg2NHxpbWFnZS9qcGVnfGFERTJMMmhsTmk4eE1qYzBPRGd6T1RrME5ESXlNaTl0WldScFlYTmZNVEF3TVRBMU5EQTJOVjh3TUY5UVgxZ3RNakF5TlRBeU1UY3lNRE15TWpJdWFuQm58Y2M0ZmM2NWNjNTRjZDNjNTU5MzMxMzhmNTE2MjUyZDJkYjhhYThkZjFhNTg1ZTliN2IzZmNlNTczOWMzMjZhYg&feedId=58083&k=f80b2cf5c203c688c34e5f83f57ccc1460092b80",
         sizes: ["34-36", "40-42", "46-48"],
       },
@@ -5351,7 +5351,7 @@ const minedApparelProductsChunk1: ApparelProduct[] = [
         price: 12.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40357037948&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=40357037947&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001054069-00-P-X-20250212161814.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTExMHxpbWFnZS9qcGVnfGFEWXdMMmd6Tnk4eE1qY3pPVEV6TmpNMU5qTTRNaTl0WldScFlYTmZNVEF3TVRBMU5EQTJPVjh3TUY5UVgxZ3RNakF5TlRBeU1USXhOakU0TVRRdWFuQm58MDcyNjQxYmE5ZjE2MzgxNDM4NmE5YWZkMWFiOTQ1MTFmZDljZDk5ZTMyYTBlM2RiNDA1ZDNmZmZhZTU0ZGQ3OQ&feedId=58083&k=ebfabe3ca124103efea684ba34e63e2ea883140d",
         sizes: ["34-36", "40-42", "46-48"],
       },
@@ -5463,7 +5463,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 12.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43909570264&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249370842&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001054070-00-P-X-20250217203222.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk5MnxpbWFnZS9qcGVnfGFESmhMMmhrTWk4eE1qYzBPRGcwTXpVNE1UUTNNQzl0WldScFlYTmZNVEF3TVRBMU5EQTNNRjh3TUY5UVgxZ3RNakF5TlRBeU1UY3lNRE15TWpJdWFuQm58OTE4MThmNmZkYzJhYmZmNTM0N2E0MDA1M2MwYWY1MzVhMWJkMmE4MTI4M2UwOTYwMzkxZWM5MWI4MDExN2M1OQ&feedId=58083&k=8c6f42e98f963404309b6287cbeb131f09b787e7",
         sizes: ["34-36", "40-42", "46-48"],
       },
@@ -6666,9 +6666,9 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 31960.0,
         shipping: 0,
         currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=42653508127&a=3013769&m=79924",
+        url: "https://www.awin1.com/pclick.php?p=40534578062&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F743dea7e6fbd44edb05caf020108e3a3_9366%2FMedias_Milano_23_Azul_IB7818_01_04_standard.jpg&feedId=95017&k=6cf16c8be8f30fe5a12c7ed6ad35aba0093426fc",
-        sizes: ["XS", "S", "M", "L"],
+        sizes: ["S", "M", "L"],
       },
       {
         store: "ForumSport",
@@ -6802,15 +6802,6 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fib7817-chaussettes-adidas-milano-23-rouge",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_ib7817_1_hardware_photography_side_center_view_white-nw052224.webp",
         sizes: ["34/36", "37/39", "40/42", "43/45", "46/48"],
-      },
-      {
-        store: "AdidasCL",
-        price: 8990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=43960573415&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F52db3103c95c4ffe8f62af020108b90c_9366%2FCalcetines_Milano_23_Rojo_IB7817_01_04_standard.jpg&feedId=95016&k=b85e69414840ecbee0b06544c1217e214e62cb5c",
-        sizes: ["S", "M", "L"],
       },
       {
         store: "AdidasMX",
@@ -7066,7 +7057,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 9.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39987767583&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=39265337734&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000844640-00-P-X-20221129094831.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTgyNnxpbWFnZS9qcGVnfGFEZzJMMmhoTUM4eE1UQTNNakEwTnprM01qTTRNaTl0WldScFlYTmZNVEF3TURnME5EWTBNRjh3TUY5UVgxZ3RNakF5TWpFeE1qa3dPVFE0TXpFdWFuQm58OTAwODc0N2E3MDAxYzIwZTg0ZWQzOGM0NzYxMmY3YjlhNGViMDhkMTU5ZThhZmRlZjZjMTdkOGRjMzA5NmVjMg&feedId=58083&k=185266824b55de5da40052c51fbb1532eb24e253",
         sizes: ["34-36", "37-39", "40-42", "43-45", "46-48"],
       },
@@ -8465,7 +8456,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 27.19,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383495&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383428&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134921-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODIyN3xpbWFnZS9qcGVnfGFEUTBMMmhoTnk4eE16Z3pOakl5TVRBeU1qSXpPQzl0WldScFlYTmZNVEF3TVRFek5Ea3lNVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MDJhN2FlZjdkYjJlMjkwMzFhMjVmYTljMDJmYzVjYzFlN2E0MTJlMjEzNzM4MmMzZGZhMmZiOWNkYWNhNmVhYg&feedId=58083&k=7fc7a7570ae2dabefa55755ad2c3e5f2a38fca3e",
         sizes: ["XXS", "XS", "S", "M"],
       },
@@ -8483,7 +8474,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 27.19,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383291&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383228&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134920-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDcyNnxpbWFnZS9qcGVnfGFHWTBMMmhqWmk4eE16Z3pOakl4T1RNeE9ETXdNaTl0WldScFlYTmZNVEF3TVRFek5Ea3lNRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58YTQ2NzQwYzAwODk1MzNmZTM2OTdjZDBhNzc3M2MyMzdkMWUxOGY1YjdlNzNkNGYxYmIxNjYwNWNlYjM2ODYyNg&feedId=58083&k=36cacd464d6c639de630ee38260c26c88aa8a6a4",
         sizes: ["XS", "S", "M", "XL"],
       },
@@ -8501,7 +8492,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 27.19,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249382963&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383028&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134923-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc1NnxpbWFnZS9qcGVnfGFHTTJMMmhoTXk4eE16Z3pOamMyTURZM09EUXpNQzl0WldScFlYTmZNVEF3TVRFek5Ea3lNMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58OTA3ZjAxNDYwNjcwMTkxN2ZlNjRmMzZkMThjZDVjMTkyNzA0YzExMmI5MTk4OGE2N2Y1MTBmY2I3MjkxZTBjNQ&feedId=58083&k=ef92599c431f7a68556ce9dd783a5736d119f75b",
         sizes: ["XS", "S", "M", "XL"],
       },
@@ -8635,7 +8626,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 29.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249382853&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383652&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135011-00-P-X-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMyN3xpbWFnZS9qcGVnfGFEVmlMMmhqTnk4eE16Z3pOakkyTkRZMk9USXhOQzl0WldScFlYTmZNVEF3TVRFek5UQXhNVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MDgxOGZmYzEzMmY2YTAwYWRjNGM3YTYwNDg1ZTA1YzhkYjM5ZmMyZjk0NDBlNWNjMWQ3ZDY2MjdmYzJmYTA2Zg&feedId=58083&k=eb51f99d7ca2f87167852be99b4d1c8b8e57454c",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -9021,7 +9012,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 19.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39159731913&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=39159731910&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000844621-00-S-M-20221129094831.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjQ4MXxpbWFnZS9qcGVnfGFEYzNMMmczTUM4eE1UQTNNakF6TnpBeU56ZzNNQzl0WldScFlYTmZNVEF3TURnME5EWXlNVjh3TUY5VFgwMHRNakF5TWpFeE1qa3dPVFE0TXpFdWFuQm58MzhmMjczZTljZWI2NDI2NDkwNDU1MDgxNjNhOWNiMzUwN2I2MjIzZTRmZjNiYWI1MTQzMDJhMTA3MmU5ODhlZg&feedId=58083&k=35b85cafadeb2451738321c6c963cfb3562b7c2f",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -9039,7 +9030,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 16.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249369176&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44861874773&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001032498-00-S-M-20240829112828.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ5NnxpbWFnZS9qcGVnfGFEUTRMMmhsTUM4eE1qTXpOek15TkRZeU1UZzFOQzl0WldScFlYTmZNVEF3TVRBek1qUTVPRjh3TUY5VFgwMHRNakF5TkRBNE1qa3hNVEk0TWpndWFuQm58Y2ZiNjMyOTUzMTVkZjNhYzdlZGJkMmNkZjUxNWMzYzVmM2ZhMjA0N2M2YWQwYjhkNjFiNzhiOWE2YzcwYTg3MA&feedId=58083&k=9932b4a4db5dd7985247ec39760b84d31d12fa9c",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -9057,7 +9048,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 15.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40161021217&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=40161021218&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000844623-00-S-M-20221129094831.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU1NHxpbWFnZS9qcGVnfGFHTTJMMmhpTnk4eE1UQTNNakF6T1RFNU1EVTFPQzl0WldScFlYTmZNVEF3TURnME5EWXlNMTh3TUY5VFgwMHRNakF5TWpFeE1qa3dPVFE0TXpFdWFuQm58Yjg3NGI5MjFkZjhhMzM1OTVkNjczOWI2Y2M5NzhkNDY3ZjdlN2NlMTFhYzBjMWViYzdjYzllMGQzZjNjNzM1Mw&feedId=58083&k=d38402a948c6beb7547e16940e812878dc468b12",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -9796,7 +9787,7 @@ const minedApparelProductsChunk2: ApparelProduct[] = [
         price: 35.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383378&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383508&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134975-00-S-M-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjE1OXxpbWFnZS9qcGVnfGFEVmpMMmd6Wmk4eE16Z3pOekl4TVRBM05EVTVNQzl0WldScFlYTmZNVEF3TVRFek5EazNOVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58ZTc4MGM5NTIyYTQ4ZjE1MmQ1NGVlZjg1ODM0OTk5MWM2YTdjNzYyODA2NDU5MDMxYjZlY2U3ZDc0ODAzOGM1MA&feedId=58083&k=37956d88264ebf336f7633d7968d1c8ba57bc356",
         sizes: ["S", "M", "L", "XXL"],
       },
@@ -11861,7 +11852,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383492&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46776787154&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134910-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI2OXxpbWFnZS9qcGVnfGFEWTJMMmd6Tmk4eE16Z3pOamMxTkRjeE5EWTFOQzl0WldScFlYTmZNVEF3TVRFek5Ea3hNRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58OGUzZDJjZGE1OGMzZGFjZTY5MDdkZTI1NDgyY2I2Y2JhMDY5ODg1MGJiMWJhM2FiNWNiNjIzNzE1NmIzNWExMg&feedId=58083&k=6e90e892f3c8791d5289c4f88623bb93e08f48df",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -11917,7 +11908,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249382892&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249382760&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134911-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjIxOXxpbWFnZS9qcGVnfGFHVmxMMmc1T1M4eE16Z3pOamMxTlRVMk5qWXlNaTl0WldScFlYTmZNVEF3TVRFek5Ea3hNVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58ZGY1MzllYWQ2ZWM4ZmRiMjM5NTA2NmNmZmZhMzU3N2E0YWEyY2RkMDA2NDlkNmY1OTM2MmU0ZGQyOTY1OGVlMQ&feedId=58083&k=ea56937dc83119e240240585048c3a43c041c521",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -12203,7 +12194,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=44916006789&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc251ecb8c58f4995a92518ed1788c440_9366%2FShorts_Locales_Real_Madrid_26-27_Blanco_JZ7214_21_model.jpg&feedId=95016&k=ccd50af15dbb36736b7cabc860a47f56224281a5",
-        sizes: ["S", "M", "L", "XL", "2XL"],
+        sizes: ["S", "M", "L", "XL"],
       },
       {
         store: "AdidasCO",
@@ -12219,7 +12210,7 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383356&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383223&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134897-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQwMnxpbWFnZS9qcGVnfGFHRmhMMmczWlM4eE16Z3pOalk0TkRnNE5qQTBOaTl0WldScFlYTmZNVEF3TVRFek5EZzVOMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58ZDE3ZTAzZjE2MDcxZGRmZjk3Yzc5NDMxYmUzN2Q1NDhmNDYwMDNmZWM4MjI0MWZmNDIwMDQzNjNiMWQ3MGJlMA&feedId=58083&k=c3f584187cae64191843646375e5392396b803c6",
         sizes: ["XS", "L", "XL", "XXL", "XXXL"],
       },
@@ -16195,9 +16186,9 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         price: 49950.0,
         shipping: 0,
         currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=44903072649&a=3013769&m=79924",
+        url: "https://www.awin1.com/pclick.php?p=44903072650&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F32fe25101e584b67b8e7289c58921fe4_9366%2FCanilleras_adiFlex_Azul_KV3210_01_00_standard.jpg&feedId=95017&k=9b440cda7634cd66edb82598fe118351b1e0fd84",
-        sizes: ["S", "M", "L"],
+        sizes: ["M", "L"],
       },
     ],
   },
@@ -17027,15 +17018,6 @@ const minedApparelProductsChunk3: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff4b1be565ad4486d8f44d1a36ea24897_9366%2Fchamarra_Anthem_Z.N.E._Arsenal_FC_Azul_KB1800_21_model.jpg&feedId=95013&k=da164edf33b124054fa6888871f8b09565283d87",
         sizes: ["S", "M", "L", "XL"],
       },
-      {
-        store: "AdidasCO",
-        price: 329970.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=45565444878&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff4b1be565ad4486d8f44d1a36ea24897_9366%2Fchaqueta_Anthem_Z.N.E._Arsenal_FC_Azul_KB1800_21_model.jpg&feedId=95017&k=2612bc74f7fc1c0a275e87bc571bb6a0196d1f7e",
-        sizes: ["S", "M", "L"],
-      },
     ],
   },
   {
@@ -17413,7 +17395,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         price: 75.39,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45877078065&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=42144671104&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087335-00-S-M-20250814132136.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIxMXxpbWFnZS9qcGVnfGFHRTVMMmhqT0M4eE16RXhPVFEyTURBNE1UWTVOQzl0WldScFlYTmZNVEF3TVRBNE56TXpOVjh3TUY5VFgwMHRNakF5TlRBNE1UUXhNekl4TXpZdWFuQm58ZWM3NWM4OWRiNTI4YTkwZTU5ZWQyMGYxMWI2YWQ1ZWQ1NjE1NWM1MGJlZjBlZDdkMzNiMGIzMTAzMmJkMzkzNw&feedId=58083&k=60881a8963550b323caa70fdeb3ffab2909f96b1",
         sizes: ["M", "XL"],
       },
@@ -18071,7 +18053,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         price: 66.74,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45365872120&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45365872116&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102084-00-P-X-20260603125044.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjExMnxpbWFnZS9qcGVnfGFHRTFMMmhpWXk4eE16Z3dOekV5T1RNNU5USXpNQzl0WldScFlYTmZNVEF3TVRFd01qQTRORjh3TUY5UVgxZ3RNakF5TmpBMk1ETXhNalV3TkRRdWFuQm58OGQyY2JiOWIzN2VhNmFmOTMyMTMzYjYyNmJmMzY1ZjQ5MWU3NGFmMWIwODlhZDc3Zjg5ZDUxYjVmNzQxYWQ1Yg&feedId=58083&k=0f7b9eea56166361ae3f622d9a6122d55b25ac28",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -18172,7 +18154,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         price: 54.89,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249384397&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249384285&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135106-00-S-M-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjYwNHxpbWFnZS9qcGVnfGFHUmlMMmhsT0M4eE16Z3pOekkwT0RFd01qUXpNQzl0WldScFlYTmZNVEF3TVRFek5URXdObDh3TUY5VFgwMHRNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58ODM1MGM1NGJmYzRkYjI4OGQ2ZjUxZmQ5MmE3MjM2NDBmZmM0MWFjNDEzMTNkOTM2MTkyOGNjZTY4YTQ3OWUzYQ&feedId=58083&k=877c2113484828d4aeb5a18797ee827e7b5881eb",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -18274,42 +18256,6 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2Fkr6744-doudoune-real-madrid-2026-27-veraur-rossau",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas-kr6744-veraur-rossau-6a57581988a3f-1.webp",
         sizes: ["S"],
-      },
-    ],
-  },
-  {
-    id: "adidas-veste-bayern-munich-z-n-e-anthem-2025-26-rouge",
-    brand: "Adidas",
-    model: "Chaqueta adidas Anthem Z.N.E. FC Bayern - Rojo",
-    colour: "Rojo",
-    type: "jacket",
-    offers: [
-      {
-        store: "AdidasCO",
-        price: 329970.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=43646709847&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb333b64936424efbbbbdf4cf73fa4719_9366%2FChaqueta_Anthem_Z.N.E._FC_Bayern_Rojo_JZ2729_21_model.jpg&feedId=95017&k=f244167c0a215a1383c3d528bb6dfe7f65e69db5",
-        sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-chaqueta-adidas-anthem-z-n-e-manchester-united-negro",
-    brand: "Adidas",
-    model: "chaqueta adidas Anthem Z.N.E. Manchester United - Negro",
-    colour: "Negro",
-    type: "jacket",
-    offers: [
-      {
-        store: "AdidasCO",
-        price: 329970.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=44451515230&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbb32aec3c15c47ff8d49bc756530f719_9366%2Fchaqueta_Anthem_Z.N.E._Manchester_United_Negro_JM5559_21_model.jpg&feedId=95017&k=7cbf55f359670738b2fa1105bf4bbbfa245fcfa0",
-        sizes: ["M", "L"],
       },
     ],
   },
@@ -18522,7 +18468,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         price: 27.19,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249379241&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249379258&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001114599-00-S-M-20260209160833.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg5MnxpbWFnZS9qcGVnfGFETXhMMmc0TWk4eE16VTJOekEyTlRRMU5qWTNNQzl0WldScFlYTmZNVEF3TVRFeE5EVTVPVjh3TUY5VFgwMHRNakF5TmpBeU1Ea3hOakE0TXpNdWFuQm58ZjUzMTRjOTNhNWVmOTc0NzBlOWY1MTEyMzYxMmYxZjU2MTJhY2VlZmI4ZDRiYjI0ZjJkOTM1OTM2Mjk4ZTBiYQ&feedId=58083&k=664a7c4bfd76876ef8b269fcf061bcaa5427429e",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -18567,7 +18513,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         price: 40.79,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376746&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249376493&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113728-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTkzOHxpbWFnZS9qcGVnfGFEYzJMMmd3WkM4eE16VTJNekEwTnpJNE1EWTNNQzl0WldScFlYTmZNVEF3TVRFeE16Y3lPRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58YjI1N2RkYWRmN2YxZTA5MTBjNjY1MDBmNTYzODQyYzVkMDdhY2YyMmIxZjc2NmVhNmFlYjU3NDE5NzIyNjllYg&feedId=58083&k=5fef1c87cc9f80e08ac42d2814663b457269d976",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -18639,7 +18585,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         price: 40.79,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46664443244&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249376744&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113726-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODA4NnxpbWFnZS9qcGVnfGFHVXhMMmcxWXk4eE16VTJNekEwTmpJek1qQTVOQzl0WldScFlYTmZNVEF3TVRFeE16Y3lObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58NzdiNjQ2Y2FjOTA2YTk1ODk3ZmM1ZWM4OGNiZTZjYmQwNTk2ODE3NjY4ZDkzMDFkNTE5NzE1ODhiY2ExNDEwOQ&feedId=58083&k=9fae3006b7a9e59eaa25258b3b363def51f55971",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -18701,7 +18647,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         price: 65.99,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46386047021&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249377431&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113541-00-S-M-20260219142151.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDYzNnxpbWFnZS9qcGVnfGFHSmxMMmhoWmk4eE16VTRPVGs1TXpRNE9EUXhOQzl0WldScFlYTmZNVEF3TVRFeE16VTBNVjh3TUY5VFgwMHRNakF5TmpBeU1Ua3hOREl4TlRFdWFuQm58NWY0ZWFhNjg5YTliNGQyYzE1MzA3ZmU1MTk1ZWI0YTZhYzM4YmZiNzc1ZGE2NTI5NDQ3ODQxOWZjNWFhMDEzNA&feedId=58083&k=1cce6e6d148e1e5d784ff19a5d355f6f55e16eb4",
         sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -19255,7 +19201,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         price: 37.04,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376551&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249376925&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113716-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYwMXxpbWFnZS9qcGVnfGFEZ3lMMmhrTUM4eE16VTJNekEwTURRMk5Ea3lOaTl0WldScFlYTmZNVEF3TVRFeE16Y3hObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58ODU4NjhiMmU1ODYyZGY5ZDEyNWFjNjljOWIyOTg5YWQ2NWM5NTk1NWU5NzU0N2E0OGQxMzlkMDM5Y2QwY2NkNw&feedId=58083&k=1a956aa689530726dcc5e982226b363f07363324",
         sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -19347,7 +19293,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         price: 37.04,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376552&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249376799&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113718-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjcwMHxpbWFnZS9qcGVnfGFEVmlMMmcxWXk4eE16VTJNekEwTVRjM05UWTBOaTl0WldScFlYTmZNVEF3TVRFeE16Y3hPRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58NjE1MmM0ZWVkNDhiMTIzNWNhNGI2MmIxMmI5ZjViZTNiMDA2ZGExMWRmZDRkY2MwZTEzYjNlMTllZjJkMjIzYQ&feedId=58083&k=2b3fcd0bb1e44c10107f4892fa3af89fff62f815",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -19482,9 +19428,9 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         price: 45990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=45040334134&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=45040334135&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F59de537df2f14f028632d3efadc53602_9366%2FChaqueta_Anthem_Local_Seleccion_Chilena_Rojo_JZ8787_21_model.jpg&feedId=95016&k=296360c032499662c6edc41a2733a24efc307637",
-        sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -21894,7 +21840,7 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         price: 33.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249372256&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249372331&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001086087-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc5MnxpbWFnZS9qcGVnfGFHWTRMMmhtTWk4eE16RXhNamN3TWpjMk16QXpPQzl0WldScFlYTmZNVEF3TVRBNE5qQTROMTh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58MjMxNTliNzIyODQ1ZmFmZGQ5YTExZmZjMjhiN2Y0ZGRjOTE4YmQzMTFiMjk2MmUyY2M0OGZhMmZlMDA5MWE5Yg&feedId=58083&k=11957b1a59985eaad4993fcbb2195548a71c2f18",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -22656,15 +22602,6 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
         ],
       },
       {
-        store: "AdidasCL",
-        price: 16990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46421892986&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F439d0fdf212a4c66b00daf2a0113f1b8_9366%2FPoleron_de_Entrenamiento_Tiro_23_Club_Azul_HZ0174_01_laydown.jpg&feedId=95016&k=5f11a3bc2096ef67a8df277afaa9c0e4b595cfb2",
-        sizes: ["XS", "S", "M", "L"],
-      },
-      {
         store: "AdidasMX",
         price: 1099.0,
         shipping: 0,
@@ -22717,15 +22654,6 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
           { size: "XL", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs3617-veste-de-survetement-adidas-tiro-23-club-noir-blanc" },
           { size: "2XL", price: 35.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs3617-veste-de-survetement-adidas-tiro-23-club-noir-blanc" },
         ],
-      },
-      {
-        store: "AdidasCL",
-        price: 16990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46421893531&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F27d2a35a33824186bb89af1f00ea41b1_9366%2FPoleron_de_Entrenamiento_Tiro_23_Club_Negro_HS3617_01_laydown.jpg&feedId=95016&k=8a6bff7444489686107dbc2c7097876eb03e7fdc",
-        sizes: ["XS", "S", "M", "L"],
       },
       {
         store: "AdidasMX",
@@ -23656,9 +23584,6 @@ const minedApparelProductsChunk4: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk5: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-chandal-adidas-tiro-24-competition-negro-2",
     brand: "Adidas",
@@ -23729,6 +23654,9 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk5: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-chandal-adidas-tiro-24-competition-verde",
     brand: "Adidas",
@@ -25468,7 +25396,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 60.99,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46280014047&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46508117789&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135049-00-S-M-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODk3OXxpbWFnZS9qcGVnfGFEUXlMMmhtTlM4eE16Z3pOekl5TnpBek1qWXdOaTl0WldScFlYTmZNVEF3TVRFek5UQTBPVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58N2UyN2Y4NTM1ZWQxZWI4YWFmMGEwYzQ1Njc3ZmMwYzVhNTUzN2FhZTEzYzFmOWQyZDhmNGY4N2YzMTBkNTc5ZQ&feedId=58083&k=6d2331d3056e65aa1fc734801cfa0f43fe23194f",
         sizes: ["S", "M", "L", "XL", "XXXL"],
       },
@@ -26714,7 +26642,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 44.65,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383531&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383720&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135060-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzY2NnxpbWFnZS9qcGVnfGFESTJMMmczTXk4eE16Z3pOamcyTURFeU9UTXhNQzl0WldScFlYTmZNVEF3TVRFek5UQTJNRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58M2NmZmM5YmMxMjViZGM5MmU4YzhlMWJkZDA4OWU4NGU4MmEzZWYyMGY0OTZhYzJmNjBjMDU3OTIxNTk4Y2NlZA&feedId=58083&k=c3341cb022000c93f375e991bf57007dc86360e8",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -26913,7 +26841,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 92.29,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383802&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249382795&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135073-00-P-X-20260625102427.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTM2NnxpbWFnZS9qcGVnfGFHTTNMMmd6TkM4eE16ZzFNVFV6TnpBNE1ETTFNQzl0WldScFlYTmZNVEF3TVRFek5UQTNNMTh3TUY5UVgxZ3RNakF5TmpBMk1qVXhNREkwTWpjdWFuQm58OTc1ZDQ0MzFiZDAyYTdiYjJmMTFjZGUzZmM5MTc4OWU2NzQ1NmE5ODVkNTU2YzliMTZiMmFjZmEyOWY2NmU3NQ&feedId=58083&k=8a690b9f05ba756fbfc53ad45aaf847cbc5a97a5",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -27098,7 +27026,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 124990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46312812877&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=46312812876&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdf3610be05ce43c089d396fcfe17d467_9366%2FChaqueta_Deportiva_Real_Madrid_adidas_X_FARM_Verde_KG5377_21_model.jpg&feedId=95016&k=d7ad379ddd7736ca7067c3f0893934ea2672b400",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -27426,9 +27354,9 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 274975.0,
         shipping: 0,
         currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=44882895973&a=3013769&m=79924",
+        url: "https://www.awin1.com/pclick.php?p=44882895974&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F51f523b54d434b9e911284c2ed7acd2f_9366%2FChaqueta_Local_Anthem_Seleccion_Nacional_de_Mexico_Verde_JZ6458_21_model.jpg&feedId=95017&k=0c644706d5db8e8e971776e45b95cddbbf8bd3b4",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["S", "M", "L", "XL"],
       },
     ],
   },
@@ -27579,7 +27507,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 58.49,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249379509&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249379610&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001121245-00-S-M-20260408121617.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ4NHxpbWFnZS9qcGVnfGFHVTJMMmd3WWk4eE16WTROVFUwTWpjME9ERTVNQzl0WldScFlYTmZNVEF3TVRFeU1USTBOVjh3TUY5VFgwMHRNakF5TmpBME1EZ3hNakUyTVRjdWFuQm58OTE4NDVjZDhiYjIwNGU3NzEyOGY5MDhjNDBlYzRjYTA0ZDlhMzFmOTQ5ZjVkZmMyYWU5ODljODA3N2Y3OGYzZg&feedId=58083&k=87cbeddc8a8a97937ed9ee10536246c0a791291f",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -27823,7 +27751,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 81.47,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45176763628&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45193038293&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135273-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI1NXxpbWFnZS9qcGVnfGFHWTBMMmhtWWk4eE16Z3pOalV4TlRFME56Z3dOaTl0WldScFlYTmZNVEF3TVRFek5USTNNMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58NzYxZTUwMTllM2I2MGM3ZmRlY2E3MzZlNjVmMmI3M2E5MmMxMTcxOGEyN2MxOTZhNWM4MWExMWIyYmQ2ZDQyOA&feedId=58083&k=b9e2bdef386e3cc800bec200ed2f1c7f2eb414f8",
         sizes: ["XS", "L", "XL"],
       },
@@ -28154,7 +28082,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 59.99,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42144670655&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46691698068&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087459-00-S-M-20250805125032.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTQ1MHxpbWFnZS9qcGVnfGFEUmlMMmhqT0M4eE16RXdNRGd5T0RZNE9EUXhOQzl0WldScFlYTmZNVEF3TVRBNE56UTFPVjh3TUY5VFgwMHRNakF5TlRBNE1EVXhNalV3TXpJdWFuQm58ZDI2M2JiMDZkNWY0ZDNiY2U3ZTJlNjFjYzA4ODZkODJhM2EwMDBmOGUyOTg1MDIxZmNiNWY1NTkxNDRiZGQxNw&feedId=58083&k=9679f854f82a4ac7bf31a525ef36345dffc22d05",
         sizes: ["S", "L"],
       },
@@ -29111,7 +29039,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 52.35,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383529&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383662&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135052-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTk4N3xpbWFnZS9qcGVnfGFHWTRMMmd6TWk4eE16Z3pOamcxTmpjMU5ESXdOaTl0WldScFlYTmZNVEF3TVRFek5UQTFNbDh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58NDRhZjdlMzE4MDA3ZTM5ODZhMmVjODM3OGU5ZWU4YTFjZWYwM2UzYzhlNGQ1OTM1NDliMDM3YTVkZWYzNjM3Yg&feedId=58083&k=37064501ab55b3dd7df5409198f39538795fa6e8",
         sizes: ["XS", "S", "M"],
       },
@@ -29228,7 +29156,7 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 66.59,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45461831262&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45461831268&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001098513-00-S-M-20260428093108.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTAxNHxpbWFnZS9qcGVnfGFEWXpMMmhsTUM4eE16Y3pNVGswTVRjME5EWTNNQzl0WldScFlYTmZNVEF3TVRBNU9EVXhNMTh3TUY5VFgwMHRNakF5TmpBME1qZ3dPVE14TURndWFuQm58NzllYmY0Y2M1MDY1YzNiOGI0Nzc4OWNjNmFkNWU2YWM0ZGI3N2U4MjJiZTIxMTllZDJmYWY4ODJkOThjYTRjYw&feedId=58083&k=95a76abef710afa48f52011de8262644170ce879",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -29666,9 +29594,9 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
         price: 274975.0,
         shipping: 0,
         currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=44882895656&a=3013769&m=79924",
+        url: "https://www.awin1.com/pclick.php?p=44882895657&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F52de395f2c094a69ae81301dbb8af876_9366%2FChaqueta_Anthem_Local_Espana_Azul_JZ2253_21_model.jpg&feedId=95017&k=c807d6f0d51d4b55c48ab4ab4d8de2d124b6949a",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["S", "M", "L", "XL"],
       },
       {
         store: "AdidasMX",
@@ -30700,9 +30628,6 @@ const minedApparelProductsChunk5: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk6: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-chandal-para-todo-tiempo-adidas-entrada-2022-23-rojo",
     brand: "Adidas",
@@ -30809,6 +30734,9 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk6: ApparelProduct[] = [
   {
     id: "adidas-chaqueta-de-chandal-prematch-argelia-2023-verde",
     brand: "Adidas",
@@ -32997,7 +32925,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=43720953495&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F759263f931c740cd879386d0c174dbcf_9366%2FChaqueta_de_invierno_Universidad_de_Chile_Tiro26_Morado_JW4396_21_model.jpg&feedId=95016&k=cfc1998d904803ad85fdf2ab001efae041697e7f",
-        sizes: ["M", "L", "XL"],
+        sizes: ["M", "L"],
       },
     ],
   },
@@ -33840,7 +33768,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         price: 53.06,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375966&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249375658&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112957-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTczMXxpbWFnZS9qcGVnfGFEazNMMmd3TlM4eE16VTJNak0wTXpNMU9EUTVOQzl0WldScFlYTmZNVEF3TVRFeE1qazFOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NWQ4MjA3MWY0ZjNkNmI1NTdmZWI0NWNkZGVkZjRhMTIwMGExODlhNjY4NTdjNzhmNmQxMjQ3ZTZiNzIwODU2Nw&feedId=58083&k=f937eb8327563fd7692a245cca6466975938cf9f",
         sizes: ["XS", "S", "M", "L", "XL"],
       },
@@ -34174,7 +34102,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         price: 77.42,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376626&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249376565&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113829-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzIzOHxpbWFnZS9qcGVnfGFHRmtMMmczTVM4eE16VTJNekE1TXpFNE9EWXpPQzl0WldScFlYTmZNVEF3TVRFeE16Z3lPVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58MDU4ZWRhYjk3MWQzNmEyNjQ4NzcwYzEzNTFjZDg0Y2M4OGJlYjNkMzFhNTg2NzA2MjI4OWNiYjRmMjZmMzZhZA&feedId=58083&k=3de8b85f597b6a2f7bfa37941813b9d6268eaa10",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -35001,7 +34929,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         price: 159960.0,
         shipping: 0,
         currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46388162240&a=3013769&m=79924",
+        url: "https://www.awin1.com/pclick.php?p=46388162241&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5c9ac7dc782349768f3b3bf8ab00713e_9366%2FChaqueta_Deportiva_de_Entrenamiento_Essentials_Tiro_26_Granate_KR3006_01_laydown.jpg&feedId=95017&k=5d43eb27390e214b0718ac2d2f274234d76c7fb4",
         sizes: ["XS", "S", "M", "L"],
       },
@@ -36266,7 +36194,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         price: 59.49,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46792530814&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46792530846&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001114065-00-S-M-20260220125932.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU2M3xpbWFnZS9qcGVnfGFETm1MMmc0WXk4eE16VTVNVGMzTlRNeE16azFNQzl0WldScFlYTmZNVEF3TVRFeE5EQTJOVjh3TUY5VFgwMHRNakF5TmpBeU1qQXhNalU1TXpJdWFuQm58ZWE5ZjllMzc2YTAyN2M1M2U4MWJkZTgyNDA1MzY1NzJkZTI4YjBiNWI3ZGNjNThmYWJhYWNiZjNhM2U3YTlmMg&feedId=58083&k=c9efdc4dbd0a7da883ba6778f933b4df700b05e1",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -36825,7 +36753,7 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=43727197255&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F88a4dbf4c0c04b59a66049c51af18e2e_9366%2FChaqueta_Tiro_All_Weather_de_Universidad_Chile_26_Morado_JW4395_21_model.jpg&feedId=95016&k=f3441411b78c46b2fb3daaf446541d72b37761b9",
-        sizes: ["XS", "M", "L", "XL"],
+        sizes: ["XS", "L", "XL"],
       },
     ],
   },
@@ -37114,9 +37042,6 @@ const minedApparelProductsChunk6: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk7: ApparelProduct[] = [
   {
     id: "adidas-chubasquero-adidas-tiro-24-azul",
     brand: "Adidas",
@@ -37188,6 +37113,9 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk7: ApparelProduct[] = [
   {
     id: "adidas-chubasquero-adidas-tiro-24-azul-3",
     brand: "Adidas",
@@ -38469,7 +38397,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46420312897&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46508117479&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134844-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg1OXxpbWFnZS9qcGVnfGFEWXlMMmd5WWk4eE16Z3pOall6TlRZd01qazNOQzl0WldScFlYTmZNVEF3TVRFek5EZzBORjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58ZTMxZjU3MjFhNmY5NzQ4MjViM2FjODVlZTc4NDU5OWQ4YjQ3MjJmNWNkNGYxMTQ0OWViM2MyZjdjM2RiODQ0MA&feedId=58083&k=87eeb872f3d416a28602cf7fb3b55b36464f3fb2",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -39383,15 +39311,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46411012257&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0b2f2576b0574ad4bb97b6c47911368d_9366%2FChamarra_rompevientos_TIRO_TRAVEL_Negro_JM5539_21_model.jpg&feedId=95013&k=e0679476e149f9426d4dc98a6bbe4226ae7223e5",
         sizes: ["S", "M", "L", "XL"],
-      },
-      {
-        store: "AdidasCO",
-        price: 349950.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46792462350&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0b2f2576b0574ad4bb97b6c47911368d_9366%2FChaqueta_Rompeviento_TIRO_TRAVEL_Negro_JM5539_21_model.jpg&feedId=95017&k=801a4ba7348c30580cc5397009e9573aae5f5c64",
-        sizes: ["S", "M"],
       },
     ],
   },
@@ -40455,7 +40374,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383158&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383288&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134906-00-S-M-20260814141506.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMyMnxpbWFnZS9qcGVnfGFETXlMMmczTVM4eE16azFORFUxTkRVNU16TXhNQzl0WldScFlYTmZNVEF3TVRFek5Ea3dObDh3TUY5VFgwMHRNakF5TmpBNE1UUXhOREUxTURZdWFuQm58NzVkOTNjOWRiNGE3NTJjNGI3NDMyYTlhZWQwNjUwMGZkYWIxMDBjNDIxMGEwNzY4ZjZhMDA4MGQxY2ZmYzJhZA&feedId=58083&k=75f73781c5c501486c7633e19dd94f12fb9a8714",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -41023,7 +40942,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         price: 37.04,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249374464&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249374650&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111101-00-S-M-20260206123216.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU0NXxpbWFnZS9qcGVnfGFESTFMMmhqWlM4eE16VTFOelUwT0RneE1ESTNNQzl0WldScFlYTmZNVEF3TVRFeE1URXdNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhNak15TVRZdWFuQm58ZmU0MWQ3ODU4MGVhNWRhZDM2NGY0MjE1ZGRlMGZjMjdjOTgzOTRjMTA1NDI1ZTlhMzEzNDU3OWRkZmZhYTQ1OQ&feedId=58083&k=60d4c7a073debfe8ca6380922a5ce046d49e481e",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -41278,24 +41197,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-algerie-homme-2026-27-vert%3Fvariant%3D55353186713941",
         imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/survetement-complet-algerie-homme-2026-27-vert-pack-1600.png?v=1792155319",
         sizes: ["S / L", "S / M", "S / XL", "S / XS", "M / L", "M / M", "M / XL", "M / XS", "L / L", "L / M", "L / XL", "L / XS", "XL / L", "XL / M", "XL / XL", "XL / XS"],
-      },
-    ],
-  },
-  {
-    id: "adidas-survetement-entrainement-allemagne-tiro-homme-2026-rouge-noir-haut-pantalon",
-    brand: "Adidas",
-    model: "Ensemble Allemagne Entraînement Homme 2026 Rouge Noir – Haut + Pantalon",
-    colour: "N/D",
-    type: "set",
-    offers: [
-      {
-        store: "PlanetFoot",
-        price: 119.4,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-entrainement-allemagne-tiro-homme-2026-rouge-noir-haut-pantalon%3Fvariant%3D55771318288725",
-        imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-a7-haut-pantalon-1600x1600.jpg?v=1794512644",
-        sizes: ["S", "L"],
       },
     ],
   },
@@ -42083,7 +41984,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         price: 15.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45250738104&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45250738103&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102058-00-P-X-20260525112510.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU0MnxpbWFnZS9qcGVnfGFEQTRMMmc0Tmk4eE16YzROamswT1RJNE56azJOaTl0WldScFlYTmZNVEF3TVRFd01qQTFPRjh3TUY5UVgxZ3RNakF5TmpBMU1qVXhNVEkxTVRBdWFuQm58OWQzNjZmMTk2ZTk5ZjljNDdhMGUwZjQ4NDlmMjBjYjVlZDk4NGUzZWZhYjVjYmZhYWY4NmRlYmUzYTdmZTljMw&feedId=58083&k=aeb186ae7c6916753924de4a03476af337f1b465",
         sizes: ["XS", "L"],
       },
@@ -42203,15 +42104,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         sizes: ["L"],
       },
       {
-        store: "AdidasCL",
-        price: 12990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46405589600&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffcf2cf0a130c4272b8a7f44c6a936f4d_9366%2FCanilleras_F50_Match_Blanco_KE5210_01_00_standard.jpg&feedId=95016&k=c6b22522984e86934d84f672dc1c3d223b60f19e",
-        sizes: ["M"],
-      },
-      {
         store: "AdidasCO",
         price: 99950.0,
         shipping: 0,
@@ -42221,15 +42113,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         sizes: ["S", "M", "L"],
       },
       {
-        store: "AdidasMX",
-        price: 439.0,
-        shipping: 0,
-        currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=46388183163&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffcf2cf0a130c4272b8a7f44c6a936f4d_9366%2FEspinilleras_F50_Match_Blanco_KE5210_01_00_standard.jpg&feedId=95013&k=19c8c788c12dce41991f18aedfa64514ffab3cd3",
-        sizes: ["S"],
-      },
-      {
         store: "ForumSport",
         price: 23.99,
         shipping: 5.99,
@@ -42237,6 +42120,24 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46580559026&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102059-00-P-X-20260525112510.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc1NXxpbWFnZS9qcGVnfGFEazVMMmcyWlM4eE16YzROamswT1RrME16TXlOaTl0WldScFlYTmZNVEF3TVRFd01qQTFPVjh3TUY5UVgxZ3RNakF5TmpBMU1qVXhNVEkxTVRBdWFuQm58OWYwZTU2MDAxMGRmY2VjOGNjYjI1OWVkNzhlMDRiMDFiMzU5ZDMzNWM1ZWYyOTAyOWFjNDNmMTBmMTZjZjQxZg&feedId=58083&k=de982c2d5945b1b48069e6c48192806cbe7ca04b",
         sizes: ["S", "M", "L", "XL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-espinilleras-adidas-f50-match-blanco",
+    brand: "Adidas",
+    model: "Espinilleras adidas F50 Match - Blanco",
+    colour: "Blanco",
+    type: "shinguards",
+    offers: [
+      {
+        store: "AdidasMX",
+        price: 439.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=46388183163&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffcf2cf0a130c4272b8a7f44c6a936f4d_9366%2FEspinilleras_F50_Match_Blanco_KE5210_01_00_standard.jpg&feedId=95013&k=19c8c788c12dce41991f18aedfa64514ffab3cd3",
+        sizes: ["S"],
       },
     ],
   },
@@ -42297,7 +42198,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         price: 18.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44939688662&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44939688663&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102143-00-P-X-20260525112510.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjI0M3xpbWFnZS9qcGVnfGFEWmlMMmc0TUM4eE16YzROamsxTnpVeE1qY3pOQzl0WldScFlYTmZNVEF3TVRFd01qRTBNMTh3TUY5UVgxZ3RNakF5TmpBMU1qVXhNVEkxTVRBdWFuQm58ZWQwMDkwOGVmNjZkMWE3NWJmMTllOTk3NmFhZTY3NDllMjhlODMxNDQ4NGM2N2UzMGEwZGIzOTc3NTk3YTcwMA&feedId=58083&k=01814b53b97f0f924ca493fb661fe3d42403b038",
         sizes: ["XS", "S", "M", "L"],
       },
@@ -42333,7 +42234,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249382980&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46508117589&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134985-00-P-X-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mjc0OXxpbWFnZS9qcGVnfGFEVTRMMmhoWXk4eE16Z3pOekl4TXpjNU5ETXpOQzl0WldScFlYTmZNVEF3TVRFek5EazROVjh3TUY5UVgxZ3RNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58MjcyOTNhNDUzYjc1YjFkOGY0YTI4NjQwZTdmYmQyNmFjODVmMDFmNDYxN2NkMTZiMDJkYjhmOWNmNTJmNjdlMQ&feedId=58083&k=9a1d716967e68d37d1c546a6efb2d9c21f7923df",
         sizes: ["XS", "S", "M", "L", "XL"],
       },
@@ -42892,7 +42793,7 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
         price: 15.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265349853&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=39265349830&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000929566-00-P-X-20240108100816.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU2M3xpbWFnZS9qcGVnfGFETTNMMmcwWWk4eE1UZzVNVFk0TWpFME9ETTRNaTl0WldScFlYTmZNVEF3TURreU9UVTJObDh3TUY5UVgxZ3RNakF5TkRBeE1EZ3hNREE0TVRZdWFuQm58ZGVlM2UwM2FjNDRhNWNjY2ViZTIzNmViZGJhNjA5NDgxMmNiMDZmZjNlMGY4MTQwMGFlZTYwYTkxZTIxNWQwNg&feedId=58083&k=3f8769d756c4f17814e38781aeb959eb1e49da3d",
         sizes: ["S", "L"],
       },
@@ -43079,9 +42980,6 @@ const minedApparelProductsChunk7: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk8: ApparelProduct[] = [
   {
     id: "adidas-espinilleras-adidas-x-speedportal-league-rojo",
     brand: "Adidas",
@@ -43136,6 +43034,9 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk8: ApparelProduct[] = [
   {
     id: "adidas-espinilleras-adidas-x-speedportal-pro-verde",
     brand: "Adidas",
@@ -43766,15 +43667,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb799a3f60bef42258a7e15972d18cb43_9366%2FMALETA_DEPORTIVA_TIRO_MEDIANA_CON_COMPARTIMENTO_INFERIOR_Azul_KD4235_01_00_standard.jpg&feedId=95013&k=5059fbe4fde32aee0b4f37e25c8b6f6671cdb155",
         sizes: [],
       },
-      {
-        store: "AdidasCO",
-        price: 209950.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46873841896&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb799a3f60bef42258a7e15972d18cb43_9366%2FMALETA_DEPORTIVA_TIRO_MEDIANA_CON_COMPARTIMENTO_INFERIOR_Azul_KD4235_01_00_standard.jpg&feedId=95017&k=5059fbe4fde32aee0b4f37e25c8b6f6671cdb155",
-        sizes: [],
-      },
     ],
   },
   {
@@ -43915,7 +43807,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249385325&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249385183&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134806-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTg0N3xpbWFnZS9qcGVnfGFEaGhMMmd6WkM4eE16Z3pOalUzTVRRME16SXpNQzl0WldScFlYTmZNVEF3TVRFek5EZ3dObDh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58ZDQwMGFjMDJjNjYzZWNiYjE0YjUwNjNhNDU5ZWFlMzFjMjllOTQ3ZWEwNWYxMGU1ZDFmMDkyOTVlOGM3MGVmYg&feedId=58083&k=0f1bac193d1547540ecc20f9338dfde63dfac7bd",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -44091,7 +43983,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 49.27,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376847&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249376534&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113780-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQ1MnxpbWFnZS9qcGVnfGFERTBMMmc0WVM4eE16VTJNekEzTnpZMU5qWXdOaTl0WldScFlYTmZNVEF3TVRFeE16YzRNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58NDdmNzA4OTBkYTc5NWU3NmU3NjMzY2RlMzgzMzc0ZmYxNTdkZWU3NzNjZTE0MTdiZDQwNDAxNzUyOWQ0NGE2Ng&feedId=58083&k=105259ba408f59225b2801732ef201e18b572371",
         sizes: ["XS", "S", "M", "L"],
       },
@@ -46114,7 +46006,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=45565444884&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7cfaf8f1ce314a82a54d271d3ee2e9e3_9366%2FPantalon_de_training_Tiro_26_Competition_Negro_KA5122_21_model.jpg&feedId=95017&k=0bc85982310e91337cfed098e5845bce828184c4",
-        sizes: ["XS", "S", "L", "XL"],
+        sizes: ["XS", "S", "L"],
       },
     ],
   },
@@ -46229,7 +46121,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 39.05,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378395&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249378339&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112627-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQzMHxpbWFnZS9qcGVnfGFEUXlMMmc0T0M4eE16VTJNakl4T0RrM01URTJOaTl0WldScFlYTmZNVEF3TVRFeE1qWXlOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NTkxNjkzOTM4NTJkMTQ4MzliMTg5ODc3ZDFhZDA3YWNjNGNhZTg3ZTc1Nzg5NTZjNDc4Y2IxOTY4MTkxZTg1Yw&feedId=58083&k=166d2ea134ea1de2d63d4aca56b35e9a5afc4f03",
         sizes: ["S", "M", "L"],
       },
@@ -46800,7 +46692,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 18.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44281365383&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44281365395&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102032-00-S-M-20260206145545.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTUzMXxpbWFnZS9qcGVnfGFERTBMMmhoWWk4eE16VTJNalV6TVRReE5EQTBOaTl0WldScFlYTmZNVEF3TVRFd01qQXpNbDh3TUY5VFgwMHRNakF5TmpBeU1EWXhORFUxTkRVdWFuQm58ZTgwOGUxYjRiYzc1MTU1Nzg4OGU4M2U2NmRlOTczMjBiNDllMWE1ZTI4NTYyMWM0MDhiOGM4ZTVkOWEzNGNiMQ&feedId=58083&k=b28a8a401ab0881ff64c77bfd317e3ce82143155",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -47057,7 +46949,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 18.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44281365306&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44281365327&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102034-00-S-M-20260206145545.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTkyMXxpbWFnZS9qcGVnfGFETmxMMmczWkM4eE16VTJNalV6TXpVM05qY3pOQzl0WldScFlYTmZNVEF3TVRFd01qQXpORjh3TUY5VFgwMHRNakF5TmpBeU1EWXhORFUxTkRVdWFuQm58ZjM2MGFjZjUxZWQwMGRiZDJkYzQ1YmVlMjYyODE4M2ZjZWQ1NmFhOGFiNjEwNDZjZTljM2UzYTNmMWM2ODY4MA&feedId=58083&k=3b23b57657a04ba25e23ce5c59efe413dc47ca8f",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -47366,7 +47258,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 51.29,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249377414&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249377034&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113311-00-S-M-20260206145545.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODAyMnxpbWFnZS9qcGVnfGFERTVMMmhpWVM4eE16VTJNall3T1RZMk5EQXpNQzl0WldScFlYTmZNVEF3TVRFeE16TXhNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhORFUxTkRVdWFuQm58YjNiODNiYzUzZTE1OTU5NWM1MDkxOTFmN2M5NjdmMWQ0NDJmMTkwZTdiYjIzMTVmNGM3ODAwZWZmMDBiNDA5MA&feedId=58083&k=ef87cefc138e6b0d958f0e3d1fae5ed0806f9f3e",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -47384,7 +47276,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 37.05,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375143&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43948457902&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111209-00-S-M-20260206132219.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTQzNnxpbWFnZS9qcGVnfGFHTTVMMmd5TlM4eE16VTJNVE0xTmpVMU1ERTNOQzl0WldScFlYTmZNVEF3TVRFeE1USXdPVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhNekl5TVRrdWFuQm58NjVjNTA5ZTk0MmEzZjViYzZlMThlYjdmMTJiNTVmNWI3NzhjN2U2YTczNTIzYzFkMWZjMmNjOTRiMThjYTg3MA&feedId=58083&k=eaa899822d9c88e123efd28d4c377a04a575ac3b",
         sizes: ["XS", "S", "L", "XL"],
       },
@@ -47778,7 +47670,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375763&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249375922&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113031-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYwNnxpbWFnZS9qcGVnfGFEYzVMMmd4WkM4eE16VTJNak01T0RRME1UVXdNaTl0WldScFlYTmZNVEF3TVRFeE16QXpNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58YTg2ZGFmNWI4OGNiYjBiNjhlMDM2MmU3Yzg5NWUzNWQyNGM4MzE2ZmVhZDI1ODQ3N2Q3MTFhYTE3ZjI3Y2UyZA&feedId=58083&k=baa705a5f4462cd3bd62474ddde5af48e51dae95",
         sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -47814,7 +47706,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 66.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376881&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249376822&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113842-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTMwMnxpbWFnZS9qcGVnfGFEQTRMMmhrTnk4eE16VTJNekl5TnprNU5qRTVNQzl0WldScFlYTmZNVEF3TVRFeE16ZzBNbDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58NjBjNmY0YTBiZWViZmQ3NDAwMDAyNGVjOGFlNDdiMDY3ZTQxMzg0NWQ1YTk3M2I1YzU0MjE3NzI2ZjBmYzM0Yg&feedId=58083&k=475d35ab44e3b1d6c1efd12282288a29cfe1dcb8",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -47832,7 +47724,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 39.52,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376882&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249376760&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113844-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc3MXxpbWFnZS9qcGVnfGFEYzFMMmcxT1M4eE16VTJNekl5T1Rnek1URTVPQzl0WldScFlYTmZNVEF3TVRFeE16ZzBORjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58MDY0NjdiOTUwYWY0NDgxMjhlYjEzNzc1YzQwMDkyNzM5ZDk4NzA3YzQ3ZGYxYjRjYmJhOWQxMDFhOWQ4YWUyNg&feedId=58083&k=b8f2f0b496cc9ea07f4bedecf88dedbcfc4a9e1f",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -47895,7 +47787,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 90965.0,
         shipping: 0,
         currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46343281524&a=3013769&m=79924",
+        url: "https://www.awin1.com/pclick.php?p=46343281520&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc59cb063d0bd40ca929f08c9af4b5aec_9366%2FShorts_Tiro_26_League_Negro_KS0301_21_model.jpg&feedId=95017&k=7ba4b717c4018ffd275e9959466fc0b749c8ef6f",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -47913,7 +47805,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 48.5,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46473250941&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383856&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135107-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI3M3xpbWFnZS9qcGVnfGFEQTFMMmczWmk4eE16Z3pOalF4T1RNd01UUXdOaTl0WldScFlYTmZNVEF3TVRFek5URXdOMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MTRiOTIzYzRiNzIzZjdmNzM2NjE5MGIzNjI2YTAyMTIwMmMxZDUwOTE0NGRiZDA2MWQwNWNhYzhlYjVlMDgwMQ&feedId=58083&k=3bdf69a95b88b745827826e69117763f4238120a",
         sizes: ["XS", "S", "M", "L"],
       },
@@ -48035,7 +47927,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 41.99,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45262390889&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249379561&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001121249-00-S-M-20260423110559.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY4MnxpbWFnZS9qcGVnfGFHRTVMMmd5TWk4eE16Y3lNREF3TmpJNU5UVTRNaTl0WldScFlYTmZNVEF3TVRFeU1USTBPVjh3TUY5VFgwMHRNakF5TmpBME1qTXhNVEExTlRrdWFuQm58MzU2MjgzZjY5ODVmYmQzMzU1NzdmNWYzMmJiMzYwNWRlNjU3ZjBjNDgwZGU5ZmJhYjVjMjY5MjY0YTgyZDI2Mw&feedId=58083&k=3dbcc4899d185c7b6ab4827c27b92f420bd51cb3",
         sizes: ["XS", "S", "M", "L"],
       },
@@ -48053,7 +47945,7 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
         price: 40.19,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378597&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249378509&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112855-00-S-M-20260330145619.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYwM3xpbWFnZS9qcGVnfGFEWTVMMmhsWlM4eE16WTJPVEV6TURZek16STBOaTl0WldScFlYTmZNVEF3TVRFeE1qZzFOVjh3TUY5VFgwMHRNakF5TmpBek16QXhORFUyTVRrdWFuQm58MDlkNDhmZjE5MjQzZDgxYzQ3YzJjODUxZjFmZWFlMDc4OWY4YzQ4NDg5YzI0ZDA0MjI3MjYxMmRhYTkxNjFiMQ&feedId=58083&k=d1638edea1f0095407a1ff385ac0a6aa6015c772",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -48715,9 +48607,6 @@ const minedApparelProductsChunk8: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-short-adidas-squadra-25-orange",
     brand: "Adidas",
@@ -48808,6 +48697,9 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk9: ApparelProduct[] = [
   {
     id: "adidas-short-adidas-squadra25-bleu",
     brand: "Adidas",
@@ -50244,15 +50136,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff72bbb760c8644b68273af2b0115ecc7_9366%2FShorts_de_Entrenamiento_Tiro_23_Club_Azul_HZ0176_01_laydown.jpg&feedId=95013&k=92bbe9b10b3504dea3f2daf31073ce9a7757ea93",
         sizes: ["XS", "S/T", "M", "M/T", "L", "L/T", "XL/T", "2XL", "2XL/T"],
       },
-      {
-        store: "AdidasCO",
-        price: 76965.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46343276648&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff72bbb760c8644b68273af2b0115ecc7_9366%2Fshorts_de_Entrenamiento_Tiro_23_Club_Azul_HZ0176_01_laydown.jpg&feedId=95017&k=9ca62b316c1f4110efa9b50efe990db89f78f907",
-        sizes: ["S", "M"],
-      },
     ],
   },
   {
@@ -50279,24 +50162,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs9533-short-adidas-tiro-23-club-noir-blanc",
         imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_hs9533_1_apparel_photography_front_view_white.webp",
         sizes: ["S"],
-      },
-      {
-        store: "AdidasMX",
-        price: 471.0,
-        shipping: 0,
-        currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=45373326670&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd417dab9b7794016ac27af1f00eb204e_9366%2FShorts_de_Entrenamiento_Tiro_23_Club_Negro_HS9533_01_laydown.jpg&feedId=95013&k=6cd192542e68ce854052963fb8e2bcf20e75f592",
-        sizes: ["XS", "S/T"],
-      },
-      {
-        store: "AdidasCO",
-        price: 65970.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46398559116&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd417dab9b7794016ac27af1f00eb204e_9366%2Fshorts_de_Entrenamiento_Tiro_23_Club_Negro_HS9533_01_laydown.jpg&feedId=95017&k=c87c53e6a01b2a6f98cf1df590ab7d9c83a64d23",
-        sizes: ["S", "M"],
       },
     ],
   },
@@ -51504,15 +51369,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F62878a58b8c64f12818bf6eb8e7a5f28_9366%2FShorts_de_Entrenamiento_Tiro_26_League_Azul_JY9718_21_model.jpg&feedId=95013&k=cd3b2c9bde640889cc43c9af46f38bae0b792e44",
         sizes: ["S", "L", "XL", "2XL"],
       },
-      {
-        store: "AdidasCO",
-        price: 103960.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46343276064&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F62878a58b8c64f12818bf6eb8e7a5f28_9366%2FShorts_de_Entrenamiento_Tiro_26_League_Azul_JY9718_21_model.jpg&feedId=95017&k=cd3b2c9bde640889cc43c9af46f38bae0b792e44",
-        sizes: ["S", "L"],
-      },
     ],
   },
   {
@@ -52703,7 +52559,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         price: 27.19,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378539&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249378368&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112865-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzE1NXxpbWFnZS9qcGVnfGFHRXlMMmcxWWk4eE16VTJNak13TnpFME9UZzFOQzl0WldScFlYTmZNVEF3TVRFeE1qZzJOVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58ZDEzNTA0ZGFkZjljNzAzNTZjYjIxNmY1YjFjM2ZlMmRmYzRjNWRlNzE1Yjg0ODlhMzkxNWNjZjVlNDZhZjNjNw&feedId=58083&k=99fa8e738c95b82c0f89ee8041c27519e51a4aa6",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -52739,7 +52595,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         price: 27.19,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378423&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249378713&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112862-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU4OXxpbWFnZS9qcGVnfGFHRmlMMmcyWVM4eE16VTJNak13TlRVeE1UUTFOQzl0WldScFlYTmZNVEF3TVRFeE1qZzJNbDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58MGNlYmZiMzA2ZjBjNWYwY2VkZmJhMjBhZGE5NjE5NWFhMzM1OWUyOTRhZDdkZjY4MGVmODRjM2Q0ZmRiMzc2Yw&feedId=58083&k=2f256e1335c635bea4ddd54a9cd2fb310fb80589",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -52796,7 +52652,7 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
         price: 27.19,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378540&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249378310&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112868-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY2N3xpbWFnZS9qcGVnfGFHWm1MMmhpT0M4eE16VTJNak13T1Rnek5qZ3pNQzl0WldScFlYTmZNVEF3TVRFeE1qZzJPRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58MmYzZWQwZGFmNjQ3MTc5OGVlMjc1OGM0ZWYyNWUxOThlNjcyM2Y5M2VmNTA2ZmNiOTg1MzRkYmZiNDJjOWU1ZA&feedId=58083&k=74dafa75b2f621597135be4564fbea105974db9a",
         sizes: ["XS", "XL", "XXL"],
       },
@@ -55415,9 +55271,6 @@ const minedApparelProductsChunk9: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-pantalon-corto-entrenamiento-adidas-tiro-26-noir",
     brand: "Adidas",
@@ -55494,6 +55347,9 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk10: ApparelProduct[] = [
   {
     id: "adidas-pantalon-corto-entrenamiento-bayern-munich-tiro-2024-25-negro",
     brand: "Adidas",
@@ -55806,7 +55662,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
         price: 30.81,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249382957&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249382889&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134896-00-S-M-20260814142834.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTY1M3xpbWFnZS9qcGVnfGFEaGtMMmcyT1M4eE16azFORFUxTWpNMk5UQTROaTl0WldScFlYTmZNVEF3TVRFek5EZzVObDh3TUY5VFgwMHRNakF5TmpBNE1UUXhOREk0TXpRdWFuQm58Mjc0MmNiOTg5MWIwOTBlNGZkMjBiYWIxYjk0YzU0ODM0MDM4NmQzMmQwODdlODBkZDg1NmE0YmZhYTQ2MzMwMg&feedId=58083&k=8bd9868a4f8cc3e9bcf2de887d240650b42c48f6",
         sizes: ["S", "L", "XL", "XXL"],
       },
@@ -58346,7 +58202,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383705&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383782&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134992-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTgxOXxpbWFnZS9qcGVnfGFESTVMMmc1TUM4eE16Z3pOamd6TmpZMk56UXlNaTl0WldScFlYTmZNVEF3TVRFek5EazVNbDh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58N2NhYjhiOTgyZTg5OThkYjA5N2ZjNGEzMzYxZDE4ZjQwMDBhY2QxMzcyNzAxZmI5MWMwMDI1ZGU0NGJlZTYzOA&feedId=58083&k=3310b445476c1ade6ca007fd98a5087eb127e47f",
         sizes: ["XS", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -58422,7 +58278,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249384853&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249385350&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134800-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTg1NnxpbWFnZS9qcGVnfGFETTFMMmhoWlM4eE16Z3pOalUyT1RBeE9ETTVPQzl0WldScFlYTmZNVEF3TVRFek5EZ3dNRjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58MTAxNmU2YWVlNjViMzg0NGJiZTI0YWVhODM0MzUzOWJkOWI5MDRkYzkwNTk0NmJjY2IwZTY5MTc1NGY2M2M3NA&feedId=58083&k=4e71fa1b7a44d5f4ac7e5afce13ff0a8de72614a",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -58781,7 +58637,7 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
         price: 45.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46664443360&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383093&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134912-00-S-M-20260814141506.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzkzNHxpbWFnZS9qcGVnfGFEbGxMMmhpWlM4eE16azFORFUxTmpRNU16ZzFOQzl0WldScFlYTmZNVEF3TVRFek5Ea3hNbDh3TUY5VFgwMHRNakF5TmpBNE1UUXhOREUxTURZdWFuQm58N2MzMzBjNjYxZGExYWI5MTVkYjdkMzc2MmIyODZhYjRlYzAyNTQ5YjE0MTgzZTllYzNhYzU4MzNkOTQxZmM5OA&feedId=58083&k=e747ac25eca3414672b14cef7166583b41c1f165",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -60684,15 +60540,6 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
           { size: "2XL", price: 44.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fhs3492-pantalon-de-survetement-adidas-tiro-2022-23-league-bleu" },
         ],
       },
-      {
-        store: "AdidasCO",
-        price: 113970.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46343281223&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc86c7c2beeb24288a548aef500b921a3_9366%2FPantalon_de_Entrenamiento_Tiro_23_League_Azul_HS3492_01_laydown.jpg&feedId=95017&k=57ac984db289be470b1dc6afd6a24d95e0d1304d",
-        sizes: ["XS", "S", "XL"],
-      },
     ],
   },
   {
@@ -61833,9 +61680,6 @@ const minedApparelProductsChunk10: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-adidas-tiro-travel-bleu",
     brand: "Adidas",
@@ -61945,6 +61789,9 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk11: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-adidas-tiro-travel-gris",
     brand: "Adidas",
@@ -64374,7 +64221,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         price: 44.88,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383132&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383188&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135054-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTY0M3xpbWFnZS9qcGVnfGFERTRMMmcyT0M4eE16Z3pOak0yTWprM016SXhOQzl0WldScFlYTmZNVEF3TVRFek5UQTFORjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58ZGQ2YjdmY2NjYjY1ZjkxMzI4YTQ5YTBmMjExZmUxM2QzOGEzMWQyMzhjMTdhZjE0MmRjNjVlNjI1Nzc5ZDIxNQ&feedId=58083&k=ba7bf485336a561453e8134bdede7b7268e74383",
         sizes: ["XS", "S", "M", "XXL"],
       },
@@ -65503,7 +65350,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         price: 44.88,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249382924&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249382925&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135061-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTc2MnxpbWFnZS9qcGVnfGFERmpMMmhsWlM4eE16Z3pOamcyTVRZek5qWXpPQzl0WldScFlYTmZNVEF3TVRFek5UQTJNVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58MWI5MDA0ZWRhMzZlOGZjMDBjMWYxZDk0ZDUwYzBlY2UyNTY0NzAwOTFkOTI4MThjMDUwOTM0Yjg1NjA0OWVkMg&feedId=58083&k=903bb36db039bf84b4bb90b1037e7b684d5d2335",
         sizes: ["XS", "S", "M", "L", "XL", "XXXL"],
       },
@@ -65775,7 +65622,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         price: 53.12,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383665&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383459&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135063-00-S-M-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI5N3xpbWFnZS9qcGVnfGFERmhMMmhsWlM4eE16Z3pOekl6TURnNU9USXpNQzl0WldScFlYTmZNVEF3TVRFek5UQTJNMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58OTlmNDgxMDkyZDcxYjAyNGJmMTA0ZDIyN2MwMTkyYTY4ZGZkMzBjNDJhZjYwYTM3MWM2MGFkMjg4ZTAyOGZhMg&feedId=58083&k=d55261c9fb42b9de0cac235ce2aab702b8727c72",
         sizes: ["XS", "M", "XXL", "XXXL"],
       },
@@ -66150,7 +65997,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         price: 66.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375762&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249375833&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113028-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTgyNHxpbWFnZS9qcGVnfGFETXdMMmcwWXk4eE16VTJNak01TnpRMU9EUTJNaTl0WldScFlYTmZNVEF3TVRFeE16QXlPRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NTA2NGU2OTYyNjM0YjE2NDQxMTZhY2VmYzRkYTQzMmViYjQ2NDA4NDM3YWJkMGFhMjMwYmI4NWE1ZDczZTEyMQ&feedId=58083&k=f35b7a6f28e3f4e96439300d5158628da4eb93b3",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -66220,7 +66067,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         price: 43.86,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378513&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249378341&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112640-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjA5NnxpbWFnZS9qcGVnfGFHTTJMMmcyWkM4eE16VTJNakl5TkRBNE1qazNOQzl0WldScFlYTmZNVEF3TVRFeE1qWTBNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58ZGQ5YjQyOTc3YTU4ZDczZGUwNGY0Y2RlYzc1MWM5MTFhODFmMWQ4NWM3MjhiMTUwYTExN2UwYjhjZmIxM2IwMQ&feedId=58083&k=0ad11908ed6bee2b22d5e1f6bae02bc04317b505",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -66525,7 +66372,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         price: 48.5,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383128&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383052&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135033-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODMxOXxpbWFnZS9qcGVnfGFHSmhMMmd4WXk4eE16Z3pOak0xTURRMU5UZ3pPQzl0WldScFlYTmZNVEF3TVRFek5UQXpNMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58ZjQ0ZGFhZGU5NmQzYTAzMjhkNGMzYzFhOWI1YzY4NWM3N2U3YWEzZGY4MjliNjhlNjk0NTFiYTdiZWIyMzA2OQ&feedId=58083&k=87f8b5fcff9eba5a24bbd948ffefb315bbc6b2fd",
         sizes: ["XS", "S", "M", "L"],
       },
@@ -66618,7 +66465,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         price: 40.86,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383794&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383660&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135037-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODI2NnxpbWFnZS9qcGVnfGFEQTRMMmhtTlM4eE16Z3pOamcxTXpjd05qYzRNaTl0WldScFlYTmZNVEF3TVRFek5UQXpOMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58ZWQ0ODJlNGFhMzkyMjMzZDY0ZjQ4ZmZhY2UwN2I3ZjkxM2FiYTc4ZGUyZGZlNTQ1ZGRjODExYzY5MjUyYjNkNg&feedId=58083&k=2c6a4e2d6df25f1f37f242127e8c6c65f89a1eb0",
         sizes: ["XS", "S", "M", "XL"],
       },
@@ -67607,7 +67454,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         price: 54.89,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383463&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383536&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135076-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTEzOXxpbWFnZS9qcGVnfGFHWTRMMmc1T0M4eE16Z3pOalF3TVRRM05UWXhOQzl0WldScFlYTmZNVEF3TVRFek5UQTNObDh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58MDNmMTk0N2QyZTQ2MGQwNmU5OTU3NTlhYjBmNGU0ZGQ1NTViMWMyMWVkYTNkYzZjOGEwMTFlMmQyNWZiNzVkMw&feedId=58083&k=f5489080066f2d4b86ead9100bd44f3a50dfc4d4",
         sizes: ["XS", "S"],
       },
@@ -67778,7 +67625,7 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
         price: 46.19,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249382796&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383005&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135079-00-S-M-20260618142600.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzYzOHxpbWFnZS9qcGVnfGFEQXdMMmcwT0M4eE16Z3pOekl6TXpZMU1UYzBNaTl0WldScFlYTmZNVEF3TVRFek5UQTNPVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3hOREkyTURBdWFuQm58ZmJkMDA1NjQyZmRkOTBlMTNhNDFhMGZiYzJiZWJmYjE2N2ZmNjA5YTFkYmVmNjNlZmQ0YWE3YWYxNmUxOGM4ZQ&feedId=58083&k=5b10cff1bc73b0315d86376c0be4a1f727f90b28",
         sizes: ["M", "L", "XL", "XXL"],
       },
@@ -69024,9 +68871,6 @@ const minedApparelProductsChunk11: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-survetement-femme-real-madrid-2024-25-bleu",
     brand: "Adidas",
@@ -69088,6 +68932,9 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk12: ApparelProduct[] = [
   {
     id: "adidas-pantalon-de-chandal-real-madrid-2024-25-gris-2",
     brand: "Adidas",
@@ -69779,24 +69626,6 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-pantalon-de-entrenamiento-adidas-essentials-tiro-25-azul",
-    brand: "Adidas",
-    model: "Pantalón de Entrenamiento adidas Essentials Tiro 25 - Azul",
-    colour: "Azul",
-    type: "pants",
-    offers: [
-      {
-        store: "AdidasCO",
-        price: 132965.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46343278302&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1ab46346c3064556b02d3ae79c39cfc8_9366%2FPantalon_de_Entrenamiento_Essentials_Tiro_25_Azul_JM5950_01_laydown.jpg&feedId=95017&k=03cfb51dc9e746c278589d9a7479b6e30ea0a7b5",
-        sizes: ["XS", "XL"],
-      },
-    ],
-  },
-  {
     id: "adidas-pantalon-d-entrainement-adidas-squadra-21-bleu",
     brand: "Adidas",
     model: "Pantalón de entrenamiento adidas Squadra 21 - Azul",
@@ -69942,24 +69771,6 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46511629548&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa9d8923a52c1444087138f9bb855792c_9366%2FPantalon_de_Entrenamiento_Tiro_26_League_Negro_KH1752_21_model.jpg&feedId=95016&k=e7eed26dbc667056d7f2df5c6d2b202371ca3f1c",
         sizes: ["S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-pantalon-de-entrenamiento-adidas-tiro26-competition-de-universidad-de-chile-violeta",
-    brand: "Adidas",
-    model: "Pantalón de entrenamiento adidas Tiro26 Competition de Universidad de Chile - Violeta",
-    colour: "Violeta",
-    type: "pants",
-    offers: [
-      {
-        store: "AdidasCL",
-        price: 23990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=43600499325&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F396b4ceeb5bf4fe2839c97aa59d6522c_9366%2FPantalon_de_entrenamiento_Tiro26_Competition_de_Universidad_de_Chile_Morado_JW4400_21_model.jpg&feedId=95016&k=495f783fcbe4f40833f18c8e4ce953436b5f3250",
-        sizes: ["L", "XL"],
       },
     ],
   },
@@ -70959,7 +70770,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         price: 38.85,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375994&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249375682&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112955-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTE0OHxpbWFnZS9qcGVnfGFEVXpMMmczT1M4eE16VTJNak0wTWpBNE1EVTBNaTl0WldScFlYTmZNVEF3TVRFeE1qazFOVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NGNlZjJlYzdhM2FlZWVlMTQ0ZTU2NTAyZDUxMjVhYWU4M2NhYjA2MDVlNzkyNDI4NTQ1YTY2NzI0ZmRkODgzMQ&feedId=58083&k=0620a42e6557f030c6315329d32230f32fade718",
         sizes: ["XS", "S", "M", "L", "XL"],
       },
@@ -72195,7 +72006,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249384464&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249384515&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135254-00-S-M-20260814141506.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTczNnxpbWFnZS9qcGVnfGFHVmtMMmd5WlM4eE16azFORFUzT1RrMU5UYzBNaTl0WldScFlYTmZNVEF3TVRFek5USTFORjh3TUY5VFgwMHRNakF5TmpBNE1UUXhOREUxTURZdWFuQm58MGZhYzFmOWJjYjFmMzlhYWY3NTA1YWY0MjhjYjk5ZGNjYTQxMTBkOGU0ZjI4MzQ5NDZjYjY2NWI4MzZmZDlhNg&feedId=58083&k=e8c2b0121fc37b0a6c85aee125ff4efc850849f7",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -72340,7 +72151,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46792530752&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46792530784&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112164-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTIzOXxpbWFnZS9qcGVnfGFESXlMMmczWmk4eE16VTJNelV4TnprNU1qazVNQzl0WldScFlYTmZNVEF3TVRFeE1qRTJORjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58Y2IzNjlmYjBiNWM5MmI0ZDE0MjMyYmQ1Yjk4N2I1Njc2MGI3N2Y4MzFiMWYwOTA5YzBmMzFjNjIyMzc5NmVjNQ&feedId=58083&k=28c6a3a9ba3f3217189dbf1c14cf9fe9d8c5d6b2",
         sizes: ["M", "L", "XL", "XXL", "XXXL"],
       },
@@ -72850,7 +72661,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         price: 49.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46270787633&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46270787567&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135108-00-P-X-20261008150638.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDUwN3xpbWFnZS9qcGVnfGFEUmhMMmd5T1M4eE5EQTJOVGsyTXpNek5UY3hNQzl0WldScFlYTmZNVEF3TVRFek5URXdPRjh3TUY5UVgxZ3RNakF5TmpFd01EZ3hOVEEyTXpndWFuQm58MjIyMzg2YmVlNmQ1NDJiMzQ4ZDI3ZmE0ZjA5MmViOGUwMzA5OTBhNzcxZjdmYmEzMTFiMWU1MTBjYTY5OTQwZQ&feedId=58083&k=4978aafd56bafb9fb73cd5f602de97d8c9d941ca",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -73195,7 +73006,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249374279&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249374215&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001111104-00-S-M-20260325141310.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc0M3xpbWFnZS9qcGVnfGFHUmpMMmd4WXk4eE16WTFPVGc0TlRRMk9UY3lOaTl0WldScFlYTmZNVEF3TVRFeE1URXdORjh3TUY5VFgwMHRNakF5TmpBek1qVXhOREV6TVRBdWFuQm58MzhlZGNlM2I5MDgyYjQ5ODJmYzk1YzQ0MjFkZDRiYmIzMDlkMTQzZWMzMTFiMzU1ZWQzODkxNDVmNjcyZTdkYg&feedId=58083&k=bb3fe8ec3a833f2372d53402b60c9a1491b85387",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -73303,7 +73114,7 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
         price: 33.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378456&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249378397&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112642-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTk0OXxpbWFnZS9qcGVnfGFERmxMMmd3TVM4eE16VTJNakl5TlRFek1UVTFNQzl0WldScFlYTmZNVEF3TVRFeE1qWTBNbDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58MmQ5MTNmMGViNjU2Yzg5MTRhYjMxNzJhMzAxNzc2NmViYzAzYWU2ZDRjMzkwMmJkYzQ5NTkzYzVjMWNiZTIzYw&feedId=58083&k=465e74f6f21e5b221226ba99cf4f75a0b5d98c1e",
         sizes: ["XS", "S"],
       },
@@ -75106,9 +74917,6 @@ const minedApparelProductsChunk12: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-pantalones-de-presentacion-adidas-universidad-de-chile-tiro26-competition-violeta",
     brand: "Adidas",
@@ -75123,7 +74931,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=43600494090&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9bddd42986044f04b3d27f4cc972e370_9366%2FPantalones_de_presentacion_Universidad_de_Chile_Tiro26_Competition_Morado_JW4392_21_model.jpg&feedId=95016&k=436d549d2afffa1d0e3b86c9c11eec4e917f7399",
-        sizes: ["XS", "S", "M", "L", "2XL"],
+        sizes: ["XS", "S", "2XL"],
       },
     ],
   },
@@ -75208,6 +75016,9 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk13: ApparelProduct[] = [
   {
     id: "adidas-pantalones-de-presentacion-manchester-united-2020-21-negro",
     brand: "Adidas",
@@ -75328,7 +75139,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         price: 1999.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=45311865728&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=45311865726&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9de136a21d2c4f75b24800517fd88013_9366%2FPants_Deportivos_Tigres_Stadium_Azul_KH2201_21_model.jpg&feedId=95013&k=eaf6e4b7ebbf3253026430595d0b681fb91b9fa6",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -75553,7 +75364,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         price: 899.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=45598938661&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=45598938663&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdf49380d00fb48bfad88e432d1f4a600_9366%2FPants_de_Entrenamiento_Entrada_26_Azul_JZ6547_21_model.jpg&feedId=95013&k=7ba731eec799235307d483caec5ae85d6421ec82",
         sizes: ["XS", "S", "M", "L"],
       },
@@ -76421,7 +76232,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         price: 799.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=44653257816&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=44653257817&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7527a01318cb41e8b7e492d09ceab6c5_faec%2FPlayera_Graphic_Blanco_KC5424_db21_model.jpg&feedId=95013&k=05b3e0457e0cdcc213f876a2207e28ef95f31df5",
         sizes: ["S", "M", "L"],
       },
@@ -76869,7 +76680,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         price: 55.67,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46904506344&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46904506346&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113763-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjUxNnxpbWFnZS9qcGVnfGFEWTNMMmcxTnk4eE16VTJNekEzTlRJek1UYzNOQzl0WldScFlYTmZNVEF3TVRFeE16YzJNMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58NjkxOWZkMzliZmE3ZmZjZDg5ODhiNjI1ZWRkMWFjN2FiZDg5MDJiYzMxNmZkYzUyM2JlYTA5NWI3ZTkzNmM4ZA&feedId=58083&k=0cc2fb699f0e92964bd139175e722b5902d85e8c",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -76949,7 +76760,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         price: 55.67,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376784&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249376845&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113761-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzA4NnxpbWFnZS9qcGVnfGFHVTBMMmhsTWk4eE16VTJNekEzTXpZMU9Ea3hNQzl0WldScFlYTmZNVEF3TVRFeE16YzJNVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58YWMwMDZmOTVlODczNmFiMGZiYjU4YmZjM2I3NDg3ZTBlMzIzZjdmYzIwMzgwZDlkNDExN2U0OGYyMGU3ZTdhOA&feedId=58083&k=a52a6d24c96894b1fbb022ca3a09c82512e7fbe9",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -77566,9 +77377,9 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         price: 32990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=43600499352&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=43600499354&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F96f0d9beb61a4196bce41f17e73da66a_9366%2FPoleron_de_Entrenamiento_Tiro_26_Competition_Colo-Colo_Rojo_JW2627_21_model.jpg&feedId=95016&k=ca9d0bad96bc3e42eee25d16c3eb0eed8de8d792",
-        sizes: ["M", "L", "XL", "2XL"],
+        sizes: ["XL", "2XL"],
       },
     ],
   },
@@ -77749,24 +77560,6 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45715958794&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3a4d3f3e753f483a85181165a140be09_9366%2FCamiseta_de_Entrenamiento_Tiro_26_League_Negro_JY9688_21_model.jpg&feedId=95017&k=2cf5ef75fb3284f9c50aaebeed5483816b0e7dc1",
         sizes: ["XS", "S", "M", "L"],
-      },
-    ],
-  },
-  {
-    id: "adidas-poleron-de-entrenamiento-adidas-tiro26-competition-universidad-de-chile-violeta",
-    brand: "Adidas",
-    model: "Polerón de entrenamiento adidas Tiro26 Competition Universidad de Chile - Violeta",
-    colour: "Violeta",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "AdidasCL",
-        price: 45990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=43600494081&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff5738d76cc4f44e8a9bab7d7b65c94c4_9366%2FPoleron_de_entrenamiento_Tiro26_Competition_Universidad_de_Chile_Morado_JW4391_21_model.jpg&feedId=95016&k=c8209ad09212b28a7fdca217447e919da0272208",
-        sizes: ["L", "XL", "2XL"],
       },
     ],
   },
@@ -78949,7 +78742,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         price: 39.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383182&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383122&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135016-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjUyN3xpbWFnZS9qcGVnfGFHUm1MMmcyTVM4eE16Z3pOakkyTnpBNU5EQTBOaTl0WldScFlYTmZNVEF3TVRFek5UQXhObDh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58M2FmNjk1Yzk5NmFmOGZlNWViZGVmYjYzOTk2N2E2NjdmYWYwMDE4M2RjM2ZiMDliNjBjNjRiOTJjYWY1Njg1Mg&feedId=58083&k=3ca02b7b5b8e9ad9361876e2fef1583e91e66f30",
         sizes: ["S", "XXL"],
       },
@@ -79007,7 +78800,7 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
         price: 27.19,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46338698214&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383252&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135013-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjYxMXxpbWFnZS9qcGVnfGFEVTNMMmd4TVM4eE16Z3pOamcwTXpFMU5UUTROaTl0WldScFlYTmZNVEF3TVRFek5UQXhNMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58ZjBmMjM1NzZlNmIzMjEzMGM5YjIzNmNlNDM1ZjRjNDE3MWZiODYzM2JlMDc2Zjk3ZWI3NDg4N2I4YjI5YjRmMQ&feedId=58083&k=79040b2939e676082343faeb2e91d2b4a6bbac05",
         sizes: ["XS", "S", "M", "XL", "XXL"],
       },
@@ -80497,9 +80290,6 @@ const minedApparelProductsChunk13: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-polo-manchester-united-dna-2024-25-noir",
     brand: "Adidas",
@@ -80681,6 +80471,9 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk14: ApparelProduct[] = [
   {
     id: "adidas-polo-real-madrid-dna-2026-27-noir",
     brand: "Adidas",
@@ -82247,7 +82040,7 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383334&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383333&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134842-00-S-M-20260814142834.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODY3N3xpbWFnZS9qcGVnfGFEWTNMMmhqWXk4eE16azFORFUxTVRVM09EWTFOQzl0WldScFlYTmZNVEF3TVRFek5EZzBNbDh3TUY5VFgwMHRNakF5TmpBNE1UUXhOREk0TXpRdWFuQm58NzVkMTI1MjE1ODljNmNhNmFkODY5MjE1ZWYzZjY2ZmU0NjU4ZTc0MGQ4ZGY3ZjI1MTEwNWNjZjk3YTlmZDgxOQ&feedId=58083&k=23a573eb42827b8744bc7f8c1679a7ced78ab50d",
         sizes: ["S", "M"],
       },
@@ -83502,6 +83295,24 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
     ],
   },
   {
+    id: "adidas-shorts-de-entrenamiento-adidas-tiro-23-club-negro",
+    brand: "Adidas",
+    model: "Shorts de Entrenamiento adidas Tiro 23 Club - Negro",
+    colour: "Negro",
+    type: "shorts",
+    offers: [
+      {
+        store: "AdidasMX",
+        price: 471.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=45373326670&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd417dab9b7794016ac27af1f00eb204e_9366%2FShorts_de_Entrenamiento_Tiro_23_Club_Negro_HS9533_01_laydown.jpg&feedId=95013&k=6cd192542e68ce854052963fb8e2bcf20e75f592",
+        sizes: ["XS", "S/T"],
+      },
+    ],
+  },
+  {
     id: "adidas-shorts-de-entrenamiento-adidas-tiro-seleccion-colombia-26-azul",
     brand: "Adidas",
     model: "Shorts de Entrenamiento adidas Tiro Selección Colombia 26 - Azul",
@@ -84186,7 +83997,7 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=46343281188&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8cbc271be32e441c9939acdbff7ab028_9366%2FCamiseta_de_training_Tiro_26_Competition_Negro_JX4257_21_model.jpg&feedId=95017&k=90803c2c3e7a39832fdb548514cbc1df54546162",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["XS", "S", "M", "L"],
       },
     ],
   },
@@ -84715,7 +84526,7 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
         price: 38.39,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249375871&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249376033&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113076-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODgwNXxpbWFnZS9qcGVnfGFEQTFMMmcxWmk4eE16VTJNalF3T1RNNE5qQXhOQzl0WldScFlYTmZNVEF3TVRFeE16QTNObDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NmZhYTU5YmE5MDQ5Y2M2NWI4N2NjYTM0ZmFiNWY0YzRhZTIyMzE4NzBmYzgwYzYzMWI1YzVkNmY3YjkwNWUyNQ&feedId=58083&k=1056afc29972fc361ac7c63784705ffe342601de",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -85475,9 +85286,6 @@ const minedApparelProductsChunk14: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-sudadera-adidas-tiro-23-league-verde-2",
     brand: "Adidas",
@@ -85630,6 +85438,9 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk15: ApparelProduct[] = [
   {
     id: "adidas-sudadera-adidas-tiro-26-league-bleu",
     brand: "Adidas",
@@ -86492,7 +86303,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 44.88,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383718&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249382922&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135053-00-S-M-20260618081627.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYwNHxpbWFnZS9qcGVnfGFEYzNMMmhsTmk4eE16Z3pOak0yTVRNMk56VTRNaTl0WldScFlYTmZNVEF3TVRFek5UQTFNMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpjdWFuQm58ZTc2NzBjYzdjNTAzZjIwYTVlNTliOWQ4MDVhMjhmODFlYjRmYjViYTI0YTM3OGNjNzhiMzBjMDk3Yzk0ZGM2Mg&feedId=58083&k=05cc0db089a132dfea1724d288ce926eed58c310",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -88990,7 +88801,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 46.89,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46405759416&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46405759414&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113792-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzc1NnxpbWFnZS9qcGVnfGFHUmhMMmhsTlM4eE16VTJNekE0TVRnMU1Ea3hNQzl0WldScFlYTmZNVEF3TVRFeE16YzVNbDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58MWJhMmQwNmFhZjlkYjlkZTJkNDg4OTkzOWNiNzVmYmZkYWY4NzEzMGY0NWZhMWQ2ZjllMGZmNWJiN2YzMDc3Yg&feedId=58083&k=42304bd3bd1630e8122f292af560328666509e04",
         sizes: ["S", "M", "XL"],
       },
@@ -89278,7 +89089,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 59.93,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45396590387&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45396590386&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001098505-00-S-M-20260618081626.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTIxNXxpbWFnZS9qcGVnfGFHVTFMMmhrT0M4eE16Z3pOVFV5TXpneE56VXdNaTl0WldScFlYTmZNVEF3TVRBNU9EVXdOVjh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpZdWFuQm58ZDZlZmZkODMyNjhmYzJiZTY1Y2Q1YzlkODgwNDRjZDNjOGVkYzIzNGNiZmM1ZDYwZmEwYWI4YzMwNTNmNDRkOQ&feedId=58083&k=10fe5c394b27bd7b225871ee4d06b3667fb08307",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -89546,7 +89357,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 59.99,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45365872040&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45365872039&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001098502-00-S-M-20260618081626.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTYwMnxpbWFnZS9qcGVnfGFHTTBMMmhpT1M4eE16Z3pOVFV5TWpjd016TTVNQzl0WldScFlYTmZNVEF3TVRBNU9EVXdNbDh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpZdWFuQm58NzFkNzIyNzEwYTIxNjhiZTRmNDNkMzcxMjk2OTU2MDVhMWVmZjFjM2YyOTZlNGFhNDA2NThkMjEzMTRjYzgxMA&feedId=58083&k=f6b059a13cd5d1e1444e795ac0fdaf678bc37df0",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -89810,7 +89621,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 62.99,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383326&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249382929&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135074-00-S-M-20260708143602.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njg2NHxpbWFnZS9qcGVnfGFHTmxMMmd5TUM4eE16ZzRNREl6TVRNMk1qVTVNQzl0WldScFlYTmZNVEF3TVRFek5UQTNORjh3TUY5VFgwMHRNakF5TmpBM01EZ3hORE0yTURJdWFuQm58ZmFlZmI5ZTUzMmEyN2UzNzA2YTk1ZjRmOWRiMTM5YWQzYmQ1YmIyMzg4NzUxMmY0MTBhMDQ1Y2M5NDRiNDIwYw&feedId=58083&k=6cb011773a2a24f09ff4d9f3bc064cf1ada336f2",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -89862,7 +89673,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 63.98,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46420303862&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46695451504&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102075-00-S-M-20260525112510.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjA4NXxpbWFnZS9qcGVnfGFHTmhMMmc0WkM4eE16YzROamsxTWpZek1ETXdNaTl0WldScFlYTmZNVEF3TVRFd01qQTNOVjh3TUY5VFgwMHRNakF5TmpBMU1qVXhNVEkxTVRBdWFuQm58NGEzN2Y2ZjBlOGI0NTRiYWRiZjVhNWJmYWFjODgxY2ZlMTNiNDljM2FjMmQ3YWNjZDY4YmQ3MTRmNmVkZGQ2NA&feedId=58083&k=e8bfbc34881c4c54646f96dfe63b213322de7770",
         sizes: ["M", "L"],
       },
@@ -90051,7 +89862,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 57.41,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249376624&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249376563&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001113822-00-S-M-20260206161433.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU5OHxpbWFnZS9qcGVnfGFEZGhMMmhpTnk4eE16VTJNekE1TURjMk16Z3dOaTl0WldScFlYTmZNVEF3TVRFeE16Z3lNbDh3TUY5VFgwMHRNakF5TmpBeU1EWXhOakUwTXpNdWFuQm58NWZlOGVlYzBlMThkNDgzNzM1OGJkNzBlNjYzNDJmNWU3MzYwNDJhMjc0OGEwMGY0NzcxNmM3YmNhNjE0NDY4YQ&feedId=58083&k=15a3f849fcfcf25663bdb0f5b6519e7681a14ac6",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -91117,7 +90928,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 43.86,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378731&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249378667&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112725-00-S-M-20260206170528.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg3MXxpbWFnZS9qcGVnfGFHRTJMMmcwWlM4eE16VTJOVE16TlRFM05URTVPQzl0WldScFlYTmZNVEF3TVRFeE1qY3lOVjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOekExTWpndWFuQm58MTQ1ZTA1NzlkYWY1ZjVjYWY0OTFlYTM0MDg4N2VhYzAxMjU5MjgxZmZhMzlhYWVlZTMwMWRkNWIzODQzZGYwZA&feedId=58083&k=7aadf13da48dfb8af5323ad61a098d7a1a8e7675",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -91259,24 +91070,6 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
     ],
   },
   {
-    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul-4",
-    brand: "Adidas",
-    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 - Azul (JY9661)",
-    colour: "Azul",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 56.69,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378421&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112857-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDY5MHxpbWFnZS9qcGVnfGFHTTJMMmhpTUM4eE16VTJNak13TXpBeU1UQTROaTl0WldScFlYTmZNVEF3TVRFeE1qZzFOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NmY0MzJkODE0NjE1ZjNkMjczMmVkOWIyYzY0YjRmNGVlNjQwN2E3NGU4YWE0ZDU0OGMyZGE2YzBiOGU4YmEyYQ&feedId=58083&k=4fdcd843b3cc12d08e5ca4b5066ca46fcca69161",
-        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
-      },
-    ],
-  },
-  {
     id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul-5",
     brand: "Adidas",
     model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 - Azul (JY9662)",
@@ -91288,9 +91081,27 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 66.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249378711&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249378422&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112860-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODkyOXxpbWFnZS9qcGVnfGFESXpMMmhrWlM4eE16VTJNak13TkRJMk5qSTNNQzl0WldScFlYTmZNVEF3TVRFeE1qZzJNRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58MjJmNzc4YTg2M2YxZGI4ZGU4YWNlMmZjOGYzN2Y0OWNkOTQwNDE5YTAwYjQzNmQyMDI4YjBhNmIyOTY2ZTE3Zg&feedId=58083&k=7240d256bf6c75252ab84801edaa779ac94a378f",
         sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
+      },
+    ],
+  },
+  {
+    id: "adidas-sudadera-de-entrenamiento-italia-mundial-2026-azul-4",
+    brand: "Adidas",
+    model: "Sudadera de entrenamiento Adidas Italia Mundial 2026 - Azul (JY9661)",
+    colour: "Azul",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 56.69,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46249378710&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112857-00-S-M-20260206142448.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDY5MHxpbWFnZS9qcGVnfGFHTTJMMmhpTUM4eE16VTJNak13TXpBeU1UQTROaTl0WldScFlYTmZNVEF3TVRFeE1qZzFOMTh3TUY5VFgwMHRNakF5TmpBeU1EWXhOREkwTkRndWFuQm58NmY0MzJkODE0NjE1ZjNkMjczMmVkOWIyYzY0YjRmNGVlNjQwN2E3NGU4YWE0ZDU0OGMyZGE2YzBiOGU4YmEyYQ&feedId=58083&k=4fdcd843b3cc12d08e5ca4b5066ca46fcca69161",
+        sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
     ],
   },
@@ -91306,7 +91117,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 119.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249379624&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249379558&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001121233-00-S-M-20260526155306.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU0NXxpbWFnZS9qcGVnfGFEUXdMMmd3TlM4eE16YzVNRGN5TVRnek5UQXpPQzl0WldScFlYTmZNVEF3TVRFeU1USXpNMTh3TUY5VFgwMHRNakF5TmpBMU1qWXhOVFV6TURZdWFuQm58ZjFjNWQyYTQ2NTI3YTkyNmEzMjYwZDZiNzc0MjcwMjkzMTRkMDc3OWQ1NDczNTBmNTkzZGYzZjNhYzU5MGI3MA&feedId=58083&k=66b7b3380aa9d4038db87c0a0b4ffd81f0f368dc",
         sizes: ["XXS", "XS", "S", "M", "L", "XL", "XXL"],
       },
@@ -91396,7 +91207,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 65.0,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45365872118&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45526015355&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102077-00-S-M-20260618081626.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDI2N3xpbWFnZS9qcGVnfGFHVmxMMmd5TUM4eE16Z3pOVFV6TXpFeU16WXhOQzl0WldScFlYTmZNVEF3TVRFd01qQTNOMTh3TUY5VFgwMHRNakF5TmpBMk1UZ3dPREUyTWpZdWFuQm58ZTRhOWU1N2RhZGE3MGJmYjk4Y2E1YjcyM2Q5MTMyMDg2NzQ2NzhiM2Q3MDQ2MDAyYjFmZjI5NGQ4OTU0NThmYw&feedId=58083&k=ec1c50e89662211b074b625c60dd805c0319dfd2",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -91468,7 +91279,7 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
         price: 44.65,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45015288537&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44019123085&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001087447-00-S-M-20250811130555.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDc5MXxpbWFnZS9qcGVnfGFHVmtMMmhpTUM4eE16RXhORGt6TlRJM09UWTBOaTl0WldScFlYTmZNVEF3TVRBNE56UTBOMTh3TUY5VFgwMHRNakF5TlRBNE1URXhNekExTlRVdWFuQm58Y2VlNTk2ODAxYWQ4MTZjY2U2ZDVjMTg2ZDdjOGU2MWZlMGE1MWI0ZTIwOThlZTdmZjg4ODU4NDJhZDgxY2Y0YQ&feedId=58083&k=4d246f880bb9e84da9d7f4e5a09650f51acad8a2",
         sizes: ["L", "XL"],
       },
@@ -91573,9 +91384,6 @@ const minedApparelProductsChunk15: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "adidas-sudadera-de-entrenamiento-bayern-munich-2023-24-rojo",
     brand: "Adidas",
@@ -91644,7 +91452,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         currency: "MXN",
         url: "https://www.awin1.com/pclick.php?p=44903085226&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2b791f638526468fa7ee6787da0b8cc8_9366%2FSudadera_de_Entrenamiento_Entrada_26_Azul_JZ6642_21_model.jpg&feedId=95013&k=3fdd805c40086f5425a4d1ff8f482631a49d0211",
-        sizes: ["M", "L"],
+        sizes: ["M"],
       },
     ],
   },
@@ -91687,12 +91495,15 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 47.07,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46792530750&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46792530785&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001112168-00-S-M-20260206163008.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzI2OXxpbWFnZS9qcGVnfGFHWXpMMmhoWWk4eE16VTJNelV5TURJNE5qYzFNQzl0WldScFlYTmZNVEF3TVRFeE1qRTJPRjh3TUY5VFgwMHRNakF5TmpBeU1EWXhOak13TURndWFuQm58NDk2YTZkNDJkNDkyMDAwNGUyNjVhM2M3NGI5MGNmOWJlMjI4MzIxNzU1OTQ5ZmZlNmE2ODc2OTUyNmQ3MmJhZg&feedId=58083&k=2946f78bc2dd290f985d54de166226ea201d6844",
         sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
       },
     ],
   },
+];
+
+const minedApparelProductsChunk16: ApparelProduct[] = [
   {
     id: "adidas-sudadera-de-entrenamiento-espana-tiro-coupe-du-monde-2026-bleu",
     brand: "Adidas",
@@ -92375,7 +92186,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 44.88,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249383191&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249383322&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135062-00-S-M-20260618112157.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTkzMnxpbWFnZS9qcGVnfGFHSmpMMmc1WkM4eE16Z3pOamcyTWprME56TTFPQzl0WldScFlYTmZNVEF3TVRFek5UQTJNbDh3TUY5VFgwMHRNakF5TmpBMk1UZ3hNVEl4TlRjdWFuQm58MWIzYmJkMjlmZGUxYmY1Y2Q0MWRjZjhiN2Y4MjA0YjU2ZTAzY2VhNzVjZjA2YmJiM2Y0YTllOWM2ZWM5YzRjYg&feedId=58083&k=c1b1b6b569af22972be672a1093e8d51504be21d",
         sizes: ["XS", "M", "XXXL"],
       },
@@ -92546,7 +92357,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 34.76,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249386980&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249387053&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001139150-00-S-M-20260702140737.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njc0NHxpbWFnZS9qcGVnfGFHWXpMMmcyWXk4eE16ZzJOelEzTVRBeE1UZzNNQzl0WldScFlYTmZNVEF3TVRFek9URTFNRjh3TUY5VFgwMHRNakF5TmpBM01ESXhOREEzTXpjdWFuQm58ZTlkMjYwZTJiOTM3MTRmOGM5MjRkMmFjYTg4NTU2NGYzYTQyMTZiNGI5ZTY5MzkxZDFlMzBkMDU0OTY1YTVhMw&feedId=58083&k=7495d3f80b5ef3c00b87be0d1d952a2316b77125",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -93170,7 +92981,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249387549&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249387539&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001143796-00-S-M-20260916091956.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODIwMXxpbWFnZS9qcGVnfGFHWXlMMmhsWVM4eE5EQXlNRGs1TURreU5qZzNPQzl0WldScFlYTmZNVEF3TVRFME16YzVObDh3TUY5VFgwMHRNakF5TmpBNU1UWXdPVEU1TlRZdWFuQm58YTA4ZGE4NWZjNWU5MDg1YjVhN2FhNWFkY2YyNThlODJkN2JhNDllZDlkMzg0N2I2NjRjZDljYmJkMGMzYjVmYQ&feedId=58083&k=3136a586ec7361721821cbd6b25c361233097f84",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -93271,7 +93082,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 30.35,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46249384487&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46249384513&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001135250-00-S-M-20260814142834.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc1MHxpbWFnZS9qcGVnfGFEVXpMMmhoTkM4eE16azFORFUzTnprNE9UWTJNaTl0WldScFlYTmZNVEF3TVRFek5USTFNRjh3TUY5VFgwMHRNakF5TmpBNE1UUXhOREk0TXpRdWFuQm58YTY3N2QxYWFmM2UxMzU2YWExYzYyMjgzYTMxYWRmNmNjNTYwMjkxZjMyZjNiMWUxY2I5NmFjZjBiMDUwZDBhYw&feedId=58083&k=ec4401276c09aa9e567080d8fbba8a9d26cf3f9b",
         sizes: ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -93840,7 +93651,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=44267883000&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8a80eb3291d54b23b2c12b5244606af1_9366%2FChaqueta_Anthem_Visitante_Alemania_Azul_JZ9336_21_model.jpg&feedId=95017&k=943630d36f4b398fc8d806a1fc45829b64090fca",
-        sizes: ["XS", "S", "M", "L", "XL"],
+        sizes: ["XS", "L", "XL"],
       },
     ],
   },
@@ -94370,7 +94181,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 38.96,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42927296179&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=42927296164&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095642-00-P-X-20251021155025.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzI2MHxpbWFnZS9qcGVnfGFEbGxMMmcxWXk4eE16STJNVE0zTXpZd016ZzNNQzl0WldScFlYTmZNVEF3TVRBNU5UWTBNbDh3TUY5UVgxZ3RNakF5TlRFd01qRXhOVFV3TWpVdWFuQm58ZDdjYmM0ZTIyZWY4NDBiOWVjYjBjYTEzY2Y1YTQxYjVlNzg3MjRlN2Y0YWZkYmUxZTZiY2RhZGFlNWRhZWRiMA&feedId=58083&k=d116967c7212d2dfd98c4ec441e70118be1442f4",
         sizes: ["S", "M"],
       },
@@ -94406,7 +94217,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 52.95,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45865223286&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45865223296&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095610-00-P-X-20251021155025.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjY2N3xpbWFnZS9qcGVnfGFHVXpMMmhpTWk4eE16STJNVE0yTVRRME5qazBNaTl0WldScFlYTmZNVEF3TVRBNU5UWXhNRjh3TUY5UVgxZ3RNakF5TlRFd01qRXhOVFV3TWpVdWFuQm58MjRmYjkwOTA5YWFhNjlmNjhmYTk5NmQzNDBlNGM0YWJiZTM1NDk1MzA0MWIxMjFiZDE2ZTQ4NDkzYTg4Y2RhNA&feedId=58083&k=b60fb6bafcae7e28374435e1d3a6465bf3e11745",
         sizes: ["M", "L", "XL", "XXL"],
       },
@@ -94442,7 +94253,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 76.0,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45083826923&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45083826887&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126728-00-P-X-20260616152801.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA0M3xpbWFnZS9qcGVnfGFERTNMMmcxTlM4eE16Z3pNVE0wTWpJeU56UTROaTl0WldScFlYTmZNVEF3TVRFeU5qY3lPRjh3TUY5UVgxZ3RNakF5TmpBMk1UWXhOVEk0TURFdWFuQm58NzRhNzg1MTIwNWJiZTBjNGQxNjRlNjcxNWMzNzBhYzg0MWE1YWM4ZjZmMDdkNTlmMDY2MzA0NzZhYzQwNjI4Nw&feedId=58083&k=df061b79ab0da95bbbaaabcc8a489030d3f22538",
         sizes: ["XS", "S", "M", "L", "XL"],
       },
@@ -94460,7 +94271,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 54.95,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42927296195&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=42927296194&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095626-00-P-X-20251021155025.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzg2MnxpbWFnZS9qcGVnfGFERXpMMmhrTmk4eE16STJNVE0yTnpNeE1qUXhOQzl0WldScFlYTmZNVEF3TVRBNU5UWXlObDh3TUY5UVgxZ3RNakF5TlRFd01qRXhOVFV3TWpVdWFuQm58NDVjNTJjMzFlNWRjYjY1NzM3ZTI4ZGZhNWUxM2ZjMzRhZWJlM2QzYTRiZGQ1Mzg2ZmEzYjdiMzlhZThiM2M1Mw&feedId=58083&k=f93da4547fe4772a4a519c9150fa8f1a78241f3e",
         sizes: ["L", "XL", "XXL"],
       },
@@ -94532,7 +94343,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 76.0,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45083827153&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45083827220&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126726-00-P-X-20260616152801.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTIzM3xpbWFnZS9qcGVnfGFHTXdMMmd4TUM4eE16Z3pNVE0wTVRNM05UVXhPQzl0WldScFlYTmZNVEF3TVRFeU5qY3lObDh3TUY5UVgxZ3RNakF5TmpBMk1UWXhOVEk0TURFdWFuQm58YmJkNGRlNzNlZjE4Zjc0YmU1NGJkOTU2OGM1YTM0ZGY2YzMwODgwOTNkNWQ2Y2Y2ZjI1ZmZiOGE1OTQwODdjZg&feedId=58083&k=1aabf874fcf1116b11e7a803294d9ae835048fbc",
         sizes: ["XS", "S", "M", "L", "XL"],
       },
@@ -94550,7 +94361,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 41.76,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45865223300&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45865223329&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095632-00-P-X-20251021155025.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjA5MnxpbWFnZS9qcGVnfGFEWmhMMmd3T0M4eE16STJNVE0yT1RZM01UY3hNQzl0WldScFlYTmZNVEF3TVRBNU5UWXpNbDh3TUY5UVgxZ3RNakF5TlRFd01qRXhOVFV3TWpVdWFuQm58NzBhZDc4ZDMxYjU4ZmZlZDYyZGQ3YWEyNjdiZjUxYTBhNjQzMjI4NjE4MTliYjU0MTM3ZWVkYTEyNDZmZDMwOA&feedId=58083&k=f39cdf8af1eb150ab3321d63160995f3e0f710ec",
         sizes: ["M", "L", "XL", "XXL"],
       },
@@ -94568,7 +94379,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 76.0,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45083826854&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45083827287&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001126727-00-P-X-20260616152801.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk3M3xpbWFnZS9qcGVnfGFETXlMMmd3TXk4eE16Z3pNVE0wTVRjMk9EY3pOQzl0WldScFlYTmZNVEF3TVRFeU5qY3lOMTh3TUY5UVgxZ3RNakF5TmpBMk1UWXhOVEk0TURFdWFuQm58ZTE4OTExNWFlMWRjMzA4ZDcwODczNTI3MTExMDExZDE0MTM4OWQyZmQ1YTYzMmM5ZTI5ZGNkMDc4NTgzM2ZjNw&feedId=58083&k=98a2ef1c35e1f4a532a4b3676b64737d113a33e6",
         sizes: ["XS", "S", "M", "L", "XL"],
       },
@@ -94586,7 +94397,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 49.95,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45865223280&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45865223295&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095608-00-P-X-20251021155025.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg5OHxpbWFnZS9qcGVnfGFERmtMMmcxTUM4eE16STJNVE0yTURZMk1EVXhNQzl0WldScFlYTmZNVEF3TVRBNU5UWXdPRjh3TUY5UVgxZ3RNakF5TlRFd01qRXhOVFV3TWpVdWFuQm58N2U5ZWIyM2VkMTIxYmQ4ZWNlNWQyZjc2NTUzMGYzNmFjNjM5ZGJmZTMyYTExNjIwNGUzZGViNjlmYmM1ZWMzMA&feedId=58083&k=17d80a5e25813cc4716104f9e49554827905cb85",
         sizes: ["S", "M", "XL", "XXL"],
       },
@@ -94629,24 +94440,6 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
     ],
   },
   {
-    id: "athletic-club-sudadera-de-entrenamiento-unique-in-the-world-3",
-    brand: "Athletic Club",
-    model: "Sudadera de entrenamiento Athletic Club Unique In The World",
-    colour: "N/D",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 80.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43721029617&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095722-00-P-X-20260115164533.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDkxN3xpbWFnZS9qcGVnfGFEZGhMMmd3T0M4eE16UTVPVFU1TlRneE5qazVNQzl0WldScFlYTmZNVEF3TVRBNU5UY3lNbDh3TUY5UVgxZ3RNakF5TmpBeE1UVXhOalExTXpNdWFuQm58MjNkMWNiMjhmMDUxMWI4NWU0NzljOGRlOWZhNGI5NDBjOWJmM2QwOTUyMTQ1YTMxYzY0NzA4NDYzZTdiYjM2Nw&feedId=58083&k=f66e50deb5969d9acce64a0171bad1b25a669bf7",
-        sizes: ["XS", "S", "M", "L", "XXL"],
-      },
-    ],
-  },
-  {
     id: "athletic-club-sudadera-de-entrenamiento-unique-in-the-world-2",
     brand: "Athletic Club",
     model: "Sudadera de entrenamiento Athletic Club Unique In The World",
@@ -94658,9 +94451,27 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 64.0,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46572831000&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43721029613&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095720-00-P-X-20260115164533.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjUxOXxpbWFnZS9qcGVnfGFERXpMMmd3TlM4eE16UTVPVFU1TlRReU16YzNOQzl0WldScFlYTmZNVEF3TVRBNU5UY3lNRjh3TUY5UVgxZ3RNakF5TmpBeE1UVXhOalExTXpNdWFuQm58YWM4YTk0Y2NkMjQ2ZWM1ZTg3YzA5NTdhNzYwNmZmNDliYTRmMmFhODQ1N2JmNTc1NWJiNjBiZmE1NzVhNzAwMw&feedId=58083&k=5e9225db783a03ed940d4d54ab98dcfe0bcf8248",
         sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "athletic-club-sudadera-de-entrenamiento-unique-in-the-world-3",
+    brand: "Athletic Club",
+    model: "Sudadera de entrenamiento Athletic Club Unique In The World",
+    colour: "N/D",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 80.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=43721029618&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095722-00-P-X-20260115164533.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDkxN3xpbWFnZS9qcGVnfGFEZGhMMmd3T0M4eE16UTVPVFU1TlRneE5qazVNQzl0WldScFlYTmZNVEF3TVRBNU5UY3lNbDh3TUY5UVgxZ3RNakF5TmpBeE1UVXhOalExTXpNdWFuQm58MjNkMWNiMjhmMDUxMWI4NWU0NzljOGRlOWZhNGI5NDBjOWJmM2QwOTUyMTQ1YTMxYzY0NzA4NDYzZTdiYjM2Nw&feedId=58083&k=f66e50deb5969d9acce64a0171bad1b25a669bf7",
+        sizes: ["XS", "S", "M", "L", "XXL"],
       },
     ],
   },
@@ -94694,7 +94505,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 76.0,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41900966654&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43477380549&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001068879-00-P-X-20250403145541.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTA3OXxpbWFnZS9qcGVnfGFHWXpMMmd6WWk4eE1qZzBNemc1T1RVNE5EVTBNaTl0WldScFlYTmZNVEF3TVRBMk9EZzNPVjh3TUY5UVgxZ3RNakF5TlRBME1ETXhORFUxTkRFdWFuQm58Nzk3ZTU4NmI5ODA2ZGQ4ZTE5MjE3ZDdmZGMzYTExYTA0YWQ4Yjg2ZjBkNGZmMmQxMTMwYWMyOTU1YWNhN2Y2Yg&feedId=58083&k=71fc95d0e673d6f7a718cfb0205a4513c613737d",
         sizes: ["XS", "S", "M", "L", "XXL"],
       },
@@ -95081,7 +94892,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 38.24,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44947301145&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44947301144&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095565-00-P-X-20260605113821.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODk0OHxpbWFnZS9qcGVnfGFETTNMMmczTUM4eE16Z3hNVEE1T1RneU9ESTFOQzl0WldScFlYTmZNVEF3TVRBNU5UVTJOVjh3TUY5UVgxZ3RNakF5TmpBMk1EVXhNVE00TWpFdWFuQm58N2JiZmFmMWI0MTQ2Mzg0OGJjZTlhNTcyMmU4YTIwODM3Y2EzMjczN2JhOTQ0NDNjODAyMzFmZjZjMDgyOWIyNA&feedId=58083&k=7db39b6fd29f70ca251d21fee2953bc2f0138f2b",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -95099,7 +94910,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 47.99,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45011140593&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45011140586&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095553-00-P-X-20260610102605.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjAzNnxpbWFnZS9qcGVnfGFHUm1MMmcxTlM4eE16Z3hPVGs0T1RBd01ESXlNaTl0WldScFlYTmZNVEF3TVRBNU5UVTFNMTh3TUY5UVgxZ3RNakF5TmpBMk1UQXhNREkyTURVdWFuQm58ODkxYTM4ODRlOWMxODcxYTJkM2U4ZjQwOTRhMTZlMGQwOTMxYWI2YjFhN2U1ZmJiMGViNDNiYjU3ZDUwZDc2Yg&feedId=58083&k=953904e2725a00f2e51c1e952c58b9d037cd961a",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -95117,7 +94928,7 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
         price: 53.81,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45220140161&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45218489495&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001095558-00-P-X-20260703130717.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODMyMHxpbWFnZS9qcGVnfGFEQXhMMmd6WkM4eE16ZzJPVGczTkRrM01EWTFOQzl0WldScFlYTmZNVEF3TVRBNU5UVTFPRjh3TUY5UVgxZ3RNakF5TmpBM01ETXhNekEzTVRjdWFuQm58YTA0NjA5ZmZlMWU3ZTczYTNlMzVhYzQ2MTA3ODc2YmRjMmRhZWMyNjYyZDkxZTA2MTA3NmQzNDE3YmZhN2RiNg&feedId=58083&k=d50a522a7db443b5610aa1d983eca1734213ad37",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -96572,9 +96383,6 @@ const minedApparelProductsChunk16: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "copa-football-camiseta-bordada-brasil-legends-blanc",
     brand: "Copa Football",
@@ -96683,6 +96491,9 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk17: ApparelProduct[] = [
   {
     id: "copa-football-camiseta-bordada-francia-legends-bleu",
     brand: "Copa Football",
@@ -101786,9 +101597,6 @@ const minedApparelProductsChunk17: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "craft-chaqueta-con-capucha-craft-pro-control-azul",
     brand: "Craft",
@@ -101909,6 +101717,9 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk18: ApparelProduct[] = [
   {
     id: "craft-parka-craft-negro",
     brand: "Craft",
@@ -108017,9 +107828,6 @@ const minedApparelProductsChunk18: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "errea-calcetines-de-futbol-sin-pies-errea-pro-amarillo",
     brand: "Errea",
@@ -108119,6 +107927,9 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk19: ApparelProduct[] = [
   {
     id: "errea-calcetines-de-futbol-sin-pies-errea-pro-negro",
     brand: "Errea",
@@ -113736,9 +113547,6 @@ const minedApparelProductsChunk19: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "errea-pantalones-de-portero-errea-pitch-negro",
     brand: "Errea",
@@ -113875,6 +113683,9 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk20: ApparelProduct[] = [
   {
     id: "errea-polo-errea-carlos-azul",
     brand: "Errea",
@@ -118817,7 +118628,7 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
         price: 45.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40353757319&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=40353757321&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000699963-00-P-X-20201211170813.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTg3OXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnNU5pOW9PRGN2T1RnNE9ESXlNRGt6T0RJM01DNXFjR2N8ZTIxYjM0YTg5Mjk0MjFlM2RjOTI5ZWI0OGNjYzAxZjU4MDRmN2M1MTg2N2RjMDRmMTlhODk2MjE1ZmI5NmM0YQ&feedId=58083&k=3181ed86033b4f32edadcf57e3931d1766671f68",
         sizes: ["XS", "S", "M", "L", "XL"],
       },
@@ -119390,9 +119201,6 @@ const minedApparelProductsChunk20: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "huari-camiseta-interior-termica-huari-term-negro",
     brand: "Huari",
@@ -119501,6 +119309,9 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk21: ApparelProduct[] = [
   {
     id: "huari-leggings-termicos-largos-huari-term-negro",
     brand: "Huari",
@@ -125146,9 +124957,6 @@ const minedApparelProductsChunk21: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk22: ApparelProduct[] = [
   {
     id: "hummel-pantalon-corto-hummel-blaze-club-26-bleu",
     brand: "Hummel",
@@ -125353,6 +125161,9 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk22: ApparelProduct[] = [
   {
     id: "hummel-pantalon-corto-hummel-rojo",
     brand: "Hummel",
@@ -130940,9 +130751,6 @@ const minedApparelProductsChunk22: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "jako-chaleco-softshell-de-jako-premium-negro",
     brand: "Jako",
@@ -131096,6 +130904,9 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk23: ApparelProduct[] = [
   {
     id: "jako-veste-de-survetement-a-capuche-jako-power-blanc",
     brand: "Jako",
@@ -136458,9 +136269,6 @@ const minedApparelProductsChunk23: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "jako-pantalon-de-chandal-jako-polyester-competition-2-0-negro",
     brand: "Jako",
@@ -136587,6 +136395,9 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk24: ApparelProduct[] = [
   {
     id: "jako-pantalon-de-survetement-jako-power-blanc",
     brand: "Jako",
@@ -138696,7 +138507,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
         price: 23.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41791734948&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=36357208151&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000725704-00-P-X-20210329133213.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjExMXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnMVlpOW9aVE12TVRBd05qY3lOVFUzTlRRM09ESXVhbkJufDQ4MThiZTEyZTVhMjYyODc3MDA2YWM0YWY1MDMyZjI5ODZlY2FlNjllNDYwMTYyNTIzMmFkYzJmMDYzMTkxNGY&feedId=58083&k=71c804973bac22960feda7dde47547f7d1500f95",
         sizes: ["S-M", "L-XL"],
       },
@@ -138714,7 +138525,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
         price: 11.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265327167&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=39265327168&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428587-00-S-M-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyNDYxNzd8aW1hZ2UvanBlZ3xhVzFoWjJWekwyaGhOUzlvT1dNdk9EZzVNekE0TXpReE9EWTFOQzVxY0djfDNlMWY4YjFmNDAxZTZhZDRkYTY2NmRmYTU4ZGMwYTE5NDM5YjMyMjczNDgwM2RmOWE3MzNiNDE0YjMzZTFkMTA&feedId=58083&k=95922f14d49ae343c1298f7a7462ec7ae2d5c92e",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -138732,7 +138543,7 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
         price: 11.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46219365848&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46219365847&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428580-00-P-X-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyNDkxOTZ8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZ3pNeTlvTWpNdk9EZzVNekEzT1RZeE56VTJOaTVxY0djfDcxYTFjODM5ODVkZjRlNTQ1ZDRhZWU2ZDc0NzQ0OWE4YzQ2MWNmNjhmYzA1MzEzNWVkMGVkMDE4OWEwZmE2ZGI&feedId=58083&k=04cbf942de34791595053897260c9cdb611230e3",
         sizes: ["S", "M", "L", "XL", "XXL-3XL"],
       },
@@ -141978,9 +141789,6 @@ const minedApparelProductsChunk24: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-chaqueta-de-entrenamiento-con-cremallera-1-4-en-estampado-joma-picasho-vert",
     brand: "Joma",
@@ -142101,6 +141909,9 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk25: ApparelProduct[] = [
   {
     id: "joma-chaqueta-impermeable-joma-iris-azul",
     brand: "Joma",
@@ -142183,7 +141994,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
         price: 19.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46441357308&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=39101232619&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000428532-00-S-M-20180927210103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wyNTYzNTN8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZzNZaTlvT1dVdk9EZzVNekEyTXpJNU9URXdNaTVxY0djfDAwMzI3YmE2MWQyZThjNTg3NGRjODlhZjhlMmRiNzUyODAxZDc3YTFjZmMzMjdjOTQyN2YzNjgyNDZhMzg3MjE&feedId=58083&k=c4beca3f41b9cab368a44c34bcf1ab3c2c1eb84d",
         sizes: ["XXS", "XS", "S", "M", "L", "XL"],
       },
@@ -146738,7 +146549,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
         price: 9.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46511810702&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46511810703&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000836911-00-P-X-20261028125531.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc5NHxpbWFnZS9qcGVnfGFHTmlMMmhpT1M4eE5ERXdPRFF5TnpRMU1qUTBOaTl0WldScFlYTmZNVEF3TURnek5qa3hNVjh3TUY5UVgxZ3RNakF5TmpFd01qZ3hNalUxTXpFdWFuQm58Y2MzOTEzYjgzOWUwNWM4NzhjZDc4NDQ3NzA4ZmE5MjI1ODgzZGNlZTFmODFkNjNjNTIxYzRmODNkYjA0NmIwMw&feedId=58083&k=cda155c11fdb5a040b809368106dfc9cdf314455",
         sizes: ["39-42", "43-46"],
       },
@@ -146828,7 +146639,7 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
         price: 8.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265326684&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=39265326687&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000385319-00-P-X-20180925234551.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3wxMDMyNzV8aW1hZ2UvanBlZ3xhVzFoWjJWekwyZ3dOeTlvWW1Rdk9EZzNORGt4TkRJMU1EYzRNaTVxY0djfDQxMDA3YTcyM2Q0MjZiZTc3ZWRmNWMwYjMwYjRjODg3YzU4Y2Y0NWY0MDBjMjJiNTU1ZGQ5NDRkMDQ5ODljYjY&feedId=58083&k=e92dde22009baed0998580d5bc7128f52c825dc5",
         sizes: ["S", "M", "L"],
       },
@@ -147203,9 +147014,6 @@ const minedApparelProductsChunk25: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "joma-pantalon-corto-de-mujer-joma-maxi-negro",
     brand: "Joma",
@@ -147364,6 +147172,9 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk26: ApparelProduct[] = [
   {
     id: "joma-pantalon-corto-de-portero-joma-negro",
     brand: "Joma",
@@ -148687,7 +148498,7 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
         price: 12.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45126097350&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45126097348&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000727279-00-P-X-20210329133213.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjY1NXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneE55OW9NR012TVRBd05qZ3hNRGN3TmpjME1qSXVhbkJufDNmYjkxMzkwYzEwNDNkMjFkNjFiZTU3MTA2YzQ5MDg0ZTUxN2YzYTRmN2Y4ZGU0ZDE2MjkxOTE5YWNjM2I0NTU&feedId=58083&k=340e0900e3d3ceb02c8476a9ddfdd083e9903912",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -148875,7 +148686,7 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
         price: 33.6,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45379426602&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45379426601&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001123173-00-P-X-20260715091349.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTI3N3xpbWFnZS9qcGVnfGFHTmhMMmhoWVM4eE16ZzVORFU0TWpjek1EYzRNaTl0WldScFlYTmZNVEF3TVRFeU16RTNNMTh3TUY5UVgxZ3RNakF5TmpBM01UVXdPVEV6TkRrdWFuQm58ZTBlZTU1NGRjNjA0NTdiYzA4MmZhNmMxOWY0NWJkNWU0MjkwNWVhZTc5ODVkODA1MTc4NmEzMjkzMzA5MmQ1NQ&feedId=58083&k=8ba72b7fdbfc218635a2a3e0e69f0a15871e777e",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -151518,7 +151329,7 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
         price: 18.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39199714070&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=39199714071&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000725516-00-P-X-20210426154413.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4MTIzNHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnNU1pOW9NbVl2TVRBeE1UQTBOelEwTlRNd01qSXVhbkJufDFmNGU5MGM1NWE4MDI1MGY2YzYyYWEwMGEyNzJlZmIyZGQwMmExZjI4ZjAwMDEzNDZjODMwZDY4YmIxNjk4Zjc&feedId=58083&k=3161f85128e2ac5e847dd4aec32f2e4720b43317",
         sizes: ["S-M", "L-XL"],
       },
@@ -152655,9 +152466,6 @@ const minedApparelProductsChunk26: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "joma-polo-joma-crew-v-negro-3",
     brand: "Joma",
@@ -152808,6 +152616,9 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk27: ApparelProduct[] = [
   {
     id: "joma-polo-joma-crew-v-verde",
     brand: "Joma",
@@ -154514,7 +154325,7 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
         price: 23.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44939682894&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44939682895&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091667-00-P-X-20260604114749.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODgwNXxpbWFnZS9qcGVnfGFHUXpMMmcyWXk4eE16Z3dPVEU0T0RZMk56UXlNaTl0WldScFlYTmZNVEF3TVRBNU1UWTJOMTh3TUY5UVgxZ3RNakF5TmpBMk1EUXhNVFEzTkRrdWFuQm58YTQ2MzIzNDIyYjY2NmEzY2VkOTQ3Yjk4MDNiYTNhMzAwMmU1NjM2ODFhNTQ5ZGJkY2NhNDU5NzBhNDJmNTBhNg&feedId=58083&k=7f1fa4aa45490569a781b5106ace2460e6474e67",
         sizes: ["M", "L"],
       },
@@ -156540,7 +156351,7 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
         price: 25.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46258194576&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46258194577&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923080-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MDE5MXxpbWFnZS9qcGVnfGFHVmpMMmd5Tnk4eE1UTTBOREUyTmpJNE9UUXpPQzl0WldScFlYTmZNVEF3TURreU16QTRNRjh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58MWFhMTQ1M2YyZWI2MGFiMGUwMzZjY2Y5YjQyYjA4ZGE3NGU3YThlOTcwZGQxYzE5ZmVjYjdkM2IxNmEwMzljOQ&feedId=58083&k=4c119c45ce7dced089d083b5810a0a2d92b3d696",
         sizes: ["S", "M"],
       },
@@ -156639,7 +156450,7 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
         price: 19.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46258194584&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46258194588&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923281-00-P-X-20230330150613.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NzU0N3xpbWFnZS9qcGVnfGFHSmhMMmc1TUM4eE1UTTBOREUzTlRNek16UXdOaTl0WldScFlYTmZNVEF3TURreU16STRNVjh3TUY5UVgxZ3RNakF5TXpBek16QXhOVEEyTVRNdWFuQm58ZGUzOGFjZWNjMjU5MmI0OTQwZDRkNGUyZDdhNDgwZWI1OWRlNDYyNGEzOWE5MmFiZDYzYTk0Y2VlNjJhNDA0ZQ&feedId=58083&k=0ee7460e8f9e512ac361628e791670f6c894f9e2",
         sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -158103,9 +157914,6 @@ const minedApparelProductsChunk27: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-chaqueta-de-chandal-kappa-grevolo-azul",
     brand: "Kappa",
@@ -158242,6 +158050,9 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk28: ApparelProduct[] = [
   {
     id: "kappa-chaqueta-de-chandal-kappa-grevolo-naranja",
     brand: "Kappa",
@@ -159191,7 +159002,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
         price: 14.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41559409013&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=39265350135&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000923094-00-P-X-20230403133916.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTU1MnxpbWFnZS9qcGVnfGFETXpMMmhsTWk4eE1UTTFNell3TXpRd056a3dNaTl0WldScFlYTmZNVEF3TURreU16QTVORjh3TUY5UVgxZ3RNakF5TXpBME1ETXhNek01TVRZdWFuQm58OTgyMTdmZjUwNGE0ZjdkY2RhMDRjNTMzMjgxNDIzNTU1NmUwNjIzYjI1YjBjMzM4OGFhNmEwODg4OTlhM2M2Mg&feedId=58083&k=f72c5ad06e04ddfca564f5744be3ca08559bc636",
         sizes: ["39/42", "47/49"],
       },
@@ -162187,7 +161998,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
         price: 42.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44787259555&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=41164516966&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069641-00-P-X-20250429123445.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NDEzOHxpbWFnZS9qcGVnfGFHSXhMMmhoWkM4eE1qZzVNVGMwTlRJeU1qWTROaTl0WldScFlYTmZNVEF3TVRBMk9UWTBNVjh3TUY5UVgxZ3RNakF5TlRBME1qa3hNak0wTkRVdWFuQm58NmIwM2Q2ODM1Y2U5ZTEwZmQyNDg5NTliMDdiYzQ3ODliYzZjNDM4NzcyYzE3YWMyY2JlYTVjYTVjYTQ1MGQ2ZA&feedId=58083&k=0f8c053b6f1dca6ef49e0f7f18cb79906ae01c0a",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -162205,7 +162016,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
         price: 42.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41368576575&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=41368576585&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069640-00-P-X-20250520133933.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w3NzUzN3xpbWFnZS9qcGVnfGFEVXhMMmd3T1M4eE1qa3pOekl6TWpReE5qYzVPQzl0WldScFlYTmZNVEF3TVRBMk9UWTBNRjh3TUY5UVgxZ3RNakF5TlRBMU1qQXhNek01TXpNdWFuQm58NThjZmQ0MWNlZmIxMGRlZmQ4NGFmNmM1NjE1OGYyM2NjOWUxNjEyNGEzM2Y3NDVmMjk3MDIzNzc0NTJjZmNkOA&feedId=58083&k=8bad1f3ec392abb3bfb82ab2c39146fa1b23a362",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -162277,7 +162088,7 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
         price: 39.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41368576551&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44620486158&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069642-00-P-X-20250520133933.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4MTExM3xpbWFnZS9qcGVnfGFERTVMMmcyT1M4eE1qa3pOekl6TXpFek56WTVOQzl0WldScFlYTmZNVEF3TVRBMk9UWTBNbDh3TUY5UVgxZ3RNakF5TlRBMU1qQXhNek01TXpNdWFuQm58NjhhZGQ1NmY4MTBiNWMwOTkwZmJlYjRkOTE2YmQ3NDU3MjQ3OTM2ZjBkYWIyMTI0MWEwODRhMTA2YWU3ZjAyNw&feedId=58083&k=0273a7ceb311ef7f43b07ec6f0300b6e270cc0c2",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -163693,9 +163504,6 @@ const minedApparelProductsChunk28: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-short-fc-metz-mixiozip-pro-2025-26-gris",
     brand: "Kappa",
@@ -163804,6 +163612,9 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk29: ApparelProduct[] = [
   {
     id: "kappa-short-ogc-nice-fobyc-noir",
     brand: "Kappa",
@@ -164989,7 +164800,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 34.95,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41248861478&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=41248861486&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069631-00-P-X-20250507163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Njg1MnxpbWFnZS9qcGVnfGFHUXhMMmd6TXk4eE1qa3hNakF5TURNNE9Ua3hPQzl0WldScFlYTmZNVEF3TVRBMk9UWXpNVjh3TUY5UVgxZ3RNakF5TlRBMU1EY3hOak14TXpNdWFuQm58Zjk0ZmEzODU2ZGZiNDNjMWQ0MDk2ODQ2YWE0Y2FlZTc1YWZiODFmYmYwNTI1N2QyMmZjYjMwNDgxYjQ0OTAzMw&feedId=58083&k=b07f84123a1ba821ad158244e44d5d55987b213d",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -165007,7 +164818,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 45.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41940664702&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44180068178&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069630-00-P-X-20250507163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzY2NHxpbWFnZS9qcGVnfGFHUmpMMmhpTlM4eE1qa3hNakF4T0RRNE9UTTNOQzl0WldScFlYTmZNVEF3TVRBMk9UWXpNRjh3TUY5UVgxZ3RNakF5TlRBMU1EY3hOak14TXpNdWFuQm58ODAwOGI2Mzk4Njk1ZGU4NTE5MWIyOTI1MDFmMjdjNWJkM2NlMmM2ZjBiMThjZWIzNjcyMDFjM2NkNzMxNGJkNg&feedId=58083&k=c41081d4126760cd38b3f1743b64f038e6ec963a",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -165061,26 +164872,8 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 34.95,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44787259560&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45223593049&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069635-00-P-X-20250507163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDY4NnxpbWFnZS9qcGVnfGFETTNMMmczWVM4eE1qa3hNakF5TXprNU5ETTVPQzl0WldScFlYTmZNVEF3TVRBMk9UWXpOVjh3TUY5UVgxZ3RNakF5TlRBMU1EY3hOak14TXpNdWFuQm58ZmZjMGE5YmZiNzVlZDIzZWM5Yjg2MzJjMjM5MmU2ZmY5Mzc1MmRiNGVhZjRlZTU4MTNlOWJiMGIzMTU1YTdmZA&feedId=58083&k=926c467bcc933524d41c7832cb9dc2d8f3cdd6a6",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "kappa-sudadera-de-entrenamiento-lenno-negro-4",
-    brand: "Kappa",
-    model: "Sudadera de entrenamiento Kappa Lenno - Negro",
-    colour: "Negro",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 34.95,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41248861542&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069637-00-P-X-20250507163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDU1M3xpbWFnZS9qcGVnfGFHWTNMMmcxTlM4eE1qa3hNakF5TlRnNU5EazBNaTl0WldScFlYTmZNVEF3TVRBMk9UWXpOMTh3TUY5UVgxZ3RNakF5TlRBMU1EY3hOak14TXpNdWFuQm58MzhlYWQzZjBjZDUxNjczYWEyZDI2OTRhM2NkMzNlYzJkN2FmMDdkY2RlMGJkOWU4MjJiMWVkNTI1ZDlhNGE3Mg&feedId=58083&k=9e244e781abb34da56c814fa5ca72371897ce2b5",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
     ],
@@ -165115,7 +164908,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 34.95,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42280694465&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44413897133&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069638-00-P-X-20250507163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYzM3xpbWFnZS9qcGVnfGFHSTJMMmhtTWk4eE1qa3hNakF5TnpBd09UQTFOQzl0WldScFlYTmZNVEF3TVRBMk9UWXpPRjh3TUY5UVgxZ3RNakF5TlRBMU1EY3hOak14TXpNdWFuQm58MGVmZmE1ZDRiMzQyODc0MDY3NTkzZTYyYjYwZDIyODEzODNjOTY1ODgxYTZhOTUwYzYyNGE3NDA0MWE2YmJiMQ&feedId=58083&k=5d706978d7048e377d64e72a9759d03581fd6f43",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -165133,8 +164926,26 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 34.95,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42378116216&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44620486171&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069633-00-P-X-20250507163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTIwNXxpbWFnZS9qcGVnfGFHVmlMMmhtWWk4eE1qa3hNakF5TWpJNU1EUTJNaTl0WldScFlYTmZNVEF3TVRBMk9UWXpNMTh3TUY5UVgxZ3RNakF5TlRBMU1EY3hOak14TXpNdWFuQm58M2I1YWI5ZDYwZWVlNjQzZmI3M2MzMTlkNjBhNDc2Mzg1ODI4NDYzOTE2ZDRjY2I4MDdhOGE2MGMxOTk1Zjg3Mg&feedId=58083&k=2377b4b2dcad215618d801555ecd781f03c31676",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "kappa-sudadera-de-entrenamiento-lenno-negro-4",
+    brand: "Kappa",
+    model: "Sudadera de entrenamiento Kappa Lenno - Negro",
+    colour: "Negro",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 34.95,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46441364080&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069637-00-P-X-20250507163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDU1M3xpbWFnZS9qcGVnfGFHWTNMMmcxTlM4eE1qa3hNakF5TlRnNU5EazBNaTl0WldScFlYTmZNVEF3TVRBMk9UWXpOMTh3TUY5UVgxZ3RNakF5TlRBMU1EY3hOak14TXpNdWFuQm58MzhlYWQzZjBjZDUxNjczYWEyZDI2OTRhM2NkMzNlYzJkN2FmMDdkY2RlMGJkOWU4MjJiMWVkNTI1ZDlhNGE3Mg&feedId=58083&k=9e244e781abb34da56c814fa5ca72371897ce2b5",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
     ],
@@ -165151,7 +164962,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 34.95,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41248861532&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=41248861536&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069634-00-P-X-20250507163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDU1OHxpbWFnZS9qcGVnfGFERTJMMmc1TXk4eE1qa3hNakF5TXpJd056azJOaTl0WldScFlYTmZNVEF3TVRBMk9UWXpORjh3TUY5UVgxZ3RNakF5TlRBMU1EY3hOak14TXpNdWFuQm58NWUwMWZkZWY3ZWVhZDM2YzRhNWViNGMzY2VlZWU3YmI3YzQxYjFlYTFjODhkZDE4MWEzZjE5ZDhjODIxMzQ3Ng&feedId=58083&k=58fbcb54702eb041cc138f3da46e8fc1307ccd99",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -165187,7 +164998,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 35.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45865218447&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45624391290&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069616-00-P-X-20250520133933.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjE5OXxpbWFnZS9qcGVnfGFEQTJMMmd4WlM4eE1qa3pOekl5T1RRd01qRTBNaTl0WldScFlYTmZNVEF3TVRBMk9UWXhObDh3TUY5UVgxZ3RNakF5TlRBMU1qQXhNek01TXpNdWFuQm58MDY3MDYwOGZlNTYyMGI4Y2M1MTg3NWViM2VjYTU1NzI5MzJmYTg2ZWJjMmQ5ODAzMjEwMDZkZGI0ZDdiOTIyMQ&feedId=58083&k=d575d812b6eb7c1e229488d44525a5abdcbe672a",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -165205,7 +165016,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 39.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41368576582&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=41368576587&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069617-00-P-X-20250520133933.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTc0NXxpbWFnZS9qcGVnfGFERXpMMmd6TUM4eE1qa3pOekl5T1RrNU1UazJOaTl0WldScFlYTmZNVEF3TVRBMk9UWXhOMTh3TUY5UVgxZ3RNakF5TlRBMU1qQXhNek01TXpNdWFuQm58ZDI5ZjI0OWY0ODYwNDBhNjNjZWQ1YjAwYzU2MDJkMjA0NGY4NDU5MTkxMzY1NDgxMmI0ZWNmZDg3YzVjOTNlZg&feedId=58083&k=0cc35f8428f009b863502aa8dd818a40e3225f0c",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -165223,7 +165034,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 39.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41164516889&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=41164516923&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069618-00-P-X-20250429123445.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzgwNXxpbWFnZS9qcGVnfGFHVTRMMmd6TUM4eE1qZzVNVGN6T1RRMU5UVXhPQzl0WldScFlYTmZNVEF3TVRBMk9UWXhPRjh3TUY5UVgxZ3RNakF5TlRBME1qa3hNak0wTkRVdWFuQm58MTJjMzAyNmExNTk5NGExMGNiMmE0NjZjMzhmZDU0NjFkODQ5OWM5YzczMDc5ZWU4ZWU2NmU4ZjM5MjI5MDU1NA&feedId=58083&k=b8256ce05931d7698b6c9feb7736a0ae4e46aaa5",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -165241,7 +165052,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 42.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42053819677&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45405967444&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069623-00-P-X-20250429123445.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODcxOHxpbWFnZS9qcGVnfGFEbGhMMmc0WXk4eE1qZzVNVGMwTXpZME9UZ3lNaTl0WldScFlYTmZNVEF3TVRBMk9UWXlNMTh3TUY5UVgxZ3RNakF5TlRBME1qa3hNak0wTkRVdWFuQm58Y2Y2NDkyNmVmMGUyMDg2NDc5ZTQ5MjExOGVkMjliYzNiNDQzZGM1NDlkZGVlYWUyNWI5NWE2ZDhhNzc5ZjRlMw&feedId=58083&k=96db464cb46d8422bd7302d12fe6e9baed450803",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -165259,7 +165070,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 42.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44787259546&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43630607217&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069620-00-P-X-20250429123445.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzExOXxpbWFnZS9qcGVnfGFHVXhMMmcxTkM4eE1qZzVNVGMwTVRJeU5EazVNQzl0WldScFlYTmZNVEF3TVRBMk9UWXlNRjh3TUY5UVgxZ3RNakF5TlRBME1qa3hNak0wTkRVdWFuQm58ZTI5ZTljNjAzNjRiZjY1MjFjNzFjYjg3MzNhOGJiYWVkNzU4MWJmMTQxMTdhNjI5MzdiZGE5YzcxM2E5MjA4Mw&feedId=58083&k=c5f94d4d17b05b4255783e0f2b4791f833b6bb4b",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -165277,7 +165088,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 42.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41368576583&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=41368576574&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069628-00-P-X-20250520133933.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzE0NXxpbWFnZS9qcGVnfGFEUmxMMmhpWXk4eE1qa3pOekl6TURnME16a3pOQzl0WldScFlYTmZNVEF3TVRBMk9UWXlPRjh3TUY5UVgxZ3RNakF5TlRBMU1qQXhNek01TXpNdWFuQm58ZTUxNTNiNjM2ZDMxYTExOWYyMjg1MWEyZTFlMTBiMmM2MDRjM2IxODhiNGUzZGZlODkyZWVlODM0MGExZGJmNw&feedId=58083&k=a5a36dbf461395be38ae3e3162be6991910eb1f1",
         sizes: ["M", "L", "XL", "XXL"],
       },
@@ -165313,7 +165124,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 42.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44787259554&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44787259548&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069626-00-P-X-20250507163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTIwMHxpbWFnZS9qcGVnfGFEVXdMMmczTkM4eE1qa3hNVGs0TWpZM016azFNQzl0WldScFlYTmZNVEF3TVRBMk9UWXlObDh3TUY5UVgxZ3RNakF5TlRBMU1EY3hOak14TXpNdWFuQm58ZjA4MzZjODEwZjI2NzQ2MWNhOTg2OTY1ODA4NDkyN2MyZGYwNjY5MmQ3ZmQwNTc2M2E0MWUyMzE2MTI3NWE4Yg&feedId=58083&k=42961bee15a2e289fbfdcd911a0aae88888e9365",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -165331,26 +165142,8 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 42.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44620486111&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44620486110&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069627-00-P-X-20250507163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTM2MXxpbWFnZS9qcGVnfGFHRTRMMmd4WkM4eE1qa3hNakF4TmpRNU1EVXlOaTl0WldScFlYTmZNVEF3TVRBMk9UWXlOMTh3TUY5UVgxZ3RNakF5TlRBMU1EY3hOak14TXpNdWFuQm58Y2Q3OWZmNzc2ZjNiMzM2NDhhNjk0Y2ViMGJjMDYxYWNiMzYwNWViYTUyZmExNTlmNDlkNTQzNzVhZmQwNDM4NQ&feedId=58083&k=3ec2fbc91441e3818054b6756d5b3d8d5fb43c4f",
-        sizes: ["S", "M", "L", "XL", "XXL"],
-      },
-    ],
-  },
-  {
-    id: "kappa-sudadera-de-entrenamiento-lovato-negro-2",
-    brand: "Kappa",
-    model: "Sudadera de entrenamiento Kappa Lovato - Negro",
-    colour: "Negro",
-    type: "sweatshirt",
-    offers: [
-      {
-        store: "ForumSport",
-        price: 37.99,
-        shipping: 5.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45841249064&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069619-00-P-X-20250429123445.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mjk2MXxpbWFnZS9qcGVnfGFHSmhMMmhpTnk4eE1qZzVNVGMwTURRek9EVTFPQzl0WldScFlYTmZNVEF3TVRBMk9UWXhPVjh3TUY5UVgxZ3RNakF5TlRBME1qa3hNak0wTkRVdWFuQm58MmMwOWM1YTBkNmRhYjlkZWZmNTg4M2JjMjYwMGRlOGViMzllODIwMzZjNWVhOTU4ODQwY2RjYzM0M2NhMjFiYg&feedId=58083&k=e91f578da557abf174ec2da381d648b572301963",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
     ],
@@ -165367,8 +165160,26 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 42.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45841249146&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45841249086&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069622-00-P-X-20250429123445.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4Mzc5MHxpbWFnZS9qcGVnfGFHTXpMMmd5Tmk4eE1qZzVNVGMwTWpjNU56ZzFOQzl0WldScFlYTmZNVEF3TVRBMk9UWXlNbDh3TUY5UVgxZ3RNakF5TlRBME1qa3hNak0wTkRVdWFuQm58OGZkZDVmODI5YmRiMjEyNzdiODkzNjFkZWUzMGY5MGVkNWI3YTQwYTYxYTI2NmRiOWYxOTI2M2ZjMGZkMzljMQ&feedId=58083&k=424565d9e58ddbf8e167d391f1ae86ae9bcf1247",
+        sizes: ["S", "M", "L", "XL", "XXL"],
+      },
+    ],
+  },
+  {
+    id: "kappa-sudadera-de-entrenamiento-lovato-negro-2",
+    brand: "Kappa",
+    model: "Sudadera de entrenamiento Kappa Lovato - Negro",
+    colour: "Negro",
+    type: "sweatshirt",
+    offers: [
+      {
+        store: "ForumSport",
+        price: 37.99,
+        shipping: 5.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45841249092&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069619-00-P-X-20250429123445.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mjk2MXxpbWFnZS9qcGVnfGFHSmhMMmhpTnk4eE1qZzVNVGMwTURRek9EVTFPQzl0WldScFlYTmZNVEF3TVRBMk9UWXhPVjh3TUY5UVgxZ3RNakF5TlRBME1qa3hNak0wTkRVdWFuQm58MmMwOWM1YTBkNmRhYjlkZWZmNTg4M2JjMjYwMGRlOGViMzllODIwMzZjNWVhOTU4ODQwY2RjYzM0M2NhMjFiYg&feedId=58083&k=e91f578da557abf174ec2da381d648b572301963",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
     ],
@@ -165385,7 +165196,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 32.67,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41248861519&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=41248861534&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069625-00-P-X-20250507163133.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYyMXxpbWFnZS9qcGVnfGFHVTNMMmd3Tmk4eE1qa3hNVGs0TVRVMU9UZ3pPQzl0WldScFlYTmZNVEF3TVRBMk9UWXlOVjh3TUY5UVgxZ3RNakF5TlRBMU1EY3hOak14TXpNdWFuQm58YmRjYTNiYWU1YmYzZmNiZDc0ODE3OWMyY2Y2MDMzOWVmYzAyMjQzMjc5ZjMwMjkxOTVmNDlhZTE1NTk4NTE5NQ&feedId=58083&k=57b642d30ed051e82d5641b35594872080e9d2f7",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -165403,7 +165214,7 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
         price: 32.67,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41940664559&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=42378116213&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001069624-00-P-X-20250429123445.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTA1OHxpbWFnZS9qcGVnfGFEYzBMMmhsWmk4eE1qZzVNVGMwTkRRek5qSTFOQzl0WldScFlYTmZNVEF3TVRBMk9UWXlORjh3TUY5UVgxZ3RNakF5TlRBME1qa3hNak0wTkRVdWFuQm58NmNiMDQ4NmVlNTg3MTFlMzkxNjRlNmI4ZjhlYzE2OWJhNzU5NzE4OGFkZTJiNzZlYWI5N2UyY2EzZWY3YjhkYw&feedId=58083&k=7f8e6449aa89b60d9467d1e4f038fc6b2190a1e7",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -168452,9 +168263,6 @@ const minedApparelProductsChunk29: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "macron-polo-albanie-travel-2024-25-fshf-2024-25-blanc",
     brand: "Macron",
@@ -168550,6 +168358,9 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk30: ApparelProduct[] = [
   {
     id: "macron-polo-coton-udinese-travel-2022-23-noir",
     brand: "Macron",
@@ -172038,9 +171849,6 @@ const minedApparelProductsChunk30: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk31: ApparelProduct[] = [
   {
     id: "macron-t-shirt-en-coton-macron-sithonia-bleu-2",
     brand: "Macron",
@@ -172120,6 +171928,9 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk31: ApparelProduct[] = [
   {
     id: "macron-veste-de-survetement-a-capuche-softsell-macron-tomtor-gris",
     brand: "Macron",
@@ -172374,7 +172185,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
         price: 60.77,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44926358139&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43628413481&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000926064-00-P-X-20230921121318.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDQ2M3xpbWFnZS9qcGVnfGFHWTNMMmcyTVM4eE1UWTBOalF5TVRjNU5EZzBOaTl0WldScFlYTmZNVEF3TURreU5qQTJORjh3TUY5UVgxZ3RNakF5TXpBNU1qRXhNakV6TVRndWFuQm58YzBhNzYyMzYzYTkxZjAxZjdmMmU0NTI4NWJjZWEyODcwNzU4NTVlNDY5YTc1YzkxMDNhZjllNmI2NWY4YmIxMw&feedId=58083&k=f976fecb695d354207df9571766d0887f00d3129",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -172652,7 +172463,7 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
         price: 62.01,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43628413478&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43034114185&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000926065-00-P-X-20231128095143.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODgxMnxpbWFnZS9qcGVnfGFEUmlMMmczTWk4eE1UYzRNemczTnpBMk5qYzRNaTl0WldScFlYTmZNVEF3TURreU5qQTJOVjh3TUY5UVgxZ3RNakF5TXpFeE1qZ3dPVFV4TkRNdWFuQm58M2MwNzU2MGVhZTE0NzBhMGI0ZDMwOTk2N2I2Y2IxMjVmMDQwZjQ1MDdjZGY4ZjRhOWFjODI3N2UwYmU2OWQwMw&feedId=58083&k=2bb82b1d806782fdf3c1841b226e1475b2b391f0",
         sizes: ["S", "L", "XL"],
       },
@@ -177324,9 +177135,6 @@ const minedApparelProductsChunk31: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk32: ApparelProduct[] = [
   {
     id: "nike-calcetines-de-tottenham-poly-crew-2026-27-blanc",
     brand: "Nike",
@@ -177453,6 +177261,9 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk32: ApparelProduct[] = [
   {
     id: "nike-calcetines-inter-de-milan-strike-kh-3r-2025-26-azul",
     brand: "Nike",
@@ -178057,7 +177868,7 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         price: 12.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39634981856&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=39265326929&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000404096-00-P-X-20180925234551.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NDI4MXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnNFl5OW9OVFF2T0RnNE1qQXdNak0yTWpNNU9DNXFjR2N8MDA3NjI1MTExOTk3MmZhMjU1MGUxOWExM2IzZjcyMmUyMjIwNWU4YWM4OGQzYWIzNWQzN2IwODBlYzZmYjJjYQ&feedId=58083&k=9b92c36c25275dffa70e196227c4aae044008e43",
         sizes: ["XS", "S", "M", "L", "XL"],
       },
@@ -180494,7 +180305,7 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         price: 43.19,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45380735350&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45380735347&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103710-00-P-X-20260724091845.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODU0N3xpbWFnZS9qcGVnfGFEWTBMMmczT0M4eE16a3hNVGc1TVRRME16YzBNaTl0WldScFlYTmZNVEF3TVRFd016Y3hNRjh3TUY5UVgxZ3RNakF5TmpBM01qUXdPVEU0TkRVdWFuQm58NzA5YzFhZTg3NWVjNmZhMGRmYTk5MTlmYzUxNGJlZWVhM2IxM2NlNzIwY2MxZDlmZDU1ZmQ5NDdkOTdjNWQ1NA&feedId=58083&k=d4d4211d44c9e82e0f6ea1033752ec58b1421e5d",
         sizes: ["S", "M", "L"],
       },
@@ -180994,7 +180805,7 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
         price: 40.46,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46084662396&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46084662393&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000939092-00-P-X-20240326132920.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MTQyMXxpbWFnZS9qcGVnfGFHWm1MMmhsTUM4eE1qQTFNREl5TURnME16QXpPQzl0WldScFlYTmZNVEF3TURrek9UQTVNbDh3TUY5UVgxZ3RNakF5TkRBek1qWXhNekk1TWpBdWFuQm58Yjg5MmYwMThmMzI5YTk1MjQ5ZjMyZDg1MDlkZTA5ZTVmYTdiMDRmZjllYjkxMmVmMTkwZmI1YWQzYWVmYTVkMg&feedId=58083&k=5d3ebe172a8bd75a0a770112e57784ed4c0c93b7",
         sizes: ["M", "L", "XL"],
       },
@@ -182807,9 +182618,6 @@ const minedApparelProductsChunk32: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk33: ApparelProduct[] = [
   {
     id: "nike-camiseta-academy-winter-warrior",
     brand: "Nike",
@@ -182840,7 +182648,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         price: 22.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40162773924&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=40162773925&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021093-00-P-X-20250116162527.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4NzgzMHxpbWFnZS9qcGVnfGFESTNMMmd5Tmk4eE1qWTRNRGd4T0RZNE9EQXpNQzl0WldScFlYTmZNVEF3TVRBeU1UQTVNMTh3TUY5UVgxZ3RNakF5TlRBeE1UWXhOakkxTWpjdWFuQm58MjdjZTQwOWIzZDQ4YzhjMjUxMTA5ZTdjYjVhZGQ1MDRhZDE5NjE2ZWM1NzQxMzc3ODI3Y2FiOTI4ZmEwNGY0Mw&feedId=58083&k=95cc39e16a78011eb0e94080376d0a3c0930d00c",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -182858,7 +182666,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         price: 22.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=40123662815&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=40115545766&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001021095-00-P-X-20250109155244.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjQxN3xpbWFnZS9qcGVnfGFETXpMMmhpTkM4eE1qWTJNVGcwTmpNeE1EazBNaTl0WldScFlYTmZNVEF3TVRBeU1UQTVOVjh3TUY5UVgxZ3RNakF5TlRBeE1Ea3hOVFV5TkRRdWFuQm58MGVjMTVmNDNiYzJjNzZlNWRkYzM5OGRiNjk1NWUxMWMyNTg3OGQ3MWQ5ZWViMTBmNzA0Y2IzNjZjZGFkY2FlMQ&feedId=58083&k=d4f56bf273844555a008dc0af9d3ef9e413fa4fc",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -182882,6 +182690,9 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk33: ApparelProduct[] = [
   {
     id: "nike-camiseta-dri-fit-academy-blanco",
     brand: "Nike",
@@ -182993,7 +182804,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         price: 25.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46196973054&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46196973010&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091607-00-P-X-20260407135258.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTUwOXxpbWFnZS9qcGVnfGFESm1MMmc1WVM4eE16WTRNamt3T1RjM016ZzFOQzl0WldScFlYTmZNVEF3TVRBNU1UWXdOMTh3TUY5UVgxZ3RNakF5TmpBME1EY3hNelV5TlRndWFuQm58MWEwM2IyZTIzNjYzOTQ5YjI1OTM5OWVlZWFiNTU4NjYzMzQyMzVhMGE2N2IyMmZhOTgwNjhmNDkxZTA3ZjQxOQ&feedId=58083&k=138e74d7187574cbc52cd4291d015465fa68d0a4",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -185461,7 +185272,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         price: 78.0,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44644303956&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45228994312&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091642-00-P-X-20260309121628.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjUyMHxpbWFnZS9qcGVnfGFETXlMMmhoTnk4eE16WXlOak13TWpJMk56UXlNaTl0WldScFlYTmZNVEF3TVRBNU1UWTBNbDh3TUY5UVgxZ3RNakF5TmpBek1Ea3hNakUyTWpndWFuQm58YjlmOTNiN2ZlZjg4ZTI0MzNlN2UzNGIzYWM5OWVkZGNiMTRiNGQ1ZWQ2MTMyM2IwZGU5YzZjOTU4YmU0YmQ0Zg&feedId=58083&k=f9b0c928a957379cccaeca2eff150ba918dc4f20",
         sizes: ["M", "L", "XL"],
       },
@@ -186650,7 +186461,7 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
         price: 75.83,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45204139928&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45204139929&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091643-00-P-X-20260407135843.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzEyNHxpbWFnZS9qcGVnfGFEWXlMMmcwWWk4eE16WTRNamt4TURneU1qUXpNQzl0WldScFlYTmZNVEF3TVRBNU1UWTBNMTh3TUY5UVgxZ3RNakF5TmpBME1EY3hNelU0TkRNdWFuQm58M2FiZGQ0ZGIxNjcwNDgxMjNmM2E1YjgyZjMzNmRhNzQ2ZmM4MDY4MmVkOTJkNTI5MjkwNTA2MTIxNzM4NGQ3Yg&feedId=58083&k=added8ffe7fa5e7bff524bc5fbfe4ff905c01154",
         sizes: ["S", "M", "L"],
       },
@@ -188161,9 +187972,6 @@ const minedApparelProductsChunk33: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk34: ApparelProduct[] = [
   {
     id: "nike-chaqueta-de-chandal-nike-total-90-negro",
     brand: "Nike",
@@ -188264,7 +188072,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         price: 76.43,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44905215248&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44802364165&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001091645-00-P-X-20260407135843.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTY5MHxpbWFnZS9qcGVnfGFHSXdMMmcyWXk4eE16WTRNamt4TWpBd01qQTNPQzl0WldScFlYTmZNVEF3TVRBNU1UWTBOVjh3TUY5UVgxZ3RNakF5TmpBME1EY3hNelU0TkRNdWFuQm58NzZlZWI1OWIxMmE5OGM0MjM0NzlkZDFlNGQwMTkwMTBkMjM2MjM5NGQ2NTU4YjUzODM0NDRjM2Q5NmUzZmY4Yg&feedId=58083&k=7c1c482959749a34030a48de0774e78570de3f57",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -188297,6 +188105,9 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk34: ApparelProduct[] = [
   {
     id: "nike-chaqueta-de-chandal-paises-bajos-energy-coupe-du-monde-2026-blanc",
     brand: "Nike",
@@ -191770,7 +191581,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         price: 15.49,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45347680381&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43782447929&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000513786-00-P-X-20190111164103.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTc4OXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneE5pOW9NVEF2T1RBd01qRXhPVGcxTmpFMU9DNXFjR2N8OWNhYzg0NmM0N2M3ZGM0ZTI1MzMxMzE4MzMzZmMyOTFhNjYxZTU0Njc2ZmVlNWMzYTdhNmNmZWUzYWUxYTdhNQ&feedId=58083&k=db37155d0bec686f8715832760478966bb01e9a6",
         sizes: ["XS", "S", "M", "L"],
       },
@@ -191878,7 +191689,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         price: 29.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45237586951&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45237586948&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103636-00-P-X-20260706140715.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzU2NHxpbWFnZS9qcGVnfGFEbG1MMmcyWkM4eE16ZzNOVEF5T1RNME5ESTROaTl0WldScFlYTmZNVEF3TVRFd016WXpObDh3TUY5UVgxZ3RNakF5TmpBM01EWXhOREEzTVRVdWFuQm58YzE5ZjcyZTA4YzRjNTFmMGI2NjMwNWJjMjU4ZjMzNjkxNTdkMDM1ZGY3MGIzNjA4ZDgxOGY2NzUwNGM4NWQxNg&feedId=58083&k=9cced1206ff49c08558e6fef8c8914dbbd95c2b1",
         sizes: ["XS", "S", "M", "L"],
       },
@@ -192229,7 +192040,7 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
         price: 26.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41899636279&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=39115898758&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000829886-00-P-X-20220429092309.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NTQxMXxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJoa05TOW9Nell2TVRBM01EVXlNRFF4TlRBek1ESXVhbkJufDhjZjJhMDEyNDUxYTIzMjdjZTNlMzZiMmFhNzRiZWVlNzExZWYyOWYxNjMzMWNhNTE1NzNhOGFmZjY5NjI5MWU&feedId=58083&k=f08741f7b20daf47ac438159380e3a38d46f1c6a",
         sizes: ["XS", "S", "M", "L", "XL"],
       },
@@ -193516,9 +193327,6 @@ const minedApparelProductsChunk34: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "nike-pantalon-corto-3a-equipacion-psg-2024-25-negro",
     brand: "Nike",
@@ -193641,6 +193449,9 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk35: ApparelProduct[] = [
   {
     id: "nike-pantalon-corto-de-entrenamiento-francia-2024-25-azul",
     brand: "Nike",
@@ -195193,7 +195004,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         price: 25.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46548430163&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46566726822&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118843-00-P-X-20260313132302.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzQ2MnxpbWFnZS9qcGVnfGFHTmtMMmd5Tmk4eE16WXpOekEzTlRFd056ZzNNQzl0WldScFlYTmZNVEF3TVRFeE9EZzBNMTh3TUY5UVgxZ3RNakF5TmpBek1UTXhNekl6TURJdWFuQm58YWQ4NDg1NzNkOWJmNjAzNGEwZmM0OGI4Mzc3NzY2ZWFmM2IzNTQ2ZjczNDZmOGJjOTdlYzlhN2U2ZTExMjEzZA&feedId=58083&k=5ce5859d9392269412d229bc357e6b5a5b5f427c",
         sizes: ["XS", "S", "M", "L", "XL"],
       },
@@ -195452,7 +195263,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         price: 25.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43879355240&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43884295206&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001079014-00-P-X-20260129161336.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTI5N3xpbWFnZS9qcGVnfGFHTTVMMmhqWlM4eE16VXpNVEEzTmpVNU1UWTBOaTl0WldScFlYTmZNVEF3TVRBM09UQXhORjh3TUY5UVgxZ3RNakF5TmpBeE1qa3hOakV6TXpZdWFuQm58NGNmZThkYWMzOTFkMDhlODU0NDYwZDkxNGIyMmIxOThjMjhkNzA3OTI1ZGRiYjVjOWMxYjUyNGU3ZGNkMjllNA&feedId=58083&k=db72ce23679cc00814c193322508d450d31a732f",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -197128,7 +196939,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         price: 39.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46258195108&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46695445532&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001028412-00-P-X-20241209134325.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjM5M3xpbWFnZS9qcGVnfGFHRmpMMmd6T0M4eE1qVTJOalUzTmpZeU56YzBNaTl0WldScFlYTmZNVEF3TVRBeU9EUXhNbDh3TUY5UVgxZ3RNakF5TkRFeU1Ea3hNelF6TWpVdWFuQm58Y2JiYmU5NGIzZWE0ZGE0YzgyYWRlM2UzZjViMDk2YmU3ZDczODFhYmU4M2YwZTgyZWMxYTA2YTA4OGJlNGIyYQ&feedId=58083&k=4229bb9f687de7eff718e854ec7867798dac9a1a",
         sizes: ["S", "L", "XL"],
       },
@@ -197222,7 +197033,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         price: 29.19,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46430109363&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46527257186&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001118845-00-P-X-20261015075221.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODI1N3xpbWFnZS9qcGVnfGFEZ3pMMmhtTXk4eE5EQTNOelF5TmpVMk5URTFNQzl0WldScFlYTmZNVEF3TVRFeE9EZzBOVjh3TUY5UVgxZ3RNakF5TmpFd01UVXdOelV5TWpFdWFuQm58ZGZlODViODdiMWM5ZWU5ODI2NGMxZGNjNGFiNWVkMzhkZDIxMDc4YzlkMzgyZDMwMDEwOGZhM2IzMzIxMjJlMg&feedId=58083&k=1aef84c6da1bee27b4fd46e90f68c8b2fd904e94",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -198070,7 +197881,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         price: 29.19,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43841233708&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=44681703088&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001101588-00-P-X-20260128110002.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODM0OHxpbWFnZS9qcGVnfGFEY3hMMmcyTXk4eE16VXlPRFk0TlRnd05UVTVPQzl0WldScFlYTmZNVEF3TVRFd01UVTRPRjh3TUY5UVgxZ3RNakF5TmpBeE1qZ3hNVEF3TURJdWFuQm58MjVkODY0NmE0NTUxZGIzZTNjNDczMTY0ZDUxMzQwZDlmYmQ0NWJlNWRiNzExMDViNzUyYTkzMzI4ZmIwMGJjOQ&feedId=58083&k=81c6f152062c1971151f27b1c3b133de95ae2320",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -198268,7 +198079,7 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
         price: 76.79,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46037030992&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46037030994&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001100291-00-P-X-20260918120401.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg4N3xpbWFnZS9qcGVnfGFERmlMMmhtWXk4eE5EQXlOVFU1T0RBM05Ea3hNQzl0WldScFlYTmZNVEF3TVRFd01ESTVNVjh3TUY5UVgxZ3RNakF5TmpBNU1UZ3hNakEwTURFdWFuQm58ZDY1NDdmM2JkNGVmZThjYzYxOTViN2U2YWVkM2JkNjE5ZDg0YThmMzZiZWQ5YjM1YTM5Y2I4NTQwM2E4MThmZA&feedId=58083&k=e9f560f545742d9ef1ea04c76e960c02acf0fdfb",
         sizes: ["S", "XL"],
       },
@@ -198910,9 +198721,6 @@ const minedApparelProductsChunk35: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-chandal-fc-barcelona-strike-2025-26-violeta",
     brand: "Nike",
@@ -199045,6 +198853,9 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk36: ApparelProduct[] = [
   {
     id: "nike-pantalon-de-chandal-fc-barcelona-tech-fleece-reflective-2026-27-rouge",
     brand: "Nike",
@@ -203749,7 +203560,7 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
         price: 50.31,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45466191658&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45466191666&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103772-00-P-X-20260803133427.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4ODk4M3xpbWFnZS9qcGVnfGFETTJMMmhtTmk4eE16a3pNVGt4TnpFME9ERTVNQzl0WldScFlYTmZNVEF3TVRFd016YzNNbDh3TUY5UVgxZ3RNakF5TmpBNE1ETXhNek0wTWpjdWFuQm58Y2U0ZDlhOTQyMjczY2RlMDA3OGRiMzcwYWI3ZjdiMjUyNTEzYTgyYzQ0N2E2ZjlhMjQzYjI4MWJiNTcxODlkMw&feedId=58083&k=ddcc7024c69a97dafe025485488cb9f0e23db072",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -204333,9 +204144,6 @@ const minedApparelProductsChunk36: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "nike-pantalones-cortos-para-local-oficina-chelsea-fc-2022-23-azul",
     brand: "Nike",
@@ -204444,6 +204252,9 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk37: ApparelProduct[] = [
   {
     id: "nike-pantalones-cortos-primera-equipacion-psg-2023-24-azul",
     brand: "Nike",
@@ -207790,7 +207601,7 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
         price: 59.99,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45656102826&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45656102864&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001127175-00-P-X-20260817150620.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Mzk2N3xpbWFnZS9qcGVnfGFEVTBMMmcxTVM4eE16azFPVEUxTURRek5qTTRNaTl0WldScFlYTmZNVEF3TVRFeU56RTNOVjh3TUY5UVgxZ3RNakF5TmpBNE1UY3hOVEEyTWpBdWFuQm58MjlhYTI4MzdlNTFmYjJiNzZmMDU0MjY1ZmVkNGMxY2Q5ZWFhZWU5MmRiY2Y2ZjAyNTc3Y2RhMTU0MzY3ZDIzNA&feedId=58083&k=95e91b4b82a47505405fea66ce8e833b48f04dc9",
         sizes: ["M", "XL"],
       },
@@ -209716,9 +209527,6 @@ const minedApparelProductsChunk37: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "nike-sudadera-con-capucha-del-inter-de-milan-city-side-2026-27-noir",
     brand: "Nike",
@@ -209827,6 +209635,9 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk38: ApparelProduct[] = [
   {
     id: "nike-sudadera-con-capucha-francia-fleece-2024-25-azul",
     brand: "Nike",
@@ -211828,7 +211639,7 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
         price: 63.89,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46665117131&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=46665117132&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001103759-00-P-X-20261006120914.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTU3MXxpbWFnZS9qcGVnfGFEVXdMMmhoTUM4eE5EQTJNRGt3TmpBeU1EZzVOQzl0WldScFlYTmZNVEF3TVRFd016YzFPVjh3TUY5UVgxZ3RNakF5TmpFd01EWXhNakE1TVRRdWFuQm58YzljMjJjMGJlYWFkZjBhNjY3Y2JjNjA1OWVlNjNmNTg5MmJlZGE1ZTE2MWExYzRiMmVlYzQ0MTFlZTA3MGE0MA&feedId=58083&k=fe8a2968de29fa51d37e1b85dd8fc3732ef94051",
         sizes: ["S", "M", "L"],
       },
@@ -213682,7 +213493,7 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-fan-om-homme-2026-noir-bleu-roi-m26013%3Fvariant%3D55199226724693",
         imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/survetement-fan-om-homme-2026-noir-bleu-roi-m26013-1.jpg?v=1791985127",
-        sizes: ["S", "L", "XL", "XXL"],
+        sizes: ["S", "L", "XL"],
       },
     ],
   },
@@ -214796,9 +214607,6 @@ const minedApparelProductsChunk38: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "powershot-bolsa-de-transporte-para-porterias-5x2m-powershot-negro",
     brand: "Powershot",
@@ -214907,6 +214715,9 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk39: ApparelProduct[] = [
   {
     id: "powershot-bolsa-tubular-para-5-pelotas-powershot-negro",
     brand: "Powershot",
@@ -219788,9 +219599,6 @@ const minedApparelProductsChunk39: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-calcetines-puma-teamgoal-verde",
     brand: "Puma",
@@ -219927,6 +219735,9 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk40: ApparelProduct[] = [
   {
     id: "puma-calcetines-puma-teamliga26-bleu-2",
     brand: "Puma",
@@ -220725,7 +220536,7 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
         price: 27.44,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45295252892&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45295252934&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141410-00-S-M-20260714102614.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzY3OXxpbWFnZS9qcGVnfGFHSTJMMmhoWlM4eE16ZzVNalE1TkRZMU5UVXhPQzl0WldScFlYTmZNVEF3TVRFME1UUXhNRjh3TUY5VFgwMHRNakF5TmpBM01UUXhNREkyTVRRdWFuQm58NGVlNDg3YzFiZjA0NTM1MjkwMTQ4OTdiZDAwNGRlNzE4OTRiMmU2MDdhYWEwODM0MmUxZjdlYTA0NGVlZmQ1ZQ&feedId=58083&k=c0afed1fea998336e17ff5d8ee035e8aa6b6f5d1",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -220793,7 +220604,7 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
         price: 27.44,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45494296728&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45494296729&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141408-00-S-M-20260818144456.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzI1NnxpbWFnZS9qcGVnfGFEWXpMMmhrWmk4eE16azJNVFF3TlRreU16TTFPQzl0WldScFlYTmZNVEF3TVRFME1UUXdPRjh3TUY5VFgwMHRNakF5TmpBNE1UZ3hORFEwTlRZdWFuQm58NTQ1MWZhZmQxM2U1YzhkNzg4OWZhNTM3OTE0Nzk0OWY5NzBkZWNlNzFkZmU2M2M3NGRjNWE5MGI5N2JhMTU4Ng&feedId=58083&k=8d35e7c763d363564c18ab44a8a3ec1b2f28472d",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -225891,9 +225702,6 @@ const minedApparelProductsChunk40: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "puma-chaqueta-puma-team-liga-all-weather-azul-2",
     brand: "Puma",
@@ -226032,6 +225840,9 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk41: ApparelProduct[] = [
   {
     id: "puma-chaqueta-puma-team-liga-training-negro",
     brand: "Puma",
@@ -226389,7 +226200,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         price: 30.14,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45295250835&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45295250893&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141395-00-S-M-20260713105314.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODg0OXxpbWFnZS9qcGVnfGFHTXpMMmd4WlM4eE16ZzRPVFUxTVRFM01UWXhOQzl0WldScFlYTmZNVEF3TVRFME1UTTVOVjh3TUY5VFgwMHRNakF5TmpBM01UTXhNRFV6TVRRdWFuQm58MDZmNzQ0ZTI2MGY1YjBmOGIyNDk4ODQ3MDY1YmQzMjJiMWIwMmRjODdkYzBlZjZiMmNhZmJhMWIwMGEwNjk5Yg&feedId=58083&k=74268bc47b501a67dcf42e723791240e807bafc0",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -226923,7 +226734,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-complet-manchester-city-entrainement-homme-2026-27-gris-jaune-noir%3Fvariant%3D55351136092501",
         imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/be386294-e8b3-4625-a692-5217f6831c3b.png?v=1792141020",
-        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+        sizes: ["S / M", "S / S", "M / M", "M / S", "L / M", "L / S"],
       },
     ],
   },
@@ -226941,7 +226752,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/cread.php?awinmid=123918&awinaffid=3013769&ued=https%3A%2F%2Fplanetfoot.com%2Fproducts%2Fsurvetement-entrainement-manchester-city-homme-2026-rose-bleu-noir-haut-pantalon%3Fvariant%3D55771398799701",
         imageUrl: "https://cdn.shopify.com/s/files/1/0568/5012/0886/files/planetfoot-ensemble-n17-haut-pantalon-1600x1600.jpg?v=1794512751",
-        sizes: ["S / L", "S / M", "S / S", "M / L", "M / M", "M / S", "L / L", "L / M", "L / S"],
+        sizes: ["S / M", "S / S", "M / M", "M / S", "L / M", "L / S"],
       },
     ],
   },
@@ -227509,7 +227320,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         price: 10.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45117775380&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45117775382&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000833983-00-P-X-20250618113716.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MzYxOHxpbWFnZS9qcGVnfGFEZzFMMmhpWkM4eE1qazVOelV3TURZNU9EWTFOQzl0WldScFlYTmZNVEF3TURnek16azRNMTh3TUY5UVgxZ3RNakF5TlRBMk1UZ3hNVE0zTVRZdWFuQm58NTlhYjVjZjdjZmQwODNmNGI1MTg2NTc0NzQ0ZGVmOWIxMmIxYjc2Y2RmNjIyNWU5MDcyMGQwNjhlZjBjNmI4NA&feedId=58083&k=e07d09f6486e720489a51c9e5a024ff8be290347",
         sizes: ["1", "5"],
       },
@@ -227545,7 +227356,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         price: 10.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45117775369&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45117775374&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000833967-00-P-X-20230105153405.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjU3N3xpbWFnZS9qcGVnfGFESXpMMmcyTWk4eE1URTRNVFkwTkRnME1EazVNQzl0WldScFlYTmZNVEF3TURnek16azJOMTh3TUY5UVgxZ3RNakF5TXpBeE1EVXhOVE0wTURVdWFuQm58OTNhZWRkYjU4MDYzYzk3MTM1MDk4MGYzNTcyMjBlMmU0NzMzOGNjMTI5NTJjZDAwYWZlOGRlYmUxOTA3MDViMw&feedId=58083&k=5b500e6f65e97fe7b32b322d9cd57ad008bb2ab1",
         sizes: ["1", "2", "3", "4", "5"],
       },
@@ -228526,7 +228337,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         price: 25.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45494296705&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45494296741&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141433-00-S-M-20260805135047.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODc1NnxpbWFnZS9qcGVnfGFEQmxMMmhtTnk4eE16a3pOelF4TXpZMU1qVXhNQzl0WldScFlYTmZNVEF3TVRFME1UUXpNMTh3TUY5VFgwMHRNakF5TmpBNE1EVXhNelV3TkRjdWFuQm58ODlkYTkzZjlkMzk0YTY4ZmQ4Y2JhZmUyYjA5ZTBjOTU2ZGNhNmFjNDlmYjNkNTllODIxNmJlMWI4ZDQ4NzYyMw&feedId=58083&k=50be9ed1c9688b0142721d7dd940a58e322b4064",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -228544,7 +228355,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         price: 25.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45318480721&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45318480720&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001141435-00-S-M-20260714082042.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5MjU3M3xpbWFnZS9qcGVnfGFEZGlMMmhtWkM4eE16ZzVNakE1TURNek1URTJOaTl0WldScFlYTmZNVEF3TVRFME1UUXpOVjh3TUY5VFgwMHRNakF5TmpBM01UUXdPREl3TkRJdWFuQm58MDkyZmVjYjQyYWIyNThlYmNkMWEwMGQyZWM5Mzk2M2QzYTk0NDhhZTM1NzYwMGRlY2FjOTYzNjNkNTI4NDBhOQ&feedId=58083&k=622a98e2f152f4c2bd8603104e7df5f669d057ea",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -229287,7 +229098,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         price: 39.99,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43926447577&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43926447578&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001081760-00-P-X-20260205155057.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4OTk4OXxpbWFnZS9qcGVnfGFEQXhMMmhrWVM4eE16VTFNREEzTlRnM01USTJNaTl0WldScFlYTmZNVEF3TVRBNE1UYzJNRjh3TUY5UVgxZ3RNakF5TmpBeU1EVXhOVFV3TlRjdWFuQm58MDM4OTEyNDMyYmU4ZTA2YWU5MzY1MTNkYmZlY2UzZWVlNjIxNzlmODZjNGZkZWFlODg5YWU1ZmUwNGU0ODczYg&feedId=58083&k=6d02759768fcb9c78804b0ed00137cc7a1b7f7b4",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -229305,7 +229116,7 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
         price: 26.0,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=39265351759&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=39265351745&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000932386-00-P-X-20230920154454.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4MzgwOXxpbWFnZS9qcGVnfGFHUXlMMmc1TlM4eE1UWTBORFV6T0RZNE16UXlNaTl0WldScFlYTmZNVEF3TURrek1qTTRObDh3TUY5UVgxZ3RNakF5TXpBNU1qQXhOVFEwTlRRdWFuQm58NGYzMmY5MDgwYzE2N2ZmZTcyN2I3NTAyMzc5NDkzMTIwZTdmMjNlNTU3Mjc0ZWE2Y2ZkYjgzYjQzYjU2M2MzOA&feedId=58083&k=7efbfdb122a64f89b2614e9ec3b998d23975b275",
         sizes: ["S", "XL"],
       },
@@ -231743,9 +231554,6 @@ const minedApparelProductsChunk41: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-pantalon-de-chandal-prematch-om-woven-2023-24-azul",
     brand: "Puma",
@@ -231908,6 +231716,9 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk42: ApparelProduct[] = [
   {
     id: "puma-pantalon-de-chandal-puma-individualrise-azul",
     brand: "Puma",
@@ -232446,7 +232257,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         price: 39.59,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45117775246&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45117775247&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000761674-00-S-M-20230105153405.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODAyN3xpbWFnZS9qcGVnfGFEaG1MMmc0TkM4eE1URTRNVFl4TXpRME9USTBOaTl0WldScFlYTmZNVEF3TURjMk1UWTNORjh3TUY5VFgwMHRNakF5TXpBeE1EVXhOVE0wTURVdWFuQm58ZmJhZWIyNmY2MTRjMzY5NGNkODE4NDQ4N2M2YTEzNGI3ZTA5ZDBkYzg4NWM2MWUyMTkyZjBlYmQxZjAwZDgzYw&feedId=58083&k=7f3f8fd930645c2f9c827cbe2e5ee56e42b33db0",
         sizes: ["S", "M", "L", "XL"],
       },
@@ -235313,7 +235124,7 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
         price: 39.89,
         shipping: 3.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43879358593&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=43879358589&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001109468-00-S-M-20260203135358.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjUwNHxpbWFnZS9qcGVnfGFHSmpMMmczWmk4eE16VTBNakF6TVRBMk5URXhPQzl0WldScFlYTmZNVEF3TVRFd09UUTJPRjh3TUY5VFgwMHRNakF5TmpBeU1ETXhNelV6TlRndWFuQm58MDhiNDQwNDU0ZWI3NWQxNmE0ZjUzMjc5NmQ1YjYyMTg0ZGFjYmVhY2VkMDE1NDdlOWM0Mzk4NjNhNzY4NzI3YQ&feedId=58083&k=f148f022ef6e8f004e7b851c3afeff6941ec94c2",
         sizes: ["S", "M", "L", "XL", "XXL"],
       },
@@ -237579,9 +237390,6 @@ const minedApparelProductsChunk42: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "reusch-pantalon-corto-reusch-compression-pantalon-corto-3-4-femur-negro",
     brand: "Reusch",
@@ -237702,6 +237510,9 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk43: ApparelProduct[] = [
   {
     id: "reusch-pantalon-corto-reusch-negro-2",
     brand: "Reusch",
@@ -242899,9 +242710,6 @@ const minedApparelProductsChunk43: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "tape-design-calcetines-tape-design-allround-classic-turquesa",
     brand: "Tape Design",
@@ -243019,6 +242827,9 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk44: ApparelProduct[] = [
   {
     id: "tape-design-calcetines-tape-design-allround-superlight-negro",
     brand: "Tape Design",
@@ -248505,9 +248316,6 @@ const minedApparelProductsChunk44: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-chaqueta-con-capucha-uhlsport-stream-22-azul",
     brand: "uhlsport",
@@ -248634,6 +248442,9 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk45: ApparelProduct[] = [
   {
     id: "uhlsport-chaqueta-con-cremallera-1-4-uhlsport-essential-azul-2",
     brand: "uhlsport",
@@ -254289,7 +254100,7 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
         price: 29.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45841234004&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=42215932022&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000734274-00-P-X-20210429150633.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w4MjY5MnxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJneFpTOW9OVGN2TVRBeE1UVTRNalUwTXpRMk5UUXVhbkJufDgxYmRiYjE4YjBmYmVlYTkzOWY1ZmJiMzNjOTZmMjRkODhlOGQ5YWJlMTQ0YmI5M2Y3YTQ3OGIwYjlhOTJhZjM&feedId=58083&k=2794aac3572decd54cff7257959dd157b95b6f90",
         sizes: ["S", "M", "XL", "XXL"],
       },
@@ -254565,9 +254376,6 @@ const minedApparelProductsChunk45: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-corto-uhlsport-center-basic-amarillo-2",
     brand: "uhlsport",
@@ -254686,6 +254494,9 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk46: ApparelProduct[] = [
   {
     id: "uhlsport-pantalon-corto-uhlsport-center-basic-azul-3",
     brand: "uhlsport",
@@ -255488,7 +255299,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         price: 22.99,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44874109864&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45998521717&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000735274-00-P-X-20210429164942.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjcyOHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnd015OW9NVEF2TVRBeE1UWXlOREkxTnpFeU9UUXVhbkJufDM3NzkwYjkxYWE1NGNhZDAzMTYyMWU0NDQ4MjM5YWY2ODRlOWI2NTRmODBhZjEwM2IzMjk1YmY5NjA5MTNhOGM&feedId=58083&k=99aacc5fafd87180d2f0147a7f363d486f9f3ed3",
         sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
       },
@@ -256100,7 +255911,7 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
         price: 29.69,
         shipping: 5.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45876456138&a=3013769&m=23805",
+        url: "https://www.awin1.com/pclick.php?p=45854599490&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1000817978-00-P-X-20220425170051.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5Nzk4MHxpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnM05pOW9OVEF2TVRBMk9UZ3dOVFV3T1RBeU1EWXVhbkJufGVhZTIzMGViOWFlOWI1NWRmNWViMDM3NGFhY2JmYWQzNzczMGUzZTRiNWQ4NjM0NDcxNGZjZTI5OWY5YmUzMmE&feedId=58083&k=99ab795f1e56f77aafccf01d993d7377e8a3d43e",
         sizes: ["L", "XXL"],
       },
@@ -260379,9 +260190,6 @@ const minedApparelProductsChunk46: ApparelProduct[] = [
       },
     ],
   },
-];
-
-const minedApparelProductsChunk47: ApparelProduct[] = [
   {
     id: "uhlsport-top-de-entrenamiento-con-1-4-de-cremallera-uhlsport-score-26-gris",
     brand: "uhlsport",
@@ -260512,6 +260320,9 @@ const minedApparelProductsChunk47: ApparelProduct[] = [
       },
     ],
   },
+];
+
+const minedApparelProductsChunk47: ApparelProduct[] = [
   {
     id: "uhlsport-top-de-entrenamiento-con-1-4-de-cremallera-uhlsport-score-26-rojo",
     brand: "uhlsport",

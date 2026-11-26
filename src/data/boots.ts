@@ -3237,9 +3237,9 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 169990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46385827577&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=46385827580&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F50bc106d309b4a55a15319b2cfa2d1b2_9366%2Fzapatos_de_futbol_Copa_Mundial_Terreno_Firme_Negro_JP6693_01_00_standard_hover.jpg&feedId=95016&k=e112c3a7e72fe5e64d10564ad7a7e0142191c383",
-        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
+        sizes: ["43 1/3", "44 2/3", "45 1/3", "46", "46 2/3"],
       },
       {
         store: "AdidasMX",
@@ -3315,7 +3315,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 1299.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=44451533630&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=44451533638&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8b3bcfdbc16841fa9a8ce11f2abcae11_9366%2FTacos_Deportivo_III_Multiterreno_Negro_IF1401_01_standard_hover.jpg&feedId=95013&k=33a684bf161f85c92db8d7e00ed667e7704ec3bd",
         sizes: ["39 1/3", "40", "44 2/3", "45 1/3", "46", "46 2/3"],
       },
@@ -3335,23 +3335,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45974946961&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F81a2aef8f79240abb58c72bad6a86ff0_9366%2FZapatos_de_Futbol_Deportivo_III_Pasto_Sintetico_Negro_IH0790_01_standard_hover.jpg&feedId=95016&k=87b85ec0d9d5dcfef7fa65301eb836a88e40f2f7",
         sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
-      },
-    ],
-  },
-  {
-    id: "adidascl-adidas-f50-club-corte-medio-pasto-sintetico-ag",
-    brand: "Adidas",
-    model: "F50 CLUB Corte Medio Pasto Sintético",
-    groundType: "AG",
-    offers: [
-      {
-        store: "AdidasCL",
-        price: 28990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46385838188&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F30392126bb9145239a759a02028d58f3_9366%2FZapatos_de_Futbol_F50_CLUB_Corte_Medio_Pasto_Sintetico_Negro_KJ1427_01_00_standard_hover.jpg&feedId=95016&k=06927cdc4eec6f4d0882fcca894a1beed4a88fa9",
-        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44"],
       },
     ],
   },
@@ -3480,7 +3463,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=46343275915&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5756dec516bc4ed2bceb4ad0dfdc2777_9366%2FGuayos_F50_Messi_League_Terreno_Firme_Rojo_IH1901_01_00_standard_hover.jpg&feedId=95017&k=4fdef0d1a8aa66366166a2dc3ac1e30ec2d4bebc",
-        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
+        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3"],
       },
     ],
   },
@@ -3574,7 +3557,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 1679.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=44282366550&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=44282366547&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff419ff0c9b0841ca95d3fff2642709ff_9366%2FTacos_F50_SPARKFUSION_LEAGUE_Corte_Medio_Pasto_Sintetico_para_Mujer_Azul_JR9003_01_00_standard_hover.jpg&feedId=95013&k=464c51288a2f07a54a5aae210f918214eecf2ab1",
         sizes: ["36", "36 2/3", "37 1/3", "38", "38 2/3", "39 1/3"],
       },
@@ -3603,6 +3586,32 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45313645320&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F374c672f4fcf45ea9803295e75fb3c11_9366%2FTacos_Goletto_IX_Pasto_Sintetico_Blanco_IH0084_01_00_standard_hover.jpg&feedId=95013&k=973c2f5bb9e3c47270fe10fa58d258bd3ce68d0a",
         sizes: ["37 1/3", "38 2/3", "40", "41 1/3", "42", "43 1/3", "44", "46 2/3"],
+      },
+    ],
+  },
+  {
+    id: "adidascl-adidas-goletto-ix-pasto-sintetico-ag-jp8445",
+    brand: "Adidas",
+    model: "Goletto IX Pasto Sintético",
+    groundType: "AG",
+    offers: [
+      {
+        store: "AdidasCL",
+        price: 44990.0,
+        shipping: 0,
+        currency: "CLP",
+        url: "https://www.awin1.com/pclick.php?p=44118391797&a=3013769&m=79922",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2a12ed624e784f8db917219b08fa1301_9366%2FCalzado_de_FuboL_Goletto_IX_Pasto_Sintetico_Negro_JP8445_01_00_standard_hover.jpg&feedId=95016&k=bc2c874cdfd18f18657d54828204a47f147afcde",
+        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "44", "45 1/3", "46"],
+      },
+      {
+        store: "AdidasMX",
+        price: 1299.0,
+        shipping: 0,
+        currency: "MXN",
+        url: "https://www.awin1.com/pclick.php?p=45458180624&a=3013769&m=79918",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2a12ed624e784f8db917219b08fa1301_9366%2FTacos_Goletto_IX_Pasto_Sintetico_Negro_JP8445_01_00_standard_hover.jpg&feedId=95013&k=17e474080035de11247181e3bbc8b0f11e393cca",
+        sizes: ["37 1/3", "38 2/3", "40", "41 1/3", "42 2/3", "46 2/3"],
       },
     ],
   },
@@ -3694,7 +3703,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 49990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46202269995&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=46202270000&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F95fc4f278fd246319e01bb0ae595f13a_9366%2FZapatos_de_Futbol_Predator_Essentials_26.5_Terreno_Firme_Negro_JP8370_01_00_standard_hover.jpg&feedId=95016&k=e67bd3ca0208835adb096e9719dbc74ee28a8a17",
         sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
       },
@@ -3730,24 +3739,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=46398559193&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc3f1775a731f4b7c9ad3f17fd7f91fd3_9366%2FGuayos_Predator_League_Pasto_Sintetico_Azul_ID0910_01_standard_hover.jpg&feedId=95017&k=af34ece52423f4d6276d6209c93190faaa6777b1",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
-      },
-    ],
-  },
-  {
-    id: "adidasco-adidas-predator-pro-con-lengueta-plegable-para-pasto-artificial-ag",
-    brand: "Adidas",
-    model: "PREDATOR PRO con Lengüeta Plegable para Pasto Artificial",
-    groundType: "AG",
-    offers: [
-      {
-        store: "AdidasCO",
-        price: 559960.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46343275732&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1d8c22bedecd4f38ab6eb216bc928788_9366%2FGuayos_PREDATOR_PRO_con_Lengueta_Plegable_para_Pasto_Artificial_Gris_JR7864_01_00_standard_hover.jpg&feedId=95017&k=3b8d91afc4e708f60338faaa06977d80ad8418a7",
-        sizes: ["40", "41 1/3", "42", "42 2/3", "43 1/3", "44 2/3"],
+        sizes: ["40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3"],
       },
     ],
   },
@@ -4119,15 +4111,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45928809026&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fae3e5a99e0314cc3873b7c297ca80b2b_faec%2FBota_Copa_Pure_3_Elite_cesped_natural_seco_Blanco_JH8728_db22_model.tiff.jpg&feedId=92152&k=e26f6e2097eb88bd35cd0af984b4f6f560ea8156",
         sizes: ["39 1/3", "40", "40 2/3", "41 1/3"],
-      },
-      {
-        store: "AdidasPT",
-        price: 132.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45928801141&a=3013769&m=77026",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fae3e5a99e0314cc3873b7c297ca80b2b_faec%2FBotas_de_Futebol_Copa_Pure_3_Elite_Piso_firme_Branco_JH8728_db22_model.tiff.jpg&feedId=92150&k=9e8aa69088f7fb08b78017a345faf54b6f557a53",
-        sizes: ["39 1/3"],
       },
       {
         store: "FootStoreES",
@@ -5484,7 +5467,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46000400736&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0ad339e4303144218964fa3d6b352d47_9366%2FBota_de_futbol_con_lengueta_plegable_PREDATOR_ELITE_cesped_natural_humedo_Negro_IH7125_22_model.jpg&feedId=92152&k=c2465354eacd80e9935fcc5e34ab831e0afe8633",
-        sizes: ["36 2/3", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
+        sizes: ["36 2/3", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
       },
       {
         store: "AdidasPT",
@@ -5493,7 +5476,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46003137014&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0ad339e4303144218964fa3d6b352d47_9366%2FBotas_de_Futebol_PREDATOR_ELITE_Fold-Over_Tongue_Soft_Ground_Preto_IH7125_22_model.jpg&feedId=92150&k=11e935b1b48207a1f8cbf5cd8b4117d37832ac37",
-        sizes: ["36 2/3", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
+        sizes: ["36 2/3", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
       },
       {
         store: "SportIsGoodES",
@@ -5575,7 +5558,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 280.0,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46664441235&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=46662413322&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5c16f11d48e745ffa6ece250b089a63c_9366%2FBota_de_futbol_con_lengueta_plegable_PREDATOR_ELITE_cesped_natural_humedo_Rojo_JS0381_22_model.jpg&feedId=92152&k=fcbc9192f8434b39ce87635e249f8bbc022195c1",
         sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "46", "46 2/3", "48"],
       },
@@ -5986,7 +5969,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 130.0,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45241855719&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=45241855717&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0d73d68871354ac6949021be8eb05321_9366%2FBota_de_futbol_con_lengueta_plegable_Predator_Elite_cesped_natural_seco_Blanco_IH2109_22_model.jpg&feedId=92152&k=c4256e58263f72b60a5a4bd21d9018f9456260f0",
         sizes: ["28", "28 1/2", "29", "30", "30 1/2", "31", "31 1/2", "32", "33", "33 1/2", "34", "35", "35 1/2", "36", "36 2/3", "37 1/3", "38", "38 2/3"],
       },
@@ -6381,7 +6364,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=46343279209&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5b48856c0fc94ae3a6f31e7cd1542bce_faec%2FGuayos_Predator_Elite_Lengueta_Plegable_Terreno_Firme_Rosa_JP6237_db01_00_standard.tiff.jpg&feedId=95017&k=1e8464b66c1c3a1f48475e71c64f35c0a6508ffc",
-        sizes: ["39 1/3", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
+        sizes: ["39 1/3", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3"],
       },
     ],
   },
@@ -6408,7 +6391,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44561232426&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fdaf415621f464f88b1047d700ccc5c0a_9366%2FBotas_com_Lingua_Dobrada_Predator_Elite_JB_Piso_Firme_Crianca_Preto_JR1754_22_model.jpg&feedId=92150&k=31a8ecd20b79f8d1626b77fe0a518833f0116bc2",
-        sizes: ["29", "30", "30 1/2", "31", "31 1/2", "32", "33"],
+        sizes: ["29", "30", "30 1/2", "31", "31 1/2", "32"],
       },
       {
         store: "FootStoreES",
@@ -6519,7 +6502,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 130.0,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43748619394&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=43692245090&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd1ae6348d40a415c9e77ed488a1e4e82_9366%2FBota_de_futbol_con_lengueta_plegable_PREDATOR_ELITE_para_cesped_natural_seco_Rojo_JS0391_22_model.jpg&feedId=92152&k=faa233005ec434aab35ad1db828123dd70979347",
         sizes: ["28", "29", "30", "30 1/2", "31", "31 1/2", "32", "33", "33 1/2", "34", "35", "35 1/2", "36", "36 2/3", "37 1/3", "38", "38 2/3"],
       },
@@ -7490,7 +7473,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45304066603&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F833dd1e5e24f45eda1294971319a820d_faec%2FBota_de_futbol_con_lengueta_plegable_Predator_League_cesped_natural_seco_Blanco_JP6278_db22_model.tiff.jpg&feedId=92152&k=c841ad81c84b25db424bdb89afb79275f9cf9b37",
-        sizes: ["44 2/3", "45 1/3", "46 2/3", "47 1/3"],
+        sizes: ["44 2/3", "46 2/3", "47 1/3"],
       },
       {
         store: "AdidasPT",
@@ -7499,7 +7482,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45304065498&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F833dd1e5e24f45eda1294971319a820d_faec%2FBotas_de_Futebol_com_Lingua_Dobrada_Predator_League_Piso_Firme_Branco_JP6278_db22_model.tiff.jpg&feedId=92150&k=9c2ea8a82ad8216dd1151f245a645bc52e915308",
-        sizes: ["44 2/3", "45 1/3", "46 2/3", "47 1/3"],
+        sizes: ["44 2/3", "46 2/3", "47 1/3"],
       },
       {
         store: "SportIsGoodES",
@@ -7619,7 +7602,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=45301497071&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F4fd0f28fa7b7447ab997e52617289e46_faec%2FGuayos_Predator_League_Lengueta_Plegable_Terreno_Firme_Blanco_JP6278_db01_00_standard_hover.tiff.jpg&feedId=95017&k=870088ac132ea43e0102257a9ee8f74c4001568a",
-        sizes: ["36", "36 2/3", "37 1/3", "38", "38 2/3", "40", "40 2/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
+        sizes: ["36", "36 2/3", "37 1/3", "38", "38 2/3", "40 2/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
       },
     ],
   },
@@ -7871,7 +7854,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 75.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45304054837&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=45304054848&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1afd30f911ab4642b2982e37ad621d8e_9366%2FBota_de_futbol_con_lengueta_plegable_Predator_League_moqueta_Blanco_IH2103_22_model.jpg&feedId=92152&k=7bb35f8ea3ed2e422ece25df8a481f7240f4cebb",
         sizes: ["31 1/2", "33 1/2", "34", "35 1/2", "36", "36 2/3", "38", "38 2/3"],
       },
@@ -8145,7 +8128,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44914388650&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb2a21a15c298463385c636b725893678_9366%2FBotas_de_Futebol_com_Lingua_Dobrada_Predator_League_Piso_Firme_Crianca_Rosa_HP9998_22_model.jpg&feedId=92150&k=5f05d73b844270d46e9186887736cec3dd773fc5",
-        sizes: ["30 1/2", "31 1/2", "33", "33 1/2", "35 1/2"],
+        sizes: ["30 1/2", "31 1/2", "33 1/2", "35 1/2"],
       },
       {
         store: "FootStoreES",
@@ -8734,9 +8717,9 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 559965.0,
         shipping: 0,
         currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46343279396&a=3013769&m=79924",
+        url: "https://www.awin1.com/pclick.php?p=46343279397&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3979cf66d05e41299ed94bdd6ea4c400_faec%2FGuayos_Predator_Pro_Lengueta_Plegable_Terreno_Firme_Blanco_IH7234_db01_00_standard_hover.tiff.jpg&feedId=95017&k=16adb556e9eb16abb30f86a297b1e9fe726f59ea",
-        sizes: ["40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
+        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46 2/3"],
       },
     ],
   },
@@ -8891,7 +8874,7 @@ const minedBootProductsChunk1: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-copa-gloro-2-cesped-natural-seco-fg-ig8740",
+    id: "adidases-adidas-bota-de-futbol-copa-gloro-2-cesped-natural-seco-fg",
     brand: "Adidas",
     model: "Bota de fútbol Copa Gloro 2 césped natural seco",
     groundType: "FG",
@@ -8961,32 +8944,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46249369232&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001035702-00-P-X-20250310165336.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NDIxNHxpbWFnZS9qcGVnfGFHTXdMMmd5T1M4eE1qYzVNVFEyTVRnek9EZzNPQzl0WldScFlYTmZNVEF3TVRBek5UY3dNbDh3TUY5UVgxZ3RNakF5TlRBek1UQXhOalV6TXpZdWFuQm58YTFmNzMzNDgwYTI3YmFhNTYwNDgwYTBiMWE4ZTE4NmQ2NjExM2QzM2NhYzFiZTcxN2UyNWQ5MDQ2N2RjOTg5Mw&feedId=58083&k=b28c399f66ec2259228a826fd2a609d434c7587a",
         sizes: ["42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-de-futbol-copa-gloro-2-cesped-natural-seco-fg-ih7668",
-    brand: "Adidas",
-    model: "Bota de fútbol Copa Gloro 2 césped natural seco",
-    groundType: "FG",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 100.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46900504690&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd62ad6bbfd154bce97ccdb17ba821128_9366%2FBota_de_futbol_Copa_Gloro_2_cesped_natural_seco_Oro_IH7668_22_model.jpg&feedId=92152&k=6acf4924e83e1a210f569613fabe96d5e861c9b3",
-        sizes: ["44 2/3"],
-      },
-      {
-        store: "AdidasPT",
-        price: 55.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46803131890&a=3013769&m=77026",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd62ad6bbfd154bce97ccdb17ba821128_9366%2FBotas_de_Futebol_Copa_Gloro_2_-_Piso_firme_Dourado_IH7668_22_model.jpg&feedId=92150&k=988a176bce65ba03c19ed14b87dc91e322483365",
-        sizes: ["40 2/3", "42 2/3"],
       },
     ],
   },
@@ -9132,7 +9089,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46923432381&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F679298ee3b8749cdaf4f810b88017145_9366%2FBota_de_futbol_Copa_Pure_3_Elite_cesped_natural_seco_Negro_JH8729_22_model.jpg&feedId=92152&k=9ed243f08191c30e9d98cfb8f74eb4a78daa3153",
-        sizes: ["41 1/3", "42", "44"],
+        sizes: ["41 1/3", "44"],
       },
       {
         store: "SportIsGoodES",
@@ -9202,15 +9159,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46202318104&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fab9e24832b3448ffb6339ccc3ffa6c41_9366%2FBota_de_futbol_Copa_Pure_3_League_multisuperficie_Negro_JH6298_22_model.jpg&feedId=92152&k=f2d5e8f964d083da4b39458dab1833267186af98",
         sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
-      },
-      {
-        store: "AdidasPT",
-        price: 38.25,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41794202006&a=3013769&m=77026",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fab9e24832b3448ffb6339ccc3ffa6c41_9366%2FChuteiras_Copa_Pure_3_League_piso_firme-multissuperf._Preto_JH6298_22_model.jpg&feedId=92150&k=c0614faf2bbfc93b84dd045d82e104e5b3e6a961",
-        sizes: ["42", "42 2/3", "46"],
       },
       {
         store: "FootStoreES",
@@ -9289,15 +9237,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45585788863&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff5c7c5c6850a4ce6830a6df70fdc96d5_9366%2FBota_de_futbol_COPA_PURE_IV_CLUB_cesped_natural_seco_-_multisuperficie_Blanco_JR6183_22_model.jpg&feedId=92152&k=4309dd7c3fba5440e32d25d16922f24766c9fbc9",
         sizes: ["42 2/3", "44", "44 2/3", "45 1/3"],
-      },
-      {
-        store: "AdidasPT",
-        price: 24.75,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46638888429&a=3013769&m=77026",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff5c7c5c6850a4ce6830a6df70fdc96d5_9366%2FBotas_de_Futebol_COPA_PURE_IV_CLUB_-_Piso_Firme-Multissuperficie_Branco_JR6183_22_model.jpg&feedId=92150&k=3e06598db286346c4469cfc47eed46c697f564c4",
-        sizes: ["43 1/3"],
       },
       {
         store: "AdidasMX",
@@ -9760,9 +9699,9 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 132.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44914391063&a=3013769&m=77026",
+        url: "https://www.awin1.com/pclick.php?p=44914391065&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F79da62bcfac64c599973485905c5ea73_9366%2FBotas_de_Futebol_Copa_Pure_IV_Elite_para_Piso_Firme_Rosa_KI0586_22_model.jpg&feedId=92150&k=8369fca279ae3821da77a28e422497b1554c7cf9",
-        sizes: ["38 2/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "44", "44 2/3", "46", "46 2/3", "47 1/3", "48"],
+        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "44", "44 2/3", "46", "46 2/3", "47 1/3", "48"],
       },
       {
         store: "SportIsGoodES",
@@ -10390,7 +10329,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44416699826&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0961ec8538104fa9aeecc79c88684773_9366%2FBota_de_futbol_COPA_PURE_IV_ELITE_para_cesped_natural_seco_Negro_JQ0399_22_model.jpg&feedId=92152&k=e9f60a0ef6a86e5ac66a44c017b1e099ca54c7f3",
-        sizes: ["37 1/3", "38", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3", "46", "46 2/3", "47 1/3"],
+        sizes: ["37 1/3", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3", "46", "46 2/3", "47 1/3"],
       },
       {
         store: "AdidasPT",
@@ -10399,7 +10338,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44416699365&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0961ec8538104fa9aeecc79c88684773_9366%2FBotas_de_Futebol_COPA_PURE_IV_ELITE_Piso_Firme_Preto_JQ0399_22_model.jpg&feedId=92150&k=c0efbee31970b614d287621036baddf9c5d09402",
-        sizes: ["37 1/3", "38", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3", "46", "46 2/3", "47 1/3"],
+        sizes: ["37 1/3", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3", "46", "46 2/3", "47 1/3"],
       },
       {
         store: "FootStoreES",
@@ -10546,18 +10485,18 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 85.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45567574614&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=46237058833&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe65d1c1ebaee43a585215687639be4a9_9366%2FBota_de_futbol_COPA_PURE_IV_LEAGUE_cesped_artificial_de_2.a_y_3.a_generacion_Negro_JQ0490_22_model.jpg&feedId=92152&k=5ca7a6e43066638f7c1cef6b3e4ce77b55d84a16",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3", "46"],
+        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3", "46"],
       },
       {
         store: "AdidasPT",
         price: 42.5,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46362490324&a=3013769&m=77026",
+        url: "https://www.awin1.com/pclick.php?p=46362490325&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe65d1c1ebaee43a585215687639be4a9_9366%2FBotas_de_Futebol_COPA_PURE_IV_LEAGUE_-_Relva_Artificial_2G-3G_Preto_JQ0490_22_model.jpg&feedId=92150&k=835a4894c46758613fd3bf1b562d4e7914c3cd8d",
-        sizes: ["39 1/3", "40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3"],
+        sizes: ["40", "42", "42 2/3", "44"],
       },
     ],
   },
@@ -10572,18 +10511,18 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 85.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44111269336&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=43841200573&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F29a173bee84a473f92cbf42acae7c2b9_9366%2FBota_de_futbol_COPA_PURE_IV_LEAGUE_cesped_natural_seco_Negro_JQ0482_22_model.jpg&feedId=92152&k=1846cf01389421b4960ac6238a12fc0493f1e750",
-        sizes: ["39 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
+        sizes: ["42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
       },
       {
         store: "AdidasPT",
         price: 46.75,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44111295727&a=3013769&m=77026",
+        url: "https://www.awin1.com/pclick.php?p=43970167382&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F29a173bee84a473f92cbf42acae7c2b9_9366%2FBotas_de_Futebol_Copa_Pure_IV_League_-_Piso_Firme_Preto_JQ0482_22_model.jpg&feedId=92150&k=5e1d6635ac89eb380d111a5645104ad9bb506369",
-        sizes: ["39 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
+        sizes: ["42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
       },
       {
         store: "SportIsGoodES",
@@ -10777,15 +10716,6 @@ const minedBootProductsChunk1: BootProduct[] = [
         sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
       },
       {
-        store: "AdidasCL",
-        price: 43990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46385825772&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F30c5285753f945da88cb149e49419e7d_9366%2FZapatos_de_Futbol_Copa_Pure_IV_League_Terreno_Firme_Rosado_KI0653_01_00_standard_hover.jpg&feedId=95016&k=6171f9b1b0d1a5140d449bed90d71019608a84be",
-        sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3"],
-      },
-      {
         store: "AdidasCO",
         price: 375960.0,
         shipping: 0,
@@ -10961,7 +10891,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 1469.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=43782355905&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=43782355901&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Feaec8fad272d4452af838e3df3f3d57a_9366%2FTacos_de_Futbol_COPA_PURE_IV_LEAGUE_para_Terreno_Firme_Blanco_JQ0484_01_00_standard_hover.jpg&feedId=95013&k=f26ea80c41782ed47cc4829a97912ab56efe4ccb",
         sizes: ["38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
       },
@@ -11226,7 +11156,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "CLP",
         url: "https://www.awin1.com/pclick.php?p=46385825757&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F777d1d4466c7477e88bb1be970e45948_9366%2FZapatos_de_Futbol_Copa_Pure_IV_League_Terreno_Firme_Blanco_KI0656_01_00_standard_hover.jpg&feedId=95016&k=7cf4cda1c811d2eebdc15479ba404041cbfe70ee",
-        sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44 2/3", "45 1/3"],
+        sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
       },
       {
         store: "AdidasMX",
@@ -11548,7 +11478,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=45301496643&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa3dbdb9f10d547679c0b410d7a34251f_9366%2FGuayos_Copa_Pure_IV_League_Pasto_Artificial_Blanco_KI0647_01_00_standard_hover.jpg&feedId=95017&k=48eaa2d9003e55eae8e027b2c894c2312761ff1e",
-        sizes: ["39 1/3", "40 2/3", "41 1/3", "42 2/3", "43 1/3", "44", "45 1/3"],
+        sizes: ["39 1/3", "40 2/3", "41 1/3", "42 2/3", "43 1/3", "44"],
       },
     ],
   },
@@ -12750,7 +12680,7 @@ const minedBootProductsChunk1: BootProduct[] = [
         price: 1919.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=45301502128&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=45301502570&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9dfcf62acbab40e6a6c22dd27c61f886_faec%2FTacos_de_Futbol_F50_Sparkfusion_League_Cana_Media_Pasto_Artificial_Mujer_Rosa_KI1022_db01_00_standard_hover.tiff.jpg&feedId=95013&k=f6307bbe511fab2f0210d30679d62287a6a890e8",
         sizes: ["36", "42 2/3", "45 1/3"],
       },
@@ -14801,9 +14731,6 @@ const minedBootProductsChunk1: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk2: BootProduct[] = [
   {
     id: "adidases-adidas-bota-de-futbol-f50-hyperfast-elite-cesped-natural-seco-fg-ninos-ih4450",
     brand: "Adidas",
@@ -15001,12 +14928,15 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 1249950.0,
         shipping: 0,
         currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46372480008&a=3013769&m=79924",
+        url: "https://www.awin1.com/pclick.php?p=46893053726&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fac77947f4dce44fa8c24e9aa9399aad4_9366%2FGuayos_F50_Hyperfast_Elite_Terreno_Firme_Verde_KJ3433_01_00_standard.jpg&feedId=95017&k=0eda5d5016d3555a550f5bcf7f160061c08063ba",
-        sizes: ["40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3"],
+        sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "44", "44 2/3"],
       },
     ],
   },
+];
+
+const minedBootProductsChunk2: BootProduct[] = [
   {
     id: "adidases-adidas-bota-de-futbol-f50-hyperfast-elite-cesped-natural-seco-fg-kj3432",
     brand: "Adidas",
@@ -15122,7 +15052,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=46343281553&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F4814f71b9908479186f603707b066d06_faec%2FGuayos_F50_Hyperfast_Elite_Terreno_Firme_Blanco_KJ3432_db01_00_standard.tiff.jpg&feedId=95017&k=1e027e83eb0ddbb7789eaf6784f7d7d727dc4f5f",
-        sizes: ["38 2/3", "40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3", "46"],
+        sizes: ["38 2/3", "40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3"],
       },
     ],
   },
@@ -15138,7 +15068,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 120.0,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46776381330&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=46776381331&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F61fdccc38ada4980a2f84c3b9172f47b_9366%2FBota_de_futbol_F50_HYPERFAST_ELITE_cesped_natural_seco_Verde_IH4452_22_model.jpg&feedId=92152&k=58c239d14a710c88c7b952ca0ef290458655b1cc",
         sizes: ["28", "29", "30 1/2"],
       },
@@ -15504,15 +15434,6 @@ const minedBootProductsChunk2: BootProduct[] = [
         imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/4004314_main.jpg?v=1795385408",
         sizes: ["39 1/3", "40 2/3", "43 1/3", "44", "44 2/3", "46"],
       },
-      {
-        store: "AdidasCO",
-        price: 1049965.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46343275819&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F45b972d3895f444f899e71a5d0c0914b_9366%2FGuayos_F50_Hyperfast_EVO_Terreno_Firme_Verde_KH6028_01_00_standard.jpg&feedId=95017&k=8686d7ee70c4a914a609275eb34da773127d388c",
-        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3"],
-      },
     ],
   },
   {
@@ -15564,7 +15485,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=45376689341&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fcb32b02bc2c445a88a556c174b1c62d0_faec%2FGuayos_F50_Hyperfast_EVO_Terreno_Firme_Rosa_KJ6117_db01_00_standard.tiff.jpg&feedId=95017&k=9682b14a0b020ce1a9a46107d231467974d84c90",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
+        sizes: ["40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
       },
     ],
   },
@@ -15746,7 +15667,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46080620049&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb45cdedf5cd447b5a2d856a1fa543df7_9366%2FBota_de_futbol_F50_HYPERFAST_LEAGUE_cesped_artificial_Verde_KK1360_22_model.jpg&feedId=92152&k=de8e7d481bd221def6faf52fa6be6bb5d99e1a40",
-        sizes: ["42 2/3", "43 1/3", "44", "44 2/3", "46", "48"],
+        sizes: ["42 2/3", "43 1/3", "44", "46", "48"],
       },
       {
         store: "AdidasPT",
@@ -16094,7 +16015,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45304065785&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe63e50a010a84754aa2be49e0578f553_faec%2FBota_de_futbol_F50_Hyperfast_League_cesped_natural_seco_Blanco_KJ3412_db22_model.tiff.jpg&feedId=92152&k=468adbf858f7dadfa6e817aac1b5fecd882764b2",
-        sizes: ["36", "38 2/3", "39 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46 2/3", "47 1/3", "48", "48 2/3"],
+        sizes: ["36", "38 2/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46 2/3", "47 1/3", "48", "48 2/3"],
       },
       {
         store: "AdidasPT",
@@ -16103,7 +16024,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45304065429&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe63e50a010a84754aa2be49e0578f553_faec%2FBotas_de_Futebol_F50_Hyperfast_League_Firm_Ground_Branco_KJ3412_db22_model.tiff.jpg&feedId=92150&k=1cfe4e6d7eb8b4c1b8726fcaf4f2388947b0aa27",
-        sizes: ["36", "38 2/3", "39 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46 2/3", "47 1/3", "48", "48 2/3"],
+        sizes: ["36", "38 2/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46 2/3", "47 1/3", "48", "48 2/3"],
       },
       {
         store: "SportIsGoodES",
@@ -16204,7 +16125,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 58990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=45294966864&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=45294966860&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F4665997c6f0d454f8abf931d3789b9ce_faec%2FZapatos_de_Futbol_F50_Hyperfast_League_Terreno_Firme_Blanco_KJ3412_db01_00_standard_hover.tiff.jpg&feedId=95016&k=c7159e422f150a26265751f4ae6ce6aabc0f1414",
         sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "48"],
       },
@@ -16213,9 +16134,9 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 1919.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=45301502329&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=45301502332&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F4665997c6f0d454f8abf931d3789b9ce_faec%2FTacos_de_Futbol_F50_Hyperfast_League_Terreno_Firme_Blanco_KJ3412_db01_00_standard_hover.tiff.jpg&feedId=95013&k=18cfdcba5d9a5d29dd0dca946d93def2c64ae681",
-        sizes: ["38", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
+        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
       },
       {
         store: "AdidasCO",
@@ -16724,7 +16645,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46080643819&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc0c8208057fe47069b54a11c5202df0a_9366%2FBotas_de_Futebol_F50_HYPERFAST_LEAGUE_Firm_Ground_para_Crianca_Verde_KK1399_22_model.jpg&feedId=92150&k=4d9c288f7f02cf5f9b87941ee7a5b236d6b972ec",
-        sizes: ["30", "30 1/2", "31", "31 1/2", "32", "33", "33 1/2", "34", "35", "35 1/2", "36", "36 2/3"],
+        sizes: ["30", "30 1/2", "31", "31 1/2", "32", "33", "33 1/2", "34", "35", "35 1/2", "36 2/3"],
       },
       {
         store: "SportIsGoodES",
@@ -16877,7 +16798,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "MXN",
         url: "https://www.awin1.com/pclick.php?p=46388183696&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2fa7cd91863340db955f92620f8126e5_9366%2FTacos_de_Futbol_F50_HYPERFAST_LEAGUE_Terreno_Firme_Verde_KK1052_01_00_standard_hover.jpg&feedId=95013&k=0b1587759194e11d1c15b4505fc27a8f6cdb466b",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46 2/3"],
+        sizes: ["40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46 2/3"],
       },
       {
         store: "AdidasCO",
@@ -17247,7 +17168,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 2399.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=45409691259&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=45365888380&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fba7f192b3f5942ca8bffc157c49eb372_faec%2FTacos_de_Futbol_F50_Hyperfast_League_sin_Agujetas_Terreno_Firme_Negro_KJ3419_db01_00_standard_hover.tiff.jpg&feedId=95013&k=30628c106453ad50a9331f445f717b2a883b402a",
         sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
       },
@@ -17447,7 +17368,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=45565446834&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F3de8ea6ae7cc4fc98e84fd2dc869e9c1_faec%2FGuayos_F50_Hyperfast_Pro_Terreno_Firme_Blanco_KJ3438_db01_00_standard_hover.tiff.jpg&feedId=95017&k=b138ce038ee1eac7e94ce57e696f73c128aaa860",
-        sizes: ["38", "39 1/3", "40 2/3", "42", "42 2/3", "43 1/3", "44 2/3", "46"],
+        sizes: ["38", "39 1/3", "40 2/3", "42", "43 1/3", "44 2/3", "46"],
       },
     ],
   },
@@ -17569,7 +17490,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 90.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46595237722&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=45928806952&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F60c22873660640d689a3254fdafbf9a5_9366%2FBota_de_futbol_F50_LEAGUE_cesped_artificial_de_2.a_y_3.a_generacion_Amarillo_JQ1486_22_model.jpg&feedId=92152&k=b9e79acbb6dc14ba875cd584e8c083ae84f9a87c",
         sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
       },
@@ -17794,6 +17715,15 @@ const minedBootProductsChunk2: BootProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6a85533ee28d4c909e11e7f5970d6096_9366%2FBota_de_futbol_F50_LEAGUE_cesped_natural_seco_-_multisuperficie_Negro_JR9010_22_model.jpg&feedId=92152&k=9ef2c79094ba7ab738f54d3fc64dbb67182c2c41",
         sizes: ["28", "28 1/2", "29", "30", "30 1/2", "31", "32", "33", "33 1/2", "34", "35", "36", "36 2/3"],
       },
+      {
+        store: "AdidasPT",
+        price: 35.0,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46948440981&a=3013769&m=77026",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6a85533ee28d4c909e11e7f5970d6096_9366%2FBotas_de_Futebol_F50_LEAGUE_Piso_Firme-Multissuperficie_Crianca_Preto_JR9010_22_model.jpg&feedId=92150&k=7d2d0798d2152a6f22789e26921b4df86d7b0a83",
+        sizes: ["33"],
+      },
     ],
   },
   {
@@ -17927,7 +17857,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45989039182&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2c4194f0e91e4448ad531c0eb1b050f9_9366%2FChuteiras_F50_League_para_relva_artificial_Preto_JH7725_22_model.jpg&feedId=92150&k=6700d1f55488b065e52ee7a10d407e5f7fbcb9bb",
-        sizes: ["42", "42 2/3", "44 2/3", "46"],
+        sizes: ["42", "42 2/3", "44"],
       },
       {
         store: "ForumSport",
@@ -18313,9 +18243,9 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 55.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45928812796&a=3013769&m=77026",
+        url: "https://www.awin1.com/pclick.php?p=45692125918&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb6d9643806cc439ba9a66d655bd6e49b_9366%2FBotas_de_Futebol_F50_MESSI_LEAGUE_2G-3G_Artificial_Ground_Branco_JQ0940_22_model.jpg&feedId=92150&k=e09b9000a5207ee2ec5ce1a1d1a5af29f0d4a9e6",
-        sizes: ["39 1/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
+        sizes: ["42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
       },
       {
         store: "FootStoreES",
@@ -18530,42 +18460,7 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-de-futbol-f50-pro-cesped-jh7687",
-    brand: "Adidas",
-    model: "Bota de fútbol F50 Pro césped",
-    groundType: "",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 150.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44971694462&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F193b96b56f3644d7ae89affe20de73b3_9366%2FBota_de_futbol_F50_Pro_cesped_Negro_JH7687_22_model.jpg&feedId=92152&k=8a7b27d7937db260d978791602e3953ce4aa1b0c",
-        sizes: ["41 1/3"],
-      },
-      {
-        store: "AdidasPT",
-        price: 82.5,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46748908117&a=3013769&m=77026",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F193b96b56f3644d7ae89affe20de73b3_9366%2FChuteiras_F50_Pro_para_piso_firme_Preto_JH7687_22_model.jpg&feedId=92150&k=ccd189b9f4d4eea8faa86c2b622c4598e48b54ea",
-        sizes: ["42 2/3", "43 1/3"],
-      },
-      {
-        store: "ForumSport",
-        price: 82.79,
-        shipping: 3.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=41830905041&a=3013769&m=23805",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048407-00-P-X-20250828181619.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjI1MHxpbWFnZS9qcGVnfGFHWXlMMmd4TUM4eE16RTBOVGt4TkRNM05qSXlNaTl0WldScFlYTmZNVEF3TVRBME9EUXdOMTh3TUY5UVgxZ3RNakF5TlRBNE1qZ3hPREUyTVRrdWFuQm58MTc5NTllZTQ1NmNkYTg2M2IzZjliYTA5ZWRlNzc1YWJhMmRhYjYyYzcyMWY1OWVlYzc5NjJhN2IyODFmYjUzMQ&feedId=58083&k=7f62d31905198c85cdc4b3efe0370015d5ed0a2e",
-        sizes: ["40 2/3", "41 1/3", "44 2/3"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-de-futbol-f50-pro-cesped-jh7683",
+    id: "adidases-adidas-bota-de-futbol-f50-pro-cesped",
     brand: "Adidas",
     model: "Bota de fútbol F50 Pro césped",
     groundType: "",
@@ -18586,7 +18481,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41794202754&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6891113276d24cfbb8c4a3d1bff17edd_9366%2FChuteiras_F50_Pro_de_piso_firme_Roxo_JH7683_22_model.jpg&feedId=92150&k=93f0a870788ac474256160ad7e1bb076dfdc2d02",
-        sizes: ["42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
+        sizes: ["42", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
       },
       {
         store: "FootStoreES",
@@ -19717,7 +19612,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43854018333&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F0aa0295037c14213b44c5762a4a84b2f_9366%2FBotas_de_Futebol_Kaiser_Liga_2_Terreno_Firme_Preto_KJ1441_22_model.jpg&feedId=92150&k=5dae7adc01406864f78f419b769bbdad328b3501",
-        sizes: ["36", "36 2/3", "37 1/3", "38", "38 2/3", "39 1/3", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48 2/3"],
+        sizes: ["36", "36 2/3", "37 1/3", "38", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48 2/3"],
       },
       {
         store: "FootStoreES",
@@ -20022,7 +19917,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 50.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45304053142&a=3013769&m=77026",
+        url: "https://www.awin1.com/pclick.php?p=45304053143&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fca9837b7b10f48c0b94d36b1ead8fe78_9366%2FBotas_de_Futebol_Predator_Club_Piso_Firme-Multissuperficie_Crianca_Branco_IH2099_22_model.jpg&feedId=92150&k=99252e81f28d2be10fd9a19d45fea137b5c0ec4b",
         sizes: ["36", "38"],
       },
@@ -20189,7 +20084,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 32990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46662403291&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=46662403296&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F90cfcb89608d4e3395127cc1ffdb6832_9366%2FZapatos_Futbol_Predator_Club_Firm_Ground-Multi_Ground_Azul_JS0348_01_00_standard_hover.jpg&feedId=95016&k=cfcc6c65073ba7cb5c770f695c7319c3671aabbd",
         sizes: ["40 2/3", "41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
       },
@@ -20357,15 +20252,6 @@ const minedBootProductsChunk2: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46000402674&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe8eff341c9b94113973716b8b428cf84_9366%2FBota_de_futbol_Predator_Club_Fold-Over_Tongue_moqueta_Blanco_JP6525_22_model.jpg&feedId=92152&k=57c166187070c185cd1d28e2a6f4188be602adef",
         sizes: ["43 1/3", "44"],
-      },
-      {
-        store: "AdidasPT",
-        price: 52.5,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46430113950&a=3013769&m=77026",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe8eff341c9b94113973716b8b428cf84_9366%2FBotas_de_Futebol_com_Lingua_Dobrada_Predator_Club_Relva_Sintetica_Branco_JP6525_22_model.jpg&feedId=92150&k=6d5d70eff763a9fe57023020c9b34310a96a52ba",
-        sizes: ["42 2/3"],
       },
       {
         store: "FootStoreES",
@@ -21009,7 +20895,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46434110860&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fae8e41262e6044e48bbcc2a874cb20c4_9366%2FBota_de_futbol_Predator_Elite_cesped_natural_seco_Adolescentes_Rojo_ID3758_22_model.jpg&feedId=92152&k=1d44b959d0ca38d40004472c70f5c6ba1ee5197b",
-        sizes: ["32", "34", "35", "36 2/3", "38", "38 2/3"],
+        sizes: ["32", "34", "35", "36", "36 2/3", "38", "38 2/3"],
       },
       {
         store: "FootStoreES",
@@ -21034,64 +20920,6 @@ const minedBootProductsChunk2: BootProduct[] = [
           { size: "28.5", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fid3758-chaussures-de-football-enfant-adidas-predator-elite-mg-lucred-ftwwht-cblack" },
           { size: "29", price: 70.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fid3758-chaussures-de-football-enfant-adidas-predator-elite-mg-lucred-ftwwht-cblack" },
           { size: "30", price: 94.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fid3758-chaussures-de-football-enfant-adidas-predator-elite-mg-lucred-ftwwht-cblack" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-de-futbol-predator-elite-cesped-natural-seco-fg-js0432",
-    brand: "Adidas",
-    model: "Bota de fútbol PREDATOR ELITE césped natural seco",
-    groundType: "FG",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 270.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44285887679&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F017ec3af374b4fc0b2ea8bbc507a447c_faec%2FBota_de_futbol_PREDATOR_ELITE_cesped_natural_seco_Azul_JS0432_db22_model.tiff.jpg&feedId=92152&k=c7be02d598d5a16065a57195999f39008fda913d",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "46", "46 2/3", "47 1/3", "48 2/3"],
-      },
-      {
-        store: "AdidasPT",
-        price: 162.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44283832415&a=3013769&m=77026",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F017ec3af374b4fc0b2ea8bbc507a447c_faec%2FBotas_de_Futebol_Predator_Elite_-_Piso_Firme_Azul_JS0432_db22_model.tiff.jpg&feedId=92150&k=4e94e43d5f69c9bcd30a1aa0bdf051ddd9d6cbec",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "46", "46 2/3", "47 1/3", "48 2/3"],
-      },
-      {
-        store: "FootStoreES",
-        price: 228.0,
-        priceMax: 260.0,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44365401161&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_js0432_1_footwear_photography_side_lateral_center_view_white.jpg&feedId=89032&k=52c51499952ae1765098eb704e2d0b0662c33257",
-        sizes: ["40 2/3", "42 2/3", "43 1/3", "44"],
-        sizePrices: [
-          { size: "40 2/3", price: 228.0, url: "https://www.awin1.com/pclick.php?p=44365401161&a=3013769&m=65912" },
-          { size: "42 2/3", price: 260.0, url: "https://www.awin1.com/pclick.php?p=44645300902&a=3013769&m=65912" },
-          { size: "43 1/3", price: 260.0, url: "https://www.awin1.com/pclick.php?p=44472587612&a=3013769&m=65912" },
-          { size: "44", price: 228.0, url: "https://www.awin1.com/pclick.php?p=44645300903&a=3013769&m=65912" },
-        ],
-      },
-      {
-        store: "FootStoreFR",
-        price: 202.0,
-        priceMax: 222.0,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjs0432-chaussures-de-football-adidas-predator-elite-fg-crsk-rayblu-tesoye",
-        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_js0432_1_footwear_photography_side_lateral_center_view_white.webp",
-        sizes: ["40 2/3", "42 2/3", "43 1/3", "44"],
-        sizePrices: [
-          { size: "40 2/3", price: 202.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjs0432-chaussures-de-football-adidas-predator-elite-fg-crsk-rayblu-tesoye" },
-          { size: "42 2/3", price: 222.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjs0432-chaussures-de-football-adidas-predator-elite-fg-crsk-rayblu-tesoye" },
-          { size: "43 1/3", price: 222.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjs0432-chaussures-de-football-adidas-predator-elite-fg-crsk-rayblu-tesoye" },
-          { size: "44", price: 202.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjs0432-chaussures-de-football-adidas-predator-elite-fg-crsk-rayblu-tesoye" },
         ],
       },
     ],
@@ -21195,6 +21023,64 @@ const minedBootProductsChunk2: BootProduct[] = [
         url: "https://www.prodirectsport.es/products/adidas-predator-elite-fg-negro-ftwr-blanco-rojo-lucido-botas-para-hombre-1047233",
         imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1047233_main.jpg?v=1795391683",
         sizes: ["38 2/3", "39 1/3", "40", "40 2/3", "42"],
+      },
+    ],
+  },
+  {
+    id: "adidases-adidas-bota-de-futbol-predator-elite-cesped-natural-seco-fg-js0432",
+    brand: "Adidas",
+    model: "Bota de fútbol PREDATOR ELITE césped natural seco",
+    groundType: "FG",
+    offers: [
+      {
+        store: "AdidasES",
+        price: 270.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45061760499&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F017ec3af374b4fc0b2ea8bbc507a447c_faec%2FBota_de_futbol_PREDATOR_ELITE_cesped_natural_seco_Azul_JS0432_db22_model.tiff.jpg&feedId=92152&k=c7be02d598d5a16065a57195999f39008fda913d",
+        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "46", "46 2/3", "47 1/3", "48 2/3"],
+      },
+      {
+        store: "AdidasPT",
+        price: 162.0,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44283832415&a=3013769&m=77026",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F017ec3af374b4fc0b2ea8bbc507a447c_faec%2FBotas_de_Futebol_Predator_Elite_-_Piso_Firme_Azul_JS0432_db22_model.tiff.jpg&feedId=92150&k=4e94e43d5f69c9bcd30a1aa0bdf051ddd9d6cbec",
+        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "46", "46 2/3", "47 1/3", "48 2/3"],
+      },
+      {
+        store: "FootStoreES",
+        price: 228.0,
+        priceMax: 260.0,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44365401161&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fa%2Fd%2Fadidas_js0432_1_footwear_photography_side_lateral_center_view_white.jpg&feedId=89032&k=52c51499952ae1765098eb704e2d0b0662c33257",
+        sizes: ["40 2/3", "42 2/3", "43 1/3", "44"],
+        sizePrices: [
+          { size: "40 2/3", price: 228.0, url: "https://www.awin1.com/pclick.php?p=44365401161&a=3013769&m=65912" },
+          { size: "42 2/3", price: 260.0, url: "https://www.awin1.com/pclick.php?p=44645300902&a=3013769&m=65912" },
+          { size: "43 1/3", price: 260.0, url: "https://www.awin1.com/pclick.php?p=44472587612&a=3013769&m=65912" },
+          { size: "44", price: 228.0, url: "https://www.awin1.com/pclick.php?p=44645300903&a=3013769&m=65912" },
+        ],
+      },
+      {
+        store: "FootStoreFR",
+        price: 202.0,
+        priceMax: 222.0,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjs0432-chaussures-de-football-adidas-predator-elite-fg-crsk-rayblu-tesoye",
+        imageUrl: "https://cdn.blazimg.com/1800/product/a/d/adidas_js0432_1_footwear_photography_side_lateral_center_view_white.webp",
+        sizes: ["40 2/3", "42 2/3", "43 1/3", "44"],
+        sizePrices: [
+          { size: "40 2/3", price: 202.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjs0432-chaussures-de-football-adidas-predator-elite-fg-crsk-rayblu-tesoye" },
+          { size: "42 2/3", price: 222.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjs0432-chaussures-de-football-adidas-predator-elite-fg-crsk-rayblu-tesoye" },
+          { size: "43 1/3", price: 222.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjs0432-chaussures-de-football-adidas-predator-elite-fg-crsk-rayblu-tesoye" },
+          { size: "44", price: 202.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjs0432-chaussures-de-football-adidas-predator-elite-fg-crsk-rayblu-tesoye" },
+        ],
       },
     ],
   },
@@ -21881,7 +21767,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46430111066&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ffce2b50f646048ecabe37a6b2edd49a1_9366%2FBota_de_futbol_Predator_Elite_Y-3_con_lengueta_plegable_para_cesped_natural_seco_Amarillo_KK4189_22_model.jpg&feedId=92152&k=35053be9a714ca8abd5d55063709ca1ab2a5da3e",
-        sizes: ["36 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3"],
+        sizes: ["36 2/3", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3"],
       },
       {
         store: "AdidasPT",
@@ -22221,9 +22107,9 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 45.5,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45322751630&a=3013769&m=77026",
+        url: "https://www.awin1.com/pclick.php?p=46194197009&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Feb06fe902b884736b14865439948d6e7_9366%2FBotas_de_Futebol_PREDATOR_LEAGUE_-_Piso_Firme_Crianca_Vermelho_JR7888_22_model.jpg&feedId=92150&k=36e5c26e31e551e51b61acdaa8b693d2e3975258",
-        sizes: ["32", "35", "36 2/3"],
+        sizes: ["35"],
       },
       {
         store: "SportIsGoodES",
@@ -22489,15 +22375,6 @@ const minedBootProductsChunk2: BootProduct[] = [
         sizes: ["40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3"],
       },
       {
-        store: "AdidasPT",
-        price: 76.5,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46850934724&a=3013769&m=77026",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1e4aeb6203044ac687b3c01d41637589_9366%2FBotas_de_Futebol_PREDATOR_LEAGUE_-_Piso_Firme_Vermelho_JR7880_22_model.jpg&feedId=92150&k=24f61081dfe0e0f685ab24e536fb2cbaba7c60a8",
-        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
-      },
-      {
         store: "SportIsGoodES",
         price: 49.5,
         shipping: 7.99,
@@ -22622,7 +22499,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43876638994&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F24f41b83896a4e8984c5d41fa4479a76_9366%2FBotas_de_Futebol_Predator_League_Fold-Over_Tongue_Firm_Ground_Branco_JS0424_22_model.jpg&feedId=92150&k=287f2b5165810a8d073cad406210e1934a732c95",
-        sizes: ["42 2/3", "44", "44 2/3", "46"],
+        sizes: ["42 2/3", "43 1/3", "44", "44 2/3", "46"],
       },
       {
         store: "SportIsGoodES",
@@ -22851,7 +22728,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46246021999&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F1479fcf873af410ca0b8279b361e5b3d_9366%2FBota_de_futbol_PREDATOR_LEAGUE_Fold-Over_Tongue_para_cesped_artificial_Negro_JR7900_22_model.jpg&feedId=92152&k=da57d3ec2550e2b85922cc42984852d8696371c0",
-        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "46 2/3", "47 1/3"],
+        sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "47 1/3"],
       },
       {
         store: "AdidasPT",
@@ -23130,6 +23007,23 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
+    id: "adidases-adidas-bota-de-futbol-predator-league-multisuperficie-mg-ji1139",
+    brand: "Adidas",
+    model: "Bota de fútbol Predator League multisuperficie",
+    groundType: "MG",
+    offers: [
+      {
+        store: "AdidasES",
+        price: 95.0,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=44265205544&a=3013769&m=77008",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F42b7e55247694f8b9b94828841bea43b_9366%2FBota_de_futbol_Predator_League_multisuperficie_Naranja_JI1139_22_model.jpg&feedId=92152&k=b2cd34d125504cc313d33a4aa096455b00617ee1",
+        sizes: ["44", "46 2/3"],
+      },
+    ],
+  },
+  {
     id: "adidases-adidas-bota-de-futbol-predator-league-multisuperficie-mg-ji1140",
     brand: "Adidas",
     model: "Bota de fútbol Predator League multisuperficie",
@@ -23140,9 +23034,9 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 100.0,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44570689439&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=44570689440&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F13c5a5ee030544498eb4160406282115_9366%2FBota_de_futbol_Predator_League_multisuperficie_Blanco_JI1140_22_model.jpg&feedId=92152&k=707e941fd2168a8f1e2d8a3677f86b8be76b4918",
-        sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
+        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
       },
       {
         store: "AdidasPT",
@@ -23197,23 +23091,6 @@ const minedBootProductsChunk2: BootProduct[] = [
         url: "https://www.prodirectsport.es/products/adidas-predator-league-mg-ftwr-blanco-negro-limon-lucido-botas-para-hombre-1037075",
         imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1037075_main.jpg?v=1794499107",
         sizes: ["43 1/3", "44"],
-      },
-    ],
-  },
-  {
-    id: "adidases-adidas-bota-de-futbol-predator-league-multisuperficie-mg-ji1139",
-    brand: "Adidas",
-    model: "Bota de fútbol Predator League multisuperficie",
-    groundType: "MG",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 95.0,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44895970135&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F42b7e55247694f8b9b94828841bea43b_9366%2FBota_de_futbol_Predator_League_multisuperficie_Naranja_JI1139_22_model.jpg&feedId=92152&k=b2cd34d125504cc313d33a4aa096455b00617ee1",
-        sizes: ["46 2/3"],
       },
     ],
   },
@@ -23294,7 +23171,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46080637969&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8155b745450f490ebc8209187ad97050_9366%2FBotas_de_Futebol_com_Lingua_Dobrada_PREDATOR_LEAGUE_Relva_Sintetica_Crianca_Preto_IH2104_22_model.jpg&feedId=92150&k=e871c338a9698bc802dfebf36adadff1b945f482",
-        sizes: ["31", "32", "33", "34", "35 1/2", "36", "36 2/3", "37 1/3", "38", "38 2/3"],
+        sizes: ["31", "32", "33", "34", "35", "35 1/2", "36", "36 2/3", "37 1/3", "38", "38 2/3"],
       },
       {
         store: "FootStoreES",
@@ -23441,15 +23318,6 @@ const minedBootProductsChunk2: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46249384842&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001134771-00-P-X-20260617162422.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5ODYyNnxpbWFnZS9qcGVnfGFHRTBMMmc1T0M4eE16Z3pOVEEyT0RJM05qYzJOaTl0WldScFlYTmZNVEF3TVRFek5EYzNNVjh3TUY5UVgxZ3RNakF5TmpBMk1UY3hOakkwTWpJdWFuQm58OWIyYWU4NjQyNzg3MDBlMGQ2MTU3Y2JiMTBjOTNhZmQ1NjQ4MGM3MTNiMmI0NDA5MWFjM2E1NDY5YzEwZjE5YQ&feedId=58083&k=a85d48e4ad46c2e0b8b8f4d59e8c2a2c0079f02a",
         sizes: ["36", "39 1/3", "40 2/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48", "48 2/3"],
-      },
-      {
-        store: "AdidasCO",
-        price: 454965.0,
-        shipping: 0,
-        currency: "COP",
-        url: "https://www.awin1.com/pclick.php?p=46343276008&a=3013769&m=79924",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F4d06c1305b954822bfbc8fa3fd590a94_faec%2FGuayos_Predator_Pro_Lengueta_Plegable_Pasto_Artificial_Blanco_IH7218_db01_00_standard_hover.tiff.jpg&feedId=95017&k=b563a7ad2ffc6016021b449da22e04b4a32a10e4",
-        sizes: ["41 1/3", "43 1/3", "44", "44 2/3"],
       },
     ],
   },
@@ -24126,7 +23994,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 162.5,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45241858979&a=3013769&m=77026",
+        url: "https://www.awin1.com/pclick.php?p=45241858991&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe6e628fa524b4e1ebfe908235de1bd2c_9366%2FBotas_de_Futebol_Copa_Pure_IV_Elite_Laceless_Soft_Ground_Branco_KI0609_22_model.jpg&feedId=92150&k=c7dcea2677af147550c880c3e5b5804eb36e66b0",
         sizes: ["37 1/3", "39 1/3", "40", "40 2/3", "41 1/3", "45 1/3", "46 2/3", "47 1/3", "48"],
       },
@@ -24733,7 +24601,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 280.0,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45241854935&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=45241854929&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc79a778417fc4124a818fa2c59203cd8_faec%2FBota_de_futbol_sin_cordones_F50_Hyperfast_Elite_cesped_natural_humedo_Blanco_KJ6087_db22_model.tiff.jpg&feedId=92152&k=b5b578cc9d7f0a17729a9bfd42036aee9d1786da",
         sizes: ["36 2/3", "38", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "47 1/3"],
       },
@@ -25374,9 +25242,9 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 58990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=45294966850&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=45294966849&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Feb602831539b4f088608e89f150c627f_faec%2FZapatos_de_Futbol_F50_Hyperfast_League_sin_Cordones_Terreno_Firme_Blanco_KJ3415_db01_00_standard_hover.tiff.jpg&feedId=95016&k=82916f6b4de24b424f74309cce8819acf23a072d",
-        sizes: ["42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
+        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
       },
       {
         store: "AdidasMX",
@@ -25520,9 +25388,9 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 2399.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=46388179871&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=46388179872&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe698eb620bff4fd6a9f61e39cc01ab79_9366%2FTacos_de_Futbol_F50_Hyperfast_League_sin_Agujetas_Terreno_Firme_Verde_KJ3418_01_00_standard_hover.jpg&feedId=95013&k=d4fb4f0859e9a9548471a5765fde45999729d9ae",
-        sizes: ["42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
+        sizes: ["43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
       },
       {
         store: "AdidasCO",
@@ -25742,7 +25610,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 1919.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=46388185770&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=46388185771&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5682a62a94c1496d80acd73ebc60c46e_faec%2FTacos_de_Futbol_F50_Hyperfast_League_sin_Agujetas_Pasto_Artificial_Blanco_IH4585_db01_00_standard_hover.tiff.jpg&feedId=95013&k=62176c5eab1bc9ab26dd50d0ee5d428a9375bdda",
         sizes: ["45 1/3", "46", "46 2/3"],
       },
@@ -25968,7 +25836,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43704774140&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fbfabbde5319e4a2d985a067666da2862_9366%2FBotas_de_futebol_sem_Atacadores_F50_LEAGUE_-_Piso_firme-Multissuperficie_Amarelo_JP8346_22_model.jpg&feedId=92150&k=c658678a5fc3f6ff5223391efe659475228dbbb9",
-        sizes: ["44 2/3", "46 2/3"],
+        sizes: ["44 2/3", "46", "46 2/3"],
       },
       {
         store: "FootStoreES",
@@ -26013,7 +25881,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46595241827&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6054c331f6d247ae8c2817dd390499db_9366%2FBota_de_futbol_sin_cordones_F50_Messi_League_cesped_natural_seco_Beige_IH1907_22_model.jpg&feedId=92152&k=55054f73ae62d42d216dedb3d535b2188824848b",
-        sizes: ["30 1/2", "35 1/2", "36 2/3", "38"],
+        sizes: ["30 1/2", "35 1/2", "38"],
       },
       {
         store: "AdidasPT",
@@ -26022,7 +25890,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46595236205&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F6054c331f6d247ae8c2817dd390499db_9366%2FBotas_de_Futebol_sem_Atacadores_F50_League_Messi_Piso_Firme_Crianca_Bege_IH1907_22_model.jpg&feedId=92150&k=6550b8c780a383c559c12bc762eaa3a76430e36f",
-        sizes: ["30 1/2", "35 1/2", "36 2/3", "38"],
+        sizes: ["30 1/2", "35 1/2", "38"],
       },
       {
         store: "SportIsGoodES",
@@ -26807,7 +26675,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 117.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45928802423&a=3013769&m=77026",
+        url: "https://www.awin1.com/pclick.php?p=44507432433&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa2191641578c4b2c854dff2938129581_9366%2FBotas_de_Futebol_F50_Elite_-_Piso_mole_Laranja_JH7631_22_model.jpg&feedId=92150&k=d0d76b7d6c4882026c614ee6f47d3dd8717e5872",
         sizes: ["36", "36 2/3", "37 1/3", "38", "38 2/3", "39 1/3", "46 2/3", "47 1/3", "48", "48 2/3"],
       },
@@ -27024,7 +26892,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44570676460&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F621033fdcb8a4557a12553bdb6efded8_9366%2FChuteiras_F50_League_multissuperf._Roxo_JH7728_22_model.jpg&feedId=92150&k=0adaffcf90bacd5d50cd2c1e8c038b6618238f9e",
-        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3"],
       },
       {
         store: "FootStoreES",
@@ -27069,9 +26937,9 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 65.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=43317976149&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=43317976151&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe424a21bed364fcd8193f22c88dba418_9366%2FBota_F50_Messi_Club_para_cesped_natural_seco_-_multisuperficie_Blanco_JP7443_22_model.jpg&feedId=92152&k=edfd7f0d4a025ef223fdf1d6b34438a023b1c3f1",
-        sizes: ["42", "43 1/3", "44 2/3", "46", "47 1/3"],
+        sizes: ["43 1/3", "44 2/3", "46", "47 1/3"],
       },
       {
         store: "AdidasPT",
@@ -27139,7 +27007,7 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-f50-messi-league-moqueta-tf-ninos-jr4426",
+    id: "adidases-adidas-bota-f50-messi-league-moqueta-tf-ninos",
     brand: "Adidas",
     model: "Bota F50 Messi League moqueta",
     groundType: "TF",
@@ -27159,7 +27027,7 @@ const minedBootProductsChunk2: BootProduct[] = [
         price: 33.75,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44212070235&a=3013769&m=77026",
+        url: "https://www.awin1.com/pclick.php?p=44212070227&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff12d44ccd0d347f1bb58f5f4d7465663_9366%2FBotas_de_Futebol_F50_Messi_League_-_Relva_Sintetica_Crianca_Azul_JR4426_22_model.jpg&feedId=92150&k=0cfca2c7fc8e8c4ccaae1494267efdf9f2b50707",
         sizes: ["33", "36 2/3", "37 1/3", "38", "38 2/3"],
       },
@@ -27202,24 +27070,6 @@ const minedBootProductsChunk2: BootProduct[] = [
     ],
   },
   {
-    id: "adidases-adidas-bota-f50-messi-league-moqueta-tf-ninos-jp7456",
-    brand: "Adidas",
-    model: "Bota F50 Messi League moqueta",
-    groundType: "TF",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "AdidasES",
-        price: 75.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46456623320&a=3013769&m=77008",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2ccf9afdddcc487a99ce492b8adb5ffb_9366%2FBota_F50_Messi_League_moqueta_Blanco_JP7456_22_model.jpg&feedId=92152&k=384d758f4fa6187385db54bca54bd9e547ce1116",
-        sizes: ["33"],
-      },
-    ],
-  },
-  {
     id: "adidases-adidas-bota-f50-messi-league-multisuelo-para-ninos-ninos",
     brand: "Adidas",
     model: "Bota F50 Messi League multisuelo para niños",
@@ -27246,9 +27096,6 @@ const minedBootProductsChunk2: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk3: BootProduct[] = [
   {
     id: "adidases-adidas-bota-f50-messi-league-para-cesped-natural-seco-multisuperficie-fg",
     brand: "Adidas",
@@ -27408,6 +27255,9 @@ const minedBootProductsChunk3: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk3: BootProduct[] = [
   {
     id: "adidases-adidas-bota-predator-club-cesped-natural-seco-multisuperficie-fg",
     brand: "Adidas",
@@ -27421,7 +27271,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46346043813&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd308cecc213b46c2a07e3ec8e3f65b1a_9366%2FBota_Predator_Club_cesped_natural_seco_-_multisuperficie_Negro_JH8848_22_model.jpg&feedId=92152&k=68b3a2951bd4ebc2d3ad1a89411eaae7fcac2f8d",
-        sizes: ["42", "43 1/3", "44 2/3"],
+        sizes: ["42", "44 2/3"],
       },
       {
         store: "FootStoreES",
@@ -27570,7 +27420,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         price: 169.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=44507432739&a=3013769&m=77026",
+        url: "https://www.awin1.com/pclick.php?p=44507432743&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F25978406617d46dd998231157f0d5aef_9366%2FBotas_de_Futebol_Predator_Elite_-_Piso_mole_Branco_JI1067_22_model.jpg&feedId=92150&k=ca72f0a72eb838b6fda1165cd37e79260e61c940",
         sizes: ["36", "36 2/3", "37 1/3", "38", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42"],
       },
@@ -27677,7 +27527,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46575239129&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F42c971a114a746a68732fa89cdf824de_9366%2FBotas_de_Futebol_com_Lingua_Dobrada_Predator_League_-_Varios_pisos-Piso_firme_Branco_JI1111_22_model.jpg&feedId=92150&k=b41011a7af584f1acf6083ff415cde9175b0129c",
-        sizes: ["42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
+        sizes: ["42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
       },
       {
         store: "SportIsGoodES",
@@ -28437,7 +28287,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         price: 280.0,
         shipping: 0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46000404620&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=46000404621&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fc617bde154794afa888bdb2f79ea8759_9366%2FBota_sin_cordones_F50_HYPERFAST_ELITE_cesped_natural_seco_Verde_KJ6075_22_model.jpg&feedId=92152&k=38f02b8c7d38ffc571456b6f36334f9626a8f731",
         sizes: ["47 1/3", "48", "48 2/3"],
       },
@@ -29225,7 +29075,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46846776767&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fec287c090cda4ddfa7267be8774d638e_9366%2FBotas_de_futbol_sin_cordones_F50_Hyperfast_Pro_cesped_artificial_Blanco_KH6800_22_model.jpg&feedId=92152&k=d294e66124111abdabf9f20c9f72866039f95c8d",
-        sizes: ["41 1/3", "42", "44", "44 2/3", "45 1/3", "46 2/3", "47 1/3", "48", "48 2/3"],
+        sizes: ["41 1/3", "44", "44 2/3", "45 1/3", "46 2/3", "47 1/3", "48", "48 2/3"],
       },
       {
         store: "AdidasPT",
@@ -29234,7 +29084,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46846763777&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fec287c090cda4ddfa7267be8774d638e_9366%2FBotas_de_Futebol_F50_Hyperfast_Pro_Laceless_para_Piso_Artificial_Branco_KH6800_22_model.jpg&feedId=92150&k=f073a53081b3e90cfa289adfb2bc63b695998d1e",
-        sizes: ["41 1/3", "42", "43 1/3", "44", "44 2/3", "45 1/3", "46 2/3", "47 1/3", "48", "48 2/3"],
+        sizes: ["41 1/3", "43 1/3", "44", "44 2/3", "45 1/3", "46 2/3", "47 1/3", "48", "48 2/3"],
       },
       {
         store: "FootStoreES",
@@ -29362,9 +29212,9 @@ const minedBootProductsChunk3: BootProduct[] = [
         price: 35.75,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46254492617&a=3013769&m=77026",
+        url: "https://www.awin1.com/pclick.php?p=45954820115&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F74b1f3c200eb4419ab265f0c5fa4d9ee_9366%2FBotas_de_Futebol_Copa_Pure_3_Club_-_Piso_sintetico_Preto_JR2893_22_model.jpg&feedId=92150&k=40ace06ee014f1c2415b21c267aafcee31693b2c",
-        sizes: ["40", "43 1/3", "45 1/3"],
+        sizes: ["41 1/3", "43 1/3", "44", "45 1/3"],
       },
       {
         store: "FootStoreES",
@@ -30157,15 +30007,6 @@ const minedBootProductsChunk3: BootProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F90c7979293dc4262b88297f302aba9f8_9366%2FZapatilla_de_futbol_Copa_Gloro_2_moqueta_Negro_IH8287_22_model.jpg&feedId=92152&k=39b429062d22e0e8f2b41145b90e0a0582191e13",
         sizes: ["40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "45 1/3"],
       },
-      {
-        store: "AdidasPT",
-        price: 70.0,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45954823485&a=3013769&m=77026",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F90c7979293dc4262b88297f302aba9f8_9366%2FBotas_de_Futebol_Copa_Gloro_2_-_Piso_sintetico_Preto_IH8287_22_model.jpg&feedId=92150&k=4f9fd9961715517a87ca225b62fd43026d8b5dfd",
-        sizes: ["41 1/3", "42", "42 2/3", "43 1/3", "44"],
-      },
     ],
   },
   {
@@ -30179,7 +30020,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         price: 55.0,
         shipping: 4.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46080628297&a=3013769&m=77008",
+        url: "https://www.awin1.com/pclick.php?p=46080628294&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F7761859a762d4d9bb4697d95ae133f48_9366%2FZapatilla_de_futbol_COPA_PURE_IV_CLUB_Indoor_Blanco_KJ1423_22_model.jpg&feedId=92152&k=bfedb520fab5c1116461671660364cdea1b6cf1a",
         sizes: ["43 1/3", "44", "45 1/3", "46"],
       },
@@ -30243,7 +30084,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46894983381&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F18d22a1420c7466f8247674a7f8c3d80_9366%2FZapatilla_de_futbol_COPA_PURE_IV_CLUB_moqueta_Negro_JR6196_22_model.jpg&feedId=92152&k=5d2020be3fd240685c82a509c23dba92040cced2",
-        sizes: ["34", "35 1/2", "36 2/3", "38", "38 2/3"],
+        sizes: ["34", "36 2/3", "38", "38 2/3"],
       },
       {
         store: "AdidasPT",
@@ -30252,7 +30093,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46894981539&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F18d22a1420c7466f8247674a7f8c3d80_9366%2FBotas_de_Futebol_COPA_PURE_IV_CLUB_Relva_Sintetica_Crianca_Preto_JR6196_22_model.jpg&feedId=92150&k=e82822cfa05d32a996dcd33cd9e9feb7d3214a55",
-        sizes: ["34", "35 1/2", "36", "36 2/3", "38", "38 2/3"],
+        sizes: ["34", "36 2/3", "38", "38 2/3"],
       },
       {
         store: "FootStoreES",
@@ -30288,7 +30129,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43841199277&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff573d55bf94c4921bcfbf69dd74e11c5_9366%2FZapatilla_de_futbol_COPA_PURE_IV_LEAGUE_moqueta_Negro_JR6259_22_model.jpg&feedId=92152&k=daab7012afe50565fa901e335b2f74da3bb2fee0",
-        sizes: ["33", "33 1/2", "34", "35", "35 1/2", "36 2/3", "38 2/3"],
+        sizes: ["33", "33 1/2", "34", "35", "35 1/2", "38 2/3"],
       },
       {
         store: "AdidasPT",
@@ -31248,7 +31089,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46121384820&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd9e2f33c51dd4cfdb550a73fdc8369ea_9366%2FSapatilhas_de_Futebol_de_Cano_Medio_F50_LEAGUE_-_Relva_Sintetica_Amarelo_IH9630_22_model.jpg&feedId=92150&k=911ee928dfbe0f380ea5a3164559a2f283c08bd8",
-        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48"],
+        sizes: ["39 1/3", "40", "40 2/3", "41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3", "48"],
       },
       {
         store: "SportIsGoodES",
@@ -31293,7 +31134,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46279992911&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F00f6649a26e341d8bbe4bbed7665a92b_9366%2FSapatilhas_de_Futebol_F50_MESSI_CLUB_Indoor_para_Crianca_Branco_JQ0948_22_model.jpg&feedId=92150&k=f73837709eb0ce93dad00e4c1234a1a5d253aed6",
-        sizes: ["33", "34", "35", "36 2/3", "38 2/3"],
+        sizes: ["33", "36 2/3", "38 2/3"],
       },
       {
         store: "FootStoreES",
@@ -31424,15 +31265,6 @@ const minedBootProductsChunk3: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46000407583&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe9e06a0f8c6e49fc9accc9317281480a_9366%2FZapatilla_de_futbol_F50_Messi_Club_moqueta_Blanco_JQ0949_22_model.jpg&feedId=92152&k=49bf3e664910fa3367c88ad3fff0898c25dfc660",
         sizes: ["32", "33", "34", "35", "35 1/2", "36", "36 2/3", "37 1/3", "38", "38 2/3"],
-      },
-      {
-        store: "AdidasPT",
-        price: 30.25,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46279992913&a=3013769&m=77026",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fe9e06a0f8c6e49fc9accc9317281480a_9366%2FSapatilhas_de_Futebol_F50_Messi_Club_Relva_Sintetica_Crianca_Branco_JQ0949_22_model.jpg&feedId=92150&k=3df79b31cadbc90ca8b6e2f20893c66526a86402",
-        sizes: ["34"],
       },
       {
         store: "FootStoreES",
@@ -31642,7 +31474,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=43704774679&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F16c2129c05f54fa59a5e3a17df543f0c_9366%2FBotas_de_Futebol_PREDATOR_CLUB_Sala_-_Pavilhao_Vermelho_JS0357_22_model.jpg&feedId=92150&k=a56684b7621ded4b78e408e6a6b12b3d65947a80",
-        sizes: ["40 2/3", "41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
+        sizes: ["40 2/3", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
       },
     ],
   },
@@ -31703,7 +31535,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46000408294&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F04ef589fb06a480f9f52a378912abff5_9366%2FZapatilla_de_futbol_Predator_League_Fold-Over_Tongue_moqueta_Negro_JS0386_22_model.jpg&feedId=92152&k=a27c3aff3e1873a8a212657502aeb9ed81775364",
-        sizes: ["42", "43 1/3", "45 1/3"],
+        sizes: ["42", "43 1/3"],
       },
     ],
   },
@@ -31810,15 +31642,6 @@ const minedBootProductsChunk3: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46000402264&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F050a81b7c3ef435aa9dbf41589f8aab9_9366%2FZapatilla_de_futbol_sala_con_lengueta_plegable_PREDATOR_CLUB_Indoor_Negro_KI8835_22_model.jpg&feedId=92152&k=379927794c6acbb9b746b4931c3b0d02c1d28be6",
         sizes: ["28", "29", "30 1/2", "31 1/2"],
-      },
-      {
-        store: "AdidasPT",
-        price: 30.25,
-        shipping: 4.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46020289499&a=3013769&m=77026",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F050a81b7c3ef435aa9dbf41589f8aab9_9366%2FBotas_de_Futebol_PREDATOR_CLUB_Fold-Over_Tongue_Sala_Indoor_para_Criancas_Preto_KI8835_22_model.jpg&feedId=92150&k=cafe33ebf69958bba12159c9e2258b49977efa5c",
-        sizes: ["31 1/2", "35 1/2"],
       },
     ],
   },
@@ -32820,7 +32643,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41625681857&a=3013769&m=77008",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa02dfeebd2be4b3abe22779853d20265_9366%2FZapatilla_F50_Sparkfusion_League_moqueta_Violeta_JI0014_22_model.jpg&feedId=92152&k=5426a4b75c33ed520344e4074221c99459792e7e",
-        sizes: ["46", "46 2/3", "47 1/3"],
+        sizes: ["46", "47 1/3"],
       },
       {
         store: "AdidasPT",
@@ -32829,7 +32652,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=41625682264&a=3013769&m=77026",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fa02dfeebd2be4b3abe22779853d20265_9366%2FBotas_F50_Sparkfusion_League_para_relva_artificial_Roxo_JI0014_22_model.jpg&feedId=92150&k=7860e79ffa2aa42742765301dce125d6f8d4c587",
-        sizes: ["46", "46 2/3", "47 1/3"],
+        sizes: ["46", "47 1/3"],
       },
     ],
   },
@@ -33517,7 +33340,7 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "adidasmx-adidas-goletto-ix-pasto-sintetico-ag-jp5615",
+    id: "adidasmx-adidas-goletto-ix-pasto-sintetico-ag",
     brand: "Adidas",
     model: "Goletto IX Pasto Sintético",
     groundType: "AG",
@@ -33534,23 +33357,6 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
-    id: "adidasmx-adidas-goletto-ix-pasto-sintetico-ag-jp8445",
-    brand: "Adidas",
-    model: "Goletto IX Pasto Sintético",
-    groundType: "AG",
-    offers: [
-      {
-        store: "AdidasMX",
-        price: 1299.0,
-        shipping: 0,
-        currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=45458180624&a=3013769&m=79918",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F2a12ed624e784f8db917219b08fa1301_9366%2FTacos_Goletto_IX_Pasto_Sintetico_Negro_JP8445_01_00_standard_hover.jpg&feedId=95013&k=17e474080035de11247181e3bbc8b0f11e393cca",
-        sizes: ["37 1/3", "38 2/3", "40", "41 1/3", "42 2/3", "46 2/3"],
-      },
-    ],
-  },
-  {
     id: "adidasmx-adidas-goletto-ix-terreno-firme-multiterreno-fg-ih5863",
     brand: "Adidas",
     model: "Goletto IX Terreno Firme/multiterreno",
@@ -33561,7 +33367,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         price: 1299.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=44451533918&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=44617486046&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F5c8c1ea5c7584455b23fbf11b7397f7b_9366%2FTacos_Goletto_IX_Terreno_Firme-Multiterreno_Blanco_IH5863_01_00_standard_hover.jpg&feedId=95013&k=1820122fde29eee3fc3a81254711c658a05b9ee9",
         sizes: ["36", "37 1/3", "38", "38 2/3", "39 1/3", "43 1/3", "44", "45 1/3", "46", "46 2/3", "48"],
       },
@@ -33595,7 +33401,7 @@ const minedBootProductsChunk3: BootProduct[] = [
         price: 1299.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=46388178318&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=46388178317&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb66f0562ef2e4ae0aff680ebd50e47b6_9366%2FTacos_Goletto_IX_Terreno_Firme-Multiterreno_Oro_JP5268_01_00_standard_hover.jpg&feedId=95013&k=156a3fafc4fe225fbc3a3d49c0b2d748bf9c0d60",
         sizes: ["40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
       },
@@ -33670,6 +33476,23 @@ const minedBootProductsChunk3: BootProduct[] = [
     ],
   },
   {
+    id: "adidaspt-adidas-botas-de-futebol-copa-gloro-2-piso-firme-fg",
+    brand: "Adidas",
+    model: "Botas de Futebol Copa Gloro 2 – Piso firme",
+    groundType: "FG",
+    offers: [
+      {
+        store: "AdidasPT",
+        price: 55.0,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46803131890&a=3013769&m=77026",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fd62ad6bbfd154bce97ccdb17ba821128_9366%2FBotas_de_Futebol_Copa_Gloro_2_-_Piso_firme_Dourado_IH7668_22_model.jpg&feedId=92150&k=988a176bce65ba03c19ed14b87dc91e322483365",
+        sizes: ["40 2/3", "42 2/3"],
+      },
+    ],
+  },
+  {
     id: "adidaspt-adidas-botas-de-futebol-copa-pure-iv-league-relva-sintetica-ag",
     brand: "Adidas",
     model: "Botas de Futebol COPA PURE IV LEAGUE - Relva Sintética",
@@ -33719,6 +33542,32 @@ const minedBootProductsChunk3: BootProduct[] = [
           { size: "44 2/3", price: 85.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjq0478-chaussures-de-football-adidas-copa-pure-iv-league-tf-cblack-ftwwht-lucred" },
           { size: "45 1/3", price: 85.0, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fjq0478-chaussures-de-football-adidas-copa-pure-iv-league-tf-cblack-ftwwht-lucred" },
         ],
+      },
+    ],
+  },
+  {
+    id: "adidaspt-adidas-chuteiras-f50-pro-para-piso-firme-fg",
+    brand: "Adidas",
+    model: "Chuteiras F50 Pro para piso firme",
+    groundType: "FG",
+    offers: [
+      {
+        store: "AdidasPT",
+        price: 82.5,
+        shipping: 4.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=46850931731&a=3013769&m=77026",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F193b96b56f3644d7ae89affe20de73b3_9366%2FChuteiras_F50_Pro_para_piso_firme_Preto_JH7687_22_model.jpg&feedId=92150&k=ccd189b9f4d4eea8faa86c2b622c4598e48b54ea",
+        sizes: ["42", "44 2/3"],
+      },
+      {
+        store: "ForumSport",
+        price: 82.79,
+        shipping: 3.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=41830905041&a=3013769&m=23805",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001048407-00-P-X-20250828181619.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NjI1MHxpbWFnZS9qcGVnfGFHWXlMMmd4TUM4eE16RTBOVGt4TkRNM05qSXlNaTl0WldScFlYTmZNVEF3TVRBME9EUXdOMTh3TUY5UVgxZ3RNakF5TlRBNE1qZ3hPREUyTVRrdWFuQm58MTc5NTllZTQ1NmNkYTg2M2IzZjliYTA5ZWRlNzc1YWJhMmRhYjYyYzcyMWY1OWVlYzc5NjJhN2IyODFmYjUzMQ&feedId=58083&k=7f62d31905198c85cdc4b3efe0370015d5ed0a2e",
+        sizes: ["40 2/3", "41 1/3", "44 2/3"],
       },
     ],
   },
@@ -34424,9 +34273,6 @@ const minedBootProductsChunk3: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk4: BootProduct[] = [
   {
     id: "cloviscalcadosbr-dray-infantil-society-spedy-dray-ag-ninos-4",
     brand: "Dray",
@@ -34481,6 +34327,9 @@ const minedBootProductsChunk4: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk4: BootProduct[] = [
   {
     id: "cloviscalcadosbr-molekinho-infantil-masculina-indoor-molekinho-2808330-ic-ninos-2",
     brand: "Molekinho",
@@ -37548,9 +37397,6 @@ const minedBootProductsChunk4: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk5: BootProduct[] = [
   {
     id: "decathlonie-kipsta-football-boots-viralto-iii-elite-fg-blue-beetle-fg",
     brand: "KIPSTA",
@@ -37602,6 +37448,9 @@ const minedBootProductsChunk5: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk5: BootProduct[] = [
   {
     id: "decathlonie-kipsta-football-boots-viralto-iv-premium-leather-fg-pro-evolution-fg",
     brand: "KIPSTA",
@@ -39229,7 +39078,7 @@ const minedBootProductsChunk5: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44911851617&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fcc%2F1f%2Ffa%2FID4050-1_600x600.jpg&feedId=99907&k=983a289e405a5d18b5007bdbeeee4ad8a7d8c18b",
-        sizes: ["39 1/3", "40", "44"],
+        sizes: ["39 1/3", "40", "44", "44 2/3"],
       },
     ],
   },
@@ -39661,7 +39510,7 @@ const minedBootProductsChunk5: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45134675010&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Ff3%2Fb9%2Fd1%2FIF6348-1_600x600.jpg&feedId=99907&k=f5babad38221253f708e5ebfafa83b2145b11873",
-        sizes: ["41 1/3", "43 1/3", "45 1/3"],
+        sizes: ["41 1/3", "45 1/3"],
       },
     ],
   },
@@ -39711,9 +39560,9 @@ const minedBootProductsChunk5: BootProduct[] = [
         price: 39.99,
         shipping: 8.0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45457988914&a=3013769&m=19598",
+        url: "https://www.awin1.com/pclick.php?p=45457988915&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Ff3%2Ff5%2F8f%2FID3751-1_600x600.jpg&feedId=99907&k=df18bfa06a1ee3975fa5128bad541d4e1b9bd9b1",
-        sizes: ["28", "28.5", "34", "35.5"],
+        sizes: ["28.5", "34", "35.5"],
       },
     ],
   },
@@ -39748,23 +39597,6 @@ const minedBootProductsChunk5: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=41737116898&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F81%2Ff9%2Ff0%2FIG7762-1_600x600.jpg&feedId=99907&k=74a6cfda8f5e280eee623daf3af0440743830a2c",
         sizes: ["40", "42 2/3", "44 2/3", "46", "46 2/3"],
-      },
-    ],
-  },
-  {
-    id: "deporteoutlet-adidas-adidas-predator-league-fold-over-tongue-sg-hombre-botas-de-futbol-jp5738-sg",
-    brand: "Adidas",
-    model: "adidas Predator League Fold-Over Tongue SG Hombre Botas de fútbol JP5738",
-    groundType: "SG",
-    offers: [
-      {
-        store: "DeporteOutlet",
-        price: 26.95,
-        shipping: 8.0,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45417138365&a=3013769&m=19598",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F60%2Fa8%2Fa0%2FJP5738-1_600x600.jpg&feedId=99907&k=904e1a183889c71281c7aa4dc5bd45f8d7c1661a",
-        sizes: ["39 1/3"],
       },
     ],
   },
@@ -39989,9 +39821,9 @@ const minedBootProductsChunk5: BootProduct[] = [
         price: 13.99,
         shipping: 8.0,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45175025118&a=3013769&m=19598",
+        url: "https://www.awin1.com/pclick.php?p=45175025119&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2F83%2Fe3%2Fe0%2FGOLW2572FG-1_600x600.jpg&feedId=99907&k=d893279f43206eccacef42a45f2e6f353088a036",
-        sizes: ["42", "42.5"],
+        sizes: ["42.5"],
       },
     ],
   },
@@ -40042,7 +39874,7 @@ const minedBootProductsChunk5: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45230689280&a=3013769&m=19598",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.sportspar.de%2Fmedia%2Fimage%2Fc9%2Faf%2Fec%2FSCOW2502AG-1_600x600.jpg&feedId=99907&k=e741e62a8cfc943ec8cffc99b39fc602e38fa6bc",
-        sizes: ["41", "42"],
+        sizes: ["41"],
       },
     ],
   },
@@ -40797,15 +40629,6 @@ const minedBootProductsChunk5: BootProduct[] = [
         sizes: ["36 2/3", "38 2/3", "39 1/3", "40", "40 2/3", "41 1/3", "42", "44 2/3", "46", "46 2/3", "47 1/3", "48", "48 2/3", "51 1/3"],
       },
       {
-        store: "AdidasCL",
-        price: 169990.0,
-        shipping: 0,
-        currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46638882984&a=3013769&m=79922",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Fb285b4143d6742fbb4dca7fa00dbdc5e_9366%2FZapatos_de_Futbol_Copa_Mundial_Negro_015110_01_standard.jpg&feedId=95016&k=ef92247abec2e6a03d664a055ac8acb3a72aab1a",
-        sizes: ["42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46", "46 2/3", "47 1/3"],
-      },
-      {
         store: "AdidasMX",
         price: 2869.0,
         shipping: 0,
@@ -41111,9 +40934,6 @@ const minedBootProductsChunk5: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-copa-pure-2-elite-fg-fg-if5447",
     brand: "Adidas",
@@ -41248,6 +41068,9 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk6: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-copa-pure-2-league-fg-fg-ig8718",
     brand: "Adidas",
@@ -44184,7 +44007,7 @@ const minedBootProductsChunk6: BootProduct[] = [
         price: 6399.0,
         shipping: 0,
         currency: "MXN",
-        url: "https://www.awin1.com/pclick.php?p=43782356327&a=3013769&m=79918",
+        url: "https://www.awin1.com/pclick.php?p=43782356318&a=3013769&m=79918",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F9c3535bbc87c42dead821778587ede1c_faec%2FTacos_de_Futbol_F50_Elite_Terreno_Firme_Verde_JR6457_db01_00_standard.tiff.jpg&feedId=95013&k=a07284249c3ee81a11e68890aa07c70f4e0a4cdb",
         sizes: ["39 1/3", "40", "41 1/3", "42", "42 2/3", "44", "45 1/3", "46", "46 2/3"],
       },
@@ -46235,9 +46058,9 @@ const minedBootProductsChunk6: BootProduct[] = [
         price: 62990.0,
         shipping: 0,
         currency: "CLP",
-        url: "https://www.awin1.com/pclick.php?p=46385836275&a=3013769&m=79922",
+        url: "https://www.awin1.com/pclick.php?p=46385836281&a=3013769&m=79922",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2Ff46f0302482445edbcf9f63885de4ec7_9366%2FZapatos_de_Futbol_F50_Messi_Club_Pasto_Artificial_Beige_KK1377_01_00_standard_hover.jpg&feedId=95016&k=493eb1a29b6193f169d9e0f9b9c032774a7ac3d8",
-        sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
+        sizes: ["40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46 2/3"],
       },
     ],
   },
@@ -47140,9 +46963,6 @@ const minedBootProductsChunk6: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-accuracy-sg-sg",
     brand: "Adidas",
@@ -47295,6 +47115,9 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk7: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-predator-club-fg-mg-ig7757",
     brand: "Adidas",
@@ -53117,9 +52940,6 @@ const minedBootProductsChunk7: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-x-ghosted-2-fg-fg",
     brand: "Adidas",
@@ -53224,6 +53044,9 @@ const minedBootProductsChunk8: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk8: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-adidas-x-speedflow-2-mg-mg",
     brand: "Adidas",
@@ -58277,9 +58100,6 @@ const minedBootProductsChunk8: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk9: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-para-ninos-adidas-predator-league-fm-ninos",
     brand: "Adidas",
@@ -58409,6 +58229,9 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk9: BootProduct[] = [
   {
     id: "footstorees-adidas-botas-de-futbol-para-ninos-adidas-predator-league-ft-jude-bellingham-tf-tf-ninos",
     brand: "Adidas",
@@ -61771,7 +61594,7 @@ const minedBootProductsChunk9: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46077308111&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102122-00-P-X-20260824131234.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5OTk1OHxpbWFnZS9qcGVnfGFEUXhMMmcxWXk4eE16azNNVGt4TnpNd056a3pOQzl0WldScFlYTmZNVEF3TVRFd01qRXlNbDh3TUY5UVgxZ3RNakF5TmpBNE1qUXhNekV5TXpRdWFuQm58Yzk5OTJmODE1Mzg5MGRlMWU2ZjQ3MThhMzRmZmI5MDA0NjY4ZjU1NTVhNGVmZjVmYWE5MDJlNGI3ZTJjZDAwMQ&feedId=58083&k=0ab94ea3a94d93781c4fe19c5c47f35e992b9a16",
-        sizes: ["28", "29", "30", "31", "33", "35", "36", "36 2/3"],
+        sizes: ["28", "29", "30", "31", "32", "33", "35", "36", "36 2/3"],
       },
     ],
   },
@@ -63781,7 +63604,7 @@ const minedBootProductsChunk9: BootProduct[] = [
     ],
   },
   {
-    id: "footstorees-hummel-botas-de-futbol-para-bebes-hummel-top-star-fg-fg-ninos-216568-6429",
+    id: "footstorees-hummel-botas-de-futbol-para-bebes-hummel-top-star-fg-fg-ninos",
     brand: "Hummel",
     model: "Botas de fútbol para bebés Hummel Top Star FG",
     groundType: "FG",
@@ -63804,24 +63627,6 @@ const minedBootProductsChunk9: BootProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-6429-chaussures-de-football-bebe-hummel-top-star-fg-june-bug-pink-flambe",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-6429-june-bug-pink-flambe-69c3b9df71195-1.webp",
         sizes: ["26"],
-      },
-    ],
-  },
-  {
-    id: "footstorees-hummel-botas-de-futbol-para-bebes-hummel-top-star-fg-fg-ninos-216568-3916",
-    brand: "Hummel",
-    model: "Botas de fútbol para bebés Hummel Top Star FG",
-    groundType: "FG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreES",
-        price: 18.21,
-        shipping: 9.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45195663783&a=3013769&m=65912",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.jpg&feedId=89032&k=a597f02728f05849090b71281ba29ca0dce8bac1",
-        sizes: ["27"],
       },
     ],
   },
@@ -63875,9 +63680,6 @@ const minedBootProductsChunk9: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "footstorees-hummel-botas-de-futbol-para-bebes-hummel-top-star-turf-ninos",
     brand: "Hummel",
@@ -64004,6 +63806,9 @@ const minedBootProductsChunk10: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk10: BootProduct[] = [
   {
     id: "footstorees-hummel-botas-de-futbol-para-bebes-hummel-top-star-vc-2-0-m-g-ninos-236169-9639",
     brand: "Hummel",
@@ -65156,6 +64961,24 @@ const minedBootProductsChunk10: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=45195667785&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-234863-7162-allure-4.jpg&feedId=89032&k=5d4e599dfecd1e74cf4c615ae7968d608ce4b3ca",
         sizes: ["27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
+      },
+      {
+        store: "FootStoreFR",
+        price: 30.14,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-7162-chaussures-de-football-enfant-hummel-top-star-vc-2-0-turf-allure",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234863-7162-allure-4.webp",
+        sizes: ["27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 28.57,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234863-7162-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-allure",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234863-7162-allure-4.webp",
+        sizes: ["26"],
       },
     ],
   },
@@ -68720,6 +68543,15 @@ const minedBootProductsChunk10: BootProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-agjs2704in-royal-6a91a97e1bf53-1.jpg&feedId=89032&k=d66f366e375800c93410f72b7e7c1e3b28786485",
         sizes: ["24", "27"],
       },
+      {
+        store: "FootStoreFR",
+        price: 29.36,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fagjs2704in-chaussures-de-football-bebe-joma-aguila-2704-indoor-royal",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-agjs2704in-royal-6a91a97e1bf53-1.webp",
+        sizes: ["24", "27"],
+      },
     ],
   },
   {
@@ -68878,9 +68710,9 @@ const minedBootProductsChunk10: BootProduct[] = [
         price: 29.36,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftojs2701in-chaussures-de-football-bebe-joma-toledo-2701-indoor-black-yellow",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-tojs2701in-black-yellow-6a91a98943ae0-1.webp",
-        sizes: ["24", "25", "26", "27"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftojs2701in-chaussures-de-football-enfant-joma-toledo-2701-indoor-black-yellow",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-tojs2701in-black-yellow-6a91aa077e835-1.webp",
+        sizes: ["28", "29"],
       },
     ],
   },
@@ -68905,9 +68737,9 @@ const minedBootProductsChunk10: BootProduct[] = [
         price: 29.36,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fagjs2704in-chaussures-de-football-bebe-joma-aguila-2704-indoor-royal",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-agjs2704in-royal-6a91a97e1bf53-1.webp",
-        sizes: ["24", "27"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fagjs2704in-chaussures-de-football-enfant-joma-aguila-2704-indoor-royal",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-agjs2704in-royal-6a91a98b13790-1.webp",
+        sizes: ["28", "29"],
       },
     ],
   },
@@ -69289,9 +69121,6 @@ const minedBootProductsChunk10: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk11: BootProduct[] = [
   {
     id: "footstorees-joma-botas-de-futbol-para-ninos-joma-supercopa-2303-ag-ag-ninos",
     brand: "Joma",
@@ -69427,6 +69256,9 @@ const minedBootProductsChunk11: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk11: BootProduct[] = [
   {
     id: "footstorees-joma-botas-de-futbol-para-ninos-joma-toledo-2601-tf-mg-ninos",
     brand: "Joma",
@@ -69656,15 +69488,6 @@ const minedBootProductsChunk11: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46889805901&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fj%2Fo%2Fjoma-tojs2701in-black-yellow-6a91aa077e835-1.jpg&feedId=89032&k=bca6a0bed8322132274b3fcfd7eda39756032a07",
-        sizes: ["28", "29"],
-      },
-      {
-        store: "FootStoreFR",
-        price: 29.36,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftojs2701in-chaussures-de-football-enfant-joma-toledo-2701-indoor-black-yellow",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-tojs2701in-black-yellow-6a91aa077e835-1.webp",
         sizes: ["28", "29"],
       },
     ],
@@ -74834,9 +74657,6 @@ const minedBootProductsChunk11: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk12: BootProduct[] = [
   {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-iv-pro-fg-ag",
     brand: "Mizuno",
@@ -74997,6 +74817,9 @@ const minedBootProductsChunk12: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk12: BootProduct[] = [
   {
     id: "footstorees-mizuno-botas-de-futbol-mizuno-morelia-neo-iv-pro-sg-sg",
     brand: "Mizuno",
@@ -80942,9 +80765,6 @@ const minedBootProductsChunk12: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk13: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-10-elite-kylian-mbappe-fg-fg-fq8692-800",
     brand: "Nike",
@@ -81090,6 +80910,9 @@ const minedBootProductsChunk13: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk13: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-mercurial-superfly-10-elite-sg-sg-fq8342-300",
     brand: "Nike",
@@ -88400,9 +88223,6 @@ const minedBootProductsChunk13: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk14: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-6-high-club-ic-ic",
     brand: "Nike",
@@ -88555,6 +88375,9 @@ const minedBootProductsChunk14: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk14: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-phantom-6-high-elite-fg-fg-hj2147-100",
     brand: "Nike",
@@ -94603,9 +94426,6 @@ const minedBootProductsChunk14: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk15: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-tiempo-legend-10-elite-fg-fg-dv4328-040",
     brand: "Nike",
@@ -94754,6 +94574,9 @@ const minedBootProductsChunk15: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk15: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-nike-tiempo-legend-10-pro-ag-ag-dv4334-402",
     brand: "Nike",
@@ -99390,6 +99213,15 @@ const minedBootProductsChunk15: BootProduct[] = [
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fn%2Fi%2Fnike-io1486-101-white-dusty-cactus-6acf7b0910e7e-1.jpg&feedId=89032&k=34331d52a5b9998590517d510bdbca074225f088",
         sizes: ["27.5"],
       },
+      {
+        store: "FootStoreFR",
+        price: 34.06,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-101-chaussures-de-football-bebe-garcon-nike-mercurial-vapor-17-club-ps-mg-white-dusty-cactus",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-101-white-dusty-cactus-6acf7b0910e7e-1.webp",
+        sizes: ["27.5"],
+      },
     ],
   },
   {
@@ -101052,9 +100884,6 @@ const minedBootProductsChunk15: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk16: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-mercurial-superfly-10-club-tf-tf-ninos-fq8313-003",
     brand: "Nike",
@@ -101218,6 +101047,9 @@ const minedBootProductsChunk16: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk16: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-mercurial-superfly-11-academy-ag-ag-ninos-io1496-100",
     brand: "Nike",
@@ -104404,9 +104236,9 @@ const minedBootProductsChunk16: BootProduct[] = [
         price: 34.06,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-101-chaussures-de-football-bebe-garcon-nike-mercurial-vapor-17-club-ps-mg-white-dusty-cactus",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-101-white-dusty-cactus-6acf7b0910e7e-1.webp",
-        sizes: ["27.5"],
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-101-chaussures-de-football-enfant-nike-mercurial-vapor-17-club-ps-mg-white-dusty-cactus",
+        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-101-white-dusty-cactus-6acf7b1dc1427-1.webp",
+        sizes: ["28.5", "30"],
       },
     ],
   },
@@ -106587,9 +106419,6 @@ const minedBootProductsChunk16: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk17: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-phantom-6-low-club-eh-fg-mg-fg-ninos",
     brand: "Nike",
@@ -106748,6 +106577,9 @@ const minedBootProductsChunk17: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk17: BootProduct[] = [
   {
     id: "footstorees-nike-botas-de-futbol-para-ninos-nike-phantom-6-low-club-indoor-ic-ninos",
     brand: "Nike",
@@ -112096,9 +111928,6 @@ const minedBootProductsChunk17: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk18: BootProduct[] = [
   {
     id: "footstorees-puma-botas-de-futbol-para-mujer-puma-future-8-play-tt-ag",
     brand: "Puma",
@@ -112232,6 +112061,9 @@ const minedBootProductsChunk18: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk18: BootProduct[] = [
   {
     id: "footstorees-puma-botas-de-futbol-para-ninos-puma-future-8-play-it-ag-ninos",
     brand: "Puma",
@@ -117879,9 +117711,6 @@ const minedBootProductsChunk18: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk19: BootProduct[] = [
   {
     id: "footstorees-reebok-botas-de-futbol-reebok-touch-mg-ag-ag",
     brand: "Reebok",
@@ -118050,6 +117879,9 @@ const minedBootProductsChunk19: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk19: BootProduct[] = [
   {
     id: "footstorees-skechers-botas-de-futbol-skechers-razor-gold-fg-fg",
     brand: "Skechers",
@@ -120221,24 +120053,6 @@ const minedBootProductsChunk19: BootProduct[] = [
     ],
   },
   {
-    id: "footstorefr-hummel-hummel-top-star-fg-fg-ninos",
-    brand: "Hummel",
-    model: "Hummel Top Star FG",
-    groundType: "FG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 17.56,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.webp",
-        sizes: ["27"],
-      },
-    ],
-  },
-  {
     id: "footstorefr-hummel-hummel-top-star-vc-2-0-i-c-ic-ninos",
     brand: "Hummel",
     model: "Hummel Top Star VC 2.0 I.C",
@@ -120253,48 +120067,6 @@ const minedBootProductsChunk19: BootProduct[] = [
         url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234866-3638-chaussures-de-football-enfant-hummel-top-star-vc-2-0-i-c-pink-a-boo",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234866-3638-pink-a-boo-6.webp",
         sizes: ["27", "29", "33", "35", "37", "38"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-hummel-hummel-top-star-vc-2-0-turf-ninos",
-    brand: "Hummel",
-    model: "Hummel Top Star VC 2.0 Turf",
-    groundType: "",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 29.52,
-        priceMax: 30.14,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-7162-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-allure",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234863-7162-allure-4.webp",
-        sizes: ["24", "25", "26"],
-        sizePrices: [
-          { size: "24", price: 30.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-7162-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-allure" },
-          { size: "25", price: 29.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-7162-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-allure" },
-          { size: "26", price: 30.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-7162-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-allure" },
-        ],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-joma-joma-aguila-2704-indoor-ic-ninos",
-    brand: "Joma",
-    model: "Joma Aguila 2704 Indoor",
-    groundType: "IC",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 29.36,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fagjs2704in-chaussures-de-football-enfant-joma-aguila-2704-indoor-royal",
-        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-agjs2704in-royal-6a91a98b13790-1.webp",
-        sizes: ["28", "29"],
       },
     ],
   },
@@ -120772,6 +120544,24 @@ const minedBootProductsChunk19: BootProduct[] = [
     ],
   },
   {
+    id: "footstorefr-joma-joma-toledo-2701-indoor-ic-ninos",
+    brand: "Joma",
+    model: "Joma Toledo 2701 Indoor",
+    groundType: "IC",
+    ageGroup: "kids",
+    offers: [
+      {
+        store: "FootStoreFR",
+        price: 29.36,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Ftojs2701in-chaussures-de-football-bebe-joma-toledo-2701-indoor-black-yellow",
+        imageUrl: "https://cdn.blazimg.com/1800/product/j/o/joma-tojs2701in-black-yellow-6a91a98943ae0-1.webp",
+        sizes: ["24", "25", "26", "27"],
+      },
+    ],
+  },
+  {
     id: "footstorefr-joma-joma-toledo-hg-ninos",
     brand: "Joma",
     model: "Joma Toledo HG",
@@ -121030,24 +120820,6 @@ const minedBootProductsChunk19: BootProduct[] = [
         url: "https://www.prodirectsport.es/products/nike-air-zoom-mercurial-vapor-xvi-academy-fg-mg-rosa-blanco-botas-para-hombre-1052880",
         imageUrl: "https://cdn.shopify.com/s/files/1/0781/2900/4760/files/1052880_main.jpg?v=1795393163",
         sizes: ["44.5", "45"],
-      },
-    ],
-  },
-  {
-    id: "footstorefr-nike-nike-mercurial-vapor-17-club-ps-mg-mg-ninos",
-    brand: "Nike",
-    model: "Nike Mercurial Vapor 17 Club PS MG",
-    groundType: "MG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FootStoreFR",
-        price: 34.06,
-        shipping: 7.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2Fio1486-101-chaussures-de-football-enfant-nike-mercurial-vapor-17-club-ps-mg-white-dusty-cactus",
-        imageUrl: "https://cdn.blazimg.com/1800/product/n/i/nike-io1486-101-white-dusty-cactus-6acf7b1dc1427-1.webp",
-        sizes: ["28.5", "30"],
       },
     ],
   },
@@ -122120,9 +121892,6 @@ const minedBootProductsChunk19: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk20: BootProduct[] = [
   {
     id: "forumsport-joma-joma-aguila-cup-ag-ag",
     brand: "Joma",
@@ -122259,6 +122028,9 @@ const minedBootProductsChunk20: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk20: BootProduct[] = [
   {
     id: "forumsport-joma-joma-propulsion-in-ic-ninos",
     brand: "Joma",
@@ -124990,7 +124762,7 @@ const minedBootProductsChunk20: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=44626452663&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001017865-00-P-X-20250110092902.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzA3OXxpbWFnZS9qcGVnfGFEQTVMMmhrT1M4eE1qWTJNelU0TmpBNU5URXpOQzl0WldScFlYTmZNVEF3TVRBeE56ZzJOVjh3TUY5UVgxZ3RNakF5TlRBeE1UQXdPVEk1TURJdWFuQm58OWUyZWQ5YzMzODlkOTIwODI5Y2MyYzJjNWIwOTlhMmE3NDFiNDcwNzIzZTU5M2IxNzNhYjU2NGU1YzA2OTIyMA&feedId=58083&k=e98f74122a19911d7acb3ec55c53044c96d677e4",
-        sizes: ["39", "42"],
+        sizes: ["39"],
       },
     ],
   },
@@ -125271,9 +125043,6 @@ const minedBootProductsChunk20: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk21: BootProduct[] = [
   {
     id: "forumsport-puma-puma-future-9-match-mg-mg-2",
     brand: "Puma",
@@ -125412,6 +125181,9 @@ const minedBootProductsChunk21: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk21: BootProduct[] = [
   {
     id: "forumsport-puma-puma-future-9-play-it-ic-ninos",
     brand: "Puma",
@@ -127478,7 +127250,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iv-club-fgmg-core-black-white-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291353/750/bota-adidas-copa-pure-iv-club-fgmg-negro-1.jpg",
-        sizes: ["40", "40.5", "41", "42", "43", "45"],
+        sizes: ["40", "40.5", "41", "42", "45"],
       },
     ],
   },
@@ -127549,7 +127321,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iv-club-turf-nino-zero-metallic-dark-blue-lucid-ray-blue",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335795/750/bota-adidas-copa-pure-iv-club-turf-nino-zero-metallic-dark-blue-lucid-ray-blue-1.jpg",
-        sizes: ["35", "36", "37.5", "38", "38.5"],
+        sizes: ["37.5", "38"],
       },
     ],
   },
@@ -127670,7 +127442,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fcopa-pure-iv-elite-sg-zero-metallic-dark-blue-lucid-ray-blue",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335786/750/bota-adidas-copa-pure-iv-elite-sg-zero-metallic-dark-blue-lucid-ray-blue-1.jpg",
-        sizes: ["40.5", "41", "42", "42.5", "43"],
+        sizes: ["40.5", "41", "42.5", "43"],
       },
     ],
   },
@@ -128072,7 +127844,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-club-turf-team-solar-yellow-2-core-black-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291463/750/bota-adidas-f50-club-turf-naranja-1.jpg",
-        sizes: ["44.5", "45"],
+        sizes: ["45"],
       },
     ],
   },
@@ -128136,24 +127908,6 @@ const minedBootProductsChunk21: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
-        price: 59.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-elite-fg-nino-core-black-iron-met-lucid-lemon",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/267638/750/bota-adidas-f50-elite-fg-nino-core-black-iron-met-lucid-lemon-1.jpg",
-        sizes: ["36"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-adidas-adidas-f50-elite-fg-nino-fg-ninos-2",
-    brand: "adidas",
-    model: "adidas F50 Elite FG Niño",
-    groundType: "FG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FutbolEmotion",
         price: 71.99,
         shipping: 0,
         currency: "EUR",
@@ -128164,7 +127918,7 @@ const minedBootProductsChunk21: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-adidas-adidas-f50-elite-fg-nino-fg-ninos-3",
+    id: "futbolemotion-adidas-adidas-f50-elite-fg-nino-fg-ninos-2",
     brand: "adidas",
     model: "adidas F50 Elite FG Niño",
     groundType: "FG",
@@ -128402,7 +128156,7 @@ const minedBootProductsChunk21: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-club-fgmg-pulse-mint-night-navy-solar-lemon",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/339018/750/bota-adidas-f50-hyperfast-club-fg-mg-verde-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -128423,9 +128177,6 @@ const minedBootProductsChunk21: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk22: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-f50-hyperfast-club-fg-mg-nino-fg-ninos",
     brand: "adidas",
@@ -128440,7 +128191,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-club-fgmg-nino-pulse-mint-night-navy-solar-lemon",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/339029/750/bota-adidas-f50-hyperfast-club-fg-mg-nino-verde-1.jpg",
-        sizes: ["31", "32", "34", "35", "35.5", "36", "36.5", "37.5", "38", "38.5"],
+        sizes: ["34", "35", "36", "36.5", "37.5", "38", "38.5"],
       },
     ],
   },
@@ -128583,6 +128334,9 @@ const minedBootProductsChunk22: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk22: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-f50-hyperfast-elite-fg-nino-fg-ninos-2",
     brand: "adidas",
@@ -128703,7 +128457,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-elite-ll-fg-nino-pulse-mint-core-black-solar-lemon",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/339030/750/bota-adidas-f50-hyperfast-elite-ll-fg-nino-pulse-mint-core-black-solar-lemon-1.jpg",
-        sizes: ["36", "36.5", "37.5", "38", "38.5"],
+        sizes: ["36.5", "37.5", "38", "38.5"],
       },
     ],
   },
@@ -128891,7 +128645,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ag-nino-pulse-mint-night-navy-solar-lemon",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/338976/750/bota-adidas-f50-hyperfast-league-ag-nino-verde-1.jpg",
-        sizes: ["28", "29", "30", "31", "32", "33", "34", "35", "35.5", "36", "36.5", "37.5", "38", "38.5"],
+        sizes: ["28", "29", "30", "32", "33", "34", "35", "35.5", "36", "36.5", "37.5", "38"],
       },
     ],
   },
@@ -129103,7 +128857,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ll-ag-nino-pulse-mint-night-navy-solar-lemon",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/339041/750/bota-adidas-f50-hyperfast-league-ll-ag-nino-verde-1.jpg",
-        sizes: ["38", "38.5"],
+        sizes: ["36.5", "38", "38.5"],
       },
     ],
   },
@@ -129122,6 +128876,74 @@ const minedBootProductsChunk22: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ll-ag-nino-white-solar-purple-tursol",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335871/750/bota-adidas-f50-hyperfast-league-ll-ag-nino-blanco-1.jpg",
         sizes: ["35.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-hyperfast-league-ll-fg-fg",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast League LL FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 99.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ll-fg-core-black-core-black-lucid-ray-blue",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/335843/750/bota-adidas-f50-hyperfast-league-ll-fg-negro-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "46"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-hyperfast-league-ll-fg-fg-2",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast League LL FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 69.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ll-fg-pulse-mint-night-navy-solar-lemon",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/339019/750/bota-adidas-f50-hyperfast-league-ll-fg-verde-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46", "46.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-hyperfast-league-ll-fg-fg-3",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast League LL FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 74.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ll-fg-tursol-core-black-gold-metallic",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/327356/750/bota-adidas-f50-hyperfast-league-ll-fg-rosa-1.jpg",
+        sizes: ["44.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-hyperfast-league-ll-fg-fg-4",
+    brand: "adidas",
+    model: "adidas F50 Hyperfast League LL FG",
+    groundType: "FG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 89.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-ll-fg-white-solar-purple-tursol",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/335842/750/bota-adidas-f50-hyperfast-league-ll-fg-blanco-1.jpg",
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -129227,7 +129049,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-hyperfast-league-mid-fg-tursol-core-black-gold-metallic",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/327367/750/bota-adidas-f50-hyperfast-league-mid-fg-rosa-1.jpg",
-        sizes: ["42", "42.5", "44", "44.5"],
+        sizes: ["42", "44", "44.5"],
       },
     ],
   },
@@ -129556,7 +129378,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-league-fgmg-nino-core-black-lucid-red-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291447/750/bota-adidas-f50-league-fgmg-nino-negro-1.jpg",
-        sizes: ["31", "36.5", "37.5", "38.5"],
+        sizes: ["36.5", "37.5", "38.5"],
       },
     ],
   },
@@ -130079,6 +129901,24 @@ const minedBootProductsChunk22: BootProduct[] = [
         price: 33.99,
         shipping: 0,
         currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-messi-league-fgmg-nino-ftwr-white-lucid-red-silver-met",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/266039/750/bota-adidas-f50-messi-league-fg-mg-nino-blanco-1.jpg",
+        sizes: ["38.5"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-messi-league-fg-mg-nino-fg-ninos-2",
+    brand: "adidas",
+    model: "adidas F50 Messi League FG/MG Niño",
+    groundType: "FG",
+    ageGroup: "kids",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 33.99,
+        shipping: 0,
+        currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-messi-league-fgmg-nino-white-lucid-pink-flash-aqua",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291307/750/bota-adidas-f50-messi-league-fgmg-kinder-blanco-1.jpg",
         sizes: ["36.5", "37.5", "38", "38.5"],
@@ -130116,7 +129956,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-messi-league-turf-ivory-semi-blue-burst-icey-blue",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/333429/750/bota-adidas-f50-messi-league-turf-blanco-1.jpg",
-        sizes: ["44", "44.5"],
+        sizes: ["42", "44", "44.5"],
       },
     ],
   },
@@ -130151,6 +129991,23 @@ const minedBootProductsChunk22: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-pro-ll-turf-core-black-lucid-red-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291692/750/bota-adidas-f50-pro-ll-turf-negro-1.jpg",
         sizes: ["40", "44", "44.5", "45"],
+      },
+    ],
+  },
+  {
+    id: "futbolemotion-adidas-adidas-f50-pro-mg-mg",
+    brand: "adidas",
+    model: "adidas F50 Pro MG",
+    groundType: "MG",
+    offers: [
+      {
+        store: "FutbolEmotion",
+        price: 104.99,
+        shipping: 0,
+        currency: "EUR",
+        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-pro-mg-team-solar-yellow-core-black-lucid-red",
+        imageUrl: "https://www.futbolemotion.com/imagesarticulos/291413/750/bota-adidas-f50-pro-mg-naranja-1.jpg",
+        sizes: ["39", "44.5", "45"],
       },
     ],
   },
@@ -130304,23 +130161,6 @@ const minedBootProductsChunk22: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Ff50-sparkfusion-pro-fgag-mujer-clear-mint-white-solar-purple",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/338989/750/bota-adidas-f50-sparkfusion-pro-fg-ag-verde-1.jpg",
         sizes: ["36.5", "37.5", "38", "38.5", "39", "40", "40.5", "41"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-adidas-adidas-kaiser-5-goal-ic",
-    brand: "adidas",
-    model: "adidas Kaiser 5 Goal",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 53.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fadidas%2Fkaiser-5-goal-black-white",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/121565/750/zapatilla-adidas-kaiser-5-goal-black-white-1.jpg",
-        sizes: ["40"],
       },
     ],
   },
@@ -130509,7 +130349,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-club-ft-fgmg-nino-core-black-silver-metallic-pulse-mint",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/339025/750/bota-adidas-predator-club-ft-fg-mg-nino-negro-1.jpg",
-        sizes: ["32", "33", "36", "36.5"],
+        sizes: ["32", "33", "36.5"],
       },
     ],
   },
@@ -130580,7 +130420,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fadidas%2Fpredator-club-ft-in-sala-nino-core-black-white-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291700/750/zapatilla-adidas-predator-club-ft-in-sala-nino-core-black-white-lucid-red-1.jpg",
-        sizes: ["35", "36", "36.5", "37.5", "38.5"],
+        sizes: ["35", "36", "36.5", "38.5"],
       },
     ],
   },
@@ -130686,7 +130526,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-club-hl-turf-nino-core-black-silver-metallic-pulse-mint",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/338978/750/bota-adidas-predator-club-hl-turf-nino-negro-1.jpg",
-        sizes: ["29", "30", "31", "32", "33", "34"],
+        sizes: ["29", "31", "32", "33", "34"],
       },
     ],
   },
@@ -130704,7 +130544,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-club-hl-turf-nino-white-tursol-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335802/750/bota-adidas-predator-club-hl-turf-nino-blanco-1.jpg",
-        sizes: ["28", "31", "32", "33", "34"],
+        sizes: ["28", "32", "33", "34"],
       },
     ],
   },
@@ -130773,7 +130613,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-club-l-turf-nino-white-tursol-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335803/750/bota-adidas-predator-club-turf-nino-blanco-1.jpg",
-        sizes: ["35", "36", "36.5", "37.5", "38", "38.5"],
+        sizes: ["35", "36.5", "37.5", "38", "38.5"],
       },
     ],
   },
@@ -130915,7 +130755,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-elite-ft-fg-nino-tursol-croter-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/327348/750/bota-adidas-predator-elite-ft-fg-nino-rosa-1.jpg",
-        sizes: ["30", "31", "32", "33", "34", "35", "36"],
+        sizes: ["30", "31", "32", "33", "34", "35"],
       },
     ],
   },
@@ -130984,7 +130824,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-elite-ft-fg-zz-footwear-white-footwear-white-dormet",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/341409/750/bota-adidas-predator-elite-ft-fg-zz-footwear-white-footwear-white-dormet-1.jpg",
-        sizes: ["41", "42", "42.5", "43", "44"],
+        sizes: ["41", "42", "42.5"],
       },
     ],
   },
@@ -131001,7 +130841,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-elite-ft-sg-l-tech-core-black-core-black-rojint",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/341407/750/bota-adidas-predator-elite-ft-sg-l-tech-core-black-core-black-rojint-1.jpg",
-        sizes: ["41", "42", "42.5", "43"],
+        sizes: ["41", "42", "42.5", "43", "44"],
       },
     ],
   },
@@ -131313,7 +131153,7 @@ const minedBootProductsChunk22: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-ft-fg-core-black-silver-metallic-pulse-mint",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/339003/750/bota-adidas-predator-league-ft-fg-core-black-silver-metallic-pulse-mint-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
+        sizes: ["39", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -131562,9 +131402,6 @@ const minedBootProductsChunk22: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk23: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-predator-league-ft-in-ic-3",
     brand: "adidas",
@@ -131635,6 +131472,9 @@ const minedBootProductsChunk23: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk23: BootProduct[] = [
   {
     id: "futbolemotion-adidas-adidas-predator-league-ft-in-nino-ic-ninos-3",
     brand: "adidas",
@@ -131701,7 +131541,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-league-ft-sg-white-tursol-core-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/335826/750/bota-adidas-predator-league-ft-sg-blanco-1.jpg",
-        sizes: ["39", "40", "40.5", "43"],
+        sizes: ["39", "40"],
       },
     ],
   },
@@ -131962,7 +131802,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fadidas%2Fpredator-pro-ft-turf-core-black-white-lucid-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291377/750/bota-adidas-predator-pro-ft-turf-negro-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "46.5"],
+        sizes: ["39", "40", "40.5", "41", "42.5", "43", "44", "44.5", "45", "46.5"],
       },
     ],
   },
@@ -132013,7 +131853,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fadidas%2Fsuper-sala-iii-lucid-ray-blue-ftwr-white-team-royal-blue",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291222/750/zapatilla-adidas-super-sala-iii-lucid-ray-blue-ftwr-white-team-royal-blue-1.jpg",
-        sizes: ["40.5", "42", "42.5", "44"],
+        sizes: ["39", "42", "42.5", "44"],
       },
     ],
   },
@@ -132153,7 +131993,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fadidas%2Fsuper-sala-iii-nino-lucid-tangerine-core-black-lucid-orange",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/338974/750/zapatilla-adidas-super-sala-iii-nino-naranja-1.jpg",
-        sizes: ["29", "30", "31", "32", "33", "34", "35", "36", "36.5", "37.5", "38", "38.5"],
+        sizes: ["29", "30", "33", "34", "35", "36", "36.5", "37.5", "38", "38.5"],
       },
     ],
   },
@@ -132238,7 +132078,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fadidas%2Ftop-sala-competition-ii-white-pure-purple-solar-turbo",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291216/750/zapatilla-adidas-top-sala-competition-ii-white-pure-purple-solar-turbo-1.jpg",
-        sizes: ["43", "44", "45"],
+        sizes: ["44", "45"],
       },
     ],
   },
@@ -132274,7 +132114,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fadidas%2Ftop-sala-competition-ii-nino-ftwr-white-lucid-ray-blue-solar-yellow",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/291219/750/zapatilla-adidas-top-sala-competition-ii-kinder-blanco-1.jpg",
-        sizes: ["36", "38", "38.5"],
+        sizes: ["38", "38.5"],
       },
     ],
   },
@@ -132534,24 +132374,6 @@ const minedBootProductsChunk23: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
-        price: 14.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fjoma%2Ftop-flex-nino-azul-0",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/323011/750/zapatilla-joma-top-flex-nino-azul-1.jpg",
-        sizes: ["30", "31"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-2",
-    brand: "Joma",
-    model: "Joma Top Flex Niño",
-    groundType: "IC",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FutbolEmotion",
         price: 21.99,
         shipping: 0,
         currency: "EUR",
@@ -132562,7 +132384,7 @@ const minedBootProductsChunk23: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-3",
+    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-2",
     brand: "Joma",
     model: "Joma Top Flex Niño",
     groundType: "IC",
@@ -132580,7 +132402,7 @@ const minedBootProductsChunk23: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-4",
+    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-3",
     brand: "Joma",
     model: "Joma Top Flex Niño",
     groundType: "IC",
@@ -132598,7 +132420,7 @@ const minedBootProductsChunk23: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-5",
+    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-4",
     brand: "Joma",
     model: "Joma Top Flex Niño",
     groundType: "IC",
@@ -132616,7 +132438,7 @@ const minedBootProductsChunk23: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-6",
+    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-5",
     brand: "Joma",
     model: "Joma Top Flex Niño",
     groundType: "IC",
@@ -132634,7 +132456,7 @@ const minedBootProductsChunk23: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-7",
+    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-6",
     brand: "Joma",
     model: "Joma Top Flex Niño",
     groundType: "IC",
@@ -132652,25 +132474,7 @@ const minedBootProductsChunk23: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-8",
-    brand: "Joma",
-    model: "Joma Top Flex Niño",
-    groundType: "IC",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 17.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fjoma%2Ftop-flex-nino-royal-0",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/273335/750/zapatilla-joma-top-flex-nino-royal-1.jpg",
-        sizes: ["30"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-9",
+    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-7",
     brand: "Joma",
     model: "Joma Top Flex Niño",
     groundType: "IC",
@@ -132683,12 +132487,12 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fjoma%2Ftop-flex-nino-verde-fluor",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/340499/750/zapatilla-joma-top-flex-junior-barefoot-2611-verde-fluor-indoor-verde-1.jpg",
-        sizes: ["36", "37", "38"],
+        sizes: ["37", "38"],
       },
     ],
   },
   {
-    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-10",
+    id: "futbolemotion-joma-joma-top-flex-nino-ic-ninos-8",
     brand: "Joma",
     model: "Joma Top Flex Niño",
     groundType: "IC",
@@ -132804,7 +132608,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmizuno-alpha-iii-elite-fg-black-lava-orange-evening-prim",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336323/750/bota-mizuno-mizuno-alpha-iii-elite-fg-black-lava-orange-evening-prim-1.jpg",
-        sizes: ["40.5", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["42", "42.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -132821,7 +132625,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmizuno-alpha-iii-elite-fg-blue-finch-cornflower-blue-lav",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336324/750/bota-mizuno-mizuno-alpha-iii-elite-fg-blue-finch-cornflower-blue-lav-1.jpg",
-        sizes: ["43", "44", "44.5", "45"],
+        sizes: ["40.5", "43", "44", "44.5", "45"],
       },
     ],
   },
@@ -132855,7 +132659,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmizuno-alpha-iii-japan-ag-whitelava-orangeevening-primrose",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336320/750/bota-mizuno-mizuno-alpha-iii-japan-ag-whitelava-orangeevening-primrose-1.jpg",
-        sizes: ["41", "44", "44.5"],
+        sizes: ["41", "42", "44", "44.5"],
       },
     ],
   },
@@ -132991,7 +132795,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fmizuno%2Fmorelia-neo-v-beta-elite-fg-black-lava-orange-arcadia",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336329/750/bota-mizuno-morelia-neo-v-beta-elite-fg-black-lava-orange-arcadia-1.jpg",
-        sizes: ["40", "41", "42", "42.5", "43", "44", "44.5"],
+        sizes: ["40", "41", "42.5", "43", "44", "44.5"],
       },
     ],
   },
@@ -133827,7 +133631,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2F442-academy-fg-v2-nino-navy",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280537/750/bota-new-balance-king-liga-it-azul-oscuro-1.jpg",
-        sizes: ["36"],
+        sizes: ["36", "36.5"],
       },
     ],
   },
@@ -134198,23 +134002,6 @@ const minedBootProductsChunk23: BootProduct[] = [
     offers: [
       {
         store: "FutbolEmotion",
-        price: 114.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2Ffuron-elite-fg-v8-pixel-green",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/280568/750/bota-new-balance-furon-elite-fg-v8-pixel-green-1.jpg",
-        sizes: ["40.5"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-new-balance-new-balance-furon-elite-fg-v8-fg-2",
-    brand: "New Balance",
-    model: "New Balance Furon Elite FG V8",
-    groundType: "FG",
-    offers: [
-      {
-        store: "FutbolEmotion",
         price: 148.99,
         shipping: 0,
         currency: "EUR",
@@ -134373,7 +134160,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2Ffuron-elite-turf-v9-white-alkaline-green",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336480/750/bota-new-balance-furon-elite-turf-v9-white-alkaline-green-1.jpg",
-        sizes: ["40", "41", "42", "42.5", "43", "44", "46"],
+        sizes: ["40", "41", "42.5", "43", "46"],
       },
     ],
   },
@@ -134546,7 +134333,7 @@ const minedBootProductsChunk23: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2Ffuron-team-nino-fg-punch-yellow",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/309108/750/bota-new-balance-furon-team-kinder-fg-amarillo-1.jpg",
-        sizes: ["36.5", "38"],
+        sizes: ["36.5", "38.5"],
       },
     ],
   },
@@ -134705,9 +134492,6 @@ const minedBootProductsChunk23: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk24: BootProduct[] = [
   {
     id: "futbolemotion-new-balance-new-balance-tekela-magia-low-laced-fg-v4-fg",
     brand: "New Balance",
@@ -134827,6 +134611,9 @@ const minedBootProductsChunk24: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk24: BootProduct[] = [
   {
     id: "futbolemotion-new-balance-new-balance-tekela-team-low-laced-fg-v5-fg",
     brand: "New Balance",
@@ -134947,7 +134734,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnew-balance%2Ftekela-team-low-laced-fg-v5-nino-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/280574/750/bota-new-balance-kinder-tekela-team-low-laced-fg-v5-blanco-1.jpg",
-        sizes: ["36", "36.5"],
+        sizes: ["36", "36.5", "37.5"],
       },
     ],
   },
@@ -135068,24 +134855,6 @@ const minedBootProductsChunk24: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-superfly-10-academy-ag-km-plum-eclipse-mtlc-silver",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301071/750/bota-nike-air-zoom-mercurial-superfly-10-academy-ag-km-plata-1.jpg",
         sizes: ["42.5", "44", "44.5"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-nike-nike-air-zoom-mercurial-superfly-10-academy-ag-km-nino-ag-ninos",
-    brand: "Nike",
-    model: "Nike Air Zoom Mercurial Superfly 10 Academy AG KM Niño",
-    groundType: "AG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 43.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-superfly-10-academy-ag-km-nino-plum-eclipse-mtlc-silver",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/301021/750/bota-nike-air-zoom-mercurial-superfly-10-academy-ag-km-kinder-plata-1.jpg",
-        sizes: ["36.5"],
       },
     ],
   },
@@ -135380,7 +135149,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-academy-ag-multicolor-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/343555/750/bota-nike-air-zoom-mercurial-superfly-11-academy-ag-multicolor-black-1.jpg",
-        sizes: ["40", "40.5", "41", "42", "42.5", "43", "44", "45", "45.5"],
+        sizes: ["40.5", "42", "42.5", "43", "44", "45", "45.5"],
       },
     ],
   },
@@ -135608,7 +135377,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-academy-fgmg-nino-white-dusty-cactus",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/343520/750/bota-nike-air-zoom-mercurial-superfly-11-academy-fgmg-kinder-blanco-1.jpg",
-        sizes: ["32", "33", "34", "35", "35.5", "36.5", "37.5", "38", "38.5"],
+        sizes: ["32", "33", "34", "35", "35.5", "36.5", "38", "38.5"],
       },
     ],
   },
@@ -135732,7 +135501,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-superfly-11-elite-ag-pro-black-illusion-green-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336744/750/bota-nike-air-zoom-mercurial-superfly-11-elite-ag-pro-black-illusion-green-black-1.jpg",
-        sizes: ["40", "42", "42.5", "43", "44.5", "45", "46"],
+        sizes: ["40", "40.5", "42", "42.5", "43", "44.5", "45", "46"],
       },
     ],
   },
@@ -136125,7 +135894,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-ag-nino-magic-flamingo-black-total-crimson",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268865/750/bota-nike-kinder-air-zoom-mercurial-vapor-16-akademie-ag-rosa-1.jpg",
-        sizes: ["36", "36.5", "38"],
+        sizes: ["36.5", "38"],
       },
     ],
   },
@@ -136320,24 +136089,6 @@ const minedBootProductsChunk24: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-academy-vini-jr-ic-nino-ic-ninos",
-    brand: "Nike",
-    model: "Nike Air Zoom Mercurial Vapor 16 Academy Vini JR IC Niño",
-    groundType: "IC",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 37.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Fair-zoom-mercurial-vapor-16-academy-vini-jr-ic-nino-sunset-pulse-old-royal",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/299691/750/zapatilla-nike-air-zoom-mercurial-vapor-16-academy-vini-jr-ic-nino-sunset-pulse-old-royal-1.jpg",
-        sizes: ["38.5"],
-      },
-    ],
-  },
-  {
     id: "futbolemotion-nike-nike-air-zoom-mercurial-vapor-16-academy-vini-jr-turf-ninos",
     brand: "Nike",
     model: "Nike Air Zoom Mercurial Vapor 16 Academy Vini JR Turf",
@@ -136419,7 +136170,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-16-pro-ag-racer-blue-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301091/750/bota-nike-air-zoom-mercurial-vapor-16-pro-ag-azul-1.jpg",
-        sizes: ["43", "44"],
+        sizes: ["44"],
       },
     ],
   },
@@ -137033,7 +136784,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-club-turf-brt-crimson-blur",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336727/750/bota-nike-air-zoom-mercurial-vapor-17-club-turf-rojo-1.jpg",
-        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44"],
+        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "44"],
       },
     ],
   },
@@ -137309,7 +137060,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fair-zoom-mercurial-vapor-17-elite-sg-pro-t-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321533/750/bota-nike-air-zoom-mercurial-vapor-17-elite-sg-pro-t-multi-color-black-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "44"],
+        sizes: ["39", "40.5", "41", "42", "42.5"],
       },
     ],
   },
@@ -137675,7 +137426,7 @@ const minedBootProductsChunk24: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-high-academy-ag-black-illusion-green-black-0",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336663/750/bota-nike-phantom-6-high-academy-ag-negro-1.jpg",
-        sizes: ["41", "42", "45.5"],
+        sizes: ["41", "45.5"],
       },
     ],
   },
@@ -137836,9 +137587,6 @@ const minedBootProductsChunk24: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk25: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-phantom-6-high-academy-fg-mg-nino-fg-ninos-2",
     brand: "Nike",
@@ -137995,10 +137743,13 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-high-club-fgmg-nino-black-illusion-green-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336628/750/bota-nike-phantom-6-high-club-fgmg-kinder-negro-1.jpg",
-        sizes: ["32", "33", "34", "35", "35.5", "36", "36.5", "37.5"],
+        sizes: ["32", "33", "34", "35", "35.5", "36", "36.5"],
       },
     ],
   },
+];
+
+const minedBootProductsChunk25: BootProduct[] = [
   {
     id: "futbolemotion-nike-nike-phantom-6-high-pro-ag-ag",
     brand: "Nike",
@@ -138046,7 +137797,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-high-pro-fg-brt-crimson-blur-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336674/750/bota-nike-phantom-6-high-pro-fg-rojo-1.jpg",
-        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -138396,7 +138147,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Fphantom-6-low-academy-ic-black-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268919/750/zapatilla-nike-phantom-6-low-acad-ic-negro-1.jpg",
-        sizes: ["42", "44.5"],
+        sizes: ["42"],
       },
     ],
   },
@@ -138590,7 +138341,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-club-fgmg-nino-racer-blue-pink-blast-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301004/750/bota-nike-schuhe-6-low-club-fgmg-kinder-azul-1.jpg",
-        sizes: ["35", "35.5"],
+        sizes: ["35.5"],
       },
     ],
   },
@@ -138607,7 +138358,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Fphantom-6-low-club-ic-black-illusion-green-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336352/750/zapatilla-nike-phantom-6-low-club-ic-negro-1.jpg",
-        sizes: ["38.5", "39", "40", "40.5", "41", "42", "44", "44.5", "45", "46"],
+        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "44", "44.5", "45", "46"],
       },
     ],
   },
@@ -138868,7 +138619,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fphantom-6-low-pro-fgmg-nino-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321464/750/bota-nike-phantom-6-low-pro-fgmg-t-nino-multicolor-1.jpg",
-        sizes: ["32", "33", "33.5", "35"],
+        sizes: ["32", "33", "33.5"],
       },
     ],
   },
@@ -139024,7 +138775,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Fnike-streetgato-purple-slate-summit-white-sanded-purple",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268898/750/zapatilla-nike-nike-streetgato-purple-slate-summit-white-sanded-purple-1.jpg",
-        sizes: ["38.5", "41", "42", "42.5", "44", "44.5"],
+        sizes: ["41", "42", "42.5", "44", "44.5"],
       },
     ],
   },
@@ -139059,7 +138810,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Fnike-streetgato-nino-purple-slate-summit-white-sanded-purple",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/268808/750/zapatilla-nike-nike-streetgato-nino-purple-slate-summit-white-sanded-purple-1.jpg",
-        sizes: ["32", "33", "38"],
+        sizes: ["32", "38"],
       },
     ],
   },
@@ -139252,7 +139003,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Ftiempo-streetgato-ic-nino-multi-color-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321474/750/zapatilla-nike-tiempo-streetgato-ic-t-nino-multicolor-1.jpg",
-        sizes: ["32", "33", "33.5", "35", "36", "36.5", "37.5", "38"],
+        sizes: ["32", "33", "33.5", "35", "36", "36.5", "37.5"],
       },
     ],
   },
@@ -139322,7 +139073,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Ftiempo-legend-10-academy-ic-nino-volt-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/281090/750/zapatilla-nike-kinder-tiempo-legend-10-academy-ic-amarillo-1.jpg",
-        sizes: ["38", "38.5"],
+        sizes: ["38"],
       },
     ],
   },
@@ -139447,23 +139198,6 @@ const minedBootProductsChunk25: BootProduct[] = [
   },
   {
     id: "futbolemotion-nike-nike-tiempo-ligera-pro-turf",
-    brand: "Nike",
-    model: "Nike Tiempo Ligera Pro Turf",
-    groundType: "",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 129.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-ligera-pro-turf-chalk-racer-blue-white",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/336708/750/bota-nike-tiempo-ligera-pro-turf-gris-1.jpg",
-        sizes: ["40.5"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-nike-nike-tiempo-ligera-pro-turf-2",
     brand: "Nike",
     model: "Nike Tiempo Ligera Pro Turf",
     groundType: "",
@@ -139631,7 +139365,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-maestro-academy-fgmg-nino-white-black-racer-blue-pink-blast",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/301010/750/bota-nike-tiempo-maestro-academy-fgmg-nino-blanco-1.jpg",
-        sizes: ["35", "35.5", "36.5"],
+        sizes: ["35.5", "36.5"],
       },
     ],
   },
@@ -139684,7 +139418,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Ftiempo-maestro-academy-sg-pro-anti-clog-black-illusion-green-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336709/750/bota-nike-tiempo-maestro-academy-sg-pro-anti-clog-negro-1.jpg",
-        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44.5", "46"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44.5"],
       },
     ],
   },
@@ -140116,7 +139850,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Ftiempo-reactgato-ic-whiteshimmer",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336354/750/zapatilla-nike-tiempo-reactgato-ic-whiteshimmer-1.jpg",
-        sizes: ["38.5", "39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
+        sizes: ["39", "40", "40.5", "41", "42", "42.5", "43", "44", "44.5", "45", "45.5", "46"],
       },
     ],
   },
@@ -140167,7 +139901,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Ftiempo-street-gato-violet-gum",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/321528/750/zapatilla-nike-tiempo-street-gato-violet-gum-1.jpg",
-        sizes: ["40.5", "41", "42", "44", "44.5"],
+        sizes: ["40.5", "41", "42", "44.5"],
       },
     ],
   },
@@ -140307,24 +140041,6 @@ const minedBootProductsChunk25: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fnike%2Fvapor-17-club-ic-nino-black-illusion-green-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/336350/750/zapatilla-nike-vapor-17-club-ic-nino-negro-1.jpg",
         sizes: ["32", "33", "34", "35", "36", "36.5", "37.5", "38", "38.5"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-nike-nike-zoom-mercurial-superfly-10-club-ic-nino-ic-ninos",
-    brand: "Nike",
-    model: "Nike Zoom Mercurial Superfly 10 Club IC Niño",
-    groundType: "IC",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 27.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fnike%2Fzoom-mercurial-vapor-16-club-fgmg-nino-black-ice-blue",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/268840/750/zapatilla-nike-vapor-16-club-fgmg-nino-negro-1.jpg",
-        sizes: ["38"],
       },
     ],
   },
@@ -140638,7 +140354,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-9-match-fgag-sugared-almond-white-ultra-red",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/329610/750/bota-puma-future-9-match-fgag-beige-1.jpg",
-        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5", "45"],
+        sizes: ["39", "40", "41", "42", "42.5", "43", "44", "44.5"],
       },
     ],
   },
@@ -140954,7 +140670,7 @@ const minedBootProductsChunk25: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-9-match-mg-nino-poison-pink-sun-stream-bright-aqua",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/307289/750/bota-puma-future-9-match-mg-nino-rosa-1.jpg",
-        sizes: ["33.5", "38"],
+        sizes: ["38"],
       },
     ],
   },
@@ -140976,9 +140692,6 @@ const minedBootProductsChunk25: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "futbolemotion-puma-puma-future-9-match-playmaker-fg-ag-fg-ag",
     brand: "Puma",
@@ -141061,7 +140774,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Ffuture-9-match-turf-puma-black-glowing-red-strong-gray",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/285573/750/bota-puma-future-9-match-turf-negro-1.jpg",
-        sizes: ["39", "44"],
+        sizes: ["39"],
       },
     ],
   },
@@ -141169,6 +140882,9 @@ const minedBootProductsChunk26: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk26: BootProduct[] = [
   {
     id: "futbolemotion-puma-puma-future-9-pro-creativity-fg-ag-fg-ag",
     brand: "Puma",
@@ -141654,23 +141370,6 @@ const minedBootProductsChunk26: BootProduct[] = [
     ],
   },
   {
-    id: "futbolemotion-puma-puma-pressing-iv-turf-ic",
-    brand: "Puma",
-    model: "Puma Pressing IV Turf",
-    groundType: "IC",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 21.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fpuma%2Fpressing-iv-turf-white-black-vibrant-blue-red",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/285630/750/zapatilla-puma-pressing-iv-tf-blanco-1.jpg",
-        sizes: ["39"],
-      },
-    ],
-  },
-  {
     id: "futbolemotion-puma-puma-pressing-v-ic",
     brand: "Puma",
     model: "Puma Pressing V",
@@ -141719,23 +141418,6 @@ const minedBootProductsChunk26: BootProduct[] = [
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fzapatilla%2Fpuma%2Ftruco-iv-nino-white-green-glare-blue-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/329684/750/zapatilla-puma-truco-iv-nino-blanco-1.jpg",
         sizes: ["33", "33.5", "35", "36", "36.5", "37.5", "38"],
-      },
-    ],
-  },
-  {
-    id: "futbolemotion-puma-puma-ultra-6-carbon-fg-fg",
-    brand: "Puma",
-    model: "Puma Ultra 6 Carbon FG",
-    groundType: "FG",
-    offers: [
-      {
-        store: "FutbolEmotion",
-        price: 125.99,
-        shipping: 0,
-        currency: "EUR",
-        url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-6-carbon-fg-icy-blue-blue-jewel",
-        imageUrl: "https://www.futbolemotion.com/imagesarticulos/307258/750/bota-puma-ultra-6-carbon-fg-icy-blue-blue-jewel-1.jpg",
-        sizes: ["42.5"],
       },
     ],
   },
@@ -142070,7 +141752,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-nitro-7-match-ag-ultra-red-black-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/329634/750/bota-puma-ultra-nitro-7-match-ag-blanco-1.jpg",
-        sizes: ["39", "40", "42", "42.5", "44"],
+        sizes: ["39", "40", "42", "42.5", "43", "44"],
       },
     ],
   },
@@ -142121,7 +141803,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-nitro-7-match-mxsg-ultra-red-puma-black-white",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/329635/750/bota-puma-ultra-nitro-7-match-mxsg-ultra-red-puma-black-white-1.jpg",
-        sizes: ["39", "40", "41", "42", "43", "45"],
+        sizes: ["39", "40", "41", "42", "45"],
       },
     ],
   },
@@ -142206,7 +141888,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Fpuma%2Fultra-nitro-7-ultimate-fg-sugared-almond-puma-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/329680/750/bota-puma-ultra-nitro-7-ultimate-fg-sugared-almond-puma-black-1.jpg",
-        sizes: ["40", "41", "42", "44.5"],
+        sizes: ["40", "41", "42", "44.5", "45"],
       },
     ],
   },
@@ -142584,7 +142266,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://tc.tradetracker.net/?c=35939&m=2066871&a=514692&r=&u=https%3A%2F%2Fwww.futbolemotion.com%2Fes%2Fcomprar%2Fbota-de-futbol%2Funder-armour%2Fmagnetico-select-5-fg-nino-black",
         imageUrl: "https://www.futbolemotion.com/imagesarticulos/271185/750/bota-under-armour-magnetico-auswahlen-5-fg-fur-kinder-negro-1.jpg",
-        sizes: ["32", "35.5"],
+        sizes: ["35.5"],
       },
     ],
   },
@@ -143029,7 +142711,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46316367243&a=3013769&m=22149",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fadidas-1-768_1024_100-7752718_1.jpg&feedId=51705&k=c4a5c7b2771a8e1c0575a20b118ab6627854edc9",
-        sizes: ["41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "46 2/3", "48"],
+        sizes: ["41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "46 2/3"],
       },
     ],
   },
@@ -143080,7 +142762,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46316366683&a=3013769&m=22149",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fadidas-1-768_1024_100-7686726_1.jpg&feedId=51705&k=cf9963a328ced7bbd432edbfb85f7be11f52bea5",
-        sizes: ["42", "42 2/3", "46", "46 2/3"],
+        sizes: ["42"],
       },
     ],
   },
@@ -143148,7 +142830,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46316367973&a=3013769&m=22149",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fnike-1-768_1024_100-7766781_1.jpg&feedId=51705&k=66d47cad246699f2216c3eee3004442c5ec810de",
-        sizes: ["38 1/2", "39", "40", "42", "42 1/2", "43", "44 1/2", "45", "45 1/2", "46", "47"],
+        sizes: ["38 1/2", "39", "40", "42", "42 1/2", "43", "44 1/2", "45", "46", "47"],
       },
     ],
   },
@@ -143166,23 +142848,6 @@ const minedBootProductsChunk26: BootProduct[] = [
         url: "https://www.awin1.com/pclick.php?p=46316366655&a=3013769&m=22149",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fnike-1-768_1024_100-7684892_1.jpg&feedId=51705&k=b1d5cddf731e3e5cc2e31e8b46e887f948fcd6b8",
         sizes: ["39", "41", "42", "42 1/2", "43", "44", "44 1/2", "45", "45 1/2", "46", "47"],
-      },
-    ],
-  },
-  {
-    id: "gigasportch-nike-tiempo-legend-10-pro-hellblau-ag",
-    brand: "Nike",
-    model: "Tiempo Legend 10 Pro hellblau",
-    groundType: "AG",
-    offers: [
-      {
-        store: "GigasportCH",
-        price: 119.9,
-        shipping: 3.95,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46316366561&a=3013769&m=22149",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fnike-1-768_1024_100-7668024_1.jpg&feedId=51705&k=9b6a32042fe387e768186fb939bc5a7f18cf9b8d",
-        sizes: ["40 1/2", "41", "42"],
       },
     ],
   },
@@ -143249,9 +142914,9 @@ const minedBootProductsChunk26: BootProduct[] = [
         price: 75.9,
         shipping: 3.95,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42917634427&a=3013769&m=22149",
+        url: "https://www.awin1.com/pclick.php?p=42917634426&a=3013769&m=22149",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fpuma-1-768_1024_100-7712383_1.jpg&feedId=51705&k=7309cb6f13eaad939f433eb92ebd7fbbb48fc3a7",
-        sizes: ["41", "42", "42 1/2", "43", "44", "44 1/2", "45"],
+        sizes: ["40 1/2", "41", "42", "42 1/2", "43", "44", "44 1/2", "45"],
       },
     ],
   },
@@ -143353,7 +143018,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         priceMax: 111.9,
         shipping: 3.95,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46316366648&a=3013769&m=22149",
+        url: "https://www.awin1.com/pclick.php?p=46316366649&a=3013769&m=22149",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fpuma-1-768_1024_100-7684669_1.jpg&feedId=51705&k=f1e9d8c40499702376bcb729ef93142be2d0a577",
         sizes: ["39", "40", "40 1/2", "41", "42", "42 1/2", "43", "44", "44 1/2", "45", "46", "46 1/2"],
         sizePrices: [
@@ -143361,7 +143026,6 @@ const minedBootProductsChunk26: BootProduct[] = [
           { size: "40", price: 111.9, url: "https://www.awin1.com/pclick.php?p=46316366579&a=3013769&m=22149" },
           { size: "40 1/2", price: 111.9, url: "https://www.awin1.com/pclick.php?p=46316366580&a=3013769&m=22149" },
           { size: "41", price: 111.9, url: "https://www.awin1.com/pclick.php?p=46316366581&a=3013769&m=22149" },
-          { size: "41", price: 75.9, url: "https://www.awin1.com/pclick.php?p=46316366648&a=3013769&m=22149" },
           { size: "42", price: 111.9, url: "https://www.awin1.com/pclick.php?p=46316366582&a=3013769&m=22149" },
           { size: "42", price: 75.9, url: "https://www.awin1.com/pclick.php?p=46316366649&a=3013769&m=22149" },
           { size: "42 1/2", price: 111.9, url: "https://www.awin1.com/pclick.php?p=46316366583&a=3013769&m=22149" },
@@ -143407,9 +143071,9 @@ const minedBootProductsChunk26: BootProduct[] = [
         price: 111.9,
         shipping: 3.95,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46316366475&a=3013769&m=22149",
+        url: "https://www.awin1.com/pclick.php?p=46316366476&a=3013769&m=22149",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.ch%2Fpuma-1-768_1024_100-7647133_1.jpg&feedId=51705&k=e379bdb4aca68d52a298d9352247c5dc7b6de3c6",
-        sizes: ["40", "40 1/2", "41", "42", "42 1/2", "43", "44 1/2", "46"],
+        sizes: ["40 1/2", "41", "42", "42 1/2", "43", "44 1/2", "46"],
       },
     ],
   },
@@ -143630,7 +143294,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46313920148&a=3013769&m=14464",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fadidas-1-768_1024_100-7752718_1.jpg&feedId=69847&k=253d4c9b3200489302642f5ba37a0370bb282be1",
-        sizes: ["41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "46 2/3", "48"],
+        sizes: ["41 1/3", "42 2/3", "43 1/3", "44", "44 2/3", "46 2/3"],
       },
     ],
   },
@@ -143681,7 +143345,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=46313917722&a=3013769&m=14464",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fadidas-1-768_1024_100-7686726_1.jpg&feedId=69847&k=b43a9444c7b1192159f3174b0a4e0f01f34c5434",
-        sizes: ["42", "42 2/3", "46", "46 2/3"],
+        sizes: ["42"],
       },
     ],
   },
@@ -143720,23 +143384,6 @@ const minedBootProductsChunk26: BootProduct[] = [
     ],
   },
   {
-    id: "gigasportde-nike-tiempo-legend-10-pro-hellblau-ag",
-    brand: "Nike",
-    model: "Tiempo Legend 10 Pro hellblau",
-    groundType: "AG",
-    offers: [
-      {
-        store: "GigasportDE",
-        price: 119.9,
-        shipping: 3.95,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46313917465&a=3013769&m=14464",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fnike-1-768_1024_100-7668024_1.jpg&feedId=69847&k=1e5d592c9e65c8179ecb93a6d563abf82074536b",
-        sizes: ["40 1/2", "41", "42"],
-      },
-    ],
-  },
-  {
     id: "gigasportde-nike-tiempo-legend-10-pro-nocken-turkis",
     brand: "Nike",
     model: "Tiempo Legend 10 Pro Nocken türkis",
@@ -143764,9 +143411,9 @@ const minedBootProductsChunk26: BootProduct[] = [
         price: 75.9,
         shipping: 3.95,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=42913012050&a=3013769&m=14464",
+        url: "https://www.awin1.com/pclick.php?p=42913012049&a=3013769&m=14464",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fpuma-1-768_1024_100-7712383_1.jpg&feedId=69847&k=8608881e6e8ae74f60a030785be6e08e53c92b09",
-        sizes: ["41", "42", "42 1/2", "43", "44", "44 1/2", "45"],
+        sizes: ["40 1/2", "41", "42", "42 1/2", "43", "44", "44 1/2", "45"],
       },
     ],
   },
@@ -143850,7 +143497,7 @@ const minedBootProductsChunk26: BootProduct[] = [
         priceMax: 111.9,
         shipping: 3.95,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46313917528&a=3013769&m=14464",
+        url: "https://www.awin1.com/pclick.php?p=46313917529&a=3013769&m=14464",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fpuma-1-768_1024_100-7684669_1.jpg&feedId=69847&k=0eb39d440a8f98106cb0f2be5f298d576ba01dd0",
         sizes: ["39", "40", "40 1/2", "41", "42", "42 1/2", "43", "44", "44 1/2", "45", "46", "46 1/2"],
         sizePrices: [
@@ -143858,7 +143505,6 @@ const minedBootProductsChunk26: BootProduct[] = [
           { size: "40", price: 111.9, url: "https://www.awin1.com/pclick.php?p=46313917495&a=3013769&m=14464" },
           { size: "40 1/2", price: 111.9, url: "https://www.awin1.com/pclick.php?p=46313917496&a=3013769&m=14464" },
           { size: "41", price: 111.9, url: "https://www.awin1.com/pclick.php?p=46313917497&a=3013769&m=14464" },
-          { size: "41", price: 75.9, url: "https://www.awin1.com/pclick.php?p=46313917528&a=3013769&m=14464" },
           { size: "42", price: 111.9, url: "https://www.awin1.com/pclick.php?p=46313917498&a=3013769&m=14464" },
           { size: "42", price: 75.9, url: "https://www.awin1.com/pclick.php?p=46313917529&a=3013769&m=14464" },
           { size: "42 1/2", price: 111.9, url: "https://www.awin1.com/pclick.php?p=46313917499&a=3013769&m=14464" },
@@ -143904,9 +143550,9 @@ const minedBootProductsChunk26: BootProduct[] = [
         price: 111.9,
         shipping: 3.95,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46313916882&a=3013769&m=14464",
+        url: "https://www.awin1.com/pclick.php?p=46313916883&a=3013769&m=14464",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.de%2Fpuma-1-768_1024_100-7647133_1.jpg&feedId=69847&k=6df38470fd078d297a195327d22a286c6a6770a8",
-        sizes: ["40", "40 1/2", "41", "42", "42 1/2", "43", "44 1/2", "46"],
+        sizes: ["40 1/2", "41", "42", "42 1/2", "43", "44 1/2", "46"],
       },
     ],
   },
@@ -144030,23 +143676,6 @@ const minedBootProductsChunk26: BootProduct[] = [
     ],
   },
   {
-    id: "gigasportfr-nike-tiempo-legend-10-pro-bleu-clair-fg",
-    brand: "Nike",
-    model: "Tiempo Legend 10 Pro bleu clair",
-    groundType: "FG",
-    offers: [
-      {
-        store: "GigasportFR",
-        price: 119.9,
-        shipping: 3.95,
-        currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=46313894103&a=3013769&m=121584",
-        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.gigasport.fr%2Fnike-1-768_1024_100-7668024_1.jpg&feedId=112013&k=77969fd442789ff52b93e368d72bc862fd397e40",
-        sizes: ["40 1/2", "41", "42"],
-      },
-    ],
-  },
-  {
     id: "gigasportfr-puma-chaussures-de-foot-pour-homme-future-8-match-tt-turf-orange-ag",
     brand: "Puma",
     model: "Chaussures de foot pour homme FUTURE 8 MATCH TT Turf orange",
@@ -144131,9 +143760,6 @@ const minedBootProductsChunk26: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk27: BootProduct[] = [
   {
     id: "pro-direct-es-adidas-adidas-copa-pure-iv-pro-tf-tf",
     brand: "adidas",
@@ -144406,6 +144032,9 @@ const minedBootProductsChunk27: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk27: BootProduct[] = [
   {
     id: "pro-direct-es-adidas-adidas-kaiser-5-cup-made-in-germany-sg-sg",
     brand: "adidas",
@@ -147196,9 +146825,6 @@ const minedBootProductsChunk27: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk28: BootProduct[] = [
   {
     id: "pro-direct-es-new-balance-new-balance-tekela-v5-elite-sg-sg-2",
     brand: "New Balance",
@@ -147471,6 +147097,9 @@ const minedBootProductsChunk28: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk28: BootProduct[] = [
   {
     id: "pro-direct-es-nike-nike-air-zoom-mercurial-vapor-xvi-elite-sg-pro-sg-fq8688-300",
     brand: "Nike",
@@ -150259,9 +149888,6 @@ const minedBootProductsChunk28: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk29: BootProduct[] = [
   {
     id: "pro-direct-es-puma-puma-ultra-nitro-7-ultimate-24-7-represent-fg-fg",
     brand: "Puma",
@@ -150543,6 +150169,9 @@ const minedBootProductsChunk29: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk29: BootProduct[] = [
   {
     id: "pro-direct-es-skechers-skechers-razor-2-elite-sg-sg",
     brand: "Skechers",
@@ -154180,7 +153809,7 @@ const minedBootProductsChunk29: BootProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=46343277654&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F8787bdfbf12e4a7d9a5232f8d1c2c187_9366%2FGuayos_F50_Hyperfast_Pro_Terreno_Firme_Verde_KJ3439_01_00_standard_hover.jpg&feedId=95017&k=79f1f52e9a0b0439bee1f87a9e7b1ddc0a814625",
-        sizes: ["38 2/3", "40", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
+        sizes: ["38 2/3", "40", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
       },
     ],
   },
@@ -156838,9 +156467,6 @@ const minedBootProductsChunk29: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk30: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-elite-fg-fg-if8867",
     brand: "Adidas",
@@ -157720,6 +157346,9 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk30: BootProduct[] = [
   {
     id: "sportisgoodes-adidas-botas-de-futbol-adidas-predator-elite-ft-f",
     brand: "Adidas",
@@ -159455,7 +159084,7 @@ const minedBootProductsChunk30: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45697990105&a=3013769&m=23805",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Awww.forumsport.com%2Fmedias%2Fmedias-1001102015-00-P-X-20260818121239.jpg%3Fcontext%3DbWFzdGVyfGltYWdlc3w5NzMzNnxpbWFnZS9qcGVnfGFHSmpMMmhqT1M4eE16azJNVEF3TVRVek16UTNNQzl0WldScFlYTmZNVEF3TVRFd01qQXhOVjh3TUY5UVgxZ3RNakF5TmpBNE1UZ3hNakV5TXprdWFuQm58Yjc0MDYxYzA1ZDkzN2IxOWEwZTQyNWZjZmI5ZWYwMTE4YjU3NDAxOTdkOTcxODdlNTE0YmNmNTRlMTA5MTgyNg&feedId=58083&k=087e6ce425686897a52aacd5823e16af7804816c",
-        sizes: ["41 1/3", "42", "44", "44 2/3", "45 1/3"],
+        sizes: ["41 1/3", "42", "44", "45 1/3"],
       },
       {
         store: "Pro:Direct ES",
@@ -159482,7 +159111,7 @@ const minedBootProductsChunk30: BootProduct[] = [
         currency: "COP",
         url: "https://www.awin1.com/pclick.php?p=46148193480&a=3013769&m=79924",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Aassets.adidas.com%2Fimages%2Fw_1080%2Ch_1080%2Cf_auto%2Cq_auto%3Asensitive%2Cfl_lossy%2F20bb8feb62f444d79d6a8f05836ffc8f_9366%2FGuayos_Predator_League_Lengueta_Plegable_Terreno_Firme_Negro_JP6273_01_00_standard_hover.jpg&feedId=95017&k=cb7a3fcb6363fe80105b03473728bb3d106f0659",
-        sizes: ["36", "36 2/3", "37 1/3", "38", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3", "46"],
+        sizes: ["36", "36 2/3", "37 1/3", "38", "40 2/3", "41 1/3", "42", "42 2/3", "43 1/3", "44", "44 2/3", "45 1/3"],
       },
     ],
   },
@@ -163848,46 +163477,30 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
       {
         store: "FootStoreES",
-        price: 17.9,
-        priceMax: 18.87,
+        price: 18.21,
         shipping: 9.99,
         currency: "EUR",
-        url: "https://www.awin1.com/pclick.php?p=45195663800&a=3013769&m=65912",
+        url: "https://www.awin1.com/pclick.php?p=45195663783&a=3013769&m=65912",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.jpg&feedId=89032&k=a597f02728f05849090b71281ba29ca0dce8bac1",
-        sizes: ["34", "35", "36", "37", "38"],
-        sizePrices: [
-          { size: "34", price: 18.87, url: "https://www.awin1.com/pclick.php?p=45195663799&a=3013769&m=65912" },
-          { size: "35", price: 17.9, url: "https://www.awin1.com/pclick.php?p=45195663800&a=3013769&m=65912" },
-          { size: "36", price: 17.9, url: "https://www.awin1.com/pclick.php?p=45195663801&a=3013769&m=65912" },
-          { size: "37", price: 18.87, url: "https://www.awin1.com/pclick.php?p=45195663802&a=3013769&m=65912" },
-          { size: "38", price: 18.87, url: "https://www.awin1.com/pclick.php?p=44301920706&a=3013769&m=65912" },
-        ],
+        sizes: ["27"],
       },
       {
         store: "FootStoreFR",
-        price: 17.26,
-        priceMax: 18.19,
+        price: 17.56,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.webp",
-        sizes: ["34", "35", "36", "37", "38"],
-        sizePrices: [
-          { size: "34", price: 18.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
-          { size: "35", price: 17.26, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
-          { size: "36", price: 17.26, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
-          { size: "37", price: 18.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
-          { size: "38", price: 18.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
-        ],
+        sizes: ["27"],
       },
       {
         store: "SportIsGoodFR",
         price: 16.77,
         shipping: 6.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.webp",
-        sizes: ["35", "36"],
+        sizes: ["27"],
       },
     ],
   },
@@ -164126,21 +163739,18 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
       {
         store: "FootStoreFR",
-        price: 30.14,
+        price: 29.52,
+        priceMax: 30.14,
         shipping: 7.99,
         currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-7162-chaussures-de-football-enfant-hummel-top-star-vc-2-0-turf-allure",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-7162-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-allure",
         imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234863-7162-allure-4.webp",
-        sizes: ["27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38"],
-      },
-      {
-        store: "SportIsGoodFR",
-        price: 28.57,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F234863-7162-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-allure",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-234863-7162-allure-4.webp",
-        sizes: ["26"],
+        sizes: ["24", "25", "26"],
+        sizePrices: [
+          { size: "24", price: 30.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-7162-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-allure" },
+          { size: "25", price: 29.52, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-7162-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-allure" },
+          { size: "26", price: 30.14, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F234863-7162-chaussures-de-football-bebe-hummel-top-star-vc-2-0-turf-allure" },
+        ],
       },
     ],
   },
@@ -164436,6 +164046,49 @@ const minedBootProductsChunk30: BootProduct[] = [
         currency: "EUR",
         url: "https://www.awin1.com/pclick.php?p=45959606251&a=3013769&m=65906",
         imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.jpg&feedId=89044&k=a597f02728f05849090b71281ba29ca0dce8bac1",
+        sizes: ["35", "36"],
+      },
+      {
+        store: "FootStoreES",
+        price: 17.9,
+        priceMax: 18.87,
+        shipping: 9.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/pclick.php?p=45195663800&a=3013769&m=65912",
+        imageUrl: "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.blazimg.com%2Fcatalog%2Fproduct%2Fh%2Fu%2Fhummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.jpg&feedId=89032&k=a597f02728f05849090b71281ba29ca0dce8bac1",
+        sizes: ["34", "35", "36", "37", "38"],
+        sizePrices: [
+          { size: "34", price: 18.87, url: "https://www.awin1.com/pclick.php?p=45195663799&a=3013769&m=65912" },
+          { size: "35", price: 17.9, url: "https://www.awin1.com/pclick.php?p=45195663800&a=3013769&m=65912" },
+          { size: "36", price: 17.9, url: "https://www.awin1.com/pclick.php?p=45195663801&a=3013769&m=65912" },
+          { size: "37", price: 18.87, url: "https://www.awin1.com/pclick.php?p=45195663802&a=3013769&m=65912" },
+          { size: "38", price: 18.87, url: "https://www.awin1.com/pclick.php?p=44301920706&a=3013769&m=65912" },
+        ],
+      },
+      {
+        store: "FootStoreFR",
+        price: 17.26,
+        priceMax: 18.19,
+        shipping: 7.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.webp",
+        sizes: ["34", "35", "36", "37", "38"],
+        sizePrices: [
+          { size: "34", price: 18.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
+          { size: "35", price: 17.26, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
+          { size: "36", price: 17.26, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
+          { size: "37", price: 18.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
+          { size: "38", price: 18.19, url: "https://www.awin1.com/cread.php?awinmid=55619&awinaffid=3013769&ued=https%3A%2F%2Ffoot-store.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue" },
+        ],
+      },
+      {
+        store: "SportIsGoodFR",
+        price: 16.77,
+        shipping: 6.99,
+        currency: "EUR",
+        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F216568-3916-chaussures-de-football-enfant-hummel-top-star-fg-multi-colour-pink-blue",
+        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.webp",
         sizes: ["35", "36"],
       },
     ],
@@ -166807,9 +166460,6 @@ const minedBootProductsChunk30: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk31: BootProduct[] = [
   {
     id: "sportisgoodes-mizuno-botas-de-futbol-mizuno-morelia-ii-pro-md",
     brand: "Mizuno",
@@ -167788,6 +167438,9 @@ const minedBootProductsChunk31: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk31: BootProduct[] = [
   {
     id: "sportisgoodes-mizuno-botas-de-futbol-mizuno-morelia-neo-v-beta-select-ag-ag",
     brand: "Mizuno",
@@ -175976,9 +175629,6 @@ const minedBootProductsChunk31: BootProduct[] = [
       },
     ],
   },
-];
-
-const minedBootProductsChunk32: BootProduct[] = [
   {
     id: "sportisgoodes-puma-botas-de-futbol-puma-ultra-nitro-7-ultimate-fg-fg-109225-02",
     brand: "Puma",
@@ -176802,6 +176452,9 @@ const minedBootProductsChunk32: BootProduct[] = [
       },
     ],
   },
+];
+
+const minedBootProductsChunk32: BootProduct[] = [
   {
     id: "sportisgoodes-puma-botas-de-futbol-puma-ultra-ultimate-fg-fg-107683-01",
     brand: "Puma",
@@ -179758,24 +179411,6 @@ const minedBootProductsChunk32: BootProduct[] = [
     ],
   },
   {
-    id: "sportisgoodfr-hummel-hummel-top-star-fg-fg-ninos",
-    brand: "Hummel",
-    model: "Hummel Top Star FG",
-    groundType: "FG",
-    ageGroup: "kids",
-    offers: [
-      {
-        store: "SportIsGoodFR",
-        price: 16.77,
-        shipping: 6.99,
-        currency: "EUR",
-        url: "https://www.awin1.com/cread.php?awinmid=61919&awinaffid=3013769&ued=https%3A%2F%2Fsportisgood.fr%2F216568-3916-chaussures-de-football-bebe-hummel-top-star-fg-multi-colour-pink-blue",
-        imageUrl: "https://cdn.blazimg.com/1800/product/h/u/hummel-216568-3916-multi-colour-pink-blue-69c3b9a566463-1.webp",
-        sizes: ["27"],
-      },
-    ],
-  },
-  {
     id: "sportisgoodfr-hummel-hummel-top-star-vc-2-0-i-c-ic-ninos",
     brand: "Hummel",
     model: "Hummel Top Star VC 2.0 I.C",
@@ -179858,7 +179493,7 @@ const minedBootProductsChunk32: BootProduct[] = [
         currency: "GBP",
         url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s73227&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12737%2Ffootwear%2Fspeciali-eternal-club-kids-firm-ground-football-boot-black--white--tw-royal.html%3Fref%3DPPC&intsrc=CATF_39004",
         imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_specialieternalclubfgjnr_177098528681087U_FZ9_1.JPG",
-        sizes: ["28.5", "29.5", "30", "31.5", "33", "34", "35.5", "36.5", "38", "38.5"],
+        sizes: ["28.5", "29.5", "30", "31.5", "33", "34", "35", "35.5", "36.5", "38", "38.5"],
       },
     ],
   },
@@ -181104,7 +180739,7 @@ const minedBootProductsChunk32: BootProduct[] = [
         currency: "GBP",
         url: "https://umbro.onepath.io/c/7551770/4136804/60189?prodsku=s72097&u=https%3A%2F%2Fwww.umbro.co.uk%2Fitem%2F12584%2Fsale%2Fvelocita-matrix-pro-fg-black--gold--fire-whirl.html%3Fref%3DPPC&intsrc=CATF_39004",
         imageUrl: "https://www.umbro.co.uk/uploads/images/products/verylarge/umbro_velocitamatrixprofg_173866394882056U_MU4_1.jpg",
-        sizes: ["40.5", "41", "42", "42.5", "43", "45.5", "46", "47.5"],
+        sizes: ["40.5", "41", "42", "42.5", "43", "45.5", "47.5"],
       },
     ],
   },
