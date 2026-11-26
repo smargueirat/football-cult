@@ -1987,6 +1987,7 @@
 "grecia-retro-2004-away",
 "grecia-retro-2004-home",
 "grecia-retro-200608-away",
+"grecia-retro-2008-away",
 "grecia-retro-2008-home",
 "grecia-retro-200809-away",
 "grecia-retro-2010-home",
@@ -2751,6 +2752,7 @@
 "leeds-retro-2023-home",
 "leeds-retro-202324-away",
 "leeds-retro-202425-home",
+"leganes-retro-202425-away",
 "leicester-retro-1986-away",
 "leicester-retro-1992-home",
 "leicester-retro-2001-away",
@@ -24838,6 +24840,19 @@
 "S"
 ],
 "shipping": 2.94
+},
+"grecia-retro-2008-away": {
+"title": "Greece Away Shirt Euro 2008 Adidas L New Tags Hellas 626782",
+"price": 100.31,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/960217173312?_skw=Greece+2008+away+shirt&hash=itemdf91674d40%3Ag%3A1kkAAeSwg2hq%7E1Al&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7nv7CjFEykyTsOqegkMfpastQFdZT5y%2B3m0YnM6SF4YUL18xUXWfCCfRo32tnSkjH%2FUSuwjwf92AoQtrN9QdapsQ02WGf4CckoQ2jpCpSrRmDOiEE2kuVMOL56F5lLt3WTl7ac8Ou5naq%2FnKmxUcNFVRdaABxelNt6TcpJRg%2B16s4%2BcZ%2BQdKRLnZfpRjpQzYoIZ7NTMt7dzjC7wUDoKStF0Nb3OZmyco5RqORqEnp0sjGxkyQfz%2BOYhCoVsN6yuHSbjeMidw120LcluaKaQozHm1RFUaJwe80G6ZmKXXxTWCA%3D%3D&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|960217173312|0",
+"image": "https://i.ebayimg.com/images/g/1kkAAeSwg2hq~1Al/s-l1600.jpg",
+"sizes": [
+"M",
+"L"
+],
+"shipping": 19.57
 }
 }
 }
