@@ -10,6 +10,12 @@
 // Point every entry at the CURRENT id directly, not at another alias, so a
 // single lookup always resolves (see resolveProductId below).
 export const PRODUCT_ID_ALIASES: Record<string, string> = {
+  // 2026-11-27: agotadas 14+ días y sin clics, retiradas por
+  // scripts/fixes/seo_redirects.py; redirigen a la ficha viva más parecida.
+  "fluminense-retro-2021-home": "fluminense-retro-2023-home",
+  "velez-retro-2018-home": "velez-home-2026",
+  "mancity-retro-2022-home": "mancity-retro-202223-home",
+  "feyenoord-retro-200708-away": "feyenoord-retro-200607-away",
   // 2026-11-27: fichas fundidas por dedupe_same_url.py (mismo anuncio en dos
   // fichas, o año suelto con gemela de temporada); redirigen a la que quedó.
   "deportivo-retro-2003-home": "deportivo-retro-200304-home",
@@ -1169,7 +1175,7 @@ export const PRODUCT_ID_ALIASES: Record<string, string> = {
   "barcelona-retro-199900-home": "barcelona-retro-199899-home",
   "cruzazul-retro-201920-away": "cruzazul-retro-201516-away",
   "liverpool-retro-200405-home": "liverpool-retro-200506-home",
-  "cruzazul-retro-202122-away": "cruzazul-retro-202425-away",
+  "cruzazul-retro-202122-away": "cruzazul-retro-202223-away",
   "leeds-retro-201213-home": "leeds-retro-201112-home",
   "celtic-retro-199395-away": "celtic-retro-1994-away",
   "argelia-retro-201415-home": "argelia-retro-2018-home",
