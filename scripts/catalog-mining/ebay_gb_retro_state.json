@@ -599,6 +599,7 @@
 "blackburn-retro-1994-home",
 "blackburn-retro-199495-home",
 "blackburn-retro-1995-away",
+"blackburn-retro-199596-away",
 "blackburn-retro-1996-home",
 "blackburn-retro-1998-away",
 "blackburn-retro-2000-away",
@@ -616,6 +617,8 @@
 "blackburn-retro-2011-away",
 "blackburn-retro-201112-away",
 "blackburn-retro-2012-away",
+"blackburn-retro-201415-home",
+"blackburn-retro-201819-away",
 "blackburn-retro-201819-home",
 "blackburn-retro-2019-home",
 "blackburn-retro-201920-home",
@@ -884,6 +887,7 @@
 "cesena-retro-200708-home",
 "cesena-retro-201819-third",
 "charlton-retro-200910-home",
+"charlton-retro-201819-home",
 "charlton-retro-202021-third",
 "charlton-retro-202122-home",
 "charlton-retro-202223-home",
@@ -1249,6 +1253,7 @@
 "costarica-retro-202425-home",
 "coventry-retro-201011-home",
 "coventry-retro-201012-away",
+"coventry-retro-201012-home",
 "coventry-retro-201213-home",
 "coventry-retro-201920-away",
 "coventry-retro-202324-away",
@@ -2146,6 +2151,7 @@
 "huddersfield-retro-200708-home",
 "huddersfield-retro-2009-home",
 "huddersfield-retro-201415-away",
+"huddersfield-retro-201415-home",
 "huddersfield-retro-201718-away",
 "huddersfield-retro-201718-home",
 "huddersfield-retro-2018-home",
@@ -2779,6 +2785,7 @@
 "leicester-retro-2016-home",
 "leicester-retro-201617-away",
 "leicester-retro-201617-home",
+"leicester-retro-201617-third",
 "leicester-retro-201718-away",
 "leicester-retro-201718-home",
 "leicester-retro-201819-away",
@@ -3126,6 +3133,7 @@
 "millwall-retro-2002-away",
 "millwall-retro-2004-away",
 "millwall-retro-2007-away",
+"millwall-retro-200708-away",
 "millwall-retro-201516-away",
 "millwall-retro-201516-third",
 "millwall-retro-201920-away",
@@ -3358,6 +3366,7 @@
 "norwich-retro-2013-home",
 "norwich-retro-201516-home",
 "norwich-retro-2017-third",
+"norwich-retro-201718-home",
 "norwich-retro-2019-away",
 "norwich-retro-2019-home",
 "norwich-retro-2019-third",
@@ -4355,6 +4364,7 @@
 "southampton-retro-202122-home",
 "southampton-retro-202223-away",
 "southampton-retro-202223-home",
+"southampton-retro-202223-third",
 "southampton-retro-2023-third",
 "southampton-retro-202324-home",
 "southampton-retro-202425-away",
@@ -4572,6 +4582,7 @@
 "swansea-retro-201819-away",
 "swansea-retro-201819-home",
 "swansea-retro-201819-third",
+"swansea-retro-202021-home",
 "swansea-retro-202122-home",
 "swansea-retro-202223-away",
 "swansea-retro-202223-home",
@@ -4936,17 +4947,23 @@
 "westbrom-retro-2007-third",
 "westbrom-retro-2009-away",
 "westbrom-retro-2011-home",
+"westbrom-retro-201112-away",
 "westbrom-retro-201112-home",
 "westbrom-retro-2012-third",
 "westbrom-retro-2013-away",
 "westbrom-retro-2013-home",
 "westbrom-retro-201314-home",
+"westbrom-retro-201415-away",
+"westbrom-retro-201516-home",
 "westbrom-retro-2016-away",
 "westbrom-retro-2016-home",
 "westbrom-retro-201617-home",
 "westbrom-retro-201718-away",
+"westbrom-retro-201718-home",
 "westbrom-retro-2018-home",
+"westbrom-retro-201920-away",
 "westbrom-retro-2020-third",
+"westbrom-retro-202021-away",
 "westbrom-retro-202223-home",
 "westbrom-retro-202425-away",
 "westbrom-retro-202425-home",
@@ -24888,6 +24905,54 @@
 "L"
 ],
 "shipping": 3.2
+},
+"blackburn-retro-201819-away": {
+"title": "Blackburn Rovers 2018/19 Away Shirt Size Adults Large Umbro Yellow",
+"price": 19.99,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/227625075395?_skw=Blackburn+Rovers+2018+away+shirt&hash=item34ff8302c3%3Ag%3ARFwAAeSwZLVqBaqt&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|227625075395|0",
+"image": "https://i.ebayimg.com/images/g/RFwAAeSwZLVqBaqt/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 2.99
+},
+"charlton-retro-201819-home": {
+"title": "Charlton Athletic Home Mens football shirt 2018/19 { 4XL } X XXXL New With Tags",
+"price": 68.3,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/358690755678?_skw=Charlton+Athletic+2018+home+shirt&hash=item5383a2945e%3Ag%3A5ZcAAeSwf-hqMndb&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|358690755678|0",
+"image": "https://i.ebayimg.com/images/g/5ZcAAeSwf-hqMndb/s-l1600.jpg",
+"sizes": [
+"4XL"
+],
+"shipping": 3.38
+},
+"norwich-retro-201718-home": {
+"title": "Norwich City F.C. home shirt from the 2017-2018 size XXL Brand new With Tags",
+"price": 26.7,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/128199963049?_skw=Norwich+City+2017+home+shirt&hash=item1dd95031a9%3Ag%3AA%7EUAAeSwWZtqVKaZ&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|128199963049|0",
+"image": "https://i.ebayimg.com/images/g/A~UAAeSwWZtqVKaZ/s-l1600.jpg",
+"sizes": [
+"XXL"
+],
+"shipping": 2.94
+},
+"westbrom-retro-201920-away": {
+"title": "Puma West Bromwich Albion Football Shirt Away 2019-20 Size Large",
+"price": 37.09,
+"currency": "GBP",
+"link": "https://www.ebay.co.uk/itm/226553088582?_skw=West+Bromwich+Albion+2019+away+shirt&hash=item34bf9dca46%3Ag%3ASrMAAOSwlUpni4Sr&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5339184386&customid=&toolid=10049",
+"item_id": "v1|226553088582|0",
+"image": "https://i.ebayimg.com/images/g/SrMAAOSwlUpni4Sr/s-l1600.jpg",
+"sizes": [
+"L"
+],
+"shipping": 2.94
 }
 }
 }
